@@ -5,6 +5,7 @@ import { SiteShell } from "@/components/SiteShell";
 import { siteConfig } from "@/lib/siteConfig";
 
 const siteUrl = siteConfig.siteUrl;
+const openGraphImage = `${siteUrl}/opengraph-image.png`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -36,6 +37,13 @@ export const metadata: Metadata = {
       ar: "/?lang=ar"
     }
   },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", type: "image/png", sizes: "512x512" }
+    ],
+    apple: [{ url: "/apple-icon.png", type: "image/png", sizes: "180x180" }]
+  },
   openGraph: {
     type: "website",
     locale: "tr_TR",
@@ -45,17 +53,18 @@ export const metadata: Metadata = {
       "Zemin güçlendirme, zemin iyileştirme, jet grout, DSM, fore kazık, enjeksiyon ve temel güçlendirme projelerinde mühendislik odaklı saha uygulaması.",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1600&q=80",
-        width: 1600,
-        height: 900,
-        alt: "YER6 premium geotechnical engineering operations"
+        url: openGraphImage,
+        width: 1200,
+        height: 630,
+        alt: "YER6 zemin güçlendirme ve jeoteknik mühendislik logosu"
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
     title: "YER6 Zemin Güçlendirme",
-    description: "Jet grout, DSM zemin iyileştirme, fore kazık, enjeksiyon ve temel güçlendirme çözümleri."
+    description: "Jet grout, DSM zemin iyileştirme, fore kazık, enjeksiyon ve temel güçlendirme çözümleri.",
+    images: [openGraphImage]
   }
 };
 
@@ -71,7 +80,7 @@ const organizationSchema = {
   "@type": ["Organization", "LocalBusiness", "EngineeringService"],
   name: "YER6 Zemin Güçlendirme ve Jeoteknik Mühendislik",
   url: siteUrl,
-  image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1600&q=80",
+  image: openGraphImage,
   priceRange: "$$",
   areaServed: ["TR", "EU", "MENA"],
   address: {
