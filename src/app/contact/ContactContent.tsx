@@ -8,7 +8,15 @@ import { useLanguage } from "@/components/LanguageProvider";
 
 export function ContactContent() {
   const { t } = useLanguage();
-  const { phone, email, address } = siteConfig;
+  const { phone, email, emailHref, address, whatsapp } = siteConfig;
+  const waHref = `${whatsapp.url}?text=${encodeURIComponent(whatsapp.message)}`;
+
+  const contactItems: { label: string; value: string; Icon: typeof Phone; href: string | null }[] = [
+    { label: t("contactPhone"), value: phone.display, Icon: Phone, href: phone.href },
+    { label: t("contactEmail"), value: email, Icon: Mail, href: emailHref },
+    { label: t("contactAddress"), value: `${address.streetAddress}, ${address.postalLine}`, Icon: MapPin, href: null },
+    { label: t("contactWhatsApp"), value: phone.display, Icon: MessageCircle, href: waHref }
+  ];
 
   return (
     <main>
@@ -19,18 +27,21 @@ export function ContactContent() {
       />
       <section className="px-5 py-20">
         <div className="mx-auto grid max-w-7xl gap-6 md:grid-cols-4">
-          {(
-            [
-              [t("contactPhone"), phone.display, Phone],
-              [t("contactEmail"), email, Mail],
-              [t("contactAddress"), `${address.streetAddress}, ${address.postalLine}`, MapPin],
-              [t("contactWhatsApp"), phone.display, MessageCircle]
-            ] as const
-          ).map(([label, value, Icon]) => (
-            <div key={String(label)} className="gsap-reveal rounded-[2rem] border border-white/10 bg-white/[0.045] p-6">
+          {contactItems.map(({ label, value, Icon, href }) => (
+            <div key={label} className="gsap-reveal rounded-[2rem] border border-white/10 bg-white/[0.045] p-6">
               <Icon className="h-7 w-7 text-gold-200" />
-              <div className="mt-5 text-xs uppercase tracking-[0.28em] text-white/42">{label as string}</div>
-              <div className="mt-3 text-lg font-semibold text-white">{value as string}</div>
+              <div className="mt-5 text-xs uppercase tracking-[0.28em] text-white/42">{label}</div>
+              {href ? (
+                <a
+                  href={href}
+                  {...(href.startsWith("https://") ? { target: "_blank", rel: "noreferrer" } : {})}
+                  className="mt-3 block text-lg font-semibold text-white"
+                >
+                  {value}
+                </a>
+              ) : (
+                <div className="mt-3 text-lg font-semibold text-white">{value}</div>
+              )}
             </div>
           ))}
         </div>

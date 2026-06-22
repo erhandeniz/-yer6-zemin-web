@@ -36,7 +36,7 @@ export function ContactForms() {
           <input className="rounded-2xl border border-obsidian/10 bg-white/80 px-4 py-4 outline-none" placeholder={t("quoteSizeArea")} />
           <textarea className="min-h-32 rounded-2xl border border-obsidian/10 bg-white/80 px-4 py-4 outline-none" placeholder={t("quoteSiteConstraints")} />
           <a
-            href={`${siteConfig.whatsapp.url}?text=Merhaba%20YER6%2C%20zemin%20guclendirme%20projem%20icin%20teklif%20almak%20istiyorum.`}
+            href={`${siteConfig.whatsapp.url}?text=${encodeURIComponent(siteConfig.whatsapp.message)}`}
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center justify-center gap-2 rounded-full bg-obsidian px-6 py-4 text-sm font-semibold text-white"

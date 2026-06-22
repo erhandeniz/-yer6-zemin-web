@@ -19,12 +19,12 @@ export function Footer() {
             {t("footerTagline")}
           </p>
           <div className="mt-6 flex flex-wrap gap-3 text-sm text-white/72">
-            <span className="inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2">
+            <a href={siteConfig.phone.href} className="inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2">
               <Phone className="h-4 w-4 text-gold-200" /> {siteConfig.phone.display}
-            </span>
-            <span className="inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2">
+            </a>
+            <a href={siteConfig.emailHref} className="inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2">
               <Mail className="h-4 w-4 text-gold-200" /> {siteConfig.email}
-            </span>
+            </a>
           </div>
         </div>
 
