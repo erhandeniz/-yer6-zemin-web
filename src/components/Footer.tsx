@@ -8,6 +8,7 @@ import { useLanguage } from "@/components/LanguageProvider";
 
 export function Footer() {
   const { t } = useLanguage();
+  const fullAddress = `${siteConfig.address.streetAddress}, ${siteConfig.address.postalLine}`;
 
   return (
     <footer className="border-t border-white/10 bg-obsidian px-5 py-14">
@@ -53,7 +54,7 @@ export function Footer() {
           <h3 className="text-sm font-semibold uppercase tracking-[0.22em] text-gold-200">{t("footerHQ")}</h3>
           <p className="mt-5 flex items-start gap-3 text-sm leading-7 text-white/64">
             <MapPin className="mt-1 h-4 w-4 shrink-0 text-gold-200" />
-            <span>{t("footerAddress")}</span>
+            <span>{fullAddress}</span>
           </p>
           <Link href="/contact" className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-gold-100">
             {t("footerQuickQuote")} <ArrowUpRight className="h-4 w-4" />
@@ -61,8 +62,7 @@ export function Footer() {
         </div>
       </div>
       <div className="mx-auto mt-12 flex max-w-7xl flex-col justify-between gap-4 border-t border-white/10 pt-6 text-xs text-white/42 md:flex-row">
-        <p>{t("footerCopyright")}</p>
-        <p>{t("footerSubtitle")}</p>
+        <p>© 2026 YER6 Zemin Mühendislik. Tüm hakları saklıdır.</p>
       </div>
     </footer>
   );
