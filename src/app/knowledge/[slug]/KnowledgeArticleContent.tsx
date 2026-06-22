@@ -7,13 +7,16 @@ import { ArticleFaq } from "@/components/ArticleFaq";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { TechnicalDisclaimer } from "@/components/TechnicalDisclaimer";
 import { ShareLinks } from "@/components/ShareLinks";
+import { cityPages } from "@/lib/cityContent";
+import { siteConfig } from "@/lib/siteConfig";
 import { publishedKnowledgeArticles } from "@/data/knowledge";
 import { useLanguage } from "@/components/LanguageProvider";
 
 export function KnowledgeArticleContent({ article }: { article: KnowledgeArticle }) {
   const { t } = useLanguage();
   const related = publishedKnowledgeArticles.filter((other) => article.relatedSlugs.includes(other.slug));
-  const canonical = `https://www.yer6zemin.com.tr/knowledge/${article.slug}`;
+  const canonical = `${siteConfig.siteUrl}/knowledge/${article.slug}`;
+  const relatedCities = cityPages.filter((page) => page.articleSlugs.includes(article.slug)).slice(0, 5);
 
   return (
     <main>
@@ -63,6 +66,18 @@ export function KnowledgeArticleContent({ article }: { article: KnowledgeArticle
                     ))}
                   </div>
                 </div>
+                {relatedCities.length > 0 ? (
+                  <div className="rounded-[2rem] border border-white/10 bg-white/[0.03] p-6">
+                    <p className="text-xs uppercase tracking-[0.3em] text-gold-200">Şehir Uygulamaları</p>
+                    <div className="mt-4 space-y-3">
+                      {relatedCities.map((page) => (
+                        <Link key={page.slug} href={`/sehirler/${page.slug}`} className="block text-white/70 hover:text-white">
+                          {page.city} zemin güçlendirme
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                ) : null}
               </div>
             </aside>
           </div>

@@ -76,7 +76,7 @@ export const dictionary = {
     aboutVisionTitle: "Vizyon",
     aboutVisionText: "Türkiye, Avrupa ve MENA bölgesinde geoteknik saha uygulamalarında premium kalite standardını temsil eden, dijital takipli ve ölçülebilir performans odaklı lider marka olmak.",
     aboutMissionTitle: "Misyon",
-    aboutMissionText: "Zorlu zemin koşullarını güvenli, ekonomik ve izlenebilir çözümlörel dönüştürmek; yatırımcıya karar netliği, sahaya operasyon disiplini, projeye uzun ömürlü performans kazandırmak.",
+    aboutMissionText: "Zorlu zemin koşullarını güvenli, ekonomik ve izlenebilir çözümlere dönüştürmek; yatırımcıya karar netliği, sahaya operasyon disiplini, projeye uzun ömürlü performans kazandırmak.",
     aboutTeamEyebrow: "Mühendislik Ekibi",
     aboutTeamTitle: "Tasarım, saha ve kalite ekipleri tek akışta.",
     aboutCertsEyebrow: "Belgeler",
@@ -126,7 +126,7 @@ export const dictionary = {
     svc_dsm_summary: "Derin zemin karıştırma ile taşıma kapasitesi ve oturma performansı kontrollü iyileştirme.",
     svc_dsm_detail: "Yumuşak kil, gevşek kum ve dolgu alanlarında düşük vibrasyonlu, seri üretimli çözüm.",
     svc_dsm_spec1: "Çimento bağlayıcı tasarımı",
-    svc_dsm_spec2: "Laboratuvar mix dizaynı",
+    svc_dsm_spec2: "Laboratuvar karışım tasarımı",
     svc_dsm_spec3: "Kolon kalite kaydı",
     svc_fore_kazik_title: "Fore Kazık",
     svc_fore_kazik_summary: "Büyük çaplı temeller, derin kazılar ve yüksek taşıma kapasitesi için rotary delgi uygulamaları.",
@@ -230,7 +230,7 @@ export const dictionary = {
     eq_kr300_spec2: "2.000 mm çap",
     eq_kr300_spec3: "68 m maksimum derinlik",
     eq_kr300_output: "Ağır temel imalatı",
-    eq_anchor_name: "Kompakt Ankraj ve Mini Kazik Paleti",
+    eq_anchor_name: "Kompakt Ankraj ve Mini Kazık Paleti",
     eq_anchor_type: "Ankraj ve Mini Kazık",
     eq_anchor_spec1: "Dar alan erişimi",
     eq_anchor_spec2: "Yüksek hızlı tij değişimi",
@@ -246,7 +246,7 @@ export const dictionary = {
     techSensor: "Saha Sensörleri",
     techSensorCopy: "Dikeylik, basınç, debi ve derinlik verileri.",
     techLab: "Laboratuvar Veri Havuzu",
-    techLabCopy: "Mix dizaynı, karot ve mukavemet sonuçları.",
+    techLabCopy: "Karışım tasarımı, karot ve mukavemet sonuçları.",
     techQA: "Kalite Kabul",
     techQACopy: "Yükleme, süreklilik ve performans test planları.",
     techReport: "Canlı Raporlama",
@@ -347,7 +347,7 @@ export const dictionary = {
     /* ── SHARE ── */
     shareLabel: "Paylaş",
     shareCopy: "Bağlantıyı kopyala",
-    shareCopied: "Kopyalanma!"
+    shareCopied: "Kopyalandı!"
   },
   en: {
     /* ── NAV ── */

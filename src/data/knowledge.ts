@@ -24,7 +24,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
           {
             type: "paragraph",
             content:
-              "Jet Grout, yüksek basınçlı su ve çimento miksinin aynı anda zemine enjekte edilmesiyle zemin-çimento karışımı oluşturan bir geoteknik uygulamadır. Bu yöntem, zemin içinde kolonlar oluşturarak taşıma kapasitesini ve stabiliteyi artırır."
+              "Jet Grout, yüksek basınçlı su ve çimento karışımının aynı anda zemine enjekte edilmesiyle zemin-çimento karışımı oluşturan bir geoteknik uygulamadır. Bu yöntem, zemin içinde kolonlar oluşturarak taşıma kapasitesini ve stabiliteyi artırır."
           },
           {
             type: "paragraph",
@@ -49,7 +49,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
               "Delgi makinesi ile kolon hattının açılması",
               "Jet başlığının zemine yerleştirilmesi",
               "Yüksek basınçlı çimento karışımının enjekte edilmesi",
-              "Kolon yaşarken kontrollü geri çekilme"
+              "Kolon oluşurken kontrollü geri çekilme"
             ]
           },
           {
@@ -173,7 +173,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
       "jet grout nedir",
       "jet grout uygulama aşamaları",
       "zemin iyileştirme",
-      "zımn güçlendirme",
+      "zemin güçlendirme",
       "geoteknik enjeksiyon"
     ],
     published: true
@@ -258,7 +258,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
           {
             type: "paragraph",
             content:
-              "Jet Grout sahasında delgi makinesi, yüksek basınç pompası, çimento mikseri ve enjeksiyon manifoldu arasında uyumlu bir akış sağlanmalıdır. Bağlantı hatalarına açık bölgeler sürekli kontrol edilmeli."
+              "Jet Grout sahasında delgi makinesi, yüksek basınç pompası, çimento mikseri ve enjeksiyon manifoldu arasında uyumlu bir akış sağlanmalıdır. Bağlantı hatalarına açık bölgeler sürekli kontrol edilmelidir."
           },
           {
             type: "warning",
@@ -329,7 +329,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
           {
             type: "paragraph",
             content:
-              "Jet başlığı geri çekilirken enjeksiyon basıncı kontrollü olarak devam eder. Bu hareket, kolonun sürekli liğini ve hedef çapta oluşmasını sağlar."
+              "Jet başlığı geri çekilirken enjeksiyon basıncı kontrollü olarak devam eder. Bu hareket, kolonun sürekliliğini ve hedef çapta oluşmasını sağlar."
           },
           {
             type: "note",
@@ -439,7 +439,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
           {
             type: "paragraph",
             content:
-              "Çakıllı zeminlerde Jet Grout kolon kolon sürekliliğini sağlamak zordur. Bu durumda yüksek enerjili jet ve uygun karışım tasarımı gerekir. Çakıl boyutu ve geometri dikkatlice değerlendirilmelidir."
+              "Çakıllı zeminlerde Jet Grout kolon sürekliliğini sağlamak zordur. Bu durumda yüksek enerjili jet ve uygun karışım tasarımı gerekir. Çakıl boyutu ve geometri dikkatlice değerlendirilmelidir."
           },
           {
             type: "warning",
@@ -463,7 +463,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
             items: [
               "Karışım oranının ayarlanması",
               "Kolon çapı kontrolü",
-              "Saha kararliliğinin izlenmesi"
+              "Saha kararlılığının izlenmesi"
             ]
           }
         ]
@@ -631,7 +631,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
           "Kolon çapı hesaplaması zemin koşulları, taşıma gereksinimleri ve enjeksiyon parametreleri dikkate alınarak yapılır. Proje spesifikasyonları saha verilerine göre ayarlanmalıdır."
       },
       {
-        question: "Küçük çaplı kolonlar her zaman ekonomiktir mi?",
+        question: "Küçük çaplı kolonlar her zaman ekonomik midir?",
         answer:
           "Daha küçük çaplı kolonlar malzeme açısından avantajlı olabilir, ancak yeterli taşıma kapasitesi sağlanmalı ve süreklilik kontrolü yapılmalıdır."
       }
@@ -1102,7 +1102,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
       {
         question: "Uygulama sırasında hangi kalite kriterleri takip edilir?",
         answer:
-          "Sütun çapı, karışım dozajı, sıkıştırma seviyesi ve karot testleri gibi kriterler takip edilir."
+          "Sütun çapı, karışım dozajı, karıştırma seviyesi ve karot testleri gibi kriterler takip edilir."
       }
     ],
     relatedSlugs: ["jet-grout-ve-dsm-farki", "dsm-malzeme-secinimi"],
@@ -1216,7 +1216,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
           {
             type: "paragraph",
             content:
-              "Yöntem seçimi, zemin özelliklerine, projenin hedeflerine ve ekonomik sınırlandırmalara göre yapılır. Doğru yöntem, uygulama başarısını doğrudan etkiler."
+              "Yöntem seçimi, zemin özelliklerine, projenin hedeflerine ve ekonomik sınırlamalara göre yapılır. Doğru yöntem, uygulama başarısını doğrudan etkiler."
           },
           {
             type: "note",
@@ -1283,7 +1283,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
           {
             type: "paragraph",
             content:
-              "Uygulama planı, iş programı, kaynak yönetimi ve kalite kontrol adımlarını kapsar. Her aşama belgelemeli ve saha denetimleri ile desteklenmelidir."
+              "Uygulama planı, iş programı, kaynak yönetimi ve kalite kontrol adımlarını kapsar. Her aşama belgelenmeli ve saha denetimleri ile desteklenmelidir."
           },
           {
             type: "note",
@@ -1322,7 +1322,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     updatedAt: "2026-06-21",
     heroLabel: "Risk Yönetimi",
     introduction:
-      "Zemin iyileştirme sürecinde riskler saha koşullarından tedarik zincirine kadar uzanır. Projeye özel risk yönetimi, uygulamanın başarısını arttırır.",
+      "Zemin iyileştirme sürecinde riskler saha koşullarından tedarik zincirine kadar uzanır. Projeye özel risk yönetimi, uygulamanın başarısını artırır.",
     sections: [
       {
         id: "risk-identification",

@@ -9,11 +9,11 @@ const siteUrl = siteConfig.siteUrl;
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "YER6 Zemin Güçlendirme ve Jeoteknik Mühendislik",
+    default: "YER6 Zemin Güçlendirme, Jet Grout ve Fore Kazık",
     template: "%s | YER6"
   },
   description:
-    "YER6; jet grout, DSM, fore kazık, mini kazık, ankraj, iksa sistemleri ve geoteknik danışmanlık alanlarında premium zemin güçlendirme çözümleri sunar.",
+    "YER6; zemin güçlendirme, zemin iyileştirme, jet grout, fore kazık, DSM zemin iyileştirme, enjeksiyon ve temel güçlendirme çözümleri sunar.",
   keywords: [
     "zemin güçlendirme",
     "jet grout",
@@ -21,13 +21,15 @@ export const metadata: Metadata = {
     "deep soil mixing",
     "fore kazık",
     "mini kazık",
+    "enjeksiyon",
+    "temel güçlendirme",
+    "deprem bölgesi zemin güçlendirme",
     "ankraj",
     "iksa sistemleri",
     "geoteknik mühendislik",
     "YER6"
   ],
   alternates: {
-    canonical: "/",
     languages: {
       tr: "/",
       en: "/?lang=en",
@@ -37,11 +39,10 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "tr_TR",
-    url: siteUrl,
     siteName: "YER6",
-    title: "YER6 Zemin Güçlendirme ve Jeoteknik Mühendislik",
+    title: "YER6 Zemin Güçlendirme, Jet Grout ve Fore Kazık",
     description:
-      "Geleceğin yapıları güçlü zeminlerle başlar. Jet grout, DSM, piling, ankraj ve iksa sistemlerinde premium mühendislik.",
+      "Zemin güçlendirme, zemin iyileştirme, jet grout, DSM, fore kazık, enjeksiyon ve temel güçlendirme projelerinde mühendislik odaklı saha uygulaması.",
     images: [
       {
         url: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1600&q=80",
@@ -54,7 +55,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "YER6 Zemin Güçlendirme",
-    description: "Premium geoteknik mühendislik, zemin güçlendirme ve temel sistemleri."
+    description: "Jet grout, DSM zemin iyileştirme, fore kazık, enjeksiyon ve temel güçlendirme çözümleri."
   }
 };
 
@@ -67,9 +68,11 @@ export const viewport: Viewport = {
 
 const organizationSchema = {
   "@context": "https://schema.org",
-  "@type": "EngineeringService",
+  "@type": ["Organization", "LocalBusiness", "EngineeringService"],
   name: "YER6 Zemin Güçlendirme ve Jeoteknik Mühendislik",
   url: siteUrl,
+  image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1600&q=80",
+  priceRange: "$$",
   areaServed: ["TR", "EU", "MENA"],
   address: {
     "@type": "PostalAddress",

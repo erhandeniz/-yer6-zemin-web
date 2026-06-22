@@ -1,18 +1,21 @@
 import type { Metadata } from "next";
 import { KnowledgeContent } from "./KnowledgeContent";
+import { siteConfig } from "@/lib/siteConfig";
+
+const pageUrl = `${siteConfig.siteUrl}/knowledge`;
 
 export const metadata: Metadata = {
-  title: "Zemin Mühendisliği Bilgi Merkezi",
+  title: "Zemin Güçlendirme Bilgi Merkezi",
   description:
-    "Jet Grout, Fore Kazık, DSM ve zemin iyileştirme uygulamalarını teknik bir dille ele alan YER6 bilgi kaynakları.",
+    "Jet grout, fore kazık, DSM zemin iyileştirme, enjeksiyon, temel güçlendirme ve kalite kontrol konularında teknik YER6 makaleleri.",
   alternates: {
-    canonical: "/knowledge"
+    canonical: pageUrl
   },
   openGraph: {
-    title: "Zemin Mühendisliği Bilgi Merkezi | YER6",
+    title: "Zemin Güçlendirme Bilgi Merkezi | YER6",
     description:
-      "Jet Grout, Fore Kazık, DSM ve zemin iyileştirme uygulamalarını teknik bir dille ele alan YER6 bilgi kaynakları.",
-    url: "https://www.yer6zemin.com.tr/knowledge"
+      "Jet grout, fore kazık, DSM zemin iyileştirme, enjeksiyon, temel güçlendirme ve kalite kontrol konularında teknik YER6 makaleleri.",
+    url: pageUrl
   }
 };
 

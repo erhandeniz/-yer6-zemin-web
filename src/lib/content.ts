@@ -35,14 +35,14 @@ export const metrics = [
 ];
 
 export const clientLogos = [
-  "Kamu Altyapi",
-  "Endustriyel Tesis",
-  "Ulasim",
+  "Kamu Altyapı",
+  "Endüstriyel Tesis",
+  "Ulaşım",
   "Liman",
   "Enerji",
   "Konut",
   "Ticari Proje",
-  "Deprem Guclendirme"
+  "Deprem Güçlendirme"
 ];
 
 export const services = [
@@ -63,7 +63,7 @@ export const services = [
     title: "DSM",
     summary: "Derin zemin karıştırma ile taşıma kapasitesi ve oturma performansı kontrollü iyileştirme.",
     detail: "Yumuşak kil, gevşek kum ve dolgu alanlarında düşük vibrasyonlu, seri üretimli çözüm.",
-    specs: ["Çimento bağlayıcı tasarımı", "Laboratuvar mix dizaynı", "Kolon kalite kaydı"]
+    specs: ["Çimento bağlayıcı tasarımı", "Laboratuvar karışım tasarımı", "Kolon kalite kaydı"]
   },
   {
     slug: "fore-kazik",
@@ -136,7 +136,7 @@ export const projects = [
     category: "DSM",
     location: "Kocaeli",
     year: "2026",
-    area: "118.000 m2",
+    area: "118.000 m²",
     metric: "42.000 m DSM kolon",
     // Kept for metadata (default TR)
     title: "Marmara Lojistik Merkezi",
@@ -183,7 +183,7 @@ export const projects = [
     location: "İstanbul",
     year: "2024",
     area: "58 kat",
-    metric: "1.240 m3 beton günlük pik",
+    metric: "1.240 m³ beton günlük pik",
     title: "İstanbul Karma Kullanım Kulesi",
     summary: "Yüksek yapı temel sistemi için büyük çaplı fore kazık ve baret entegrasyonu.",
     challenge: "Sınırlı saha lojistiği ve yoğun beton-donatı koordinasyonu.",
