@@ -10,7 +10,7 @@ export function CinematicHero() {
   const { t } = useLanguage();
 
   return (
-    <section className="relative min-h-screen overflow-hidden pt-24">
+    <section className="relative min-h-screen overflow-hidden pt-24 dark-theme">
       <div className="absolute inset-0">
         <video
           className="h-full w-full object-cover opacity-42"

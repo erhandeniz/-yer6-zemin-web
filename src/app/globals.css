@@ -152,3 +152,280 @@ textarea {
     transform: translateX(-50%);
   }
 }
+
+/* ──────────────────────────────────────────────────────────────────────────
+   LIGHT THEME UTILITY OVERRIDES
+   ────────────────────────────────────────────────────────────────────────── */
+
+/* Page Background & Global Gradients */
+.light body {
+  background:
+    radial-gradient(circle at top left, rgba(145, 97, 23, 0.08), transparent 28rem),
+    radial-gradient(circle at 80% 15%, rgba(16, 17, 18, 0.03), transparent 22rem),
+    var(--background) !important;
+}
+
+/* Background Color Class Overrides */
+.light .bg-obsidian,
+.light .bg-obsidian\/95,
+.light .bg-obsidian\/90,
+.light .bg-obsidian\/72,
+.light .bg-obsidian\/70,
+.light .bg-obsidian\/62,
+.light .bg-obsidian\/60,
+.light .bg-obsidian\/54,
+.light .bg-obsidian\/48,
+.light .bg-obsidian\/8,
+.light .bg-graphite,
+.light .bg-graphite\/80,
+.light .bg-graphite\/50,
+.light .bg-graphite\/40,
+.light .bg-coal,
+.light .bg-coal\/90,
+.light .bg-coal\/50,
+.light .bg-coal\/40,
+.light .bg-white\/\[0\.045\],
+.light .bg-white\/\[0\.04\],
+.light .bg-white\/\[0\.03\],
+.light .bg-white\/\[0\.025\],
+.light .bg-white\/5,
+.light .bg-white\/8,
+.light .bg-white\/10,
+.light .bg-white\/12,
+.light .bg-white\/20,
+.light .bg-white\/40,
+.light .bg-white\/50,
+.light .bg-white\/60,
+.light .bg-white\/70,
+.light .bg-white\/80 {
+  background-color: #ffffff !important;
+}
+
+/* Soft light-theme gray backgrounds for subtle states */
+.light .bg-white\/5,
+.light .bg-white\/8,
+.light .bg-white\/10,
+.light .bg-white\/\[0\.03\],
+.light .bg-white\/\[0\.025\] {
+  background-color: #fcfaf6 !important;
+}
+
+/* Card Borders & Outlines */
+.light .border-white\/10,
+.light .border-white\/20,
+.light .border-white\/5,
+.light .border-white\/8,
+.light .border-white\/16,
+.light .border-obsidian\/20 {
+  border-color: rgba(16, 17, 18, 0.08) !important;
+}
+
+/* Component Panels (Cards, Sidebar, SSS) Shadows */
+.light .lux-panel,
+.light .bg-obsidian\/70,
+.light .bg-obsidian\/72,
+.light .bg-obsidian\/62,
+.light .bg-obsidian\/60,
+.light .bg-obsidian\/95,
+.light .bg-white\/\[0\.045\],
+.light .bg-white\/\[0\.04\],
+.light .bg-white\/\[0\.03\],
+.light .bg-white\/5,
+.light .bg-white\/8,
+.light .bg-white\/10 {
+  box-shadow: 0 10px 30px rgba(16, 17, 18, 0.045) !important;
+  border-color: rgba(16, 17, 18, 0.08) !important;
+}
+
+/* Text Colors Mapping */
+.light .text-white {
+  color: #101112 !important;
+}
+.light .text-white\/90 { color: rgba(16, 17, 18, 0.9) !important; }
+.light .text-white\/80 { color: rgba(16, 17, 18, 0.8) !important; }
+.light .text-white\/75 { color: rgba(16, 17, 18, 0.75) !important; }
+.light .text-white\/74 { color: rgba(16, 17, 18, 0.74) !important; }
+.light .text-white\/72 { color: rgba(16, 17, 18, 0.72) !important; }
+.light .text-white\/70 { color: rgba(16, 17, 18, 0.7) !important; }
+.light .text-white\/68 { color: rgba(16, 17, 18, 0.68) !important; }
+.light .text-white\/64 { color: rgba(16, 17, 18, 0.64) !important; }
+.light .text-white\/62 { color: rgba(16, 17, 18, 0.62) !important; }
+.light .text-white\/60 { color: rgba(16, 17, 18, 0.6) !important; }
+.light .text-white\/58 { color: rgba(16, 17, 18, 0.58) !important; }
+.light .text-white\/56 { color: rgba(16, 17, 18, 0.56) !important; }
+.light .text-white\/55 { color: rgba(16, 17, 18, 0.55) !important; }
+.light .text-white\/52 { color: rgba(16, 17, 18, 0.52) !important; }
+.light .text-white\/50 { color: rgba(16, 17, 18, 0.5) !important; }
+.light .text-white\/48 { color: rgba(16, 17, 18, 0.48) !important; }
+.light .text-white\/46 { color: rgba(16, 17, 18, 0.46) !important; }
+.light .text-white\/42 { color: rgba(16, 17, 18, 0.42) !important; }
+.light .text-white\/40 { color: rgba(16, 17, 18, 0.4) !important; }
+.light .text-white\/30 { color: rgba(16, 17, 18, 0.3) !important; }
+.light .text-champagne { color: #101112 !important; }
+.light .text-platinum { color: #101112 !important; }
+
+/* Muted / Subtitle text */
+.light .text-white\/72,
+.light .text-white\/64,
+.light .text-white\/62,
+.light .text-white\/58,
+.light .text-white\/52 {
+  color: #4c525c !important;
+}
+
+/* Gold Text Overrides for High Contrast on White */
+.light .text-gold-100,
+.light .text-gold-200,
+.light .text-gold-300,
+.light .text-gold-400 {
+  color: var(--gold) !important;
+}
+
+/* Gold Text Gradients */
+.light .gold-text {
+  background: linear-gradient(120deg, #916117, #d8a42d 48%, #583a0e);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent !important;
+}
+
+/* Input Fields & Textareas */
+.light input,
+.light select,
+.light textarea {
+  color: #101112 !important;
+  background-color: #ffffff !important;
+  border-color: rgba(16, 17, 18, 0.15) !important;
+}
+
+.light input::placeholder,
+.light textarea::placeholder {
+  color: rgba(16, 17, 18, 0.45) !important;
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
+   DARK THEME CONTAINER ISOLATION (.dark-theme)
+   ────────────────────────────────────────────────────────────────────────── */
+
+/* Forces any child inside a .dark-theme selector to retain the precise dark theme color variables and rules */
+.light .dark-theme,
+.light .dark-theme * {
+  color-scheme: dark !important;
+}
+
+.light .dark-theme .text-white { color: #ffffff !important; }
+.light .dark-theme .text-white\/90 { color: rgba(255, 255, 255, 0.9) !important; }
+.light .dark-theme .text-white\/80 { color: rgba(255, 255, 255, 0.8) !important; }
+.light .dark-theme .text-white\/75 { color: rgba(255, 255, 255, 0.75) !important; }
+.light .dark-theme .text-white\/74 { color: rgba(255, 255, 255, 0.74) !important; }
+.light .dark-theme .text-white\/72 { color: rgba(255, 255, 255, 0.72) !important; }
+.light .dark-theme .text-white\/70 { color: rgba(255, 255, 255, 0.7) !important; }
+.light .dark-theme .text-white\/68 { color: rgba(255, 255, 255, 0.68) !important; }
+.light .dark-theme .text-white\/64 { color: rgba(255, 255, 255, 0.64) !important; }
+.light .dark-theme .text-white\/62 { color: rgba(255, 255, 255, 0.62) !important; }
+.light .dark-theme .text-white\/60 { color: rgba(255, 255, 255, 0.6) !important; }
+.light .dark-theme .text-white\/58 { color: rgba(255, 255, 255, 0.58) !important; }
+.light .dark-theme .text-white\/55 { color: rgba(255, 255, 255, 0.55) !important; }
+.light .dark-theme .text-white\/52 { color: rgba(255, 255, 255, 0.52) !important; }
+.light .dark-theme .text-white\/50 { color: rgba(255, 255, 255, 0.5) !important; }
+.light .dark-theme .text-white\/48 { color: rgba(255, 255, 255, 0.48) !important; }
+.light .dark-theme .text-white\/46 { color: rgba(255, 255, 255, 0.46) !important; }
+.light .dark-theme .text-white\/42 { color: rgba(255, 255, 255, 0.42) !important; }
+.light .dark-theme .text-white\/40 { color: rgba(255, 255, 255, 0.4) !important; }
+.light .dark-theme .text-white\/30 { color: rgba(255, 255, 255, 0.3) !important; }
+.light .dark-theme .text-champagne { color: #f5efe3 !important; }
+.light .dark-theme .text-platinum { color: #f6f7f8 !important; }
+
+/* Retain standard gold values inside dark theme */
+.light .dark-theme .text-gold-100 { color: #ffedb4 !important; }
+.light .dark-theme .text-gold-200 { color: #fedb74 !important; }
+.light .dark-theme .text-gold-300 { color: #f5c243 !important; }
+.light .dark-theme .text-gold-400 { color: #d8a42d !important; }
+.light .dark-theme .gold-text {
+  background: linear-gradient(120deg, #fff7d1, #d8a42d 48%, #8b611e);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent !important;
+}
+
+/* Retain standard dark background colors inside dark theme */
+.light .dark-theme .bg-obsidian { background-color: #070707 !important; }
+.light .dark-theme .bg-obsidian\/95 { background-color: rgba(7, 7, 7, 0.95) !important; }
+.light .dark-theme .bg-obsidian\/90 { background-color: rgba(7, 7, 7, 0.90) !important; }
+.light .dark-theme .bg-obsidian\/72 { background-color: rgba(7, 7, 7, 0.72) !important; }
+.light .dark-theme .bg-obsidian\/70 { background-color: rgba(7, 7, 7, 0.70) !important; }
+.light .dark-theme .bg-obsidian\/62 { background-color: rgba(7, 7, 7, 0.62) !important; }
+.light .dark-theme .bg-obsidian\/60 { background-color: rgba(7, 7, 7, 0.60) !important; }
+.light .dark-theme .bg-obsidian\/54 { background-color: rgba(7, 7, 7, 0.54) !important; }
+.light .dark-theme .bg-obsidian\/48 { background-color: rgba(7, 7, 7, 0.48) !important; }
+.light .dark-theme .bg-obsidian\/8 { background-color: rgba(7, 7, 7, 0.08) !important; }
+.light .dark-theme .bg-graphite { background-color: #111315 !important; }
+.light .dark-theme .bg-coal { background-color: #1a1a1a !important; }
+
+/* Translucent whites inside dark theme */
+.light .dark-theme .bg-white\/\[0\.045\] { background-color: rgba(255, 255, 255, 0.045) !important; }
+.light .dark-theme .bg-white\/\[0\.04\] { background-color: rgba(255, 255, 255, 0.04) !important; }
+.light .dark-theme .bg-white\/\[0\.03\] { background-color: rgba(255, 255, 255, 0.03) !important; }
+.light .dark-theme .bg-white\/\[0\.025\] { background-color: rgba(255, 255, 255, 0.025) !important; }
+.light .dark-theme .bg-white\/5 { background-color: rgba(255, 255, 255, 0.05) !important; }
+.light .dark-theme .bg-white\/8 { background-color: rgba(255, 255, 255, 0.08) !important; }
+.light .dark-theme .bg-white\/10 { background-color: rgba(255, 255, 255, 0.1) !important; }
+.light .dark-theme .bg-white\/12 { background-color: rgba(255, 255, 255, 0.12) !important; }
+.light .dark-theme .bg-white\/20 { background-color: rgba(255, 255, 255, 0.2) !important; }
+
+/* Borders inside dark theme */
+.light .dark-theme .border-white\/10 { border-color: rgba(255, 255, 255, 0.1) !important; }
+.light .dark-theme .border-white\/20 { border-color: rgba(255, 255, 255, 0.2) !important; }
+.light .dark-theme .border-white\/5 { border-color: rgba(255, 255, 255, 0.05) !important; }
+.light .dark-theme .border-white\/8 { border-color: rgba(255, 255, 255, 0.08) !important; }
+.light .dark-theme .border-white\/16 { border-color: rgba(255, 255, 255, 0.16) !important; }
+.light .dark-theme .border-gold-300\/25 { border-color: rgba(245, 194, 67, 0.25) !important; }
+.light .dark-theme .border-gold-300\/30 { border-color: rgba(245, 194, 67, 0.30) !important; }
+
+/* BRAND LOGO & TYPOGRAPHY STYLING */
+.brand-logo-emblem {
+  transition: all 0.3s ease !important;
+}
+.light .brand-logo-emblem {
+  border-color: rgba(145, 97, 23, 0.45) !important;
+  background-color: rgba(145, 97, 23, 0.12) !important;
+}
+.brand-logo-text {
+  transition: all 0.3s ease !important;
+}
+.light .brand-logo-text {
+  color: #916117 !important;
+  font-weight: 800 !important;
+}
+.brand-title {
+  display: block;
+  font-size: 1.22rem !important; /* Premium scaling */
+  font-weight: 800 !important; /* font-extrabold */
+  letter-spacing: 0.22em !important;
+  color: #ffffff !important;
+  line-height: 1.15 !important;
+  text-transform: uppercase !important;
+  transition: all 0.3s ease !important;
+}
+.light .brand-title {
+  color: #101112 !important; /* High contrast dark mode/light mode adaptive color */
+}
+.brand-subtitle {
+  display: block;
+  font-size: 11.5px !important;
+  font-weight: 600 !important; /* font-semibold */
+  letter-spacing: 0.28em !important;
+  color: rgba(254, 219, 116, 0.8) !important; /* gold-200/80 */
+  text-transform: uppercase !important;
+  margin-top: 0.15rem !important; /* mt-0.5 spacing */
+  line-height: 1.15 !important;
+  transition: all 0.3s ease !important;
+}
+.light .brand-subtitle {
+  color: #916117 !important; /* High contrast gold/bronze color matching light theme */
+  font-weight: 700 !important; /* Extra weight for crisp readability on light background */
+}
+
+
+
+

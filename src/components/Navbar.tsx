@@ -34,14 +34,14 @@ export function Navbar() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 px-3 py-3 sm:px-5">
       <nav className="mx-auto flex max-w-7xl items-center justify-between rounded-full border border-white/10 bg-obsidian/72 px-4 py-3 shadow-glass backdrop-blur-2xl">
-        <Link href="/" className="group flex items-center gap-3" aria-label="YER6 home">
-          <span className="relative grid h-10 w-10 place-items-center overflow-hidden rounded-full border border-gold-300/35 bg-gold-400/10">
+        <Link href="/" className="group flex items-center gap-3.5" aria-label="YER6 home">
+          <span className="relative grid h-[52px] w-[52px] place-items-center overflow-hidden rounded-full border border-gold-300/35 bg-gold-400/10 brand-logo-emblem">
             <span className="absolute h-16 w-16 rotate-45 bg-gradient-to-r from-transparent via-gold-300/40 to-transparent animate-shimmer" />
-            <span className="relative text-sm font-bold text-gold-100">Y6</span>
+            <span className="relative text-[17px] font-bold text-gold-100 brand-logo-text">Y6</span>
           </span>
-          <span className="leading-none">
-            <span className="block text-base font-semibold tracking-[0.22em] text-white">YER6</span>
-            <span className="hidden text-[10px] uppercase tracking-[0.28em] text-gold-200/80 sm:block">Geotechnical</span>
+          <span className="leading-tight">
+            <span className="block brand-title">YER6</span>
+            <span className="hidden brand-subtitle sm:block">Geotechnical</span>
           </span>
         </Link>
 
@@ -101,38 +101,59 @@ export function Navbar() {
         </div>
       </nav>
 
+      {/* Mobile Menu */}
       <AnimatePresence>
         {menuOpen ? (
           <motion.div
-            initial={{ opacity: 0, y: -12 }}
+            initial={{ opacity: 0, y: -18 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -12 }}
+            exit={{ opacity: 0, y: -18 }}
+            transition={{ duration: 0.25 }}
             className="mx-auto mt-3 max-w-7xl rounded-3xl border border-white/10 bg-obsidian/95 p-4 shadow-glass backdrop-blur-xl lg:hidden"
           >
             <div className="grid gap-2">
-              {navItems.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  onClick={() => setMenuOpen(false)}
-                  className="rounded-2xl px-4 py-3 text-white/82 transition hover:bg-white/8"
-                >
-                  {t(item.key)}
-                </Link>
-              ))}
-            </div>
-            <div className="mt-4 flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 p-2">
-              {locales.map((item) => (
-                <button
-                  key={item}
-                  onClick={() => setLocale(item as Locale)}
-                  className={`flex-1 rounded-xl px-3 py-2 text-sm uppercase ${
-                    locale === item ? "bg-gold-300 text-obsidian" : "text-white/70"
-                  }`}
-                >
-                  {item}
-                </button>
-              ))}
+              {navItems.map((item) => {
+                const active = item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
+                return (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    onClick={() => setMenuOpen(false)}
+                    className={`rounded-2xl px-4 py-3 text-sm font-semibold transition ${
+                      active ? "bg-white/10 text-gold-100" : "text-white/70 hover:bg-white/5 hover:text-white"
+                    }`}
+                  >
+                    {t(item.key)}
+                  </Link>
+                );
+              })}
+              <div className="h-px bg-white/8 my-2" />
+              <div className="flex items-center justify-between px-4 py-2">
+                <span className="text-xs uppercase tracking-[0.2em] text-white/50">{t("language")}</span>
+                <div className="flex gap-2">
+                  {locales.map((item) => (
+                    <button
+                      key={item}
+                      onClick={() => {
+                        setLocale(item as Locale);
+                        setMenuOpen(false);
+                      }}
+                      className={`rounded-full px-3 py-1.5 text-xs uppercase transition ${
+                        locale === item ? "bg-gold-300 text-obsidian" : "text-white/70 hover:text-white"
+                      }`}
+                    >
+                      {item}
+                    </button>
+                  ))}
+                </div>
+              </div>
+              <Link
+                href="/contact"
+                onClick={() => setMenuOpen(false)}
+                className="mt-3 grid place-items-center rounded-2xl bg-gold-300 py-3 text-sm font-semibold text-obsidian shadow-gold"
+              >
+                {t("quote")}
+              </Link>
             </div>
           </motion.div>
         ) : null}
