@@ -10,25 +10,31 @@ const openGraphImage = `${siteUrl}/opengraph-image.png`;
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "YER6 Zemin Güçlendirme, Jet Grout ve Fore Kazık",
-    template: "%s | YER6"
+    default: "YER6 Zemin Güçlendirme, Jet Grout ve Fore Kazık | Ankara",
+    template: "%s | YER6 Zemin Mühendislik"
   },
   description:
-    "YER6; zemin güçlendirme, zemin iyileştirme, jet grout, fore kazık, DSM zemin iyileştirme, enjeksiyon ve temel güçlendirme çözümleri sunar.",
+    "YER6; zemin güçlendirme, zemin iyileştirme, jet grout, fore kazık, DSM, mini kazık, ankraj ve iksa sistemleri alanında Türkiye geneli saha uygulaması sunar.",
   keywords: [
     "zemin güçlendirme",
+    "zemin iyileştirme",
     "jet grout",
+    "jet grout nedir",
     "DSM",
     "deep soil mixing",
     "fore kazık",
+    "fore kazık nedir",
     "mini kazık",
     "enjeksiyon",
     "temel güçlendirme",
     "deprem bölgesi zemin güçlendirme",
     "ankraj",
     "iksa sistemleri",
+    "kazı destek sistemi",
     "geoteknik mühendislik",
-    "YER6"
+    "sıvılaşma zemin güçlendirme",
+    "YER6",
+    "Ankara zemin güçlendirme"
   ],
   alternates: {
     languages: {
@@ -47,23 +53,23 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "tr_TR",
-    siteName: "YER6",
-    title: "YER6 Zemin Güçlendirme, Jet Grout ve Fore Kazık",
+    siteName: "YER6 Zemin Mühendislik",
+    title: "YER6 Zemin Güçlendirme, Jet Grout ve Fore Kazık | Ankara",
     description:
-      "Zemin güçlendirme, zemin iyileştirme, jet grout, DSM, fore kazık, enjeksiyon ve temel güçlendirme projelerinde mühendislik odaklı saha uygulaması.",
+      "Zemin güçlendirme, zemin iyileştirme, jet grout, DSM, fore kazık, mini kazık, ankraj ve iksa sistemleri alanında mühendislik odaklı saha uygulaması.",
     images: [
       {
         url: openGraphImage,
         width: 1200,
         height: 630,
-        alt: "YER6 zemin güçlendirme ve jeoteknik mühendislik logosu"
+        alt: "YER6 zemin güçlendirme ve jeoteknik mühendislik"
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
-    title: "YER6 Zemin Güçlendirme",
-    description: "Jet grout, DSM zemin iyileştirme, fore kazık, enjeksiyon ve temel güçlendirme çözümleri.",
+    title: "YER6 Zemin Güçlendirme | Jet Grout, Fore Kazık, DSM",
+    description: "Jet grout, DSM zemin iyileştirme, fore kazık, mini kazık, ankraj, iksa sistemleri. Türkiye geneli saha uygulaması.",
     images: [openGraphImage]
   }
 };
@@ -75,14 +81,38 @@ export const viewport: Viewport = {
   maximumScale: 5
 };
 
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": `${siteUrl}/#website`,
+  name: "YER6 Zemin Güçlendirme ve Jeoteknik Mühendislik",
+  url: siteUrl,
+  inLanguage: "tr-TR",
+  description: "Jet grout, DSM, fore kazık, mini kazık, ankraj ve iksa sistemleri alanında zemin güçlendirme hizmetleri.",
+  publisher: { "@id": `${siteUrl}/#organization` }
+};
+
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": ["Organization", "LocalBusiness", "EngineeringService"],
+  "@id": `${siteUrl}/#organization`,
   name: "YER6 Zemin Güçlendirme ve Jeoteknik Mühendislik",
+  alternateName: "YER6",
   url: siteUrl,
+  logo: {
+    "@type": "ImageObject",
+    "@id": `${siteUrl}/#logo`,
+    url: `${siteUrl}/icon.png`,
+    width: 512,
+    height: 512,
+    caption: "YER6 Zemin Mühendislik"
+  },
   image: openGraphImage,
+  description: "Zemin güçlendirme, zemin iyileştirme, jet grout, fore kazık, DSM, mini kazık, ankraj ve iksa sistemleri alanında mühendislik odaklı saha uygulaması. Ankara merkezli, Türkiye geneli hizmet.",
+  foundingDate: "2016",
   priceRange: "$$",
-  areaServed: ["TR", "EU", "MENA"],
+  currenciesAccepted: "TRY",
+  areaServed: [{ "@type": "Country", name: "Türkiye" }],
   address: {
     "@type": "PostalAddress",
     streetAddress: siteConfig.address.streetAddress,
@@ -91,17 +121,37 @@ const organizationSchema = {
     postalCode: siteConfig.address.postalCode,
     addressCountry: siteConfig.address.country
   },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 39.7826,
+    longitude: 32.8597
+  },
   telephone: siteConfig.phone.display,
   email: siteConfig.email,
-  serviceType: [
-    "Jet Grout",
-    "Deep Soil Mixing",
-    "Bored Piling",
-    "Mini Piling",
-    "Ground Anchors",
-    "Shoring Systems",
-    "Geotechnical Consulting"
+  contactPoint: [
+    {
+      "@type": "ContactPoint",
+      telephone: siteConfig.phone.display,
+      contactType: "customer service",
+      areaServed: "TR",
+      availableLanguage: ["Turkish", "English"]
+    }
   ],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Zemin Güçlendirme Hizmetleri",
+    itemListElement: [
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Jet Grout Zemin İyileştirme" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "DSM Deep Soil Mixing" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Fore Kazık" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Mini Kazık" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Ankraj Sistemleri" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "İksa Sistemleri" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Zemin İyileştirme" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Geoteknik Danışmanlık" } }
+    ]
+  },
+  sameAs: ["https://www.linkedin.com/company/yer6zemin"],
   slogan: "Geleceğin Yapıları Güçlü Zeminlerle Başlar"
 };
 
@@ -109,6 +159,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="tr" suppressHydrationWarning>
       <body>
+        <Script
+          id="yer6-website-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
         <Script
           id="yer6-organization-schema"
           type="application/ld+json"

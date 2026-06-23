@@ -1564,6 +1564,709 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     relatedSlugs: [],
     keywords: ["jet grout sss", "sık sorulan sorular"],
     published: false
+  },
+  {
+    slug: "fore-kazik-nerelerde-kullanilir",
+    title: "Fore Kazık Nerelerde Kullanılır? Uygulama Alanları ve Koşulları",
+    seoTitle: "Fore Kazık Nerelerde Kullanılır? Uygulama Alanları | YER6",
+    description: "Fore kazık; yüksek yapı temelleri, köprüler, limanlar, derin kazılar ve iksa sistemlerinde taşıma kapasitesi ve stabilite için kullanılır.",
+    excerpt: "Fore kazık, büyük eksenel yük gerektiren yüksek yapılardan köprü ve liman projelerine, derin iksa perdelerinden kıyı yapılarına kadar geniş bir uygulama yelpazesinde tercih edilen temel sistemidir.",
+    category: "Fore Kazık",
+    readingTime: "8 dk",
+    publishedAt: "2026-06-23",
+    updatedAt: "2026-06-23",
+    heroLabel: "Fore Kazık Uygulama Alanları",
+    introduction: "Fore kazık; büyük çaplı, derin ve yüksek kapasiteli bir temel elemanıdır. Zemin koşullarının üstyapı yükünü taşımak için yeterli olmadığı ya da oturma, kapasite ve stabilite risklerinin kabul edilemez düzeyde olduğu her projede fore kazık devreye girer.",
+    sections: [
+      {
+        id: "yuksek-yapilar",
+        title: "Yüksek Yapılar ve Karma Kullanım Projeleri",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Çok katlı yapılarda temel derinleştirilmesi ve yüksek eksenel yük aktarımı için fore kazık en yaygın çözümdür. Özellikle zemin taşıma kapasitesinin yüzeysel temel için yetersiz olduğu ya da sıvılaşma riski taşıyan zeminlerde baret veya kazık grubu sistemleriyle birlikte kullanılır."
+          },
+          {
+            type: "list",
+            title: "Yüksek yapılarda fore kazık gerektiren durumlar",
+            items: [
+              "Zemin taşıma kapasitesinin yüzeysel temel için yetersiz kalması",
+              "Yapı kolonlarına gelen yüksek eksenel ve moment yükleri",
+              "Deprem bölgesinde kapasiteli temel sistemi gereksinimi",
+              "Komşu yapı ve altyapıya minimum etki kısıtı"
+            ]
+          }
+        ]
+      },
+      {
+        id: "kopru-viyaduk",
+        title: "Köprü, Viyadük ve Ulaşım Altyapısı",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Köprü ve viyadük ayak temelleri, yüksek dinamik ve statik yükleri taşımalı, aynı zamanda sismik kuvvetlere dayanmalıdır. Fore kazık; bu yapılarda kaya veya sıkı zemine soket yapılarak yüksek kapasite elde edilmesine imkân tanır."
+          },
+          {
+            type: "note",
+            title: "Kaya soket uygulaması",
+            content: "Köprü ayaklarında kaya soketi, fore kazığın kaya tabakasına en az 3–5 çap derinlikte gömülmesiyle oluşturulur ve çok yüksek uç taşıma kapasitesi sağlar."
+          }
+        ]
+      },
+      {
+        id: "liman-kiyi",
+        title: "Liman, İskele ve Kıyı Yapıları",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Deniz ve kıyı yapılarında yüksek yeraltı suyu, dalga kuvveti ve korozif çevre koşulları nedeniyle fore kazık özel tasarım gerektirir. Bentonit veya polimer destekli delgi, kıyı projelerinde standart yöntemdir."
+          },
+          {
+            type: "list",
+            items: [
+              "Liman iskelesi ve dolfin temelleri",
+              "Sahil duvarı ve zemin güçlendirme",
+              "Denizde dolgu alanı üzerine inşa edilen yapı temelleri",
+              "Kıyı şeridi iksa ve kazı sistemi"
+            ]
+          }
+        ]
+      },
+      {
+        id: "derin-kazi-iksa",
+        title: "Derin Kazı ve İksa Perde Sistemi",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Fore kazık perde duvar, komşu yapılara yakın derin kazılarda yanal yük taşıyıcı eleman olarak kullanılır. Ankraj veya strüt ile birlikte tasarlanan kazıklı perde sistemleri, metro, tünel girişi, bodrum kat kazısı ve altyapı projelerinde standarttır."
+          }
+        ]
+      },
+      {
+        id: "endustriyel",
+        title: "Endüstriyel Tesis ve Enerji Yapıları",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Enerji santrali, petrokimya tesisi, siloları ve depolama yapıları; yüksek noktasal yükler ve titreşim nedeniyle fore kazık gibi derin temel sistemleri gerektirir. Titreşim sönümleme ve fark oturma kontrolü bu projelerde kritik parametrelerdir."
+          }
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "Fore kazık ne zaman tercih edilir?",
+        answer: "Zemin taşıma kapasitesi yetersiz olduğunda, yüksek yapı yükü söz konusu olduğunda, kaya soket gerektiğinde veya derin kazı perdesi oluşturulması gerektiğinde fore kazık tercih edilir."
+      },
+      {
+        question: "Fore kazık minimum çap nedir?",
+        answer: "Fore kazık genellikle 400 mm ile 2000 mm arasında çaplarda yapılır. Yapı türü ve zemin koşullarına göre çap seçilir."
+      },
+      {
+        question: "Mini kazık ile fore kazık arasındaki temel fark nedir?",
+        answer: "Fore kazık büyük çaplı, yüksek kapasiteli ve açık alanlarda yapılan temel elemanıdır. Mini kazık ise dar ve kısıtlı alanlarda kompakt ekipmanla uygulanan küçük çaplı güçlendirme elemanıdır."
+      }
+    ],
+    relatedSlugs: ["fore-kazik-nedir", "fore-kazik-uygulama-asamalari", "fore-kazik-avantajlari"],
+    keywords: [
+      "fore kazık nerelerde kullanılır",
+      "fore kazık uygulama alanları",
+      "fore kazık köprü",
+      "fore kazık liman",
+      "fore kazık yüksek yapı",
+      "derin temel sistemi"
+    ],
+    published: true
+  },
+  {
+    slug: "temel-alti-zemin-guclendirme",
+    title: "Temel Altı Zemin Güçlendirme: Yöntemler ve Uygulama",
+    seoTitle: "Temel Altı Zemin Güçlendirme Yöntemleri | YER6",
+    description: "Mevcut yapıların temel altındaki zayıf zemin; jet grout, mini kazık, enjeksiyon ve DSM ile güçlendirilebilir. Temel altı zemin güçlendirme yöntemleri.",
+    excerpt: "Temel altı zemin güçlendirme; oturma, taşıma kapasitesi kaybı veya sıvılaşma riski nedeniyle mevcut yapının güvenliğini tehdit eden zeminlerin iyileştirilmesidir. Doğru yöntem seçimi zemin koşuluna ve yapı tipine bağlıdır.",
+    category: "Zemin İyileştirme",
+    readingTime: "10 dk",
+    publishedAt: "2026-06-23",
+    updatedAt: "2026-06-23",
+    heroLabel: "Temel Altı Zemin Güçlendirme",
+    introduction: "Mevcut bir yapının altındaki zemin zayıfladığında ya da zemin koşulları daha önce yeterince değerlendirilmediğinde, yapının temel sistemi yeniden güçlendirilmelidir. Bu süreç 'temel altı zemin güçlendirme' ya da teknik literatürde 'underpinning' olarak adlandırılır.",
+    sections: [
+      {
+        id: "neden-gerekli",
+        title: "Temel Altı Zemin Güçlendirme Neden Gereklidir?",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Yapı temelinin altındaki zemin, zaman içinde su etkisi, yük artışı, komşu inşaat veya zemin özelliklerindeki değişimler nedeniyle kapasitesini yitirebilir. Bu durumda yapıda çatlaklar, eğilme ya da aşırı oturma gözlemlenir."
+          },
+          {
+            type: "list",
+            title: "Temel altı güçlendirme gerektiren başlıca durumlar",
+            items: [
+              "Bina yükünün artması (kat ekleme, yük değişikliği)",
+              "Komşu derin kazının zemin gerilme değişimine yol açması",
+              "Yeraltı suyu değişimi ve zemin yıkanması",
+              "Deprem veya titreşim kaynaklı zemin kapasitesi kaybı",
+              "Mevcut zemin raporunun gerçek koşulları yansıtmaması",
+              "Tarihi yapı veya anıt restorasyon projelerinde zemin stabilitesi"
+            ]
+          }
+        ]
+      },
+      {
+        id: "yontemler",
+        title: "Temel Altı Güçlendirme Yöntemleri",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Yöntem seçimi; zemin tipi, yapı yükü, erişim kısıtları ve proje bütçesine göre belirlenir. YER6 aşağıdaki yöntemleri tek başına veya kombinasyon halinde uygular:"
+          },
+          {
+            type: "list",
+            title: "Başlıca yöntemler",
+            items: [
+              "Mini kazık: Dar alanlarda kompakt ekipmanla, düşük titreşimle uygulanan güçlendirme kazıkları",
+              "Jet grout: Mevcut temel altında yüksek basınçlı enjeksiyonla zemin-çimento kolonları",
+              "Kompansasyon enjeksiyonu: Oturma kontrolü için boşluk doldurma enjeksiyonu",
+              "DSM: Geniş alanlarda zemin-çimento karıştırma ile platform güçlendirme",
+              "Geleneksel beton ayak: Etaplı ve kontrollü temel genişletme yöntemi"
+            ]
+          }
+        ]
+      },
+      {
+        id: "jet-grout-underpinning",
+        title: "Jet Grout ile Temel Altı Güçlendirme",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Jet grout, mevcut yapı altında ek kazı gerektirmeden zemin içinde kolonlar oluşturarak kapasiteyi artırır. Kolon geometrisi ve enjeksiyon parametreleri, mevcut temel yükleri ve zemin koşullarına göre tasarlanır."
+          },
+          {
+            type: "note",
+            title: "Etaplı uygulama",
+            content: "Temel altı jet grout uygulamalarında, yapı güvenliğini korumak için kolonlar belirli bir etap sırasına göre üretilmeli; hiçbir zaman tüm temel hattı aynı anda uygulamaya alınmamalıdır."
+          }
+        ]
+      },
+      {
+        id: "mini-kazik-underpinning",
+        title: "Mini Kazık ile Temel Altı Güçlendirme",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Mini kazıklar (mikro kazıklar), mevcut yapı bodrum katında kompakt delgi ekipmanlarıyla uygulanabilir. Mevcut temele bağlantı kafası betonlanarak yükler mini kazıklara aktarılır. Tarihi yapılarda ve bodrum katlarda en yaygın underpinning yöntemidir."
+          }
+        ]
+      },
+      {
+        id: "izleme",
+        title: "İzleme ve Yapı Güvenliği",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Temel altı güçlendirme sürecinde yapı hareketleri hassas nivelmanla ve çatlak ölçerleriyle izlenmelidir. Belirlenen alarm sınırı aşıldığında uygulama durdurularak sorun değerlendirilmelidir."
+          },
+          {
+            type: "warning",
+            title: "Yapı güvenliği önce gelir",
+            content: "Temel altı güçlendirme çalışmaları boyunca yapı hareketi sürekli izlenmelidir. Herhangi bir ani deformasyon sinyali, çalışmanın durdurulması için yeterli nedendir."
+          }
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "Temel altı zemin güçlendirme ne kadar sürer?",
+        answer: "Projenin büyüklüğüne ve yönteme göre birkaç haftadan birkaç aya uzanabilir. Etaplı uygulama planı ve yapı izleme sürecinin dahil edilmesi gerçekçi program için kritiktir."
+      },
+      {
+        question: "Yapı içinden uygulama yapılabilir mi?",
+        answer: "Evet. Mini kazık ve kompakt jet grout ekipmanları bodrum kattan uygulanabilir. Ekipman yüksekliği ve ağırlığı kısıtlarına göre ekipman seçimi yapılır."
+      },
+      {
+        question: "Temel altı güçlendirme ne zaman zorunlu olur?",
+        answer: "Yapıda aşırı oturma, çatlak veya eğilme tespit edildiğinde; komşu derin kazı öncesinde gerekli görüldüğünde ya da yapıya yeni yük ekleneceğinde temel altı güçlendirme değerlendirilmelidir."
+      }
+    ],
+    relatedSlugs: ["fore-kazik-nedir", "zemin-iyilestirme-yontemleri", "jet-grout-nedir"],
+    keywords: [
+      "temel altı zemin güçlendirme",
+      "underpinning",
+      "mevcut yapı zemin güçlendirme",
+      "mini kazık underpinning",
+      "jet grout underpinning",
+      "temel güçlendirme"
+    ],
+    published: true
+  },
+  {
+    slug: "sivilasma-riskine-karsi-zemin-guclendirme",
+    title: "Sıvılaşma Riskine Karşı Zemin Güçlendirme Yöntemleri",
+    seoTitle: "Sıvılaşma Riskine Karşı Zemin Güçlendirme | YER6",
+    description: "Deprem bölgelerinde sıvılaşma riskine karşı zemin güçlendirme: jet grout, DSM kolon sistemleri, drenaj ve kompaksiyon yöntemleri.",
+    excerpt: "Sıvılaşmaya yatkın kum ve silt zeminler, deprem sırasında taşıma kapasitesini yitirebilir. Zemin güçlendirme yöntemleri bu riski kabul edilebilir düzeye indirir.",
+    category: "Zemin İyileştirme",
+    readingTime: "11 dk",
+    publishedAt: "2026-06-23",
+    updatedAt: "2026-06-23",
+    heroLabel: "Sıvılaşma ve Zemin Güçlendirme",
+    introduction: "Sıvılaşma, doygun gevşek kum veya silt zeminin deprem sırasında ani boşluk suyu basıncı artışıyla taşıma kapasitesini yitirmesidir. Bu durum yapılarda aşırı oturma, devrilme veya temel göçmesine yol açabilir. Sıvılaşma riski belirlendiğinde zemin güçlendirme zorunlu hale gelir.",
+    sections: [
+      {
+        id: "sivilasma-nedir",
+        title: "Sıvılaşma Nedir ve Nasıl Oluşur?",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Sıvılaşma; doygun, gevşek kum veya silt zeminlerde sismik enerji etkisiyle boşluk suyu basıncının efektif gerilmeye eşit ya da üstüne çıkmasıyla zemin tanelerinin birbirinden ayrılması sürecidir. Zemin bu anda yük taşıma kapasitesini yitirir ve sıvı gibi davranır."
+          },
+          {
+            type: "list",
+            title: "Sıvılaşmaya yatkın zemin koşulları",
+            items: [
+              "Relative density (Dr) değeri %40'ın altında olan gevşek kum",
+              "Doygun zemin koşulu (yeraltı suyu yüzey yakını)",
+              "İnce dane içeriği (fines content) %35'in altında olan malzeme",
+              "SPT N değeri 15'in altında olan kum ve silt tabakalar"
+            ]
+          }
+        ]
+      },
+      {
+        id: "risk-degerlendirme",
+        title: "Sıvılaşma Riski Nasıl Değerlendirilir?",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "TBDY 2018 ve uluslararası standartlara göre sıvılaşma riski; SPT veya CPT verileri, zemin dane dağılımı, yer altı suyu derinliği ve tasarım depremi büyüklüğü kullanılarak hesaplanır."
+          },
+          {
+            type: "note",
+            title: "TBDY 2018 zorunluluğu",
+            content: "Türkiye Bina Deprem Yönetmeliği 2018 kapsamında sıvılaşma potansiyeli hesabı zorunludur. Sıvılaşma riski belirlenen zeminlerde ya zemin iyileştirilmeli ya da yapı tasarımı bu risk dikkate alınarak yapılmalıdır."
+          }
+        ]
+      },
+      {
+        id: "guclendirme-yontemleri",
+        title: "Sıvılaşmaya Karşı Zemin Güçlendirme Yöntemleri",
+        blocks: [
+          {
+            type: "list",
+            title: "Yaygın kullanılan yöntemler",
+            items: [
+              "Jet Grout Kolon Sistemi: Zemin içi kolonlarla etkin gerilme artışı ve deformasyon kontrolü",
+              "DSM Kolon Sistemi: Geniş alanlarda zemin-çimento karıştırma, sıvılaşma bölgesi kapsama",
+              "Vibro Kompaksiyon / Taş Kolon: Mekanik sıkılaştırma ile relative density artışı",
+              "Dinamik Kompaksiyon: Ağır tokmak darbeleriyle yüzeysel sıkılaştırma",
+              "Prefabrik Drenaj: Boşluk suyu basıncını hızla dağıtarak sıvılaşma riskini azaltma"
+            ]
+          }
+        ]
+      },
+      {
+        id: "jet-grout-sivilasma",
+        title: "Jet Grout ile Sıvılaşma Riskinin Azaltılması",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Jet grout kolonları, sıvılaşmaya yatkın zemin tabakası içinde yeterli aralık ve çapta tasarlandığında, deprem sırasında zemin bloğunu bir arada tutarak sıvılaşma etkisini önemli ölçüde sınırlar. Kolon grubu arasındaki zemin hacminin yeterli oranda kapsanması (area replacement ratio) tasarım değişkenidir."
+          },
+          {
+            type: "paragraph",
+            content: "Türkiye'nin deprem risk bölgelerinde; İstanbul, Bursa, İzmir, Kocaeli ve Sakarya gibi illerde, gevşek alüvyon zeminler üzerine inşa edilen yapılarda jet grout ile sıvılaşma güçlendirme projeleri yaygın biçimde uygulanmaktadır."
+          }
+        ]
+      },
+      {
+        id: "dsm-sivilasma",
+        title: "DSM ile Sıvılaşma Güçlendirme",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "DSM kolon ağı, sıvılaşma bölgesi içinde yüksek yer değiştirme oranı sağlandığında boşluk suyu basıncı birikimini önler. Geniş alanlarda ekonomik avantajı nedeniyle endüstriyel tesis ve lojistik platformlarda tercih edilir."
+          }
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "Sıvılaşma riski olan zeminlerde yapı inşa edilebilir mi?",
+        answer: "Evet, ancak zemin güçlendirme veya yapı tasarımında özel önlemler alınması zorunludur. TBDY 2018 bu durumu açıkça düzenler."
+      },
+      {
+        question: "Sıvılaşma riski hangi şehirlerde yüksektir?",
+        answer: "İstanbul (özellikle Avcılar, Küçükçekmece, Zeytinburnu), İzmir, Bursa, Kocaeli, Sakarya ve Adapazarı gibi alüvyon zemin ağırlıklı şehirlerde sıvılaşma riski yüksektir."
+      },
+      {
+        question: "Jet grout sıvılaşmayı tamamen önler mi?",
+        answer: "Yeterli alan yer değiştirme oranı ve kolon kapsamıyla sıvılaşma riski büyük ölçüde azaltılabilir, ancak 'tamamen önlenir' ifadesi yerine 'kabul edilebilir düzeye indirilir' daha doğrudur. Tasarım performans hedeflerine göre değerlendirilir."
+      }
+    ],
+    relatedSlugs: ["jet-grout-nedir", "dsm-nasil-uygulanir", "zemin-iyilestirme-yontemleri"],
+    keywords: [
+      "sıvılaşma zemin güçlendirme",
+      "deprem zemin güçlendirme",
+      "sıvılaşma riski",
+      "jet grout sıvılaşma",
+      "DSM sıvılaşma",
+      "TBDY 2018 sıvılaşma"
+    ],
+    published: true
+  },
+  {
+    slug: "dsm-nedir",
+    title: "DSM Nedir? Deep Soil Mixing Zemin İyileştirme Yöntemi",
+    seoTitle: "DSM Nedir? Deep Soil Mixing Zemin İyileştirme | YER6",
+    description: "DSM (Deep Soil Mixing), zemin ve çimento şerbetinin yerinde karıştırılmasıyla oluşturulan zemin-çimento kolonlarıdır. Uygulama, avantajlar ve tasarım kriterleri.",
+    excerpt: "DSM yani Derin Zemin Karıştırma, yumuşak kil ve gevşek kum zeminlerde taşıma kapasitesini artırmak, oturmayı kontrol etmek ve sıvılaşmayı önlemek için kullanılan modern bir zemin iyileştirme yöntemidir.",
+    category: "DSM",
+    readingTime: "9 dk",
+    publishedAt: "2026-06-23",
+    updatedAt: "2026-06-23",
+    heroLabel: "DSM Zemin İyileştirme",
+    introduction: "DSM (Deep Soil Mixing – Derin Zemin Karıştırma), zemin katmanları içinde dönen bir aks yardımıyla çimento şerbetinin zemin ile karıştırılarak zemin-çimento kolonları oluşturulduğu yerinde zemin iyileştirme yöntemidir. Düşük titreşim, hızlı ilerleme ve geniş uygulama kapsamıyla endüstriyel projeler başta olmak üzere altyapı iyileştirmesinde sıkça tercih edilir.",
+    sections: [
+      {
+        id: "calisma-prensibi",
+        title: "DSM Nasıl Çalışır?",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "DSM uygulamasında, özel bir delgi aletinin ucuna monte edilen karıştırıcı kanatlar zemine indirilir. Aynı anda pompayla basılan çimento şerbeti, zemin ile karıştırılarak homojen bir zemin-çimento kütlesi oluşturulur."
+          },
+          {
+            type: "list",
+            title: "Temel çalışma adımları",
+            items: [
+              "Çimento şerbeti laboratuvarda belirlenen oranda hazırlanır",
+              "Karıştırıcı aks zemine belirlenen derinliğe indirilir",
+              "İniş ve çıkış sırasında çimento şerbeti enjekte edilir",
+              "Zemin-çimento karışımı homojen biçimde oluşur",
+              "Kürlenmiş kolonun kalitesi karot ve basınç testleriyle doğrulanır"
+            ]
+          }
+        ]
+      },
+      {
+        id: "dsm-cesitleri",
+        title: "DSM Sistem Çeşitleri",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "DSM sistemleri genel olarak tek aks (single axis) ve çift aks (twin shaft) olmak üzere iki gruba ayrılır. Çift aks sistemler daha yüksek günlük ilerleme kapasitesi sunarak büyük ölçekli projelerde ekonomik avantaj sağlar."
+          },
+          {
+            type: "list",
+            items: [
+              "Tek aks DSM: Küçük ve orta ölçekli alanlar için uygundur",
+              "Çift aks DSM: Yüksek günlük üretim kapasitesi, büyük alanlar için idealdir",
+              "Jet karıştırma (CDM): Yüksek basınçlı jet desteğiyle DSM; zor geçimli zeminlerde kullanılır"
+            ]
+          }
+        ]
+      },
+      {
+        id: "kullanim-alanlari",
+        title: "DSM Kullanım Alanları",
+        blocks: [
+          {
+            type: "list",
+            title: "DSM'nin tercih edildiği proje tipleri",
+            items: [
+              "Endüstriyel tesis ve depo zemin platformu iyileştirmesi",
+              "Raylı sistem ve karayolu alt yapısı stabilizasyonu",
+              "Lojistik merkezi ve fabrika temeli oturma kontrolü",
+              "Sıvılaşmaya yatkın zemin güçlendirme",
+              "Deniz dolgusu ve yumuşak zemin stabilizasyonu",
+              "İksa perdesi olarak zemin geçirimsizlik uygulaması"
+            ]
+          }
+        ]
+      },
+      {
+        id: "tasarim",
+        title: "DSM Tasarım Kriterleri",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "DSM tasarımı iki temel adımdan oluşur: Laboratuvar karışım tasarımı ve saha uygulama tasarımı. Laboratuvarda zemin numuneleri ile farklı çimento dozajlarında karıştırma yapılarak hedef mukavemet değerini karşılayan optimum dozaj belirlenir."
+          },
+          {
+            type: "note",
+            title: "Hedef mukavemet değeri",
+            content: "DSM kolonlarında unconfined sıkıştırma mukavemeti (qu) genellikle 500 kPa ile 3000 kPa arasında hedeflenir. Bu değer zemin türü, bağlayıcı dozajı ve kürleme koşullarına bağlıdır."
+          }
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "DSM ile jet grout arasındaki temel fark nedir?",
+        answer: "DSM, karıştırıcı kanatlarla zemini mekanik olarak karıştırırken, jet grout yüksek basınçlı sıvı jetiyle zemini parçalayarak kolon oluşturur. DSM daha düşük basınçla çalışır ve geniş alanlarda ekonomiktir."
+      },
+      {
+        question: "DSM hangi zeminlerde uygulanmaz?",
+        answer: "Çakıl ve iri dane içeriği yüksek zeminlerde karıştırıcı kanatların geçişi zorlaşır ve DSM verimliliği düşer. Bu durumda jet grout veya vibro kompaksiyon daha uygun seçenek olabilir."
+      },
+      {
+        question: "DSM kolonu ne kadar mukavemet sağlar?",
+        answer: "Zemin tipine ve çimento dozajına göre genellikle 0,5 MPa ile 3 MPa arasında unconfined basınç mukavemeti elde edilir. Organik içerikli zeminlerde daha yüksek dozaj veya kireç katkısı gerekebilir."
+      },
+      {
+        question: "DSM oturma sorunlarını çözer mi?",
+        answer: "Evet. DSM kolon ağı, zemin taşıma kapasitesini artırarak hem toplam oturmayı hem de fark oturmayı önemli ölçüde azaltır. Performans hedefleri proje başında belirlenir ve tasarım buna göre yapılır."
+      }
+    ],
+    relatedSlugs: ["dsm-nasil-uygulanir", "dsm-malzeme-secinimi", "jet-grout-ve-dsm-farki"],
+    keywords: [
+      "DSM nedir",
+      "deep soil mixing nedir",
+      "derin zemin karıştırma",
+      "DSM zemin iyileştirme",
+      "zemin çimento kolon",
+      "DSM avantajları"
+    ],
+    published: true
+  },
+  {
+    slug: "mini-kazik-tercih-nedenleri",
+    title: "Mini Kazık Hangi Durumlarda Tercih Edilir?",
+    seoTitle: "Mini Kazık Hangi Durumlarda Tercih Edilir? | YER6",
+    description: "Mini kazık; sınırlı alanlarda, mevcut yapı altında ve titreşim kısıtlı sahalarda zemin güçlendirme ve underpinning için kullanılır.",
+    excerpt: "Mini kazık (mikro kazık), kompakt ekipmanıyla dar, kapalı ve kısıtlı alanlarda zemin güçlendirme ve mevcut yapı takviyesi için tercih edilen yüksek kapasiteli bir temel elemanıdır.",
+    category: "Mini Kazık",
+    readingTime: "8 dk",
+    publishedAt: "2026-06-23",
+    updatedAt: "2026-06-23",
+    heroLabel: "Mini Kazık Uygulama Koşulları",
+    introduction: "Mini kazık ya da teknik ismiyle mikro kazık; küçük çaplı (100–300 mm), çelik donatılı ve enjeksiyonlu bir zemin güçlendirme elemanıdır. Kompakt ekipmanı sayesinde fore kazığın ulaşamadığı alanlarda etkili biçimde uygulanabilir.",
+    sections: [
+      {
+        id: "ne-zaman-tercih-edilir",
+        title: "Mini Kazık Ne Zaman Tercih Edilir?",
+        blocks: [
+          {
+            type: "list",
+            title: "Mini kazık tercih koşulları",
+            items: [
+              "Bodrum kat, kapalı alan veya düşük tavan yüksekliği kısıtı",
+              "Mevcut yapı temelinin underpinning (alttan takviye) gereksinimi",
+              "Tarihi yapı ve anıtlarda minimal müdahaleyle güçlendirme",
+              "Aktif trafik altında veya çevresinde çalışma zorunluluğu",
+              "Eğimli arazide şev stabilitesi ve ankrajlı güçlendirme",
+              "Titreşim kısıtlı alanda minimum titreşimle delgi gereksinimi"
+            ]
+          }
+        ]
+      },
+      {
+        id: "teknik-ozellikler",
+        title: "Mini Kazık Teknik Özellikleri",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Mini kazıklar genellikle 100 mm ile 300 mm arasında çaplarda, 20–40 m derinliğe kadar uygulanabilir. Çelik boru veya çubuk donatıyla güçlendirilen kuyuya çimento grout enjekte edilir."
+          },
+          {
+            type: "list",
+            items: [
+              "Çap: 100–300 mm (özel projelerde 400 mm'ye kadar)",
+              "Derinlik: 20–40 m, zemin koşullarına göre değişir",
+              "Taşıma kapasitesi: 30–500 kN eksenel kapasite",
+              "Ekipman yüksekliği: 2,5–5 m (kapalı alan uygulamaları için)"
+            ]
+          }
+        ]
+      },
+      {
+        id: "uygulama-alanlari",
+        title: "Mini Kazık Uygulama Alanları",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Mini kazık en sık underpinning projelerinde karşımıza çıkar. Mevcut yapının temelinin yeterli taşıma kapasitesine sahip olmadığı durumlarda ya da yapıya ek kat eklenmesi planlandığında mini kazık ile temel kapasitesi artırılabilir."
+          },
+          {
+            type: "list",
+            items: [
+              "Mevcut yapı underpinning (temel altı takviyesi)",
+              "Tarihi bina ve anıt restorasyonu",
+              "Eğimli arazi şev güçlendirme ve stabilizasyon ankrajı",
+              "Boru hattı ve altyapı altı zemin güçlendirme",
+              "Bodrum genişletme ve sınırlı alan kazısı desteği",
+              "Dağlık ve engebeli arazilerde temel sistemi"
+            ]
+          }
+        ]
+      },
+      {
+        id: "enjeksiyon-sistemi",
+        title: "Enjeksiyon Sistemi ve Kapasite",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Mini kazıklarda yükleme kapasitesi büyük ölçüde enjeksiyon yöntemine bağlıdır. Tek aşamalı (gravity) enjeksiyon, çift aşamalı (pressure) enjeksiyon ve post-grouting seçenekleri kapasite ve maliyet dengesi açısından değerlendirilir."
+          },
+          {
+            type: "note",
+            title: "Uygunluk testi",
+            content: "Her mini kazık projesinde en az %5 oranında uygunluk yükleme testi yapılması tavsiye edilir. Test kazıkları, üretim parametrelerinin doğrulanması için kullanılır."
+          }
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "Mini kazık ile fore kazık arasındaki fark nedir?",
+        answer: "Fore kazık büyük çaplı (400–2000 mm), yüksek kapasiteli ve açık sahada standart delgi ekipmanıyla yapılır. Mini kazık ise küçük çaplı (100–300 mm), kompakt ekipmanla dar alanlarda uygulanan ve daha az kapasiteye sahip güçlendirme elemanıdır."
+      },
+      {
+        question: "Mini kazık mevcut bir yapının içinde uygulanabilir mi?",
+        answer: "Evet, bu mini kazığın en yaygın kullanım senaryosudur. Kompakt ekipman bodrum kata sığacak boyutlardaysa, yapı içinden doğrudan uygulama yapılabilir."
+      },
+      {
+        question: "Mini kazık neyi çözer: oturmayı mı, taşıma kapasitesini mi?",
+        answer: "İkisini de çözebilir. Mevcut oturmayı durdurmak ve ek yük kapasitesi kazandırmak için mini kazık etkin bir yöntemdir. Tasarım hedefine göre parametre ve adet belirlenir."
+      }
+    ],
+    relatedSlugs: ["fore-kazik-nedir", "temel-alti-zemin-guclendirme", "zemin-iyilestirme-yontemleri"],
+    keywords: [
+      "mini kazık nedir",
+      "mikro kazık",
+      "mini kazık underpinning",
+      "mini kazık uygulama",
+      "sınırlı alan zemin güçlendirme",
+      "mini kazık hangi durumlarda"
+    ],
+    published: true
+  },
+  {
+    slug: "kazi-destek-sistemleri-nedir",
+    title: "Kazı Destek Sistemleri Nedir? İksa Türleri ve Seçim Kriterleri",
+    seoTitle: "Kazı Destek Sistemleri Nedir? İksa Türleri | YER6",
+    description: "Kazı destek sistemleri (iksa); derin kazılarda çevre güvenliğini sağlayan fore kazık perde, diyafram duvar, çelik profil ve ankrajlı sistemlerdir.",
+    excerpt: "Kazı destek sistemleri, derin kazı çeperlerinin göçmesini önleyen ve komşu yapıları koruyan mühendislik yapılarıdır. Fore kazık perde, diyafram duvar, çelik profil perde ve ankraj kombinasyonları en yaygın seçeneklerdir.",
+    category: "Ankraj & İksa",
+    readingTime: "10 dk",
+    publishedAt: "2026-06-23",
+    updatedAt: "2026-06-23",
+    heroLabel: "Kazı Destek Sistemleri",
+    introduction: "Derin kazılar; zemin stabilitesini, komşu yapıları ve altyapı tesislerini tehdit edebilir. Kazı destek sistemleri (iksa sistemleri), kazı sırasında ve sonrasında zemin deformasyonunu kontrol altında tutarak güvenli inşaat ortamı sağlar.",
+    sections: [
+      {
+        id: "iksa-turleri",
+        title: "Kazı Destek Sistemi Türleri",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Kazı derinliği, zemin koşulları, komşu yapılara mesafe ve proje bütçesine göre farklı iksa sistemi tipleri seçilir. Temel sistem tipleri şunlardır:"
+          },
+          {
+            type: "list",
+            title: "Başlıca iksa sistemi türleri",
+            items: [
+              "Fore Kazık Perde: Ardışık veya kesişik fore kazıklardan oluşan perde sistemi",
+              "Diyafram Duvar: Yüksek derinlik ve su yalıtımı için uygun rijit perde sistemi",
+              "Çelik Profil Perde (Berlin Tipi): Ahşap veya beton panellerle desteklenen çelik H/I profil perdesi",
+              "Zemin Çivisi (Soil Nailing): Eğimli zeminlerde gerilmeli çivi + püskürtme beton",
+              "Gabyon Duvar: Hafif kazılarda taş dolgulu tel kafes duvarlar"
+            ]
+          }
+        ]
+      },
+      {
+        id: "fore-kazik-perde",
+        title: "Fore Kazık Perde Sistemi",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Fore kazık perde sistemleri, ardışık (tangent) veya kesişik (secant) düzende yerleştirilen fore kazıklardan oluşur. Secant pile perde, kazıkların birbirine geçmesiyle hem taşıyıcı hem su kesici işlev görür."
+          },
+          {
+            type: "list",
+            items: [
+              "Ardışık kazık perde: Kazıklar yan yana, aralarında boşluk",
+              "Kesişik kazık perde (secant): Birincil ve ikincil kazıklar sırayla kesişecek şekilde",
+              "Kiriş (wale) ve ankraj sistemiyle yanal yük aktarımı"
+            ]
+          }
+        ]
+      },
+      {
+        id: "diyafram-duvar",
+        title: "Diyafram Duvar",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Diyafram duvar, bentonit çamurlu oluk içine yerleştirilen donatı kafesi ve dökülen beton ile oluşturulan rijit ve geçirimsiz bir perde sistemidir. Yüksek derinlik (30 m+) ve su kontrolü gerektiren projelerde tercih edilir."
+          },
+          {
+            type: "note",
+            title: "Kalıcı yapı entegrasyonu",
+            content: "Diyafram duvar çoğu zaman binanın bodrum kat dış duvarı ve temel perdesi olarak kalıcı yapı sistemine entegre edilir, böylece ek kalıp ve beton maliyeti ortadan kalkar."
+          }
+        ]
+      },
+      {
+        id: "ankraj-sistemi",
+        title: "Ankrajlı İksa Sistemi",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "İksa perdesine ankraj bağlamak, kazı genişlediğinde ya da strüt kullanımı mümkün olmadığında yaygın çözümdür. Her ankraj katmanı, kazı derinleştikçe sırayla gerilerek perdedeki deformasyonu kontrol altında tutar."
+          },
+          {
+            type: "paragraph",
+            content: "Ankraj yükleri ve aralıkları; zemin parametreleri, derinlik ve komşu yapı riski dikkate alınarak mühendislik hesaplarıyla belirlenir. Her ankraj kabul testiyle doğrulanır."
+          }
+        ]
+      },
+      {
+        id: "izleme",
+        title: "Kazı Sürecinde İzleme",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Derin kazılarda izleme, komşu yapı ve altyapı güvenliği için zorunludur. İnklinometre, piyezometre ve referans noktası ölçümleri periyodik olarak alınır ve tasarım limitleriyle karşılaştırılır."
+          },
+          {
+            type: "warning",
+            title: "Erken uyarı sistemi",
+            content: "İzleme değerleri alarm limitini aştığında kazı durdurulmalı, mühendislik değerlendirmesi yapılarak gerekli önlem alınmalıdır. Pasif izleme yerine aktif izleme planı benimsenmelidir."
+          }
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "Hangi iksa sistemi daha ucuzdur?",
+        answer: "Çelik profil perde (Berlin tipi) genellikle en ekonomik başlangıç seçeneğidir. Ancak su geçirimsizliği, derinlik ve kalıcı kullanım gerektiğinde diyafram duvar veya fore kazık perde daha avantajlı olabilir. Toplam maliyet karşılaştırması için fizibilite çalışması yapılması gerekir."
+      },
+      {
+        question: "İksa sistemi ne kadar derine gidebilir?",
+        answer: "Diyafram duvar 50 m ve üzeri derinliğe ulaşabilir. Fore kazık perde genellikle 30–40 m, çelik profil perde ise 10–20 m derinliklerde ekonomiktir. Derinlik ihtiyacı projeye göre belirlenir."
+      },
+      {
+        question: "Komşu bina riski nasıl değerlendirilir?",
+        answer: "İksa tasarımı öncesinde komşu yapılar fotoğraflanır, yapısal değerlendirme yapılır ve izin verilebilir deformasyon limitleri belirlenir. Bu limitler tasarım ve izleme planını doğrudan etkiler."
+      },
+      {
+        question: "İksa sistemi inşaat bitince sökülebilir mi?",
+        answer: "Geçici iksa sistemleri (strüt, geçici ankraj) inşaat tamamlandığında sökülebilir. Kalıcı iksa sistemleri (diyafram duvar, fore kazık perde) ise yapıya entegre edilir ve sökülmez."
+      }
+    ],
+    relatedSlugs: ["fore-kazik-nedir", "zemin-iyilestirme-risk-yonetimi", "saha-denetimi-numune-testleri"],
+    keywords: [
+      "kazı destek sistemleri",
+      "iksa sistemi",
+      "fore kazık perde",
+      "diyafram duvar",
+      "derin kazı güvenliği",
+      "ankrajlı iksa"
+    ],
+    published: true
   }
 ];
 
@@ -1574,6 +2277,8 @@ export const knowledgeCategories = [
   "Fore Kazık",
   "DSM",
   "Zemin İyileştirme",
+  "Mini Kazık",
+  "Ankraj & İksa",
   "Kalite Kontrol"
 ] as const;
 

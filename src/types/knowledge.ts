@@ -3,6 +3,8 @@ export type KnowledgeCategory =
   | "Fore Kazık"
   | "DSM"
   | "Zemin İyileştirme"
+  | "Mini Kazık"
+  | "Ankraj & İksa"
   | "Kalite Kontrol";
 
 export type KnowledgeBlockType = "paragraph" | "list" | "note" | "warning";
