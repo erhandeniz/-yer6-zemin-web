@@ -69,6 +69,21 @@ export default async function KnowledgeArticlePage({ params }: Props) {
       url: siteConfig.siteUrl
     }
   };
+  const faqSchema =
+    article.faq.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: article.faq.map((item) => ({
+            "@type": "Question",
+            name: item.question,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: item.answer
+            }
+          }))
+        }
+      : null;
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -106,6 +121,13 @@ export default async function KnowledgeArticlePage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      {faqSchema ? (
+        <Script
+          id={`article-faq-schema-${article.slug}`}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      ) : null}
       <KnowledgeArticleContent article={article} />
     </>
   );

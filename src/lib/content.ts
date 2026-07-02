@@ -382,7 +382,7 @@ export const projects = [
     challenge: "Yüksek raf yükleri, sınırlı termin programı ve değişken dolgu kalitesi.",
     solution: "DSM kolonları, saha karot testleri ve dijital üretim raporlaması ile performans kontrollü iyileştirme.",
     tags: ["DSM", "Endüstriyel", "Oturma Kontrolü"],
-    image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1600&q=80",
+    image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1400&fm=webp&q=72",
     soilProblem: "Sahadaki yumuşak kil tabakaları, yüksek raf sistemi yükleri altında kabul edilemez oturma riski taşıyordu. Dolgu kalitesinin değişken olması ek belirsizlik yaratıyordu.",
     solutionMethod: "Derin zemin karıştırma (DSM) yöntemiyle tüm tesis alanında kolon ağı uygulandı. Laboratuvar karışım tasarımı sonrası saha üretimi başlatıldı; her kolona ait üretim verisi dijital olarak kayıt altına alındı. Karot testleri ile kolon mukavemeti doğrulandı.",
     technicalInfo: [
@@ -409,7 +409,7 @@ export const projects = [
     challenge: "Yüksek yer altı suyu, deniz etkisi ve dar çalışma koridoru.",
     solution: "Triple jet grout, enjeksiyon basınç kayıtları ve aşamalı kalite testleri.",
     tags: ["Jet Grout", "Liman", "Su Kontrolü"],
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1600&q=80",
+    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&fm=webp&q=72",
     soilProblem: "Kıyı alanında yüksek yeraltı suyu seviyesi ve deniz etkisi, liman genişlemesi sırasında su kontrolü ve taşıma kapasitesi sorunlarına yol açıyordu. Dar çalışma koridoru standart ekipman kullanımını kısıtlıyordu.",
     solutionMethod: "Triple jet grout sistemiyle 740 m uzunluğunda geçirimsizlik ve taşıma perdesi oluşturuldu. Her enjeksiyon parametresi saha veri sistemiyle anlık kaydedildi. Aşamalı kalite testleriyle perde bütünlüğü doğrulandı.",
     technicalInfo: [
@@ -436,7 +436,7 @@ export const projects = [
     challenge: "Trafik, komşu yapılar ve servis hatları nedeniyle düşük toleranslı saha koşulları.",
     solution: "Ankrajlı kazıklı perde, izleme planları ve etaplı kazı senaryoları.",
     tags: ["Ankraj", "İksa", "Ulaşım"],
-    image: "https://images.unsplash.com/photo-1590650516494-0c8e4a4dd67e?auto=format&fit=crop&w=1600&q=80",
+    image: "https://images.unsplash.com/photo-1590650516494-0c8e4a4dd67e?auto=format&fit=crop&w=1400&fm=webp&q=72",
     soilProblem: "26 metre derinliğinde kent içi kazı; her iki yanında aktif trafik, tarihi yapılar ve kritik altyapı hatları bulunuyordu. İzin verilebilir yanal deplasman limiti yalnızca 15 mm idi.",
     solutionMethod: "Sekant fore kazık perde sistemi oluşturuldu; her kat kazıyla birlikte ön germeli ankrajlar yerleştirildi. İnklinometre ve referans noktaları ile deplasman anlık takip edildi; etaplı kazı senaryosu programla eş zamanlı güncellendi.",
     technicalInfo: [
@@ -463,7 +463,7 @@ export const projects = [
     challenge: "Sınırlı saha lojistiği ve yoğun beton-donatı koordinasyonu.",
     solution: "Rotary delgi, kalite formları ve beton döküm takip sistemi ile sürekli imalat.",
     tags: ["Fore Kazık", "Yüksek Yapı", "Temel"],
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80",
+    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&fm=webp&q=72",
     soilProblem: "58 katlı karma kullanım kulesi için yüzeysel temel sistemi yüzey altı zemin koşulları nedeniyle yetersizdi. Yüksek sıkışma ve moment yüklerinin taşınması için derin temel sistemi zorunluydu.",
     solutionMethod: "Büyük çaplı fore kazıklar ve baret temel sistemi birlikte tasarlandı. Tremie yöntemiyle beton döküm yapıldı; her kazık için beton sarf, dikeylik ve bütünlük kaydı tutuldu. Crosshole sonic logging ile kazık bütünlüğü doğrulandı.",
     technicalInfo: [
@@ -476,27 +476,123 @@ export const projects = [
     ],
     usedEquipment: ["Büyük Çaplı Rotary Delgi Makinesi (KR300)", "Tremie Boru Sistemi", "Donatı Kafesi Vinaç ve Yerleştirme Ekipmanı", "CSL Test Ekipmanı"],
     result: "Tüm fore kazıklar CSL testini başarıyla geçti. Baret temel sistemi yapı yükleme programına tam uyumla tamamlandı. Kule inşaatının temel aşaması planlanan sürede bitirildi."
+  },
+  {
+    slug: "bursa-yunuseli-nida-evleri-jet-grout-zemin-iyilestirme",
+    key: "proj_bursa_yunuseli",
+    category: "Jet Grout",
+    location: "Yunuseli, Bursa",
+    year: "2026",
+    area: "Temel altı zemin iyileştirme",
+    metric: "6.200 m jet grout",
+    title: "Bursa Yunuseli Nida Evleri Jet Grout Zemin İyileştirme Projesi",
+    summary: "Bursa Yunuseli bölgesinde Nida Evleri projesi için temel altı jet grout zemin iyileştirme uygulaması.",
+    challenge: "Zayıf zemin tabakalarının iyileştirilmesi, oturma risklerinin azaltılması ve temel altı taşıyıcı sistemin güçlendirilmesi ihtiyacı.",
+    solution: "15 m kolon boyu ve 60 cm kolon çapı ile yüksek basınçlı çimento enjeksiyonuna dayalı jet grout kolon imalatı.",
+    tags: ["Jet Grout", "Zemin İyileştirme", "Temel Altı Güçlendirme"],
+    image: "/images/projects/bursa-yunuseli-nida-evleri/bursa-yunuseli-nida-evleri-jet-grout-hero.webp",
+    imageAlt: "Bursa Yunuseli Nida Evleri jet grout zemin iyileştirme sahası ve enjeksiyon ekipmanı",
+    seoTitle: "Bursa Yunuseli Jet Grout Zemin İyileştirme Projesi | YER6 Geotechnical",
+    metaDescription: "Bursa Yunuseli Nida Evleri projesinde 6.200 metre jet grout zemin iyileştirme uygulaması. 15 m kolon boyu ve 60 cm kolon çapı ile temel altı güçlendirme çalışması.",
+    projectOverview: "Bursa Yunuseli bölgesinde yer alan Nida Evleri projesinde, temel altı zemin iyileştirme kapsamında jet grout uygulaması gerçekleştirilmiştir. Yaklaşık 6.200 metre imalat kapsamında 15 metre boyunda ve 60 cm çapında jet grout kolonları oluşturularak zemin taşıma kapasitesinin artırılması ve yapı temel güvenliğinin desteklenmesi hedeflenmiştir.",
+    technicalSummary: "Yüksek basınçlı çimento enjeksiyonu ile zeminde kontrollü kolon oluşumu sağlanmış, uygulama saha koşullarına göre planlanmıştır. Jet grout yöntemiyle zayıf zemin tabakalarının iyileştirilmesi, oturma risklerinin azaltılması ve temel altı taşıyıcı sistemin güçlendirilmesi amaçlanmıştır.",
+    soilProblem: "Temel altı zemin iyileştirme ihtiyacı kapsamında zayıf zemin tabakalarının iyileştirilmesi, oturma risklerinin azaltılması ve zemin taşıma kapasitesinin artırılması hedeflenmiştir.",
+    solutionMethod: "Jet grout yöntemiyle yüksek basınçlı çimento enjeksiyonu uygulanmış; 15 metre boyunda ve 60 cm çapında kolonlar oluşturularak temel altı taşıyıcı sistem desteklenmiştir.",
+    technicalInfo: [
+      { label: "Uygulama Türü", value: "Jet Grout / Zemin İyileştirme" },
+      { label: "Konum", value: "Yunuseli, Bursa" },
+      { label: "Toplam İmalat", value: "6.200 m jet grout" },
+      { label: "Kolon Boyu", value: "15 m" },
+      { label: "Kolon Çapı", value: "60 cm" },
+      { label: "Kapsam", value: "Temel altı zemin iyileştirme" }
+    ],
+    applicationScope: [
+      "Temel altı zemin iyileştirme kapsamında jet grout uygulaması",
+      "Yaklaşık 6.200 metre jet grout imalatı",
+      "15 metre boyunda ve 60 cm çapında jet grout kolonları",
+      "Zemin taşıma kapasitesinin artırılması",
+      "Oturma risklerinin azaltılması",
+      "Yapı temel güvenliğinin desteklenmesi"
+    ],
+    gallery: [
+      {
+        src: "/images/projects/bursa-yunuseli-nida-evleri/bursa-yunuseli-nida-evleri-jet-grout-temiz-dikey.webp",
+        alt: "Bursa Yunuseli Nida Evleri jet grout zemin iyileştirme sahası ve enjeksiyon ekipmanı"
+      }
+    ],
+    relatedServiceSlugs: ["jet-grout", "zemin-iyilestirme"]
   }
 ];
 
 export const equipment = [
   {
-    key: "eq_jg220",
-    icon: "drill"
+    key: "eq_bauer_bg_28_h",
+    groupKey: "fleetGroupForePile",
+    icon: "building",
+    imageAlt: "Bauer BG 28 H PremiumLine fore kazık delgi makinesi"
   },
   {
-    key: "eq_dsm",
-    icon: "layers"
+    key: "eq_bauer_bg_18_h",
+    groupKey: "fleetGroupForePile",
+    icon: "building",
+    imageAlt: "Bauer BG 18 H BT 50 PremiumLine fore kazık delgi makinesi"
   },
   {
-    key: "eq_kr300",
-    icon: "building"
+    key: "eq_xcmg_xr220d",
+    groupKey: "fleetGroupForePile",
+    icon: "building",
+    imageAlt: "XCMG XR220D fore kazık delgi makinesi"
   },
   {
-    key: "eq_anchor",
-    icon: "anchor"
+    key: "eq_soilmec_sm_401_drill",
+    groupKey: "fleetGroupJetAnchor",
+    icon: "drill",
+    imageAlt: "Soilmec SM-401 jet grout kazık delgi makinesi"
+  },
+  {
+    key: "eq_mdt_1800_drill",
+    groupKey: "fleetGroupJetAnchor",
+    icon: "drill",
+    imageAlt: "MDT 1800 zemin iyileştirme kazık delgi makinesi"
+  },
+  {
+    key: "eq_casagrande_c6_xp_2",
+    groupKey: "fleetGroupJetAnchor",
+    icon: "anchor",
+    imageAlt: "Casagrande C6 XP-2 ankraj delgi makinesi"
+  },
+  {
+    key: "eq_soilmec_5t_400j_pump",
+    groupKey: "fleetGroupPumpPlant",
+    icon: "gauge",
+    imageAlt: "Soilmec 5T 400J jet grout pompası"
+  },
+  {
+    key: "eq_metax_mp7_pump",
+    groupKey: "fleetGroupPumpPlant",
+    icon: "gauge",
+    imageAlt: "Metax MP7 Pompa jet grout ve enjeksiyon pompası"
+  },
+  {
+    key: "eq_soilmec_santral",
+    groupKey: "fleetGroupPumpPlant",
+    icon: "layers",
+    imageAlt: "Soilmec Santral jet grout santrali"
+  },
+  {
+    key: "eq_silo_60_ton",
+    groupKey: "fleetGroupSilo",
+    icon: "building",
+    imageAlt: "60 tonluk çimento silosu"
   }
 ];
+
+export const equipmentGroupKeys = [
+  "fleetGroupForePile",
+  "fleetGroupJetAnchor",
+  "fleetGroupPumpPlant",
+  "fleetGroupSilo"
+] as const;
 
 export const workflow = [
   { key: "wf1", icon: MapPinned },

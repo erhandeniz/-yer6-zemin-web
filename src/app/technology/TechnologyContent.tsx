@@ -27,7 +27,7 @@ export function TechnologyContent() {
       />
       <section className="relative overflow-hidden px-5 py-24">
         <div className="absolute inset-0 technical-mesh opacity-60" />
-        <ParticleField density={680} className="opacity-60" />
+        <ParticleField density={320} className="opacity-60" />
         <div className="relative mx-auto max-w-7xl">
           <SectionHeader
             eyebrow={t("techWorkflowEyebrow")}

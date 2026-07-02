@@ -18,17 +18,24 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const project = projects.find((item) => item.slug === slug);
   if (!project) return {};
   const canonical = `${siteConfig.siteUrl}/projects/${project.slug}`;
+  const title = "seoTitle" in project && typeof project.seoTitle === "string" ? project.seoTitle : `${project.title} Zemin Güçlendirme Projesi`;
+  const description =
+    "metaDescription" in project && typeof project.metaDescription === "string"
+      ? project.metaDescription
+      : `${project.summary} ${project.category} uygulaması, zemin güçlendirme ve kalite kontrol yaklaşımıyla sunulur.`;
+  const image = project.image.startsWith("http") ? project.image : `${siteConfig.siteUrl}${project.image}`;
+
   return {
-    title: `${project.title} Zemin Güçlendirme Projesi`,
-    description: `${project.summary} ${project.category} uygulaması, zemin güçlendirme ve kalite kontrol yaklaşımıyla sunulur.`,
+    title,
+    description,
     alternates: {
       canonical
     },
     openGraph: {
-      title: `${project.title} Zemin Güçlendirme Projesi | YER6`,
-      description: `${project.summary} ${project.category} uygulaması, zemin güçlendirme ve kalite kontrol yaklaşımıyla sunulur.`,
+      title,
+      description,
       url: canonical,
-      images: [{ url: project.image }]
+      images: [{ url: image }]
     }
   };
 }
@@ -39,14 +46,15 @@ export default async function ProjectDetailPage({ params }: Props) {
   if (!project) notFound();
 
   const canonical = `${siteConfig.siteUrl}/projects/${project.slug}`;
+  const image = project.image.startsWith("http") ? project.image : `${siteConfig.siteUrl}${project.image}`;
   const projectSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: `${project.title} - ${project.category} Zemin Güçlendirme Projesi`,
     description: project.summary,
     url: canonical,
-    image: project.image,
-    datePublished: `${project.year}-01-01`,
+    image,
+    ...(/^\d{4}$/.test(project.year) ? { datePublished: `${project.year}-01-01` } : {}),
     author: {
       "@type": "Organization",
       name: siteConfig.companyName,

@@ -6,7 +6,7 @@ import { useState } from "react";
 import { PageHero } from "@/components/PageHero";
 import { SectionHeader } from "@/components/SectionHeader";
 import { cityPages } from "@/lib/cityContent";
-import { getServiceBySlug } from "@/lib/content";
+import { getServiceBySlug, projects } from "@/lib/content";
 import { publishedKnowledgeArticles } from "@/data/knowledge";
 import { useLanguage } from "@/components/LanguageProvider";
 import { siteConfig } from "@/lib/siteConfig";
@@ -53,6 +53,10 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
     .map((articleSlug) => publishedKnowledgeArticles.find((article) => article.slug === articleSlug))
     .filter((article): article is (typeof publishedKnowledgeArticles)[number] => Boolean(article));
   const serviceCities = cityPages.filter((page) => page.serviceSlugs.includes(service.slug)).slice(0, 6);
+  const relatedProjects = projects.filter((project) => {
+    if (!("relatedServiceSlugs" in project)) return false;
+    return (project.relatedServiceSlugs as string[]).includes(service.slug);
+  });
 
   return (
     <main>
@@ -196,6 +200,45 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
                 </div>
               )}
 
+              {/* İlgili Projeler */}
+              {relatedProjects.length > 0 && (
+                <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-8">
+                  <h2 className="text-2xl font-semibold text-white">İlgili Projeler</h2>
+                  <div className="mt-6 grid gap-4">
+                    {relatedProjects.map((project) => {
+                      const imageAlt = "imageAlt" in project ? (project.imageAlt as string) : t(`${project.key}_title`);
+
+                      return (
+                        <Link
+                          key={project.slug}
+                          href={`/projects/${project.slug}`}
+                          className="group overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04] transition hover:border-gold-300/40 hover:bg-white/[0.07]"
+                        >
+                          <div className="grid gap-0 md:grid-cols-[220px_minmax(0,1fr)]">
+                            <div className="h-48 overflow-hidden md:h-full">
+                              <img
+                                src={project.image}
+                                alt={imageAlt}
+                                className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                            <div className="p-5">
+                              <p className="text-lg font-semibold text-white">{t(`${project.key}_title`)}</p>
+                              <p className="mt-2 text-sm leading-6 text-white/62">{t(`${project.key}_summary`)}</p>
+                              <p className="mt-4 text-xs uppercase tracking-[0.18em] text-gold-200">
+                                {project.location} · {project.metric}
+                              </p>
+                            </div>
+                          </div>
+                        </Link>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+
               {/* İletişim CTA */}
               <div className="rounded-[2rem] border border-gold-300/30 bg-gold-300 p-8 text-obsidian">
                 <h2 className="text-2xl font-semibold">
@@ -207,13 +250,13 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
                 <div className="mt-6 flex flex-wrap gap-3">
                   <Link
                     href="/contact"
-                    className="rounded-2xl bg-obsidian px-6 py-3 text-sm font-semibold text-white transition hover:bg-graphite"
+                    className="inline-flex w-full justify-center rounded-2xl bg-obsidian px-6 py-3 text-sm font-semibold text-white transition hover:bg-graphite sm:w-auto"
                   >
                     Teklif İste
                   </Link>
                   <a
                     href={siteConfig.phone.href}
-                    className="inline-flex items-center gap-2 rounded-2xl border border-obsidian/20 bg-obsidian/8 px-6 py-3 text-sm font-semibold transition hover:bg-obsidian/15"
+                    className="inline-flex w-full items-center justify-center gap-2 rounded-2xl border border-obsidian/20 bg-obsidian/8 px-6 py-3 text-sm font-semibold transition hover:bg-obsidian/15 sm:w-auto"
                   >
                     <Phone className="h-4 w-4" /> {siteConfig.phone.display}
                   </a>

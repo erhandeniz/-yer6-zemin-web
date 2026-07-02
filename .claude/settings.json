@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(npx next *)",
+      "Bash(curl -s http://localhost:4173/equipment-fleet)",
+      "Bash(cat /tmp/next-start.log 2>&1 | tail -30)",
+      "Read(//tmp/**)",
+      "Bash(npx serve *)",
+      "Bash(curl -s http://localhost:4174/equipment-fleet)",
+      "Bash(grep -o '.\\\\{60\\\\}Metax MP7 Pompa.\\\\{60\\\\}' /tmp/eqpage.html)",
+      "Bash(grep -o 'text-3xl font-semibold leading-tight text-white\">[^<]*' /tmp/eqpage.html)",
+      "Bash(pkill -f \"serve out\")",
+      "Bash(pkill -f \"next start\")",
+      "Bash(grep -o 'text-3xl font-semibold leading-tight text-white\">[^<]*\\\\|text-right text-\\\\[10px\\\\] uppercase leading-4 tracking-normal text-white/46 sm:text-xs\">[^<]*' /tmp/eqpage.html | grep -iE \"drill|pump\")",
+      "Bash(rm -f /tmp/eqpage.html /tmp/next-start.log /tmp/serve.log 2>/dev/null; echo cleaned)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:4174/equipment-fleet)",
+      "Bash(curl -s http://localhost:4174/equipment-fleet -o /tmp/eqpage2.html)"
+    ],
+    "additionalDirectories": [
+      "\\tmp"
+    ]
+  }
+}

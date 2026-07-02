@@ -9,15 +9,17 @@ type Project = (typeof projects)[number];
 
 export function ProjectCard({ project }: { project: Project }) {
   const { t } = useLanguage();
+  const imageAlt = "imageAlt" in project ? (project.imageAlt as string) : t(`${project.key}_title`);
 
   return (
     <article className="group gsap-reveal overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.045]">
       <div className="media-grain relative h-72 overflow-hidden">
         <img
           src={project.image}
-          alt={t(`${project.key}_title`)}
+          alt={imageAlt}
           className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
           loading="lazy"
+          decoding="async"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/20 to-transparent" />
         <div className="absolute bottom-5 left-5 right-5 flex items-end justify-between gap-4">

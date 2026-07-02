@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
-import Script from "next/script";
 import "./globals.css";
 import { SiteShell } from "@/components/SiteShell";
+import { localBusinessSchema } from "@/lib/seo";
 import { siteConfig } from "@/lib/siteConfig";
 
 const siteUrl = siteConfig.siteUrl;
@@ -85,79 +85,30 @@ const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "@id": `${siteUrl}/#website`,
-  name: "YER6 Zemin Güçlendirme ve Jeoteknik Mühendislik",
+  name: "YER6 Zemin Mühendislik",
   url: siteUrl,
   inLanguage: "tr-TR",
   description: "Jet grout, DSM, fore kazık, mini kazık, ankraj ve iksa sistemleri alanında zemin güçlendirme hizmetleri.",
   publisher: { "@id": `${siteUrl}/#organization` }
 };
 
-const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": ["Organization", "LocalBusiness", "EngineeringService"],
-  "@id": `${siteUrl}/#organization`,
-  name: "YER6 Zemin Güçlendirme ve Jeoteknik Mühendislik",
-  alternateName: "YER6",
-  url: siteUrl,
-  logo: {
-    "@type": "ImageObject",
-    "@id": `${siteUrl}/#logo`,
-    url: `${siteUrl}/icon.png`,
-    width: 512,
-    height: 512,
-    caption: "YER6 Zemin Mühendislik"
-  },
-  image: openGraphImage,
-  description: "Zemin güçlendirme, zemin iyileştirme, jet grout, fore kazık, DSM, mini kazık, ankraj ve iksa sistemleri alanında mühendislik odaklı saha uygulaması. Ankara merkezli, Türkiye geneli hizmet.",
-  foundingDate: "2016",
-  priceRange: "$$",
-  currenciesAccepted: "TRY",
-  areaServed: [{ "@type": "Country", name: "Türkiye" }],
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: siteConfig.address.streetAddress,
-    addressLocality: siteConfig.address.locality,
-    addressRegion: siteConfig.address.region,
-    postalCode: siteConfig.address.postalCode,
-    addressCountry: siteConfig.address.country
-  },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: 39.7826,
-    longitude: 32.8597
-  },
-  telephone: siteConfig.phone.display,
-  email: siteConfig.email,
-  contactPoint: [
-    {
-      "@type": "ContactPoint",
-      telephone: siteConfig.phone.display,
-      contactType: "customer service",
-      areaServed: "TR",
-      availableLanguage: ["Turkish", "English"]
-    }
-  ],
-  hasOfferCatalog: {
-    "@type": "OfferCatalog",
-    name: "Zemin Güçlendirme Hizmetleri",
-    itemListElement: [
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Jet Grout Zemin İyileştirme" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "DSM Deep Soil Mixing" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Fore Kazık" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Mini Kazık" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Ankraj Sistemleri" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "İksa Sistemleri" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Zemin İyileştirme" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Geoteknik Danışmanlık" } }
-    ]
-  },
-  sameAs: ["https://www.linkedin.com/company/yer6zemin"],
-  slogan: "Geleceğin Yapıları Güçlü Zeminlerle Başlar"
-};
+const organizationSchema = localBusinessSchema();
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="tr" suppressHydrationWarning>
+      <head>
+        <script
+          id="yer6-website-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
+        <script
+          id="yer6-organization-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+      </head>
       <body>
         <script
           dangerouslySetInnerHTML={{
@@ -174,16 +125,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               })();
             `
           }}
-        />
-        <Script
-          id="yer6-website-schema"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
-        />
-        <Script
-          id="yer6-organization-schema"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
         <div className="noise" />
         <SiteShell>{children}</SiteShell>

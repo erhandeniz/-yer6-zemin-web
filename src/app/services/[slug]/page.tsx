@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import { notFound } from "next/navigation";
 import { getServiceBySlug, getServicePaths } from "@/lib/content";
-import { cityPages } from "@/lib/cityContent";
+import { getServiceSchemaDescription, localSeoServiceAreas } from "@/lib/seo";
 import { siteConfig } from "@/lib/siteConfig";
 import { ServiceDetailContent } from "./ServiceDetailContent";
 
@@ -23,7 +23,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const canonical = `${siteConfig.siteUrl}/services/${service.slug}`;
   const seoTitle = service.slug === "dsm" ? "DSM Zemin İyileştirme Hizmeti" : `${service.title} Zemin Güçlendirme Hizmeti`;
-  const description = `${service.summary} ${service.title}, zemin güçlendirme ve zemin iyileştirme projelerinde saha verisi, kalite kontrol ve teknik raporlama ile uygulanır.`;
+  const description = getServiceSchemaDescription(
+    service.slug,
+    `${service.summary} ${service.title}, zemin güçlendirme ve zemin iyileştirme projelerinde saha verisi, kalite kontrol ve teknik raporlama ile uygulanır.`
+  );
 
   return {
     title: seoTitle,
@@ -45,14 +48,22 @@ export default async function ServiceDetailPage({ params }: Props) {
   if (!service) notFound();
 
   const canonical = `${siteConfig.siteUrl}/services/${service.slug}`;
+  const description = getServiceSchemaDescription(
+    service.slug,
+    `${service.summary} ${service.title}, zemin güçlendirme ve zemin iyileştirme projelerinde saha verisi, kalite kontrol ve teknik raporlama ile uygulanır.`
+  );
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
+    "@id": `${canonical}#service`,
     name: service.title,
-    description: service.summary,
+    description,
     url: canonical,
+    serviceType: service.title,
+    category: "Zemin Güçlendirme ve Geoteknik Mühendislik",
     provider: {
       "@type": "LocalBusiness",
+      "@id": `${siteConfig.siteUrl}/#organization`,
       name: siteConfig.companyName,
       url: siteConfig.siteUrl,
       telephone: siteConfig.phone.display,
@@ -65,11 +76,19 @@ export default async function ServiceDetailPage({ params }: Props) {
         addressCountry: siteConfig.address.country
       }
     },
-    areaServed: cityPages.map((page) => ({
-      "@type": "City",
-      name: page.city
+    areaServed: localSeoServiceAreas.map((name) => ({
+      "@type": name === "Türkiye geneli" ? "Country" : "AdministrativeArea",
+      name
     })),
-    serviceType: service.title
+    availableChannel: {
+      "@type": "ServiceChannel",
+      servicePhone: {
+        "@type": "ContactPoint",
+        telephone: siteConfig.phone.display,
+        url: siteConfig.phone.href
+      },
+      serviceUrl: canonical
+    }
   };
   const breadcrumbSchema = {
     "@context": "https://schema.org",
