@@ -1,3 +1,13 @@
+export type CitySection = {
+  heading: string;
+  body: string[];
+};
+
+export type CityFaq = {
+  question: string;
+  answer: string;
+};
+
 export type CityPage = {
   slug: string;
   city: string;
@@ -9,6 +19,11 @@ export type CityPage = {
   qualityFocus: string;
   serviceSlugs: string[];
   articleSlugs: string[];
+  // Zenginleştirilmiş (öncelikli) iller için opsiyonel uzun içerik alanları.
+  // Doldurulmuşsa şablon bu bölümleri ve SSS'i (FAQ şeması ile) render eder.
+  intro?: string;
+  sections?: CitySection[];
+  faq?: CityFaq[];
 };
 
 export const cityPages: CityPage[] = [
@@ -1391,10 +1406,529 @@ export const cityPages: CityPage[] = [
   }
 ];
 
+type CityEnrichment = Pick<CityPage, "intro" | "sections" | "faq"> & { slug: string };
+
+// Öncelikli illerin benzersiz, uzun içerikleri. getCityPageBySlug bu içeriği ilgili ile
+// birleştirir; böylece ana veri bloğu sade kalır ve zengin içerik ayrı yönetilir.
+const cityEnrichmentList: CityEnrichment[] = [
+  {
+    slug: "ankara-zemin-guclendirme",
+    intro:
+      "Ankara'da zemin güçlendirme, başkentin kendine özgü ve mühendislik literatüründe 'Ankara kili' olarak anılan yüksek plastisiteli, şişme-büzülme davranışı gösteren zemin yapısıyla doğrudan ilişkilidir. YER6, Gölbaşı merkezli saha ekibiyle Ankara ve çevresinde jet grout, fore kazık ve DSM zemin iyileştirme uygulamalarını tek bir kalite standardında yürütür.",
+    sections: [
+      {
+        heading: "Ankara kili ve yerel zemin davranışı",
+        body: [
+          "Ankara'nın önemli bir bölümünde yüzeye yakın seviyelerde bulunan yüksek plastisiteli killer, mevsimsel nem değişimlerinde belirgin hacim değişimi yapar. Kuru dönemde büzülüp yağışlı dönemde şişen bu killer, özellikle hafif yapıların temellerinde çatlama ve düzensiz oturma riskini artırır.",
+          "Çankaya, Gölbaşı, Etimesgut ve Sincan gibi bölgelerde dolgu kalınlığı, yeraltı suyu seviyesi ve kilin plastisitesi parselden parsele değişir. Bu nedenle Ankara'da doğru yöntem seçimi, ancak sondaj verisi ve laboratuvar indeks deneyleriyle kurulan bir zemin modeliyle güvenilir biçimde yapılabilir."
+        ]
+      },
+      {
+        heading: "Ankara'da uygulanan zemin güçlendirme yöntemleri",
+        body: [
+          "Yüksek yapısal yüklerin ve derin kazıların söz konusu olduğu kamu ve konut projelerinde fore kazıklı temeller ile ankraj destekli iksa sistemleri öne çıkar. Mevcut yapı altında güçlendirme veya su yalıtımı gereken durumlarda ise jet grout kolonları, dar sahalarda bile düşük titreşimle uygulanabilir.",
+          "Geniş taban alanlı endüstriyel yapılarda oturmayı kontrol etmek için DSM zemin iyileştirme tercih edilir. YER6, her projede kolon çapı, derinlik ve bağlayıcı dozajını Ankara zeminine özgü parametrelerle optimize eder."
+        ]
+      },
+      {
+        heading: "Saha kalitesi ve teslim süreci",
+        body: [
+          "Ankara projelerinde deneme kolonları, karot alımı, tek eksenli basınç deneyleri ve kolon sürekliliği kontrolleri üretim boyunca kayıt altına alınır. Bu veriler, yapının servis yükleri altında beklenen performansı vereceğini belgelemek için teslim dosyasına işlenir.",
+          "Yüksek plastisiteli killerde nem yönetimi ve numune koruması kritik olduğundan, saha kalite planı mevsim koşullarına göre uyarlanır."
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "Ankara kili neden özel önlem gerektirir?",
+        answer:
+          "Yüksek plastisiteli olduğu için nem değiştikçe şişip büzülür; bu hacimsel hareket temellerde düzensiz gerilme ve çatlaklara yol açabilir. Uygun zemin iyileştirme ve temel sistemi bu hareketleri kontrol altına alır."
+      },
+      {
+        question: "Ankara'da jet grout mu fore kazık mı uygulanmalı?",
+        answer:
+          "Karar; yük büyüklüğü, kazı derinliği, komşu yapı durumu ve zemin profiline bağlıdır. Su kontrolü ve dar saha için jet grout, yüksek taşıma kapasitesi ve derin temel için fore kazık öne çıkar. Çoğu projede ikisi birlikte kurgulanır."
+      },
+      {
+        question: "YER6 Ankara'nın hangi bölgelerinde çalışıyor?",
+        answer:
+          "Gölbaşı merkezli ekibimizle Ankara'nın tüm ilçelerinde ve çevre illerde saha uygulaması yapıyoruz."
+      },
+      {
+        question: "Zemin etüdü olmadan fiyat teklifi alabilir miyim?",
+        answer:
+          "Ön değerlendirme için mevcut sondaj raporu veya proje bilgileri yeterlidir; ancak kesin tasarım ve metraj için güncel zemin etüdü verisi gereklidir."
+      }
+    ]
+  },
+  {
+    slug: "istanbul-zemin-guclendirme",
+    intro:
+      "İstanbul'da zemin güçlendirme; yalnızca yöntem seçimi değil, komşu yapı etkisi, yoğun altyapı hatları ve sınırlı şantiye lojistiğinin birlikte yönetildiği bir risk mühendisliği konusudur. YER6, derin kazı, temel güçlendirme ve kentsel dönüşüm projelerinde fore kazık, mini kazık, ankraj ve jet grout çözümlerini bir arada kurgular.",
+    sections: [
+      {
+        heading: "İstanbul'da zemin ve kazı koşulları",
+        body: [
+          "Kıyı dolguları, ayrışmış kaya geçişleri ve bölgeden bölgeye değişen yerleşim dokusu, İstanbul'da temel güçlendirme ve iksa sistemlerinde hassas deplasman kontrolü gerektirir. Haliç, Boğaz ve Marmara kıyısı boyunca gevşek dolgu ve yüksek yeraltı suyu koşulları öne çıkarken, iç kesimlerde daha rijit formasyonlarla karşılaşılabilir.",
+          "Bitişik nizam yapılaşma nedeniyle kazı sırasında komşu binaların güvenliği belirleyicidir; bu da öngerilmeli ankraj, kazıklı iksa perdesi ve gerektiğinde jet grout ile taban stabilizasyonunu zorunlu kılar."
+        ]
+      },
+      {
+        heading: "Derin kazı ve temel güçlendirme yöntemleri",
+        body: [
+          "Yüksek yapılar ve derin bodrumlu projelerde büyük çaplı fore kazıklar taşıma kapasitesini sağlarken, dar ve erişimi kısıtlı kentsel dönüşüm parsellerinde mini kazık ve underpinning uygulamaları mevcut yapıyı taşımadan güçlendirmeye imkân verir.",
+          "Su geçirimsizliği ve kazı tabanı güvenliği gereken alanlarda jet grout perdeleri devreye alınır. YER6, her projede düşeylik, beton sürekliliği ve ankraj test yüklerini kayıt altına alarak çevre yapı izleme verisiyle birlikte raporlar."
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "İstanbul'da komşu yapıya zarar vermeden kazı yapılabilir mi?",
+        answer:
+          "Evet. Öngerilmeli ankraj, kazıklı iksa ve gerektiğinde jet grout taban stabilizasyonu ile deplasmanlar sınırlandırılır; çevre yapılar izleme (monitoring) altında tutulur."
+      },
+      {
+        question: "Kentsel dönüşümde mevcut binanın altına güçlendirme yapılabilir mi?",
+        answer:
+          "Mini kazık ve underpinning yöntemleriyle mevcut temel altına kontrollü yük aktarımı sağlanabilir. Uygulama, yapının statik durumu ve zemin profiline göre projelendirilir."
+      },
+      {
+        question: "İstanbul'da hangi zemin verileri gerekli?",
+        answer:
+          "Sondaj logları, yeraltı suyu seviyesi, komşu yapı bilgileri ve kazı derinliği; güvenli bir iksa/temel tasarımı için asgari gereksinimlerdir."
+      }
+    ]
+  },
+  {
+    slug: "izmir-zemin-guclendirme",
+    intro:
+      "İzmir'de zemin iyileştirme projeleri çoğu zaman kıyı etkisi, yüksek yeraltı suyu, sıvılaşma riski ve dar şehir içi şantiye koşullarıyla birlikte ele alınır. YER6, körfez çevresi ve alüvyon alanlarda jet grout, DSM zemin iyileştirme ve fore kazık uygulamalarını deprem performansı odağıyla yürütür.",
+    sections: [
+      {
+        heading: "İzmir körfez zemini ve sıvılaşma riski",
+        body: [
+          "Körfez çevresi ve alüvyon alanlarda yer alan gevşek kum-silt seviyeleri, yüksek yeraltı suyuyla birleştiğinde deprem sırasında sıvılaşma potansiyeli taşır. Bayraklı, Karşıyaka ve Bornova gibi bölgelerde bu davranış, temel sistemi ve zemin iyileştirme kararlarını doğrudan etkiler.",
+          "2020 depreminde gözlenen yapısal hasarlar, İzmir'de yumuşak zemin üzerinde oturan yapılarda zemin iyileştirmesinin ve uygun temel seçiminin önemini bir kez daha ortaya koymuştur."
+        ]
+      },
+      {
+        heading: "İzmir'de zemin iyileştirme yaklaşımı",
+        body: [
+          "Su kontrolü ve sıvılaşma azaltımı gereken sahalarda jet grout ve enjeksiyon; oturma kontrolü gereken geniş parsellerde DSM zemin iyileştirme öne çıkar. Derin ve yüksek yükleri kaya/sağlam tabakaya aktarmak için fore kazıklı temeller tercih edilir.",
+          "YER6, İzmir sahalarında basınç kayıtları, kolon çapı doğrulaması ve yeraltı suyu davranışını kalite kabul sürecinin merkezine alır."
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "İzmir'de sıvılaşma riski nasıl azaltılır?",
+        answer:
+          "Jet grout veya DSM ile zemin rijitliği artırılarak, gerektiğinde drenaj ve enjeksiyon yöntemleriyle sıvılaşma potansiyeli düşürülür. Yöntem, sondaj ve laboratuvar verisine göre seçilir."
+      },
+      {
+        question: "Bayraklı bölgesinde hangi yöntem uygundur?",
+        answer:
+          "Yumuşak/gevşek zemin ve yüksek yeraltı suyu nedeniyle çoğunlukla jet grout, DSM veya derin temel (fore kazık) çözümleri değerlendirilir; kesin karar zemin etüdüne bağlıdır."
+      },
+      {
+        question: "Deprem yönetmeliğine uygun uygulama yapıyor musunuz?",
+        answer:
+          "Uygulamalarımız güncel zemin etüdü ve performans hedefleri doğrultusunda projelendirilir; üretim verileri belgelenerek teslim edilir."
+      }
+    ]
+  },
+  {
+    slug: "bursa-zemin-guclendirme",
+    intro:
+      "Bursa'da zemin güçlendirme kararları; ova alüvyonları, sanayi parsellerindeki dolgu tabakaları ve yüksek işletme yükleri birlikte değerlendirilerek verilir. YER6, lojistik ve üretim tesislerinden konut projelerine kadar Bursa genelinde DSM, jet grout ve fore kazık çözümleri sunar.",
+    sections: [
+      {
+        heading: "Bursa ovası ve sanayi zeminleri",
+        body: [
+          "Nilüfer, Osmangazi ve Gemlik çevresinde gevşek dolgu, yumuşak kil ve yer yer yüksek yeraltı suyu koşulları; oturma ve taşıma gücü açısından kritik olabilir. Özellikle geniş taban alanlı üretim ve depolama yapılarında düzensiz oturma, zemin iyileştirmesini zorunlu kılar.",
+          "Sanayi parsellerindeki kontrolsüz dolgular ve değişken tabaka geçişleri, parsel bazında zemin modeli kurulmasını gerektirir."
+        ]
+      },
+      {
+        heading: "Lojistik ve üretim tesislerinde uygulama",
+        body: [
+          "Lojistik ve üretim tesislerinde DSM zemin iyileştirme, temel altı kolon düzeni ve gerektiğinde jet grout enjeksiyon perdesi birlikte kurgulanır. Yüksek nokta yükleri taşıyan makine temellerinde fore/mini kazık çözümleri devreye alınır.",
+          "YER6, Bursa sahalarında karot, kolon sürekliliği, bağlayıcı dozajı ve üretim kayıtlarını izleyerek yatırımın işletme yüklerine uygun performans vermesini güvence altına alır."
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "Fabrika zemininde oturma sorununa hangi çözüm uygun?",
+        answer:
+          "Geniş taban alanlarında DSM zemin iyileştirme ile oturma kontrol edilir; yüksek nokta yüklerinde fore/mini kazıklı makine temelleri tercih edilir. Yöntem, yük ve zemin profiline göre belirlenir."
+      },
+      {
+        question: "Bursa'da yüksek yeraltı suyu uygulamayı etkiler mi?",
+        answer:
+          "Evet; su geçirgenliği yüksek zeminlerde jet grout ve enjeksiyon ile su kontrolü sağlanır, imalat programı yeraltı suyuna göre düzenlenir."
+      },
+      {
+        question: "Mevcut tesiste üretimi durdurmadan güçlendirme mümkün mü?",
+        answer:
+          "Çoğu durumda kompakt ekipmanla, bölgesel ve düşük titreşimli uygulamalarla üretim büyük ölçüde sürdürülerek güçlendirme planlanabilir."
+      }
+    ]
+  },
+  {
+    slug: "kocaeli-zemin-guclendirme",
+    intro:
+      "Kocaeli'nde zemin güçlendirme; körfez alüvyonu, yoğun ağır sanayi yükleri ve bölgenin deprem geçmişi bir arada değerlendirilerek planlanır. YER6, tank ve makine temellerinden lojistik alanlara kadar Kocaeli genelinde DSM, jet grout ve fore kazık çözümleri sunar.",
+    sections: [
+      {
+        heading: "Kocaeli körfez zemini ve deprem geçmişi",
+        body: [
+          "İzmit Körfezi çevresindeki alüvyon alanlarda gevşek kum-silt seviyeleri ve yüksek yeraltı suyu, deprem sırasında sıvılaşma açısından risk oluşturabilir. 1999 Marmara depremi, bölgede zemin davranışının yapısal güvenlikteki belirleyici rolünü açıkça ortaya koymuştur.",
+          "Petrokimya, otomotiv ve lojistik tesislerinin yoğun olduğu bölgede, ağır ve dinamik yükler zemin iyileştirmesini çoğu projede zorunlu hale getirir."
+        ]
+      },
+      {
+        heading: "Ağır sanayi ve tank temellerinde uygulama",
+        body: [
+          "Büyük çaplı depolama tankları ve makine temellerinde oturma ve sıvılaşma kontrolü için DSM ve jet grout kolonları; yüksek nokta yüklerinde ise fore kazıklı derin temeller uygulanır.",
+          "YER6, Kocaeli sahalarında kolon sürekliliği, bağlayıcı dozajı ve yükleme performansını kayıt altına alarak endüstriyel işletme yüklerine uygun teslim güvencesi verir."
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "Tank temeli altında sıvılaşma riski nasıl yönetilir?",
+        answer:
+          "Jet grout veya DSM ile zemin rijitliği artırılır, gerektiğinde drenaj çözümleriyle boşluk suyu basıncı kontrol altına alınır. Yöntem, sondaj ve dinamik yük analizine göre seçilir."
+      },
+      {
+        question: "Kocaeli sanayi bölgelerinde çalışıyor musunuz?",
+        answer:
+          "Evet; Gebze, Çayırova, Körfez ve Dilovası dahil bölge genelinde endüstriyel zemin iyileştirme uygulamaları yapıyoruz."
+      },
+      {
+        question: "Deprem sonrası mevcut tesis güçlendirmesi mümkün mü?",
+        answer:
+          "Mevcut yapı altında jet grout ve mini kazık çözümleriyle kontrollü güçlendirme planlanabilir; uygulama, yapının statik değerlendirmesiyle birlikte kurgulanır."
+      }
+    ]
+  },
+  {
+    slug: "eskisehir-zemin-guclendirme",
+    intro:
+      "Eskişehir'de zemin güçlendirme; Porsuk ovasının alüvyon yapısı, yüksek yeraltı suyu ve organize sanayi bölgelerindeki geniş taban alanlı yapılar dikkate alınarak planlanır. YER6, DSM zemin iyileştirme, jet grout ve fore kazık uygulamalarını bölgenin zemin koşullarına göre optimize eder.",
+    sections: [
+      {
+        heading: "Porsuk ovası alüvyonu ve yeraltı suyu",
+        body: [
+          "Porsuk çevresindeki alüvyon zeminlerde yumuşak kil ve gevşek silt-kum seviyeleri, yüksek yeraltı suyuyla birlikte oturma ve taşıma gücü açısından hassasiyet oluşturur. Bu koşullar, özellikle sanayi ve lojistik yapılarında zemin iyileştirmesini gerektirebilir.",
+          "Tabaka geçişlerinin değişken olduğu bölgelerde, güvenilir tasarım ancak sondaj ve laboratuvar verisiyle kurulan bir zemin modeliyle mümkündür."
+        ]
+      },
+      {
+        heading: "Eskişehir'de zemin iyileştirme yaklaşımı",
+        body: [
+          "Geniş parselli üretim ve depolama yapılarında oturmayı kontrol etmek için DSM zemin iyileştirme; su kontrolü ve yerel güçlendirme için jet grout tercih edilir. Yüksek yapısal yüklerde fore kazıklı temeller devreye alınır.",
+          "YER6, Eskişehir sahalarında kolon çapı doğrulaması, bağlayıcı dozajı ve üretim kayıtlarını izleyerek kalite kabul sürecini belgelendirir."
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "Eskişehir OSB'de zemin iyileştirme gerekli mi?",
+        answer:
+          "Yumuşak alüvyon ve yüksek yeraltı suyu bulunan parsellerde geniş taban alanlı yapılarda oturma riski nedeniyle çoğunlukla gereklidir; kesin karar zemin etüdüne bağlıdır."
+      },
+      {
+        question: "Yüksek yeraltı suyu uygulamayı nasıl etkiler?",
+        answer:
+          "Su geçirgen zeminlerde jet grout ve enjeksiyon ile su kontrolü sağlanır; imalat programı ve ekipman seçimi yeraltı suyu seviyesine göre düzenlenir."
+      },
+      {
+        question: "Hangi verilerle ön teklif alabilirim?",
+        answer:
+          "Mevcut sondaj raporu, parsel ölçüleri ve yapı yükleri ile ön değerlendirme ve yaklaşık metraj hazırlayabiliriz."
+      }
+    ]
+  },
+  {
+    slug: "konya-zemin-guclendirme",
+    intro:
+      "Konya'da zemin güçlendirme; geniş ova zemininin killi yapısı, oturma davranışı ve tarımsal/endüstriyel yapıların yük koşulları dikkate alınarak planlanır. YER6, DSM zemin iyileştirme, fore kazık ve jet grout uygulamalarını bölgenin zemin profiline göre kurgular.",
+    sections: [
+      {
+        heading: "Konya ovası zemini ve oturma davranışı",
+        body: [
+          "Konya ovasının geniş kesiminde yer alan killi ve siltli zeminler, yük altında zamanla oturma (konsolidasyon) davranışı gösterebilir. Bu durum, geniş taban alanlı depolama ve üretim yapılarında düzensiz oturma riskini artırır.",
+          "Bölgede yeraltı suyu ve tabaka özellikleri konum bazında değiştiğinden, doğru yöntem seçimi için parsel özelinde zemin etüdü esastır."
+        ]
+      },
+      {
+        heading: "Sanayi ve tarımsal yapılarda uygulama",
+        body: [
+          "Silo, depo ve üretim tesisleri gibi yüksek ve sürekli yük taşıyan yapılarda oturmayı sınırlamak için DSM zemin iyileştirme ve fore kazıklı temeller öne çıkar. Yerel güçlendirme ve su yalıtımı gereken noktalarda jet grout uygulanır.",
+          "YER6, Konya sahalarında kolon sürekliliği, mukavemet testleri ve üretim kayıtlarını izleyerek yatırımın uzun vadeli performansını güvence altına alır."
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "Silo ve depo temellerinde neden zemin iyileştirme gerekir?",
+        answer:
+          "Yüksek ve sürekli yükler killi zeminlerde konsolidasyon oturmasına yol açabilir. DSM veya kazıklı temel çözümleriyle oturma sınırlandırılarak yapı güvenliği sağlanır."
+      },
+      {
+        question: "Konya genelinde saha uygulaması yapıyor musunuz?",
+        answer:
+          "Evet; Konya merkez ve ilçelerdeki sanayi, tarım ve altyapı projelerinde zemin güçlendirme uygulamaları yürütüyoruz."
+      },
+      {
+        question: "Ön değerlendirme için ne gerekli?",
+        answer:
+          "Mevcut sondaj verisi, yapı yükleri ve parsel bilgileri ile yöntem önerisi ve yaklaşık metraj hazırlayabiliriz."
+      }
+    ]
+  },
+  {
+    slug: "hatay-zemin-guclendirme",
+    intro:
+      "Hatay'da zemin güçlendirme; Amik ovasının alüvyon yapısı, yüksek yeraltı suyu ve 6 Şubat 2023 depremlerinin ortaya koyduğu zemin davranışı dersleri dikkate alınarak planlanır. YER6, güvenli yeniden yapım sürecinde jet grout, DSM zemin iyileştirme ve fore kazık çözümleriyle sağlam temel altyapısı kurulmasına destek olur.",
+    sections: [
+      {
+        heading: "Hatay zemini ve 2023 depremi dersleri",
+        body: [
+          "Antakya ve çevresindeki Amik ovası, kalın alüvyon tabakaları, yumuşak kil ve yüksek yeraltı suyuyla karakterizedir. İskenderun kıyı kesiminde gözlenen zemin davranışları, gevşek ve suya doygun zeminlerde sıvılaşma ile taşıma gücü kaybının yapısal hasarı büyütebildiğini göstermiştir.",
+          "Bu koşullar, bölgede yeni yapıların temellerinde zemin iyileştirmesinin ve doğru temel sistemi seçiminin belirleyici olduğunu ortaya koyar."
+        ]
+      },
+      {
+        heading: "Yeniden yapımda zemin güçlendirme",
+        body: [
+          "Sıvılaşma ve oturma riski taşıyan alüvyon sahalarda jet grout ve DSM zemin iyileştirme ile zemin rijitliği artırılır; yüksek ve derin yükler için fore kazıklı temeller sağlam tabakaya ulaşır.",
+          "YER6, Hatay sahalarında sondaj verisiyle kurulan zemin modeli üzerinden kolon parametrelerini belirler; deneme kolonları, karot ve süreklilik kontrolleriyle üretim kalitesini belgeler."
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "Deprem bölgesinde yeni yapı için zemin iyileştirme şart mı?",
+        answer:
+          "Gevşek/suya doygun alüvyon ve sıvılaşma riski bulunan sahalarda çoğunlukla gereklidir. Kesin karar, güncel zemin etüdü ve performans hedeflerine göre verilir."
+      },
+      {
+        question: "İskenderun kıyı zemininde hangi yöntem uygun?",
+        answer:
+          "Yüksek yeraltı suyu ve sıvılaşma potansiyeli nedeniyle jet grout, DSM veya derin temel çözümleri değerlendirilir; yöntem sondaj sonuçlarına bağlıdır."
+      },
+      {
+        question: "Hatay genelinde saha uygulaması yapıyor musunuz?",
+        answer:
+          "Evet; Antakya, İskenderun, Defne ve Samandağ dahil bölge genelinde zemin güçlendirme uygulamaları yürütüyoruz."
+      }
+    ]
+  },
+  {
+    slug: "kahramanmaras-zemin-guclendirme",
+    intro:
+      "Kahramanmaraş'ta zemin güçlendirme; 6 Şubat 2023 depremlerinin merkez üssü olan bölgenin fay etkisi, ova alüvyonları ve yeniden inşa ihtiyaçları dikkate alınarak planlanır. YER6, güvenli yapı temeli için jet grout, DSM zemin iyileştirme ve fore kazık çözümleri sunar.",
+    sections: [
+      {
+        heading: "Kahramanmaraş zemini ve fay etkisi",
+        body: [
+          "Bölge, aktif fay zonuna yakınlığı ve ova kesimlerindeki alüvyon zeminler nedeniyle deprem etkilerinin zeminle birlikte değerlendirilmesini gerektirir. Gevşek dolgu ve yumuşak tabakalar, sarsıntı sırasında büyütme (amplifikasyon) ve oturma açısından risk taşıyabilir.",
+          "Yeni yapılaşmada, zemin koşulları ile yapısal tasarımın uyumlu kurgulanması güvenli sonuç için esastır."
+        ]
+      },
+      {
+        heading: "Güvenli yeniden yapım için temel çözümleri",
+        body: [
+          "Oturma ve taşıma gücü sorunlu alüvyon sahalarda DSM ve jet grout ile zemin rijitliği artırılır; yüksek yükler ve derin temeller için fore kazık uygulanır.",
+          "YER6, Kahramanmaraş sahalarında zemin modeli, deneme kolonları ve kalite kontrol kayıtlarıyla üretim güvenilirliğini belgeler."
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "Merkez üssü bölgesinde temel için ne önerilir?",
+        answer:
+          "Zemin profiline göre DSM, jet grout veya fore kazıklı temel çözümleri değerlendirilir. Yöntem seçimi mutlaka güncel zemin etüdüne dayanmalıdır."
+      },
+      {
+        question: "Alüvyon zeminde oturma nasıl kontrol edilir?",
+        answer:
+          "Zemin iyileştirme (DSM/jet grout) ile rijitlik artırılır veya yükler kazıklarla sağlam tabakaya aktarılır; böylece düzensiz oturma sınırlandırılır."
+      },
+      {
+        question: "Kahramanmaraş'ta çalışıyor musunuz?",
+        answer:
+          "Evet; merkez ve ilçelerdeki konut, kamu ve altyapı projelerinde zemin güçlendirme uygulamaları yapıyoruz."
+      }
+    ]
+  },
+  {
+    slug: "malatya-zemin-guclendirme",
+    intro:
+      "Malatya'da zemin güçlendirme; ova alüvyonları, killi zemin davranışı ve 2023 depremlerinin ardından öne çıkan güvenli yeniden yapım ihtiyacı doğrultusunda planlanır. YER6, DSM zemin iyileştirme, fore kazık ve jet grout uygulamalarını bölgenin zemin koşullarına göre kurgular.",
+    sections: [
+      {
+        heading: "Malatya zemini ve yapısal riskler",
+        body: [
+          "Battalgazi ve Yeşilyurt çevresindeki ova kesimlerinde alüvyon ve killi tabakalar, yük altında oturma ve deprem sırasında zemin büyütmesi açısından değerlendirilmelidir. Gevşek dolgu alanları, temel performansını doğrudan etkiler.",
+          "Bu nedenle yeni yapılarda temel sistemi, zemin etüdüyle kurulan bir model üzerinden seçilmelidir."
+        ]
+      },
+      {
+        heading: "Zemin iyileştirme ve temel çözümleri",
+        body: [
+          "Oturma sorunlu alüvyon ve killi zeminlerde DSM zemin iyileştirme ve gerektiğinde jet grout ile rijitlik artırılır; yüksek yapısal yükler fore kazıklı temellerle taşınır.",
+          "YER6, Malatya sahalarında kolon sürekliliği, mukavemet deneyleri ve üretim kayıtlarını izleyerek kalite kabul sürecini belgeler."
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "Killi zeminde hangi güçlendirme yöntemi uygun?",
+        answer:
+          "Killi ve oturmaya yatkın zeminlerde DSM zemin iyileştirme veya kazıklı temel çözümleri öne çıkar; yöntem, plastisite ve yük koşullarına göre belirlenir."
+      },
+      {
+        question: "Yeni konut projesi için zemin etüdü şart mı?",
+        answer:
+          "Evet; güvenli temel tasarımı ve doğru yöntem seçimi için güncel zemin etüdü verisi gereklidir."
+      },
+      {
+        question: "Malatya genelinde hizmet veriyor musunuz?",
+        answer:
+          "Evet; merkez ilçeler ve çevredeki projelerde zemin güçlendirme saha uygulamaları yürütüyoruz."
+      }
+    ]
+  },
+  {
+    slug: "adiyaman-zemin-guclendirme",
+    intro:
+      "Adıyaman'da zemin güçlendirme; ova alüvyonları, killi zemin davranışı ve 2023 depremlerinin ardından öne çıkan güvenli yeniden yapım ihtiyacı doğrultusunda planlanır. YER6, DSM zemin iyileştirme, jet grout ve fore kazık uygulamalarını bölgenin zemin koşullarına göre kurgular.",
+    sections: [
+      {
+        heading: "Adıyaman zemini ve deprem sonrası öncelikler",
+        body: [
+          "Merkez ve çevre ilçelerdeki alüvyon ve killi zeminler, yük altında oturma ve deprem sırasında zemin büyütmesi açısından dikkatle değerlendirilmelidir. Gevşek dolgu alanları ve suya doygun tabakalar, temel performansını doğrudan etkileyen risk unsurlarıdır.",
+          "Güvenli yeniden yapımda, temel sistemi seçimi mutlaka sondaj ve laboratuvar verisiyle kurulan bir zemin modeline dayanmalıdır."
+        ]
+      },
+      {
+        heading: "Zemin iyileştirme ve temel çözümleri",
+        body: [
+          "Oturma ve taşıma gücü sorunlu sahalarda DSM zemin iyileştirme ve jet grout ile zemin rijitliği artırılır; yüksek yapısal yükler fore kazıklı temellerle sağlam tabakaya aktarılır.",
+          "YER6, Adıyaman sahalarında deneme kolonları, karot alımı ve süreklilik kontrolleriyle üretim kalitesini belgeleyerek teslim eder."
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "Deprem sonrası yeni yapıda hangi temel önerilir?",
+        answer:
+          "Zemin profiline göre DSM, jet grout veya fore kazıklı temel çözümleri değerlendirilir. Karar, güncel zemin etüdü ve performans hedeflerine dayanır."
+      },
+      {
+        question: "Alüvyon zeminde oturma nasıl önlenir?",
+        answer:
+          "Zemin iyileştirme ile rijitlik artırılır veya yükler kazıklarla derindeki sağlam tabakaya aktarılarak düzensiz oturma sınırlandırılır."
+      },
+      {
+        question: "Adıyaman'da saha uygulaması yapıyor musunuz?",
+        answer:
+          "Evet; merkez ve ilçelerdeki konut, kamu ve altyapı projelerinde zemin güçlendirme uygulamaları yürütüyoruz."
+      }
+    ]
+  },
+  {
+    slug: "gaziantep-zemin-guclendirme",
+    intro:
+      "Gaziantep'te zemin güçlendirme; yoğun sanayi yapılaşması, değişken zemin profili ve bölgenin deprem etkisi bir arada değerlendirilerek planlanır. YER6, organize sanayi tesislerinden konut projelerine kadar Gaziantep genelinde DSM, jet grout ve fore kazık çözümleri sunar.",
+    sections: [
+      {
+        heading: "Gaziantep zemini ve yapısal koşullar",
+        body: [
+          "Kent genelinde nispeten sağlam platform zeminlerinin yanı sıra, ova ve dere yataklarına yakın kesimlerde alüvyon ve gevşek dolgu tabakalarıyla karşılaşılır. Bu değişkenlik, aynı bölgede bile parsel bazında farklı temel çözümleri gerektirebilir.",
+          "Deprem etkisinin belirgin olduğu bölgede, zemin koşulları ile yapısal tasarımın birlikte kurgulanması güvenli sonuç için esastır."
+        ]
+      },
+      {
+        heading: "Sanayi ve konut yapılarında uygulama",
+        body: [
+          "Geniş taban alanlı sanayi tesislerinde oturmayı kontrol etmek için DSM zemin iyileştirme; yerel güçlendirme ve su yalıtımı için jet grout uygulanır. Yüksek yükler ve derin temellerde fore kazık devreye alınır.",
+          "YER6, Gaziantep sahalarında kolon çapı doğrulaması, bağlayıcı dozajı ve üretim kayıtlarını izleyerek kalite kabul sürecini belgeler."
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "Gaziantep OSB'de zemin iyileştirme gerekir mi?",
+        answer:
+          "Alüvyon veya gevşek dolgu bulunan parsellerde geniş taban alanlı yapılarda oturma riski nedeniyle çoğunlukla gereklidir; kesin karar zemin etüdüne bağlıdır."
+      },
+      {
+        question: "Aynı bölgede zemin neden parselden parsele değişir?",
+        answer:
+          "Platform zeminleri ile dere yatağı/ova alüvyonları yan yana bulunabilir. Bu nedenle her parsel için ayrı sondaj ve değerlendirme yapılması önerilir."
+      },
+      {
+        question: "Gaziantep genelinde hizmet veriyor musunuz?",
+        answer:
+          "Evet; merkez ilçeler, OSB ve çevre bölgelerdeki sanayi, konut ve altyapı projelerinde zemin güçlendirme uygulamaları yapıyoruz."
+      }
+    ]
+  }
+  // ENRICH_ANCHOR
+];
+
+const cityEnrichment: Record<string, CityEnrichment> = Object.fromEntries(
+  cityEnrichmentList.map((entry) => [entry.slug, entry])
+);
+
 export function getCityPageBySlug(slug: string) {
-  return cityPages.find((page) => page.slug === slug);
+  const page = cityPages.find((page) => page.slug === slug);
+  if (!page) {
+    return undefined;
+  }
+  const enrichment = cityEnrichment[slug];
+  return enrichment ? { ...page, ...enrichment } : page;
 }
 
 export function getCityPaths() {
   return cityPages.map((page) => ({ slug: page.slug }));
 }
+
+// Öncelikli iller. Tüm iller indekslenir ve sitemap'te yer alır; ancak öncelikli iller
+// her listede DAİMA ÖNDE gösterilir ve sitemap'te daha yüksek önceliğe (priority) sahiptir.
+// Bu listedeki iller ayrıca zenginleştirilmiş (benzersiz, uzun) içeriğe sahiptir.
+export const featuredCitySlugs = [
+  "ankara-zemin-guclendirme",
+  "istanbul-zemin-guclendirme",
+  "izmir-zemin-guclendirme",
+  "bursa-zemin-guclendirme",
+  "kocaeli-zemin-guclendirme",
+  "hatay-zemin-guclendirme",
+  "kahramanmaras-zemin-guclendirme",
+  "malatya-zemin-guclendirme",
+  "adiyaman-zemin-guclendirme",
+  "gaziantep-zemin-guclendirme",
+  "eskisehir-zemin-guclendirme",
+  "konya-zemin-guclendirme"
+];
+
+export function isFeaturedCity(slug: string) {
+  return featuredCitySlugs.includes(slug);
+}
+
+// Öncelikli iller, featuredCitySlugs sırasıyla (Ankara en başta) döner.
+export const featuredCityPages = featuredCitySlugs
+  .map((slug) => cityPages.find((page) => page.slug === slug))
+  .filter((page): page is CityPage => Boolean(page));
+
+// Tüm iller; öncelikli iller önce (Ankara en başta, daima önde), ardından diğerleri.
+// Listelerde ve sitemap'te bu sıra kullanılır.
+export const orderedCityPages = [
+  ...featuredCityPages,
+  ...cityPages.filter((page) => !featuredCitySlugs.includes(page.slug))
+];

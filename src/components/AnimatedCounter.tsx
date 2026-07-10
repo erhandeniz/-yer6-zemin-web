@@ -6,7 +6,9 @@ import { useInView } from "framer-motion";
 export function AnimatedCounter({ value, suffix = "" }: { value: number; suffix?: string }) {
   const ref = useRef<HTMLSpanElement | null>(null);
   const inView = useInView(ref, { once: true, margin: "-80px" });
-  const [display, setDisplay] = useState(0);
+  // Statik export HTML'inde (ve JS gelmeden) gerçek değer görünsün diye başlangıç
+  // değeri "value" olarak ayarlanır; sayfa görünüme girdiğinde 0'dan animasyon yapılır.
+  const [display, setDisplay] = useState(value);
 
   useEffect(() => {
     if (!inView) return;

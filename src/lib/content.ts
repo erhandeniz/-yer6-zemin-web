@@ -34,15 +34,13 @@ export const metrics = [
   { value: 99, suffix: "%", labelKey: "metric4Label", detailKey: "metric4Detail" }
 ];
 
+// Referans firmalar (metin-amblem rozet olarak gösterilir). Yalnızca YER6'nın
+// gerçekten çalıştığı firmalar listelenir. Erhan tarafından beyan edilenler eklenir.
 export const clientLogos = [
-  "Kamu Altyapı",
-  "Endüstriyel Tesis",
-  "Ulaşım",
-  "Liman",
-  "Enerji",
-  "Konut",
-  "Ticari Proje",
-  "Deprem Güçlendirme"
+  "Rönesans",
+  "İçtaş",
+  "Pasifik İnşaat",
+  "Pekintaş"
 ];
 
 export const services = [
@@ -357,6 +355,240 @@ export const services = [
       { question: "Zemin raporu yeterince iyi mi sorusuna nasıl cevap verilir?", answer: "Zemin raporunun yeterliliği; sondaj sayısı ve derinliği, deney türleri, zemin sınıflandırması ve tasarım parametrelerinin proje gereksinimlerini karşılayıp karşılamadığıyla değerlendirilir." },
       { question: "İhale öncesi geoteknik destek sağlayabilir misiniz?", answer: "Evet. YER6 ihale öncesi; zemin koşullarına göre yaklaşık metraj, yöntem önerisi ve risk değerlendirmesi sunarak teklif sürecini destekler." }
     ]
+  },
+  {
+    slug: "zemin-civisi",
+    key: "svc_zemin_civisi",
+    icon: Mountain,
+    title: "Zemin Çivisi",
+    summary: "Kazı yüzeylerinin çelik çubuk ve püskürtme betonla in-situ güçlendirilmesiyle oluşturulan esnek destek sistemi.",
+    detail: "Derin kazı şevlerinde ve yamaç stabilizasyonunda, kademeli kazıyla birlikte uygulanan ekonomik ve hızlı iksa çözümü.",
+    specs: ["Çelik çubuk ve enjeksiyon aderansı", "Püskürtme beton yüzey kaplaması", "Kademeli kazı ile eş zamanlı imalat"],
+    applications: [
+      "Derin kazı şevlerinin güvenli hale getirilmesi",
+      "Yamaç ve şev stabilizasyonu",
+      "Mevcut istinat yapılarının güçlendirilmesi",
+      "Geçici ve kalıcı kazı destek sistemleri",
+      "Kentsel dönüşümde dar sahalı derin kazılar",
+      "Karayolu ve altyapı yarma şevleri"
+    ],
+    advantages: [
+      "Kademeli kazıyla eş zamanlı, hızlı ve ekonomik uygulama",
+      "Dar ve erişimi kısıtlı sahalarda kompakt ekipmanla imalat",
+      "Esnek geometriyle düzensiz kazı yüzeylerine uyum",
+      "Düşük titreşim ile çevre yapılara duyarlı çalışma",
+      "Kalıcı veya geçici sistem olarak tasarlanabilir",
+      "Ankraj sistemleriyle birlikte hibrit çözüm imkânı"
+    ],
+    processSteps: [
+      { title: "Tasarım ve Kademe Planı", description: "Zemin parametreleri ve kazı geometrisine göre çivi boyu, açısı, aralığı ve kademe yükseklikleri belirlenir." },
+      { title: "Kademeli Kazı", description: "Kazı, tasarım kademe yüksekliğinde adım adım gerçekleştirilerek yüzey stabilitesi korunur." },
+      { title: "Delgi ve Çivi Yerleşimi", description: "Her kademede delgi yapılır, çelik çubuk yerleştirilir ve enjeksiyonla zemine aderans sağlanır." },
+      { title: "Hasır Donatı ve Püskürtme Beton", description: "Yüzeye hasır donatı serilir ve püskürtme beton (shotcrete) ile yüzey kaplaması oluşturulur." },
+      { title: "Drenaj ve Kontrol", description: "Yüzey arkası drenaj boşaltması sağlanır; deplasman ve gerilme kontrolleriyle sistem izlenir." }
+    ],
+    technicalNote: "Zemin çivisi sistemi, ankrajlı iksa perdelerine göre daha esnek ve genellikle daha ekonomiktir; ancak kohezyonsuz, suya doygun veya çok yumuşak zeminlerde uygulanabilirliği sınırlıdır. Çivi boyu tipik olarak kazı yüksekliğinin 0,6–1,0 katı arasında, aralık ise 1,0–2,0 m arasında tasarlanır. Kalıcı sistemlerde korozyon koruması ve drenaj detayları kritik öneme sahiptir.",
+    faq: [
+      { question: "Zemin çivisi ile ankraj arasındaki fark nedir?", answer: "Ankraj öngermeli (aktif) bir sistemdir ve yükü serbest boyla derin sağlam zemine aktarır. Zemin çivisi ise öngermesiz (pasif) çalışır; kazı yüzeyini bir bütün olarak güçlendirir. Zemin çivisi çoğu durumda daha hızlı ve ekonomiktir." },
+      { question: "Zemin çivisi hangi zeminlerde uygun değildir?", answer: "Kohezyonsuz gevşek kum, suya doygun zeminler ve çok yumuşak killerde uygulanabilirliği sınırlıdır; bu koşullarda ankraj veya kazıklı iksa değerlendirilir." },
+      { question: "Kalıcı zemin çivisi sistemi yapılabilir mi?", answer: "Evet. Korozyon koruması, drenaj ve yüzey kaplaması uygun tasarlandığında zemin çivisi kalıcı istinat sistemi olarak kullanılabilir." },
+      { question: "Uygulama ne kadar sürer?", answer: "Süre kazı yüksekliği, kademe sayısı ve zemin koşullarına bağlıdır; kademeli imalat kazıyla eş zamanlı ilerlediği için genel proje süresini kısaltır." }
+    ]
+  },
+  {
+    slug: "puskurtme-beton",
+    key: "svc_puskurtme_beton",
+    icon: Sparkles,
+    title: "Püskürtme Beton",
+    summary: "Yüksek basınçla uygulanan, kazı yüzeylerini hızlı biçimde koruyan ve taşıyan shotcrete kaplama sistemi.",
+    detail: "Derin kazı, tünel ve şev yüzeylerinde hasır donatı veya çelik tel takviyesiyle uygulanan koruyucu ve taşıyıcı beton kabuk.",
+    specs: ["Kuru ve yaş sistem uygulama", "Hasır/çelik tel donatı seçeneği", "Hızlı priz ve erken dayanım"],
+    applications: [
+      "Zemin çivisi ve ankrajlı iksa yüzey kaplaması",
+      "Derin kazı ve yarma şev yüzeylerinin korunması",
+      "Tünel ve galeri iç yüzey desteği",
+      "Şev stabilizasyonu ve erozyon kontrolü",
+      "Mevcut beton yüzeylerin onarım ve güçlendirmesi",
+      "Havuz, kanal ve istinat yapılarında kaplama"
+    ],
+    advantages: [
+      "Kalıp gerektirmeden hızlı uygulama",
+      "Düzensiz ve eğimli yüzeylere tam uyum",
+      "Hasır/çelik tel takviyesiyle yüksek yüzey dayanımı",
+      "Erken dayanım kazanımıyla kademeli kazıyı hızlandırır",
+      "Su geçişini ve yüzey erozyonunu sınırlar",
+      "İksa sistemleriyle bütünleşik çalışma"
+    ],
+    processSteps: [
+      { title: "Yüzey Hazırlığı", description: "Kazı yüzeyi temizlenir, gevşek malzeme alınır ve gerekli drenaj noktaları oluşturulur." },
+      { title: "Donatı Yerleşimi", description: "Hasır çelik donatı sabitlenir veya karışıma çelik tel (fiber) katkısı eklenir." },
+      { title: "Karışım ve Pompalama", description: "Kuru veya yaş sistemle hazırlanan beton, yüksek basınçlı ekipmanla nozula taşınır." },
+      { title: "Püskürtme Uygulaması", description: "Beton, yüzeye kontrollü mesafe ve açıyla püskürtülerek istenen kalınlıkta tabaka oluşturulur." },
+      { title: "Kür ve Kalite Kontrol", description: "Yüzey kürü sağlanır; kalınlık, aderans ve dayanım kontrolleriyle uygulama doğrulanır." }
+    ],
+    technicalNote: "Püskürtme beton uygulamasında yaş sistem daha düşük toz ve daha stabil kalite sunarken, kuru sistem uzun pompalama mesafeleri ve aralıklı çalışmalarda avantajlıdır. Çelik tel (fiber) takviyesi, hasır donatıya göre daha homojen çatlak kontrolü sağlayabilir. Katman kalınlığı ve donatı, iksa sisteminin statik tasarımına göre belirlenir.",
+    faq: [
+      { question: "Kuru sistem mi yaş sistem mi daha iyidir?", answer: "Yaş sistem daha düşük toz ve daha stabil kalite verir; kuru sistem uzun pompalama mesafeleri ve kesintili işlerde avantajlıdır. Seçim, saha koşullarına ve proje büyüklüğüne göre yapılır." },
+      { question: "Püskürtme beton tek başına iksa sistemi midir?", answer: "Hayır. Püskürtme beton genellikle zemin çivisi veya ankrajlı sistemin yüzey kaplaması olarak çalışır; taşıyıcı sistemle birlikte tasarlanır." },
+      { question: "Çelik tel (fiber) takviyesi ne sağlar?", answer: "Fiber takviyesi, çatlak kontrolünü iyileştirir ve hasır donatı montaj süresini ortadan kaldırarak uygulamayı hızlandırabilir." },
+      { question: "Uygulama kalınlığı ne kadardır?", answer: "Kalınlık projeye göre değişir; koruyucu kaplamalarda birkaç santimetre, taşıyıcı uygulamalarda daha yüksek katman kalınlıkları tasarlanabilir." }
+    ]
+  },
+  {
+    slug: "kazik-yukleme-testleri",
+    key: "svc_kazik_test",
+    icon: Gauge,
+    title: "Kazık Yükleme ve PIT Testleri",
+    summary: "Kazıkların taşıma kapasitesini ve bütünlüğünü sahada doğrulayan statik yükleme, dinamik yükleme ve düşük gerilme (PIT) testleri.",
+    detail: "Uygulanan kazıkların tasarım varsayımlarını karşıladığını belgeleyen bağımsız saha test ve raporlama hizmeti.",
+    specs: ["Statik ve dinamik yükleme testi", "Düşük gerilme bütünlük testi (PIT)", "Bağımsız raporlama ve değerlendirme"],
+    applications: [
+      "Fore kazık ve mini kazık taşıma kapasitesi doğrulaması",
+      "Kazık bütünlüğü (süreklilik) kontrolü",
+      "Deneme kazığı ile tasarım kalibrasyonu",
+      "Kabul kriterlerine uygunluk denetimi",
+      "Mevcut kazıklı temellerin performans değerlendirmesi",
+      "Altyapı ve yüksek yapı projelerinde kalite güvencesi"
+    ],
+    advantages: [
+      "Tasarım varsayımlarının sahada doğrulanması",
+      "Kazık sürekliliği ve boyunun bağımsız kontrolü",
+      "Statik ve dinamik yöntemlerle esnek test kapsamı",
+      "Kabul kriterlerine uygunluğun belgelenmesi",
+      "Risklerin imalat aşamasında erken tespiti",
+      "Uluslararası standartlara uygun raporlama"
+    ],
+    processSteps: [
+      { title: "Test Programı Tasarımı", description: "Proje kazık tipine, yüküne ve standartlara göre test yöntemi, sayısı ve kabul kriterleri belirlenir." },
+      { title: "Saha Kurulumu", description: "Statik test için reaksiyon sistemi, dinamik/PIT test için sensör ve enstrümantasyon kurulur." },
+      { title: "Yükleme / Ölçüm", description: "Kazığa kademeli yük uygulanır veya darbe verilerek deplasman, kuvvet ve dalga verileri kaydedilir." },
+      { title: "Veri Analizi", description: "Yük-oturma eğrileri ve dalga sinyalleri analiz edilerek taşıma kapasitesi ve bütünlük değerlendirilir." },
+      { title: "Raporlama", description: "Sonuçlar kabul kriterleriyle karşılaştırılarak bağımsız teknik raporla teslim edilir." }
+    ],
+    technicalNote: "Statik yükleme testi, taşıma kapasitesinin en doğrudan doğrulama yöntemidir ancak kurulumu maliyetli ve zaman alıcıdır. Dinamik yükleme testi daha hızlı ve ekonomiktir; çok sayıda kazığın kısa sürede test edilmesine imkân verir. Düşük gerilme bütünlük testi (PIT/sonic echo) ise kazık sürekliliği ve olası kesit kayıplarını hızlıca tarar. Test kapsamı, proje riskine göre bu yöntemlerin kombinasyonuyla planlanır.",
+    faq: [
+      { question: "Statik ve dinamik yükleme testi arasındaki fark nedir?", answer: "Statik test, kazığa fiziksel olarak kademeli yük uygulayıp oturmayı ölçer; en doğrudan yöntemdir. Dinamik test ise darbe sırasında oluşan dalga verilerinden kapasiteyi tahmin eder; daha hızlı ve ekonomiktir." },
+      { question: "PIT testi ne işe yarar?", answer: "Düşük gerilme bütünlük testi (PIT), kazık boyunca süreklilik ve olası kesit kayıpları/çatlakları hasarsız biçimde tarar; kazık kalitesinin hızlı kontrolünü sağlar." },
+      { question: "Her kazık test edilmeli mi?", answer: "Genellikle hayır; test sayısı projedeki toplam kazık adedine, riske ve şartname gerekliliklerine göre örnekleme mantığıyla belirlenir. Bütünlük testleri daha geniş kapsamda uygulanabilir." },
+      { question: "Test raporu neden bağımsız olmalı?", answer: "Bağımsız test ve raporlama, tarafsız bir kalite güvencesi sağlar ve yatırımcı, tasarımcı ile idare arasında güvenilir bir referans oluşturur." }
+    ]
+  },
+  {
+    slug: "zemin-etudu",
+    key: "svc_zemin_etudu",
+    icon: Compass,
+    title: "Zemin Etüdü",
+    summary: "Sondaj, arazi ve laboratuvar deneyleriyle zeminin mühendislik parametrelerini belirleyen geoteknik araştırma hizmeti.",
+    detail: "Yapı ruhsatı ve güvenli temel tasarımı için zorunlu; sağlıklı bir zemin modeli kurmanın ilk ve en kritik adımı.",
+    specs: ["Sondaj ve arazi deneyleri (SPT, CPT)", "Laboratuvar indeks ve mukavemet deneyleri", "Geoteknik rapor ve tasarım parametreleri"],
+    applications: [
+      "Yapı ruhsatına esas zemin ve temel etüdü",
+      "Sıvılaşma ve oturma analizi için veri toplama",
+      "Temel tipi seçimine yönelik parametre belirleme",
+      "Zemin iyileştirme yönteminin seçimine altlık",
+      "Şev ve istinat yapıları için stabilite verisi",
+      "Mevcut yapıların zemin kaynaklı sorunlarının teşhisi"
+    ],
+    advantages: [
+      "Güvenli ve ekonomik temel tasarımının temeli",
+      "Sıvılaşma, oturma ve taşıma gücü risklerinin önceden tespiti",
+      "Doğru zemin iyileştirme yönteminin seçimine altlık",
+      "Yönetmeliğe (TBDY 2018) uygun sınıflandırma",
+      "İhale öncesi gerçekçi metraj ve maliyet öngörüsü",
+      "Sürprizleri ve sonradan maliyet artışlarını azaltır"
+    ],
+    processSteps: [
+      { title: "Ön Değerlendirme ve Planlama", description: "Proje tipi ve saha koşullarına göre sondaj sayısı, derinliği ve deney programı planlanır." },
+      { title: "Arazi Çalışmaları", description: "Sondaj, SPT/CPT ve gerektiğinde jeofizik ölçümlerle zemin profili ve yeraltı suyu belirlenir." },
+      { title: "Laboratuvar Deneyleri", description: "Alınan numuneler üzerinde indeks, mukavemet ve konsolidasyon deneyleri yapılır." },
+      { title: "Analiz ve Modelleme", description: "Veriler değerlendirilerek zemin modeli, tasarım parametreleri ve risk değerlendirmesi oluşturulur." },
+      { title: "Geoteknik Rapor", description: "Bulgular, temel önerileri ve tasarım parametreleri yönetmeliğe uygun raporla sunulur." }
+    ],
+    technicalNote: "Zemin etüdünün kalitesi; sondaj sayısı ve derinliği, deney çeşitliliği ve raporun tasarım parametrelerini ne kadar net verdiğiyle ölçülür. TBDY 2018 kapsamında yerel zemin sınıfı, sıvılaşma değerlendirmesi ve tasarım spektrumu için yeterli derinlik ve veri esastır. Yetersiz etüt, ilerleyen aşamalarda maliyeti çok daha yüksek sürprizlere yol açar.",
+    faq: [
+      { question: "Zemin etüdü yasal olarak zorunlu mu?", answer: "Evet. Yapı ruhsatı için zemin ve temel etüdü zorunludur. Bunun yanında güvenli tasarım için yeterli sondaj ve deney yapılması teknik olarak da kritiktir." },
+      { question: "Kaç sondaj gerekir?", answer: "Sondaj sayısı ve derinliği; yapı büyüklüğü, yük durumu ve zemin değişkenliğine göre belirlenir. Yönetmelik asgari gereklilikleri sağlamak kadar zemin modelini güvenilir kurmak da önemlidir." },
+      { question: "Zemin etüdü sıvılaşmayı gösterir mi?", answer: "Evet. Uygun derinlik ve deneylerle (SPT/CPT, yeraltı suyu) sıvılaşma potansiyeli değerlendirilir ve gerekli iyileştirme yöntemine altlık oluşturulur." },
+      { question: "Etüt sonrası zemin iyileştirme gerekir mi?", answer: "Etüt sonucuna bağlıdır. Zayıf, gevşek veya sıvılaşmaya yatkın zeminlerde iyileştirme veya uygun temel sistemi önerilir; sağlam zeminlerde gerekmeyebilir." }
+    ]
+  },
+  {
+    slug: "tas-kolon",
+    key: "svc_tas_kolon",
+    icon: Network,
+    title: "Taş Kolon",
+    summary: "Yumuşak zemine sıkıştırılmış çakıl/kırmataş kolonları teşkil ederek taşıma gücünü artıran ve drenaj sağlayan iyileştirme yöntemi.",
+    detail: "Yumuşak kil ve gevşek dolgu zeminlerde oturmayı azaltan, sıvılaşma direncini artıran ve hızlı konsolidasyon sağlayan çözüm.",
+    specs: ["Vibro yerleştirme (ıslak/kuru sistem)", "Drenaj ve taşıma gücü artışı", "Sıvılaşma direncine katkı"],
+    applications: [
+      "Yumuşak kil ve gevşek zeminlerde geniş taban alanlı yapılar",
+      "Depo, lojistik ve endüstriyel platform temelleri",
+      "Dolgu altı zemin iyileştirmesi",
+      "Sıvılaşmaya yatkın zeminlerde direnç artırımı",
+      "Yol ve demiryolu dolgusu altında oturma kontrolü",
+      "Tank ve silo temel zeminlerinin güçlendirilmesi"
+    ],
+    advantages: [
+      "Oturma ve fark oturmayı belirgin biçimde azaltır",
+      "Kolonlar drenaj görevi görerek konsolidasyonu hızlandırır",
+      "Sıvılaşma direncini artırır",
+      "Doğal agrega kullanımıyla çevre dostu çözüm",
+      "Geniş alanlarda hızlı ve ekonomik uygulama",
+      "Taşıma kapasitesini artırarak temel boyutlarını optimize eder"
+    ],
+    processSteps: [
+      { title: "Zemin Modeli ve Tasarım", description: "Zemin parametrelerine göre kolon çapı, aralığı ve derinliği ile hedef iyileştirme oranı belirlenir." },
+      { title: "Saha Aplikasyonu", description: "Kolon eksenleri aplikasyon edilir ve vibro ekipmanı konumlandırılır." },
+      { title: "Delgi / Vibro Yerleştirme", description: "Vibratör zemine indirilir; ıslak veya kuru sistemle boşluk açılır." },
+      { title: "Agrega Besleme ve Sıkıştırma", description: "Çakıl/kırmataş kademeli beslenerek sıkıştırılır ve yanal zemine kenetlenmiş kolon oluşturulur." },
+      { title: "Kalite Kontrol", description: "Agrega sarfı, sıkıştırma enerjisi ve kolon geometrisi kayıt altına alınır; gerektiğinde yükleme deneyi yapılır." }
+    ],
+    technicalNote: "Taş kolon, özellikle yumuşak kil ve gevşek siltli-kumlu zeminlerde oturma kontrolü ve sıvılaşma azaltımı için etkilidir. Çok yumuşak, yanal destek sağlayamayan zeminlerde kolon şişmesi (bulging) riskine karşı geotekstil kılıflı (geosentetik ankastre) taş kolon çözümleri değerlendirilebilir. Kolon aralığı ve çapı, hedef iyileştirme oranına göre tasarlanır.",
+    faq: [
+      { question: "Taş kolon hangi zeminlerde uygundur?", answer: "Yumuşak kil, gevşek silt ve kumlu zeminlerde etkilidir. Çok yumuşak, yanal destek vermeyen zeminlerde geotekstil kılıflı taş kolon tercih edilebilir." },
+      { question: "Taş kolon sıvılaşmayı önler mi?", answer: "Taş kolonlar hem drenaj sağlayarak boşluk suyu basıncını azaltır hem de zemin rijitliğini artırarak sıvılaşma direncine katkıda bulunur." },
+      { question: "Taş kolon mu DSM mi tercih edilmeli?", answer: "Karar zemin tipine ve hedefe bağlıdır. Taş kolon drenaj ve doğal agrega avantajı sunar; DSM ise daha yüksek ve kontrollü mukavemet sağlar. Proje koşulları belirleyicidir." },
+      { question: "Oturmayı ne kadar azaltır?", answer: "İyileştirme oranı; kolon çapı, aralığı ve zemin özelliklerine göre değişir ve projeye özel analizle belirlenir. Doğru tasarımla oturma önemli ölçüde sınırlandırılır." }
+    ]
+  },
+  {
+    slug: "diafram-duvar",
+    key: "svc_diafram_duvar",
+    icon: Building2,
+    title: "Diafram Duvar",
+    summary: "Bentonit çamuru desteğinde teşkil edilen, hem iksa hem su geçirimsizlik sağlayan betonarme sürekli perde duvar.",
+    detail: "Derin kazılarda yüksek rijitlik ve su kontrolü gereken, komşu yapıya duyarlı projeler için kalıcı taşıyıcı perde sistemi.",
+    specs: ["Bentonit çamuru destekli panel imalatı", "Yüksek rijitlik ve su geçirimsizliği", "Kalıcı taşıyıcı sistem entegrasyonu"],
+    applications: [
+      "Derin bodrumlu yüksek yapı kazıları",
+      "Metro istasyonu ve tünel giriş yapıları",
+      "Yüksek yeraltı suyu bulunan derin kazılar",
+      "Komşu yapıya sıfır toleranslı kentsel kazılar",
+      "Liman, rıhtım ve kıyı yapıları",
+      "Kalıcı istinat ve bodrum perde duvarları"
+    ],
+    advantages: [
+      "Yüksek rijitlikle deplasmanı en aza indirir",
+      "Su geçirimsizlik sağlayarak kazı tabanını korur",
+      "Kalıcı taşıyıcı yapı elemanı olarak kullanılabilir",
+      "Derin kazılarda güvenli ve güvenilir çözüm",
+      "Komşu yapı etkilerini sınırlar",
+      "Ankraj veya iç destekle birlikte optimize edilir"
+    ],
+    processSteps: [
+      { title: "Kılavuz Duvar İmalatı", description: "Panel hattı boyunca imalatı yönlendiren ve stabiliteyi artıran kılavuz duvarlar yapılır." },
+      { title: "Bentonit Destekli Hafriyat", description: "Panel, bentonit çamuru desteğinde özel kepçelerle (grab) kazılır; çamur çeper stabilitesini sağlar." },
+      { title: "Donatı Kafesi Yerleşimi", description: "Fabrikasyon donatı kafesi panele indirilir ve konumlandırılır." },
+      { title: "Tremie Beton Dökümü", description: "Beton, tremie borusuyla tabandan yukarı dökülerek çamur yerini alır ve panel oluşturulur." },
+      { title: "Panel Birleşimi ve Kontrol", description: "Panjur/su tutucu ile paneller birleştirilir; süreklilik ve düşeylik kontrolleriyle sistem tamamlanır." }
+    ],
+    technicalNote: "Diafram duvar, fore kazık perdelerine göre daha yüksek rijitlik ve daha iyi su geçirimsizliği sağlar; bu nedenle derin, sulu ve komşu yapıya duyarlı kazılarda tercih edilir. Panel düşeyliği, birleşim detayları (su tutucu) ve tremie beton kalitesi sistemin performansını belirleyen kritik unsurlardır. Kalıcı sistemlerde duvar, nihai yapının bodrum perdesi olarak da çalışabilir.",
+    faq: [
+      { question: "Diafram duvar mı fore kazık perdesi mi?", answer: "Diafram duvar daha yüksek rijitlik ve daha iyi su geçirimsizliği sağlar; derin, sulu ve komşu yapıya duyarlı kazılarda avantajlıdır. Fore kazık perdesi ise bazı koşullarda daha hızlı ve ekonomik olabilir." },
+      { question: "Diafram duvar kalıcı yapı elemanı olur mu?", answer: "Evet. Uygun tasarlandığında nihai yapının bodrum perde duvarı olarak taşıyıcı görev üstlenebilir." },
+      { question: "Su geçirimsizliği nasıl sağlanır?", answer: "Sürekli betonarme panel ve paneller arası su tutucu (waterstop) detayları sayesinde yüksek yeraltı suyu koşullarında dahi kazı tabanı korunur." },
+      { question: "Bentonit çamuru ne işe yarar?", answer: "Bentonit çamuru, kazı sırasında panel çeperinin göçmesini önleyerek stabiliteyi sağlar ve beton dökümüyle yerini betona bırakır." }
+    ]
   }
 ];
 
@@ -519,6 +751,79 @@ export const projects = [
         src: "/images/projects/bursa-yunuseli-nida-evleri/bursa-yunuseli-nida-evleri-jet-grout-temiz-dikey.webp",
         alt: "Bursa Yunuseli Nida Evleri jet grout zemin iyileştirme sahası ve enjeksiyon ekipmanı"
       }
+    ],
+    relatedServiceSlugs: ["jet-grout", "zemin-iyilestirme"]
+  },
+  {
+    slug: "pekintas-duzce-fabrika-jet-grout",
+    key: "proj_pekintas_duzce",
+    category: "Jet Grout",
+    location: "Düzce",
+    year: "2025",
+    area: "",
+    metric: "3.500 m jet grout",
+    title: "Pekintaş Düzce Güneş Paneli Fabrikası Zemin Güçlendirme",
+    summary: "Düzce'de Pekintaş güneş paneli fabrikası ek kurulum binası için temel altı zemin güçlendirme; 17 m boyunda jet grout kolonlarıyla toplam 3.500 m imalat.",
+    challenge: "Güneş paneli üretim hattı ve ekipman yükleri altında düşük ve düzgün oturma gerektiren temel zemininin güçlendirilmesi.",
+    solution: "Temel altında 17 m boyunda jet grout kolonları teşkil edilerek toplam 3.500 m imalatla, oturmaya duyarlı üretim tesisi zemini güçlendirildi.",
+    seoTitle: "Pekintaş Düzce Güneş Paneli Fabrikası Jet Grout Zemin Güçlendirme | YER6",
+    metaDescription: "Düzce'de Pekintaş güneş paneli fabrikası ek kurulum binası için temel altı jet grout zemin güçlendirme: 17 m kolon boyu, toplam 3.500 m imalat.",
+    tags: ["Jet Grout", "Güneş Paneli Fabrikası", "Temel Güçlendirme"],
+    image: "/images/projects/pekintas-duzce-fabrika-jet-grout.jpg",
+    imageAlt: "Pekintaş Düzce güneş paneli fabrikası sahasında jet grout santrali, silo ve derin kazı — temel altı zemin güçlendirme",
+    soilProblem:
+      "Düzce'deki proje, Pekintaş'ın güneş paneli üretim fabrikasının ek kurulum binasına aitti. Üretim hatları ve ağır ekipman yükleri temel zemininde düşük ve düzgün oturma gerektirdiğinden, temel altı zeminin güçlendirilmesi kritikti.",
+    solutionMethod:
+      "Temel altı zemin güçlendirme için jet grout yöntemi uygulandı. 17 m boyunda jet grout kolonları teşkil edilerek toplam 3.500 m imalat gerçekleştirildi; kolonlar, oturmaya duyarlı üretim ekipmanı yüklerini daha güvenli biçimde taşıyacak şekilde düzenlendi.",
+    technicalInfo: [
+      { label: "Uygulama Yöntemi", value: "Jet Grout" },
+      { label: "Lokasyon", value: "Düzce" },
+      { label: "İşveren / Yüklenici", value: "Pekintaş" },
+      { label: "Tesis Tipi", value: "Güneş Paneli Fabrikası (ek kurulum binası)" },
+      { label: "Kolon Boyu", value: "17 m" },
+      { label: "Toplam İmalat", value: "3.500 m" },
+      { label: "Uygulama", value: "Temel altı zemin güçlendirme (jet grout)" }
+    ],
+    usedEquipment: ["Jet Grout Delgi Makinesi", "Yüksek Basınç Enjeksiyon Pompası", "Jet Grout Santrali / Mikser"],
+    result:
+      "Temel altı zemin, jet grout kolonlarıyla güçlendirilerek güneş paneli üretim tesisinin taşıma ve oturma güvenliği desteklendi. Uygulama, saha koşullarına uygun biçimde tamamlandı."
+  },
+  {
+    slug: "bozuyuk-sok-dondurma-tesisi-jet-grout",
+    key: "proj_bozuyuk",
+    category: "Jet Grout",
+    location: "Bozüyük",
+    year: "2025",
+    area: "",
+    metric: "2.500 m jet grout",
+    title: "Bozüyük Gıda İşleme ve Şok Dondurma (IQF) Tesisi Zemin Güçlendirme",
+    summary: "Bozüyük'te meyve işleme ve IQF şok dondurma tesisi için temel altı zemin güçlendirme; 12 m boyunda jet grout kolonlarıyla toplam 2.500 m imalat.",
+    challenge: "Şok dondurma hatları, soğuk hava depoları ve ağır ekipman yükleri altında düşük ve düzgün oturma gerektiren temel zemininin güçlendirilmesi.",
+    solution: "Temel altında 12 m boyunda jet grout kolonları teşkil edilerek toplam 2.500 m imalatla, oturmaya duyarlı tesis zemini güçlendirildi.",
+    seoTitle: "Bozüyük Gıda / IQF Şok Dondurma Tesisi Jet Grout Zemin Güçlendirme | YER6",
+    metaDescription: "Bozüyük'te meyve işleme ve IQF şok dondurma tesisi için temel altı jet grout zemin güçlendirme: 12 m kolon boyu, toplam 2.500 m imalat.",
+    tags: ["Jet Grout", "Gıda / Şok Dondurma Tesisi", "Temel Güçlendirme"],
+    image: "/images/projects/bozuyuk-sok-dondurma-tesisi-jet-grout.jpg",
+    imageAlt: "Bozüyük gıda işleme ve şok dondurma (IQF) tesisi temel altı jet grout zemin güçlendirme sahası",
+    soilProblem:
+      "Bozüyük'teki tesis; meyvelerin temizlenip ayıklandığı, gramajlandığı ve IQF (bireysel hızlı şok dondurma) sistemiyle -35 °C ila -40 °C civarında tek tek dondurulup soğuk hava depolarında muhafaza edildiği bir gıda işleme tesisidir. Şok dondurma hatları, soğuk odalar ve depolama yükleri temel zemininde düşük ve düzgün oturma gerektirdiğinden, temel altı zeminin güçlendirilmesi kritikti.",
+    solutionMethod:
+      "Temel altı zemin güçlendirme için jet grout yöntemi uygulandı. 12 m boyunda jet grout kolonları teşkil edilerek toplam 2.500 m imalat gerçekleştirildi; kolonlar, oturmaya duyarlı üretim ve soğuk depolama yüklerini daha güvenli biçimde taşıyacak şekilde düzenlendi.",
+    technicalInfo: [
+      { label: "Uygulama Yöntemi", value: "Jet Grout" },
+      { label: "Lokasyon", value: "Bozüyük" },
+      { label: "İşveren / Yüklenici", value: "GYD Yapı İnşaat Taahhüt Ltd. Şti." },
+      { label: "Tesis Tipi", value: "Gıda İşleme / IQF Şok Dondurma Tesisi" },
+      { label: "Kolon Boyu", value: "12 m" },
+      { label: "Toplam İmalat", value: "2.500 m" },
+      { label: "Uygulama", value: "Temel altı zemin güçlendirme (jet grout)" }
+    ],
+    usedEquipment: ["Jet Grout Delgi Makinesi", "Yüksek Basınç Enjeksiyon Pompası", "Jet Grout Santrali / Mikser"],
+    result:
+      "Temel altı zemin, jet grout kolonlarıyla güçlendirilerek gıda işleme ve şok dondurma tesisinin taşıma ve oturma güvenliği desteklendi. Uygulama, saha koşullarına uygun biçimde tamamlandı.",
+    gallery: [
+      { src: "/images/projects/bozuyuk-sok-dondurma-tesisi-jet-grout.jpg", alt: "Bozüyük IQF şok dondurma tesisi jet grout zemin güçlendirme sahası" },
+      { src: "/images/projects/bozuyuk-sok-dondurma-tesisi-jet-grout-2.jpg", alt: "Bozüyük IQF şok dondurma tesisi jet grout uygulama sahası" }
     ],
     relatedServiceSlugs: ["jet-grout", "zemin-iyilestirme"]
   }

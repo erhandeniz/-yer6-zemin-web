@@ -19,7 +19,13 @@ const serviceArticleMap: Record<string, string[]> = {
   ankraj: ["zemin-iyilestirme-risk-yonetimi", "saha-denetimi-numune-testleri", "zemin-iyilestirme-planlama"],
   "iksa-sistemleri": ["zemin-iyilestirme-risk-yonetimi", "saha-denetimi-numune-testleri", "zemin-kalite-kontrol-standartlari"],
   "zemin-iyilestirme": ["zemin-iyilestirme-yontemleri", "zemin-iyilestirme-planlama", "zemin-iyilestirme-risk-yonetimi"],
-  "geoteknik-danismanlik": ["zemin-iyilestirme-planlama", "zemin-kalite-kontrol-standartlari", "saha-denetimi-numune-testleri"]
+  "geoteknik-danismanlik": ["zemin-iyilestirme-planlama", "zemin-kalite-kontrol-standartlari", "saha-denetimi-numune-testleri"],
+  "zemin-civisi": ["kazi-destek-sistemleri-nedir", "zemin-iyilestirme-risk-yonetimi", "saha-denetimi-numune-testleri"],
+  "puskurtme-beton": ["kazi-destek-sistemleri-nedir", "zemin-iyilestirme-risk-yonetimi", "saha-denetimi-numune-testleri"],
+  "kazik-yukleme-testleri": ["fore-kazik-nedir", "saha-denetimi-numune-testleri", "zemin-kalite-kontrol-standartlari"],
+  "zemin-etudu": ["zemin-iyilestirme-planlama", "sivilasma-riskine-karsi-zemin-guclendirme", "zemin-kalite-kontrol-standartlari"],
+  "tas-kolon": ["zemin-iyilestirme-yontemleri", "sivilasma-riskine-karsi-zemin-guclendirme", "zemin-iyilestirme-planlama"],
+  "diafram-duvar": ["kazi-destek-sistemleri-nedir", "zemin-iyilestirme-risk-yonetimi", "fore-kazik-nedir"]
 };
 
 function FaqItem({ question, answer }: { question: string; answer: string }) {
@@ -284,7 +290,7 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
                 <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-6">
                   <h3 className="text-sm uppercase tracking-[0.32em] text-gold-200">Diğer Hizmetler</h3>
                   <div className="mt-4 space-y-2 text-sm text-white/65">
-                    {["jet-grout", "dsm", "fore-kazik", "mini-kazik", "ankraj", "iksa-sistemleri", "zemin-iyilestirme", "geoteknik-danismanlik"]
+                    {["jet-grout", "dsm", "fore-kazik", "mini-kazik", "ankraj", "iksa-sistemleri", "zemin-iyilestirme", "geoteknik-danismanlik", "zemin-civisi", "puskurtme-beton", "kazik-yukleme-testleri", "zemin-etudu", "tas-kolon", "diafram-duvar"]
                       .filter((s) => s !== service.slug)
                       .map((s) => (
                         <Link key={s} href={`/services/${s}`} className="block py-1 hover:text-white transition">

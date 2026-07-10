@@ -1513,57 +1513,205 @@ export const knowledgeArticles: KnowledgeArticle[] = [
   },
   {
     slug: "jet-grout-maliyeti",
-    title: "Jet Grout Maliyeti",
-    seoTitle: "Jet Grout Maliyeti | YER6",
-    description: "Jet Grout maliyeti; saha, zemin ve proje gereksinimlerine göre belirlenir.",
-    excerpt: "Jet Grout maliyeti zemin kalitesi, kolon sayısı ve uygulama sahasına bağlı olarak değişir.",
+    title: "Jet Grout Maliyeti 2026: Fiyatı Belirleyen Faktörler",
+    seoTitle: "Jet Grout Maliyeti 2026 | Fiyatı Neler Belirler? | YER6",
+    description: "Jet grout maliyeti; kolon çapı ve derinliği, zemin türü, metraj, sistem tipi ve saha koşullarına göre belirlenir. Fiyatı etkileyen faktörler ve metraj mantığı.",
+    excerpt: "Jet grout maliyeti tek bir birim fiyatla ifade edilemez; kolon çapı ve derinliği, zemin türü, toplam metraj, mono/double/triple sistem seçimi ve saha erişimi gibi değişkenlerle belirlenir. Doğru maliyet, ancak zemin verisi ve projeye özel metrajla hesaplanır.",
     category: "Jet Grout",
-    readingTime: "0 dk",
+    readingTime: "8 dk",
     publishedAt: "2026-06-21",
-    updatedAt: "2026-06-21",
+    updatedAt: "2026-07-10",
     heroLabel: "Jet Grout Maliyeti",
-    introduction: "",
-    sections: [],
-    faq: [],
-    relatedSlugs: [],
-    keywords: ["jet grout maliyeti", "zemin iyileştirme maliyet"],
-    published: false
+    introduction:
+      "Jet grout maliyeti, saha ve proje koşullarına bağlı olarak geniş bir aralıkta değişir. Bu nedenle 'jet grout metretül fiyatı nedir?' sorusunun tek bir cevabı yoktur. Maliyeti gerçekçi biçimde belirlemek için kolon geometrisi, zemin türü, toplam metraj ve uygulama sistemi birlikte değerlendirilmelidir. Bu yazıda jet grout fiyatını belirleyen temel kalemleri ve metraj mantığını açıklıyoruz.",
+    sections: [
+      {
+        id: "faktorler",
+        title: "Jet Grout Maliyetini Belirleyen Faktörler",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Jet grout maliyeti; imalat metrajı (toplam kolon boyu veya iyileştirilen zemin hacmi), kolon çapı, uygulama sistemi ve saha koşullarının birleşimiyle oluşur. Aynı m² alanda dahi, farklı zemin ve derinlik koşulları maliyeti önemli ölçüde değiştirebilir."
+          },
+          {
+            type: "list",
+            title: "Fiyatı etkileyen başlıca kalemler",
+            items: [
+              "Kolon çapı ve derinliği (metraj)",
+              "Zemin türü ve geçirimliliği (mono/double/triple sistem seçimi)",
+              "Toplam kolon adedi ve saha büyüklüğü",
+              "Çimento dozajı ve bağlayıcı sarfı",
+              "Yeraltı suyu seviyesi ve saha erişimi",
+              "Mobilizasyon, deneme kolonu ve kalite kontrol testleri"
+            ]
+          }
+        ]
+      },
+      {
+        id: "metraj",
+        title: "Metraj ve Birim Fiyat Mantığı",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Jet grout işleri genellikle toplam kolon boyu (metretül) veya iyileştirilen zemin hacmi (m³) üzerinden metrajlanır. Birim fiyat; çimento sarfı, delgi süresi, ekipman ve işçilik kalemlerini kapsar. Üretim öncesi yapılan deneme kolonları, gerçek sarf ve üretim hızını doğrulayarak metrajın güvenilirliğini artırır."
+          },
+          {
+            type: "note",
+            title: "Sağlıklı teklif için gereken",
+            content:
+              "Gerçekçi bir jet grout maliyeti için zemin etüdü verisi ve proje bilgisi gerekir. YER6, ihale öncesi zemin koşullarına göre yaklaşık metraj ve maliyet öngörüsü hazırlayarak karar sürecini destekler."
+          }
+        ]
+      },
+      {
+        id: "optimizasyon",
+        title: "Maliyeti Optimize Etmenin Yolları",
+        blocks: [
+          {
+            type: "list",
+            title: "Maliyeti kontrol altında tutan yaklaşımlar",
+            items: [
+              "Kolon çapı ve aralığını zemin verisine göre optimize etmek",
+              "Uygun sistem (mono/double/triple) seçimiyle gereksiz sarftan kaçınmak",
+              "Deneme kolonlarıyla üretim parametrelerini kalibre etmek",
+              "Alternatif yöntemleri (DSM, fore kazık) teknik-ekonomik karşılaştırmak",
+              "Saha organizasyonuyla mobilizasyon ve bekleme sürelerini azaltmak"
+            ]
+          }
+        ]
+      }
+    ],
+    faq: [
+      { question: "Jet grout metretül fiyatı ne kadar?", answer: "Tek bir sabit fiyat yoktur. Metretül fiyatı; zemin türü, kolon çapı ve derinliği, sistem tipi ve toplam metraja göre değişir. Gerçekçi rakam ancak zemin verisi ve projeye özel metrajla verilebilir." },
+      { question: "Jet grout mu fore kazık mı daha ekonomik?", answer: "Duruma bağlıdır. Su kontrolü ve dar saha için jet grout, yüksek eksenel yük ve derin temel için fore kazık öne çıkar. En ekonomik çözüm, zemin koşulu ve yük hedefine göre teknik karşılaştırmayla belirlenir." },
+      { question: "Maliyeti en çok ne artırır?", answer: "Büyük kolon çapı/derinliği, zorlu zemin, yüksek yeraltı suyu, geniş metraj ve erişimi kısıtlı saha maliyeti artıran başlıca etkenlerdir." },
+      { question: "Teklif almak için ne gerekli?", answer: "Mevcut zemin etüdü raporu ve proje bilgileri (yapı tipi, kazı/derinlik, kolon düzeni) ile yaklaşık metraj ve maliyet öngörüsü hazırlayabiliriz." }
+    ],
+    relatedSlugs: ["jet-grout-nedir", "jet-grout-kolon-capi", "jet-grout-ve-fore-kazik-farki"],
+    keywords: ["jet grout maliyeti", "jet grout fiyatları", "jet grout metretül fiyatı", "zemin iyileştirme maliyeti", "jet grout fiyatı 2026"],
+    published: true
   },
   {
     slug: "jet-grout-makineleri",
-    title: "Jet Grout Makineleri",
-    seoTitle: "Jet Grout Makineleri | YER6",
-    description: "Jet Grout sahasında kullanılan delgi makinesi, pompa ve mikser ekipmanları.",
-    excerpt: "Jet Grout makineleri delgi, enjeksiyon ve karışım kontrolü için birlikte çalışır.",
+    title: "Jet Grout Makineleri ve Ekipmanları",
+    seoTitle: "Jet Grout Makineleri ve Ekipmanları | YER6",
+    description: "Jet grout sahasında kullanılan delgi makinesi, yüksek basınç pompası, mikser, silo ve jet başlığı ekipmanları ve kaliteye etkileri.",
+    excerpt: "Jet grout uygulaması; delgi makinesi, yüksek basınç pompası, karıştırıcı (mikser), çimento silosu ve jet başlığından oluşan bütünleşik bir ekipman zinciriyle yürütülür. Ekipman kapasitesi ve uyumu, kolon kalitesini doğrudan etkiler.",
     category: "Jet Grout",
-    readingTime: "0 dk",
+    readingTime: "7 dk",
     publishedAt: "2026-06-21",
-    updatedAt: "2026-06-21",
+    updatedAt: "2026-07-10",
     heroLabel: "Jet Grout Makineleri",
-    introduction: "",
-    sections: [],
-    faq: [],
-    relatedSlugs: [],
-    keywords: ["jet grout makineleri", "delgi makinesi"],
-    published: false
+    introduction:
+      "Jet grout kalitesi yalnızca tasarıma değil, sahadaki ekipman zincirine de bağlıdır. Delgi, yüksek basınçlı enjeksiyon ve karışım hazırlığı birbirine bağlı çalışır; herhangi bir halkadaki kapasite eksikliği kolon çapını ve dayanımını etkiler. Bu yazıda jet grout ekipmanlarını ve kaliteye etkilerini açıklıyoruz.",
+    sections: [
+      {
+        id: "ekipman-zinciri",
+        title: "Jet Grout Ekipman Zinciri",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Jet grout uygulaması; zemine kolon hattını açan delgi makinesi, çimento şerbetini yüksek basınçla ileten pompa, şerbeti hazırlayan mikser, çimentoyu depolayan silo ve enjeksiyonu gerçekleştiren jet başlığından (monitör) oluşur. Bu ekipmanlar senkron çalışarak sürekli ve kontrollü üretim sağlar."
+          },
+          {
+            type: "list",
+            title: "Temel ekipmanlar",
+            items: [
+              "Delgi makinesi (kolon hattının açılması)",
+              "Yüksek basınç pompası (enjeksiyon basıncının sağlanması)",
+              "Mikser / karıştırıcı (homojen çimento şerbeti hazırlığı)",
+              "Çimento silosu (sürekli üretim akışı)",
+              "Jet başlığı / monitör ve tijler (enjeksiyon geometrisi)"
+            ]
+          }
+        ]
+      },
+      {
+        id: "kapasite-kalite",
+        title: "Ekipman Kapasitesinin Kaliteye Etkisi",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Enjeksiyon basıncı, debi ve geri çekilme hızı kolon çapını belirleyen ana parametrelerdir. Pompanın basınç ve debi kapasitesi yetersizse hedef kolon çapına ulaşılamaz; mikser kapasitesi düşükse şerbet homojenliği ve üretim hızı düşer. Bu nedenle ekipman seçimi, hedef kolon geometrisiyle uyumlu olmalıdır."
+          },
+          {
+            type: "note",
+            title: "Gerçek zamanlı takip",
+            content:
+              "Modern jet grout uygulamalarında basınç, debi ve derinlik verileri anlık kaydedilir. Bu veriler hem üretim kontrolü hem de teslim dosyası için kalite kanıtı oluşturur."
+          }
+        ]
+      },
+      {
+        id: "yer6-park",
+        title: "YER6 Makine Parkı Yaklaşımı",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "YER6, jet grout ve zemin iyileştirme projelerinde delgi, pompa ve santral ekipmanlarını proje gereksinimlerine göre eşleştirir. Ekipman kapasitesinin tasarım hedefleriyle uyumu, kolon çapı ve dayanımının güvenilir biçimde elde edilmesini sağlar."
+          }
+        ]
+      }
+    ],
+    faq: [
+      { question: "Jet grout için hangi makineler gerekir?", answer: "Delgi makinesi, yüksek basınç pompası, mikser, çimento silosu ve jet başlığı temel ekipmanlardır. Bunlar senkron çalışarak kolon üretimini gerçekleştirir." },
+      { question: "Pompa basıncı kolon çapını etkiler mi?", answer: "Evet. Enjeksiyon basıncı, debi ve geri çekilme hızı kolon çapını doğrudan belirler. Yetersiz pompa kapasitesi hedef çapa ulaşılmasını engelleyebilir." },
+      { question: "Ekipman verileri neden kaydedilir?", answer: "Basınç, debi ve derinlik kayıtları hem üretim kalitesini kontrol etmek hem de teslim dosyasında kalite kanıtı sunmak için tutulur." }
+    ],
+    relatedSlugs: ["jet-grout-nedir", "jet-grout-uygulama-asamalari", "jet-grout-kalite-kontrol"],
+    keywords: ["jet grout makineleri", "jet grout ekipmanları", "jet grout pompası", "jet grout delgi makinesi", "jet grout santrali"],
+    published: true
   },
   {
     slug: "jet-grout-sik-sorulan-sorular",
-    title: "Jet Grout Sık Sorulan Sorular",
-    seoTitle: "Jet Grout Sık Sorulan Sorular | YER6",
-    description: "Jet Grout hakkında saha uygulaması, zemin türleri ve kalite kontrol için sık sorulan sorular.",
-    excerpt: "Jet Grout uygulaması ve saha koşulları hakkında teknik sorulara yanıtlar.",
+    title: "Jet Grout Sık Sorulan Sorular (SSS)",
+    seoTitle: "Jet Grout Sık Sorulan Sorular (SSS) | YER6",
+    description: "Jet grout nedir, hangi zeminlerde uygulanır, kolon çapı ne kadar olur, mevcut yapı altında yapılır mı, maliyeti neye bağlıdır? En çok sorulan sorular yanıtlarıyla.",
+    excerpt: "Jet grout uygulaması, zemin türleri, kolon çapı, süre, kalite kontrol ve maliyet hakkında en çok merak edilen soruların teknik yanıtları bir arada.",
     category: "Jet Grout",
-    readingTime: "0 dk",
+    readingTime: "7 dk",
     publishedAt: "2026-06-21",
-    updatedAt: "2026-06-21",
-    heroLabel: "Jet Grout Sık Sorulan Sorular",
-    introduction: "",
-    sections: [],
-    faq: [],
-    relatedSlugs: [],
-    keywords: ["jet grout sss", "sık sorulan sorular"],
-    published: false
+    updatedAt: "2026-07-10",
+    heroLabel: "Jet Grout SSS",
+    introduction:
+      "Jet grout hakkında saha uygulaması, zemin uygunluğu, kolon geometrisi, kalite kontrol ve maliyet konularında en sık gelen soruları bu rehberde topladık. Yanıtlar, projeye özel koşulların yerini tutmaz; ancak konuya hızlı bir teknik bakış sunar.",
+    sections: [
+      {
+        id: "genel",
+        title: "Jet Grout Hakkında Genel Bilgi",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Jet grout, yüksek basınçlı çimento karışımının zemine enjekte edilmesiyle zemin-çimento kolonları oluşturan bir zemin iyileştirme yöntemidir. Zeminin taşıma gücünü artırma, oturmaları azaltma ve su geçirimsizliği sağlama amaçlarıyla kullanılır."
+          },
+          {
+            type: "note",
+            title: "Projeye özel değerlendirme",
+            content:
+              "Aşağıdaki yanıtlar tipik durumları özetler. Her proje için doğru parametreler, sondaj ve laboratuvar verisiyle kurulan zemin modeline göre belirlenir."
+          }
+        ]
+      }
+    ],
+    faq: [
+      { question: "Jet grout hangi zemin türlerinde uygulanır?", answer: "Kum, silt, kil ve karma yapılı zeminlerde uygulanabilir. Çakıl ve iri dane içeren katmanlar enjeksiyon kontrolü açısından ayrıca değerlendirilmelidir." },
+      { question: "Jet grout kolon çapı ne kadar olur?", answer: "Sistem türüne ve zemine göre yaklaşık 0,4 m ile 2,5 m arasında değişir. Enjeksiyon basıncı, debi ve geri çekilme hızı çapı belirleyen ana değişkenlerdir." },
+      { question: "Mevcut yapı altında jet grout yapılabilir mi?", answer: "Evet. Kompakt ekipmanlarla mevcut yapı bodrumu veya temel altında uygulama mümkündür; öncesinde yapı ve zemin koşulları ayrıntılı incelenmelidir." },
+      { question: "Jet grout uygulaması ne kadar sürer?", answer: "Süre; kolon sayısı, derinlik ve zemin koşullarına bağlıdır. Günlük 50–150 adet kolon üretimi mümkün olabilir; program saha verisine göre optimize edilir." },
+      { question: "Jet grout maliyeti neye bağlıdır?", answer: "Kolon çapı ve derinliği, zemin türü, toplam metraj, sistem tipi ve saha koşulları maliyeti belirler. Gerçekçi rakam için zemin verisi ve projeye özel metraj gerekir." },
+      { question: "Jet grout kalitesi nasıl kontrol edilir?", answer: "Karot alımı, tek eksenli basınç deneyi ve kolon sürekliliği kontrolleriyle doğrulanır; üretim verileri (basınç, debi, derinlik) teslim dosyasına işlenir." },
+      { question: "Jet grout sıvılaşmaya karşı etkili mi?", answer: "Evet. Jet grout kolonları zemin rijitliğini artırarak ve gerektiğinde geçirimsizlik sağlayarak sıvılaşma riskini azaltmaya katkıda bulunur." },
+      { question: "Jet grout mu DSM mi tercih edilmeli?", answer: "Geniş alan ve yumuşak zeminde DSM ekonomik olabilirken, su kontrolü ve dar saha gereken durumlarda jet grout öne çıkar. Karar zemin ve proje koşullarına bağlıdır." }
+    ],
+    relatedSlugs: ["jet-grout-nedir", "jet-grout-hangi-zeminlerde-uygulanir", "jet-grout-maliyeti"],
+    keywords: ["jet grout sss", "jet grout sık sorulan sorular", "jet grout nedir", "jet grout kolon çapı", "jet grout maliyeti"],
+    published: true
   },
   {
     slug: "fore-kazik-nerelerde-kullanilir",
@@ -2266,6 +2414,387 @@ export const knowledgeArticles: KnowledgeArticle[] = [
       "derin kazı güvenliği",
       "ankrajlı iksa"
     ],
+    published: true
+  },
+  {
+    slug: "fore-kazik-maliyeti",
+    title: "Fore Kazık Maliyeti 2026: Fiyatı Belirleyen Faktörler",
+    seoTitle: "Fore Kazık Maliyeti 2026 | Fiyatı Neler Belirler? | YER6",
+    description: "Fore kazık maliyeti; kazık çapı ve derinliği, beton ve donatı miktarı, zemin koşulları, kazık adedi ve saha erişimine göre belirlenir. Metraj mantığı ve maliyet kalemleri.",
+    excerpt: "Fore kazık maliyeti; kazık çapı ve derinliği, beton–donatı sarfı, zemin koşulları, toplam kazık adedi ve saha erişimi gibi kalemlerin birleşimiyle oluşur. Gerçekçi fiyat, zemin verisi ve projeye özel metrajla hesaplanır.",
+    category: "Fore Kazık",
+    readingTime: "8 dk",
+    publishedAt: "2026-07-10",
+    updatedAt: "2026-07-10",
+    heroLabel: "Fore Kazık Maliyeti",
+    introduction:
+      "Fore kazık maliyeti, projeden projeye önemli ölçüde değişir; tek bir metretül fiyatı vermek gerçekçi değildir. Kazık geometrisi, beton ve donatı miktarı, zemin koşulları ve saha organizasyonu maliyeti birlikte belirler. Bu yazıda fore kazık fiyatını etkileyen kalemleri ve metraj mantığını ele alıyoruz.",
+    sections: [
+      {
+        id: "faktorler",
+        title: "Fore Kazık Maliyetini Belirleyen Faktörler",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Fore kazık maliyeti; delgi metrajı (toplam kazık boyu), kazık çapı, beton ve donatı sarfı, zemin sertliği ve saha koşullarına bağlıdır. Sert kaya veya yüksek yeraltı suyu gibi koşullar hem delgi süresini hem de muhafaza borusu ihtiyacını artırarak maliyeti yükseltir."
+          },
+          {
+            type: "list",
+            title: "Fiyatı etkileyen başlıca kalemler",
+            items: [
+              "Kazık çapı ve derinliği (delgi metrajı)",
+              "Beton sınıfı ve donatı (çelik) miktarı",
+              "Zemin sertliği ve muhafaza borusu ihtiyacı",
+              "Yeraltı suyu ve tremie beton koşulları",
+              "Toplam kazık adedi ve saha büyüklüğü",
+              "Mobilizasyon, deneme kazığı ve yükleme testleri"
+            ]
+          }
+        ]
+      },
+      {
+        id: "metraj",
+        title: "Metraj ve Maliyet Mantığı",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Fore kazık işleri genellikle toplam kazık boyu (metretül) üzerinden metrajlanır; birim fiyat delgi, beton, donatı, ekipman ve işçilik kalemlerini içerir. Kazık yükleme ve bütünlük (PIT) testleri kalite güvencesi için maliyete eklenen kalemlerdir."
+          },
+          {
+            type: "note",
+            title: "Sağlıklı teklif için",
+            content:
+              "Gerçekçi bir fore kazık maliyeti, zemin etüdü verisi ve projeye özel kazık düzeniyle hesaplanır. YER6 ihale öncesi yaklaşık metraj ve maliyet öngörüsü hazırlar."
+          }
+        ]
+      }
+    ],
+    faq: [
+      { question: "Fore kazık metretül fiyatı ne kadar?", answer: "Sabit bir fiyat yoktur; çap, derinlik, beton–donatı miktarı ve zemin koşullarına göre değişir. Gerçekçi rakam ancak zemin verisi ve projeye özel metrajla verilir." },
+      { question: "Fore kazık maliyetini en çok ne artırır?", answer: "Sert kaya, yüksek yeraltı suyu, büyük çap/derinlik, muhafaza borusu ihtiyacı ve geniş kazık adedi maliyeti artıran başlıca etkenlerdir." },
+      { question: "Mini kazık fore kazıktan ucuz mu?", answer: "Dar sahalarda ve düşük yüklerde mini kazık avantajlı olabilir; ancak yüksek eksenel yüklerde fore kazık gerekir. Karar yük ve saha koşullarına bağlıdır." },
+      { question: "Yükleme testi maliyeti neye göre belirlenir?", answer: "Test yöntemi (statik/dinamik), test adedi ve şartname gereklilikleri maliyeti belirler. Test kapsamı proje riskine göre planlanır." }
+    ],
+    relatedSlugs: ["fore-kazik-nedir", "fore-kazik-avantajlari", "kazi-destek-sistemleri-nedir"],
+    keywords: ["fore kazık maliyeti", "fore kazık fiyatları", "fore kazık metretül fiyatı", "kazıklı temel maliyeti", "fore kazık fiyatı 2026"],
+    published: true
+  },
+  {
+    slug: "binalari-yikmadan-zemin-guclendirme",
+    title: "Binaları Yıkmadan Zemin Güçlendirme Yöntemleri",
+    seoTitle: "Binaları Yıkmadan Zemin Güçlendirme | Mevcut Yapı Takviyesi | YER6",
+    description: "Mevcut binaları yıkmadan temel altı zemin güçlendirme: jet grout, mini kazık, enjeksiyon ve mikro kazık ile oturma ve taşıma gücü sorunlarının çözümü.",
+    excerpt: "Mevcut yapıyı yıkmadan, temel altında jet grout, mini kazık ve enjeksiyon yöntemleriyle zemin güçlendirilebilir. Bu yöntemler oturma, çatlak ve taşıma gücü sorunlarına düşük müdahaleyle çözüm sunar.",
+    category: "Zemin İyileştirme",
+    readingTime: "9 dk",
+    publishedAt: "2026-07-10",
+    updatedAt: "2026-07-10",
+    heroLabel: "Mevcut Yapı Güçlendirme",
+    introduction:
+      "Zemin kaynaklı oturma, çatlak ve taşıma gücü sorunları her zaman yıkımı gerektirmez. Doğru yöntemle, mevcut bina kullanımda kalırken temel altındaki zemin güçlendirilebilir. Bu yazıda binaları yıkmadan uygulanan zemin güçlendirme yöntemlerini ve seçim kriterlerini açıklıyoruz.",
+    sections: [
+      {
+        id: "yontemler",
+        title: "Mevcut Yapı Altında Uygulanan Yöntemler",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Mevcut yapı altında zemin güçlendirme; kompakt ekipmanlarla, düşük titreşimle ve kontrollü biçimde uygulanır. Yöntem seçimi; zemin türüne, sorunun kaynağına (oturma, sıvılaşma, taşıma gücü) ve yapının durumuna göre belirlenir."
+          },
+          {
+            type: "list",
+            title: "Öne çıkan yöntemler",
+            items: [
+              "Jet grout: temel altında zemin-çimento kolonlarıyla taşıma gücü ve su kontrolü",
+              "Mini/mikro kazık: yükün derindeki sağlam tabakaya aktarılması (underpinning)",
+              "Zemin enjeksiyonu: boşlukların doldurulması ve zemin sıkılaştırma",
+              "Ankraj/destek: yanal hareket ve şev sorunlarının kontrolü"
+            ]
+          }
+        ]
+      },
+      {
+        id: "secim",
+        title: "Yöntem Seçimi ve Ön Değerlendirme",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Doğru yöntem, ancak yapının mevcut durumunun ve zemin koşullarının incelenmesiyle belirlenir. Oturma nedeninin doğru teşhisi, kalıcı çözüm için kritiktir; aksi halde müdahale geçici kalabilir."
+          },
+          {
+            type: "warning",
+            title: "Teşhis olmadan müdahale etmeyin",
+            content:
+              "Çatlak ve oturma belirtileri farklı nedenlerden kaynaklanabilir. Zemin etüdü ve yapısal değerlendirme yapılmadan uygulanan müdahaleler sorunu çözmeyebilir, hatta artırabilir."
+          }
+        ]
+      }
+    ],
+    faq: [
+      { question: "Bina boşaltılmadan güçlendirme yapılabilir mi?", answer: "Çoğu durumda evet. Kompakt ekipman ve düşük titreşimli yöntemlerle bina büyük ölçüde kullanımda kalırken temel altı güçlendirme planlanabilir. Kesin durum yapısal değerlendirmeye bağlıdır." },
+      { question: "Oturan bir bina düzeltilebilir mi?", answer: "Oturmanın kaynağına göre mini kazık (underpinning) ve enjeksiyon yöntemleriyle yük derindeki sağlam tabakaya aktarılarak oturma durdurulabilir; bazı durumlarda seviye düzeltmesi de mümkündür." },
+      { question: "Hangi yöntem daha uygun?", answer: "Zemin türü, sorunun kaynağı ve yapının durumu belirleyicidir. Jet grout su kontrolü ve taşıma gücü için, mini kazık derin yük aktarımı için öne çıkar. Karar teşhise dayanır." },
+      { question: "Önce ne yapılmalı?", answer: "Öncelikle zemin etüdü ve yapısal değerlendirme ile sorunun kaynağı doğru teşhis edilmeli; ardından yönteme karar verilmelidir." }
+    ],
+    relatedSlugs: ["temel-alti-zemin-guclendirme", "sivilasma-riskine-karsi-zemin-guclendirme", "zemin-iyilestirme-yontemleri"],
+    keywords: ["binaları yıkmadan zemin güçlendirme", "mevcut yapı güçlendirme", "temel altı güçlendirme", "underpinning", "oturan bina güçlendirme"],
+    published: true
+  },
+  {
+    slug: "zemin-etudu-nasil-yapilir",
+    title: "Zemin Etüdü Nasıl Yapılır? Süreç ve Kapsam",
+    seoTitle: "Zemin Etüdü Nasıl Yapılır? Süreç, Kapsam ve Önemi | YER6",
+    description: "Zemin etüdü; sondaj, arazi deneyleri (SPT, CPT) ve laboratuvar testleriyle zeminin mühendislik parametrelerini belirleyen ve güvenli temel tasarımının temelini oluşturan süreçtir.",
+    excerpt: "Zemin etüdü; sondaj, SPT/CPT arazi deneyleri ve laboratuvar testleriyle zeminin taşıma gücünü, oturma ve sıvılaşma davranışını belirler. Yapı ruhsatı için zorunlu, güvenli tasarım için vazgeçilmezdir.",
+    category: "Zemin İyileştirme",
+    readingTime: "8 dk",
+    publishedAt: "2026-07-10",
+    updatedAt: "2026-07-10",
+    heroLabel: "Zemin Etüdü",
+    introduction:
+      "Zemin etüdü, güvenli ve ekonomik temel tasarımının ilk adımıdır. Sondaj, arazi ve laboratuvar deneyleriyle zeminin mühendislik özellikleri belirlenir; sıvılaşma, oturma ve taşıma gücü riskleri değerlendirilir. Bu yazıda zemin etüdünün nasıl yapıldığını ve neleri kapsadığını açıklıyoruz.",
+    sections: [
+      {
+        id: "surec",
+        title: "Zemin Etüdü Süreci",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Zemin etüdü; proje tipine göre planlanan sondaj ve deney programıyla başlar. Arazide sondaj yapılır, SPT/CPT gibi deneylerle zemin profili ve yeraltı suyu belirlenir; alınan numuneler laboratuvarda test edilir. Sonuçlar değerlendirilerek zemin modeli ve tasarım parametreleri oluşturulur."
+          },
+          {
+            type: "list",
+            title: "Etüdün temel aşamaları",
+            items: [
+              "Ön değerlendirme ve sondaj/deney programının planlanması",
+              "Arazi çalışmaları: sondaj, SPT/CPT, yeraltı suyu ölçümü",
+              "Laboratuvar deneyleri: indeks, mukavemet, konsolidasyon",
+              "Analiz ve zemin modeli oluşturma",
+              "Geoteknik rapor ve temel önerileri"
+            ]
+          }
+        ]
+      },
+      {
+        id: "onem",
+        title: "Neden Önemli?",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Zemin etüdü hem yasal bir gerekliliktir hem de güvenli tasarımın teknik temelidir. Yetersiz etüt; hatalı temel seçimi, beklenmeyen oturma veya sıvılaşma sürprizleri ve ilerleyen aşamada çok daha yüksek maliyetlere yol açabilir. Doğru etüt, gerektiğinde uygun zemin iyileştirme yöntemine de altlık oluşturur."
+          },
+          {
+            type: "note",
+            title: "TBDY 2018 uyumu",
+            content:
+              "Etüt kapsamı; yerel zemin sınıfı, sıvılaşma değerlendirmesi ve tasarım spektrumu için yönetmelik gerekliliklerini karşılayacak derinlik ve veriyi içermelidir."
+          }
+        ]
+      }
+    ],
+    faq: [
+      { question: "Zemin etüdü zorunlu mu?", answer: "Evet. Yapı ruhsatı için zemin ve temel etüdü yasal olarak zorunludur; ayrıca güvenli tasarım için teknik olarak da gereklidir." },
+      { question: "Kaç sondaj gerekir?", answer: "Sondaj sayısı ve derinliği; yapı büyüklüğü, yük durumu ve zemin değişkenliğine göre belirlenir. Amaç, güvenilir bir zemin modeli kurmaktır." },
+      { question: "Zemin etüdü ne kadar sürer?", answer: "Süre; sondaj sayısı, derinlik ve laboratuvar programına göre değişir. Küçük projelerde birkaç gün, büyük sahalarda daha uzun sürebilir." },
+      { question: "Etüt sonrası iyileştirme gerekir mi?", answer: "Sonuca bağlıdır. Zayıf, gevşek veya sıvılaşmaya yatkın zeminlerde iyileştirme veya uygun temel sistemi önerilir; sağlam zeminlerde gerekmeyebilir." }
+    ],
+    relatedSlugs: ["zemin-iyilestirme-planlama", "sivilasma-riskine-karsi-zemin-guclendirme", "zemin-kalite-kontrol-standartlari"],
+    keywords: ["zemin etüdü nasıl yapılır", "zemin etüdü", "zemin etüt raporu", "sondaj", "SPT CPT deneyi", "zemin etüdü zorunlu mu"],
+    published: true
+  },
+  {
+    slug: "jet-grout-firmasi-ankara",
+    title: "Jet Grout Firması Ankara: Seçim Kriterleri ve YER6",
+    seoTitle: "Jet Grout Firması Ankara | Ankara Jet Grout Uygulaması | YER6",
+    description: "Ankara'da jet grout firması seçerken makine parkı, saha tecrübesi, kalite kontrol ve referanslar önemlidir. Ankara zemin koşullarına uygun jet grout uygulaması için YER6.",
+    excerpt: "Ankara'da jet grout firması seçerken makine parkı, saha tecrübesi, kalite kontrol süreci ve yerel zemin bilgisi belirleyicidir. YER6, Gölbaşı merkezli ekibiyle Ankara ve çevresinde jet grout uygular.",
+    category: "Jet Grout",
+    readingTime: "7 dk",
+    publishedAt: "2026-07-10",
+    updatedAt: "2026-07-10",
+    heroLabel: "Ankara Jet Grout",
+    introduction:
+      "Ankara'da jet grout ihtiyacı; başkentin yüksek plastisiteli 'Ankara kili' ve değişken dolgu koşullarıyla doğrudan ilişkilidir. Doğru firma seçimi, uygulamanın kalitesini ve maliyetini belirler. Bu yazıda Ankara'da jet grout firması seçerken dikkat edilmesi gerekenleri ve YER6'nın yaklaşımını açıklıyoruz.",
+    sections: [
+      {
+        id: "secim",
+        title: "Ankara'da Jet Grout Firması Seçerken Nelere Dikkat Edilmeli?",
+        blocks: [
+          {
+            type: "list",
+            title: "Değerlendirme kriterleri",
+            items: [
+              "Kendi makine parkı ve ekipman kapasitesi (delgi, pompa, santral)",
+              "Ankara zemin koşullarında (kil, dolgu) saha tecrübesi",
+              "Deneme kolonu ve kalite kontrol (karot, basınç testi) süreci",
+              "Şeffaf metraj ve gerçekçi maliyet öngörüsü",
+              "Referans projeler ve teknik dokümantasyon"
+            ]
+          },
+          {
+            type: "paragraph",
+            content:
+              "Jet grout kalitesi, tasarım kadar sahadaki ekipman ve uygulama disiplinine bağlıdır. Yeterli basınç ve debi sağlayamayan ekipmanla hedef kolon çapı elde edilemez; bu nedenle firmanın makine parkı ve kalite kontrol yaklaşımı belirleyicidir."
+          }
+        ]
+      },
+      {
+        id: "ankara-zemin",
+        title: "Ankara Zemininde Jet Grout",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Ankara'nın önemli bölümünde yüzeye yakın yüksek plastisiteli killer bulunur; bu killer nem değişiminde şişme-büzülme yaparak temellerde sorun oluşturabilir. Jet grout, temel altı güçlendirme ve su kontrolü gereken durumlarda dar sahalarda bile düşük titreşimle uygulanabilir."
+          },
+          {
+            type: "note",
+            title: "Yerel bilgi önemlidir",
+            content:
+              "Çankaya, Gölbaşı, Etimesgut ve Sincan gibi bölgelerde zemin koşulları değişir. Doğru parametreler, sondaj verisiyle kurulan zemin modeline göre belirlenmelidir."
+          }
+        ]
+      }
+    ],
+    faq: [
+      { question: "Ankara'da jet grout firması nasıl seçilir?", answer: "Makine parkı, Ankara zemininde saha tecrübesi, deneme kolonu ve kalite kontrol süreci, şeffaf metraj ve referanslar en önemli kriterlerdir." },
+      { question: "YER6 Ankara'nın hangi bölgelerinde çalışıyor?", answer: "Gölbaşı merkezli ekibimizle Ankara'nın tüm ilçelerinde ve çevre illerde jet grout ve zemin güçlendirme uygulamaları yapıyoruz." },
+      { question: "Ankara jet grout maliyeti neye bağlı?", answer: "Kolon çapı ve derinliği, zemin türü, metraj ve saha koşullarına bağlıdır. Gerçekçi rakam zemin verisi ve projeye özel metrajla verilir." }
+    ],
+    relatedSlugs: ["jet-grout-nedir", "jet-grout-maliyeti", "jet-grout-hangi-zeminlerde-uygulanir"],
+    keywords: ["jet grout firması ankara", "ankara jet grout", "jet grout ankara", "jet grout firmaları ankara", "ankara zemin güçlendirme"],
+    published: true
+  },
+  {
+    slug: "fore-kazik-firmasi-ankara",
+    title: "Fore Kazık Firması Ankara: Seçim Kriterleri ve YER6",
+    seoTitle: "Fore Kazık Firması Ankara | Ankara Fore Kazık Uygulaması | YER6",
+    description: "Ankara'da fore kazık firması seçerken delgi kapasitesi, makine parkı, kalite kontrol ve referanslar önemlidir. Ankara'da yüksek yapı ve derin temel için fore kazık: YER6.",
+    excerpt: "Ankara'da fore kazık firması seçerken delgi kapasitesi, makine parkı, bütünlük/yükleme testleri ve referanslar belirleyicidir. YER6, Ankara ve çevresinde fore kazık ve derin temel uygular.",
+    category: "Fore Kazık",
+    readingTime: "7 dk",
+    publishedAt: "2026-07-10",
+    updatedAt: "2026-07-10",
+    heroLabel: "Ankara Fore Kazık",
+    introduction:
+      "Ankara'da yüksek yapı temelleri, derin kazılar ve altyapı projeleri fore kazık gerektirir. Doğru firma seçimi; delgi kapasitesi, kalite kontrol ve yerel saha tecrübesiyle şekillenir. Bu yazıda Ankara'da fore kazık firması seçerken dikkat edilmesi gerekenleri ve YER6'nın yaklaşımını açıklıyoruz.",
+    sections: [
+      {
+        id: "secim",
+        title: "Ankara'da Fore Kazık Firması Seçerken Nelere Dikkat Edilmeli?",
+        blocks: [
+          {
+            type: "list",
+            title: "Değerlendirme kriterleri",
+            items: [
+              "Delgi makinesi kapasitesi ve çap/derinlik aralığı",
+              "Muhafaza borulu delgi ve zorlu zemin tecrübesi",
+              "Bütünlük (PIT) ve yükleme testi ile kalite doğrulama",
+              "Tremie beton ve donatı uygulama disiplini",
+              "Referans projeler ve teknik raporlama"
+            ]
+          },
+          {
+            type: "paragraph",
+            content:
+              "Fore kazığın taşıma kapasitesi; doğru delgi, donatı yerleşimi ve tremie beton dökümüne bağlıdır. Kalite; bütünlük ve yükleme testleriyle bağımsız biçimde doğrulanmalıdır."
+          }
+        ]
+      },
+      {
+        id: "ankara-uygulama",
+        title: "Ankara'da Fore Kazık Uygulaması",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Ankara'da yüksek yapı ve derin bodrumlu projelerde fore kazıklı temeller ile ankraj destekli iksa sistemleri sıkça birlikte uygulanır. Zemin profili ve yük durumuna göre kazık çapı, derinliği ve düzeni projelendirilir."
+          },
+          {
+            type: "note",
+            title: "Test ile güvence",
+            content:
+              "Uygulanan kazıkların tasarım varsayımlarını karşıladığı, yükleme ve bütünlük testleriyle belgelenmelidir. Bağımsız test raporu, yatırımcı için güvenilir kalite kanıtıdır."
+          }
+        ]
+      }
+    ],
+    faq: [
+      { question: "Ankara'da fore kazık firması nasıl seçilir?", answer: "Delgi kapasitesi, makine parkı, kalite kontrol (PIT ve yükleme testi), uygulama disiplini ve referanslar en önemli kriterlerdir." },
+      { question: "Fore kazık kalitesi nasıl doğrulanır?", answer: "Düşük gerilme bütünlük testi (PIT) ile süreklilik, statik/dinamik yükleme testleriyle taşıma kapasitesi bağımsız olarak doğrulanır." },
+      { question: "YER6 Ankara'da fore kazık uyguluyor mu?", answer: "Evet. Gölbaşı merkezli ekibimizle Ankara'nın tüm ilçelerinde ve çevre illerde fore kazık ve derin temel uygulamaları yapıyoruz." }
+    ],
+    relatedSlugs: ["fore-kazik-nedir", "fore-kazik-maliyeti", "fore-kazik-avantajlari"],
+    keywords: ["fore kazık firması ankara", "ankara fore kazık", "fore kazık ankara", "fore kazık firmaları ankara", "ankara kazıklı temel"],
+    published: true
+  },
+  {
+    slug: "deep-soil-mixing-ankara",
+    title: "Deep Soil Mixing (DSM) Ankara: Uygulama ve Firma Seçimi",
+    seoTitle: "Deep Soil Mixing Ankara | DSM Zemin İyileştirme Firması | YER6",
+    description: "Ankara'da Deep Soil Mixing (DSM) zemin iyileştirme; yumuşak zemin ve dolgu alanlarında oturma kontrolü için uygulanır. Firma seçimi kriterleri ve YER6 DSM uygulaması.",
+    excerpt: "Deep Soil Mixing (DSM), Ankara'da yumuşak zemin ve dolgu alanlarında oturmayı kontrol etmek için tercih edilir. Firma seçiminde laboratuvar karışım tasarımı, ekipman ve kalite kontrol belirleyicidir.",
+    category: "DSM",
+    readingTime: "7 dk",
+    publishedAt: "2026-07-10",
+    updatedAt: "2026-07-10",
+    heroLabel: "Ankara DSM",
+    introduction:
+      "Deep Soil Mixing (derin zemin karıştırma / DSM), yumuşak kil ve gevşek dolgu zeminlerde oturmayı ve taşıma gücü sorunlarını kontrol etmek için etkili bir zemin iyileştirme yöntemidir. Ankara ve çevresinde geniş taban alanlı yapılarda tercih edilir. Bu yazıda DSM'in Ankara'daki uygulamasını ve firma seçim kriterlerini açıklıyoruz.",
+    sections: [
+      {
+        id: "dsm-ankara",
+        title: "Ankara'da DSM Ne Zaman Tercih Edilir?",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "DSM; yumuşak kil, gevşek silt ve dolgu zeminlerde, özellikle depo, lojistik ve endüstriyel yapılar gibi geniş taban alanlı projelerde oturma kontrolü için tercih edilir. Düşük titreşimi ve yüksek günlük ilerleme kapasitesiyle geniş alanlarda ekonomik çözüm sunar."
+          },
+          {
+            type: "list",
+            title: "Firma seçiminde önemli noktalar",
+            items: [
+              "Laboratuvar karışım tasarımı (çimento dozajı ve hedef mukavemet)",
+              "DSM ekipman kapasitesi ve derinlik aralığı",
+              "Karot ve basınç testleriyle kolon kalite doğrulaması",
+              "Dijital üretim kaydı (çimento sarfı, karıştırma, derinlik)",
+              "Ankara zemin koşullarında saha tecrübesi"
+            ]
+          }
+        ]
+      },
+      {
+        id: "kalite",
+        title: "DSM Kalite Kontrolü",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "DSM kolonlarının hedef mukavemeti; zemin plastisitesi, organik içerik ve bağlayıcı oranına bağlıdır. Laboratuvar karışım tasarımı ve saha karot testleri, kolon dayanımının doğrulanması için esastır."
+          },
+          {
+            type: "note",
+            title: "Jet grout mu DSM mi?",
+            content:
+              "Geniş alan ve yumuşak zeminde DSM ekonomik olabilir; su kontrolü ve dar saha gerektiren durumlarda jet grout öne çıkar. Karar, zemin verisi ve proje hedefine göre verilir."
+          }
+        ]
+      }
+    ],
+    faq: [
+      { question: "DSM Ankara'da hangi projelerde uygulanır?", answer: "Yumuşak zemin ve dolgu alanlarında, özellikle depo, lojistik ve endüstriyel yapılar gibi geniş taban alanlı projelerde oturma kontrolü için uygulanır." },
+      { question: "DSM firması seçerken nelere dikkat edilmeli?", answer: "Laboratuvar karışım tasarımı, ekipman kapasitesi, karot ve basınç testleriyle kalite doğrulaması ve dijital üretim kaydı en önemli kriterlerdir." },
+      { question: "YER6 Ankara'da DSM uyguluyor mu?", answer: "Evet. Gölbaşı merkezli ekibimizle Ankara ve çevresinde DSM zemin iyileştirme uygulamaları yapıyoruz." }
+    ],
+    relatedSlugs: ["dsm-nedir", "dsm-nasil-uygulanir", "jet-grout-ve-dsm-farki"],
+    keywords: ["deep soil mixing ankara", "dsm ankara", "derin zemin karıştırma ankara", "dsm firması ankara", "ankara zemin iyileştirme"],
     published: true
   }
 ];

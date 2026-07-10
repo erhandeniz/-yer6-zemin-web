@@ -3,7 +3,7 @@ import Link from "next/link";
 import Script from "next/script";
 import { notFound } from "next/navigation";
 import { ArrowUpRight, CheckCircle2, MapPin } from "lucide-react";
-import { getCityPageBySlug, getCityPaths, cityPages } from "@/lib/cityContent";
+import { getCityPageBySlug, getCityPaths, featuredCityPages } from "@/lib/cityContent";
 import { services } from "@/lib/content";
 import { siteConfig } from "@/lib/siteConfig";
 import { publishedKnowledgeArticles } from "@/data/knowledge";
@@ -53,7 +53,7 @@ export default async function CityPage({ params }: Props) {
   const linkedArticles = cityPage.articleSlugs
     .map((articleSlug) => publishedKnowledgeArticles.find((article) => article.slug === articleSlug))
     .filter((article): article is (typeof publishedKnowledgeArticles)[number] => Boolean(article));
-  const nearbyCities = cityPages.filter((page) => page.slug !== cityPage.slug).slice(0, 4);
+  const nearbyCities = featuredCityPages.filter((page) => page.slug !== cityPage.slug).slice(0, 4);
 
   const serviceSchema = {
     "@context": "https://schema.org",
@@ -107,6 +107,22 @@ export default async function CityPage({ params }: Props) {
     ]
   };
 
+  const faqSchema =
+    cityPage.faq && cityPage.faq.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: cityPage.faq.map((item) => ({
+            "@type": "Question",
+            name: item.question,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: item.answer
+            }
+          }))
+        }
+      : null;
+
   return (
     <main>
       <Script
@@ -119,6 +135,13 @@ export default async function CityPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      {faqSchema && (
+        <Script
+          id={`city-faq-schema-${cityPage.slug}`}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
 
       <section className="relative overflow-hidden px-5 pb-20 pt-40">
         <div className="absolute inset-0 technical-mesh opacity-80" />
@@ -130,6 +153,9 @@ export default async function CityPage({ params }: Props) {
             </div>
             <h1 className="text-balance text-5xl font-semibold leading-tight text-white md:text-7xl">{cityPage.title}</h1>
             <p className="mt-7 max-w-3xl text-lg leading-8 text-white/64">{cityPage.heroLead}</p>
+            {cityPage.intro && (
+              <p className="mt-5 max-w-3xl text-base leading-8 text-white/56">{cityPage.intro}</p>
+            )}
           </div>
         </div>
       </section>
@@ -149,6 +175,31 @@ export default async function CityPage({ params }: Props) {
               <p className="mt-5 text-sm leading-7 text-white/70">{cityPage.recommendedApproach}</p>
               <p className="mt-5 text-sm leading-7 text-white/70">{cityPage.qualityFocus}</p>
             </article>
+
+            {cityPage.sections?.map((section) => (
+              <article key={section.heading} className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-8">
+                <h2 className="text-3xl font-semibold text-white">{section.heading}</h2>
+                {section.body.map((paragraph, index) => (
+                  <p key={index} className="mt-5 text-sm leading-7 text-white/70">
+                    {paragraph}
+                  </p>
+                ))}
+              </article>
+            ))}
+
+            {cityPage.faq && cityPage.faq.length > 0 && (
+              <article className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-8">
+                <h2 className="text-3xl font-semibold text-white">Sık Sorulan Sorular</h2>
+                <div className="mt-6 space-y-6">
+                  {cityPage.faq.map((item) => (
+                    <div key={item.question}>
+                      <h3 className="text-lg font-semibold text-white">{item.question}</h3>
+                      <p className="mt-2 text-sm leading-7 text-white/70">{item.answer}</p>
+                    </div>
+                  ))}
+                </div>
+              </article>
+            )}
           </div>
 
           <aside className="space-y-6 rounded-[2rem] border border-white/10 bg-white/[0.03] p-8 text-sm text-white/75">

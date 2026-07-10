@@ -115,6 +115,26 @@ export default async function ServiceDetailPage({ params }: Props) {
     ]
   };
 
+  const faqItems =
+    "faq" in service && Array.isArray((service as { faq?: { question: string; answer: string }[] }).faq)
+      ? (service as { faq?: { question: string; answer: string }[] }).faq ?? []
+      : [];
+  const faqSchema =
+    faqItems.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqItems.map((item) => ({
+            "@type": "Question",
+            name: item.question,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: item.answer
+            }
+          }))
+        }
+      : null;
+
   return (
     <>
       <Script
@@ -127,6 +147,13 @@ export default async function ServiceDetailPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      {faqSchema && (
+        <Script
+          id={`service-faq-schema-${service.slug}`}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
       <ServiceDetailContent slug={slug} />
     </>
   );

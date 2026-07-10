@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight, MapPin } from "lucide-react";
-import { cityPages } from "@/lib/cityContent";
+import { orderedCityPages } from "@/lib/cityContent";
 import { siteConfig } from "@/lib/siteConfig";
 
 const pageUrl = `${siteConfig.siteUrl}/sehirler`;
@@ -44,7 +44,7 @@ export default function CitiesPage() {
 
       <section className="px-5 py-24">
         <div className="mx-auto grid max-w-7xl gap-5 md:grid-cols-2 xl:grid-cols-3">
-          {cityPages.map((page) => (
+          {orderedCityPages.map((page) => (
             <Link
               key={page.slug}
               href={`/sehirler/${page.slug}`}
