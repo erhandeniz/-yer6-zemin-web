@@ -1,6 +1,11 @@
 export const siteConfig = {
   siteUrl: "https://www.yer6zemin.com.tr",
   companyName: "YER6 Zemin Mühendislik",
+  // Google Analytics 4 ölçüm kimliği (ör. "G-XXXXXXXXXX"). Boş bırakılırsa GA yüklenmez.
+  gaMeasurementId: "",
+  // Google Search Console doğrulama meta içeriği (Property > HTML etiketi yöntemindeki content değeri).
+  // Boş bırakılırsa doğrulama meta etiketi eklenmez.
+  googleSiteVerification: "",
   phone: {
     display: "+90 532 378 06 91",
     href: "tel:+905323780691"

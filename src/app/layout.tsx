@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import "./globals.css";
 import { SiteShell } from "@/components/SiteShell";
 import { localBusinessSchema } from "@/lib/seo";
@@ -36,13 +37,9 @@ export const metadata: Metadata = {
     "YER6",
     "Ankara zemin güçlendirme"
   ],
-  alternates: {
-    languages: {
-      tr: "/",
-      en: "/?lang=en",
-      ar: "/?lang=ar"
-    }
-  },
+  ...(siteConfig.googleSiteVerification
+    ? { verification: { google: siteConfig.googleSiteVerification } }
+    : {}),
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
@@ -108,6 +105,22 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
+        {siteConfig.gaMeasurementId ? (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${siteConfig.gaMeasurementId}`}
+              strategy="afterInteractive"
+            />
+            <Script id="ga4-init" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${siteConfig.gaMeasurementId}');
+              `}
+            </Script>
+          </>
+        ) : null}
       </head>
       <body>
         <script
