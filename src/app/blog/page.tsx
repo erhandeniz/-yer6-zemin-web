@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { BlogContent } from "./BlogContent";
 import { siteConfig } from "@/lib/siteConfig";
 
-const pageUrl = `${siteConfig.siteUrl}/blog`;
+const pageUrl = `${siteConfig.siteUrl}/blog/`;
 
 export const metadata: Metadata = {
   title: "Zemin Güçlendirme Blogu",

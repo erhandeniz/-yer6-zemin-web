@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ContactContent } from "./ContactContent";
 import { siteConfig } from "@/lib/siteConfig";
 
-const pageUrl = `${siteConfig.siteUrl}/contact`;
+const pageUrl = `${siteConfig.siteUrl}/contact/`;
 
 export const metadata: Metadata = {
   title: "Zemin Güçlendirme Teklif ve İletişim",

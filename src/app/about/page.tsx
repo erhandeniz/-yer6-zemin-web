@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { AboutContent } from "./AboutContent";
 import { siteConfig } from "@/lib/siteConfig";
 
-const pageUrl = `${siteConfig.siteUrl}/about`;
+const pageUrl = `${siteConfig.siteUrl}/about/`;
 
 export const metadata: Metadata = {
   title: "Zemin Güçlendirme Ekibi ve Jeoteknik Mühendislik",

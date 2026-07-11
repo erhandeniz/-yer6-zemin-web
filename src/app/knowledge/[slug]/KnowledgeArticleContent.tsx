@@ -15,7 +15,7 @@ import { useLanguage } from "@/components/LanguageProvider";
 export function KnowledgeArticleContent({ article }: { article: KnowledgeArticle }) {
   const { t } = useLanguage();
   const related = publishedKnowledgeArticles.filter((other) => article.relatedSlugs.includes(other.slug));
-  const canonical = `${siteConfig.siteUrl}/knowledge/${article.slug}`;
+  const canonical = `${siteConfig.siteUrl}/knowledge/${article.slug}/`;
   const relatedCities = cityPages.filter((page) => page.articleSlugs.includes(article.slug)).slice(0, 5);
 
   return (

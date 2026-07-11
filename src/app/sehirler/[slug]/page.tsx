@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     notFound();
   }
 
-  const pageUrl = `${siteConfig.siteUrl}/sehirler/${cityPage.slug}`;
+  const pageUrl = `${siteConfig.siteUrl}/sehirler/${cityPage.slug}/`;
 
   return {
     title: cityPage.title,
@@ -46,7 +46,7 @@ export default async function CityPage({ params }: Props) {
     notFound();
   }
 
-  const pageUrl = `${siteConfig.siteUrl}/sehirler/${cityPage.slug}`;
+  const pageUrl = `${siteConfig.siteUrl}/sehirler/${cityPage.slug}/`;
   const linkedServices = cityPage.serviceSlugs
     .map((serviceSlug) => services.find((service) => service.slug === serviceSlug))
     .filter((service): service is (typeof services)[number] => Boolean(service));
@@ -96,7 +96,7 @@ export default async function CityPage({ params }: Props) {
         "@type": "ListItem",
         position: 2,
         name: "Şehirler",
-        item: `${siteConfig.siteUrl}/sehirler`
+        item: `${siteConfig.siteUrl}/sehirler/`
       },
       {
         "@type": "ListItem",

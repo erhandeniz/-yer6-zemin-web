@@ -4,7 +4,7 @@ import { ArrowUpRight, MapPin } from "lucide-react";
 import { orderedCityPages } from "@/lib/cityContent";
 import { siteConfig } from "@/lib/siteConfig";
 
-const pageUrl = `${siteConfig.siteUrl}/sehirler`;
+const pageUrl = `${siteConfig.siteUrl}/sehirler/`;
 
 export const metadata: Metadata = {
   title: "Şehirlere Göre Zemin Güçlendirme Hizmetleri",
