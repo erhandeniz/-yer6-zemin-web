@@ -786,7 +786,8 @@ export const projects = [
     ],
     usedEquipment: ["Jet Grout Delgi Makinesi", "Yüksek Basınç Enjeksiyon Pompası", "Jet Grout Santrali / Mikser"],
     result:
-      "Temel altı zemin, jet grout kolonlarıyla güçlendirilerek güneş paneli üretim tesisinin taşıma ve oturma güvenliği desteklendi. Uygulama, saha koşullarına uygun biçimde tamamlandı."
+      "Temel altı zemin, jet grout kolonlarıyla güçlendirilerek güneş paneli üretim tesisinin taşıma ve oturma güvenliği desteklendi. Uygulama, saha koşullarına uygun biçimde tamamlandı.",
+    relatedServiceSlugs: ["jet-grout", "zemin-iyilestirme"]
   },
   {
     slug: "bozuyuk-sok-dondurma-tesisi-jet-grout",

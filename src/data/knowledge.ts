@@ -2801,7 +2801,6 @@ export const knowledgeArticles: KnowledgeArticle[] = [
 
 export const publishedKnowledgeArticles = knowledgeArticles.filter((article) => article.published);
 export const knowledgeCategories = [
-  "Tümü",
   "Jet Grout",
   "Fore Kazık",
   "DSM",

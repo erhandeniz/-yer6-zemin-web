@@ -9,7 +9,7 @@ const pageUrl = `${siteConfig.siteUrl}/sehirler`;
 export const metadata: Metadata = {
   title: "Şehirlere Göre Zemin Güçlendirme Hizmetleri",
   description:
-    "Bursa, İzmir, İstanbul, Ankara, Hatay, Mersin, Muğla, Kayseri, Sivas, Van ve Ağrı için zemin güçlendirme ve zemin iyileştirme hizmetleri.",
+    "Türkiye genelinde 81 il için jet grout, DSM, fore kazık, enjeksiyon ve temel güçlendirme dahil zemin güçlendirme ve zemin iyileştirme hizmetleri.",
   alternates: {
     canonical: pageUrl
   },
