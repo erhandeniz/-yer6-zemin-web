@@ -1178,69 +1178,296 @@ export const knowledgeArticles: KnowledgeArticle[] = [
   },
   {
     slug: "zemin-iyilestirme-yontemleri",
-    title: "Zemin İyileştirme Yöntemleri",
-    seoTitle: "Zemin İyileştirme Yöntemleri | YER6",
-    description: "Zemin iyileştirmede kullanılan yöntemler; enjeksiyon, kolonsal iyileştirme ve güçlendirme teknikleri.",
-    excerpt: "Zemin iyileştirme yöntemleri, proje ihtiyacına göre seçilen farklı teknoloji ve uygulama stratejilerini içerir.",
+    title: "Zemin İyileştirme Nedir? Yöntemler, Seçim ve Uygulama",
+    seoTitle: "Zemin İyileştirme Nedir? Yöntemler ve Uygulama | YER6",
+    description:
+      "Zemin iyileştirme nedir, ne zaman gerekir? Jet grout, DSM, taş kolon ve enjeksiyon yöntemlerini; seçim, uygulama ve kalite kontrol adımlarıyla öğrenin.",
+    excerpt:
+      "Zemin iyileştirmenin tanımı, gerekli olduğu durumlar; jet grout, DSM, taş kolon, enjeksiyon ve kalite kontrol adımlarıyla kapsamlı mühendislik rehberi.",
     category: "Zemin İyileştirme",
-    readingTime: "8 dk",
+    readingTime: "12 dk",
     publishedAt: "2026-06-21",
-    updatedAt: "2026-06-21",
-    heroLabel: "Zemin İyileştirme Yöntemleri",
+    updatedAt: "2026-07-12",
+    heroLabel: "Zemin İyileştirme Nedir?",
     introduction:
-      "Zemin iyileştirme, güçlendirme ve stabilite sağlama amaçlı geniş bir yöntem spektrumunu kapsar. Her yöntem sahaya özel olarak seçilmelidir.",
+      "Zemin iyileştirme; zeminin taşıma gücünü artırmak, oturmayı sınırlandırmak, sıvılaşma riskini azaltmak veya geçirimsizliği iyileştirmek için fiziksel, mekanik ya da kimyasal yöntemlerle zeminin mühendislik özelliklerini değiştirme işlemidir. Doğru çözüm, zemin etüdü ve yapı yükleri birlikte değerlendirilerek projeye özel seçilir.",
     sections: [
       {
-        id: "techniques-overview",
-        title: "Yöntemlerin Genel Görünümü",
+        id: "zemin-iyilestirme-nedir",
+        title: "Zemin İyileştirme Nedir?",
         blocks: [
           {
             type: "paragraph",
             content:
-              "Zemin iyileştirme yöntemleri arasında jet grout, DSM, vibrasyon, sıkıştırma ve kimyasal enjeksiyon teknikleri yer alır. Her yöntemin avantajları ve saha sınırlamaları vardır."
+              "Zemin iyileştirme, mevcut zemini tamamen kaldırıp değiştirmek yerine onun dayanım, rijitlik, sıkılık, drenaj veya geçirgenlik özelliklerini kontrollü biçimde geliştiren geoteknik uygulamaların ortak adıdır. Hedef; temel sisteminin güvenle çalışabileceği, toplam ve farklı oturmaların kabul edilebilir sınırlar içinde kaldığı bir zemin ortamı oluşturmaktır."
+          },
+          {
+            type: "paragraph",
+            content:
+              "Uygulama yeni yapı alanlarında temel imalatından önce yapılabileceği gibi mevcut binaların altında, endüstriyel sahalarda, dolgu alanlarında, derin kazılarda ve yeraltı suyu etkisindeki bölgelerde de gerçekleştirilebilir. Yöntem seçimi yalnızca zeminin adına göre değil; tabaka kalınlığı, yeraltı suyu, yapı yükü, komşu yapılar ve hedef performans birlikte değerlendirilerek yapılır."
+          },
+          {
+            type: "note",
+            title: "Kısa cevap",
+            content:
+              "Zemin iyileştirme, zayıf veya riskli zemini proje yüklerini güvenle taşıyacak duruma getirmek için uygulanan mühendislik müdahalesidir. Tek bir yöntem değil; jet grout, DSM, taş kolon, sıkıştırma ve enjeksiyon gibi farklı çözümleri kapsar."
+          }
+        ]
+      },
+      {
+        id: "neden-gerekir",
+        title: "Zemin İyileştirme Neden ve Ne Zaman Gerekir?",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Zemin etüdünde taşıma gücü yetersizliği, yüksek oturma, heterojen dolgu, yumuşak kil, gevşek kum, sıvılaşma potansiyeli veya kontrolsüz yeraltı suyu belirlenmesi zemin iyileştirme ihtiyacını gündeme getirir. Amaç yalnızca taşıma gücünü yükseltmek değildir; yapının kullanım ömrü boyunca servis performansını korumak da tasarımın parçasıdır."
           },
           {
             type: "list",
+            title: "Başlıca iyileştirme hedefleri",
             items: [
-              "Jet Grout ve DSM",
-              "Dinamitleme ve vibro sıkıştırma",
-              "Kimyasal stabilizasyon"
+              "Zeminin taşıma kapasitesini ve rijitliğini artırmak",
+              "Toplam oturmayı ve farklı oturma riskini azaltmak",
+              "Deprem etkisinde sıvılaşma veya yanal yayılma riskini düşürmek",
+              "Kazı tabanı kabarması ve stabilite sorunlarını kontrol etmek",
+              "Yeraltı suyu geçişini azaltmak veya drenajı iyileştirmek",
+              "Dolgu ve platform zeminlerinde homojen bir çalışma tabakası oluşturmak"
+            ]
+          },
+          {
+            type: "warning",
+            title: "Etütsüz yöntem seçilmez",
+            content:
+              "Sadece komşu parselde kullanılan yöntemi kopyalamak güvenli değildir. Sondajlar, SPT/CPT gibi saha deneyleri, laboratuvar sonuçları, yeraltı suyu ve yapı yükleri değerlendirilmeden kolon çapı, derinliği, aralığı veya enjeksiyon reçetesi belirlenmemelidir."
+          }
+        ]
+      },
+      {
+        id: "zemin-iyilestirme-yontemleri",
+        title: "Başlıca Zemin İyileştirme Yöntemleri",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Her zemin iyileştirme yöntemi aynı problemi çözmez. Bazı yöntemler zemini bağlayıcıyla kolon haline getirir, bazıları sıkıştırır, bazıları drenajı hızlandırır; kazıklı çözümler ise yükü daha derindeki sağlam tabakalara aktarır. Projede bir yöntem tek başına veya hibrit sistem içinde kullanılabilir."
+          },
+          {
+            type: "list",
+            title: "Yöntemler ve tipik kullanım alanları",
+            items: [
+              "Jet grout: Yüksek basınçlı çimento şerbetiyle zemin-çimento kolonları oluşturur; dar sahalar, değişken tabakalar, temel altı uygulamaları ve geçirimsizlik hedeflerinde kullanılabilir.",
+              "DSM (Deep Soil Mixing): Zemini bağlayıcıyla mekanik olarak karıştırır; yumuşak kil, silt ve geniş alanlı platformlarda oturma kontrolü için değerlendirilebilir.",
+              "Taş kolon: Granüler kolonlarla drenajı, sıkılığı ve yük paylaşımını geliştirir; uygun yumuşak veya gevşek zeminlerde sıvılaşma ve oturma kontrolünde kullanılabilir.",
+              "Derin kompaksiyon ve vibro yöntemler: Gevşek granüler zeminleri sıkılaştırarak boşluk oranını azaltmayı hedefler.",
+              "Enjeksiyon yöntemleri: Çimento veya projeye uygun başka enjeksiyon malzemeleriyle boşlukları doldurur, dayanım ya da geçirimsizlik sağlar.",
+              "Ön yükleme ve düşey drenler: Yumuşak, sıkışabilir tabakalarda konsolidasyonu yapı inşa edilmeden önce hızlandırır.",
+              "Mini kazık ve mikrokazık: Zemini karıştırmak yerine yapı yüklerini daha sağlam tabakalara aktarır; özellikle mevcut yapı temel güçlendirmesinde tercih edilebilir."
+            ]
+          },
+          {
+            type: "note",
+            title: "Zemin iyileştirme ile temel güçlendirme aynı değildir",
+            content:
+              "Zemin iyileştirme zeminin mühendislik özelliklerini değiştirir. Temel güçlendirme ise mevcut veya yeni temelin yük aktarma kapasitesini artırır. Jet grout bazı projelerde iki hedefe birden hizmet edebilir; mini kazık ise çoğunlukla yük aktarım sisteminin parçasıdır."
+          }
+        ]
+      },
+      {
+        id: "yontem-secimi",
+        title: "Doğru Zemin İyileştirme Yöntemi Nasıl Seçilir?",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Doğru yöntem, hedef performansı en düşük ilk yatırım bedeliyle değil; uygulanabilirlik, kalite doğrulaması, süre, çevresel etkiler ve yaşam döngüsü riski birlikte değerlendirilerek seçilir. Aynı parsel içinde tabakalar değişiyorsa farklı bölgelerde farklı çözümler gerekebilir."
+          },
+          {
+            type: "list",
+            title: "Kararı etkileyen teknik veriler",
+            items: [
+              "Zemin tabakalarının türü, kalınlığı, dayanımı ve sıkışabilirliği",
+              "Yeraltı suyu seviyesi ve geçirgenlik koşulları",
+              "Yapı yükleri, temel tipi ve izin verilebilir oturma sınırları",
+              "Sıvılaşma, şev/kazı stabilitesi ve komşu yapı riskleri",
+              "Çalışma yüksekliği, erişim, gürültü ve titreşim kısıtları",
+              "Uygulama sonrası kullanılabilecek test ve kabul yöntemleri",
+              "İmalat süresi, malzeme tüketimi ve toplam proje maliyeti"
+            ]
+          },
+          {
+            type: "note",
+            title: "Pilot uygulama",
+            content:
+              "Tasarım varsayımlarının sahada doğrulanması için deneme kolonu veya pilot alan uygulanması; çap, dayanım, süre ve malzeme tüketimi gibi parametrelerin seri imalat öncesinde netleşmesini sağlar."
+          }
+        ]
+      },
+      {
+        id: "uygulama-asamalari",
+        title: "Zemin İyileştirme Uygulama Aşamaları",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Başarılı bir zemin iyileştirme projesi yalnızca sahadaki imalattan oluşmaz. Etüt, hesap, pilot uygulama, üretim kaydı ve kabul testleri aynı kalite zincirinin parçalarıdır."
+          },
+          {
+            type: "list",
+            title: "Tipik proje akışı",
+            items: [
+              "Zemin etüdü: Sondaj, saha deneyleri, laboratuvar testleri ve yeraltı suyu verileriyle zemin modeli oluşturulur.",
+              "Performans hedefi: Taşıma gücü, oturma, sıvılaşma, geçirimsizlik veya stabilite kriterleri tanımlanır.",
+              "Yöntem ve tasarım: Kolon geometrisi, aralık, derinlik, reçete ve uygulama parametreleri hesaplanır.",
+              "Pilot imalat: Deneme alanında tasarım kabulleri ve makine parametreleri doğrulanır.",
+              "Seri üretim: Aplikasyon ve günlük saha kayıtlarıyla imalat mühendislik denetiminde yürütülür.",
+              "Kalite kontrol ve kabul: Numune, karot, yükleme, bütünlük veya saha deneyleriyle hedef performans kontrol edilir.",
+              "Teslim dosyası: As-built planlar, üretim kayıtları ve test sonuçları birlikte raporlanır."
             ]
           }
         ]
       },
       {
-        id: "selection-criteria",
-        title: "Uygun Yöntem Seçimi",
+        id: "kalite-kontrol",
+        title: "Kalite Kontrol Nasıl Yapılır?",
         blocks: [
           {
             type: "paragraph",
             content:
-              "Yöntem seçimi, zemin özelliklerine, projenin hedeflerine ve ekonomik sınırlamalara göre yapılır. Doğru yöntem, uygulama başarısını doğrudan etkiler."
+              "Kalite kontrol yöntemi seçilen tekniğe göre değişir. Jet grout ve DSM imalatlarında derinlik, basınç, debi, dönüş ve çekme hızı ile bağlayıcı tüketimi gibi üretim parametreleri kaydedilir. Gerektiğinde karot ve basınç dayanımı deneyleriyle oluşan kolonun sürekliliği ve dayanımı kontrol edilir."
           },
           {
-            type: "note",
-            title: "Saha ve maliyet dengesi",
+            type: "paragraph",
             content:
-              "Teknik olarak uygun yöntem, sahadaki maliyet ve süre beklentileriyle dengelenmelidir."
+              "Taş kolon veya sıkıştırma uygulamalarında saha penetrasyon deneyleri, plaka yükleme deneyleri ve oturma ölçümleri kullanılabilir. Kazıklı çözümlerde bütünlük ve yükleme testleri gündeme gelir. Kabul kriterleri uygulama başlamadan önce proje ve teknik şartnamede açıkça tanımlanmalıdır."
+          },
+          {
+            type: "warning",
+            title: "Sadece metraj yeterli değildir",
+            content:
+              "Tamamlanan kolon metresi tek başına performans kanıtı değildir. Üretim parametreleri, malzeme belgeleri, test sonuçları ve as-built konumları birlikte değerlendirilmelidir."
+          }
+        ]
+      },
+      {
+        id: "maliyet-ve-sure",
+        title: "Zemin İyileştirme Maliyeti ve Süresi Neye Göre Değişir?",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Zemin iyileştirme için güvenilir birim fiyat; etüt verileri, toplam imalat miktarı, kolon boyu ve çapı, malzeme reçetesi, makine erişimi, mobilizasyon, yeraltı suyu ve test kapsamı görülmeden belirlenemez. Aynı yöntem için bile saha koşulları malzeme tüketimini ve üretim hızını önemli ölçüde değiştirebilir."
+          },
+          {
+            type: "list",
+            title: "Fiyat ve programı etkileyen başlıca unsurlar",
+            items: [
+              "İyileştirme derinliği, alanı ve toplam metraj",
+              "Hedef kolon çapı, dayanım ve performans kriterleri",
+              "Zemin tabakalarının değişkenliği ve delgi zorluğu",
+              "Çimento, agrega ve diğer malzeme tüketimleri",
+              "Şantiye erişimi, çalışma saatleri ve lojistik koşulları",
+              "Pilot uygulama, numune ve doğrulama testlerinin kapsamı"
+            ]
+          }
+        ]
+      },
+      {
+        id: "yer6-saha-deneyimi",
+        title: "YER6 Saha Deneyiminden Uygulama Notu",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "YER6, Bursa Yunuseli Nida Evleri projesinde temel altı zemin iyileştirme kapsamında yaklaşık 6.200 metre jet grout imalatı gerçekleştirdi. Sahada 15 metre boyunda ve 60 santimetre çapında kolonlarla zeminin taşıma kapasitesinin artırılması ve oturma riskinin azaltılması hedeflendi."
+          },
+          {
+            type: "paragraph",
+            content:
+              "Bu tür projelerde tasarım değerlerinin sahaya aktarılması; doğru aplikasyon, delgi-enjeksiyon kayıtlarının izlenmesi ve imalatın testlerle doğrulanmasına bağlıdır. YER6 yaklaşımı, yöntem seçiminden saha kalite kontrolüne kadar ölçülebilir performans kriterlerini esas alır."
           }
         ]
       }
     ],
     faq: [
       {
-        question: "Zemin iyileştirme için en yaygın yöntem hangisidir?",
+        question: "Zemin iyileştirme nedir?",
         answer:
-          "En yaygın yöntem saha koşullarına bağlıdır; jet grout ve DSM zemin iyileştirmede sıklıkla kullanılan yöntemlerdir."
+          "Zemin iyileştirme; zeminin taşıma gücünü, rijitliğini, sıkılığını, drenajını veya geçirimsizliğini geliştirerek yapı yüklerini güvenle taşımasını sağlayan geoteknik mühendislik uygulamalarının genel adıdır."
       },
       {
-        question: "Yöntem seçimi nasıl yapılır?",
+        question: "Zemin iyileştirme ne zaman gereklidir?",
         answer:
-          "Zemin etüdü, proje gereksinimleri ve maliyet analizleri temelinde uzman mühendisler tarafından yapılmalıdır."
+          "Zemin etüdünde düşük taşıma gücü, aşırı oturma, gevşek dolgu, yumuşak kil, sıvılaşma potansiyeli veya yeraltı suyu kaynaklı stabilite sorunu belirlendiğinde zemin iyileştirme değerlendirilir. Kesin ihtiyaç geoteknik hesapla belirlenir."
+      },
+      {
+        question: "En iyi zemin iyileştirme yöntemi hangisidir?",
+        answer:
+          "Her proje için tek bir en iyi yöntem yoktur. Jet grout, DSM, taş kolon, sıkıştırma, enjeksiyon veya drenaj çözümleri; zemin profili, yapı yükü, yeraltı suyu, saha erişimi ve hedef performansa göre karşılaştırılmalıdır."
+      },
+      {
+        question: "Zemin iyileştirme ile temel güçlendirme arasındaki fark nedir?",
+        answer:
+          "Zemin iyileştirme zeminin mühendislik özelliklerini değiştirir; temel güçlendirme ise temelin veya yük aktarma sisteminin kapasitesini artırır. Bazı projelerde jet grout veya mini kazık gibi çözümler iki sistemin birlikte çalışmasını sağlar."
+      },
+      {
+        question: "Zemin iyileştirme sıvılaşmayı önler mi?",
+        answer:
+          "Uygun tasarlanmış sıkıştırma, taş kolon, drenaj, jet grout veya DSM çözümleri sıvılaşma riskini azaltabilir. Yöntem, sıvılaşabilir tabakanın derinliği ve özellikleri ile deprem tasarım verilerine göre seçilmelidir."
+      },
+      {
+        question: "Mevcut bina altında zemin iyileştirme yapılabilir mi?",
+        answer:
+          "Evet. Erişim ve yapı güvenliği uygun olduğunda mikro jet grout, enjeksiyon veya mini kazık gibi düşük çalışma yüksekliğine uyarlanabilen yöntemler kullanılabilir. Uygulama öncesinde mevcut temel ve yapı davranışı analiz edilmelidir."
+      },
+      {
+        question: "Zemin iyileştirme fiyatı nasıl belirlenir?",
+        answer:
+          "Fiyat; iyileştirme alanı ve derinliği, yöntem, toplam metraj, kolon çapı, malzeme reçetesi, zemin koşulları, mobilizasyon ve test kapsamına göre hesaplanır. Bu nedenle etüt ve proje görülmeden verilen tek bir metrekare veya metre fiyatı yanıltıcı olabilir."
+      },
+      {
+        question: "Zemin iyileştirme ne kadar sürer?",
+        answer:
+          "Süre; yöntem, metraj, makine sayısı, zemin yapısı, çalışma saatleri ve test programına bağlıdır. Pilot uygulama sonrasında elde edilen gerçek üretim hızıyla güvenilir bir iş programı hazırlanabilir."
       }
     ],
-    relatedSlugs: ["jet-grout-nedir", "dsm-nasil-uygulanir"],
-    keywords: ["zemin iyileştirme yöntemleri", "zemin güçlendirme", "projeye uygun zemin iyileştirme"],
+    internalLinks: [
+      {
+        href: "/services/zemin-iyilestirme",
+        title: "Zemin İyileştirme Hizmeti",
+        description: "Etütten yöntemin seçimine, pilot uygulamadan kalite kontrol ve teslim dosyasına kadar YER6 zemin iyileştirme sürecini inceleyin."
+      },
+      {
+        href: "/services/jet-grout",
+        title: "Jet Grout Uygulaması",
+        description: "Dar sahalar, temel altı iyileştirme, taşıma gücü ve geçirimsizlik hedefleri için jet grout çözümünü inceleyin."
+      },
+      {
+        href: "/services/dsm",
+        title: "DSM – Derin Zemin Karıştırma",
+        description: "Yumuşak zeminlerde bağlayıcıyla yerinde karıştırma ve zemin-çimento kolonlarının uygulama sürecini inceleyin."
+      },
+      {
+        href: "/projects/bursa-yunuseli-nida-evleri-jet-grout-zemin-iyilestirme",
+        title: "Bursa Nida Evleri Uygulaması",
+        description: "6.200 metre jet grout zemin iyileştirme imalatının saha kapsamını, teknik değerlerini ve proje görsellerini görün."
+      }
+    ],
+    relatedSlugs: [
+      "jet-grout-nedir",
+      "dsm-nasil-uygulanir",
+      "zemin-etudu-nasil-yapilir",
+      "sivilasma-riskine-karsi-zemin-guclendirme"
+    ],
+    keywords: [
+      "zemin iyileştirme nedir",
+      "zemin iyileştirme yöntemleri",
+      "zemin güçlendirme",
+      "jet grout",
+      "dsm zemin iyileştirme",
+      "taş kolon",
+      "zemin iyileştirme uygulaması"
+    ],
     published: true
   },
   {

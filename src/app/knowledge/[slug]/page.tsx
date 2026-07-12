@@ -25,6 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 function buildMetadata(article: KnowledgeArticle): Metadata {
   const canonical = `${siteConfig.siteUrl}/knowledge/${article.slug}/`;
+  const socialImage = `${siteConfig.siteUrl}/opengraph-image.png`;
   return {
     title: {
       absolute: article.seoTitle
@@ -33,10 +34,31 @@ function buildMetadata(article: KnowledgeArticle): Metadata {
     alternates: {
       canonical
     },
+    robots: {
+      index: true,
+      follow: true
+    },
     openGraph: {
+      type: "article",
       title: article.seoTitle,
       description: article.description,
-      url: canonical
+      url: canonical,
+      publishedTime: `${article.publishedAt}T09:00:00+03:00`,
+      modifiedTime: `${article.updatedAt}T09:00:00+03:00`,
+      images: [
+        {
+          url: socialImage,
+          width: 1200,
+          height: 630,
+          alt: article.title
+        }
+      ]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: article.seoTitle,
+      description: article.description,
+      images: [socialImage]
     }
   };
 }
@@ -49,19 +71,24 @@ export default async function KnowledgeArticlePage({ params }: Props) {
   }
 
   const canonical = `${siteConfig.siteUrl}/knowledge/${article.slug}/`;
+  const articleImage = `${siteConfig.siteUrl}/images/jet-grout/bursa-yunuseli-nida-evleri-jet-grout-hero.webp`;
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
+    "@id": `${canonical}#article`,
     headline: article.title,
     description: article.description,
-    datePublished: article.publishedAt,
-    dateModified: article.updatedAt,
+    image: [articleImage, `${siteConfig.siteUrl}/opengraph-image.png`],
+    datePublished: `${article.publishedAt}T09:00:00+03:00`,
+    dateModified: `${article.updatedAt}T09:00:00+03:00`,
     mainEntityOfPage: canonical,
+    inLanguage: "tr-TR",
+    articleSection: article.category,
     keywords: article.keywords,
     author: {
       "@type": "Organization",
       name: siteConfig.companyName,
-      url: siteConfig.siteUrl
+      url: `${siteConfig.siteUrl}/about/`
     },
     publisher: {
       "@type": "Organization",

@@ -45,7 +45,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     ...publishedKnowledgeArticles.map((article) => ({
       url: withTrailingSlash(`/knowledge/${article.slug}`),
-      lastModified: new Date(),
+      lastModified: new Date(`${article.updatedAt}T09:00:00+03:00`),
       changeFrequency: "weekly" as const,
       priority: 0.75
     }))
