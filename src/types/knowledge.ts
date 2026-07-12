@@ -36,12 +36,6 @@ export type KnowledgeFaq = {
   answer: string;
 };
 
-export type KnowledgeInternalLink = {
-  href: string;
-  title: string;
-  description: string;
-};
-
 export type KnowledgeArticle = {
   slug: string;
   title: string;
@@ -56,7 +50,6 @@ export type KnowledgeArticle = {
   introduction: string;
   sections: KnowledgeSection[];
   faq: KnowledgeFaq[];
-  internalLinks?: KnowledgeInternalLink[];
   relatedSlugs: string[];
   keywords: string[];
   published: boolean;

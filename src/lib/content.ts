@@ -942,7 +942,7 @@ export const blogArticles = [
   {
     slug: "zemin-iyilestirme-yontemleri",
     key: "blog_zemin_iy",
-    read: "12 dk",
+    read: "14 dk",
     title: "Zemin İyileştirme Nedir? Yöntemler, Seçim ve Uygulama",
     excerpt: "Zemin iyileştirmenin tanımı, gerekli olduğu durumlar; jet grout, DSM, taş kolon, enjeksiyon ve kalite kontrol adımları.",
     category: "Zemin İyileştirme"

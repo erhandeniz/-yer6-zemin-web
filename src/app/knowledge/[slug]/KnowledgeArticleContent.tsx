@@ -38,25 +38,6 @@ export function KnowledgeArticleContent({ article }: { article: KnowledgeArticle
               {article.sections.map((section) => (
                 <ArticleSection key={section.id} section={section} />
               ))}
-              {article.internalLinks && article.internalLinks.length > 0 ? (
-                <section aria-labelledby="related-services-title" className="scroll-mt-28 pt-10">
-                  <h2 id="related-services-title" className="text-3xl font-semibold text-white">
-                    İlgili YER6 Hizmetleri ve Uygulamaları
-                  </h2>
-                  <div className="mt-6 grid gap-4 md:grid-cols-2">
-                    {article.internalLinks.map((item) => (
-                      <Link
-                        key={item.href}
-                        href={item.href}
-                        className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-6 transition hover:border-gold-200/30 hover:bg-white/[0.08]"
-                      >
-                        <h3 className="text-lg font-semibold text-white">{item.title}</h3>
-                        <p className="mt-3 text-sm leading-7 text-white/70">{item.description}</p>
-                      </Link>
-                    ))}
-                  </div>
-                </section>
-              ) : null}
               <ArticleFaq faq={article.faq} />
               <TechnicalDisclaimer />
               <ShareLinks url={canonical} title={article.title} />

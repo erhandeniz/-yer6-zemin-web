@@ -1185,7 +1185,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     excerpt:
       "Zemin iyileştirmenin tanımı, gerekli olduğu durumlar; jet grout, DSM, taş kolon, enjeksiyon ve kalite kontrol adımlarıyla kapsamlı mühendislik rehberi.",
     category: "Zemin İyileştirme",
-    readingTime: "12 dk",
+    readingTime: "14 dk",
     publishedAt: "2026-06-21",
     updatedAt: "2026-07-12",
     heroLabel: "Zemin İyileştirme Nedir?",
@@ -1304,6 +1304,35 @@ export const knowledgeArticles: KnowledgeArticle[] = [
         ]
       },
       {
+        id: "muhendislik-siniflandirmasi",
+        title: "Zemin İyileştirme Yöntemlerinin Mühendislik Sınıflandırması",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Akademik ve kurumsal teknik kaynaklarda yöntemler, zeminde oluşturdukları etkiye göre sınıflandırılır. Bu yaklaşım, yalnızca yöntem adlarını sıralamak yerine hangi fiziksel mekanizmanın hedeflendiğini anlamayı sağlar. Bir projede tek mekanizma yeterli olmayabilir; örneğin sıkılaştırma ile drenaj veya rijit kolonlarla yük transferi birlikte tasarlanabilir."
+          },
+          {
+            type: "list",
+            title: "Temel etki mekanizmaları",
+            items: [
+              "Sıkılaştırma: Zemin tanelerini yeniden düzenleyerek boşluk oranını azaltır; yüzeysel kompaksiyon, vibro kompaksiyon ve derin dinamik kompaksiyon bu gruptadır.",
+              "Konsolidasyon ve drenaj: İnce daneli zemindeki suyun çıkış yolunu kısaltarak zamana bağlı oturmayı kontrollü biçimde hızlandırır; ön yükleme, düşey dren ve vakum konsolidasyonu örnektir.",
+              "Kimyasal modifikasyon ve karıştırma: Kireç, çimento veya projeye uygun bağlayıcılarla plastisiteyi, dayanımı ve suya duyarlılığı değiştirir; yüzey stabilizasyonu ve DSM bu grupta değerlendirilir.",
+              "Enjeksiyon: Zemin boşluklarına veya zemin kütlesine bağlayıcı vererek dayanım, rijitlik ya da geçirimsizlik sağlar; permeasyon, kompaksiyon ve jet enjeksiyonu farklı çalışma prensiplerine sahiptir.",
+              "Donatı ve rijit elemanlarla güçlendirme: Taş kolon, rijit inklüzyon, geosentetik veya benzeri elemanlarla kompozit bir zemin kütlesi oluşturur ve yük paylaşımını düzenler.",
+              "Kaldırma ve değiştirme: Ekonomik ve uygulanabilir olduğunda sığ problemli tabaka kazılarak uygun kontrollü dolgu ile değiştirilir."
+            ]
+          },
+          {
+            type: "note",
+            title: "Mekanizma ile yöntem adı aynı şey değildir",
+            content:
+              "Bir yöntem birden fazla mekanizma oluşturabilir. Taş kolon hem drenaj yolu hem de daha rijit yük taşıyan eleman gibi çalışabilir; jet grout ise zemin-çimento kütlesi oluşturarak dayanım ve geçirimsizlik hedeflerine birlikte hizmet edebilir. Tasarım hesabı hangi etkinin esas alındığını açıkça göstermelidir."
+          }
+        ]
+      },
+      {
         id: "uygulama-asamalari",
         title: "Zemin İyileştirme Uygulama Aşamaları",
         blocks: [
@@ -1387,6 +1416,30 @@ export const knowledgeArticles: KnowledgeArticle[] = [
               "Bu tür projelerde tasarım değerlerinin sahaya aktarılması; doğru aplikasyon, delgi-enjeksiyon kayıtlarının izlenmesi ve imalatın testlerle doğrulanmasına bağlıdır. YER6 yaklaşımı, yöntem seçiminden saha kalite kontrolüne kadar ölçülebilir performans kriterlerini esas alır."
           }
         ]
+      },
+      {
+        id: "teknik-kaynaklar",
+        title: "Teknik Kaynaklar ve Akademik Dayanak",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Bu rehber; YER6 saha deneyiminin yanı sıra üniversite ders notları, hakemli yayınlar ve kamu kurumlarının teknik dokümanları karşılaştırılarak hazırlanmıştır. Kaynaklardaki genel sınıflandırmalar projeye özel tasarımın yerine geçmez; uygulama kararı güncel zemin etüdü ve geoteknik hesapla verilmelidir."
+          },
+          {
+            type: "list",
+            title: "Başvurulan temel kaynaklar",
+            items: [
+              "Çukurova Üniversitesi, İnşaat Mühendisliği Bölümü — Zemin Mekaniği II: Zemin İyileştirme Yöntemleri ders notları.",
+              "Altuğ Saygılı, Muğla Sıtkı Koçman Üniversitesi — Zemin İyileştirme Yöntemleri: ilkeler, problem türleri ve metot seçimi sunumu.",
+              "Atila Demiröz ve Mustafa Karaduman — Zemin İyileştirme Metotları, Selçuk-Teknik Dergisi, Cilt 8, Sayı 3, 2009, sayfa 176–192.",
+              "Onur Selçukhan ve Abdullah Ekinci — Zemin İyileştirme Yöntemleri ve Yaygın Kullanımına Bağlı Değerlendirilmesi, Avrupa Bilim ve Teknoloji Dergisi, Sayı 23, 2021, DOI: 10.31590/ejosat.881603.",
+              "İller Bankası A.Ş. Uzmanlık Tezleri — Yapım İşlerinde Zemin İyileştirme Yöntemleri.",
+              "Çorum Belediyesi teknik eğitim dokümanı — Zemin İyileştirme Yöntemleri.",
+              "Geopier teknik rehberi — Ground Improvement: Methods, Modification Techniques, and Engineering Solutions."
+            ]
+          }
+        ]
       }
     ],
     faq: [
@@ -1429,28 +1482,6 @@ export const knowledgeArticles: KnowledgeArticle[] = [
         question: "Zemin iyileştirme ne kadar sürer?",
         answer:
           "Süre; yöntem, metraj, makine sayısı, zemin yapısı, çalışma saatleri ve test programına bağlıdır. Pilot uygulama sonrasında elde edilen gerçek üretim hızıyla güvenilir bir iş programı hazırlanabilir."
-      }
-    ],
-    internalLinks: [
-      {
-        href: "/services/zemin-iyilestirme",
-        title: "Zemin İyileştirme Hizmeti",
-        description: "Etütten yöntemin seçimine, pilot uygulamadan kalite kontrol ve teslim dosyasına kadar YER6 zemin iyileştirme sürecini inceleyin."
-      },
-      {
-        href: "/services/jet-grout",
-        title: "Jet Grout Uygulaması",
-        description: "Dar sahalar, temel altı iyileştirme, taşıma gücü ve geçirimsizlik hedefleri için jet grout çözümünü inceleyin."
-      },
-      {
-        href: "/services/dsm",
-        title: "DSM – Derin Zemin Karıştırma",
-        description: "Yumuşak zeminlerde bağlayıcıyla yerinde karıştırma ve zemin-çimento kolonlarının uygulama sürecini inceleyin."
-      },
-      {
-        href: "/projects/bursa-yunuseli-nida-evleri-jet-grout-zemin-iyilestirme",
-        title: "Bursa Nida Evleri Uygulaması",
-        description: "6.200 metre jet grout zemin iyileştirme imalatının saha kapsamını, teknik değerlerini ve proje görsellerini görün."
       }
     ],
     relatedSlugs: [
