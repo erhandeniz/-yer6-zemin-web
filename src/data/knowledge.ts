@@ -3054,6 +3054,99 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     relatedSlugs: ["dsm-nedir", "dsm-nasil-uygulanir", "jet-grout-ve-dsm-farki"],
     keywords: ["deep soil mixing ankara", "dsm ankara", "derin zemin karıştırma ankara", "dsm firması ankara", "ankara zemin iyileştirme"],
     published: true
+  },
+  {
+    slug: "ankraj-nedir",
+    title: "Ankraj Nedir? Öngermeli Ankraj Uygulaması ve Kullanım Alanları",
+    seoTitle: "Ankraj Nedir? Öngermeli Ankraj Uygulaması | YER6",
+    description: "Ankraj; delgi, enjeksiyon ve ön germeyle yatay yükleri zemine aktaran bir sistemdir. Derin kazı iksası, şev stabilizasyonu ve yapı destekleme uygulamaları.",
+    excerpt: "Ankraj; zemine açılan delgiye yerleştirilen çelik tendonun enjeksiyonla kenetlenmesi ve ön germe uygulanmasıyla yatay yükleri güvenle zemine aktaran bir sistemdir. Derin kazı iksası ve şev stabilizasyonunda kullanılır.",
+    category: "Ankraj & İksa",
+    readingTime: "7 dk",
+    publishedAt: "2026-07-11",
+    updatedAt: "2026-07-11",
+    heroLabel: "Ankraj",
+    introduction: "Ankraj, derin kazılarda perde sistemlerini destekleyen ve yamaçları stabilize eden en yaygın geoteknik çözümlerden biridir. Bu yazıda ankrajın ne olduğunu, nasıl uygulandığını ve nerelerde kullanıldığını açıklıyoruz.",
+    sections: [
+      { id: "tanim", title: "Ankraj Nedir?", blocks: [
+        { type: "paragraph", content: "Ankraj; zemine belirli açı ve derinlikte açılan delgiye çelik tendon (halat veya çubuk) yerleştirilmesi, enjeksiyonla zemine kenetlenmesi ve ön germe uygulanarak yatay yüklerin güvenli biçimde zemine aktarılmasıdır. Geçici veya kalıcı olarak tasarlanabilir." },
+        { type: "list", title: "Temel bileşenler", items: ["Serbest boy ve kök (kenetlenme) bölgesi", "Çelik tendon (halat/çubuk)", "Enjeksiyon (kök aderansı)", "Ön germe ve kilitleme başlığı"] }
+      ]},
+      { id: "kullanim", title: "Nerelerde Kullanılır?", blocks: [
+        { type: "list", title: "Uygulama alanları", items: ["Derin kazılarda iksa perdesi desteği", "Şev ve yamaç stabilizasyonu", "İstinat yapılarının güçlendirilmesi", "Yüzer temel/kaldırma kuvvetine karşı ankastre"] },
+        { type: "note", title: "Kabul testi", content: "Ankrajlar kabul/çekme testleriyle taşıma kapasitesi açısından doğrulanmalı; kalıcı sistemlerde korozyon koruması sağlanmalıdır." }
+      ]}
+    ],
+    faq: [
+      { question: "Geçici ve kalıcı ankraj farkı nedir?", answer: "Geçici ankrajlar inşaat süresince görev yapar ve sökülebilir; kalıcı ankrajlar korozyon korumasıyla yapının ömrü boyunca çalışır." },
+      { question: "Ankraj hangi zeminlerde uygulanır?", answer: "Kaya, sert kil ve yeterli kenetlenme sağlayan zeminlerde etkilidir; kök bölgesi zemin dayanımına göre tasarlanır." },
+      { question: "Ankraj kalitesi nasıl doğrulanır?", answer: "Her ankraj ön germe sırasında test edilir; ayrıca seçili ankrajlarda çekme (kabul) testi yapılır." }
+    ],
+    relatedSlugs: ["kazi-destek-sistemleri-nedir", "zemin-iyilestirme-risk-yonetimi", "saha-denetimi-numune-testleri"],
+    keywords: ["ankraj nedir", "öngermeli ankraj", "ankraj uygulaması", "iksa ankraj", "zemin ankrajı"],
+    published: true
+  },
+  {
+    slug: "tas-kolon-nedir",
+    title: "Taş Kolon Nedir? Uygulaması ve Avantajları",
+    seoTitle: "Taş Kolon Nedir? Vibro Taş Kolon Uygulaması | YER6",
+    description: "Taş kolon; yumuşak zemine sıkıştırılmış çakıl/kırmataş kolonları teşkil ederek taşıma gücünü artıran, oturmayı azaltan ve drenaj sağlayan zemin iyileştirme yöntemidir.",
+    excerpt: "Taş kolon; yumuşak kil ve gevşek zeminlere vibro yöntemiyle sıkıştırılmış çakıl/kırmataş kolonları teşkil ederek taşıma gücünü artıran, oturmayı azaltan ve drenaj sağlayarak sıvılaşma direncine katkıda bulunan bir yöntemdir.",
+    category: "Zemin İyileştirme",
+    readingTime: "6 dk",
+    publishedAt: "2026-07-11",
+    updatedAt: "2026-07-11",
+    heroLabel: "Taş Kolon",
+    introduction: "Taş kolon, yumuşak ve gevşek zeminlerde oturma kontrolü ile sıvılaşma azaltımı için etkili bir zemin iyileştirme yöntemidir. Bu yazıda taş kolonun ne olduğunu ve avantajlarını açıklıyoruz.",
+    sections: [
+      { id: "tanim", title: "Taş Kolon Nedir?", blocks: [
+        { type: "paragraph", content: "Taş kolon, vibratör yardımıyla zemine açılan boşluğa çakıl/kırmataş beslenip sıkıştırılarak oluşturulan, yanal zemine kenetlenmiş agrega kolonlarıdır. Islak veya kuru sistemle uygulanır." },
+        { type: "list", title: "Sağladıkları", items: ["Taşıma kapasitesi artışı", "Oturma ve fark oturma azaltımı", "Drenaj ile hızlı konsolidasyon", "Sıvılaşma direncine katkı"] }
+      ]},
+      { id: "avantaj", title: "Avantajları ve Uygulama Alanları", blocks: [
+        { type: "paragraph", content: "Doğal agrega kullanımıyla çevre dostudur ve geniş alanlarda hızlı-ekonomik uygulanır. Depo, lojistik ve endüstriyel platformlar ile dolgu altı iyileştirmede tercih edilir." },
+        { type: "note", title: "Çok yumuşak zemin", content: "Yanal destek sağlayamayan çok yumuşak zeminlerde kolon şişmesine karşı geotekstil kılıflı taş kolon değerlendirilebilir." }
+      ]}
+    ],
+    faq: [
+      { question: "Taş kolon hangi zeminlerde uygun?", answer: "Yumuşak kil, gevşek silt ve kumlu zeminlerde etkilidir; çok yumuşak zeminlerde geotekstil kılıflı çözüm tercih edilebilir." },
+      { question: "Taş kolon sıvılaşmayı önler mi?", answer: "Drenaj sağlayıp rijitliği artırarak sıvılaşma direncine katkıda bulunur." },
+      { question: "Taş kolon mu DSM mi?", answer: "Taş kolon drenaj ve doğal agrega avantajı sunar; DSM daha yüksek ve kontrollü mukavemet sağlar. Karar zemin ve hedefe bağlıdır." }
+    ],
+    relatedSlugs: ["zemin-iyilestirme-yontemleri", "sivilasma-riskine-karsi-zemin-guclendirme", "zemin-iyilestirme-planlama"],
+    keywords: ["taş kolon nedir", "vibro taş kolon", "taş kolon uygulaması", "zemin iyileştirme taş kolon", "geotekstil kılıflı taş kolon"],
+    published: true
+  },
+  {
+    slug: "diafram-duvar-nedir",
+    title: "Diyafram Duvar Nedir? Uygulaması ve Kullanım Alanları",
+    seoTitle: "Diyafram Duvar Nedir? Bentonit Destekli Perde | YER6",
+    description: "Diyafram duvar; bentonit çamuru desteğinde teşkil edilen, hem iksa hem su geçirimsizlik sağlayan betonarme sürekli perde duvardır. Derin kazı ve metro yapılarında kullanılır.",
+    excerpt: "Diyafram duvar; bentonit çamuru desteğinde panel panel kazılıp betonarme olarak teşkil edilen, hem yüksek rijitlikli iksa hem de su geçirimsizlik sağlayan sürekli perde duvardır.",
+    category: "Ankraj & İksa",
+    readingTime: "6 dk",
+    publishedAt: "2026-07-11",
+    updatedAt: "2026-07-11",
+    heroLabel: "Diyafram Duvar",
+    introduction: "Diyafram duvar, derin ve sulu kazılarda yüksek rijitlik ve su kontrolü gerektiren projeler için tercih edilen kalıcı bir perde sistemidir. Bu yazıda ne olduğunu ve nerelerde kullanıldığını açıklıyoruz.",
+    sections: [
+      { id: "tanim", title: "Diyafram Duvar Nedir?", blocks: [
+        { type: "paragraph", content: "Diyafram duvar; kılavuz duvarlar arasında, bentonit çamuru desteğinde özel kepçelerle panel panel kazılan, donatı kafesi indirilip tremie betonla dökülen sürekli betonarme perde duvardır. Panjur/su tutucu ile paneller birleştirilir." },
+        { type: "list", title: "Öne çıkan özellikler", items: ["Yüksek rijitlik, düşük deplasman", "Su geçirimsizlik", "Kalıcı taşıyıcı bodrum perdesi olabilme", "Komşu yapıya duyarlı derin kazı"] }
+      ]},
+      { id: "kullanim", title: "Nerelerde Kullanılır?", blocks: [
+        { type: "paragraph", content: "Derin bodrumlu yüksek yapılar, metro istasyonları, yüksek yeraltı suyu bulunan derin kazılar ve komşu yapıya sıfır toleranslı kentsel kazılarda tercih edilir." },
+        { type: "note", title: "Fore kazık perdesine göre", content: "Diyafram duvar daha yüksek rijitlik ve daha iyi su geçirimsizliği sağlar; derin, sulu ve hassas kazılarda avantajlıdır." }
+      ]}
+    ],
+    faq: [
+      { question: "Diyafram duvar mı fore kazık perdesi mi?", answer: "Diyafram duvar derin, sulu ve komşu yapıya duyarlı kazılarda daha rijit ve su geçirimsizdir; fore kazık perdesi bazı koşullarda daha hızlı/ekonomiktir." },
+      { question: "Kalıcı yapı elemanı olur mu?", answer: "Evet; uygun tasarlandığında nihai yapının bodrum perde duvarı olarak taşıyıcı görev üstlenir." },
+      { question: "Bentonit çamuru ne işe yarar?", answer: "Kazı sırasında panel çeperinin göçmesini önleyerek stabiliteyi sağlar ve beton dökümüyle yerini betona bırakır." }
+    ],
+    relatedSlugs: ["kazi-destek-sistemleri-nedir", "fore-kazik-nedir", "zemin-iyilestirme-risk-yonetimi"],
+    keywords: ["diyafram duvar nedir", "diafram duvar", "bentonit destekli perde", "derin kazı perde duvarı", "iksa diyafram duvar"],
+    published: true
   }
 ];
 
