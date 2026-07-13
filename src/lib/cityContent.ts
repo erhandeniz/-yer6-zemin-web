@@ -1001,7 +1001,7 @@ export const cityPages: CityPage[] = [
     city: "Konya",
     title: "Konya Zemin Güçlendirme, DSM ve Silo Temel Çözümleri",
     description:
-      "Konya'da geniş tarımsal depolar, yüksek silolar and killi ova zeminleri için DSM zemin iyileştirme, fore kazık ve geoteknik risk yönetimi.",
+      "Konya'da geniş tarımsal depolar, yüksek silolar ve killi ova zeminleri için DSM zemin iyileştirme, fore kazık ve geoteknik risk yönetimi.",
     heroLead:
       "Konya'da zemin güçlendirme çalışmaları; havzadaki kalın gölsel kil tabakaları, yüksek tonajlı siloların devrilme/oturma stabilitesi ve geniş tabanlı fabrika döşeme yüklerine göre şekillendirilir.",
     soilContext:
@@ -1171,7 +1171,7 @@ export const cityPages: CityPage[] = [
     city: "Sakarya",
     title: "Sakarya Zemin Güçlendirme, DSM ve Sıvılaşma Önleme Mühendisliği",
     description:
-      "Sakarya'da deprem bölgesi zemin yapıları, alüvyon tabakalar and sanayi platformları için DSM zemin iyileştirme, jet grout ve fore kazık uygulamaları.",
+      "Sakarya'da deprem bölgesi zemin yapıları, alüvyon tabakalar ve sanayi platformları için DSM zemin iyileştirme, jet grout ve fore kazık uygulamaları.",
     heroLead:
       "Sakarya'da zemin iyileştirme kararları; Adapazarı havzasının gevşek alüvyonal yapısı, yüksek sismik risk ve yeraltı suyu seviyesinin dinamikleri doğrultusunda verilir.",
     soilContext:
@@ -3437,6 +3437,414 @@ const cityEnrichmentList: CityEnrichment[] = [
       { question: "Şişen kil neden önlem gerektirir?", answer: "Nem değiştikçe şişip büzülür; bu hareket temellerde düzensiz gerilme oluşturur. Zemin iyileştirme ve uygun temel ile kontrol edilir." },
       { question: "Yozgat'ta hangi yöntem uygulanır?", answer: "Zemin tipine göre DSM, fore kazık veya jet grout; karar sondaj ve laboratuvar verisine bağlıdır." },
       { question: "YER6 Yozgat'ta hizmet veriyor mu?", answer: "Evet; Ankara merkezli ekibimizle Yozgat ve İç Anadolu'da zemin güçlendirme uygulamaları yürütüyoruz." }
+    ]
+  }
+// ================================================================
+// YER6 — cityContent.ts DERINLESTIRME BATCH 1 (6 il)
+// Ankara, Istanbul, Izmir, Bursa, Kocaeli, Antalya
+//
+// NASIL YAPISTIRILIR:
+// 1) VS Code'da src/lib/cityContent.ts dosyasini ac
+// 2) "// ENRICH_ANCHOR" satirini bul (Cmd+F)
+// 3) Bu dosyadaki HER SEYI kopyala ve o satirin HEMEN USTUNE yapistir
+// 4) Eski Ankara/Istanbul/... girislerini SILMENE GEREK YOK —
+//    listede ayni slug iki kez olunca SONDAKI gecerli olur
+//    (Object.fromEntries son girisi kullanir). Yapi degismiyor.
+// 5) Kaydet -> commit -> push
+// ================================================================
+,
+  {
+    slug: "ankara-zemin-guclendirme",
+    intro:
+      "Ankara'da zemin güçlendirme, mühendislik literatüründe 'Ankara kili' olarak anılan yüksek plastisiteli, şişme-büzülme davranışı gösteren zemin yapısıyla doğrudan ilişkilidir. YER6, Gölbaşı merkezli saha ekibiyle Ankara ve çevresinde jet grout, fore kazık, ankraj-iksa ve DSM zemin iyileştirme uygulamalarını tek bir kalite standardında yürütür; Türkiye geneli ve yurt dışı projelere de buradan mobilize olur.",
+    sections: [
+      {
+        heading: "Ankara kili ve yerel zemin davranışı",
+        body: [
+          "Ankara'nın önemli bir bölümünde yüzeye yakın seviyelerde bulunan yüksek plastisiteli killer, mevsimsel nem değişimlerinde belirgin hacim değişimi yapar. Kuru dönemde büzülüp yağışlı dönemde şişen bu killer, özellikle hafif yapıların temellerinde çatlama ve düzensiz oturma riskini artırır.",
+          "Bu davranışın kontrolü; temel derinliği, drenaj ve gerektiğinde zemin iyileştirmesinin birlikte tasarlanmasını gerektirir. Doğru yöntem seçimi, ancak sondaj verisi ve laboratuvar indeks deneyleriyle kurulan bir zemin modeliyle güvenilir biçimde yapılabilir."
+        ]
+      },
+      {
+        heading: "Bölgelere göre zemin koşulları",
+        body: [
+          "Vadi tabanlarında ve akarsu çevresinde alüvyon tabakalar ile yer yer yüksek yeraltı suyu bulunurken, sırt ve yamaç kesimlerinde ayrışmış kaya-kil geçişleri öne çıkar. Gölbaşı çevresinde göl çökelleri, gelişme alanlarında ise eski kontrolsüz dolgular ek değişkenlik oluşturur.",
+          "Aynı ilçede, hatta komşu parsellerde bile tabaka kalınlığı ve yeraltı suyu seviyesi değişebildiğinden, temel ve iksa kararı parsel bazında sondajla verilmelidir. Komşu parseldeki çözümü kopyalamak Ankara'da güvenli bir yaklaşım değildir."
+        ]
+      },
+      {
+        heading: "Derin kazı, ankraj ve iksa uygulamaları",
+        body: [
+          "Kot farkı yüksek parseller ve derin bodrumlu projelerde fore kazıklı perde ile öngermeli ankraj kombinasyonu Ankara'nın standart çözümüdür. Bitişik nizam ve komşu yapı bulunan kazılarda deplasman kontrolü tasarımın merkezindedir.",
+          "Kazı kademeleri, ankraj kabul testleri ve deformasyon izleme (inklinometre, topografik okuma) üretim boyunca kayıt altına alınır; alarm sınırları aşıldığında imalat durdurularak değerlendirme yapılır."
+        ]
+      },
+      {
+        heading: "Ankara'da uygulanan zemin iyileştirme yöntemleri",
+        body: [
+          "Mevcut yapı altında güçlendirme veya su kontrolü gereken durumlarda jet grout kolonları, dar sahalarda bile düşük titreşimle uygulanabilir. Geniş taban alanlı endüstriyel yapılarda oturmayı kontrol etmek için DSM zemin iyileştirme tercih edilir.",
+          "YER6, her projede kolon çapı, derinlik ve bağlayıcı dozajını Ankara zeminine özgü parametrelerle optimize eder; oturma ve çatlak sorunu yaşayan mevcut binalarda jet grout ve mini kazık ile temel altı güçlendirme (underpinning) kurgulanır."
+        ]
+      },
+      {
+        heading: "Saha kalitesi ve teslim süreci",
+        body: [
+          "Ankara projelerinde deneme kolonları, karot alımı, tek eksenli basınç deneyleri ve kolon sürekliliği kontrolleri üretim boyunca kayıt altına alınır. Bu veriler, yapının servis yükleri altında beklenen performansı vereceğini belgelemek için teslim dosyasına işlenir.",
+          "Yüksek plastisiteli killerde nem yönetimi ve numune koruması kritik olduğundan, saha kalite planı mevsim koşullarına göre uyarlanır."
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "Ankara kili neden özel önlem gerektirir?",
+        answer:
+          "Yüksek plastisiteli olduğu için nem değiştikçe şişip büzülür; bu hacimsel hareket temellerde düzensiz gerilme ve çatlaklara yol açabilir. Uygun zemin iyileştirme ve temel sistemi bu hareketleri kontrol altına alır."
+      },
+      {
+        question: "Ankara'da jet grout mu fore kazık mı uygulanmalı?",
+        answer:
+          "Karar; yük büyüklüğü, kazı derinliği, komşu yapı durumu ve zemin profiline bağlıdır. Su kontrolü ve dar saha için jet grout, yüksek taşıma kapasitesi ve derin temel için fore kazık öne çıkar. Çoğu projede ikisi birlikte kurgulanır."
+      },
+      {
+        question: "Derin bodrumlu projede iksa zorunlu mu?",
+        answer:
+          "Kazı derinliği, zemin profili ve komşu yapı durumuna göre belirlenir; kentsel parsellerde derin kazıların büyük bölümünde kazıklı perde ve ankrajlı iksa gerekir. Kesin karar proje bazında verilir."
+      },
+      {
+        question: "Mevcut binada oturma veya çatlak varsa ne yapılmalı?",
+        answer:
+          "Önce zemin etüdü ve yapısal değerlendirme ile sorunun kaynağı teşhis edilmelidir. Ardından jet grout veya mini kazık ile temel altı güçlendirme (underpinning) planlanabilir."
+      },
+      {
+        question: "YER6 Ankara'nın hangi bölgelerinde çalışıyor?",
+        answer:
+          "Gölbaşı merkezli ekibimizle Ankara'nın tüm ilçelerinde ve çevre illerde saha uygulaması yapıyoruz; Türkiye geneli ve yurt dışı projelere de mobilize oluyoruz."
+      },
+      {
+        question: "Zemin etüdü olmadan fiyat teklifi alabilir miyim?",
+        answer:
+          "Ön değerlendirme için mevcut sondaj raporu veya proje bilgileri yeterlidir; ancak kesin tasarım ve metraj için güncel zemin etüdü verisi gereklidir."
+      }
+    ]
+  },
+  {
+    slug: "istanbul-zemin-guclendirme",
+    intro:
+      "İstanbul'da zemin güçlendirme; yalnızca yöntem seçimi değil, komşu yapı etkisi, yoğun altyapı hatları ve sınırlı şantiye lojistiğinin birlikte yönetildiği bir risk mühendisliği konusudur. YER6, derin kazı, temel güçlendirme ve kentsel dönüşüm projelerinde fore kazık, mini kazık, ankraj ve jet grout çözümlerini bir arada kurgular; Ankara merkezli ekip Türkiye geneli hizmet kapsamında İstanbul projelerine mobilize olur.",
+    sections: [
+      {
+        heading: "İstanbul'da zemin ve kazı koşulları",
+        body: [
+          "Kıyı dolguları, ayrışmış kaya geçişleri ve bölgeden bölgeye değişen yerleşim dokusu, İstanbul'da temel güçlendirme ve iksa sistemlerinde hassas deplasman kontrolü gerektirir. Haliç, Boğaz ve Marmara kıyısı boyunca gevşek dolgu ve yüksek yeraltı suyu koşulları öne çıkarken, iç kesimlerde daha rijit formasyonlarla karşılaşılabilir.",
+          "Bitişik nizam yapılaşma nedeniyle kazı sırasında komşu binaların güvenliği belirleyicidir; bu da öngermeli ankraj, kazıklı iksa perdesi ve gerektiğinde jet grout ile taban stabilizasyonunu zorunlu kılar."
+        ]
+      },
+      {
+        heading: "Kıyı dolguları, dere yatakları ve sıvılaşma riski",
+        body: [
+          "Avcılar, Küçükçekmece ve Zeytinburnu gibi kıyı kesimleri ile eski dere yataklarına oturan dolgu alanlarında gevşek, suya doygun tabakalar sıvılaşma potansiyeli taşır. Beklenen Marmara depremi, bu bölgelerde zemin iyileştirmesini yapısal güvenliğin ön koşulu haline getirmektedir.",
+          "Sıvılaşma değerlendirmesi TBDY 2018 kapsamında zorunludur; risk belirlenen parsellerde jet grout, DSM veya derin temel çözümleriyle performans hedefi sağlanır."
+        ]
+      },
+      {
+        heading: "Derin kazı ve temel güçlendirme yöntemleri",
+        body: [
+          "Yüksek yapılar ve derin bodrumlu projelerde büyük çaplı fore kazıklar taşıma kapasitesini sağlarken, dar ve erişimi kısıtlı kentsel dönüşüm parsellerinde mini kazık ve underpinning uygulamaları mevcut yapıyı taşımadan güçlendirmeye imkân verir.",
+          "Su geçirimsizliği ve kazı tabanı güvenliği gereken alanlarda jet grout perdeleri devreye alınır. YER6, her projede düşeylik, beton sürekliliği ve ankraj test yüklerini kayıt altına alarak çevre yapı izleme verisiyle birlikte raporlar."
+        ]
+      },
+      {
+        heading: "Kentsel dönüşümde uygulama süreci",
+        body: [
+          "Süreç; mevcut yapının değerlendirilmesi ve zemin etüdüyle başlar, yöntem seçimi ve etap planıyla devam eder. Bitişik nizamda titreşim sınırları gözetilir; kompakt ekipmanlar dar parsellerde ve gerektiğinde bodrum katından çalışabilir.",
+          "Üretim etaplı yürütülür, yapı hareketleri izlenir ve tüm imalat kayıtları teslim dosyasında belgelenir."
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "İstanbul'da komşu yapıya zarar vermeden kazı yapılabilir mi?",
+        answer:
+          "Evet. Öngermeli ankraj, kazıklı iksa ve gerektiğinde jet grout taban stabilizasyonu ile deplasmanlar sınırlandırılır; çevre yapılar izleme (monitoring) altında tutulur."
+      },
+      {
+        question: "Sıvılaşma riski olan ilçede güvenli yapı mümkün mü?",
+        answer:
+          "Evet; uygun tasarlanmış jet grout, DSM veya derin temel çözümleriyle sıvılaşma riski kabul edilebilir düzeye indirilir. Değerlendirme TBDY 2018 kapsamında zemin etüdüyle yapılır."
+      },
+      {
+        question: "Kentsel dönüşümde mevcut binanın altına güçlendirme yapılabilir mi?",
+        answer:
+          "Mini kazık ve underpinning yöntemleriyle mevcut temel altına kontrollü yük aktarımı sağlanabilir. Uygulama, yapının statik durumu ve zemin profiline göre projelendirilir."
+      },
+      {
+        question: "Dar parselde ekipman çalışabilir mi?",
+        answer:
+          "Evet; kompakt jet grout ve mini kazık ekipmanları dar parsellerde, düşük tavan yüksekliğinde ve gerektiğinde bodrum katından uygulama yapabilir."
+      },
+      {
+        question: "İstanbul'da hangi zemin verileri gerekli?",
+        answer:
+          "Sondaj logları, yeraltı suyu seviyesi, komşu yapı bilgileri ve kazı derinliği; güvenli bir iksa/temel tasarımı için asgari gereksinimlerdir."
+      },
+      {
+        question: "YER6 İstanbul'da çalışıyor mu?",
+        answer:
+          "Evet. Ankara merkezli ekibimizle Türkiye genelinde hizmet veriyoruz; İstanbul projelerinde mobilizasyon ve saha planlamasını proje takvimiyle uyumlu kurguluyoruz."
+      }
+    ]
+  },
+  {
+    slug: "izmir-zemin-guclendirme",
+    intro:
+      "İzmir'de zemin iyileştirme projeleri çoğu zaman kıyı etkisi, yüksek yeraltı suyu, sıvılaşma riski ve dar şehir içi şantiye koşullarıyla birlikte ele alınır. YER6, körfez çevresi ve alüvyon alanlarda jet grout, DSM zemin iyileştirme ve fore kazık uygulamalarını deprem performansı odağıyla yürütür; Ankara merkezli ekip Türkiye geneli kapsamında İzmir projelerine mobilize olur.",
+    sections: [
+      {
+        heading: "İzmir körfez zemini ve sıvılaşma riski",
+        body: [
+          "Körfez çevresi ve alüvyon alanlarda yer alan gevşek kum-silt seviyeleri, yüksek yeraltı suyuyla birleştiğinde deprem sırasında sıvılaşma potansiyeli taşır. Bayraklı, Karşıyaka ve Bornova gibi bölgelerde bu davranış, temel sistemi ve zemin iyileştirme kararlarını doğrudan etkiler.",
+          "2020 depreminde gözlenen yapısal hasarlar, İzmir'de yumuşak zemin üzerinde oturan yapılarda zemin iyileştirmesinin ve uygun temel seçiminin önemini bir kez daha ortaya koymuştur."
+        ]
+      },
+      {
+        heading: "Bölgelere göre zemin koşulları",
+        body: [
+          "Körfezin doğu ve kuzey kesimlerindeki alüvyon ovalar kalın, suya doygun ve yumuşak tabakalar barındırırken; kıyı dolgu alanlarında gevşek yapay dolgular öne çıkar. Yamaç ilçelerde ise ayrışmış kaya ve daha rijit birimlerle karşılaşılabilir.",
+          "Bu değişkenlik nedeniyle temel ve iyileştirme kararı parsel bazında sondajla verilmelidir; aynı mahallede bile tabaka kalınlığı önemli ölçüde değişebilir."
+        ]
+      },
+      {
+        heading: "İzmir'de zemin iyileştirme yaklaşımı",
+        body: [
+          "Su kontrolü ve sıvılaşma azaltımı gereken sahalarda jet grout ve enjeksiyon; oturma kontrolü gereken geniş parsellerde DSM zemin iyileştirme öne çıkar. Derin ve yüksek yükleri sağlam tabakaya aktarmak için fore kazıklı temeller tercih edilir.",
+          "YER6, İzmir sahalarında basınç kayıtları, kolon çapı doğrulaması ve yeraltı suyu davranışını kalite kabul sürecinin merkezine alır."
+        ]
+      },
+      {
+        heading: "Mevcut yapı güçlendirme ve kentsel dönüşüm",
+        body: [
+          "2020 sonrasında mevcut yapıların temel ve zemin güvenliğine yönelik talep belirgin biçimde artmıştır. Temel altı jet grout ve mini kazık uygulamaları, bina büyük ölçüde kullanımda kalırken etaplı olarak yürütülebilir.",
+          "Dar parsellerde kompakt ekipman kullanılır; uygulama boyunca yapı hareketleri izlenir ve kayıtlar teslim dosyasına işlenir."
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "İzmir'de sıvılaşma riski nasıl azaltılır?",
+        answer:
+          "Jet grout veya DSM ile zemin rijitliği artırılarak, gerektiğinde drenaj ve enjeksiyon yöntemleriyle sıvılaşma potansiyeli düşürülür. Yöntem, sondaj ve laboratuvar verisine göre seçilir."
+      },
+      {
+        question: "Bayraklı bölgesinde hangi yöntem uygundur?",
+        answer:
+          "Yumuşak/gevşek zemin ve yüksek yeraltı suyu nedeniyle çoğunlukla jet grout, DSM veya derin temel (fore kazık) çözümleri değerlendirilir; kesin karar zemin etüdüne bağlıdır."
+      },
+      {
+        question: "Mevcut bina boşaltılmadan güçlendirilebilir mi?",
+        answer:
+          "Çoğu durumda evet; kompakt ekipmanla temel altı jet grout ve mini kazık uygulamaları etaplı yürütülerek bina büyük ölçüde kullanımda kalabilir. Kesin durum yapısal değerlendirmeye bağlıdır."
+      },
+      {
+        question: "Dar şehir içi parselde uygulama mümkün mü?",
+        answer:
+          "Evet; düşük titreşimli kompakt ekipmanlarla komşu yapıya duyarlı biçimde çalışılır, gerektiğinde bodrumdan uygulama yapılır."
+      },
+      {
+        question: "Deprem yönetmeliğine uygun uygulama yapıyor musunuz?",
+        answer:
+          "Uygulamalarımız güncel zemin etüdü ve performans hedefleri doğrultusunda projelendirilir; üretim verileri belgelenerek teslim edilir."
+      },
+      {
+        question: "YER6 İzmir'de çalışıyor mu?",
+        answer:
+          "Evet. Ankara merkezli ekibimizle Türkiye genelinde hizmet veriyoruz; İzmir ve Ege bölgesi projelerine mobilize oluyoruz."
+      }
+    ]
+  },
+  {
+    slug: "bursa-zemin-guclendirme",
+    intro:
+      "Bursa'da zemin güçlendirme kararları; ova alüvyonları, sanayi parsellerindeki dolgu tabakaları ve yüksek işletme yükleri birlikte değerlendirilerek verilir. YER6, lojistik ve üretim tesislerinden konut projelerine kadar Bursa genelinde DSM, jet grout ve fore kazık çözümleri sunar ve bölgede temel altı jet grout saha deneyimine sahiptir.",
+    sections: [
+      {
+        heading: "Bursa ovası ve sanayi zeminleri",
+        body: [
+          "Nilüfer, Osmangazi ve Gemlik çevresinde gevşek dolgu, yumuşak kil ve yer yer yüksek yeraltı suyu koşulları; oturma ve taşıma gücü açısından kritik olabilir. Özellikle geniş taban alanlı üretim ve depolama yapılarında düzensiz oturma, zemin iyileştirmesini zorunlu kılar.",
+          "Sanayi parsellerindeki kontrolsüz dolgular ve değişken tabaka geçişleri, parsel bazında zemin modeli kurulmasını gerektirir."
+        ]
+      },
+      {
+        heading: "Deprem ve sıvılaşma değerlendirmesi",
+        body: [
+          "Bursa, aktif fay kuşağına yakınlığı nedeniyle deprem etkisinin zeminle birlikte ele alınmasını gerektirir. Ova alüvyonundaki gevşek, suya doygun tabakalarda sıvılaşma potansiyeli TBDY 2018 kapsamında değerlendirilmelidir.",
+          "Risk belirlenen parsellerde jet grout veya DSM ile zemin rijitliği artırılarak performans hedefi sağlanır; yüksek yükler fore kazıkla sağlam tabakaya aktarılır."
+        ]
+      },
+      {
+        heading: "Lojistik ve üretim tesislerinde uygulama",
+        body: [
+          "Lojistik ve üretim tesislerinde DSM zemin iyileştirme, temel altı kolon düzeni ve gerektiğinde jet grout enjeksiyon perdesi birlikte kurgulanır. Yüksek nokta yükleri taşıyan makine temellerinde fore/mini kazık çözümleri devreye alınır.",
+          "YER6, Bursa sahalarında karot, kolon sürekliliği, bağlayıcı dozajı ve üretim kayıtlarını izleyerek yatırımın işletme yüklerine uygun performans vermesini güvence altına alır."
+        ]
+      },
+      {
+        heading: "YER6 Bursa saha deneyimi",
+        body: [
+          "YER6, Bursa Yunuseli Nida Evleri projesinde temel altı zemin iyileştirme kapsamında yaklaşık 6.200 metre jet grout imalatı gerçekleştirdi. Sahada 15 metre boyunda ve 60 santimetre çapında kolonlarla zeminin taşıma kapasitesinin artırılması ve oturma riskinin azaltılması hedeflendi.",
+          "Bu tür projelerde tasarım değerlerinin sahaya aktarılması; doğru aplikasyon, delgi-enjeksiyon kayıtlarının izlenmesi ve imalatın testlerle doğrulanmasına bağlıdır."
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "Fabrika zemininde oturma sorununa hangi çözüm uygun?",
+        answer:
+          "Geniş taban alanlarında DSM zemin iyileştirme ile oturma kontrol edilir; yüksek nokta yüklerinde fore/mini kazıklı makine temelleri tercih edilir. Yöntem, yük ve zemin profiline göre belirlenir."
+      },
+      {
+        question: "Bursa'da sıvılaşma riski var mı?",
+        answer:
+          "Ova alüvyonundaki gevşek, suya doygun tabakalarda değerlendirilmesi gereken bir risktir; TBDY 2018 kapsamında zemin etüdüyle belirlenir ve gerekirse jet grout/DSM ile azaltılır."
+      },
+      {
+        question: "Bursa'da yüksek yeraltı suyu uygulamayı etkiler mi?",
+        answer:
+          "Evet; su geçirgenliği yüksek zeminlerde jet grout ve enjeksiyon ile su kontrolü sağlanır, imalat programı yeraltı suyuna göre düzenlenir."
+      },
+      {
+        question: "Mevcut tesiste üretimi durdurmadan güçlendirme mümkün mü?",
+        answer:
+          "Çoğu durumda kompakt ekipmanla, bölgesel ve düşük titreşimli uygulamalarla üretim büyük ölçüde sürdürülerek güçlendirme planlanabilir."
+      },
+      {
+        question: "YER6'nın Bursa'da referansı var mı?",
+        answer:
+          "Evet; Yunuseli Nida Evleri projesinde yaklaşık 6.200 metre temel altı jet grout imalatı gerçekleştirdik. Proje detaylarını ve üretim yaklaşımımızı paylaşabiliriz."
+      }
+    ]
+  },
+  {
+    slug: "kocaeli-zemin-guclendirme",
+    intro:
+      "Kocaeli'nde zemin güçlendirme; körfez alüvyonu, yoğun ağır sanayi yükleri ve bölgenin deprem geçmişi bir arada değerlendirilerek planlanır. YER6, tank ve makine temellerinden lojistik alanlara kadar Kocaeli genelinde DSM, jet grout ve fore kazık çözümleri sunar.",
+    sections: [
+      {
+        heading: "Kocaeli körfez zemini ve deprem geçmişi",
+        body: [
+          "İzmit Körfezi çevresindeki alüvyon alanlarda gevşek kum-silt seviyeleri ve yüksek yeraltı suyu, deprem sırasında sıvılaşma açısından risk oluşturabilir. 1999 Marmara depremi, bölgede zemin davranışının yapısal güvenlikteki belirleyici rolünü açıkça ortaya koymuştur.",
+          "Petrokimya, otomotiv ve lojistik tesislerinin yoğun olduğu bölgede, ağır ve dinamik yükler zemin iyileştirmesini çoğu projede zorunlu hale getirir."
+        ]
+      },
+      {
+        heading: "Gebze–Dilovası sanayi ekseninde zemin koşulları",
+        body: [
+          "Gebze, Çayırova, Dilovası ve Körfez hattındaki OSB parsellerinde kontrolsüz dolgular, değişken tabaka geçişleri ve yer yer yüksek yeraltı suyu ile karşılaşılır. Geniş taban alanlı depo ve fabrika yapılarında düzensiz oturma başlıca risktir.",
+          "Bu eksende yöntem seçimi; döşeme yükleri, makine temelleri ve saha erişimi birlikte değerlendirilerek parsel bazında yapılmalıdır."
+        ]
+      },
+      {
+        heading: "Ağır sanayi ve tank temellerinde uygulama",
+        body: [
+          "Büyük çaplı depolama tankları ve makine temellerinde oturma ve sıvılaşma kontrolü için DSM ve jet grout kolonları; yüksek nokta yüklerinde ise fore kazıklı derin temeller uygulanır.",
+          "YER6, Kocaeli sahalarında kolon sürekliliği, bağlayıcı dozajı ve yükleme performansını kayıt altına alarak endüstriyel işletme yüklerine uygun teslim güvencesi verir."
+        ]
+      },
+      {
+        heading: "Liman ve kıyı yapılarında zemin güçlendirme",
+        body: [
+          "Liman geri sahaları ve kıyı dolgu alanlarında gevşek denizel çökeller yüksek oturma potansiyeli taşır; konteyner ve yük sahalarında bu durum işletme performansını doğrudan etkiler.",
+          "Bu alanlarda jet grout geçirimsizlik perdesi, DSM ile alan iyileştirmesi ve fore kazıklı derin temeller proje gereksinimine göre birlikte kurgulanır."
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "Tank temeli altında sıvılaşma riski nasıl yönetilir?",
+        answer:
+          "Jet grout veya DSM ile zemin rijitliği artırılır, gerektiğinde drenaj çözümleriyle boşluk suyu basıncı kontrol altına alınır. Yöntem, sondaj ve dinamik yük analizine göre seçilir."
+      },
+      {
+        question: "Kocaeli sanayi bölgelerinde çalışıyor musunuz?",
+        answer:
+          "Evet; Gebze, Çayırova, Körfez ve Dilovası dahil bölge genelinde endüstriyel zemin iyileştirme uygulamaları yapıyoruz."
+      },
+      {
+        question: "Liman/kıyı dolgusunda oturma nasıl kontrol edilir?",
+        answer:
+          "Gevşek dolgularda DSM veya jet grout ile alan iyileştirmesi yapılır; ağır ve noktasal yükler fore kazıkla sağlam tabakaya aktarılır. Karar zemin etüdüne bağlıdır."
+      },
+      {
+        question: "Deprem sonrası mevcut tesis güçlendirmesi mümkün mü?",
+        answer:
+          "Mevcut yapı altında jet grout ve mini kazık çözümleriyle kontrollü güçlendirme planlanabilir; uygulama, yapının statik değerlendirmesiyle birlikte kurgulanır."
+      },
+      {
+        question: "Teklif için hangi bilgiler gerekli?",
+        answer:
+          "Mevcut zemin etüdü, yapı/tesis yükleri ve parsel bilgileri ile yöntem önerisi ve yaklaşık metraj hazırlayabiliriz."
+      }
+    ]
+  },
+  {
+    slug: "antalya-zemin-guclendirme",
+    intro:
+      "Antalya'da zemin güçlendirme; kıyı alüvyonları, karstik kireçtaşı (boşluk/erime riski) ve yüksek yeraltı suyu birlikte değerlendirilerek planlanır. YER6, otel, konut ve ticari yapı projelerinde jet grout, fore kazık ve enjeksiyon çözümleri sunar; imalat programını turizm sezonu takvimiyle uyumlu kurgular.",
+    sections: [
+      {
+        heading: "Antalya zemininde karst ve alüvyon",
+        body: [
+          "Bölgede yer yer karstik kireçtaşı bulunması, zemin içinde boşluk ve erime kanalları riski oluşturur; bu da temel altında ani oturma veya düzensizlik açısından önemlidir. Kıyı kesimlerinde ise gevşek alüvyon ve yüksek yeraltı suyu belirleyicidir.",
+          "Traverten platosu ile kıyı alüvyonu arasındaki bu fark, aynı ilçede bile parselden parsele farklı temel çözümleri gerektirebilir. Doğru yöntem, ancak sondaj ve gerektiğinde jeofizik ölçümlerle kurulan zemin modeline göre seçilir."
+        ]
+      },
+      {
+        heading: "Kıyı turizm bandında uygulama koşulları",
+        body: [
+          "Otel ve rezidans projelerinde derin bodrum kazıları çoğu zaman yüksek yeraltı suyuyla birlikte yürür; jet grout su kesme perdesi ve kazıklı iksa bu koşulların standart çözümüdür. Yoğun yapılaşmış bantta komşu tesis ve altyapıya duyarlı, düşük titreşimli imalat esastır.",
+          "İşletmedeki tesislerde güçlendirme ve tadilat işleri, sezon dışı döneme göre planlanarak faaliyet kaybı en aza indirilir."
+        ]
+      },
+      {
+        heading: "Antalya'da uygulama yaklaşımı",
+        body: [
+          "Karstik boşlukların doldurulması ve su kontrolü için enjeksiyon ve jet grout; yüksek yapı ve derin temellerde fore kazık öne çıkar. Otel ve ticari yapılarda oturmaya duyarlı yükler için temel altı güçlendirme kurgulanır.",
+          "YER6, Antalya sahalarında boşluk tespiti, enjeksiyon kayıtları ve kolon sürekliliği kontrolleriyle kaliteyi belgeler."
+        ]
+      },
+      {
+        heading: "Boşluk tespiti ve doğrulama süreci",
+        body: [
+          "Karst şüphesi olan parsellerde sondaj programı gerektiğinde jeofizik ölçümlerle desteklenir; tespit edilen boşluklar kontrollü enjeksiyonla doldurulur ve sarf kayıtlarıyla haritalanır.",
+          "Dolum sonrası kontrol sondajları ve enjeksiyon sarf karşılaştırmasıyla hedefe ulaşıldığı doğrulanır; tüm veriler teslim dosyasına işlenir."
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "Karstik zeminde temel nasıl güvence altına alınır?",
+        answer:
+          "Boşluklar enjeksiyonla doldurulur, gerektiğinde jet grout ile zemin güçlendirilir veya yükler fore kazıkla sağlam tabakaya aktarılır. Öncesinde boşluk tespiti (sondaj/jeofizik) yapılır."
+      },
+      {
+        question: "Antalya kıyı zemininde hangi yöntem uygun?",
+        answer:
+          "Yüksek yeraltı suyu ve gevşek alüvyon nedeniyle jet grout, enjeksiyon veya derin temel çözümleri değerlendirilir; karar zemin etüdüne bağlıdır."
+      },
+      {
+        question: "Parselde boşluk/obruk şüphesi varsa ne yapılmalı?",
+        answer:
+          "Sondaj ve gerektiğinde jeofizik ölçümlerle boşluk araştırması yapılmalı; tespit halinde kontrollü enjeksiyonla dolgu ve doğrulama kontrolleri planlanmalıdır."
+      },
+      {
+        question: "İşletmedeki otelde güçlendirme yapılabilir mi?",
+        answer:
+          "Evet; kompakt ekipman ve etaplı imalatla, tercihen sezon dışı dönemde planlanarak tesis faaliyeti büyük ölçüde korunabilir. Kesin kapsam yapısal değerlendirmeye bağlıdır."
+      },
+      {
+        question: "YER6 Antalya'da çalışıyor mu?",
+        answer:
+          "Evet; Ankara merkezli ekibimizle Türkiye genelinde hizmet veriyoruz ve Antalya projelerine mobilize oluyoruz."
+      }
     ]
   }
   // ENRICH_ANCHOR

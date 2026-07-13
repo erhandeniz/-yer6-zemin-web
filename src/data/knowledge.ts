@@ -3208,6 +3208,178 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     keywords: ["zemin güçlendirme maliyeti", "zemin güçlendirme fiyatları", "zemin iyileştirme maliyeti", "zemin güçlendirme fiyatı 2026", "temel güçlendirme maliyeti"],
     published: true
   }
+// ================================================================
+// YER6 — src/data/knowledge.ts dosyasina eklenecek 5 YENI MAKALE
+//
+// NASIL YAPISTIRILIR:
+// 1) VS Code'da src/data/knowledge.ts dosyasini ac
+// 2) Dosyanin EN SONUNA in — tek basina "];" yazan satiri bul
+//    (export satirlarinin hemen ustunde)
+// 3) Bu dosyadaki HER SEYI kopyala (Cmd+A, Cmd+C) ve "];" satirinin
+//    HEMEN USTUNE yapistir (yorum satirlari sorun cikarmaz)
+// 4) Kaydet -> commit -> push (bilinen deploy komutu)
+// ================================================================
+,
+  {
+    slug: "zemin-civisi-nedir",
+    title: "Zemin Çivisi (Soil Nailing) Nedir? Uygulaması ve Avantajları",
+    seoTitle: "Zemin Çivisi (Soil Nailing) Nedir? Uygulaması | YER6",
+    description: "Zemin çivisi; kazı yüzeyine delgi, donatı ve enjeksiyonla yerleştirilen pasif elemanlar ve püskürtme beton kaplamayla şev ve kazı stabilitesi sağlayan iksa yöntemidir.",
+    excerpt: "Zemin çivisi (soil nailing); kazı kademeler halinde ilerlerken yüzeye delgi–donatı–enjeksiyon adımlarıyla yerleştirilen pasif donatı elemanları ve püskürtme beton kaplamayla şev/kazı stabilitesi sağlayan ekonomik bir iksa yöntemidir.",
+    category: "Ankraj & İksa",
+    readingTime: "7 dk",
+    publishedAt: "2026-07-13",
+    updatedAt: "2026-07-13",
+    heroLabel: "Zemin Çivisi",
+    introduction: "Zemin çivisi, kazı ve şev yüzeylerini kademeli imalatla stabilize eden, ankraja göre daha hafif ve ekonomik bir iksa çözümüdür. Bu yazıda zemin çivisinin ne olduğunu, nasıl uygulandığını ve hangi projelerde tercih edildiğini açıklıyoruz.",
+    sections: [
+      { id: "tanim", title: "Zemin Çivisi Nedir ve Nasıl Uygulanır?", blocks: [
+        { type: "paragraph", content: "Zemin çivisi; kazı yüzeyine belirli açı ve aralıklarla açılan delgilere çelik donatı yerleştirilmesi ve enjeksiyonla zemine kenetlenmesiyle oluşturulan pasif bir güçlendirme elemanıdır. Çiviler, yüzeydeki hasır donatılı püskürtme beton kaplama ile birlikte kompozit bir istinat sistemi gibi çalışır." },
+        { type: "list", title: "Uygulama adımları", items: ["Kademeli kazı (tipik 1–2 m yükseklikte etaplar)", "Delgi ve çelik donatının yerleştirilmesi", "Enjeksiyon ile çivinin zemine kenetlenmesi", "Hasır donatı ve püskürtme beton yüzey kaplaması", "Drenaj (barbakan ve şerit drenler) teşkili"] },
+        { type: "note", title: "Pasif eleman", content: "Zemin çivisine ankrajdaki gibi ön germe uygulanmaz; çivi, zemin hareket etme eğilimi gösterdikçe yük almaya başlar. Bu nedenle tasarımda izin verilebilir deformasyon dikkate alınır." }
+      ]},
+      { id: "kullanim", title: "Kullanım Alanları ve Ankrajdan Farkı", blocks: [
+        { type: "paragraph", content: "Zemin çivisi; ankrajlı sistemlere göre daha küçük ekipmanla, daha hızlı ve ekonomik uygulanır. Buna karşılık deformasyon kontrolü ankrajlı perde kadar sıkı değildir; komşu yapıya çok duyarlı derin kazılarda ankrajlı sistemler öne çıkar." },
+        { type: "list", title: "Tercih edildiği durumlar", items: ["Şev ve yarma stabilizasyonu", "Orta derinlikte kazı iksası", "Karayolu ve altyapı yarmaları", "Mevcut istinat yapılarının güçlendirilmesi"] }
+      ]}
+    ],
+    faq: [
+      { question: "Zemin çivisi ile ankraj arasındaki fark nedir?", answer: "Ankraj öngermeli (aktif) çalışır ve yükü kontrollü biçimde zemine aktarır; zemin çivisi pasif elemandır, zemin deforme oldukça yük alır. Çivi daha ekonomiktir, ankraj deformasyon kontrolünde daha güçlüdür." },
+      { question: "Zemin çivisi hangi zeminlerde uygulanır?", answer: "Kademeli kazıda kısa süre kendini tutabilen kohezyonlu veya hafif çimentolu zeminlerde etkilidir. Gevşek kum ve yüksek yeraltı suyu koşullarında özel önlem gerekir." },
+      { question: "Zemin çivisi kalıcı olabilir mi?", answer: "Evet. Korozyon koruması ve uygun kaplama detayıyla kalıcı sistem olarak tasarlanabilir; geçici kazı iksası olarak da yaygın kullanılır." },
+      { question: "Püskürtme beton zorunlu mu?", answer: "Yüzey kaplaması sistemin parçasıdır; çivilerle birlikte çalışan hasır donatılı püskürtme beton, yüzey stabilitesini ve yük dağılımını sağlar." }
+    ],
+    relatedSlugs: ["ankraj-nedir", "kazi-destek-sistemleri-nedir", "puskurtme-beton-nedir"],
+    keywords: ["zemin çivisi nedir", "soil nailing", "zemin çivili iksa", "şev stabilizasyonu", "zemin çivisi uygulaması"],
+    published: true
+  },
+  {
+    slug: "puskurtme-beton-nedir",
+    title: "Püskürtme Beton (Shotcrete) Nedir? Uygulama ve Kullanım Alanları",
+    seoTitle: "Püskürtme Beton (Shotcrete) Nedir? Uygulaması | YER6",
+    description: "Püskürtme beton (shotcrete); basınçlı hava ile yüzeye püskürtülerek yerleştirilen betondur. İksa yüzey kaplaması, şev koruma ve tünel kaplamalarında kullanılır.",
+    excerpt: "Püskürtme beton; basınçlı hava yardımıyla yüzeye yüksek hızla püskürtülerek sıkışan ve kalıp gerektirmeyen bir beton uygulama tekniğidir. Zemin çivili iksa yüzeyleri, şev koruma ve tünel kaplamalarının standart çözümüdür.",
+    category: "Ankraj & İksa",
+    readingTime: "6 dk",
+    publishedAt: "2026-07-13",
+    updatedAt: "2026-07-13",
+    heroLabel: "Püskürtme Beton",
+    introduction: "Püskürtme beton, kalıp kurulamayan eğimli ve düzensiz yüzeylerde hızlı ve güvenilir beton kaplama sağlar. Bu yazıda kuru ve yaş karışım sistemlerini, kullanım alanlarını ve kalite kontrol yaklaşımını açıklıyoruz.",
+    sections: [
+      { id: "tanim", title: "Püskürtme Beton Nedir? Kuru ve Yaş Sistem", blocks: [
+        { type: "paragraph", content: "Püskürtme beton; beton karışımının hortum ve nozul üzerinden basınçlı havayla yüzeye püskürtülmesi ve çarpma enerjisiyle sıkışarak yerleşmesidir. Kalıp gerektirmediği için eğimli kazı yüzeylerinde ve tünellerde hızlı uygulanır." },
+        { type: "list", title: "İki temel sistem", items: ["Kuru karışım: su nozulda eklenir; küçük hacimli ve kesintili işlerde esnektir", "Yaş karışım: hazır beton pompalanır, nozulda hızlandırıcı katılır; yüksek kapasite ve homojen kalite sağlar"] },
+        { type: "note", title: "Hızlandırıcı katkı", content: "Priz hızlandırıcı katkılar, püskürtülen betonun yüzeyde tutunmasını ve erken dayanım kazanmasını sağlar; dozaj hedef dayanımı etkileyeceği için kontrollü kullanılmalıdır." }
+      ]},
+      { id: "kullanim", title: "Kullanım Alanları ve Kalite Kontrol", blocks: [
+        { type: "list", title: "Başlıca kullanım alanları", items: ["Zemin çivili iksa sistemlerinde yüzey kaplaması", "Şev ve yarma yüzeylerinin korunması", "Tünel ve galeri kaplamaları", "Mevcut yapı ve istinat duvarı güçlendirme (hasır veya lif donatılı)"] },
+        { type: "paragraph", content: "Kalite kontrolde; panel numuneleri ve karotlarla basınç dayanımı doğrulanır, kaplama kalınlığı ölçülür ve yüzey hazırlığı (gevşek malzemenin temizlenmesi, drenaj) denetlenir. Donatı olarak çelik hasır veya çelik/sentetik lif kullanılabilir." }
+      ]}
+    ],
+    faq: [
+      { question: "Kuru ve yaş karışım arasındaki fark nedir?", answer: "Kuru sistemde su nozulda eklenir ve küçük işlerde esneklik sağlar; yaş sistemde hazır beton pompalanır, kapasite ve kalite homojenliği daha yüksektir." },
+      { question: "Püskürtme beton dayanımı nasıl kontrol edilir?", answer: "Uygulama sırasında alınan panel numuneleri ve sertleşmiş kaplamadan alınan karotlarla basınç dayanımı test edilir; kalınlık kontrolü de yapılır." },
+      { question: "Hasır yerine lif kullanılabilir mi?", answer: "Evet. Çelik veya sentetik lifler, uygun tasarımla hasır donatının yerini alabilir ve uygulamayı hızlandırır; seçim proje gereksinimine bağlıdır." }
+    ],
+    relatedSlugs: ["zemin-civisi-nedir", "kazi-destek-sistemleri-nedir", "ankraj-nedir"],
+    keywords: ["püskürtme beton nedir", "shotcrete", "püskürtme beton uygulaması", "iksa yüzey kaplaması", "yaş karışım püskürtme beton"],
+    published: true
+  },
+  {
+    slug: "kazik-yukleme-testleri",
+    title: "Kazık Yükleme Testleri: Statik, Dinamik ve Bütünlük (PIT)",
+    seoTitle: "Kazık Yükleme Testleri: Statik, Dinamik, PIT | YER6",
+    description: "Kazık yükleme testleri; statik ve dinamik yüklemeyle taşıma kapasitesini, PIT bütünlük testiyle kazık sürekliliğini doğrular. Test türleri, planlama ve değerlendirme.",
+    excerpt: "Kazıklı temellerde kalite; statik ve dinamik yükleme testleriyle taşıma kapasitesinin, PIT bütünlük testiyle kazık sürekliliğinin bağımsız biçimde doğrulanmasına dayanır.",
+    category: "Kalite Kontrol",
+    readingTime: "7 dk",
+    publishedAt: "2026-07-13",
+    updatedAt: "2026-07-13",
+    heroLabel: "Kazık Testleri",
+    introduction: "Fore kazık ve mini kazık uygulamalarında tasarım varsayımlarının sahada karşılandığı ancak testlerle kanıtlanır. Bu yazıda kazık yükleme ve bütünlük testlerinin türlerini, ne zaman yapıldığını ve sonuçların nasıl değerlendirildiğini açıklıyoruz.",
+    sections: [
+      { id: "turler", title: "Test Türleri", blocks: [
+        { type: "paragraph", content: "Kazık testleri iki temel soruyu yanıtlar: kazık hedeflenen yükü taşıyor mu (yükleme testleri) ve kazık gövdesi sürekli ve kusursuz mu (bütünlük testleri)." },
+        { type: "list", title: "Yaygın kullanılan testler", items: ["Statik yükleme testi: reaksiyon sistemi ve hidrolik krikolarla kademeli yükleme; en güvenilir kapasite doğrulamasıdır", "Dinamik yükleme testi (PDA): darbe ile hızlı ve ekonomik kapasite tahmini; statik testle korele edilmesi önerilir", "Düşük gerilmeli bütünlük testi (PIT): kazık boyu, süreklilik ve olası kusurların hızlı taraması", "Sonik log (CSL): büyük çaplı kazıklarda gövde betonunun kesit bütünlüğünün borular arası ölçümü"] }
+      ]},
+      { id: "planlama", title: "Test Planlaması ve Değerlendirme", blocks: [
+        { type: "paragraph", content: "Test adedi ve türü proje şartnamesiyle belirlenir. Deneme (ön üretim) kazıkları tasarım parametrelerini doğrulamak için göçme mertebesine kadar yüklenebilir; kabul testleri ise üretim kazıklarında servis yükünün belirli katına kadar yapılır. PIT taraması genellikle çok daha geniş bir kazık grubuna uygulanır." },
+        { type: "note", title: "Zamanlama", content: "Yükleme ve bütünlük testleri, kazık betonu yeterli dayanıma ulaştıktan sonra yapılmalıdır. Test programı iş programına baştan işlenmeli, sonuçlar teslim dosyasında raporlanmalıdır." }
+      ]}
+    ],
+    faq: [
+      { question: "Statik test mi dinamik test mi?", answer: "Statik test en güvenilir sonucu verir ancak süre ve maliyeti yüksektir; dinamik test hızlı ve ekonomiktir. Yaygın yaklaşım, az sayıda statik testle dinamik testleri korele etmektir." },
+      { question: "PIT testi neyi gösterir?", answer: "PIT; kazık boyunu, gövde sürekliliğini ve daralma/süreksizlik gibi olası kusurları düşük maliyetle tarar. Kapasite ölçmez; kapasite için yükleme testi gerekir." },
+      { question: "Kaç kazıkta test yapılmalı?", answer: "Adet, proje şartnamesi ve risk düzeyine göre belirlenir. Tipik uygulamada seçili kazıklarda yükleme testi, geniş bir grupta PIT taraması yapılır." },
+      { question: "Test ne zaman yapılır?", answer: "Kazık betonu hedef dayanıma ulaştıktan sonra; deneme kazıkları üretim öncesinde, kabul testleri üretim sürecinde planlanır." }
+    ],
+    relatedSlugs: ["fore-kazik-nedir", "fore-kazik-maliyeti", "saha-denetimi-numune-testleri"],
+    keywords: ["kazık yükleme testi", "statik yükleme testi", "dinamik kazık testi", "PIT bütünlük testi", "kazık testleri"],
+    published: true
+  },
+  {
+    slug: "zemin-enjeksiyonu-nedir",
+    title: "Zemin Enjeksiyonu Nedir? Türleri ve Kullanım Alanları",
+    seoTitle: "Zemin Enjeksiyonu Nedir? Türleri ve Uygulama | YER6",
+    description: "Zemin enjeksiyonu; çimento esaslı veya kimyasal karışımların zemine kontrollü basınçla verilmesiyle dayanım, sıkılık ve geçirimsizlik sağlayan yöntemlerin genel adıdır.",
+    excerpt: "Zemin enjeksiyonu; permeasyon, kompaksiyon, çatlatma ve jet enjeksiyonu gibi tekniklerle zemine bağlayıcı vererek dayanım artışı, boşluk doldurma ve su kesme sağlayan yöntemler ailesidir.",
+    category: "Zemin İyileştirme",
+    readingTime: "7 dk",
+    publishedAt: "2026-07-13",
+    updatedAt: "2026-07-13",
+    heroLabel: "Zemin Enjeksiyonu",
+    introduction: "Enjeksiyon, zemin iyileştirmenin en esnek araçlarından biridir: aynı temel prensip; boşluk doldurmadan su kesmeye, oturma telafisinden temel altı güçlendirmeye kadar farklı problemlere uyarlanabilir. Bu yazıda enjeksiyon türlerini ve kullanım alanlarını açıklıyoruz.",
+    sections: [
+      { id: "turler", title: "Enjeksiyon Türleri", blocks: [
+        { type: "paragraph", content: "Enjeksiyon türleri, karışımın zemine hangi mekanizmayla yerleştiğine göre ayrılır. Zemin türü, hedef performans ve mevcut yapı koşulları hangi tekniğin uygun olduğunu belirler." },
+        { type: "list", title: "Başlıca teknikler", items: ["Permeasyon enjeksiyonu: karışımın zemin boşluklarına düşük basınçla sızdırılması; geçirimli kum ve çakılda dayanım ve geçirimsizlik", "Kompaksiyon enjeksiyonu: yoğun harcın zemini sıkıştırarak yer değiştirmesi; gevşek zemin sıkılaştırma ve oturma telafisi", "Çatlatma (fracture) enjeksiyonu: kontrollü çatlaklarla zemin kütlesinin güçlendirilmesi ve kompansasyon uygulamaları", "Jet enjeksiyonu (jet grout): yüksek basınçlı jetle zemin-çimento kolonları oluşturulması"] }
+      ]},
+      { id: "kullanim", title: "Kullanım Alanları ve Kalite Kontrol", blocks: [
+        { type: "list", title: "Tipik kullanım alanları", items: ["Temel altı boşlukların ve karstik boşlukların doldurulması", "Mevcut yapı altında güçlendirme ve oturma telafisi", "Kazı ve baraj uygulamalarında su kesme perdesi", "Tünel ve altyapı çevresinde zemin iyileştirme"] },
+        { type: "note", title: "Kayıt ve doğrulama", content: "Enjeksiyonda basınç, debi ve sarf kayıtları imalatın kanıtıdır; gerektiğinde sondaj, numune ve geçirimlilik testleriyle hedefe ulaşıldığı doğrulanır." }
+      ]}
+    ],
+    faq: [
+      { question: "Jet grout bir enjeksiyon yöntemi midir?", answer: "Evet. Jet grout, yüksek basınçlı jetle zemini parçalayıp çimento ile karıştıran özel bir enjeksiyon tekniğidir; klasik permeasyon enjeksiyonundan çalışma prensibiyle ayrılır." },
+      { question: "Enjeksiyonda hangi malzemeler kullanılır?", answer: "Çoğunlukla çimento esaslı karışımlar kullanılır; ince boşluklu zeminlerde mikro çimento veya projeye uygun kimyasal karışımlar değerlendirilebilir. Seçim zemin ve hedefe bağlıdır." },
+      { question: "Su sızıntısı enjeksiyonla çözülür mü?", answer: "Uygun teknik ve karışımla zemin kaynaklı su geçişi önemli ölçüde azaltılabilir; kaynak teşhisi ve doğru enjeksiyon planı belirleyicidir." },
+      { question: "Mevcut yapı altında enjeksiyon yapılabilir mi?", answer: "Evet. Kompakt ekipmanla, düşük basınç ve kontrollü etaplarla mevcut yapı altında güçlendirme ve oturma telafisi uygulanabilir; yapı hareketi izlenmelidir." }
+    ],
+    relatedSlugs: ["jet-grout-nedir", "zemin-iyilestirme-yontemleri", "temel-alti-zemin-guclendirme"],
+    keywords: ["zemin enjeksiyonu", "enjeksiyon nedir", "çimento enjeksiyonu", "kompaksiyon enjeksiyonu", "geçirimsizlik enjeksiyonu"],
+    published: true
+  },
+  {
+    slug: "jet-grout-firmasi-istanbul",
+    title: "Jet Grout Firması İstanbul: Seçim Kriterleri ve YER6",
+    seoTitle: "Jet Grout Firması İstanbul | İstanbul Jet Grout Uygulaması | YER6",
+    description: "İstanbul'da jet grout firması seçerken makine parkı, alüvyon ve sıvılaşma tecrübesi, kalite kontrol ve referanslar önemlidir. Türkiye geneli hizmet veren YER6 yaklaşımı.",
+    excerpt: "İstanbul'un alüvyon zeminleri, sıvılaşma riski ve dar kentsel parselleri jet grout uygulamasını sık gündeme getirir. Firma seçiminde makine parkı, saha tecrübesi ve kalite kontrol süreci belirleyicidir.",
+    category: "Jet Grout",
+    readingTime: "7 dk",
+    publishedAt: "2026-07-13",
+    updatedAt: "2026-07-13",
+    heroLabel: "İstanbul Jet Grout",
+    introduction: "İstanbul'da jet grout ihtiyacı; alüvyon zeminler, yüksek yeraltı suyu, sıvılaşma riski ve komşu yapıya sıfır dar parsellerle doğrudan ilişkilidir. Bu yazıda İstanbul'da jet grout firması seçerken dikkat edilmesi gerekenleri ve YER6'nın yaklaşımını açıklıyoruz.",
+    sections: [
+      { id: "secim", title: "İstanbul'da Jet Grout Firması Seçerken Nelere Dikkat Edilmeli?", blocks: [
+        { type: "list", title: "Değerlendirme kriterleri", items: ["Kendi makine parkı ve ekipman kapasitesi (delgi, pompa, santral)", "Alüvyon, dolgu ve sıvılaşmaya yatkın zeminlerde saha tecrübesi", "Deneme kolonu ve kalite kontrol (karot, basınç testi) süreci", "Şeffaf metraj ve gerçekçi maliyet öngörüsü", "Referans projeler ve teknik dokümantasyon"] },
+        { type: "paragraph", content: "Jet grout kalitesi, tasarım kadar sahadaki ekipman ve uygulama disiplinine bağlıdır. Dar parsellerde ve mevcut yapı yakınında çalışabilen ekipman ile üretim verilerinin (basınç, debi, derinlik) kayıt altına alınması, İstanbul projelerinde ayırt edici kriterlerdir." }
+      ]},
+      { id: "istanbul-zemin", title: "İstanbul Zemininde Jet Grout", blocks: [
+        { type: "paragraph", content: "İstanbul'da özellikle sahil kesimlerinde ve dere yataklarında gevşek alüvyon tabakalar bulunur; bu zeminlerde taşıma gücü artırımı ve sıvılaşma riskinin azaltılması için jet grout kolonları yaygın biçimde uygulanır. Dar kentsel parsellerde düşük titreşimle çalışabilmesi yöntemin önemli avantajıdır." },
+        { type: "note", title: "Bölgesel değişkenlik", content: "Zemin koşulları ilçeden ilçeye önemli ölçüde değişir. Doğru parametreler, sondaj verisiyle kurulan zemin modeline ve TBDY 2018 kapsamındaki sıvılaşma değerlendirmesine göre belirlenmelidir." }
+      ]}
+    ],
+    faq: [
+      { question: "İstanbul'da jet grout firması nasıl seçilir?", answer: "Makine parkı, alüvyon ve sıvılaşmaya yatkın zeminlerde saha tecrübesi, deneme kolonu ve kalite kontrol süreci, şeffaf metraj ve referanslar en önemli kriterlerdir." },
+      { question: "YER6 İstanbul'da jet grout uyguluyor mu?", answer: "Evet. Ankara merkezli ekibimizle Türkiye genelinde ve yurt dışında hizmet veriyoruz; İstanbul ve çevresindeki projeler için mobilizasyon ve saha planlaması yapıyoruz." },
+      { question: "İstanbul jet grout maliyeti neye bağlı?", answer: "Kolon çapı ve derinliği, zemin türü, metraj ve saha koşullarına bağlıdır. Gerçekçi rakam zemin verisi ve projeye özel metrajla verilir." }
+    ],
+    relatedSlugs: ["jet-grout-firmasi-ankara", "jet-grout-maliyeti", "sivilasma-riskine-karsi-zemin-guclendirme"],
+    keywords: ["jet grout firması istanbul", "istanbul jet grout", "jet grout istanbul", "jet grout firmaları istanbul", "istanbul zemin güçlendirme"],
+    published: true
+  }
 ];
 
 export const publishedKnowledgeArticles = knowledgeArticles.filter((article) => article.published);
