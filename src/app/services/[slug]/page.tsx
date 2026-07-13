@@ -22,7 +22,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   const canonical = `${siteConfig.siteUrl}/services/${service.slug}`;
-  const seoTitle = service.slug === "dsm" ? "DSM Zemin İyileştirme Hizmeti" : `${service.title} Zemin Güçlendirme Hizmeti`;
+  const seoTitle =
+    service.slug === "dsm"
+      ? "DSM Firması | Deep Soil Mixing Türkiye Geneli Zemin İyileştirme"
+      : service.slug === "jet-grout"
+        ? "Jet Grout Firması | Türkiye Geneli Jet Grout Yapan Firma"
+        : service.slug === "fore-kazik"
+          ? "Fore Kazık Firması | Türkiye Geneli Fore Kazık Yapan Firma"
+          : `${service.title} Zemin Güçlendirme Hizmeti`;
   const description = getServiceSchemaDescription(
     service.slug,
     `${service.summary} ${service.title}, zemin güçlendirme ve zemin iyileştirme projelerinde saha verisi, kalite kontrol ve teknik raporlama ile uygulanır.`

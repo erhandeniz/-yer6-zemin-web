@@ -1,0 +1,84 @@
+# YER6 - Google Search Console sehir indeksleme kuyrugu
+# Basinda "DONE " olan satirlar tamamlandi. Her gun 10 tanesi islenir.
+# "# " ile baslayan satirlar yorumdur, atlanir.
+DONE https://www.yer6zemin.com.tr/sehirler/ankara-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/istanbul-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/izmir-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/bursa-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/kocaeli-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/hatay-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/kahramanmaras-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/malatya-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/adiyaman-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/gaziantep-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/eskisehir-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/konya-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/mersin-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/mugla-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/kayseri-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/sivas-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/van-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/agri-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/igdir-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/aksaray-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/adana-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/manisa-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/afyonkarahisar-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/amasya-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/antalya-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/ardahan-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/artvin-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/aydin-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/balikesir-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/bartin-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/batman-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/bayburt-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/bilecik-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/bingol-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/bitlis-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/bolu-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/burdur-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/canakkale-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/cankiri-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/corum-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/denizli-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/diyarbakir-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/duzce-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/edirne-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/elazig-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/erzincan-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/erzurum-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/giresun-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/gumushane-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/hakkari-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/isparta-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/karabuk-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/karaman-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/kars-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/kastamonu-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/kirikkale-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/kirklareli-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/kirsehir-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/kilis-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/kutahya-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/mardin-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/mus-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/nevsehir-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/nigde-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/ordu-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/osmaniye-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/rize-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/sakarya-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/samsun-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/siirt-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/sinop-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/sanliurfa-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/sirnak-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/tekirdag-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/tokat-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/trabzon-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/tunceli-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/usak-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/yalova-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/yozgat-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/zonguldak-zemin-guclendirme/

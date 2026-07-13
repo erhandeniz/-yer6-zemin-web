@@ -31,11 +31,13 @@ export const socialProfiles: string[] = [];
 
 export const serviceSchemaDescriptions: Record<string, string> = {
   "jet-grout":
-    "Jet grout hizmeti; zayıf zeminlerde temel altı güçlendirme, su geçirimsizlik perdesi, kazı tabanı stabilizasyonu ve sıvılaşma riskinin azaltılması için yüksek basınçlı çimento enjeksiyonu ile zemin-çimento kolonları oluşturur.",
+    "YER6, Ankara merkezli; Türkiye geneli ve yurt dışında jet grout yapan bir zemin mühendisliği firmasıdır. Jet grout ile zayıf zeminlerde temel altı güçlendirme, su geçirimsizlik perdesi, kazı tabanı stabilizasyonu ve sıvılaşma riskinin azaltılması için yüksek basınçlı çimento enjeksiyonuyla zemin-çimento kolonları oluşturur.",
   "zemin-iyilestirme":
     "Zemin iyileştirme hizmeti; oturma, taşıma kapasitesi, sıvılaşma ve zayıf zemin problemlerine karşı jet grout, DSM, enjeksiyon, drenaj ve saha kalite kontrolünü birlikte değerlendiren mühendislik çözümüdür.",
   "fore-kazik":
-    "Fore kazık hizmeti; yüksek yapı, köprü, endüstriyel tesis ve derin temel projelerinde büyük çaplı rotary delgi, donatı yerleşimi, tremie beton dökümü ve bütünlük testleriyle yüksek taşıma kapasitesi sağlar.",
+    "YER6, Ankara merkezli; Türkiye geneli ve yurt dışında fore kazık yapan bir zemin mühendisliği firmasıdır. Fore kazık ile yüksek yapı, köprü, endüstriyel tesis ve derin temel projelerinde büyük çaplı rotary delgi, donatı yerleşimi, tremie beton dökümü ve bütünlük testleriyle yüksek taşıma kapasitesi sağlar.",
+  dsm:
+    "YER6, Ankara merkezli; Türkiye geneli ve yurt dışında DSM (deep soil mixing / derin zemin karıştırma) yapan bir zemin mühendisliği firmasıdır. Yumuşak kil ve gevşek dolgu zeminlerde oturma kontrolü ve taşıma kapasitesi için çimento bağlayıcıyla yerinde zemin-çimento kolonları oluşturur.",
   ankraj:
     "Ankraj hizmeti; derin kazı, iksa perdesi, şev stabilizasyonu ve yapı destekleme projelerinde delgi, enjeksiyon, ön germe ve kabul testleriyle yatay yükleri güvenli biçimde zemine aktarır.",
   "iksa-sistemleri":
@@ -210,7 +212,7 @@ export function localBusinessSchema() {
       caption: "YER6 Zemin Mühendislik"
     },
     description:
-      "YER6 Zemin Mühendislik; jet grout, zemin iyileştirme, zemin güçlendirme, fore kazık, ankraj, iksa sistemleri ve temel mühendisliği alanlarında Ankara merkezli, Türkiye geneli geoteknik saha uygulaması sunar.",
+      "YER6 Zemin Mühendislik; jet grout, zemin iyileştirme, zemin güçlendirme, fore kazık, ankraj, iksa sistemleri ve temel mühendisliği alanlarında Ankara merkezli, Türkiye geneli ve yurt dışında geoteknik saha uygulaması sunar.",
     telephone: siteConfig.phone.display,
     email: siteConfig.email,
     priceRange: "$$",

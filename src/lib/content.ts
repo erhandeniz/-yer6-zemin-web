@@ -80,7 +80,9 @@ export const services = [
       { question: "Jet grout hangi zemin türlerinde uygulanır?", answer: "Jet grout; kum, silt, kil ve karma yapılı zeminlerde uygulanabilir. Çakıl ve iri dane içeren zemin katmanları enjeksiyon kontrolü açısından ayrıca değerlendirilmelidir." },
       { question: "Jet grout kolon çapı ne kadar olabilir?", answer: "Sistem türüne göre 0,4 m ile 2,5 m arasında kolon çapı elde edilebilir. Zemin tipi, enjeksiyon basıncı ve geri çekilme hızı çapı belirleyen temel değişkenlerdir." },
       { question: "Mevcut yapının altında jet grout uygulanabilir mi?", answer: "Evet. Kompakt ekipmanlar kullanılarak mevcut yapı bodrum katı veya temel altında jet grout uygulaması gerçekleştirilebilir. Uygulama öncesinde yapı yerleşimi ve zemin koşulları ayrıntılı incelenmelidir." },
-      { question: "Jet grout uygulaması ne kadar sürer?", answer: "Uygulama süresi kolon sayısı, derinlik ve zemin koşullarına göre değişir. Günlük 50–150 adet kolon üretimi mümkündür; proje programı saha veri analizine göre optimize edilir." }
+      { question: "Jet grout uygulaması ne kadar sürer?", answer: "Uygulama süresi kolon sayısı, derinlik ve zemin koşullarına göre değişir. Günlük 50–150 adet kolon üretimi mümkündür; proje programı saha veri analizine göre optimize edilir." },
+      { question: "Jet grout yapan firma seçerken nelere dikkat edilmeli?", answer: "Firmanın kendi makine parkı ve ekipman kapasitesi (delgi makinesi, yüksek basınç pompası, jet grout santrali), saha tecrübesi, deneme kolonu ve kalite kontrol (karot, tek eksenli basınç testi, kolon sürekliliği) süreci, şeffaf metraj ve referans projeleri belirleyicidir. YER6, kendi makine parkı ve dijital üretim kayıtlarıyla Ankara merkezli olarak Türkiye geneli ve yurt dışında jet grout uygular." },
+      { question: "YER6 hangi bölgelerde jet grout hizmeti veriyor?", answer: "YER6 Ankara merkezlidir; Türkiye'nin tüm illerinde ve yurt dışında jet grout, zemin iyileştirme ve temel güçlendirme saha uygulaması gerçekleştirir. Türkiye geneli mobilizasyon kapasitesiyle şantiye bazlı çalışır." }
     ]
   },
   {
@@ -119,7 +121,9 @@ export const services = [
       { question: "DSM ile jet grout arasındaki fark nedir?", answer: "DSM, dönen aks üzerindeki karıştırıcı kanatlarla zemin ve çimento şerbetini yerinde karıştırır. Jet grout ise yüksek basınçlı sıvı jetiyle zemini parçalayarak kolon oluşturur. DSM, geniş alanlarda ve yumuşak zeminlerde genellikle ekonomik avantaj sağlar." },
       { question: "DSM hangi derinliğe kadar uygulanabilir?", answer: "Standart ekipmanlarla 20–25 m, özel uzatmalı akslı ekipmanlarla 30 m ve üzeri derinliklere ulaşılabilir. Uygun derinlik, zemin koşulları ve ekipman kapasitesine göre belirlenir." },
       { question: "DSM kolonlarının dayanımı nasıl kontrol edilir?", answer: "Karot alımı ve unconfined basınç testleri (qu) ile kolon dayanımı doğrulanır. Saha penetrometre testleri de tamamlayıcı kalite ölçümü olarak kullanılabilir." },
-      { question: "DSM oturma problemlerini çözer mi?", answer: "Evet. DSM kolonları, zemin taşıma kapasitesini artırarak fark oturmayı ve toplam oturmayı önemli ölçüde azaltır. Performans hedefleri projelendirme aşamasında belirlenir." }
+      { question: "DSM oturma problemlerini çözer mi?", answer: "Evet. DSM kolonları, zemin taşıma kapasitesini artırarak fark oturmayı ve toplam oturmayı önemli ölçüde azaltır. Performans hedefleri projelendirme aşamasında belirlenir." },
+      { question: "DSM (Deep Soil Mixing) yapan firma seçerken nelere dikkat edilmeli?", answer: "Laboratuvar karışım tasarımı (çimento dozajı, hedef mukavemet), DSM ekipman kapasitesi ve derinlik aralığı, karot ve basınç testleriyle kalite doğrulaması, dijital üretim kaydı ve referans projeleri belirleyicidir. YER6, Ankara merkezli olarak Türkiye geneli ve yurt dışında DSM zemin iyileştirme uygular." },
+      { question: "YER6 hangi bölgelerde DSM hizmeti veriyor?", answer: "YER6 Ankara merkezlidir; Türkiye'nin tüm illerinde ve yurt dışında DSM (derin zemin karıştırma), zemin iyileştirme ve temel güçlendirme saha uygulaması yapar." }
     ]
   },
   {
@@ -158,7 +162,9 @@ export const services = [
       { question: "Fore kazık ile mini kazık arasındaki fark nedir?", answer: "Fore kazık; büyük çaplı (genellikle 600–2000 mm), derin ve yüksek kapasiteli temel elemanlarıdır. Mini kazık ise küçük çaplı (genellikle 100–300 mm), sınırlı sahaya uygun kompakt ekipmanla uygulanan güçlendirme elemanıdır." },
       { question: "Fore kazık hangi derinliğe kadar yapılabilir?", answer: "Zemin koşullarına ve ekipman kapasitesine bağlı olarak 80–100 m ve üzeri derinliklere ulaşılabilir. Kaya soket uygulamaları için özel DTH ekipmanları kullanılır." },
       { question: "Fore kazık bütünlüğü nasıl test edilir?", answer: "Crosshole sonic logging (CSL), low-strain integrity testing veya statik/dinamik yükleme testleri ile kazık bütünlüğü ve taşıma kapasitesi doğrulanır." },
-      { question: "Yeraltı suyu olan sahada fore kazık yapılabilir mi?", answer: "Evet. Yüksek yeraltı suyu seviyesinde bentonit veya polimer sirkülasyonu, ya da muhafaza borusu (casing) yöntemiyle fore kazık güvenle uygulanabilir." }
+      { question: "Yeraltı suyu olan sahada fore kazık yapılabilir mi?", answer: "Evet. Yüksek yeraltı suyu seviyesinde bentonit veya polimer sirkülasyonu, ya da muhafaza borusu (casing) yöntemiyle fore kazık güvenle uygulanabilir." },
+      { question: "Fore kazık yapan firma seçerken nelere dikkat edilmeli?", answer: "Delgi makinesi kapasitesi ve çap/derinlik aralığı, muhafaza borulu delgi ve zorlu zemin tecrübesi, bütünlük (CSL/PIT) ve yükleme testiyle kalite doğrulama, tremie beton disiplini ve referans projeleri belirleyicidir. YER6, Bauer ve XCMG fore kazık makine parkıyla Ankara merkezli olarak Türkiye geneli ve yurt dışında fore kazık uygular." },
+      { question: "YER6 hangi bölgelerde fore kazık hizmeti veriyor?", answer: "YER6 Ankara merkezlidir; Türkiye'nin tüm illerinde ve yurt dışında fore kazık, derin temel ve zemin güçlendirme saha uygulaması gerçekleştirir." }
     ]
   },
   {
