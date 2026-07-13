@@ -1,0 +1,376 @@
+"use client";
+
+import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
+
+export const aiLocales = ["tr", "en", "ar"] as const;
+export type AILocale = (typeof aiLocales)[number];
+
+const arabicCountries = new Set([
+  "AE", "BH", "DZ", "EG", "IQ", "JO", "KW", "LB", "LY", "MA", "OM", "PS", "QA", "SA", "SD", "SY", "TN", "YE"
+]);
+
+const tr: Record<string, string> = {
+  "New analysis": "Yeni analiz",
+  "Workspace": "Çalışma alanı",
+  "Overview": "Genel bakış",
+  "AI Engineer": "AI Mühendisi",
+  "Projects": "Projeler",
+  "Documents": "Belgeler",
+  "Reports": "Raporlar",
+  "Management": "Yönetim",
+  "Admin": "Yönetici",
+  "Team": "Ekip",
+  "Settings": "Ayarlar",
+  "Enterprise": "Kurumsal",
+  "Engineering workspace": "Mühendislik çalışma alanı",
+  "Data region: Europe West": "Veri bölgesi: Batı Avrupa",
+  "Lead Engineer": "Başmühendis",
+  "Current project": "Aktif proje",
+  "Search projects, files, analyses": "Proje, dosya ve analiz ara",
+  "Open navigation": "Menüyü aç",
+  "Close navigation": "Menüyü kapat",
+  "Notifications": "Bildirimler",
+  "Portfolio": "Portföy",
+  "Manage engineering data, analysis status and deliverables.": "Mühendislik verilerini, analiz durumunu ve teslimleri yönetin.",
+  "New project": "Yeni proje",
+  "Search project, location or ID": "Proje, konum veya ID ara",
+  "All methods": "Tüm yöntemler",
+  "Grid view": "Kart görünümü",
+  "List view": "Liste görünümü",
+  "projects": "proje",
+  "Updated just now": "Az önce güncellendi",
+  "Analysis progress": "Analiz ilerlemesi",
+  "Updated": "Güncellendi",
+  "Portfolio status": "Portföy durumu",
+  "Engineering overview": "Mühendislik genel bakışı",
+  "Projects, subsurface evidence and AI-assisted decisions across your active portfolio.": "Aktif portföyünüzdeki projeler, zemin verileri ve AI destekli mühendislik kararları.",
+  "Upload files": "Dosya yükle",
+  "Active projects": "Aktif projeler",
+  "Documents analyzed": "Analiz edilen belgeler",
+  "AI engineering hours": "AI mühendislik saati",
+  "Risk items": "Risk kalemleri",
+  "this month": "bu ay",
+  "accepted": "kabul edildi",
+  "require review": "inceleme bekliyor",
+  "Live engineering status and document processing": "Canlı mühendislik durumu ve belge işleme",
+  "View all": "Tümünü gör",
+  "documents": "belge",
+  "Online · Project context loaded": "Çevrimiçi · Proje bağlamı yüklendi",
+  "Latest finding": "Son bulgu",
+  "Loose silty sand in the upper stratum may govern settlement. Verify the jet grout trial column UCS before finalizing the 1.8 m grid.": "Üst tabakadaki gevşek siltli kum oturmayı kontrol edebilir. 1,8 m aks aralığını kesinleştirmeden önce jet grout deneme kolonunun UCS değerini doğrulayın.",
+  "Engineering review required": "Mühendislik incelemesi gerekli",
+  "Groundwater elevation differs between BH-02 and BH-03.": "Yeraltı suyu kotu BH-02 ve BH-03 arasında farklılık gösteriyor.",
+  "Open engineering chat": "Mühendislik sohbetini aç",
+  "Project risk profile": "Proje risk profili",
+  "AI screening": "AI ön taraması",
+  "Preliminary": "Ön değerlendirme",
+  "Liquefaction potential": "Sıvılaşma potansiyeli",
+  "Differential settlement": "Farklı oturma",
+  "Bearing capacity": "Taşıma gücü",
+  "Recent activity": "Son hareketler",
+  "Updates across your workspace": "Çalışma alanınızdaki güncellemeler",
+  "BH-03 borehole log processed": "BH-03 sondaj logu işlendi",
+  "Ground improvement analysis completed": "Zemin iyileştirme analizi tamamlandı",
+  "Technical review approved": "Teknik inceleme onaylandı",
+  "Engineering capabilities": "Mühendislik yetkinlikleri",
+  "methods": "yöntem",
+  "Analysis": "Analiz",
+  "Review": "İnceleme",
+  "Complete": "Tamamlandı",
+  "Ground Improvement": "Zemin İyileştirme",
+  "Fore Pile": "Fore Kazık",
+  "Micropile": "Mikrokazık",
+  "Anchors": "Ankrajlar",
+  "Diaphragm Wall": "Diyafram Duvar",
+  "Soldier Pile Wall": "Berlin Duvarı",
+  "Sheet Pile": "Palplanş",
+  "Soil Injection": "Zemin Enjeksiyonu",
+  "Compaction Grouting": "Kompaksiyon Enjeksiyonu",
+  "Permeation Grouting": "Permeasyon Enjeksiyonu",
+  "Stone Columns": "Taş Kolonlar",
+  "Vibro Compaction": "Vibro Kompaksiyon",
+  "Vibro Replacement": "Vibro Deplasman",
+  "Shotcrete": "Püskürtme Beton",
+  "Retaining Systems": "İksa Sistemleri",
+  "Upload project files": "Proje dosyalarını yükle",
+  "Add source documents to the engineering analysis workspace.": "Kaynak belgeleri mühendislik analiz alanına ekleyin.",
+  "Project": "Proje",
+  "Engineering category": "Mühendislik kategorisi",
+  "Drop engineering files here": "Mühendislik dosyalarını buraya bırakın",
+  "PDF, DWG, DXF, IFC and images · up to 256 MB": "PDF, DWG, DXF, IFC ve görseller · en fazla 256 MB",
+  "Upload queue": "Yükleme kuyruğu",
+  "files": "dosya",
+  "Encrypted in transit and at rest": "Aktarımda ve depolamada şifreli",
+  "Continue to analysis": "Analize devam et",
+  "Close upload dialog": "Yükleme penceresini kapat",
+  "AI Geotechnical Engineer": "AI Geoteknik Mühendisi",
+  "New conversation": "Yeni konuşma",
+  "Search conversations": "Konuşmalarda ara",
+  "Recent": "Son konuşmalar",
+  "Jet grout preliminary design": "Jet grout ön tasarımı",
+  "Project grounded": "Proje verisine dayalı",
+  "Today": "Bugün",
+  "Compare jet grout and DSM for this soil profile": "Bu zemin profili için jet grout ve DSM'yi karşılaştır",
+  "Summarize the critical geotechnical risks": "Kritik geoteknik riskleri özetle",
+  "Draft a trial column acceptance plan": "Deneme kolonu kabul planı hazırla",
+  "Ask about soil conditions, design methods or project documents...": "Zemin koşulları, tasarım yöntemleri veya proje belgeleri hakkında sorun...",
+  "Attach project file": "Proje dosyası ekle",
+  "Send message": "Mesaj gönder",
+  "AI output requires review by a qualified geotechnical engineer.": "AI çıktıları yetkin bir geoteknik mühendisi tarafından incelenmelidir.",
+  "Project context": "Proje bağlamı",
+  "Sources": "Kaynaklar",
+  "Design parameters": "Tasarım parametreleri",
+  "Groundwater": "Yeraltı suyu",
+  "Target UCS": "Hedef UCS",
+  "Column dia.": "Kolon çapı",
+  "Grid spacing": "Aks aralığı",
+  "Quality status": "Kalite durumu",
+  "1 unresolved assumption": "1 çözümlenmemiş varsayım",
+  "Confirm design groundwater elevation before issue.": "Yayın öncesi tasarım yeraltı suyu kotunu doğrulayın.",
+  "Context confidence": "Bağlam güveni",
+  "Knowledge base": "Bilgi tabanı",
+  "Search, inspect and manage project source files.": "Proje kaynak dosyalarını arayın, inceleyin ve yönetin.",
+  "Engineering output": "Mühendislik çıktısı",
+  "Review AI-assisted analyses and issue-controlled deliverables.": "AI destekli analizleri ve kontrollü teslimleri inceleyin.",
+  "Organization": "Organizasyon",
+  "Coordinate engineers, reviewers and project responsibilities.": "Mühendisleri, kontrol ekiplerini ve proje sorumluluklarını koordine edin.",
+  "Configure engineering defaults, security and integrations.": "Mühendislik varsayılanlarını, güvenliği ve entegrasyonları yapılandırın.",
+  "Search documents": "Belgelerde ara",
+  "Search reports": "Raporlarda ara",
+  "Search team": "Ekipte ara",
+  "Search settings": "Ayarlarda ara",
+  "Filter": "Filtrele",
+  "File": "Dosya",
+  "Status": "Durum",
+  "Size": "Boyut",
+  "Ready": "Hazır",
+  "Indexed": "İndekslendi",
+  "Processing": "İşleniyor",
+  "Workspace administration": "Çalışma alanı yönetimi",
+  "Admin access": "Yönetici erişimi",
+  "Manage access, usage, data services and organization policy.": "Erişimi, kullanımı, veri servislerini ve organizasyon politikasını yönetin.",
+  "Invite member": "Üye davet et",
+  "Workspace users": "Çalışma alanı kullanıcıları",
+  "Monthly analyses": "Aylık analizler",
+  "Storage used": "Kullanılan depolama",
+  "Organizations": "Organizasyonlar",
+  "Members": "Üyeler",
+  "Roles and workspace access": "Roller ve çalışma alanı erişimi",
+  "Search members": "Üyelerde ara",
+  "Member": "Üye",
+  "Role": "Rol",
+  "Last active": "Son aktiflik",
+  "Active": "Aktif",
+  "Invited": "Davet edildi",
+  "Engineer": "Mühendis",
+  "Manager": "Yönetici",
+  "System status": "Sistem durumu",
+  "All services operational": "Tüm servisler çalışıyor",
+  "AI inference": "AI çıkarımı",
+  "Connected": "Bağlı",
+  "Upload pipeline": "Yükleme hattı",
+  "Operational": "Çalışıyor",
+  "Cloudflare edge": "Cloudflare edge",
+  "Healthy": "Sağlıklı",
+  "Storage": "Depolama",
+  "Retention policy: 7 years": "Saklama politikası: 7 yıl",
+  "Invite workspace member": "Çalışma alanına üye davet et",
+  "Grant project access with a controlled role.": "Kontrollü bir rolle proje erişimi verin.",
+  "Work email": "İş e-postası",
+  "Cancel": "İptal",
+  "Send invitation": "Daveti gönder",
+  "Invitation prepared": "Davet hazırlandı",
+  "The member will receive role-scoped workspace access.": "Üye, rolüne uygun çalışma alanı erişimi alacak.",
+  "Done": "Tamam",
+  "Secure workspace": "Güvenli çalışma alanı",
+  "Welcome back": "Tekrar hoş geldiniz",
+  "Sign in with your organization credentials.": "Kurum bilgilerinizle giriş yapın.",
+  "Password": "Şifre",
+  "Enter your password": "Şifrenizi girin",
+  "Remember this device": "Bu cihazı hatırla",
+  "Forgot password?": "Şifrenizi mi unuttunuz?",
+  "Sign in": "Giriş yap",
+  "Verifying...": "Doğrulanıyor...",
+  "Explore demo workspace": "Demo çalışma alanını aç",
+  "Engineering intelligence": "Mühendislik zekâsı",
+  "Decisions grounded in subsurface evidence.": "Zemin verisine dayalı mühendislik kararları.",
+  "Analyze project files, interrogate design assumptions and move from raw ground data to review-ready engineering outputs.": "Proje dosyalarını analiz edin, tasarım varsayımlarını sorgulayın ve ham zemin verisini incelemeye hazır mühendislik çıktısına dönüştürün.",
+  "Engineering methods": "Mühendislik yöntemi",
+  "Per source file": "Kaynak dosya başına",
+  "Data region": "Veri bölgesi",
+  "Preview": "Ön izleme",
+  "Privacy": "Gizlilik",
+  "Security": "Güvenlik",
+  "New report": "Yeni rapor",
+  "New item": "Yeni öğe",
+  "Analysis library ready": "Analiz kitaplığı hazır",
+  "Team workspace connected": "Ekip çalışma alanı bağlı",
+  "Enterprise controls available": "Kurumsal kontroller hazır",
+  "This module is wired into the shared workspace shell and ready for organization-specific data and policy.": "Bu modül ortak çalışma alanına bağlıdır ve kuruma özel veri ile politikalar için hazırdır.",
+  "Service operational": "Servis çalışıyor",
+  "Workspace navigation": "Çalışma alanı menüsü",
+  "Workspace metrics": "Çalışma alanı metrikleri",
+  "Project view": "Proje görünümü",
+  "Project options": "Proje seçenekleri",
+  "Geotechnical ground improvement project": "Geoteknik zemin iyileştirme projesi",
+  "Language": "Dil",
+  "Close": "Kapat",
+  "Method": "Yöntem",
+  "Progress": "İlerleme",
+  "+4 this month": "+4 bu ay",
+  "94% accepted": "%94 kabul edildi",
+  "3 require review": "3 inceleme bekliyor",
+  "AI is thinking": "AI düşünüyor",
+  "Copy response": "Yanıtı kopyala",
+  "Regenerate response": "Yanıtı yeniden oluştur",
+  "Message AI engineer": "AI mühendisine mesaj gönder",
+  "I could not reach the analysis service. Your project context is preserved; check the OpenAI configuration and retry.": "Analiz servisine ulaşılamadı. Proje bağlamınız korundu; OpenAI yapılandırmasını kontrol edip yeniden deneyin.",
+  "Conversation options": "Konuşma seçenekleri",
+  "4 sources in context": "Bağlamda 4 kaynak",
+  "4 files": "4 dosya",
+  "BH-03 soil profile review": "BH-03 zemin profili incelemesi",
+  "Settlement criteria check": "Oturma kriteri kontrolü",
+  "Trial column test plan": "Deneme kolonu test planı",
+  "Now": "Şimdi",
+  "Yesterday": "Dün",
+  "Mon": "Pzt",
+  "18 pages · Parsed": "18 sayfa · Ayrıştırıldı",
+  "12 tables · Parsed": "12 tablo · Ayrıştırıldı",
+  "Rev. C · Indexed": "Rev. C · İndekslendi",
+  "OCR complete": "OCR tamamlandı",
+  "Protected by role-based access, encrypted transport and auditable workspace controls.": "Rol tabanlı erişim, şifreli aktarım ve denetlenebilir çalışma alanı kontrolleriyle korunur.",
+  "The email or password could not be verified.": "E-posta veya şifre doğrulanamadı.",
+  "Hide password": "Şifreyi gizle",
+  "Show password": "Şifreyi göster",
+  "I reviewed the preliminary borehole summary for Duzce Industrial Campus. The upper 6.5 m contains loose silty sand with variable fill. For the current column loads, a jet grout improvement grid is technically viable, subject to verification of groundwater level and target UCS.": "Düzce Endüstriyel Kampüsü için ön sondaj özetini inceledim. Üst 6,5 m değişken dolgu içeren gevşek siltli kumdan oluşuyor. Mevcut kolon yükleri için, yeraltı suyu seviyesi ve hedef UCS doğrulanmak kaydıyla jet grout iyileştirme aksı teknik olarak uygulanabilir görünüyor."
+};
+
+const ar: Record<string, string> = {
+  "New analysis": "تحليل جديد",
+  "Workspace": "مساحة العمل",
+  "Overview": "نظرة عامة",
+  "AI Engineer": "مهندس الذكاء الاصطناعي",
+  "Projects": "المشاريع",
+  "Documents": "المستندات",
+  "Reports": "التقارير",
+  "Management": "الإدارة",
+  "Admin": "المشرف",
+  "Team": "الفريق",
+  "Settings": "الإعدادات",
+  "Engineering workspace": "مساحة العمل الهندسية",
+  "Current project": "المشروع الحالي",
+  "Search projects, files, analyses": "البحث في المشاريع والملفات والتحليلات",
+  "Engineering overview": "نظرة عامة هندسية",
+  "Upload files": "رفع الملفات",
+  "Active projects": "المشاريع النشطة",
+  "Documents analyzed": "المستندات المحللة",
+  "AI engineering hours": "ساعات هندسة الذكاء الاصطناعي",
+  "Risk items": "عناصر المخاطر",
+  "View all": "عرض الكل",
+  "Project": "المشروع",
+  "Engineering category": "الفئة الهندسية",
+  "Upload project files": "رفع ملفات المشروع",
+  "Drop engineering files here": "أفلت الملفات الهندسية هنا",
+  "Continue to analysis": "متابعة التحليل",
+  "New conversation": "محادثة جديدة",
+  "Search conversations": "البحث في المحادثات",
+  "Project context": "سياق المشروع",
+  "Sources": "المصادر",
+  "Design parameters": "معايير التصميم",
+  "Quality status": "حالة الجودة",
+  "Projects, subsurface evidence and AI-assisted decisions across your active portfolio.": "المشاريع وبيانات التربة والقرارات الهندسية المدعومة بالذكاء الاصطناعي ضمن محفظتك النشطة.",
+  "AI output requires review by a qualified geotechnical engineer.": "يجب مراجعة مخرجات الذكاء الاصطناعي من قبل مهندس جيوتقني مؤهل.",
+  "Workspace administration": "إدارة مساحة العمل",
+  "Invite member": "دعوة عضو",
+  "Members": "الأعضاء",
+  "System status": "حالة النظام",
+  "All services operational": "جميع الخدمات تعمل",
+  "Secure workspace": "مساحة عمل آمنة",
+  "Welcome back": "مرحباً بعودتك",
+  "Work email": "البريد الإلكتروني للعمل",
+  "Password": "كلمة المرور",
+  "Sign in": "تسجيل الدخول",
+  "Explore demo workspace": "استكشاف مساحة العمل التجريبية",
+  "Language": "اللغة",
+  "Close": "إغلاق",
+  "Method": "الطريقة",
+  "Progress": "التقدم",
+  "Notifications": "الإشعارات"
+};
+
+type I18nContextValue = {
+  locale: AILocale;
+  setLocale: (locale: AILocale) => void;
+  t: (text: string) => string;
+};
+
+const I18nContext = createContext<I18nContextValue | null>(null);
+
+function browserLocale(): AILocale {
+  const language = window.navigator.language.toLowerCase();
+  if (language.startsWith("tr")) return "tr";
+  if (language.startsWith("ar")) return "ar";
+  return "en";
+}
+
+function countryLocale(country: string): AILocale {
+  if (country === "TR") return "tr";
+  if (arabicCountries.has(country)) return "ar";
+  return "en";
+}
+
+export function I18nProvider({ children }: { children: React.ReactNode }) {
+  const [locale, setLocaleState] = useState<AILocale>("tr");
+
+  useEffect(() => {
+    const stored = window.localStorage.getItem("yer6-ai-locale") as AILocale | null;
+    if (stored && aiLocales.includes(stored)) {
+      setLocaleState(stored);
+      return;
+    }
+
+    setLocaleState(browserLocale());
+    const controller = new AbortController();
+    const timeout = window.setTimeout(() => controller.abort(), 2500);
+    fetch("/cdn-cgi/trace", { signal: controller.signal, cache: "no-store" })
+      .then((response) => response.text())
+      .then((trace) => {
+        const country = trace.match(/^loc=([A-Z]{2})$/m)?.[1];
+        if (country) setLocaleState(countryLocale(country));
+      })
+      .catch(() => undefined)
+      .finally(() => window.clearTimeout(timeout));
+
+    return () => {
+      window.clearTimeout(timeout);
+      controller.abort();
+    };
+  }, []);
+
+  useEffect(() => {
+    document.documentElement.lang = locale;
+    document.documentElement.dir = locale === "ar" ? "rtl" : "ltr";
+  }, [locale]);
+
+  const setLocale = useCallback((nextLocale: AILocale) => {
+    setLocaleState(nextLocale);
+    window.localStorage.setItem("yer6-ai-locale", nextLocale);
+  }, []);
+
+  const value = useMemo<I18nContextValue>(
+    () => ({
+      locale,
+      setLocale,
+      t: (text) => (locale === "tr" ? tr[text] : locale === "ar" ? ar[text] : undefined) ?? text
+    }),
+    [locale, setLocale]
+  );
+
+  return <I18nContext.Provider value={value}>{children}</I18nContext.Provider>;
+}
+
+export function useAITranslation() {
+  const context = useContext(I18nContext);
+  if (!context) throw new Error("useAITranslation must be used inside I18nProvider");
+  return context;
+}

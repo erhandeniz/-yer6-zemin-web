@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Languages, Menu, Moon, Sun, X } from "lucide-react";
+import { BrainCircuit, Languages, Menu, Moon, Sun, X } from "lucide-react";
 import { navItems } from "@/lib/content";
 import { locales, type Locale } from "@/lib/i18n";
 import { useLanguage } from "@/components/LanguageProvider";
@@ -63,6 +63,14 @@ export function Navbar() {
         </div>
 
         <div className="flex items-center gap-2">
+          <Link
+            href="https://ai.yer6zemin.com.tr"
+            className="inline-flex h-10 items-center gap-2 rounded-full border border-gold-300/30 bg-gold-300/10 px-3 text-gold-100 transition hover:border-gold-300/60 hover:bg-gold-300/15"
+            aria-label="YER6 AI"
+          >
+            <BrainCircuit className="h-4 w-4" />
+            <span className="hidden text-xs font-semibold xl:inline">YER6 AI</span>
+          </Link>
           <div className="hidden items-center gap-1 rounded-full border border-white/10 bg-white/5 px-2 py-1 md:flex">
             <Languages className="h-4 w-4 text-gold-200" />
             {locales.map((item) => (
@@ -127,6 +135,14 @@ export function Navbar() {
                   </Link>
                 );
               })}
+              <Link
+                href="https://ai.yer6zemin.com.tr"
+                onClick={() => setMenuOpen(false)}
+                className="flex items-center gap-3 rounded-2xl border border-gold-300/25 bg-gold-300/10 px-4 py-3 text-sm font-semibold text-gold-100"
+              >
+                <BrainCircuit className="h-4 w-4" />
+                YER6 AI
+              </Link>
               <div className="h-px bg-white/8 my-2" />
               <div className="flex items-center justify-between px-4 py-2">
                 <span className="text-xs uppercase tracking-[0.2em] text-white/50">{t("language")}</span>
