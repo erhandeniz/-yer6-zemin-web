@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 function buildMetadata(article: KnowledgeArticle): Metadata {
-  const canonical = `${siteConfig.siteUrl}/knowledge/${article.slug}`;
+  const canonical = `${siteConfig.siteUrl}/knowledge/${article.slug}/`;
   return {
     title: {
       absolute: article.seoTitle
@@ -48,7 +48,7 @@ export default async function KnowledgeArticlePage({ params }: Props) {
     notFound();
   }
 
-  const canonical = `${siteConfig.siteUrl}/knowledge/${article.slug}`;
+  const canonical = `${siteConfig.siteUrl}/knowledge/${article.slug}/`;
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -98,7 +98,7 @@ export default async function KnowledgeArticlePage({ params }: Props) {
         "@type": "ListItem",
         position: 2,
         name: "Bilgi Merkezi",
-        item: `${siteConfig.siteUrl}/knowledge`
+        item: `${siteConfig.siteUrl}/knowledge/`
       },
       {
         "@type": "ListItem",

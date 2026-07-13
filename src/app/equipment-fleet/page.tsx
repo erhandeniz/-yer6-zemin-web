@@ -3,7 +3,7 @@ import { EquipmentContent } from "./EquipmentContent";
 import { equipmentSeoItems } from "@/lib/seo";
 import { siteConfig } from "@/lib/siteConfig";
 
-const pageUrl = `${siteConfig.siteUrl}/equipment-fleet`;
+const pageUrl = `${siteConfig.siteUrl}/equipment-fleet/`;
 const equipmentFleetDescription =
   "YER6 Zemin Mühendislik; fore kazık, jet grout, ankraj, zemin iyileştirme, zemin güçlendirme, derin temel ve iksa uygulamalarında kendi makine parkuru ile sahada hızlı, güvenilir ve teknik çözüm üretir.";
 
@@ -29,42 +29,12 @@ export default function EquipmentFleetPage() {
     description: equipmentFleetDescription,
     url: pageUrl,
     numberOfItems: equipmentSeoItems.length,
-    itemListElement: equipmentSeoItems.map((item, index) => {
-      const brand = "brand" in item ? item.brand : undefined;
-      const additionalProperties = "additionalProperties" in item ? item.additionalProperties : undefined;
-
-      return {
-        "@type": "ListItem",
-        position: index + 1,
-        item: {
-          "@type": "Product",
-          name: item.name,
-          category: item.category,
-          description: item.description,
-          ...(brand
-            ? {
-                brand: {
-                  "@type": "Brand",
-                  name: brand
-                },
-                manufacturer: {
-                  "@type": "Organization",
-                  name: brand
-                }
-              }
-            : {}),
-          ...(additionalProperties
-            ? {
-                additionalProperty: additionalProperties.map((property) => ({
-                  "@type": "PropertyValue",
-                  name: property.name,
-                  value: property.value
-                }))
-              }
-            : {})
-        }
-      };
-    })
+    itemListElement: equipmentSeoItems.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      description: item.description
+    }))
   };
 
   return (

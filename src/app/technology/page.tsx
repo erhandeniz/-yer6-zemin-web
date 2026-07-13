@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { TechnologyContent } from "./TechnologyContent";
 import { siteConfig } from "@/lib/siteConfig";
 
-const pageUrl = `${siteConfig.siteUrl}/technology`;
+const pageUrl = `${siteConfig.siteUrl}/technology/`;
 
 export const metadata: Metadata = {
   title: "Zemin İyileştirme Teknolojileri",

@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     notFound();
   }
 
-  const canonical = `${siteConfig.siteUrl}/services/${service.slug}`;
+  const canonical = `${siteConfig.siteUrl}/services/${service.slug}/`;
   const seoTitle =
     service.slug === "dsm"
       ? "DSM Firması | Deep Soil Mixing Türkiye Geneli Zemin İyileştirme"
@@ -54,7 +54,7 @@ export default async function ServiceDetailPage({ params }: Props) {
   const service = getServiceBySlug(slug);
   if (!service) notFound();
 
-  const canonical = `${siteConfig.siteUrl}/services/${service.slug}`;
+  const canonical = `${siteConfig.siteUrl}/services/${service.slug}/`;
   const description = getServiceSchemaDescription(
     service.slug,
     `${service.summary} ${service.title}, zemin güçlendirme ve zemin iyileştirme projelerinde saha verisi, kalite kontrol ve teknik raporlama ile uygulanır.`
@@ -111,7 +111,7 @@ export default async function ServiceDetailPage({ params }: Props) {
         "@type": "ListItem",
         position: 2,
         name: "Hizmetler",
-        item: `${siteConfig.siteUrl}/services`
+        item: `${siteConfig.siteUrl}/services/`
       },
       {
         "@type": "ListItem",

@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const project = projects.find((item) => item.slug === slug);
   if (!project) return {};
-  const canonical = `${siteConfig.siteUrl}/projects/${project.slug}`;
+  const canonical = `${siteConfig.siteUrl}/projects/${project.slug}/`;
   const title = "seoTitle" in project && typeof project.seoTitle === "string" ? project.seoTitle : `${project.title} Zemin Güçlendirme Projesi`;
   const description =
     "metaDescription" in project && typeof project.metaDescription === "string"
@@ -45,7 +45,7 @@ export default async function ProjectDetailPage({ params }: Props) {
   const project = projects.find((item) => item.slug === slug);
   if (!project) notFound();
 
-  const canonical = `${siteConfig.siteUrl}/projects/${project.slug}`;
+  const canonical = `${siteConfig.siteUrl}/projects/${project.slug}/`;
   const image = project.image.startsWith("http") ? project.image : `${siteConfig.siteUrl}${project.image}`;
   const projectSchema = {
     "@context": "https://schema.org",
@@ -77,7 +77,7 @@ export default async function ProjectDetailPage({ params }: Props) {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: siteConfig.siteUrl },
-      { "@type": "ListItem", position: 2, name: "Projeler", item: `${siteConfig.siteUrl}/projects` },
+      { "@type": "ListItem", position: 2, name: "Projeler", item: `${siteConfig.siteUrl}/projects/` },
       { "@type": "ListItem", position: 3, name: project.title, item: canonical }
     ]
   };

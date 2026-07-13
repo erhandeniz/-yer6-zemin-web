@@ -4,7 +4,7 @@ import { ServicesContent } from "./ServicesContent";
 import { localSeoServiceAreas, serviceSchemaDescriptions } from "@/lib/seo";
 import { siteConfig } from "@/lib/siteConfig";
 
-const pageUrl = `${siteConfig.siteUrl}/services`;
+const pageUrl = `${siteConfig.siteUrl}/services/`;
 
 export const metadata: Metadata = {
   title: "Zemin Güçlendirme ve Zemin İyileştirme Hizmetleri",
