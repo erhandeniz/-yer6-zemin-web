@@ -52,6 +52,31 @@ export function ContactContent() {
         </div>
       </section>
       <section className="px-5 pb-24">
+        <div className="mx-auto flex max-w-7xl flex-col items-center gap-5 rounded-[2rem] border border-white/10 bg-white/[0.045] p-8 text-center">
+          <a
+            href="https://armut.com/hizmetveren/yer6-zemin-guclendirme-geoteknik-muhendislik-ankara-golbasi-zemin-iyilestirme_85780374"
+            target="_blank"
+            rel="noreferrer"
+            title="Yer6 Zemin Güçlendirme Geoteknik Mühendislik Zemin İyileştirme - Armut"
+          >
+            <img
+              src="https://cdn.armut.com/images/armut-member-badge-colour@2x.png"
+              alt="YER6 Zemin Mühendislik — Armut üyelik rozeti"
+              className="mx-auto block h-auto w-full max-w-[260px]"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="https://armut.com/hizmetveren/yer6-zemin-guclendirme-geoteknik-muhendislik-ankara-golbasi-zemin-iyilestirme_85780374"
+            target="_blank"
+            rel="noreferrer"
+            className="text-sm font-semibold tracking-[0.02em] text-gold-200 transition hover:text-gold-100"
+          >
+            Yer6 Zemin Güçlendirme Geoteknik Mühendislik — Armut Profili
+          </a>
+        </div>
+      </section>
+      <section className="px-5 pb-24">
         <div className="mx-auto overflow-hidden rounded-[2rem] border border-white/10 max-w-7xl">
           <iframe
             title="YER6 Google Maps"
