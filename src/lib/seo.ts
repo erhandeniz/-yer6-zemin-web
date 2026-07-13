@@ -33,17 +33,21 @@ export const serviceSchemaDescriptions: Record<string, string> = {
   "jet-grout":
     "YER6, Ankara merkezli; Türkiye geneli ve yurt dışında jet grout yapan bir zemin mühendisliği firmasıdır. Jet grout ile zayıf zeminlerde temel altı güçlendirme, su geçirimsizlik perdesi, kazı tabanı stabilizasyonu ve sıvılaşma riskinin azaltılması için yüksek basınçlı çimento enjeksiyonuyla zemin-çimento kolonları oluşturur.",
   "zemin-iyilestirme":
-    "Zemin iyileştirme hizmeti; oturma, taşıma kapasitesi, sıvılaşma ve zayıf zemin problemlerine karşı jet grout, DSM, enjeksiyon, drenaj ve saha kalite kontrolünü birlikte değerlendiren mühendislik çözümüdür.",
+    "YER6, Ankara merkezli; Türkiye geneli ve yurt dışında zemin iyileştirme yapan bir mühendislik firmasıdır. Oturma, taşıma kapasitesi, sıvılaşma ve zayıf zemin problemlerine karşı jet grout, DSM, enjeksiyon, drenaj ve saha kalite kontrolünü birlikte değerlendiren çözümler sunar.",
   "fore-kazik":
     "YER6, Ankara merkezli; Türkiye geneli ve yurt dışında fore kazık yapan bir zemin mühendisliği firmasıdır. Fore kazık ile yüksek yapı, köprü, endüstriyel tesis ve derin temel projelerinde büyük çaplı rotary delgi, donatı yerleşimi, tremie beton dökümü ve bütünlük testleriyle yüksek taşıma kapasitesi sağlar.",
   dsm:
     "YER6, Ankara merkezli; Türkiye geneli ve yurt dışında DSM (deep soil mixing / derin zemin karıştırma) yapan bir zemin mühendisliği firmasıdır. Yumuşak kil ve gevşek dolgu zeminlerde oturma kontrolü ve taşıma kapasitesi için çimento bağlayıcıyla yerinde zemin-çimento kolonları oluşturur.",
   ankraj:
-    "Ankraj hizmeti; derin kazı, iksa perdesi, şev stabilizasyonu ve yapı destekleme projelerinde delgi, enjeksiyon, ön germe ve kabul testleriyle yatay yükleri güvenli biçimde zemine aktarır.",
+    "YER6, Ankara merkezli; Türkiye geneli ve yurt dışında ankraj yapan bir zemin mühendisliği firmasıdır. Derin kazı, iksa perdesi, şev stabilizasyonu ve yapı destekleme projelerinde delgi, enjeksiyon, ön germe ve kabul testleriyle yatay yükleri güvenli biçimde zemine aktarır.",
   "iksa-sistemleri":
-    "İksa sistemleri hizmeti; kent içi derin kazılarda fore kazık perde, diyafram duvar, ankraj, kuşak kirişi ve enstrümantasyon entegrasyonu ile çevre yapılardaki deplasman riskini kontrol eder.",
+    "YER6, Ankara merkezli; Türkiye geneli ve yurt dışında iksa sistemleri yapan bir zemin mühendisliği firmasıdır. Kent içi derin kazılarda fore kazık perde, diyafram duvar, ankraj, kuşak kirişi ve enstrümantasyon entegrasyonu ile çevre yapılardaki deplasman riskini kontrol eder.",
   "zemin-guclendirme":
-    "Zemin güçlendirme hizmeti; yapı temellerinde güvenli taşıma kapasitesi, oturma kontrolü ve deprem bölgesi zemin performansı için jet grout, fore kazık, ankraj, iksa ve temel mühendisliği yöntemlerini bir araya getirir."
+    "Zemin güçlendirme hizmeti; yapı temellerinde güvenli taşıma kapasitesi, oturma kontrolü ve deprem bölgesi zemin performansı için jet grout, fore kazık, ankraj, iksa ve temel mühendisliği yöntemlerini bir araya getirir.",
+  "mini-kazik":
+    "YER6, Ankara merkezli; Türkiye geneli ve yurt dışında mini kazık (mikro kazık) yapan bir zemin mühendisliği firmasıdır. Sınırlı erişimli alanlarda güçlendirme, underpinning ve hassas temel çözümleri için enjeksiyonlu mini kazık uygular.",
+  "geoteknik-danismanlik":
+    "YER6, Ankara merkezli; Türkiye geneli ve yurt dışında geoteknik danışmanlık veren bir zemin mühendisliği firmasıdır. Saha araştırması, tasarım denetimi, metraj optimizasyonu ve risk yönetimiyle yatırım kararından uygulama teslimine karar destekli mühendislik sunar."
 };
 
 export const equipmentSeoItems = [

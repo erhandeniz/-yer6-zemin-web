@@ -203,7 +203,9 @@ export const services = [
       { question: "Mini kazık ne zaman tercih edilir?", answer: "Mevcut yapı altında underpinning, dar alanlarda güçlendirme, tarihi yapı restorasyonu ve kompakt ekipman gereken her durumda mini kazık öncelikli seçenektir." },
       { question: "Mini kazık hangi çaplarda yapılabilir?", answer: "Genellikle 100 mm ile 300 mm çapında uygulanır. Özel projelerde 400 mm'ye kadar çıkılabilir. Çap, taşıma kapasitesi gereksinimine ve sahaya erişime göre seçilir." },
       { question: "Mini kazık mevcut bir yapının altında uygulanabilir mi?", answer: "Evet, bu mini kazığın en sık kullanıldığı durumdur. Yapı içinde ya da çevresinde kompakt ekipmanlarla, mevcut temele zarar vermeden uygulama yapılabilir." },
-      { question: "Mini kazık ne kadar yük taşıyabilir?", answer: "Çap, uzunluk, zemin tipi ve enjeksiyon yöntemine bağlı olarak genellikle 30–500 kN arasında eksenel kapasite elde edilebilir. Tasarım hesapları projeye özgü yapılır." }
+      { question: "Mini kazık ne kadar yük taşıyabilir?", answer: "Çap, uzunluk, zemin tipi ve enjeksiyon yöntemine bağlı olarak genellikle 30–500 kN arasında eksenel kapasite elde edilebilir. Tasarım hesapları projeye özgü yapılır." },
+      { question: "Mini kazık yapan firma seçerken nelere dikkat edilmeli?", answer: "Dar alan/underpinning tecrübesi, enjeksiyonlu imalat kalitesi, ekipman uygunluğu, yükleme testi ve referans projeleri belirleyicidir. YER6, Ankara merkezli olarak Türkiye geneli ve yurt dışında mini kazık ve underpinning uygular." },
+      { question: "YER6 hangi bölgelerde mini kazık hizmeti veriyor?", answer: "YER6 Ankara merkezlidir; Türkiye'nin tüm illerinde ve yurt dışında mini kazık, underpinning ve temel güçlendirme saha uygulaması yapar." }
     ]
   },
   {
@@ -242,7 +244,9 @@ export const services = [
       { question: "Geçici ve kalıcı ankraj arasındaki fark nedir?", answer: "Geçici ankrajlar yalnızca inşaat sürecinde kullanılır ve genellikle 2 yıl içinde serbest bırakılır. Kalıcı ankrajlar yapının ömrü boyunca aktif kalır ve çift korozyon koruması gerektirir." },
       { question: "Ankraj kabul testi nedir?", answer: "Her ankrajın proje yüküne ulaşıp ulaşmadığını ve deformasyon davranışını doğrulayan standarttır. EN 1537 normları çerçevesinde uygunluk ve sondaj testleri uygulanır." },
       { question: "Ankraj hangi zeminlerde uygulanabilir?", answer: "Kaya, sıkı kum ve çakıl gibi zemin türlerinde yüksek kapasiteli ankraj elde edilir. Gevşek zemin ve yumuşak kilde ankraj uzunluğu ve sayısı artırılarak hedef kapasite sağlanabilir." },
-      { question: "Ankrajlı iksa sistemi ne zaman seçilir?", answer: "Komşu yapılara yakın ve dar alanda kazı yapılması, yüksek yeraltı suyu, derin kazı (>6 m) ve çevre yapılara deformasyon limiti kısıtlaması olduğunda ankrajlı iksa sistemi tercih edilir." }
+      { question: "Ankrajlı iksa sistemi ne zaman seçilir?", answer: "Komşu yapılara yakın ve dar alanda kazı yapılması, yüksek yeraltı suyu, derin kazı (>6 m) ve çevre yapılara deformasyon limiti kısıtlaması olduğunda ankrajlı iksa sistemi tercih edilir." },
+      { question: "Ankraj yapan firma seçerken nelere dikkat edilmeli?", answer: "Delgi ve enjeksiyon kalitesi, öngerme (germe) ekipmanı, kabul/çekme testi disiplini, korozyon koruması ve referans projeleri belirleyicidir. YER6, Ankara merkezli olarak Türkiye geneli ve yurt dışında ankraj uygular." },
+      { question: "YER6 hangi bölgelerde ankraj hizmeti veriyor?", answer: "YER6 Ankara merkezlidir; Türkiye'nin tüm illerinde ve yurt dışında ankraj, iksa ve şev stabilizasyonu saha uygulaması gerçekleştirir." }
     ]
   },
   {
@@ -281,7 +285,9 @@ export const services = [
       { question: "Derin kazı için hangi iksa sistemi seçilir?", answer: "Zemin türü, kazı derinliği, komşu yapı durumu ve bütçeye göre fore kazık perde, diyafram duvar veya çelik profil perde tercih edilir. Her seçenek farklı maliyet ve performans dengeleri sunar." },
       { question: "İksa perdesi kalıcı yapı elemanı olarak kullanılabilir mi?", answer: "Evet. Diyafram duvar ve fore kazık perdeler çoğu zaman bodrum duvarı veya su yalıtım perdesi olarak kalıcı yapı sistemine entegre edilir." },
       { question: "Komşu binalara zarar verir mi?", answer: "Doğru tasarım, ankraj ön yüklemesi ve deplasman izleme planı ile komşu yapılara deformasyon iletimi kontrol altında tutulabilir. İzleme sistemi şüpheli okumada alarm verir." },
-      { question: "İksa sisteminde izleme neden önemlidir?", answer: "İnklinometre ve referans noktası ölçümleri, perde deplasman davranışını gerçek zamanlı takip eder. Tasarım dışı deplasman erken tespit edilerek önlem alınabilir." }
+      { question: "İksa sisteminde izleme neden önemlidir?", answer: "İnklinometre ve referans noktası ölçümleri, perde deplasman davranışını gerçek zamanlı takip eder. Tasarım dışı deplasman erken tespit edilerek önlem alınabilir." },
+      { question: "İksa yapan firma seçerken nelere dikkat edilmeli?", answer: "Derin kazı ve komşu yapı tecrübesi, fore kazık/diyafram/ankraj kapasitesi, enstrümantasyon (izleme) yaklaşımı, statik tasarım desteği ve referans projeleri belirleyicidir. YER6, Ankara merkezli olarak Türkiye geneli ve yurt dışında iksa sistemleri uygular." },
+      { question: "YER6 hangi bölgelerde iksa hizmeti veriyor?", answer: "YER6 Ankara merkezlidir; Türkiye'nin tüm illerinde ve yurt dışında iksa sistemleri, derin kazı desteği ve zemin güçlendirme saha uygulaması yapar." }
     ]
   },
   {
@@ -320,7 +326,9 @@ export const services = [
       { question: "Zemin iyileştirme ne zaman gereklidir?", answer: "Yapı yükleri altında aşırı oturma, zemin taşıma kapasitesinin yetersizliği, sıvılaşma riski veya mevcut yapı altında oluşan oturma ve deformasyon tespit edildiğinde zemin iyileştirme gereklidir." },
       { question: "Hangi yöntem daha iyi: jet grout mu, DSM mi?", answer: "İkisi farklı koşullara özeldir. Jet grout dar sahalarda ve su geçirimsizliği gereken yerlerde; DSM ise geniş alanlarda ve yumuşak kil zeminlerde ekonomik avantaj sağlar. Doğru seçim zemin koşulları ve proje hedefine göre yapılır." },
       { question: "Zemin iyileştirme mevcut yapıların altında uygulanabilir mi?", answer: "Evet. Mini kazık ve mikro jet grout gibi yöntemler, mevcut yapıya zarar vermeden bodrum veya temel altında zemin iyileştirmeye olanak sağlar." },
-      { question: "Deprem bölgesinde zemin iyileştirme zorunlu mudur?", answer: "TBDY 2018 kapsamında sıvılaşma potansiyeli tespit edilen zeminlerde ya iyileştirme uygulanmalı ya da yapı tasarımı bu risk gözetilerek yapılmalıdır. Zemin güçlendirme çoğu zaman en ekonomik çözümdür." }
+      { question: "Deprem bölgesinde zemin iyileştirme zorunlu mudur?", answer: "TBDY 2018 kapsamında sıvılaşma potansiyeli tespit edilen zeminlerde ya iyileştirme uygulanmalı ya da yapı tasarımı bu risk gözetilerek yapılmalıdır. Zemin güçlendirme çoğu zaman en ekonomik çözümdür." },
+      { question: "Zemin iyileştirme yapan firma seçerken nelere dikkat edilmeli?", answer: "Yöntem çeşitliliği (jet grout, DSM, enjeksiyon), makine parkı, laboratuvar/saha kalite kontrolü, mühendislik tasarımı ve referans projeleri belirleyicidir. YER6, Ankara merkezli olarak Türkiye geneli ve yurt dışında zemin iyileştirme uygular." },
+      { question: "YER6 hangi bölgelerde zemin iyileştirme hizmeti veriyor?", answer: "YER6 Ankara merkezlidir; Türkiye'nin tüm illerinde ve yurt dışında zemin iyileştirme, zemin güçlendirme ve temel mühendisliği saha uygulaması gerçekleştirir." }
     ]
   },
   {
@@ -359,7 +367,9 @@ export const services = [
       { question: "Zemin etüdü olmadan proje yapılabilir mi?", answer: "Yasal olarak hayır; yapı ruhsatı için zemin etüdü zorunludur. Ancak yalnızca ruhsat için değil, gerçekçi bir zemin modeli oluşturmak için yeterli sayıda sondaj ve deney yapılması tasarım güvenilirliği açısından kritiktir." },
       { question: "Bağımsız geoteknik denetim ne zaman gereklidir?", answer: "Büyük ölçekli altyapı, yüksek yapı, jeolojik riski yüksek saha ve yatırımcının teknik güvence aradığı her projede bağımsız geoteknik denetim değer yaratır." },
       { question: "Zemin raporu yeterince iyi mi sorusuna nasıl cevap verilir?", answer: "Zemin raporunun yeterliliği; sondaj sayısı ve derinliği, deney türleri, zemin sınıflandırması ve tasarım parametrelerinin proje gereksinimlerini karşılayıp karşılamadığıyla değerlendirilir." },
-      { question: "İhale öncesi geoteknik destek sağlayabilir misiniz?", answer: "Evet. YER6 ihale öncesi; zemin koşullarına göre yaklaşık metraj, yöntem önerisi ve risk değerlendirmesi sunarak teklif sürecini destekler." }
+      { question: "İhale öncesi geoteknik destek sağlayabilir misiniz?", answer: "Evet. YER6 ihale öncesi; zemin koşullarına göre yaklaşık metraj, yöntem önerisi ve risk değerlendirmesi sunarak teklif sürecini destekler." },
+      { question: "Geoteknik danışmanlık firması seçerken nelere dikkat edilmeli?", answer: "Bağımsızlık, zemin etüdü yorumlama ve tasarım denetimi yetkinliği, EC7/TBDY 2018 bilgisi, saha tecrübesi ve referansları belirleyicidir. YER6, Ankara merkezli olarak Türkiye geneli ve yurt dışında geoteknik danışmanlık verir." },
+      { question: "YER6 hangi bölgelerde geoteknik danışmanlık veriyor?", answer: "YER6 Ankara merkezlidir; Türkiye'nin tüm illerinde ve yurt dışında geoteknik danışmanlık, zemin etüdü değerlendirmesi ve tasarım denetimi sunar." }
     ]
   },
   {
