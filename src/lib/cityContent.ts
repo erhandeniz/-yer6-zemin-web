@@ -2502,6 +2502,942 @@ const cityEnrichmentList: CityEnrichment[] = [
       { question: "Hangi yöntem sıvılaşmaya karşı etkili?", answer: "DSM, jet grout ve taş kolon; zemin rijitliğini artırıp drenaj sağlayarak sıvılaşma direncine katkıda bulunur. Seçim zemin verisine göre yapılır." },
       { question: "YER6 Düzce'de hizmet veriyor mu?", answer: "Evet; Ankara merkezli ekibimizle Düzce ve çevresinde zemin güçlendirme uygulamaları yapıyoruz; bölgede fabrika temel altı jet grout projeleri gerçekleştirdik." }
     ]
+  },
+  {
+    slug: "mugla-zemin-guclendirme",
+    intro:
+      "Muğla'da zemin güçlendirme; Ege-Akdeniz kıyı alüvyonları, karstik kireçtaşı (boşluk riski), yüksek yeraltı suyu ve yoğun turizm yapılaşması dikkate alınarak planlanır. YER6, otel, konut ve ticari projelerde jet grout, fore kazık ve enjeksiyon çözümleri sunar.",
+    sections: [
+      {
+        heading: "Muğla zemininde karst ve kıyı alüvyonu",
+        body: [
+          "Bölgede yer yer karstik kireçtaşı bulunması, zemin içinde boşluk ve erime kanalları riski oluşturur; kıyı kesimlerinde ise gevşek alüvyon ve yüksek yeraltı suyu belirleyicidir. Bu değişkenlik ani oturma açısından önemlidir.",
+          "Doğru yöntem, ancak sondaj ve gerektiğinde jeofizik ölçümlerle kurulan zemin modeline göre seçilir."
+        ]
+      },
+      {
+        heading: "Muğla'da uygulama yaklaşımı",
+        body: [
+          "Karstik boşlukların doldurulması ve su kontrolü için enjeksiyon ve jet grout; yüksek yapı ve otel projelerinde fore kazıklı derin temeller öne çıkar.",
+          "YER6, Muğla sahalarında boşluk tespiti, enjeksiyon kayıtları ve kolon sürekliliği kontrolleriyle kaliteyi belgeler."
+        ]
+      }
+    ],
+    faq: [
+      { question: "Karstik zeminde temel nasıl güvence altına alınır?", answer: "Boşluklar enjeksiyonla doldurulur, gerektiğinde jet grout ile güçlendirilir veya yükler fore kazıkla sağlam tabakaya aktarılır. Öncesinde boşluk tespiti yapılır." },
+      { question: "Otel/konut projesinde hangi yöntem uygun?", answer: "Zemin ve yük durumuna göre jet grout, enjeksiyon veya fore kazık değerlendirilir; karar zemin etüdüne bağlıdır." },
+      { question: "YER6 Muğla'da çalışıyor mu?", answer: "Evet; Ankara merkezli ekibimizle Muğla ve çevresinde zemin güçlendirme uygulamaları yürütüyoruz." }
+    ]
+  },
+  {
+    slug: "kayseri-zemin-guclendirme",
+    intro:
+      "Kayseri'de zemin güçlendirme; İç Anadolu'nun volkanik kökenli zeminleri, ova alüvyonları ve büyük organize sanayi bölgelerinin yükleri dikkate alınarak planlanır. YER6, DSM, jet grout ve fore kazık çözümleri sunar.",
+    sections: [
+      {
+        heading: "Kayseri zemin koşulları",
+        body: [
+          "Erciyes çevresindeki volkanik kökenli zeminler ve ova kesimlerindeki alüvyon, taşıma gücü ve oturma açısından değişkenlik gösterir. OSB'lerdeki geniş taban alanlı ve ağır yüklü yapılar zemin iyileştirmesini gerektirebilir.",
+          "Tabaka geçişlerinin değişken olduğu alanlarda güvenilir tasarım için zemin etüdü esastır."
+        ]
+      },
+      {
+        heading: "Kayseri'de uygulama yaklaşımı",
+        body: [
+          "Geniş sanayi parsellerinde oturma kontrolü için DSM; yerel güçlendirme için jet grout; yüksek yapısal yükler için fore kazık uygulanır.",
+          "YER6, Kayseri sahalarında karot, kolon sürekliliği ve üretim kayıtlarıyla kaliteyi belgeler."
+        ]
+      }
+    ],
+    faq: [
+      { question: "Kayseri OSB'de zemin iyileştirme gerekir mi?", answer: "Alüvyon/gevşek zemin bulunan geniş taban alanlı yapılarda oturma riski nedeniyle çoğunlukla gereklidir; kesin karar zemin etüdüne bağlıdır." },
+      { question: "Volkanik kökenli zeminde hangi yöntem uygun?", answer: "Zemin davranışı sondajla belirlenir; oturmaya duyarlı alanlarda DSM/jet grout, yüksek yüklerde fore kazık tercih edilir." },
+      { question: "YER6 Kayseri'de hizmet veriyor mu?", answer: "Evet; Ankara merkezli ekibimizle Kayseri ve İç Anadolu'da zemin güçlendirme uygulamaları yapıyoruz." }
+    ]
+  },
+  {
+    slug: "sivas-zemin-guclendirme",
+    intro:
+      "Sivas'ta zemin güçlendirme; İç Anadolu'nun killi ve yer yer jipsli zeminleri, Kızılırmak çevresi alüvyonu ve altyapı projeleri dikkate alınarak planlanır. YER6, DSM, fore kazık ve jet grout çözümleri sunar.",
+    sections: [
+      {
+        heading: "Sivas zemin koşulları",
+        body: [
+          "Bölgede rastlanan killi ve yer yer jipsli (alçıtaşı) zeminler; suyla temas ettiğinde çözünme ve oturma açısından özel dikkat gerektirir. Kızılırmak çevresindeki alüvyon alanlarda ise gevşek çökeller ve yeraltı suyu öne çıkar.",
+          "Bu koşullar, temel sisteminin zemin etüdüyle kurulan bir modele göre seçilmesini gerektirir."
+        ]
+      },
+      {
+        heading: "Sivas'ta uygulama yaklaşımı",
+        body: [
+          "Oturma kontrolü ve zemin rijitliği için DSM; yüksek yapısal ve altyapı yükleri için fore kazık; yerel güçlendirme için jet grout uygulanır.",
+          "YER6, Sivas sahalarında kolon sürekliliği, mukavemet testleri ve üretim kayıtlarıyla kaliteyi belgeler."
+        ]
+      }
+    ],
+    faq: [
+      { question: "Jipsli zemin neden özel önlem gerektirir?", answer: "Jips suyla çözünebildiği için zeminde boşluk ve oturma riski oluşabilir. Su kontrolü, uygun temel ve gerektiğinde zemin iyileştirme ile risk yönetilir." },
+      { question: "Sivas'ta hangi yöntem uygulanır?", answer: "Zemin tipine göre DSM, fore kazık veya jet grout uygulanır; karar sondaj ve laboratuvar verisiyle verilir." },
+      { question: "YER6 Sivas'ta çalışıyor mu?", answer: "Evet; Ankara merkezli ekibimizle Sivas ve İç Anadolu'da zemin güçlendirme uygulamaları yürütüyoruz." }
+    ]
+  },
+  {
+    slug: "van-zemin-guclendirme",
+    intro:
+      "Van'da zemin güçlendirme; aktif fay etkisi (2011 Van depremi), göl kıyısı alüvyonları ve killi zeminler dikkate alınarak planlanır. YER6, DSM, jet grout ve fore kazık çözümleri sunar.",
+    sections: [
+      {
+        heading: "Van zemini ve deprem etkisi",
+        body: [
+          "Van Gölü çevresindeki alüvyon ve killi zeminler ile yüksek yeraltı suyu, oturma ve deprem sırasında zemin büyütmesi açısından önemlidir. Bölge aktif fay zonuna yakınlığıyla dikkat gerektirir.",
+          "2011 depremi, bölgede zemin davranışının yapısal güvenlikteki rolünü ortaya koymuştur."
+        ]
+      },
+      {
+        heading: "Van'da uygulama yaklaşımı",
+        body: [
+          "Oturma ve taşıma gücü için DSM ve jet grout ile rijitlik artırılır; yüksek yapısal yükler fore kazıklı temellerle sağlam tabakaya aktarılır.",
+          "YER6, Van sahalarında deneme kolonları, karot ve süreklilik kontrolleriyle üretim kalitesini belgeler."
+        ]
+      }
+    ],
+    faq: [
+      { question: "Fay bölgesinde yeni yapı için ne önerilir?", answer: "Zemin profiline göre DSM, jet grout veya fore kazıklı temel çözümleri değerlendirilir; karar güncel zemin etüdüne dayanır." },
+      { question: "Göl kıyısı alüvyonunda hangi yöntem uygun?", answer: "Gevşek zemin ve yüksek yeraltı suyu nedeniyle jet grout, DSM veya derin temel çözümleri değerlendirilir." },
+      { question: "YER6 Van'da hizmet veriyor mu?", answer: "Evet; Ankara merkezli ekibimizle Van ve Doğu Anadolu'da zemin güçlendirme uygulamaları yapıyoruz." }
+    ]
+  },
+  {
+    slug: "nevsehir-zemin-guclendirme",
+    intro:
+      "Nevşehir'de zemin güçlendirme; Kapadokya'nın volkanik tüf yapısı, yumuşak kaya ve ova alüvyonları ile turizm yapılaşması dikkate alınarak planlanır. YER6, jet grout, DSM ve fore kazık çözümleri sunar.",
+    sections: [
+      {
+        heading: "Nevşehir zemin koşulları",
+        body: [
+          "Bölgedeki volkanik tüf ve yumuşak kaya yapıları, kolay işlenebilir ancak boşluk ve dayanım açısından değişken zeminlerdir. Ova kesimlerinde ise alüvyon ve gevşek dolgu alanları bulunur.",
+          "Bu değişkenlik, temel çözümünün parsel bazında zemin etüdüyle seçilmesini gerektirir."
+        ]
+      },
+      {
+        heading: "Nevşehir'de uygulama yaklaşımı",
+        body: [
+          "Boşluk ve gevşek zemin bulunan alanlarda enjeksiyon ve jet grout; oturma kontrolü için DSM; yüksek yükler için fore kazık uygulanır.",
+          "YER6, Nevşehir sahalarında zemin modeli, kolon sürekliliği ve üretim kayıtlarıyla kaliteyi belgeler."
+        ]
+      }
+    ],
+    faq: [
+      { question: "Tüf/yumuşak kaya zeminde temel nasıl kurulur?", answer: "Dayanım ve boşluk durumu sondajla belirlenir; gerektiğinde enjeksiyon/jet grout ile güçlendirme veya fore kazıkla derin yük aktarımı yapılır." },
+      { question: "Nevşehir'de hangi yöntem uygulanır?", answer: "Zemin tipine göre jet grout, DSM veya fore kazık uygulanır; karar sondaj ve laboratuvar verisine bağlıdır." },
+      { question: "YER6 Nevşehir'de çalışıyor mu?", answer: "Evet; Ankara merkezli ekibimizle Nevşehir ve Kapadokya bölgesinde zemin güçlendirme uygulamaları yürütüyoruz." }
+    ]
+  },
+  {
+    slug: "afyonkarahisar-zemin-guclendirme",
+    intro:
+      "Afyonkarahisar'da zemin güçlendirme; jeotermal/fay etkisi, killi ova zeminleri ve sanayi/termal tesis yükleri dikkate alınarak planlanır. YER6, DSM, jet grout ve fore kazık çözümleri sunar.",
+    sections: [
+      {
+        heading: "Afyonkarahisar zemin koşulları",
+        body: [
+          "Ova kesimlerindeki killi ve siltli zeminler, yük altında oturma ve nem değişiminde hacim hareketi açısından değerlendirilmelidir. Bölgenin jeotermal ve fay etkinliği ek dikkat gerektirir.",
+          "Termal tesis ve sanayi yapılarının yükleri, bu koşullarda zemin iyileştirmesini gerektirebilir."
+        ]
+      },
+      {
+        heading: "Afyonkarahisar'da uygulama yaklaşımı",
+        body: [
+          "Oturma kontrolü ve zemin rijitliği için DSM; yerel güçlendirme için jet grout; yüksek yapısal yükler için fore kazık uygulanır.",
+          "YER6, Afyonkarahisar sahalarında karot, kolon sürekliliği ve üretim kayıtlarıyla kaliteyi belgeler."
+        ]
+      }
+    ],
+    faq: [
+      { question: "Killi ova zemininde hangi yöntem uygun?", answer: "Killi ve oturmaya yatkın zeminlerde DSM veya kazıklı temel çözümleri öne çıkar; yöntem plastisite ve yük koşullarına göre belirlenir." },
+      { question: "Termal tesis zemini güçlendirilebilir mi?", answer: "Evet; ağır ve sürekli yükler için DSM, jet grout ve fore kazık kombinasyonlarıyla oturma ve taşıma güvenliği sağlanır." },
+      { question: "YER6 Afyonkarahisar'da hizmet veriyor mu?", answer: "Evet; Ankara merkezli ekibimizle Afyonkarahisar ve çevresinde zemin güçlendirme uygulamaları yapıyoruz." }
+    ]
+  },
+  {
+    slug: "aksaray-zemin-guclendirme",
+    intro:
+      "Aksaray'da zemin güçlendirme; İç Anadolu'nun killi ova zeminleri, alüvyon alanları ve organize sanayi yükleri dikkate alınarak planlanır. YER6, DSM, jet grout ve fore kazık çözümleri sunar.",
+    sections: [
+      {
+        heading: "Aksaray zemin koşulları",
+        body: [
+          "Ova kesimlerindeki killi ve siltli zeminler ile gevşek dolgu alanları, oturma ve taşıma gücü açısından değerlendirilmelidir. Sanayi yapılarının yükleri bu koşullarda zemin iyileştirmesini gerektirebilir.",
+          "Tabaka geçişlerinin değişken olduğu alanlarda güvenilir tasarım için zemin etüdü esastır."
+        ]
+      },
+      {
+        heading: "Aksaray'da uygulama yaklaşımı",
+        body: [
+          "Oturma kontrolü için DSM; yerel güçlendirme için jet grout; yüksek yapısal yükler için fore kazık uygulanır.",
+          "YER6, Aksaray sahalarında kolon sürekliliği, mukavemet testleri ve üretim kayıtlarıyla kaliteyi belgeler."
+        ]
+      }
+    ],
+    faq: [
+      { question: "Aksaray OSB'de zemin iyileştirme gerekir mi?", answer: "Killi/gevşek zemin bulunan geniş taban alanlı yapılarda çoğunlukla gereklidir; kesin karar zemin etüdüne bağlıdır." },
+      { question: "Killi zeminde hangi yöntem uygun?", answer: "DSM veya kazıklı temel çözümleri öne çıkar; yöntem plastisite ve yük koşullarına göre belirlenir." },
+      { question: "YER6 Aksaray'da çalışıyor mu?", answer: "Evet; Ankara merkezli ekibimizle Aksaray ve İç Anadolu'da zemin güçlendirme uygulamaları yürütüyoruz." }
+    ]
+  },
+  {
+    slug: "amasya-zemin-guclendirme",
+    intro:
+      "Amasya'da zemin güçlendirme; Yeşilırmak vadisinin dar alüvyon yapısı, yamaç koşulları ve fay etkisi dikkate alınarak planlanır. YER6, fore kazık, DSM ve jet grout çözümleri sunar.",
+    sections: [
+      {
+        heading: "Amasya zemin koşulları",
+        body: [
+          "Yeşilırmak vadisindeki alüvyon ve gevşek dolgu alanları ile vadi yamaçları, oturma ve şev duraysızlığı açısından değerlendirilmelidir. Bölgenin fay etkinliği zemin davranışını önemli kılar.",
+          "Dar vadi yerleşimi, temel ve istinat çözümlerinde hassas deplasman kontrolü gerektirir."
+        ]
+      },
+      {
+        heading: "Amasya'da uygulama yaklaşımı",
+        body: [
+          "Alüvyon sahalarda oturma kontrolü için DSM ve jet grout; yamaç ve derin yükler için fore kazık ve ankraj uygulanır.",
+          "YER6, Amasya sahalarında kolon sürekliliği, ankraj testleri ve üretim kayıtlarıyla kaliteyi belgeler."
+        ]
+      }
+    ],
+    faq: [
+      { question: "Vadi alüvyonunda hangi yöntem uygun?", answer: "Gevşek alüvyon ve yeraltı suyu bulunan alanlarda DSM, jet grout veya fore kazık değerlendirilir; karar zemin etüdüne bağlıdır." },
+      { question: "Yamaç sahasında ne yapılır?", answer: "Ankraj ve kazıklı iksa ile yamaç duraylılığı sağlanır; drenaj çözümleriyle su etkisi azaltılır." },
+      { question: "YER6 Amasya'da hizmet veriyor mu?", answer: "Evet; Ankara merkezli ekibimizle Amasya ve çevresinde zemin güçlendirme uygulamaları yapıyoruz." }
+    ]
+  },
+  {
+    slug: "tokat-zemin-guclendirme",
+    intro:
+      "Tokat'ta zemin güçlendirme; Yeşilırmak ovası alüvyonu, Kuzey Anadolu Fayı etkisi, killi zeminler ve yamaç koşulları dikkate alınarak planlanır. YER6, DSM, fore kazık ve jet grout çözümleri sunar.",
+    sections: [
+      {
+        heading: "Tokat zemin koşulları",
+        body: [
+          "Ova kesimlerindeki alüvyon ve killi zeminler ile fay zonuna yakınlık, oturma ve deprem etkisi açısından değerlendirilmelidir. Yamaç alanlarında ise şev duraylılığı öne çıkar.",
+          "Bu koşullar, temel sisteminin zemin etüdüyle kurulan bir modele göre seçilmesini gerektirir."
+        ]
+      },
+      {
+        heading: "Tokat'ta uygulama yaklaşımı",
+        body: [
+          "Oturma ve taşıma gücü için DSM ve jet grout; yüksek yapısal yükler ve yamaç için fore kazık ve ankraj uygulanır.",
+          "YER6, Tokat sahalarında kolon sürekliliği, mukavemet testleri ve üretim kayıtlarıyla kaliteyi belgeler."
+        ]
+      }
+    ],
+    faq: [
+      { question: "Fay bölgesinde zemin iyileştirme önemli mi?", answer: "Evet; sıvılaşmaya yatkın veya oturmaya duyarlı zeminlerde iyileştirme, deprem performansı açısından kritik olabilir. Zemin etüdüyle karar verilir." },
+      { question: "Tokat'ta hangi yöntem uygulanır?", answer: "Zemin tipine göre DSM, jet grout veya fore kazık uygulanır; karar sondaj ve laboratuvar verisiyle verilir." },
+      { question: "YER6 Tokat'ta çalışıyor mu?", answer: "Evet; Ankara merkezli ekibimizle Tokat ve çevresinde zemin güçlendirme uygulamaları yürütüyoruz." }
+    ]
+  },
+  {
+    slug: "kirsehir-zemin-guclendirme",
+    intro:
+      "Kırşehir'de zemin güçlendirme; İç Anadolu'nun killi ova zeminleri, alüvyon alanları ve altyapı/sanayi yükleri dikkate alınarak planlanır. YER6, DSM, jet grout ve fore kazık çözümleri sunar.",
+    sections: [
+      {
+        heading: "Kırşehir zemin koşulları",
+        body: [
+          "Ova kesimlerindeki killi ve siltli zeminler ile gevşek dolgu alanları, oturma ve taşıma gücü açısından değerlendirilmelidir. Yapı yüklerine göre bu koşullar zemin iyileştirmesini gerektirebilir.",
+          "Güvenilir tasarım için parsel bazında sondaj ve zemin modeli esastır."
+        ]
+      },
+      {
+        heading: "Kırşehir'de uygulama yaklaşımı",
+        body: [
+          "Oturma kontrolü için DSM; yerel güçlendirme için jet grout; yüksek yapısal yükler için fore kazık uygulanır.",
+          "YER6, Kırşehir sahalarında kolon sürekliliği, mukavemet testleri ve üretim kayıtlarıyla kaliteyi belgeler."
+        ]
+      }
+    ],
+    faq: [
+      { question: "Killi zeminde hangi yöntem uygun?", answer: "Killi ve oturmaya yatkın zeminlerde DSM veya kazıklı temel çözümleri öne çıkar; yöntem plastisite ve yük koşullarına göre belirlenir." },
+      { question: "Ön değerlendirme için ne gerekli?", answer: "Mevcut sondaj verisi, yapı yükleri ve parsel bilgileri ile yöntem önerisi ve yaklaşık metraj hazırlayabiliriz." },
+      { question: "YER6 Kırşehir'de hizmet veriyor mu?", answer: "Evet; Ankara merkezli ekibimizle Kırşehir ve İç Anadolu'da zemin güçlendirme uygulamaları yapıyoruz." }
+    ]
+  },
+  {
+    slug: "agri-zemin-guclendirme",
+    intro:
+      "Ağrı'da zemin güçlendirme; yüksek rakım, don derinliği, volkanik kökenli zeminler ve kısa saha sezonu dikkate alınarak planlanır. YER6, DSM, fore kazık ve jet grout çözümleri sunar.",
+    sections: [
+      {
+        heading: "Ağrı zemin koşulları",
+        body: [
+          "Yüksek rakım ve sert kış koşulları, don derinliği ve donma-çözülme etkilerini temel tasarımında belirleyici kılar. Ova kesimlerindeki killi ve volkanik kökenli zeminler taşıma gücü ve oturma açısından değişkenlik gösterir.",
+          "Bu koşullar, imalat programının mevsime ve zemin modeline göre kurgulanmasını gerektirir."
+        ]
+      },
+      {
+        heading: "Ağrı'da uygulama yaklaşımı",
+        body: [
+          "Oturma kontrolü ve zemin rijitliği için DSM; yüksek yapısal yükler için fore kazık; yerel güçlendirme için jet grout uygulanır. Don derinliği ve numune koruması saha kalite planında öne çıkar.",
+          "YER6, Ağrı sahalarında kolon sürekliliği, mukavemet testleri ve mevsimsel kalite planıyla üretim güvenilirliğini belgeler."
+        ]
+      }
+    ],
+    faq: [
+      { question: "Don derinliği temeli nasıl etkiler?", answer: "Temel, don derinliğinin altına indirilmeli veya donma-çözülme etkisine karşı korunmalıdır. Zemin iyileştirme ve uygun temel derinliği birlikte değerlendirilir." },
+      { question: "Ağrı'da hangi yöntem uygulanır?", answer: "Zemin tipine göre DSM, fore kazık veya jet grout uygulanır; karar sondaj ve laboratuvar verisiyle verilir." },
+      { question: "YER6 Ağrı'da hizmet veriyor mu?", answer: "Evet; Ankara merkezli ekibimizle Ağrı ve Doğu Anadolu'da zemin güçlendirme uygulamaları yapıyoruz." }
+    ]
+  },
+  {
+    slug: "igdir-zemin-guclendirme",
+    intro:
+      "Iğdır'da zemin güçlendirme; Aras vadisinin alüvyon ovası, tarımsal sulama etkisi ve yüksek yeraltı suyu dikkate alınarak planlanır. YER6, DSM, jet grout ve fore kazık çözümleri sunar.",
+    sections: [
+      {
+        heading: "Iğdır zemin koşulları",
+        body: [
+          "Aras ovasındaki alüvyon ve gevşek çökeller, yüksek yeraltı suyuyla birlikte oturma ve sıvılaşma açısından değerlendirilmelidir. Sulama etkisiyle değişen nem, killi zeminlerde hacim hareketine yol açabilir.",
+          "Bu koşullar, temel sisteminin zemin etüdüyle kurulan bir modele göre seçilmesini gerektirir."
+        ]
+      },
+      {
+        heading: "Iğdır'da uygulama yaklaşımı",
+        body: [
+          "Su kontrolü ve oturma azaltımı için jet grout ve DSM; yüksek yükler için fore kazık uygulanır.",
+          "YER6, Iğdır sahalarında kolon sürekliliği, mukavemet testleri ve yeraltı suyu davranışını kalite kabul sürecinde izler."
+        ]
+      }
+    ],
+    faq: [
+      { question: "Yüksek yeraltı suyu uygulamayı nasıl etkiler?", answer: "Su geçirgen zeminlerde jet grout ve enjeksiyonla su kontrolü sağlanır; imalat programı yeraltı suyuna göre düzenlenir." },
+      { question: "Iğdır'da hangi yöntem uygulanır?", answer: "Zemin tipine göre jet grout, DSM veya fore kazık uygulanır; karar sondaj ve laboratuvar verisine bağlıdır." },
+      { question: "YER6 Iğdır'da çalışıyor mu?", answer: "Evet; Ankara merkezli ekibimizle Iğdır ve Doğu Anadolu'da zemin güçlendirme uygulamaları yürütüyoruz." }
+    ]
+  },
+  {
+    slug: "kars-zemin-guclendirme",
+    intro:
+      "Kars'ta zemin güçlendirme; yüksek plato, sert kış ve don derinliği, bazalt/volkanik kökenli zeminler dikkate alınarak planlanır. YER6, DSM, fore kazık ve jet grout çözümleri sunar.",
+    sections: [
+      {
+        heading: "Kars zemin koşulları",
+        body: [
+          "Yüksek rakımlı plato ve sert kış koşulları, don derinliği ve donma-çözülme etkilerini temel tasarımında belirleyici kılar. Bazalt ve volkanik kökenli zeminler ile ova alüvyonu taşıma gücü açısından değişkenlik gösterir.",
+          "Kısa saha sezonu, imalat programının mevsime göre kurgulanmasını gerektirir."
+        ]
+      },
+      {
+        heading: "Kars'ta uygulama yaklaşımı",
+        body: [
+          "Oturma kontrolü için DSM; yüksek yapısal yükler için fore kazık; yerel güçlendirme için jet grout uygulanır.",
+          "YER6, Kars sahalarında kolon sürekliliği, mukavemet testleri ve mevsimsel kalite planıyla üretim güvenilirliğini belgeler."
+        ]
+      }
+    ],
+    faq: [
+      { question: "Soğuk iklim temel uygulamasını etkiler mi?", answer: "Evet; don derinliği ve donma-çözülme, temel derinliği ve imalat mevsimini etkiler. Saha kalite planı buna göre uyarlanır." },
+      { question: "Kars'ta hangi yöntem uygulanır?", answer: "Zemin tipine göre DSM, fore kazık veya jet grout uygulanır; karar sondaj ve laboratuvar verisiyle verilir." },
+      { question: "YER6 Kars'ta hizmet veriyor mu?", answer: "Evet; Ankara merkezli ekibimizle Kars ve Doğu Anadolu'da zemin güçlendirme uygulamaları yapıyoruz." }
+    ]
+  },
+  {
+    slug: "edirne-zemin-guclendirme",
+    intro:
+      "Edirne'de zemin güçlendirme; Trakya'nın Meriç-Tunca nehir alüvyonları, killi zeminler ve yüksek yeraltı suyu dikkate alınarak planlanır. YER6, DSM, jet grout ve fore kazık çözümleri sunar.",
+    sections: [
+      {
+        heading: "Edirne zemin koşulları",
+        body: [
+          "Meriç ve Tunca çevresindeki alüvyon ve killi zeminler, yüksek yeraltı suyuyla birlikte oturma ve taşıma gücü açısından değerlendirilmelidir. Nehir yataklarına yakın kesimlerde gevşek çökeller öne çıkar.",
+          "Bu koşullar, temel sisteminin zemin etüdüyle kurulan bir modele göre seçilmesini gerektirir."
+        ]
+      },
+      {
+        heading: "Edirne'de uygulama yaklaşımı",
+        body: [
+          "Su kontrolü ve oturma azaltımı için jet grout ve DSM; yüksek yükler için fore kazık uygulanır.",
+          "YER6, Edirne sahalarında kolon sürekliliği, mukavemet testleri ve yeraltı suyu davranışını kalite kabul sürecinde izler."
+        ]
+      }
+    ],
+    faq: [
+      { question: "Nehir alüvyonunda hangi yöntem uygun?", answer: "Gevşek alüvyon ve yüksek yeraltı suyu nedeniyle jet grout, DSM veya derin temel çözümleri değerlendirilir; karar zemin etüdüne bağlıdır." },
+      { question: "Edirne'de zemin iyileştirme gerekir mi?", answer: "Killi/gevşek zemin ve yüksek yeraltı suyu bulunan parsellerde çoğunlukla gereklidir; kesin karar zemin etüdüne bağlıdır." },
+      { question: "YER6 Edirne'de çalışıyor mu?", answer: "Evet; Ankara merkezli ekibimizle Edirne ve Trakya genelinde zemin güçlendirme uygulamaları yürütüyoruz." }
+    ]
+  },
+  {
+    slug: "kirklareli-zemin-guclendirme",
+    intro:
+      "Kırklareli'nde zemin güçlendirme; Trakya'nın alüvyon ovaları, Istranca çevresi koşulları ve Lüleburgaz-Babaeski hattındaki sanayi yükleri dikkate alınarak planlanır. YER6, DSM, jet grout ve fore kazık çözümleri sunar.",
+    sections: [
+      {
+        heading: "Kırklareli zemin koşulları",
+        body: [
+          "Ova kesimlerindeki killi-siltli zeminler ile gevşek dolgu alanları, oturma açısından değerlendirilmelidir. Organize sanayi bölgelerindeki geniş taban alanlı ve ağır yüklü yapılar zemin iyileştirmesini gerektirebilir.",
+          "Tabaka geçişlerinin değişken olduğu alanlarda güvenilir tasarım için zemin etüdü esastır."
+        ]
+      },
+      {
+        heading: "Kırklareli'nde uygulama yaklaşımı",
+        body: [
+          "Geniş sanayi parsellerinde oturma kontrolü için DSM; yerel güçlendirme için jet grout; yüksek yükler için fore kazık uygulanır.",
+          "YER6, Kırklareli sahalarında karot, kolon sürekliliği ve üretim kayıtlarıyla kaliteyi belgeler."
+        ]
+      }
+    ],
+    faq: [
+      { question: "OSB'de zemin iyileştirme gerekir mi?", answer: "Killi/gevşek zemin bulunan geniş taban alanlı yapılarda çoğunlukla gereklidir; kesin karar zemin etüdüne bağlıdır." },
+      { question: "Kırklareli'nde hangi yöntem uygulanır?", answer: "Zemin tipine göre DSM, jet grout veya fore kazık uygulanır; karar sondaj ve laboratuvar verisiyle verilir." },
+      { question: "YER6 Kırklareli'nde hizmet veriyor mu?", answer: "Evet; Ankara merkezli ekibimizle Kırklareli ve Trakya genelinde zemin güçlendirme uygulamaları yapıyoruz." }
+    ]
+  },
+  {
+    slug: "usak-zemin-guclendirme",
+    intro:
+      "Uşak'ta zemin güçlendirme; İç Ege'nin killi ova zeminleri, fay etkisi ve tekstil/deri sanayisinin yükleri dikkate alınarak planlanır. YER6, DSM, jet grout ve fore kazık çözümleri sunar.",
+    sections: [
+      {
+        heading: "Uşak zemin koşulları",
+        body: [
+          "Ova kesimlerindeki killi ve siltli zeminler, yük altında oturma ve nem değişiminde hacim hareketi açısından değerlendirilmelidir. Bölgenin fay etkinliği zemin davranışını önemli kılar.",
+          "Sanayi yapılarının yükleri, bu koşullarda zemin iyileştirmesini gerektirebilir."
+        ]
+      },
+      {
+        heading: "Uşak'ta uygulama yaklaşımı",
+        body: [
+          "Oturma kontrolü için DSM; yerel güçlendirme için jet grout; yüksek yapısal yükler için fore kazık uygulanır.",
+          "YER6, Uşak sahalarında karot, kolon sürekliliği ve üretim kayıtlarıyla kaliteyi belgeler."
+        ]
+      }
+    ],
+    faq: [
+      { question: "Killi zeminde hangi yöntem uygun?", answer: "Killi ve oturmaya yatkın zeminlerde DSM veya kazıklı temel çözümleri öne çıkar; yöntem plastisite ve yük koşullarına göre belirlenir." },
+      { question: "Sanayi yapısında zemin iyileştirme gerekir mi?", answer: "Geniş taban alanlı ve ağır yüklü yapılarda alüvyon/killi zeminde çoğunlukla gereklidir; kesin karar zemin etüdüne bağlıdır." },
+      { question: "YER6 Uşak'ta çalışıyor mu?", answer: "Evet; Ankara merkezli ekibimizle Uşak ve Ege bölgesinde zemin güçlendirme uygulamaları yürütüyoruz." }
+    ]
+  },
+  {
+    slug: "isparta-zemin-guclendirme",
+    intro:
+      "Isparta'da zemin güçlendirme; Göller Bölgesi'nin karstik yapısı, göl kıyısı alüvyonları, fay etkisi ve yüksek yeraltı suyu dikkate alınarak planlanır. YER6, jet grout, DSM ve fore kazık çözümleri sunar.",
+    sections: [
+      {
+        heading: "Isparta zemin koşulları",
+        body: [
+          "Bölgede karstik kireçtaşı boşluk riski ile göl ve ova kesimlerindeki gevşek alüvyon ve yüksek yeraltı suyu bir arada bulunabilir. Fay etkinliği zemin davranışını önemli kılar.",
+          "Bu değişkenlik, temel çözümünün parsel bazında zemin etüdüyle seçilmesini gerektirir."
+        ]
+      },
+      {
+        heading: "Isparta'da uygulama yaklaşımı",
+        body: [
+          "Boşluk doldurma ve su kontrolü için enjeksiyon ve jet grout; oturma kontrolü için DSM; yüksek yükler için fore kazık uygulanır.",
+          "YER6, Isparta sahalarında boşluk tespiti, kolon sürekliliği ve üretim kayıtlarıyla kaliteyi belgeler."
+        ]
+      }
+    ],
+    faq: [
+      { question: "Karstik/göl kıyısı zeminde temel nasıl kurulur?", answer: "Boşluklar enjeksiyonla doldurulur, gerektiğinde jet grout ile güçlendirilir; gevşek zeminde yük fore kazıkla sağlam tabakaya aktarılır. Öncesinde boşluk tespiti yapılır." },
+      { question: "Isparta'da hangi yöntem uygulanır?", answer: "Zemin tipine göre jet grout, DSM veya fore kazık uygulanır; karar sondaj ve jeofizik verisine bağlıdır." },
+      { question: "YER6 Isparta'da hizmet veriyor mu?", answer: "Evet; Ankara merkezli ekibimizle Isparta ve Göller Bölgesi'nde zemin güçlendirme uygulamaları yapıyoruz." }
+    ]
+  },
+  {
+    slug: "burdur-zemin-guclendirme",
+    intro:
+      "Burdur'da zemin güçlendirme; göl kıyısı alüvyonları, Burdur fayı etkisi, killi zeminler ve yüksek yeraltı suyu dikkate alınarak planlanır. YER6, DSM, jet grout ve fore kazık çözümleri sunar.",
+    sections: [
+      {
+        heading: "Burdur zemini ve fay etkisi",
+        body: [
+          "Göl çevresindeki gevşek alüvyon ve killi zeminler, yüksek yeraltı suyuyla birlikte oturma ve sıvılaşma açısından değerlendirilmelidir. Burdur fayına yakınlık, deprem etkisinin zeminle birlikte ele alınmasını gerektirir.",
+          "Bu koşullar, temel sisteminin zemin etüdüyle kurulan bir modele göre seçilmesini gerektirir."
+        ]
+      },
+      {
+        heading: "Burdur'da uygulama yaklaşımı",
+        body: [
+          "Sıvılaşma azaltımı ve su kontrolü için jet grout/DSM; oturma kontrolü için DSM; yüksek yükler için fore kazık uygulanır.",
+          "YER6, Burdur sahalarında kolon sürekliliği, mukavemet testleri ve yeraltı suyu davranışını kalite kabul sürecinde izler."
+        ]
+      }
+    ],
+    faq: [
+      { question: "Fay bölgesi göl kıyısında sıvılaşma riski var mı?", answer: "Gevşek alüvyon ve yüksek yeraltı suyu bulunan alanlarda değerlendirilmelidir; gerekirse jet grout/DSM ile azaltılır." },
+      { question: "Burdur'da hangi yöntem uygulanır?", answer: "Zemin tipine göre jet grout, DSM veya fore kazık uygulanır; karar sondaj ve laboratuvar verisine bağlıdır." },
+      { question: "YER6 Burdur'da çalışıyor mu?", answer: "Evet; Ankara merkezli ekibimizle Burdur ve çevresinde zemin güçlendirme uygulamaları yürütüyoruz." }
+    ]
+  },
+  {
+    slug: "giresun-zemin-guclendirme",
+    intro:
+      "Giresun'da zemin güçlendirme; dik topoğrafya, heyelan riski, dere yataklarındaki dolgular ve dar sahil şeridi dikkate alınarak planlanır. YER6, fore kazık, ankraj, iksa ve zemin iyileştirme çözümleri sunar.",
+    sections: [
+      {
+        heading: "Giresun zemini ve şev riski",
+        body: [
+          "Engebeli topoğrafya, yüksek yağış ve dere yataklarındaki gevşek dolgular; heyelan ve şev duraysızlığı açısından belirleyicidir. Sahil dolgu alanlarında gevşek çökeller ve yeraltı suyu öne çıkar.",
+          "Bu koşullar, temel ve istinat çözümlerinde hassas deplasman kontrolü gerektirir."
+        ]
+      },
+      {
+        heading: "Giresun'da uygulama yaklaşımı",
+        body: [
+          "Yamaç duraylılığı için öngermeli ankraj ve kazıklı iksa; gevşek dolgularda fore kazıklı derin temeller; su ve gevşek zemin kontrolü için jet grout uygulanır.",
+          "YER6, Giresun sahalarında ankraj test yükleri, delgi sürekliliği ve deplasman izlemesiyle kaliteyi belgeler."
+        ]
+      }
+    ],
+    faq: [
+      { question: "Heyelanlı/yamaç zeminde ne yapılır?", answer: "Öngermeli ankraj, kazıklı iksa ve drenaj çözümleriyle yamaç duraylılığı sağlanır. Uygulama zemin etüdü ve stabilite analizine dayanır." },
+      { question: "Dere dolgusu üzerinde güvenli temel olur mu?", answer: "Gevşek dolgularda yük fore kazıkla sağlam tabakaya aktarılır veya zemin iyileştirmesiyle güçlendirilir. Karar sondaj sonucuna bağlıdır." },
+      { question: "YER6 Giresun'da çalışıyor mu?", answer: "Evet; Ankara merkezli ekibimizle Giresun ve Karadeniz bölgesinde zemin güçlendirme uygulamaları yürütüyoruz." }
+    ]
+  },
+  {
+    slug: "rize-zemin-guclendirme",
+    intro:
+      "Rize'de zemin güçlendirme; çok yüksek yağış, dik yamaçlar, yoğun heyelan riski ve dere/dolgu alanları dikkate alınarak planlanır. YER6, fore kazık, ankraj, iksa ve zemin iyileştirme çözümleri sunar.",
+    sections: [
+      {
+        heading: "Rize zemini ve heyelan riski",
+        body: [
+          "Türkiye'nin en yağışlı bölgelerinden biri olması, dik yamaçlar ve suya doygun zeminlerle birleşince heyelan ve şev duraysızlığı açısından yüksek risk oluşturur. Dere yataklarındaki gevşek dolgular ek hassasiyet sunar.",
+          "Bu koşullar, drenaj ve deplasman kontrolünü temel/istinat tasarımının merkezine taşır."
+        ]
+      },
+      {
+        heading: "Rize'de uygulama yaklaşımı",
+        body: [
+          "Yamaç duraylılığı için öngermeli ankraj, kazıklı iksa ve etkin drenaj; gevşek dolgularda fore kazıklı derin temeller; yerel güçlendirme için jet grout uygulanır.",
+          "YER6, Rize sahalarında ankraj test yükleri, drenaj kontrolü ve deplasman izlemesiyle kaliteyi belgeler."
+        ]
+      }
+    ],
+    faq: [
+      { question: "Yoğun yağışlı yamaçta ne yapılır?", answer: "Ankraj ve kazıklı iksa ile duraylılık sağlanırken, etkin drenaj ile su etkisi azaltılır. Uygulama stabilite analizine ve zemin etüdüne dayanır." },
+      { question: "Dere dolgusu üzerinde temel güvenli olur mu?", answer: "Gevşek dolgularda yük fore kazıkla sağlam tabakaya aktarılır veya zemin iyileştirmesiyle güçlendirilir. Karar sondaj sonucuna bağlıdır." },
+      { question: "YER6 Rize'de hizmet veriyor mu?", answer: "Evet; Ankara merkezli ekibimizle Rize ve Doğu Karadeniz'de zemin güçlendirme uygulamaları yapıyoruz." }
+    ]
+  },
+  {
+    slug: "erzincan-zemin-guclendirme",
+    intro:
+      "Erzincan'da zemin güçlendirme; Kuzey Anadolu Fayı'nın en aktif kesimlerinden biri, ova alüvyonu ve sıvılaşma riski dikkate alınarak planlanır. YER6, DSM, jet grout ve fore kazık çözümleri sunar.",
+    sections: [
+      { heading: "Erzincan zemini ve deprem", body: [
+        "Erzincan ovası, Kuzey Anadolu Fayı üzerinde yer alan gevşek alüvyon ve yüksek yeraltı suyuyla, sıvılaşma açısından Türkiye'nin en kritik sahalarındandır. 1939 ve 1992 depremleri bu riski açıkça göstermiştir.",
+        "Yeni yapılarda zemin iyileştirmesi ve uygun temel seçimi belirleyici öneme sahiptir."
+      ]},
+      { heading: "Erzincan'da uygulama", body: [
+        "Sıvılaşma direncini artırmak için DSM, jet grout ve gerektiğinde taş kolon; yüksek yükler için fore kazık uygulanır.",
+        "YER6, Erzincan sahalarında kolon sürekliliği, mukavemet testleri ve yeraltı suyu davranışını kalite kabul sürecinde izler."
+      ]}
+    ],
+    faq: [
+      { question: "Erzincan'da sıvılaşma neden bu kadar önemli?", answer: "Aktif fay, gevşek alüvyon ve yüksek yeraltı suyu birleşimi deprem sırasında sıvılaşma riskini artırır; geçmiş depremler bunu göstermiştir. İyileştirme bu riski azaltır." },
+      { question: "Hangi yöntem etkili?", answer: "DSM, jet grout ve taş kolon; zemin rijitliğini artırıp drenaj sağlayarak sıvılaşma direncine katkıda bulunur. Seçim zemin verisine göre yapılır." },
+      { question: "YER6 Erzincan'da çalışıyor mu?", answer: "Evet; Ankara merkezli ekibimizle Erzincan ve Doğu Anadolu'da zemin güçlendirme uygulamaları yürütüyoruz." }
+    ]
+  },
+  {
+    slug: "corum-zemin-guclendirme",
+    intro:
+      "Çorum'da zemin güçlendirme; Kuzey Anadolu Fayı etkisi, killi ova zeminleri ve organize sanayi yükleri dikkate alınarak planlanır. YER6, DSM, jet grout ve fore kazık çözümleri sunar.",
+    sections: [
+      { heading: "Çorum zemin koşulları", body: [
+        "Ova kesimlerindeki killi ve siltli zeminler ile fay zonuna yakınlık, oturma ve deprem etkisi açısından değerlendirilmelidir. OSB'lerdeki ağır yüklü yapılar zemin iyileştirmesini gerektirebilir.",
+        "Güvenilir tasarım için parsel bazında zemin etüdü esastır."
+      ]},
+      { heading: "Çorum'da uygulama", body: [
+        "Oturma kontrolü için DSM; yerel güçlendirme için jet grout; yüksek yükler için fore kazık uygulanır.",
+        "YER6, Çorum sahalarında karot, kolon sürekliliği ve üretim kayıtlarıyla kaliteyi belgeler."
+      ]}
+    ],
+    faq: [
+      { question: "OSB'de zemin iyileştirme gerekir mi?", answer: "Killi/gevşek zemin bulunan geniş taban alanlı yapılarda çoğunlukla gereklidir; kesin karar zemin etüdüne bağlıdır." },
+      { question: "Çorum'da hangi yöntem uygulanır?", answer: "Zemin tipine göre DSM, jet grout veya fore kazık uygulanır; karar sondaj verisine bağlıdır." },
+      { question: "YER6 Çorum'da hizmet veriyor mu?", answer: "Evet; Ankara merkezli ekibimizle Çorum ve İç Anadolu'da zemin güçlendirme uygulamaları yapıyoruz." }
+    ]
+  },
+  {
+    slug: "bingol-zemin-guclendirme",
+    intro:
+      "Bingöl'de zemin güçlendirme; aktif fay etkisi, ova alüvyonları ve killi zeminler dikkate alınarak planlanır. YER6, DSM, jet grout ve fore kazık çözümleri sunar.",
+    sections: [
+      { heading: "Bingöl zemini ve deprem", body: [
+        "Bölge aktif fay zonuna yakınlığıyla, ova kesimlerindeki alüvyon ve gevşek dolgu alanları oturma ve zemin büyütmesi açısından dikkatle değerlendirilmelidir.",
+        "Güvenli yapı için temel sistemi zemin etüdüyle kurulan bir modele dayanmalıdır."
+      ]},
+      { heading: "Bingöl'de uygulama", body: [
+        "Oturma ve taşıma gücü için DSM ve jet grout; yüksek yükler için fore kazık uygulanır.",
+        "YER6, Bingöl sahalarında deneme kolonları, karot ve süreklilik kontrolleriyle kaliteyi belgeler."
+      ]}
+    ],
+    faq: [
+      { question: "Fay bölgesinde ne önerilir?", answer: "Zemin profiline göre DSM, jet grout veya fore kazıklı temel değerlendirilir; karar güncel zemin etüdüne dayanır." },
+      { question: "Bingöl'de hangi yöntem uygulanır?", answer: "Zemin tipine göre DSM, jet grout veya fore kazık uygulanır; karar sondaj verisine bağlıdır." },
+      { question: "YER6 Bingöl'de çalışıyor mu?", answer: "Evet; Ankara merkezli ekibimizle Bingöl ve Doğu Anadolu'da zemin güçlendirme uygulamaları yürütüyoruz." }
+    ]
+  },
+  {
+    slug: "bitlis-zemin-guclendirme",
+    intro:
+      "Bitlis'te zemin güçlendirme; dik topoğrafya, volkanik kökenli zeminler, heyelan riski ve Van Gölü çevresi koşulları dikkate alınarak planlanır. YER6, fore kazık, ankraj, iksa ve zemin iyileştirme çözümleri sunar.",
+    sections: [
+      { heading: "Bitlis zemin koşulları", body: [
+        "Engebeli topoğrafya, volkanik kökenli zeminler ve dere yataklarındaki dolgular; heyelan ve şev duraysızlığı açısından belirleyicidir. Göl çevresinde gevşek çökeller öne çıkar.",
+        "Bu koşullar temel ve istinat çözümlerinde hassas deplasman kontrolü gerektirir."
+      ]},
+      { heading: "Bitlis'te uygulama", body: [
+        "Yamaç duraylılığı için ankraj ve kazıklı iksa; gevşek zeminlerde fore kazık; yerel güçlendirme için jet grout uygulanır.",
+        "YER6, Bitlis sahalarında ankraj test yükleri, delgi sürekliliği ve deplasman izlemesiyle kaliteyi belgeler."
+      ]}
+    ],
+    faq: [
+      { question: "Yamaç/heyelan sahasında ne yapılır?", answer: "Ankraj ve kazıklı iksa ile yamaç duraylılığı sağlanır; drenajla su etkisi azaltılır. Uygulama zemin etüdüne dayanır." },
+      { question: "Bitlis'te hangi yöntem uygulanır?", answer: "Zemin tipine göre ankraj, fore kazık veya jet grout uygulanır; karar sondaj verisine bağlıdır." },
+      { question: "YER6 Bitlis'te hizmet veriyor mu?", answer: "Evet; Ankara merkezli ekibimizle Bitlis ve Doğu Anadolu'da zemin güçlendirme uygulamaları yapıyoruz." }
+    ]
+  },
+  {
+    slug: "batman-zemin-guclendirme",
+    intro:
+      "Batman'da zemin güçlendirme; Güneydoğu'nun platform ve ova zeminleri, Dicle havzası alüvyonu ve sanayi yükleri dikkate alınarak planlanır. YER6, DSM, jet grout ve fore kazık çözümleri sunar.",
+    sections: [
+      { heading: "Batman zemin koşulları", body: [
+        "Platform zeminleri nispeten sağlam olsa da, ova ve dere havzasına yakın kesimlerde alüvyon ve gevşek dolgu tabakalarıyla karşılaşılır. Bu değişkenlik parsel bazında farklı temel çözümleri gerektirebilir.",
+        "Doğru yöntem için parsel özelinde sondaj ve zemin modeli esastır."
+      ]},
+      { heading: "Batman'da uygulama", body: [
+        "Alüvyon sahalarda DSM ve jet grout; yüksek yükler için fore kazık; sağlam platformda temel çözümleri buna göre optimize edilir.",
+        "YER6, Batman sahalarında kolon sürekliliği, mukavemet testleri ve üretim kayıtlarıyla kaliteyi belgeler."
+      ]}
+    ],
+    faq: [
+      { question: "Aynı bölgede zemin neden farklı?", answer: "Platform ile havza alüvyonu yan yana bulunabilir; her parsel için ayrı sondaj önerilir." },
+      { question: "Batman'da hangi yöntem uygulanır?", answer: "Zemin tipine göre DSM, jet grout veya fore kazık uygulanır; karar sondaj verisine bağlıdır." },
+      { question: "YER6 Batman'da çalışıyor mu?", answer: "Evet; Ankara merkezli ekibimizle Batman ve Güneydoğu bölgesinde zemin güçlendirme uygulamaları yürütüyoruz." }
+    ]
+  },
+  {
+    slug: "siirt-zemin-guclendirme",
+    intro:
+      "Siirt'te zemin güçlendirme; Güneydoğu'nun engebeli topoğrafyası, ova alüvyonları ve killi zeminler dikkate alınarak planlanır. YER6, DSM, jet grout ve fore kazık çözümleri sunar.",
+    sections: [
+      { heading: "Siirt zemin koşulları", body: [
+        "Ova kesimlerindeki alüvyon ve killi zeminler ile yamaç alanları, oturma ve şev duraysızlığı açısından değerlendirilmelidir. Yapı yüklerine göre bu koşullar zemin iyileştirmesini gerektirebilir.",
+        "Güvenilir tasarım için parsel bazında zemin etüdü esastır."
+      ]},
+      { heading: "Siirt'te uygulama", body: [
+        "Oturma kontrolü için DSM ve jet grout; yüksek yükler ve yamaç için fore kazık ve ankraj uygulanır.",
+        "YER6, Siirt sahalarında kolon sürekliliği, mukavemet testleri ve üretim kayıtlarıyla kaliteyi belgeler."
+      ]}
+    ],
+    faq: [
+      { question: "Killi/alüvyon zeminde hangi yöntem uygun?", answer: "DSM, jet grout veya fore kazık değerlendirilir; karar sondaj ve laboratuvar verisine bağlıdır." },
+      { question: "Ön değerlendirme için ne gerekli?", answer: "Mevcut sondaj verisi, yapı yükleri ve parsel bilgileriyle yöntem önerisi ve yaklaşık metraj hazırlayabiliriz." },
+      { question: "YER6 Siirt'te hizmet veriyor mu?", answer: "Evet; Ankara merkezli ekibimizle Siirt ve Güneydoğu bölgesinde zemin güçlendirme uygulamaları yapıyoruz." }
+    ]
+  },
+  {
+    slug: "sirnak-zemin-guclendirme",
+    intro:
+      "Şırnak'ta zemin güçlendirme; dağlık ve engebeli topoğrafya, ova alüvyonları ve killi zeminler dikkate alınarak planlanır. YER6, fore kazık, DSM, ankraj ve jet grout çözümleri sunar.",
+    sections: [
+      { heading: "Şırnak zemin koşulları", body: [
+        "Dağlık topoğrafya ve dere yataklarındaki dolgular, heyelan ve şev duraysızlığı açısından belirleyicidir. Ova kesimlerinde alüvyon ve killi zeminler öne çıkar.",
+        "Bu koşullar, temel ve istinat çözümlerinde hassas deplasman kontrolü gerektirir."
+      ]},
+      { heading: "Şırnak'ta uygulama", body: [
+        "Yamaç duraylılığı için ankraj ve kazıklı iksa; alüvyon sahalarda DSM ve jet grout; yüksek yükler için fore kazık uygulanır.",
+        "YER6, Şırnak sahalarında ankraj test yükleri, kolon sürekliliği ve üretim kayıtlarıyla kaliteyi belgeler."
+      ]}
+    ],
+    faq: [
+      { question: "Yamaç sahasında ne yapılır?", answer: "Ankraj ve kazıklı iksa ile yamaç duraylılığı sağlanır; drenajla su etkisi azaltılır." },
+      { question: "Şırnak'ta hangi yöntem uygulanır?", answer: "Zemin tipine göre ankraj, fore kazık, DSM veya jet grout uygulanır; karar sondaj verisine bağlıdır." },
+      { question: "YER6 Şırnak'ta çalışıyor mu?", answer: "Evet; Ankara merkezli ekibimizle Şırnak ve Güneydoğu bölgesinde zemin güçlendirme uygulamaları yürütüyoruz." }
+    ]
+  },
+  {
+    slug: "hakkari-zemin-guclendirme",
+    intro:
+      "Hakkari'de zemin güçlendirme; yüksek dağlık topoğrafya, dik yamaçlar, heyelan riski ve dere/dolgu alanları dikkate alınarak planlanır. YER6, fore kazık, ankraj, iksa ve zemin iyileştirme çözümleri sunar.",
+    sections: [
+      { heading: "Hakkari zemin koşulları", body: [
+        "Yüksek dağlık topoğrafya ve dik yamaçlar, heyelan ve şev duraysızlığı açısından yüksek risk oluşturur. Dere yataklarındaki gevşek dolgular ek hassasiyet sunar.",
+        "Bu koşullar, drenaj ve deplasman kontrolünü temel/istinat tasarımının merkezine taşır."
+      ]},
+      { heading: "Hakkari'de uygulama", body: [
+        "Yamaç duraylılığı için öngermeli ankraj ve kazıklı iksa; gevşek dolgularda fore kazık; yerel güçlendirme için jet grout uygulanır.",
+        "YER6, Hakkari sahalarında ankraj test yükleri, drenaj ve deplasman izlemesiyle kaliteyi belgeler."
+      ]}
+    ],
+    faq: [
+      { question: "Dik yamaçta ne yapılır?", answer: "Ankraj ve kazıklı iksa ile duraylılık sağlanır; etkin drenajla su etkisi azaltılır. Uygulama stabilite analizine dayanır." },
+      { question: "Hakkari'de hangi yöntem uygulanır?", answer: "Zemin tipine göre ankraj, fore kazık veya jet grout uygulanır; karar sondaj verisine bağlıdır." },
+      { question: "YER6 Hakkari'de hizmet veriyor mu?", answer: "Evet; Ankara merkezli ekibimizle Hakkari ve Doğu Anadolu'da zemin güçlendirme uygulamaları yapıyoruz." }
+    ]
+  },
+  {
+    slug: "mus-zemin-guclendirme",
+    intro:
+      "Muş'ta zemin güçlendirme; Muş ovasının gevşek alüvyonu, yüksek yeraltı suyu ve fay etkisi dikkate alınarak planlanır. YER6, DSM, jet grout ve fore kazık çözümleri sunar.",
+    sections: [
+      { heading: "Muş zemin koşulları", body: [
+        "Muş ovasındaki gevşek alüvyon ve yüksek yeraltı suyu, oturma ve sıvılaşma açısından değerlendirilmelidir. Bölgenin fay etkinliği zemin davranışını önemli kılar.",
+        "Bu koşullar, temel sisteminin zemin etüdüyle kurulan bir modele göre seçilmesini gerektirir."
+      ]},
+      { heading: "Muş'ta uygulama", body: [
+        "Sıvılaşma azaltımı ve su kontrolü için jet grout/DSM; yüksek yükler için fore kazık uygulanır.",
+        "YER6, Muş sahalarında kolon sürekliliği, mukavemet testleri ve yeraltı suyu davranışını kalite kabul sürecinde izler."
+      ]}
+    ],
+    faq: [
+      { question: "Ova alüvyonunda sıvılaşma riski var mı?", answer: "Gevşek alüvyon ve yüksek yeraltı suyu bulunan alanlarda değerlendirilmeli; gerekirse jet grout/DSM ile azaltılmalıdır." },
+      { question: "Muş'ta hangi yöntem uygulanır?", answer: "Zemin tipine göre jet grout, DSM veya fore kazık uygulanır; karar sondaj verisine bağlıdır." },
+      { question: "YER6 Muş'ta çalışıyor mu?", answer: "Evet; Ankara merkezli ekibimizle Muş ve Doğu Anadolu'da zemin güçlendirme uygulamaları yürütüyoruz." }
+    ]
+  },
+  {
+    slug: "kastamonu-zemin-guclendirme",
+    intro:
+      "Kastamonu'da zemin güçlendirme; Batı Karadeniz'in engebeli topoğrafyası, dere/vadi alüvyonları, heyelan ve sel riski dikkate alınarak planlanır. YER6, fore kazık, ankraj, DSM ve jet grout çözümleri sunar.",
+    sections: [
+      { heading: "Kastamonu zemin koşulları", body: [
+        "Vadi alüvyonları ve yamaç alanları, heyelan, şev duraysızlığı ve sel etkisi açısından değerlendirilmelidir. Dere yataklarındaki gevşek dolgular ek hassasiyet sunar.",
+        "Bu koşullar temel ve istinat çözümlerinde hassas deplasman ve drenaj kontrolü gerektirir."
+      ]},
+      { heading: "Kastamonu'da uygulama", body: [
+        "Yamaç duraylılığı için ankraj ve kazıklı iksa; alüvyonda DSM ve jet grout; yüksek yükler için fore kazık uygulanır.",
+        "YER6, Kastamonu sahalarında ankraj test yükleri, drenaj ve kolon sürekliliği kontrolleriyle kaliteyi belgeler."
+      ]}
+    ],
+    faq: [
+      { question: "Vadi/yamaç sahasında ne yapılır?", answer: "Ankraj ve kazıklı iksa ile duraylılık, etkin drenajla su etkisi azaltılır. Uygulama zemin etüdüne dayanır." },
+      { question: "Kastamonu'da hangi yöntem uygulanır?", answer: "Zemin tipine göre ankraj, fore kazık, DSM veya jet grout uygulanır; karar sondaj verisine bağlıdır." },
+      { question: "YER6 Kastamonu'da hizmet veriyor mu?", answer: "Evet; Ankara merkezli ekibimizle Kastamonu ve Batı Karadeniz'de zemin güçlendirme uygulamaları yapıyoruz." }
+    ]
+  },
+  {
+    slug: "karaman-zemin-guclendirme",
+    intro:
+      "Karaman'da zemin güçlendirme; İç Anadolu'nun killi ova zeminleri, yer yer karst/obruk riski ve sanayi yükleri dikkate alınarak planlanır. YER6, DSM, jet grout ve fore kazık çözümleri sunar.",
+    sections: [
+      { heading: "Karaman zemin koşulları", body: [
+        "Ova kesimlerindeki killi ve siltli zeminler ile bölgesel karst/boşluk riski, oturma açısından değerlendirilmelidir. Sanayi yapılarının yükleri zemin iyileştirmesini gerektirebilir.",
+        "Güvenilir tasarım için parsel bazında sondaj ve gerektiğinde jeofizik esastır."
+      ]},
+      { heading: "Karaman'da uygulama", body: [
+        "Boşluk ve gevşek zeminde enjeksiyon ve jet grout; oturma kontrolü için DSM; yüksek yükler için fore kazık uygulanır.",
+        "YER6, Karaman sahalarında boşluk tespiti, kolon sürekliliği ve üretim kayıtlarıyla kaliteyi belgeler."
+      ]}
+    ],
+    faq: [
+      { question: "Karst/boşluk riski nasıl yönetilir?", answer: "Boşluklar enjeksiyonla doldurulur, gerektiğinde jet grout ile güçlendirilir veya yükler fore kazıkla aktarılır. Öncesinde boşluk tespiti yapılır." },
+      { question: "Karaman'da hangi yöntem uygulanır?", answer: "Zemin tipine göre jet grout, DSM veya fore kazık uygulanır; karar sondaj ve jeofizik verisine bağlıdır." },
+      { question: "YER6 Karaman'da çalışıyor mu?", answer: "Evet; Ankara merkezli ekibimizle Karaman ve İç Anadolu'da zemin güçlendirme uygulamaları yürütüyoruz." }
+    ]
+  },
+  {
+    slug: "nigde-zemin-guclendirme",
+    intro:
+      "Niğde'de zemin güçlendirme; İç Anadolu'nun volkanik kökenli zeminleri, ova alüvyonları ve tarım/sanayi yükleri dikkate alınarak planlanır. YER6, DSM, jet grout ve fore kazık çözümleri sunar.",
+    sections: [
+      { heading: "Niğde zemin koşulları", body: [
+        "Volkanik kökenli zeminler ve ova alüvyonu, taşıma gücü ve oturma açısından değişkenlik gösterir. Yapı yüklerine göre bu koşullar zemin iyileştirmesini gerektirebilir.",
+        "Güvenilir tasarım için parsel bazında zemin etüdü esastır."
+      ]},
+      { heading: "Niğde'de uygulama", body: [
+        "Oturma kontrolü için DSM; yerel güçlendirme için jet grout; yüksek yükler için fore kazık uygulanır.",
+        "YER6, Niğde sahalarında kolon sürekliliği, mukavemet testleri ve üretim kayıtlarıyla kaliteyi belgeler."
+      ]}
+    ],
+    faq: [
+      { question: "Volkanik/değişken zeminde hangi yöntem uygun?", answer: "Zemin davranışı sondajla belirlenir; oturmaya duyarlı alanlarda DSM/jet grout, yüksek yüklerde fore kazık tercih edilir." },
+      { question: "Ön değerlendirme için ne gerekli?", answer: "Mevcut sondaj verisi ve yapı yükleriyle yöntem önerisi ve yaklaşık metraj hazırlayabiliriz." },
+      { question: "YER6 Niğde'de hizmet veriyor mu?", answer: "Evet; Ankara merkezli ekibimizle Niğde ve İç Anadolu'da zemin güçlendirme uygulamaları yapıyoruz." }
+    ]
+  },
+  {
+    slug: "kirikkale-zemin-guclendirme",
+    intro:
+      "Kırıkkale'de zemin güçlendirme; İç Anadolu'nun killi ova zeminleri, Kızılırmak çevresi alüvyonu ve sanayi yükleri dikkate alınarak planlanır. YER6, DSM, jet grout ve fore kazık çözümleri sunar.",
+    sections: [
+      { heading: "Kırıkkale zemin koşulları", body: [
+        "Kızılırmak çevresindeki alüvyon ile ova kesimlerindeki killi zeminler, oturma ve taşıma gücü açısından değerlendirilmelidir. Sanayi yapılarının yükleri zemin iyileştirmesini gerektirebilir.",
+        "Güvenilir tasarım için parsel bazında zemin etüdü esastır."
+      ]},
+      { heading: "Kırıkkale'de uygulama", body: [
+        "Oturma kontrolü için DSM; yerel güçlendirme için jet grout; yüksek yükler için fore kazık uygulanır.",
+        "YER6, Kırıkkale sahalarında kolon sürekliliği, mukavemet testleri ve üretim kayıtlarıyla kaliteyi belgeler."
+      ]}
+    ],
+    faq: [
+      { question: "Killi/alüvyon zeminde hangi yöntem uygun?", answer: "DSM, jet grout veya fore kazık değerlendirilir; karar sondaj ve laboratuvar verisine bağlıdır." },
+      { question: "Kırıkkale'de zemin iyileştirme gerekir mi?", answer: "Killi/gevşek zemin bulunan geniş taban alanlı yapılarda çoğunlukla gereklidir; kesin karar zemin etüdüne bağlıdır." },
+      { question: "YER6 Kırıkkale'de çalışıyor mu?", answer: "Evet; Ankara merkezli ekibimizle Kırıkkale ve çevresinde zemin güçlendirme uygulamaları yürütüyoruz." }
+    ]
+  },
+  {
+    slug: "ardahan-zemin-guclendirme",
+    intro: "Ardahan'da zemin güçlendirme; yüksek plato, sert kış, don derinliği ve volkanik kökenli zeminler dikkate alınarak planlanır. YER6, DSM, fore kazık ve jet grout çözümleri sunar.",
+    sections: [
+      { heading: "Ardahan zemin koşulları", body: ["Yüksek rakım ve donma-çözülme etkileri temel derinliğini belirler; ova zeminleri taşıma gücü açısından değişkenlik gösterir.", "Kısa saha sezonu, imalatın mevsime göre planlanmasını gerektirir."] },
+      { heading: "Ardahan'da uygulama", body: ["Oturma kontrolü için DSM; yüksek yükler için fore kazık; yerel güçlendirme için jet grout uygulanır.", "YER6, kolon sürekliliği ve mevsimsel kalite planıyla üretim güvenilirliğini belgeler."] }
+    ],
+    faq: [
+      { question: "Don derinliği temeli nasıl etkiler?", answer: "Temel don derinliğinin altına indirilmeli veya korunmalıdır; zemin iyileştirme ile birlikte değerlendirilir." },
+      { question: "Ardahan'da hangi yöntem uygulanır?", answer: "Zemin tipine göre DSM, fore kazık veya jet grout; karar sondaj verisine bağlıdır." },
+      { question: "YER6 Ardahan'da çalışıyor mu?", answer: "Evet; Ankara merkezli ekibimizle Ardahan ve Doğu Anadolu'da zemin güçlendirme uygulamaları yapıyoruz." }
+    ]
+  },
+  {
+    slug: "artvin-zemin-guclendirme",
+    intro: "Artvin'de zemin güçlendirme; çok dik topoğrafya, yoğun yağış, heyelan riski ve Çoruh vadisi koşulları dikkate alınarak planlanır. YER6, fore kazık, ankraj, iksa ve zemin iyileştirme çözümleri sunar.",
+    sections: [
+      { heading: "Artvin zemini ve heyelan", body: ["Dik yamaçlar ve yüksek yağış, heyelan ve şev duraysızlığı açısından yüksek risk oluşturur; dere dolgularında gevşek zemin öne çıkar.", "Drenaj ve deplasman kontrolü tasarımın merkezindedir."] },
+      { heading: "Artvin'de uygulama", body: ["Yamaç duraylılığı için ankraj ve kazıklı iksa, etkin drenaj; gevşek dolguda fore kazık uygulanır.", "YER6, ankraj test yükleri ve deplasman izlemesiyle kaliteyi belgeler."] }
+    ],
+    faq: [
+      { question: "Dik/heyelanlı yamaçta ne yapılır?", answer: "Ankraj ve kazıklı iksa ile duraylılık, etkin drenajla su etkisi azaltılır; uygulama stabilite analizine dayanır." },
+      { question: "Artvin'de hangi yöntem uygulanır?", answer: "Zemin tipine göre ankraj, fore kazık veya jet grout; karar sondaj verisine bağlıdır." },
+      { question: "YER6 Artvin'de hizmet veriyor mu?", answer: "Evet; Ankara merkezli ekibimizle Artvin ve Doğu Karadeniz'de zemin güçlendirme uygulamaları yürütüyoruz." }
+    ]
+  },
+  {
+    slug: "bartin-zemin-guclendirme",
+    intro: "Bartın'da zemin güçlendirme; Batı Karadeniz'in nehir/kıyı alüvyonları, sel riski, yüksek yeraltı suyu ve yamaç koşulları dikkate alınarak planlanır. YER6, DSM, jet grout, fore kazık ve ankraj çözümleri sunar.",
+    sections: [
+      { heading: "Bartın zemin koşulları", body: ["Bartın Çayı çevresindeki alüvyon ve gevşek çökeller, yüksek yeraltı suyu ve sel etkisiyle oturma açısından hassastır.", "Yamaç alanlarında şev duraylılığı öne çıkar."] },
+      { heading: "Bartın'da uygulama", body: ["Alüvyonda DSM ve jet grout; yamaçta ankraj ve iksa; yüksek yükler için fore kazık uygulanır.", "YER6, kolon sürekliliği ve drenaj kontrolüyle kaliteyi belgeler."] }
+    ],
+    faq: [
+      { question: "Nehir/kıyı alüvyonunda hangi yöntem uygun?", answer: "Gevşek zemin ve yüksek yeraltı suyu nedeniyle jet grout, DSM veya derin temel değerlendirilir; karar zemin etüdüne bağlıdır." },
+      { question: "Bartın'da hangi yöntem uygulanır?", answer: "Zemin tipine göre DSM, jet grout, fore kazık veya ankraj; karar sondaj verisine bağlıdır." },
+      { question: "YER6 Bartın'da çalışıyor mu?", answer: "Evet; Ankara merkezli ekibimizle Bartın ve Batı Karadeniz'de zemin güçlendirme uygulamaları yapıyoruz." }
+    ]
+  },
+  {
+    slug: "bayburt-zemin-guclendirme",
+    intro: "Bayburt'ta zemin güçlendirme; yüksek rakım, sert kış, don derinliği ve Çoruh havzası koşulları dikkate alınarak planlanır. YER6, DSM, fore kazık ve jet grout çözümleri sunar.",
+    sections: [
+      { heading: "Bayburt zemin koşulları", body: ["Yüksek rakım ve donma-çözülme etkileri temel derinliğini belirler; ova ve vadi zeminleri taşıma gücü açısından değişkendir.", "Kısa saha sezonu imalat planını etkiler."] },
+      { heading: "Bayburt'ta uygulama", body: ["Oturma kontrolü için DSM; yüksek yükler için fore kazık; yerel güçlendirme için jet grout uygulanır.", "YER6, kolon sürekliliği ve mevsimsel kalite planıyla üretimi belgeler."] }
+    ],
+    faq: [
+      { question: "Soğuk iklim temeli etkiler mi?", answer: "Evet; don derinliği temel derinliğini ve imalat mevsimini etkiler. Saha kalite planı buna göre uyarlanır." },
+      { question: "Bayburt'ta hangi yöntem uygulanır?", answer: "Zemin tipine göre DSM, fore kazık veya jet grout; karar sondaj verisine bağlıdır." },
+      { question: "YER6 Bayburt'ta hizmet veriyor mu?", answer: "Evet; Ankara merkezli ekibimizle Bayburt ve çevresinde zemin güçlendirme uygulamaları yürütüyoruz." }
+    ]
+  },
+  {
+    slug: "bilecik-zemin-guclendirme",
+    intro: "Bilecik'te zemin güçlendirme; killi ova zeminleri, fay etkisi ve seramik/OSB sanayisinin yükleri dikkate alınarak planlanır. YER6, DSM, jet grout ve fore kazık çözümleri sunar.",
+    sections: [
+      { heading: "Bilecik zemin koşulları", body: ["Ova kesimlerindeki killi-siltli zeminler ve gevşek dolgu alanları, oturma açısından değerlendirilmelidir; fay etkinliği zemin davranışını önemli kılar.", "OSB'lerdeki ağır yüklü yapılar iyileştirme gerektirebilir."] },
+      { heading: "Bilecik'te uygulama", body: ["Oturma kontrolü için DSM; yerel güçlendirme için jet grout; yüksek yükler için fore kazık uygulanır.", "YER6, karot ve kolon sürekliliği kontrolleriyle kaliteyi belgeler."] }
+    ],
+    faq: [
+      { question: "OSB'de zemin iyileştirme gerekir mi?", answer: "Killi/gevşek zemin bulunan geniş taban alanlı yapılarda çoğunlukla gereklidir; karar zemin etüdüne bağlıdır." },
+      { question: "Bilecik'te hangi yöntem uygulanır?", answer: "Zemin tipine göre DSM, jet grout veya fore kazık; karar sondaj verisine bağlıdır." },
+      { question: "YER6 Bilecik'te çalışıyor mu?", answer: "Evet; Ankara merkezli ekibimizle Bilecik ve çevresinde zemin güçlendirme uygulamaları yapıyoruz." }
+    ]
+  },
+  {
+    slug: "cankiri-zemin-guclendirme",
+    intro: "Çankırı'da zemin güçlendirme; İç Anadolu'nun killi ve yer yer tuzlu/jipsli zeminleri, ova alüvyonu ve fay etkisi dikkate alınarak planlanır. YER6, DSM, jet grout ve fore kazık çözümleri sunar.",
+    sections: [
+      { heading: "Çankırı zemin koşulları", body: ["Killi ve yer yer jipsli/tuzlu zeminler, suyla temasta çözünme ve oturma açısından özel dikkat gerektirir; ova alüvyonunda gevşek çökeller öne çıkar.", "Temel sistemi zemin etüdüne göre seçilmelidir."] },
+      { heading: "Çankırı'da uygulama", body: ["Oturma kontrolü için DSM; su kontrolü ve yerel güçlendirme için jet grout; yüksek yükler için fore kazık uygulanır.", "YER6, kolon sürekliliği ve üretim kayıtlarıyla kaliteyi belgeler."] }
+    ],
+    faq: [
+      { question: "Jipsli/tuzlu zemin neden riskli?", answer: "Suyla çözünebildiği için boşluk ve oturma riski oluşabilir; su kontrolü ve uygun temel ile risk yönetilir." },
+      { question: "Çankırı'da hangi yöntem uygulanır?", answer: "Zemin tipine göre DSM, jet grout veya fore kazık; karar sondaj verisine bağlıdır." },
+      { question: "YER6 Çankırı'da hizmet veriyor mu?", answer: "Evet; Ankara merkezli ekibimizle Çankırı ve İç Anadolu'da zemin güçlendirme uygulamaları yürütüyoruz." }
+    ]
+  },
+  {
+    slug: "gumushane-zemin-guclendirme",
+    intro: "Gümüşhane'de zemin güçlendirme; dağlık topoğrafya, heyelan riski, dere/vadi dolguları ve madencilik etkisi dikkate alınarak planlanır. YER6, fore kazık, ankraj, iksa ve zemin iyileştirme çözümleri sunar.",
+    sections: [
+      { heading: "Gümüşhane zemin koşulları", body: ["Dik yamaçlar ve dere yataklarındaki gevşek dolgular heyelan ve şev duraysızlığı açısından belirleyicidir; eski maden alanları ek risk oluşturabilir.", "Deplasman ve drenaj kontrolü esastır."] },
+      { heading: "Gümüşhane'de uygulama", body: ["Yamaç duraylılığı için ankraj ve kazıklı iksa; gevşek dolguda fore kazık; yerel güçlendirme için jet grout uygulanır.", "YER6, ankraj test yükleri ve deplasman izlemesiyle kaliteyi belgeler."] }
+    ],
+    faq: [
+      { question: "Yamaç/maden dolgusu sahasında ne yapılır?", answer: "Ankraj ve kazıklı iksa ile duraylılık sağlanır; gevşek dolguda yük fore kazıkla aktarılır. Uygulama zemin etüdüne dayanır." },
+      { question: "Gümüşhane'de hangi yöntem uygulanır?", answer: "Zemin tipine göre ankraj, fore kazık veya jet grout; karar sondaj verisine bağlıdır." },
+      { question: "YER6 Gümüşhane'de çalışıyor mu?", answer: "Evet; Ankara merkezli ekibimizle Gümüşhane ve Doğu Karadeniz'de zemin güçlendirme uygulamaları yapıyoruz." }
+    ]
+  },
+  {
+    slug: "karabuk-zemin-guclendirme",
+    intro: "Karabük'te zemin güçlendirme; ağır sanayi (demir-çelik) yükleri, vadi alüvyonu, yamaç ve dere koşulları dikkate alınarak planlanır. YER6, DSM, jet grout, fore kazık ve ankraj çözümleri sunar.",
+    sections: [
+      { heading: "Karabük zemin koşulları", body: ["Vadi alüvyonu ve gevşek dolgu alanları ile yamaç koşulları, oturma ve şev duraysızlığı açısından değerlendirilmelidir; ağır sanayi yükleri belirleyicidir.", "Parsel bazında zemin etüdü esastır."] },
+      { heading: "Karabük'te uygulama", body: ["Ağır sanayi temellerinde oturma kontrolü için DSM/jet grout; yüksek nokta yükleri için fore kazık; yamaçta ankraj uygulanır.", "YER6, kolon sürekliliği ve üretim kayıtlarıyla kaliteyi belgeler."] }
+    ],
+    faq: [
+      { question: "Ağır sanayi zemini nasıl güçlendirilir?", answer: "DSM, jet grout ve fore kazık kombinasyonlarıyla oturma ve taşıma güvenliği sağlanır; yöntem yük ve zemine göre seçilir." },
+      { question: "Karabük'te hangi yöntem uygulanır?", answer: "Zemin tipine göre DSM, jet grout, fore kazık veya ankraj; karar sondaj verisine bağlıdır." },
+      { question: "YER6 Karabük'te hizmet veriyor mu?", answer: "Evet; Ankara merkezli ekibimizle Karabük ve Batı Karadeniz'de zemin güçlendirme uygulamaları yürütüyoruz." }
+    ]
+  },
+  {
+    slug: "kilis-zemin-guclendirme",
+    intro: "Kilis'te zemin güçlendirme; Güneydoğu'nun platform ve ova zeminleri, alüvyon alanları ve deprem bölgesine yakınlık dikkate alınarak planlanır. YER6, DSM, jet grout ve fore kazık çözümleri sunar.",
+    sections: [
+      { heading: "Kilis zemin koşulları", body: ["Platform zeminleri nispeten sağlam olsa da ova kesimlerinde alüvyon ve gevşek dolgu tabakaları bulunur; 2023 depremlerinden etkilenen bölgeye yakınlık dikkat gerektirir.", "Parsel bazında zemin etüdü esastır."] },
+      { heading: "Kilis'te uygulama", body: ["Alüvyonda DSM ve jet grout; yüksek yükler için fore kazık; sağlam platformda temel çözümleri optimize edilir.", "YER6, kolon sürekliliği ve üretim kayıtlarıyla kaliteyi belgeler."] }
+    ],
+    faq: [
+      { question: "Deprem bölgesine yakın alanda ne önerilir?", answer: "Zemin profiline göre DSM, jet grout veya fore kazıklı temel değerlendirilir; karar güncel zemin etüdüne dayanır." },
+      { question: "Kilis'te hangi yöntem uygulanır?", answer: "Zemin tipine göre DSM, jet grout veya fore kazık; karar sondaj verisine bağlıdır." },
+      { question: "YER6 Kilis'te çalışıyor mu?", answer: "Evet; Ankara merkezli ekibimizle Kilis ve Güneydoğu bölgesinde zemin güçlendirme uygulamaları yapıyoruz." }
+    ]
+  },
+  {
+    slug: "sinop-zemin-guclendirme",
+    intro: "Sinop'ta zemin güçlendirme; Karadeniz kıyı alüvyonları, yüksek yeraltı suyu, yamaç ve dere koşulları dikkate alınarak planlanır. YER6, DSM, jet grout, fore kazık ve ankraj çözümleri sunar.",
+    sections: [
+      { heading: "Sinop zemin koşulları", body: ["Kıyı ve dere alüvyonundaki gevşek çökeller ve yüksek yeraltı suyu, oturma açısından hassastır; yamaç alanlarında şev duraylılığı öne çıkar.", "Parsel bazında zemin etüdü esastır."] },
+      { heading: "Sinop'ta uygulama", body: ["Su kontrolü için jet grout; oturma kontrolü için DSM; yamaçta ankraj; yüksek yükler için fore kazık uygulanır.", "YER6, kolon sürekliliği ve drenaj kontrolüyle kaliteyi belgeler."] }
+    ],
+    faq: [
+      { question: "Kıyı alüvyonunda hangi yöntem uygun?", answer: "Yüksek yeraltı suyu ve gevşek zemin nedeniyle jet grout, DSM veya derin temel değerlendirilir; karar zemin etüdüne bağlıdır." },
+      { question: "Sinop'ta hangi yöntem uygulanır?", answer: "Zemin tipine göre DSM, jet grout, fore kazık veya ankraj; karar sondaj verisine bağlıdır." },
+      { question: "YER6 Sinop'ta hizmet veriyor mu?", answer: "Evet; Ankara merkezli ekibimizle Sinop ve Karadeniz bölgesinde zemin güçlendirme uygulamaları yürütüyoruz." }
+    ]
+  },
+  {
+    slug: "tunceli-zemin-guclendirme",
+    intro: "Tunceli'de zemin güçlendirme; dağlık topoğrafya, dere/vadi dolguları, heyelan riski ve baraj/HES projeleri dikkate alınarak planlanır. YER6, fore kazık, ankraj, iksa ve zemin iyileştirme çözümleri sunar.",
+    sections: [
+      { heading: "Tunceli zemin koşulları", body: ["Dik yamaçlar ve vadi dolguları heyelan ve şev duraysızlığı açısından belirleyicidir; su yapıları çevresinde zemin koşulları özel önem taşır.", "Deplasman ve drenaj kontrolü esastır."] },
+      { heading: "Tunceli'de uygulama", body: ["Yamaç duraylılığı için ankraj ve kazıklı iksa; gevşek dolguda fore kazık; yerel güçlendirme için jet grout uygulanır.", "YER6, ankraj test yükleri ve deplasman izlemesiyle kaliteyi belgeler."] }
+    ],
+    faq: [
+      { question: "Yamaç/vadi sahasında ne yapılır?", answer: "Ankraj ve kazıklı iksa ile duraylılık, etkin drenajla su etkisi azaltılır; uygulama zemin etüdüne dayanır." },
+      { question: "Tunceli'de hangi yöntem uygulanır?", answer: "Zemin tipine göre ankraj, fore kazık veya jet grout; karar sondaj verisine bağlıdır." },
+      { question: "YER6 Tunceli'de çalışıyor mu?", answer: "Evet; Ankara merkezli ekibimizle Tunceli ve Doğu Anadolu'da zemin güçlendirme uygulamaları yapıyoruz." }
+    ]
+  },
+  {
+    slug: "yozgat-zemin-guclendirme",
+    intro: "Yozgat'ta zemin güçlendirme; İç Anadolu'nun yüksek plastisiteli killi zeminleri, mevsimsel nem hareketi ve altyapı/sanayi yükleri dikkate alınarak planlanır. YER6, DSM, fore kazık ve jet grout çözümleri sunar.",
+    sections: [
+      { heading: "Yozgat zemin koşulları", body: ["Yüksek plastisiteli killer nem değişiminde şişme-büzülme yaparak temellerde düzensiz gerilme oluşturabilir; oturma davranışı kritik olabilir.", "Temel sistemi zemin etüdüne göre seçilmelidir."] },
+      { heading: "Yozgat'ta uygulama", body: ["Zemin rijitliğini artırmak ve şişme basınçlarını kontrol için DSM; derin yükler için fore kazık; yerel güçlendirme için jet grout uygulanır.", "YER6, kilin indeks özellikleri ve kolon testleriyle kaliteyi belgeler."] }
+    ],
+    faq: [
+      { question: "Şişen kil neden önlem gerektirir?", answer: "Nem değiştikçe şişip büzülür; bu hareket temellerde düzensiz gerilme oluşturur. Zemin iyileştirme ve uygun temel ile kontrol edilir." },
+      { question: "Yozgat'ta hangi yöntem uygulanır?", answer: "Zemin tipine göre DSM, fore kazık veya jet grout; karar sondaj ve laboratuvar verisine bağlıdır." },
+      { question: "YER6 Yozgat'ta hizmet veriyor mu?", answer: "Evet; Ankara merkezli ekibimizle Yozgat ve İç Anadolu'da zemin güçlendirme uygulamaları yürütüyoruz." }
+    ]
   }
   // ENRICH_ANCHOR
 ];
