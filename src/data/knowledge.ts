@@ -3147,6 +3147,66 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     relatedSlugs: ["kazi-destek-sistemleri-nedir", "fore-kazik-nedir", "zemin-iyilestirme-risk-yonetimi"],
     keywords: ["diyafram duvar nedir", "diafram duvar", "bentonit destekli perde", "derin kazı perde duvarı", "iksa diyafram duvar"],
     published: true
+  },
+  {
+    slug: "kentsel-donusumde-zemin-guclendirme",
+    title: "Kentsel Dönüşümde Zemin Güçlendirme: Yöntemler ve Süreç",
+    seoTitle: "Kentsel Dönüşümde Zemin Güçlendirme | YER6",
+    description: "Kentsel dönüşümde zemin güçlendirme; mevcut yapı altında jet grout, mini kazık ve enjeksiyonla ya da yeni yapı öncesi zemin iyileştirmeyle güvenli temel sağlar.",
+    excerpt: "Kentsel dönüşümde zemin güçlendirme; hem mevcut yapıların temel altı takviyesinde (jet grout, mini kazık, enjeksiyon) hem de yeni yapı öncesi zemin iyileştirmede kritik rol oynar. Dar ve komşu yapıya yakın sahalarda düşük titreşimli yöntemler öne çıkar.",
+    category: "Zemin İyileştirme",
+    readingTime: "7 dk",
+    publishedAt: "2026-07-11",
+    updatedAt: "2026-07-11",
+    heroLabel: "Kentsel Dönüşüm",
+    introduction: "Kentsel dönüşüm projelerinde zemin, yapı güvenliğinin temelidir. Bu yazıda mevcut yapı altında ve yeni yapı öncesinde uygulanan zemin güçlendirme yöntemlerini ve süreci açıklıyoruz.",
+    sections: [
+      { id: "yontemler", title: "Uygulanan Yöntemler", blocks: [
+        { type: "list", title: "Kentsel dönüşümde öne çıkanlar", items: ["Mevcut yapı altında jet grout ve mini kazık (underpinning)", "Zemin enjeksiyonu ve sıkılaştırma", "Yeni yapı öncesi jet grout / DSM zemin iyileştirme", "Derin kazıda ankrajlı iksa ve fore kazık perde"] },
+        { type: "note", title: "Dar saha", content: "Komşu yapıya yakın, dar kentsel parsellerde kompakt ekipman ve düşük titreşimli yöntemler tercih edilir; çevre yapı izlemesi yapılır." }
+      ]},
+      { id: "surec", title: "Süreç", blocks: [
+        { type: "paragraph", content: "Süreç; zemin etüdü ve yapısal değerlendirmeyle başlar, yönteme karar verilir, uygulama sırasında üretim ve deplasman verileri izlenir, sonuç teslim dosyasında belgelenir." }
+      ]}
+    ],
+    faq: [
+      { question: "Mevcut bina yıkılmadan güçlendirilebilir mi?", answer: "Çoğu durumda evet; temel altında jet grout ve mini kazık (underpinning) ile kontrollü güçlendirme yapılabilir. Kesin durum yapısal değerlendirmeye bağlıdır." },
+      { question: "Dar parselde uygulama mümkün mü?", answer: "Evet; kompakt ekipman ve düşük titreşimli yöntemlerle komşu yapıya duyarlı biçimde çalışılır." },
+      { question: "Önce ne yapılmalı?", answer: "Zemin etüdü ve yapısal değerlendirmeyle sorunun kaynağı teşhis edilmeli, ardından yönteme karar verilmelidir." }
+    ],
+    relatedSlugs: ["binalari-yikmadan-zemin-guclendirme", "temel-alti-zemin-guclendirme", "sivilasma-riskine-karsi-zemin-guclendirme"],
+    keywords: ["kentsel dönüşümde zemin güçlendirme", "kentsel dönüşüm zemin", "mevcut bina güçlendirme", "temel altı güçlendirme", "underpinning"],
+    published: true
+  },
+  {
+    slug: "zemin-guclendirme-maliyeti",
+    title: "Zemin Güçlendirme Maliyeti 2026: Fiyatı Belirleyen Faktörler",
+    seoTitle: "Zemin Güçlendirme Maliyeti 2026 | Fiyatı Neler Belirler? | YER6",
+    description: "Zemin güçlendirme maliyeti; seçilen yöntem (jet grout, DSM, fore kazık), metraj, zemin koşulları ve saha erişimine göre belirlenir. Fiyatı etkileyen kalemler.",
+    excerpt: "Zemin güçlendirme maliyeti; seçilen yönteme (jet grout, DSM, fore kazık), toplam metraja, zemin koşullarına ve saha erişimine göre değişir. Tek bir birim fiyat yerine projeye özel metrajla hesaplanır.",
+    category: "Zemin İyileştirme",
+    readingTime: "6 dk",
+    publishedAt: "2026-07-11",
+    updatedAt: "2026-07-11",
+    heroLabel: "Maliyet",
+    introduction: "Zemin güçlendirme maliyeti projeden projeye önemli ölçüde değişir. Bu yazıda fiyatı belirleyen temel kalemleri ve maliyeti optimize etmenin yollarını açıklıyoruz.",
+    sections: [
+      { id: "faktorler", title: "Maliyeti Belirleyen Faktörler", blocks: [
+        { type: "list", title: "Fiyatı etkileyen kalemler", items: ["Seçilen yöntem (jet grout / DSM / fore kazık / taş kolon)", "Toplam metraj (kolon boyu, adet, alan)", "Zemin türü ve yeraltı suyu", "Saha erişimi ve mobilizasyon", "Kalite kontrol ve testler (karot, yükleme, PIT)"] }
+      ]},
+      { id: "optimizasyon", title: "Maliyeti Optimize Etmek", blocks: [
+        { type: "paragraph", content: "En ekonomik çözüm, zemin verisine göre doğru yöntemin seçilmesiyle bulunur. Gereğinden büyük tasarım veya yanlış yöntem maliyeti artırır." },
+        { type: "note", title: "Sağlıklı teklif", content: "Gerçekçi maliyet için zemin etüdü verisi ve proje bilgisi gerekir. YER6 ihale öncesi yaklaşık metraj ve maliyet öngörüsü hazırlar." }
+      ]}
+    ],
+    faq: [
+      { question: "Zemin güçlendirme metrekare/metretül fiyatı nedir?", answer: "Sabit bir fiyat yoktur; yöntem, metraj, zemin ve saha koşullarına göre değişir. Gerçekçi rakam zemin verisi ve projeye özel metrajla verilir." },
+      { question: "Hangi yöntem daha ekonomik?", answer: "Duruma bağlıdır; geniş alan/yumuşak zeminde DSM, su kontrolü/dar sahada jet grout, yüksek yükte fore kazık öne çıkar. Teknik karşılaştırmayla belirlenir." },
+      { question: "Teklif için ne gerekli?", answer: "Mevcut zemin etüdü ve proje bilgileriyle yaklaşık metraj ve maliyet öngörüsü hazırlayabiliriz." }
+    ],
+    relatedSlugs: ["jet-grout-maliyeti", "fore-kazik-maliyeti", "zemin-iyilestirme-yontemleri"],
+    keywords: ["zemin güçlendirme maliyeti", "zemin güçlendirme fiyatları", "zemin iyileştirme maliyeti", "zemin güçlendirme fiyatı 2026", "temel güçlendirme maliyeti"],
+    published: true
   }
 ];
 
