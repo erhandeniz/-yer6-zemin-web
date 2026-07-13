@@ -27,7 +27,9 @@ export const localSeoServices = [
 ] as const;
 
 // Sosyal medya profilleri açıldığında doğrulanmış URL'ler buraya eklenebilir.
-export const socialProfiles: string[] = [];
+export const socialProfiles: string[] = [
+  "https://armut.com/hizmetveren/yer6-zemin-guclendirme-geoteknik-muhendislik-ankara-golbasi-zemin-iyilestirme_85780374"
+];
 
 export const serviceSchemaDescriptions: Record<string, string> = {
   "jet-grout":
