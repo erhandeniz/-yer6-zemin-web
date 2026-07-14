@@ -19,8 +19,8 @@ export function CinematicHero() {
           src={heroPoster}
           alt="YER6 zemin güçlendirme ve temel mühendisliği saha uygulaması"
           className="h-full w-full object-cover opacity-42 md:hidden"
-          loading="lazy"
-          decoding="async"
+          loading="eager"
+          decoding="sync"
         />
         <video
           className="hidden h-full w-full object-cover opacity-42 md:block"

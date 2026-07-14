@@ -27,6 +27,7 @@ export function MachineCard({ machine }: { machine: Machine }) {
   return (
     <motion.article
       onMouseMove={(event) => {
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
         const rect = event.currentTarget.getBoundingClientRect();
         const x = event.clientX - rect.left;
         const y = event.clientY - rect.top;

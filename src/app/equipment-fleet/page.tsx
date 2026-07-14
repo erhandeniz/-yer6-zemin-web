@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { EquipmentContent } from "./EquipmentContent";
 import { equipmentSeoItems } from "@/lib/seo";
 import { siteConfig } from "@/lib/siteConfig";
+import Script from "next/script";
 
 const pageUrl = `${siteConfig.siteUrl}/equipment-fleet/`;
 const equipmentFleetDescription =
@@ -37,9 +38,33 @@ export default function EquipmentFleetPage() {
     }))
   };
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Ana Sayfa",
+        item: siteConfig.siteUrl
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Makine Parkı",
+        item: pageUrl
+      }
+    ]
+  };
+
   return (
     <>
-      <script
+      <Script
+        id="equipment-fleet-breadcrumb-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <Script
         id="equipment-fleet-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(equipmentSchema) }}

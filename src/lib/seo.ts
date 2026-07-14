@@ -221,7 +221,6 @@ export function localBusinessSchema() {
       "YER6 Zemin Güçlendirme Geoteknik Mühendislik; jet grout, zemin iyileştirme, zemin güçlendirme, fore kazık, ankraj, iksa sistemleri ve temel mühendisliği alanlarında Ankara merkezli, Türkiye geneli ve yurt dışında geoteknik saha uygulaması sunar.",
     telephone: siteConfig.phone.display,
     email: siteConfig.email,
-    priceRange: "$$",
     currenciesAccepted: "TRY",
     address: {
       "@type": "PostalAddress",
@@ -269,5 +268,34 @@ export function localBusinessSchema() {
     },
     slogan: "Geleceğin Yapıları Güçlü Zeminlerle Başlar",
     ...(socialProfiles.length > 0 ? { sameAs: socialProfiles } : {})
+  };
+}
+
+export function generateBreadcrumbSchema(items: { name: string; item: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      item: item.item
+    }))
+  };
+}
+
+export function generateFAQSchema(faqs: { question: string; answer: string }[]) {
+  if (!faqs || faqs.length === 0) return null;
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer
+      }
+    }))
   };
 }

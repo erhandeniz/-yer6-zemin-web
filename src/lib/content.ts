@@ -49,8 +49,8 @@ export const services = [
     key: "svc_jet_grout",
     icon: Drill,
     title: "Jet Grout",
-    summary: "En iyi jet grout firmaları arasında yer alan YER6, yüksek basınçlı enjeksiyonla zemin-çimento kolonları oluşturur.",
-    detail: "Türkiye genelinde jet grout firmaları arayan projeler için dar sahalarda ve mevcut yapılara yakın bölgelerde yüksek basınçlı enjeksiyon çözümleri.",
+    summary: "YER6, zayıf zeminlerde taşıma kapasitesini artırmak için yüksek basınçlı enjeksiyonla zemin-çimento kolonları oluşturur.",
+    detail: "Zorlu saha koşullarında ve mevcut yapılara yakın bölgelerde, taşıma kapasitesini artırmak ve su geçirimsizliği sağlamak için yüksek basınçlı enjeksiyon çözümleri.",
     specs: ["Mono, double ve triple sistem", "Gerçek zamanlı basınç takibi", "Kolon çapı optimizasyonu"],
     applications: [
       "Su geçirimsizlik perdeleri ve zemin sızdırmazlığı",
@@ -82,7 +82,7 @@ export const services = [
       { question: "Mevcut yapının altında jet grout uygulanabilir mi?", answer: "Evet. Kompakt ekipmanlar kullanılarak mevcut yapı bodrum katı veya temel altında jet grout uygulaması gerçekleştirilebilir. Uygulama öncesinde yapı yerleşimi ve zemin koşulları ayrıntılı incelenmelidir." },
       { question: "Jet grout uygulaması ne kadar sürer?", answer: "Uygulama süresi kolon sayısı, derinlik ve zemin koşullarına göre değişir. Günlük 50–150 adet kolon üretimi mümkündür; proje programı saha veri analizine göre optimize edilir." },
       { question: "Türkiye'de jet grout firmaları seçilirken hangi kriterler önemlidir?", answer: "Jet grout firmaları seçilirken firmanın kendi makine parkı, geoteknik uzmanlığı, deneme kolonu uygulamaları ve kalite kontrol (karot, basınç testi) disiplini en önemli kriterlerdir. YER6, modern ekipman parkıyla Türkiye genelinde profesyonel jet grout firmaları arasında öne çıkmaktadır." },
-      { question: "YER6 hangi bölgelerde jet grout hizmeti veriyor?", answer: "YER6 Ankara merkezlidir; Türkiye'nin tüm illerinde ve yurt dışında jet grout, zemin iyileştirme ve temel güçlendirme saha uygulaması gerçekleştirir. Türkiye geneli mobilizasyon kapasitesiyle şantiye bazlı çalışır." }
+      { question: "Jet grout hizmet alanınız nereleri kapsıyor?", answer: "Merkezi Ankara'da bulunan YER6, yüksek mobilizasyon kapasitesi sayesinde Türkiye'nin 81 ilinde ve uluslararası projelerde jet grout uygulamaları gerçekleştirmektedir." }
     ]
   },
   {
@@ -123,7 +123,7 @@ export const services = [
       { question: "DSM kolonlarının dayanımı nasıl kontrol edilir?", answer: "Karot alımı ve unconfined basınç testleri (qu) ile kolon dayanımı doğrulanır. Saha penetrometre testleri de tamamlayıcı kalite ölçümü olarak kullanılabilir." },
       { question: "DSM oturma problemlerini çözer mi?", answer: "Evet. DSM kolonları, zemin taşıma kapasitesini artırarak fark oturmayı ve toplam oturmayı önemli ölçüde azaltır. Performans hedefleri projelendirme aşamasında belirlenir." },
       { question: "DSM (Deep Soil Mixing) yapan firma seçerken nelere dikkat edilmeli?", answer: "Laboratuvar karışım tasarımı (çimento dozajı, hedef mukavemet), DSM ekipman kapasitesi ve derinlik aralığı, karot ve basınç testleriyle kalite doğrulaması, dijital üretim kaydı ve referans projeleri belirleyicidir. YER6, Ankara merkezli olarak Türkiye geneli ve yurt dışında DSM zemin iyileştirme uygular." },
-      { question: "YER6 hangi bölgelerde DSM hizmeti veriyor?", answer: "YER6 Ankara merkezlidir; Türkiye'nin tüm illerinde ve yurt dışında DSM (derin zemin karıştırma), zemin iyileştirme ve temel güçlendirme saha uygulaması yapar." }
+      { question: "DSM uygulamalarınız hangi bölgeleri kapsıyor?", answer: "Firmamız, gelişmiş makine parkı ile Türkiye'nin her noktasına ve yurt dışı şantiyelerine derin zemin karıştırma (DSM) çözümleri ulaştırmaktadır." }
     ]
   },
   {
@@ -131,8 +131,8 @@ export const services = [
     key: "svc_fore_kazik",
     icon: Building2,
     title: "Fore Kazık",
-    summary: "Güvenilir fore kazık firmaları arasında yer alan YER6, büyük çaplı temeller ve derin kazılar için rotary delgi uygulamaları gerçekleştirir.",
-    detail: "Türkiye genelinde fore kazık firmaları arayan projeler için bentonit, muhafaza borusu ve tremie beton süreçleriyle hassas geoteknik üretim.",
+    summary: "YER6, büyük çaplı derin temeller ve ağır yapı yükleri için yüksek taşıma kapasiteli rotary delgi uygulamaları gerçekleştirir.",
+    detail: "Bentonit, muhafaza borusu ve tremie beton süreçleriyle donatılmış, yüksek taşıma kapasiteli ve derin kazı destekli geoteknik üretim.",
     specs: ["Derin delgi kapasitesi", "Dikeylik kontrolü", "Beton sarf izleme"],
     applications: [
       "Yüksek ve karma kullanımlı yapıların derin temel sistemleri",
@@ -164,7 +164,7 @@ export const services = [
       { question: "Fore kazık bütünlüğü nasıl test edilir?", answer: "Crosshole sonic logging (CSL), low-strain integrity testing veya statik/dinamik yükleme testleri ile kazık bütünlüğü ve taşıma kapasitesi doğrulanır." },
       { question: "Yeraltı suyu olan sahada fore kazık yapılabilir mi?", answer: "Evet. Yüksek yeraltı suyu seviyesinde bentonit veya polimer sirkülasyonu, ya da muhafaza borusu (casing) yöntemiyle fore kazık güvenle uygulanabilir." },
       { question: "Fore kazık firmaları seçilirken nelere dikkat edilmeli?", answer: "Fore kazık firmaları seçilirken delgi makinesi kapasitesi, zorlu zemin tecrübesi, bütünlük (CSL/PIT) ve yükleme testleriyle kalite doğrulama disiplini belirleyicidir. YER6, Bauer ve XCMG makine parkıyla Türkiye genelinde profesyonel fore kazık firmaları arasındadır." },
-      { question: "YER6 hangi bölgelerde fore kazık hizmeti veriyor?", answer: "YER6 Ankara merkezlidir; Türkiye'nin tüm illerinde ve yurt dışında fore kazık, derin temel ve zemin güçlendirme saha uygulaması gerçekleştirir." }
+      { question: "Fore kazık projeleriniz nerede yer alıyor?", answer: "Ankara merkezli olarak faaliyet gösteriyor; Türkiye'nin her bölgesinde ve uluslararası platformlarda fore kazık temelli geoteknik uygulamalara imza atıyoruz." }
     ]
   },
   {
@@ -205,7 +205,7 @@ export const services = [
       { question: "Mini kazık mevcut bir yapının altında uygulanabilir mi?", answer: "Evet, bu mini kazığın en sık kullanıldığı durumdur. Yapı içinde ya da çevresinde kompakt ekipmanlarla, mevcut temele zarar vermeden uygulama yapılabilir." },
       { question: "Mini kazık ne kadar yük taşıyabilir?", answer: "Çap, uzunluk, zemin tipi ve enjeksiyon yöntemine bağlı olarak genellikle 30–500 kN arasında eksenel kapasite elde edilebilir. Tasarım hesapları projeye özgü yapılır." },
       { question: "Mini kazık yapan firma seçerken nelere dikkat edilmeli?", answer: "Dar alan/underpinning tecrübesi, enjeksiyonlu imalat kalitesi, ekipman uygunluğu, yükleme testi ve referans projeleri belirleyicidir. YER6, Ankara merkezli olarak Türkiye geneli ve yurt dışında mini kazık ve underpinning uygular." },
-      { question: "YER6 hangi bölgelerde mini kazık hizmeti veriyor?", answer: "YER6 Ankara merkezlidir; Türkiye'nin tüm illerinde ve yurt dışında mini kazık, underpinning ve temel güçlendirme saha uygulaması yapar." }
+      { question: "Mini kazık hizmetinizi hangi şehirlere sunuyorsunuz?", answer: "Türkiye genelinde ve yurt dışındaki projelerde, özellikle dar alan ve underpinning gereksinimlerine yönelik mini kazık hizmetleri sağlamaktayız." }
     ]
   },
   {
@@ -246,7 +246,7 @@ export const services = [
       { question: "Ankraj hangi zeminlerde uygulanabilir?", answer: "Kaya, sıkı kum ve çakıl gibi zemin türlerinde yüksek kapasiteli ankraj elde edilir. Gevşek zemin ve yumuşak kilde ankraj uzunluğu ve sayısı artırılarak hedef kapasite sağlanabilir." },
       { question: "Ankrajlı iksa sistemi ne zaman seçilir?", answer: "Komşu yapılara yakın ve dar alanda kazı yapılması, yüksek yeraltı suyu, derin kazı (>6 m) ve çevre yapılara deformasyon limiti kısıtlaması olduğunda ankrajlı iksa sistemi tercih edilir." },
       { question: "Ankraj yapan firma seçerken nelere dikkat edilmeli?", answer: "Delgi ve enjeksiyon kalitesi, öngerme (germe) ekipmanı, kabul/çekme testi disiplini, korozyon koruması ve referans projeleri belirleyicidir. YER6, Ankara merkezli olarak Türkiye geneli ve yurt dışında ankraj uygular." },
-      { question: "YER6 hangi bölgelerde ankraj hizmeti veriyor?", answer: "YER6 Ankara merkezlidir; Türkiye'nin tüm illerinde ve yurt dışında ankraj, iksa ve şev stabilizasyonu saha uygulaması gerçekleştirir." }
+      { question: "Ankraj ve iksa çalışmalarınız hangi illerde mevcut?", answer: "Türkiye'nin 81 ilinde şev stabilizasyonu ve ankrajlı iksa sistemleri uyguluyor; yurt dışında da güvenilir çözüm ortağı olarak görev alıyoruz." }
     ]
   },
   {
@@ -287,7 +287,7 @@ export const services = [
       { question: "Komşu binalara zarar verir mi?", answer: "Doğru tasarım, ankraj ön yüklemesi ve deplasman izleme planı ile komşu yapılara deformasyon iletimi kontrol altında tutulabilir. İzleme sistemi şüpheli okumada alarm verir." },
       { question: "İksa sisteminde izleme neden önemlidir?", answer: "İnklinometre ve referans noktası ölçümleri, perde deplasman davranışını gerçek zamanlı takip eder. Tasarım dışı deplasman erken tespit edilerek önlem alınabilir." },
       { question: "İksa yapan firma seçerken nelere dikkat edilmeli?", answer: "Derin kazı ve komşu yapı tecrübesi, fore kazık/diyafram/ankraj kapasitesi, enstrümantasyon (izleme) yaklaşımı, statik tasarım desteği ve referans projeleri belirleyicidir. YER6, Ankara merkezli olarak Türkiye geneli ve yurt dışında iksa sistemleri uygular." },
-      { question: "YER6 hangi bölgelerde iksa hizmeti veriyor?", answer: "YER6 Ankara merkezlidir; Türkiye'nin tüm illerinde ve yurt dışında iksa sistemleri, derin kazı desteği ve zemin güçlendirme saha uygulaması yapar." }
+      { question: "İksa sistemleri uyguladığınız alanlar nerelerdir?", answer: "Başkent Ankara'dan yönettiğimiz operasyonlarla, Türkiye genelindeki kent içi derin kazı ve yurt dışı altyapı projelerinde iksa desteği sunmaktayız." }
     ]
   },
   {
@@ -295,8 +295,8 @@ export const services = [
     key: "svc_zemin_iy",
     icon: Sparkles,
     title: "Zemin İyileştirme",
-    summary: "Zemin iyileştirme teknikleri ve yöntemleri konusunda uzman kadromuzla oturma, sıvılaşma ve taşıma sorunlarına özel geoteknik çözümler sunuyoruz.",
-    detail: "Zemin iyileştirme firmaları arasında öne çıkan YER6, zemin modelinden saha kalitesine kadar tüm zemin iyileştirme tekniklerini tek merkezden yönetir.",
+    summary: "Oturma, sıvılaşma ve taşıma sorunlarına karşı mühendislik standartlarına uygun geoteknik çözümler sunuyoruz.",
+    detail: "YER6, zemin modelleme aşamasından saha üretimine kadar geoteknik süreçleri mühendislik standartlarıyla yönetir.",
     specs: ["Kolon, enjeksiyon ve drenaj", "Performans tasarımı", "Saha veri analizi"],
     applications: [
       "Düşük taşıma kapasiteli zeminlerde temel güçlendirme",
@@ -328,7 +328,7 @@ export const services = [
       { question: "Zemin iyileştirme mevcut yapıların altında uygulanabilir mi?", answer: "Evet. Mini kazık ve mikro jet grout gibi yöntemler, mevcut yapıya zarar vermeden bodrum veya temel altında zemin iyileştirmeye olanak sağlar." },
       { question: "Deprem bölgesinde zemin iyileştirme zorunlu mudur?", answer: "TBDY 2018 kapsamında sıvılaşma potansiyeli tespit edilen zeminlerde ya iyileştirme uygulanmalı ya da yapı tasarımı bu risk gözetilerek yapılmalıdır. Zemin güçlendirme çoğu zaman en ekonomik çözümdür." },
       { question: "Zemin iyileştirme firmaları seçilirken hangi özellikler aranmalıdır?", answer: "Zemin iyileştirme firmaları seçilirken uygulanan zemin iyileştirme teknikleri çeşitliliği (jet grout, DSM, enjeksiyon), makine parkı, geoteknik mühendislik ve laboratuvar/saha kalite kontrol disiplini en kritik faktörlerdir. YER6, tüm zemin iyileştirme tekniklerini Ankara merkezli olarak Türkiye genelinde ve yurt dışında uygulamaktadır." },
-      { question: "YER6 hangi bölgelerde zemin iyileştirme hizmeti veriyor?", answer: "YER6 Ankara merkezlidir; Türkiye'nin tüm illerinde ve yurt dışında zemin iyileştirme, zemin güçlendirme ve temel mühendisliği saha uygulaması gerçekleştirir." }
+      { question: "Zemin iyileştirme projeleriniz hangi coğrafyaları kapsıyor?", answer: "Türkiye'nin tüm noktalarında ve yurt dışı sahalarında, zemin profilinden uygulamaya kadar geniş çaplı zemin güçlendirme hizmetleri veriyoruz." }
     ]
   },
   {
@@ -369,7 +369,7 @@ export const services = [
       { question: "Zemin raporu yeterince iyi mi sorusuna nasıl cevap verilir?", answer: "Zemin raporunun yeterliliği; sondaj sayısı ve derinliği, deney türleri, zemin sınıflandırması ve tasarım parametrelerinin proje gereksinimlerini karşılayıp karşılamadığıyla değerlendirilir." },
       { question: "İhale öncesi geoteknik destek sağlayabilir misiniz?", answer: "Evet. YER6 ihale öncesi; zemin koşullarına göre yaklaşık metraj, yöntem önerisi ve risk değerlendirmesi sunarak teklif sürecini destekler." },
       { question: "Geoteknik danışmanlık firması seçerken nelere dikkat edilmeli?", answer: "Bağımsızlık, zemin etüdü yorumlama ve tasarım denetimi yetkinliği, EC7/TBDY 2018 bilgisi, saha tecrübesi ve referansları belirleyicidir. YER6, Ankara merkezli olarak Türkiye geneli ve yurt dışında geoteknik danışmanlık verir." },
-      { question: "YER6 hangi bölgelerde geoteknik danışmanlık veriyor?", answer: "YER6 Ankara merkezlidir; Türkiye'nin tüm illerinde ve yurt dışında geoteknik danışmanlık, zemin etüdü değerlendirmesi ve tasarım denetimi sunar." }
+      { question: "Geoteknik danışmanlık hizmetinizin kapsamı nedir?", answer: "Ankara merkezli ekibimiz, projelerin bulunduğu lokasyondan bağımsız olarak Türkiye geneline ve uluslararası firmalara tasarım denetimi ve geoteknik danışmanlık sunmaktadır." }
     ]
   },
   {
@@ -642,7 +642,9 @@ export const projects = [
       { label: "Hedef Mukavemet", value: "qu ≥ 800 kPa" }
     ],
     usedEquipment: ["DSM Çift Aks Ekipmanı", "Çimento Şerbeti Mikser Ünitesi", "Dijital Üretim Kayıt Sistemi", "Karot Numune Ekipmanı"],
-    result: "Tüm DSM kolon ağı tamamlandıktan sonra yapılan yük testleri tasarım oturma limitlerinin çok altında kaldı. Proje programı dahilinde tamamlandı; tesis, yükleme ve işletim aşamasına sorunsuz geçti."
+    result: "Tüm DSM kolon ağı tamamlandıktan sonra yapılan yük testleri tasarım oturma limitlerinin çok altında kaldı. Proje programı dahilinde tamamlandı; tesis, yükleme ve işletim aşamasına sorunsuz geçti.",
+    seoTitle: "Marmara Lojistik Merkezi DSM Zemin İyileştirme | YER6",
+    metaDescription: "Yumuşak kil tabakalarında 42.000 m DSM kolon ile yapılan endüstriyel platform zemin iyileştirme projesi detayları."
   },
   {
     slug: "ege-liman-jet-grout-perdesi",
@@ -669,7 +671,9 @@ export const projects = [
       { label: "Hedef Geçirimsizlik", value: "k ≤ 10⁻⁷ m/s" }
     ],
     usedEquipment: ["Triple Jet Grout Delgi Makinesi", "Yüksek Basınç Pompası", "Çimento Mikser Ünitesi", "Sondaj Takip Sistemi"],
-    result: "Jet grout perdesi tamamlandıktan sonra yapılan sızdırmazlık testleri başarıyla sonuçlandı. Liman genişlemesi güvenli biçimde inşaata başladı; perde boyunca yeraltı suyu kontrolü sağlandı."
+    result: "Jet grout perdesi tamamlandıktan sonra yapılan sızdırmazlık testleri başarıyla sonuçlandı. Liman genişlemesi güvenli biçimde inşaata başladı; perde boyunca yeraltı suyu kontrolü sağlandı.",
+    seoTitle: "Ege Liman Genişleme Jet Grout Perdesi Projesi | YER6",
+    metaDescription: "İzmir Ege Limanı genişleme projesi kapsamında deniz etkisinden korunmak üzere uygulanan 740 m uzunluğunda triple jet grout sızdırmazlık perdesi."
   },
   {
     slug: "ankara-rayli-sistem-iksa",
@@ -696,7 +700,9 @@ export const projects = [
       { label: "Ankraj Kat Sayısı", value: "5 kat" }
     ],
     usedEquipment: ["Rotary Delgi Makinesi (Fore Kazık)", "Ankraj Delgi ve Germe Ekipmanı", "İnklinometre Sistemi", "Dijital İzleme Platformu"],
-    result: "Tüm kazı sürecinde inklinometre okumaları izin verilen limitin altında kaldı. Raylı sistem istasyonu için gereken bodrum kazısı, komşu yapılara herhangi bir hasar vermeksizin güvenle tamamlandı."
+    result: "Tüm kazı sürecinde inklinometre okumaları izin verilen limitin altında kaldı. Raylı sistem istasyonu için gereken bodrum kazısı, komşu yapılara herhangi bir hasar vermeksizin güvenle tamamlandı.",
+    seoTitle: "Ankara Raylı Sistem Derin Kazı İksa Projesi | YER6",
+    metaDescription: "Ankara kent içi raylı sistem projesinde 26 metre derinlikte uygulanan ankrajlı sekant fore kazık perde ve iksa sistemi detayları."
   },
   {
     slug: "istanbul-rezidans-fore-kazik",
@@ -723,7 +729,9 @@ export const projects = [
       { label: "Kalite Testi", value: "CSL (Crosshole Sonic Logging)" }
     ],
     usedEquipment: ["Büyük Çaplı Rotary Delgi Makinesi (KR300)", "Tremie Boru Sistemi", "Donatı Kafesi Vinaç ve Yerleştirme Ekipmanı", "CSL Test Ekipmanı"],
-    result: "Tüm fore kazıklar CSL testini başarıyla geçti. Baret temel sistemi yapı yükleme programına tam uyumla tamamlandı. Kule inşaatının temel aşaması planlanan sürede bitirildi."
+    result: "Tüm fore kazıklar CSL testini başarıyla geçti. Baret temel sistemi yapı yükleme programına tam uyumla tamamlandı. Kule inşaatının temel aşaması planlanan sürede bitirildi.",
+    seoTitle: "İstanbul Karma Kullanım Kulesi Fore Kazık Temeli | YER6",
+    metaDescription: "İstanbul'da 58 katlı kule projesi için uygulanan büyük çaplı fore kazık ve baret derin temel sistemine ait teknik uygulamalar."
   },
   {
     slug: "bursa-yunuseli-nida-evleri-jet-grout-zemin-iyilestirme",

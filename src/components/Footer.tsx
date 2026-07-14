@@ -19,17 +19,17 @@ export function Footer() {
             {t("footerTagline")}
           </p>
           <div className="mt-6 flex flex-wrap gap-3 text-sm text-white/72">
-            <a href={siteConfig.phone.href} className="inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2">
+            <a href={siteConfig.phone.href} aria-label={`Call us at ${siteConfig.phone.display}`} className="inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2">
               <Phone className="h-4 w-4 text-gold-200" /> {siteConfig.phone.display}
             </a>
-            <a href={siteConfig.emailHref} className="inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2">
+            <a href={siteConfig.emailHref} aria-label={`Email us at ${siteConfig.email}`} className="inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2">
               <Mail className="h-4 w-4 text-gold-200" /> {siteConfig.email}
             </a>
           </div>
         </div>
 
         <div>
-          <h3 className="text-sm font-semibold uppercase tracking-[0.22em] text-gold-200">{t("footerPages")}</h3>
+          <h2 className="text-sm font-semibold uppercase tracking-[0.22em] text-gold-200">{t("footerPages")}</h2>
           <div className="mt-5 grid gap-3 text-sm text-white/64">
             {navItems.map((item) => (
               <Link key={item.href} href={item.href} className="hover:text-gold-100">
@@ -40,7 +40,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h3 className="text-sm font-semibold uppercase tracking-[0.22em] text-gold-200">{t("footerServices")}</h3>
+          <h2 className="text-sm font-semibold uppercase tracking-[0.22em] text-gold-200">{t("footerServices")}</h2>
           <div className="mt-5 grid gap-3 text-sm text-white/64">
             {services.slice(0, 6).map((service) => (
               <Link key={service.slug} href={`/services/${service.slug}`} className="hover:text-gold-100">
@@ -51,7 +51,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h3 className="text-sm font-semibold uppercase tracking-[0.22em] text-gold-200">{t("footerHQ")}</h3>
+          <h2 className="text-sm font-semibold uppercase tracking-[0.22em] text-gold-200">{t("footerHQ")}</h2>
           <p className="mt-5 flex items-start gap-3 text-sm leading-7 text-white/64">
             <MapPin className="mt-1 h-4 w-4 shrink-0 text-gold-200" />
             <span>{fullAddress}</span>

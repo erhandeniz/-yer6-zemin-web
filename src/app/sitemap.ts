@@ -28,7 +28,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: withTrailingSlash(`/services/${service.slug}`),
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
-      priority: 0.7
+      priority: 0.85
     })),
     ...projects.map((project) => ({
       url: withTrailingSlash(`/projects/${project.slug}`),
@@ -47,7 +47,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: withTrailingSlash(`/knowledge/${article.slug}`),
       lastModified: new Date(),
       changeFrequency: "weekly" as const,
-      priority: 0.75
+      priority: 0.8
     }))
   ];
 }

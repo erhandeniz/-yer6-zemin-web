@@ -366,10 +366,10 @@ export const dictionary = {
 
     /* ── BLOG PAGE ── */
     blogEyebrow: "Bilgi Bankası",
-    blogTitle: "Zemin mühendisliği için SEO odaklı bilgi merkezi.",
-    blogCopy: "Yatırımcı, tasarımcı ve saha ekipleri için jet grout, DSM, iksa, ankraj ve kalite kontrol rehberleri.",
+    blogTitle: "Zemin mühendisliği bilgi merkezi",
+    blogCopy: "Jet grout, fore kazık, DSM, zemin iyileştirme, iksa ve kalite kontrol uygulamalarına yönelik teknik rehberler.",
     blogSectionEyebrow: "Makaleler",
-    blogSectionTitle: "Arama niyetine göre teknik içerik.",
+    blogSectionTitle: "Saha deneyimiyle hazırlanan teknik içerikler",
     blogReadMore: "Makaleyi aç",
     blogCMSTitle: "CMS içerik katmanı hazır.",
     blogCMSText: "Makaleler, hizmetler ve projeler merkezi veri yapından beslenir. Headless CMS, MDX veya kurumsal panel bağlantısı için hazır içerik modeli kullanılır.",
@@ -459,7 +459,7 @@ export const dictionary = {
     footerAddress: "Gölbaşı, Ankara. Avrupa, Orta Doğu ve Kuzey Afrika projeleri için mobil saha ekipleri.",
     footerQuickQuote: "Hızlı teklif formu",
     footerCopyright: "© 2026 YER6 Zemin Güçlendirme ve Jeoteknik Mühendislik.",
-    footerSubtitle: "Hazır CMS içerik altyapısı • SEO uyumlu • TR / EN / AR",
+    footerSubtitle: "Hazır CMS içerik altyapısı • TR / EN / AR",
 
     /* ── CALCULATOR ── */
     calcTitle: "Zemin İyileştirme Hacim Hesaplayıcı",
@@ -846,10 +846,10 @@ export const dictionary = {
 
     /* ── BLOG PAGE ── */
     blogEyebrow: "Knowledge Base",
-    blogTitle: "SEO-optimized knowledge center for geotechnical engineering.",
+    blogTitle: "Knowledge center for geotechnical engineering.",
     blogCopy: "Technical guides, best practices, and QA checklists for jet grouting, DSM, piling, and anchoring for developers and design teams.",
     blogSectionEyebrow: "Articles",
-    blogSectionTitle: "Technical contents matching search intent.",
+    blogSectionTitle: "Technical content built on field experience.",
     blogReadMore: "Open Article",
     blogCMSTitle: "CMS integration ready.",
     blogCMSText: "Articles, services, and projects feed from a central structured data model. Ready for headless CMS, MDX, or custom corporate dashboards.",
@@ -939,7 +939,7 @@ export const dictionary = {
     footerAddress: "Golbasi, Ankara. Mobile field crews active across Europe, Middle East, and North Africa projects.",
     footerQuickQuote: "Quick quote request",
     footerCopyright: "© 2026 YER6 Ground Improvement & Geotechnical Engineering.",
-    footerSubtitle: "Structured CMS foundation • SEO optimized • TR / EN / AR",
+    footerSubtitle: "Structured CMS foundation • TR / EN / AR",
 
     /* ── CALCULATOR ── */
     calcTitle: "Ground Improvement Volume Calculator",
@@ -1326,7 +1326,7 @@ export const dictionary = {
 
     /* ── BLOG PAGE ── */
     blogEyebrow: "مركز المعرفة",
-    blogTitle: "مركز معلومات وبحوث جيوتقنية محسن لمحركات البحث.",
+    blogTitle: "مركز معلومات وبحوث جيوتقنية.",
     blogCopy: "أدلة فنية، إرشادات للمستثمرين والمصممين والفرق الميدانية حول الحقن النفاث، الخلط العميق، تدعيم الحفريات والمراسي وقبول الجودة.",
     blogSectionEyebrow: "المقالات المهنية",
     blogSectionTitle: "محتوى فني دقيق يبحث عنه المطورون والمهندسون.",
@@ -1419,7 +1419,7 @@ export const dictionary = {
     footerAddress: "غولباشي، أنقرة. فرق عمل ميدانية متنقلة ونشطة لمشاريع أوروبا والشرق الأوسط وشمال أفريقيا.",
     footerQuickQuote: "طلب تسعير سريع",
     footerCopyright: "© 2026 YER6 لتثبيت التربة والهندسة الجيوتقنية. جميع الحقوق محفوظة.",
-    footerSubtitle: "بنية نظام إدارة محتوى جاهزة • محسنة لمحركات البحث • تركية / إنجليزية / عربية",
+    footerSubtitle: "بنية نظام إدارة محتوى جاهزة • تركية / إنجليزية / عربية",
 
     /* ── CALCULATOR ── */
     calcTitle: "حاسبة حجم تحسين التربة الميداني",

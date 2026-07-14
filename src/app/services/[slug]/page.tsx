@@ -30,7 +30,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ankraj: "Ankraj Firmaları | Türkiye Geneli Öngermeli Ankraj Uygulaması",
     "iksa-sistemleri": "İksa Firmaları | Derin Kazı İksa Sistemleri ve Çözümleri",
     "zemin-iyilestirme": "Zemin İyileştirme Teknikleri ve En İyi Zemin İyileştirme Firmaları",
-    "geoteknik-danismanlik": "Geoteknik Danışmanlık ve Zemin Etüdü Firmaları"
+    "geoteknik-danismanlik": "Geoteknik Danışmanlık ve Zemin Etüdü Firmaları",
+    "zemin-civisi": "Zemin Çivisi (Soil Nailing) Uygulaması ve Avantajları",
+    "puskurtme-beton": "Püskürtme Beton (Shotcrete) Uygulaması ve Kullanım Alanları",
+    "kazik-yukleme-testleri": "Kazık Yükleme ve Bütünlük (PIT) Testleri",
+    "zemin-etudu": "Zemin Etüdü: Sondaj, Arazi Deneyleri ve Geoteknik Rapor",
+    "tas-kolon": "Taş Kolon (Stone Column) Zemin İyileştirme Uygulaması",
+    "diafram-duvar": "Diyafram Duvar İmalatı: Derin Kazı ve İksa Çözümü"
   };
   const seoTitle = serviceSeoTitles[service.slug] ?? `${service.title} Zemin Güçlendirme Hizmeti`;
   const description = getServiceSchemaDescription(
@@ -71,21 +77,7 @@ export default async function ServiceDetailPage({ params }: Props) {
     url: canonical,
     serviceType: service.title,
     category: "Zemin Güçlendirme ve Geoteknik Mühendislik",
-    provider: {
-      "@type": "LocalBusiness",
-      "@id": `${siteConfig.siteUrl}/#organization`,
-      name: siteConfig.companyName,
-      url: siteConfig.siteUrl,
-      telephone: siteConfig.phone.display,
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: siteConfig.address.streetAddress,
-        addressLocality: siteConfig.address.locality,
-        addressRegion: siteConfig.address.region,
-        postalCode: siteConfig.address.postalCode,
-        addressCountry: siteConfig.address.country
-      }
-    },
+    provider: { "@id": `${siteConfig.siteUrl}/#organization` },
     areaServed: localSeoServiceAreas.map((name) => ({
       "@type": name === "Türkiye geneli" ? "Country" : "AdministrativeArea",
       name

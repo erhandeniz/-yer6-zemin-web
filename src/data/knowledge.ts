@@ -3208,17 +3208,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     keywords: ["zemin güçlendirme maliyeti", "zemin güçlendirme fiyatları", "zemin iyileştirme maliyeti", "zemin güçlendirme fiyatı 2026", "temel güçlendirme maliyeti"],
     published: true
   }
-// ================================================================
-// YER6 — src/data/knowledge.ts dosyasina eklenecek 5 YENI MAKALE
-//
-// NASIL YAPISTIRILIR:
-// 1) VS Code'da src/data/knowledge.ts dosyasini ac
-// 2) Dosyanin EN SONUNA in — tek basina "];" yazan satiri bul
-//    (export satirlarinin hemen ustunde)
-// 3) Bu dosyadaki HER SEYI kopyala (Cmd+A, Cmd+C) ve "];" satirinin
-//    HEMEN USTUNE yapistir (yorum satirlari sorun cikarmaz)
-// 4) Kaydet -> commit -> push (bilinen deploy komutu)
-// ================================================================
+
 ,
   {
     slug: "zemin-civisi-nedir",
