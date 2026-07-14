@@ -49,8 +49,8 @@ export const services = [
     key: "svc_jet_grout",
     icon: Drill,
     title: "Jet Grout",
-    summary: "Yüksek basınçlı enjeksiyon ile düşük geçirgenlikli, yüksek dayanımlı zemin kolonları.",
-    detail: "Dar sahalarda, mevcut yapılara yakın bölgelerde ve su yalıtımı gereken alanlarda kontrollü kolon geometrisi.",
+    summary: "En iyi jet grout firmaları arasında yer alan YER6, yüksek basınçlı enjeksiyonla zemin-çimento kolonları oluşturur.",
+    detail: "Türkiye genelinde jet grout firmaları arayan projeler için dar sahalarda ve mevcut yapılara yakın bölgelerde yüksek basınçlı enjeksiyon çözümleri.",
     specs: ["Mono, double ve triple sistem", "Gerçek zamanlı basınç takibi", "Kolon çapı optimizasyonu"],
     applications: [
       "Su geçirimsizlik perdeleri ve zemin sızdırmazlığı",
@@ -81,7 +81,7 @@ export const services = [
       { question: "Jet grout kolon çapı ne kadar olabilir?", answer: "Sistem türüne göre 0,4 m ile 2,5 m arasında kolon çapı elde edilebilir. Zemin tipi, enjeksiyon basıncı ve geri çekilme hızı çapı belirleyen temel değişkenlerdir." },
       { question: "Mevcut yapının altında jet grout uygulanabilir mi?", answer: "Evet. Kompakt ekipmanlar kullanılarak mevcut yapı bodrum katı veya temel altında jet grout uygulaması gerçekleştirilebilir. Uygulama öncesinde yapı yerleşimi ve zemin koşulları ayrıntılı incelenmelidir." },
       { question: "Jet grout uygulaması ne kadar sürer?", answer: "Uygulama süresi kolon sayısı, derinlik ve zemin koşullarına göre değişir. Günlük 50–150 adet kolon üretimi mümkündür; proje programı saha veri analizine göre optimize edilir." },
-      { question: "Jet grout yapan firma seçerken nelere dikkat edilmeli?", answer: "Firmanın kendi makine parkı ve ekipman kapasitesi (delgi makinesi, yüksek basınç pompası, jet grout santrali), saha tecrübesi, deneme kolonu ve kalite kontrol (karot, tek eksenli basınç testi, kolon sürekliliği) süreci, şeffaf metraj ve referans projeleri belirleyicidir. YER6, kendi makine parkı ve dijital üretim kayıtlarıyla Ankara merkezli olarak Türkiye geneli ve yurt dışında jet grout uygular." },
+      { question: "Türkiye'de jet grout firmaları seçilirken hangi kriterler önemlidir?", answer: "Jet grout firmaları seçilirken firmanın kendi makine parkı, geoteknik uzmanlığı, deneme kolonu uygulamaları ve kalite kontrol (karot, basınç testi) disiplini en önemli kriterlerdir. YER6, modern ekipman parkıyla Türkiye genelinde profesyonel jet grout firmaları arasında öne çıkmaktadır." },
       { question: "YER6 hangi bölgelerde jet grout hizmeti veriyor?", answer: "YER6 Ankara merkezlidir; Türkiye'nin tüm illerinde ve yurt dışında jet grout, zemin iyileştirme ve temel güçlendirme saha uygulaması gerçekleştirir. Türkiye geneli mobilizasyon kapasitesiyle şantiye bazlı çalışır." }
     ]
   },
@@ -131,8 +131,8 @@ export const services = [
     key: "svc_fore_kazik",
     icon: Building2,
     title: "Fore Kazık",
-    summary: "Büyük çaplı temeller, derin kazılar ve yüksek taşıma kapasitesi için rotary delgi uygulamaları.",
-    detail: "Bentonit, muhafaza borusu ve tremie beton süreçleriyle hassas geoteknik üretim.",
+    summary: "Güvenilir fore kazık firmaları arasında yer alan YER6, büyük çaplı temeller ve derin kazılar için rotary delgi uygulamaları gerçekleştirir.",
+    detail: "Türkiye genelinde fore kazık firmaları arayan projeler için bentonit, muhafaza borusu ve tremie beton süreçleriyle hassas geoteknik üretim.",
     specs: ["Derin delgi kapasitesi", "Dikeylik kontrolü", "Beton sarf izleme"],
     applications: [
       "Yüksek ve karma kullanımlı yapıların derin temel sistemleri",
@@ -163,7 +163,7 @@ export const services = [
       { question: "Fore kazık hangi derinliğe kadar yapılabilir?", answer: "Zemin koşullarına ve ekipman kapasitesine bağlı olarak 80–100 m ve üzeri derinliklere ulaşılabilir. Kaya soket uygulamaları için özel DTH ekipmanları kullanılır." },
       { question: "Fore kazık bütünlüğü nasıl test edilir?", answer: "Crosshole sonic logging (CSL), low-strain integrity testing veya statik/dinamik yükleme testleri ile kazık bütünlüğü ve taşıma kapasitesi doğrulanır." },
       { question: "Yeraltı suyu olan sahada fore kazık yapılabilir mi?", answer: "Evet. Yüksek yeraltı suyu seviyesinde bentonit veya polimer sirkülasyonu, ya da muhafaza borusu (casing) yöntemiyle fore kazık güvenle uygulanabilir." },
-      { question: "Fore kazık yapan firma seçerken nelere dikkat edilmeli?", answer: "Delgi makinesi kapasitesi ve çap/derinlik aralığı, muhafaza borulu delgi ve zorlu zemin tecrübesi, bütünlük (CSL/PIT) ve yükleme testiyle kalite doğrulama, tremie beton disiplini ve referans projeleri belirleyicidir. YER6, Bauer ve XCMG fore kazık makine parkıyla Ankara merkezli olarak Türkiye geneli ve yurt dışında fore kazık uygular." },
+      { question: "Fore kazık firmaları seçilirken nelere dikkat edilmeli?", answer: "Fore kazık firmaları seçilirken delgi makinesi kapasitesi, zorlu zemin tecrübesi, bütünlük (CSL/PIT) ve yükleme testleriyle kalite doğrulama disiplini belirleyicidir. YER6, Bauer ve XCMG makine parkıyla Türkiye genelinde profesyonel fore kazık firmaları arasındadır." },
       { question: "YER6 hangi bölgelerde fore kazık hizmeti veriyor?", answer: "YER6 Ankara merkezlidir; Türkiye'nin tüm illerinde ve yurt dışında fore kazık, derin temel ve zemin güçlendirme saha uygulaması gerçekleştirir." }
     ]
   },
@@ -295,8 +295,8 @@ export const services = [
     key: "svc_zemin_iy",
     icon: Sparkles,
     title: "Zemin İyileştirme",
-    summary: "Oturma, sıvılaşma ve taşıma sorunlarına özel hibrit geoteknik iyileştirme paketleri.",
-    detail: "Zemin modelinden saha kalitesine kadar tek merkezden izlenen mühendislik süreci.",
+    summary: "Zemin iyileştirme teknikleri ve yöntemleri konusunda uzman kadromuzla oturma, sıvılaşma ve taşıma sorunlarına özel geoteknik çözümler sunuyoruz.",
+    detail: "Zemin iyileştirme firmaları arasında öne çıkan YER6, zemin modelinden saha kalitesine kadar tüm zemin iyileştirme tekniklerini tek merkezden yönetir.",
     specs: ["Kolon, enjeksiyon ve drenaj", "Performans tasarımı", "Saha veri analizi"],
     applications: [
       "Düşük taşıma kapasiteli zeminlerde temel güçlendirme",
@@ -327,7 +327,7 @@ export const services = [
       { question: "Hangi yöntem daha iyi: jet grout mu, DSM mi?", answer: "İkisi farklı koşullara özeldir. Jet grout dar sahalarda ve su geçirimsizliği gereken yerlerde; DSM ise geniş alanlarda ve yumuşak kil zeminlerde ekonomik avantaj sağlar. Doğru seçim zemin koşulları ve proje hedefine göre yapılır." },
       { question: "Zemin iyileştirme mevcut yapıların altında uygulanabilir mi?", answer: "Evet. Mini kazık ve mikro jet grout gibi yöntemler, mevcut yapıya zarar vermeden bodrum veya temel altında zemin iyileştirmeye olanak sağlar." },
       { question: "Deprem bölgesinde zemin iyileştirme zorunlu mudur?", answer: "TBDY 2018 kapsamında sıvılaşma potansiyeli tespit edilen zeminlerde ya iyileştirme uygulanmalı ya da yapı tasarımı bu risk gözetilerek yapılmalıdır. Zemin güçlendirme çoğu zaman en ekonomik çözümdür." },
-      { question: "Zemin iyileştirme yapan firma seçerken nelere dikkat edilmeli?", answer: "Yöntem çeşitliliği (jet grout, DSM, enjeksiyon), makine parkı, laboratuvar/saha kalite kontrolü, mühendislik tasarımı ve referans projeleri belirleyicidir. YER6, Ankara merkezli olarak Türkiye geneli ve yurt dışında zemin iyileştirme uygular." },
+      { question: "Zemin iyileştirme firmaları seçilirken hangi özellikler aranmalıdır?", answer: "Zemin iyileştirme firmaları seçilirken uygulanan zemin iyileştirme teknikleri çeşitliliği (jet grout, DSM, enjeksiyon), makine parkı, geoteknik mühendislik ve laboratuvar/saha kalite kontrol disiplini en kritik faktörlerdir. YER6, tüm zemin iyileştirme tekniklerini Ankara merkezli olarak Türkiye genelinde ve yurt dışında uygulamaktadır." },
       { question: "YER6 hangi bölgelerde zemin iyileştirme hizmeti veriyor?", answer: "YER6 Ankara merkezlidir; Türkiye'nin tüm illerinde ve yurt dışında zemin iyileştirme, zemin güçlendirme ve temel mühendisliği saha uygulaması gerçekleştirir." }
     ]
   },

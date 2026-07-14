@@ -12,13 +12,13 @@ import { useLanguage } from "@/components/LanguageProvider";
 import { siteConfig } from "@/lib/siteConfig";
 
 const serviceArticleMap: Record<string, string[]> = {
-  "jet-grout": ["jet-grout-nedir", "jet-grout-hangi-zeminlerde-uygulanir", "jet-grout-kalite-kontrol"],
-  dsm: ["dsm-nasil-uygulanir", "dsm-malzeme-secinimi", "jet-grout-ve-dsm-farki"],
-  "fore-kazik": ["fore-kazik-nedir", "fore-kazik-uygulama-asamalari", "fore-kazik-avantajlari"],
+  "jet-grout": ["yer-alti-zemin-iyilestirme", "jet-grout-nedir", "jet-grout-hangi-zeminlerde-uygulanir", "jet-grout-kalite-kontrol"],
+  dsm: ["yer-alti-zemin-iyilestirme", "dsm-nasil-uygulanir", "dsm-malzeme-secinimi", "jet-grout-ve-dsm-farki"],
+  "fore-kazik": ["yer-alti-zemin-iyilestirme", "fore-kazik-nedir", "fore-kazik-uygulama-asamalari", "fore-kazik-avantajlari"],
   "mini-kazik": ["fore-kazik-nedir", "saha-denetimi-numune-testleri", "zemin-iyilestirme-planlama"],
   ankraj: ["zemin-iyilestirme-risk-yonetimi", "saha-denetimi-numune-testleri", "zemin-iyilestirme-planlama"],
   "iksa-sistemleri": ["zemin-iyilestirme-risk-yonetimi", "saha-denetimi-numune-testleri", "zemin-kalite-kontrol-standartlari"],
-  "zemin-iyilestirme": ["zemin-iyilestirme-yontemleri", "zemin-iyilestirme-planlama", "zemin-iyilestirme-risk-yonetimi"],
+  "zemin-iyilestirme": ["yer-alti-zemin-iyilestirme", "zemin-iyilestirme-yontemleri", "zemin-iyilestirme-planlama", "zemin-iyilestirme-risk-yonetimi"],
   "geoteknik-danismanlik": ["zemin-iyilestirme-planlama", "zemin-kalite-kontrol-standartlari", "saha-denetimi-numune-testleri"],
   "zemin-civisi": ["kazi-destek-sistemleri-nedir", "zemin-iyilestirme-risk-yonetimi", "saha-denetimi-numune-testleri"],
   "puskurtme-beton": ["kazi-destek-sistemleri-nedir", "zemin-iyilestirme-risk-yonetimi", "saha-denetimi-numune-testleri"],

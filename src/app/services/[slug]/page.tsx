@@ -23,14 +23,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const canonical = `${siteConfig.siteUrl}/services/${service.slug}/`;
   const serviceSeoTitles: Record<string, string> = {
-    "jet-grout": "Jet Grout Firması | Türkiye Geneli Jet Grout Yapan Firma",
-    dsm: "DSM Firması | Deep Soil Mixing Türkiye Geneli Zemin İyileştirme",
-    "fore-kazik": "Fore Kazık Firması | Türkiye Geneli Fore Kazık Yapan Firma",
-    "mini-kazik": "Mini Kazık Firması | Türkiye Geneli Mini Kazık ve Underpinning",
-    ankraj: "Ankraj Firması | Türkiye Geneli Öngermeli Ankraj Uygulaması",
-    "iksa-sistemleri": "İksa Firması | Türkiye Geneli Derin Kazı İksa Sistemleri",
-    "zemin-iyilestirme": "Zemin İyileştirme Firması | Türkiye Geneli Zemin İyileştirme",
-    "geoteknik-danismanlik": "Geoteknik Danışmanlık Firması | Türkiye Geneli Zemin Etüdü"
+    "jet-grout": "Jet Grout Firmaları | Türkiye Geneli Jet Grout Uygulaması",
+    dsm: "DSM Firmaları | Deep Soil Mixing Zemin İyileştirme",
+    "fore-kazik": "Fore Kazık Firmaları | Türkiye Geneli Fore Kazık Uygulaması",
+    "mini-kazik": "Mini Kazık Firmaları | Türkiye Geneli Mini Kazık ve Askıya Alma",
+    ankraj: "Ankraj Firmaları | Türkiye Geneli Öngermeli Ankraj Uygulaması",
+    "iksa-sistemleri": "İksa Firmaları | Derin Kazı İksa Sistemleri ve Çözümleri",
+    "zemin-iyilestirme": "Zemin İyileştirme Teknikleri ve En İyi Zemin İyileştirme Firmaları",
+    "geoteknik-danismanlik": "Geoteknik Danışmanlık ve Zemin Etüdü Firmaları"
   };
   const seoTitle = serviceSeoTitles[service.slug] ?? `${service.title} Zemin Güçlendirme Hizmeti`;
   const description = getServiceSchemaDescription(
