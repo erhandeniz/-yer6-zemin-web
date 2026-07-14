@@ -4,6 +4,18 @@
   "main": ".open-next/worker.js",
   "compatibility_date": "2026-07-13",
   "compatibility_flags": ["nodejs_compat"],
+  "routes": [
+    {
+      "pattern": "ai.yer6zemin.com.tr",
+      "custom_domain": true
+    }
+  ],
+  "vars": {
+    "NEXT_PUBLIC_APP_URL": "https://ai.yer6zemin.com.tr",
+    "NEXT_PUBLIC_DEMO_MODE": "true",
+    "NEXTAUTH_URL": "https://ai.yer6zemin.com.tr",
+    "AUTH_REQUIRED": "false"
+  },
   "assets": {
     "directory": ".open-next/assets",
     "binding": "ASSETS"
