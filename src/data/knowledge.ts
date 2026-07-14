@@ -1,4 +1,4 @@
-﻿import type { KnowledgeArticle } from "@/types/knowledge";
+import type { KnowledgeArticle } from "@/types/knowledge";
 
 export const knowledgeArticles: KnowledgeArticle[] = [
   {
@@ -3391,7 +3391,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     publishedAt: "2026-07-14",
     updatedAt: "2026-07-14",
     heroLabel: "Mega Rehber",
-    introduction: "Yer altı zemin iyileştirme, yapı yükünü güvenle taşıyamayan zeminlerin jet grout, derin karıştırma (DSM), taş kolon, derin kompaksiyon ve enjeksiyon gibi tekniklerle metrelerce derinlikte yerinde güçlendirilmesidir. Bu rehberde 15'ten fazla yöntemi; zemin türüne göre seçim matrisi, TBDY 2018 zemin sınıfları, tasarım parametreleri, kalite kontrol testleri ve maliyet-süre faktörleriyle birlikte tek sayfada topladık. Ankara merkezli YER6 Zemin Mühendislik'in saha tecrübesiyle hazırlanan bu kılavuz, arsa sahibinden geoteknik mühendisine kadar herkesin \"hangi zemine hangi yöntem?\" sorusuna net cevap bulması için tasarlandı.",
+    introduction: "Yer altı zemin iyileştirme, yapı yükünü güvenle taşıyamayan zeminlerin jet grout, derin karıştırma (DSM), taş kolon, derin kompaksiyon ve enjeksiyon gibi tekniklerle metrelerce derinlikte yerinde güçlendirilmesidir. Bu rehberde 15'ten fazla yöntemi; zemin türüne göre seçim matrisi, TBDY 2018 zemin sınıfları, tasarım parametreleri, kalite kontrol testleri ve maliyet-süre faktörleriyle birlikte tek sayfada topladık. Ankara merkezli YER6 Zemin Güçlendirme Geoteknik Mühendislik'in saha tecrübesiyle hazırlanan bu kılavuz, arsa sahibinden geoteknik mühendisine kadar herkesin \"hangi zemine hangi yöntem?\" sorusuna net cevap bulması için tasarlandı.",
     sections: [
       {
         id: "yer-alti-zemin-iyilestirme-nedir",

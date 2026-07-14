@@ -251,7 +251,7 @@ export const dictionary = {
     /* ── FLEET PAGE ── */
     fleetEyebrow: "Makine Parkı",
     fleetTitle: "Ağır saha koşulları için yüksek kapasiteli makine parkı.",
-    fleetCopy: "YER6 Zemin Mühendislik; fore kazık, jet grout, ankraj, zemin iyileştirme, zemin güçlendirme, derin temel ve iksa uygulamalarında kendi makine parkuru ile sahada hızlı, güvenilir ve teknik çözüm üretir.",
+    fleetCopy: "YER6 Zemin Güçlendirme Geoteknik Mühendislik; fore kazık, jet grout, ankraj, zemin iyileştirme, zemin güçlendirme, derin temel ve iksa uygulamalarında kendi makine parkuru ile sahada hızlı, güvenilir ve teknik çözüm üretir.",
     fleetControlEyebrow: "Filo Kontrolü",
     fleetControlTitle: "Makine seçimi zemin modeline göre yapılır.",
     fleetControlCopy: "Her sahada erişim, derinlik, tork, enjeksiyon basınçları ve imalat toleransı birlikte değerlendirilir.",
@@ -731,7 +731,7 @@ export const dictionary = {
     /* ── FLEET PAGE ── */
     fleetEyebrow: "Equipment",
     fleetTitle: "High-capacity equipment fleet for heavy field conditions.",
-    fleetCopy: "YER6 Zemin Mühendislik delivers fast, reliable, and technical field solutions with its own equipment fleet for bored pile, jet grout, anchor, ground improvement, soil strengthening, deep foundation, and shoring applications.",
+    fleetCopy: "YER6 Zemin Güçlendirme Geoteknik Mühendislik delivers fast, reliable, and technical field solutions with its own equipment fleet for bored pile, jet grout, anchor, ground improvement, soil strengthening, deep foundation, and shoring applications.",
     fleetControlEyebrow: "Fleet Control",
     fleetControlTitle: "Rig selection is driven by the geotechnical model.",
     fleetControlCopy: "Access, depth, torque, injection pressures, and tolerance limits are jointly evaluated for every site.",
@@ -1211,7 +1211,7 @@ export const dictionary = {
     /* ── FLEET PAGE ── */
     fleetEyebrow: "أسطول المعدات",
     fleetTitle: "أسطول معدات ذو قدرة إنتاجية عالية لظروف العمل الشاقة.",
-    fleetCopy: "تقدم YER6 Zemin Mühendislik حلولا ميدانية سريعة وموثوقة وفنية بأسطول معداتها الخاص في الخوازيق المحفورة، الحقن النفاث، المراسي، تحسين التربة، تقوية التربة، الأساسات العميقة وأنظمة التدعيم.",
+    fleetCopy: "تقدم YER6 Zemin Güçlendirme Geoteknik Mühendislik حلولا ميدانية سريعة وموثوقة وفنية بأسطول معداتها الخاص في الخوازيق المحفورة، الحقن النفاث، المراسي، تحسين التربة، تقوية التربة، الأساسات العميقة وأنظمة التدعيم.",
     fleetControlEyebrow: "التحكم بالأسطول",
     fleetControlTitle: "يتم اختيار المعدات والآلات بناء على النموذج الجيوتقني للتربة.",
     fleetControlCopy: "يتم تقييم الوصول للموقع، العمق المطلوب، عزم الدوران، ضغوط الحقن وتفاوتات التصنيع معا لكل موقع.",

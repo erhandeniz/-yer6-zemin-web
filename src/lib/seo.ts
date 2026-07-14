@@ -57,7 +57,7 @@ export const equipmentSeoItems = [
     name: "Bauer BG 28 H PremiumLine Fore Kazık Delgi Makinesi",
     category: "Fore Kazık Delgi Makinesi",
     description:
-      "Bauer BG 28 H PremiumLine; büyük çaplı fore kazık, derin temel, iksa, muhafaza borulu delgi, CFA ve zemin güçlendirme projelerinde kullanılan yüksek kapasiteli fore kazık delgi makinesidir. YER6 Zemin Mühendislik makine parkurunda ağır zemin koşulları ve yüksek kapasiteli temel mühendisliği projeleri için güçlü çözüm sunar.",
+      "Bauer BG 28 H PremiumLine; büyük çaplı fore kazık, derin temel, iksa, muhafaza borulu delgi, CFA ve zemin güçlendirme projelerinde kullanılan yüksek kapasiteli fore kazık delgi makinesidir. YER6 Zemin Güçlendirme Geoteknik Mühendislik makine parkurunda ağır zemin koşulları ve yüksek kapasiteli temel mühendisliği projeleri için güçlü çözüm sunar.",
     brand: "Bauer",
     imageAlt: "Bauer BG 28 H PremiumLine fore kazık delgi makinesi",
     additionalProperties: [
@@ -80,7 +80,7 @@ export const equipmentSeoItems = [
     name: "Bauer BG 18 H BT 50 PremiumLine Fore Kazık Delgi Makinesi",
     category: "Fore Kazık Delgi Makinesi",
     description:
-      "Bauer BG 18 H BT 50 PremiumLine; fore kazık, derin temel, iksa, muhafaza borulu delgi, kılıfsız delgi, CFA ve FDP uygulamaları için kullanılan kompakt ve güçlü fore kazık delgi makinesidir. YER6 Zemin Mühendislik makine parkurunda orta ve büyük ölçekli temel mühendisliği projeleri için yüksek performanslı çözüm sunar.",
+      "Bauer BG 18 H BT 50 PremiumLine; fore kazık, derin temel, iksa, muhafaza borulu delgi, kılıfsız delgi, CFA ve FDP uygulamaları için kullanılan kompakt ve güçlü fore kazık delgi makinesidir. YER6 Zemin Güçlendirme Geoteknik Mühendislik makine parkurunda orta ve büyük ölçekli temel mühendisliği projeleri için yüksek performanslı çözüm sunar.",
     brand: "Bauer",
     imageAlt: "Bauer BG 18 H BT 50 PremiumLine fore kazık delgi makinesi",
     additionalProperties: [
@@ -106,7 +106,7 @@ export const equipmentSeoItems = [
     name: "XCMG XR220D Fore Kazık Delgi Makinesi",
     category: "Fore Kazık Delgi Makinesi",
     description:
-      "XCMG XR220D; fore kazık, derin temel, iksa, muhafaza borulu delgi ve zemin güçlendirme projelerinde kullanılan yüksek kapasiteli fore kazık delgi makinesidir. YER6 Zemin Mühendislik makine parkurunda büyük çaplı ve derin delgi gerektiren projeler için teknik çözüm sunar.",
+      "XCMG XR220D; fore kazık, derin temel, iksa, muhafaza borulu delgi ve zemin güçlendirme projelerinde kullanılan yüksek kapasiteli fore kazık delgi makinesidir. YER6 Zemin Güçlendirme Geoteknik Mühendislik makine parkurunda büyük çaplı ve derin delgi gerektiren projeler için teknik çözüm sunar.",
     brand: "XCMG",
     imageAlt: "XCMG XR220D fore kazık delgi makinesi",
     additionalProperties: [
@@ -215,10 +215,10 @@ export function localBusinessSchema() {
       url: `${siteConfig.siteUrl}/icon.png`,
       width: 512,
       height: 512,
-      caption: "YER6 Zemin Mühendislik"
+      caption: "YER6 Zemin Güçlendirme Geoteknik Mühendislik"
     },
     description:
-      "YER6 Zemin Mühendislik; jet grout, zemin iyileştirme, zemin güçlendirme, fore kazık, ankraj, iksa sistemleri ve temel mühendisliği alanlarında Ankara merkezli, Türkiye geneli ve yurt dışında geoteknik saha uygulaması sunar.",
+      "YER6 Zemin Güçlendirme Geoteknik Mühendislik; jet grout, zemin iyileştirme, zemin güçlendirme, fore kazık, ankraj, iksa sistemleri ve temel mühendisliği alanlarında Ankara merkezli, Türkiye geneli ve yurt dışında geoteknik saha uygulaması sunar.",
     telephone: siteConfig.phone.display,
     email: siteConfig.email,
     priceRange: "$$",

@@ -61,7 +61,7 @@ export function ContactContent() {
           >
             <img
               src="https://cdn.armut.com/images/armut-member-badge-colour@2x.png"
-              alt="YER6 Zemin Mühendislik — Armut üyelik rozeti"
+              alt="YER6 Zemin Güçlendirme Geoteknik Mühendislik — Armut üyelik rozeti"
               className="mx-auto block h-auto w-full max-w-[260px]"
               loading="lazy"
             />

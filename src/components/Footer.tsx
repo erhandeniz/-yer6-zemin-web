@@ -62,7 +62,7 @@ export function Footer() {
         </div>
       </div>
       <div className="mx-auto mt-12 flex max-w-7xl flex-col justify-between gap-4 border-t border-white/10 pt-6 text-xs text-white/42 md:flex-row">
-        <p>© 2026 YER6 Zemin Mühendislik. Tüm hakları saklıdır.</p>
+        <p>© 2026 YER6 Zemin Güçlendirme Geoteknik Mühendislik. Tüm hakları saklıdır.</p>
       </div>
     </footer>
   );
