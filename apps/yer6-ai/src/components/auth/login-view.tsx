@@ -5,7 +5,7 @@ import Link from "next/link";
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { FormEvent, useState } from "react";
-import { ArrowRight, Eye, EyeOff, LockKeyhole, ShieldCheck } from "lucide-react";
+import { ArrowRight, Eye, EyeOff, ShieldCheck } from "lucide-react";
 import { BrandMark } from "@/components/brand-mark";
 import { useAITranslation } from "@/components/i18n-provider";
 import { Button } from "@/components/ui/button";
@@ -22,14 +22,19 @@ export function LoginView() {
     setLoading(true);
     setError("");
     const form = new FormData(event.currentTarget);
-    const result = await signIn("credentials", {
-      email: form.get("email"),
-      password: form.get("password"),
-      redirect: false
-    });
-    setLoading(false);
-    if (result?.ok) router.push("/");
-    else setError(t("The email or password could not be verified."));
+    try {
+      const result = await signIn("credentials", {
+        email: form.get("email"),
+        password: form.get("password"),
+        redirect: false
+      });
+      if (result?.ok) router.push("/");
+      else setError(t("The email or password could not be verified."));
+    } catch {
+      setError(t("The email or password could not be verified."));
+    } finally {
+      setLoading(false);
+    }
   }
 
   return (

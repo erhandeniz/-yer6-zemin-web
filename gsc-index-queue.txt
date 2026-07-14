@@ -36,19 +36,19 @@ DONE https://www.yer6zemin.com.tr/sehirler/bayburt-zemin-guclendirme/
 DONE https://www.yer6zemin.com.tr/sehirler/bilecik-zemin-guclendirme/
 DONE https://www.yer6zemin.com.tr/sehirler/bingol-zemin-guclendirme/
 DONE https://www.yer6zemin.com.tr/sehirler/bitlis-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/bolu-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/burdur-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/canakkale-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/cankiri-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/corum-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/denizli-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/diyarbakir-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/duzce-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/edirne-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/elazig-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/erzincan-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/erzurum-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/giresun-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/bolu-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/burdur-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/canakkale-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/cankiri-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/corum-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/denizli-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/diyarbakir-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/duzce-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/edirne-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/elazig-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/erzincan-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/erzurum-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/giresun-zemin-guclendirme/
 https://www.yer6zemin.com.tr/sehirler/gumushane-zemin-guclendirme/
 https://www.yer6zemin.com.tr/sehirler/hakkari-zemin-guclendirme/
 https://www.yer6zemin.com.tr/sehirler/isparta-zemin-guclendirme/

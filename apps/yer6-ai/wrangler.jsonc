@@ -12,10 +12,46 @@
   ],
   "vars": {
     "NEXT_PUBLIC_APP_URL": "https://ai.yer6zemin.com.tr",
-    "NEXT_PUBLIC_DEMO_MODE": "true",
+    "NEXT_PUBLIC_DEMO_MODE": "false",
     "NEXTAUTH_URL": "https://ai.yer6zemin.com.tr",
-    "AUTH_REQUIRED": "false"
+    "AUTH_REQUIRED": "true",
+    "YER6_ORGANIZATION_ID": "yer6",
+    "NEXT_PUBLIC_YER6_ORGANIZATION_ID": "yer6",
+    "AI_PROVIDER": "auto",
+    "OPENAI_MODEL": "gpt-5-mini",
+    "CLOUDFLARE_AI_MODEL": "@cf/openai/gpt-oss-120b",
+    "AI_MAX_OUTPUT_TOKENS": "1200",
+    "RAG_ENABLED": "false",
+    "RAG_REQUIRE_AUTH": "true",
+    "RAG_STORAGE_PROVIDER": "uploadthing",
+    "RAG_PARSER_PROVIDER": "cloudflare-markdown",
+    "RAG_METADATA_PROVIDER": "prisma",
+    "RAG_EMBEDDING_PROVIDER": "cloudflare-workers-ai",
+    "RAG_EMBEDDING_MODEL": "@cf/baai/bge-m3",
+    "RAG_EMBEDDING_DIMENSIONS": "1024",
+    "RAG_VECTOR_PROVIDER": "cloudflare-vectorize",
+    "RAG_CHUNK_SIZE": "2800",
+    "RAG_CHUNK_OVERLAP": "320",
+    "RAG_TOP_K": "8",
+    "RAG_MINIMUM_SCORE": "0.55",
+    "RAG_INGESTION_MODE": "inline"
   },
+  "ai": {
+    "binding": "AI"
+  },
+  // Enable after creating production resources:
+  // "vectorize": [{ "binding": "RAG_VECTORIZE", "index_name": "yer6-rag" }],
+  // "r2_buckets": [{ "binding": "RAG_DOCUMENTS", "bucket_name": "yer6-rag-documents" }],
+  "ratelimits": [
+    {
+      "name": "AI_RATE_LIMITER",
+      "namespace_id": "9626001",
+      "simple": {
+        "limit": 8,
+        "period": 60
+      }
+    }
+  ],
   "assets": {
     "directory": ".open-next/assets",
     "binding": "ASSETS"

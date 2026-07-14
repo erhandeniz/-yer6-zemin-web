@@ -18,7 +18,6 @@ import {
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Progress } from "@/components/ui/progress";
 import { engineeringCategories, metrics, projects } from "@/lib/data";
 import { useAppStore } from "@/store/app-store";
 import { useAITranslation } from "@/components/i18n-provider";

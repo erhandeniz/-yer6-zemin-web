@@ -99,12 +99,3 @@ export const adminMetrics = [
   { label: "Storage used", value: "68%", icon: Layers3 },
   { label: "Organizations", value: "12", icon: Building2 }
 ];
-
-export const sampleAssistantMessage = {
-  id: "assistant-intro",
-  role: "assistant" as const,
-  content:
-    "I reviewed the preliminary borehole summary for Duzce Industrial Campus. The upper 6.5 m contains loose silty sand with variable fill. For the current column loads, a jet grout improvement grid is technically viable, subject to verification of groundwater level and target UCS.",
-  createdAt: "09:42",
-  citations: ["BH-03 Borehole Log · p. 4", "Lab Results · Table 2"]
-};

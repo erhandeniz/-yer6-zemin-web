@@ -34,21 +34,83 @@ enum MessageRole {
   SYSTEM
 }
 
+enum KnowledgeDocumentStatus {
+  UPLOADED
+  QUEUED
+  PARSING
+  CHUNKING
+  EMBEDDING
+  INDEXING
+  READY
+  FAILED
+  ARCHIVED
+}
+
+enum KnowledgeDocumentScope {
+  PROJECT
+  COMPANY
+  STANDARDS
+}
+
+enum StandardLicenseStatus {
+  PUBLIC
+  LICENSED_INTERNAL
+  REFERENCE_ONLY
+  RESTRICTED
+}
+
+enum MemoryScope {
+  PROJECT
+  COMPANY
+}
+
+enum MemoryType {
+  CONVERSATION
+  DOCUMENT
+  ANALYSIS
+  QUANTITY
+  PRELIMINARY_COST
+  PROPOSAL
+  TECHNICAL_NOTE
+  PROCEDURE
+  EQUIPMENT
+}
+
+enum SpatialAssetKind {
+  BIM
+  DRONE
+  POINT_CLOUD
+  LIDAR
+  GIS
+  MODEL_3D
+}
+
+enum SpatialAssetStatus {
+  REGISTERED
+  PROCESSING
+  READY
+  FAILED
+  ARCHIVED
+}
+
 model User {
-  id            String         @id @default(cuid())
-  name          String?
-  email         String?        @unique
-  emailVerified DateTime?
-  image         String?
-  passwordHash  String?
-  role          UserRole       @default(ENGINEER)
-  accounts      Account[]
-  sessions      Session[]
-  projects      Project[]
-  conversations Conversation[]
-  auditLogs     AuditLog[]
-  createdAt     DateTime       @default(now())
-  updatedAt     DateTime       @updatedAt
+  id                 String              @id @default(cuid())
+  name               String?
+  email              String?             @unique
+  emailVerified      DateTime?
+  image              String?
+  passwordHash       String?
+  role               UserRole            @default(ENGINEER)
+  accounts           Account[]
+  sessions           Session[]
+  projects           Project[]
+  conversations      Conversation[]
+  knowledgeDocuments KnowledgeDocument[]
+  memoryRecords      MemoryRecord[]
+  spatialAssets      SpatialAsset[]
+  auditLogs          AuditLog[]
+  createdAt          DateTime            @default(now())
+  updatedAt          DateTime            @updatedAt
 }
 
 model Account {
@@ -86,19 +148,22 @@ model VerificationToken {
 }
 
 model Project {
-  id            String         @id @default(cuid())
-  name          String
-  location      String?
-  category      String
-  status        ProjectStatus  @default(DRAFT)
-  progress      Int            @default(0)
-  ownerId       String
-  owner         User           @relation(fields: [ownerId], references: [id], onDelete: Cascade)
-  documents     Document[]
-  conversations Conversation[]
-  analyses      Analysis[]
-  createdAt     DateTime       @default(now())
-  updatedAt     DateTime       @updatedAt
+  id                 String              @id @default(cuid())
+  name               String
+  location           String?
+  category           String
+  status             ProjectStatus       @default(DRAFT)
+  progress           Int                 @default(0)
+  ownerId            String
+  owner              User                @relation(fields: [ownerId], references: [id], onDelete: Cascade)
+  documents          Document[]
+  knowledgeDocuments KnowledgeDocument[]
+  memoryRecords      MemoryRecord[]
+  spatialAssets      SpatialAsset[]
+  conversations      Conversation[]
+  analyses           Analysis[]
+  createdAt          DateTime            @default(now())
+  updatedAt          DateTime            @updatedAt
 
   @@index([ownerId, updatedAt])
 }
@@ -169,4 +234,133 @@ model AuditLog {
   createdAt DateTime @default(now())
 
   @@index([userId, createdAt])
+}
+
+model KnowledgeDocument {
+  id                     String                  @id @default(cuid())
+  name                   String
+  extension              String
+  mimeType               String
+  size                   Int
+  category               String
+  scope                  KnowledgeDocumentScope
+  projectId              String?
+  organizationId         String?
+  storageProvider        String
+  storageKey             String                  @unique
+  sourceUrl              String?
+  checksum               String?
+  version                String?
+  standardId             String?
+  licenseStatus          StandardLicenseStatus?
+  contentIndexingAllowed Boolean                 @default(true)
+  status                 KnowledgeDocumentStatus @default(UPLOADED)
+  parserVersion          String?
+  embeddingProvider      String?
+  embeddingModel         String?
+  vectorProvider         String?
+  chunkCount             Int                     @default(0)
+  tokenCount             Int                     @default(0)
+  metadata               Json?
+  errorCode              String?
+  errorMessage           String?                 @db.Text
+  uploadedById           String?
+  project                Project?                @relation(fields: [projectId], references: [id], onDelete: SetNull)
+  uploadedBy             User?                   @relation(fields: [uploadedById], references: [id], onDelete: SetNull)
+  standard               EngineeringStandard?    @relation(fields: [standardId], references: [id], onDelete: SetNull)
+  chunks                 KnowledgeChunk[]
+  indexedAt              DateTime?
+  createdAt              DateTime                @default(now())
+  updatedAt              DateTime                @updatedAt
+
+  @@index([category, status, updatedAt])
+  @@index([projectId, status])
+  @@index([organizationId, status])
+  @@index([standardId, status])
+  @@index([uploadedById, createdAt])
+}
+
+model EngineeringStandard {
+  id                     String                @id @default(cuid())
+  family                 String
+  code                   String
+  title                  String
+  edition                String?
+  version                String?
+  publishedAt            DateTime?
+  licenseStatus          StandardLicenseStatus @default(REFERENCE_ONLY)
+  contentIndexingAllowed Boolean               @default(false)
+  rightsHolder           String?
+  sourceReference        String?
+  usageNote              String?               @db.Text
+  active                 Boolean               @default(true)
+  documents              KnowledgeDocument[]
+  createdAt              DateTime              @default(now())
+  updatedAt              DateTime              @updatedAt
+
+  @@unique([family, code, version])
+  @@index([family, active, updatedAt])
+  @@index([licenseStatus, contentIndexingAllowed])
+}
+
+model MemoryRecord {
+  id             String      @id @default(cuid())
+  scope          MemoryScope
+  type           MemoryType
+  title          String
+  content        String      @db.Text
+  structuredData Json?
+  projectId      String?
+  organizationId String?
+  sourceType     String?
+  sourceId       String?
+  createdById    String?
+  project        Project?    @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  createdBy      User?       @relation(fields: [createdById], references: [id], onDelete: SetNull)
+  createdAt      DateTime    @default(now())
+  updatedAt      DateTime    @updatedAt
+
+  @@index([projectId, type, updatedAt])
+  @@index([organizationId, type, updatedAt])
+  @@index([sourceType, sourceId])
+}
+
+model SpatialAsset {
+  id             String             @id @default(cuid())
+  kind           SpatialAssetKind
+  status         SpatialAssetStatus @default(REGISTERED)
+  name           String
+  projectId      String?
+  organizationId String?
+  storageKey     String?
+  sourceUrl      String?
+  coordinateRef  String?
+  metadata       Json?
+  createdById    String?
+  project        Project?           @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  createdBy      User?              @relation(fields: [createdById], references: [id], onDelete: SetNull)
+  createdAt      DateTime           @default(now())
+  updatedAt      DateTime           @updatedAt
+
+  @@index([projectId, kind, updatedAt])
+  @@index([organizationId, kind, updatedAt])
+}
+
+model KnowledgeChunk {
+  id            String            @id
+  documentId    String
+  ordinal       Int
+  content       String            @db.Text
+  contentHash   String
+  tokenEstimate Int
+  page          Int?
+  section       String?
+  vectorId      String            @unique
+  metadata      Json?
+  document      KnowledgeDocument @relation(fields: [documentId], references: [id], onDelete: Cascade)
+  createdAt     DateTime          @default(now())
+
+  @@unique([documentId, ordinal])
+  @@index([documentId, createdAt])
+  @@index([contentHash])
 }

@@ -8,10 +8,14 @@ import { Button } from "@/components/ui/button";
 import { useAITranslation } from "@/components/i18n-provider";
 import { Progress } from "@/components/ui/progress";
 import { engineeringCategories, projects } from "@/lib/data";
+import {
+  PROJECT_FILE_ACCEPT,
+  PROJECT_FILE_MAX_COUNT,
+  validateProjectFile
+} from "@/lib/uploads/project-file";
 import { formatFileSize } from "@/lib/utils";
+import { useUploadThing } from "@/lib/uploadthing";
 import { useAppStore, type UploadItem } from "@/store/app-store";
-
-const acceptedExtensions = [".pdf", ".dwg", ".dxf", ".ifc", ".png", ".jpg", ".jpeg", ".webp"];
 
 function fileIcon(type: string) {
   if (type.startsWith("image/")) return FileImage;
@@ -28,16 +32,29 @@ export function UploadDialog() {
   const addUploads = useAppStore((state) => state.addUploads);
   const updateUpload = useAppStore((state) => state.updateUpload);
   const inputRef = useRef<HTMLInputElement>(null);
+  const pendingUploadIds = useRef<string[]>([]);
   const [dragging, setDragging] = useState(false);
+  const [validationError, setValidationError] = useState<string | null>(null);
   const [project, setProject] = useState(projects[0].id);
   const [category, setCategory] = useState<(typeof engineeringCategories)[number]>("Jet Grout");
+  const { startUpload, isUploading } = useUploadThing("projectFiles", {
+    uploadProgressGranularity: "fine",
+    onUploadProgress: (progress) => {
+      pendingUploadIds.current.forEach((id) => updateUpload(id, progress, "uploading"));
+    }
+  });
 
   const queueFiles = useCallback(
-    (files: File[]) => {
-      const validFiles = files.filter((file) => {
-        const extension = `.${file.name.split(".").pop()?.toLowerCase()}`;
-        return acceptedExtensions.includes(extension);
-      });
+    async (files: File[]) => {
+      const selectedFiles = files.slice(0, PROJECT_FILE_MAX_COUNT);
+      const validFiles = selectedFiles.filter((file) => validateProjectFile(file) === null);
+      setValidationError(
+        files.length > PROJECT_FILE_MAX_COUNT
+          ? t("You can upload up to 20 files at once.")
+          : validFiles.length !== selectedFiles.length
+            ? t("One or more files have an unsupported type or exceed 256 MB.")
+            : null
+      );
 
       const items: UploadItem[] = validFiles.map((file) => ({
         id: `${file.name}-${file.lastModified}-${crypto.randomUUID()}`,
@@ -49,19 +66,25 @@ export function UploadDialog() {
       }));
 
       addUploads(items);
-      items.forEach((item) => {
-        let progress = 0;
-        const timer = window.setInterval(() => {
-          progress = Math.min(progress + 8 + Math.round(Math.random() * 15), 100);
-          updateUpload(item.id, progress, progress === 100 ? "processing" : "uploading");
-          if (progress === 100) {
-            window.clearInterval(timer);
-            window.setTimeout(() => updateUpload(item.id, 100, "ready"), 700);
-          }
-        }, 260);
-      });
+      pendingUploadIds.current = items.map((item) => item.id);
+      try {
+        const result = await startUpload(validFiles);
+        items.forEach((item, index) => updateUpload(
+          item.id,
+          result?.[index] ? 100 : item.progress,
+          result?.[index] ? "ready" : "failed"
+        ));
+        if (!result || result.length !== validFiles.length) {
+          setValidationError(t("One or more files could not be uploaded."));
+        }
+      } catch {
+        items.forEach((item) => updateUpload(item.id, item.progress, "failed"));
+        setValidationError(t("One or more files could not be uploaded."));
+      } finally {
+        pendingUploadIds.current = [];
+      }
     },
-    [addUploads, updateUpload]
+    [addUploads, startUpload, t, updateUpload]
   );
 
   return (
@@ -128,6 +151,7 @@ export function UploadDialog() {
                     className={`mt-4 flex min-h-44 w-full flex-col items-center justify-center rounded-md border border-dashed px-5 text-center transition-colors ${
                       dragging ? "border-primary bg-primary/[0.07]" : "border-white/15 bg-white/[0.02] hover:border-primary/40 hover:bg-white/[0.035]"
                     }`}
+                    disabled={isUploading}
                     onClick={() => inputRef.current?.click()}
                     onDragEnter={(event) => { event.preventDefault(); setDragging(true); }}
                     onDragOver={(event) => event.preventDefault()}
@@ -135,7 +159,7 @@ export function UploadDialog() {
                     onDrop={(event) => {
                       event.preventDefault();
                       setDragging(false);
-                      queueFiles(Array.from(event.dataTransfer.files));
+                      void queueFiles(Array.from(event.dataTransfer.files));
                     }}
                   >
                     <span className="grid size-11 place-items-center rounded-md border border-primary/20 bg-primary/[0.08] text-primary">
@@ -149,9 +173,12 @@ export function UploadDialog() {
                     className="sr-only"
                     type="file"
                     multiple
-                    accept={acceptedExtensions.join(",")}
-                    onChange={(event) => queueFiles(Array.from(event.target.files ?? []))}
+                    accept={PROJECT_FILE_ACCEPT.join(",")}
+                    onChange={(event) => void queueFiles(Array.from(event.target.files ?? []))}
                   />
+                  {validationError ? (
+                    <p className="mt-2 text-xs text-red-300/80" role="alert">{validationError}</p>
+                  ) : null}
                   {uploads.length ? (
                     <div className="mt-5 space-y-2" aria-live="polite">
                       <div className="flex items-center justify-between">
