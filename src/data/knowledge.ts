@@ -1,5 +1,5 @@
 import type { KnowledgeArticle } from "@/types/knowledge";
-
+import { seoArticles } from "./seo-articles";
 export const knowledgeArticles: KnowledgeArticle[] = [
   {
     slug: "jet-grout-nedir",
@@ -4308,7 +4308,8 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     relatedSlugs: ["zemin-iyilestirme-yontemleri", "jet-grout-nedir", "dsm-nedir", "tas-kolon-nedir", "sivilasma-riskine-karsi-zemin-guclendirme", "zemin-etudu-nasil-yapilir"],
     keywords: ["yer altı zemin iyileştirme", "yeraltı zemin iyileştirme", "yer altı zemin güçlendirme", "zemin iyileştirme yöntemleri", "derin zemin iyileştirme", "jet grout zemin iyileştirme", "taş kolon zemin iyileştirme", "derin karıştırma DSM", "zemin sıvılaşması önleme", "TBDY 2018 zemin sınıfları", "zemin iyileştirme maliyet faktörleri", "yeraltı su seviyesi düşürme", "zemin iyileştirme kalite kontrol", "sorunlu zeminlerde temel çözümleri", "zemin iyileştirme Ankara"],
     published: true
-  }
+  },
+  ...seoArticles
 ];
 
 export const publishedKnowledgeArticles = knowledgeArticles.filter((article) => article.published);

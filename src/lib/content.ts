@@ -50,80 +50,77 @@ export const services = [
     icon: Drill,
     title: "Jet Grout",
     summary: "YER6, zayıf zeminlerde taşıma kapasitesini artırmak için yüksek basınçlı enjeksiyonla zemin-çimento kolonları oluşturur.",
-    detail: "Zorlu saha koşullarında ve mevcut yapılara yakın bölgelerde, taşıma kapasitesini artırmak ve su geçirimsizliği sağlamak için yüksek basınçlı enjeksiyon çözümleri.",
-    specs: ["Mono, double ve triple sistem", "Gerçek zamanlı basınç takibi", "Kolon çapı optimizasyonu"],
+    detail: "Jet grout; 400-600 bar aralığındaki yüksek basınçlı çimento şerbetinin (grout), zemin matrisini parçalayarak yerinde zemin-çimento kolonları (soilcrete) oluşturması prensibine dayanır. Zorlu saha koşullarında, dar alanlarda ve mevcut yapılara bitişik (underpinning) kazılarda taşıma kapasitesini artırmak ve su geçirimsizlik perdesi (secant wall) sağlamak için en etkili geoteknik çözümdür.",
+    specs: ["Mono, double ve triple sistem", "Gerçek zamanlı basınç ve debi takibi", "Kesintisiz yüzey dönüş (spoil) kontrolü"],
     applications: [
-      "Su geçirimsizlik perdeleri ve zemin sızdırmazlığı",
-      "Temel altı zemin iyileştirme ve mevcut yapı takviyesi",
-      "Kazı tabanı stabilizasyonu ve şişme önleme",
-      "Tünel giriş bölgesi ve köprü ayağı çevresi güçlendirme",
-      "Kıyı yapıları ve liman zemin güçlendirmesi",
-      "Deprem riskli bölgelerde sıvılaşmaya karşı zemin güçlendirme"
+      "Derin kazılarda yeraltı suyu kesici (cutoff) geçirimsizlik perdeleri",
+      "Mevcut yapıların temel altı güçlendirmesi (underpinning)",
+      "Yumuşak kil ve gevşek kumlarda taşıma gücü (bearing capacity) artırımı",
+      "Tünel ayna ve portal giriş stabilizasyonu, şaft kazıları",
+      "Kıyı yapılarında deniz suyu girişini engelleyen sızdırmazlık perdeleri",
+      "Sıvılaşma riskine karşı zemin iyileştirmesi"
     ],
     advantages: [
-      "Dar ve erişimi kısıtlı sahalarda kompakt ekipmanla uygulanabilir",
-      "Mevcut yapılara sıfır titreşimle yakın çalışma imkânı",
-      "Mono, double, triple sistem seçimiyle geniş uygulama yelpazesi",
-      "Kolon çapı ve derinliği saha koşullarına göre optimize edilebilir",
-      "Yeraltı suyu seviyesinin altında etkin geçirimsizlik sağlar",
-      "Gerçek zamanlı basınç ve karışım takibiyle yüksek kalite güvencesi"
+      "Mevcut yapılara sıfır titreşimle, yapısal hasar riski olmadan uygulanabilir.",
+      "Kompakt ekipman yapısı sayesinde dar ve yüksekliği kısıtlı bodrum katlarda çalışılabilir.",
+      "Zemin profiline göre Mono (sadece grout), Double (grout+hava) veya Triple (grout+su+hava) sistem seçimiyle optimize edilir.",
+      "Geleneksel fore kazık yöntemlerinin aksine donatı gerektirmediği için daha hızlı ve ekonomiktir.",
+      "Yeraltı su seviyesinin altındaki akıntılı kumlarda bile yüksek basınç sayesinde etkili birleşim sağlar.",
+      "Uygulama esnasında dijital sensörlerle dönüş hızı (rpm) ve enjeksiyon debisi anlık izlenir."
     ],
     processSteps: [
-      { title: "Zemin Etüdü ve Projelendirme", description: "Sondaj verileri, laboratuvar sonuçları ve zemin modeli üzerinden kolon parametreleri (çap, derinlik, aralık, basınç) belirlenir." },
-      { title: "Deneme Kolonları ve Kalibrasyon", description: "Üretim öncesinde saha koşullarına özgü deneme kolonları yapılır; enjeksiyon basıncı ve karışım oranı doğrulanır." },
-      { title: "Saha Aplikasyonu ve Platform Hazırlığı", description: "Kolon merkezleri projeye uygun aplikasyon edilir, ekipman erişim yolları ve güvenlik koridorları hazırlanır." },
-      { title: "Delgi ve Jet Enjeksiyonu", description: "Delgi makinesi belirlenen derinliğe iner; kontrollü geri çekilme sırasında yüksek basınçlı çimento karışımı enjekte edilerek zemin-çimento kolonu oluşturulur." },
-      { title: "Kalite Kontrol ve Teslim", description: "Karot alımı, basınç testi ve süreklilik kontrolleri yapılır; tüm üretim verileri teslim dosyasına eklenir." }
+      { title: "Zemin Modeli ve Ön Tasarım", description: "Geoteknik zemin etüdüne (SPT/CPT) dayalı olarak hedeflenen kolon çapı, derinliği ve kafes (grid) aralığı belirlenir." },
+      { title: "Saha Deneme Kolonları (Zorunlu)", description: "Uluslararası standartlar (USACE, FHWA) gereği pilot kolonlar imal edilir. Hedef çap ve dayanım için basınç, çekme hızı ve su/çimento oranı sahada kalibre edilir." },
+      { title: "Yüksek Basınçlı Enjeksiyon (Jetleme)", description: "Delgi tijinin ucundaki nozullardan 400-600 bar basınçla enjeksiyon basılırken, tij belirli bir hızda döndürülerek (rpm) yukarı çekilir." },
+      { title: "Dönüş (Spoil) Kontrolü", description: "İmalat boyunca yüzeye sürekli malzeme (spoil) dönüşü sağlanarak kolon sürekliliği doğrulanır ve tehlikeli zemin kabarması (heave) engellenir." },
+      { title: "Kalite Kabul Testleri", description: "Sertleşen jet grout kolonlarından karot alınarak (UCS - serbest basınç dayanımı) test edilir ve kolon sürekliliği raporlanarak teslim edilir." }
     ],
-    technicalNote: "Jet grout kolon çapı; zemin geçirimliliği, enjeksiyon basıncı ve geri çekilme hızına bağlı olarak 0,4 m ile 2,5 m arasında değişebilir. Silt ve kil içeren zeminlerde mono sistem yeterliyken, homojen kum tabakalarında triple sistem daha geniş çap sağlar. Her proje öncesinde deneme kolonları yapılması, üretim parametrelerinin güvenilir biçimde kalibre edilmesi açısından kritiktir.",
+    technicalNote: "Bir jet grout uygulamasının kalitesi yalnızca kullanılan çimento miktarına değil, uygulanan kinetik enerjiye (basınç ve çekme hızı) bağlıdır. FHWA-HRT-13-046 yönergelerine göre, yüzeye sürekli çamur (spoil) dönüşünün kesilmesi jetlemenin durdurulmasını gerektirir; aksi takdirde yanal zemin kırılmaları (hidro-fraktür) oluşur. YER6, her projede deneme kolonu (trial column) uygulamasını standart olarak kabul eder.",
     faq: [
-      { question: "Jet grout hangi zemin türlerinde uygulanır?", answer: "Jet grout; kum, silt, kil ve karma yapılı zeminlerde uygulanabilir. Çakıl ve iri dane içeren zemin katmanları enjeksiyon kontrolü açısından ayrıca değerlendirilmelidir." },
-      { question: "Jet grout kolon çapı ne kadar olabilir?", answer: "Sistem türüne göre 0,4 m ile 2,5 m arasında kolon çapı elde edilebilir. Zemin tipi, enjeksiyon basıncı ve geri çekilme hızı çapı belirleyen temel değişkenlerdir." },
-      { question: "Mevcut yapının altında jet grout uygulanabilir mi?", answer: "Evet. Kompakt ekipmanlar kullanılarak mevcut yapı bodrum katı veya temel altında jet grout uygulaması gerçekleştirilebilir. Uygulama öncesinde yapı yerleşimi ve zemin koşulları ayrıntılı incelenmelidir." },
-      { question: "Jet grout uygulaması ne kadar sürer?", answer: "Uygulama süresi kolon sayısı, derinlik ve zemin koşullarına göre değişir. Günlük 50–150 adet kolon üretimi mümkündür; proje programı saha veri analizine göre optimize edilir." },
-      { question: "Türkiye'de jet grout firmaları seçilirken hangi kriterler önemlidir?", answer: "Jet grout firmaları seçilirken firmanın kendi makine parkı, geoteknik uzmanlığı, deneme kolonu uygulamaları ve kalite kontrol (karot, basınç testi) disiplini en önemli kriterlerdir. YER6, modern ekipman parkıyla Türkiye genelinde profesyonel jet grout firmaları arasında öne çıkmaktadır." },
-      { question: "Jet grout hizmet alanınız nereleri kapsıyor?", answer: "Merkezi Ankara'da bulunan YER6, yüksek mobilizasyon kapasitesi sayesinde Türkiye'nin 81 ilinde ve uluslararası projelerde jet grout uygulamaları gerçekleştirmektedir." }
+      { question: "Jet grout hangi zemin türlerinde uygulanır?", answer: "Jet grout; kum, silt, kil ve karma yapılı zeminlerde uygulanabilir. Ancak çok katı kil veya yoğun çakıllı (boulder) zeminlerde, yüksek kinetik enerji (Triple sistem) ve özel nozul tasarımları gerektirir." },
+      { question: "Jet grout kolon çapı ne kadar olabilir?", answer: "Kullanılan sisteme (Mono, Double, Triple), zemin sıkılığına ve enjeksiyon parametrelerine bağlı olarak 0.40 metre ile 2.50 metre arasında kolon çapı elde edilebilir." },
+      { question: "Mevcut yapının altında (bodrumda) jet grout uygulanabilir mi?", answer: "Evet. Mini kazık makinelerine entegre edilebilen kompakt jet grout kafaları ile mevcut yapıların bodrumlarında, minimum 2.5 - 3 metre tavan yüksekliği olan alanlarda titreşimsiz temel güçlendirme (underpinning) yapılabilir." },
+      { question: "Jet grout uygulaması ne kadar sürer?", answer: "Uygulama hızı, zeminin delinebilirliğine ve kolon derinliğine bağlıdır. YER6'nın yüksek kapasiteli makine parkı sayesinde günlük 150-300 m/tül üretime çıkılabilmektedir." },
+      { question: "Jet grout kolonlarının kalitesi nasıl test edilir?", answer: "Saha imalatından 7-28 gün sonra kolonlardan elmas uçlu karot alınır. Laboratuvarda UCS (Tek Eksenli Basınç) testi yapılarak tasarım mukavemetinin sağlanıp sağlanmadığı belgelenir." },
+      { question: "Jet grout firmaları seçilirken hangi kriterler önemlidir?", answer: "Geoteknik firmanın kendi yüksek basınçlı pompalarına (Soilmec, Metax vb.) sahip olması, üretim esnasında dijital veri kaydı (data logger) tutabilmesi ve mutlaka saha deneme kolonu yapması en kritik faktörlerdir." }
     ]
   },
   {
     slug: "dsm",
     key: "svc_dsm",
     icon: Layers3,
-    title: "DSM",
+    title: "DSM (Deep Soil Mixing)",
     summary: "Derin zemin karıştırma ile taşıma kapasitesi ve oturma performansı kontrollü iyileştirme.",
-    detail: "Yumuşak kil, gevşek kum ve dolgu alanlarında düşük vibrasyonlu, seri üretimli çözüm.",
-    specs: ["Çimento bağlayıcı tasarımı", "Laboratuvar karışım tasarımı", "Kolon kalite kaydı"],
+    detail: "DSM (Derin Zemin Karıştırma), mevcut zemin ile çimento bazlı bağlayıcıların yerinde mekanik olarak karıştırılarak zemin-çimento (soil-cement) kolonları oluşturulması işlemidir. Yüksek yeraltı suyuna sahip yumuşak kil, silt ve gevşek kumlu sahalarda, yanal yayılmayı ve sıvılaşmayı engellemek, oturmayı azaltmak ve taşıma gücünü homojen biçimde artırmak için en ekonomik ve seri yöntemdir.",
+    specs: ["Mekanik karıştırma enerjisi (BRN) kontrolü", "Laboratuvar karışım (UCS) tasarımı", "Kolon kalite ve homojenlik kaydı"],
     applications: [
-      "Yumuşak kil zeminlerde endüstriyel tesis ve depo platformu",
-      "Raylı sistem, karayolu ve köprü altyapı iyileştirme",
-      "Lojistik merkezi ve fabrika temel desteği",
-      "Dolgu ve sıvılaşmaya yatkın zemin stabilizasyonu",
-      "Oturma duyarlı yapı alanlarında fark oturma kontrolü",
-      "Deniz dolgularında zemin güçlendirme"
+      "Yumuşak killi zeminlerde lojistik depo ve endüstriyel tesis platformu",
+      "Otoyol, demiryolu ve köprü yaklaşım dolgularında oturma kontrolü",
+      "Sıvılaşmaya yatkın sahalarda grid (kafes) veya blok tipi zemin stabilizasyonu",
+      "Liman ve kıyı yapılarının arkasında yanal toprak basıncını azaltma",
+      "Derin kazılarda yeraltı suyu kesici perde (cutoff wall) imalatı"
     ],
     advantages: [
-      "Düşük titreşim ve gürültüyle kentsel sahalarda uygulanabilir",
-      "Yüksek günlük ilerleme kapasitesiyle geniş alanlar için ekonomik",
-      "Çimento dozajı zemin özelliğine göre kolayca ayarlanabilir",
-      "Karot testleriyle kolon kalitesi sahadayken doğrulanabilir",
-      "Zemin içi malzeme sarfını minimize eden çevre dostu yöntem",
-      "Oturma ve sıvılaşma riskini birlikte azaltır"
+      "Zemini dışarı atmadan yerinde kullanarak çevresel etkiyi ve hafriyat maliyetini düşürür.",
+      "Geniş alanlı platform iyileştirmelerinde jet grout veya fore kazığa göre daha hızlı ve ekonomiktir.",
+      "Yeraltı suyu problemini çözer, kapalı sistem karıştırmayla temiz bir şantiye ortamı sağlar.",
+      "Organik killi veya turbalı zeminlerde çimento-kireç karışımlarıyla özel tasarım yapılabilir.",
+      "Blade Rotation Number (BRN) takibiyle karıştırma enerjisi ve kolon homojenliği garanti edilir."
     ],
     processSteps: [
-      { title: "Laboratuvar Karışım Tasarımı", description: "Zemin numuneleri alınarak optimum çimento dozajı ve hedef mukavemet değerleri laboratuvarda belirlenir." },
-      { title: "Saha Aplikasyonu ve Platform Hazırlığı", description: "Kolon eksenleri aplikasyon edilir, makine erişim yolları ve çalışma koridorları hazırlanır." },
-      { title: "Zemin-Çimento Karıştırma", description: "Çift veya tekli aks DSM ekipmanı, çimento şerbetini enjekte ederken dönüş ve çekilme hareketi ile homojen karışım oluşturur." },
-      { title: "Üretim Takibi ve Dijital Kayıt", description: "Çimento tüketimi, karıştırma hızı ve derinlik verisi dijital sistemle anlık kayıt altına alınır." },
-      { title: "Karot Alımı ve Kalite Testleri", description: "Belirlenen aralıklarla karot numuneleri alınarak unconfined basınç (qu) testleri yapılır; sonuçlar teslim dosyasına eklenir." }
+      { title: "Saha Karakterizasyonu ve Karışım Tasarımı", description: "Zemin numuneleri üzerinde laboratuvarda farklı çimento dozajları denenerek projenin hedef mukavemet (UCS) değeri tasarlanır." },
+      { title: "Pilot İmalat ve Ekipman Kalibrasyonu", description: "Sahada deneme kolonları imal edilerek en uygun dönüş hızı (rpm) ve ilerleme hızı belirlenir." },
+      { title: "Mekanik Karıştırma (Delgi)", description: "Çift veya tek milli DSM bıçakları zemini parçalayarak hedef derinliğe inerken, alttan düşük basınçlı çimento şerbeti basılır." },
+      { title: "Yukarı Çekme ve Homojenizasyon", description: "Hedef derinliğe ulaşıldıktan sonra ekipman ters yönde dönerek yukarı çekilir; zemin ile çimento homojen şekilde karışarak kolon formunu alır." },
+      { title: "Kalite Kabul ve Karot Testleri", description: "Tamamlanan kolonlardan 28 gün sonra karot alınarak tek eksenli basınç (UCS) testi ile tasarım hedefinin yakalandığı raporlanır." }
     ],
-    technicalNote: "DSM uygulamasında hedef mukavemet değeri; zemin plastisitesi, organik içeriği ve bağlayıcı oranına bağlıdır. Organik içeriği yüksek veya pH değeri yüksek zeminlerde çimento yerine kireç-çimento karışımları veya özel katkı malzemeleri değerlendirilebilir. Laboratuvar tasarımı, saha karışım tasarımını yönlendiren temel adımdır.",
+    technicalNote: "DSM tasarımında kritik mühendislik parametresi 'Karıştırma Enerjisi'dir (Mixing Energy). FHWA-NHI-13-046 rehberine göre kolon dayanımı, çimento miktarının yanı sıra bıçağın dönüş sayısı (Blade Rotation Number) ile doğrudan ilişkilidir. Organik içeriği yüksek killerde (%5 üzeri) saf çimento yerine çimento-kireç bağlayıcılar kullanılarak hidratasyon ısısı artırılır. YER6, her DSM projesinde laboratuvar karışım tasarımı yapar.",
     faq: [
-      { question: "DSM ile jet grout arasındaki fark nedir?", answer: "DSM, dönen aks üzerindeki karıştırıcı kanatlarla zemin ve çimento şerbetini yerinde karıştırır. Jet grout ise yüksek basınçlı sıvı jetiyle zemini parçalayarak kolon oluşturur. DSM, geniş alanlarda ve yumuşak zeminlerde genellikle ekonomik avantaj sağlar." },
-      { question: "DSM hangi derinliğe kadar uygulanabilir?", answer: "Standart ekipmanlarla 20–25 m, özel uzatmalı akslı ekipmanlarla 30 m ve üzeri derinliklere ulaşılabilir. Uygun derinlik, zemin koşulları ve ekipman kapasitesine göre belirlenir." },
-      { question: "DSM kolonlarının dayanımı nasıl kontrol edilir?", answer: "Karot alımı ve unconfined basınç testleri (qu) ile kolon dayanımı doğrulanır. Saha penetrometre testleri de tamamlayıcı kalite ölçümü olarak kullanılabilir." },
-      { question: "DSM oturma problemlerini çözer mi?", answer: "Evet. DSM kolonları, zemin taşıma kapasitesini artırarak fark oturmayı ve toplam oturmayı önemli ölçüde azaltır. Performans hedefleri projelendirme aşamasında belirlenir." },
-      { question: "DSM (Deep Soil Mixing) yapan firma seçerken nelere dikkat edilmeli?", answer: "Laboratuvar karışım tasarımı (çimento dozajı, hedef mukavemet), DSM ekipman kapasitesi ve derinlik aralığı, karot ve basınç testleriyle kalite doğrulaması, dijital üretim kaydı ve referans projeleri belirleyicidir. YER6, Ankara merkezli olarak Türkiye geneli ve yurt dışında DSM zemin iyileştirme uygular." },
-      { question: "DSM uygulamalarınız hangi bölgeleri kapsıyor?", answer: "Firmamız, gelişmiş makine parkı ile Türkiye'nin her noktasına ve yurt dışı şantiyelerine derin zemin karıştırma (DSM) çözümleri ulaştırmaktadır." }
+      { question: "DSM ile Jet Grout arasındaki mühendislik farkı nedir?", answer: "Jet grout yüksek kinetik basınç (400-600 bar) ile zemini parçalar; DSM ise 10-20 bar gibi düşük basınçta, zemini mekanik kanatlarla (blade) karıştırır. DSM, geniş kil yataklarında (ör. körfez bölgeleri) daha homojen ve ekonomikken, jet grout dar alanlarda veya sert katmanları aşmada etkilidir." },
+      { question: "DSM (Deep Soil Mixing) hangi derinliğe kadar uygulanabilir?", answer: "Kullanılan ekipmanın (tek milli veya çift milli) kapasitesine göre 25-30 metre derinliğe kadar etkili bir şekilde zemin-çimento kolonları oluşturulabilir." },
+      { question: "DSM kolonlarının taşıma kapasitesi nasıl belirlenir?", answer: "Laboratuvarda Unconfined Compressive Strength (UCS) testleriyle belirlenir. Tipik DSM kolonları, zemin türüne ve çimento dozajına bağlı olarak 1.0 MPa ile 3.0 MPa arasında karakteristik basınç dayanımına ulaşır." },
+      { question: "DSM zemin sıvılaşmasını nasıl engeller?", answer: "Sıvılaşma beklenen kumlu/siltli sahalarda DSM kolonları birbirine bitişik (kesişen) olarak grid (kafes) şeklinde imal edilir. Bu kafes, içeride kalan zemini hapsederek (confinement) makaslama gerilmesini alır ve yanal yayılmayı engeller." },
+      { question: "DSM uygulaması yapan firmalar neye göre seçilmeli?", answer: "DSM operasyonunda kaliteyi belirleyen şey; makinenin karıştırma enerjisini dijital olarak takip etmesi (data logger) ve firmanın laboratuvar karışım tasarım yeteneğidir. YER6, çift milli yüksek kapasiteli DSM makine parkı ve kalite disipliniyle öne çıkar." }
     ]
   },
   {
@@ -131,40 +128,37 @@ export const services = [
     key: "svc_fore_kazik",
     icon: Building2,
     title: "Fore Kazık",
-    summary: "YER6, büyük çaplı derin temeller ve ağır yapı yükleri için yüksek taşıma kapasiteli rotary delgi uygulamaları gerçekleştirir.",
-    detail: "Bentonit, muhafaza borusu ve tremie beton süreçleriyle donatılmış, yüksek taşıma kapasiteli ve derin kazı destekli geoteknik üretim.",
-    specs: ["Derin delgi kapasitesi", "Dikeylik kontrolü", "Beton sarf izleme"],
+    summary: "YER6, ağır yapı yüklerini güvenle taşımak için kalite garantili ve yüksek kapasiteli rotary fore kazık uygulamaları gerçekleştirir.",
+    detail: "Fore kazık (bored pile); büyük çaplı temel sistemleri, köprü ayakları, viyadükler ve derin kazı destek (iksa) sistemleri için vazgeçilmez bir taşıyıcı elemandır. YER6; bentonit/polimer destekli delgi, muhafaza borusu (casing) sürme ve tremie betonlama süreçlerini FHWA ve Eurocode 7 standartlarına uygun bir mühendislik disipliniyle yönetir.",
+    specs: ["Rotary ve DTH delgi kapasitesi", "Sürekli dikeylik (vertikallik) kontrolü", "Crosshole Sonic Logging (CSL) bütünlük testi"],
     applications: [
-      "Yüksek ve karma kullanımlı yapıların derin temel sistemleri",
-      "Köprü, viyadük ve kavşak ayak temelleri",
-      "Sahil yapıları, liman ve iskele temelleri",
-      "Endüstriyel tesis, fabrika ve enerji santrali temelleri",
-      "İksa perdeleri ile birlikte ankrajlı derin kazı sistemleri",
-      "Büyük çaplı baret temel entegrasyonu"
+      "Yüksek katlı ve karma kullanımlı yapıların derin temel sistemleri",
+      "Kavşak, viyadük ve köprü ayağı temellerinde yüksek eksenel yük transferi",
+      "Derin kent içi kazılarda ankrajlı kazıklı perde (kesişen veya aralıklı) imalatı",
+      "Endüstriyel santral, baca ve ağır makine temelleri",
+      "Liman, iskele ve sahil yapılarında suya dayanıklı temel teşkili"
     ],
     advantages: [
-      "Çok yüksek eksenel taşıma kapasitesi sağlar",
-      "Kaya ve sert zemin formasyonlarına kadar delinebilir",
-      "Geniş çap seçenekleriyle farklı yapı yüklerine uyarlanabilir",
-      "Titreşim seviyesi düşük, komşu yapılara zarar vermez",
-      "Sürekli dikeylik ölçümüyle yüksek hassasiyetli üretim",
-      "Beton sarf ve bütünlük loglamasıyla tam kalite izlenebilirliği"
+      "Zemin profili ne olursa olsun (sert kaya dahil) yüksek eksenel ve yanal taşıma kapasitesi.",
+      "Titreşimsiz (non-displacement) bir yöntem olduğundan komşu yapılara zarar vermez.",
+      "Geniş çap seçenekleri (60 cm - 250 cm) ile farklı yük senaryolarına tam uyum sağlar.",
+      "Çakma kazıkların aksine, istenilen kota kadar sert kaya soketlenmesine (rock socketing) izin verir.",
+      "İmalat sırasında beton döküm hacmi ve kuyu dikeyliği izlenerek yüksek doğruluk elde edilir."
     ],
     processSteps: [
-      { title: "Aplikasyon ve Teçhiz Kurulumu", description: "Kazık merkezleri aplikasyon edilir; bentonit veya muhafaza borusu sistemi kurulur." },
-      { title: "Rotary Delgi", description: "Belirlenen çap ve derinliğe kadar rotary delgi yapılır; kayaç karşılaşıldığında core barrel veya DTH ile devam edilir." },
-      { title: "Donatı Kafesi Yerleşimi", description: "Mühendislik hesaplarına göre hazırlanan donatı kafesi kuyuya indirilir; dikeylik ve örtü kontrol edilir." },
-      { title: "Beton Dökümü ve Tremie", description: "Tremie boru yöntemiyle beton, alttan üste homojen biçimde doldurulur; beton sarf miktarı sürekli izlenir." },
-      { title: "Başlık Betonu ve Kalite Testleri", description: "Kazık başı beton beklenir; crosshole sonic logging veya yükleme testleriyle kalite doğrulanır." }
+      { title: "Aplikasyon ve Kılavuz (Muhafaza) Borusu", description: "Kazık merkezleri hassas şekilde aplikasyon edildikten sonra, yüzeydeki yıkılmaları önlemek için kılavuz kılıf (casing) zemine sürülür." },
+      { title: "Rotary Delgi (Bentonit/Polimer)", description: "Yüksek yeraltı suyu olan zeminlerde kuyu stabilitesini korumak için bentonit çamuru kullanılarak hedef derinliğe kadar rotary veya bucket ile kazı yapılır." },
+      { title: "Donatı Kafesi İndirilmesi", description: "Pas payları takılmış donatı kafesi, kuyu cidarını zedelemeden dikkatlice kuyuya indirilir. Dikeylik (plumbness) lazer ile kontrol edilir." },
+      { title: "Tremie Yöntemi ile Beton Dökümü", description: "Beton, suyun veya bentonitin altında kalmayacak şekilde dipten yukarı tremie borusuyla dökülür. Tremie borusu sürekli beton içinde (min. 3 metre) tutulur." },
+      { title: "Bütünlük (Integrity) ve Taşıma Testleri", description: "Beton prizini aldıktan sonra Kazık Bütünlük Testi (PIT) veya Crosshole Sonic Logging (CSL) ile kazık cidarında boyun verme veya segregasyon olup olmadığı test edilir." }
     ],
-    technicalNote: "Fore kazık tasarımında kazık çapı, uzunluğu ve beton sınıfı; zemin taşıma kapasitesi, grup etkisi ve yapı yüklerine göre belirlenir. Kaya içindeki soket uzunluğu ve beton bütünlüğü kritik tasarım parametreleridir. Zemin koşullarına bağlı olarak bentonit, polimer veya muhafaza borusu (casing) sistemi seçimi uygulamanın kalitesini doğrudan etkiler.",
+    technicalNote: "Fore kazık kalitesi, delgi hızından çok beton döküm kalitesine bağlıdır. DFI/EFFC kılavuzlarına göre; tremie borusunun beton dökümü esnasında en az 3 metre betonun içinde gömülü kalması, soğuk derz ve çamur sıkışması riskini engellemek için zorunludur. Ayrıca Low-strain (PIT) testleri süreklilik hakkında bilgi verirken, kazığın taşıma kapasitesi ancak Statik veya Dinamik Yükleme Testleri ile doğrulanabilir.",
     faq: [
-      { question: "Fore kazık ile mini kazık arasındaki fark nedir?", answer: "Fore kazık; büyük çaplı (genellikle 600–2000 mm), derin ve yüksek kapasiteli temel elemanlarıdır. Mini kazık ise küçük çaplı (genellikle 100–300 mm), sınırlı sahaya uygun kompakt ekipmanla uygulanan güçlendirme elemanıdır." },
-      { question: "Fore kazık hangi derinliğe kadar yapılabilir?", answer: "Zemin koşullarına ve ekipman kapasitesine bağlı olarak 80–100 m ve üzeri derinliklere ulaşılabilir. Kaya soket uygulamaları için özel DTH ekipmanları kullanılır." },
-      { question: "Fore kazık bütünlüğü nasıl test edilir?", answer: "Crosshole sonic logging (CSL), low-strain integrity testing veya statik/dinamik yükleme testleri ile kazık bütünlüğü ve taşıma kapasitesi doğrulanır." },
-      { question: "Yeraltı suyu olan sahada fore kazık yapılabilir mi?", answer: "Evet. Yüksek yeraltı suyu seviyesinde bentonit veya polimer sirkülasyonu, ya da muhafaza borusu (casing) yöntemiyle fore kazık güvenle uygulanabilir." },
-      { question: "Fore kazık firmaları seçilirken nelere dikkat edilmeli?", answer: "Fore kazık firmaları seçilirken delgi makinesi kapasitesi, zorlu zemin tecrübesi, bütünlük (CSL/PIT) ve yükleme testleriyle kalite doğrulama disiplini belirleyicidir. YER6, Bauer ve XCMG makine parkıyla Türkiye genelinde profesyonel fore kazık firmaları arasındadır." },
-      { question: "Fore kazık projeleriniz nerede yer alıyor?", answer: "Ankara merkezli olarak faaliyet gösteriyor; Türkiye'nin her bölgesinde ve uluslararası platformlarda fore kazık temelli geoteknik uygulamalara imza atıyoruz." }
+      { question: "Fore kazık ile mini kazık arasındaki mühendislik farkı nedir?", answer: "Fore kazık; genellikle 60-250 cm çaplarında, yüzlerce ton eksenel yük taşıyabilen ana taşıyıcı elemanlardır. Mini kazık ise 15-30 cm çaplı, enjeksiyonla oluşturulan ve genellikle dar alanlarda güçlendirme (underpinning) amacıyla kullanılan destek elemanlarıdır." },
+      { question: "Fore kazık hangi zemin türlerinde, ne kadar derine uygulanabilir?", answer: "Fore kazık; kil, kum, çakıl ve hatta DTH (Down-The-Hole hammer) ekipmanlarıyla sert kaya formasyonlarına uygulanabilir. Gelişmiş XCMG ve Bauer makine parkımızla 70 metre ve üzeri derinliklere inmek mümkündür." },
+      { question: "Fore kazık betonunun kalitesi (bütünlüğü) nasıl doğrulanır?", answer: "ICE SPERW spesifikasyonlarına uygun olarak; düşük gerinimli süreklilik testi (PIT) veya donatı kafesine bağlanan borular yardımıyla ultrasonik dalga yansımalarını ölçen Crosshole Sonic Logging (CSL) testi ile doğrulanır." },
+      { question: "Yeraltı suyu yüksek olan sahalarda kuyu nasıl göçmez?", answer: "Sulu ve kendini tutamayan (kohezyonsuz) zeminlerde, hidrostatiği dengelemek için kuyu içine Bentonit çamuru veya sentetik Polimer basılır, ya da tamamen çelik muhafaza borusu (casing) sürülerek kazı yapılır." },
+      { question: "Fore kazık firması ararken nelere dikkat edilmelidir?", answer: "Fore kazık operasyonunda kaliteyi belirleyen temel unsurlar; firmanın yüksek torklu (ör. 220-300 kNm) makine parkı, bentonit/tremie süreçlerindeki teknik disiplini ve imalat sonrası PIT/CSL testleriyle işi belgelendirebilmesidir. YER6, mühendislik garantisiyle Türkiye'nin önde gelen fore kazık yüklenicilerindendir." }
     ]
   },
   {
@@ -294,41 +288,80 @@ export const services = [
     slug: "zemin-iyilestirme",
     key: "svc_zemin_iy",
     icon: Sparkles,
-    title: "Zemin İyileştirme",
-    summary: "Oturma, sıvılaşma ve taşıma sorunlarına karşı mühendislik standartlarına uygun geoteknik çözümler sunuyoruz.",
-    detail: "YER6, zemin modelleme aşamasından saha üretimine kadar geoteknik süreçleri mühendislik standartlarıyla yönetir.",
-    specs: ["Kolon, enjeksiyon ve drenaj", "Performans tasarımı", "Saha veri analizi"],
+    title: "Zemin İyileştirme Yöntemleri",
+    summary: "Oturma, sıvılaşma ve düşük taşıma gücü sorunlarına karşı uluslararası standartlarda projelendirilen zemin iyileştirme yöntemleri.",
+    detail: "Zemin iyileştirme yöntemleri; yapı yüklerini güvenle taşıyamayan, sıvılaşma potansiyeli yüksek veya aşırı oturma riski taşıyan zeminlerin fiziksel veya kimyasal özelliklerinin değiştirilmesidir. YER6, FHWA, USACE ve ISSMGE standartlarını referans alarak; derin karıştırma (DSM), jet grout, taş kolon ve vibro kompaksiyon yöntemlerini tek bir merkezden, mühendislik disipliniyle projelendirir ve uygular.",
+    specs: ["Sıvılaşma riskine karşı taş kolon ve drenaj", "Oturma kontrolü için DSM ve Jet Grout", "Yüksek doğruluklu zemin kalite kontrolü"],
     applications: [
-      "Düşük taşıma kapasiteli zeminlerde temel güçlendirme",
-      "Deprem bölgelerinde sıvılaşmaya karşı zemin güçlendirme",
-      "Fark oturma kontrolü gerektiren yapı alanları",
-      "Dolgu ve yumuşak zemin üzerinde platform iyileştirme",
-      "Mevcut yapı altında temel güçlendirme (underpinning)",
-      "Atık veya kirlenmiş zemin stabilizasyonu"
+      "Taşıma gücü düşük siltli ve killi zeminlerde temel güçlendirme",
+      "Aktif deprem faylarına yakın (TBDY 2018) bölgelerde sıvılaşma mitigasyonu (önlemi)",
+      "Liman, otoyol ve endüstriyel platformlarda farklı oturma (diferansiyel) kontrolü",
+      "Dolgu ve organik içerikli gevşek zeminlerde taşıma kapasitesi artırımı",
+      "Mevcut yapıların altında titreşimsiz temel güçlendirme (underpinning)",
+      "Yeraltı suyunun yoğun olduğu alüvyal sahalarda su geçirimsizlik perdesi"
     ],
     advantages: [
-      "Birden fazla yöntemi (jet grout, DSM, enjeksiyon, drenaj) tek projede entegre eder",
-      "Zemin modeline dayalı performans tasarımıyla hedefe odaklı çözüm",
-      "Oturma, sıvılaşma ve taşıma kapasitesi sorunlarını birlikte çözer",
-      "Saha verisi takibiyle iyileştirme etkinliği gerçek zamanlı doğrulanır",
-      "Geoteknik risk ve proje maliyeti birlikte optimize edilir",
-      "Tüm test ve doğrulama süreçleri teslim dosyasında raporlanır"
+      "Zemin türüne (kum, kil, silt) en uygun yöntemin veya hibrit çözümlerin (ör. Taş Kolon + Düşey Dren) tek projede entegre edilmesi",
+      "Zemin etüt raporundaki geoteknik verilere (SPT, CPT) dayalı spesifik performans tasarımı",
+      "Geleneksel derin temellere (fore kazık vb.) kıyasla geniş alanlarda çok daha ekonomik ve hızlı sonuç",
+      "Dijital üretim takip sistemleriyle iyileştirme etkinliğinin anlık saha doğrulamasının yapılması",
+      "Sıvılaşma kaynaklı yanal yayılma (lateral spreading) ve taban kabarması risklerinin minimize edilmesi",
+      "İmalat sonrasında TBDY 2018 ve uluslararası normlara uygun yükleme, karot ve kalite doğrulama raporlarının sunulması"
     ],
     processSteps: [
-      { title: "Zemin Modeli ve Risk Analizi", description: "Sondaj, laboratuvar ve saha deneyleriyle zemin profili çıkarılır; oturma, taşıma ve sıvılaşma riskleri belirlenir." },
-      { title: "Yöntem Seçimi ve Tasarım", description: "Zemin koşullarına, yapı yüklerine ve proje programına uygun iyileştirme yöntemi veya yöntem kombinasyonu seçilir; performans kriterleri tanımlanır." },
-      { title: "Pilot Uygulama", description: "Tam ölçekli üretim öncesinde pilot alan uygulamasıyla tasarım parametreleri doğrulanır." },
-      { title: "Saha Uygulaması ve Takip", description: "Üretim parametreleri dijital sistemle kaydedilir; iyileştirme süreci mühendislik denetimi altında yürütülür." },
-      { title: "Performans Testi ve Teslim", description: "Tasarım kriterleri doğrultusunda yükleme, oturma ve sıvılaşma testleri yapılır; raporlar teslim dosyasına eklenir." }
+      { title: "Zemin Modeli ve Geoteknik Analiz", description: "Mevcut sondaj ve laboratuvar deneyleri (SPT, CPT, atterberg limitleri) incelenerek yeraltı su seviyesi, taşıma gücü ve sıvılaşma risk haritası oluşturulur." },
+      { title: "Yöntem Seçimi ve Optimizasyon", description: "İnce taneli zeminler için DSM veya Jet Grout, granüler zeminler için Vibro Kompaksiyon veya Taş Kolon seçilerek mühendislik hesaplamaları yapılır." },
+      { title: "Saha Pilot (Deneme) Uygulaması", description: "Tam ölçekli imalata geçmeden önce deneme kolonları yapılır; enjeksiyon basıncı, karışım oranı ve dönüş hızı (BRN) gibi parametreler saha gerçeğine kalibre edilir." },
+      { title: "Dijital Takip ile İmalat", description: "Yer altındaki üretim parametreleri (basınç, debi, rotasyon) makine sensörleriyle eş zamanlı takip edilir, sürekli kayıt altına alınır." },
+      { title: "Kalite Kabul ve Performans Testi", description: "Karot alımı (UCS testleri), plaka yükleme testleri ve sismik/akustik testler ile zemin iyileştirmesinin hedeflenen rijitliğe ulaştığı belgelenir." }
     ],
-    technicalNote: "Zemin iyileştirme yöntemi seçiminde tek kriter maliyet değil, risk düzeyi ve proje ömrüdür. Deprem bölgelerinde sıvılaşma riskine karşı iyileştirmede tasarım, TBDY 2018 ve ASTM D7928 gibi standartlara uygun değerlendirilmelidir. Hibrit çözümler (örneğin jet grout + prefabrik dren), tek yöntemle çözülemeyen karmaşık zemin profillerinde etkin sonuç verir.",
+    technicalNote: "Zemin iyileştirme projelendirmesinde, yalnızca m/tül maliyeti değil; zemin plastisitesi, yer altı suyu hızı ve kullanılacak bağlayıcının homojenliği dikkate alınmalıdır. Örneğin ince taneli siltli kumlarda (fines-rich), uluslararası araştırmalar (Missouri S&T, BYU) taş kolonların tek başına yeterli olmadığını, dikey drenlerle (wick drain) desteklenerek boşluk suyu basıncının sönümlenmesi gerektiğini kanıtlamıştır. YER6, her zemin tipine özel optimum yöntemi tasarlar.",
     faq: [
-      { question: "Zemin iyileştirme ne zaman gereklidir?", answer: "Yapı yükleri altında aşırı oturma, zemin taşıma kapasitesinin yetersizliği, sıvılaşma riski veya mevcut yapı altında oluşan oturma ve deformasyon tespit edildiğinde zemin iyileştirme gereklidir." },
-      { question: "Hangi yöntem daha iyi: jet grout mu, DSM mi?", answer: "İkisi farklı koşullara özeldir. Jet grout dar sahalarda ve su geçirimsizliği gereken yerlerde; DSM ise geniş alanlarda ve yumuşak kil zeminlerde ekonomik avantaj sağlar. Doğru seçim zemin koşulları ve proje hedefine göre yapılır." },
-      { question: "Zemin iyileştirme mevcut yapıların altında uygulanabilir mi?", answer: "Evet. Mini kazık ve mikro jet grout gibi yöntemler, mevcut yapıya zarar vermeden bodrum veya temel altında zemin iyileştirmeye olanak sağlar." },
-      { question: "Deprem bölgesinde zemin iyileştirme zorunlu mudur?", answer: "TBDY 2018 kapsamında sıvılaşma potansiyeli tespit edilen zeminlerde ya iyileştirme uygulanmalı ya da yapı tasarımı bu risk gözetilerek yapılmalıdır. Zemin güçlendirme çoğu zaman en ekonomik çözümdür." },
-      { question: "Zemin iyileştirme firmaları seçilirken hangi özellikler aranmalıdır?", answer: "Zemin iyileştirme firmaları seçilirken uygulanan zemin iyileştirme teknikleri çeşitliliği (jet grout, DSM, enjeksiyon), makine parkı, geoteknik mühendislik ve laboratuvar/saha kalite kontrol disiplini en kritik faktörlerdir. YER6, tüm zemin iyileştirme tekniklerini Ankara merkezli olarak Türkiye genelinde ve yurt dışında uygulamaktadır." },
-      { question: "Zemin iyileştirme projeleriniz hangi coğrafyaları kapsıyor?", answer: "Türkiye'nin tüm noktalarında ve yurt dışı sahalarında, zemin profilinden uygulamaya kadar geniş çaplı zemin güçlendirme hizmetleri veriyoruz." }
+      { question: "En iyi zemin iyileştirme yöntemi hangisidir?", answer: "Tek bir 'en iyi' yöntem yoktur. Yöntem; zeminin dane boyutu dağılımına (kil, silt, kum, çakıl), yer altı su seviyesine ve yapısal yüklere göre belirlenir. Kil oranı yüksek zeminlerde DSM veya Jet Grout verimliyken, kumlu zeminlerde Vibro Kompaksiyon veya Taş Kolon öne çıkar." },
+      { question: "Zemin iyileştirme sıvılaşmayı kesin olarak önler mi?", answer: "Doğru mühendislik hesaplamaları ve TBDY 2018 standartlarında uygulanan yöntemler (taş kolon, DSM grid sistemleri) deprem esnasında aşırı boşluk suyu basıncını sönümleyerek veya zemini rijitleştirerek sıvılaşmayı ve yanal yayılmayı büyük ölçüde önler." },
+      { question: "Zemin iyileştirme firmaları arasında tercih yaparken neye dikkat etmeliyim?", answer: "Geoteknik firmanın tasarım yeterliliğine, deneme kolonu (pilot uygulama) yapıp yapmadığına, makine sensörleriyle veri takibi sunmasına ve imalat sonrası karot/yükleme testlerini raporlayabilme yetkinliğine dikkat edilmelidir. Uygulama bir 'beton dökümü' değil, mühendislik operasyonudur." },
+      { question: "Jet grout ile DSM arasındaki tercih nasıl yapılır?", answer: "Jet grout yüksek basınçla (ör. 400-600 bar) çalışır, dar sahalarda ve su geçirimsizlik perdesi gereken kesişen kolonlarda (secant) idealdir. DSM ise mevcut zemini çimento şerbetiyle düşük basınçta mekanik olarak karıştırır; geniş alanlı platform iyileştirmelerinde (lojistik depo, liman) çok daha ekonomik ve homojen sonuç verir." },
+      { question: "Mevcut yapıların (binaların) altına zemin iyileştirme yapılabilir mi?", answer: "Evet, mini kazık, mikro jet grout veya kompansasyon enjeksiyonu teknikleriyle yapının mevcut temellerine zarar vermeden titreşimsiz (underpinning) temel güçlendirme yapılabilir." },
+      { question: "İyileştirilen zeminin kalitesi (dayanımı) nasıl test edilir?", answer: "Uluslararası şartnamelere (FHWA, USACE) göre; imalat sonrası karot numuneleri alınarak serbest basınç dayanım testleri (UCS), kalite kontrol testleri ve taşıma kapasitesi için plaka yükleme testleri uygulanır." }
+    ]
+  },
+  {
+    slug: "zemin-guclendirme",
+    key: "svc_zemin_guc",
+    icon: ShieldCheck,
+    title: "Zemin Güçlendirme",
+    summary: "Zayıf veya deprem riski taşıyan zeminlerin mühendislik yöntemleriyle taşıyıcı ve stabil hale getirilmesi.",
+    detail: "Zemin güçlendirme; sıvılaşma potansiyeli olan, aşırı oturma beklenen veya taşıma kapasitesi yetersiz zeminlerin fiziksel özelliklerinin iyileştirilerek yapısal yükleri güvenle taşıyacak hale getirilmesidir. TBDY 2018 ve uluslararası normlara uygun tasarlanan güçlendirme projeleri ile yapı-zemin etkileşimi güvenli sınırlara çekilir.",
+    specs: ["Deprem ve sıvılaşma mitigasyonu", "Taşıma gücü artırımı", "Mevcut yapı altı takviye (underpinning)"],
+    applications: [
+      "Deprem bölgelerinde sıvılaşmaya yatkın sahaların güçlendirilmesi",
+      "Mevcut binaların ve tarihi yapıların temel altı zemin güçlendirmesi",
+      "Endüstriyel tesisler ve ağır makine temellerinde oturma kontrolü",
+      "Şev stabilitesi ve heyelan bölgelerinde zemin çivisi/ankraj destekli güçlendirme",
+      "Dolgu ve alüvyon zeminlerde platform stabilitesi sağlanması"
+    ],
+    advantages: [
+      "Deprem anında sıvılaşma ve yanal yayılma risklerini minimize eder.",
+      "Mevcut yapılara zarar vermeden (titreşimsiz) uygulanabilen yöntemler sunar.",
+      "Derin kazı ve istinat yapılarında göçme riskini engeller.",
+      "Projenin geoteknik ihtiyaçlarına göre (jet grout, mini kazık, enjeksiyon vb.) optimize edilir.",
+      "Oturmaları kabul edilebilir sınırlar içinde tutarak üst yapıyı korur.",
+      "Uluslararası standartlara uygun testlerle (karot, PIT, yükleme) kalitesi kanıtlanır."
+    ],
+    processSteps: [
+      { title: "Mevcut Durum ve Risk Analizi", description: "Zemin etüt raporları (SPT, CPT, sismik hızlar) incelenerek zemin profili, sıvılaşma potansiyeli ve güçlendirme ihtiyacı belirlenir." },
+      { title: "Yöntem Seçimi ve Tasarım", description: "Zemin tipine ve mevcut yapı durumuna göre en uygun yöntem (Jet Grout, DSM, Mini Kazık vb.) seçilir ve güçlendirme projesi çizilir." },
+      { title: "Ekipman ve Mobilizasyon", description: "Sahadaki yükseklik kısıtlamalarına (ör. mevcut bodrum katlar) ve zemin şartlarına uygun kompakt veya yüksek kapasiteli makineler sevk edilir." },
+      { title: "Uygulama ve Dijital Takip", description: "Zemin güçlendirme imalatı, kalite kontrol mühendisleri gözetiminde ve anlık dijital veri kayıt cihazlarıyla (data logger) gerçekleştirilir." },
+      { title: "Performans Doğrulama Testleri", description: "Uygulama sonrası gerekli yükleme, karot veya jeofizik testler yapılarak zeminin hedeflenen taşıma gücüne ulaştığı belgelenir." }
+    ],
+    technicalNote: "Zemin güçlendirme projelerinde, Türkiye Bina Deprem Yönetmeliği (TBDY-2018) gereğince sıvılaşma tetiklenmesi ve sonrasındaki deformasyonlar kritik önemdedir. Sıvılaşmaya karşı güçlendirme yapıldığında, hedeflenen SPT-N veya kesme dalgası hızı (Vs) değerlerinin sağlanıp sağlanmadığı imalat sonrası testlerle doğrulanmalıdır. Ayrıca mevcut yapıların altındaki (underpinning) güçlendirme çalışmalarında, yapısal deplasmanları izlemek amacıyla mutlaka optik veya lazer topoğrafik ölçümler yapılmalıdır.",
+    faq: [
+      { question: "Zemin güçlendirme nedir ve neden yapılır?", answer: "Zemin güçlendirme; yapı yüklerini taşıyamayacak kadar zayıf olan veya depremde sıvılaşma riski taşıyan zeminlerin, çeşitli enjeksiyon, mekanik karıştırma veya kazık yöntemleriyle iyileştirilmesidir. Yapının güvenliğini ve ömrünü sağlamak için yapılır." },
+      { question: "Mevcut (oturulan) bir binanın zemini güçlendirilebilir mi?", answer: "Evet. Özel kompakt makineler kullanılarak, bina dışından veya bodrum katından yapı temeline girilip 'underpinning' denilen temel altı zemin güçlendirme işlemleri (mini kazık, mikro jet grout vb.) yapılabilir." },
+      { question: "Zemin güçlendirme firmaları arasında tercih yaparken nelere dikkat edilmeli?", answer: "Firmanın zemin mekaniği ve geoteknik mühendislik uzmanlığına, uygun makine parkına sahip olmasına ve imalat sonrası kalite kontrol testlerini (karot, yükleme) bağımsız raporlayabilme yeteneğine dikkat edilmelidir." },
+      { question: "Zemin güçlendirme maliyeti nasıl hesaplanır?", answer: "Maliyet; zemin sınıfına, güçlendirme derinliğine, kullanılacak yönteme (jet grout, DSM, fore kazık vb.) ve toplam metraja göre hesaplanır. Geoteknik proje olmadan verilen fiyatlar yanıltıcı olabilir." },
+      { question: "Zemin güçlendirme sıvılaşmayı önler mi?", answer: "Doğru tasarlanmış ve uygulanmış bir zemin güçlendirme (örneğin sık aralıklı jet grout veya taş kolon) deprem esnasında oluşan boşluk suyu basıncını sönümler veya zemini rijit bir bloğa çevirerek sıvılaşmayı engeller." }
     ]
   },
   {

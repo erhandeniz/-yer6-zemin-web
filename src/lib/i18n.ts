@@ -17,12 +17,12 @@ export const dictionary = {
     language: "Dil",
 
     /* ── HERO ── */
-    heroBadge: "Premium geoteknik mühendislik ve saha uygulaması",
+    heroBadge: "Türkiye Geneli Geoteknik Mühendislik ve Saha Uygulaması",
     slogan: "Geleceğin Yapıları Güçlü Zeminlerle Başlar",
-    heroLead: "YER6, jet grout, DSM, fore kazık, ankraj ve iksa sistemlerinde hassas mühendislik, güçlü saha operasyonu ve premium proje teslimi sunar.",
-    explore: "Projeleri İncele",
-    call: "Hızlı Keşif Talebi",
-    heroScroll: "Scroll",
+    heroLead: "YER6; jet grout, DSM, fore kazık, ankraj ve iksa sistemlerinde kendi yüksek kapasiteli makine parkı ve uzman mühendislik kadrosuyla uluslararası standartlarda zemin güçlendirme çözümleri sunar.",
+    explore: "Referans Projeleri İncele",
+    call: "Teknik Ön Değerlendirme Talebi",
+    heroScroll: "Keşfet",
 
     /* ── METRICS ── */
     metric1Label: "Tamamlanan proje",
@@ -35,13 +35,13 @@ export const dictionary = {
     metric4Detail: "Dijital takip ve saha dokümantasyonu",
 
     /* ── HOME PAGE ── */
-    homeServicesEyebrow: "Uzmanlık Alanları",
-    homeServicesTitle: "Uluslararası seviyede zemin güçlendirme operasyonu.",
-    homeServicesCopy: "YER6; tasarım, makine, saha kalite ve raporlama süreçlerini tek premium teslim standardında birleştirir.",
-    homeViewAllServices: "Tüm hizmetleri gör",
-    homeProjectsEyebrow: "Öne Çıkan Projeler",
-    homeProjectsTitle: "Saha gerçeğine uygun premium proje portföyü.",
-    homeProjectsCopy: "Endüstriyel tesisler, limanlar, raylı sistemler ve yüksek yapılar için geoteknik çözümler.",
+    homeServicesEyebrow: "Geoteknik Uzmanlık Alanları",
+    homeServicesTitle: "Uluslararası standartlarda zemin güçlendirme operasyonu.",
+    homeServicesCopy: "YER6; endüstriyel tesisler, limanlar ve ulaşım altyapıları için tasarım, makine seçimi, saha kalite kontrolü ve test süreçlerini tek teslim standardında yönetir.",
+    homeViewAllServices: "Tüm geoteknik hizmetleri gör",
+    homeProjectsEyebrow: "Referans Projeler",
+    homeProjectsTitle: "Saha gerçeğine uygun tamamlanmış proje portföyü.",
+    homeProjectsCopy: "Türkiye genelinde ve uluslararası projelerde tamamladığımız endüstriyel sahalar, limanlar, raylı sistemler ve derin kazı çözümleri.",
     homeProjectGallery: "Proje galerisi",
     homeWorkflowEyebrow: "Mühendislik Akışı",
     homeWorkflowTitle: "Dijital saha takibiyle ölçülebilir kalite.",
