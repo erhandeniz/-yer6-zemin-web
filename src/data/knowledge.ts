@@ -3379,6 +3379,945 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     relatedSlugs: ["jet-grout-firmasi-ankara", "jet-grout-maliyeti", "sivilasma-riskine-karsi-zemin-guclendirme"],
     keywords: ["jet grout firması istanbul", "istanbul jet grout", "jet grout istanbul", "jet grout firmaları istanbul", "istanbul zemin güçlendirme"],
     published: true
+  },
+  {
+    slug: "yer-alti-zemin-iyilestirme",
+    title: "Yer Altı Zemin İyileştirme Rehberi: Yöntemler, Tasarım ve Uygulama",
+    seoTitle: "Yer Altı Zemin İyileştirme: 2026 Kapsamlı Rehber | YER6",
+    description: "Yer altı zemin iyileştirme rehberi: jet grout, DSM, taş kolon, enjeksiyon ve 15+ yöntem; seçim matrisi, TBDY 2018, maliyet faktörleri. Uzmanından okuyun.",
+    excerpt: "Yer altı zemin iyileştirme yöntemlerinin tamamını — jet grout'tan taş kolona, DSM'den derin kompaksiyona — seçim kriterleri, tasarım parametreleri ve kalite kontrol testleriyle birlikte anlatan Türkiye'nin en kapsamlı rehberi.",
+    category: "Zemin İyileştirme",
+    readingTime: "25 dk",
+    publishedAt: "2026-07-14",
+    updatedAt: "2026-07-14",
+    heroLabel: "Mega Rehber",
+    introduction: "Yer altı zemin iyileştirme, yapı yükünü güvenle taşıyamayan zeminlerin jet grout, derin karıştırma (DSM), taş kolon, derin kompaksiyon ve enjeksiyon gibi tekniklerle metrelerce derinlikte yerinde güçlendirilmesidir. Bu rehberde 15'ten fazla yöntemi; zemin türüne göre seçim matrisi, TBDY 2018 zemin sınıfları, tasarım parametreleri, kalite kontrol testleri ve maliyet-süre faktörleriyle birlikte tek sayfada topladık. Ankara merkezli YER6 Zemin Mühendislik'in saha tecrübesiyle hazırlanan bu kılavuz, arsa sahibinden geoteknik mühendisine kadar herkesin \"hangi zemine hangi yöntem?\" sorusuna net cevap bulması için tasarlandı.",
+    sections: [
+      {
+        id: "yer-alti-zemin-iyilestirme-nedir",
+        title: "Yer Altı Zemin İyileştirme Nedir? Tanım, Kapsam ve Terminoloji",
+        blocks: [
+          {
+            type: "note",
+            title: "Kısa cevap",
+            content: "Yer altı zemin iyileştirme; yapı yükünü güvenle taşıyamayan zeminin taşıma gücü, oturma davranışı, geçirimlilik ve sıvılaşma direnci gibi mühendislik özelliklerinin, zemin yerinde bırakılarak derinlemesine ve kalıcı biçimde değiştirilmesidir."
+          },
+          {
+            type: "paragraph",
+            content: "Türkçe teknik literatürde birbirinin yerine kullanılan terimler arasında nüans farkları vardır. \"Zemin ıslahı\" en genel şemsiye terimdir ve her tür müdahaleyi kapsar. \"Zemin stabilizasyonu\" ağırlıklı olarak çimento veya kireç gibi katkılarla kimyasal bağlanma yoluyla kalıcı dayanım kazandırmayı; \"zemin modifikasyonu\" kıvam ve işlenebilirlik gibi özelliklerin sınırlı ölçüde değiştirilmesini; \"zemin güçlendirme\" ise zemine taş kolon veya ankraj gibi taşıyıcı elemanlar eklenmesini ifade eder. Üç temel kavramın ayrımı da önemlidir: kompaksiyon, zemin boşluklarındaki havanın mekanik enerjiyle kısa sürede atılmasıdır; konsolidasyon, boşluk suyunun zamana bağlı olarak dışarı atılmasıyla gelişen hacim azalmasıdır; stabilizasyon ise kimyasal bağlanmayla kazanılan kalıcı dayanımı anlatır."
+          },
+          {
+            type: "paragraph",
+            content: "Uygulama derinliği temel ayrım eksenidir. Yüzeysel iyileştirme (yaklaşık 0-3 m) silindirle kompaksiyon ve kireç-çimento serimi gibi işlemleri kapsar; yer altı (derin) iyileştirme ise projeye ve yönteme bağlı olarak tipik biçimde 3-50 m derinlik aralığında jet grout, derin karıştırma (DSM), taş kolon, derin kompaksiyon ve derin enjeksiyon gibi tekniklerle yürütülür. Bu rehberin odağı derin uygulamalardır. Yaklaşım felsefesi bakımından yer altı zemin iyileştirme, kazıklı temelden ayrılır: iyileştirme zeminin kendisini düzelterek yüzeysel veya radye temel kullanımına imkân verir; kazık ise zemini değiştirmeden yapı yükünü derindeki sağlam tabakaya aktarır. İki yaklaşım arasındaki seçim yapı yüküne, zemin profiline ve toplam maliyet analizine göre yapılır."
+          },
+          {
+            type: "paragraph",
+            content: "Uluslararası literatürde yöntemler, Türkçe kaynaklarda az işlenen bir üçlemeyle sınıflandırılır. Ground Reinforcement (donatılandırma), zemine taşıyıcı eleman eklenerek güçlendirmedir: taş kolon, ankraj, zemin çivisi bu gruptadır. Ground Improvement (iyileştirme), zeminin kendi yapısının düzeltilmesidir: yüzeysel ve derin kompaksiyon, ön yükleme ve düşey drenler bu kapsamda değerlendirilir. Ground Treatment (tedavi) ise katkı veya enjeksiyonla müdahaleyi anlatır: çimento ve kireç enjeksiyonu, bitüm ve uçucu kül stabilizasyonu ile zemin dondurma gibi teknikler bu gruba girer."
+          },
+          {
+            type: "note",
+            title: "Kısa tarihçe",
+            content: "Vibroflotasyon (vibro kompaksiyon) 1930'larda Avrupa'da geliştirildi; jet grout 1970'lerde Japonya'da uygulanmaya başlandı; rijit inklüzyon (kontrollü modüllü kolon, CMC) tekniği ise 1990'larda geliştirilerek yaygınlaştı. Bu yöntemler on yıllar boyunca sahada denenmiş, performansı ölçüm ve gözlemlerle doğrulanmış mühendislik çözümleridir."
+          },
+          {
+            type: "list",
+            title: "İyileştirmeyle değişen başlıca zemin parametreleri",
+            items: ["Kayma mukavemeti parametreleri: kohezyon (c) ve içsel sürtünme açısı (φ)", "Relatif sıkılık (Dr): granüler zeminlerde sıkılığın ölçüsü", "Konsolidasyon katsayısı (cv) ve sıkışabilirlik: oturmanın hızı ve büyüklüğü", "Permeabilite (k): geçirimliliğin azaltılması veya drenaj kapasitesinin artırılması", "Atterberg kıvam limitleri: plastisitenin düşürülmesi ve işlenebilirliğin iyileştirilmesi", "Deformasyon (rijitlik) modülü: yük altında şekil değiştirme davranışı", "Kayma dalgası hızı (Vs): dinamik davranışın ve yerel zemin sınıfının göstergesi"]
+          }
+        ]
+      },
+      {
+        id: "neden-ve-ne-zaman-gerekir",
+        title: "Yer Altı Zemin İyileştirme Neden ve Ne Zaman Gerekir?",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Elverişsiz zeminle karşılaşıldığında mühendisin önünde dört seçenek vardır: yapının yerini değiştirmek, zayıf zemini kazıp uygun malzemeyle değiştirmek, derin temelle sağlam tabakaya inmek veya zemini yerinde iyileştirmek. Yer değiştirme, imar ve arsa kısıtları nedeniyle çoğu projede uygulanabilir değildir. Kaz-değiştir yaklaşımı yalnızca zayıf tabakanın sığ (birkaç metre) ve hacmin küçük olduğu durumlarda ekonomiktir. Derin temel, ağır ve noktasal yüklü yapılarda güvenilir ancak genellikle maliyetli bir çözümdür. Yerinde iyileştirme ise özellikle geniş oturma alanlı, orta düzeyde yüklü yapılarda çoğu zaman dengeli bir seçenektir; hangi yolun izleneceği zemin etüdü sonuçlarına, yapı özelliklerine ve proje ekonomisine göre belirlenir."
+          },
+          {
+            type: "paragraph",
+            content: "İyileştirme ihtiyacına işaret eden yaygın göstergeler şunlardır: gevşek kumlarda SPT N30 değerinin 10'un altında kalması, hesaplanan oturmanın tekil temellerde yaklaşık 25 mm'yi, radye temellerde yaklaşık 50 mm'yi aşması, taşıma gücü güvenlik katsayısının sağlanamaması ve sıvılaşma analizinde güvenlik katsayısının 1,1'in altına düşmesi. Bu değerler yaygın kabul gören sınırlar olup proje özelinde farklılaşabilir. TBDY 2018'e göre ZF sınıfı zeminler sahaya özel araştırma ve değerlendirme gerektirir; ZE gibi zayıf zemin profillerinde de ayrıntılı geoteknik değerlendirme fiilen kaçınılmazdır. Geoteknik raporda yetersiz taşıma gücü, aşırı oturma veya sıvılaşma riski tespit edildiğinde ve ruhsat aşamasında idare iyileştirme projesi talep ettiğinde, yer altı zemin iyileştirme bir tercih olmaktan çıkıp zorunluluğa dönüşür."
+          },
+          {
+            type: "list",
+            title: "İyileştirmenin sekiz temel amacı",
+            items: ["Taşıma kapasitesini artırmak", "Toplam ve farklı oturmaları azaltmak", "Konsolidasyon sürecini hızlandırmak", "Deprem yükleri altında sıvılaşma direncini yükseltmek", "Şev ve derin kazı stabilitesini sağlamak", "Geçirimliliği azaltmak (baraj gövdeleri, derin kazı çevreleri)", "Makine ve trafik kaynaklı titreşimleri sönümlemek", "Kıyı ve şev bölgelerinde yanal yayılmayı önlemek"]
+          },
+          {
+            type: "warning",
+            title: "Deprem gerçeği",
+            content: "Türkiye topraklarının büyük bölümü aktif deprem kuşağındadır. 1999 Kocaeli ve 2023 Kahramanmaraş depremlerinde görülen sıvılaşma, aşırı oturma ve devrilme gibi zemin kaynaklı hasarlar; üst yapı ne kadar güçlü tasarlanırsa tasarlansın, zemini ihmal eden yaklaşımın güvenli olmadığını açıkça göstermiştir."
+          },
+          {
+            type: "paragraph",
+            content: "Orta ve yüksek katlı binalar, sanayi tesisleri ve depolama tankları, yol ve demiryolu dolguları, köprü yaklaşım dolguları, rüzgâr türbinleri ile liman ve kıyı dolgu sahaları iyileştirmenin en sık gerektiği yapı tipleridir. Ekonomik açıdan bakıldığında, geniş oturma alanlı ve orta yüklü yapılarda yer altı zemin iyileştirme, kazıklı temele kıyasla çoğu durumda daha uygun maliyetli olabilmektedir; ancak bu karşılaştırma her projede temel sistemi, kazı, iyileştirme imalatı ve süre kalemlerini birlikte içeren toplam maliyet üzerinden yapılmalı, nihai karar geoteknik değerlendirme ve temel mühendisliği hesaplarıyla birlikte verilmelidir."
+          }
+        ]
+      },
+      {
+        id: "sorunlu-zeminler",
+        title: "Sorunlu Zeminler: Hangi Zeminler Yer Altında İyileştirme Gerektirir?",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Zemin davranışını en temelde dane çapı belirler. Kil daneleri 0,002 mm'den küçüktür; silt 0,002-0,075 mm, kum 0,075-4,75 mm aralığındadır; çakıl ise 4,75 mm'den iridir. İnce daneli (kohezyonlu) zeminler suyu çok yavaş bırakır, zamana bağlı oturur ve plastisite gösterir; iri daneli (granüler) zeminler ise sıkılık derecelerine göre ya yükü güvenle taşır ya da ani oturma ve sıvılaşma riski üretir. Yer altında iyileştirme gerektiren sorunlu zeminler, bu iki davranış ailesinin zayıf üyeleri ile insan eliyle oluşturulmuş kontrolsüz dolgulardır."
+          },
+          {
+            type: "list",
+            title: "Yedi problemli zemin tipi",
+            items: ["Normal konsolide / yumuşak killer: yüksek sıkışabilirlik, yıllara yayılan konsolidasyon oturması", "Gevşek kum ve siltler: statik yükte ani oturma, deprem yükünde sıvılaşma potansiyeli", "Kontrolsüz (mühendislik dışı) dolgular: değişken sıkılık, moloz ve boşluk içeriği, öngörülemeyen farklı oturmalar", "Organik zeminler ve turba: yüksek su muhtevası, uzun süreli sekonder (krip) oturma", "Şişen (ekspansif) killer: su alıp verdikçe hacim değiştirerek özellikle hafif yapıları çatlatma eğilimi", "Çökebilen (kollapsibl) zeminler: kuru halde ayakta durup suyla temasta ani hacim kaybı", "Karstik boşluklu zeminler: erime boşlukları nedeniyle ani tasman (çökme) riski"]
+          },
+          {
+            type: "paragraph",
+            content: "Yumuşak killerde drenajsız kayma mukavemetinin yaklaşık 25 kPa'ın altında kalması tipik bir zayıflık göstergesidir; çok düşük permeabilite nedeniyle konsolidasyon oturması yıllara yayılabilir ve yapı ömrü boyunca sürebilir. Gevşek kumlarda ise relatif sıkılığın yaklaşık %35-40'ın altında olması gevşekliğin göstergesi kabul edilir: bu zeminler statik yük altında ani oturma yapabilir, suya doygun haldeyken deprem sarsıntısında sıvılaşabilir. Her iki durumda da müdahalenin türü, kapsamı ve derinliği zemin etüdü sonuçlarına göre belirlenir."
+          },
+          {
+            type: "warning",
+            title: "En riskli kategori: kontrolsüz dolgu",
+            content: "Türkiye şehirlerindeki eski vadi tabanları ve kıyı dolguları başta olmak üzere, mühendislik kontrolü olmadan oluşturulmuş dolgular; moloz içeriği, değişken sıkılık ve boşluklar nedeniyle en öngörülemez zemin grubudur ve en sık yer altı zemin iyileştirme gerektiren kategoridir. Dolgu kalınlığı ve içeriği sondajlarla belirlenmeden bu zeminler üzerine temel oturtulmamalıdır."
+          },
+          {
+            type: "paragraph",
+            content: "Organik zeminler ve turbada, yüksek su muhtevasına ek olarak birincil konsolidasyon tamamlandıktan sonra da süren sekonder (krip) oturma belirleyicidir; bu zeminlerde klasik kompaksiyon genellikle sonuç vermez, kolon tipi çözümler veya hafif dolgu malzemeleri değerlendirilir. Yüksek yer altı su seviyesi ise tabloyu ağırlaştırır: efektif gerilmeyi düşürerek taşıma gücünü azaltır, kazı stabilitesi sorunları doğurur ve imalat tekniğinin ıslak ya da kuru yöntem olarak seçimini doğrudan etkiler. Yer altı suyu kontrolü ve susuzlaştırma konusu ilgili bölümde ayrıca ele alınmıştır."
+          }
+        ]
+      },
+      {
+        id: "zemin-etudu-ve-saha-deneyleri",
+        title: "Zemin Etüdü ve Saha Deneyleri: SPT, CPT, Presiyometre, Jeofizik",
+        blocks: [
+          {
+            type: "note",
+            title: "Kısa cevap",
+            content: "Zemin etüdü, yer altı zemin iyileştirme tasarımının tüm girdilerini üreten zorunlu ilk adımdır. Sondajlar, arazi deneyleri ve laboratuvar sonuçları birlikte değerlendirilmeden hiçbir iyileştirme yöntemi güvenle seçilemez; yöntem seçimi kadar iyileştirme derinliği ve hedef parametreler de bu verilere dayanır."
+          },
+          {
+            type: "paragraph",
+            content: "Etüt planlaması yapıya göre şekillenir: sondaj sayısı ve derinliği; yapının oturma alanına, yüksekliğine ve temel yüklerinin zeminde oluşturduğu gerilmelerin etkili olduğu derinliğe göre belirlenir. Amaç, iyileştirmenin hedefleyeceği zayıf tabakaların kalınlığını, derinliğini ve yeraltı suyu koşullarını eksiksiz ortaya koymaktır. Bu nedenle sondajların, gerilme etki derinliğinin altındaki sağlam taşıyıcı tabakaya ulaşacak şekilde planlanması beklenir; zayıf tabaka içinde sonlandırılan bir sondaj, hem etüdü hem de ona dayanan iyileştirme tasarımını eksik bırakır."
+          },
+          {
+            type: "paragraph",
+            content: "Arazi deneylerinin ilk sırasında SPT (Standart Penetrasyon Deneyi) gelir: 63,5 kg'lık şahmerdanın 76 cm'den serbest düşürülmesiyle numune alıcının son 30 cm penetrasyonu için gereken darbe sayısı N olarak kaydedilir; enerji ve örtü yükü düzeltmeleriyle N60 ve N1,60 değerleri elde edilir. Yaygın bir yorumla kumlarda N < 10 gevşek, 10-30 orta sıkı, 30 üzeri sıkı kabul edilir ve N < 10 mertebesindeki değerler iyileştirme ihtiyacının tipik göstergelerindendir; ancak nihai değerlendirme her zaman zemin profili bütününde yapılır. CPT/CPTu (koni penetrasyon deneyi) koni uç direnci qc, sürtünme oranı ve boşluk suyu basıncını ölçerek kesintisiz bir zemin profili verir; bu süreklilik onu ince tabakaların yakalanmasında ve sıvılaşma analizinde önemli bir girdi yapar. Presiyometre (PMT) ise kuyu içinde limit basınç ve Menard deformasyon modülünü ölçerek taşıma gücü ve oturma hesabına doğrudan parametre sağlayan başlıca arazi deneylerindendir."
+          },
+          {
+            type: "paragraph",
+            content: "Jeofizik yöntemler etüdün üçüncü ayağıdır. MASW ve sismik kırılma ölçümleriyle kayma dalgası hızı (Vs) profili çıkarılır; üst 30 metrenin ortalaması olan Vs30, TBDY 2018'deki yerel zemin sınıfını belirleyen ana parametredir. Elektrik rezistivite ölçümleri yeraltı su seviyesinin, boşlukların ve kontrolsüz dolgu sınırlarının tespitinde destekleyici veri sağlar. Jeofizik ölçümler tek başına tasarım parametresi üretmez; sondaj ve arazi deneyi sonuçlarıyla birlikte, birbirini doğrulayacak şekilde yorumlanmalıdır."
+          },
+          {
+            type: "list",
+            title: "Laboratuvar deneyleri ve tasarıma verdiği parametreler",
+            items: ["Atterberg limitleri: plastisite ve kıvam; killerde stabilizasyon katkısı seçimini yönlendirir", "Elek analizi + hidrometre: dane dağılımı; yöntem ön elemesinin (granüler/kohezyonlu ayrımı) temeli", "Odometre (konsolidasyon) deneyi: sıkışabilirlik ve oturma süresi; ön yükleme ve düşey dren tasarımının girdisi", "Üç eksenli ve kesme kutusu deneyleri: kayma dayanımı parametreleri (c, φ); taşıma gücü ve stabilite hesapları", "Proktor deneyi: optimum su muhtevası ve maksimum kuru birim hacim ağırlık; kompaksiyon kontrol kriteri", "Doğal su muhtevası ve birim hacim ağırlık: konsolidasyon ve oturma hesaplarının temel girdileri"]
+          },
+          {
+            type: "paragraph",
+            content: "Etüdün asıl değeri, çıktıların tasarıma dönüşmesindedir: mevcut N, qc ve Vs profili üzerinden hedef iyileştirilmiş değerler tanımlanır; bu hedefler iyileştirme derinliğini, kolon yerleşimini ve yöntem ön seçimini belirler. Yer altı zemin iyileştirme uygulaması tamamlandıktan sonra aynı deneylerin tekrarlanması, başarının kanıtlanmasının temelidir; bu doğrulama süreci kalite kontrol bölümünde ayrıntılı olarak ele alınmıştır. Etüt sürecinin adımları için sitedeki \"zemin etüdü nasıl yapılır\" rehberine de bakılabilir."
+          }
+        ]
+      },
+      {
+        id: "tbdy-2018-zemin-siniflari",
+        title: "TBDY 2018 Zemin Sınıfları (ZA-ZF) ve Yönetmelik Çerçevesi",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Türkiye Bina Deprem Yönetmeliği (TBDY 2018), zeminleri başlıca üst 30 metredeki ortalama kayma dalgası hızına (Vs30) göre ZA'dan ZF'ye kadar altı sınıfa ayırır; sınıflandırmada ortalama SPT darbe sayısı (N60) ve drenajsız kayma dayanımı (cu) ortalamaları da kullanılabilir. Bu sınıflandırma yalnızca bir etiket değildir; binaya etkiyecek deprem yükünün büyüklüğünü ve zemin iyileştirme gerekip gerekmediğini doğrudan etkileyen yasal çerçevedir."
+          },
+          {
+            type: "list",
+            title: "TBDY 2018 zemin sınıfları",
+            items: ["ZA: Sağlam, masif kaya (Vs30 > 1500 m/s)", "ZB: Az ayrışmış, orta sağlam kaya (Vs30 = 760-1500 m/s)", "ZC: Çok sıkı kum-çakıl tabakaları ve sert kil ya da çok çatlaklı zayıf kaya (Vs30 = 360-760 m/s)", "ZD: Orta sıkı-sıkı kum, çakıl veya çok katı kil tabakaları (Vs30 = 180-360 m/s)", "ZE: Gevşek kum, yumuşak-orta katı kil profilleri (Vs30 < 180 m/s) veya 3 m'den kalın yumuşak kil tabakası (cu < 25 kPa, yüksek su muhtevası ve plastisite)", "ZF: Sahaya özel araştırma ve değerlendirme gerektiren zeminler (sıvılaşabilir zeminler, hassas killer, yüksek organik içerikli veya çok yüksek plastisiteli kalın tabakalar)"]
+          },
+          {
+            type: "paragraph",
+            content: "ZF sınıfına giren sahalarda yönetmelik sahaya özel zemin davranış analizini zorunlu kılar. ZE ve ZF sahalarında ise yer altı zemin iyileştirme veya kazıklı temel gibi özel geoteknik önlemler çoğu projede kaçınılmaz hale gelir; hangi çözümün seçileceği yapı, zemin profili ve maliyet birlikte değerlendirilerek projeye göre belirlenir. İyileştirmenin yönetmelik açısından bir karşılığı Vs üzerinden okunur: jet grout, derin karıştırma (DSM) veya taş kolon gibi kolonlu uygulamalar zemin-kolon kompozitinin ortalama kayma dalgası hızını artırarak zemin davranışını iyileştirebilir. İyileştirme sonrası zemin sınıfının nasıl değerlendirileceği ise sahada yapılacak yeni Vs ölçümleri ve geoteknik raporda gerekçelendirilen kompozit değerlendirme ile, ilgili idarenin onayına bağlı olarak projeye göre belirlenir."
+          },
+          {
+            type: "warning",
+            title: "Kötü zemin, daha büyük deprem kuvveti demektir",
+            content: "Yerel zemin etki katsayıları (Fs, F1) zayıf zeminlerde spektral ivmeleri büyütür: aynı bina, ZE sınıfı bir zeminde ZC sınıfına göre belirgin biçimde daha büyük deprem kuvvetiyle hesaplanır. Zemini iyileştirmek yalnızca oturmayı değil, tasarım deprem yükünü de etkileyen bir mühendislik kararıdır."
+          },
+          {
+            type: "paragraph",
+            content: "TBDY 2018'in 16. bölümü, deprem etkisi altında temel zemini ve temellerin tasarımına ilişkin kuralları düzenler: zemin araştırma gereklilikleri, basitleştirilmiş yöntemle sıvılaşma değerlendirmesi, zemin iyileştirmeye ve kazıklı temellere ilişkin hükümler bu kapsamdadır. Yönetmelik ayrıca deprem yer hareketi düzeylerini (DD-1'den DD-4'e) bina performans hedefleriyle eşleştirir; iyileştirme tasarım kriterleri de bu performans hedeflerine göre, örneğin hangi deprem düzeyinde sıvılaşmanın önleneceği tanımlanarak belirlenir."
+          },
+          {
+            type: "note",
+            title: "Onay süreci akışı",
+            content: "Tipik akış şöyledir: zemin ve temel etüt raporu (jeoloji/jeofizik ve inşaat mühendisliği ortak imzası) → geoteknik değerlendirme raporu → iyileştirme uygulama projesi (geoteknik alanında deneyimli inşaat mühendisi) → uygulama ve yapı denetim gözetimi → kontrol deneyleriyle hazırlanan doğrulama raporu. Her aşamanın imza ve içerik gereklilikleri ilgili idarenin uygulamasına göre değişebilir; süreç başlamadan önce yerel idareyle teyit edilmesi önerilir."
+          }
+        ]
+      },
+      {
+        id: "yontemlerin-bilimsel-siniflandirmasi",
+        title: "Yer Altı Zemin İyileştirme Yöntemlerinin Bilimsel Sınıflandırması",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Onlarca farklı tekniği kıyaslanabilir kılmanın yolu, onları doğru eksenlerde sınıflandırmaktan geçer. Türkçe kaynaklarda yaygın olan klasik dörtlü şema, yöntemleri zemine müdahale biçimine göre ayırır ve bu rehberin omurgasını oluşturur."
+          },
+          {
+            type: "list",
+            title: "Klasik dörtlü sınıflandırma",
+            items: ["Mekanik iyileştirme (kompaksiyon ailesi): vibro kompaksiyon, dinamik kompaksiyon, hızlı darbeli kompaksiyon (RIC), yüzeysel sıkıştırma", "Hidrolik iyileştirme (drenaj/konsolidasyon ailesi): ön yükleme + sürşarj, prefabrik düşey drenler (PVD), wellpoint ile susuzlaştırma", "Fiziko-kimyasal iyileştirme (katkı ve enjeksiyon ailesi): permeasyon, kompaksiyon ve çatlatma enjeksiyonları; kireç, çimento ve uçucu kül stabilizasyonu", "Katılma/donatılı iyileştirme (kolon ve donatı ailesi): jet grout, derin karıştırma (DSM), taş kolon, rijit inklüzyonlar, geosentetikler, ankraj ve zemin çivisi"]
+          },
+          {
+            type: "paragraph",
+            content: "Uluslararası literatür farklı bir eksen kullanır: Mitchell ve Katti'nin (1981) sınıflaması ile FHWA'nın rehber yaklaşımı, yöntemleri yapılışına değil fonksiyonuna göre gruplar. Buna göre teknikler Ground Reinforcement (taş kolon, DSM, jet grout, donatılı zemin, ankraj, zemin çivisi), Ground Improvement (yüzeysel ve derin kompaksiyon, ön yükleme + düşey dren) ve Ground Treatment (kompaksiyon ve zemin-çimento enjeksiyonu; kireç, bitüm ve uçucu kül stabilizasyonu) olarak üçe ayrılır. İki şema birbirinin alternatifi değil tamamlayıcısıdır: dörtlü Türkçe şema \"nasıl\" sorusuna, üçlü fonksiyon şeması \"ne işe yarar\" sorusuna cevap verir."
+          },
+          {
+            type: "paragraph",
+            content: "Kritik nokta, aynı yöntemin birden fazla fonksiyon üstlenebilmesidir; örneğin taş kolon hem çevre zemini sıkılaştırır hem de düşey dren gibi çalışarak konsolidasyonu hızlandırır. Fonksiyon ekseninde pratik eşleştirme şöyle özetlenebilir: sıkılaştırma için vibro ve dinamik kompaksiyon; konsolidasyonu hızlandırmak için PVD + sürşarj; dayanım artırmak için jet grout ve DSM; geçirimliliği azaltmak için enjeksiyon ve geçirimsizlik perdeleri; oturma kontrolü için rijit inklüzyonlar; sıvılaşma direnci için taş kolon ve dren kombinasyonları."
+          },
+          {
+            type: "paragraph",
+            content: "Yer altı zemin iyileştirme kavramının bel kemiği ise derinlik eksenidir. Tipik uygulama bantları şöyledir: 0-3 m arası yüzeysel bölgede kompaksiyon ve katkılı stabilizasyon; yaklaşık 3-10 m orta kademede taş kolon, dinamik kompaksiyon ve kısa kolonlar; yaklaşık 10-30 m derin kademede jet grout, DSM, vibro kompaksiyon ve PVD; 30 m'yi aşan çok derin kademede ise enjeksiyon ve derin kazık-kolon sistemleri değerlendirilebilir. Bu aralıklar kesin sınırlar değil tipik bantlardır; her yöntemin ulaşabileceği derinlik ekipmana, zemin koşullarına ve projeye göre değişir. Zemin tipi ise ilk eleme kuralını verir: granüler zeminlerde titreşimli yöntemler etkilidir; kohezyonlu zeminlerde drenaj, kolon ve karıştırma teknikleri öne çıkar; organik zeminlerde rijit kolon veya hafif dolgu çözümleri tercih edilir."
+          },
+          {
+            type: "note",
+            title: "Tek bakışta yöntem haritası",
+            content: "Bu rehberde işlenen yöntemlerin aile-derinlik-bölüm eşleşmesi (derinlikler tipik değerlerdir, projeye göre değişir): jet grout (katılma ailesi, tipik olarak ~30 m'ye kadar, 7. bölüm), DSM (katılma, ~30 m, 8. bölüm), taş kolon (katılma + hidrolik, ~20 m, 9. bölüm), vibro/dinamik kompaksiyon ve RIC (mekanik, 10. bölüm), enjeksiyon teknikleri (fiziko-kimyasal, derin uygulamalar dahil, 11. bölüm), ön yükleme + PVD (hidrolik, 12. bölüm), rijit inklüzyonlar (katılma, 13. bölüm), susuzlaştırma ve geçirimsizlik perdeleri (14. bölüm), katkılı stabilizasyon (15. bölüm)."
+          }
+        ]
+      },
+      {
+        id: "jet-grout-ile-yer-alti-zemin-iyilestirme",
+        title: "Jet Grout: Yüksek Basınçlı Enjeksiyonla Yer Altı Zemin İyileştirme",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Jet Grout yöntemi, yüksek basınçlı enjeksiyon jeti vasıtasıyla zeminin yerinde çimento şerbetiyle karıştırılarak yüksek mukavemetli zemin-çimento kolonları (soilcrete) oluşturulması prensibine dayanır. Bu işlem sırasında nozullardan çıkan şerbet, yaklaşık 300 ila 600 bar gibi son derece yüksek bir basınçla zemini yırtarak parçalar ve zemin taneleriyle homojen biçimde birleşir."
+          },
+          {
+            type: "list",
+            title: "Jet Grout Sistemleri",
+            items: ["Jet 1 (Tek Akışkanlı): Sadece çimento şerbeti enjekte edilir. Tipik olarak 0,6-1,0 m arası kolon çapı elde edilir.", "Jet 2 (Çift Akışkanlı): Çimento şerbeti, çevresini saran basınçlı hava jetiyle desteklenir. Kolon çapı 1,0-1,8 m aralığına ulaşır.", "Jet 3 (Üç Akışkanlı): Su jeti ve hava jetiyle zemin önceden kesilir, ardından çimento şerbeti ayrı bir nozuldan verilir. Kolon çapı 1,5-2,5 m ve üzerine çıkabilir."]
+          },
+          {
+            type: "note",
+            title: "Uygulama Adımları",
+            content: "Delgi makinesi ile hedef derinliğe kadar delik açılması (delgi tiji vasıtasıyla) → Monitör nozullarından yüksek basınçlı şerbet püskürtülerek tijin dönerek ve kontrollü hızla geri çekilmesi → İmalat sırasında yüzeye çıkan çimento-zemin çamuru (spoil/geri dönüş harcı) yönetimi."
+          },
+          {
+            type: "paragraph",
+            content: "Bu yöntem kumlu, siltli, killi ve dolgu zeminler dahil olmak üzere çok geniş bir zemin yelpazesinde başarıyla uygulanabilir. Ancak iri kaya blokları veya çok sıkı çakıllı zeminler enjeksiyon jetinin enerjisini sönümleyerek kolon çapında daralmalara neden olabilir."
+          },
+          {
+            type: "warning",
+            title: "Lojistik ve Limitler",
+            content: "Jet Grout yüksek mobilizasyon kapasitesi ve dar alanlarda (mini rig ekipmanıyla) çalışabilmesi bakımından avantajlıdır. Ancak geri dönüş harcının (spoil) sahadan uzaklaştırılması ciddi bir çevre ve lojistik maliyet kalemidir. Ayrıca imalat bittikten sonra kolon geometrisinin tam doğrulanması özel deneyler gerektirir."
+          }
+        ]
+      },
+      {
+        id: "derin-karistirma-dsm",
+        title: "Derin Karıştırma (DSM): Zemini Yerinde Çimento ile Karıştırmak",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Derin Karıştırma (Deep Soil Mixing - DSM), özel tasarım karıştırma paletlerine sahip delgi ekipmanları kullanılarak zeminin derinlerde mekanik olarak çimento veya diğer bağlayıcılarla karıştırılması yöntemidir. Jet grout yönteminden en temel farkı, kesme işleminin yüksek basınçlı hidrolik jetle değil, doğrudan mekanik karıştırma paletleriyle yapılmasıdır. Bu durum, kolon geometrisinin ve çapının zemin heterojenliğinden bağımsız olarak daha öngörülebilir ve düzgün olmasını sağlar."
+          },
+          {
+            type: "list",
+            title: "DSM Yöntem Aileleri",
+            items: ["Islak Karıştırma (Wet Mixing): Çimento şerbetinin sıvı fazda zemine enjekte edilerek karıştırılmasıdır. Genellikle daha homojen bir soilcrete kalitesi sunar.", "Kuru Karıştırma (Dry Mixing): Doğal su muhtevası yüksek yumuşak zeminlerde, çimentonun toz formda verilmesidir. Zemindeki fazla suyu bağlayarak ek stabilizasyon sağlar.", "CSM (Cutter Soil Mixing): Döner dişli tamburlarla panel şeklinde dikdörtgen kolonlar oluşturulmasıdır; iksa duvarlarında çok etkilidir."]
+          },
+          {
+            type: "note",
+            title: "Tipik DSM Tasarım Parametreleri",
+            content: "DSM kolonlarında çap genellikle 60-120 cm aralığında tasarlanır. Uygulama derinliği 25-30 metreye kadar çıkabilir. Metreküp başına çimento sarfiyatı 150-400 kg arasındadır. Hedef serbest basınç dayanımı ise projeye göre 0.5-5.0 MPa mertebesindedir."
+          },
+          {
+            type: "paragraph",
+            content: "DSM özellikle yumuşak kil, silt ve gevşek kumlu zeminlerde ideal sonuçlar verir. Ancak çok sıkı çakıl, sert kaya tabakaları veya büyük yapısal engeller içeren zeminlerde mekanik paletlerin ilerlemesi mümkün olmayacağı için DSM imalatı kısıtlanır."
+          },
+          {
+            type: "warning",
+            title: "Jet Grout vs DSM Karşılaştırma Mantığı",
+            content: "DSM yöntemi çimento sarfiyatının kontrol edilebilirliği ve geri dönüş harcının (spoil) minimal olması nedeniyle jet grout'a göre genellikle daha ekonomiktir. Ancak jet grout daha dar çalışma alanlarında ve eğimli yüzeylerde uygulanabilirken, DSM dikey ve geniş açıklıklı sahalarda daha yüksek verim sunar."
+          }
+        ]
+      },
+      {
+        id: "tas-kolon-vibro-replasman",
+        title: "Taş Kolon (Vibro Replasman): Sıkıştırma ve Drenajın İkili Gücü",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Taş Kolon (Vibro Replasman) yöntemi, yer altında vibrasyonlu bir prob (vibroflot) yardımıyla açılan boşluğa kademeli olarak agrega doldurulması ve bu agreganın titreşimle sıkıştırılarak yüksek yoğunlukta düşey kolonlar oluşturulması işlemidir. Oluşturulan taş kolonlar çevre zeminle birlikte bir 'kompozit zemin' sistemi meydana getirerek yapı yüklerinin paylaşılmasını ve oturmaların sınırlandırılmasını sağlar."
+          },
+          {
+            type: "list",
+            title: "Besleme ve İmalat Yöntemleri",
+            items: ["Islak Üstten Besleme (Wet Top-Feed): Su jeti yardımıyla kuyu açılır, agrega üstten dökülür. Özellikle yeraltı su seviyesi altındaki kalın gevşek tabakalarda tercih edilir.", "Kuru Alttan Besleme (Dry Bottom-Feed): Agreganın özel bir boru sistemiyle doğrudan probun ucundan, kuyu tabanından verilmesidir. Çevre kirliliği ve çamur üretimi istemeyen şehir içi şantiyelerde kullanılır."]
+          },
+          {
+            type: "note",
+            title: "Tasarım ve Boyut Değerleri",
+            content: "Taş kolonlerin çapı tipik olarak 60-120 cm, uygulama derinliği 20-30 metreye kadardır. Kolon aralıkları üçgen veya kare desende 1.5-3.0 metre arasında planlanır. Alan ikame oranı (kolon kesit alanının toplam alana oranı) ise %10 ile %35 arasındadır."
+          },
+          {
+            type: "paragraph",
+            content: "Taş kolonlar hem çevre zemini yanal olarak sıkıştırarak taşıma gücünü artırır hem de yüksek geçirgenliği sayesinde deprem esnasında oluşan aşırı boşluk suyu basıncını hızla sönümleyerek düşey dren vazifesi görür. Bu çifte etki mekanizması, yöntemi sıvılaşma riskine karşı en etkili yer altı zemin iyileştirme çözümlerinden biri yapar."
+          },
+          {
+            type: "warning",
+            title: "Çok Yumuşak Zeminlerde Sınırlama",
+            content: "Taş kolonların taşıma gücü, çevre zeminin yanal direncine bağlıdır (kolon bulging/şişme yaparak göçer). Drenajsız kayma dayanımı 15-20 kPa'ın altında olan çok yumuşak killerde taş kolon yanal destek bulamayacağı için geotekstil kılıflı kolonlar (Geotextile Encased Columns - VTC) gibi özel türevler değerlendirilmelidir."
+          }
+        ]
+      },
+      {
+        id: "derin-kompaksiyon-yontemleri",
+        title: "Derin Kompaksiyon: Vibro Kompaksiyon, Dinamik Kompaksiyon ve RIC",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Yüzeysel kompaksiyonda silindirler ve titreşimli tablalar zeminin yalnızca üst 30-50 cm'lik bölümünü etkiler. Oysa gevşek kum tabakalarında, kontrolsüz dolgularda ve hidrolik dolgu sahalarında sorun çoğu zaman metrelerce derinde başlar. Derin kompaksiyon yöntemleri, sıkıştırma enerjisini 5-15 m ve ötesine taşıyarak yeraltı zemin iyileştirme ihtiyacını doğrudan kaynağında karşılar; bu ölçek farkı, yöntem ailesini yüzey sıkıştırmasından ayıran temel özelliktir. Hangi yöntemin uygulanacağı ise zemin cinsine, ince dane oranına, hedef derinliğe ve sahanın çevre koşullarına (komşu yapılar, titreşim hassasiyeti) göre belirlenir."
+          },
+          {
+            type: "paragraph",
+            content: "Vibro kompaksiyon (vibroflotasyon), vince asılı yatay titreşimli bir vibroflotun su jeti yardımıyla zemine indirilmesi ve kademeler halinde yukarı çekilirken temiz kum danelerini yeniden düzenleyerek sıkılaştırması esasına dayanır. Yöntem yalnızca kohezyonsuz, temiz granüler zeminlerde çalışır; ince dane oranı tipik olarak %10-15 eşiğini aştığında titreşim daneler arasında etkin iletilemez ve taş kolon (vibro replasman) çözümüne geçilir. Etkili derinlik tipik olarak 5-15 m olup özel projelerde çok daha derin uygulamalar raporlanmıştır. Sıkıştırma noktaları üçgen veya kare düzende yerleştirilir; nokta aralığı vibroflot kapasitesine, zemin özelliklerine ve hedef sıkılığa bağlı olarak projeye göre belirlenir (yaygın uygulamada 2-3,5 m mertebesinde) ve hedef genellikle %70-85 relatif sıkılıktır. Kesin karelaj, saha başında yapılan deneme uygulamasıyla doğrulanmalıdır."
+          },
+          {
+            type: "paragraph",
+            content: "Dinamik kompaksiyonda 10-30 ton ağırlığındaki çelik tokmak, vinçle 10-25 m yükseklikten serbest düşürülür ve darbe enerjisi gevşek zemini derinlemesine sıkıştırır. Islah derinliği D = n·√(W·H) ampirik bağıntısıyla öngörülür; burada W tokmak ağırlığı (ton), H düşme yüksekliği (m), n ise zemin cinsine bağlı 0,3-0,6 aralığında bir katsayıdır. Örneğin 15 tonluk tokmağın 20 m'den düşürüldüğü bir uygulamada √(15×20) ≈ 17,3 olur; n = 0,5 alındığında yaklaşık 8-9 m etki derinliği hesaplanır. Yumuşak kohezyonlu zeminlerde ise aynı ekipmanla dinamik replasman uygulanır: tokmak, iri taş yastıklarını zemine çakarak hem sıkıştıran hem yük taşıyan kolonlar oluşturur ve yöntemin uygulama alanını kohezyonlu zeminlere genişletir."
+          },
+          {
+            type: "warning",
+            title: "Dinamik kompaksiyonun sınırları",
+            content: "Yöntem granüler dolgular ve gevşek kumlarda etkilidir; suya doygun, düşük geçirimli killerde boşluk suyu basıncı sönümlenemediği için sonuç alınamaz. Ayrıca darbe titreşimleri nedeniyle mevcut yapılara bırakılması gereken güvenli mesafe önemli bir kısıttır; bu mesafe sahadaki yapı stoğuna ve zemin koşullarına bağlı olarak değişir ve zemin etüdü ile titreşim ölçümlerine dayanılarak projeye göre belirlenmelidir."
+          },
+          {
+            type: "list",
+            title: "Hızlı darbeli kompaksiyon (RIC): şehir içi alternatif",
+            items: ["Ekskavatör taşıyıcıya bağlı 5-12 tonluk hidrolik çekiç, dakikada yaklaşık 40-60 darbe uygular.", "Etkili derinlik tipik olarak 4-7 m'dir; klasik dinamik kompaksiyon ile yüzeysel silindiraj arasındaki boşluğu doldurur.", "Darbe başına enerji kontrollü ve görece düşük olduğundan çevre titreşimi klasik tokmaklamaya göre belirgin biçimde azdır.", "Bu sayede komşu yapıların yakınında ve şehir içi sahalarda değerlendirilebilir; yine de güvenli çalışma mesafesi titreşim ölçümüyle doğrulanmalıdır.", "Her darbedeki oturma ve darbe sayısı, ekipman üzerindeki kayıt sistemleriyle izlenir; böylece sahanın tamamında homojen bir iyileştirme kontrolü sağlanır."]
+          },
+          {
+            type: "note",
+            title: "Kalite kontrol nasıl yapılır?",
+            content: "Derin kompaksiyonun başarısı, uygulama öncesi ve sonrası SPT/CPT sonuçlarının karşılaştırılmasıyla kanıtlanır; dinamik kompaksiyonda krater derinliği ölçümleri enerji verimini izlemenin pratik yoludur. Saha genelinde uygulamaya geçmeden önce bir deneme sahasında tokmak ağırlığı, düşme yüksekliği, darbe sayısı ve nokta karelajı kalibre edilmeli; kabul kriterleri (hedef SPT/CPT değerleri, relatif sıkılık) proje şartnamesinde önceden tanımlanmalıdır."
+          }
+        ]
+      },
+      {
+        id: "enjeksiyon-yontemleri",
+        title: "Enjeksiyon Yöntemleri: Permeasyon, Kompaksiyon, Çatlatma ve Reçine",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Enjeksiyon yöntemleri, çimento esaslı şerbetlerin veya kimyasal çözeltilerin basınç altında zemine verilmesiyle dayanımı artırmayı, geçirimliliği azaltmayı veya oturmaları düzeltmeyi amaçlar ve yeraltı zemin iyileştirme araç kutusunun en esnek ailesini oluşturur. Malzemenin zemindeki davranışına göre dört ana mekanizma ayırt edilir: permeasyon (emdirme), kompaksiyon/deplasman (düşük mobiliteli enjeksiyon), çatlatma (hidrolik çatlatma ve kompanzasyon) ile yüksek basınçlı jet enjeksiyonu. Jet grout ayrı bölümde ele alındığından burada ilk üç mekanizma üzerinde durulmaktadır. Hangi mekanizmanın seçileceği zeminin dane çapı dağılımına, boşluk yapısına ve iyileştirme hedefine göre belirlenir; bu nedenle tasarımın çıkış noktası her zaman güvenilir bir zemin etüdüdür."
+          },
+          {
+            type: "list",
+            title: "Hangi mekanizma hangi zeminde çalışır?",
+            items: ["Permeasyon: çakıl ve kaba-orta kumlar — şerbet, dane dizilimini bozmadan boşluklara sızar.", "Kompaksiyon (deplasman): gevşek dolgular, boşluklu ve karstik ortamlar — koyu harç zemini iterek sıkıştırır.", "Çatlatma/kompanzasyon: ince daneli kil ve siltler — kontrollü çatlak ağıyla zemin kütlesi iyileştirilir, yapı milimetrik hassasiyette kaldırılabilir.", "Poliüretan reçine: döşeme altı boşluklar ve acil oturma müdahaleleri — hızlı genleşen hafif dolgu.", "Jet enjeksiyonu: kilden ince çakıla uzanan geniş yelpaze — jet grout bölümünde detaylandırılmıştır."]
+          },
+          {
+            type: "paragraph",
+            content: "Permeasyon enjeksiyonunda düşük viskoziteli şerbet, dane dizilimini bozmayacak bir basınçla zemin boşluklarına emdirilir. Belirleyici kavram enjekte edilebilirliktir (groutability): şerbetteki dane çapının zemin boşluklarına göre yeterince küçük olması gerekir. Bu nedenle normal çimento yalnızca çakıl ve kaba kumda çalışır; orta kumlarda mikro çimento, ince kumlarda ise sodyum silikat ve kimyasal reçineler gündeme gelir. Malzeme seçimi elek analizi ve deneme enjeksiyonlarıyla, zemin etüdü sonuçlarına göre yapılır; deneme panelinden alınan karot ve permeabilite sonuçları tasarımın sahada doğrulanmasını sağlar."
+          },
+          {
+            type: "paragraph",
+            content: "Kompaksiyon enjeksiyonunda (low mobility grouting) çökme değeri çok düşük, koyu kıvamlı harç zemine itilir; harç boşluklara sızmak yerine enjeksiyon noktası çevresinde genişleyen bir kütle oluşturarak çevre zemini radyal olarak sıkıştırır. Oturmuş temellerin düzeltilmesi, karst boşluklarının ve obrukların doldurulması ile tünel üstü zeminlerin desteklenmesi tipik kullanım alanlarıdır. Çatlatma enjeksiyonunda ise kontrollü hidrolik çatlaklar açılarak zemin kütlesi içinde sertleşmiş şerbet damarları oluşturulur; kompanzasyon enjeksiyonu bu ilkeyle hassas yapıların altında oturmayı milimetrik hassasiyette telafi edebilir ve döşeme kaldırma (slabjacking) mantığının derin zemindeki karşılığı olarak düşünülebilir."
+          },
+          {
+            type: "note",
+            title: "Sahada kayıt üçlüsü: basınç-debi-hacim",
+            content: "Klasik uygulamada su/çimento oranı 3:1 gibi akışkan bir karışımla başlar; zeminin alımına göre karışım kademeli olarak 2:1, 1:1 ve daha koyu oranlara koyulaştırılır. Bentonit katkısı çökelmeyi azaltıp süspansiyonu kararlı kılar. Manşetli boru (tube-à-manchette) tekniği aynı seviyeye kontrollü ve tekrarlı enjeksiyon imkânı verir. Her kademede basınç, debi ve verilen hacim kesintisiz kaydedilmeli; kabul dosyası bu kayıtlar üzerine kurulmalıdır."
+          },
+          {
+            type: "paragraph",
+            content: "Poliüretan reçine enjeksiyonu, saniyeler içinde genleşen hafif reçineyle döşeme altı boşluklarını doldurur ve ani oturmalarda acil müdahale aracı olarak değerlendirilir; mevcut yapı altındaki uygulama detayları temel güçlendirme (underpinning) bölümünde ele alınmaktadır. Geçirimsizlik amaçlı enjeksiyonda ise kaya çatlakları doldurulur ve kesişen enjeksiyon sıralarıyla perde oluşturulur; baraj temelleri ve derin kazılar tipik senaryolardır. Kabul ölçütü çoğunlukla Lugeon testiyle tanımlanan geçirimlilik değeridir ve hedef değer projeye göre şartnamede belirlenir. Yeraltı suyu kontrolüyle ilişkisi ilgili bölümde, uygulama adımları ise sitedeki zemin enjeksiyonu nedir sayfasında detaylandırılmıştır."
+          }
+        ]
+      },
+      {
+        id: "on-yukleme-ve-dusey-drenler",
+        title: "Ön Yükleme ve Düşey Drenler (PVD): Konsolidasyonu Hızlandırmak",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Suya doygun yumuşak killer üzerine dolgu veya yapı yüklendiğinde oturma hemen değil, boşluk suyunun zamanla dışarı atılmasıyla yıllara yayılarak gelişir; Terzaghi'nin konsolidasyon teorisi bu davranışı tanımlar. Ön yükleme yöntemi aynı fizikten yararlanır: yapı yükünü temsil eden ve çoğunlukla bir miktar fazlasıyla (sürşarj) hazırlanan geçici toprak dolgu sahaya serilir; zemin, oturmasının büyük bölümünü inşaat başlamadan tamamlar ve dolgu kaldırıldığında yapı, oturması önemli ölçüde tamamlanmış bir zemine oturur. Ekipman ihtiyacı düşük, mekanizması şeffaf olan bu yaklaşım, yeraltı zemin iyileştirme yöntemleri içinde en ekonomik çözümlerden biri olarak değerlendirilir."
+          },
+          {
+            type: "paragraph",
+            content: "Sürecin darboğazı suyun kilden çıkış hızıdır; prefabrik düşey drenler (PVD, fitil dren) tam bu noktada devreye girer. Tipik olarak yaklaşık 100 × 4 mm kesitli, geotekstil filtreli kompozit şeritler, mandrel adı verilen çelik kılıf yardımıyla zemine itilir ve 25-30 m ve üzeri derinliklere ulaşabilir; üçgen veya kare yerleşimde genellikle 1,0-2,5 m aralıklarla çakılır, kesin aralık konsolidasyon analiziyle projeye göre belirlenir. Uzun yıllar kullanılan kum drenlerin yerini bu hafif, hızlı uygulanan ve homojen şeritler büyük ölçüde almıştır. Sıvılaşmaya yönelik deprem drenleri ise ayrı bir işlev görür: amaç konsolidasyon değil, deprem sırasında oluşan boşluk suyu basıncının hızla sönümlenmesidir."
+          },
+          {
+            type: "note",
+            title: "Fizik kuralı: mesafenin karesi",
+            content: "Konsolidasyon süresi drenaj mesafesinin karesiyle orantılıdır. İki yüzünden drene olan 10 m kalınlığında bir kil tabakasında su en fazla 5 m yol alır ve oturma onlarca yıl sürebilir; 1,2 m aralıklı PVD ile drenaj yolu yaklaşık 0,6 m'ye indiğinde süre kabaca (5/0,6)² ≈ 70 kat kısalır ve yıllar mertebesindeki bekleme aylara inebilir. Bu basitleştirilmiş bir gösterimdir; gerçek süre, konsolidasyon katsayısı, dren etrafındaki örselenme (smear) etkisi ve tabaka geometrisine göre projede hesaplanır."
+          },
+          {
+            type: "paragraph",
+            content: "Sürşarj tasarımında hedef genellikle %90 ve üzeri konsolidasyon derecesidir; sürşarj yüksekliği bu hedefe ve inşaat takvimine göre belirlenir. Yumuşak taban kayma göçmesine karşı hassas olduğundan dolgu kademeli inşa edilir ve her kademede boşluk suyu basıncının yeterince sönümlenmesi beklenir. Saha gözlemsel yöntemle izlenir: oturma plakaları oturma-zaman eğrisini, piezometreler boşluk suyu basıncını, inklinometreler yanal hareketi takip eder; dolgu programı bu ölçümlere göre güncellenir. Dolgu malzemesinin temin edilemediği veya taban stabilitesinin kritik olduğu sahalarda vakum konsolidasyonu değerlendirilebilir: geçirimsiz membran altında oluşturulan vakum, atmosfer basıncını sürşarj gibi kullanır ve kayma göçmesi riski oluşturmadan yük uygular."
+          },
+          {
+            type: "list",
+            title: "Ön yükleme + PVD'nin tipik uygulama alanları",
+            items: ["Liman geri sahaları ve kıyı dolgu alanları", "Karayolu ve demiryolu yaklaşım dolguları", "Geniş alana yayılan düşük katlı yapılaşma ve depolama sahaları", "Tank çiftlikleri ve açık stok alanları", "Normal konsolide veya hafif aşırı konsolide yumuşak kil profilleri"]
+          },
+          {
+            type: "warning",
+            title: "En büyük dezavantaj: takvim",
+            content: "PVD konsolidasyon süresini kat kat kısaltabilse de yöntem doğası gereği aylar sürebilen bir bekleme dönemi gerektirir. İnşaat takvimi sıkışık projelerde bu bekleme çoğu zaman eleme kriteridir; gerekli süre zemin etüdü ve konsolidasyon analizleriyle projeye göre belirlenmeli, yöntem ve takvim kararı bu hesaplara dayandırılmalıdır."
+          }
+        ]
+      },
+      {
+        id: "rijit-inkluzyonlar-ve-kazik-iliskisi",
+        title: "Rijit İnklüzyonlar (CMC) ve Kazıklı Sistemlerle İlişkisi",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Rijit inklüzyonlar, sıkışabilir zayıf tabakalar boyunca ilerletilen, deformasyon modülü çevre zemine göre çok yüksek ve genellikle donatısız beton kolonlardır. Ayırt edici özellikleri, yapıya yapısal olarak bağlanmamalarıdır: yapı yükü, temel ile kolon başları arasına serilen granüler bir yük aktarım platformu (LTP) üzerinden kolonlara ve çevre zemine paylaştırılır. Böylece temel sistemi yüzeysel ya da radye olarak kalır; kolonlar bir temel elemanı değil, yeraltı zemin iyileştirme elemanı olarak tasarlanır. Fark tek cümlede özetlenebilir: kazık, yapıya bağlı bir temel elemanıdır ve yapısal tasarıma girer; rijit inklüzyon ise zemini iyileştirir, temel yüzeysel kalmaya devam eder."
+          },
+          {
+            type: "note",
+            title: "Jet grout kolonu kazık mıdır?",
+            content: "Hayır. Soilcrete malzemesi beton kadar homojen değildir, oluşan kolon geometrisi kazık toleranslarında doğrulanamaz ve yaygın yönetmelik yaklaşımı bu elemanları temel elemanı olarak değil zemin iyileştirmesi olarak değerlendirir. Bu nedenle jet grout kolonlarına kazık taşıma gücü formülleri doğrudan uygulanmaz; tasarım, iyileştirilmiş zemin ortamı üzerinden yapılır."
+          },
+          {
+            type: "paragraph",
+            content: "Kontrollü Modül Kolonları (CMC), 1990'lı yıllarda geliştirilen ve günümüzde yaygın biçimde uygulanan bir rijit inklüzyon teknolojisidir. Tipik olarak 25-45 cm çapındaki kolonlar, deplasmanlı burgu ile hafriyat çıkarmadan ve kayda değer titreşim oluşturmadan imal edilir; takım geri çekilirken beton basınç altında pompalanır. İmalat sırasında derinlik, tork, beton basıncı ve pompalanan hacim sürekli kaydedilir; bu kayıtlar kalite kontrolün temelini oluşturur. Sistemin anahtarı yük aktarım platformudur: temel altındaki sıkıştırılmış granüler yastık içinde kemerlenme (arching) mekanizması gelişir; yük büyük ölçüde kolon başlarına yönlenirken bir bölümü çevre zeminde kalır. Yastık kalınlığı, kolon aralığı ve kolon-zemin rijitlik oranı bu yük paylaşımını belirleyen başlıca tasarım değişkenleridir. Doğru tasarlanmış rijit inklüzyon uygulamaları, oturmaları projeye ve zemin profiline bağlı olarak birkaç kat mertebesinde azaltabilir; kesin iyileştirme oranı sayısal analiz ve saha deneyleriyle doğrulanır."
+          },
+          {
+            type: "list",
+            title: "İyileştirme-derin temel spektrumunda başlıca düşey elemanlar",
+            items: ["CMC (Kontrollü Modül Kolonu): tipik 25-45 cm çap, deplasmanlı burgu ile hafriyatsız ve düşük titreşimli imalat; yumuşak kil ve silt profillerinde radye altı iyileştirme.", "Vibro beton kolon (VCC): vibratörle imal edilen beton kolon; gevşek granüler zeminler ve yumuşak ara tabakalarda.", "Kuru (alttan beslemeli) vibro beton kolon: yeraltı suyu koşullarının elverdiği durumlarda kuru yöntemle imalat.", "Geotekstil kılıflı kolon (GEC): yanal desteği çok zayıf, aşırı yumuşak zeminlerde kılıfın çevresel destek sağladığı çözüm.", "CFA (sürekli burgulu) kazık: tipik 45-90 cm çap; ekipmana bağlı olarak 25-30 m mertebesine ulaşan derinlik; uygun zemin profillerinde hızlı bir derin temel alternatifi.", "Fore kazık: yaygın olarak Ø60-200 cm çap, gerektiğinde 50 m'yi aşan derinlik; yapıya bağlı klasik derin temel elemanı.", "Mini kazık: genellikle Ø30 cm'nin altındaki çaplarda; dar alanlarda ve mevcut yapı yakınında derin temel ve güçlendirme elemanı."]
+          },
+          {
+            type: "paragraph",
+            content: "İyileştirme mi kazık mı sorusu; yük düzeyi, yapının oturma toleransı, sağlam tabakanın derinliği ve deprem koşulları birlikte değerlendirilerek yanıtlanır. Orta düzey yükler ve oturmaya toleranslı üst yapılarda rijit inklüzyonlu radye ekonomik bir çözüm olabilir. Buna karşılık ağır tekil yükler, çok sıkı oturma limitleri, derindeki sağlam tabaka veya sıvılaşma sonrası yanal yayılma riski gibi durumlarda kazıklı temel gerekli hale gelebilir; çekme ve yatay yük aktarımı gereken durumlarda da yapıya bağlı kazıklar tercih edilir. Nihai karar, zemin etüdü sonuçlarına ve yapısal analizlere göre projeye özgü verilir; imalat detayları için sitedeki fore kazık nedir ve mini kazık tercih nedenleri sayfaları incelenebilir."
+          }
+        ]
+      },
+      {
+        id: "yeralti-suyu-kontrolu-ve-gecirimsizlik",
+        title: "Yeraltı Suyu Kontrolü, Susuzlaştırma ve Geçirimsizlik Perdeleri",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Yeraltı su seviyesi (YAS), yeraltı zemin iyileştirme projelerinde hem sorunun kaynağı hem de yöntem seçiminin belirleyicisidir. Yüksek YAS, efektif gerilmeyi düşürerek taşıma gücünü azaltır; gevşek kumlarda sıvılaşma potansiyelini artırır; derin kazılarda kaynama, borulanma ve taban kabarması riskini doğurur. Aynı zamanda ıslak/kuru imalat kararını, bağlayıcı seçimini ve ekipman planını doğrudan etkiler. Bu nedenle susuzlaştırma stratejisi, zemin etüdü aşamasında geçirimlilik ölçümleri ve piyezometre gözlemleriyle birlikte planlanmalıdır."
+          },
+          {
+            type: "paragraph",
+            content: "Kazı susuzlaştırmasında en yaygın çözüm wellpoint sistemidir: vakum pompasına bağlı iğne kuyu dizileri, kum ve siltli kum zeminlerde su seviyesini kontrollü biçimde düşürür. Tek kademede pratik düşüm sınırı 5-6 m mertebesindedir; daha büyük düşümlerde kademeli (cascade) kurulum yapılır. Kuyu filtreleri, zeminin dane çapı dağılımına uygun yarık açıklığı ve kum filtre zarfı ile teşkil edilir; aksi halde ince dane taşınması ve tıkanma sorunları görülür. Daha derin ve yüksek debili su düşürme gerektiğinde dalgıç pompalı derin kuyu (deep well) sistemleri tercih edilir; düşük geçirimlilikli siltlerde ise vakum destekli veya ejektörlü kuyular gündeme gelebilir. Kuyu sayısı, aralığı ve pompa kapasitesi zeminin geçirimliliğine ve hedef düşüme göre projelendirilir."
+          },
+          {
+            type: "note",
+            title: "Kurutma da bir iyileştirmedir",
+            content: "YAS'ın düşürülmesi tek başına iyileştirme etkisi yaratır: boşluk suyu basıncı azaldıkça efektif gerilme artar, ince daneli zeminlerde konsolidasyon gelişir ve zemin zamanla dayanım kazanır."
+          },
+          {
+            type: "warning",
+            title: "Komşu yapılarda oturma riski",
+            content: "Kontrolsüz su düşürme, etki konisi içindeki komşu yapıların altında ilave konsolidasyon oturmalarına yol açabilir. Düşüm hızı ve süresi gözlem kuyuları ve piyezometrelerle izlenmeli; gerekirse geçirimsizlik perdesi veya yeniden besleme (recharge) kuyuları gibi önlemlerle çevresel etkiler yönetilmelidir."
+          },
+          {
+            type: "list",
+            title: "Başlıca geçirimsizlik perdesi çözümleri",
+            items: ["Kesişen jet grout kolon perdesi: kolonların birbirine geçirilerek imal edilmesiyle oluşturulan sızdırmazlık perdesi.", "DSM panel perdesi: derin karıştırma panellerinin ardışık ve bindirmeli imalatıyla düşük geçirimlilikli bariyer oluşturulması.", "Slurry trench (bulamaç hendek): bentonit-çimento dolgulu hendeklerle sığ ve orta derinlikte geçirimsizlik.", "Diyafram duvar: derin kazı ve baraj senaryolarında hem destek hem geçirimsizlik sağlayan betonarme perde; detaylar sitedeki diyafram duvar nedir ve kazı destek sistemleri sayfalarında ele alınmıştır.", "Kazı tabanı tıkaç enjeksiyonu: taban kabarmasına ve artezyen basıncına karşı kazı tabanının sızdırmazlaştırılması."]
+          },
+          {
+            type: "paragraph",
+            content: "Perde performansı imalatla bitmez; doğrulanması gerekir. Geçirimlilik azaltımının kalite kontrolü Lugeon testi, kuyu içi permeabilite (düşen/yükselen seviye) deneyleri ve gözlem kuyularındaki su seviyesi takibiyle yapılır. Derin kazılarda alt akiferlerdeki artezyen basınçları ayrıca ölçülmeli, gerektiğinde basınç düşürme kuyuları planlanmalıdır. Hedef geçirimlilik değerleri ve kabul kriterleri, yapının su hassasiyetine ve kazı derinliğine bağlı olarak projeye göre belirlenir."
+          }
+        ]
+      },
+      {
+        id: "katki-maddeleri-ve-ozel-yontemler",
+        title: "Katkı Maddeleriyle Stabilizasyon ve Özel İyileştirme Yöntemleri",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Katkı maddeleriyle stabilizasyon, zeminin kimyasını değiştirerek davranışını iyileştirir. Kireç stabilizasyonu özellikle şişen killerde etkilidir: kalsiyum iyonları kil mineralleriyle iyon değişimine girer, ardından gelişen puzolanik reaksiyon zamanla kalıcı sertleşme sağlar. Plastisite indisi düşer, işlenebilirlik artar; şişme davranışının yol, kanal kaplaması ve döşeme gibi hafif yapılara verdiği hasar azalır. Tipik dozaj kuru zemin ağırlığının %3-8'i mertebesindedir; kesin oran laboratuvar karışım deneyleriyle belirlenir. Sönmemiş kireç suyu hızla bağladığı için ıslak zeminlerde avantajlıdır; sönmüş kireç ise daha güvenli ve kolay uygulanır. Sülfat içeriği yüksek zeminlerde kireç, etrenjit oluşumuna bağlı ilave şişmeye (sülfat kabarması) yol açabileceğinden uygulama öncesi mutlaka ön deneylerle kontrol edilmelidir."
+          },
+          {
+            type: "warning",
+            title: "Sönmemiş kireçle çalışma güvenliği",
+            content: "Sönmemiş kireç su ile şiddetli ekzotermik reaksiyona girer; cilt ve göz temasında ciddi yanık riski taşır. Uygulamada toz kontrolü ve kişisel koruyucu donanım kullanımı zorunludur."
+          },
+          {
+            type: "paragraph",
+            content: "Çimento stabilizasyonu, organik zeminler dışında geniş bir zemin aralığında tipik olarak %3-10 dozajla dayanım artışı sağlar; en verimli olduğu birimler kum-çakıl, kumlu-siltli zeminler ve düşük plastisiteli killerdir. Yol alt temeli, dolgu ve çalışma platformu iyileştirmelerinde karışım, laboratuvarda farklı dozajların denenmesi ve hedef serbest basınç dayanımının (UCS) doğrulanmasıyla tasarlanır. Uçucu kül ve yüksek fırın cürufu gibi endüstriyel yan ürünler, düşük maliyetli ve düşük karbonlu bağlayıcı alternatifleri sunar; tek başlarına sınırlı puzolanik katkı sağlarken kireç veya çimentoyla birlikte kullanıldıklarında belirgin dayanım artışı elde edilebilir. Sağlanacak artış zemin türüne, dozaja ve kür süresine bağlı olarak projeye göre değişir. Bitüm stabilizasyonu ise kohezyonsuz granüler malzemeye kohezyon ve su geçirimsizliği kazandırır."
+          },
+          {
+            type: "note",
+            title: "Yüzeyden yer altına",
+            content: "Aynı bağlayıcılar derin karıştırma (DSM) ekipmanıyla 25-30 m mertebesindeki derinliklere taşınabilir. Katkı stabilizasyonunun yeraltı zemin iyileştirme versiyonu sayılabilecek bu uygulama, derin karıştırma bölümünde detaylandırılmıştır."
+          },
+          {
+            type: "list",
+            title: "Özel ve gelişmekte olan yöntemler",
+            items: ["Zemin dondurma (ground freezing): tuzlu su (brine) veya sıvı azot devridaimiyle geçici sızdırmazlık ve yapısal destek; tünel ve şaft işlerinde kullanılır, yüksek enerji maliyeti nedeniyle genellikle diğer yöntemlerin yetersiz kaldığı durumlarda tercih edilir.", "Biyokalsifikasyon (MICP): bakteriler aracılığıyla kalsit çökelterek kum tanelerini doğal bir çimentoyla bağlayan, düşük karbon ayak izli ve henüz gelişmekte olan bir yöntem.", "EPS geofoam: yaklaşık 20-30 kg/m³ yoğunluğuyla dolgu yükünün kendisini azaltan hafif dolgu; köprü yaklaşım dolguları ve oturmaya hassas sahalarda değerlendirilir.", "Köpük beton: hafif, akışkan ve kendiliğinden yerleşen bir hafif dolgu alternatifi.", "Geogrid donatılı yük platformları ve temel altı donatı: zeminin çekme dayanımı eksikliğini geosentetiklerle tamamlayan, rijit inklüzyon uygulamalarını destekleyen çözümler.", "Donatılı zemin (MSE) duvarları: çelik veya polimer şeritlerle donatılandırılan dolgularla yüksek istinat yapıları oluşturulabilir; ulaşılabilir yükseklik donatı tipine ve projeye göre değişir.", "Elektro-osmoz: ince daneli zeminlerde boşluk suyunu elektrik alanla yönlendiren niş bir elektrokinetik yöntem."]
+          },
+          {
+            type: "paragraph",
+            content: "Hangi katkının hangi dozajla kullanılacağı; zemin türü, su muhtevası, hedef dayanım ve çevresel kısıtlara bağlı olarak laboratuvar karışım deneyleriyle belirlenir. Sahada ise serme kalınlığı, karıştırma homojenliği ve kür koşulları performansı doğrudan etkilediğinden imalat kontrolü deney sonuçları kadar önemlidir. Bu yöntemler çoğu projede tek başına değil, derin yeraltı zemin iyileştirme teknikleriyle birlikte hibrit çözümler halinde değerlendirilir; nihai seçim zemin etüdü sonuçlarına ve maliyet-performans karşılaştırmasına göre yapılır."
+          }
+        ]
+      },
+      {
+        id: "sivilasma-riskinin-azaltilmasi",
+        title: "Zemin Sıvılaşması ve Yer Altı Zemin Güçlendirme ile Riskin Azaltılması",
+        blocks: [
+          {
+            type: "note",
+            title: "Kısa cevap",
+            content: "Zemin sıvılaşması, suya doygun gevşek kumlu zeminlerin deprem sarsıntısı sırasında geçici olarak taşıma gücünü yitirmesidir. Vibro kompaksiyon, taş kolon, jet grout ve derin karıştırma gibi yer altı zemin güçlendirme yöntemleriyle bu risk, analizlerle doğrulanabilir biçimde kabul edilebilir düzeye indirilebilir."
+          },
+          {
+            type: "paragraph",
+            content: "Sıvılaşmanın mekanizması boşluk suyu basıncının artışında saklıdır. Suya doygun, gevşek kum ve siltli kum tabakalarında deprem sırasında oluşan tekrarlı kesme yükleri, su tabaka dışına yeterince hızlı kaçamadığı için boşluk suyu basıncını sürekli yükseltir. Bu basınç, daneleri bir arada tutan efektif gerilme düzeyine ulaştığında daneler arası temas kuvvetleri pratik olarak sıfırlanır ve zemin geçici olarak sıvı gibi davranır: binalar aşırı oturur veya yana yatar; boş tank, rögar ve boru hattı gibi hafif gömülü yapılar ise kaldırma etkisiyle yüzeye çıkabilir. 1999 Kocaeli depreminde Adapazarı'nda, 2023 Kahramanmaraş depremlerinde ise Gölbaşı ve İskenderun'da gözlenen yapı devrilmeleri ve aşırı oturmalar bu mekanizmanın saha kanıtlarıdır."
+          },
+          {
+            type: "paragraph",
+            content: "Risk, üç koşulun bir arada bulunmasıyla oluşur: gevşek granüler zemin, sığ yeraltı su seviyesi (çoğu durumda 10 m'den sığ; değerlendirme genellikle ilk 20 m derinlik için yapılır) ve yeterince güçlü sarsıntı. Temiz kumlar kadar siltli kumlar ve düşük plastisiteli siltler de hassastır. Tespitte SPT/CPT tabanlı basitleştirilmiş yöntem (Seed-Idriss yaklaşımı) kullanılır: depremin oluşturduğu tekrarlı gerilme oranı (CSR), zeminin tekrarlı direnç oranı (CRR) ile karşılaştırılır ve derinlik boyunca güvenlik katsayısı hesaplanır. TBDY 2018 Bölüm 16.6, ilgili koşulları taşıyan sahalarda sıvılaşma değerlendirmesini zorunlu tutar; bu değerlendirme tamamlanmadan temel tasarımına geçilmemelidir."
+          },
+          {
+            type: "list",
+            title: "Sıvılaşmaya karşı yöntem matrisi",
+            items: ["Vibro kompaksiyon: temiz, kohezyonsuz kumlarda relatif sıkılığı artırarak sıvılaşma direncini yükseltir", "Taş kolon (vibro replasman): sıkılaştırma ve drenajı birleştirir; siltli kumlarda en yaygın tercihtir", "Dinamik kompaksiyon: geniş ve yapılaşmamış sahalarda gevşek kum ve dolguların derin sıkıştırılması", "Jet grout veya DSM ile hücresel (kafes) düzen: sıvılaşabilir bölgeyi çevreleyerek kesme deformasyonlarını sınırlar", "Kompaksiyon enjeksiyonu: mevcut yapı altında zemini yer değiştirterek sıkıştırır", "Yeraltı su seviyesini düşürme ve deprem drenleri: doygunluğu ve boşluk suyu basıncı birikimini azaltır"]
+          },
+          {
+            type: "paragraph",
+            content: "Taş kolonun en yaygın sıvılaşma çözümü olmasının nedeni üçlü mekanizmasıdır: kolonlar drenaj yolunu kısaltarak deprem sırasında oluşan boşluk suyu basıncının hızla sönümlenmesini sağlar, imalat titreşimi çevre zeminin relatif sıkılığını artırır ve kolonların rijitliği deprem kesme gerilmelerinin bir bölümünü üstlenir. İyileştirme hedefi, yapı önem düzeyine ve saha koşullarına bağlı olarak genellikle N1,60 için 15-25 aralığında tanımlanır; CPT ile çalışılıyorsa eşdeğer uç direnci (qc) hedefleri belirlenir. Kesin hedef değerler projeye göre değişir. Kritik adım, iyileştirme sonrasında yapılan deneylerin sonuçlarıyla sıvılaşma analizinin yeniden koşulması ve hedeflenen güvenlik katsayısının sağlandığının sayısal olarak gösterilmesidir."
+          },
+          {
+            type: "note",
+            title: "Sıvılaşma riski olan arsaya bina yapılabilir mi?",
+            content: "Evet. Zemin etüdüyle doğrulanmış uygun bir yer altı zemin iyileştirme yöntemi, rijit radye gibi uygun bir temel sistemiyle birleştirildiğinde sıvılaşma riskli sahalarda güvenli yapılaşma mümkündür. Uygulama detayları sitedeki sıvılaşma riskine karşı zemin güçlendirme makalesinde ele alınmıştır."
+          }
+        ]
+      },
+      {
+        id: "yontem-secim-matrisi",
+        title: "Zemin Türüne Göre Yöntem Seçimi: Karşılaştırma Matrisi ve Karar Ağacı",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Yöntem seçiminin ilk ekseni zemin türüdür. Temiz kum, siltli kum, silt, yumuşak kil, organik zemin/turba, kontrolsüz dolgu ve karstik ortamların her biri için yöntemler \"uygun / koşullu / uygun değil\" şeklinde derecelendirilir: örneğin vibro kompaksiyon temiz kumda uygunken silt oranı arttıkça koşullu hale gelir, kilde ise etkisizdir. İkinci eksen derinliktir: 0-3 m bandında yüzeysel kompaksiyon ve katkılı stabilizasyon; 3-10 m'de hızlı darbeli kompaksiyon (RIC), kütle karıştırma ve sığ kolonlar; 10-30 m'de jet grout, derin karıştırma (DSM), taş kolon ve düşey drenler (PVD); 30-50 m bandında ise derin jet grout, vibro kompaksiyon ve derin enjeksiyon değerlendirilebilir. Doğru yer altı zemin iyileştirme yöntemi bu iki eksenin kesişiminde aranır; sınır durumlarda saha deneyimi ve deneme imalatı belirleyici olur."
+          },
+          {
+            type: "paragraph",
+            content: "Seçim süreci bir karar ağacı gibi işletilebilir: zemin tipi → yeraltı su seviyesinin konumu → gereken iyileştirme derinliği → yapı yükü ve oturma toleransı → çevre kısıtları (titreşim, gürültü, komşu yapı hassasiyeti) → inşaat takvimi → bütçe → yöntem kısa listesi. ABD Federal Karayolu İdaresi'nin (FHWA) GEC-13 rehberi de benzer bir süreci adım adım sistematikleştirir: performans probleminin tanımlanması, saha ve zemin verisinin derlenmesi, aday teknolojilerin taranması, teknik eleme, maliyet-performans karşılaştırması ile şartname ve kalite kontrol planının hazırlanması bu sürecin ana başlıklarıdır."
+          },
+          {
+            type: "list",
+            title: "Tipik eşleştirmeler",
+            items: ["Temiz, gevşek kum → vibro kompaksiyon", "Yumuşak kil + geniş saha + esnek takvim → PVD + sürşarjlı ön yükleme", "Yumuşak kil + dar takvim → DSM veya rijit inklüzyon", "Organik zemin ve turba → rijit kolon veya hafif dolgu çözümleri", "Kontrolsüz dolgu → dinamik kompaksiyon veya RIC (derinliğe ve çevre kısıtlarına göre)", "Karstik boşluklar → kompaksiyon (düşük mobiliteli) enjeksiyon", "Mevcut bina altı → jet grout veya reçine enjeksiyonu"]
+          },
+          {
+            type: "warning",
+            title: "Yanlış eşleştirmenin bedeli ağırdır",
+            content: "Suya doygun kilde dinamik kompaksiyon işe yaramaz; çünkü boşluk suyu darbe hızında dışarı çıkamaz. İnce daneli zeminde normal çimentolu permeasyon enjeksiyonu dane aralarından geçemez. Çok yumuşak kilde kılıfsız taş kolon yeterli yanal destek bulamayıp şişerek kapasitesini yitirir. Bu tür yanlış seçimler hem bütçeyi tüketir hem de gerçekte var olmayan bir güvenlik hissi yaratır."
+          },
+          {
+            type: "paragraph",
+            content: "Gerçek projelerde yöntemler çoğu zaman tek başına değil kombine kullanılır: PVD + sürşarj + taş kolon üçlüsü yumuşak killerde oturmayı hem hızlandırır hem sınırlar; derin kazılarda jet grout, ankrajlı iksa ile birlikte çalışır; DSM kolonlarının üzerine geogrid donatılı yük aktarım platformu teşkil edilebilir. Nihai karar geoteknik mühendisinin sorumluluğundadır ve sağlıklı bir seçim ancak zemin etüdü, deneme imalatı ve gözlemsel yöntem üçlüsüyle doğrulanır. Tablo ve karar ağacı yalnızca kısa listeyi oluşturur; projeyi belirlemez."
+          }
+        ]
+      },
+      {
+        id: "tasarim-parametreleri",
+        title: "Tasarım Parametreleri: Derinlik, Çap, Aralık ve Hedef Değerler",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Yer altı zemin iyileştirme tasarımının ilk sorusu derinliktir ve üç kriterin en elverişsizi esas alınır: sağlam taşıyıcı tabakanın derinliği, temel gerilmelerinin etkili olduğu derinlik (yaklaşık olarak temel genişliğinin 1,5-2 katı) ve sıvılaşabilir ya da problemli tabakanın alt sınırı. Kolonlu yöntemlerde derinlik genellikle zayıf tabakayı tamamen geçip sağlam birime soketlenecek şekilde seçilir; asılı (yüzer) kolon çözümleri ancak ayrıntılı oturma analizleriyle gerekçelendirilebilir."
+          },
+          {
+            type: "paragraph",
+            content: "Kolon yerleşiminde üçgen veya kare karelaj kullanılır; üçgen düzen aynı aralıkta daha homojen bir iyileştirme sağlar. Tasarımın anahtar büyüklüğü alan ikame oranıdır: as = Akolon/Ahücre, yani bir kolonun kesit alanının etkilediği birim hücre alanına oranı. Tipik değerler %10-35 aralığındadır; oran büyüdükçe oturma azalır ancak maliyet artar. Hedef performans değerleri projeye göre belirlenir: tekil temellerde yaklaşık 25 mm, radye temellerde yaklaşık 50 mm izin verilebilir oturma yaygın kabullerdir; ancak bu sınırlar yapı türüne ve hasar duyarlılığına göre proje özelinde farklılaşır. Bunlara taşıma gücü güvenlik katsayısı ile deprem performansı için kompozit kayma dalgası hızı (Vs) ve N1,60 hedefleri eşlik eder."
+          },
+          {
+            type: "list",
+            title: "Yöntem bazlı özet parametre aralıkları",
+            items: ["Jet grout: kolon çapı sisteme göre 0,6-2,5 m, enjeksiyon basıncı yaklaşık 300-600 bar, yaygın uygulama derinliği 25-30 m'ye kadar", "Derin karıştırma (DSM): çap 0,6-1,2 m, bağlayıcı dozajı 150-400 kg/m³, derinlik tipik olarak 25-30 m'ye kadar", "Taş kolon: çap 0,6-1,2 m, kolon aralığı 1,5-3,0 m, derinlik tipik olarak 20 m'ye, özel ekipmanla 30 m'ye kadar", "Düşey dren (PVD): aralık 1,0-2,5 m, derinlik tipik olarak 25-30 m; özel ekipmanla daha derin uygulanabilir", "Dinamik kompaksiyon: 10-30 ton tokmak; etki derinliği D = n·√(W·H) ampirik bağıntısıyla (n ≈ 0,3-0,6) tahmin edilir", "Vibro kompaksiyon: nokta karelajı 1,8-4,3 m, hedef relatif sıkılık Dr = %70-85", "Tüm aralıklar gösterge niteliğindedir; kesin değerler zemin etüdü ve deneme imalatıyla projeye özel belirlenir"]
+          },
+          {
+            type: "note",
+            title: "Deneme imalatı pazarlık konusu değildir",
+            content: "Çap, dayanım, kompaksiyon enerjisi ve karelaj gibi tasarım parametreleri kâğıt üzerindeki değerlerdir; deneme sahası ve deneme kolonlarıyla sahada kalibre edilmeleri gerekir. Jet grout gibi yöntemlerde deneme kolonunun kazılarak çapının fiilen ölçülmesi, tasarım doğrulamasının en güvenilir yoludur."
+          },
+          {
+            type: "paragraph",
+            content: "Kavramsal bir örnek süreci somutlaştırır: 8 katlı bir bina, 12 m kalınlığında gevşek siltli kum ve 3 m derinlikte yeraltı suyu bulunan bir sahada sıvılaşma analizi, hedef relatif sıkılığı ve N1,60 değerini verir. Taş kolon seçilirse önce hedefe ulaştıracak alan ikame oranı hesaplanır (örneğin %15-20 mertebesi); 0,8 m çaplı kolonlar için bu oran yaklaşık 1,7-2,0 m'lik üçgen karelaja karşılık gelir. Kolon boyu 12 m'lik zayıf tabakayı geçecek şekilde seçilir; doğrulama planı, iyileştirme sonrası SPT/CPT deneylerini ve gerektiğinde kolon yükleme deneyini içerir. Buradaki rakamlar kavramsaldır; gerçek değerler zemin etüdü sonuçlarına göre projelendirilir."
+          },
+          {
+            type: "paragraph",
+            content: "Analiz tarafında birim hücre yöntemi ve kompozit malzeme parametreleri ön tasarımı, sonlu elemanlar modelleri (örneğin Plaxis) ise oturma ve gerilme dağılımının doğrulanmasını sağlar; gözlemsel yöntemle saha ölçümlerine göre tasarım güncellenir. Tüm bu içerik, TBDY 2018'e uygun formatta hazırlanan geoteknik rapora işlenir; proje müellifi ve yapı denetim mekanizması tasarımın resmi çerçevesini tamamlar. Sürecin planlama boyutu sitedeki zemin iyileştirme planlama sayfasında ayrıntılandırılmıştır."
+          }
+        ]
+      },
+      {
+        id: "mevcut-yapi-altinda-iyilestirme",
+        title: "Mevcut Yapı Altında Yer Altı Zemin İyileştirme (Underpinning)",
+        blocks: [
+          {
+            type: "note",
+            title: "Kısa cevap",
+            content: "Underpinning (temel altı takviye), mevcut bir yapının temelini yeni yükler, komşu kazılar veya zemin kaynaklı oturmalar karşısında güvenli hale getirmek amacıyla temel altındaki zeminin veya temel sisteminin güçlendirilmesidir."
+          },
+          {
+            type: "paragraph",
+            content: "Klasik kademeli underpinning'de temel altı, yapı dengesini bozmamak için küçük panolar hâlinde sırayla kazılıp betonla doldurulur. Emek yoğun ve yavaş olan bu yöntem, günümüzde büyük ölçüde yerini mevcut yapı altında uygulanan yer altı zemin iyileştirme tekniklerine bırakmıştır. Kritik karar noktası şudur: Sorun yalnızca temel altındaki zeminin taşıma gücü veya oturması ise zemin iyileştirme tek başına yeterli olabilir; taşıyıcı sistemde kesit ya da donatı yetersizliği de varsa yapısal güçlendirme birlikte planlanmalıdır. Bu ayrım, yapısal değerlendirme raporu ile zemin etüdü birlikte okunarak yapılır."
+          },
+          {
+            type: "paragraph",
+            content: "Mevcut bina altında jet grout en yaygın çözümlerden biridir: Delgi, düşük tavan yüksekliğine uygun mini delgi makineleriyle bodrumdan düşey ya da bina kenarından eğimli olarak yapılır. Delgi eğiminin pratikte genellikle 10-20 derece ile sınırlı kalması, kenardan girilen kolonların temelin orta bölgesine ancak belirli bir derinlikte ulaşabilmesi anlamına gelir; geniş oturumlu yapılarda bu nedenle bodrum içi delgi veya iki yaklaşımın kombinasyonu planlanır. Hızlı oturma düzeltmede poliüretan reçine enjeksiyonu öne çıkar: Dakikalar içinde genleşen reçine, lazer nivelman ile eş zamanlı izlenerek yapıyı milimetre mertebesinde kontrollü biçimde kaldırabilir. Yöntem, klasik underpinning'in haftalar süren kazılı imalatına kıyasla kazısız uygulanır ve çoğu projede günler mertebesinde tamamlanır; ancak derin oturma mekanizmalarında ve yapısal kaynaklı problemlerde tek başına yeterli olmayabilir. Tünel ve derin kazı kaynaklı oturmalarda ise kompanzasyon enjeksiyonu kullanılır: Örneğin metro güzergâhı üzerindeki binaların altına, tünel ilerlemesiyle eş zamanlı enjeksiyon yapılarak oturma gerçek zamanlı telafi edilir."
+          },
+          {
+            type: "list",
+            title: "Bina kullanımdayken (oturulurken) uygulama ve yapı sağlığı takibi",
+            items: ["Titreşimsiz veya düşük titreşimli yöntemler (jet grout, reçine/kompanzasyon enjeksiyonu, mini kazık) tercih edilir; vibro ve darbeli yöntemler mevcut yapı altında genellikle uygulanmaz.", "Mini kazık + jet grout kombinasyonunda jet grout zemini iyileştirirken mini kazıklar yükü derindeki sağlam tabakaya aktarır.", "Çalışma bölgesel ve kademeli planlanır; bina çoğu durumda tahliye edilmeden bölüm bölüm ilerlenebilir.", "Gürültü ve çalışma saati yönetimiyle bina sakinlerinin konforu korunur.", "Çatlak ölçerler (crackmetre) mevcut çatlakların açılıp kapanmasını sürekli izler.", "Hassas nivelman ve eğim (tilt) sensörleri düşey hareket ile dönmeyi kaydeder.", "Önceden tanımlı alarm eşikleri aşıldığında imalat durdurulur, tasarım gözden geçirilir."]
+          },
+          {
+            type: "warning",
+            title: "Her çatlamış bina kaldırılamaz",
+            content: "Oturma düzeltme, taşıyıcı sistemi sağlam olup farklı oturma nedeniyle hasar görmüş yapılarda değerlendirilebilir. Ağır taşıyıcı sistem hasarında önce yapısal değerlendirme şarttır; kontrolsüz kaldırma, hasarlı kesitlere ek zorlama getirebilir. Düzeltme sonrasında yapı, projede tanımlanan izleme dönemi boyunca nivelmanla takip edilmelidir."
+          },
+          {
+            type: "paragraph",
+            content: "Kentsel dönüşüm bağlamında, riskli bulunan ancak yıkılması istenmeyen yapılarda temel altı takviye, yıkım-yeniden yapım senaryosuna alternatif olarak zemin etüdü ve yapısal analiz sonuçlarına göre değerlendirilebilmektedir; uygulanabilirlik kararı her yapı için ayrı verilmelidir. Bina ölçeğindeki detaylar için sitemizdeki binaları yıkmadan zemin güçlendirme, temel altı zemin güçlendirme ve kentsel dönüşümde zemin güçlendirme makalelerine göz atabilirsiniz."
+          }
+        ]
+      },
+      {
+        id: "uygulama-adimlari-ve-ekipman",
+        title: "Uygulama Adımları ve Ekipman: Etütten Doğrulama Raporuna",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Başarılı bir yer altı zemin iyileştirme uygulaması, tek tek makinelerin değil uçtan uca kurgulanmış bir sürecin ürünüdür. Süreç zemin etüdüyle başlar, doğrulama raporuyla biter; ara adımların atlanması hem kalite hem sözleşme riskini büyütür. Aşağıdaki akış, projelerin büyük bölümünde geçerli olan tipik sıralamayı özetler."
+          },
+          {
+            type: "list",
+            title: "Uçtan uca 8 adım",
+            items: ["Zemin etüdü: sondajlar, SPT/CPT deneyleri ve jeofizik ölçümler", "Geoteknik rapor: zemin profili, tasarım parametreleri ve problem tanımı", "Yöntem seçimi: zemin türü, hedef performans ve bütçenin birlikte değerlendirilmesi", "Tasarım projesi ve onay: kolon çapı-aralığı-derinliği, hesap raporu, denetim onayı", "Deneme imalatı: parametrelerin sahada test kolonlarıyla doğrulanması", "Ana imalat: onaylı parametrelerle seri üretim", "Eşzamanlı kalite kontrol: imalatla birlikte yürüyen kayıt ve testler", "Doğrulama raporu ve teslim: sonuçların hedef değerlerle karşılaştırıldığı kapanış raporu"]
+          },
+          {
+            type: "paragraph",
+            content: "Saha hazırlığı çoğu zaman küçümsenen ancak takvimi belirleyen adımdır: Ağır delgi makineleri için stabil çalışma platformu ve erişim yolları, enerji ve su temini, çimento silosu ile mikser-ajitatör istasyonu, jet grout geri dönüş harcı için çökeltme havuzları ve çevre koruma önlemleri imalat başlamadan kurulur. İmalat öncesinde mevcut altyapı hatlarının (elektrik, su, doğal gaz, kanalizasyon) konumları belirlenmeli, delgi noktaları gerekirse buna göre revize edilmelidir. Ekipman parkı yönteme göre değişir: Fore kazık ve jet grout işlerinde paletli delgi makineleri ile yüksek basınçlı enjeksiyon pompaları (jet grout için tipik olarak 300-600 bar aralığında; sistem ve projeye göre değişir), taş kolonda vibroflot üniteleri, dinamik kompaksiyonda ağır vinç ve tokmak, ön yükleme projelerinde düşey dren (PVD) serim makinesi kullanılır."
+          },
+          {
+            type: "note",
+            title: "İmalat kaydı = kalite kanıtı",
+            content: "Modern delgi makinelerindeki otomatik veri kayıt (DAQ) sistemleri derinlik, basınç, debi, dönüş ve çekme hızını gerçek zamanlı kaydeder; akustik tabanlı kolon çapı ölçüm teknolojileri jet grout kolon geometrisinin doğrulanmasına yardımcı olur. Bu kayıtlar doğrulama raporunun temel ekidir."
+          },
+          {
+            type: "paragraph",
+            content: "İmalat sıralamasında primer-sekonder (atlamalı) dizilim esastır: Önce aralıklı primer kolonlar imal edilir; taze kolon komşuluğunda priz için bekleme süresi bırakıldıktan sonra aradaki sekonder kolonlar tamamlanır. Kazı çevresi işlerinde genellikle dıştan içe doğru çalışılır. Saha organizasyonunda geoteknik mühendisi tasarım-uygulama uyumunu, saha şefi günlük üretimi, operatörler makine parametrelerini izler; yapı denetim kuruluşu ve müşavir bağımsız kontrolü üstlenir. Görev dağılımı ve numune akışının detayları saha denetimi ve numune testleri makalemizde ele alınmıştır."
+          },
+          {
+            type: "warning",
+            title: "Saha riskleri kayıt altına alınmalı",
+            content: "Yağış ve kış koşulları, beklenmeyen yer altı suyu veya artezyen basıncı, delgi kaçakları ve şerbet kayıpları imalatı kesintiye uğratabilir. Her kesinti, nedeni ve alınan önlemle birlikte imalat kayıtlarına işlenmeli; plan dışı zemin koşullarıyla karşılaşıldığında mutlaka tasarımcıya danışılmalıdır."
+          }
+        ]
+      },
+      {
+        id: "kalite-kontrol-testleri",
+        title: "Kalite Kontrol ve Doğrulama Testleri: Başarı Nasıl Kanıtlanır?",
+        blocks: [
+          {
+            type: "note",
+            title: "Kısa cevap",
+            content: "Başarı iki ayakla kanıtlanır: imalat sırasında tutulan üretim kalite kontrol kayıtları (parametre kayıtları, malzeme testleri) ve imalat sonrası iyileştirilmiş zeminde yapılan kabul/performans testleri. Biri diğerinin yerine geçmez; ikisi birlikte doğrulama raporunu oluşturur."
+          },
+          {
+            type: "paragraph",
+            content: "Çimento esaslı kolonlarda en yaygın kabul aracı karottur ve iki tür birbirinden ayrılır: Tam boy karot kolon boyunca süreklilik ve homojenliği gösterirken, kafa karotu kolonun üst bölgesinden alınan numuneyle erken dayanım hakkında hızlı fikir verir. Karot verimi (alınabilen sağlam karot yüzdesi) kolon bütünlüğünün dolaylı göstergesidir; karot numuneleri üzerinde serbest basınç (UCS) deneyi yapılarak sonuçlar projede tanımlı hedef dayanımla karşılaştırılır."
+          },
+          {
+            type: "paragraph",
+            content: "Yükleme deneyleri performansı doğrudan ölçer: Tekil kolon yükleme testi kolonun proje yükü altındaki davranışını, plaka yükleme deneyi ise iyileştirilmiş yüzeyin deformasyon modülünü (Ev2) verir. Hedef Ev2 değeri projeye göre tanımlanır; saha ve dolgu uygulamalarında 40 MPa mertebesindeki eşikler sık kullanılan örneklerdendir. Kolon gruplarında grup etkisi ayrıca doğrulanır (detaylar kazık yükleme testleri sayfamızda). Sıkıştırma yöntemlerinin ana kanıtı penetrasyon karşılaştırmasıdır: İyileştirme öncesi ve sonrası SPT/CPT profilleri üst üste çizilerek, örneğin sıvılaşma projelerinde N1,60 ≥ 15 gibi projeye özgü belirlenen hedeflere ulaşılıp ulaşılmadığı kontrol edilir. Kompaksiyon yöntemlerinde test, yaşlanma (aging) etkisi nedeniyle imalattan tipik olarak 7-28 gün sonra yapılmalıdır; erken test yanıltıcı düşük sonuç verebilir. Jeofizik tarafta MASW ile kompozit kayma dalgası hızındaki (Vs) artış ölçülür; crosshole sismik ölçümler ve PIT (süreklilik) testi kolon bütünlüğünü kontrol eder."
+          },
+          {
+            type: "list",
+            title: "Yönteme özel kalite kontrol araçları",
+            items: ["Enjeksiyon: alım (şerbet tüketimi) grafikleri ve Lugeon geçirimlilik testi", "Taş kolon: vibroflot ampermetre kaydı ve agrega tüketim takibi", "Jet grout / DSM: imalat sırasında alınan yaş numune (wet grab) küplerinde basınç deneyi", "Jet grout: karot + kolon yükleme deneyi, standart doğrulama kombinasyonudur", "Kompaksiyon yöntemleri: bekleme süresi sonrası önce/sonra SPT-CPT ve plaka yükleme", "Tüm yöntemler: DAQ imalat parametre kayıtlarının şartname değerleriyle karşılaştırılması"]
+          },
+          {
+            type: "paragraph",
+            content: "Yer altı zemin iyileştirme işlerinde kabul kriterleri sözleşme aşamasında yazılı hale getirilmelidir: hangi test, metraj başına kaç adet ve hangi hedef değerle yapılacak; başarısızlık hâlinde telafi imalatı kimin sorumluluğunda olacak. \"Zemin iyileştirmede garanti verilir mi?\" sorusunun teknik cevabı da budur: Süresiz ve genel bir garanti değil, ölçülebilir hedef değerlerin bağımsız testlerle kanıtlanması taahhüt edilebilir. Uygulama detayları jet grout kalite kontrol ve zemin kalite kontrol standartları makalelerimizde derinleştirilmiştir."
+          }
+        ]
+      },
+      {
+        id: "maliyet-sure-ve-planlama",
+        title: "Maliyeti Belirleyen Faktörler, Süre ve İnşaat Takvimine Etkisi",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Yer altı zemin iyileştirme maliyeti tek bir birim fiyatla ifade edilemez; her proje kendi zemin profili, yapı yükleri ve saha koşullarıyla ayrı fiyatlandırılır. Bununla birlikte iyileştirme kalemi, toplam inşaat bütçesi içinde çoğunlukla sınırlı bir paya sahiptir ve erken aşamada yaptırılan kapsamlı zemin etüdü bu payı daha da küçültür. İmalat sırasında ortaya çıkan \"sürpriz zemin\" ise her zaman en pahalı zemindir: projede öngörülmeyen tabakalar revizyona, gecikmeye ve telafi imalatlarına yol açarak asıl bütçe sapmasını yaratır."
+          },
+          {
+            type: "list",
+            title: "Maliyeti belirleyen 8 faktör",
+            items: ["Seçilen yöntem: ekipman parkı, bağlayıcı tüketimi ve imalat hızı yöntemden yönteme büyük fark yaratır.", "İyileştirme derinliği: derinlik arttıkça metraj ve delgi süresi birlikte büyür.", "Kolon sayısı ve aralığı: m² başına düşen imalat metrajını doğrudan belirler.", "Zemin türü ve delgi zorluğu: sert bantlar, bloklu dolgular ve yeraltı engelleri ilerleme hızını düşürür.", "Yeraltı suyu koşulları: susuzlaştırma ihtiyacı ve imalat güçlükleri ek maliyet kalemleri oluşturur.", "Mobilizasyon-demobilizasyon: küçük sahalarda toplam bedel içindeki payı belirgin biçimde artar.", "Çimento ve agrega piyasası: bağlayıcı dozajı yüksek yöntemler fiyat dalgalanmalarına daha duyarlıdır.", "Saha erişimi ve çalışma kısıtları: dar alan, çalışma saati sınırlamaları ve şehir içi lojistik imalat verimini etkiler."]
+          },
+          {
+            type: "paragraph",
+            content: "Kavramsal bir maliyet merdiveni — projeye göre değişmek kaydıyla — şöyle kurulabilir: yüzeysel kompaksiyon ve katkı stabilizasyonu < ön yükleme + PVD < vibro yöntemler/taş kolon < derin karıştırma (DSM) < jet grout ve rijit inklüzyon < zemin dondurma. \"İyileştirme mi, kazıklı temel mi?\" karşılaştırması ise tekil imalat fiyatı üzerinden değil, toplam temel sistemi maliyeti üzerinden yapılmalıdır: kazık + kazık başlığı + bağ kirişi toplamı, zayıf tabakanın makul derinlikte sonlandığı ve yüklerin orta düzeyde kaldığı projelerde yeraltı zemin iyileştirme + radye kombinasyonundan pahalıya gelebilir; çok derin zayıf tabakalarda ve ağır yüklerde ise denge kazıklı çözüm lehine döner. Nihai karar, her iki alternatifin aynı performans hedefine göre boyutlandırılıp karşılaştırılmasıyla verilmelidir."
+          },
+          {
+            type: "paragraph",
+            content: "Süre tarafında yöntem bazında düşünmek gerekir: jet grout ve DSM'de tek rig, zemin koşullarına ve derinliğe bağlı bir günlük kolon kapasitesiyle çalışır; orta ölçekli bir konut parselinde imalat tipik olarak birkaç hafta, büyük sahalarda birkaç ay sürebilir. Dinamik kompaksiyon geniş sahalarda haftalar mertebesinde ilerler; ön yükleme + PVD senaryosunda ise konsolidasyon için — zemin profiline ve dren aralığına bağlı olarak çoğu projede 3-12 ay mertebesinde — bir bekleme süresi takvime eklenir. Bu nedenle iyileştirme, ruhsat–hafriyat–iksa–temel imalat zincirine erkenden yerleştirilmeli; kışa denk gelen enjeksiyon ve dolgu işleri don ve yağış riskleri gözetilerek planlanmalıdır. Ayrıntılar için zemin iyileştirme planlama ve zemin güçlendirme maliyeti sayfalarımıza bakabilirsiniz."
+          },
+          {
+            type: "note",
+            title: "İyileştirme biter bitmez inşaata başlanır mı?",
+            content: "Çimento esaslı kolonlarda tasarım dayanımı tipik olarak 28 günde gelişir; 7. gün dayanımı ve süreklilik kontrolleri gibi ara testler olumlu sonuç verirse birçok projede kademeli yüklemeye daha erken izin verilebilir. Tam yüke geçiş ise doğrulama testleri sonuçlanmadan planlanmamalıdır; bu karar her zaman geoteknik tasarımcının onayına bağlıdır."
+          },
+          {
+            type: "list",
+            title: "Teklif alırken kontrol listesi",
+            items: ["Metraj tanımı: ödeme kolon boyu üzerinden mi, delgi boyu üzerinden mi yapılacak; boş delgi nasıl ölçülüyor?", "Kabul kriterleri: hedef dayanım, çap ve süreklilik değerleri sözleşmede sayısal olarak tanımlı mı?", "Kalite kontrol kapsamı: test türleri, sayısı ve bedelinin hangi tarafa ait olduğu net mi?", "Geri dönüş harcı: spoil bertarafı teklife dahil mi, ayrı kalem mi?", "Telafi hükümleri: kabul kriterini sağlamayan imalatlar için ilave imalat/telafi maddesi var mı?"]
+          }
+        ]
+      },
+      {
+        id: "cevresel-etkiler-ve-komsu-yapilar",
+        title: "Çevresel Etkiler, Komşu Yapılar ve Şehir İçi Uygulamalar",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Şehir içinde yer altı zemin iyileştirme yaparken teknik başarı kadar çevresel etki yönetimi de belirleyicidir. Yöntemler gürültü ve titreşim açısından belirgin biçimde ayrışır: dinamik kompaksiyon en yüksek etki sınıfındadır ve mevcut yapılara — projeye ve zemin koşullarına göre değişmekle birlikte — genellikle onlarca metre mertebesinde emniyet mesafesi bırakılarak uygulanır; vibro yöntemler orta düzeyde titreşim üretir; jet grout, DSM, enjeksiyon ve reçine uygulamaları ise kayda değer titreşim yaratmadıkları için tarihi ve hassas yapıların hemen yanında dahi değerlendirilebilir. Bu sıralama, şehir içi projelerde yöntem seçiminin ilk filtresi olarak kullanılır."
+          },
+          {
+            type: "paragraph",
+            content: "Titreşim riski sezgiyle değil ölçümle yönetilir: komşu yapılar için tepe parçacık hızı (PPV) limitleri tanımlanır ve imalat boyunca sismograflarla sürekli kayıt alınır; tarihi bina, hastane gibi hassas yapılar için bu eşikler ayrıca sıkılaştırılır. Uygulama öncesinde komşu yapılarda fotoğraflı röleve ve ön hasar tespit tutanağı hazırlanması hem mühendislik hem hukuki koruma sağlar; olası bir uyuşmazlıkta mevcut çatlakların imalattan önce de var olduğunu kanıtlamanın en güvenilir yolu budur."
+          },
+          {
+            type: "note",
+            title: "Komşu binaya zarar verir mi?",
+            content: "Dürüst cevap şudur: risk hiçbir zaman sıfır değildir; ancak zemine uygun yöntem seçimi, PPV izleme ve ön hasar tespiti ile yönetilebilir düzeye indirilir. Bitişik nizamda titreşimsiz yöntemler (jet grout, DSM, enjeksiyon) ilk tercih olarak değerlendirilir."
+          },
+          {
+            type: "warning",
+            title: "Kontrolsüz YAS düşürmeyin",
+            content: "Yeraltı su seviyesinin hızlı ve kontrolsüz düşürülmesi, komşu parsellerde konsolidasyon oturmalarını tetikleyebilir. Kademeli düşürme, gözlem kuyularıyla seviye takibi ve gerekirse reşarj (geri besleme) kuyuları projeye dahil edilmelidir."
+          },
+          {
+            type: "paragraph",
+            content: "Jet grout uygulamalarında ciddi hacimde geri dönüş harcı (spoil) oluşur; bu harç çökeltme havuzlarında toplanmalı, taşınması ve bertarafı çevre mevzuatına uygun biçimde yürütülmelidir. Şehir içi lojistik de plana dahil edilmelidir: dar sokaklarda standart rigler yerine mini riglerle çalışmak, belediyelerin çalışma saati sınırlamalarına uymak, beton ve harç trafiğini yaya güvenliğiyle birlikte yönetmek gerekir. Ankara ve diğer büyükşehirlerdeki bitişik nizam uygulamalarında bu kısıtlar çoğu zaman ekipman ve yöntem seçimini doğrudan belirler."
+          },
+          {
+            type: "list",
+            title: "Düşük karbonlu iyileştirme seçenekleri",
+            items: ["Derin karıştırma (DSM): zemini yerinde kullandığı için hafriyat ve nakliye hacmini azaltır.", "Uçucu kül ve yüksek fırın cürufu katkılı bağlayıcılar: çimento klinker payını düşürür.", "Biyokalsifikasyon (MICP) gibi gelişmekte olan biyolojik stabilizasyon yöntemleri.", "Elektrikli ve hibrit delgi ekipmanına geçiş: şantiye emisyonunu ve gürültüyü birlikte azaltır.", "Taş kolon dolgusunda geri kazanılmış agrega/beton kullanımı değerlendirilebilir."]
+          }
+        ]
+      },
+      {
+        id: "turkiyede-bolgesel-zeminler-ve-sik-hatalar",
+        title: "Türkiye'de Bölgesel Zemin Koşulları ve Sık Yapılan Hatalar",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Türkiye'de yeraltı zemin iyileştirme ihtiyacı bölgeden bölgeye farklı biçimlerde ortaya çıkar. Ankara'da kalın ve sert \"Ankara kili\" çoğu yapı için elverişli bir taban oluşturur; ancak şişme potansiyelli killer ile havza kenarlarındaki kontrolsüz dolgular yüzeysel temeller için risk üretir. Bu koşullarda kireç stabilizasyonu, derin karıştırma (DSM) ve gerektiğinde fore kazıklı çözümler öne çıkar. YER6'nın Ankara merkezli saha deneyimi, bu kil profillerinin mevsimsel nem hareketlerine ve dolgu geçişlerine nasıl tepki verdiğini yerinde gözlemleme imkanı sağlamıştır."
+          },
+          {
+            type: "paragraph",
+            content: "İstanbul'da eski dere yatakları, kıyı dolguları ve yıllar içinde kontrolsüz biriktirilmiş hafriyat dolguları, özellikle kentsel dönüşüm projelerinde temel altı iyileştirme ihtiyacını gündeme getirir. İzmir'de Bayraklı-Karşıyaka hattındaki derin ve yumuşak alüvyon havzası, 2020 Sisam (Samos) depreminde zemin büyütmesinin merkez üssünden uzakta bile ağır hasar yaratabildiğini göstermiştir. Marmara'da ise 1999 depreminde Adapazarı'nda yaşanan yaygın sıvılaşma, yeraltı su seviyesinin yüksek olduğu ova zeminlerinde taş kolon ve vibro çözümlerinin öne çıkmasının başlıca nedenidir."
+          },
+          {
+            type: "paragraph",
+            content: "2023 Kahramanmaraş-Hatay depremleri, ova zeminlerinde sıvılaşma ve aşırı oturmanın yapısal hasarı nasıl büyüttüğünü bir kez daha ortaya koydu; yeniden imar sürecinde zemin iyileştirme fiilen standart uygulama haline gelmektedir. Karadeniz'de dar vadi tabanlarındaki dolgular ve şev stabilitesi sorunları, Konya-İç Anadolu hattında ise obruk ve karstik boşluk riski — boşluk dolgu enjeksiyonu ihtiyacıyla birlikte — bölgesel gündemleri oluşturur. Bu tablo, yöntem seçiminin ülke genelinde geçerli tek bir reçeteyle değil, bölgesel zemin modeli ve parsel ölçeğindeki etüt verisiyle yapılması gerektiğini gösterir."
+          },
+          {
+            type: "list",
+            title: "Sahada en sık yapılan 6 hata",
+            items: ["Yetersiz veya \"kopyala-yapıştır\" zemin etüdüyle yöntem seçmek.", "Deneme kolonunu ve deneme sahasını bütçeden kırpmak.", "Kalite kontrol testlerini masraf olarak görüp kapsamını daraltmak.", "Zemin-yöntem uyumsuzluğu: doygun kilde dinamik kompaksiyon veya ince daneli zeminde standart çimentoyla permeasyon enjeksiyonu denemek.", "Komşu yapılarda ön hasar tespiti yapmadan imalata başlamak.", "Kabul kriteri tanımlamadan yalnızca en düşük teklifi esas almak."]
+          },
+          {
+            type: "warning",
+            title: "Zinciri atlamayın",
+            content: "Etüt → tasarım → deneme → imalat → doğrulama sıralaması bir formalite değil, yer altı zemin iyileştirmenin güvence mekanizmasıdır. Bu zincirin herhangi bir halkasını atlamak, görünürdeki tasarrufu telafi imalatlarıyla misliyle geri ödetebilir; iş, geoteknik alanında uzman bir ekibe emanet edilmelidir."
+          },
+          {
+            type: "note",
+            title: "Sahanız için değerlendirme",
+            content: "Parselinizin bölgesel zemin profili ve yapı yükleriniz için uygun yaklaşım, ancak yerinde inceleme ve etüt verisiyle netleşir. YER6'dan saha incelemesi ve projeye özel değerlendirme talep ederek süreci doğru adımla başlatabilirsiniz."
+          }
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "Yer altı zemin iyileştirme nedir?",
+        answer: "Yer altı zemin iyileştirme; taşıma kapasitesi yetersiz, aşırı oturma veya sıvılaşma riski taşıyan zayıf zeminlerin mühendislik özelliklerini yerinde (in-situ) iyileştirmek amacıyla yapılan derin geoteknik müdahalelerdir. Bu süreçte zemin kazılıp değiştirilmez; bunun yerine jet grout, DSM, taş kolon veya enjeksiyon gibi tekniklerle zemin yapısı kalıcı olarak güçlendirilir."
+      },
+      {
+        question: "Yer altı zemin iyileştirme nasıl yapılır?",
+        answer: "Uygulanacak yönteme göre saha hazırlığı yapıldıktan sonra delgi makineleri ile hedef derinliğe kadar inilir. Jet grout veya enjeksiyon yöntemlerinde yüksek basınçlı çimento enjekte edilirken; DSM'de mekanik karıştırma, taş kolonda ise agreganın vibrasyonla sıkıştırılması esasına göre imalat yapılır. Son aşamada ise testlerle imalatın kalitesi doğrulanır."
+      },
+      {
+        question: "Yer altı zemin iyileştirme ile yüzeysel zemin iyileştirme arasındaki fark nedir?",
+        answer: "Yüzeysel zemin iyileştirme genellikle ilk 0-3 metre derinlikteki tabakaları kapsar ve silindirle sıkıştırma, kireç/çimento serimi gibi basit işlemlerle yapılır. Yer altı (derin) zemin iyileştirme ise 3 metreden başlayıp 30-50 metre derinliğe kadar ulaşabilen ve özel makine parkı gerektiren jet grout, DSM, derin kompaksiyon gibi ileri mühendislik uygulamalarını içerir."
+      },
+      {
+        question: "Zemin iyileştirme ile zemin güçlendirme arasındaki fark nedir?",
+        answer: "Zemin iyileştirme zeminin kendi parametrelerini (sıkılık, geçirimsizlik, vb.) kalıcı olarak düzeltmeyi hedefler. Zemin güçlendirme (veya takviye) ise zemine taş kolon, ankraj veya zemin çivisi gibi yük taşıyan rijit elemanlar ekleyerek kompozit bir yapı oluşturulması prensibine dayanır; her iki kavram da genellikle zemin ıslahı şemsiyesi altında yer alır."
+      },
+      {
+        question: "Zemin iyileştirme neden yapılır?",
+        answer: "Zayıf zeminlerin üzerine inşa edilecek yapıların yüklerini güvenle taşımasını sağlamak, deprem esnasında oluşabilecek sıvılaşma riskini ortadan kaldırmak ve izin verilebilir limitlerin üzerindeki toplam ya da farklı oturmaları engellemek için yapılır. Böylece hem can güvenliği sağlanır hem de üst yapıda oturma kaynaklı yapısal hasarların önüne geçilir."
+      },
+      {
+        question: "Hangi zeminler iyileştirme gerektirir?",
+        answer: "Gevşek kum ve siltler, yumuşak veya normal konsolide killer, organik içeriği yüksek bataklık zeminler (turbalar), kontrolsüz yapay dolgular ve karstik boşluk içeren zeminler iyileştirme gerektiren başlıca zayıf zemin tipleridir. Bu zeminlerin tespit edilmesi ve sınırlarının belirlenmesi saha sondajları ve laboratuvar testleriyle netleştirilir."
+      },
+      {
+        question: "Zemin iyileştirme ne zaman zorunlu olur?",
+        answer: "Yapılan zemin etüt raporlarında taşıma gücünün yetersiz çıkması, deprem sıvılaşma analizinde güvenlik katsayısının kritik sınırın altında kalması veya yapının oturma limitlerini aşacağının hesaplanması durumunda zorunlu olur. Ayrıca TBDY 2018 standartları kapsamında ilgili yerel idareler ruhsat aşamasında iyileştirme projelerini yasal olarak zorunlu tutmaktadır."
+      },
+      {
+        question: "TBDY 2018'e göre hangi zemin sınıflarında (ZE/ZF) iyileştirme gerekir?",
+        answer: "Yönetmeliğe göre yumuşak killi ve gevşek kumlu profilleri içeren ZE zemin sınıfında ve sıvılaşabilir ya da sahaya özel analiz gerektiren ZF zemin sınıfında geoteknik önlemler alınması gerekir. Bu sınıflardaki zeminlerde geoteknik raporun bulguları doğrultusunda temel altı zemin iyileştirme veya kazıklı temel tasarımı yasal ve teknik bir zorunluluktur."
+      },
+      {
+        question: "Zemin etüdü olmadan zemin iyileştirme yapılabilir mi?",
+        answer: "Hayır, zemin etüdü ve saha sondaj verileri olmadan zemin iyileştirme projelendirmesi ve imalatı kesinlikle yapılamaz. Zayıf tabakaların derinliği, yeraltı suyu seviyesi, SPT darbe sayıları ve zemin laboratuvar parametreleri bilinmeden seçilecek herhangi bir yöntem veya derinlik, yapıda ağır hasarlara ve yüksek maliyet kayıplarına yol açacaktır."
+      },
+      {
+        question: "Zemin iyileştirme yöntemine kim karar verir?",
+        answer: "Zemin etüt verilerini ve üst yapı yüklerini inceleyen, geoteknik mühendisliği alanında uzmanlaşmış inşaat mühendisleri (geoteknik uzmanları) karar verir. Yöntem seçimi; zemin profilinin dane dağılımına, yeraltı suyu durumuna, çevresel kısıtlara, iş programına ve projenin toplam bütçe analizine göre bilimsel hesaplamalarla netleştirilir."
+      },
+      {
+        question: "Yer altı zemin iyileştirme kaç metre derinliğe kadar yapılabilir?",
+        answer: "Kullanılan yönteme ve makine parkına bağlı olarak tipik olarak 5 metreden 35-40 metre derinliğe kadar yapılabilmektedir. Örneğin jet grout ve DSM yöntemlerinde 20-30 metrelik derinlikler yaygın olarak taranırken, dinamik kompaksiyon gibi sıkıştırma yöntemlerinde etki derinliği daha sınırlı kalabilmektedir."
+      },
+      {
+        question: "İyileştirme derinliği neye göre belirlenir?",
+        answer: "İyileştirme derinliği, zemin etüt raporunda belirlenen zayıf, gevşek ve sıvılaşabilir tabakaların kalınlığına ve bu tabakaların altında yer alan sağlam, taşıyıcı ana kaya veya sıkı tabakanın derinliğine göre belirlenir. Tasarım mühendisi, temel gerilmelerinin sönümlendiği derinliği de hesaba katarak iyileştirme boyunu kesinleştirir."
+      },
+      {
+        question: "Jet grout nedir ve hangi zeminlerde uygulanır?",
+        answer: "Jet grout, yüksek basınçlı çimento şerbetinin nozullardan püskürtülerek zemini kesmesi ve onunla karışarak zemin-çimento kolonları oluşturması yöntemidir. Kumlu, siltli ve killi zeminler ile kontrolsüz yapay dolgularda başarıyla uygulanabilir; iri kaya blokları içeren zeminler dışında en geniş kullanım alanına sahip zemin iyileştirme tekniğidir."
+      },
+      {
+        question: "Jet 1, Jet 2 ve Jet 3 sistemleri arasındaki fark nedir?",
+        answer: "Jet 1 sisteminde sadece çimento enjekte edilerek 0.6-1.0 m arası kolonlar oluşturulur. Jet 2 sisteminde enjeksiyona basınçlı hava eklenerek kolon çapı 1.0-1.8 m aralığına çekilir. Jet 3 sisteminde ise su jeti, hava jeti ve çimento şerbeti bir arada kullanılarak 1.5-2.5 m ve üzeri çapta büyük kolonlar üretilebilir."
+      },
+      {
+        question: "Jet grout kolonu kazık mıdır?",
+        answer: "Hayır, jet grout kolonları fore kazıklar gibi betonarme yapısal taşıyıcı elemanlar değildir. İçlerinde çelik donatı bulunmaz; bu kolonlar zeminin taşıma gücünü ve deformasyon modülünü artırarak zemini 'iyileştirmeyi' amaçlar. Yük taşıma mekanizmaları ve yapısal kapasiteleri fore kazıklardan farklıdır."
+      },
+      {
+        question: "Derin karıştırma (DSM) ile jet grout arasındaki fark nedir?",
+        answer: "Jet grout zemin kesme işlemini yüksek basınçlı sıvı jeti ile yaparken; derin karıştırma (DSM) zemin karıştırma işlemini doğrudan mekanik paletlerle gerçekleştirir. Bu nedenle DSM'de kolon geometrisi daha öngörülebilir, çimento sarfiyatı ve geri dönüş harcı (spoil) miktarı ise jet grout'a kıyasla çok daha azdır."
+      },
+      {
+        question: "Taş kolon ne işe yarar ve hangi derinliğe kadar uygulanır?",
+        answer: "Taş kolonlar, açılan kuyulara agrega doldurulup sıkıştırılmasıyla oluşturulur; zemin taşıma kapasitesini artırır, oturmayı azaltır ve yüksek geçirgenliğiyle deprem anında suyun hızla tahliye olmasını sağlayarak sıvılaşmayı önler. Genellikle 15 ila 25 metre derinliğe kadar güvenle uygulanabilmektedir."
+      },
+      {
+        question: "Vibro kompaksiyon ile taş kolon (vibro replasman) arasındaki fark nedir?",
+        answer: "Vibro kompaksiyonda zemine dışarıdan herhangi bir agrega veya çimento eklenmez; probun titreşimiyle mevcut gevşek kumlu zemin sıkıştırılır. Taş kolonda (vibro replasman) ise prob vasıtasıyla zeminde açılan boşluğa agrega (kırma taş) ilave edilerek yeni bir taşıyıcı kolon elemanı imal edilir."
+      },
+      {
+        question: "Dinamik kompaksiyon hangi zeminlerde işe yarar, hangilerinde yaramaz?",
+        answer: "Dinamik kompaksiyon gevşek kumlar, çakıllar ve kontrolsüz yapay dolgularda yüksek verimle çalışır; boşluk suyu basıncının hızla sönümlendiği zeminlerde etkilidir. Buna karşın su içeriği yüksek, ince daneli ve doygun killi zeminlerde boşluk suyunun hızlı tahliyesi mümkün olmadığı için bu yöntem başarılı sonuç vermez."
+      },
+      {
+        question: "Ön yükleme (sürşarj) yöntemi nasıl çalışır ve ne kadar sürer?",
+        answer: "İnşaat öncesinde zemin üzerine tasarlanan yapı yüküne eşdeğer veya daha fazla ağırlıkta geçici toprak dolgu serilerek zayıf killi zeminin oturmalarını önceden yapması sağlanır. Bu süreç zemin geçirimliliğine bağlı olarak genellikle 3 ila 9 ay arasında sürer; hedeflenen konsolidasyon tamamlanınca dolgu kaldırılır."
+      },
+      {
+        question: "PVD (fitil dren) konsolidasyonu ne kadar hızlandırır?",
+        answer: "Prefabrik düşey drenler (PVD), killi zeminlerdeki suyun tahliye yolunu kısaltarak konsolidasyon süresini yıllardan aylara indirir. Fitil dren kullanılmayan bir sahada 5-10 yılda tamamlanacak oturma süreci, fitil dren ve ön yükleme dolgusu kombinasyonuyla 2 ila 4 ay gibi kısa bir sürede tamamlanabilir."
+      },
+      {
+        question: "Rijit inklüzyon (CMC) ile kazık arasındaki fark nedir?",
+        answer: "Rijit inklüzyonlar (CMC), üst yapıya doğrudan bağlanmayan, zemin özelliklerini iyileştirmek için tasarlanan çeliksiz beton kolonlerdir; yapı yükleri rijit inklüzyonlara üstteki yük dağıtım platformu (LTP) aracılığıyla aktarılır. Kazıklar ise yapı temeline doğrudan bağlanarak tüm yükü doğrudan kendi gövdeleriyle derine taşır."
+      },
+      {
+        question: "Killi zeminlerde hangi iyileştirme yöntemi uygundur?",
+        answer: "Killerde su tahliyesi zor olduğu için jet grout, derin karıştırma (DSM) ve rijit inklüzyon (CMC) gibi çimento bağlayıcılı yöntemler ile fitil dren destekli ön yükleme uygulamaları en uygun çözümlerdir. Sıkıştırma amaçlı vibro kompaksiyon veya dinamik kompaksiyon killi zeminlerde etkisizdir."
+      },
+      {
+        question: "Kumlu zeminlerde hangi iyileştirme yöntemi uygundur?",
+        answer: "Gevşek kumlu zeminlerde titreşimle sıkıştırma sağlayan vibro kompaksiyon, taş kolon (vibro replasman) ve dinamik kompaksiyon yöntemleri son derece etkilidir. Ayrıca çimento esaslı enjeksiyon ve jet grout uygulamaları da kum taneleri arasındaki boşlukları doldurarak mukavemet artışı sağlar."
+      },
+      {
+        question: "Dolgu zeminlerde hangi yöntem uygundur?",
+        answer: "Kontrolsüz yapay dolguların heterojen yapısı nedeniyle dinamik kompaksiyon (geniş alanlarda) veya jet grout (dar alanlarda ve bina altlarında) en çok tercih edilen yöntemlerdir. Dolgunun kalınlığına ve moloz içeriğine göre enjeksiyon veya DSM uygulamaları da değerlendirilebilir."
+      },
+      {
+        question: "Organik ve turba zeminlerde iyileştirme yapılabilir mi?",
+        answer: "Evet, ancak bu zeminler yüksek su içeriği ve yüksek asidite nedeniyle özel yaklaşımlar gerektirir. Çimento hidratasyonunu bozmayacak özel bağlayıcı katkılı DSM (kuru karıştırma) veya jet grout kolonları ile rijit inklüzyonlar bu tip zeminlerde taşıma kapasitesi oluşturmak için kullanılır."
+      },
+      {
+        question: "Zemin sıvılaşması nedir ve hangi zeminlerde risk vardır?",
+        answer: "Deprem sarsıntısı esnasında suya doygun gevşek kum ve silt tabakalarındaki boşluk suyu basıncının ani artışıyla zeminin mukavemetini tamamen kaybedip sıvı gibi davranması olayıdır. Yer altı su seviyesinin yüksek olduğu akarsu yatakları, kıyı şeritleri ve alüvyon ovalarda bu risk son derece yüksektir."
+      },
+      {
+        question: "Sıvılaşmaya karşı en etkili yer altı zemin iyileştirme yöntemleri hangileridir?",
+        answer: "Taş kolonler (drenaj ve sıkıştırma etkisiyle), jet grout ve DSM kolonları (rijit şebeke oluşturarak kayma deformasyonlarını sınırlama etkisiyle) sıvılaşmaya karşı en etkili yöntemlerdir. Ayrıca derin vibro kompaksiyon ile granüler zeminin relatif sıkılığının artırılması da riski doğrudan yok eder."
+      },
+      {
+        question: "Sıvılaşma riski olan arsaya bina yapılabilir mi?",
+        answer: "Evet, ancak TBDY 2018 standartları uyarınca sıvılaşma analizi yapılarak riskli tabakalar belirlenmeli ve temel tasarımı öncesinde bu risk zemin iyileştirme (jet grout, taş kolon vb.) yöntemleriyle tamamen bertaraf edilmelidir. Risk ortadan kaldırılmadan yapılacak doğrudan temel uygulamaları depremde yıkıcı hasarlar üretir."
+      },
+      {
+        question: "Mevcut binanın altında yer altı zemin iyileştirme yapılabilir mi?",
+        answer: "Evet, mevcut binaların altında zemin iyileştirme (underpinning) yapılabilir. Mini rig denilen kompakt jet grout makineleriyle bina içinden veya temel kenarından açılı delgilerle temel altına girilerek jet grout kolonları veya düşük basınçlı çimento/kimyasal enjeksiyon uygulamaları gerçekleştirilir."
+      },
+      {
+        question: "Bina kullanılırken (oturulurken) zemin iyileştirme uygulaması yapılabilir mi?",
+        answer: "Evet, ancak gürültü, titreşim ve alan kısıtları nedeniyle özel planlama gerektirir. Bu durumlarda titreşimsiz çalışan kimyasal/reçine enjeksiyonu veya düşük gürültülü mini jet grout ekipmanları tercih edilerek bina sakinleri tahliye edilmeden lokal müdahaleler yapılabilmektedir."
+      },
+      {
+        question: "Oturma yapmış (çatlamış) bina düzeltilebilir mi?",
+        answer: "Evet, farklı oturma nedeniyle eğrilen veya çatlayan binalar kompaksiyon enjeksiyonu veya hidrolik krikolu underpinning sistemleriyle kontrollü biçimde askıya alınarak düzeltilebilir. Bu süreçte öncelikle oturan bölgenin altındaki zemin jet grout veya enjeksiyonla güçlendirilir, ardından bina teraziye getirilir."
+      },
+      {
+        question: "Zemin iyileştirme çalışmaları ne kadar sürer?",
+        answer: "Çalışma süresi; uygulanacak yönteme, makine sayısına, sahanın büyüklüğüne ve zemin etüdündeki zayıf tabaka derinliğine göre değişir. Küçük ve orta ölçekli konut projelerinde jet grout veya DSM imalatları tipik olarak 1 ila 3 hafta içinde tamamlanırken, büyük sanayi tesislerinde bu süre aylara yayılabilir."
+      },
+      {
+        question: "İyileştirme bittikten hemen sonra inşaata başlanabilir mi?",
+        answer: "Hayır, kullanılan yönteme göre belirli bir kür ve test bekleme süresi vardır. Çimento esaslı jet grout ve DSM kolonlarının tasarım dayanımına (28 günlük) ulaşması için en az 7 ila 14 gün beklenmesi ve bu sürenin sonunda doğrulama testlerinin (karot, yükleme vb.) yapılması gerekir."
+      },
+      {
+        question: "Zemin iyileştirme maliyetini hangi faktörler belirler?",
+        answer: "Maliyeti belirleyen ana faktörler; iyileştirilecek tabakanın derinliği, toplam metraj, kullanılacak çimento/agrega sarfiyatı, yöntem seçimi (jet grout, DSM, taş kolon vb.), şantiyenin lojistik konumu ve ekipman mobilizasyon giderleridir. Projeye özel zemin verisi analiz edilmeden kesin bir bütçe çıkarılamaz."
+      },
+      {
+        question: "Zemin iyileştirme mi kazıklı temel mi daha ekonomiktir?",
+        answer: "Genellikle geniş oturma alanlı, orta düzey yük taşıyan yapılarda ve zayıf tabakanın 15-20 metreyi aşmadığı durumlarda zemin iyileştirme (jet grout, taş kolon vb.) kazıklı temele kıyasla daha ekonomiktir. Ancak ağır yapı yükleri ve derin zayıf profillerde kazıklı temel teknik olarak daha güvenli ve ekonomik hale gelebilir."
+      },
+      {
+        question: "Yer altı zemin iyileştirmenin başarısı hangi testlerle doğrulanır?",
+        answer: "Başarı; imalat sonrasında yapılan karot numune alımı ve laboratuvar basınç testleri, kolon yükleme testleri (statik yükleme), PIT (bütünlük testleri) ve iyileştirme öncesi/sonrası yapılan CPT veya Vs30 kayma dalgası hızı ölçüm karşılaştırmalarıyla bilimsel olarak doğrulanır."
+      },
+      {
+        question: "Deneme (test) kolonu nedir, neden yapılır?",
+        answer: "Deneme kolonu, ana imalat başlamadan önce sahada tasarım parametrelerini (basınç, devir hızı, karışım oranı) test etmek amacıyla yapılan ön deneme kolonudur. Bu kolonlar kırılarak veya karot alınarak çapı, mukavemeti ve zeminle uyumu incelenir, böylece projenin saha parametreleri kesinleştirilir."
+      },
+      {
+        question: "Zemin iyileştirme kalıcı mıdır, ömrü ne kadardır?",
+        answer: "Evet, tekniğine uygun olarak yapılan yer altı zemin iyileştirme uygulamaları kalıcı geoteknik çözümlerdir. Oluşturulan çimento kolonleri veya sıkıştırılmış agrega yapıları zemin altında yapı ömrü boyunca (ve hatta daha uzun süre) mukavemetini ve işlevini koruyacak şekilde projelendirilir."
+      },
+      {
+        question: "Zemin iyileştirme sırasında gürültü ve titreşim olur mu, komşu binalara zarar verir mi?",
+        answer: "Dinamik kompaksiyon ve vibro yöntemler yüksek titreşim üretirken; jet grout, DSM ve kimyasal enjeksiyon yöntemleri son derece düşük titreşim değerlerine sahiptir. Şehir içi ve komşu bina yakınlığındaki projelerde titreşimsiz çalışan jet grout ve DSM yöntemleri seçilerek çevre yapılara zarar verilmesi önlenir."
+      },
+      {
+        question: "Şehir içi projelerde hangi yer altı zemin iyileştirme yöntemleri tercih edilir?",
+        answer: "Çevredeki yapıların güvenliği ve gürültü/titreşim hassasiyeti nedeniyle şehir içi projelerde jet grout, derin karıştırma (DSM) ve kompaksiyon/reçine enjeksiyonu yöntemleri tercih edilir. Ayrıca kuru beslemeli taş kolon uygulamaları da çamursuz imalat avantajıyla öne zarar vermeden kullanılır."
+      },
+      {
+        question: "Yeraltı su seviyesi yüksek zeminlerde hangi yöntemler uygulanır?",
+        answer: "Yeraltı suyu altındaki zeminlerde ıslak yöntem jet grout, ıslak derin karıştırma (DSM) ve ıslak beslemeli taş kolonlar en güvenilir çözümlerdir. Kuru toz DSM veya dinamik sıkıştırma gibi yöntemler yeraltı suyunun bulunduğu koşullarda teknik zorluklar ve performans kayıpları üretir."
+      }
+    ],
+    relatedSlugs: ["zemin-iyilestirme-yontemleri", "jet-grout-nedir", "dsm-nedir", "tas-kolon-nedir", "sivilasma-riskine-karsi-zemin-guclendirme", "zemin-etudu-nasil-yapilir"],
+    keywords: ["yer altı zemin iyileştirme", "yeraltı zemin iyileştirme", "yer altı zemin güçlendirme", "zemin iyileştirme yöntemleri", "derin zemin iyileştirme", "jet grout zemin iyileştirme", "taş kolon zemin iyileştirme", "derin karıştırma DSM", "zemin sıvılaşması önleme", "TBDY 2018 zemin sınıfları", "zemin iyileştirme maliyet faktörleri", "yeraltı su seviyesi düşürme", "zemin iyileştirme kalite kontrol", "sorunlu zeminlerde temel çözümleri", "zemin iyileştirme Ankara"],
+    published: true
   }
 ];
 
