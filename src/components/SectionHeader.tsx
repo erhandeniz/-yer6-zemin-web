@@ -8,7 +8,7 @@ export function SectionHeader({
 }: {
   eyebrow: string;
   title: ReactNode;
-  copy?: string;
+  copy?: ReactNode;
   align?: "left" | "center";
 }) {
   return (

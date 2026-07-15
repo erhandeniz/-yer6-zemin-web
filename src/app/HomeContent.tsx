@@ -12,6 +12,7 @@ import { ServiceCard } from "@/components/ServiceCard";
 import { WorkflowDiagram } from "@/components/WorkflowDiagram";
 import { projects, services } from "@/lib/content";
 import { useLanguage } from "@/components/LanguageProvider";
+import { parseMarkdownLinks } from "@/components/LinkParser";
 
 export function HomeContent() {
   const { t } = useLanguage();
@@ -33,7 +34,7 @@ export function HomeContent() {
                 {t("homeServicesTitle").split(" ").slice(4).join(" ")}
               </>
             }
-            copy={t("homeServicesCopy")}
+            copy={parseMarkdownLinks(t("homeServicesCopy"))}
           />
           <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
             {services.slice(0, 4).map((service, index) => (

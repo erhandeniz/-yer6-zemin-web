@@ -10,6 +10,7 @@ import { getServiceBySlug, projects } from "@/lib/content";
 import { publishedKnowledgeArticles } from "@/data/knowledge";
 import { useLanguage } from "@/components/LanguageProvider";
 import { siteConfig } from "@/lib/siteConfig";
+import { parseMarkdownLinks } from "@/components/LinkParser";
 
 const serviceArticleMap: Record<string, string[]> = {
   "jet-grout": ["yer-alti-zemin-iyilestirme", "jet-grout-nedir", "jet-grout-hangi-zeminlerde-uygulanir", "jet-grout-kalite-kontrol"],
@@ -83,8 +84,8 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
               {/* Giriş paragrafı */}
               <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-8">
                 <h2 className="text-3xl font-semibold text-white">{t(`${service.key}_title`)} Nedir?</h2>
-                <p className="mt-6 text-lg leading-8 text-white/70">{t(`${service.key}_summary`)}</p>
-                <p className="mt-4 text-base leading-7 text-white/65">{t(`${service.key}_detail`)}</p>
+                <p className="mt-6 text-lg leading-8 text-white/70">{parseMarkdownLinks(t(`${service.key}_summary`))}</p>
+                <p className="mt-4 text-base leading-7 text-white/65">{parseMarkdownLinks(t(`${service.key}_detail`))}</p>
               </div>
 
               {/* Uygulama Alanları */}
@@ -151,7 +152,7 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
                 <div className="rounded-[2rem] border border-gold-300/20 bg-gold-300/[0.06] p-8">
                   <h2 className="text-2xl font-semibold text-white">Teknik Değerlendirme</h2>
                   <p className="mt-4 text-sm leading-7 text-white/70">
-                    {service.technicalNote as string}
+                    {parseMarkdownLinks(service.technicalNote as string)}
                   </p>
                 </div>
               )}

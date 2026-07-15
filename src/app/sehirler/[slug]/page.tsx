@@ -7,6 +7,7 @@ import { getCityPageBySlug, getCityPaths, featuredCityPages } from "@/lib/cityCo
 import { services } from "@/lib/content";
 import { siteConfig } from "@/lib/siteConfig";
 import { publishedKnowledgeArticles } from "@/data/knowledge";
+import { parseMarkdownLinks } from "@/components/LinkParser";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -166,14 +167,14 @@ export default async function CityPage({ params }: Props) {
             <article className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-8">
               <MapPin className="h-8 w-8 text-gold-200" />
               <h2 className="mt-6 text-3xl font-semibold text-white">{cityPage.city} zemin koşulları nasıl değerlendirilir?</h2>
-              <p className="mt-5 text-sm leading-7 text-white/70">{cityPage.soilContext}</p>
+              <p className="mt-5 text-sm leading-7 text-white/70">{parseMarkdownLinks(cityPage.soilContext)}</p>
             </article>
 
             <article className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-8">
               <CheckCircle2 className="h-8 w-8 text-gold-200" />
               <h2 className="mt-6 text-3xl font-semibold text-white">Uygulama yaklaşımı</h2>
-              <p className="mt-5 text-sm leading-7 text-white/70">{cityPage.recommendedApproach}</p>
-              <p className="mt-5 text-sm leading-7 text-white/70">{cityPage.qualityFocus}</p>
+              <p className="mt-5 text-sm leading-7 text-white/70">{parseMarkdownLinks(cityPage.recommendedApproach)}</p>
+              <p className="mt-5 text-sm leading-7 text-white/70">{parseMarkdownLinks(cityPage.qualityFocus)}</p>
             </article>
 
             {cityPage.sections?.map((section) => (
@@ -181,7 +182,7 @@ export default async function CityPage({ params }: Props) {
                 <h2 className="text-3xl font-semibold text-white">{section.heading}</h2>
                 {section.body.map((paragraph, index) => (
                   <p key={index} className="mt-5 text-sm leading-7 text-white/70">
-                    {paragraph}
+                    {parseMarkdownLinks(paragraph)}
                   </p>
                 ))}
               </article>

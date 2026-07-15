@@ -36,13 +36,13 @@ export const cityPages: CityPage[] = [
     heroLead:
       "Bursa'da zemin güçlendirme kararları; ova alüvyonları, sanayi parsellerindeki dolgu tabakaları ve yüksek işletme yükleri birlikte değerlendirilerek verilmelidir.",
     soilContext:
-      "Nilüfer, Osmangazi ve Gemlik çevresinde gevşek dolgu, yumuşak kil ve yer yer yüksek yeraltı suyu koşulları oturma ve taşıma gücü açısından kritik olabilir.",
+      "Nilüfer, Osmangazi ve Gemlik çevresinde gevşek dolgu, yumuşak kil ve yer yer yüksek yeraltı suyu koşulları; [kapsamlı zemin iyileştirme yöntemleri](/knowledge/yer-alti-zemin-iyilestirme/) ve geoteknik parametreler doğrultusunda oturma ve taşıma gücü açısından değerlendirilmelidir.",
     recommendedApproach:
       "Lojistik ve üretim tesislerinde DSM zemin iyileştirme, temel altı kolon düzeni ve gerektiğinde jet grout enjeksiyon perdesi birlikte kurgulanır.",
     qualityFocus:
       "Bursa sahalarında karot, kolon sürekliliği, bağlayıcı dozajı ve üretim kayıtları yatırımın işletme yüklerine uygun performans vermesi için izlenir.",
     serviceSlugs: ["dsm", "jet-grout", "fore-kazik", "zemin-iyilestirme"],
-    articleSlugs: ["dsm-nasil-uygulanir", "jet-grout-nedir", "zemin-iyilestirme-yontemleri"]
+    articleSlugs: ["dsm-nasil-uygulanir", "jet-grout-nedir", "zemin-iyilestirme-yontemleri", "yer-alti-zemin-iyilestirme"]
   },
   {
     slug: "izmir-zemin-guclendirme",
@@ -55,11 +55,11 @@ export const cityPages: CityPage[] = [
     soilContext:
       "Körfez çevresi ve alüvyon alanlarda gevşek kum-silt seviyeleri, su geçirgenliği ve deprem etkisi jet grout veya DSM seçimini doğrudan etkiler.",
     recommendedApproach:
-      "Su kontrolü gereken alanlarda jet grout ve enjeksiyon; oturma kontrolü gereken geniş parsellerde DSM zemin iyileştirme tercih edilebilir.",
+      "Su kontrolü gereken alanlarda jet grout ve enjeksiyon; oturma kontrolü gereken geniş parsellerde ise [zemine uygun iyileştirme yöntemi seçimi](/knowledge/yer-alti-zemin-iyilestirme/) kriterlerine göre DSM zemin iyileştirme tercih edilebilir.",
     qualityFocus:
-      "İzmir sahalarında basınç kayıtları, kolon çapı doğrulaması ve yeraltı suyu davranışı kalite kabul sürecinin ana parçalarıdır.",
+      "İzmir sahalarında basins kayıtları, kolon çapı doğrulaması ve yeraltı suyu davranışı kalite kabul sürecinin ana parçalarıdır.",
     serviceSlugs: ["jet-grout", "dsm", "fore-kazik", "zemin-iyilestirme"],
-    articleSlugs: ["jet-grout-hangi-zeminlerde-uygulanir", "jet-grout-kalite-kontrol", "dsm-nasil-uygulanir"]
+    articleSlugs: ["jet-grout-hangi-zeminlerde-uygulanir", "jet-grout-kalite-kontrol", "dsm-nasil-uygulanir", "yer-alti-zemin-iyilestirme"]
   },
   {
     slug: "istanbul-zemin-guclendirme",
@@ -89,11 +89,11 @@ export const cityPages: CityPage[] = [
     soilContext:
       "Kil, marn, ayrışmış kaya ve dolgu geçişleri kısa mesafede değişebildiği için sondaj verisi ile imalat yöntemi birlikte yorumlanmalıdır.",
     recommendedApproach:
-      "Fore kazık, ankraj ve iksa sistemleri derin kazılarda; jet grout veya DSM ise taşıma ve oturma kontrolü gereken alanlarda devreye alınır.",
+      "Fore kazık, ankraj ve iksa sistemleri derin kazılarda; [derin zemin iyileştirme yöntemleri](/knowledge/yer-alti-zemin-iyilestirme/) ise taşıma ve oturma kontrolü gereken alanlarda devreye alınır.",
     qualityFocus:
       "Ankara sahalarında kazı kademeleri, ankraj kabul testleri, beton kayıtları ve deformasyon izleme planı kritik kalite verileridir.",
     serviceSlugs: ["fore-kazik", "ankraj", "iksa-sistemleri", "zemin-iyilestirme"],
-    articleSlugs: ["fore-kazik-avantajlari", "zemin-iyilestirme-planlama", "saha-denetimi-numune-testleri"]
+    articleSlugs: ["fore-kazik-avantajlari", "zemin-iyilestirme-planlama", "saha-denetimi-numune-testleri", "yer-alti-zemin-iyilestirme"]
   },
   {
     slug: "hatay-zemin-guclendirme",

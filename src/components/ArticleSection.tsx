@@ -1,4 +1,5 @@
 import type { KnowledgeSection } from "@/types/knowledge";
+import { parseMarkdownLinks } from "./LinkParser";
 
 export function ArticleSection({ section }: { section: KnowledgeSection }) {
   return (
@@ -8,7 +9,7 @@ export function ArticleSection({ section }: { section: KnowledgeSection }) {
         {section.blocks.map((block, index) => {
           switch (block.type) {
             case "paragraph":
-              return <p key={index}>{block.content}</p>;
+              return <p key={index}>{parseMarkdownLinks(block.content)}</p>;
             case "list":
               return (
                 <div key={index}>
