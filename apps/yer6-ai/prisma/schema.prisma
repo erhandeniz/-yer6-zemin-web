@@ -85,6 +85,35 @@ enum SpatialAssetKind {
   MODEL_3D
 }
 
+enum KnowledgeModuleKind {
+  DOCUMENT
+  STRUCTURED
+  COMPUTE
+}
+
+enum StructuredRecordStatus {
+  DRAFT
+  READY
+  INDEXING
+  INDEXED
+  FAILED
+  ARCHIVED
+}
+
+enum IngestionJobKind {
+  DOCUMENT
+  STRUCTURED_IMPORT
+  MODULE_REINDEX
+}
+
+enum IngestionJobStatus {
+  QUEUED
+  RUNNING
+  COMPLETED
+  FAILED
+  CANCELLED
+}
+
 enum SpatialAssetStatus {
   REGISTERED
   PROCESSING
@@ -244,6 +273,8 @@ model KnowledgeDocument {
   size                   Int
   category               String
   scope                  KnowledgeDocumentScope
+  moduleKey              String?
+  partition              String?
   projectId              String?
   organizationId         String?
   storageProvider        String
@@ -278,6 +309,7 @@ model KnowledgeDocument {
   @@index([organizationId, status])
   @@index([standardId, status])
   @@index([uploadedById, createdAt])
+  @@index([moduleKey, partition, status])
 }
 
 model EngineeringStandard {
@@ -363,4 +395,282 @@ model KnowledgeChunk {
   @@unique([documentId, ordinal])
   @@index([documentId, createdAt])
   @@index([contentHash])
+}
+
+/// Module 7 — Machine Database. Structured rig specifications, replacing the
+/// hardcoded equipment array. Every row is queryable in Postgres and, once
+/// indexed, semantically searchable via Vectorize (namespace mod:machine[:mfg]).
+model MachineRig {
+  id             String                 @id @default(cuid())
+  manufacturer   String
+  model          String
+  partition      String?
+  category       String?
+  torque         Float?
+  maxDepth       Float?
+  maxDiameter    Float?
+  weight         Float?
+  enginePower    Float?
+  applications   String[]
+  advantages     String[]
+  limitations    String[]
+  specifications Json?
+  source         String?
+  checksum       String
+  status         StructuredRecordStatus @default(READY)
+  vectorId       String?                @unique
+  indexedAt      DateTime?
+  createdAt      DateTime               @default(now())
+  updatedAt      DateTime               @updatedAt
+
+  @@unique([manufacturer, model])
+  @@index([partition, status])
+  @@index([status, updatedAt])
+}
+
+/// Module 8 — Soil Database. Structured soil profiles/parameters. Layers are
+/// stored inline as JSON for flexibility; index properties are promoted to
+/// columns for filtering and feasibility queries.
+model SoilProfile {
+  id             String                 @id @default(cuid())
+  name           String
+  partition      String?
+  classification String?
+  location       String?
+  latitude       Float?
+  longitude      Float?
+  depthFrom      Float?
+  depthTo        Float?
+  groundwater    Float?
+  parameters     Json?
+  layers         Json?
+  sourceReportId String?
+  source         String?
+  checksum       String
+  status         StructuredRecordStatus @default(READY)
+  vectorId       String?                @unique
+  indexedAt      DateTime?
+  createdAt      DateTime               @default(now())
+  updatedAt      DateTime               @updatedAt
+
+  @@index([partition, status])
+  @@index([classification, status])
+  @@index([status, updatedAt])
+}
+
+/// Module 10 — Engineering Decision Engine. Declarative rules evaluated against
+/// a normalized site/design context to produce ranked recommendations.
+model DecisionRule {
+  id          String   @id @default(cuid())
+  key         String   @unique
+  title       String
+  category    String
+  description String?  @db.Text
+  priority    Int      @default(100)
+  conditions  Json
+  outcome     Json
+  references  String[]
+  active      Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([category, active, priority])
+}
+
+/// Tracks ingestion / import / reindex work so large, incremental jobs are
+/// observable and resumable at platform scale.
+model IngestionJob {
+  id           String             @id @default(cuid())
+  kind         IngestionJobKind
+  moduleKey    String?
+  partition    String?
+  status       IngestionJobStatus @default(QUEUED)
+  totalItems   Int                @default(0)
+  processed    Int                @default(0)
+  succeeded    Int                @default(0)
+  failed       Int                @default(0)
+  cursor       String?
+  detail       Json?
+  errorMessage String?            @db.Text
+  startedAt    DateTime?
+  finishedAt   DateTime?
+  createdById  String?
+  createdAt    DateTime           @default(now())
+  updatedAt    DateTime           @updatedAt
+
+  @@index([kind, status, updatedAt])
+  @@index([moduleKey, status])
+}
+
+// ===========================================================================
+// Module 11 — Commercial Proposal Engine.
+// Every commercial offer produces an official, verified PDF. Numbers and issued
+// revisions are immutable; internal cost data is isolated from client output.
+// Status / audience / currency / locale / kind are stored as validated strings
+// (see src/server/proposals/domain/types.ts) to keep the enum surface stable.
+// ===========================================================================
+
+/// A logical offer, identified by an immutable offer number. Holds the latest
+/// status pointer; the full history lives in ProposalRevision.
+model Proposal {
+  id              String             @id @default(cuid())
+  organizationId  String
+  projectId       String?
+  offerNumber     String             @unique
+  year            Int
+  sequence        Int
+  kind            String
+  pricing         String
+  currency        String
+  locale          String
+  customerName    String
+  projectName     String
+  subject         String
+  status          String             @default("draft")
+  currentRevision Int                @default(0)
+  createdById     String?
+  revisions       ProposalRevision[]
+  events          ProposalEvent[]
+  createdAt       DateTime           @default(now())
+  updatedAt       DateTime           @updatedAt
+
+  @@index([organizationId, status, updatedAt])
+  @@index([organizationId, year, sequence])
+  @@index([projectId])
+}
+
+/// One immutable revision (R0, R1, ...). The full ProposalContent snapshot and
+/// computed totals are stored verbatim so an issued PDF can always be re-derived
+/// or audited. `immutable` is set once the revision is issued.
+model ProposalRevision {
+  id                  String         @id @default(cuid())
+  proposalId          String
+  proposal            Proposal       @relation(fields: [proposalId], references: [id], onDelete: Cascade)
+  revision            Int
+  status              String         @default("draft")
+  locale              String
+  currency            String
+  content             Json
+  totals              Json?
+  internalTotals      Json?
+  grandTotal          Decimal?       @db.Decimal(18, 2)
+  reason              String?
+  priceBookRevision   String?
+  templateRevision    String?
+  calculationRevision String?
+  checksum            String?
+  immutable           Boolean        @default(false)
+  createdById         String?
+  approvedAt          DateTime?
+  sentAt              DateTime?
+  acceptedAt          DateTime?
+  items               ProposalItem[]
+  pdfs                ProposalPdf[]
+  events              ProposalEvent[]
+  createdAt           DateTime       @default(now())
+  updatedAt           DateTime       @updatedAt
+
+  @@unique([proposalId, revision])
+  @@index([proposalId, status])
+}
+
+/// Normalized, queryable copy of each proposal line. Every line retains its
+/// full provenance (origin, audience, source, currency) per section J.
+model ProposalItem {
+  id             String           @id @default(cuid())
+  revisionId     String
+  rev            ProposalRevision @relation(fields: [revisionId], references: [id], onDelete: Cascade)
+  ordinal        Int
+  description    String
+  quantity       Decimal          @db.Decimal(18, 4)
+  unit           String
+  unitPrice      Decimal          @db.Decimal(18, 4)
+  currency       String
+  lineTotal      Decimal          @db.Decimal(18, 2)
+  quantityOrigin String
+  optional       Boolean          @default(false)
+  vatApplicable  Boolean          @default(true)
+  audience       String           @default("client")
+  category       String?
+  source         String?
+  createdAt      DateTime         @default(now())
+
+  @@index([revisionId, ordinal])
+}
+
+/// A generated, verified PDF artifact. There is at most one PDF per
+/// (revision, audience, locale); approved artifacts are never overwritten.
+model ProposalPdf {
+  id              String           @id @default(cuid())
+  revisionId      String
+  rev             ProposalRevision @relation(fields: [revisionId], references: [id], onDelete: Cascade)
+  audience        String
+  locale          String
+  storageProvider String           @default("r2")
+  storageKey      String           @unique
+  fileName        String
+  byteSize        Int              @default(0)
+  pageCount       Int              @default(0)
+  checksum        String
+  verified        Boolean          @default(false)
+  verifiedAt      DateTime?
+  grandTotal      Decimal?         @db.Decimal(18, 2)
+  offerNumber     String
+  metadata        Json?
+  failureCategory String?
+  createdById     String?
+  createdAt       DateTime         @default(now())
+
+  @@unique([revisionId, audience, locale])
+  @@index([revisionId])
+}
+
+/// Per-organization, per-year monotonic sequence for transactional, gap-free,
+/// duplicate-proof offer number allocation.
+model ProposalNumberSequence {
+  id             String   @id @default(cuid())
+  organizationId String
+  year           Int
+  lastSequence   Int      @default(0)
+  updatedAt      DateTime @updatedAt
+
+  @@unique([organizationId, year])
+}
+
+/// Versioned corporate proposal templates. The latest approved template is the
+/// default; older approved templates are preserved as versioned records.
+model ProposalTemplate {
+  id             String   @id @default(cuid())
+  organizationId String
+  key            String
+  name           String
+  version        Int      @default(1)
+  approved       Boolean  @default(false)
+  isDefault      Boolean  @default(false)
+  config         Json
+  createdById    String?
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  @@unique([organizationId, key, version])
+  @@index([organizationId, isDefault])
+}
+
+/// Immutable audit trail for a proposal (creation, preview, download, approval,
+/// sending, sharing, acceptance, rejection, revision, expiry, archival, failure).
+model ProposalEvent {
+  id         String            @id @default(cuid())
+  proposalId String
+  proposal   Proposal          @relation(fields: [proposalId], references: [id], onDelete: Cascade)
+  revisionId String?
+  rev        ProposalRevision? @relation(fields: [revisionId], references: [id], onDelete: SetNull)
+  pdfId      String?
+  type       String
+  category   String?
+  actorId    String?
+  metadata   Json?
+  createdAt  DateTime          @default(now())
+
+  @@index([proposalId, createdAt])
+  @@index([revisionId])
 }
