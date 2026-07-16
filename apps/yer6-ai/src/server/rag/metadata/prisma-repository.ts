@@ -40,6 +40,8 @@ function toDocument(record: PrismaKnowledgeDocument): RAGDocumentRecord {
       : record.scope === KnowledgeDocumentScope.STANDARDS
         ? "standards"
         : "company",
+    moduleKey: record.moduleKey ?? undefined,
+    partition: record.partition ?? undefined,
     projectId: record.projectId ?? undefined,
     organizationId: record.organizationId ?? undefined,
     storageProvider: record.storageProvider,
@@ -90,6 +92,8 @@ export class PrismaRAGMetadataRepository implements RAGMetadataRepository {
     category?: KnowledgeCategory;
     status?: KnowledgeDocumentStatus;
     scope?: RAGDocumentScope;
+    moduleKey?: string;
+    partition?: string;
     projectId?: string;
     organizationId?: string;
     cursor?: string;
@@ -106,6 +110,8 @@ export class PrismaRAGMetadataRepository implements RAGMetadataRepository {
             : options.scope === "company"
               ? KnowledgeDocumentScope.COMPANY
               : undefined,
+        moduleKey: options.moduleKey,
+        partition: options.partition,
         projectId: options.projectId,
         organizationId: options.organizationId
       },

@@ -43,6 +43,8 @@ export async function POST(request: Request) {
     size: value.size,
     category: value.category,
     scope: value.scope,
+    moduleKey: value.moduleKey,
+    partition: value.partition,
     projectId: value.projectId,
     organizationId: value.organizationId,
     storageProvider: runtimeState.config.storageProvider,

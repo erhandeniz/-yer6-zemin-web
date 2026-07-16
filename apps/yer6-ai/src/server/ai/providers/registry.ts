@@ -5,7 +5,7 @@ import type { AIProvider } from "@/server/ai/providers/types";
 
 export function createProviderChain(config: AIConfig, workersAI?: WorkersAIBinding): AIProvider[] {
   const openAIProvider = config.openAIApiKey
-    ? createOpenAIResponsesProvider(config.openAIApiKey, config.openAIModel)
+    ? createOpenAIResponsesProvider(config.openAIApiKey, config.openAIModel, config.reasoningEffort)
     : null;
   const cloudflareProvider = workersAI
     ? createCloudflareWorkersAIProvider(workersAI, config.cloudflareModel)

@@ -29,6 +29,7 @@ export type AIProviderName = "openai" | "cloudflare-workers-ai";
 export type AIStreamEvent =
   | { type: "meta"; requestId: string; provider: AIProviderName }
   | { type: "sources"; citations: SourceCitation[] }
+  | { type: "tool"; name: string }
   | { type: "delta"; text: string }
-  | { type: "done"; stopped: boolean }
+  | { type: "done"; stopped: boolean; tools?: string[] }
   | { type: "error"; message: string };

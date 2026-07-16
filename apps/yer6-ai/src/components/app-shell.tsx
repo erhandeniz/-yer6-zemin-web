@@ -46,14 +46,20 @@ function SidebarContent({ onNavigate }: { onNavigate?: () => void }) {
   const pathname = usePathname();
   const setUploadOpen = useAppStore((state) => state.setUploadOpen);
   const { locale, setLocale, t } = useAITranslation();
+  const isDemo = pathname.startsWith("/demo");
 
   const renderLink = (item: (typeof primaryNavigation)[number]) => {
-    const active = item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
+    const targetHref = isDemo
+      ? item.href === "/" ? "/demo" : `/demo${item.href}`
+      : item.href;
+    const active = item.href === "/"
+      ? (isDemo ? pathname === "/demo" : pathname === "/")
+      : pathname.startsWith(targetHref);
     const Icon = item.icon;
     return (
       <Link
         key={item.href}
-        href={item.href}
+        href={targetHref}
         onClick={onNavigate}
         className={cn(
           "group flex h-9 items-center gap-3 rounded-md px-3 text-[13px] font-medium transition-colors",

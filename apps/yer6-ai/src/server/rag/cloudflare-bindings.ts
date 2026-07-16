@@ -53,5 +53,10 @@ export type R2ObjectBodyLike = {
 
 export type R2BucketBinding = {
   get(key: string): Promise<R2ObjectBodyLike | null>;
+  put(
+    key: string,
+    value: ArrayBuffer | ArrayBufferView | string | Blob,
+    options?: { httpMetadata?: { contentType?: string } }
+  ): Promise<unknown>;
   delete(key: string | string[]): Promise<void>;
 };

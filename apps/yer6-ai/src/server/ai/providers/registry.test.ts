@@ -8,7 +8,8 @@ const baseConfig: AIConfig = {
   openAIApiKey: "test-only-key",
   openAIModel: "test-openai-model",
   cloudflareModel: "test-cloudflare-model",
-  maxOutputTokens: 1_200
+  maxOutputTokens: 1_200,
+  reasoningEffort: "low"
 };
 
 const workersAI = {

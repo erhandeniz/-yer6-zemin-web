@@ -18,6 +18,14 @@ import { GET as getStats } from "@/app/api/admin/knowledge/stats/route";
 import { GET as getStandards, POST as postStandard } from "@/app/api/admin/standards/route";
 import { DELETE as deleteStandard, PATCH as patchStandard } from "@/app/api/admin/standards/[standardId]/route";
 import { GET as getProjectMemory, POST as postProjectMemory } from "@/app/api/projects/[projectId]/memory/route";
+import { GET as getModules } from "@/app/api/admin/knowledge/modules/route";
+import { GET as getMachines, POST as postMachines } from "@/app/api/admin/machines/route";
+import { POST as postImportUrl } from "@/app/api/admin/knowledge/import-url/route";
+import { GET as getKnowledgeStatus } from "@/app/api/ai/knowledge/status/route";
+import { GET as getSoils, POST as postSoils } from "@/app/api/admin/soils/route";
+import { GET as getDecisionRules, POST as postDecisionRules } from "@/app/api/admin/decisions/route";
+import { GET as getCalculators, POST as postCalculation } from "@/app/api/ai/calculations/route";
+import { POST as postDecisionEvaluate } from "@/app/api/ai/decisions/route";
 
 const getRequest = new Request("https://yer6.test/api/test");
 const postRequest = new Request("https://yer6.test/api/test", {
@@ -46,7 +54,19 @@ describe("protected API routes", () => {
     ["standard PATCH", () => patchStandard(postRequest, standardContext)],
     ["standard DELETE", () => deleteStandard(getRequest, standardContext)],
     ["project memory GET", () => getProjectMemory(getRequest, projectContext)],
-    ["project memory POST", () => postProjectMemory(postRequest, projectContext)]
+    ["project memory POST", () => postProjectMemory(postRequest, projectContext)],
+    ["knowledge modules GET", () => getModules()],
+    ["machines GET", () => getMachines(getRequest)],
+    ["machines POST", () => postMachines(postRequest)],
+    ["knowledge import-url POST", () => postImportUrl(postRequest)],
+    ["knowledge status GET (non-demo)", () => getKnowledgeStatus(getRequest)],
+    ["soils GET", () => getSoils(getRequest)],
+    ["soils POST", () => postSoils(postRequest)],
+    ["decision rules GET", () => getDecisionRules(getRequest)],
+    ["decision rules POST", () => postDecisionRules(postRequest)],
+    ["calculations GET", () => getCalculators()],
+    ["calculations POST", () => postCalculation(postRequest)],
+    ["decision evaluate POST", () => postDecisionEvaluate(postRequest)]
   ];
 
   it.each(cases)("rejects anonymous access to %s", async (_name, invoke) => {

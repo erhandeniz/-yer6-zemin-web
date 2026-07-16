@@ -6,6 +6,7 @@ import {
   MEMORY_TYPES,
   STANDARD_LICENSE_STATUSES
 } from "@/lib/rag/catalog";
+import { KNOWLEDGE_MODULE_KEYS } from "@/server/knowledge/modules";
 
 const clean = (maximum: number) => z.string().trim().min(1).max(maximum);
 
@@ -16,6 +17,8 @@ export const documentCreateSchema = z.object({
   size: z.number().int().positive().max(256 * 1024 * 1024),
   category: z.enum(KNOWLEDGE_CATEGORIES),
   scope: z.enum(["project", "company", "standards"]),
+  moduleKey: z.enum(KNOWLEDGE_MODULE_KEYS).optional(),
+  partition: clean(60).optional(),
   projectId: clean(100).optional(),
   organizationId: clean(100).optional(),
   storageKey: clean(500),

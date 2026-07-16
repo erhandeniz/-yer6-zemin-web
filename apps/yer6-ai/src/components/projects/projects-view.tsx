@@ -16,6 +16,7 @@ import {
   SlidersHorizontal
 } from "lucide-react";
 import { useMemo, useState } from "react";
+import { usePathname } from "next/navigation";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
@@ -31,6 +32,9 @@ export function ProjectsView() {
   const setUploadOpen = useAppStore((state) => state.setUploadOpen);
   const setSelectedProjectId = useAppStore((state) => state.setSelectedProjectId);
   const { t } = useAITranslation();
+  const pathname = usePathname();
+  const isDemo = pathname.startsWith("/demo");
+  const chatHref = isDemo ? "/demo/chat" : "/chat";
 
   const filtered = useMemo(
     () =>
@@ -80,7 +84,7 @@ export function ProjectsView() {
                 <Button variant="secondary" size="icon" className="absolute right-3 top-3 bg-black/55" aria-label={t("Project options")}><MoreHorizontal className="size-4" /></Button>
               </div>
               <div className="p-4">
-                <div className="flex items-start justify-between gap-3"><div className="min-w-0"><p className="technical-label text-white/24">{project.id}</p><h2 className="mt-1.5 truncate text-sm font-semibold text-white/82">{project.name}</h2></div><Button variant="ghost" size="icon" asChild><Link href="/chat" onClick={() => setSelectedProjectId(project.id)} aria-label={`Open ${project.name}`}><ArrowUpRight className="size-4" /></Link></Button></div>
+                <div className="flex items-start justify-between gap-3"><div className="min-w-0"><p className="technical-label text-white/24">{project.id}</p><h2 className="mt-1.5 truncate text-sm font-semibold text-white/82">{project.name}</h2></div><Button variant="ghost" size="icon" asChild><Link href={chatHref} onClick={() => setSelectedProjectId(project.id)} aria-label={`Open ${project.name}`}><ArrowUpRight className="size-4" /></Link></Button></div>
                 <div className="mt-3 flex items-center gap-4 text-[11px] text-white/32"><span className="flex items-center gap-1.5"><MapPin className="size-3" />{project.location}</span><span className="flex items-center gap-1.5"><FileText className="size-3" />{project.files} files</span></div>
                 <div className="mt-4"><div className="mb-2 flex items-center justify-between text-[10px]"><span className="text-white/28">{t("Analysis progress")}</span><span className="font-mono text-white/46">{project.progress}%</span></div><Progress value={project.progress} /></div>
                 <div className="mt-4 flex items-center justify-between border-t border-white/[0.055] pt-3"><span className="text-[10px] text-white/22">{t("Updated")} {project.updated}</span><span className="text-[10px] text-primary/60">{t(project.category)}</span></div>

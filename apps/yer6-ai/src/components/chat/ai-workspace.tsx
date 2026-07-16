@@ -348,6 +348,13 @@ export function AIWorkspace() {
   const [renameTarget, setRenameTarget] = useState<ChatConversation | null>(null);
   const [renameValue, setRenameValue] = useState("");
   const [deleteTarget, setDeleteTarget] = useState<ChatConversation | null>(null);
+  const [kbStatus, setKbStatus] = useState<{
+    totalSources: number;
+    readySources: number;
+    processingSources: number;
+    failedSources: number;
+    chunks: number;
+  } | null>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
   const copyTimerRef = useRef<number | null>(null);
   const activeRequestRef = useRef<{
@@ -369,6 +376,35 @@ export function AIWorkspace() {
     if (copyTimerRef.current) window.clearTimeout(copyTimerRef.current);
   }, []);
 
+  // Keep the knowledge-base status badge in sync with real production counts.
+  // Refreshes on mount (page reload), on window focus (returning from the admin
+  // panel after an upload / import / reindex / delete) and periodically.
+  useEffect(() => {
+    let active = true;
+    const load = async () => {
+      try {
+        const isDemo = typeof window !== "undefined" && window.location.pathname.startsWith("/demo");
+        const response = await fetch("/api/ai/knowledge/status", {
+          headers: isDemo ? { "X-YER6-Demo": "true" } : {}
+        });
+        if (!response.ok) return;
+        const data = await response.json();
+        if (active) setKbStatus(data);
+      } catch {
+        // Leave the previous value; the badge degrades to neutral on first load.
+      }
+    };
+    void load();
+    const onFocus = () => void load();
+    window.addEventListener("focus", onFocus);
+    const interval = window.setInterval(() => void load(), 20_000);
+    return () => {
+      active = false;
+      window.removeEventListener("focus", onFocus);
+      window.clearInterval(interval);
+    };
+  }, []);
+
   async function runAssistant(
     conversationId: string,
     history: AIChatMessage[],
@@ -383,9 +419,13 @@ export function AIWorkspace() {
     let done = false;
 
     try {
+      const isDemo = typeof window !== "undefined" && window.location.pathname.startsWith("/demo");
       const response = await fetch("/api/ai/chat", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          ...(isDemo ? { "X-YER6-Demo": "true" } : {})
+        },
         signal: controller.signal,
         body: JSON.stringify({
           requestId,
@@ -633,7 +673,28 @@ export function AIWorkspace() {
             <p className="mt-0.5 truncate text-[10px] text-white/28">YER6 AI · {t("No sources in context")}</p>
           </div>
           <div className="ml-auto flex items-center gap-1.5 rtl:ml-0 rtl:mr-auto">
-            <Badge tone="neutral" className="hidden sm:inline-flex">{t("Knowledge base empty")}</Badge>
+            {(() => {
+              const ready = kbStatus?.readySources ?? 0;
+              const processing = kbStatus?.processingSources ?? 0;
+              const failed = kbStatus?.failedSources ?? 0;
+              const chunks = kbStatus?.chunks ?? 0;
+              let tone: "green" | "blue" | "red" | "gold" | "neutral" = "neutral";
+              let label = t("Knowledge base empty");
+              if (ready > 0) {
+                tone = failed > 0 ? "gold" : "green";
+                label = `${ready} ${t("sources ready")}${failed > 0 ? ` · ${failed} ${t("Ingestion failed")}` : ""}`;
+              } else if (processing > 0) {
+                tone = "blue";
+                label = t("Indexing in progress");
+              } else if (failed > 0) {
+                tone = "red";
+                label = `${failed} ${t("Ingestion failed")}`;
+              } else if (chunks > 0) {
+                tone = "blue";
+                label = t("Indexing in progress");
+              }
+              return <Badge tone={tone} className="hidden sm:inline-flex">{label}</Badge>;
+            })()}
             {activeConversation ? (
               <DropdownMenu.Root>
                 <DropdownMenu.Trigger asChild>

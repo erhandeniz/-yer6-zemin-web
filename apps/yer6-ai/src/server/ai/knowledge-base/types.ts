@@ -4,6 +4,10 @@ export type DocumentScope = {
   projectId?: string;
   organizationId?: string;
   includeStandards?: boolean;
+  /** Restrict/expand retrieval to specific knowledge modules (see modules.ts). */
+  modules?: string[];
+  /** Optional module sub-collections (standards family, manufacturer, …). */
+  partitions?: string[];
 };
 
 export type KnowledgeChunk = {

@@ -13,6 +13,8 @@ export type RAGDocumentRecord = KnowledgeDocumentSummary & {
   checksum?: string;
   metadata?: Record<string, unknown>;
   tokenCount: number;
+  moduleKey?: string;
+  partition?: string;
 };
 
 export type CreateRAGDocumentInput = {
@@ -22,6 +24,8 @@ export type CreateRAGDocumentInput = {
   size: number;
   category: KnowledgeCategory;
   scope: RAGDocumentScope;
+  moduleKey?: string;
+  partition?: string;
   projectId?: string;
   organizationId?: string;
   storageProvider: string;
@@ -79,6 +83,8 @@ export interface RAGMetadataRepository {
     category?: KnowledgeCategory;
     status?: KnowledgeDocumentStatus;
     scope?: RAGDocumentScope;
+    moduleKey?: string;
+    partition?: string;
     projectId?: string;
     organizationId?: string;
     cursor?: string;
@@ -131,6 +137,8 @@ export type VectorMetadata = {
   scope: RAGDocumentScope;
   category: string;
   checksum: string;
+  moduleKey?: string;
+  partition?: string;
   projectId?: string;
   organizationId?: string;
   version?: string;

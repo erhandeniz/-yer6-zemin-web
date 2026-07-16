@@ -70,7 +70,9 @@ export function LoginView() {
             <Button type="submit" size="lg" className="w-full" disabled={loading}>{t(loading ? "Verifying..." : "Sign in")}<ArrowRight className="size-4" /></Button>
           </form>
           <div className="my-6 flex items-center gap-3"><span className="h-px flex-1 bg-white/[0.07]" /><span className="text-[10px] uppercase text-white/20">{t("Preview")}</span><span className="h-px flex-1 bg-white/[0.07]" /></div>
-          <Button variant="secondary" className="w-full" asChild><Link href="/">{t("Explore demo workspace")}</Link></Button>
+          <Button variant="secondary" className="w-full" asChild>
+            <Link href="/demo">{t("Explore demo workspace")}</Link>
+          </Button>
           <div className="mt-8 flex items-start gap-2 border-t border-white/[0.065] pt-5 text-[10px] leading-4 text-white/25"><ShieldCheck className="mt-0.5 size-3.5 shrink-0 text-emerald-300/55" /><span>{t("Protected by role-based access, encrypted transport and auditable workspace controls.")}</span></div>
           <p className="mt-8 text-center text-[10px] text-white/18">© 2026 YER6 AI · <Link href="/" className="hover:text-white/40">{t("Privacy")}</Link> · <Link href="/" className="hover:text-white/40">{t("Security")}</Link></p>
         </div>

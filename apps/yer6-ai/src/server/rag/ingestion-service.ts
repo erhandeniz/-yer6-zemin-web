@@ -22,6 +22,7 @@ type IngestionOptions = {
 };
 
 function sourceType(document: RAGDocumentRecord) {
+  if (document.moduleKey) return document.moduleKey;
   if (document.scope === "standards") return "standard";
   if (document.extension === "pdf") return "pdf";
   if (document.extension === "docx") return "docx";
@@ -33,7 +34,8 @@ function sourceType(document: RAGDocumentRecord) {
 }
 
 function canIndexStandardContent(document: RAGDocumentRecord) {
-  if (document.scope !== "standards") return true;
+  const rightsGoverned = document.scope === "standards" || document.moduleKey === "standards";
+  if (!rightsGoverned) return true;
   return document.contentIndexingAllowed &&
     (document.licenseStatus === "PUBLIC" || document.licenseStatus === "LICENSED_INTERNAL");
 }
@@ -126,6 +128,8 @@ export class RAGIngestionService {
             scope: document.scope,
             category: document.category,
             checksum,
+            moduleKey: document.moduleKey,
+            partition: document.partition,
             projectId: document.projectId,
             organizationId: document.organizationId,
             page: chunk.page,

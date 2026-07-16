@@ -13,7 +13,8 @@ describe("AI configuration", () => {
       openAIApiKey: undefined,
       openAIModel: DEFAULT_AI_MODELS.openai,
       cloudflareModel: DEFAULT_AI_MODELS.cloudflare,
-      maxOutputTokens: 1_200
+      maxOutputTokens: 1_200,
+      reasoningEffort: "low"
     });
   });
 
@@ -22,5 +23,11 @@ describe("AI configuration", () => {
       .toMatchObject({ providerPreference: "cloudflare", maxOutputTokens: 4_000 });
     expect(getAIConfig(environment({ AI_PROVIDER: "invalid", AI_MAX_OUTPUT_TOKENS: "10" })))
       .toMatchObject({ providerPreference: "auto", maxOutputTokens: 256 });
+  });
+
+  it("defaults reasoning effort to low and accepts valid overrides", () => {
+    expect(getAIConfig(environment()).reasoningEffort).toBe("low");
+    expect(getAIConfig(environment({ AI_REASONING_EFFORT: "minimal" })).reasoningEffort).toBe("minimal");
+    expect(getAIConfig(environment({ AI_REASONING_EFFORT: "nonsense" })).reasoningEffort).toBe("low");
   });
 });

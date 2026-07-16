@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 import {
   ArrowRight,
@@ -43,6 +44,13 @@ function statusTone(status: (typeof projects)[number]["status"]) {
 export function Dashboard() {
   const setUploadOpen = useAppStore((state) => state.setUploadOpen);
   const { t } = useAITranslation();
+  const pathname = usePathname();
+  const isDemo = pathname.startsWith("/demo");
+  const prefixLink = (href: string) => {
+    if (!isDemo) return href;
+    if (href === "/") return "/demo";
+    return `/demo${href}`;
+  };
 
   return (
     <div className="mx-auto w-full max-w-[1540px] px-4 py-5 sm:px-6 lg:px-8 lg:py-7">
@@ -56,7 +64,7 @@ export function Dashboard() {
         </div>
         <div className="flex gap-2">
           <Button variant="secondary" onClick={() => setUploadOpen(true)}><Upload className="size-4" />{t("Upload files")}</Button>
-          <Button asChild><Link href="/chat"><Plus className="size-4" />{t("New analysis")}</Link></Button>
+          <Button asChild><Link href={prefixLink("/chat")}><Plus className="size-4" />{t("New analysis")}</Link></Button>
         </div>
       </motion.div>
 
@@ -89,13 +97,13 @@ export function Dashboard() {
               <h2 className="text-sm font-semibold text-white/90">{t("Active projects")}</h2>
               <p className="mt-0.5 text-[11px] text-white/30">{t("Live engineering status and document processing")}</p>
             </div>
-            <Button variant="ghost" size="sm" asChild><Link href="/projects">{t("View all")}<ArrowRight className="size-3.5" /></Link></Button>
+            <Button variant="ghost" size="sm" asChild><Link href={prefixLink("/projects")}>{t("View all")}<ArrowRight className="size-3.5" /></Link></Button>
           </div>
           <div className="divide-y divide-white/[0.055]">
             {projects.map((project) => (
               <Link
                 key={project.id}
-                href={`/projects?project=${project.id}`}
+                href={prefixLink(`/projects?project=${project.id}`)}
                 className="grid min-h-[92px] grid-cols-[52px_minmax(0,1fr)_auto] items-center gap-3 px-4 py-3 transition-colors hover:bg-white/[0.025] sm:grid-cols-[60px_minmax(170px,1.25fr)_minmax(130px,.8fr)_100px_34px] sm:gap-4 sm:px-5"
               >
                 <span className="relative size-[52px] overflow-hidden rounded-md border border-white/10 bg-white/5 sm:size-[60px]">
@@ -135,7 +143,7 @@ export function Dashboard() {
             </div>
           </div>
           <div className="border-t border-white/[0.065] p-3">
-            <Button variant="secondary" className="w-full" asChild><Link href="/chat"><MessageSquareText className="size-4" />{t("Open engineering chat")}</Link></Button>
+            <Button variant="secondary" className="w-full" asChild><Link href={prefixLink("/chat")}><MessageSquareText className="size-4" />{t("Open engineering chat")}</Link></Button>
           </div>
         </section>
       </div>
