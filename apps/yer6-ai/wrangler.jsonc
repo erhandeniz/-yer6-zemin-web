@@ -18,16 +18,17 @@
     "YER6_ORGANIZATION_ID": "yer6",
     "NEXT_PUBLIC_YER6_ORGANIZATION_ID": "yer6",
     "AI_PROVIDER": "auto",
-    "OPENAI_MODEL": "gpt-5-mini",
+    "OPENAI_MODEL": "gpt-5.6",
     "CLOUDFLARE_AI_MODEL": "@cf/openai/gpt-oss-120b",
-    "AI_MAX_OUTPUT_TOKENS": "1200",
-    "RAG_ENABLED": "false",
+    "AI_MAX_OUTPUT_TOKENS": "2000",
+    "AI_REASONING_EFFORT": "low",
+    "RAG_ENABLED": "true",
     "RAG_REQUIRE_AUTH": "true",
-    "RAG_STORAGE_PROVIDER": "uploadthing",
+    "RAG_STORAGE_PROVIDER": "r2",
     "RAG_PARSER_PROVIDER": "cloudflare-markdown",
     "RAG_METADATA_PROVIDER": "prisma",
-    "RAG_EMBEDDING_PROVIDER": "cloudflare-workers-ai",
-    "RAG_EMBEDDING_MODEL": "@cf/baai/bge-m3",
+    "RAG_EMBEDDING_PROVIDER": "openai",
+    "RAG_OPENAI_EMBEDDING_MODEL": "text-embedding-3-large",
     "RAG_EMBEDDING_DIMENSIONS": "1024",
     "RAG_VECTOR_PROVIDER": "cloudflare-vectorize",
     "RAG_CHUNK_SIZE": "2800",
@@ -39,9 +40,8 @@
   "ai": {
     "binding": "AI"
   },
-  // Enable after creating production resources:
-  // "vectorize": [{ "binding": "RAG_VECTORIZE", "index_name": "yer6-rag" }],
-  // "r2_buckets": [{ "binding": "RAG_DOCUMENTS", "bucket_name": "yer6-rag-documents" }],
+  "vectorize": [{ "binding": "RAG_VECTORIZE", "index_name": "yer6-rag" }],
+  "r2_buckets": [{ "binding": "RAG_DOCUMENTS", "bucket_name": "yer6-rag-documents" }],
   "ratelimits": [
     {
       "name": "AI_RATE_LIMITER",

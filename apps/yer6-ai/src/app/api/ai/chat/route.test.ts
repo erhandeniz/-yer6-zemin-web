@@ -74,7 +74,7 @@ describe("POST /api/ai/chat", () => {
 
   it("streams provider metadata, text deltas and completion", async () => {
     mocks.providers = [{
-      name: "cloudflare-workers-ai",
+      name: "openai",
       async *stream() {
         yield "Merhaba";
         yield " Erhan";
@@ -84,12 +84,35 @@ describe("POST /api/ai/chat", () => {
     const events = await responseEvents(response);
     expect(response.status).toBe(200);
     expect(response.headers.get("content-type")).toContain("text/event-stream");
-    expect(events.map((event) => event.type)).toEqual(["sources", "meta", "delta", "delta", "done"]);
+    // Short outputs are batched into a single delta frame; the concatenated
+    // text is what matters, not the frame boundaries.
+    expect(events.map((event) => event.type)).toEqual(["sources", "meta", "delta", "done"]);
     expect(events.filter((event) => event.type === "delta").map((event) => event.text).join(""))
       .toBe("Merhaba Erhan");
   });
 
-  it("falls back when the primary provider fails before producing output", async () => {
+  it("emits tool progress events and reports invoked tools on completion", async () => {
+    mocks.providers = [{
+      name: "openai",
+      async *stream(input) {
+        input.onToolCall?.("calc_bearing_capacity");
+        input.onToolCall?.("match_equipment");
+        yield "Hesap ve makine sonuçları hazır.";
+      }
+    }];
+    const events = await responseEvents(await POST(chatRequest()));
+    expect(events.map((event) => event.type)).toEqual([
+      "sources", "meta", "tool", "tool", "delta", "done"
+    ]);
+    expect(events.filter((event) => event.type === "tool").map((event) => event.name))
+      .toEqual(["calc_bearing_capacity", "match_equipment"]);
+    expect(events.at(-1)).toMatchObject({
+      type: "done",
+      tools: ["calc_bearing_capacity", "match_equipment"]
+    });
+  });
+
+  it("returns an honest error without a silent Cloudflare fallback when the primary fails", async () => {
     mocks.providers = [
       {
         name: "openai",
@@ -105,10 +128,16 @@ describe("POST /api/ai/chat", () => {
       }
     ];
     const events = await responseEvents(await POST(chatRequest()));
+    // GPT-5.6 is the sole primary brain: Cloudflare is never silently used.
     expect(events.filter((event) => event.type === "meta").map((event) => event.provider))
-      .toEqual(["openai", "cloudflare-workers-ai"]);
-    expect(events.find((event) => event.type === "delta")?.text).toBe("Yedek sağlayıcı yanıtı");
+      .toEqual(["openai"]);
+    expect(events.some((event) => event.type === "delta")).toBe(false);
+    expect(events.at(-1)).toEqual({
+      type: "error",
+      message: "Yapay zekâ hizmetine şu anda ulaşılamıyor. Lütfen biraz sonra yeniden deneyin."
+    });
     expect(JSON.stringify(events)).not.toContain("private provider failure");
+    expect(JSON.stringify(events)).not.toContain("Yedek sağlayıcı yanıtı");
   });
 
   it("does not mix providers after the primary has emitted partial output", async () => {
@@ -152,7 +181,7 @@ describe("POST /api/ai/chat", () => {
   it("passes multi-turn history to the provider", async () => {
     const receivedHistories: unknown[] = [];
     mocks.providers = [{
-      name: "cloudflare-workers-ai",
+      name: "openai",
       async *stream(input) {
         receivedHistories.push(input.messages);
         yield "Bağlamı hatırladım";
