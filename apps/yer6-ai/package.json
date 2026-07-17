@@ -12,6 +12,11 @@
     "db:generate": "prisma generate",
     "db:push": "prisma db push",
     "db:migrate": "prisma migrate dev",
+    "db:migrate:deploy": "prisma migrate deploy",
+    "db:seed": "tsx --env-file-if-exists=.env scripts/seed-database.ts",
+    "db:verify": "tsx --env-file-if-exists=.env scripts/verify-database.ts",
+    "db:create-admin": "tsx --env-file-if-exists=.env scripts/create-admin.ts",
+    "db:reset-admin-password": "tsx --env-file-if-exists=.env scripts/reset-admin-password.ts",
     "cloudflare:build": "opennextjs-cloudflare build",
     "cloudflare:preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "cloudflare:deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
@@ -21,6 +26,7 @@
     "@ai-sdk/openai": "4.0.11",
     "@next-auth/prisma-adapter": "1.0.7",
     "@prisma/client": "6.19.2",
+    "@prisma/extension-accelerate": "^3.0.1",
     "@radix-ui/react-dialog": "1.1.15",
     "@radix-ui/react-dropdown-menu": "2.1.16",
     "@radix-ui/react-progress": "1.1.8",
@@ -56,8 +62,12 @@
     "postcss": "8.5.6",
     "prisma": "6.19.2",
     "tailwindcss": "3.4.19",
+    "tsx": "^4.23.1",
     "typescript": "5.9.3",
     "vitest": "4.0.18",
     "wrangler": "4.110.0"
+  },
+  "prisma": {
+    "seed": "tsx scripts/seed-database.ts"
   }
 }
