@@ -9,6 +9,10 @@ export const siteConfig = {
   // Yandex Webmaster doğrulama meta içeriği (Site ekle > Meta etiket yöntemindeki
   // yandex-verification content değeri). Boş bırakılırsa etiket eklenmez.
   yandexVerification: "",
+  // Yandex Metrica sayaç numarası (yalnızca rakam, ör. "99999999"). Yandex,
+  // davranışsal sinyalleri (kalış süresi, kaydırma, tıklama haritası, webvisor)
+  // doğrudan Metrica'dan okur ve sıralamaya yansıtır. Boş bırakılırsa yüklenmez.
+  yandexMetricaId: "",
   phone: {
     display: "+90 532 378 06 91",
     href: "tel:+905323780691"
