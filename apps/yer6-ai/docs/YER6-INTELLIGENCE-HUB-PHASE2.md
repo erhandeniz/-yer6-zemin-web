@@ -105,6 +105,27 @@ additive migration executed by the operator; intentionally not shipped in this p
 - `COSTLAB_ENABLED` (off) — CostLab dark until its production gate passes.
 - Opportunity Radar / notifications: not yet implemented; will ship disabled.
 
+## PACKAGE A — DEPLOYED & LIVE-VERIFIED (2026-07-17)
+
+- Commits: `2018f7d` (demo fix + CostLab) → `8526101` (dep closure: @prisma/extension-accelerate,
+  tsx, db scripts) → `dd2edc2` (lint-clean public projection). Pushed to
+  `origin/feature/yer6-intelligence-hub-phase2`.
+- Clean detached worktree gate (operator): `pnpm install --frozen-lockfile` ✓, typecheck ✓,
+  lint `--max-warnings=0` ✓, **vitest 216/216 ✓** (54 files), `next build` ✓, OpenNext build ✓.
+- Rollback target recorded: previous live Worker version **`6a04093e-7922-4af9-97d0-0ccbdb1ae639`**
+  (`npx wrangler rollback 6a04093e-...` if needed; additive DB tables are kept, no reverse migration).
+- Deployed to the existing `yer6-ai` Worker (`ai.yer6zemin.com.tr`) — no new Worker/project.
+- **Live verification (HTTP, cookieless = first-time anonymous visitor):**
+  - `GET /demo/chat` → **200, demo workspace rendered, NO redirect to /login** (root cause fixed).
+    `meta-viewport: width=device-width…` present → mobile-ready markup.
+  - `GET /api/ai/health` → `configured`, OpenAI active, knowledge base `ready` (chat/RAG intact).
+  - Demo project context shows `0 dosya / İndekslenmiş kaynak yok` → private data isolated.
+- **Known cosmetic follow-up:** the demo header still renders the "Bağlamda kaynak yok" status
+  label (empty-context indicator). It does not block chat, but Workstream 0/8 wants it hidden from
+  normal chat UI — deferred to a small UI pass (i18n-provider) to avoid an untested visual change now.
+- **Operator final step:** on-device tap-test (iPhone Safari + Android Chrome) to confirm the visual
+  rendering; the server now serves the demo to any anonymous client (the exact failure mode is gone).
+
 ## Remaining limitations
 - Packages C–F are design-complete only; no code shipped for them in this pass.
 - Price book DB model needs an additive migration (operator-run) before CostLab can go live.
