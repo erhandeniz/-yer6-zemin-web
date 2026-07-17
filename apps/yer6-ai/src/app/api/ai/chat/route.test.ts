@@ -196,6 +196,40 @@ describe("POST /api/ai/chat", () => {
     expect(receivedHistories).toEqual([history]);
   });
 
+  it("serves the anonymous public demo without a session and without company RAG", async () => {
+    process.env.AUTH_REQUIRED = "true"; // production setting
+    let sawKnowledgeTool = false;
+    mocks.providers = [{
+      name: "openai",
+      async *stream(input) {
+        sawKnowledgeTool = Boolean(input.tools && "search_company_knowledge" in input.tools);
+        yield "Demo yanıtı";
+      }
+    }];
+    const request = new Request("https://yer6.test/api/ai/chat", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "cf-connecting-ip": "203.0.113.9",
+        "x-yer6-demo": "true"
+      },
+      body: JSON.stringify({
+        requestId,
+        conversationId: "demo-1",
+        locale: "tr",
+        messages: [{ role: "user", content: "Merhaba" }]
+      })
+    });
+    const response = await POST(request);
+    const events = await responseEvents(response);
+    expect(response.status).toBe(200); // no login required for demo traffic
+    expect(getServerSession).not.toHaveBeenCalled();
+    expect(events.filter((event) => event.type === "delta").map((event) => event.text).join(""))
+      .toBe("Demo yanıtı");
+    // Demo isolation: production knowledge is unreachable from the public demo.
+    expect(sawKnowledgeTool).toBe(false);
+  });
+
   it("enforces the configured rate limit before model execution", async () => {
     mocks.rateLimitSuccess = false;
     mocks.providers = [{ name: "cloudflare-workers-ai", async *stream() { yield "unused"; } }];
