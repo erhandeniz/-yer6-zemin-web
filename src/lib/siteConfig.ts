@@ -6,6 +6,9 @@ export const siteConfig = {
   // Google Search Console doğrulama meta içeriği (Property > HTML etiketi yöntemindeki content değeri).
   // Boş bırakılırsa doğrulama meta etiketi eklenmez.
   googleSiteVerification: "",
+  // Yandex Webmaster doğrulama meta içeriği (Site ekle > Meta etiket yöntemindeki
+  // yandex-verification content değeri). Boş bırakılırsa etiket eklenmez.
+  yandexVerification: "",
   phone: {
     display: "+90 532 378 06 91",
     href: "tel:+905323780691"

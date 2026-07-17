@@ -37,8 +37,13 @@ export const metadata: Metadata = {
     "YER6",
     "Ankara zemin güçlendirme"
   ],
-  ...(siteConfig.googleSiteVerification
-    ? { verification: { google: siteConfig.googleSiteVerification } }
+  ...(siteConfig.googleSiteVerification || siteConfig.yandexVerification
+    ? {
+        verification: {
+          ...(siteConfig.googleSiteVerification ? { google: siteConfig.googleSiteVerification } : {}),
+          ...(siteConfig.yandexVerification ? { yandex: siteConfig.yandexVerification } : {})
+        }
+      }
     : {}),
   icons: {
     icon: [
