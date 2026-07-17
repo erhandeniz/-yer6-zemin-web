@@ -134,8 +134,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                 m[i].l=1*new Date();
                 for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
                 k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-                (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-                ym(${siteConfig.yandexMetricaId}, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true});
+                (window, document, "script", "https://mc.yandex.ru/metrika/tag.js?id=${siteConfig.yandexMetricaId}", "ym");
+                ym(${siteConfig.yandexMetricaId}, "init", {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
               `}
             </Script>
             <noscript>
