@@ -179,12 +179,35 @@ export function computeJetGroutEstimate(
   };
 }
 
-/** Public/customer projection: strips profit breakdown and internal-only lines. */
-export function toPublicEstimate(result: EstimateResult): Omit<EstimateResult, "profit" | "riskAllowance" | "overhead" | "lines"> & {
-  lines: CostLine[];
-} {
-  const { profit: _p, riskAllowance: _r, overhead: _o, ...rest } = result;
-  return { ...rest, lines: result.lines.filter((l) => l.publicVisible) };
+/** Public/customer projection: omits profit / risk / overhead and internal-only lines. */
+export type PublicEstimate = Omit<EstimateResult, "profit" | "riskAllowance" | "overhead">;
+
+export function toPublicEstimate(result: EstimateResult): PublicEstimate {
+  return {
+    engineVersion: result.engineVersion,
+    method: result.method,
+    currency: result.currency,
+    lines: result.lines.filter((l) => l.publicVisible),
+    directCost: result.directCost,
+    indirectCost: result.indirectCost,
+    mobilisation: result.mobilisation,
+    materialCost: result.materialCost,
+    machineryCost: result.machineryCost,
+    labourCost: result.labourCost,
+    testingCost: result.testingCost,
+    subtotal: result.subtotal,
+    vatAmount: result.vatAmount,
+    total: result.total,
+    unitPricePerMeter: result.unitPricePerMeter,
+    unitPricePerM3: result.unitPricePerM3,
+    durationDays: result.durationDays,
+    productionPerDay: result.productionPerDay,
+    range: result.range,
+    topDrivers: result.topDrivers,
+    missingInformation: result.missingInformation,
+    confidenceScore: result.confidenceScore,
+    disclaimerTr: result.disclaimerTr
+  };
 }
 
 /** Feature flag — CostLab stays dark until explicitly enabled in production. */
