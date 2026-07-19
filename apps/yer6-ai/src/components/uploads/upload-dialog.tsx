@@ -2,7 +2,8 @@
 
 import * as Dialog from "@radix-ui/react-dialog";
 import { AnimatePresence, motion } from "framer-motion";
-import { Check, File, FileArchive, FileImage, FileText, UploadCloud, X } from "lucide-react";
+import { Check, File, FileArchive, FileImage, FileText, Lock, UploadCloud, X } from "lucide-react";
+import { usePathname } from "next/navigation";
 import { useCallback, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { useAITranslation } from "@/components/i18n-provider";
@@ -26,6 +27,7 @@ function fileIcon(type: string) {
 
 export function UploadDialog() {
   const { t } = useAITranslation();
+  const isDemo = (usePathname() ?? "").startsWith("/demo");
   const open = useAppStore((state) => state.uploadOpen);
   const setOpen = useAppStore((state) => state.setUploadOpen);
   const uploads = useAppStore((state) => state.uploads);
@@ -46,6 +48,12 @@ export function UploadDialog() {
 
   const queueFiles = useCallback(
     async (files: File[]) => {
+      // Public demo never uploads: the API rejects sessionless uploads by design.
+      // Show a clear message instead of attempting (no anonymous upload vector).
+      if (isDemo) {
+        setValidationError(t("File upload is available in the full version"));
+        return;
+      }
       const selectedFiles = files.slice(0, PROJECT_FILE_MAX_COUNT);
       const validFiles = selectedFiles.filter((file) => validateProjectFile(file) === null);
       setValidationError(
@@ -84,7 +92,7 @@ export function UploadDialog() {
         pendingUploadIds.current = [];
       }
     },
-    [addUploads, startUpload, t, updateUpload]
+    [addUploads, startUpload, t, updateUpload, isDemo]
   );
 
   return (
@@ -146,36 +154,58 @@ export function UploadDialog() {
                       </select>
                     </label>
                   </div>
-                  <button
-                    type="button"
-                    className={`mt-4 flex min-h-44 w-full flex-col items-center justify-center rounded-md border border-dashed px-5 text-center transition-colors ${
-                      dragging ? "border-primary bg-primary/[0.07]" : "border-white/15 bg-white/[0.02] hover:border-primary/40 hover:bg-white/[0.035]"
-                    }`}
-                    disabled={isUploading}
-                    onClick={() => inputRef.current?.click()}
-                    onDragEnter={(event) => { event.preventDefault(); setDragging(true); }}
-                    onDragOver={(event) => event.preventDefault()}
-                    onDragLeave={() => setDragging(false)}
-                    onDrop={(event) => {
-                      event.preventDefault();
-                      setDragging(false);
-                      void queueFiles(Array.from(event.dataTransfer.files));
-                    }}
-                  >
-                    <span className="grid size-11 place-items-center rounded-md border border-primary/20 bg-primary/[0.08] text-primary">
-                      <UploadCloud className="size-5" />
-                    </span>
-                    <span className="mt-3 text-sm font-medium text-white/85">{t("Drop engineering files here")}</span>
-                    <span className="mt-1 text-xs text-white/35">{t("PDF, DWG, DXF, IFC and images · up to 256 MB")}</span>
-                  </button>
-                  <input
-                    ref={inputRef}
-                    className="sr-only"
-                    type="file"
-                    multiple
-                    accept={PROJECT_FILE_ACCEPT.join(",")}
-                    onChange={(event) => void queueFiles(Array.from(event.target.files ?? []))}
-                  />
+                  {isDemo ? (
+                    <div className="mt-4 flex min-h-44 w-full flex-col items-center justify-center rounded-md border border-dashed border-white/15 bg-white/[0.02] px-5 text-center">
+                      <span className="grid size-11 place-items-center rounded-md border border-primary/20 bg-primary/[0.08] text-primary">
+                        <Lock className="size-5" />
+                      </span>
+                      <span className="mt-3 text-sm font-medium text-white/85">
+                        {t("File upload is available in the full version")}
+                      </span>
+                      <span className="mt-1 max-w-sm text-xs text-white/40">
+                        {t("In the demo you can try the AI engineer with sample context.")}
+                      </span>
+                      <a
+                        href="/login"
+                        className="mt-4 inline-flex h-9 items-center gap-2 rounded-md bg-primary px-4 text-[13px] font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+                      >
+                        {t("Sign in for full access")}
+                      </a>
+                    </div>
+                  ) : (
+                    <>
+                      <button
+                        type="button"
+                        className={`mt-4 flex min-h-44 w-full flex-col items-center justify-center rounded-md border border-dashed px-5 text-center transition-colors ${
+                          dragging ? "border-primary bg-primary/[0.07]" : "border-white/15 bg-white/[0.02] hover:border-primary/40 hover:bg-white/[0.035]"
+                        }`}
+                        disabled={isUploading}
+                        onClick={() => inputRef.current?.click()}
+                        onDragEnter={(event) => { event.preventDefault(); setDragging(true); }}
+                        onDragOver={(event) => event.preventDefault()}
+                        onDragLeave={() => setDragging(false)}
+                        onDrop={(event) => {
+                          event.preventDefault();
+                          setDragging(false);
+                          void queueFiles(Array.from(event.dataTransfer.files));
+                        }}
+                      >
+                        <span className="grid size-11 place-items-center rounded-md border border-primary/20 bg-primary/[0.08] text-primary">
+                          <UploadCloud className="size-5" />
+                        </span>
+                        <span className="mt-3 text-sm font-medium text-white/85">{t("Drop engineering files here")}</span>
+                        <span className="mt-1 text-xs text-white/35">{t("PDF, DWG, DXF, IFC and images · up to 256 MB")}</span>
+                      </button>
+                      <input
+                        ref={inputRef}
+                        className="sr-only"
+                        type="file"
+                        multiple
+                        accept={PROJECT_FILE_ACCEPT.join(",")}
+                        onChange={(event) => void queueFiles(Array.from(event.target.files ?? []))}
+                      />
+                    </>
+                  )}
                   {validationError ? (
                     <p className="mt-2 text-xs text-red-300/80" role="alert">{validationError}</p>
                   ) : null}
