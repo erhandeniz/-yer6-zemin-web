@@ -6,7 +6,8 @@
     "dev": "next dev --hostname 127.0.0.1",
     "build": "node --max-old-space-size=4096 --max-semi-space-size=128 ./node_modules/next/dist/bin/next build",
     "start": "node scripts/static-server.mjs",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "seo:indexnow": "node scripts/indexnow-ping.mjs"
   },
   "dependencies": {
     "framer-motion": "^12.23.26",
