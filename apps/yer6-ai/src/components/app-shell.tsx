@@ -88,8 +88,14 @@ function SidebarContent({ onNavigate }: { onNavigate?: () => void }) {
       <nav className="flex-1 overflow-y-auto px-3 py-5" aria-label={t("Workspace navigation")}>
         <p className="technical-label mb-2 px-3 text-white/25">{t("Workspace")}</p>
         <div className="space-y-1">{primaryNavigation.map(renderLink)}</div>
-        <p className="technical-label mb-2 mt-7 px-3 text-white/25">{t("Management")}</p>
-        <div className="space-y-1">{systemNavigation.map(renderLink)}</div>
+        {/* Management (Admin/Team/Settings) is hidden in the public demo: it must
+            never expose internal admin data, and /demo/admin has no page (404). */}
+        {!isDemo ? (
+          <>
+            <p className="technical-label mb-2 mt-7 px-3 text-white/25">{t("Management")}</p>
+            <div className="space-y-1">{systemNavigation.map(renderLink)}</div>
+          </>
+        ) : null}
       </nav>
       <div className="mx-3 mb-1 flex h-9 items-center rounded-md border border-white/[0.075] bg-white/[0.025] p-0.5" aria-label={t("Language")}>
         <Languages className="mx-2 size-3.5 text-primary/70" />
