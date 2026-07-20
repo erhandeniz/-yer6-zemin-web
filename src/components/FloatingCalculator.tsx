@@ -166,68 +166,88 @@ export function FloatingCalculator() {
 
       const doc = new jsPDF();
       const pageWidth = doc.internal.pageSize.width;
+      const pageHeight = doc.internal.pageSize.height;
       
       // Top accent bar (Gold)
       doc.setFillColor(212, 175, 55);
       doc.rect(0, 0, pageWidth, 4, "F");
 
-      // HEADER
-      // Left side
+      // HEADER BACKGROUND (Dark)
+      doc.setFillColor(15, 15, 15);
+      doc.rect(0, 4, pageWidth, 35, "F");
+
+      try {
+        // Try to load the YER6 logo
+        const logoImg = new Image();
+        logoImg.src = "/apple-icon.png";
+        await new Promise((resolve, reject) => {
+          logoImg.onload = resolve;
+          logoImg.onerror = reject;
+        });
+        doc.addImage(logoImg, "PNG", 14, 8, 26, 26);
+      } catch (e) {
+        // Fallback if image fails to load
+        doc.setFont("helvetica", "bold");
+        doc.setFontSize(28);
+        doc.setTextColor(212, 175, 55);
+        doc.text("YER6", 14, 26);
+      }
+
+      // HEADER TEXT (Left side next to logo)
       doc.setFont("helvetica", "bold");
-      doc.setFontSize(28);
-      doc.setTextColor(30, 30, 30);
-      doc.text("YER6", 14, 20);
+      doc.setFontSize(22);
+      doc.setTextColor(255, 255, 255);
+      doc.text("YER6", 45, 19);
       
       doc.setFont("helvetica", "bold");
-      doc.setFontSize(8);
+      doc.setFontSize(9);
       doc.setTextColor(212, 175, 55); // Gold
-      doc.text("ZEMIN GUCLENDIRME . JEOTEKNIK MUHENDISLIK", 14, 26);
+      doc.text("ZEMIN GUCLENDIRME . JEOTEKNIK MUHENDISLIK", 45, 26);
       
-      // Right side
+      // HEADER TEXT (Right side)
       doc.setFont("helvetica", "normal");
       doc.setFontSize(10);
-      doc.setTextColor(30, 30, 30);
-      doc.text("GROUND INTELLIGENCE", pageWidth - 14, 16, { align: "right" });
+      doc.setTextColor(255, 255, 255);
+      doc.text("GROUND INTELLIGENCE", pageWidth - 14, 19, { align: "right" });
       
       doc.setFontSize(8);
-      doc.setTextColor(100, 100, 100);
-      doc.text("Jet Grout . Fore Kazik . Zemin Guclendirme . Jeoteknik Tasarim", pageWidth - 14, 21, { align: "right" });
+      doc.setTextColor(150, 150, 150);
       doc.text("www.yer6zemin.com.tr", pageWidth - 14, 26, { align: "right" });
 
       // Title
       doc.setFont("helvetica", "bold");
-      doc.setFontSize(18);
+      doc.setFontSize(16);
       doc.setTextColor(20, 20, 20);
-      doc.text("YAPAY ZEKA ON METRAJ ANALIZI", 14, 45);
+      doc.text("YAPAY ZEKA FIZIBILITE VE DEGERLENDIRME RAPORU", 14, 52);
       
       doc.setFont("helvetica", "normal");
       doc.setFontSize(10);
       doc.setTextColor(100, 100, 100);
-      doc.text(`${mode?.toUpperCase().replace("-", " ")} Yontemi ile Zemin Guclendirme`, 14, 52);
+      doc.text(`${mode?.toUpperCase().replace("-", " ")} Yontemi ile Zemin Guclendirme`, 14, 58);
 
       // Info Table (Black Header)
       const today = new Date().toLocaleDateString("tr-TR");
       const reportNo = `Y6-AI-${Math.floor(Math.random() * 10000)}`;
 
       autoTable(doc, {
-        startY: 60,
+        startY: 65,
         head: [["RAPOR NO", "TARIH", "OLUSTURAN", "MUHATAP"]],
         body: [[reportNo, today, "YER6 AI Muhendis", "Sayin Ilgili"]],
         theme: 'grid',
-        headStyles: { fillColor: [20, 20, 20], textColor: [255, 255, 255], fontStyle: "bold", fontSize: 9 },
-        bodyStyles: { textColor: [40, 40, 40], fontSize: 10, fontStyle: "bold" },
-        styles: { cellPadding: 4 }
+        headStyles: { fillColor: [20, 20, 20], textColor: [255, 255, 255], fontStyle: "bold", fontSize: 8 },
+        bodyStyles: { textColor: [40, 40, 40], fontSize: 9, fontStyle: "bold" },
+        styles: { cellPadding: 3 }
       });
 
       let finalY = (doc as any).lastAutoTable.finalY || 80;
 
       // Section 01: PROJE PARAMETRELERI
       doc.setFont("helvetica", "bold");
-      doc.setFontSize(12);
+      doc.setFontSize(11);
       doc.setTextColor(212, 175, 55);
-      doc.text("01", 14, finalY + 15);
+      doc.text("01", 14, finalY + 12);
       doc.setTextColor(20, 20, 20);
-      doc.text("PROJE PARAMETRELERI", 22, finalY + 15);
+      doc.text("PROJE PARAMETRELERI", 21, finalY + 12);
 
       const inputData = [
         ["Imalat Yontemi", mode?.toUpperCase().replace("-", " ") || ""],
@@ -244,23 +264,23 @@ export function FloatingCalculator() {
       }
 
       autoTable(doc, {
-        startY: finalY + 20,
+        startY: finalY + 16,
         body: inputData,
         theme: 'plain',
-        bodyStyles: { textColor: [60, 60, 60], fontSize: 10 },
+        bodyStyles: { textColor: [60, 60, 60], fontSize: 9 },
         columnStyles: { 0: { fontStyle: "bold", cellWidth: 60 } },
         styles: { cellPadding: 2 }
       });
 
-      finalY = (doc as any).lastAutoTable.finalY || finalY + 40;
+      finalY = (doc as any).lastAutoTable.finalY || finalY + 35;
 
       // Section 02: METRAJ VE BUTCE
       doc.setFont("helvetica", "bold");
-      doc.setFontSize(12);
+      doc.setFontSize(11);
       doc.setTextColor(212, 175, 55);
-      doc.text("02", 14, finalY + 15);
+      doc.text("02", 14, finalY + 12);
       doc.setTextColor(20, 20, 20);
-      doc.text("METRAJ VE TAHMINI BUTCE", 22, finalY + 15);
+      doc.text("METRAJ VE TAHMINI BUTCE", 21, finalY + 12);
 
       // Clean up text for ASCII compatibility in jsPDF
       const sanitize = (str: string) => str.replace(/İ/g, 'I').replace(/ı/g, 'i').replace(/Ş/g, 'S').replace(/ş/g, 's').replace(/Ğ/g, 'G').replace(/ğ/g, 'g').replace(/Ç/g, 'C').replace(/ç/g, 'c').replace(/Ö/g, 'O').replace(/ö/g, 'o').replace(/Ü/g, 'U').replace(/ü/g, 'u');
@@ -273,16 +293,16 @@ export function FloatingCalculator() {
       ];
 
       autoTable(doc, {
-        startY: finalY + 20,
+        startY: finalY + 16,
         head: [["IMALAT TANIMI", "MIKTAR", "TAHMINI BUTCE"]],
         body: resultData,
         theme: 'grid',
-        headStyles: { fillColor: [20, 20, 20], textColor: [255, 255, 255], fontStyle: "bold", fontSize: 9 },
-        bodyStyles: { textColor: [40, 40, 40], fontSize: 10 },
-        styles: { cellPadding: 4 }
+        headStyles: { fillColor: [20, 20, 20], textColor: [255, 255, 255], fontStyle: "bold", fontSize: 8 },
+        bodyStyles: { textColor: [40, 40, 40], fontSize: 9 },
+        styles: { cellPadding: 3 }
       });
 
-      finalY = (doc as any).lastAutoTable.finalY || finalY + 60;
+      finalY = (doc as any).lastAutoTable.finalY || finalY + 45;
 
       // Budget Total Row
       autoTable(doc, {
@@ -292,55 +312,60 @@ export function FloatingCalculator() {
           ["MALZEMELI (ANAHTAR TESLIM) BUTCE ARALIGI", results?.price.value.replace(/₺/g, "TL") || ""]
         ],
         theme: 'grid',
-        bodyStyles: { fillColor: [245, 235, 200], textColor: [20, 20, 20], fontStyle: "bold", fontSize: 11 },
+        bodyStyles: { fillColor: [245, 235, 200], textColor: [20, 20, 20], fontStyle: "bold", fontSize: 10 },
         columnStyles: { 0: { halign: "right" }, 1: { halign: "right", cellWidth: 70 } },
-        styles: { cellPadding: 4 }
+        styles: { cellPadding: 3 }
       });
 
       finalY = (doc as any).lastAutoTable.finalY || finalY + 15;
 
       // Section 03: NOTLAR
       doc.setFont("helvetica", "bold");
-      doc.setFontSize(12);
+      doc.setFontSize(11);
       doc.setTextColor(212, 175, 55);
-      doc.text("03", 14, finalY + 15);
+      doc.text("03", 14, finalY + 12);
       doc.setTextColor(20, 20, 20);
-      doc.text("NOTLAR", 22, finalY + 15);
+      doc.text("NOTLAR", 21, finalY + 12);
 
       doc.setFont("helvetica", "normal");
-      doc.setFontSize(9);
+      doc.setFontSize(8);
       doc.setTextColor(80, 80, 80);
       const notes = [
         ". Bu analiz, YER6 Zemin Guclendirme Yapay Zeka Asistani tarafindan girilen parametrelere gore otomatik olusturulmustur.",
         ". Kesin miktar, metraj ve fiyatlandirma ancak saha etudu ve mimari projeler incelendikten sonra uzman muhendis kadromuz tarafindan sunulacaktir.",
-        ". Isbu belge resmi bir fiyat teklifi niteligi tasimaz, on fizibilite ve butce planlamasi icin referans amaclidir."
+        ". Isbu belge resmi bir fiyat teklifi niteligi tasimaz, fizibilite ve butce planlamasi icin referans amaclidir."
       ];
       
-      let noteY = finalY + 25;
+      let noteY = finalY + 18;
       notes.forEach(note => {
         const splitNote = doc.splitTextToSize(note, 180);
         doc.text(splitNote, 14, noteY);
-        noteY += splitNote.length * 5;
+        noteY += splitNote.length * 4.5;
       });
+
+      // Footer Check
+      if (noteY > pageHeight - 40) {
+        doc.addPage();
+        noteY = 20;
+      }
 
       // Sign-off
       doc.setFont("helvetica", "normal");
-      doc.setFontSize(10);
+      doc.setFontSize(9);
       doc.setTextColor(40, 40, 40);
       doc.text("Saygilarimizla,", 14, noteY + 10);
       doc.setFont("helvetica", "bold");
-      doc.text("YER6 ZEMIN GUCLENDIRME JEOTEKNIK MUHENDISLIK LTD. STI.", 14, noteY + 17);
+      doc.text("YER6 ZEMIN GUCLENDIRME JEOTEKNIK MUHENDISLIK LTD. STI.", 14, noteY + 16);
 
       // Footer
-      const pageHeight = doc.internal.pageSize.height;
       doc.setDrawColor(200, 200, 200);
-      doc.line(14, pageHeight - 20, pageWidth - 14, pageHeight - 20);
+      doc.line(14, pageHeight - 16, pageWidth - 14, pageHeight - 16);
       
       doc.setFont("helvetica", "normal");
-      doc.setFontSize(8);
+      doc.setFontSize(7);
       doc.setTextColor(120, 120, 120);
-      doc.text("YER6 ZEMIN GUCLENDIRME JEOTEKNIK MUHENDISLIK LTD. STI. . Sht. Ali Gaffar Okan Cad. No:42-A Golbasi / ANKARA", 14, pageHeight - 14);
-      doc.text("T: +90 532 378 06 91   .   info@yer6zemin.com.tr   .   www.yer6zemin.com.tr", 14, pageHeight - 9);
+      doc.text("YER6 ZEMIN GUCLENDIRME JEOTEKNIK MUHENDISLIK LTD. STI. . Sht. Ali Gaffar Okan Cad. No:42-A Golbasi / ANKARA", 14, pageHeight - 11);
+      doc.text("T: +90 532 378 06 91   .   info@yer6zemin.com.tr   .   www.yer6zemin.com.tr", 14, pageHeight - 7);
 
       doc.save(`YER6_AI_Metraj_${mode}.pdf`);
     } catch (error) {
