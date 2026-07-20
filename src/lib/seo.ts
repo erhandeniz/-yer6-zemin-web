@@ -314,3 +314,41 @@ export function generateFAQSchema(faqs: { question: string; answer: string }[]) 
     }))
   };
 }
+
+export function generateArticleSchema(article: {
+  headline: string;
+  description: string;
+  image?: string;
+  datePublished: string;
+  dateModified?: string;
+  authorName?: string;
+  url: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: article.headline,
+    description: article.description,
+    image: article.image || `${siteConfig.siteUrl}/opengraph-image.png`,
+    datePublished: article.datePublished,
+    dateModified: article.dateModified || article.datePublished,
+    author: {
+      "@type": "Person",
+      name: article.authorName || "Erhan Deniz",
+      jobTitle: "Geoteknik Uzmanı",
+      url: `${siteConfig.siteUrl}/about`
+    },
+    publisher: {
+      "@type": "Organization",
+      name: siteConfig.companyName,
+      logo: {
+        "@type": "ImageObject",
+        url: `${siteConfig.siteUrl}/icon.png`
+      }
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": article.url
+    }
+  };
+}

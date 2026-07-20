@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import type { KnowledgeArticle } from "@/types/knowledge";
 import { publishedKnowledgeArticles, getKnowledgeArticleBySlug } from "@/data/knowledge";
 import { siteConfig } from "@/lib/siteConfig";
+import { generateArticleSchema, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo";
 import { KnowledgeArticleContent } from "./KnowledgeArticleContent";
 
 type Props = {
@@ -49,65 +50,21 @@ export default async function KnowledgeArticlePage({ params }: Props) {
   }
 
   const canonical = `${siteConfig.siteUrl}/knowledge/${article.slug}/`;
-  const articleSchema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
+  const articleSchema = generateArticleSchema({
     headline: article.title,
     description: article.description,
     datePublished: article.publishedAt,
     dateModified: article.updatedAt,
-    mainEntityOfPage: canonical,
-    keywords: article.keywords,
-    author: {
-      "@type": "Organization",
-      name: siteConfig.companyName,
-      url: siteConfig.siteUrl
-    },
-    publisher: {
-      "@type": "Organization",
-      name: siteConfig.companyName,
-      url: siteConfig.siteUrl
-    }
-  };
-  const faqSchema =
-    article.faq.length > 0
-      ? {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          mainEntity: article.faq.map((item) => ({
-            "@type": "Question",
-            name: item.question,
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: item.answer
-            }
-          }))
-        }
-      : null;
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Ana Sayfa",
-        item: siteConfig.siteUrl
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Bilgi Merkezi",
-        item: `${siteConfig.siteUrl}/knowledge/`
-      },
-      {
-        "@type": "ListItem",
-        position: 3,
-        name: article.title,
-        item: canonical
-      }
-    ]
-  };
+    url: canonical
+  });
+
+  const faqSchema = generateFAQSchema(article.faq);
+
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Ana Sayfa", item: siteConfig.siteUrl },
+    { name: "Bilgi Merkezi", item: `${siteConfig.siteUrl}/knowledge/` },
+    { name: article.title, item: canonical }
+  ]);
 
   return (
     <>

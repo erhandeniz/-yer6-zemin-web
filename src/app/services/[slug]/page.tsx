@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import { notFound } from "next/navigation";
 import { getServiceBySlug, getServicePaths } from "@/lib/content";
-import { getServiceSchemaDescription, localSeoServiceAreas } from "@/lib/seo";
+import { getServiceSchemaDescription, localSeoServiceAreas, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo";
 import { siteConfig } from "@/lib/siteConfig";
 import { ServiceDetailContent } from "./ServiceDetailContent";
 
@@ -92,50 +92,18 @@ export default async function ServiceDetailPage({ params }: Props) {
       serviceUrl: canonical
     }
   };
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Ana Sayfa",
-        item: siteConfig.siteUrl
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Hizmetler",
-        item: `${siteConfig.siteUrl}/services/`
-      },
-      {
-        "@type": "ListItem",
-        position: 3,
-        name: service.title,
-        item: canonical
-      }
-    ]
-  };
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Ana Sayfa", item: siteConfig.siteUrl },
+    { name: "Hizmetler", item: `${siteConfig.siteUrl}/services/` },
+    { name: service.title, item: canonical }
+  ]);
 
   const faqItems =
     "faq" in service && Array.isArray((service as { faq?: { question: string; answer: string }[] }).faq)
       ? (service as { faq?: { question: string; answer: string }[] }).faq ?? []
       : [];
-  const faqSchema =
-    faqItems.length > 0
-      ? {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          mainEntity: faqItems.map((item) => ({
-            "@type": "Question",
-            name: item.question,
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: item.answer
-            }
-          }))
-        }
-      : null;
+      
+  const faqSchema = generateFAQSchema(faqItems);
 
   return (
     <>
