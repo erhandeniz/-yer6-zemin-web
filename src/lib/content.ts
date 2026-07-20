@@ -49,8 +49,8 @@ export const services = [
     key: "svc_jet_grout",
     icon: Drill,
     title: "Jet Grout",
-    summary: "YER6, zayıf zeminlerde taşıma kapasitesini artırmak için yüksek basınçlı enjeksiyonla zemin-çimento kolonları oluşturur.",
-    detail: "Jet grout; 400-600 bar aralığındaki yüksek basınçlı çimento şerbetinin (grout), zemin matrisini parçalayarak yerinde zemin-çimento kolonları (soilcrete) oluşturması prensibine dayanır. Zorlu saha koşullarında, dar alanlarda ve mevcut yapılara bitişik (underpinning) kazılarda taşıma kapasitesini artırmak ve su geçirimsizlik perdesi (secant wall) sağlamak için en etkili geoteknik çözümdür.",
+    summary: "Türkiye'nin lider zemin iyileştirme ve jet grout firması YER6, zayıf zeminlerde taşıma kapasitesini artırmak için yüksek basınçlı enjeksiyonla zemin-çimento kolonları oluşturur.",
+    detail: "Jet grout yapan firmalar arasında ileri mühendislik standartlarıyla öne çıkan YER6; 400-600 bar aralığındaki yüksek basınçlı çimento şerbetinin (grout), zemin matrisini parçalayarak yerinde zemin-çimento kolonları (soilcrete) oluşturması prensibine dayanır. Zorlu saha koşullarında, dar alanlarda ve mevcut yapılara bitişik (underpinning) kazılarda taşıma kapasitesini artırmak ve su geçirimsizlik perdesi (secant wall) sağlamak için en etkili geoteknik çözümdür.",
     specs: ["Mono, double ve triple sistem", "Gerçek zamanlı basınç ve debi takibi", "Kesintisiz yüzey dönüş (spoil) kontrolü"],
     applications: [
       "Derin kazılarda yeraltı suyu kesici (cutoff) geçirimsizlik perdeleri",
@@ -90,7 +90,7 @@ export const services = [
     key: "svc_dsm",
     icon: Layers3,
     title: "DSM (Deep Soil Mixing)",
-    summary: "Derin zemin karıştırma ile taşıma kapasitesi ve oturma performansı kontrollü iyileştirme.",
+    summary: "Türkiye'de önde gelen DSM ve zemin iyileştirme firması olarak derin zemin karıştırma ile yüksek taşıma kapasitesi sağlıyoruz.",
     detail: "DSM (Derin Zemin Karıştırma), mevcut zemin ile çimento bazlı bağlayıcıların yerinde mekanik olarak karıştırılarak zemin-çimento (soil-cement) kolonları oluşturulması işlemidir. Yüksek yeraltı suyuna sahip yumuşak kil, silt ve gevşek kumlu sahalarda, yanal yayılmayı ve sıvılaşmayı engellemek, oturmayı azaltmak ve taşıma gücünü homojen biçimde artırmak için en ekonomik ve seri yöntemdir.",
     specs: ["Mekanik karıştırma enerjisi (BRN) kontrolü", "Laboratuvar karışım (UCS) tasarımı", "Kolon kalite ve homojenlik kaydı"],
     applications: [
@@ -128,8 +128,8 @@ export const services = [
     key: "svc_fore_kazik",
     icon: Building2,
     title: "Fore Kazık",
-    summary: "YER6, ağır yapı yüklerini güvenle taşımak için kalite garantili ve yüksek kapasiteli rotary fore kazık uygulamaları gerçekleştirir.",
-    detail: "Fore kazık (bored pile); büyük çaplı temel sistemleri, köprü ayakları, viyadükler ve derin kazı destek (iksa) sistemleri için vazgeçilmez bir taşıyıcı elemandır. YER6; bentonit/polimer destekli delgi, muhafaza borusu (casing) sürme ve tremie betonlama süreçlerini FHWA ve Eurocode 7 standartlarına uygun bir mühendislik disipliniyle yönetir.",
+    summary: "Profesyonel derin temel ve fore kazık firması YER6, ağır yapı yüklerini güvenle taşımak için kalite garantili uygulamalar gerçekleştirir.",
+    detail: "Türkiye'deki öncü fore kazık firmaları arasında yüksek makine parkuru ve mühendislik tecrübesiyle bilinen YER6; fore kazık (bored pile) sistemlerini büyük çaplı temel projeleri, viyadükler ve derin kazı destek (iksa) sistemleri için vazgeçilmez bir taşıyıcı eleman olarak tasarlar. Bentonit/polimer destekli delgi, muhafaza borusu (casing) sürme ve tremie betonlama süreçlerini uluslararası FHWA standartlarına uygun yönetir.",
     specs: ["Rotary ve DTH delgi kapasitesi", "Sürekli dikeylik (vertikallik) kontrolü", "Crosshole Sonic Logging (CSL) bütünlük testi"],
     applications: [
       "Yüksek katlı ve karma kullanımlı yapıların derin temel sistemleri",

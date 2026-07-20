@@ -246,6 +246,20 @@ export function localBusinessSchema() {
         availableLanguage: ["Turkish", "English"]
       }
     ],
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        opens: "08:00",
+        closes: "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: "Sunday",
+        opens: "09:00",
+        closes: "17:00"
+      }
+    ],
     areaServed: localSeoServiceAreas.map((name) => ({
       "@type": name === "Türkiye geneli" ? "Country" : "AdministrativeArea",
       name
