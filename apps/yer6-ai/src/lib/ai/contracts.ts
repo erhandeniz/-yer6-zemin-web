@@ -24,7 +24,7 @@ export type SourceCitation = {
   standardCode?: string;
 };
 
-export type AIProviderName = "openai" | "cloudflare-workers-ai";
+export type AIProviderName = "openai" | "cloudflare-workers-ai" | "deepseek";
 
 export type AIStreamEvent =
   | { type: "meta"; requestId: string; provider: AIProviderName }

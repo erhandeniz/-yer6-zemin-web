@@ -2,9 +2,15 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Calculator, X, ChevronRight, Download, Activity, Zap, HardHat, Hammer, MountainSnow, BotMessageSquare, ArrowLeft, Loader2 } from "lucide-react";
+import { Calculator, X, ChevronRight, Download, Activity, Zap, HardHat, Hammer, MountainSnow, BotMessageSquare, ArrowLeft, Loader2, Send } from "lucide-react";
 import { computeEstimate, generateReportNo, type Estimate, type CalcMode as EngineMode } from "@/lib/costEngine";
 import { fetchLiveFx, BASELINE_FX, type FxRates } from "@/lib/fx";
+
+// Canlı YER6 AI ("abi") Worker adresi. Statik export'ta derleme zamanı env ile
+// override edilebilir; varsayılan üretim alan adı.
+const YER6_AI_URL = (process.env.NEXT_PUBLIC_YER6_AI_URL || "https://ai.yer6zemin.com.tr").replace(/\/$/, "");
+
+type ChatMsg = { role: "user" | "assistant"; content: string };
 
 type CalcMode = "jet-grout" | "fore-kazik" | "dsm" | "ankraj" | "mini-kazik" | null;
 type Complexity = "quick" | "advanced";
@@ -34,6 +40,11 @@ export function FloatingCalculator() {
   const [typedText, setTypedText] = useState("");
   const [isTyping, setIsTyping] = useState(false);
 
+  // Canlı AI sohbeti (scripted açılış analizinden sonra gerçek danışman)
+  const [chatMessages, setChatMessages] = useState<ChatMsg[]>([]);
+  const [chatInput, setChatInput] = useState("");
+  const [chatLoading, setChatLoading] = useState(false);
+
   // Canlı döviz kuru — hesaplayıcı açıldığında bir kez çekilir, baseline'a düşer.
   const [fx, setFx] = useState<FxRates>(BASELINE_FX);
 
@@ -54,6 +65,8 @@ export function FloatingCalculator() {
       setStep("selection");
       setMode(null);
       setTypedText("");
+      setChatMessages([]);
+      setChatInput("");
     }
   };
 
@@ -163,6 +176,103 @@ export function FloatingCalculator() {
         setIsTyping(false);
       }
     }, 15); // Typewriter speed (hızlı)
+  };
+
+  // Canlı danışmana gönderilecek proje + maliyet bağlamı (AI'ın uydurmaması için).
+  const buildContextPreamble = () => {
+    if (!results) return "";
+    const e = results.estimate;
+    const q = e.quantities;
+    return [
+      "Sen YER6 Zemin Güçlendirme Geoteknik Mühendislik firmasının uzman AI danışmanısın.",
+      "Kısa, net, profesyonel ve dürüst Türkçe yanıt ver. Bilmediğini uydurma; kesin rakam için saha etüdü ve uzman görüşmesi öner.",
+      "Aşağıdaki proje ve YER6 maliyet motorunun ürettiği tahmini temel al:",
+      `Yöntem: ${mode}`,
+      `Parametreler: ${count} adet, ${depth} m boy, ${diameter} m çap, mod: ${complexity}${complexity === "advanced" ? `, katsayı ${factor}, zemin ${soilType}` : ""}`,
+      `Metraj: beton ${Math.round(q.concreteM3)} m³, çelik ${q.steelTon.toFixed(1)} t, çimento ${q.cementTon.toFixed(1)} t, delgi ${Math.round(q.drillMeters)} m, mazot ${Math.round(q.dieselLt)} lt, şantiye ${q.rigDays} gün, CO2 ${q.co2Ton} t`,
+      `Anahtar teslim (KDV hariç): ${formatPrice(e.turnkeyMin)} - ${formatPrice(e.turnkeyMax)}; sadece işçilik: ${formatPrice(e.laborMin)} - ${formatPrice(e.laborMax)}`,
+      `Kur: 1 USD = ${e.fx.usdTry.toFixed(2)} ₺ (${e.fx.live ? "canlı" : "baseline"}), fiyat kataloğu ${e.priceBookAsOf}.`,
+      "Bu rakamlar ön tahmindir; kesin teklif saha etüdü sonrası verilir."
+    ].join("\n");
+  };
+
+  const sendChat = async () => {
+    const question = chatInput.trim();
+    if (!question || chatLoading || !results) return;
+    setChatInput("");
+    const history = [...chatMessages, { role: "user", content: question } as ChatMsg];
+    setChatMessages([...history, { role: "assistant", content: "" }]);
+    setChatLoading(true);
+
+    const setLastAssistant = (content: string) =>
+      setChatMessages((prev) => {
+        const copy = [...prev];
+        copy[copy.length - 1] = { role: "assistant", content };
+        return copy;
+      });
+
+    try {
+      const apiMessages: ChatMsg[] = [
+        { role: "user" as const, content: buildContextPreamble() },
+        { role: "assistant" as const, content: typedText || getFullAiMessage() },
+        ...history
+      ].slice(-18);
+
+      const res = await fetch(`${YER6_AI_URL}/api/public/estimate-chat`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          requestId: crypto.randomUUID(),
+          conversationId: `mkt-${Date.now()}`,
+          locale: "tr",
+          messages: apiMessages
+        })
+      });
+      if (!res.ok || !res.body) throw new Error(`HTTP ${res.status}`);
+
+      const reader = res.body.getReader();
+      const decoder = new TextDecoder();
+      let buffer = "";
+      let acc = "";
+      let gotError = false;
+
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        buffer += decoder.decode(value, { stream: true });
+        const parts = buffer.split("\n\n");
+        buffer = parts.pop() || "";
+        for (const part of parts) {
+          const dataLine = part.split("\n").find((l) => l.startsWith("data:"));
+          if (!dataLine) continue;
+          try {
+            const evt = JSON.parse(dataLine.slice(5).trim());
+            if (evt.type === "delta" && evt.text) {
+              acc += evt.text;
+              setLastAssistant(acc);
+            } else if (evt.type === "error") {
+              gotError = true;
+            }
+          } catch {
+            /* yarım SSE parçası, sonraki turda tamamlanır */
+          }
+        }
+      }
+
+      if (!acc) {
+        setLastAssistant(
+          gotError
+            ? "Canlı danışmana şu an ulaşılamıyor. Kısa süre sonra tekrar deneyebilir ya da WhatsApp hattımızdan yazabilirsiniz."
+            : "Yanıt alınamadı, tekrar dener misiniz?"
+        );
+      }
+    } catch {
+      setLastAssistant(
+        "Canlı danışmana şu an ulaşılamıyor. Parametre analizi ve PDF raporu çalışıyor; detaylı görüşme için WhatsApp hattımıza yazabilirsiniz."
+      );
+    } finally {
+      setChatLoading(false);
+    }
   };
 
   const generatePDF = async () => {
@@ -619,16 +729,69 @@ export function FloatingCalculator() {
                         </div>
                       </div>
 
+                      {/* Canlı danışman soru-cevap balonları */}
+                      {chatMessages.map((m, i) => (
+                        <div key={i} className={`flex gap-4 ${m.role === "user" ? "justify-end" : ""}`}>
+                          {m.role === "assistant" && (
+                            <div className="flex-shrink-0">
+                              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gold-300 text-obsidian shadow-[0_0_15px_rgba(212,175,55,0.4)]">
+                                <BotMessageSquare className="h-5 w-5" />
+                              </div>
+                            </div>
+                          )}
+                          <div
+                            className={
+                              m.role === "user"
+                                ? "max-w-[80%] rounded-2xl rounded-tr-none bg-gold-300/15 border border-gold-300/25 p-3 text-sm text-white/90"
+                                : "flex-1 rounded-2xl rounded-tl-none bg-[#111] border border-white/10 p-4 text-sm leading-relaxed text-white/90 whitespace-pre-line font-light shadow-inner"
+                            }
+                          >
+                            {m.role === "assistant"
+                              ? m.content
+                                ? m.content.split("**").map((t, j) => (j % 2 !== 0 ? <strong key={j} className="text-gold-300 font-semibold">{t}</strong> : t))
+                                : chatLoading && i === chatMessages.length - 1
+                                  ? <span className="inline-flex items-center gap-1 text-white/50"><Loader2 className="h-3.5 w-3.5 animate-spin" /> Danışman yazıyor…</span>
+                                  : null
+                              : m.content}
+                          </div>
+                        </div>
+                      ))}
+
                       <AnimatePresence>
                         {!isTyping && (
                           <motion.div
                             initial={{ opacity: 0, scale: 0.9, y: 10 }}
                             animate={{ opacity: 1, scale: 1, y: 0 }}
-                            className="mt-2 flex justify-end"
+                            className="mt-2 flex flex-col gap-3"
                           >
+                            {/* Canlı danışmana soru sor */}
+                            <div className="flex items-end gap-2">
+                              <textarea
+                                value={chatInput}
+                                onChange={(e) => setChatInput(e.target.value)}
+                                onKeyDown={(e) => {
+                                  if (e.key === "Enter" && !e.shiftKey) {
+                                    e.preventDefault();
+                                    sendChat();
+                                  }
+                                }}
+                                rows={1}
+                                placeholder="YER6 danışmanına sorun (ör. bu yöntem zeminime uygun mu?)"
+                                className="flex-1 resize-none rounded-xl border border-white/10 bg-white/5 px-3 py-2.5 text-sm text-white placeholder:text-white/30 focus:border-gold-300/50 focus:outline-none"
+                              />
+                              <button
+                                onClick={sendChat}
+                                disabled={chatLoading || !chatInput.trim()}
+                                aria-label="Gönder"
+                                className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl bg-gold-300 text-obsidian transition-transform hover:scale-105 disabled:cursor-not-allowed disabled:opacity-40"
+                              >
+                                {chatLoading ? <Loader2 className="h-4 w-4 animate-spin" /> : <Send className="h-4 w-4" />}
+                              </button>
+                            </div>
+
                             <button
                               onClick={generatePDF}
-                              className="group relative flex items-center gap-2 rounded-xl bg-gold-300/10 border border-gold-300/30 px-4 py-2.5 text-xs font-semibold text-gold-300 hover:bg-gold-300 hover:text-obsidian transition-all shadow-[0_0_10px_rgba(212,175,55,0.1)] hover:shadow-[0_0_15px_rgba(212,175,55,0.3)]"
+                              className="group relative flex items-center gap-2 self-end rounded-xl bg-gold-300/10 border border-gold-300/30 px-4 py-2.5 text-xs font-semibold text-gold-300 hover:bg-gold-300 hover:text-obsidian transition-all shadow-[0_0_10px_rgba(212,175,55,0.1)] hover:shadow-[0_0_15px_rgba(212,175,55,0.3)]"
                             >
                               <Download className="h-4 w-4 group-hover:scale-110 transition-transform" />
                               PDF Raporu İndir

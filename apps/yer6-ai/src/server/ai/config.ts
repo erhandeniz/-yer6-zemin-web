@@ -2,8 +2,13 @@ export const DEFAULT_AI_MODELS = {
   // Primary brain: GPT-5.6 via the OpenAI Responses API. Override with
   // OPENAI_MODEL only for verified, accessible model ids.
   openai: "gpt-5.6",
-  cloudflare: "@cf/openai/gpt-oss-120b"
+  cloudflare: "@cf/openai/gpt-oss-120b",
+  // DeepSeek is OpenAI-compatible (chat completions). Used as the primary,
+  // low-cost brain for the PUBLIC marketing bot (see public provider chain).
+  deepseek: "deepseek-chat"
 } as const;
+
+export const DEEPSEEK_BASE_URL = "https://api.deepseek.com";
 
 export type AIProviderPreference = "auto" | "openai" | "cloudflare";
 export type AIReasoningEffort = "minimal" | "low" | "medium" | "high";
@@ -13,6 +18,8 @@ export type AIConfig = {
   openAIApiKey?: string;
   openAIModel: string;
   cloudflareModel: string;
+  deepSeekApiKey?: string;
+  deepSeekModel: string;
   maxOutputTokens: number;
   reasoningEffort: AIReasoningEffort;
 };
@@ -37,6 +44,8 @@ export function getAIConfig(environment: NodeJS.ProcessEnv = process.env): AICon
     openAIApiKey: environment.OPENAI_API_KEY?.trim() || undefined,
     openAIModel: environment.OPENAI_MODEL?.trim() || DEFAULT_AI_MODELS.openai,
     cloudflareModel: environment.CLOUDFLARE_AI_MODEL?.trim() || DEFAULT_AI_MODELS.cloudflare,
+    deepSeekApiKey: environment.DEEPSEEK_API_KEY?.trim() || undefined,
+    deepSeekModel: environment.DEEPSEEK_MODEL?.trim() || DEFAULT_AI_MODELS.deepseek,
     maxOutputTokens: outputTokenLimit(environment.AI_MAX_OUTPUT_TOKENS),
     // Reasoning models (e.g. gpt-5-mini) default to "low" so multi-tool jobs
     // finish their tool round-trips and final answer within the platform's
