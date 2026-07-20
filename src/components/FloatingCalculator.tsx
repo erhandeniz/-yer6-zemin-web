@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Calculator, X, ChevronRight, Download, Activity, Zap, HardHat, Hammer, MountainSnow, BotMessageSquare, Sparkles, ArrowLeft } from "lucide-react";
+import { Calculator, X, ChevronRight, Download, Activity, Zap, HardHat, Hammer, MountainSnow, BotMessageSquare, ArrowLeft, Loader2 } from "lucide-react";
 
 type CalcMode = "jet-grout" | "fore-kazik" | "dsm" | "ankraj" | "mini-kazik" | null;
 type Complexity = "quick" | "advanced";
@@ -58,6 +58,20 @@ export function FloatingCalculator() {
     const co2PerUnit = mode === "jet-grout" ? 250 : mode === "fore-kazik" ? 350 : 150; 
     const totalCO2 = Math.round((totalVolume * co2PerUnit) / 1000); // Tons of CO2
 
+    // Estimated Pricing Logic (TL per meter)
+    let unitPrice = 1000; 
+    if (mode === "fore-kazik") unitPrice = 3500;
+    if (mode === "jet-grout") unitPrice = 1200;
+    if (mode === "dsm") unitPrice = 1500;
+    if (mode === "ankraj") unitPrice = 1800;
+    if (mode === "mini-kazik") unitPrice = 2000;
+
+    const baseCost = totalLength * unitPrice * (complexity === "advanced" ? factor : 1.1);
+    const minCost = Math.round(baseCost * 0.9);
+    const maxCost = Math.round(baseCost * 1.2);
+
+    const priceText = `${(minCost / 1000000).toFixed(1)} Milyon ₺ - ${(maxCost / 1000000).toFixed(1)} Milyon ₺`;
+
     switch (mode) {
       case "fore-kazik":
       case "mini-kazik":
@@ -66,6 +80,7 @@ export function FloatingCalculator() {
           metric2: { label: "Demir (Ton)", value: (totalVolume * 120) / 1000 },
           metric3: { label: "Şantiye (Gün)", value: rigDays },
           metric4: { label: "CO2 İzi (Ton)", value: totalCO2 },
+          price: { label: "Tahmini Bütçe (TL)", value: priceText, minCost, maxCost }
         };
       case "jet-grout":
       case "dsm":
@@ -75,6 +90,7 @@ export function FloatingCalculator() {
           metric2: { label: "Delgi (m)", value: totalLength },
           metric3: { label: "Şantiye (Gün)", value: rigDays },
           metric4: { label: "CO2 İzi (Ton)", value: totalCO2 },
+          price: { label: "Tahmini Bütçe (TL)", value: priceText, minCost, maxCost }
         };
       case "ankraj":
         return {
@@ -82,6 +98,7 @@ export function FloatingCalculator() {
           metric2: { label: "Delgi (m)", value: totalLength },
           metric3: { label: "Şantiye (Gün)", value: rigDays },
           metric4: { label: "Enjeksiyon (m³)", value: totalLength * 0.05 },
+          price: { label: "Tahmini Bütçe (TL)", value: priceText, minCost, maxCost }
         };
       default:
         return null;
@@ -93,18 +110,18 @@ export function FloatingCalculator() {
   const getFullAiMessage = () => {
     if (!mode || !results) return "";
     
-    let text = `Merhaba, projenizi inceledim. YER6 Geoteknik Mühendislik standartlarına göre yaptığım ön analizin sonuçları aşağıdadır:\n\n`;
+    let text = `YER6 Yapay Zeka Mühendisi olarak projenizi analiz ettim. Yüksek standartlı kalite politikalarımıza göre çıkardığım sonuçlar:\n\n`;
     
     if (mode === "fore-kazik" || mode === "mini-kazik") {
-      text += `Seçmiş olduğunuz ${depth} metre derinliğinde, ${diameter}m çapındaki toplam ${count} adet ${mode.replace("-", " ")} imalatı için tahmini olarak ${Math.round(results.metric1.value).toLocaleString("tr-TR")} m³ beton ve ${Math.round(results.metric2.value).toLocaleString("tr-TR")} Ton çelik donatı kullanılacaktır. `;
+      text += `Seçmiş olduğunuz ${depth} metre derinliğinde, ${diameter}m çapındaki ${count} adet ${mode.replace("-", " ")} kuyu imalatı için güvenli tolerans paylarıyla birlikte ${Math.round(results.metric1.value).toLocaleString("tr-TR")} m³ beton ve ${Math.round(results.metric2.value).toLocaleString("tr-TR")} Ton çelik donatı kullanılacaktır. `;
     } else if (mode === "jet-grout" || mode === "dsm") {
-      text += `Tasarlanan ${depth} metre etkin boylu, ${diameter}m çapındaki ${count} kolonluk ${mode.replace("-", " ")} zemin iyileştirme projesi için yaklaşık ${Math.round(results.metric1.value).toLocaleString("tr-TR")} Ton çimento sarfiyatı hesaplanmıştır. Toplam ${Math.round(results.metric2.value).toLocaleString("tr-TR")} metre delgi işlemi gerçekleştirilecektir. `;
+      text += `Tasarlanan ${depth} metre etkin boylu, ${diameter}m çapındaki ${count} kolonluk ${mode.replace("-", " ")} operasyonu için ideal mühendislik verileriyle ${Math.round(results.metric1.value).toLocaleString("tr-TR")} Ton çimento sarfiyatı hesaplanmıştır. Toplam ${Math.round(results.metric2.value).toLocaleString("tr-TR")} metre delgi işlemi uygulanacaktır. `;
     } else if (mode === "ankraj") {
-      text += `Planlanan ${depth} metre boyundaki ${count} adet ankraj imalatında tahmini ${Math.round(results.metric1.value).toLocaleString("tr-TR")} metre halat donatısı ve ${Math.round(results.metric4.value).toLocaleString("tr-TR")} m³ basınçlı enjeksiyon kullanılacaktır. `;
+      text += `Planlanan ${depth} metre boyundaki ${count} adet ankraj destek sisteminde, stabiliteyi sağlamak üzere tahmini ${Math.round(results.metric1.value).toLocaleString("tr-TR")} metre çelik halat ve ${Math.round(results.metric4.value).toLocaleString("tr-TR")} m³ yüksek basınçlı enjeksiyon kullanılacaktır. `;
     }
     
-    text += `Şantiyedeki makine kapasitesi göz önüne alındığında, operasyonun tahmini olarak ${results.metric3.value} gün sürmesi planlanmaktadır. Ayrıca bu imalatın çevreye olası Karbon (CO2) ayak izi etkisi ${results.metric4.value} Ton olarak öngörülmüştür.\n\n`;
-    text += `Daha detaylı ve bağlayıcı bir mühendislik/fiyat teklifi için, raporunuzu indirip uzman ekibimizle iletişime geçebilirsiniz.`;
+    text += `\n\n🕒 Şantiye çalışma süresi makine parkımıza göre tahmini ${results.metric3.value} gün olarak hesaplanmıştır.`;
+    text += `\n💰 Türkiye'deki güncel müteahhitlik verileri baz alındığında, bu işin anahtar teslim YER6 kalitesiyle tahmini bütçesi **${results.price.value}** bandında seyredecektir.`;
     
     return text;
   };
@@ -124,87 +141,110 @@ export function FloatingCalculator() {
         clearInterval(interval);
         setIsTyping(false);
       }
-    }, 20); // Typewriter speed
+    }, 15); // Typewriter speed (hızlı)
   };
 
   const generatePDF = async () => {
     try {
-      // Dinamik import: Tarayıcı uyumsuzluklarını ve SSR hatalarını çözer.
       const { jsPDF } = await import("jspdf");
       const autoTable = (await import("jspdf-autotable")).default;
 
       const doc = new jsPDF();
       
-      // Add YER6 Header
+      // YER6 MASSIVE HEADER (Prestijli Görünüm)
+      doc.setFillColor(10, 10, 10);
+      doc.rect(0, 0, 210, 40, "F");
+
       doc.setFont("helvetica", "bold");
-      doc.setFontSize(22);
-      doc.setTextColor(212, 175, 55); // Gold color
-      doc.text("YER6 ZEMIN GUCLENDIRME", 14, 20);
+      doc.setFontSize(26);
+      doc.setTextColor(212, 175, 55); // Gold
+      doc.text("YER6", 14, 20);
       
-      doc.setFont("helvetica", "normal");
-      doc.setFontSize(10);
-      doc.setTextColor(100, 100, 100);
-      doc.text("Geoteknik Muhendislik & Saha Uygulamalari", 14, 28);
-      doc.text("Web: www.yer6zemin.com.tr", 14, 34);
-      doc.text("Email: info@yer6zemin.com.tr", 14, 40);
+      doc.setFontSize(14);
+      doc.setTextColor(255, 255, 255);
+      doc.text("ZEMIN GUCLENDIRME", 45, 20);
       
-      // Title
+      doc.setFontSize(9);
+      doc.setTextColor(150, 150, 150);
+      doc.text("Web: www.yer6zemin.com.tr  |  Email: info@yer6zemin.com.tr", 14, 30);
+      
+      // Kurumsal Yüceltme Metni
       doc.setFont("helvetica", "bold");
       doc.setFontSize(16);
       doc.setTextColor(20, 20, 20);
-      doc.text(`Yapay Zeka On Metraj Raporu: ${mode?.toUpperCase()}`, 14, 55);
+      doc.text(`YAPAY ZEKA (AI) ON ANALIZ RAPORU`, 14, 55);
+      
+      doc.setFont("helvetica", "italic");
+      doc.setFontSize(10);
+      doc.setTextColor(80, 80, 80);
+      const prestijMetni = "Türkiye'nin lider geoteknik otoritesi YER6 Zemin Güçlendirme, uluslararası standartlarda ve deprem yönetmeliklerine %100 uygun vizyoner projeler uretmektedir. Asagidaki on metraj ve butce analizi, YER6'nin ustun muhendislik veritabani kullanilarak Yapay Zeka tarafindan size ozel hazirlanmistir.";
+      
+      const splitText = doc.splitTextToSize(prestijMetni, 180);
+      doc.text(splitText, 14, 65);
       
       // Input Data
       const inputData = [
-        ["Cap (m)", diameter.toString()],
-        ["Boy/Derinlik (m)", depth.toString()],
-        ["Adet (Kuyu/Kolon)", count.toString()]
+        ["Imalat Yontemi", mode?.toUpperCase() || ""],
+        ["Proje Capi (m)", diameter.toString()],
+        ["Uygulama Boyu (m)", depth.toString()],
+        ["Toplam Adet", count.toString()]
       ];
       
       if (complexity === "advanced") {
-        inputData.push(["Guvenlik/Fire Katsayisi", factor.toString()]);
+        inputData.push(["Muhendislik Fire Katsayisi", factor.toString()]);
         if (mode === "jet-grout" || mode === "dsm") {
-           inputData.push(["Zemin Sinifi", soilType === "soft" ? "Yumusak" : "Sert"]);
+           inputData.push(["Zemin Karakteri", soilType === "soft" ? "Yumusak (Kil/Silt)" : "Sert (Kum/Cakil)"]);
         }
       }
 
       autoTable(doc, {
-        startY: 62,
-        head: [["Parametre", "Kullanici Girdisi"]],
+        startY: 90,
+        head: [["PROJE PARAMETRELERI", "KULLANICI VERILERI"]],
         body: inputData,
         theme: 'grid',
-        headStyles: { fillColor: [212, 175, 55] }
+        headStyles: { fillColor: [212, 175, 55], textColor: [0, 0, 0], fontStyle: "bold" },
+        styles: { fontSize: 10 }
       });
       
       // Results
-      const finalY = (doc as any).lastAutoTable.finalY || 62;
+      const finalY = (doc as any).lastAutoTable.finalY || 90;
       
       const resultData = [
         [results?.metric1.label || "", Math.round(results?.metric1.value || 0).toLocaleString("tr-TR")],
         [results?.metric2.label || "", Math.round(results?.metric2.value || 0).toLocaleString("tr-TR")],
         [results?.metric3.label || "", Math.round(results?.metric3.value || 0).toLocaleString("tr-TR")],
-        [results?.metric4.label || "", Math.round(results?.metric4.value || 0).toLocaleString("tr-TR")]
+        [results?.metric4.label || "", Math.round(results?.metric4.value || 0).toLocaleString("tr-TR")],
+        ["TAHMINI PROJE BUTCESI", results?.price.value || ""]
       ];
 
       doc.setFontSize(14);
+      doc.setFont("helvetica", "bold");
       doc.setTextColor(20, 20, 20);
-      doc.text("Hesaplanan Sonuclar", 14, finalY + 15);
+      doc.text("YAPAY ZEKA METRAJ & MALIYET SONUCLARI", 14, finalY + 15);
 
       autoTable(doc, {
         startY: finalY + 20,
-        head: [["Metrik", "Miktar"]],
+        head: [["HESAPLANAN METRIK", "TAHMINI DEGER"]],
         body: resultData,
         theme: 'grid',
-        headStyles: { fillColor: [40, 40, 40] }
+        headStyles: { fillColor: [40, 40, 40] },
+        styles: { fontSize: 10 },
+        willDrawCell: function(data: any) {
+          if (data.row.index === 4 && data.section === 'body') {
+            doc.setFillColor(245, 235, 200); // Highlight budget row
+          }
+        }
       });
       
       const finalY2 = (doc as any).lastAutoTable.finalY || finalY + 20;
+      doc.setFont("helvetica", "normal");
       doc.setFontSize(9);
       doc.setTextColor(150, 150, 150);
-      doc.text("Not: Bu belge YER6 Zemin Guclendirme yapay zeka asistanı tarafindan", 14, finalY2 + 20);
-      doc.text("on bilgi amaciyla uretilmistir. Kesin ve baglayici mühendislik hesabi degildir.", 14, finalY2 + 25);
+      doc.text("ONEMLI UYARI: Bu hesaplama YER6 AI tarafindan on bilgi vermek amaciyla otomatik uretilmistir.", 14, finalY2 + 20);
+      doc.text("Kesin miktar, metraj ve fiyatlandirma ancak saha etudu ve mimari projeler incelendikten sonra", 14, finalY2 + 25);
+      doc.text("uzman muhendis kadromuz tarafindan sunulacaktir. Lutfen iletisime geciniz.", 14, finalY2 + 30);
 
-      doc.save(`YER6_Yapay_Zeka_Raporu_${mode}.pdf`);
+      doc.save(`YER6_AI_Muhendis_Raporu_${mode}.pdf`);
     } catch (error) {
       console.error("PDF olusturulurken hata olustu:", error);
       alert("PDF olusturulurken bir hata olustu. Lutfen tekrar deneyin.");
@@ -229,8 +269,8 @@ export function FloatingCalculator() {
                     <BotMessageSquare className="h-5 w-5" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-white">YER6 Asistan</h3>
-                    <p className="text-xs text-gold-300">Yapay Zeka Destekli Mühendislik</p>
+                    <h3 className="font-semibold text-white">YER6 AI Mühendis</h3>
+                    <p className="text-xs text-gold-300">Akıllı Metraj & Bütçe Asistanı</p>
                   </div>
                 </div>
                 <button onClick={toggleOpen} className="rounded-full p-2 text-white/50 hover:bg-white/10 hover:text-white transition-colors">
@@ -238,7 +278,7 @@ export function FloatingCalculator() {
                 </button>
               </div>
 
-              <div className="p-5 max-h-[75vh] overflow-y-auto no-scrollbar pb-8">
+              <div className="p-5 max-h-[75vh] overflow-y-auto no-scrollbar pb-8 relative">
                 <AnimatePresence mode="wait">
                   {step === "selection" && (
                     <motion.div
@@ -302,8 +342,8 @@ export function FloatingCalculator() {
                         className="group relative flex w-full items-center justify-center gap-2 overflow-hidden rounded-xl bg-gold-300 py-4 text-sm font-bold text-obsidian shadow-[0_0_20px_rgba(212,175,55,0.3)] transition-all hover:scale-[1.02] active:scale-95"
                       >
                         <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity" />
-                        <Sparkles className="h-4 w-4" />
-                        Yapay Zekaya Analiz Ettir
+                        <Loader2 className="h-4 w-4 animate-spin hidden group-active:block" />
+                        <span className="group-active:hidden">Analizi Başlat</span>
                       </button>
                     </motion.div>
                   )}
@@ -313,9 +353,9 @@ export function FloatingCalculator() {
                       key="chat"
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
-                      className="flex flex-col gap-5"
+                      className="flex flex-col gap-4 relative"
                     >
-                      <div className="flex items-center gap-2">
+                      <div className="flex items-center justify-between">
                         <button onClick={() => setStep("input")} className="text-xs text-white/50 hover:text-gold-300 flex items-center gap-1">
                           <ArrowLeft className="h-3 w-3" /> Parametreleri Değiştir
                         </button>
@@ -327,27 +367,28 @@ export function FloatingCalculator() {
                             <BotMessageSquare className="h-5 w-5" />
                           </div>
                         </div>
-                        <div className="flex-1 rounded-2xl rounded-tl-none bg-white/5 border border-white/10 p-5 shadow-inner">
-                          <p className="text-sm leading-relaxed text-white/90 whitespace-pre-line">
-                            {typedText}
+                        <div className="flex-1 rounded-2xl rounded-tl-none bg-[#111] border border-white/10 p-5 shadow-inner">
+                          <div className="text-sm leading-relaxed text-white/90 whitespace-pre-line font-light">
+                            {/* Simple Markdown-like bold parser for **text** */}
+                            {typedText.split("**").map((text, i) => i % 2 !== 0 ? <strong key={i} className="text-gold-300 font-semibold">{text}</strong> : text)}
                             {isTyping && <span className="inline-block w-2 h-4 ml-1 bg-gold-300 animate-pulse" />}
-                          </p>
+                          </div>
                         </div>
                       </div>
 
                       <AnimatePresence>
                         {!isTyping && (
                           <motion.div
-                            initial={{ opacity: 0, y: 10 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            className="pl-14 pt-2 flex justify-end"
+                            initial={{ opacity: 0, scale: 0.9, y: 10 }}
+                            animate={{ opacity: 1, scale: 1, y: 0 }}
+                            className="mt-2 flex justify-end"
                           >
                             <button
                               onClick={generatePDF}
-                              className="group flex items-center gap-2 rounded-xl border border-gold-300/30 bg-gold-300/10 px-5 py-3 text-sm font-semibold text-gold-300 hover:bg-gold-300 hover:text-obsidian transition-colors"
+                              className="group relative flex items-center gap-2 rounded-xl bg-gold-300/10 border border-gold-300/30 px-4 py-2.5 text-xs font-semibold text-gold-300 hover:bg-gold-300 hover:text-obsidian transition-all shadow-[0_0_10px_rgba(212,175,55,0.1)] hover:shadow-[0_0_15px_rgba(212,175,55,0.3)]"
                             >
-                              <Download className="h-4 w-4" />
-                              Raporu PDF İndir
+                              <Download className="h-4 w-4 group-hover:scale-110 transition-transform" />
+                              PDF Raporu İndir
                             </button>
                           </motion.div>
                         )}
