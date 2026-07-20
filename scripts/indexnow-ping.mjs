@@ -16,12 +16,26 @@ const KEY_LOCATION = `https://${HOST}/${KEY}.txt`;
 const SITEMAP = `https://${HOST}/sitemap.xml`;
 const ENDPOINT = "https://api.indexnow.org/indexnow"; // tüm katılan motorlara dağıtır
 
+async function verifyKeyFile(retries = 6, delayMs = 8000) {
+  // Deploy sonrası edge yayılması birkaç saniye sürebilir; birkaç kez dene.
+  for (let attempt = 1; attempt <= retries; attempt++) {
+    try {
+      const res = await fetch(KEY_LOCATION, { cache: "no-store" });
+      const body = (await res.text()).trim();
+      if (res.ok && body === KEY) return true;
+      console.log(`anahtar dosyası henüz hazır değil (deneme ${attempt}/${retries}, HTTP ${res.status})...`);
+    } catch (e) {
+      console.log(`anahtar dosyası kontrol hatası (deneme ${attempt}/${retries}): ${String(e?.message ?? e)}`);
+    }
+    if (attempt < retries) await new Promise((r) => setTimeout(r, delayMs));
+  }
+  return false;
+}
+
 async function main() {
-  // 1) Anahtar dosyası yayında ve doğru içerikte mi?
-  const keyRes = await fetch(KEY_LOCATION);
-  const keyBody = (await keyRes.text()).trim();
-  if (!keyRes.ok || keyBody !== KEY) {
-    console.error(`DURDU: anahtar dosyası doğrulanamadı (${KEY_LOCATION} -> ${keyRes.status}). Önce siteyi deploy et.`);
+  // 1) Anahtar dosyası yayında ve doğru içerikte mi? (yayılma için tekrar dener)
+  if (!(await verifyKeyFile())) {
+    console.error(`DURDU: anahtar dosyası doğrulanamadı (${KEY_LOCATION}). Deploy'un edge'e yayılmasını bekleyip tekrar çalıştır.`);
     process.exit(1);
   }
 
