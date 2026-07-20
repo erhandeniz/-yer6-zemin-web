@@ -3,10 +3,17 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Calculator, X, ChevronRight, Download, Activity, Zap, HardHat, Hammer, MountainSnow, BotMessageSquare, ArrowLeft, Loader2 } from "lucide-react";
+import { computeEstimate, generateReportNo, type Estimate, type CalcMode as EngineMode } from "@/lib/costEngine";
+import { fetchLiveFx, BASELINE_FX, type FxRates } from "@/lib/fx";
 
 type CalcMode = "jet-grout" | "fore-kazik" | "dsm" | "ankraj" | "mini-kazik" | null;
 type Complexity = "quick" | "advanced";
 type Step = "selection" | "input" | "chat";
+
+// Fontlar bir kez indirilip base64 olarak modül düzeyinde cache'lenir; her PDF'te
+// tekrar indirip kodlamayı önler (performans) ve tek yükleme noktası sağlar.
+let cachedFonts: { regular: string; bold: string } | null = null;
+let fontLoadFailed = false;
 
 export function FloatingCalculator() {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,6 +34,20 @@ export function FloatingCalculator() {
   const [typedText, setTypedText] = useState("");
   const [isTyping, setIsTyping] = useState(false);
 
+  // Canlı döviz kuru — hesaplayıcı açıldığında bir kez çekilir, baseline'a düşer.
+  const [fx, setFx] = useState<FxRates>(BASELINE_FX);
+
+  useEffect(() => {
+    if (!isOpen) return;
+    let active = true;
+    fetchLiveFx().then((rates) => {
+      if (active) setFx(rates);
+    });
+    return () => {
+      active = false;
+    };
+  }, [isOpen]);
+
   const toggleOpen = () => {
     setIsOpen(!isOpen);
     if (!isOpen) {
@@ -41,76 +62,61 @@ export function FloatingCalculator() {
     setStep("input");
   };
 
+  const formatPrice = (val: number) => {
+    if (val >= 1000000) return (val / 1000000).toFixed(2) + " Milyon ₺";
+    return Math.round(val).toLocaleString("tr-TR") + " ₺";
+  };
+
   const calculateResults = () => {
     if (!mode) return null;
-    
-    // Shared variables
-    const r = diameter / 2;
-    const singleVolume = Math.PI * r * r * depth;
-    const totalVolume = singleVolume * count * (complexity === "advanced" ? factor : 1.1);
-    const totalLength = depth * count;
-    
-    // Rig days (Assuming average daily meterage)
-    const dailyMeters = mode === "jet-grout" ? 300 : mode === "dsm" ? 400 : mode === "ankraj" ? 150 : 80;
-    const rigDays = Math.ceil(totalLength / dailyMeters);
-    
-    // CO2 (Rough estimate kg CO2 per unit)
-    const co2PerUnit = mode === "jet-grout" ? 250 : mode === "fore-kazik" ? 350 : 150; 
-    const totalCO2 = Math.round((totalVolume * co2PerUnit) / 1000); // Tons of CO2
 
-    // Estimated Pricing Logic (TL per meter)
-    let unitPrice = 1000; 
-    if (mode === "fore-kazik") unitPrice = 3500;
-    if (mode === "jet-grout") unitPrice = 1200;
-    if (mode === "dsm") unitPrice = 1500;
-    if (mode === "ankraj") unitPrice = 1800;
-    if (mode === "mini-kazik") unitPrice = 2000;
+    // Aşağıdan-yukarı maliyet motoru: metraj × güncel birim fiyat (canlı kur +
+    // zamana bağlı eskalasyon) + işçilik + makine + mazot + genel gider + kâr.
+    const estimate: Estimate = computeEstimate({
+      mode: mode as EngineMode,
+      count,
+      depth,
+      diameter,
+      complexity,
+      soilType,
+      factor,
+      fx,
+    });
 
-    const baseCost = totalLength * unitPrice * (complexity === "advanced" ? factor : 1.1);
-    
-    // Malzemeli + Iscilik (Turnkey)
-    const minCost = Math.round(baseCost * 0.9);
-    const maxCost = Math.round(baseCost * 1.2);
-    
-    // Sadece Iscilik (~35% of total for geotech)
-    const minLaborCost = Math.round(minCost * 0.35);
-    const maxLaborCost = Math.round(maxCost * 0.35);
-
-    const formatPrice = (val: number) => {
-      if (val >= 1000000) return (val / 1000000).toFixed(2) + " Milyon ₺";
-      return Math.round(val).toLocaleString("tr-TR") + " ₺";
-    };
-
-    const priceText = `${formatPrice(minCost)} - ${formatPrice(maxCost)}`;
-    const laborPriceText = `${formatPrice(minLaborCost)} - ${formatPrice(maxLaborCost)}`;
+    const q = estimate.quantities;
+    const priceText = `${formatPrice(estimate.turnkeyMin)} - ${formatPrice(estimate.turnkeyMax)}`;
+    const laborPriceText = `${formatPrice(estimate.laborMin)} - ${formatPrice(estimate.laborMax)}`;
+    const price = { label: "Tahmini Bütçe (TL)", value: priceText, laborValue: laborPriceText };
 
     switch (mode) {
       case "fore-kazik":
       case "mini-kazik":
         return {
-          metric1: { label: "Toplam Beton (m³)", value: totalVolume },
-          metric2: { label: "Demir (Ton)", value: (totalVolume * 120) / 1000 },
-          metric3: { label: "Şantiye (Gün)", value: rigDays },
-          metric4: { label: "CO2 İzi (Ton)", value: totalCO2 },
-          price: { label: "Tahmini Bütçe (TL)", value: priceText, laborValue: laborPriceText }
+          metric1: { label: "Toplam Beton (m³)", value: q.concreteM3 },
+          metric2: { label: "Demir (Ton)", value: q.steelTon },
+          metric3: { label: "Şantiye (Gün)", value: q.rigDays },
+          metric4: { label: "CO2 İzi (Ton)", value: q.co2Ton },
+          price,
+          estimate,
         };
       case "jet-grout":
       case "dsm":
-        const dosage = complexity === "advanced" && soilType === "soft" ? 450 : 350;
         return {
-          metric1: { label: "Çimento (Ton)", value: (totalLength * dosage) / 1000 },
-          metric2: { label: "Delgi (m)", value: totalLength },
-          metric3: { label: "Şantiye (Gün)", value: rigDays },
-          metric4: { label: "CO2 İzi (Ton)", value: totalCO2 },
-          price: { label: "Tahmini Bütçe (TL)", value: priceText, laborValue: laborPriceText }
+          metric1: { label: "Çimento (Ton)", value: q.cementTon },
+          metric2: { label: "Delgi (m)", value: q.drillMeters },
+          metric3: { label: "Şantiye (Gün)", value: q.rigDays },
+          metric4: { label: "CO2 İzi (Ton)", value: q.co2Ton },
+          price,
+          estimate,
         };
       case "ankraj":
         return {
-          metric1: { label: "Halat (m)", value: totalLength * 4 },
-          metric2: { label: "Delgi (m)", value: totalLength },
-          metric3: { label: "Şantiye (Gün)", value: rigDays },
-          metric4: { label: "Enjeksiyon (m³)", value: totalLength * 0.05 },
-          price: { label: "Tahmini Bütçe (TL)", value: priceText, laborValue: laborPriceText }
+          metric1: { label: "Halat (m)", value: q.strandM },
+          metric2: { label: "Delgi (m)", value: q.drillMeters },
+          metric3: { label: "Şantiye (Gün)", value: q.rigDays },
+          metric4: { label: "Enjeksiyon (m³)", value: q.groutM3 },
+          price,
+          estimate,
         };
       default:
         return null;
@@ -165,32 +171,47 @@ export function FloatingCalculator() {
       const autoTable = (await import("jspdf-autotable")).default;
 
       const doc = new jsPDF();
-      
-      // Font loading logic
-      try {
-        const fetchFont = async (fontPath: string) => {
-          const res = await fetch(fontPath);
-          const buffer = await res.arrayBuffer();
-          let binary = '';
-          const bytes = new Uint8Array(buffer);
-          for (let i = 0; i < bytes.byteLength; i++) {
-            binary += String.fromCharCode(bytes[i]);
-          }
-          return btoa(binary);
-        };
-        
-        const robotoRegular = await fetchFont("/fonts/Roboto-Regular.ttf");
-        const robotoBold = await fetchFont("/fonts/Roboto-Bold.ttf");
-        
-        doc.addFileToVFS("Roboto-Regular.ttf", robotoRegular);
-        doc.addFileToVFS("Roboto-Bold.ttf", robotoBold);
-        doc.addFont("Roboto-Regular.ttf", "Roboto", "normal");
-        doc.addFont("Roboto-Bold.ttf", "Roboto", "bold");
-        
-        doc.setFont("Roboto", "normal");
-      } catch (e) {
-        console.error("Font yuklenemedi:", e);
+
+      // Font yükleme — bir kez indir, base64 cache'le, tekrar kullan.
+      // KRİTİK: Türkçe fontlar yüklenemezse jsPDF sessizce Helvetica'ya düşüp
+      // "ı ş ğ ç ö ü" karakterlerini bozar. Bunu ÖNLEMEK için: font yüklenemezse
+      // bozuk PDF üretmek yerine kullanıcıyı bilgilendirip işlemi durduruyoruz.
+      if (!cachedFonts && !fontLoadFailed) {
+        try {
+          const fetchFont = async (fontPath: string) => {
+            const res = await fetch(fontPath);
+            if (!res.ok) throw new Error(`Font HTTP ${res.status}: ${fontPath}`);
+            const buffer = await res.arrayBuffer();
+            let binary = "";
+            const bytes = new Uint8Array(buffer);
+            for (let i = 0; i < bytes.byteLength; i++) {
+              binary += String.fromCharCode(bytes[i]);
+            }
+            return btoa(binary);
+          };
+          const [regular, bold] = await Promise.all([
+            fetchFont("/fonts/Roboto-Regular.ttf"),
+            fetchFont("/fonts/Roboto-Bold.ttf"),
+          ]);
+          cachedFonts = { regular, bold };
+        } catch (e) {
+          console.error("Font yuklenemedi:", e);
+          fontLoadFailed = true;
+        }
       }
+
+      if (!cachedFonts) {
+        alert(
+          "Rapor fontları yüklenemediği için PDF oluşturulamadı (Türkçe karakterlerin doğru çıkması için font gereklidir). Lütfen internet bağlantınızı kontrol edip tekrar deneyin."
+        );
+        return;
+      }
+
+      doc.addFileToVFS("Roboto-Regular.ttf", cachedFonts.regular);
+      doc.addFileToVFS("Roboto-Bold.ttf", cachedFonts.bold);
+      doc.addFont("Roboto-Regular.ttf", "Roboto", "normal");
+      doc.addFont("Roboto-Bold.ttf", "Roboto", "bold");
+      doc.setFont("Roboto", "normal");
 
       const pageWidth = doc.internal.pageSize.width;
       const pageHeight = doc.internal.pageSize.height;
@@ -254,7 +275,8 @@ export function FloatingCalculator() {
 
       // Info Table (Black Header)
       const today = new Date().toLocaleDateString("tr-TR");
-      const reportNo = `Y6-MHD-${Math.floor(Math.random() * 10000)}`;
+      // Benzersiz, izlenebilir, sıralanabilir rapor no (YER6-YYYYMMDD-HHMM-XXXX)
+      const reportNo = generateReportNo();
 
       autoTable(doc, {
         startY: 65,
@@ -343,6 +365,79 @@ export function FloatingCalculator() {
 
       finalY = (doc as any).lastAutoTable.finalY || finalY + 15;
 
+      // Section 02b: MALİYET DÖKÜMÜ (şeffaf, kalem kalem, KDV hariç)
+      const est = results?.estimate;
+      if (est) {
+        const fmt = (n: number, d = 0) =>
+          n.toLocaleString("tr-TR", { minimumFractionDigits: d, maximumFractionDigits: d });
+
+        doc.setFont("Roboto", "bold");
+        doc.setFontSize(11);
+        doc.setTextColor(212, 175, 55);
+        doc.text("02b", 14, finalY + 12);
+        doc.setTextColor(20, 20, 20);
+        doc.text("MALİYET DÖKÜMÜ (KDV HARİÇ)", 24, finalY + 12);
+
+        // Canlı kur & katalog şeffaflık satırı
+        doc.setFont("Roboto", "normal");
+        doc.setFontSize(7.5);
+        doc.setTextColor(110, 110, 110);
+        const kurEtiket = est.fx.live ? "Canlı kur" : "Kur (baseline)";
+        doc.text(
+          `${kurEtiket}: 1 USD = ${fmt(est.fx.usdTry, 2)} ₺  •  1 EUR = ${fmt(est.fx.eurTry, 2)} ₺  •  kaynak: ${est.fx.source}`,
+          14,
+          finalY + 17
+        );
+        doc.text(
+          `Birim fiyat kataloğu: ${est.priceBookAsOf} • otomatik güncelleme (canlı kur + zaman endeksi, +${est.escalationMonths} ay) • model ${est.modelVersion}`,
+          14,
+          finalY + 21
+        );
+
+        const breakdownRows = est.lineItems.map((li) => [
+          li.name,
+          `${fmt(li.qty, li.unit === "ton" || li.unit === "m³" ? 1 : 0)} ${li.unit}`,
+          fmt(li.unitPrice, 0),
+          fmt(li.total, 0),
+        ]);
+
+        autoTable(doc, {
+          startY: finalY + 24,
+          head: [["KALEM", "MİKTAR", "BİRİM FİYAT (₺)", "TUTAR (₺)"]],
+          body: breakdownRows,
+          theme: "grid",
+          styles: { font: "Roboto", cellPadding: 2.5, fontSize: 8 },
+          headStyles: { fillColor: [20, 20, 20], textColor: [255, 255, 255], fontStyle: "bold", fontSize: 8 },
+          bodyStyles: { textColor: [40, 40, 40] },
+          columnStyles: {
+            1: { halign: "right" },
+            2: { halign: "right" },
+            3: { halign: "right", fontStyle: "bold" },
+          },
+        });
+        finalY = (doc as any).lastAutoTable.finalY || finalY + 40;
+
+        const kdv = (est.turnkeyPoint) * est.kdvRate;
+        autoTable(doc, {
+          startY: finalY,
+          body: [
+            ["Doğrudan maliyet + sarf", fmt(est.directCost, 0) + " ₺"],
+            ["Şantiye genel gideri", fmt(est.overhead, 0) + " ₺"],
+            ["Firma kârı", fmt(est.profit, 0) + " ₺"],
+            ["ARA TOPLAM (KDV hariç)", fmt(est.turnkeyPoint, 0) + " ₺"],
+            [`KDV (%${Math.round(est.kdvRate * 100)})`, fmt(kdv, 0) + " ₺"],
+            ["GENEL TOPLAM (KDV dahil)", fmt(est.turnkeyPoint + kdv, 0) + " ₺"],
+          ],
+          theme: "plain",
+          styles: { font: "Roboto", cellPadding: 2, fontSize: 8.5 },
+          columnStyles: {
+            0: { halign: "right", cellWidth: 120, textColor: [80, 80, 80] },
+            1: { halign: "right", fontStyle: "bold", textColor: [20, 20, 20] },
+          },
+        });
+        finalY = (doc as any).lastAutoTable.finalY || finalY + 30;
+      }
+
       // Section 03: NOTLAR
       doc.setFont("Roboto", "bold");
       doc.setFontSize(11);
@@ -391,7 +486,8 @@ export function FloatingCalculator() {
       doc.text("YER6 ZEMİN GÜÇLENDİRME JEOTEKNİK MÜHENDİSLİK LTD. ŞTİ. • Şht. Ali Gaffar Okan Cad. No:42-A Gölbaşı / ANKARA", 14, pageHeight - 11);
       doc.text("T: +90 532 378 06 91   •   info@yer6zemin.com.tr   •   www.yer6zemin.com.tr", 14, pageHeight - 7);
 
-      doc.save(`YER6_Fizibilite_Raporu_${mode}.pdf`);
+      const safeMode = (mode || "rapor").replace(/[^a-z0-9-]/gi, "-");
+      doc.save(`YER6_Fizibilite_Raporu_${safeMode}_${reportNo}.pdf`);
     } catch (error) {
       console.error("PDF olusturulurken hata olustu:", error);
       alert("PDF olusturulurken bir hata olustu. Lutfen tekrar deneyin.");
