@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import "./globals.css";
 import { SiteShell } from "@/components/SiteShell";
+import { FloatingCalculator } from "@/components/FloatingCalculator";
 import { localBusinessSchema } from "@/lib/seo";
 import { siteConfig } from "@/lib/siteConfig";
 
@@ -169,6 +170,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         />
         <div className="noise" />
         <SiteShell>{children}</SiteShell>
+        <FloatingCalculator />
       </body>
     </html>
   );
