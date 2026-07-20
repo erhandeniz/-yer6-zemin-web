@@ -4309,6 +4309,200 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     keywords: ["yer altı zemin iyileştirme", "yeraltı zemin iyileştirme", "yer altı zemin güçlendirme", "zemin iyileştirme yöntemleri", "derin zemin iyileştirme", "jet grout zemin iyileştirme", "taş kolon zemin iyileştirme", "derin karıştırma DSM", "zemin sıvılaşması önleme", "TBDY 2018 zemin sınıfları", "zemin iyileştirme maliyet faktörleri", "yeraltı su seviyesi düşürme", "zemin iyileştirme kalite kontrol", "sorunlu zeminlerde temel çözümleri", "zemin iyileştirme Ankara"],
     published: true
   },
+  {
+    slug: "izmir-korfezi-zemin-profili-ve-sivilasma-riski",
+    title: "İzmir Körfezi Zemin Profili ve Sıvılaşmaya Karşı Geoteknik Çözümler",
+    seoTitle: "İzmir Zemin Profili ve Sıvılaşma Riski Analizi | YER6",
+    description: "İzmir Körfezi ve Bayraklı çevresi alüvyon zeminlerinde sıvılaşma riski, TBDY-2018 kriterleri ve jet grout, taş kolon gibi sıvılaşma önleyici zemin iyileştirme yöntemleri.",
+    excerpt: "İzmir Körfezi çevresindeki genç alüvyon çökeller, yüksek yeraltı suyu seviyesi ile birleştiğinde ciddi sıvılaşma potansiyeli taşır. İzmir'in geoteknik profili ve sıvılaşmaya karşı en etkili zemin iyileştirme yöntemlerini inceliyoruz.",
+    category: "Zemin İyileştirme",
+    readingTime: "8 dk",
+    publishedAt: "2026-07-20",
+    updatedAt: "2026-07-20",
+    heroLabel: "Bölgesel Zemin Analizi",
+    introduction: "İzmir, özellikle Bayraklı, Karşıyaka, Alsancak ve İnciraltı gibi kıyı kesimlerinde genç alüvyonel çökellerin hakim olduğu bir jeolojik yapıya sahiptir. Yüksek yeraltı suyu seviyesi (genellikle yüzeyden 1-2 metre aşağıda) ve gevşek kum-silt tabakaları, bu bölgeleri deprem anında sıvılaşma (liquefaction) açısından Türkiye'nin en riskli alanlarından biri yapmaktadır.",
+    sections: [
+      {
+        id: "izmir-zemin-karakteristikleri",
+        title: "İzmir Kıyı Şeridinin Geoteknik Karakteristikleri",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "İzmir Körfezi çevresindeki zemin profili tipik olarak üstte dolgu, altında gevşek-orta sıkı kum ve siltli kum, daha derinde ise yumuşak kil tabakalarından oluşur. TBDY-2018 sınıflandırmasına göre genellikle ZF ve ZE sınıfı (en zayıf) zeminler grubuna girer. Bu durum, deprem dalgalarının büyütülmesine (site amplification) ve sıvılaşmaya yol açar."
+          }
+        ]
+      },
+      {
+        id: "sivilasma-onleyici-yontemler",
+        title: "İzmir Alüvyonlarında Kullanılan Zemin İyileştirme Yöntemleri",
+        blocks: [
+          {
+            type: "list",
+            title: "Sıvılaşmayı Önlemek İçin Optimum Teknikler:",
+            items: [
+              "Jet Grouting: İzmir'deki siltli ve killi kum seviyelerinde zemin çimentosu (soilcrete) kolonları oluşturarak hem taşıma gücünü artırır hem de sıvılaşmayı doğrudan önler.",
+              "Taş Kolonlar (Vibro-Replacement): Yeraltı suyu altında, gevşek kumlu zeminlerin sıkıştırılmasını ve boşluk suyu basıncının hızla sönümlenmesini (drenaj) sağlayarak sıvılaşmayı engeller.",
+              "Deep Soil Mixing (DSM): Özellikle Bayraklı bölgesindeki çok yumuşak kil tabakalarında (oturma problemi olan yerlerde) Jet Grout'a ekonomik bir alternatif olarak oturma kontrolü ve sıvılaşma önlemi sunar."
+            ]
+          }
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "İzmir'de ev alırken veya yaparken zemin etüdünde nelere dikkat edilmeli?",
+        answer: "TBDY-2018 kapsamında SPT (Standart Penetrasyon Testi) verilerine ek olarak CPT (Koni Penetrasyon Testi) ve S-dalga hızı ölçümlerinin (Vs30) hassas yapılması, sıvılaşma analizinin mutlaka rapora eklenmesi şarttır."
+      },
+      {
+        question: "Bayraklı ve Karşıyaka'da sadece Jet Grout yeterli midir?",
+        answer: "Projenin yüklerine bağlıdır. Orta katlı yapılarda Jet Grout veya DSM ile oluşturulan ızgara/hücresel sistemler sıvılaşmayı önlerken, yüksek katlı kulelerde mutlaka taşıyıcı Fore Kazık ve kazıklar arası zemin iyileştirmesi kombine edilmelidir."
+      }
+    ],
+    relatedSlugs: ["sivilasma-riskine-karsi-zemin-guclendirme", "jet-grout-nedir", "tas-kolon-nedir"],
+    keywords: ["İzmir zemin profili", "Bayraklı zemin sıvılaşması", "İzmir jet grout firmaları", "sıvılaşma analizi", "TBDY 2018 sıvılaşma"],
+    published: true
+  },
+  {
+    slug: "istanbul-depremi-zemin-etudu-ve-iksa-sistemleri",
+    title: "Beklenen İstanbul Depremi İçin Zemin Etüdü ve Derin İksa Sistemleri",
+    seoTitle: "Beklenen İstanbul Depremi İçin Geoteknik İksa ve Zemin Etüdü | YER6",
+    description: "İstanbul'un karmaşık jeolojisinde derin kazılar, ankrajlı fore kazık perde sistemleri, sismik yükler altında iksa tasarımı ve depreme dayanıklı geoteknik çözümler.",
+    excerpt: "Beklenen Marmara depremi, sadece üst yapıları değil, bodrum katlı yapıların derin kazı destek (iksa) sistemlerini de test edecektir. İstanbul'un heterojen zeminlerinde güvenli iksa tasarımı kriterleri.",
+    category: "Ankraj & İksa",
+    readingTime: "9 dk",
+    publishedAt: "2026-07-20",
+    updatedAt: "2026-07-20",
+    heroLabel: "Deprem ve Geoteknik",
+    introduction: "İstanbul, güneyinde Marmara Denizi altından geçen Kuzey Anadolu Fay Hattı'nın (KAF) ana kolu tehdidi altındadır. Kentsel dönüşüm sürecinde, kapalı otopark ihtiyaçları nedeniyle 3-4 bodrumlu derin kazılar standart hale gelmiştir. Bu derin kazıların, hem çevre yapıları koruması hem de yapım aşamasında olası bir depreme karşı stabil (güvenli) kalabilmesi hayati önem taşır.",
+    sections: [
+      {
+        id: "istanbul-jeolojisi",
+        title: "İstanbul'un Zemin Formasyonları ve İksa Zorlukları",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "İstanbul jeolojisi son derece karmaşıktır. Trakya formasyonundan (Çamlıca, Üsküdar bölgesi kırılgan şist ve grovaklar), Bakırköy formasyonuna (kireçtaşı ve marn), Gürpınar formasyonuna (heyelan riskli, şişen killer - Avcılar/Beylikdüzü) kadar çok farklı dinamikler içerir."
+          },
+          {
+            type: "list",
+            title: "Derin Kazılarda Alınması Gereken Sismik Önlemler:",
+            items: [
+              "Geçici iksa sistemleri (ankrajlı fore kazık vb.) tasarlanırken, statik itkilere ek olarak Pseudo-Statik (Deprem) toprak itkileri (Mononobe-Okabe yöntemi vb.) mutlaka hesaba katılmalıdır.",
+              "Gürpınar formasyonu gibi killi bölgelerde, ankraj kök bölgesi kayma kamasının çok daha gerisinde (uzun ankrajlar) tasarlanmalıdır.",
+              "Yeraltı suyu sızıntılarının, sismik sarsıntı anında diyafram duvar veya kesişen kazık perdesine ekstra hidrodinamik basınç uygulayacağı unutulmamalıdır."
+            ]
+          }
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "İstanbul'da derin kazı iksası yapılırken çevre binalar neden çatlar?",
+        answer: "Uygun olmayan rijitlikte (ince çaplı fore kazık veya yetersiz ankraj) iksa seçimi veya yeraltı suyunun ani çekilmesi (drenaj) sebebiyle kil tabakalarında konsolidasyon (oturma) meydana gelmesinden kaynaklanır."
+      },
+      {
+        question: "Kentsel dönüşümde fore kazık makinesi sığmıyorsa ne yapılır?",
+        answer: "Mini kazık (mikro kazık) makineleri ile rijitliği artırılmış çelik borulu (API) borulu sistemler ve zemin çivisi / püskürtme beton (shotcrete) destekli çözümler uygulanır."
+      }
+    ],
+    relatedSlugs: ["kazi-destek-sistemleri-nedir", "ankraj-nedir", "fore-kazik-nedir"],
+    keywords: ["İstanbul depremi iksa sistemleri", "derin kazı sismik tasarım", "Gürpınar formasyonu zemin", "Avcılar heyelan riski", "ankrajlı fore kazık perde"],
+    published: true
+  },
+  {
+    slug: "ankara-kili-ozellikleri-ve-derin-kazi-tasarimi",
+    title: "Ankara Kili Özellikleri ve Derin Kazı İksa Tasarımı",
+    seoTitle: "Ankara Kili Özellikleri, Şişme Potansiyeli ve İksa Sistemleri | YER6",
+    description: "Geoteknik literatüründe ünlü 'Ankara Kili' (Aşırı Konsolide Kil) özellikleri, şişme (swell) potansiyeli ve Ankara projelerinde derin kazı ve ankraj uygulamaları.",
+    excerpt: "Mühendislik literatürüne geçmiş olan Ankara Kili, aşırı konsolide yapısı, yüksek şişme potansiyeli ve kazı sonrası stres boşalması ile derin kazı ve temel projelerinde özel uzmanlık gerektirir.",
+    category: "Ankraj & İksa",
+    readingTime: "8 dk",
+    publishedAt: "2026-07-20",
+    updatedAt: "2026-07-20",
+    heroLabel: "Ankara Geotekniği",
+    introduction: "Ankara'nın jeolojik yapısının en karakteristik elemanı olan 'Ankara Kili', özellikle Çankaya, Dikmen, Keçiören gibi bölgelerde yoğun olarak yüzeylenir. Neojen yaşlı bu gölsel çökeller, aşırı konsolide (overconsolidated) yapıları ve su ile temas ettiklerinde sergiledikleri yüksek hacimsel genleşme (şişme) kapasiteleriyle ünlüdür.",
+    sections: [
+      {
+        id: "ankara-kili-problemleri",
+        title: "Ankara Kilinin Temel Problemleri: Stres Boşalması ve Şişme",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Ankara kili, geçmiş jeolojik devirlerde üzerinde bulunan yüzlerce metrelik yükün aşınmasıyla mevcut durumuna gelmiştir. Bu durum kilde yüksek bir 'yatay kilitlenme' (yüksek K0 değeri) yaratır."
+          },
+          {
+            type: "list",
+            title: "Derin Kazı ve İksalarda Etkileri:",
+            items: [
+              "Yatay Toprak Basıncı: Kazı başladığında sistemdeki stres boşalır (stress relief). Kil, kazı boşluğuna doğru inanılmaz bir yatay itki uygular. Bu nedenle Ankara'daki ankrajlı fore kazık tasarımlarında yatay toprak basıncı katsayısı normalden çok daha yüksek alınmalıdır.",
+              "Şişme (Swelling): Suya doygun hale gelen kil şişer. Radye temel altında veya istinat duvarı arkasında devasa şişme basınçları oluşturarak donatıyı çatlatabilir.",
+              "Kısa ve Uzun Dönem Dayanım: Kazı anında kil sert kaya gibi dik durabilir (kısa dönem kohezyonu yüksektir), ancak su alıp zaman geçtikçe drenajsız dayanım (Su) düşer ve uzun dönemde felaketle sonuçlanan göçmeler yaşanabilir."
+            ]
+          }
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "Ankara'daki projelerde derin kazılar sırasında kopan ankrajların sebebi nedir?",
+        answer: "Genellikle uzun dönem dayanım parametrelerinin yanlış seçilmesi ve kilin su almasıyla artan şişme basıncının öngörülememesidir. Ankraj halatları limit değerlerini aşıp kopar."
+      },
+      {
+        question: "Ankara kili üzerine radye temel oturtulurken nelere dikkat edilmeli?",
+        answer: "Kilin suyla teması derhal kesilmeli (grobeton dökümü), kazı tabanı çok bekletilmemeli ve şişme potansiyeli yüksekse radye altında bir miktar deformasyonu emecek sıkıştırılabilir tabakalar veya taşıyıcı mini kazık sistemleri öngörülmelidir."
+      }
+    ],
+    relatedSlugs: ["ankraj-nedir", "fore-kazik-firmasi-ankara", "kazi-destek-sistemleri-nedir"],
+    keywords: ["Ankara kili", "Aşırı konsolide kil", "Ankara derin kazı", "kil şişme potansiyeli", "ankraj kopması", "K0 basıncı"],
+    published: true
+  },
+  {
+    slug: "bursa-aluvyon-zemin-jet-grout-tasarimi",
+    title: "Bursa Alüvyon Zeminlerinde Jet Grout ve Fore Kazık Tasarımı",
+    seoTitle: "Bursa Alüvyon Zeminleri İçin Jet Grout ve Fore Kazık Sistemleri | YER6",
+    description: "Bursa Ovası'nın kalın alüvyon zeminlerinde zemin büyütmesi, sıvılaşma riski ve sanayi yapılarında Jet Grout, DSM ve Fore Kazık sistemleriyle temel tasarımı.",
+    excerpt: "Endüstri ve sanayinin kalbi Bursa, yüksek yeraltı suyu seviyesine sahip kalın alüvyon çökelleri üzerinde yer alır. Bursa Ovası'ndaki fabrika ve konut projelerinde doğru zemin güçlendirme yönteminin seçimi hayati önem taşır.",
+    category: "Jet Grout",
+    readingTime: "7 dk",
+    publishedAt: "2026-07-20",
+    updatedAt: "2026-07-20",
+    heroLabel: "Bursa Ovası Geotekniği",
+    introduction: "Bursa Ovası, Kuvaterner yaşlı kalın ve gevşek alüvyon çökellerden oluşur. Aktif fay zonlarına (KAF'ın güney kolu) yakınlığı ve zeminin deprem dalgalarını büyütme (rezonans) etkisi nedeniyle, Bursa'daki hem konut hem de devasa OSB fabrika projelerinde zemin iyileştirmesi ve derin temel uygulamaları zorunludur.",
+    sections: [
+      {
+        id: "bursa-sanayi-temelleri",
+        title: "Fabrika Temelleri ve Ağır Dinamik Yükler",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Nilüfer, Osmangazi, NOSAB ve Demirtaş OSB gibi bölgelerde zemin, üstten genellikle yumuşak kil/silt, altta ise suya doygun kum-çakıl mercekleri içerir. Pres makineleri ve ağır sanayi ekipmanlarının ürettiği dinamik yükler, bu zeminlerde diferansiyel (farklı) oturmalara neden olur."
+          },
+          {
+            type: "list",
+            title: "Bursa İçin İdeal Zemin Güçlendirme Çözümleri:",
+            items: [
+              "Jet Grouting: Bursa alüvyonlarında en sık kullanılan yöntemdir. Siltli ve kumlu tabakalarda çok iyi çap alarak (60-80 cm kolonlar) yapısal yükleri güvenle taşır ve sıvılaşmayı engeller.",
+              "Fore Kazık (Bored Pile): Çok ağır köprü ayakları, devasa silolar veya makine temellerinde yükü daha derindeki sağlam çakıl/kaya soketlerine aktarmak için kullanılır.",
+              "Prekast Çakma Kazık: Bursa'nın kırsal/sanayi bölgelerinde gürültü ve titreşim toleransı olan geniş sahalarda ekonomik bir taşıyıcı temel çözümü sunar."
+            ]
+          }
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "Bursa Ovası'nda DSM (Derin Zemin Karıştırma) yöntemi kullanılabilir mi?",
+        answer: "Evet, özellikle çok yumuşak kil ağırlıklı profillerde ve geniş depolama holü / platform temellerinde DSM, Jet Grout'a göre daha hızlı ve maliyet etkin bir çözüm olabilir."
+      },
+      {
+        question: "Bursa'da yeraltı suyu yüzeye çok yakın, temel kazısı nasıl yapılmalı?",
+        answer: "Su yalıtımlı kesişen kazık (secant pile) perdeler veya palplanş (sheet pile) sistemleri ile yeraltı suyu kazı alanından izole edilmeli, kuyu nokta (wellpoint) drenaj sistemleri kurulmalıdır."
+      }
+    ],
+    relatedSlugs: ["jet-grout-nedir", "fore-kazik-nedir", "zemin-iyilestirme-yontemleri"],
+    keywords: ["Bursa alüvyon zemin", "Bursa jet grout firmaları", "Bursa OSB zemin güçlendirme", "Bursa fore kazık", "fabrika temeli zemin iyileştirme"],
+    published: true
+  },
   ...seoArticles
 ];
 
