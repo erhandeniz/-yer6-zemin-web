@@ -49,36 +49,129 @@ DONE https://www.yer6zemin.com.tr/sehirler/elazig-zemin-guclendirme/
 DONE https://www.yer6zemin.com.tr/sehirler/erzincan-zemin-guclendirme/
 DONE https://www.yer6zemin.com.tr/sehirler/erzurum-zemin-guclendirme/
 DONE https://www.yer6zemin.com.tr/sehirler/giresun-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/gumushane-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/hakkari-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/isparta-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/karabuk-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/karaman-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/kars-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/kastamonu-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/kirikkale-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/kirklareli-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/kirsehir-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/kilis-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/kutahya-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/mardin-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/mus-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/nevsehir-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/nigde-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/ordu-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/osmaniye-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/rize-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/sakarya-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/samsun-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/siirt-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/sinop-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/sanliurfa-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/sirnak-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/tekirdag-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/tokat-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/trabzon-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/tunceli-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/usak-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/yalova-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/yozgat-zemin-guclendirme/
-https://www.yer6zemin.com.tr/sehirler/zonguldak-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/gumushane-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/hakkari-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/isparta-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/karabuk-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/karaman-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/kars-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/kastamonu-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/kirikkale-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/kirklareli-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/kirsehir-zemin-guclendirme/
+# --- Genel / hizmet / knowledge sayfalari (oncelikli - once bunlar islenir) ---
+DONE https://www.yer6zemin.com.tr/services/zemin-iyilestirme/
+DONE https://www.yer6zemin.com.tr/services/zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/services/jet-grout/
+DONE https://www.yer6zemin.com.tr/services/fore-kazik/
+DONE https://www.yer6zemin.com.tr/services/dsm/
+DONE https://www.yer6zemin.com.tr/knowledge/jet-grout-kalite-kontrol-rehberi/
+DONE https://www.yer6zemin.com.tr/knowledge/jet-grout-is-guvenligi-ve-spoil-kontrolu/
+DONE https://www.yer6zemin.com.tr/knowledge/fore-kazik-sureklilik-ve-yukleme-testleri/
+DONE https://www.yer6zemin.com.tr/knowledge/fore-kazik-tremie-beton-dokum-kriterleri/
+DONE https://www.yer6zemin.com.tr/knowledge/dsm-karistirma-enerjisi-ve-dayanim-iliskisi/
+DONE https://www.yer6zemin.com.tr/knowledge/sivilasma-tas-kolon-ve-dikey-dren-kombinasyonu/
+DONE https://www.yer6zemin.com.tr/knowledge/zemin-turune-gore-iyilestirme-yontemi-secimi/
+DONE https://www.yer6zemin.com.tr/knowledge/geoteknik-firma-secimi-ve-kriterleri/
+DONE https://www.yer6zemin.com.tr/knowledge/yer-alti-zemin-iyilestirme/
+# --- Kalan iller ---
+DONE https://www.yer6zemin.com.tr/sehirler/kilis-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/kutahya-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/mardin-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/mus-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/nevsehir-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/nigde-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/ordu-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/osmaniye-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/rize-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/sakarya-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/samsun-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/siirt-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/sinop-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/sanliurfa-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/sirnak-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/tekirdag-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/tokat-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/trabzon-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/tunceli-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/usak-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/yalova-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/yozgat-zemin-guclendirme/
+DONE https://www.yer6zemin.com.tr/sehirler/zonguldak-zemin-guclendirme/
+# --- 2026-07-17 eklendi: sitemap taramasi ile bulunan eksik 69 URL ---
+# --- Oncelik 1: Ana sayfa + hizmet detay sayfalari ---
+DONE https://www.yer6zemin.com.tr/
+DONE https://www.yer6zemin.com.tr/services/mini-kazik/
+DONE https://www.yer6zemin.com.tr/services/ankraj/
+DONE https://www.yer6zemin.com.tr/services/iksa-sistemleri/
+DONE https://www.yer6zemin.com.tr/services/tas-kolon/
+DONE https://www.yer6zemin.com.tr/services/diafram-duvar/
+DONE https://www.yer6zemin.com.tr/services/zemin-civisi/
+DONE https://www.yer6zemin.com.tr/services/puskurtme-beton/
+https://www.yer6zemin.com.tr/services/zemin-etudu/
+https://www.yer6zemin.com.tr/services/kazik-yukleme-testleri/
+https://www.yer6zemin.com.tr/services/geoteknik-danismanlik/
+# --- Oncelik 2: Ust seviye / indeks sayfalari ---
+https://www.yer6zemin.com.tr/services/
+https://www.yer6zemin.com.tr/sehirler/
+https://www.yer6zemin.com.tr/knowledge/
+https://www.yer6zemin.com.tr/projects/
+https://www.yer6zemin.com.tr/about/
+https://www.yer6zemin.com.tr/technology/
+https://www.yer6zemin.com.tr/equipment-fleet/
+https://www.yer6zemin.com.tr/contact/
+https://www.yer6zemin.com.tr/blog/
+# --- Oncelik 3: Knowledge makaleleri (jet grout kumesi) ---
+https://www.yer6zemin.com.tr/knowledge/jet-grout-nedir/
+https://www.yer6zemin.com.tr/knowledge/jet-grout-maliyeti/
+https://www.yer6zemin.com.tr/knowledge/jet-grout-uygulama-asamalari/
+https://www.yer6zemin.com.tr/knowledge/jet-grout-hangi-zeminlerde-uygulanir/
+https://www.yer6zemin.com.tr/knowledge/jet-grout-kolon-capi/
+https://www.yer6zemin.com.tr/knowledge/jet-grout-makineleri/
+https://www.yer6zemin.com.tr/knowledge/jet-grout-kalite-kontrol/
+https://www.yer6zemin.com.tr/knowledge/jet-grout-sik-sorulan-sorular/
+https://www.yer6zemin.com.tr/knowledge/jet-grout-ve-dsm-farki/
+https://www.yer6zemin.com.tr/knowledge/jet-grout-ve-fore-kazik-farki/
+https://www.yer6zemin.com.tr/knowledge/jet-grout-firmasi-ankara/
+https://www.yer6zemin.com.tr/knowledge/jet-grout-firmasi-istanbul/
+# --- Oncelik 4: Knowledge (fore kazik + dsm kumesi) ---
+https://www.yer6zemin.com.tr/knowledge/fore-kazik-nedir/
+https://www.yer6zemin.com.tr/knowledge/fore-kazik-maliyeti/
+https://www.yer6zemin.com.tr/knowledge/fore-kazik-avantajlari/
+https://www.yer6zemin.com.tr/knowledge/fore-kazik-uygulama-asamalari/
+https://www.yer6zemin.com.tr/knowledge/fore-kazik-nerelerde-kullanilir/
+https://www.yer6zemin.com.tr/knowledge/fore-kazik-firmasi-ankara/
+https://www.yer6zemin.com.tr/knowledge/dsm-nedir/
+https://www.yer6zemin.com.tr/knowledge/dsm-nasil-uygulanir/
+https://www.yer6zemin.com.tr/knowledge/dsm-malzeme-secinimi/
+https://www.yer6zemin.com.tr/knowledge/deep-soil-mixing-ankara/
+# --- Oncelik 5: Knowledge (zemin genel) ---
+https://www.yer6zemin.com.tr/knowledge/zemin-guclendirme-maliyeti/
+https://www.yer6zemin.com.tr/knowledge/zemin-iyilestirme-yontemleri/
+https://www.yer6zemin.com.tr/knowledge/zemin-iyilestirme-planlama/
+https://www.yer6zemin.com.tr/knowledge/zemin-iyilestirme-risk-yonetimi/
+https://www.yer6zemin.com.tr/knowledge/zemin-enjeksiyonu-nedir/
+https://www.yer6zemin.com.tr/knowledge/zemin-etudu-nasil-yapilir/
+https://www.yer6zemin.com.tr/knowledge/zemin-civisi-nedir/
+https://www.yer6zemin.com.tr/knowledge/zemin-kalite-kontrol-standartlari/
+https://www.yer6zemin.com.tr/knowledge/temel-alti-zemin-guclendirme/
+https://www.yer6zemin.com.tr/knowledge/binalari-yikmadan-zemin-guclendirme/
+https://www.yer6zemin.com.tr/knowledge/kentsel-donusumde-zemin-guclendirme/
+https://www.yer6zemin.com.tr/knowledge/sivilasma-riskine-karsi-zemin-guclendirme/
+# --- Oncelik 6: Knowledge (diger yontemler) ---
+https://www.yer6zemin.com.tr/knowledge/ankraj-nedir/
+https://www.yer6zemin.com.tr/knowledge/diafram-duvar-nedir/
+https://www.yer6zemin.com.tr/knowledge/tas-kolon-nedir/
+https://www.yer6zemin.com.tr/knowledge/puskurtme-beton-nedir/
+https://www.yer6zemin.com.tr/knowledge/mini-kazik-tercih-nedenleri/
+https://www.yer6zemin.com.tr/knowledge/kazik-yukleme-testleri/
+https://www.yer6zemin.com.tr/knowledge/kazi-destek-sistemleri-nedir/
+https://www.yer6zemin.com.tr/knowledge/saha-denetimi-numune-testleri/
+# --- Oncelik 7: Proje sayfalari ---
+https://www.yer6zemin.com.tr/projects/marmara-lojistik-temel-guclendirme/
+https://www.yer6zemin.com.tr/projects/ege-liman-jet-grout-perdesi/
+https://www.yer6zemin.com.tr/projects/ankara-rayli-sistem-iksa/
+https://www.yer6zemin.com.tr/projects/istanbul-rezidans-fore-kazik/
+https://www.yer6zemin.com.tr/projects/bursa-yunuseli-nida-evleri-jet-grout-zemin-iyilestirme/
+https://www.yer6zemin.com.tr/projects/pekintas-duzce-fabrika-jet-grout/
+https://www.yer6zemin.com.tr/projects/bozuyuk-sok-dondurma-tesisi-jet-grout/

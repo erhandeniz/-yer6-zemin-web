@@ -133,9 +133,10 @@ export function FloatingCalculator() {
     }
     
     text += `\n\n🕒 Şantiye çalışma süresi makine parkımıza göre tahmini ${results.metric3.value} gün olarak hesaplanmıştır.`;
-    text += `\n💰 Türkiye'deki güncel müteahhitlik verileri baz alındığında tahmini bütçe aralıkları şu şekildedir:`;
+    text += `\n💰 YER6 Mühendisleri tarafından yapılan değerlendirmeye göre tahmini bütçe aralıkları şu şekildedir:`;
     text += `\n- **Sadece İşçilik (Makine & Ekipman):** ${results.price.laborValue}`;
     text += `\n- **Malzemeli + İşçilik (Anahtar Teslim):** ${results.price.value}`;
+    text += `\n\n⚠️ *Detaylı ve kesin bütçe analizi için lütfen uzman YER6 mühendislerimizle iletişime geçiniz.*`;
     
     return text;
   };
