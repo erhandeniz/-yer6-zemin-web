@@ -1,3 +1,5 @@
+import { districtPages, districtPaths } from "@/lib/districtContent";
+
 export type CitySection = {
   heading: string;
   body: string[];
@@ -3855,6 +3857,10 @@ const cityEnrichment: Record<string, CityEnrichment> = Object.fromEntries(
 );
 
 export function getCityPageBySlug(slug: string) {
+  const district = districtPages.find((page) => page.slug === slug);
+  if (district) {
+    return district;
+  }
   const page = cityPages.find((page) => page.slug === slug);
   if (!page) {
     return undefined;
@@ -3864,7 +3870,7 @@ export function getCityPageBySlug(slug: string) {
 }
 
 export function getCityPaths() {
-  return cityPages.map((page) => ({ slug: page.slug }));
+  return [...cityPages.map((page) => ({ slug: page.slug })), ...districtPaths];
 }
 
 // Öncelikli iller. Tüm iller indekslenir ve sitemap'te yer alır; ancak öncelikli iller
@@ -3898,5 +3904,7 @@ export const featuredCityPages = featuredCitySlugs
 // Listelerde ve sitemap'te bu sıra kullanılır.
 export const orderedCityPages = [
   ...featuredCityPages,
-  ...cityPages.filter((page) => !featuredCitySlugs.includes(page.slug))
+  ...cityPages.filter((page) => !featuredCitySlugs.includes(page.slug)),
+  // Deprem-riski ilçe sayfaları (il sayfalarından sonra, daha düşük öncelikle).
+  ...districtPages
 ];
