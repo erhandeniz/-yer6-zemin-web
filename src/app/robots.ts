@@ -3,20 +3,23 @@ import { siteConfig } from "@/lib/siteConfig";
 
 export const dynamic = "force-static";
 
-// Arama motoru botlari (Google, Bing, Yandex, DuckDuckGo, Apple) serbesttir; SEO icin gereklidir.
-// Asagidaki botlar icerigi yapay zeka egitimi icin toplayan crawler'lar ile agresif
-// icerik/SEO kazima (scraping) botlaridir ve engellenir. Durust botlar bu talimata uyar;
-// uymayanlar icin asil koruma Cloudflare tarafindadir (bkz. docs/CLOUDFLARE-KORUMA.md).
+// STRATEJI (siralamayi korur, sadece hirsizligi engeller):
+// 1) Arama motorlari (Google, Bing, Yandex, DuckDuckGo, Apple) TAMAMEN SERBEST -> SEO ve
+//    siralama korunur. Bu botlar ASLA engellenmez; aksi halde Google'da gorunurluk kaybolur.
+// 2) AI ARAMA / ASISTAN botlari (ChatGPT Search, Perplexity) SERBEST -> icerigi kaynak
+//    gostererek ziyaretci getirebilir; "herkes bize gelsin" hedefine hizmet eder.
+// 3) Yalnizca ICERIK CALAN / MODEL EGITEN ve karsiliginda trafik getirmeyen botlar ile
+//    agresif SEO-casusluk kaziyicilari engellenir. Bunlar Google botu DEGILDIR; siralamayi
+//    ETKILEMEZ. Sosyal medya onizleme botlari (Facebook vb.) da engellenmez.
 const blockedBots = [
-  // Yapay zeka egitim / tarama botlari
-  "GPTBot", "ChatGPT-User", "OAI-SearchBot", "CCBot", "Google-Extended",
-  "anthropic-ai", "ClaudeBot", "Claude-Web", "PerplexityBot", "Perplexity-User",
+  // Yapay zeka MODEL EGITIM botlari (icerigi alir, karsiliginda hicbir sey vermez)
+  "GPTBot", "CCBot", "Google-Extended", "anthropic-ai", "ClaudeBot", "Claude-Web",
   "Amazonbot", "Applebot-Extended", "Bytespider", "meta-externalagent",
-  "FacebookBot", "cohere-ai", "Diffbot", "ImagesiftBot", "Omgili", "Omgilibot",
-  "Timpibot", "YouBot", "DataForSeoBot", "AI2Bot",
-  // Agresif SEO casusluk / icerik kazima botlari
-  "AhrefsBot", "SemrushBot", "MJ12bot", "DotBot", "PetalBot", "BLEXBot",
-  "MegaIndex", "SeekportBot", "Scrapy"
+  "cohere-ai", "Diffbot", "ImagesiftBot", "Omgili", "Omgilibot", "Timpibot",
+  "YouBot", "DataForSeoBot", "AI2Bot", "PanguBot",
+  // Agresif SEO-casusluk / toplu kazima botlari (Google DEGILDIR; siralamayi etkilemez)
+  "AhrefsBot", "SemrushBot", "MJ12bot", "DotBot", "BLEXBot", "MegaIndex",
+  "SeekportBot", "Scrapy"
 ];
 
 export default function robots(): MetadataRoute.Robots {
