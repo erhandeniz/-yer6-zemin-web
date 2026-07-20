@@ -38,6 +38,25 @@ export const metadata: Metadata = {
     "YER6",
     "Ankara zemin güçlendirme"
   ],
+  authors: [{ name: siteConfig.companyName, url: siteUrl }],
+  creator: siteConfig.companyName,
+  publisher: siteConfig.companyName,
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1
+    }
+  },
+  other: {
+    copyright: `© 2026 ${siteConfig.companyName}. Tüm hakları saklıdır.`,
+    author: siteConfig.companyName,
+    "rights-standard": `${siteUrl}/kullanim-sartlari/`
+  },
   ...(siteConfig.googleSiteVerification || siteConfig.yandexVerification
     ? {
         verification: {
@@ -101,6 +120,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="tr" suppressHydrationWarning>
       <head>
+        <link rel="license" href={`${siteUrl}/kullanim-sartlari/`} />
         <script
           id="yer6-website-schema"
           type="application/ld+json"
@@ -152,6 +172,15 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         ) : null}
       </head>
       <body>
+        {/* Telif izleme imzasi (canary) - birebir kopyalanan sitelerde bu imza tasinir ve orjinalin YER6 oldugunu kanitlar. Kaldirmayin. */}
+        <div
+          aria-hidden="true"
+          hidden
+          style={{ display: "none" }}
+          data-yer6-owner="YER6-Zemin-Guclendirme-Geoteknik-Muhendislik"
+          data-yer6-origin="https://www.yer6zemin.com.tr"
+          data-yer6-signature="y6z-2026-telif-8f3ac91d-yer6zemin-orjinal"
+        />
         <script
           dangerouslySetInnerHTML={{
             __html: `

@@ -1,0 +1,6 @@
+# YER6 Zemin Güçlendirme — Güvenlik İletişimi (RFC 9116)
+Contact: mailto:info@yer6zemin.com.tr
+Contact: tel:+905323780691
+Preferred-Languages: tr, en
+Canonical: https://www.yer6zemin.com.tr/.well-known/security.txt
+Expires: 2027-07-20T00:00:00.000Z
