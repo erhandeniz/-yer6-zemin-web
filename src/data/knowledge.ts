@@ -4,9 +4,9 @@ export const knowledgeArticles: KnowledgeArticle[] = [
   {
     slug: "jet-grout-nedir",
     title: "Jet Grout Nedir? Kullanım Alanları ve Çalışma Prensibi",
-    seoTitle: "Jet Grout Nedir? Kullanım Alanları ve Çalışma Prensibi | YER6",
+    seoTitle: "Jet Grout Nedir? Zemin Güçlendirme ve Jet Grouting Firmaları | YER6",
     description:
-      "Jet Grout, zemin-çimento kolonları oluşturarak zemin stabilitesini artıran yüksek basınçlı enjeksiyon yöntemidir.",
+      "Jet Grout nedir? Zemin güçlendirme yöntemleri, DSM, mini kazık ve zemin enjeksiyonu ile karşılaştırmalı jet grouting taşıma kapasitesi rehberi.",
     excerpt:
       "Jet Grout; kum, silt ve kil gibi farklı zeminlerde yüksek basınçlı çimento şerbetiyle zemin-çimento kolonları oluşturan bir zemin iyileştirme yöntemidir. Zeminin taşıma gücünü artırmaya, oturmaları azaltmaya ve geçirimsizliği iyileştirmeye yardımcı olur.",
     category: "Jet Grout",
@@ -1179,7 +1179,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
   {
     slug: "zemin-iyilestirme-yontemleri",
     title: "Zemin İyileştirme Nedir? Yöntemler, Seçim ve Uygulama",
-    seoTitle: "Zemin İyileştirme Nedir? Yöntemler ve Uygulama | YER6",
+    seoTitle: "Zemin İyileştirme Teknikleri ve Yöntemleri Nelerdir? | YER6",
     description:
       "Zemin iyileştirme nedir, ne zaman gerekir? Jet grout, DSM, taş kolon ve enjeksiyon yöntemlerini; seçim, uygulama ve kalite kontrol adımlarıyla öğrenin.",
     excerpt:
@@ -1259,10 +1259,10 @@ export const knowledgeArticles: KnowledgeArticle[] = [
               "Jet grout: Yüksek basınçlı çimento şerbetiyle zemin-çimento kolonları oluşturur; dar sahalar, değişken tabakalar, temel altı uygulamaları ve geçirimsizlik hedeflerinde kullanılabilir.",
               "DSM (Deep Soil Mixing): Zemini bağlayıcıyla mekanik olarak karıştırır; yumuşak kil, silt ve geniş alanlı platformlarda oturma kontrolü için değerlendirilebilir.",
               "Taş kolon: Granüler kolonlarla drenajı, sıkılığı ve yük paylaşımını geliştirir; uygun yumuşak veya gevşek zeminlerde sıvılaşma ve oturma kontrolünde kullanılabilir.",
-              "Derin kompaksiyon ve vibro yöntemler: Gevşek granüler zeminleri sıkılaştırarak boşluk oranını azaltmayı hedefler.",
-              "Enjeksiyon yöntemleri: Çimento veya projeye uygun başka enjeksiyon malzemeleriyle boşlukları doldurur, dayanım ya da geçirimsizlik sağlar.",
-              "Ön yükleme ve düşey drenler: Yumuşak, sıkışabilir tabakalarda konsolidasyonu yapı inşa edilmeden önce hızlandırır.",
-              "Mini kazık ve mikrokazık: Zemini karıştırmak yerine yapı yüklerini daha sağlam tabakalara aktarır; özellikle mevcut yapı temel güçlendirmesinde tercih edilebilir."
+              "Derin kompaksiyon ve vibro yöntemler: Dinamik kompaksiyon ve vibro-kompaksiyon (vibrasyon) ile gevşek granüler zeminleri sıkılaştırarak sıvılaşma riskini azaltmayı hedefler.",
+              "Enjeksiyon yöntemleri: Poliüretan enjeksiyon, permeasyon ve kimyasal enjeksiyonlar ile boşlukları doldurur, dayanım ya da geçirimsizlik sağlar.",
+              "Ön yükleme ve düşey drenler: Yumuşak kil ve siltli tabakalarda konsolidasyonu hızlandırır.",
+              "Mini kazık, mikrokazık ve zemin çivisi (soil nail): Zemini karıştırmak yerine yapı yüklerini daha sağlam tabakalara aktarır veya şev stabilitesi sağlar; özellikle dar alanlı temel güçlendirmelerinde öne çıkar."
             ]
           },
           {
@@ -2324,8 +2324,8 @@ export const knowledgeArticles: KnowledgeArticle[] = [
   {
     slug: "dsm-nedir",
     title: "DSM Nedir? Deep Soil Mixing Zemin İyileştirme Yöntemi",
-    seoTitle: "DSM Nedir? Deep Soil Mixing Zemin İyileştirme | YER6",
-    description: "DSM (Deep Soil Mixing), zemin ve çimento şerbetinin yerinde karıştırılmasıyla oluşturulan zemin-çimento kolonlarıdır. Uygulama, avantajlar ve tasarım kriterleri.",
+    seoTitle: "DSM (Derin Zemin Karıştırma) Nedir? Deep Soil Mixing Yöntemleri | YER6",
+    description: "DSM (Deep Soil Mixing - Derin Zemin Karıştırma), zemin ve çimento şerbetinin yerinde karıştırılmasıyla oluşturulan kolonlardır. Taş kolon ve jet grout ile kıyaslamalı zemin iyileştirme rehberi.",
     excerpt: "DSM yani Derin Zemin Karıştırma, yumuşak kil ve gevşek kum zeminlerde taşıma kapasitesini artırmak, oturmayı kontrol etmek ve sıvılaşmayı önlemek için kullanılan modern bir zemin iyileştirme yöntemidir.",
     category: "DSM",
     readingTime: "9 dk",
@@ -2551,8 +2551,8 @@ export const knowledgeArticles: KnowledgeArticle[] = [
   {
     slug: "kazi-destek-sistemleri-nedir",
     title: "Kazı Destek Sistemleri Nedir? İksa Türleri ve Seçim Kriterleri",
-    seoTitle: "Kazı Destek Sistemleri Nedir? İksa Türleri | YER6",
-    description: "Kazı destek sistemleri (iksa); derin kazılarda çevre güvenliğini sağlayan fore kazık perde, diyafram duvar, çelik profil ve ankrajlı sistemlerdir.",
+    seoTitle: "İksa ve Kazı Destek Sistemleri: Diyafram Duvar, Palplanş ve Zemin Çivisi | YER6",
+    description: "Derin kazılarda kullanılan iksa ve kazı destek sistemleri; ankrajlı fore kazık perde, diyafram duvar, palplanş (sheet pile), mini kazık ve zemin çivisi (soil nail) uygulamaları.",
     excerpt: "Kazı destek sistemleri, derin kazı çeperlerinin göçmesini önleyen ve komşu yapıları koruyan mühendislik yapılarıdır. Fore kazık perde, diyafram duvar, çelik profil perde ve ankraj kombinasyonları en yaygın seçeneklerdir.",
     category: "Ankraj & İksa",
     readingTime: "10 dk",
@@ -3058,8 +3058,8 @@ export const knowledgeArticles: KnowledgeArticle[] = [
   {
     slug: "ankraj-nedir",
     title: "Ankraj Nedir? Öngermeli Ankraj Uygulaması ve Kullanım Alanları",
-    seoTitle: "Ankraj Nedir? Öngermeli Ankraj Uygulaması | YER6",
-    description: "Ankraj; delgi, enjeksiyon ve ön germeyle yatay yükleri zemine aktaran bir sistemdir. Derin kazı iksası, şev stabilizasyonu ve yapı destekleme uygulamaları.",
+    seoTitle: "Ankraj Nedir? Zemin Ankrajı, İksa ve Öngermeli Ankraj Uygulamaları | YER6",
+    description: "Zemin ankrajı nedir? Derin kazı iksası, şev stabilizasyonu, zemin çivisi ve ankrajlı fore kazık perde sistemlerinde kullanılan öngermeli ankraj yöntemleri.",
     excerpt: "Ankraj; zemine açılan delgiye yerleştirilen çelik tendonun enjeksiyonla kenetlenmesi ve ön germe uygulanmasıyla yatay yükleri güvenle zemine aktaran bir sistemdir. Derin kazı iksası ve şev stabilizasyonunda kullanılır.",
     category: "Ankraj & İksa",
     readingTime: "7 dk",

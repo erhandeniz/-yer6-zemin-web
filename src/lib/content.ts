@@ -134,7 +134,7 @@ export const services = [
     applications: [
       "Yüksek katlı ve karma kullanımlı yapıların derin temel sistemleri",
       "Kavşak, viyadük ve köprü ayağı temellerinde yüksek eksenel yük transferi",
-      "Derin kent içi kazılarda ankrajlı kazıklı perde (kesişen veya aralıklı) imalatı",
+      "Derin kent içi kazılarda ankrajlı kazıklı perde (kesişen kazık), diyafram duvar ve palplanş (sheet pile) sistemleriyle entegre imalatı",
       "Endüstriyel santral, baca ve ağır makine temelleri",
       "Liman, iskele ve sahil yapılarında suya dayanıklı temel teşkili"
     ],
@@ -154,8 +154,8 @@ export const services = [
     ],
     technicalNote: "Fore kazık kalitesi, delgi hızından çok beton döküm kalitesine bağlıdır. DFI/EFFC kılavuzlarına göre; tremie borusunun beton dökümü esnasında en az 3 metre betonun içinde gömülü kalması, soğuk derz ve çamur sıkışması riskini engellemek için zorunludur. Ayrıca Low-strain (PIT) testleri süreklilik hakkında bilgi verirken, kazığın taşıma kapasitesi ancak Statik veya Dinamik Yükleme Testleri ile doğrulanabilir.",
     faq: [
-      { question: "Fore kazık ile mini kazık arasındaki mühendislik farkı nedir?", answer: "Fore kazık; genellikle 60-250 cm çaplarında, yüzlerce ton eksenel yük taşıyabilen ana taşıyıcı elemanlardır. Mini kazık ise 15-30 cm çaplı, enjeksiyonla oluşturulan ve genellikle dar alanlarda güçlendirme (underpinning) amacıyla kullanılan destek elemanlarıdır." },
-      { question: "Fore kazık hangi zemin türlerinde, ne kadar derine uygulanabilir?", answer: "Fore kazık; kil, kum, çakıl ve hatta DTH (Down-The-Hole hammer) ekipmanlarıyla sert kaya formasyonlarına uygulanabilir. Gelişmiş XCMG ve Bauer makine parkımızla 70 metre ve üzeri derinliklere inmek mümkündür." },
+      { question: "Fore kazık ile mini kazık ve zemin çivisi arasındaki mühendislik farkı nedir?", answer: "Fore kazık; genellikle 60-250 cm çaplarında, yüzlerce ton eksenel yük taşıyabilen ana taşıyıcı elemanlardır. Mini kazık ise 15-30 cm çaplı, çimento enjeksiyonu ile oluşturulan destek elemanlarıdır. Zemin çivisi (soil nail) ise daha çok şev stabilitesi ve ankrajlı iksa sistemlerinde (diyafram duvar vb. ile) yüzey dayanımını artırmak için yatay veya açılı düzlemde uygulanır." },
+      { question: "Fore kazık hangi zemin türlerinde, ne kadar derine uygulanabilir?", answer: "Fore kazık; kil, kum, çakıl ve hatta DTH ekipmanlarıyla sert kaya formasyonlarına uygulanabilir. Gelişmiş makine parkımızla 70 metre ve üzeri derinliklere inmek mümkündür. Sıvılaşma riski veya aşırı yeraltı suyu olan bölgelerde kesişen kazık veya diyafram duvar sistemleriyle kombine edilebilir." },
       { question: "Fore kazık betonunun kalitesi (bütünlüğü) nasıl doğrulanır?", answer: "ICE SPERW spesifikasyonlarına uygun olarak; düşük gerinimli süreklilik testi (PIT) veya donatı kafesine bağlanan borular yardımıyla ultrasonik dalga yansımalarını ölçen Crosshole Sonic Logging (CSL) testi ile doğrulanır." },
       { question: "Yeraltı suyu yüksek olan sahalarda kuyu nasıl göçmez?", answer: "Sulu ve kendini tutamayan (kohezyonsuz) zeminlerde, hidrostatiği dengelemek için kuyu içine Bentonit çamuru veya sentetik Polimer basılır, ya da tamamen çelik muhafaza borusu (casing) sürülerek kazı yapılır." },
       { question: "Fore kazık firması ararken nelere dikkat edilmelidir?", answer: "Fore kazık operasyonunda kaliteyi belirleyen temel unsurlar; firmanın yüksek torklu (ör. 220-300 kNm) makine parkı, bentonit/tremie süreçlerindeki teknik disiplini ve imalat sonrası PIT/CSL testleriyle işi belgelendirebilmesidir. YER6, mühendislik garantisiyle Türkiye'nin önde gelen fore kazık yüklenicilerindendir." }
