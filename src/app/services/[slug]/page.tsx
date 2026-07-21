@@ -36,7 +36,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     "kazik-yukleme-testleri": "Kazık Yükleme ve Bütünlük (PIT) Testleri",
     "zemin-etudu": "Zemin Etüdü: Sondaj, Arazi Deneyleri ve Geoteknik Rapor",
     "tas-kolon": "Taş Kolon (Stone Column) Zemin İyileştirme Uygulaması",
-    "diafram-duvar": "Diyafram Duvar İmalatı: Derin Kazı ve İksa Çözümü"
+    "diafram-duvar": "Diyafram Duvar İmalatı: Derin Kazı ve İksa Çözümü",
+    "cmf-zemin-iyilestirme": "CMF Zemin İyileştirme Firmaları | Yüksek Taşıma Kapasitesi ve Zemin Islahı"
   };
   const seoTitle = serviceSeoTitles[service.slug] ?? `${service.title} Zemin Güçlendirme Hizmeti`;
   const description = getServiceSchemaDescription(
