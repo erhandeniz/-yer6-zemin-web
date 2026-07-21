@@ -1,8 +1,8 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useId } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Calculator, X, ChevronRight, Download, Activity, Zap, HardHat, Hammer, MountainSnow, BotMessageSquare, ArrowLeft, Loader2, Send } from "lucide-react";
+import { Calculator, X, ChevronRight, Download, Activity, Zap, HardHat, Hammer, MountainSnow, ArrowLeft, Loader2, Send } from "lucide-react";
 import { computeEstimate, generateReportNo, type Estimate, type CalcMode as EngineMode } from "@/lib/costEngine";
 import { fetchLiveFx, BASELINE_FX, type FxRates } from "@/lib/fx";
 
@@ -619,7 +619,7 @@ export function FloatingCalculator() {
               <div className="flex items-center justify-between border-b border-white/10 p-5">
                 <div className="flex items-center gap-3">
                   <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gold-300 text-obsidian shadow-[0_0_15px_rgba(212,175,55,0.4)]">
-                    <BotMessageSquare className="h-5 w-5" />
+                    <BotAvatar />
                   </div>
                   <div>
                     <h3 className="font-semibold text-white">YER6 AI Mühendis</h3>
@@ -717,7 +717,7 @@ export function FloatingCalculator() {
                       <div className="flex gap-4">
                         <div className="flex-shrink-0">
                           <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gold-300 text-obsidian shadow-[0_0_15px_rgba(212,175,55,0.4)]">
-                            <BotMessageSquare className="h-5 w-5" />
+                            <BotAvatar />
                           </div>
                         </div>
                         <div className="flex-1 rounded-2xl rounded-tl-none bg-[#111] border border-white/10 p-5 shadow-inner">
@@ -735,7 +735,7 @@ export function FloatingCalculator() {
                           {m.role === "assistant" && (
                             <div className="flex-shrink-0">
                               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gold-300 text-obsidian shadow-[0_0_15px_rgba(212,175,55,0.4)]">
-                                <BotMessageSquare className="h-5 w-5" />
+                                <BotAvatar />
                               </div>
                             </div>
                           )}
@@ -817,6 +817,36 @@ export function FloatingCalculator() {
         </button>
       </div>
     </>
+  );
+}
+
+// YER6 premium altın "sikke" bot avatarı — generic ikon yerine markalı, prestijli
+// bir yüz. Radyal altın degrade + iç halka + hafif parlama + "Y6" monogram.
+function BotAvatar() {
+  const id = useId().replace(/:/g, "");
+  const gold = `gold-${id}`;
+  const shine = `shine-${id}`;
+  return (
+    <svg viewBox="0 0 40 40" className="h-full w-full" role="img" aria-label="YER6 AI">
+      <defs>
+        <radialGradient id={gold} cx="38%" cy="30%" r="80%">
+          <stop offset="0%" stopColor="#fde7a6" />
+          <stop offset="42%" stopColor="#e7c25c" />
+          <stop offset="78%" stopColor="#caa03c" />
+          <stop offset="100%" stopColor="#a9781f" />
+        </radialGradient>
+        <linearGradient id={shine} x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor="#ffffff" stopOpacity="0.55" />
+          <stop offset="35%" stopColor="#ffffff" stopOpacity="0.05" />
+          <stop offset="100%" stopColor="#ffffff" stopOpacity="0" />
+        </linearGradient>
+      </defs>
+      <circle cx="20" cy="20" r="19" fill={`url(#${gold})`} stroke="#8a5f18" strokeOpacity="0.55" strokeWidth="0.7" />
+      <circle cx="20" cy="20" r="16" fill="none" stroke="#7a5414" strokeOpacity="0.45" strokeWidth="0.9" />
+      <circle cx="20" cy="20" r="14.4" fill="none" stroke="#fff4cf" strokeOpacity="0.4" strokeWidth="0.6" />
+      <ellipse cx="20" cy="13" rx="13" ry="8" fill={`url(#${shine})`} />
+      <text x="20" y="25.5" textAnchor="middle" fontFamily="Georgia, 'Times New Roman', serif" fontSize="15" fontWeight="700" fill="#171308">Y6</text>
+    </svg>
   );
 }
 
