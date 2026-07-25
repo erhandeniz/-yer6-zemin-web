@@ -37,3 +37,8 @@ Thumbs.db
 # Temp files
 *.tmp
 *.temp
+
+# macOS/iCloud senkron çakışma kopyaları ve yedekler (build kırar, asla commitlenmez)
+* 2.*
+* 3.*
+*.bak
