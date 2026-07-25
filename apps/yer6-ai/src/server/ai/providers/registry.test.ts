@@ -8,6 +8,8 @@ const baseConfig: AIConfig = {
   openAIApiKey: "test-only-key",
   openAIModel: "test-openai-model",
   cloudflareModel: "test-cloudflare-model",
+  deepSeekModel: "test-deepseek-model",
+  geminiModel: "test-gemini-model",
   maxOutputTokens: 1_200,
   reasoningEffort: "low"
 };

@@ -3,14 +3,25 @@ export const DEFAULT_AI_MODELS = {
   // OPENAI_MODEL only for verified, accessible model ids.
   openai: "gpt-5.6",
   cloudflare: "@cf/openai/gpt-oss-120b",
-  // DeepSeek is OpenAI-compatible (chat completions). Used as the primary,
-  // low-cost brain for the PUBLIC marketing bot (see public provider chain).
-  deepseek: "deepseek-chat",
-  // Gemini (Google AI Studio) exposes an OpenAI-compatible endpoint. Its free
-  // tier (Flash class, ~1500 req/day, no card) makes it the FREE primary brain
-  // for the public marketing bot.
-  gemini: "gemini-2.5-flash"
+  // DeepSeek is OpenAI-compatible (chat completions). Used in the PUBLIC
+  // marketing-bot chain. 2026-07: API accepts deepseek-v4-flash / deepseek-v4-pro
+  // ("deepseek-chat" alias was retired — providers also carry a candidate list).
+  deepseek: "deepseek-v4-flash",
+  // Gemini (Google AI Studio) exposes an OpenAI-compatible endpoint. Free tier
+  // (Flash class) = the FREE primary brain for the public bot. "-latest" alias
+  // auto-tracks Google's newest Flash so the id never goes stale.
+  gemini: "gemini-flash-latest"
 } as const;
+
+// Model-id drift protection: if the configured/default id returns "not found",
+// providers retry these in order (before any output has streamed).
+export const GEMINI_MODEL_CANDIDATES = [
+  "gemini-flash-latest",
+  "gemini-3.5-flash",
+  "gemini-3-flash",
+  "gemini-2.5-flash"
+] as const;
+export const DEEPSEEK_MODEL_CANDIDATES = ["deepseek-v4-flash", "deepseek-v4-pro"] as const;
 
 export const DEEPSEEK_BASE_URL = "https://api.deepseek.com";
 export const GEMINI_BASE_URL = "https://generativelanguage.googleapis.com/v1beta/openai/";
