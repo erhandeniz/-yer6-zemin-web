@@ -24,7 +24,14 @@ export type SourceCitation = {
   standardCode?: string;
 };
 
-export type AIProviderName = "openai" | "cloudflare-workers-ai" | "deepseek" | "gemini";
+export type AIProviderName =
+  | "openai"
+  | "cloudflare-workers-ai"
+  | "deepseek"
+  | "gemini"
+  | "groq"
+  | "cerebras"
+  | "mistral";
 
 export type AIStreamEvent =
   | { type: "meta"; requestId: string; provider: AIProviderName }

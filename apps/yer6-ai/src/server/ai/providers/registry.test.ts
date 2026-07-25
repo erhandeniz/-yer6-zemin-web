@@ -10,6 +10,9 @@ const baseConfig: AIConfig = {
   cloudflareModel: "test-cloudflare-model",
   deepSeekModel: "test-deepseek-model",
   geminiModel: "test-gemini-model",
+  groqModel: "test-groq-model",
+  cerebrasModel: "test-cerebras-model",
+  mistralModel: "test-mistral-model",
   maxOutputTokens: 1_200,
   reasoningEffort: "low"
 };
