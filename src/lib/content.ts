@@ -53,36 +53,40 @@ export const services = [
     detail: "Jet grout yapan firmalar arasında ileri mühendislik standartlarıyla öne çıkan YER6; 400-600 bar aralığındaki yüksek basınçlı çimento şerbetinin (grout), zemin matrisini parçalayarak yerinde zemin-çimento kolonları (soilcrete) oluşturması prensibine dayanır. Zorlu saha koşullarında, dar alanlarda ve mevcut yapılara bitişik (underpinning) kazılarda taşıma kapasitesini artırmak ve su geçirimsizlik perdesi (secant wall) sağlamak için en etkili geoteknik çözümdür.",
     specs: ["Mono, double ve triple sistem", "Gerçek zamanlı basınç ve debi takibi", "Kesintisiz yüzey dönüş (spoil) kontrolü"],
     applications: [
+      "Mevcut yapılarda bina altı temel güçlendirmesi (underpinning)",
+      "Aktif kullanılan Türk Telekom binaları, veri merkezleri ve santral tesisleri altında elektrikli makinelerle titreşimsiz uygulama",
       "Derin kazılarda yeraltı suyu kesici (cutoff) geçirimsizlik perdeleri",
-      "Mevcut yapıların temel altı güçlendirmesi (underpinning)",
       "Yumuşak kil ve gevşek kumlarda taşıma gücü (bearing capacity) artırımı",
       "Tünel ayna ve portal giriş stabilizasyonu, şaft kazıları",
       "Kıyı yapılarında deniz suyu girişini engelleyen sızdırmazlık perdeleri",
       "Sıvılaşma riskine karşı zemin iyileştirmesi"
     ],
     advantages: [
-      "Mevcut yapılara sıfır titreşimle, yapısal hasar riski olmadan uygulanabilir.",
-      "Kompakt ekipman yapısı sayesinde dar ve yüksekliği kısıtlı bodrum katlarda çalışılabilir.",
+      "Statik ve Titreşimsiz Yöntem: Kazık çakma veya darbeli delgi aksine titreşimsizdir; bina strüktürüne, komşu yapılara ve hassas cihazlara zarar vermez.",
+      "Elektrikli Jet Grout Makinesi Teknolojisi: Kapalı bodrum katlarında ve havalandırması kısıtlı tesislerde zehirli egzoz emisyonunu %100 yok eder, ultra düşük gürültü sağlar.",
+      "Oturma (Settlement) ve Kabarma (Heave) Kontrolü: 400-600 bar yüksek basınç enjeksiyonunda spoil (çamur) çıkış kanalları sürekli açık tutularak zemin kabarması engellenir.",
+      "Şaşırtmalı/Ardışık (Dama Düzeni) Döküm Sekansı: Yan yana kolonlar aynı anda yapılmaz; en az 2 kolon mesafesi bırakılarak 24 saatlik priz süresiyle binanın oturma riski sıfırlanır.",
+      "7/24 Gerçek Zamanlı İzleme (Monitoring): İnklinometre, oturma plakaları ve tiltmetre ile milimetrik bina hareketleri anlık izlenir, belirlenen eşikte imalat durdurulur.",
       "Zemin profiline göre Mono (sadece grout), Double (grout+hava) veya Triple (grout+su+hava) sistem seçimiyle optimize edilir.",
-      "Geleneksel fore kazık yöntemlerinin aksine donatı gerektirmediği için daha hızlı ve ekonomiktir.",
-      "Yeraltı su seviyesinin altındaki akıntılı kumlarda bile yüksek basınç sayesinde etkili birleşim sağlar.",
-      "Uygulama esnasında dijital sensörlerle dönüş hızı (rpm) ve enjeksiyon debisi anlık izlenir."
+      "İmalat öncesi saha deneme kolonları (trial columns) yapılarak enjeksiyon basıncı, tij çekme hızı ve dönüş sayısı (rpm) zemin ortamında doğrulanır."
     ],
     processSteps: [
-      { title: "Zemin Modeli ve Ön Tasarım", description: "Geoteknik zemin etüdüne (SPT/CPT) dayalı olarak hedeflenen kolon çapı, derinliği ve kafes (grid) aralığı belirlenir." },
-      { title: "Saha Deneme Kolonları (Zorunlu)", description: "Uluslararası standartlar (USACE, FHWA) gereği pilot kolonlar imal edilir. Hedef çap ve dayanım için basınç, çekme hızı ve su/çimento oranı sahada kalibre edilir." },
-      { title: "Yüksek Basınçlı Enjeksiyon (Jetleme)", description: "Delgi tijinin ucundaki nozullardan 400-600 bar basınçla enjeksiyon basılırken, tij belirli bir hızda döndürülerek (rpm) yukarı çekilir." },
-      { title: "Dönüş (Spoil) Kontrolü", description: "İmalat boyunca yüzeye sürekli malzeme (spoil) dönüşü sağlanarak kolon sürekliliği doğrulanır ve tehlikeli zemin kabarması (heave) engellenir." },
-      { title: "Kalite Kabul Testleri", description: "Sertleşen jet grout kolonlarından karot alınarak (UCS - serbest basınç dayanımı) test edilir ve kolon sürekliliği raporlanarak teslim edilir." }
+      { title: "Zemin Modeli ve Proje Değerlendirmesi", description: "Geoteknik zemin etüdü (SPT/CPT), temel/mimari projeler ve kuyu kotları YER6 mühendislerince incelenerek yapıya özel uygulama modeli tasarlanır." },
+      { title: "Saha Deneme Kolonları (Zorunlu Kalibrasyon)", description: "Uluslararası standartlar (USACE, FHWA) gereği pilot kolonlar imal edilir. Hedef çap ve dayanım için basınç, çekme hızı ve su/çimento oranı sahada kalibre edilir." },
+      { title: "Elektrikli Ekipman Kurulumu ve Sensör Takibi", description: "Sıfır emisyonlu elektrikli jet grout makinesi mobilize edilir; binaya inklinometre, oturma plakaları ve optik izleme donanımları takılır." },
+      { title: "Şaşırtmalı/Ardışık Kolon İmalatı", description: "Dama düzeninde yan yana olan kolonlar aynı anda yapılmaz. En az 2 kolon aralığı bırakılır ve 24 saatlik priz süresinin ardından ara kolonlar tamamlanır." },
+      { title: "Kesintisiz Spoil (Çamur Dönüşü) ve Basınç Kontrolü", description: "400-600 bar basınçla jetleme yapılırken kuyu ağzından spoil geri dönüşü anlık takip edilir. Çamur dönüşünün kesilmesi durumunda hidro-fraktür ve kabarmayı önlemek için enjeksiyon derhal kesilir." },
+      { title: "Karot Alımı ve Kalite Doğrulama Raporu", description: "Sertleşen jet grout kolonlarından karot alınarak (UCS - serbest basınç dayanımı) test edilir ve mühendislik onay raporuyla teslim edilir." }
     ],
-    technicalNote: "Bir jet grout uygulamasının kalitesi yalnızca kullanılan çimento miktarına değil, uygulanan kinetik enerjiye (basınç ve çekme hızı) bağlıdır. FHWA-HRT-13-046 yönergelerine göre, yüzeye sürekli çamur (spoil) dönüşünün kesilmesi jetlemenin durdurulmasını gerektirir; aksi takdirde yanal zemin kırılmaları (hidro-fraktür) oluşur. YER6, her projede deneme kolonu (trial column) uygulamasını standart olarak kabul eder.",
+    technicalNote: "Bir jet grout uygulamasının başarısı yalnızca kullanılan çimento miktarına değil, uygulanan kinetik enerjiye (basınç ve çekme hızı) ve risk yönetimine bağlıdır. FHWA-HRT-13-046 yönergelerine göre, yüzeye sürekli çamur (spoil) dönüşünün kesilmesi jetlemenin durdurulmasını gerektirir; aksi takdirde yanal zemin kırılmaları (hidro-fraktür) ve tehlikeli zemin kabarmaları (heave) oluşur. YER6; bina altı projelerinde özel elektrikli makineler (sıfır egzoz, düşük gürültü), şaşırtmalı döküm disiplini ve 7/24 inklinometre takibiyle bina strüktürüne sıfır hasar riski sunar ve her projede deneme kolonu (trial column) uygulamasını standart kabul eder.",
     faq: [
       { question: "Jet grout hangi zemin türlerinde uygulanır?", answer: "Jet grout; kum, silt, kil ve karma yapılı zeminlerde uygulanabilir. Ancak çok katı kil veya yoğun çakıllı (boulder) zeminlerde, yüksek kinetik enerji (Triple sistem) ve özel nozul tasarımları gerektirir." },
-      { question: "Jet grout kolon çapı ne kadar olabilir?", answer: "Kullanılan sisteme (Mono, Double, Triple), zemin sıkılığına ve enjeksiyon parametrelerine bağlı olarak 0.40 metre ile 2.50 metre arasında kolon çapı elde edilebilir." },
-      { question: "Mevcut yapının altında (bodrumda) jet grout uygulanabilir mi?", answer: "Evet. Mini kazık makinelerine entegre edilebilen kompakt jet grout kafaları ile mevcut yapıların bodrumlarında, minimum 2.5 - 3 metre tavan yüksekliği olan alanlarda titreşimsiz temel güçlendirme (underpinning) yapılabilir." },
-      { question: "Jet grout uygulaması ne kadar sürer?", answer: "Uygulama hızı, zeminin delinebilirliğine ve kolon derinliğine bağlıdır. YER6'nın yüksek kapasiteli makine parkı sayesinde günlük 150-300 m/tül üretime çıkılabilmektedir." },
-      { question: "Jet grout kolonlarının kalitesi nasıl test edilir?", answer: "Saha imalatından 7-28 gün sonra kolonlardan elmas uçlu karot alınır. Laboratuvarda UCS (Tek Eksenli Basınç) testi yapılarak tasarım mukavemetinin sağlanıp sağlanmadığı belgelenir." },
-      { question: "Jet grout firmaları seçilirken hangi kriterler önemlidir?", answer: "Geoteknik firmanın kendi yüksek basınçlı pompalarına (Soilmec, Metax vb.) sahip olması, üretim esnasında dijital veri kaydı (data logger) tutabilmesi ve mutlaka saha deneme kolonu yapması en kritik faktörlerdir." }
+      { question: "Bina altı jet grout uygulaması mevcut binaya veya cihazlara zarar verir mi?", answer: "Hayır. Jet grout darbeli veya çakma bir sistem olmayıp statik ve titreşimsiz bir hidro-enjeksiyon yöntemidir. YER6 mühendislerinin uyguladığı şaşırtmalı döküm sekansı ve 7/24 inklinometre/oturtma takibi sayesinde binada oturma veya çatlak riski oluşmaz." },
+      { question: "Neden bina altı uygulamalarda elektrikli jet grout makinesi tercih edilir?", answer: "Bodrum katlarında, veri merkezlerinde ve havalandırması kısıtlı santral binalarında dizel makinelerin ürettiği karbonmonoksit ve zehirli egzoz gazı riskini tamamen ortadan kaldırmak için YER6 elektrikli jet grout makineleri kullanır." },
+      { question: "Bina altı uygulamalarda oturma (settlement) ve kabarma (heave) riski nasıl önlenir?", answer: "Killi zeminlerde yüksek enjeksiyon basıncının tetiklediği kabarma (heave) riskine karşı enjeksiyon debisi kademeli ayarlanır ve spoil (çamur) çıkışı izlenir. Oturmayı (settlement) engellemek için ise yan yana kolonlar aynı anda imal edilmez (şaşırtmalı döküm) ve taze kolona 24 saat priz beklenir." },
+      { question: "Teknik teklif ve risk değerlendirmesi için hangi belgeler gereklidir?", answer: "Sağlıklı bir teklif hazırlanabilmesi için: 1) Akredite Zemin Etüt Raporu (Sondaj, SPT, CPT), 2) Mevcut Temel ve Mimari/Statik Projeler, 3) Bodrum kat tavan yükseklikleri ve mevcut kuyu/temel kotlarının paylaşılması gereklidir. YER6 Mühendisleri yapıya özel karar verir." },
+      { question: "Türk Telekom gibi kesintisiz çalışan hassas tesislerde uygulama nasıl yürütülür?", answer: "Türk Telekom santralleri gibi 7/24 kesintisiz çalışan binalarda; sıfır emisyonlu elektrikli makinelerimiz, gürültü kalkanları ve titreşimsiz delgi teknolojimizle tesis faaliyetleri kesintiye uğratılmadan imalat gerçekleştirilir." },
+      { question: "Jet grout kolonlarının kalitesi nasıl test edilir?", answer: "Saha imalatından 7-28 gün sonra kolonlardan elmas uçlu karot alınır. Laboratuvarda UCS (Tek Eksenli Basınç) testi yapılarak tasarım mukavemetinin sağlanıp sağlanmadığı belgelenir." }
     ]
   },
   {

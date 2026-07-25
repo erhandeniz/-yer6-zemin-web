@@ -2142,16 +2142,28 @@ export const knowledgeArticles: KnowledgeArticle[] = [
       },
       {
         id: "jet-grout-underpinning",
-        title: "Jet Grout ile Temel Altı Güçlendirme",
+        title: "Jet Grout ile Temel Altı Güçlendirme (Bina Altı Jet Grout)",
         blocks: [
           {
             type: "paragraph",
-            content: "Jet grout, mevcut yapı altında ek kazı gerektirmeden zemin içinde kolonlar oluşturarak kapasiteyi artırır. Kolon geometrisi ve enjeksiyon parametreleri, mevcut temel yükleri ve zemin koşullarına göre tasarlanır."
+            content: "Bina altı jet grout (underpinning); aktif kullanılan yapılarda, Türk Telekom santrallerinde, veri merkezlerinde ve tarihi binalarda ek kazı gerektirmeden temel altında zemin-çimento kolonları oluşturarak taşıma kapasitesini artıran statik ve titreşimsiz bir hidro-enjeksiyon yöntemidir. Darbeli veya vibrasyonlu delgilerin aksine bina strüktürüne ve hassas cihazlara zarar vermez."
+          },
+          {
+            type: "list",
+            title: "Bina Altı Jet Grout İmalatında İki Kritik Risk ve Yönetimi",
+            items: [
+              "Oturma (Settlement): Delgi esnasında akışkan sirkülasyonunun ve zemin matrisinin geçici gevşemesi sonucu oluşabilecek lokal oturmaları engellemek için Şaşırtmalı/Ardışık (dama düzeni) döküm sekansı uygulanır. Yan yana kolonlar aynı anda yapılmaz; en az 2 kolon mesafesi bırakılarak 24 saatlik priz süresi verilir.",
+              "Kabarma (Heave / Hydro-fracture): Killi zeminlerde 400-600 bar yüksek basıncın ve kuyu ağzında tıkanan çamur (spoil) yolunun zemini yukarı kaldırmasını önlemek için kademeli basınç kalibrasyonu yapılır ve spoil çıkış yolu sürekli açık tutulur."
+            ]
+          },
+          {
+            type: "paragraph",
+            content: "YER6, kapalı bodrum katlarında ve havalandırması kısıtlı tesislerde zehirli egzoz gazı riskini %100 yok eden özel Elektrikli Jet Grout Makineleri kullanır. Süreç boyunca binaya takılan inklinometre, oturma plakaları ve tiltmetre sensörleri ile bina hareketleri 7/24 izlenir. Sağlıklı bir teklif ve risk değerlendirmesi için zemin etüt raporu (SPT/CPT), temel/mimari projeler ve kuyu kotlarının YER6 Mühendisleri ile paylaşılması yeterlidir."
           },
           {
             type: "note",
-            title: "Etaplı uygulama",
-            content: "Temel altı jet grout uygulamalarında, yapı güvenliğini korumak için kolonlar belirli bir etap sırasına göre üretilmeli; hiçbir zaman tüm temel hattı aynı anda uygulamaya alınmamalıdır."
+            title: "YER6 Mühendislik Protokolü",
+            content: "Temel altı jet grout uygulamalarında, uluslararası ISSMGE TC211 ve FHWA standartları gereği imalat öncesinde sahada mutlaka deneme kolonları (trial columns) yapılır; tij çekme hızı, dönüş sayısı (rpm) ve enjeksiyon basıncı zemin ortamında doğrulanarak imalata geçilir."
           }
         ]
       },
