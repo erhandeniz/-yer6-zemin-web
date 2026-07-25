@@ -5,18 +5,30 @@ import Script from "next/script";
 
 const pageUrl = `${siteConfig.siteUrl}/knowledge/`;
 
+// /knowledge/ = YAPILANDIRILMIŞ, kalıcı (evergreen) teknik rehberler.
+// (/blog/ = güncel yazılar ve saha içgörüleri — niyetler ayrışıktır.)
+const pageTitle = "Geoteknik Bilgi Merkezi | Jet Grout, DSM ve Fore Kazık | YER6";
+const pageDescription =
+  "Jet grout, DSM, fore kazık, ankraj ve zemin iyileştirme yöntemleri hakkında doğrulanmış teknik rehberler, uygulama esasları ve kalite kontrol içerikleri.";
+
 export const metadata: Metadata = {
-  title: "Zemin Güçlendirme Bilgi Merkezi",
-  description:
-    "Geoteknik mühendislik bilgi bankası. Jet grout, DSM, fore kazık, ankraj ve zemin iyileştirme yöntemleri hakkında detaylı teknik makaleler.",
+  title: { absolute: pageTitle },
+  description: pageDescription,
   alternates: {
-    canonical: pageUrl
+    canonical: pageUrl,
+    languages: { "tr-TR": pageUrl }
   },
   openGraph: {
-    title: "Zemin Güçlendirme Bilgi Merkezi | YER6",
-    description:
-      "Geoteknik mühendislik bilgi bankası. Jet grout, DSM, fore kazık, ankraj ve zemin iyileştirme yöntemleri hakkında detaylı teknik makaleler.",
-    url: pageUrl
+    title: pageTitle,
+    description: pageDescription,
+    url: pageUrl,
+    type: "website",
+    locale: "tr_TR"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: pageTitle,
+    description: pageDescription
   }
 };
 
@@ -40,12 +52,29 @@ export default function KnowledgeIndexPage() {
     ]
   };
 
+  const collectionSchema = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": `${pageUrl}#collectionpage`,
+    name: pageTitle,
+    description: pageDescription,
+    url: pageUrl,
+    inLanguage: "tr-TR",
+    isPartOf: { "@id": `${siteConfig.siteUrl}/#website` },
+    breadcrumb: { "@id": `${pageUrl}#breadcrumb` }
+  };
+
   return (
     <>
       <Script
         id="knowledge-breadcrumb-schema"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({ ...breadcrumbSchema, "@id": `${pageUrl}#breadcrumb` }) }}
+      />
+      <Script
+        id="knowledge-collection-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }}
       />
       <KnowledgeContent />
     </>

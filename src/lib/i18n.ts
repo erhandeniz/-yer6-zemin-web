@@ -377,9 +377,11 @@ export const dictionary = {
     techReportCopy: "İmalat ilerlemesi ve risk sinyalleri.",
 
     /* ── BLOG PAGE ── */
-    blogEyebrow: "Bilgi Bankası",
-    blogTitle: "Zemin mühendisliği bilgi merkezi",
-    blogCopy: "Jet grout, fore kazık, DSM, zemin iyileştirme, iksa ve kalite kontrol uygulamalarına yönelik teknik rehberler.",
+    /* Blog = güncel yazılar + saha notları. "Bilgi merkezi" kimliği yalnızca
+       /knowledge sayfasına aittir (Google'ın başlık karıştırmasının kökü buydu). */
+    blogEyebrow: "Blog",
+    blogTitle: "Zemin güçlendirme blogu: güncel yazılar ve saha notları",
+    blogCopy: "Jet grout, DSM, fore kazık, iksa ve kalite kontrol uygulamalarından güncel yazılar, saha içgörüleri ve şirket yayınları.",
     blogSectionEyebrow: "Makaleler",
     blogSectionTitle: "Saha deneyimiyle hazırlanan teknik içerikler",
     blogReadMore: "Makaleyi aç",
@@ -869,9 +871,12 @@ export const dictionary = {
     techReportCopy: "Real-time execution status and warning triggers.",
 
     /* ── BLOG PAGE ── */
-    blogEyebrow: "Knowledge Base",
-    blogTitle: "Knowledge center for geotechnical engineering.",
-    blogCopy: "Technical guides, best practices, and QA checklists for jet grouting, DSM, piling, and anchoring for developers and design teams.",
+    /* Blog = current articles + field insights. The "knowledge center" identity
+       belongs exclusively to /knowledge (this exact EN phrase was being picked
+       up by Google as the rewritten Turkish result title). */
+    blogEyebrow: "Blog",
+    blogTitle: "Ground improvement blog: current articles and field insights",
+    blogCopy: "Current articles, field insights and company publications on jet grouting, DSM, bored piles, excavation support and quality control.",
     blogSectionEyebrow: "Articles",
     blogSectionTitle: "Technical content built on field experience.",
     blogReadMore: "Open Article",
@@ -1361,9 +1366,9 @@ export const dictionary = {
     techReportCopy: "حالة تقدم تنفيذ الأعمال الميدانية وإشارات التنبيه بالمخاطر.",
 
     /* ── BLOG PAGE ── */
-    blogEyebrow: "مركز المعرفة",
-    blogTitle: "مركز معلومات وبحوث جيوتقنية.",
-    blogCopy: "أدلة فنية، إرشادات للمستثمرين والمصممين والفرق الميدانية حول الحقن النفاث، الخلط العميق، تدعيم الحفريات والمراسي وقبول الجودة.",
+    blogEyebrow: "المدونة",
+    blogTitle: "مدونة تحسين التربة: مقالات حديثة وخبرات ميدانية",
+    blogCopy: "مقالات حديثة ورؤى ميدانية ومنشورات الشركة حول الحقن النفاث والخلط العميق والخوازيق المحفورة ودعم الحفريات وضبط الجودة.",
     blogSectionEyebrow: "المقالات المهنية",
     blogSectionTitle: "محتوى فني دقيق يبحث عنه المطورون والمهندسون.",
     blogReadMore: "افتح المقال",
