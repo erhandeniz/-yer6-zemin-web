@@ -125,15 +125,29 @@ export function AccountMenu({ variant }: { variant: "sidebar" | "topbar" }) {
   }
 
   const MENU_WIDTH = 256;
+  // Critical surface styles are INLINE on purpose: a stale Tailwind/webpack
+  // cache once shipped a stylesheet without the arbitrary classes
+  // (bg-[#0d0d0d], z-[9999]) which made this menu fully transparent — the real
+  // root cause of the "menü boş / altında kalıyor" reports. Inline styles are
+  // immune to the CSS pipeline.
+  const surfaceStyle: React.CSSProperties = {
+    zIndex: 9999,
+    backgroundColor: "#0d0d0d",
+    border: "1px solid rgba(255,255,255,0.09)",
+    borderRadius: 8,
+    boxShadow: "0 25px 50px -12px rgba(0,0,0,0.6)"
+  };
   const menuStyle: React.CSSProperties = anchor
     ? variant === "topbar"
       ? {
+          ...surfaceStyle,
           position: "fixed",
           top: anchor.bottom + 8,
           left: Math.max(8, Math.min(anchor.right - MENU_WIDTH, window.innerWidth - MENU_WIDTH - 8)),
           width: MENU_WIDTH
         }
       : {
+          ...surfaceStyle,
           position: "fixed",
           bottom: Math.max(8, window.innerHeight - anchor.top + 8),
           left: Math.max(8, anchor.left),
