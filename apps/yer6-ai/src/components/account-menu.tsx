@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { signOut } from "next-auth/react";
 import { useEffect, useRef, useState } from "react";
 import { ChevronDown, LogOut, Settings2, Shield, User as UserIcon, UserCircle2 } from "lucide-react";
@@ -29,7 +28,6 @@ const PRIVILEGED = new Set(["ADMIN", "SUPER_ADMIN"]);
  */
 export function AccountMenu({ variant }: { variant: "sidebar" | "topbar" }) {
   const { t, locale, setLocale } = useAITranslation();
-  const router = useRouter();
   const [user, setUser] = useState<SessionUser | null>(null);
   const [loaded, setLoaded] = useState(false);
   const [open, setOpen] = useState(false);
