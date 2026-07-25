@@ -1,5 +1,11 @@
 import { describe, expect, it } from "vitest";
-import { DEFAULT_AI_MODELS, getAIConfig } from "@/server/ai/config";
+import {
+  CEREBRAS_MODEL_CANDIDATES,
+  DEFAULT_AI_MODELS,
+  getAIConfig,
+  GROQ_MODEL_CANDIDATES,
+  MISTRAL_MODEL_CANDIDATES
+} from "@/server/ai/config";
 
 function environment(values: Record<string, string> = {}): NodeJS.ProcessEnv {
   return { NODE_ENV: "test", ...values };
@@ -13,6 +19,17 @@ describe("AI configuration", () => {
       openAIApiKey: undefined,
       openAIModel: DEFAULT_AI_MODELS.openai,
       cloudflareModel: DEFAULT_AI_MODELS.cloudflare,
+      // Public bot chain providers (all keyless by default → inactive):
+      deepSeekApiKey: undefined,
+      deepSeekModel: DEFAULT_AI_MODELS.deepseek,
+      geminiApiKey: undefined,
+      geminiModel: DEFAULT_AI_MODELS.gemini,
+      groqApiKey: undefined,
+      groqModel: GROQ_MODEL_CANDIDATES[0],
+      cerebrasApiKey: undefined,
+      cerebrasModel: CEREBRAS_MODEL_CANDIDATES[0],
+      mistralApiKey: undefined,
+      mistralModel: MISTRAL_MODEL_CANDIDATES[0],
       maxOutputTokens: 1_200,
       reasoningEffort: "low"
     });
