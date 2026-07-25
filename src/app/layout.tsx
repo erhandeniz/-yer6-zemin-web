@@ -12,7 +12,7 @@ const openGraphImage = `${siteUrl}/opengraph-image.png`;
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "YER6 Zemin Güçlendirme, Jet Grout ve Fore Kazık | Ankara",
+    default: "YER6 Zemin Güçlendirme | Jet Grout, DSM ve Fore Kazık",
     template: "%s | YER6 Zemin Güçlendirme Geoteknik Mühendislik"
   },
   description:
@@ -76,7 +76,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "tr_TR",
     siteName: "YER6 Zemin Güçlendirme Geoteknik Mühendislik",
-    title: "YER6 Zemin Güçlendirme, Jet Grout ve Fore Kazık | Ankara",
+    title: "YER6 Zemin Güçlendirme | Jet Grout, DSM ve Fore Kazık",
     description:
       "Zemin güçlendirme, zemin iyileştirme, jet grout, DSM, fore kazık, mini kazık, ankraj ve iksa sistemleri alanında mühendislik odaklı saha uygulaması.",
     images: [
