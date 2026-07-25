@@ -135,7 +135,10 @@ function Topbar() {
   const { locale, setLocale, t } = useAITranslation();
 
   return (
-    <header className="flex h-16 shrink-0 items-center gap-3 border-b border-white/[0.065] bg-[#0b0b0b]/95 px-4 backdrop-blur-xl lg:px-6">
+    {/* relative z-40: backdrop-blur creates a stacking context; without an
+        explicit z-index the account/notification dropdowns paint BENEATH the
+        main content that follows in the DOM (report: "menü boş açılıyor"). */}
+    <header className="relative z-40 flex h-16 shrink-0 items-center gap-3 border-b border-white/[0.065] bg-[#0b0b0b]/95 px-4 backdrop-blur-xl lg:px-6">
       <Button
         variant="ghost"
         size="icon"
