@@ -24,7 +24,8 @@ export async function requireWorkspaceUser(): Promise<Session | Response> {
 export async function requireAdmin(): Promise<Session | Response> {
   const current = await requireWorkspaceUser();
   if (current instanceof Response) return current;
-  if (current.user.role === "ADMIN") return current;
+  // SUPER_ADMIN is a strict superset of ADMIN (additive role, RELEASE 1).
+  if (current.user.role === "ADMIN" || current.user.role === "SUPER_ADMIN") return current;
   return Response.json({ error: "FORBIDDEN" }, { status: 403 });
 }
 

@@ -50,8 +50,10 @@ describe("credential authorization", () => {
   it("enables demo login only when both explicit credentials match", async () => {
     process.env.DEMO_EMAIL = "demo@yer6.ai";
     process.env.DEMO_PASSWORD = "local-only";
+    // RELEASE 1: demo sessions carry the dedicated DEMO role so tenancy
+    // helpers can categorically exclude them from tenant records.
     expect(await authorizeCredentials({ email: "DEMO@YER6.AI", password: "local-only" }))
-      .toMatchObject({ id: "demo-engineer", role: "ENGINEER" });
+      .toMatchObject({ id: "demo-engineer", role: "DEMO" });
     expect(await authorizeCredentials({ email: "demo@yer6.ai", password: "wrong" })).toBeNull();
   });
 });

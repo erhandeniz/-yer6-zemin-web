@@ -13,5 +13,6 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/((?!api|_next/static|_next/image|login|demo|.*\\..*).*)"]
+  // /hakkinda is the PUBLIC founder profile (Package C) — reachable signed out.
+  matcher: ["/((?!api|_next/static|_next/image|login|demo|hakkinda|.*\\..*).*)"]
 };

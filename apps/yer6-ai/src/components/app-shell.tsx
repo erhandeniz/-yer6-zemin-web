@@ -20,6 +20,7 @@ import {
   Users,
   X
 } from "lucide-react";
+import { AccountMenu } from "@/components/account-menu";
 import { BrandMark } from "@/components/brand-mark";
 import { UploadDialog } from "@/components/uploads/upload-dialog";
 import { Button } from "@/components/ui/button";
@@ -121,14 +122,7 @@ function SidebarContent({ onNavigate }: { onNavigate?: () => void }) {
         <p className="mt-1 text-[11px] leading-4 text-white/35">{t("Data region: Europe West")}</p>
       </div>
       <div className="border-t border-white/[0.065] p-3">
-        <Link href="/login" className="flex items-center gap-3 rounded-md p-2 hover:bg-white/[0.04]">
-          <span className="grid size-8 place-items-center rounded-md bg-white/8 text-[11px] font-semibold text-white/80">ED</span>
-          <span className="min-w-0 flex-1">
-            <span className="block truncate text-xs font-medium text-white/80">Erhan Deniz</span>
-            <span className="block truncate text-[11px] text-white/35">{t("Lead Engineer")}</span>
-          </span>
-          <ChevronDown className="size-3.5 text-white/30" />
-        </Link>
+        <AccountMenu variant="sidebar" />
       </div>
     </div>
   );
@@ -189,10 +183,7 @@ function Topbar() {
         <span className="absolute right-2 top-2 size-1.5 rounded-full bg-primary" />
       </Button>
       <span className="hidden h-5 w-px bg-white/[0.08] sm:block" />
-      <button className="hidden items-center gap-2 rounded-md p-1.5 hover:bg-white/[0.04] sm:flex">
-        <span className="grid size-7 place-items-center rounded-md bg-primary/15 text-[10px] font-semibold text-primary">ED</span>
-        <ChevronDown className="size-3.5 text-white/30" />
-      </button>
+      <AccountMenu variant="topbar" />
     </header>
   );
 }
