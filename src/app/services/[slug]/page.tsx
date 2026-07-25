@@ -30,6 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ankraj: "Ankraj Firmaları | Türkiye Geneli Öngermeli Ankraj Uygulaması",
     "iksa-sistemleri": "İksa Firmaları | Derin Kazı İksa Sistemleri ve Çözümleri",
     "zemin-iyilestirme": "Zemin İyileştirme Teknikleri ve En İyi Zemin İyileştirme Firmaları",
+    "zemin-guclendirme": "CFA Kazık Firmaları | Continuous Flight Auger Zemin Güçlendirme & Derin Temeller",
     "geoteknik-danismanlik": "Geoteknik Danışmanlık ve Zemin Etüdü Firmaları",
     "zemin-civisi": "Zemin Çivisi (Soil Nailing) Uygulaması ve Avantajları",
     "puskurtme-beton": "Püskürtme Beton (Shotcrete) Uygulaması ve Kullanım Alanları",

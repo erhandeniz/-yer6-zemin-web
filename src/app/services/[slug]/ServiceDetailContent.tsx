@@ -27,7 +27,8 @@ const serviceArticleMap: Record<string, string[]> = {
   "zemin-etudu": ["zemin-iyilestirme-planlama", "sivilasma-riskine-karsi-zemin-guclendirme", "zemin-kalite-kontrol-standartlari"],
   "tas-kolon": ["zemin-iyilestirme-yontemleri", "sivilasma-riskine-karsi-zemin-guclendirme", "zemin-iyilestirme-planlama"],
   "diafram-duvar": ["kazi-destek-sistemleri-nedir", "zemin-iyilestirme-risk-yonetimi", "fore-kazik-nedir"],
-  "bina-alti-jet-grout": ["temel-alti-zemin-guclendirme", "binalari-yikmadan-zemin-guclendirme", "jet-grout-nedir"]
+  "bina-alti-jet-grout": ["temel-alti-zemin-guclendirme", "binalari-yikmadan-zemin-guclendirme", "jet-grout-nedir"],
+  "cfa-kazik": ["fore-kazik-nedir", "fore-kazik-sureklilik-ve-yukleme-testleri", "zemin-iyilestirme-risk-yonetimi"]
 };
 
 function FaqItem({ question, answer }: { question: string; answer: string }) {
