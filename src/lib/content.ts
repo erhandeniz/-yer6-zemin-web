@@ -682,12 +682,59 @@ export const services = [
   }
 ];
 
+export const standaloneServices = [
+  {
+    slug: "bina-alti-jet-grout",
+    key: "svc_bina_alti_jet_grout",
+    icon: Building2,
+    title: "Bina Altı Jet Grout & Temel İyileştirme",
+    summary: "Elektrikli Jet Grout makineleri, sıfır emisyon, düşük gürültü ve gerçek zamanlı izleme (monitoring) ile işletmedeki binalarda titreşimsiz temel güçlendirme.",
+    detail: "Bina altı jet grout (underpinning); aktif kullanılan binalar, Türk Telekom santralleri, veri merkezleri ve tarihi yapılarda temel altı taşıma kapasitesini artırmak ve diferansiyel oturmaları engellemek için uygulanan titreşimsiz statik hidro-enjeksiyon yöntemidir. YER6 Mühendisleri; elektrikli jet grout makineleri (sıfır egzoz, ultra düşük gürültü), ardışık/şaşırtmalı imalat sekansı, inklinometre/oturtma-kabarma sensörleri ve sahada kalibre edilen deneme kolonları ile binanıza sıfır hasar riski garantisiyle dünya standartlarında geoteknik güçlendirme sunar.",
+    specs: ["Elektrikli Jet Grout Rigs (Sıfır Emisyon & Düşük Titreşim)", "7/24 Gerçek Zamanlı İzleme (İnklinometre & Oturma Plakaları)", "Şaşırtmalı/Ardışık Kolon İmalat Protokolü"],
+    applications: [
+      "Aktif kullanılan Türk Telekom binaları, veri merkezleri ve santral tesisleri",
+      "Bodrum tavan yüksekliği kısıtlı (2.5 - 3.5m) kapalı mekanlarda temel güçlendirme",
+      "Tarihi eser, anıt ve hassas cihaz barındıran endüstriyel tesis altı ıslahı",
+      "Diferansiyel oturma yaşayan veya kat ilavesi planlanan binalarda zemin takviyesi",
+      "Yeraltı su seviyesinin yüksek olduğu bodrum katlarda sızdırmazlık ve underpinning çözümleri",
+      "Sıvılaşma riski yüksek alüvyal zeminlerde bina altı zemin rijitleştirmesi"
+    ],
+    advantages: [
+      "Titreşimsiz ve Statik Yöntem: Darbeli ve çakma sistemlerin aksine bina strüktürüne veya hassas elektronik cihazlara zarar vermez.",
+      "Elektrikli Makine Teknolojisi: Dizel motorların ürettiği zehirli egzoz gazı riskini kapalı alanlarda %100 ortadan kaldırır; gürültü seviyesini minimuma indirir.",
+      "Oturma (Settlement) ve Kabarma (Heave) Kontrolü: 400-600 bar yüksek basınç enjeksiyonunda spoil (geri dönüş çamuru) kanalları sürekli açık tutularak zemin yükselmesi engellenir.",
+      "Ardışık (Dama Düzeni) İmalat Sekansı: Yan yana kolonlar aynı anda yapılmaz; en az 2 kolon mesafesi bırakılarak 24 saatlik priz süresiyle binanın oturma riski sıfırlanır.",
+      "Gerçek Zamanlı Monitoring (Sensör Takibi): İnklinometre, oturma plakaları ve tiltmetre ölçümleriyle milimetrik bina deplasmanı anlık izlenir, eşik değerinde otomatik durdurma yapılır.",
+      "Deneme Kolonları (Trial Columns): İmalat öncesi sahada test edilen parametrelerle (basınç, rpm, çekme hızı) zemin davranışı %100 doğrulanır."
+    ],
+    processSteps: [
+      { title: "Mühendislik Veri ve Saha Analizi", description: "Zemin etüt raporu (SPT/CPT), mevcut temel/bodrum kotları ve mimari-statik projeler YER6 mühendislerince incelenerek yapıya özel uygulama modeli tasarlanır." },
+      { title: "Saha Deneme Kolonları (Trial Column)", description: "Proje sahasında önceden belirlenen noktada pilot kolon imal edilir. Jet enjeksiyon basıncı, tij dönüş hızı (rpm) ve çekme hızı zemin şartlarına göre sahada kalibre edilir." },
+      { title: "Elektrikli Ekipman Kurulumu ve Sensör Mobilizasyonu", description: "Sıfır emisyonlu elektrikli jet grout makinesi bodrum katına mobilize edilir; binaya inklinometre, oturma plakaları ve optik izleme donanımları takılır." },
+      { title: "Şaşırtmalı/Ardışık Jet Grout İmalatı", description: "Yan yana kolonlar aynı gün imal edilmez. Dama düzeninde en az 2 kolon boşluk bırakılarak delgi yapılır ve 24 saat priz süresinin ardından ara kolonlar tamamlanır." },
+      { title: "Kesintisiz Spoil ve Basınç Kontrolü", description: "400-600 bar basınçla jetleme yapılırken kuyu ağzından spoil (çamur) geri dönüşü anlık takip edilir. Dönüşün kesilmesi durumunda hidro-fraktür ve kabarmayı önlemek için enjeksiyon derhal kesilir." },
+      { title: "Karot Alımı ve Kalite Doğrulama Raporu", description: "Tamamlanan kolonlardan 7-28 gün sonra elmas uçlu karot alınarak serbest basınç dayanımı (UCS) laboratuvarda test edilir ve mühendislik onay raporuyla teslim edilir." }
+    ],
+    technicalNote: "Bina altı jet grout uygulamalarında (underpinning) en kritik mühendislik başarısı; delgi esnasında oluşabilecek lokal oturmaları (settlement) ile yüksek enjeksiyon basıncının killi zeminlerde tetikleyebileceği hidro-fraktür ve taban kabarmasını (heave) eşzamanlı engellemektir. Uluslararası ISSMGE TC211 ve FHWA-HRT-13-046 yönergelerine göre; bina altı imalatlarda yüzeye malzeme (spoil) çıkışı durduğu an enjeksiyon durdurulmalıdır. YER6, bina altı projelerinde özel elektrikli makineler, kesintisiz enstrümantasyon takibi ve ardışık döküm disipliniyle sıfır risk garantisi sunar.",
+    faq: [
+      { question: "Bina altı jet grout uygulaması mevcut binaya zarar verir mi?", answer: "Hayır. Jet grout titreşimsiz (statik) bir geoteknik yöntemdir. YER6 mühendislerinin uyguladığı şaşırtmalı (ardışık) döküm sekansı ve 7/24 inklinometre/oturtma takibi sayesinde binada oturma veya çatlak riski oluşmaz." },
+      { question: "Neden elektrikli jet grout makinesi kullanılması zorunludur?", answer: "Kapalı bodrum katlarında, aktif veri merkezlerinde ve havalandırması kısıtlı santral binalarında dizel makinelerin ürettiği karbonmonoksit ve egzoz gazları zehirlenme ve havalandırma krizine yol açar. YER6'nın elektrikli jet grout makineleri sıfır emisyon ve ultra düşük gürültü ile kapalı alanlarda güvenle çalışır." },
+      { question: "Bina altı jet grout ile oturma (settlement) ve kabarma (heave) nasıl önlenir?", answer: "Killi zeminlerde yüksek basınç nedeniyle kabarmayı engellemek için enjeksiyon debisi kademeli ayarlanır ve spoil (çamur) yolu sürekli açık tutulur. Oturmayı engellemek için ise yan yana kolonlar aynı anda yapılmaz (dama düzeni) ve en az 24 saat priz beklenir." },
+      { question: "Proje öncesinde mühendislerinize hangi belgeleri sunmalıyız?", answer: "Sağlıklı bir teknik teklif ve risk değerlendirmesi için: 1) Akredite zemin etüt raporu (sondaj, SPT/CPT verileri), 2) Mevcut temel ve mimari projeler, 3) Temel kotları ve bodrum tavan yüksekliklerinin paylaşılması yeterlidir." },
+      { question: "Türk Telekom gibi kesintisiz çalışan hassas tesislerde uygulama nasıl yürütülür?", answer: "Türk Telekom santralleri ve banka veri merkezleri gibi 7/24 kesintisiz hizmet veren binalarda; sıfır emisyonlu elektrikli makinelerimiz, gürültü kalkanları ve titreşimsiz delgi teknolojimizle işletme faaliyetlerini kesintiye uğratmadan imalat gerçekleştirilir." },
+      { question: "Bina altı jet grout kolonlarının kalitesi nasıl doğrulanır?", answer: "İmalattan 7 ila 28 gün sonra bina altındaki jet grout kolonlarından Karot alınarak Tek Eksenli Basınç Dayanımı (UCS) testleri yapılır ve TBDY 2018 normlarına uygun olarak raporlanır." }
+    ]
+  }
+];
+
+export const allServices = [...services, ...standaloneServices];
+
 export function getServiceBySlug(slug: string) {
-  return services.find((service) => service.slug === slug);
+  return allServices.find((service) => service.slug === slug);
 }
 
 export function getServicePaths() {
-  return services.map((service) => ({ slug: service.slug }));
+  return allServices.map((service) => ({ slug: service.slug }));
 }
 
 export const projects = [

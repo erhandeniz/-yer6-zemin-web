@@ -26,7 +26,8 @@ const serviceArticleMap: Record<string, string[]> = {
   "kazik-yukleme-testleri": ["fore-kazik-nedir", "saha-denetimi-numune-testleri", "zemin-kalite-kontrol-standartlari"],
   "zemin-etudu": ["zemin-iyilestirme-planlama", "sivilasma-riskine-karsi-zemin-guclendirme", "zemin-kalite-kontrol-standartlari"],
   "tas-kolon": ["zemin-iyilestirme-yontemleri", "sivilasma-riskine-karsi-zemin-guclendirme", "zemin-iyilestirme-planlama"],
-  "diafram-duvar": ["kazi-destek-sistemleri-nedir", "zemin-iyilestirme-risk-yonetimi", "fore-kazik-nedir"]
+  "diafram-duvar": ["kazi-destek-sistemleri-nedir", "zemin-iyilestirme-risk-yonetimi", "fore-kazik-nedir"],
+  "bina-alti-jet-grout": ["temel-alti-zemin-guclendirme", "binalari-yikmadan-zemin-guclendirme", "jet-grout-nedir"]
 };
 
 function FaqItem({ question, answer }: { question: string; answer: string }) {

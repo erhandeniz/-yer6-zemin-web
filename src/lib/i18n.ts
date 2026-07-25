@@ -200,6 +200,12 @@ export const dictionary = {
     svc_diafram_duvar_spec1: "Bentonit çamuru destekli panel imalatı",
     svc_diafram_duvar_spec2: "Yüksek rijitlik ve su geçirimsizliği",
     svc_diafram_duvar_spec3: "Kalıcı taşıyıcı sistem entegrasyonu",
+    svc_bina_alti_jet_grout_title: "Bina Altı Jet Grout & Temel İyileştirme",
+    svc_bina_alti_jet_grout_summary: "Elektrikli Jet Grout makineleri, sıfır emisyon, düşük gürültü ve gerçek zamanlı izleme (monitoring) ile işletmedeki binalarda titreşimsiz temel güçlendirme.",
+    svc_bina_alti_jet_grout_detail: "Bina altı jet grout (underpinning); aktif kullanılan binalar, Türk Telekom santralleri, veri merkezleri ve tarihi yapılarda temel altı taşıma kapasitesini artırmak ve diferansiyel oturmaları engellemek için uygulanan titreşimsiz statik hidro-enjeksiyon yöntemidir. YER6 Mühendisleri; elektrikli jet grout makineleri (sıfır egzoz, ultra düşük gürültü), ardışık/şaşırtmalı imalat sekansı, inklinometre/oturtma-kabarma sensörleri ve sahada kalibre edilen deneme kolonları ile binanıza sıfır hasar riski garantisiyle dünya standartlarında geoteknik güçlendirme sunar.",
+    svc_bina_alti_jet_grout_spec1: "Elektrikli Jet Grout Rigs (Sıfır Emisyon & Düşük Titreşim)",
+    svc_bina_alti_jet_grout_spec2: "7/24 Gerçek Zamanlı İzleme (İnklinometre & Oturma Plakaları)",
+    svc_bina_alti_jet_grout_spec3: "Şaşırtmalı/Ardışık Kolon İmalat Protokolü",
 
     /* ── PROJECTS PAGE ── */
     projectsEyebrow: "Projeler",
@@ -680,6 +686,12 @@ export const dictionary = {
     svc_diafram_duvar_spec1: "Bentonite slurry-supported panel construction",
     svc_diafram_duvar_spec2: "High stiffness and water tightness",
     svc_diafram_duvar_spec3: "Permanent load-bearing system integration",
+    svc_bina_alti_jet_grout_title: "Under-Building Jet Grouting",
+    svc_bina_alti_jet_grout_summary: "Vibration-free underpinning using Electric Jet Grouting Rigs, zero emissions, low noise, and real-time monitoring.",
+    svc_bina_alti_jet_grout_detail: "Under-building jet grouting (underpinning) is a static hydro-injection method applied under operational buildings, data centers, and historic structures to increase bearing capacity without structural damage. YER6 Engineers utilize electric jet grout rigs, alternate-column sequence, inclinometers/settlement sensors, and trial columns.",
+    svc_bina_alti_jet_grout_spec1: "Electric Jet Grout Rigs (Zero Emissions & Low Noise)",
+    svc_bina_alti_jet_grout_spec2: "24/7 Real-time Structural Monitoring (Inclinometers)",
+    svc_bina_alti_jet_grout_spec3: "Alternate-Column Sequencing Protocol",
 
     /* ── PROJECTS PAGE ── */
     projectsEyebrow: "Projects",
@@ -1160,6 +1172,12 @@ export const dictionary = {
     svc_diafram_duvar_spec1: "تنفيذ ألواح بدعم طين البنتونيت",
     svc_diafram_duvar_spec2: "صلابة عالية وعدم نفاذية للماء",
     svc_diafram_duvar_spec3: "تكامل كنظام حامل دائم",
+    svc_bina_alti_jet_grout_title: "الحقن النفاث تحت المباني (Underpinning)",
+    svc_bina_alti_jet_grout_summary: "تدعيم أساسات المباني القائمة بدون اهتزاز وبدون انبعاثات باستخدام معدات الحقن النفاث الكهربائية ورصد لحظي.",
+    svc_bina_alti_jet_grout_detail: "الحقن النفاث تحت المباني القائمة (Underpinning) هو حل هيدروليكي بدون اهتزاز لزيادة قدرة تحمّل الأساسات ومقاومة الهبوط في المباني النشطة والمراكز الحساسة. يستخدم مهندسو YER6 معدات كهربائية خالية من العوادم، وتسلسل حفر متناوب، وأجهزة رصد الميل والهبوط.",
+    svc_bina_alti_jet_grout_spec1: "معدات حقن كهربائية (صفر انبعاثات وصوت منخفض)",
+    svc_bina_alti_jet_grout_spec2: "رصد هيكلي 24/7 (أجهزة قياس الميل والهبوط)",
+    svc_bina_alti_jet_grout_spec3: "بروتوكول تنفيذ متناوب ومرحلي للأعمدة",
 
     /* ── PROJECTS PAGE ── */
     projectsEyebrow: "المشاريع",
