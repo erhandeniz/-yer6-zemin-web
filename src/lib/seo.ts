@@ -50,7 +50,13 @@ export const serviceSchemaDescriptions: Record<string, string> = {
   "mini-kazik":
     "YER6, Ankara merkezli; Türkiye geneli ve yurt dışında mini kazık (mikro kazık) yapan bir zemin mühendisliği firmasıdır. Sınırlı erişimli alanlarda güçlendirme, underpinning ve hassas temel çözümleri için enjeksiyonlu mini kazık uygular.",
   "geoteknik-danismanlik":
-    "YER6, Ankara merkezli; Türkiye geneli ve yurt dışında geoteknik danışmanlık veren bir zemin mühendisliği firmasıdır. Saha araştırması, tasarım denetimi, metraj optimizasyonu ve risk yönetimiyle yatırım kararından uygulama teslimine karar destekli mühendislik sunar."
+    "YER6, Ankara merkezli; Türkiye geneli ve yurt dışında geoteknik danışmanlık veren bir zemin mühendisliği firmasıdır. Saha araştırması, tasarım denetimi, metraj optimizasyonu ve risk yönetimiyle yatırım kararından uygulama teslimine karar destekli mühendislik sunar.",
+  "bina-alti-jet-grout":
+    "YER6, elektrikli Jet Grout makineleri ile aktif binalarda, veri merkezlerinde ve tarihi eserlerde titreşimsiz temel altı güçlendirme, oturma önleme ve underpinning imalatı yapan zemin mühendislik firmasıdır.",
+  "cfa-kazik":
+    "YER6, Continuous Flight Auger (CFA) teknolojisiyle muhafaza borusuz, yüksek hızlı ve titreşimsiz delgi ile kazık imalatı yapan geoteknik zemin firmasıdır.",
+  "deep-soil-mixing":
+    "YER6, Türkiye genelinde Deep Soil Mixing (DSM / Derin Zemin Karıştırma) teknolojisi ile yumuşak kil ve alüvyon sahalarda atıksız ve homojen zemin-çimento kolonları üreten zemin iyileştirme firmasıdır."
 };
 
 export const equipmentSeoItems = [

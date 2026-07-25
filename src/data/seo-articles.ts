@@ -331,5 +331,77 @@ export const seoArticles: KnowledgeArticle[] = [
     relatedSlugs: ["zemin-iyilestirme-yontemleri", "geoteknik-danismanlik"],
     keywords: ["zemin iyileştirme firmaları", "geoteknik firmaları", "fore kazık firmaları", "jet grout firmaları", "zemin güçlendirme firmaları"],
     published: true
+  },
+  {
+    slug: "dsm-zemin-iyilestirme-firmalari-ve-birim-fiyatlari",
+    title: "DSM Zemin İyileştirme Firmaları ve Birim Fiyat (m³/m²) Rehberi",
+    seoTitle: "DSM Zemin İyileştirme Firmaları | Deep Soil Mixing Birim Fiyat & Hesabı | YER6",
+    description: "DSM (Deep Soil Mixing) zemin iyileştirme firmaları seçimi, m³ ve m² metraj maliyet analizi, karıştırma enerjisi (BRN) ve sıvılaşma önleme rehberi.",
+    excerpt: "Deep Soil Mixing (DSM / Derin Zemin Karıştırma), mekanik karıştırma kanatlarıyla zayıf alüvyal zeminlerde hafriyatsız ve son derece hızlı zemin-çimento kolonları oluşturan modern bir geoteknik yöntemdir.",
+    category: "DSM",
+    readingTime: "10 dk",
+    publishedAt: "2026-07-25",
+    updatedAt: "2026-07-25",
+    heroLabel: "Mühendislik ve Maliyet Rehberi",
+    introduction: "Türkiye'de ve dünyada lojistik depolar, sanayi parselleri, otoyol rampları ve liman arkası yapılarında zemin taşıma kapasitesini artırmak için en bütçe dostu yöntem Deep Soil Mixing (DSM) uygulamasıdır. Doğru DSM zemin iyileştirme firması seçimi, projenin bütçesini ve güvenliğini belirler.",
+    sections: [
+      {
+        id: "dsm-firmalari-secimi",
+        title: "1. DSM Zemin İyileştirme Firmaları Seçerken Dikkat Edilecek 4 Kriter",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "DSM projelerinde başarının anahtarı firmanın makine parkında çift milli (twin shaft) yüksek torklu donanımlara sahip olması ve saha uygulamasında Blade Rotation Number (BRN) olarak adlandırılan karıştırma enerjisini anlık bilgisayarlı sensörlerle (data logger) kaydetmesidir. YER6, her DSM projesinde laboratuvar karışım tasarımı ve BRN kontrolü sunar."
+          }
+        ]
+      },
+      {
+        id: "dsm-maliyet-hesabi",
+        title: "2. Deep Soil Mixing Metraj ve m³ / m² Birim Fiyatı Neye Göre Değişir?",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "DSM birim fiyatları; zeminin plastik indeksine, çimento dozajına (ör. 150-250 kg/m³), kuyu derinliğine (15-30 metre) ve sahaya harcanan BRN karıştırma enerjisine bağlıdır. Hafriyat çıkarma ve nakliye maliyeti olmadığı için DSM, geleneksel derin temellere ve fore kazıklara göre %40-%60 arasında maliyet avantajı sağlar."
+          }
+        ]
+      }
+    ],
+    faq: [
+      { question: "DSM zemin iyileştirme metraj ve teklifi nasıl hesaplanır?", answer: "Saha zemin etüt raporu (SPT/CPT verileri) incelenir, hedeflenen UCS dayanımına göre çimento dozajı belirlenir ve toplam kolon metrajı (m/tül veya m³) üzerinden projelendirilir." }
+    ],
+    relatedSlugs: ["dsm-nasil-uygulanir", "jet-grout-ve-dsm-farki"],
+    keywords: ["dsm zemin iyileştirme firmaları", "deep soil mixing firmaları", "dsm metre fiyatı", "dsm zemin güçlendirme"],
+    published: true
+  },
+  {
+    slug: "ongermeli-ankraj-firmalari-ve-uygulama-rehberi",
+    title: "Öngermeli Ankraj Firmaları: Derin Kazı İksa ve Halatlı Ankraj Çözümleri",
+    seoTitle: "Öngermeli Ankraj Firmaları | Derin Kazı İksa & Halatlı Ankraj Uygulaması | YER6",
+    description: "Öngermeli ankraj firmaları seçimi, kalıcı ve geçici halatlı ankraj imalatı, ön germe kuvveti ve iksa perdesi enstrümantasyon rehberi.",
+    excerpt: "Öngermeli ankraj, derin kazılarda oluşan yanal zemin basınçlarını germe halatları ve çimento enjeksiyonuyla derin sağlam zemin kütlesine aktaran aktif destek sistemidir.",
+    category: "Ankraj & İksa",
+    readingTime: "9 dk",
+    publishedAt: "2026-07-25",
+    updatedAt: "2026-07-25",
+    heroLabel: "İksa ve Derin Kazı Rehberi",
+    introduction: "Kent içi dar şantiyelerde ve derin bina kazılarında güvenli çalışma ortamı oluşturmak için öngermeli ankraj ve kazıklı iksa sistemleri bir arada uygulanır.",
+    sections: [
+      {
+        id: "ankraj-firmalari-kritik",
+        title: "1. Öngermeli Ankraj Uygulamasında Firma Yeterliliği",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Ankraj imalatında kuyu delgisi, halat demetlerinin yerleşimi ve enjeksiyon kalitesi kadar hayati olan bir diğer aşama 'Ön Germe (Pre-stressing)' ve Kabul Testleridir. YER6, her ankraj imalatında kalibre edilmiş hidrolik krikolarla eksenel germe ve yük tutma testlerini eksiksiz raporlar."
+          }
+        ]
+      }
+    ],
+    faq: [
+      { question: "Geçici ve kalıcı ankraj arasındaki fark nedir?", answer: "Geçici ankrajlar inşaat süresince (12-24 ay) kazı yüzeyini tutar; kalıcı ankrajlar ise bina ömrü boyunca (50+ yıl) özel korozyon korumalı gres ve kılıflarla çalışır." }
+    ],
+    relatedSlugs: ["kazi-destek-sistemleri-nedir", "zemin-iyilestirme-risk-yonetimi"],
+    keywords: ["öngermeli ankraj firmaları", "ankraj firmaları", "halatlı ankraj", "ankrajlı iksa"],
+    published: true
   }
 ];

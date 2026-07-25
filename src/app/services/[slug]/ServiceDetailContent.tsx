@@ -28,7 +28,8 @@ const serviceArticleMap: Record<string, string[]> = {
   "tas-kolon": ["zemin-iyilestirme-yontemleri", "sivilasma-riskine-karsi-zemin-guclendirme", "zemin-iyilestirme-planlama"],
   "diafram-duvar": ["kazi-destek-sistemleri-nedir", "zemin-iyilestirme-risk-yonetimi", "fore-kazik-nedir"],
   "bina-alti-jet-grout": ["temel-alti-zemin-guclendirme", "binalari-yikmadan-zemin-guclendirme", "jet-grout-nedir"],
-  "cfa-kazik": ["fore-kazik-nedir", "fore-kazik-sureklilik-ve-yukleme-testleri", "zemin-iyilestirme-risk-yonetimi"]
+  "cfa-kazik": ["fore-kazik-nedir", "fore-kazik-sureklilik-ve-yukleme-testleri", "zemin-iyilestirme-risk-yonetimi"],
+  "deep-soil-mixing": ["yer-alti-zemin-iyilestirme", "dsm-nasil-uygulanir", "dsm-malzeme-secinimi", "jet-grout-ve-dsm-farki"]
 };
 
 function FaqItem({ question, answer }: { question: string; answer: string }) {
@@ -140,7 +141,7 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
                           {i + 1}
                         </span>
                         <div>
-                          <p className="font-semibold text-white">{step.title}</p>
+                          <h3 className="font-semibold text-white">{step.title}</h3>
                           <p className="mt-1 text-sm leading-6 text-white/65">{step.description}</p>
                         </div>
                       </li>

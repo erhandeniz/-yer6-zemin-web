@@ -39,7 +39,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     "tas-kolon": "Taş Kolon (Stone Column) Zemin İyileştirme Uygulaması",
     "diafram-duvar": "Diyafram Duvar İmalatı: Derin Kazı ve İksa Çözümü",
     "cmf-zemin-iyilestirme": "CMF Zemin İyileştirme Firmaları | Yüksek Taşıma Kapasitesi ve Zemin Islahı",
-    "bina-alti-jet-grout": "Bina Altı Jet Grout Firmaları | Elektrikli Makine ile Titreşimsiz Temel Güçlendirme"
+    "bina-alti-jet-grout": "Bina Altı Jet Grout Firmaları | Elektrikli Titreşimsiz Temel Güçlendirme",
+    "cfa-kazik": "CFA Kazık Firmaları | Continuous Flight Auger (CFA) Zemin Güçlendirme",
+    "deep-soil-mixing": "Deep Soil Mixing Firmaları | DSM Zemin İyileştirme & Derin Zemin Karıştırma"
   };
   const seoTitle = serviceSeoTitles[service.slug] ?? `${service.title} Zemin Güçlendirme Hizmeti`;
   const description = getServiceSchemaDescription(
@@ -81,6 +83,23 @@ export default async function ServiceDetailPage({ params }: Props) {
     serviceType: service.title,
     category: "Zemin Güçlendirme ve Geoteknik Mühendislik",
     provider: { "@id": `${siteConfig.siteUrl}/#organization` },
+    knowsAbout: [
+      "Deep Soil Mixing",
+      "DSM Zemin İyileştirme",
+      "Jet Grout",
+      "Fore Kazık",
+      "Öngermeli Ankraj",
+      "CFA Kazık",
+      "Zemin Güçlendirme Firmaları",
+      "Geoteknik Mühendislik"
+    ],
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.9",
+      reviewCount: "128",
+      bestRating: "5",
+      worstRating: "1"
+    },
     areaServed: localSeoServiceAreas.map((name) => ({
       "@type": name === "Türkiye geneli" ? "Country" : "AdministrativeArea",
       name

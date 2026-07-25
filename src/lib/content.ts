@@ -765,6 +765,45 @@ export const standaloneServices = [
       { question: "CFA Kazıkta donatı kafesi taze betona nasıl indirilir?", answer: "Beton dökümü tamamlanıp kuyu tamamen dolduktan hemen sonra, hazırlanan dairesel donatı kafesi vinç ve donatı vibratörü yardımıyla taze betonun içine daldırılarak hedef kota yerleştirilir." },
       { question: "CFA Kazık imalat kalitesi nasıl doğrulanır?", answer: "İmalat esnasında dijital data logger kayıtları (tork, debi, beton basıncı) tutulur. İmalat sonrasında ise Kazık Bütünlük Testi (PIT - Pile Integrity Test) ve Statik/Dinamik Kazık Yükleme Testleri yapılarak belgelenir." }
     ]
+  },
+  {
+    slug: "deep-soil-mixing",
+    key: "svc_dsm",
+    icon: Layers3,
+    title: "Deep Soil Mixing (DSM Zemin İyileştirme)",
+    summary: "Türkiye genelinde derin zemin karıştırma (Deep Soil Mixing / DSM) firması olarak yüksek taşıma kapasitesi ve sıfır oturma çözümleri sunuyoruz.",
+    detail: "Deep Soil Mixing (DSM / Derin Zemin Karıştırma), mekanik karıştırma kanatları ile zayıf zemin profilini çimento bazlı bağlayıcılarla yerinde (in-situ) harmanlayarak homojen zemin-çimento (soil-cement) kolonları üreten en ileri geoteknik iyileştirme teknolojisidir. Özellikle liman sahaları, lojistik depolar, otoyol yaklaşımları, sanayi parselleri ve alüvyal delta zeminlerinde hafriyat ve çamur maliyeti olmadan zemin rijitleştirmesi ve yanal yayılma kontrolü sağlar.",
+    specs: ["BRN (Blade Rotation Number) Dijital Enerji Kontrolü", "Çift Milli (Twin Shaft) Yüksek Kapasiteli DSM Rig Makineleri", "FHWA ve Eurocode 7 Standartlarında Laboratuvar Mix Tasarımı"],
+    applications: [
+      "Lojistik depolar, AVM ve sanayi tesisleri altında derin zemin iyileştirmesi ve oturma kontrolü",
+      "Körfez ve kıyı alüvyonlarında sıvılaşma ve yanal yayılmayı önleyici DSM grid (kafes) kolonları",
+      "Otoyol, demiryolu dolguları ve köprü yaklaşım ramplarında diferansiyel oturma engelleme",
+      "Derin kazı ve su yapılarında yeraltı suyu kesici perde (cutoff wall) imalatı",
+      "Organik killi, siltli ve turba zeminlerde çimento-kireç karışımlı özel zemin ıslahı",
+      "Hafriyat çıkarılması imkansız sahalarda atıksız ve temiz zemin güçlendirme"
+    ],
+    advantages: [
+      "Hafriyatsız ve Çevreci: Zemini dışarı çıkarmadan yerinde karıştırır; hafriyat nakliyesi ve çamur arıtma maliyetlerini ortadan kaldırır.",
+      "Ultra Yüksek İmalat Hızı: Geniş platform iyileştirmelerinde jet grout ve fore kazığa kıyasla 2-3 kat daha hızlı m² / m³ ilerleme sağlar.",
+      "Yeraltı Suyu Geçirimsizliği: Kesintisiz kesişen DSM kolonları ile su sızdırmaz bariyer perdesi oluşturur.",
+      "Garantili Kolon Homojenliği: Blade Rotation Number (BRN) takibiyle karıştırma enerjisi ve dayanım profili dijital data logger ile kaydedilir.",
+      "Ekonomik Derin Temel Alternatifi: Yumuşak zeminlerde yüksek maliyetli derin kazık çözümlerinin yerine geçen bütçe dostu mühendislik yaklaşımıdır."
+    ],
+    processSteps: [
+      { title: "Zemin Karakterizasyonu ve Laboratuvar Mix Tasarımı", description: "Sahadan alınan zemin numuneleri üzerinde laboratuvarda farklı çimento dozajları denenerek hedef UCS dayanımı (1.0 - 3.0 MPa) belirlenir." },
+      { title: "Saha Pilot İmalatı ve BRN Kalibrasyonu", description: "Deneme kolonları imal edilerek karıştırma bıçağının devir sayısı (RPM), inme ve çekme hızları sahada kalibre edilir." },
+      { title: "Mekanik Karıştırma ve Düşük Basınçlı Enjeksiyon", description: "Çift milli yüksek torklu DSM helezonları zemini parçalayarak hedef kotuna inerken alttan 10-20 bar düşük basınçlı çimento şerbeti verilir." },
+      { title: "Ters Yönlü Çekim ve Homojenizasyon", description: "Burgu hedef derinlikten yukarı çekilirken ters yönde döndürülerek zemin ile çimento hamuru moleküler seviyede harmanlanır." },
+      { title: "Karot Alımı ve UCS Dayanım Doğrulaması", description: "İmalattan 28 gün sonra kolonlardan karot örneği alınarak laboratuvarda Tek Eksenli Basınç Testi (UCS) yapılır ve mühendislik onay raporu teslim edilir." }
+    ],
+    technicalNote: "Deep Soil Mixing (DSM) uygulamalarında kaliteyi belirleyen temel geoteknik kural; FHWA-NHI-13-046 ve EN 14679 normlarına göre 'Bıçak Dönme Sayısı' (BRN - Blade Rotation Number) ve karıştırma enerjisidir. BRN değerinin 300'ün altında kalması kolon içinde çimento topaklanmasına ve zemin ceplerine neden olur. YER6 DSM rig donanımları, otomatik çimento debimetreleri ve tork sensörleri ile metre başına düşen çimento miktarını ve karıştırma enerjisini %100 dijital olarak kayıt altına alır.",
+    faq: [
+      { question: "Deep Soil Mixing (DSM) nedir ve hangi projelerde tercih edilir?", answer: "DSM (Derin Zemin Karıştırma), yumuşak zeminlerin mekanik karıştırıcı kanatlarla çimento enjekte edilerek yerinde iyileştirilmesidir. Lojistik depolar, sanayi tesisleri, limanlar ve yol dolgularında oturma ve sıvılaşmayı engellemek için ilk tercih edilen ekonomik yöntemdir." },
+      { question: "Deep Soil Mixing ile Jet Grouting arasındaki farklar nelerdir?", answer: "Jet Grout 400-600 bar yüksek hidro-basınçla zemini parçalar; DSM ise 10-20 bar gibi düşük basınçta mekanik kanatlarla karıştırır. DSM geniş alanlı killi sahalarda daha homojen, hızlı ve ekonomiktir." },
+      { question: "DSM kolonları hangi derinlik ve çaplarda imal edilebilir?", answer: "Tek milli veya çift milli DSM makinelerimizin gücüne bağlı olarak 600 mm ile 1200 mm çaplarında ve 25-30 metre derinliğe kadar kesintisiz DSM kolonları imal edilebilmektedir." },
+      { question: "Deep Soil Mixing (DSM) zemin sıvılaşmasını nasıl engeller?", answer: "Sıvılaşma riski olan kumlu ve siltli zeminlerde DSM kolonları grid (kafes) şemasıyla kesişen kolonlar halinde uygulanır. Bu rijit kafes, deprem anında yanal yayılmayı ve aşırı su basıncını hapsederek sıvılaşmayı engeller." },
+      { question: "Deep Soil Mixing firmaları seçerken nelere dikkat edilmelidir?", answer: "Firmanın çift milli makine parkı kapasitesi, sahada BRN (Blade Rotation Number) verilerini kaydeden dijital data logger sistemlerine sahip olması ve 28 günlük Karot UCS testlerini sunabilmesi esastır. YER6 tüm projelerde bu kalite standartlarını garanti eder." }
+    ]
   }
 ];
 

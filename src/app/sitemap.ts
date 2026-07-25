@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { projects, services } from "@/lib/content";
+import { projects, allServices } from "@/lib/content";
 import { orderedCityPages, featuredCitySlugs } from "@/lib/cityContent";
 import { siteConfig } from "@/lib/siteConfig";
 import { publishedKnowledgeArticles } from "@/data/knowledge";
@@ -24,11 +24,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: route === "" ? 1 : 0.8
     })),
-    ...services.map((service) => ({
+    ...allServices.map((service) => ({
       url: withTrailingSlash(`/services/${service.slug}`),
       lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.85
+      changeFrequency: "weekly" as const,
+      priority: 0.9
     })),
     ...projects.map((project) => ({
       url: withTrailingSlash(`/projects/${project.slug}`),
