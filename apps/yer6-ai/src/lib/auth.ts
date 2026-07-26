@@ -42,7 +42,23 @@ export async function authorizeCredentials(credentials: Credentials) {
   try {
     const user = await prisma.user.findUnique({ where: { email } });
     if (user?.passwordHash && (await compare(password, user.passwordHash))) {
-      void writeAudit({ action: "LOGIN_SUCCESS", entity: "User", entityId: user.id, userId: user.id });
+      // Email verification gate — ONLY for self-registered roles and ONLY while an
+  // email provider is configured (otherwise we would block on a mail we never
+  // send). Privileged/legacy roles (ADMIN, SUPER_ADMIN, ENGINEER, MANAGER,
+  // COMPANY_ADMIN) are never locked out by this check.
+  const verificationEnforced = Boolean(process.env.RESEND_API_KEY && process.env.EMAIL_FROM);
+  const gatedRole = user.role === "MEMBER" || user.role === "VIEWER";
+  if (verificationEnforced && gatedRole && !user.emailVerified) {
+    void writeAudit({
+      action: "LOGIN_FAILED",
+      entity: "User",
+      entityId: user.id,
+      metadata: { reason: "email_not_verified" }
+    });
+    return null;
+  }
+
+  void writeAudit({ action: "LOGIN_SUCCESS", entity: "User", entityId: user.id, userId: user.id });
       return {
         id: user.id,
         email: user.email,

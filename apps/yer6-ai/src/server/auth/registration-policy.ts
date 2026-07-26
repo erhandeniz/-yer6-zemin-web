@@ -28,11 +28,26 @@ export const DEFAULT_REGISTRATION_POLICY: RegistrationPolicy = {
   allowedDomains: []
 };
 
+/**
+ * Default verification mode follows capability: once an email provider is
+ * configured (RESEND_API_KEY + EMAIL_FROM) new sign-ups must confirm their
+ * address; without a provider we never promise an email we cannot send.
+ * An explicitly stored AppSetting value always wins.
+ */
+function defaultVerificationMode(): "off" | "required" {
+  return process.env.RESEND_API_KEY && process.env.EMAIL_FROM ? "required" : "off";
+}
+
 function sanitize(raw: unknown): RegistrationPolicy {
   const value = (raw ?? {}) as Partial<RegistrationPolicy>;
   return {
     open: typeof value.open === "boolean" ? value.open : DEFAULT_REGISTRATION_POLICY.open,
-    emailVerification: value.emailVerification === "required" ? "required" : "off",
+    emailVerification:
+      value.emailVerification === "required"
+        ? "required"
+        : value.emailVerification === "off"
+          ? "off"
+          : defaultVerificationMode(),
     activation: value.activation === "approval" ? "approval" : "immediate",
     defaultRole: value.defaultRole === "VIEWER" ? "VIEWER" : "MEMBER",
     allowedDomains: Array.isArray(value.allowedDomains)
@@ -45,13 +60,13 @@ export async function getRegistrationPolicy(): Promise<RegistrationPolicy> {
   if (process.env.REGISTRATION_DISABLED === "true") {
     return { ...DEFAULT_REGISTRATION_POLICY, open: false };
   }
-  if (!process.env.DATABASE_URL) return { ...DEFAULT_REGISTRATION_POLICY };
+  if (!process.env.DATABASE_URL) {
+    return { ...DEFAULT_REGISTRATION_POLICY, emailVerification: defaultVerificationMode() };
+  }
   try {
     const row = await prisma.appSetting.findUnique({ where: { key: REGISTRATION_POLICY_KEY } });
     return sanitize(row?.value);
   } catch {
-    // On read failure fail CLOSED for writes but report closed to the UI —
-    // never let a DB outage silently open unintended registration behaviour.
     return { ...DEFAULT_REGISTRATION_POLICY, open: false };
   }
 }
