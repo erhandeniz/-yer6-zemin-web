@@ -20,7 +20,8 @@
     "cloudflare:build": "opennextjs-cloudflare build",
     "cloudflare:preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "cloudflare:deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
-    "postinstall": "prisma generate"
+    "postinstall": "prisma generate",
+    "db:verify-user": "tsx --env-file-if-exists=.env scripts/verify-user.ts"
   },
   "dependencies": {
     "@ai-sdk/openai": "4.0.11",
