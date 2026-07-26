@@ -89,6 +89,12 @@ describe("registration (Package A)", () => {
     expect(mocks.userCreate).not.toHaveBeenCalled();
   });
 
+  it("NEVER reports phantom success when persistence fails (honest 'unavailable')", async () => {
+    mocks.orgCreate.mockRejectedValue(new Error("db unreachable"));
+    const result = await registerUser(validInput);
+    expect(result).toEqual({ ok: false, code: "unavailable" });
+  });
+
   it("honours the emergency kill-switch (registration closed)", async () => {
     process.env.REGISTRATION_DISABLED = "true";
     const result = await registerUser(validInput);

@@ -18,7 +18,10 @@ export type RegistrationInput = {
 
 export type RegistrationResult =
   | { ok: true; created: boolean; verificationRequired: boolean }
-  | { ok: false; code: "registration_closed" | "domain_not_allowed" | "weak_password" | "invalid" };
+  | {
+      ok: false;
+      code: "registration_closed" | "domain_not_allowed" | "weak_password" | "invalid" | "unavailable";
+    };
 
 export function normalizeEmail(email: string): string {
   return email.trim().toLowerCase();
@@ -79,49 +82,64 @@ export async function registerUser(input: RegistrationInput): Promise<Registrati
     return { ok: true, created: false, verificationRequired: policy.emailVerification === "required" };
   }
 
-  const passwordHash = await hash(input.password, 10);
+  // Cost 8: bcryptjs is pure JS; cost 10 exceeded the Workers CPU budget on
+  // mobile requests (live Error 1102). Follow-up: migrate to WebCrypto PBKDF2
+  // (native) to restore a higher work factor without the CPU ceiling.
+  const passwordHash = await hash(input.password, 8);
   const slug = `${slugify(companyName)}-${randomSuffix()}`;
 
-  const organization = await prisma.organization.create({
-    data: { name: companyName, slug }
-  });
+  try {
+    const organization = await prisma.organization.create({
+      data: { name: companyName, slug }
+    });
 
-  const user = await prisma.user.create({
-    data: {
-      name: `${firstName} ${lastName}`,
-      email,
-      passwordHash,
-      role: policy.defaultRole,
-      organizationId: organization.id,
-      title: input.jobTitle.trim() || null,
-      phone: input.phone?.trim() || null,
-      country: input.country.trim() || null,
-      city: input.city.trim() || null,
-      locale: input.locale || null,
-      emailVerified: policy.emailVerification === "off" ? new Date() : null
-    },
-    select: { id: true }
-  });
+    const user = await prisma.user.create({
+      data: {
+        name: `${firstName} ${lastName}`,
+        email,
+        passwordHash,
+        role: policy.defaultRole,
+        organizationId: organization.id,
+        title: input.jobTitle.trim() || null,
+        phone: input.phone?.trim() || null,
+        country: input.country.trim() || null,
+        city: input.city.trim() || null,
+        locale: input.locale || null,
+        emailVerified: policy.emailVerification === "off" ? new Date() : null
+      },
+      select: { id: true }
+    });
 
-  await prisma.organization.update({
-    where: { id: organization.id },
-    data: { createdById: user.id }
-  });
+    await prisma.organization.update({
+      where: { id: organization.id },
+      data: { createdById: user.id }
+    });
 
-  await writeAudit({
-    action: "ORG_CREATED",
-    entity: "Organization",
-    entityId: organization.id,
-    userId: user.id,
-    metadata: { slug }
-  });
-  await writeAudit({
-    action: "USER_REGISTERED",
-    entity: "User",
-    entityId: user.id,
-    userId: user.id,
-    metadata: { organizationId: organization.id, role: policy.defaultRole }
-  });
+    void writeAudit({
+      action: "ORG_CREATED",
+      entity: "Organization",
+      entityId: organization.id,
+      userId: user.id,
+      metadata: { slug }
+    });
+    void writeAudit({
+      action: "USER_REGISTERED",
+      entity: "User",
+      entityId: user.id,
+      userId: user.id,
+      metadata: { organizationId: organization.id, role: policy.defaultRole }
+    });
+  } catch (error) {
+    // HONESTY GUARD: if the organization/user write fails, the account does
+    // NOT exist — returning success here would create a "phantom
+    // registration" (user believes they signed up, can never log in).
+    // Report a truthful, retryable failure instead. No secrets in the log.
+    console.error(
+      "[register] persistence failed:",
+      error instanceof Error ? error.message.slice(0, 200) : "unknown"
+    );
+    return { ok: false, code: "unavailable" };
+  }
 
   return { ok: true, created: true, verificationRequired: policy.emailVerification === "required" };
 }

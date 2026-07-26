@@ -98,7 +98,8 @@ export async function POST(request: Request) {
   });
 
   if (!result.ok) {
-    const status = result.code === "registration_closed" ? 403 : 400;
+    const status =
+      result.code === "registration_closed" ? 403 : result.code === "unavailable" ? 503 : 400;
     return Response.json(result, { status });
   }
   return Response.json(result);

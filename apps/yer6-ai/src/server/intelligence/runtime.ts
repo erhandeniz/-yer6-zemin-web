@@ -42,14 +42,15 @@ export function prepareIntelligenceTurn(params: {
 }
 
 /**
- * Select the GPT-5.6 (OpenAI Responses) provider. Throws `not_configured` when
- * the primary brain is unavailable — the runtime never silently uses Cloudflare
- * Workers AI or a static answer in its place.
+ * Select the primary brain: GPT-5.6 (OpenAI Responses) when configured;
+ * otherwise the first healthy provider in the chain (sanctioned resilience
+ * fallback — a transient missing/late OPENAI key must not take chat down).
+ * Throws `not_configured` only when NO provider is available; the runtime
+ * still never fabricates a static answer.
  */
 export function selectPrimaryProvider(providers: AIProvider[]): AIProvider {
   const openai = providers.find((provider) => provider.name === "openai");
-  if (!openai) {
-    throw new IntelligenceError("not_configured", "The GPT-5.6 primary brain is not configured.");
-  }
-  return openai;
+  if (openai) return openai;
+  if (providers.length > 0) return providers[0];
+  throw new IntelligenceError("not_configured", "The primary brain is not configured.");
 }
