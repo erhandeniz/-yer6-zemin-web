@@ -10,6 +10,16 @@ const arabicCountries = new Set([
 ]);
 
 export const tr: Record<string, string> = {
+  "Your account has been created. You can sign in now.": "Hesabınız oluşturuldu. Şimdi giriş yapabilirsiniz.",
+  "The service is temporarily unavailable. Please try again shortly.": "Hizmete geçici olarak ulaşılamıyor. Lütfen kısa süre sonra tekrar deneyin.",
+  "Registered users": "Kayıtlı kullanıcılar",
+  "Company": "Firma",
+  "Registered": "Kayıt tarihi",
+  "Verified": "Doğrulandı",
+  "Pending verification": "Doğrulama bekliyor",
+  "No registered users yet.": "Henüz kayıtlı kullanıcı yok.",
+  "Loading...": "Yükleniyor...",
+  "Could not load users.": "Kullanıcılar yüklenemedi.",
   // RELEASE 1 — kayıt, hesap menüsü, kurucu profili
   "Create your account": "Hesabınızı oluşturun",
   "Set up your company workspace in minutes.": "Firma çalışma alanınızı dakikalar içinde kurun.",
@@ -342,6 +352,16 @@ export const tr: Record<string, string> = {
 };
 
 export const ar: Record<string, string> = {
+  "Your account has been created. You can sign in now.": "تم إنشاء حسابك. يمكنك تسجيل الدخول الآن.",
+  "The service is temporarily unavailable. Please try again shortly.": "الخدمة غير متاحة مؤقتاً. يرجى المحاولة بعد قليل.",
+  "Registered users": "المستخدمون المسجلون",
+  "Company": "الشركة",
+  "Registered": "تاريخ التسجيل",
+  "Verified": "مُوثَّق",
+  "Pending verification": "بانتظار التوثيق",
+  "No registered users yet.": "لا يوجد مستخدمون مسجلون بعد.",
+  "Loading...": "جارٍ التحميل...",
+  "Could not load users.": "تعذر تحميل المستخدمين.",
   // RELEASE 1 — التسجيل وقائمة الحساب وملف المؤسس
   "Create your account": "أنشئ حسابك",
   "Set up your company workspace in minutes.": "جهّز مساحة عمل شركتك خلال دقائق.",

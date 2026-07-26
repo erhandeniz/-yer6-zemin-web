@@ -21,6 +21,8 @@ export function LoginView() {
   const [error, setError] = useState("");
   const [mode, setMode] = useState<"login" | "register">("login");
   const [notice, setNotice] = useState("");
+  // Kayıttan sonra giriş formuna taşınan e-posta (kullanıcı yeniden yazmasın).
+  const [registeredEmail, setRegisteredEmail] = useState("");
   const [resetInfo, setResetInfo] = useState(false);
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
@@ -34,8 +36,12 @@ export function LoginView() {
         password: form.get("password"),
         redirect: false
       });
-      if (result?.ok) router.push("/");
-      else setError(t("The email or password could not be verified."));
+      if (result?.ok) {
+        const params = new URLSearchParams(window.location.search);
+        const callbackUrl = params.get("callbackUrl");
+        window.location.href = callbackUrl && callbackUrl.startsWith("/") ? callbackUrl : "/";
+        return;
+      } else setError(t("The email or password could not be verified."));
     } catch {
       setError(t("The email or password could not be verified."));
     } finally {
@@ -89,24 +95,19 @@ export function LoginView() {
         | null;
 
       if (res.ok && data?.ok) {
-        if (data.verificationRequired) {
-          setNotice(t("Your registration was received. Verify your email, then sign in."));
-          setMode("login");
-        } else {
-          // Immediate activation → sign the user straight in (session rotation
-          // handled by NextAuth issuing a fresh JWT).
-          const signedIn = await signIn("credentials", {
-            email: value("email"),
-            password,
-            redirect: false
-          });
-          if (signedIn?.ok) {
-            router.push("/");
-            return;
-          }
-          setNotice(t("If this email is available, your account has been created. Try signing in."));
-          setMode("login");
-        }
+        // Explicit, predictable outcome: always confirm in place and switch to
+        // the sign-in form with the email prefilled. (Auto sign-in was silent
+        // and unreliable — a failed hand-off left the user with no feedback.)
+        setNotice(
+          data.verificationRequired
+            ? t("Your registration was received. Verify your email, then sign in.")
+            : t("Your account has been created. You can sign in now.")
+        );
+        setRegisteredEmail(value("email"));
+        setMode("login");
+        return;
+      } else if (data?.code === "unavailable") {
+        setError(t("The service is temporarily unavailable. Please try again shortly."));
       } else if (data?.code === "registration_closed") {
         setError(t("Registration is currently closed."));
       } else if (data?.code === "rate_limited") {
@@ -151,7 +152,7 @@ export function LoginView() {
           {notice ? <p role="status" className="mb-4 rounded-md border border-emerald-400/15 bg-emerald-400/[0.06] px-3 py-2.5 text-xs text-emerald-300">{notice}</p> : null}
           {mode === "login" ? (
           <form onSubmit={handleSubmit} className="space-y-4">
-            <label className="block text-xs text-white/52">{t("Work email")}<input required name="email" type="email" inputMode="email" autoCapitalize="none" autoCorrect="off" spellCheck={false} autoComplete="email" placeholder="name@company.com" className={inputClass} /></label>
+            <label className="block text-xs text-white/52">{t("Work email")}<input required name="email" type="email" defaultValue={registeredEmail} key={registeredEmail} inputMode="email" autoCapitalize="none" autoCorrect="off" spellCheck={false} autoComplete="email" placeholder="name@company.com" className={inputClass} /></label>
             <label className="block text-xs text-white/52">{t("Password")}<span className="relative mt-1.5 block"><input required name="password" type={showPassword ? "text" : "password"} autoCapitalize="none" autoCorrect="off" spellCheck={false} autoComplete="current-password" placeholder={t("Enter your password")} className="h-11 w-full rounded-md border border-white/10 bg-white/[0.035] px-3 pr-11 text-sm text-white outline-none placeholder:text-white/20 focus:border-primary/45" /><button type="button" onClick={() => setShowPassword((value) => !value)} className="absolute right-0 top-0 grid size-11 place-items-center text-white/28 hover:text-white/55" aria-label={t(showPassword ? "Hide password" : "Show password")}>{showPassword ? <EyeOff className="size-4" /> : <Eye className="size-4" />}</button></span></label>
             <div className="flex items-center justify-between"><label className="flex items-center gap-2 text-[11px] text-white/36"><input type="checkbox" className="size-3.5 accent-[#e2b54c]" />{t("Remember this device")}</label><button type="button" onClick={() => setResetInfo((value) => !value)} className="text-[11px] text-primary/65 hover:text-primary">{t("Forgot password?")}</button></div>
             {resetInfo ? <p className="rounded-md border border-white/10 bg-white/[0.03] px-3 py-2.5 text-[11px] leading-4 text-white/45">{t("Password reset links are sent once an email provider is configured. Please contact your administrator.")}</p> : null}

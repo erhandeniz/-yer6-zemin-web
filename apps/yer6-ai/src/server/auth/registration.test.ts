@@ -13,10 +13,15 @@ const mocks = vi.hoisted(() => ({
 vi.mock("bcryptjs", () => ({ hash: mocks.hash }));
 vi.mock("@/lib/prisma", () => ({
   prisma: {
-    user: { findUnique: mocks.userFindUnique, create: mocks.userCreate },
+    user: { findUnique: mocks.userFindUnique, create: mocks.userCreate, update: vi.fn() },
     organization: { create: mocks.orgCreate, update: mocks.orgUpdate },
     appSetting: { findUnique: mocks.appSettingFindUnique },
-    auditLog: { create: mocks.auditCreate }
+    auditLog: { create: mocks.auditCreate },
+    verificationToken: {
+      create: vi.fn(async () => ({})),
+      deleteMany: vi.fn(async () => ({ count: 0 })),
+      findUnique: vi.fn(async () => null)
+    }
   }
 }));
 

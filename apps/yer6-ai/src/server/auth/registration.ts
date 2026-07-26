@@ -2,6 +2,11 @@ import { hash } from "bcryptjs";
 import { prisma } from "@/lib/prisma";
 import { writeAudit } from "@/server/audit/audit";
 import { emailDomainAllowed, getRegistrationPolicy } from "@/server/auth/registration-policy";
+import {
+  createVerificationToken,
+  emailSendingConfigured,
+  sendVerificationEmail
+} from "@/server/auth/email-verification";
 
 export type RegistrationInput = {
   firstName: string;
@@ -129,6 +134,21 @@ export async function registerUser(input: RegistrationInput): Promise<Registrati
       userId: user.id,
       metadata: { organizationId: organization.id, role: policy.defaultRole }
     });
+
+    // Email verification: issue a single-use token and send it when an email
+    // provider is configured. Failures never block registration — the admin
+    // roster shows the account as "Pending verification".
+    if (policy.emailVerification === "required" || emailSendingConfigured()) {
+      try {
+        const link = await createVerificationToken(email);
+        await sendVerificationEmail(email, link);
+      } catch (error) {
+        console.error(
+          "[register] verification dispatch failed:",
+          error instanceof Error ? error.message.slice(0, 150) : "unknown"
+        );
+      }
+    }
   } catch (error) {
     // HONESTY GUARD: if the organization/user write fails, the account does
     // NOT exist — returning success here would create a "phantom
