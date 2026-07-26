@@ -13,7 +13,6 @@ import {
 } from "@/server/ai/security";
 import { encodeSSE, sseHeaders } from "@/server/ai/sse";
 import { MAX_TOOL_STEPS } from "@/server/ai/tools";
-import type { AIProvider } from "@/server/ai/providers/types";
 import { resolveKnowledgeScope, persistConversationExchange } from "@/server/memory/project-memory";
 import { prepareIntelligenceTurn, selectPrimaryProvider } from "@/server/intelligence/runtime";
 
@@ -73,12 +72,11 @@ export async function POST(request: Request) {
   const config = getAIConfig();
   const providers = createProviderChain(config, bindings.AI);
 
-  // GPT-5.6 (OpenAI Responses) is the primary brain. We never silently fall back
-  // to Cloudflare Workers AI or a static template — if it is not configured we
-  // return an honest "not configured" message.
-  let primary: AIProvider;
+  // The chain encodes the operator's cost policy (free tiers first). Selection
+  // only validates that at least one provider exists; the stream below walks
+  // the whole chain. A static template is never used as a substitute.
   try {
-    primary = selectPrimaryProvider(providers);
+    selectPrimaryProvider(providers);
   } catch {
     return new Response(aiMessage("notConfigured", locale), { status: 503 });
   }
@@ -140,11 +138,19 @@ export async function POST(request: Request) {
       // real citations only if a knowledge tool has already returned them
       // (empty for ordinary/general conversation — never a forced disclosure).
       send({ type: "sources", citations: turn.tools.citations.list() });
-      send({ type: "meta", requestId: payload.requestId, provider: primary.name });
 
       let producedOutput = false;
+      // Resilience: walk the configured chain (free tiers first). A provider is
+      // skipped ONLY when it fails before emitting any text (safety refusal,
+      // rate limit, outage); a mid-answer failure still stops honestly so an
+      // answer is never restarted or duplicated.
+      for (let providerIndex = 0; providerIndex < providers.length; providerIndex++) {
+      const active = providers[providerIndex];
+      const isLastProvider = providerIndex === providers.length - 1;
+      let providerProduced = false;
+      send({ type: "meta", requestId: payload.requestId, provider: active.name });
       try {
-        for await (const text of primary.stream({
+        for await (const text of active.stream({
           system: turn.system,
           messages: turn.messages,
           maxOutputTokens: turn.policy.maxOutputTokens,
@@ -163,11 +169,21 @@ export async function POST(request: Request) {
           if (activeRequest.shouldStop()) activeRequest.abort();
           if (activeRequest.signal.aborted || !text) break;
           producedOutput = true;
+          providerProduced = true;
           outputChunks.push(text);
           deltaBuffer += text;
           if (deltaBuffer.length >= DELTA_FLUSH_CHARS && !flushDelta()) break;
         }
-      } catch {
+        if (providerProduced || activeRequest.signal.aborted) break;
+        console.error(`[chat] provider ${active.name} produced no output; falling through`);
+        if (isLastProvider) break;
+        continue;
+      } catch (error) {
+        console.error(
+          `[chat] provider ${active.name} failed: ` +
+            (error instanceof Error ? `${error.name}: ${error.message}`.slice(0, 200) : "unknown")
+        );
+        if (!providerProduced && !activeRequest.signal.aborted && !isLastProvider) continue;
         // Provider failure (before OR after partial output). Return the honest
         // localized message — never fabricate, never use the old knowledge-base
         // warning, and never silently continue with another provider. Any text
@@ -182,6 +198,8 @@ export async function POST(request: Request) {
           }
           return;
         }
+      }
+      break;
       }
 
       flushDelta();
