@@ -10,6 +10,8 @@ const arabicCountries = new Set([
 ]);
 
 export const tr: Record<string, string> = {
+  "Resend verification": "Doğrulama e-postasını yeniden gönder",
+  "If the address needs verification, a new link has been sent.": "Bu adres doğrulama bekliyorsa yeni bir bağlantı gönderildi.",
   "Your account has been created. You can sign in now.": "Hesabınız oluşturuldu. Şimdi giriş yapabilirsiniz.",
   "The service is temporarily unavailable. Please try again shortly.": "Hizmete geçici olarak ulaşılamıyor. Lütfen kısa süre sonra tekrar deneyin.",
   "Registered users": "Kayıtlı kullanıcılar",
@@ -352,6 +354,8 @@ export const tr: Record<string, string> = {
 };
 
 export const ar: Record<string, string> = {
+  "Resend verification": "إعادة إرسال رسالة التوثيق",
+  "If the address needs verification, a new link has been sent.": "إذا كان هذا العنوان بانتظار التوثيق فقد أُرسل رابط جديد.",
   "Your account has been created. You can sign in now.": "تم إنشاء حسابك. يمكنك تسجيل الدخول الآن.",
   "The service is temporarily unavailable. Please try again shortly.": "الخدمة غير متاحة مؤقتاً. يرجى المحاولة بعد قليل.",
   "Registered users": "المستخدمون المسجلون",

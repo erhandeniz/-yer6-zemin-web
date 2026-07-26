@@ -49,6 +49,25 @@ export function LoginView() {
     }
   }
 
+  async function resendVerification() {
+    const email = registeredEmail || (document.querySelector('input[name="email"]') as HTMLInputElement | null)?.value || "";
+    if (!email) { setError(t("Work email")); return; }
+    setLoading(true);
+    setError("");
+    try {
+      await fetch("/api/auth/resend-verification", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email })
+      });
+      setNotice(t("If the address needs verification, a new link has been sent."));
+    } catch {
+      setNotice(t("If the address needs verification, a new link has been sent."));
+    } finally {
+      setLoading(false);
+    }
+  }
+
   async function handleRegister(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setLoading(true);
@@ -154,7 +173,7 @@ export function LoginView() {
           <form onSubmit={handleSubmit} className="space-y-4">
             <label className="block text-xs text-white/52">{t("Work email")}<input required name="email" type="email" defaultValue={registeredEmail} key={registeredEmail} inputMode="email" autoCapitalize="none" autoCorrect="off" spellCheck={false} autoComplete="email" placeholder="name@company.com" className={inputClass} /></label>
             <label className="block text-xs text-white/52">{t("Password")}<span className="relative mt-1.5 block"><input required name="password" type={showPassword ? "text" : "password"} autoCapitalize="none" autoCorrect="off" spellCheck={false} autoComplete="current-password" placeholder={t("Enter your password")} className="h-11 w-full rounded-md border border-white/10 bg-white/[0.035] px-3 pr-11 text-sm text-white outline-none placeholder:text-white/20 focus:border-primary/45" /><button type="button" onClick={() => setShowPassword((value) => !value)} className="absolute right-0 top-0 grid size-11 place-items-center text-white/28 hover:text-white/55" aria-label={t(showPassword ? "Hide password" : "Show password")}>{showPassword ? <EyeOff className="size-4" /> : <Eye className="size-4" />}</button></span></label>
-            <div className="flex items-center justify-between"><label className="flex items-center gap-2 text-[11px] text-white/36"><input type="checkbox" className="size-3.5 accent-[#e2b54c]" />{t("Remember this device")}</label><button type="button" onClick={() => setResetInfo((value) => !value)} className="text-[11px] text-primary/65 hover:text-primary">{t("Forgot password?")}</button></div>
+            <div className="flex items-center justify-between"><label className="flex items-center gap-2 text-[11px] text-white/36"><input type="checkbox" className="size-3.5 accent-[#e2b54c]" />{t("Remember this device")}</label><span className="flex items-center gap-3"><button type="button" onClick={resendVerification} className="text-[11px] text-primary/65 hover:text-primary">{t("Resend verification")}</button><button type="button" onClick={() => setResetInfo((value) => !value)} className="text-[11px] text-primary/65 hover:text-primary">{t("Forgot password?")}</button></span></div>
             {resetInfo ? <p className="rounded-md border border-white/10 bg-white/[0.03] px-3 py-2.5 text-[11px] leading-4 text-white/45">{t("Password reset links are sent once an email provider is configured. Please contact your administrator.")}</p> : null}
             {error ? <p role="alert" className="rounded-md border border-red-400/15 bg-red-400/[0.06] px-3 py-2.5 text-xs text-red-300">{error}</p> : null}
             <Button type="submit" size="lg" className="w-full" disabled={loading}>{t(loading ? "Verifying..." : "Sign in")}<ArrowRight className="size-4" /></Button>
