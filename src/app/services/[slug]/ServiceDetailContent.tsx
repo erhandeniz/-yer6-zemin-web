@@ -323,7 +323,7 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
                   href={`${siteConfig.whatsapp.url}?text=${encodeURIComponent(`Merhaba YER6, ${service.title} hizmeti için bilgi almak istiyorum.`)}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block rounded-2xl bg-[#25D366]/15 border border-[#25D366]/30 px-5 py-4 text-center text-sm font-semibold text-[#25D366] hover:bg-[#25D366]/25 transition"
+                  className="block rounded-2xl border border-gold-300/30 bg-gold-300/10 px-5 py-3.5 text-center text-[13px] font-medium tracking-wide text-gold-300 transition hover:bg-gold-300/20"
                 >
                   WhatsApp ile Hızlı Teklif
                 </a>
