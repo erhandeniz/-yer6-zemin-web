@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { KnowledgeContent } from "./KnowledgeContent";
 import { siteConfig } from "@/lib/siteConfig";
-import Script from "next/script";
 
 const pageUrl = `${siteConfig.siteUrl}/knowledge/`;
 
@@ -66,12 +65,12 @@ export default function KnowledgeIndexPage() {
 
   return (
     <>
-      <Script
+      <script
         id="knowledge-breadcrumb-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify({ ...breadcrumbSchema, "@id": `${pageUrl}#breadcrumb` }) }}
       />
-      <Script
+      <script
         id="knowledge-collection-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }}

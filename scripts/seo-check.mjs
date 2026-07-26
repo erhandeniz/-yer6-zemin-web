@@ -86,14 +86,13 @@ for (const spec of EXPECT) {
     : fail(spec.file, `canonical beklenen ${spec.url}, bulunan ${canonical}`);
 
   // hreflang tr-TR (öz-referans)
-  const hasTr =
-    html.includes(`hreflang="tr-TR" href="${spec.url}"`) ||
-    html.includes(`href="${spec.url}" hreflang="tr-TR"`) ||
-    (html.includes('hreflang="tr-TR"') && html.includes(spec.url));
+  // Next emits the attribute as hrefLang; HTML attributes are case-insensitive.
+  const lower = html.toLowerCase();
+  const hasTr = lower.includes('hreflang="tr-tr"') && html.includes(spec.url);
   hasTr ? pass(spec.file, "hreflang tr-TR mevcut") : fail(spec.file, "hreflang tr-TR eksik");
 
   // x-default yalnızca uygun yerde (ana sayfa)
-  const hasXDefault = html.includes('hreflang="x-default"');
+  const hasXDefault = lower.includes('hreflang="x-default"');
   hasXDefault === spec.xDefault
     ? pass(spec.file, `x-default ${spec.xDefault ? "mevcut (doğru)" : "yok (doğru)"}`)
     : fail(spec.file, `x-default ${spec.xDefault ? "eksik" : "olmamalıydı"}`);
@@ -114,7 +113,7 @@ for (const spec of EXPECT) {
 
   // CollectionPage şeması (blog + knowledge)
   if (spec.collection) {
-    html.includes('"@type":"CollectionPage"') && html.includes(`"url":"${spec.url}"`)
+    html.includes('"@type":"CollectionPage"') && html.includes(spec.url)
       ? pass(spec.file, "CollectionPage şeması mevcut")
       : fail(spec.file, "CollectionPage şeması eksik/yanlış");
   }

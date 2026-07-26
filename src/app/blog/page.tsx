@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { BlogContent } from "./BlogContent";
 import { siteConfig } from "@/lib/siteConfig";
-import Script from "next/script";
 
 const pageUrl = `${siteConfig.siteUrl}/blog/`;
 
@@ -66,12 +65,12 @@ export default function BlogPage() {
 
   return (
     <>
-      <Script
+      <script
         id="blog-breadcrumb-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify({ ...breadcrumbSchema, "@id": `${pageUrl}#breadcrumb` }) }}
       />
-      <Script
+      <script
         id="blog-collection-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }}
