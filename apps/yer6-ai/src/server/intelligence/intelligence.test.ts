@@ -37,7 +37,9 @@ describe("GPT-5.6 intelligence runtime", () => {
     expect(prompt).toContain("Do not force every answer through retrieval");
     expect(prompt).not.toContain("Bilgi tabanında bu soruyla");
     expect(prompt).not.toContain("genel mühendislik bilgisine dayan");
-    expect(prompt.length).toBeLessThan(2000); // concise, not thousands of rules
+    // Budget covers: role, conversation-style rules, verified public identity
+    // and honesty rules. Still concise — not a thousand-line prompt.
+    expect(prompt.length).toBeLessThan(2600); // concise, not thousands of rules
   });
 
   // TEST 3 — multi-turn: the full recent history is passed to the model so
