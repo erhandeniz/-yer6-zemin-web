@@ -45,9 +45,30 @@ export async function createVerificationToken(email: string): Promise<string> {
   return verificationLink(token, identifier);
 }
 
+/**
+ * Normalizes a configured sender into `Name <a@b.tld>` / `a@b.tld`.
+ * Tolerates values pasted with markdown link syntax, mailto: prefixes, quotes
+ * or stray whitespace — a malformed secret previously caused a silent 422.
+ */
+export function normalizeFromAddress(raw: string | undefined): string | null {
+  if (!raw) return null;
+  let value = raw.trim().replace(/^["']|["']$/g, "");
+  const markdown = value.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+  if (markdown) value = markdown[1].trim();
+  value = value.replace(/mailto:/gi, "").split("?")[0].trim();
+
+  const named = value.match(/^(.*?)<\s*([^<>\s]+@[^<>\s]+\.[^<>\s]+)\s*>$/);
+  if (named) {
+    const name = named[1].trim().replace(/[<>"]/g, "");
+    return name ? `${name} <${named[2]}>` : named[2];
+  }
+  const bare = value.match(/[^\s<>]+@[^\s<>]+\.[^\s<>]+/);
+  return bare ? bare[0] : null;
+}
+
 /** True when an email provider is configured (UI/policy can rely on this). */
 export function emailSendingConfigured(): boolean {
-  return Boolean(process.env.RESEND_API_KEY && process.env.EMAIL_FROM);
+  return Boolean(process.env.RESEND_API_KEY && normalizeFromAddress(process.env.EMAIL_FROM));
 }
 
 /** Sends the verification email. Never throws; returns whether it was sent. */
@@ -61,11 +82,13 @@ export async function sendVerificationEmail(email: string, link: string): Promis
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        from: process.env.EMAIL_FROM,
+        from: normalizeFromAddress(process.env.EMAIL_FROM) ?? "",
         to: [email],
         // Kurumsal yanıt adresi: doğrulama postasını yanıtlayan müşteri
         // doğrudan firmaya ulaşsın.
-        ...(process.env.EMAIL_REPLY_TO ? { reply_to: process.env.EMAIL_REPLY_TO } : {}),
+        ...(normalizeFromAddress(process.env.EMAIL_REPLY_TO)
+          ? { reply_to: normalizeFromAddress(process.env.EMAIL_REPLY_TO) }
+          : {}),
         subject: "YER6 AI — E-posta adresinizi doğrulayın",
         text: `YER6 AI hesabınızı etkinleştirmek için bu bağlantıyı açın (24 saat geçerlidir):\n${link}\n\nBu kaydı siz yapmadıysanız bu iletiyi yok sayabilirsiniz.\n\nYER6 Zemin Güçlendirme Geoteknik Mühendislik\nwww.yer6zemin.com.tr`,
         html: `<div style="margin:0;padding:24px;background:#f4f4f5;font-family:system-ui,-apple-system,Segoe UI,Arial,sans-serif">
