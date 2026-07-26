@@ -112,7 +112,7 @@ describe("POST /api/ai/chat", () => {
     });
   });
 
-  it("returns an honest error without a silent Cloudflare fallback when the primary fails", async () => {
+  it("falls through to the next provider when the first fails before emitting output", async () => {
     mocks.providers = [
       {
         name: "openai",
@@ -128,16 +128,16 @@ describe("POST /api/ai/chat", () => {
       }
     ];
     const events = await responseEvents(await POST(chatRequest()));
-    // GPT-5.6 is the sole primary brain: Cloudflare is never silently used.
+    // Sanctioned resilience: a provider that fails BEFORE producing text is
+    // skipped so a single outage/safety refusal never takes chat down. Each
+    // attempt is announced, so the client always knows who answered.
     expect(events.filter((event) => event.type === "meta").map((event) => event.provider))
-      .toEqual(["openai"]);
-    expect(events.some((event) => event.type === "delta")).toBe(false);
-    expect(events.at(-1)).toEqual({
-      type: "error",
-      message: "Yapay zekâ hizmetine şu anda ulaşılamıyor. Lütfen biraz sonra yeniden deneyin."
-    });
+      .toEqual(["openai", "cloudflare-workers-ai"]);
+    expect(events.filter((event) => event.type === "delta").map((event) => event.text).join(""))
+      .toBe("Yedek sağlayıcı yanıtı");
+    expect(events.at(-1)).toMatchObject({ type: "done", stopped: false });
+    // The failing provider's internal detail is never leaked to the client.
     expect(JSON.stringify(events)).not.toContain("private provider failure");
-    expect(JSON.stringify(events)).not.toContain("Yedek sağlayıcı yanıtı");
   });
 
   it("does not mix providers after the primary has emitted partial output", async () => {
