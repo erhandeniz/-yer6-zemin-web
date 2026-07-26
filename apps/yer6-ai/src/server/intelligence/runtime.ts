@@ -42,15 +42,13 @@ export function prepareIntelligenceTurn(params: {
 }
 
 /**
- * Select the primary brain: GPT-5.6 (OpenAI Responses) when configured;
- * otherwise the first healthy provider in the chain (sanctioned resilience
- * fallback — a transient missing/late OPENAI key must not take chat down).
- * Throws `not_configured` only when NO provider is available; the runtime
- * still never fabricates a static answer.
+ * Select the primary brain = the FIRST provider of the configured chain.
+ * The chain itself encodes the operator's cost policy (free tiers first:
+ * Gemini → Groq → Cerebras → Mistral → DeepSeek → GPT-5.6 → Cloudflare),
+ * so selection must not re-promote a paid provider here. Throws
+ * `not_configured` only when no provider exists; never fabricates an answer.
  */
 export function selectPrimaryProvider(providers: AIProvider[]): AIProvider {
-  const openai = providers.find((provider) => provider.name === "openai");
-  if (openai) return openai;
   if (providers.length > 0) return providers[0];
   throw new IntelligenceError("not_configured", "The primary brain is not configured.");
 }

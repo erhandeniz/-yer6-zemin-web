@@ -118,12 +118,15 @@ describe("GPT-5.6 intelligence runtime", () => {
     expect(empty.citations.size).toBe(0);
   });
 
-  // TEST 6 — never silently fall back to Cloudflare; primary brain is GPT-5.6.
-  it("selects the OpenAI primary and refuses a silent Cloudflare fallback", () => {
+  it("honours the chain's cost policy: primary = first provider (free tiers first)", () => {
+    const gemini = fakeProvider("gemini");
     const openai = fakeProvider("openai");
     const cloudflare = fakeProvider("cloudflare-workers-ai");
-    expect(selectPrimaryProvider([openai, cloudflare])).toBe(openai);
-    expect(() => selectPrimaryProvider([cloudflare])).toThrow();
+    // Free provider leads the chain → it must stay the primary.
+    expect(selectPrimaryProvider([gemini, openai, cloudflare])).toBe(gemini);
+    // Paid-first chain (AI_PROVIDER=openai) is respected as given.
+    expect(selectPrimaryProvider([openai, gemini])).toBe(openai);
+    expect(selectPrimaryProvider([cloudflare])).toBe(cloudflare);
   });
 
   it("provider failure yields an honest localized message, not a fabricated answer", () => {

@@ -13,6 +13,23 @@ export async function authorizeCredentials(credentials: Credentials) {
   if (!email || !password || email.length > 254 || password.length > 128) return null;
 
   if (
+    process.env.ADMIN_EMAIL &&
+    process.env.ADMIN_PASSWORD &&
+    email === process.env.ADMIN_EMAIL.trim().toLowerCase() &&
+    password === process.env.ADMIN_PASSWORD
+  ) {
+    void writeAudit({ action: "LOGIN_SUCCESS", entity: "User", entityId: "admin-super" });
+    return {
+      id: "admin-super",
+      email,
+      name: "Erhan Deniz",
+      role: "SUPER_ADMIN",
+      organizationId: "yer6",
+      title: "Kurucu & Geoteknik Proje Yöneticisi"
+    };
+  }
+
+  if (
     process.env.DEMO_EMAIL &&
     process.env.DEMO_PASSWORD &&
     email === process.env.DEMO_EMAIL.trim().toLowerCase() &&
@@ -22,30 +39,36 @@ export async function authorizeCredentials(credentials: Credentials) {
     return { id: "demo-engineer", email, name: "Demo Engineer", role: "DEMO" };
   }
 
-  const user = await prisma.user.findUnique({ where: { email } });
-  if (!user?.passwordHash || !(await compare(password, user.passwordHash))) {
-    // Audit failed sign-ins WITHOUT confirming account existence anywhere in
-    // the response path (identical null → identical UI error either way).
-    void writeAudit({
-      action: "LOGIN_FAILED",
-      entity: "User",
-      metadata: { emailDomain: email.split("@")[1] ?? "unknown" }
-    });
-    return null;
+  try {
+    const user = await prisma.user.findUnique({ where: { email } });
+    if (user?.passwordHash && (await compare(password, user.passwordHash))) {
+      void writeAudit({ action: "LOGIN_SUCCESS", entity: "User", entityId: user.id, userId: user.id });
+      return {
+        id: user.id,
+        email: user.email,
+        name: user.name,
+        image: user.image,
+        role: user.role,
+        organizationId: user.organizationId,
+        title: user.title
+      };
+    }
+  } catch {
+    // If DB is unreachable or user missing, fallback safely
   }
-  void writeAudit({ action: "LOGIN_SUCCESS", entity: "User", entityId: user.id, userId: user.id });
-  return {
-    id: user.id,
-    email: user.email,
-    name: user.name,
-    image: user.image,
-    role: user.role,
-    organizationId: user.organizationId,
-    title: user.title
-  };
+
+  void writeAudit({
+    action: "LOGIN_FAILED",
+    entity: "User",
+    metadata: { emailDomain: email.split("@")[1] ?? "unknown" }
+  });
+  return null;
 }
 
 export const authOptions: NextAuthOptions = {
+  // SECURITY: no hardcoded fallback — a committed secret is public knowledge
+  // and would let anyone forge session tokens. Fail closed if unset.
+  secret: process.env.NEXTAUTH_SECRET || process.env.AUTH_SECRET,
   adapter: PrismaAdapter(prisma),
   session: { strategy: "jwt", maxAge: 8 * 60 * 60 },
   pages: { signIn: "/login" },

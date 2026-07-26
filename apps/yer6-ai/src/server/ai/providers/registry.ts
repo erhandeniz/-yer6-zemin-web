@@ -14,9 +14,53 @@ import {
 } from "@/server/ai/config";
 import type { AIProvider } from "@/server/ai/providers/types";
 
+/**
+ * Workspace chain — FREE TIERS FIRST (operator directive):
+ *   1) Gemini    — free (~1,500 req/day)
+ *   2) Groq      — free (1,000/day 70B + 14,400/day 8B)
+ *   3) Cerebras  — free (~1M tokens/day)
+ *   4) Mistral   — free experiment tier
+ *   5) DeepSeek  — low-cost paid
+ *   6) GPT-5.6   — highest-quality paid
+ *   7) Cloudflare Workers AI — final binding fallback
+ * `AI_PROVIDER=openai` pins the paid brain first when an operator wants it.
+ */
 export function createProviderChain(config: AIConfig, workersAI?: WorkersAIBinding): AIProvider[] {
   const openAIProvider = config.openAIApiKey
     ? createOpenAIResponsesProvider(config.openAIApiKey, config.openAIModel, config.reasoningEffort)
+    : null;
+  const geminiProvider = config.geminiApiKey
+    ? createGeminiProvider(config.geminiApiKey, config.geminiModel)
+    : null;
+  const groqProvider = config.groqApiKey
+    ? createOpenAICompatibleProvider({
+        name: "groq",
+        apiKey: config.groqApiKey,
+        baseURL: GROQ_BASE_URL,
+        model: config.groqModel,
+        candidates: GROQ_MODEL_CANDIDATES
+      })
+    : null;
+  const cerebrasProvider = config.cerebrasApiKey
+    ? createOpenAICompatibleProvider({
+        name: "cerebras",
+        apiKey: config.cerebrasApiKey,
+        baseURL: CEREBRAS_BASE_URL,
+        model: config.cerebrasModel,
+        candidates: CEREBRAS_MODEL_CANDIDATES
+      })
+    : null;
+  const mistralProvider = config.mistralApiKey
+    ? createOpenAICompatibleProvider({
+        name: "mistral",
+        apiKey: config.mistralApiKey,
+        baseURL: MISTRAL_BASE_URL,
+        model: config.mistralModel,
+        candidates: MISTRAL_MODEL_CANDIDATES
+      })
+    : null;
+  const deepSeekProvider = config.deepSeekApiKey
+    ? createDeepSeekProvider(config.deepSeekApiKey, config.deepSeekModel)
     : null;
   const cloudflareProvider = workersAI
     ? createCloudflareWorkersAIProvider(workersAI, config.cloudflareModel)
@@ -26,7 +70,28 @@ export function createProviderChain(config: AIConfig, workersAI?: WorkersAIBindi
     return cloudflareProvider ? [cloudflareProvider] : [];
   }
 
-  return [openAIProvider, cloudflareProvider].filter((provider): provider is AIProvider => Boolean(provider));
+  const freeFirst = [
+    geminiProvider,
+    groqProvider,
+    cerebrasProvider,
+    mistralProvider,
+    deepSeekProvider,
+    openAIProvider,
+    cloudflareProvider
+  ];
+  const paidFirst = [
+    openAIProvider,
+    geminiProvider,
+    groqProvider,
+    cerebrasProvider,
+    mistralProvider,
+    deepSeekProvider,
+    cloudflareProvider
+  ];
+
+  return (config.providerPreference === "openai" ? paidFirst : freeFirst).filter(
+    (provider): provider is AIProvider => Boolean(provider)
+  );
 }
 
 /**
