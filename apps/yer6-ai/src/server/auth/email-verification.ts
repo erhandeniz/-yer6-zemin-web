@@ -63,12 +63,28 @@ export async function sendVerificationEmail(email: string, link: string): Promis
       body: JSON.stringify({
         from: process.env.EMAIL_FROM,
         to: [email],
+        // Kurumsal yanıt adresi: doğrulama postasını yanıtlayan müşteri
+        // doğrudan firmaya ulaşsın.
+        ...(process.env.EMAIL_REPLY_TO ? { reply_to: process.env.EMAIL_REPLY_TO } : {}),
         subject: "YER6 AI — E-posta adresinizi doğrulayın",
-        html: `<div style="font-family:system-ui,Segoe UI,Arial,sans-serif;background:#0b0b0b;color:#eaeaea;padding:32px">
-  <h2 style="color:#e2b54c;margin:0 0 12px">YER6 AI</h2>
-  <p style="margin:0 0 16px;line-height:1.6">Hesabınızı etkinleştirmek için aşağıdaki bağlantıya tıklayın. Bağlantı 24 saat geçerlidir.</p>
-  <p style="margin:0 0 24px"><a href="${link}" style="background:#e2b54c;color:#111;padding:12px 20px;border-radius:6px;text-decoration:none;font-weight:600">E-postamı doğrula</a></p>
-  <p style="margin:0;font-size:12px;color:#888">Bu kaydı siz yapmadıysanız bu iletiyi yok sayabilirsiniz.</p>
+        text: `YER6 AI hesabınızı etkinleştirmek için bu bağlantıyı açın (24 saat geçerlidir):\n${link}\n\nBu kaydı siz yapmadıysanız bu iletiyi yok sayabilirsiniz.\n\nYER6 Zemin Güçlendirme Geoteknik Mühendislik\nwww.yer6zemin.com.tr`,
+        html: `<div style="margin:0;padding:24px;background:#f4f4f5;font-family:system-ui,-apple-system,Segoe UI,Arial,sans-serif">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px;margin:0 auto;background:#0b0b0b;border-radius:12px;overflow:hidden">
+    <tr><td style="height:4px;background:#e2b54c"></td></tr>
+    <tr><td style="padding:32px 32px 8px">
+      <p style="margin:0 0 4px;font-size:20px;font-weight:700;color:#e2b54c;letter-spacing:.02em">YER6 AI</p>
+      <p style="margin:0 0 24px;font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:#8a8a8a">Geoteknik Mühendislik Zekâsı</p>
+      <p style="margin:0 0 16px;font-size:15px;line-height:1.65;color:#eaeaea">Merhaba,</p>
+      <p style="margin:0 0 24px;font-size:15px;line-height:1.65;color:#c9c9c9">YER6 AI çalışma alanı hesabınızı etkinleştirmek için aşağıdaki butona tıklayın. Bağlantı <strong style="color:#eaeaea">24 saat</strong> geçerlidir ve yalnızca bir kez kullanılabilir.</p>
+      <p style="margin:0 0 28px"><a href="${link}" style="display:inline-block;background:#e2b54c;color:#111;padding:13px 26px;border-radius:6px;text-decoration:none;font-weight:600;font-size:14px">E-postamı doğrula</a></p>
+      <p style="margin:0 0 6px;font-size:12px;color:#7a7a7a">Buton çalışmazsa bu adresi tarayıcınıza yapıştırın:</p>
+      <p style="margin:0 0 28px;font-size:11px;color:#5f5f5f;word-break:break-all">${link}</p>
+    </td></tr>
+    <tr><td style="padding:20px 32px 28px;border-top:1px solid rgba(255,255,255,.07)">
+      <p style="margin:0 0 8px;font-size:12px;color:#8a8a8a">Bu kaydı siz yapmadıysanız bu iletiyi yok sayabilirsiniz; hesap etkinleşmez.</p>
+      <p style="margin:0;font-size:12px;line-height:1.6;color:#6f6f6f">YER6 Zemin Güçlendirme Geoteknik Mühendislik<br />Gölbaşı / Ankara · <a href="https://www.yer6zemin.com.tr" style="color:#b98f3c;text-decoration:none">www.yer6zemin.com.tr</a></p>
+    </td></tr>
+  </table>
 </div>`
       })
     });
