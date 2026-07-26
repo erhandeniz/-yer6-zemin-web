@@ -139,14 +139,25 @@ export async function registerUser(input: RegistrationInput): Promise<Registrati
     // provider is configured. Failures never block registration — the admin
     // roster shows the account as "Pending verification".
     if (policy.emailVerification === "required" || emailSendingConfigured()) {
+      let delivered = false;
       try {
         const link = await createVerificationToken(email);
-        await sendVerificationEmail(email, link);
+        delivered = await sendVerificationEmail(email, link);
       } catch (error) {
         console.error(
           "[register] verification dispatch failed:",
           error instanceof Error ? error.message.slice(0, 150) : "unknown"
         );
+      }
+      // LOCKOUT GUARD: if the verification mail could NOT be delivered, never
+      // leave the account gated behind an email that will never arrive —
+      // activate it instead and tell the caller no verification is pending.
+      if (!delivered) {
+        console.error("[register] verification email not delivered — activating account instead");
+        await prisma.user
+          .update({ where: { email }, data: { emailVerified: new Date() } })
+          .catch(() => undefined);
+        return { ok: true, created: true, verificationRequired: false };
       }
     }
   } catch (error) {

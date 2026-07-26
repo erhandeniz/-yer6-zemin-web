@@ -89,7 +89,12 @@ export async function sendVerificationEmail(email: string, link: string): Promis
       })
     });
     if (!response.ok) {
-      console.error("[verify-email] provider rejected:", response.status);
+      // Surface the provider's reason (domain not verified, bad from-address,
+      // sandbox restriction...) so `wrangler tail` shows WHY mail is missing.
+      const detail = await response.text().catch(() => "");
+      console.error(
+        `[verify-email] provider rejected ${response.status}: ${detail.slice(0, 300)}`
+      );
       return false;
     }
     return true;
