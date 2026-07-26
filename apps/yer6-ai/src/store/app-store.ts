@@ -39,10 +39,14 @@ type AppState = {
   selectedProjectId: string;
   conversations: ChatConversation[];
   activeConversationId: string;
+  /** Bu tarayıcıdaki sohbetlerin sahibi. Oturum sahibi değişirse sıfırlanır. */
+  ownerUserId: string | null;
   uploads: UploadItem[];
   setSidebarOpen: (open: boolean) => void;
   setUploadOpen: (open: boolean) => void;
   setSelectedProjectId: (id: string) => void;
+  /** Oturum sahibini bağlar; farklı bir kullanıcı ise yerel sohbetleri siler. */
+  bindOwner: (userId: string | null) => void;
   createConversation: (projectId?: string) => string;
   selectConversation: (id: string) => void;
   renameConversation: (id: string, title: string) => void;
@@ -80,10 +84,26 @@ export const useAppStore = create<AppState>()(
       uploadOpen: false,
       selectedProjectId: "PRJ-0248",
       conversations: [initialConversation],
+      ownerUserId: null,
       activeConversationId: initialConversation.id,
       uploads: [],
       setSidebarOpen: (sidebarOpen) => set({ sidebarOpen }),
       setUploadOpen: (uploadOpen) => set({ uploadOpen }),
+      bindOwner: (userId) =>
+        set((state) => {
+          if (state.ownerUserId === userId) return state;
+          // GİZLİLİK: paylaşılan tarayıcıda bir kullanıcının sohbetleri asla
+          // bir sonraki kullanıcıya görünmemeli. Sahip değişti → yerel geçmiş
+          // tamamen atılır ve boş bir konuşmayla başlanır.
+          const fresh = newConversation();
+          return {
+            ...state,
+            ownerUserId: userId,
+            conversations: [fresh],
+            activeConversationId: fresh.id,
+            uploads: []
+          };
+        }),
       setSelectedProjectId: (selectedProjectId) => set({ selectedProjectId }),
       createConversation: (projectId) => {
         const conversation = newConversation(projectId);
@@ -161,7 +181,8 @@ export const useAppStore = create<AppState>()(
               : message.status
           }))
         })),
-        activeConversationId: state.activeConversationId
+        activeConversationId: state.activeConversationId,
+        ownerUserId: state.ownerUserId
       }),
       merge: (persisted, current) => {
         const stored = persisted as Partial<AppState>;

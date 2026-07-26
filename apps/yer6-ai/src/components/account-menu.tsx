@@ -7,6 +7,7 @@ import { useEffect, useRef, useState } from "react";
 import { ChevronDown, LogOut, Settings2, Shield, User as UserIcon, UserCircle2 } from "lucide-react";
 import { userInitials } from "@/lib/initials";
 import { useAITranslation, aiLocales } from "@/components/i18n-provider";
+import { useAppStore } from "@/store/app-store";
 
 type SessionUser = {
   id?: string;
@@ -36,6 +37,7 @@ export function AccountMenu({ variant }: { variant: "sidebar" | "topbar" }) {
   const [open, setOpen] = useState(false);
   const [anchor, setAnchor] = useState<DOMRect | null>(null);
   const [mounted, setMounted] = useState(false);
+  const bindOwner = useAppStore((state) => state.bindOwner);
   const triggerRef = useRef<HTMLButtonElement>(null);
   const menuRef = useRef<HTMLDivElement>(null);
 
@@ -47,6 +49,10 @@ export function AccountMenu({ variant }: { variant: "sidebar" | "topbar" }) {
       .then((data) => {
         if (!active) return;
         setUser(data?.user ?? null);
+        // GİZLİLİK: yerel sohbet geçmişi yalnızca sahibine aittir. Oturum
+        // sahibi değiştiyse (paylaşılan tarayıcı) önceki kullanıcının
+        // konuşmaları anında silinir.
+        bindOwner(data?.user?.id ?? null);
         setLoaded(true);
       })
       .catch(() => {
@@ -200,6 +206,9 @@ export function AccountMenu({ variant }: { variant: "sidebar" | "topbar" }) {
                 role="menuitem"
                 onClick={() => {
                   setOpen(false);
+                  // Çıkışta yerel sohbet geçmişini de bırakma: aynı tarayıcıyı
+                  // kullanan bir sonraki kişi önceki konuşmaları görmemeli.
+                  bindOwner(null);
                   void signOut({ callbackUrl: "/login" });
                 }}
                 className="flex w-full items-center gap-2.5 rounded px-3 py-2 text-left text-xs text-red-300/85 hover:bg-red-400/[0.08]"
