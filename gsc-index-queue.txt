@@ -118,7 +118,7 @@ DONE https://www.yer6zemin.com.tr/knowledge/
 DONE https://www.yer6zemin.com.tr/projects/
 DONE https://www.yer6zemin.com.tr/about/
 https://www.yer6zemin.com.tr/technology/
-https://www.yer6zemin.com.tr/equipment-fleet/
+DONE https://www.yer6zemin.com.tr/equipment-fleet/
 https://www.yer6zemin.com.tr/contact/
 https://www.yer6zemin.com.tr/blog/
 # --- Oncelik 3: Knowledge makaleleri (jet grout kumesi) ---

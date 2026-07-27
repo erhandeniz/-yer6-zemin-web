@@ -8,7 +8,7 @@ export const siteConfig = {
   googleSiteVerification: "",
   // Yandex Webmaster doğrulama meta içeriği (Site ekle > Meta etiket yöntemindeki
   // yandex-verification content değeri). Boş bırakılırsa etiket eklenmez.
-  yandexVerification: "",
+  yandexVerification: "7ffc28734dbf2682",
   // Yandex Metrica sayaç numarası (yalnızca rakam). Yandex, davranışsal sinyalleri
   // (kalış süresi, kaydırma, tıklama haritası, webvisor) doğrudan Metrica'dan okur
   // ve sıralamaya yansıtır. Boş bırakılırsa yüklenmez.
