@@ -35,7 +35,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: `${cityPage.title} | YER6`,
       description: cityPage.description,
-      url: pageUrl
+      url: pageUrl,
+      type: "website",
+      locale: "tr_TR"
+    },
+    // Şehir sayfaları kök layout'un genel Twitter başlığını devralıyordu;
+    // paylaşımda ve bazı tarayıcı önizlemelerinde şehir/hizmet kaybolmasın.
+    twitter: {
+      card: "summary_large_image",
+      title: `${cityPage.title} | YER6`,
+      description: cityPage.description
     }
   };
 }
