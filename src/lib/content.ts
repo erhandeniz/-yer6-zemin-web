@@ -49,7 +49,7 @@ export const services = [
     key: "svc_jet_grout",
     icon: Drill,
     title: "Jet Grout",
-    summary: "Türkiye'nin lider zemin iyileştirme ve jet grout firması YER6, zayıf zeminlerde taşıma kapasitesini artırmak için yüksek basınçlı enjeksiyonla zemin-çimento kolonları oluşturur.",
+    summary: "YER6, zayıf zeminlerde taşıma kapasitesini artırmak için yüksek basınçlı enjeksiyonla zemin-çimento kolonları oluşturan jet grout uygulamaları gerçekleştirir.",
     detail: "Jet grout yapan firmalar arasında ileri mühendislik standartlarıyla öne çıkan YER6; 400-600 bar aralığındaki yüksek basınçlı çimento şerbetinin (grout), zemin matrisini parçalayarak yerinde zemin-çimento kolonları (soilcrete) oluşturması prensibine dayanır. Zorlu saha koşullarında, dar alanlarda ve mevcut yapılara bitişik (underpinning) kazılarda taşıma kapasitesini artırmak ve su geçirimsizlik perdesi (secant wall) sağlamak için en etkili geoteknik çözümdür.",
     specs: ["Mono, double ve triple sistem", "Gerçek zamanlı basınç ve debi takibi", "Kesintisiz yüzey dönüş (spoil) kontrolü"],
     applications: [
@@ -62,10 +62,10 @@ export const services = [
       "Sıvılaşma riskine karşı zemin iyileştirmesi"
     ],
     advantages: [
-      "Statik ve Titreşimsiz Yöntem: Kazık çakma veya darbeli delgi aksine titreşimsizdir; bina strüktürüne, komşu yapılara ve hassas cihazlara zarar vermez.",
-      "Elektrikli Jet Grout Makinesi Teknolojisi: Kapalı bodrum katlarında ve havalandırması kısıtlı tesislerde zehirli egzoz emisyonunu %100 yok eder, ultra düşük gürültü sağlar.",
+      "Düşük Titreşimli Yöntem: Kazık çakma veya darbeli delgi yöntemlerine göre titreşim etkisi düşüktür; komşu yapılar ve hassas cihazlar proje özelindeki izleme planıyla korunur.",
+      "Elektrikli Jet Grout Makinesi Teknolojisi: Kapalı bodrum katlarında ve havalandırması kısıtlı tesislerde uygulama noktasında doğrudan dizel egzoz emisyonu oluşturmaz ve gürültü etkisini azaltır.",
       "Oturma (Settlement) ve Kabarma (Heave) Kontrolü: 400-600 bar yüksek basınç enjeksiyonunda spoil (çamur) çıkış kanalları sürekli açık tutularak zemin kabarması engellenir.",
-      "Şaşırtmalı/Ardışık (Dama Düzeni) Döküm Sekansı: Yan yana kolonlar aynı anda yapılmaz; en az 2 kolon mesafesi bırakılarak 24 saatlik priz süresiyle binanın oturma riski sıfırlanır.",
+      "Şaşırtmalı/Ardışık (Dama Düzeni) Döküm Sekansı: Yan yana kolonlar aynı anda yapılmaz; proje şartlarına göre kolon aralığı ve priz süresi belirlenerek oturma riski azaltılır.",
       "7/24 Gerçek Zamanlı İzleme (Monitoring): İnklinometre, oturma plakaları ve tiltmetre ile milimetrik bina hareketleri anlık izlenir, belirlenen eşikte imalat durdurulur.",
       "Zemin profiline göre Mono (sadece grout), Double (grout+hava) veya Triple (grout+su+hava) sistem seçimiyle optimize edilir.",
       "İmalat öncesi saha deneme kolonları (trial columns) yapılarak enjeksiyon basıncı, tij çekme hızı ve dönüş sayısı (rpm) zemin ortamında doğrulanır."
@@ -73,19 +73,19 @@ export const services = [
     processSteps: [
       { title: "Zemin Modeli ve Proje Değerlendirmesi", description: "Geoteknik zemin etüdü (SPT/CPT), temel/mimari projeler ve kuyu kotları YER6 mühendislerince incelenerek yapıya özel uygulama modeli tasarlanır." },
       { title: "Saha Deneme Kolonları (Zorunlu Kalibrasyon)", description: "Uluslararası standartlar (USACE, FHWA) gereği pilot kolonlar imal edilir. Hedef çap ve dayanım için basınç, çekme hızı ve su/çimento oranı sahada kalibre edilir." },
-      { title: "Elektrikli Ekipman Kurulumu ve Sensör Takibi", description: "Sıfır emisyonlu elektrikli jet grout makinesi mobilize edilir; binaya inklinometre, oturma plakaları ve optik izleme donanımları takılır." },
+      { title: "Elektrikli Ekipman Kurulumu ve Sensör Takibi", description: "Uygulama noktasında doğrudan dizel egzozu oluşturmayan elektrikli jet grout makinesi mobilize edilir; proje risk sınıfına göre inklinometre, oturma plakaları ve optik izleme donanımları kurulur." },
       { title: "Şaşırtmalı/Ardışık Kolon İmalatı", description: "Dama düzeninde yan yana olan kolonlar aynı anda yapılmaz. En az 2 kolon aralığı bırakılır ve 24 saatlik priz süresinin ardından ara kolonlar tamamlanır." },
       { title: "Kesintisiz Spoil (Çamur Dönüşü) ve Basınç Kontrolü", description: "400-600 bar basınçla jetleme yapılırken kuyu ağzından spoil geri dönüşü anlık takip edilir. Çamur dönüşünün kesilmesi durumunda hidro-fraktür ve kabarmayı önlemek için enjeksiyon derhal kesilir." },
       { title: "Karot Alımı ve Kalite Doğrulama Raporu", description: "Sertleşen jet grout kolonlarından karot alınarak (UCS - serbest basınç dayanımı) test edilir ve mühendislik onay raporuyla teslim edilir." }
     ],
-    technicalNote: "Bir jet grout uygulamasının başarısı yalnızca kullanılan çimento miktarına değil, uygulanan kinetik enerjiye (basınç ve çekme hızı) ve risk yönetimine bağlıdır. FHWA-HRT-13-046 yönergelerine göre, yüzeye sürekli çamur (spoil) dönüşünün kesilmesi jetlemenin durdurulmasını gerektirir; aksi takdirde yanal zemin kırılmaları (hidro-fraktür) ve tehlikeli zemin kabarmaları (heave) oluşur. YER6; bina altı projelerinde özel elektrikli makineler (sıfır egzoz, düşük gürültü), şaşırtmalı döküm disiplini ve 7/24 inklinometre takibiyle bina strüktürüne sıfır hasar riski sunar ve her projede deneme kolonu (trial column) uygulamasını standart kabul eder.",
+    technicalNote: "Bir jet grout uygulamasının başarısı yalnızca kullanılan çimento miktarına değil, uygulanan kinetik enerjiye (basınç ve çekme hızı) ve risk yönetimine bağlıdır. FHWA-HRT-13-046 yönergelerine göre, yüzeye sürekli çamur (spoil) dönüşünün kesilmesi jetlemenin durdurulmasını gerektirir; aksi takdirde yanal zemin kırılmaları (hidro-fraktür) ve tehlikeli zemin kabarmaları (heave) oluşur. YER6; bina altı projelerinde elektrikli makineler, düşük gürültülü çalışma, şaşırtmalı döküm disiplini ve proje özelindeki enstrümantasyon planıyla yapısal hareket riskini izlemeyi; gerekli görülen sahalarda deneme kolonu uygulamayı esas alır.",
     faq: [
       { question: "Jet grout hangi zemin türlerinde uygulanır?", answer: "Jet grout; kum, silt, kil ve karma yapılı zeminlerde uygulanabilir. Ancak çok katı kil veya yoğun çakıllı (boulder) zeminlerde, yüksek kinetik enerji (Triple sistem) ve özel nozul tasarımları gerektirir." },
-      { question: "Bina altı jet grout uygulaması mevcut binaya veya cihazlara zarar verir mi?", answer: "Hayır. Jet grout darbeli veya çakma bir sistem olmayıp statik ve titreşimsiz bir hidro-enjeksiyon yöntemidir. YER6 mühendislerinin uyguladığı şaşırtmalı döküm sekansı ve 7/24 inklinometre/oturtma takibi sayesinde binada oturma veya çatlak riski oluşmaz." },
-      { question: "Neden bina altı uygulamalarda elektrikli jet grout makinesi tercih edilir?", answer: "Bodrum katlarında, veri merkezlerinde ve havalandırması kısıtlı santral binalarında dizel makinelerin ürettiği karbonmonoksit ve zehirli egzoz gazı riskini tamamen ortadan kaldırmak için YER6 elektrikli jet grout makineleri kullanır." },
+      { question: "Bina altı jet grout uygulaması mevcut binaya veya cihazlara zarar verir mi?", answer: "Jet grout, darbeli veya çakma sistemlere göre düşük titreşimli bir hidro-enjeksiyon yöntemidir. Bununla birlikte her saha kendine özgüdür; şaşırtmalı döküm sekansı, basınç kontrolü ve inklinometre/oturma takibiyle oturma, kabarma ve çatlak riskleri izlenerek azaltılır." },
+      { question: "Neden bina altı uygulamalarda elektrikli jet grout makinesi tercih edilir?", answer: "Bodrum katlarında, veri merkezlerinde ve havalandırması kısıtlı santral binalarında elektrikli makineler uygulama noktasında doğrudan dizel egzoz emisyonu oluşturmaz; havalandırma ve iş güvenliği planını destekler." },
       { question: "Bina altı uygulamalarda oturma (settlement) ve kabarma (heave) riski nasıl önlenir?", answer: "Killi zeminlerde yüksek enjeksiyon basıncının tetiklediği kabarma (heave) riskine karşı enjeksiyon debisi kademeli ayarlanır ve spoil (çamur) çıkışı izlenir. Oturmayı (settlement) engellemek için ise yan yana kolonlar aynı anda imal edilmez (şaşırtmalı döküm) ve taze kolona 24 saat priz beklenir." },
       { question: "Teknik teklif ve risk değerlendirmesi için hangi belgeler gereklidir?", answer: "Sağlıklı bir teklif hazırlanabilmesi için: 1) Akredite Zemin Etüt Raporu (Sondaj, SPT, CPT), 2) Mevcut Temel ve Mimari/Statik Projeler, 3) Bodrum kat tavan yükseklikleri ve mevcut kuyu/temel kotlarının paylaşılması gereklidir. YER6 Mühendisleri yapıya özel karar verir." },
-      { question: "Türk Telekom gibi kesintisiz çalışan hassas tesislerde uygulama nasıl yürütülür?", answer: "Türk Telekom santralleri gibi 7/24 kesintisiz çalışan binalarda; sıfır emisyonlu elektrikli makinelerimiz, gürültü kalkanları ve titreşimsiz delgi teknolojimizle tesis faaliyetleri kesintiye uğratılmadan imalat gerçekleştirilir." },
+      { question: "Kesintisiz çalışan hassas tesislerde uygulama nasıl yürütülür?", answer: "Kesintisiz çalışan tesislerde elektrikli makineler, gürültü kontrolü, düşük titreşimli delgi ve enstrümantasyon birlikte planlanır. İşletme sürekliliği hedefi; tesis yönetimiyle hazırlanacak çalışma izinleri, durdurma eşikleri ve acil durum planına bağlıdır." },
       { question: "Jet grout kolonlarının kalitesi nasıl test edilir?", answer: "Saha imalatından 7-28 gün sonra kolonlardan elmas uçlu karot alınır. Laboratuvarda UCS (Tek Eksenli Basınç) testi yapılarak tasarım mukavemetinin sağlanıp sağlanmadığı belgelenir." }
     ]
   },
@@ -94,7 +94,7 @@ export const services = [
     key: "svc_dsm",
     icon: Layers3,
     title: "DSM (Deep Soil Mixing)",
-    summary: "Türkiye'de önde gelen DSM ve zemin iyileştirme firması olarak derin zemin karıştırma ile yüksek taşıma kapasitesi sağlıyoruz.",
+    summary: "YER6, derin zemin karıştırma yöntemiyle taşıma kapasitesi ve oturma performansı hedeflerine yönelik DSM uygulamaları gerçekleştirir.",
     detail: "DSM (Derin Zemin Karıştırma), mevcut zemin ile çimento bazlı bağlayıcıların yerinde mekanik olarak karıştırılarak zemin-çimento (soil-cement) kolonları oluşturulması işlemidir. Yüksek yeraltı suyuna sahip yumuşak kil, silt ve gevşek kumlu sahalarda, yanal yayılmayı ve sıvılaşmayı engellemek, oturmayı azaltmak ve taşıma gücünü homojen biçimde artırmak için en ekonomik ve seri yöntemdir.",
     specs: ["Mekanik karıştırma enerjisi (BRN) kontrolü", "Laboratuvar karışım (UCS) tasarımı", "Kolon kalite ve homojenlik kaydı"],
     applications: [
@@ -109,7 +109,7 @@ export const services = [
       "Geniş alanlı platform iyileştirmelerinde jet grout veya fore kazığa göre daha hızlı ve ekonomiktir.",
       "Yeraltı suyu problemini çözer, kapalı sistem karıştırmayla temiz bir şantiye ortamı sağlar.",
       "Organik killi veya turbalı zeminlerde çimento-kireç karışımlarıyla özel tasarım yapılabilir.",
-      "Blade Rotation Number (BRN) takibiyle karıştırma enerjisi ve kolon homojenliği garanti edilir."
+      "Blade Rotation Number (BRN) takibiyle karıştırma enerjisi izlenir ve kolon homojenliği için ölçülebilir kalite kaydı oluşturulur."
     ],
     processSteps: [
       { title: "Saha Karakterizasyonu ve Karışım Tasarımı", description: "Zemin numuneleri üzerinde laboratuvarda farklı çimento dozajları denenerek projenin hedef mukavemet (UCS) değeri tasarlanır." },
@@ -118,7 +118,7 @@ export const services = [
       { title: "Yukarı Çekme ve Homojenizasyon", description: "Hedef derinliğe ulaşıldıktan sonra ekipman ters yönde dönerek yukarı çekilir; zemin ile çimento homojen şekilde karışarak kolon formunu alır." },
       { title: "Kalite Kabul ve Karot Testleri", description: "Tamamlanan kolonlardan 28 gün sonra karot alınarak tek eksenli basınç (UCS) testi ile tasarım hedefinin yakalandığı raporlanır." }
     ],
-    technicalNote: "DSM tasarımında kritik mühendislik parametresi 'Karıştırma Enerjisi'dir (Mixing Energy). FHWA-NHI-13-046 rehberine göre kolon dayanımı, çimento miktarının yanı sıra bıçağın dönüş sayısı (Blade Rotation Number) ile doğrudan ilişkilidir. Organik içeriği yüksek killerde (%5 üzeri) saf çimento yerine çimento-kireç bağlayıcılar kullanılarak hidratasyon ısısı artırılır. YER6, her DSM projesinde laboratuvar karışım tasarımı yapar.",
+    technicalNote: "DSM tasarımında kritik mühendislik parametrelerinden biri karıştırma enerjisidir (Mixing Energy). Kolon dayanımı; çimento miktarının yanı sıra bıçak dönüş sayısı (Blade Rotation Number), zemin türü ve bağlayıcı reçetesinden etkilenir. Bağlayıcı seçimi laboratuvar karışım çalışmaları ve deneme kolonlarıyla proje özelinde doğrulanmalıdır.",
     faq: [
       { question: "DSM ile Jet Grout arasındaki mühendislik farkı nedir?", answer: "Jet grout yüksek kinetik basınç (400-600 bar) ile zemini parçalar; DSM ise 10-20 bar gibi düşük basınçta, zemini mekanik kanatlarla (blade) karıştırır. DSM, geniş kil yataklarında (ör. körfez bölgeleri) daha homojen ve ekonomikken, jet grout dar alanlarda veya sert katmanları aşmada etkilidir." },
       { question: "DSM (Deep Soil Mixing) hangi derinliğe kadar uygulanabilir?", answer: "Kullanılan ekipmanın (tek milli veya çift milli) kapasitesine göre 25-30 metre derinliğe kadar etkili bir şekilde zemin-çimento kolonları oluşturulabilir." },
@@ -132,8 +132,8 @@ export const services = [
     key: "svc_fore_kazik",
     icon: Building2,
     title: "Fore Kazık",
-    summary: "Profesyonel derin temel ve fore kazık firması YER6, ağır yapı yüklerini güvenle taşımak için kalite garantili uygulamalar gerçekleştirir.",
-    detail: "Türkiye'deki öncü fore kazık firmaları arasında yüksek makine parkuru ve mühendislik tecrübesiyle bilinen YER6; fore kazık (bored pile) sistemlerini büyük çaplı temel projeleri, viyadükler ve derin kazı destek (iksa) sistemleri için vazgeçilmez bir taşıyıcı eleman olarak tasarlar. Bentonit/polimer destekli delgi, muhafaza borusu (casing) sürme ve tremie betonlama süreçlerini uluslararası FHWA standartlarına uygun yönetir.",
+    summary: "YER6, ağır yapı yüklerinin derin taşıyıcı tabakalara aktarılması ve derin kazı desteği için projeye özel fore kazık uygulamaları gerçekleştirir.",
+    detail: "Fore kazık (bored pile) sistemleri; büyük yapı temelleri, viyadükler ve derin kazı destek sistemlerinde zemin profili ve yapısal yüklere göre tasarlanır. Bentonit/polimer destekli delgi, muhafaza borusu (casing) ve tremie betonlama süreçleri proje şartnamesi ile ilgili uygulama standartlarına göre planlanmalıdır.",
     specs: ["Rotary ve DTH delgi kapasitesi", "Sürekli dikeylik (vertikallik) kontrolü", "Crosshole Sonic Logging (CSL) bütünlük testi"],
     applications: [
       "Yüksek katlı ve karma kullanımlı yapıların derin temel sistemleri",
@@ -143,9 +143,9 @@ export const services = [
       "Liman, iskele ve sahil yapılarında suya dayanıklı temel teşkili"
     ],
     advantages: [
-      "Zemin profili ne olursa olsun (sert kaya dahil) yüksek eksenel ve yanal taşıma kapasitesi.",
-      "Titreşimsiz (non-displacement) bir yöntem olduğundan komşu yapılara zarar vermez.",
-      "Geniş çap seçenekleri (60 cm - 250 cm) ile farklı yük senaryolarına tam uyum sağlar.",
+      "Uygun delgi ekipmanı ve proje tasarımıyla kil, kum, çakıl ve kaya birimlerinde eksenel ve yanal yükler için uygulanabilme.",
+      "Non-displacement bir yöntem olduğu için çakma sistemlerine göre düşük titreşimle uygulanabilir; komşu yapı etkileri saha izleme planıyla kontrol edilir.",
+      "Ekipman ve proje koşullarına bağlı geniş çap seçenekleriyle farklı yük senaryolarına uyarlanabilir.",
       "Çakma kazıkların aksine, istenilen kota kadar sert kaya soketlenmesine (rock socketing) izin verir.",
       "İmalat sırasında beton döküm hacmi ve kuyu dikeyliği izlenerek yüksek doğruluk elde edilir."
     ],
@@ -159,10 +159,10 @@ export const services = [
     technicalNote: "Fore kazık kalitesi, delgi hızından çok beton döküm kalitesine bağlıdır. DFI/EFFC kılavuzlarına göre; tremie borusunun beton dökümü esnasında en az 3 metre betonun içinde gömülü kalması, soğuk derz ve çamur sıkışması riskini engellemek için zorunludur. Ayrıca Low-strain (PIT) testleri süreklilik hakkında bilgi verirken, kazığın taşıma kapasitesi ancak Statik veya Dinamik Yükleme Testleri ile doğrulanabilir.",
     faq: [
       { question: "Fore kazık ile mini kazık ve zemin çivisi arasındaki mühendislik farkı nedir?", answer: "Fore kazık; genellikle 60-250 cm çaplarında, yüzlerce ton eksenel yük taşıyabilen ana taşıyıcı elemanlardır. Mini kazık ise 15-30 cm çaplı, çimento enjeksiyonu ile oluşturulan destek elemanlarıdır. Zemin çivisi (soil nail) ise daha çok şev stabilitesi ve ankrajlı iksa sistemlerinde (diyafram duvar vb. ile) yüzey dayanımını artırmak için yatay veya açılı düzlemde uygulanır." },
-      { question: "Fore kazık hangi zemin türlerinde, ne kadar derine uygulanabilir?", answer: "Fore kazık; kil, kum, çakıl ve hatta DTH ekipmanlarıyla sert kaya formasyonlarına uygulanabilir. Gelişmiş makine parkımızla 70 metre ve üzeri derinliklere inmek mümkündür. Sıvılaşma riski veya aşırı yeraltı suyu olan bölgelerde kesişen kazık veya diyafram duvar sistemleriyle kombine edilebilir." },
+      { question: "Fore kazık hangi zemin türlerinde, ne kadar derine uygulanabilir?", answer: "Fore kazık; kil, kum, çakıl ve uygun kaya delgi ekipmanlarıyla kaya formasyonlarında uygulanabilir. Ulaşılabilir derinlik; ekipman kapasitesi, kazık çapı, zemin/kaya profili, yeraltı suyu ve saha lojistiğine göre proje özelinde belirlenir." },
       { question: "Fore kazık betonunun kalitesi (bütünlüğü) nasıl doğrulanır?", answer: "ICE SPERW spesifikasyonlarına uygun olarak; düşük gerinimli süreklilik testi (PIT) veya donatı kafesine bağlanan borular yardımıyla ultrasonik dalga yansımalarını ölçen Crosshole Sonic Logging (CSL) testi ile doğrulanır." },
       { question: "Yeraltı suyu yüksek olan sahalarda kuyu nasıl göçmez?", answer: "Sulu ve kendini tutamayan (kohezyonsuz) zeminlerde, hidrostatiği dengelemek için kuyu içine Bentonit çamuru veya sentetik Polimer basılır, ya da tamamen çelik muhafaza borusu (casing) sürülerek kazı yapılır." },
-      { question: "Fore kazık firması ararken nelere dikkat edilmelidir?", answer: "Fore kazık operasyonunda kaliteyi belirleyen temel unsurlar; firmanın yüksek torklu (ör. 220-300 kNm) makine parkı, bentonit/tremie süreçlerindeki teknik disiplini ve imalat sonrası PIT/CSL testleriyle işi belgelendirebilmesidir. YER6, mühendislik garantisiyle Türkiye'nin önde gelen fore kazık yüklenicilerindendir." }
+      { question: "Fore kazık firması ararken nelere dikkat edilmelidir?", answer: "Fore kazık operasyonunda kaliteyi belirleyen temel unsurlar; uygun tork kapasitesine sahip ekipman, bentonit/tremie süreçlerindeki teknik disiplin ve imalat sonrası PIT/CSL testleriyle işin belgelenebilmesidir. YER6, proje şartnamesine uygun üretim ve kalite kontrol kayıtlarını esas alır." }
     ]
   },
   {
@@ -334,8 +334,8 @@ export const services = [
     key: "svc_zemin_guc",
     icon: ShieldCheck,
     title: "CFA Kazık & Zemin Güçlendirme",
-    summary: "Sektörde CFA Kazık olarak bilinen Continuous Flight Auger (Sürekli Burgulu Kazık) teknolojisi ile muhafaza borusuz, yüksek hızlı ve sıfır titreşimli derin temel çözümleri.",
-    detail: "Geoteknik sektöründe CFA Kazık (Continuous Flight Auger / Sürekli Burgulu Kazık) olarak adlandırılan zemin güçlendirme teknolojisi; zayıf, kohezyonsuz veya sıvılaşabilir zeminlerde muhafaza borusu (casing) ya da bentonit çamuru kullanmaksızın içi boş helezon burgu ile delgi yapılan modern kazık yöntemidir. Delgi hedeflenen kota ulaştığında, burgunun içi boş milinden yüksek basınçlı beton pompalanırken burgu kontrollü olarak yukarı çekilir ve ardından taze betona çelik donatı kafesi (rebar cage) vibratörle yerleştirilir. YER6 Mühendisliği; yüksek torklu CFA rig makineleri, anlık dijital sensör takibi (torque, debi, beton basıncı) ve günde 300+ m/tül üretim hızıyla Türkiye ve dünya genelinde projelerinizi sıfır riskle hayata geçirir.",
+    summary: "Sektörde CFA Kazık olarak bilinen Continuous Flight Auger (Sürekli Burgulu Kazık) teknolojisi ile muhafaza borusuz, yüksek hızlı ve düşük titreşimli derin temel çözümleri.",
+    detail: "Geoteknik sektöründe CFA Kazık (Continuous Flight Auger / Sürekli Burgulu Kazık) olarak adlandırılan zemin güçlendirme teknolojisi; uygun zemin koşullarında muhafaza borusu (casing) ya da bentonit çamuru kullanmaksızın içi boş helezon burgu ile delgi yapılan modern kazık yöntemidir. Delgi hedeflenen kota ulaştığında, burgunun içi boş milinden beton pompalanırken burgu kontrollü olarak yukarı çekilir ve ardından taze betona çelik donatı kafesi yerleştirilir. Üretim hızı ve ekipman seçimi; zemin profili, kazık geometrisi, beton lojistiği ve saha koşullarına göre belirlenir.",
     specs: ["EN 1536 ve ICE Standartlarında CFA Kazık İmalatı", "Anlık Dijital Veri Kaydı (Data Logger / Tork & Beton Basıncı)", "Muhafaza Borusuz & 300+ m/tül/gün Yüksek Üretim Hızı"],
     applications: [
       "Yüksek katlı konut, ticari rezidans ve AVM projelerinde CFA derin temel kazıkları",
@@ -348,9 +348,9 @@ export const services = [
     advantages: [
       "Muhafaza Borusu (Casing) ve Bentonit Çamuru Gerektirmez: Saha temizliğini korur ve çamur arıtma maliyetlerini ortadan kaldırır.",
       "Ultra Yüksek İmalat Hızı: Geleneksel fore kazık yöntemlerine göre 2 ila 3 kat daha hızlıdır; günde 200 - 400 m/tül delgi ve betonlama tamamlanır.",
-      "Titreşimsiz (Statik) ve Düşük Gürültü: Çakma ve darbeli yöntemlerin aksine sıfır titreşim ile komşu bina strüktürlerine ve altyapı hatlarına zarar vermez.",
-      "Gerçek Zamanlı Dijital Takip (Automated Data Logger): Delgi torku, tij çekme hızı, beton pompalanma basıncı ve hacmi anlık bilgisayar ekranında izlenir; boğulma (necking) riski sıfırlanır.",
-      "Süreklilik ve Kalite Güvencesi: Beton pompalama işlemi delgi ucu kuyu tabanındayken başladığı için kuyu tabanında gevşek zemin birikimi riski %100 önlenir.",
+      "Düşük Titreşim ve Gürültü: Çakma ve darbeli yöntemlere göre titreşim etkisi düşüktür; komşu yapılar ve altyapı hatları proje özelinde izlenir.",
+      "Gerçek Zamanlı Dijital Takip (Automated Data Logger): Delgi torku, burgu çekme hızı, beton basıncı ve hacmi izlenerek boğulma (necking) riski azaltılır.",
+      "Süreklilik ve Kalite Kontrolü: Beton pompalama işleminin delgi ucu kuyu tabanındayken başlaması, kuyu tabanında gevşek zemin birikimi riskini sınırlar.",
       "Uluslararası kabul testleri (PIT - Kazık Bütünlük Testi ve Statik Yükleme Testleri) ile üretimin kalitesi belgelenir."
     ],
     processSteps: [
@@ -360,7 +360,7 @@ export const services = [
       { title: "Rebar Cage Installation (Donatı Kafesi Montajı)", description: "Burgu tamamen çekildikten sonra, hazırlanan çelik donatı kafesi taze betonun içerisine özel vibratör aparatıyla projekte edilen derinliğe kadar daldırılır." },
       { title: "Quality Verification & PIT Testing (Kalite Kontrol)", description: "Beton prizini aldıktan sonra kazık başları tıraşlanır, Kazık Bütünlük (PIT) ve Yükleme Testleri uygulanarak teknik rapor teslim edilir." }
     ],
-    technicalNote: "Sektörde CFA Kazık olarak bilinen Continuous Flight Auger imalatında en kritik geoteknik parametre, burgu çekimi esnasındaki pozitif beton basıncı ve kuyu içi sürekliliktir. Uluslararası EN 1536 ve ICE (Institution of Civil Engineers) standartlarına göre; beton basıncında anlık düşüş veya burgunun gereğinden hızlı çekilmesi kuyu çeperinde boğulmaya (necking) veya zemin karışmasına (soil inclusion) neden olur. YER6 CFA donanımları, otomatik beton debimetreleri ve tork sensörleri ile beton hacmini anlık kaydederek %100 kesintisiz kazık gövdesi garantisi sağlar.",
+    technicalNote: "CFA kazık imalatında en kritik geoteknik parametreler, burgu çekimi esnasındaki pozitif beton basıncı ve kuyu içi sürekliliktir. EN 1536 ve ilgili uygulama esaslarına göre beton basıncındaki düşüş veya burgunun gereğinden hızlı çekilmesi boğulmaya (necking) ya da zemin karışmasına (soil inclusion) neden olabilir. Otomatik beton debimetreleri ve tork sensörleri, imalat parametrelerinin izlenmesini ve kabul kriterlerinin kayıtla doğrulanmasını destekler.",
     faq: [
       { question: "CFA Kazık nedir ve sektörde neden bu isimle anılır?", answer: "CFA (Continuous Flight Auger / Sürekli Burgulu Kazık), muhafaza borusu çakmadan içi boş tek parça helezon burgu ile delgi yapılıp burgu çekilirken beton pompalanan sistemdir. Sektörde tüm mühendis ve müteahhitler hızlı ve ekonomik derin temel çözümü olduğu için bu yöntemi direkt 'CFA' olarak tanımlar." },
       { question: "CFA Kazık ile Geleneksel Fore Kazık arasındaki farklar nelerdir?", answer: "Fore kazıkta delgi yapıldıktan sonra muhafaza borusu veya bentonit kullanılır, donatı indirilir ve en son beton dökülür. CFA kazıkta ise delgi, beton dökümü ve donatı daldırma sırasıyla tek ve kesintisiz operasyonda yapılır. CFA kazık 2-3 kat daha hızlıdır ve bentonit çamuru gerektirmez." },
@@ -617,7 +617,7 @@ export const services = [
       "Derin bodrumlu yüksek yapı kazıları",
       "Metro istasyonu ve tünel giriş yapıları",
       "Yüksek yeraltı suyu bulunan derin kazılar",
-      "Komşu yapıya sıfır toleranslı kentsel kazılar",
+      "Komşu yapı deplasman toleransı çok düşük kentsel kazılar",
       "Liman, rıhtım ve kıyı yapıları",
       "Kalıcı istinat ve bodrum perde duvarları"
     ],
@@ -650,8 +650,8 @@ export const services = [
     icon: Drill,
     title: "CMF Zemin İyileştirme",
     summary: "Sürekli burgu ve mekanik karıştırma teknolojileriyle (CMF) zemin taşıma kapasitesini artıran gelişmiş geoteknik çözüm.",
-    detail: "CMF (Continuous Mixing Foundation / Zemin İyileştirme), zayıf zemin profillerinde taşıma kapasitesini artırmak, oturma problemlerini çözmek ve sıvılaşma riskini minimize etmek amacıyla uygulanan son teknoloji bir zemin ıslahı yöntemidir. Özel CMF donanımları ve karıştırıcı bıçaklarla zeminin yerinde (in-situ) bağlayıcı maddelerle karıştırılması, homojen ve yüksek mukavemetli zemin-çimento kolonları oluşturur.",
-    specs: ["Homojen karışım ve yüksek dayanım", "Çevre dostu titreşimsiz uygulama", "Hızlı ve ekonomik saha imalatı"],
+    detail: "CMF (Continuous Mixing Foundation / Zemin İyileştirme), zayıf zemin profillerinde taşıma kapasitesini artırmak, oturmaları azaltmak ve sıvılaşma etkilerini sınırlamak amacıyla değerlendirilen bir zemin karıştırma yöntemidir. Karıştırıcı bıçaklarla zeminin yerinde bağlayıcılarla harmanlanması sonucu zemin-çimento elemanları oluşturulur.",
+    specs: ["Homojen karışım ve hedef dayanım", "Düşük titreşimli uygulama", "Saha koşullarına bağlı üretim hızı"],
     applications: [
       "Zayıf ve sıkışabilir zeminlerde temel güçlendirme",
       "Sıvılaşma potansiyeli yüksek alanlarda zemin ıslahı",
@@ -661,9 +661,9 @@ export const services = [
     ],
     advantages: [
       "Derin zemin karıştırma (DSM) teknolojisiyle entegre yüksek verim",
-      "Titreşimsiz (vibration-free) çalışma ile çevre yapılara sıfır zarar",
-      "Geleneksel kazıklı sistemlere göre çok daha ekonomik ve hızlı",
-      "Hafriyat maliyetlerini sıfıra indirerek çevreci çözüm sunar",
+      "Darbeli sistemlere göre düşük titreşimli çalışma ve çevre yapı etkilerinin izlenebilmesi",
+      "Uygun zemin ve yük koşullarında kazıklı sistemlere alternatif olabilme",
+      "Zemini yerinde karıştırarak hafriyat ve nakliye ihtiyacını azaltabilme",
       "Zeminin doğal yapısını bağlayıcılar ile güçlendirerek uzun ömürlü temel oluşturur"
     ],
     processSteps: [
@@ -677,8 +677,8 @@ export const services = [
     faq: [
       { question: "CMF Zemin İyileştirme hangi zeminlerde uygulanır?", answer: "Özellikle taşıma gücü zayıf olan kil, silt, turba ve gevşek kum zeminlerde yüksek verim sağlar. Çok sert kaya formasyonlarında veya yoğun çakıllı alanlarda tercih edilmez." },
       { question: "Jet Grout ile CMF arasındaki fark nedir?", answer: "Jet Grout yüksek basınçlı enjeksiyon ile zemini parçalar. CMF ise özel kanatlı helezonlar (auger) ile zemini mekanik olarak karıştırıp çimento ile harmanlar. CMF genellikle daha ekonomik ve geniş çaplı kolonlarda daha homojendir." },
-      { question: "CMF Zemin İyileştirme sıvılaşmayı önler mi?", answer: "Evet. Zemin içerisinde oluşturulan rijit çimento-zemin blokları ve kolonları, deprem anında yanal yayılmayı ve aşırı boşluk suyu basıncını sönümleyerek sıvılaşmayı engeller." },
-      { question: "Uygulama hızı nasıldır?", answer: "Geleneksel fore kazık ve kazı-dolgu yöntemlerine göre çok daha hızlıdır. Hafriyat çıkarma işlemi olmadığı için saha lojistiği ve üretim hızı oldukça yüksektir." }
+      { question: "CMF Zemin İyileştirme sıvılaşma riskini azaltır mı?", answer: "Uygun grid veya blok geometrisinde tasarlanan zemin-çimento elemanları yanal yayılmayı sınırlandırarak sıvılaşma etkilerinin azaltılmasına katkı sağlayabilir. Uygunluk ve performans, sahaya özel dinamik zemin analizleriyle doğrulanmalıdır." },
+      { question: "Uygulama hızı nasıldır?", answer: "Üretim hızı; zemin türü, hedef derinlik, kolon geometrisi, bağlayıcı lojistiği ve ekipman kapasitesine bağlıdır. Zemini yerinde karıştırması bazı projelerde hafriyat ve saha lojistiği ihtiyacını azaltabilir." }
     ]
   }
 ];
@@ -689,9 +689,9 @@ export const standaloneServices = [
     key: "svc_bina_alti_jet_grout",
     icon: Building2,
     title: "Bina Altı Jet Grout & Temel İyileştirme",
-    summary: "Elektrikli Jet Grout makineleri, sıfır emisyon, düşük gürültü ve gerçek zamanlı izleme (monitoring) ile işletmedeki binalarda titreşimsiz temel güçlendirme.",
-    detail: "Bina altı jet grout (underpinning); aktif kullanılan binalar, Türk Telekom santralleri, veri merkezleri ve tarihi yapılarda temel altı taşıma kapasitesini artırmak ve diferansiyel oturmaları engellemek için uygulanan titreşimsiz statik hidro-enjeksiyon yöntemidir. YER6 Mühendisleri; elektrikli jet grout makineleri (sıfır egzoz, ultra düşük gürültü), ardışık/şaşırtmalı imalat sekansı, inklinometre/oturtma-kabarma sensörleri ve sahada kalibre edilen deneme kolonları ile binanıza sıfır hasar riski garantisiyle dünya standartlarında geoteknik güçlendirme sunar.",
-    specs: ["Elektrikli Jet Grout Rigs (Sıfır Emisyon & Düşük Titreşim)", "7/24 Gerçek Zamanlı İzleme (İnklinometre & Oturma Plakaları)", "Şaşırtmalı/Ardışık Kolon İmalat Protokolü"],
+    summary: "Elektrikli jet grout makineleri, uygulama noktasında doğrudan dizel egzozu oluşturmayan çalışma, düşük gürültü ve gerçek zamanlı izleme ile işletmedeki binalarda temel güçlendirmeyi destekler.",
+    detail: "Bina altı jet grout (underpinning); aktif kullanılan binalar, santral yapıları, veri merkezleri ve tarihi yapılarda temel altı taşıma kapasitesini artırmak ve diferansiyel oturmaları azaltmak için değerlendirilen düşük titreşimli bir hidro-enjeksiyon yöntemidir. Elektrikli jet grout makineleri, ardışık/şaşırtmalı imalat sekansı, enstrümantasyon ve sahada kalibre edilen deneme kolonları; proje özelindeki oturma, kabarma ve yapısal hareket risklerinin yönetilmesini destekler.",
+    specs: ["Elektrikli Jet Grout Rigs (Doğrudan Dizel Egzozu Yok & Düşük Titreşim)", "Proje Riskine Göre Gerçek Zamanlı İzleme", "Şaşırtmalı/Ardışık Kolon İmalat Protokolü"],
     applications: [
       "Aktif kullanılan Türk Telekom binaları, veri merkezleri ve santral tesisleri",
       "Bodrum tavan yüksekliği kısıtlı (2.5 - 3.5m) kapalı mekanlarda temel güçlendirme",
@@ -701,28 +701,28 @@ export const standaloneServices = [
       "Sıvılaşma riski yüksek alüvyal zeminlerde bina altı zemin rijitleştirmesi"
     ],
     advantages: [
-      "Titreşimsiz ve Statik Yöntem: Darbeli ve çakma sistemlerin aksine bina strüktürüne veya hassas elektronik cihazlara zarar vermez.",
-      "Elektrikli Makine Teknolojisi: Dizel motorların ürettiği zehirli egzoz gazı riskini kapalı alanlarda %100 ortadan kaldırır; gürültü seviyesini minimuma indirir.",
+      "Düşük Titreşimli Yöntem: Darbeli ve çakma sistemlere göre titreşim etkisi düşüktür; bina strüktürü ve hassas elektronik cihazlar izleme planıyla korunur.",
+      "Elektrikli Makine Teknolojisi: Uygulama noktasında doğrudan dizel egzoz emisyonu oluşturmaz; kapalı alan havalandırma ve gürültü planını destekler.",
       "Oturma (Settlement) ve Kabarma (Heave) Kontrolü: 400-600 bar yüksek basınç enjeksiyonunda spoil (geri dönüş çamuru) kanalları sürekli açık tutularak zemin yükselmesi engellenir.",
-      "Ardışık (Dama Düzeni) İmalat Sekansı: Yan yana kolonlar aynı anda yapılmaz; en az 2 kolon mesafesi bırakılarak 24 saatlik priz süresiyle binanın oturma riski sıfırlanır.",
+      "Ardışık (Dama Düzeni) İmalat Sekansı: Yan yana kolonlar aynı anda yapılmaz; proje şartlarına göre kolon aralığı ve priz süresi belirlenerek oturma riski azaltılır.",
       "Gerçek Zamanlı Monitoring (Sensör Takibi): İnklinometre, oturma plakaları ve tiltmetre ölçümleriyle milimetrik bina deplasmanı anlık izlenir, eşik değerinde otomatik durdurma yapılır.",
-      "Deneme Kolonları (Trial Columns): İmalat öncesi sahada test edilen parametrelerle (basınç, rpm, çekme hızı) zemin davranışı %100 doğrulanır."
+      "Deneme Kolonları (Trial Columns): İmalat öncesi basınç, rpm ve çekme hızı gibi parametreler sahada sınanarak tasarım kabulleri doğrulanır."
     ],
     processSteps: [
       { title: "Mühendislik Veri ve Saha Analizi", description: "Zemin etüt raporu (SPT/CPT), mevcut temel/bodrum kotları ve mimari-statik projeler YER6 mühendislerince incelenerek yapıya özel uygulama modeli tasarlanır." },
       { title: "Saha Deneme Kolonları (Trial Column)", description: "Proje sahasında önceden belirlenen noktada pilot kolon imal edilir. Jet enjeksiyon basıncı, tij dönüş hızı (rpm) ve çekme hızı zemin şartlarına göre sahada kalibre edilir." },
-      { title: "Elektrikli Ekipman Kurulumu ve Sensör Mobilizasyonu", description: "Sıfır emisyonlu elektrikli jet grout makinesi bodrum katına mobilize edilir; binaya inklinometre, oturma plakaları ve optik izleme donanımları takılır." },
+      { title: "Elektrikli Ekipman Kurulumu ve Sensör Mobilizasyonu", description: "Uygulama noktasında doğrudan dizel egzozu oluşturmayan elektrikli jet grout makinesi mobilize edilir; proje risk sınıfına göre inklinometre, oturma plakaları ve optik izleme donanımları kurulur." },
       { title: "Şaşırtmalı/Ardışık Jet Grout İmalatı", description: "Yan yana kolonlar aynı gün imal edilmez. Dama düzeninde en az 2 kolon boşluk bırakılarak delgi yapılır ve 24 saat priz süresinin ardından ara kolonlar tamamlanır." },
       { title: "Kesintisiz Spoil ve Basınç Kontrolü", description: "400-600 bar basınçla jetleme yapılırken kuyu ağzından spoil (çamur) geri dönüşü anlık takip edilir. Dönüşün kesilmesi durumunda hidro-fraktür ve kabarmayı önlemek için enjeksiyon derhal kesilir." },
       { title: "Karot Alımı ve Kalite Doğrulama Raporu", description: "Tamamlanan kolonlardan 7-28 gün sonra elmas uçlu karot alınarak serbest basınç dayanımı (UCS) laboratuvarda test edilir ve mühendislik onay raporuyla teslim edilir." }
     ],
-    technicalNote: "Bina altı jet grout uygulamalarında (underpinning) en kritik mühendislik başarısı; delgi esnasında oluşabilecek lokal oturmaları (settlement) ile yüksek enjeksiyon basıncının killi zeminlerde tetikleyebileceği hidro-fraktür ve taban kabarmasını (heave) eşzamanlı engellemektir. Uluslararası ISSMGE TC211 ve FHWA-HRT-13-046 yönergelerine göre; bina altı imalatlarda yüzeye malzeme (spoil) çıkışı durduğu an enjeksiyon durdurulmalıdır. YER6, bina altı projelerinde özel elektrikli makineler, kesintisiz enstrümantasyon takibi ve ardışık döküm disipliniyle sıfır risk garantisi sunar.",
+    technicalNote: "Bina altı jet grout uygulamalarında (underpinning) temel mühendislik hedefi; delgi sırasında oluşabilecek lokal oturma ile yüksek enjeksiyon basıncının killi zeminlerde tetikleyebileceği hidro-fraktür ve taban kabarması risklerini birlikte yönetmektir. İlgili teknik kılavuzlara göre yüzeye malzeme (spoil) çıkışı durduğunda enjeksiyon durdurulmalı ve parametreler yeniden değerlendirilmelidir. Elektrikli makineler, enstrümantasyon takibi ve ardışık döküm disiplini risklerin izlenip azaltılmasını destekler.",
     faq: [
-      { question: "Bina altı jet grout uygulaması mevcut binaya zarar verir mi?", answer: "Hayır. Jet grout titreşimsiz (statik) bir geoteknik yöntemdir. YER6 mühendislerinin uyguladığı şaşırtmalı (ardışık) döküm sekansı ve 7/24 inklinometre/oturtma takibi sayesinde binada oturma veya çatlak riski oluşmaz." },
-      { question: "Neden elektrikli jet grout makinesi kullanılması zorunludur?", answer: "Kapalı bodrum katlarında, aktif veri merkezlerinde ve havalandırması kısıtlı santral binalarında dizel makinelerin ürettiği karbonmonoksit ve egzoz gazları zehirlenme ve havalandırma krizine yol açar. YER6'nın elektrikli jet grout makineleri sıfır emisyon ve ultra düşük gürültü ile kapalı alanlarda güvenle çalışır." },
+      { question: "Bina altı jet grout uygulaması mevcut binaya zarar verir mi?", answer: "Jet grout, darbeli veya çakma sistemlere göre düşük titreşimli bir yöntemdir; ancak risk hiçbir zaman sıfır değildir. Basınç, sıra, priz süresi ve durdurma eşikleri proje özelinde belirlenir; oturma, kabarma ve çatlak riskleri uygun enstrümantasyonla izlenir." },
+      { question: "Neden elektrikli jet grout makinesi tercih edilir?", answer: "Kapalı bodrum katlarında ve havalandırması kısıtlı tesislerde elektrikli makineler uygulama noktasında doğrudan dizel egzoz emisyonu oluşturmaz. Ekipman seçimi yine de elektrik altyapısı, havalandırma, gürültü ve iş güvenliği planıyla birlikte yapılmalıdır." },
       { question: "Bina altı jet grout ile oturma (settlement) ve kabarma (heave) nasıl önlenir?", answer: "Killi zeminlerde yüksek basınç nedeniyle kabarmayı engellemek için enjeksiyon debisi kademeli ayarlanır ve spoil (çamur) yolu sürekli açık tutulur. Oturmayı engellemek için ise yan yana kolonlar aynı anda yapılmaz (dama düzeni) ve en az 24 saat priz beklenir." },
       { question: "Proje öncesinde mühendislerinize hangi belgeleri sunmalıyız?", answer: "Sağlıklı bir teknik teklif ve risk değerlendirmesi için: 1) Akredite zemin etüt raporu (sondaj, SPT/CPT verileri), 2) Mevcut temel ve mimari projeler, 3) Temel kotları ve bodrum tavan yüksekliklerinin paylaşılması yeterlidir." },
-      { question: "Türk Telekom gibi kesintisiz çalışan hassas tesislerde uygulama nasıl yürütülür?", answer: "Türk Telekom santralleri ve banka veri merkezleri gibi 7/24 kesintisiz hizmet veren binalarda; sıfır emisyonlu elektrikli makinelerimiz, gürültü kalkanları ve titreşimsiz delgi teknolojimizle işletme faaliyetlerini kesintiye uğratmadan imalat gerçekleştirilir." },
+      { question: "Kesintisiz çalışan hassas tesislerde uygulama nasıl yürütülür?", answer: "Elektrikli makineler, gürültü kontrolü, düşük titreşimli delgi ve enstrümantasyon birlikte planlanır. İşletme sürekliliği hedefi; tesis yönetimiyle hazırlanacak çalışma izinleri, durdurma eşikleri ve acil durum planına bağlıdır." },
       { question: "Bina altı jet grout kolonlarının kalitesi nasıl doğrulanır?", answer: "İmalattan 7 ila 28 gün sonra bina altındaki jet grout kolonlarından Karot alınarak Tek Eksenli Basınç Dayanımı (UCS) testleri yapılır ve TBDY 2018 normlarına uygun olarak raporlanır." }
     ]
   },
@@ -731,9 +731,9 @@ export const standaloneServices = [
     key: "svc_zemin_guc",
     icon: Drill,
     title: "CFA Kazık & Zemin Güçlendirme",
-    summary: "Continuous Flight Auger (Sürekli Burgulu Kazık) teknolojisi ile muhafaza borusuz, yüksek hızlı ve sıfır titreşimli derin temel çözümleri.",
-    detail: "Geoteknik sektöründe CFA Kazık (Continuous Flight Auger / Sürekli Burgulu Kazık) olarak adlandırılan zemin güçlendirme teknolojisi; zayıf, kohezyonsuz veya sıvılaşabilir zeminlerde muhafaza borusu (casing) ya da bentonit çamuru kullanmaksızın içi boş helezon burgu ile delgi yapılan modern kazık yöntemidir. Delgi hedeflenen kota ulaştığında, burgunun içi boş milinden yüksek basınçlı beton pompalanırken burgu kontrollü olarak yukarı çekilir ve ardından taze betona çelik donatı kafesi (rebar cage) vibratörle yerleştirilir. YER6 Mühendisliği; yüksek torklu CFA rig makineleri, anlık dijital sensör takibi (torque, debi, beton basıncı) ve günde 300+ m/tül üretim hızıyla Türkiye ve dünya genelinde projelerinizi sıfır riskle hayata geçirir.",
-    specs: ["EN 1536 ve ICE Standartlarında CFA Kazık İmalatı", "Anlık Dijital Veri Kaydı (Data Logger / Tork & Beton Basıncı)", "Muhafaza Borusuz & 300+ m/tül/gün Yüksek Üretim Hızı"],
+    summary: "Continuous Flight Auger (Sürekli Burgulu Kazık) teknolojisi ile muhafaza borusuz, yüksek hızlı ve düşük titreşimli derin temel çözümleri.",
+    detail: "CFA Kazık (Continuous Flight Auger / Sürekli Burgulu Kazık), uygun zemin koşullarında muhafaza borusu veya bentonit çamuru kullanmaksızın içi boş helezon burgu ile delgi yapılan bir kazık yöntemidir. Delgi hedeflenen kota ulaştığında beton pompalanırken burgu kontrollü olarak yukarı çekilir ve ardından taze betona donatı kafesi yerleştirilir. Üretim hızı ve ekipman seçimi zemin profili, kazık geometrisi, beton lojistiği ve saha koşullarına göre belirlenir.",
+    specs: ["EN 1536 ve Proje Şartnamesine Göre CFA İmalatı", "Anlık Dijital Veri Kaydı (Data Logger / Tork & Beton Basıncı)", "Muhafaza Borusuz, Saha Koşullarına Bağlı Üretim"],
     applications: [
       "Yüksek katlı konut, ticari rezidans ve AVM projelerinde CFA derin temel kazıkları",
       "Yumuşak kil, silt ve akıntılı gevşek kum sahalarında muhafaza borusuz kazık imalatı",
@@ -744,10 +744,10 @@ export const standaloneServices = [
     ],
     advantages: [
       "Muhafaza Borusu (Casing) ve Bentonit Çamuru Gerektirmez: Saha temizliğini korur ve çamur arıtma maliyetlerini ortadan kaldırır.",
-      "Ultra Yüksek İmalat Hızı: Geleneksel fore kazık yöntemlerine göre 2 ila 3 kat daha hızlıdır; günde 200 - 400 m/tül delgi ve betonlama tamamlanır.",
-      "Titreşimsiz (Statik) ve Düşük Gürültü: Çakma ve darbeli yöntemlerin aksine sıfır titreşim ile komşu bina strüktürlerine ve altyapı hatlarına zarar vermez.",
-      "Gerçek Zamanlı Dijital Takip (Automated Data Logger): Delgi torku, tij çekme hızı, beton pompalanma basıncı ve hacmi anlık bilgisayar ekranında izlenir; boğulma (necking) riski sıfırlanır.",
-      "Süreklilik ve Kalite Güvencesi: Beton pompalama işlemi delgi ucu kuyu tabanındayken başladığı için kuyu tabanında gevşek zemin birikimi riski %100 önlenir.",
+      "Yüksek İmalat Potansiyeli: Uygun zemin, kazık geometrisi ve beton lojistiğinde kesintisiz delgi-betonlama çevrimi üretim hızını artırabilir.",
+      "Düşük Titreşim ve Gürültü: Çakma ve darbeli yöntemlere göre titreşim etkisi düşüktür; komşu yapılar ve altyapı hatları proje özelinde izlenir.",
+      "Gerçek Zamanlı Dijital Takip (Automated Data Logger): Delgi torku, burgu çekme hızı, beton basıncı ve hacmi izlenerek boğulma (necking) riski azaltılır.",
+      "Süreklilik ve Kalite Kontrolü: Beton pompalama işleminin delgi ucu kuyu tabanındayken başlaması, kuyu tabanında gevşek zemin birikimi riskini sınırlar.",
       "Uluslararası kabul testleri (PIT - Kazık Bütünlük Testi ve Statik Yükleme Testleri) ile üretimin kalitesi belgelenir."
     ],
     processSteps: [
@@ -757,7 +757,7 @@ export const standaloneServices = [
       { title: "Rebar Cage Installation (Donatı Kafesi Montajı)", description: "Burgu tamamen çekildikten sonra, hazırlanan çelik donatı kafesi taze betonun içerisine özel vibratör aparatıyla projekte edilen derinliğe kadar daldırılır." },
       { title: "Quality Verification & PIT Testing (Kalite Kontrol)", description: "Beton prizini aldıktan sonra kazık başları tıraşlanır, Kazık Bütünlük (PIT) ve Yükleme Testleri uygulanarak teknik rapor teslim edilir." }
     ],
-    technicalNote: "Sektörde CFA Kazık olarak bilinen Continuous Flight Auger imalatında en kritik geoteknik parametre, burgu çekimi esnasındaki pozitif beton basıncı ve kuyu içi sürekliliktir. Uluslararası EN 1536 ve ICE (Institution of Civil Engineers) standartlarına göre; beton basıncında anlık düşüş veya burgunun gereğinden hızlı çekilmesi kuyu çeperinde boğulmaya (necking) veya zemin karışmasına (soil inclusion) neden olur. YER6 CFA donanımları, otomatik beton debimetreleri ve tork sensörleri ile beton hacmini anlık kaydederek %100 kesintisiz kazık gövdesi garantisi sağlar.",
+    technicalNote: "CFA kazık imalatında en kritik geoteknik parametreler, burgu çekimi esnasındaki pozitif beton basıncı ve kuyu içi sürekliliktir. EN 1536 ve ilgili uygulama esaslarına göre beton basıncındaki düşüş veya burgunun gereğinden hızlı çekilmesi boğulmaya (necking) ya da zemin karışmasına (soil inclusion) neden olabilir. Otomatik beton debimetreleri ve tork sensörleri, imalat parametrelerinin izlenmesini ve kabul kriterlerinin kayıtla doğrulanmasını destekler.",
     faq: [
       { question: "CFA Kazık nedir ve sektörde neden bu isimle anılır?", answer: "CFA (Continuous Flight Auger / Sürekli Burgulu Kazık), muhafaza borusu çakmadan içi boş tek parça helezon burgu ile delgi yapılıp burgu çekilirken beton pompalanan sistemdir. Sektörde tüm mühendis ve müteahhitler hızlı ve ekonomik derin temel çözümü olduğu için bu yöntemi direkt 'CFA' olarak tanımlar." },
       { question: "CFA Kazık ile Geleneksel Fore Kazık arasındaki farklar nelerdir?", answer: "Fore kazıkta delgi yapıldıktan sonra muhafaza borusu veya bentonit kullanılır, donatı indirilir ve en son beton dökülür. CFA kazıkta ise delgi, beton dökümü ve donatı daldırma sırasıyla tek ve kesintisiz operasyonda yapılır. CFA kazık 2-3 kat daha hızlıdır ve bentonit çamuru gerektirmez." },
@@ -771,8 +771,8 @@ export const standaloneServices = [
     key: "svc_dsm",
     icon: Layers3,
     title: "Deep Soil Mixing (DSM Zemin İyileştirme)",
-    summary: "Türkiye genelinde derin zemin karıştırma (Deep Soil Mixing / DSM) firması olarak yüksek taşıma kapasitesi ve sıfır oturma çözümleri sunuyoruz.",
-    detail: "Deep Soil Mixing (DSM / Derin Zemin Karıştırma), mekanik karıştırma kanatları ile zayıf zemin profilini çimento bazlı bağlayıcılarla yerinde (in-situ) harmanlayarak homojen zemin-çimento (soil-cement) kolonları üreten en ileri geoteknik iyileştirme teknolojisidir. Özellikle liman sahaları, lojistik depolar, otoyol yaklaşımları, sanayi parselleri ve alüvyal delta zeminlerinde hafriyat ve çamur maliyeti olmadan zemin rijitleştirmesi ve yanal yayılma kontrolü sağlar.",
+    summary: "Deep Soil Mixing (DSM), taşıma kapasitesini artırmak ve oturmaları kabul edilebilir proje limitlerine indirmek için değerlendirilen bir derin zemin karıştırma yöntemidir.",
+    detail: "Deep Soil Mixing (DSM / Derin Zemin Karıştırma), mekanik karıştırma kanatları ile zayıf zemini çimento bazlı bağlayıcılarla yerinde harmanlayarak zemin-çimento kolonları üretir. Liman sahaları, lojistik depolar, yol yaklaşımları, sanayi parselleri ve alüvyal zeminlerde taşıma kapasitesi, oturma ve yanal yayılma hedefleri için proje özelinde değerlendirilebilir.",
     specs: ["BRN (Blade Rotation Number) Dijital Enerji Kontrolü", "Çift Milli (Twin Shaft) Yüksek Kapasiteli DSM Rig Makineleri", "FHWA ve Eurocode 7 Standartlarında Laboratuvar Mix Tasarımı"],
     applications: [
       "Lojistik depolar, AVM ve sanayi tesisleri altında derin zemin iyileştirmesi ve oturma kontrolü",
@@ -784,25 +784,25 @@ export const standaloneServices = [
     ],
     advantages: [
       "Hafriyatsız ve Çevreci: Zemini dışarı çıkarmadan yerinde karıştırır; hafriyat nakliyesi ve çamur arıtma maliyetlerini ortadan kaldırır.",
-      "Ultra Yüksek İmalat Hızı: Geniş platform iyileştirmelerinde jet grout ve fore kazığa kıyasla 2-3 kat daha hızlı m² / m³ ilerleme sağlar.",
-      "Yeraltı Suyu Geçirimsizliği: Kesintisiz kesişen DSM kolonları ile su sızdırmaz bariyer perdesi oluşturur.",
-      "Garantili Kolon Homojenliği: Blade Rotation Number (BRN) takibiyle karıştırma enerjisi ve dayanım profili dijital data logger ile kaydedilir.",
-      "Ekonomik Derin Temel Alternatifi: Yumuşak zeminlerde yüksek maliyetli derin kazık çözümlerinin yerine geçen bütçe dostu mühendislik yaklaşımıdır."
+      "Yüksek İmalat Potansiyeli: Geniş platformlarda üretim hızı zemin türü, kolon geometrisi, ekipman ve bağlayıcı lojistiğine göre değerlendirilir.",
+      "Yeraltı Suyu Kontrolü: Uygun tasarlanmış kesişen DSM kolonları düşük geçirgenlikli bariyer oluşturmak için kullanılabilir.",
+      "Ölçülebilir Kolon Homojenliği: BRN, bağlayıcı dozajı ve karıştırma parametreleri dijital kayıtlarla izlenebilir; sonuçlar karot/UCS testleriyle doğrulanır.",
+      "Derin Temel Alternatifi: Uygun zemin ve yük koşullarında kazıklı temel seçenekleriyle teknik ve ekonomik olarak karşılaştırılabilir."
     ],
     processSteps: [
       { title: "Zemin Karakterizasyonu ve Laboratuvar Mix Tasarımı", description: "Sahadan alınan zemin numuneleri üzerinde laboratuvarda farklı çimento dozajları denenerek hedef UCS dayanımı (1.0 - 3.0 MPa) belirlenir." },
       { title: "Saha Pilot İmalatı ve BRN Kalibrasyonu", description: "Deneme kolonları imal edilerek karıştırma bıçağının devir sayısı (RPM), inme ve çekme hızları sahada kalibre edilir." },
       { title: "Mekanik Karıştırma ve Düşük Basınçlı Enjeksiyon", description: "Çift milli yüksek torklu DSM helezonları zemini parçalayarak hedef kotuna inerken alttan 10-20 bar düşük basınçlı çimento şerbeti verilir." },
-      { title: "Ters Yönlü Çekim ve Homojenizasyon", description: "Burgu hedef derinlikten yukarı çekilirken ters yönde döndürülerek zemin ile çimento hamuru moleküler seviyede harmanlanır." },
+      { title: "Ters Yönlü Çekim ve Homojenizasyon", description: "Burgu hedef derinlikten yukarı çekilirken karıştırma sürdürülür; zemin ile bağlayıcının homojenliği üretim parametreleri ve saha testleriyle kontrol edilir." },
       { title: "Karot Alımı ve UCS Dayanım Doğrulaması", description: "İmalattan 28 gün sonra kolonlardan karot örneği alınarak laboratuvarda Tek Eksenli Basınç Testi (UCS) yapılır ve mühendislik onay raporu teslim edilir." }
     ],
-    technicalNote: "Deep Soil Mixing (DSM) uygulamalarında kaliteyi belirleyen temel geoteknik kural; FHWA-NHI-13-046 ve EN 14679 normlarına göre 'Bıçak Dönme Sayısı' (BRN - Blade Rotation Number) ve karıştırma enerjisidir. BRN değerinin 300'ün altında kalması kolon içinde çimento topaklanmasına ve zemin ceplerine neden olur. YER6 DSM rig donanımları, otomatik çimento debimetreleri ve tork sensörleri ile metre başına düşen çimento miktarını ve karıştırma enerjisini %100 dijital olarak kayıt altına alır.",
+    technicalNote: "Deep Soil Mixing (DSM) uygulamalarında kaliteyi etkileyen başlıca parametreler bıçak dönüş sayısı (BRN), bağlayıcı dozajı ve karıştırma enerjisidir. Hedef değerler zemin türü, ekipman geometrisi, laboratuvar karışım tasarımı ve deneme kolonlarıyla proje özelinde belirlenmelidir. Otomatik çimento debimetreleri ve tork sensörleri, metre başına bağlayıcı miktarı ile karıştırma parametrelerinin dijital olarak kayıt altına alınmasını destekler.",
     faq: [
       { question: "Deep Soil Mixing (DSM) nedir ve hangi projelerde tercih edilir?", answer: "DSM (Derin Zemin Karıştırma), yumuşak zeminlerin mekanik karıştırıcı kanatlarla çimento enjekte edilerek yerinde iyileştirilmesidir. Lojistik depolar, sanayi tesisleri, limanlar ve yol dolgularında oturma ve sıvılaşmayı engellemek için ilk tercih edilen ekonomik yöntemdir." },
       { question: "Deep Soil Mixing ile Jet Grouting arasındaki farklar nelerdir?", answer: "Jet Grout 400-600 bar yüksek hidro-basınçla zemini parçalar; DSM ise 10-20 bar gibi düşük basınçta mekanik kanatlarla karıştırır. DSM geniş alanlı killi sahalarda daha homojen, hızlı ve ekonomiktir." },
       { question: "DSM kolonları hangi derinlik ve çaplarda imal edilebilir?", answer: "Tek milli veya çift milli DSM makinelerimizin gücüne bağlı olarak 600 mm ile 1200 mm çaplarında ve 25-30 metre derinliğe kadar kesintisiz DSM kolonları imal edilebilmektedir." },
-      { question: "Deep Soil Mixing (DSM) zemin sıvılaşmasını nasıl engeller?", answer: "Sıvılaşma riski olan kumlu ve siltli zeminlerde DSM kolonları grid (kafes) şemasıyla kesişen kolonlar halinde uygulanır. Bu rijit kafes, deprem anında yanal yayılmayı ve aşırı su basıncını hapsederek sıvılaşmayı engeller." },
-      { question: "Deep Soil Mixing firmaları seçerken nelere dikkat edilmelidir?", answer: "Firmanın çift milli makine parkı kapasitesi, sahada BRN (Blade Rotation Number) verilerini kaydeden dijital data logger sistemlerine sahip olması ve 28 günlük Karot UCS testlerini sunabilmesi esastır. YER6 tüm projelerde bu kalite standartlarını garanti eder." }
+      { question: "Deep Soil Mixing (DSM) sıvılaşma etkilerini nasıl azaltır?", answer: "Uygun grid veya blok geometrisinde tasarlanan DSM elemanları, yanal deformasyonu sınırlandırıp zeminin rijitliğini artırarak sıvılaşma etkilerinin azaltılmasına katkı sağlayabilir. Performans, sahaya özel dinamik zemin analizleri ve kabul kriterleriyle doğrulanmalıdır." },
+      { question: "Deep Soil Mixing firmaları seçerken nelere dikkat edilmelidir?", answer: "Firmanın projeye uygun makine kapasitesi, sahada BRN (Blade Rotation Number) ve bağlayıcı dozajı verilerini kaydedebilmesi, deneme kolonları uygulaması ve 28 günlük karot/UCS testlerini sunabilmesi önemlidir. Kabul kriterleri proje şartnamesi ve kalite planında açıkça tanımlanmalıdır." }
     ]
   }
 ];
@@ -817,7 +817,7 @@ export function getServicePaths() {
   return allServices.map((service) => ({ slug: service.slug }));
 }
 
-export const projects = [
+const projectCatalog = [
   {
     slug: "marmara-lojistik-temel-guclendirme",
     key: "proj_marmara",
@@ -831,7 +831,8 @@ export const projects = [
     challenge: "Yüksek raf yükleri, sınırlı termin programı ve değişken dolgu kalitesi.",
     solution: "DSM kolonları, saha karot testleri ve dijital üretim raporlaması ile performans kontrollü iyileştirme.",
     tags: ["DSM", "Endüstriyel", "Oturma Kontrolü"],
-    image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1400&fm=webp&q=72",
+    image: "/images/projects/saha/saha-genel-cok-makineli.webp",
+    imageAlt: "Çok makineli zemin güçlendirme sahası — YER6 saha arşivi (temsili görsel)",
     soilProblem: "Sahadaki yumuşak kil tabakaları, yüksek raf sistemi yükleri altında kabul edilemez oturma riski taşıyordu. Dolgu kalitesinin değişken olması ek belirsizlik yaratıyordu.",
     solutionMethod: "Derin zemin karıştırma (DSM) yöntemiyle tüm tesis alanında kolon ağı uygulandı. Laboratuvar karışım tasarımı sonrası saha üretimi başlatıldı; her kolona ait üretim verisi dijital olarak kayıt altına alındı. Karot testleri ile kolon mukavemeti doğrulandı.",
     technicalInfo: [
@@ -860,7 +861,8 @@ export const projects = [
     challenge: "Yüksek yer altı suyu, deniz etkisi ve dar çalışma koridoru.",
     solution: "Triple jet grout, enjeksiyon basınç kayıtları ve aşamalı kalite testleri.",
     tags: ["Jet Grout", "Liman", "Su Kontrolü"],
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&fm=webp&q=72",
+    image: "/images/projects/saha/su-kenari-kazik-imalati.webp",
+    imageAlt: "Su kenarında kazık imalatı yapan delgi makinesi — YER6 saha arşivi (temsili görsel)",
     soilProblem: "Kıyı alanında yüksek yeraltı suyu seviyesi ve deniz etkisi, liman genişlemesi sırasında su kontrolü ve taşıma kapasitesi sorunlarına yol açıyordu. Dar çalışma koridoru standart ekipman kullanımını kısıtlıyordu.",
     solutionMethod: "Triple jet grout sistemiyle 740 m uzunluğunda geçirimsizlik ve taşıma perdesi oluşturuldu. Her enjeksiyon parametresi saha veri sistemiyle anlık kaydedildi. Aşamalı kalite testleriyle perde bütünlüğü doğrulandı.",
     technicalInfo: [
@@ -1026,9 +1028,9 @@ export const projects = [
     summary: "Bozüyük'te meyve işleme ve IQF şok dondurma tesisi için temel altı zemin güçlendirme; 12 m boyunda jet grout kolonlarıyla toplam 2.500 m imalat.",
     challenge: "Şok dondurma hatları, soğuk hava depoları ve ağır ekipman yükleri altında düşük ve düzgün oturma gerektiren temel zemininin güçlendirilmesi.",
     solution: "Temel altında 12 m boyunda jet grout kolonları teşkil edilerek toplam 2.500 m imalatla, oturmaya duyarlı tesis zemini güçlendirildi.",
-    seoTitle: "Bozüyük Gıda / IQF Şok Dondurma Tesisi Jet Grout Zemin Güçlendirme | YER6",
-    metaDescription: "Bozüyük'te meyve işleme ve IQF şok dondurma tesisi için temel altı jet grout zemin güçlendirme: 12 m kolon boyu, toplam 2.500 m imalat.",
-    tags: ["Jet Grout", "Gıda / Şok Dondurma Tesisi", "Temel Güçlendirme"],
+    seoTitle: "Bozüyük IQF Tesisi Jet Grout ve Test Kazıkları | YER6",
+    metaDescription: "Bozüyük IQF şok dondurma tesisinde 12 m jet grout kolonlarıyla 2.500 m zemin güçlendirme; kazıyla açılan test kazıkları ve saha kalite kontrolü.",
+    tags: ["Jet Grout", "Test Kazıkları", "Saha Kalite Kontrolü", "Gıda / Şok Dondurma Tesisi", "Temel Güçlendirme"],
     image: "/images/projects/bozuyuk-sok-dondurma-tesisi-jet-grout.jpg",
     imageAlt: "Bozüyük gıda işleme ve şok dondurma (IQF) tesisi temel altı jet grout zemin güçlendirme sahası",
     soilProblem:
@@ -1042,55 +1044,253 @@ export const projects = [
       { label: "Tesis Tipi", value: "Gıda İşleme / IQF Şok Dondurma Tesisi" },
       { label: "Kolon Boyu", value: "12 m" },
       { label: "Toplam İmalat", value: "2.500 m" },
-      { label: "Uygulama", value: "Temel altı zemin güçlendirme (jet grout)" }
+      { label: "Uygulama", value: "Temel altı zemin güçlendirme (jet grout)" },
+      { label: "Saha Kontrolü", value: "Test kazıklarının kazı ile açığa çıkarılması" }
     ],
     usedEquipment: ["Jet Grout Delgi Makinesi", "Yüksek Basınç Enjeksiyon Pompası", "Jet Grout Santrali / Mikser"],
     result:
-      "Temel altı zemin, jet grout kolonlarıyla güçlendirilerek gıda işleme ve şok dondurma tesisinin taşıma ve oturma güvenliği desteklendi. Uygulama, saha koşullarına uygun biçimde tamamlandı.",
+      "Temel altı zemin, jet grout kolonlarıyla güçlendirilerek gıda işleme ve şok dondurma tesisinin taşıma ve oturma güvenliği desteklendi. İmalat sonrası seçilen test kazıkları kazı ile açığa çıkarılarak görsel saha kontrolü yapıldı ve uygulama kayıt altına alındı.",
     gallery: [
       { src: "/images/projects/bozuyuk-sok-dondurma-tesisi-jet-grout.jpg", alt: "Bozüyük IQF şok dondurma tesisi jet grout zemin güçlendirme sahası" },
-      { src: "/images/projects/bozuyuk-sok-dondurma-tesisi-jet-grout-2.jpg", alt: "Bozüyük IQF şok dondurma tesisi jet grout uygulama sahası" }
+      { src: "/images/projects/bozuyuk-sok-dondurma-tesisi-jet-grout-2.jpg", alt: "Bozüyük IQF şok dondurma tesisi jet grout uygulama sahası" },
+      {
+        src: "/images/projects/bozuyuk-jet-grout-test-kazigi-kalite-kontrolu-1.jpg",
+        alt: "Bozüyük Bilecik jet grout test kazığının kazı ile açığa çıkarıldığı saha kalite kontrol çalışması"
+      },
+      {
+        src: "/images/projects/bozuyuk-jet-grout-test-kazigi-kalite-kontrolu-2.jpg",
+        alt: "Bozüyük IQF tesisi zemin güçlendirme projesinde açığa çıkarılan jet grout test kazıkları"
+      }
     ],
     relatedServiceSlugs: ["jet-grout", "zemin-iyilestirme"]
+  },
+  {
+    slug: "bina-alti-jet-grout-guclendirme",
+    key: "proj_bina_alti_jet",
+    category: "Jet Grout",
+    location: "Türkiye",
+    year: "2025",
+    area: "",
+    metric: "Sınırlı yükseklikte kompakt imalat",
+    title: "Bina Altı Jet Grout Güçlendirme Uygulaması",
+    summary: "Mevcut yapı çevresinde sınırlı çalışma alanında, kompakt paletli delgi ekipmanı ile temel altı jet grout güçlendirme uygulaması.",
+    challenge: "Mevcut yapı yakınında dar manevra alanı ve sınırlı çalışma yüksekliği; standart boyutlu jet grout ekipmanının sahaya giremediği koşullar.",
+    solution: "Düşük yükseklikte çalışabilen kompakt paletli delgi makinesi ile temel altına yüksek basınçlı çimento enjeksiyonu uygulanarak jet grout kolonları teşkil edildi.",
+    tags: ["Jet Grout", "Bina Altı Güçlendirme", "Kompakt Ekipman"],
+    image: "/images/projects/saha/bina-alti-jet-grout-kompakt-makine.webp",
+    imageAlt: "Bina altı jet grout güçlendirme için kullanılan kompakt paletli delgi makinesi — YER6 saha arşivi",
+    soilProblem: "Mevcut yapının temel zemini, ilave yükler ve oturma riskleri nedeniyle güçlendirme gerektiriyordu. Yapının kullanımda olması ve çevresindeki dar alan, büyük boyutlu ekipman kullanımını imkânsız kılıyordu.",
+    solutionMethod: "Dar alanlara girebilen kompakt paletli jet grout delgi makinesi sahaya alındı. Temel altına ulaşan delgilerle yüksek basınçlı çimento enjeksiyonu yapılarak zemin, yerinde kolonlar halinde güçlendirildi. Uygulama, yapı kullanımını kesintiye uğratmadan kademeli olarak yürütüldü.",
+    technicalInfo: [
+      { label: "Uygulama Yöntemi", value: "Bina Altı Jet Grout" },
+      { label: "Ekipman", value: "Kompakt paletli delgi makinesi" },
+      { label: "Çalışma Koşulu", value: "Sınırlı yükseklik ve dar manevra alanı" },
+      { label: "Uygulama", value: "Temel altı zemin güçlendirme" }
+    ],
+    usedEquipment: ["Kompakt Paletli Jet Grout Delgi Makinesi", "Yüksek Basınç Enjeksiyon Pompası", "Jet Grout Santrali / Mikser"],
+    result: "Temel altı zemin, yapı kullanımı kesintiye uğratılmadan jet grout kolonlarıyla güçlendirildi. Kompakt ekipman sayesinde standart makinelerin giremeyeceği alanlarda imalat tamamlandı.",
+    seoTitle: "Bina Altı Jet Grout Güçlendirme Uygulaması | YER6",
+    metaDescription: "Mevcut yapı altında sınırlı yükseklikte kompakt ekipmanla jet grout zemin güçlendirme: dar alanda temel altı kolon imalatı ve saha uygulaması.",
+    relatedServiceSlugs: ["bina-alti-jet-grout", "jet-grout"]
+  },
+  {
+    slug: "korfez-bolgesi-fore-kazik-projesi",
+    key: "proj_korfez_fore",
+    category: "Fore Kazık",
+    location: "Körfez Bölgesi (Yurt Dışı)",
+    year: "2026",
+    area: "",
+    metric: "Çok makineli eş zamanlı imalat",
+    title: "Körfez Bölgesi Büyük Çaplı Fore Kazık Projesi",
+    summary: "Körfez bölgesinde büyük ölçekli bir gelişim projesinde, çok sayıda rotary delgi makinesinin eş zamanlı çalıştığı derin temel kazık imalatı.",
+    challenge: "Geniş imalat alanında yüksek üretim temposu; sıcak iklim koşullarında çok makineli filo koordinasyonu ve sürekli beton-donatı lojistiği.",
+    solution: "Bauer BG 40, IFG BG 36 ve SANY rotary delgi makinelerinden oluşan filo ile paletli servis vinci desteğinde eş zamanlı kazık imalatı planlandı ve yürütüldü.",
+    tags: ["Fore Kazık", "Yurt Dışı", "Derin Temel"],
+    image: "/images/projects/saha/korfez-fore-kazik-hero.webp",
+    imageAlt: "Körfez bölgesinde gökdelen siluetli sahada Bauer BG 40 fore kazık delgi makinesi ve paletli vinç",
+    soilProblem: "Bölgeye özgü zayıf ve gevşek üst tabakalar, planlanan yapı yükleri için yüzeysel temel kullanımına izin vermiyordu. Yüksek yapı yüklerinin taşıyıcı tabakalara güvenle aktarılması için büyük çaplı fore kazıklardan oluşan derin temel sistemi gerekiyordu.",
+    solutionMethod: "Sahada Bauer BG 40, IFG BG 36 ve SANY rotary delgi makinelerinden oluşan filo eş zamanlı çalıştırıldı. Delgiler muhafaza (kelly) sistemiyle açıldı, donatı kafesleri paletli servis vinçleriyle yerleştirildi ve beton dökümü kesintisiz sürdürüldü. İmalat sırası, makine trafiği ve lojistik günlük planlarla koordine edildi.",
+    technicalInfo: [
+      { label: "Uygulama Yöntemi", value: "Büyük Çaplı Fore Kazık" },
+      { label: "Konum", value: "Körfez Bölgesi (Yurt Dışı)" },
+      { label: "Makine Filosu", value: "Bauer BG 40, IFG BG 36, SANY rotary delgi makineleri" },
+      { label: "Destek Ekipmanı", value: "Paletli servis vinçleri" },
+      { label: "Çalışma Düzeni", value: "Çok makineli eş zamanlı imalat" }
+    ],
+    usedEquipment: ["Bauer BG 40 Rotary Delgi Makinesi", "IFG BG 36 Rotary Delgi Makinesi", "SANY Rotary Delgi Makineleri", "Paletli Servis Vinçleri", "Donatı Kafesi Yerleştirme Ekipmanı"],
+    result: "Çok makineli filo düzeniyle yüksek imalat temposu korundu; derin temel kazıkları proje programına uygun şekilde tamamlandı.",
+    seoTitle: "Körfez Bölgesi Büyük Çaplı Fore Kazık Projesi | YER6",
+    metaDescription: "Körfez bölgesinde Bauer BG 40, IFG BG 36 ve SANY delgi makineleriyle çok makineli eş zamanlı büyük çaplı fore kazık imalatı — YER6 yurt dışı saha uygulaması.",
+    gallery: [
+      { src: "/images/projects/saha/korfez-fore-kazik-01.webp", alt: "Körfez sahasında sıralı rotary delgi makineleri ve kırmızı paletli vinçler" },
+      { src: "/images/projects/saha/korfez-fore-kazik-02.webp", alt: "Geniş imalat alanında eş zamanlı çalışan fore kazık makineleri" },
+      { src: "/images/projects/saha/korfez-fore-kazik-03.webp", alt: "Dört rotary delgi makinesinin sıralandığı fore kazık imalat hattı" },
+      { src: "/images/projects/saha/korfez-fore-kazik-04.webp", alt: "Şehir silueti önünde gece-gündüz çalışan fore kazık ekipmanları" },
+      { src: "/images/projects/saha/korfez-fore-kazik-05.webp", alt: "Fore kazık sahasında makineler arasında yürüyen saha personeli" },
+      { src: "/images/projects/saha/korfez-fore-kazik-06.webp", alt: "Gökdelen manzaralı sahada tek rotary delgi makinesi ile kazık imalatı" },
+      { src: "/images/projects/saha/korfez-fore-kazik-07.webp", alt: "Servis vinci kancası altında fore kazık donatı hazırlığı" }
+    ],
+    relatedServiceSlugs: ["fore-kazik"]
+  },
+  {
+    slug: "avrupa-kentsel-saha-kazik-imalati",
+    key: "proj_avrupa_kazik",
+    category: "Fore Kazık",
+    location: "Orta Avrupa (Yurt Dışı)",
+    year: "2025",
+    area: "",
+    metric: "Kent merkezinde dar alan imalatı",
+    title: "Avrupa Kent Merkezi Kazık ve İksa Uygulaması",
+    summary: "Yoğun kent dokusunda, ofis yapılarına komşu bir sahada iksa perdesi önünde kazık imalatı.",
+    challenge: "Çevre yapılara yakınlık, dar çalışma koridoru ve kent merkezi trafiği içinde ekipman lojistiği; düşük titreşimli imalat gerekliliği.",
+    solution: "Kompakt sınıf delgi makinesi ile ahşap kaplamalı iksa perdesi önünde kontrollü kazık imalatı yürütüldü; çevre yapılar üzerindeki etkiler sınırlandırıldı.",
+    tags: ["Fore Kazık", "İksa", "Kentsel Saha", "Yurt Dışı"],
+    image: "/images/projects/saha/avrupa-kentsel-kazik-imalati.webp",
+    imageAlt: "Avrupa kent merkezinde ofis binaları önünde iksa perdesi ve kazık delgi makinesi",
+    soilProblem: "Kent merkezindeki derin kazı, komşu ofis yapılarının temellerine yakın konumdaydı. Kazı güvenliğinin sağlanması ve çevre yapılarda deformasyonun önlenmesi için kazı çevresinde destekli bir perde sistemi gerekiyordu.",
+    solutionMethod: "Kazı çevresinde ahşap kaplamalı iksa perdesi teşkil edildi; perde önünde kompakt delgi makinesi ile kazık imalatı yapıldı. İmalat sırası, komşu yapı temellerine binen yükleri kademeli aktaracak şekilde planlandı.",
+    technicalInfo: [
+      { label: "Uygulama Yöntemi", value: "Kazık + İksa Perdesi" },
+      { label: "Konum", value: "Orta Avrupa (Yurt Dışı)" },
+      { label: "Saha Tipi", value: "Yoğun kent dokusu, komşu yapılara bitişik" },
+      { label: "Çalışma Koşulu", value: "Dar koridor, düşük titreşim gerekliliği" }
+    ],
+    usedEquipment: ["Kompakt Delgi Makinesi", "İksa Perde Sistemi", "Deformasyon İzleme Ekipmanı"],
+    result: "Kazı, komşu yapılara zarar vermeden güvenle desteklendi; kent merkezi koşullarında imalat programı korundu.",
+    seoTitle: "Avrupa Kent Merkezi Kazık ve İksa Uygulaması | YER6",
+    metaDescription: "Orta Avrupa'da yoğun kent dokusunda iksa perdesi önünde kazık imalatı: dar alan, düşük titreşim ve komşu yapı güvenliği — YER6 yurt dışı uygulaması.",
+    relatedServiceSlugs: ["fore-kazik", "iksa-sistemleri"]
+  },
+  {
+    slug: "kopru-temeli-kazik-imalati",
+    key: "proj_kopru_kazik",
+    category: "Fore Kazık",
+    location: "Yurt Dışı",
+    year: "2025",
+    area: "",
+    metric: "Nehir yatağında muhafazalı delgi",
+    title: "Köprü Temeli Kazık İmalatı",
+    summary: "Mevcut köprü ayaklarına bitişik nehir yatağında, çelik muhafaza borulu kazık imalatı.",
+    challenge: "Nehir yatağında yumuşak ve suya doygun zemin; mevcut köprü ayaklarına yakın çalışmada stabilite ve erişim kısıtları.",
+    solution: "Rotary delgi makinesi ile çelik muhafaza boruları kullanılarak delgi stabilitesi sağlandı; kazıklar mevcut yapıya bitişik düzende imal edildi.",
+    tags: ["Fore Kazık", "Köprü Temeli", "Yurt Dışı"],
+    image: "/images/projects/saha/kopru-temeli-kazik-imalati.webp",
+    imageAlt: "Nehir yatağında köprü ayağı yanında çelik muhafaza borusu ile kazık imalatı yapan rotary delgi makinesi",
+    soilProblem: "Nehir yatağındaki gevşek, suya doygun alüvyon tabakalar delgi stabilitesini tehdit ediyordu. Köprü yüklerinin sağlam tabakalara aktarılması için derin kazık temel sistemi gerekiyordu.",
+    solutionMethod: "Delgiler, göçmeyi önlemek amacıyla çelik muhafaza boruları sürülerek açıldı. Rotary delgi makinesi mevcut köprü ayaklarına bitişik konumlarda kademeli çalıştırıldı; kazık imalatı su seviyesi ve zemin koşulları izlenerek yürütüldü.",
+    technicalInfo: [
+      { label: "Uygulama Yöntemi", value: "Muhafaza Borulu Fore Kazık" },
+      { label: "Saha Tipi", value: "Nehir yatağı, mevcut köprüye bitişik" },
+      { label: "Delgi Stabilitesi", value: "Çelik muhafaza borusu" },
+      { label: "Ekipman", value: "Rotary delgi makinesi" }
+    ],
+    usedEquipment: ["Rotary Delgi Makinesi", "Çelik Muhafaza Boruları", "Servis Ekipmanları"],
+    result: "Zorlu nehir yatağı koşullarında delgi stabilitesi muhafaza borularıyla sağlandı; köprü temel kazıkları güvenle tamamlandı.",
+    seoTitle: "Köprü Temeli Kazık İmalatı | YER6",
+    metaDescription: "Nehir yatağında mevcut köprü ayaklarına bitişik, çelik muhafaza borulu fore kazık imalatı — YER6 yurt dışı köprü temeli uygulaması.",
+    relatedServiceSlugs: ["fore-kazik"]
+  },
+  {
+    slug: "yurt-disi-konut-fore-kazik",
+    key: "proj_konut_fore",
+    category: "Fore Kazık",
+    location: "Güney Asya (Yurt Dışı)",
+    year: "2026",
+    area: "",
+    metric: "Bauer BG 28 + SANY filosu",
+    title: "Yurt Dışı Konut Projesi Fore Kazık İmalatı",
+    summary: "Çok bloklu bir konut gelişim projesinde Bauer BG 28 ve SANY rotary delgi makineleriyle fore kazık imalatı.",
+    challenge: "Yağışlı dönemde saha zemin koşullarının değişkenliği; çok bloklu yerleşimde makine kaydırma ve imalat sırası koordinasyonu.",
+    solution: "Bauer BG 28 ve SANY rotary delgi makineleri blok bazlı imalat planına göre kaydırılarak kazık imalatı kesintisiz sürdürüldü.",
+    tags: ["Fore Kazık", "Konut", "Yurt Dışı"],
+    image: "/images/projects/saha/konut-fore-kazik-hero.webp",
+    imageAlt: "Konut projesi sahasında Bauer BG 28 rotary delgi makinesi kelly bar ve delgi ekipmanı yakın görünüm",
+    soilProblem: "Konut bloklarının oturduğu alanda üst tabakalar değişken sertlikte ve yer yer suya doygundu. Blok yüklerinin güvenle taşınması için kazıklı temel sistemi tasarlanmıştı.",
+    solutionMethod: "Bauer BG 28 ve SANY rotary delgi makineleri sahada blok bazlı sırayla konumlandırıldı. Delgi, donatı kafesi yerleştirme ve beton döküm zinciri her blokta aynı düzenle tekrarlanarak imalat hızı standartlaştırıldı.",
+    technicalInfo: [
+      { label: "Uygulama Yöntemi", value: "Fore Kazık" },
+      { label: "Konum", value: "Güney Asya (Yurt Dışı)" },
+      { label: "Makine Filosu", value: "Bauer BG 28, SANY rotary delgi makineleri" },
+      { label: "Saha Tipi", value: "Çok bloklu konut gelişim projesi" }
+    ],
+    usedEquipment: ["Bauer BG 28 Rotary Delgi Makinesi", "SANY Rotary Delgi Makinesi", "Donatı Kafesi ve Beton Döküm Ekipmanları"],
+    result: "Blok bazlı imalat planıyla makine kaydırmaları ve kazık imalatı kesintisiz yürütüldü; temel imalatları üstyapı programını aksatmadan tamamlandı.",
+    seoTitle: "Yurt Dışı Konut Projesi Fore Kazık İmalatı | YER6",
+    metaDescription: "Güney Asya'da çok bloklu konut projesinde Bauer BG 28 ve SANY delgi makineleriyle fore kazık imalatı — YER6 yurt dışı saha uygulaması.",
+    gallery: [
+      { src: "/images/projects/saha/konut-fore-kazik-01.webp", alt: "Konut sahasında kazık imalatı yapan kırmızı SANY rotary delgi makinesi" },
+      { src: "/images/projects/saha/konut-fore-kazik-02.webp", alt: "Bauer BG 28 rotary delgi makinesi konut projesi sahasında" }
+    ],
+    relatedServiceSlugs: ["fore-kazik"]
   }
 ];
 
+// İşveren, sözleşme veya saha kaynağıyla doğrulanmamış örnek kayıtlar kamuya
+// referans proje olarak sunulmaz. Doğrulanırlarsa bu listeye yeniden alınabilir.
+const unpublishedProjectSlugs = new Set([
+  "ankara-rayli-sistem-iksa",
+  "istanbul-rezidans-fore-kazik"
+]);
+
+export const projects = projectCatalog.filter((project) => !unpublishedProjectSlugs.has(project.slug));
+
 export const equipment = [
+  {
+    key: "eq_bauer_bg_45",
+    groupKey: "fleetGroupForePile",
+    icon: "building",
+    image: "/images/equipment/bauer-bg-45.jpg",
+    imageAlt: "Bauer BG 45 fore kazık delgi makinesi şantiye fotoğrafı"
+  },
   {
     key: "eq_bauer_bg_28_h",
     groupKey: "fleetGroupForePile",
     icon: "building",
-    imageAlt: "Bauer BG 28 H PremiumLine fore kazık delgi makinesi"
+    image: "/images/equipment/bauer-bg-28.jpg",
+    imageAlt: "Bauer BG 28 H PremiumLine fore kazık delgi makinesi şantiye fotoğrafı"
   },
   {
     key: "eq_bauer_bg_18_h",
     groupKey: "fleetGroupForePile",
     icon: "building",
-    imageAlt: "Bauer BG 18 H BT 50 PremiumLine fore kazık delgi makinesi"
+    image: "/images/equipment/bauer-bg-18.jpg",
+    imageAlt: "Bauer BG 18 H BT 50 PremiumLine fore kazık delgi makinesi şantiye fotoğrafı"
   },
   {
     key: "eq_xcmg_xr220d",
     groupKey: "fleetGroupForePile",
     icon: "building",
-    imageAlt: "XCMG XR220D fore kazık delgi makinesi"
+    image: "/images/equipment/xcmg-xr220d.jpg",
+    imageAlt: "XCMG XR220D fore kazık delgi makinesi fotoğrafı"
   },
   {
     key: "eq_soilmec_sm_401_drill",
     groupKey: "fleetGroupJetAnchor",
     icon: "drill",
-    imageAlt: "Soilmec SM-401 jet grout kazık delgi makinesi"
+    image: "/images/equipment/soilmec-sm-401.jpg",
+    imageAlt: "Soilmec SM-401 kazık delgi makinesi şantiye fotoğrafı"
   },
   {
-    key: "eq_mdt_1800_drill",
+    key: "eq_soilmec_sm_14_drill",
     groupKey: "fleetGroupJetAnchor",
     icon: "drill",
-    imageAlt: "MDT 1800 zemin iyileştirme kazık delgi makinesi"
+    image: "/images/equipment/soilmec-sm-14.jpg",
+    imageAlt: "Soilmec SM-14 jet grout, ankraj ve mikro kazık delgi makinesi fotoğrafı",
+    imageCredit: "Fotoğraf: Tommaso Saccarola"
+  },
+  {
+    key: "eq_mdt_180_b_drill",
+    groupKey: "fleetGroupJetAnchor",
+    icon: "drill",
+    image: "/images/equipment/mdt-180-b.jpg",
+    imageAlt: "MDT 180 B paletli jet grout, ankraj ve mikro kazık delgi makinesi fotoğrafı"
   },
   {
     key: "eq_casagrande_c6_xp_2",
     groupKey: "fleetGroupJetAnchor",
     icon: "anchor",
-    imageAlt: "Casagrande C6 XP-2 ankraj delgi makinesi"
+    image: "/images/equipment/casagrande-c6-xp-2.jpg",
+    imageAlt: "Casagrande C6 XP-2 paletli ankraj, mikro kazık ve jet grout delgi makinesi şantiye fotoğrafı"
   },
   {
     key: "eq_soilmec_5t_400j_pump",
@@ -1133,9 +1333,6 @@ export const workflow = [
 ];
 
 export const certificateKeys = [
-  "cert_iso9001",
-  "cert_iso14001",
-  "cert_iso45001",
   "cert_methodology",
   "cert_calibration",
   "cert_qa"

@@ -15,13 +15,15 @@ const iconMap = {
   layers: Layers3
 };
 
-const equipmentPlaceholderSrc =
-  "data:image/svg+xml,%3Csvg%20width%3D%2764%27%20height%3D%2764%27%20viewBox%3D%270%200%2064%2064%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20rx%3D%2716%27%20fill%3D%27%23d8a42d%27%20fill-opacity%3D%270.12%27/%3E%3Cpath%20d%3D%27M16%2042h32M22%2042V24h20v18M27%2024v-6h10v6M23%2031h18M27%2037h10%27%20stroke%3D%27%23fff7d1%27%20stroke-width%3D%273%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27/%3E%3Ccircle%20cx%3D%2723%27%20cy%3D%2747%27%20r%3D%273%27%20fill%3D%27%23fff7d1%27/%3E%3Ccircle%20cx%3D%2741%27%20cy%3D%2747%27%20r%3D%273%27%20fill%3D%27%23fff7d1%27/%3E%3C/svg%3E";
-
 export function MachineCard({ machine }: { machine: Machine }) {
   const { t } = useLanguage();
   const Icon = iconMap[machine.icon as keyof typeof iconMap] ?? Drill;
-  const imageAlt = "imageAlt" in machine ? (machine.imageAlt as string) : "";
+  const image = "image" in machine && typeof machine.image === "string" ? machine.image : "";
+  const imageAlt = "imageAlt" in machine && typeof machine.imageAlt === "string" ? machine.imageAlt : "";
+  const imageSourceUrl =
+    "imageSourceUrl" in machine && typeof machine.imageSourceUrl === "string" ? machine.imageSourceUrl : "";
+  const imageCredit =
+    "imageCredit" in machine && typeof machine.imageCredit === "string" ? machine.imageCredit : "";
   const [rotate, setRotate] = useState({ x: 0, y: 0 });
 
   return (
@@ -44,17 +46,36 @@ export function MachineCard({ machine }: { machine: Machine }) {
       <div className="absolute inset-0 bg-radial-gold opacity-40" />
       <div className="relative [transform:translateZ(36px)]">
         <div className="flex items-center justify-between">
-          <div className="grid h-16 w-16 place-items-center rounded-2xl border border-gold-300/25 bg-gold-300/10 text-gold-100">
-            {imageAlt ? (
-              <img
-                src={equipmentPlaceholderSrc}
-                alt={imageAlt}
-                className="h-10 w-10"
-                loading="lazy"
-                decoding="async"
-              />
+          <div className="grid h-16 w-16 overflow-hidden place-items-center rounded-2xl border border-gold-300/25 bg-gold-300/10 text-gold-100">
+            {image ? (
+              imageSourceUrl ? (
+                <a
+                  href={imageSourceUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={imageCredit}
+                  title={imageCredit}
+                  className="block h-full w-full"
+                >
+                  <img
+                    src={image}
+                    alt={imageAlt}
+                    className="h-full w-full object-cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </a>
+              ) : (
+                <img
+                  src={image}
+                  alt={imageAlt}
+                  className="h-full w-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+              )
             ) : (
-              <Icon className="h-8 w-8" />
+              <Icon aria-hidden="true" className="h-8 w-8" />
             )}
           </div>
           <span className="max-w-[12rem] rounded-full border border-white/10 px-3 py-1 text-right text-[10px] uppercase leading-4 tracking-normal text-white/46 sm:text-xs">

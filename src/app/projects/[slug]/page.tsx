@@ -9,6 +9,25 @@ type Props = {
   params: Promise<{ slug: string }>;
 };
 
+type Project = (typeof projects)[number];
+
+function getProjectImages(project: Project) {
+  const imageAlt =
+    "imageAlt" in project && typeof project.imageAlt === "string" ? project.imageAlt : project.title;
+  const gallery =
+    "gallery" in project ? (project.gallery as { src: string; alt: string }[]) : [];
+  const uniqueImages = new Map<string, string>();
+
+  [{ src: project.image, alt: imageAlt }, ...gallery].forEach(({ src, alt }) => {
+    if (!uniqueImages.has(src)) uniqueImages.set(src, alt);
+  });
+
+  return Array.from(uniqueImages, ([src, alt]) => ({
+    url: src.startsWith("http") ? src : `${siteConfig.siteUrl}${src}`,
+    alt
+  }));
+}
+
 export function generateStaticParams() {
   return projects.map((project) => ({ slug: project.slug }));
 }
@@ -23,7 +42,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     "metaDescription" in project && typeof project.metaDescription === "string"
       ? project.metaDescription
       : `${project.summary} ${project.category} uygulaması, zemin güçlendirme ve kalite kontrol yaklaşımıyla sunulur.`;
-  const image = project.image.startsWith("http") ? project.image : `${siteConfig.siteUrl}${project.image}`;
+  const images = getProjectImages(project);
 
   return {
     title,
@@ -35,7 +54,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title,
       description,
       url: canonical,
-      images: [{ url: image }]
+      images
     }
   };
 }
@@ -46,14 +65,20 @@ export default async function ProjectDetailPage({ params }: Props) {
   if (!project) notFound();
 
   const canonical = `${siteConfig.siteUrl}/projects/${project.slug}/`;
-  const image = project.image.startsWith("http") ? project.image : `${siteConfig.siteUrl}${project.image}`;
+  const images = getProjectImages(project);
   const projectSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: `${project.title} - ${project.category} Zemin Güçlendirme Projesi`,
     description: project.summary,
     url: canonical,
-    image,
+    image: images.map(({ url, alt }, index) => ({
+      "@type": "ImageObject",
+      url,
+      contentUrl: url,
+      caption: alt,
+      representativeOfPage: index === 0
+    })),
     ...(/^\d{4}$/.test(project.year) ? { datePublished: `${project.year}-01-01` } : {}),
     author: {
       "@type": "Organization",

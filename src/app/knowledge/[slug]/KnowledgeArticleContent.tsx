@@ -26,6 +26,7 @@ export function KnowledgeArticleContent({ article }: { article: KnowledgeArticle
             <p className="text-xs uppercase tracking-[0.3em] text-gold-200">{article.heroLabel}</p>
             <h1 className="mt-6 text-5xl font-semibold leading-tight text-white">{article.title}</h1>
             <div className="mt-4 flex flex-wrap items-center gap-4 text-sm text-white/50">
+              <span>{t("articleAuthor")}</span>
               <span>{article.readingTime} {t("articleReadTime")}</span>
               <span>{t("articlePublished")} {article.publishedAt}</span>
               <span>{t("articleUpdated")} {article.updatedAt}</span>

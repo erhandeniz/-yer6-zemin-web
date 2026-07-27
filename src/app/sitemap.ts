@@ -5,6 +5,7 @@ import { siteConfig } from "@/lib/siteConfig";
 import { publishedKnowledgeArticles } from "@/data/knowledge";
 
 const baseUrl = siteConfig.siteUrl;
+const contentReviewDate = new Date("2026-07-27T00:00:00+03:00");
 export const dynamic = "force-static";
 
 // next.config.mjs -> trailingSlash: true olduğu için tüm sayfalar ".../slug/" olarak
@@ -20,33 +21,33 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...staticRoutes.map((route) => ({
       url: withTrailingSlash(`/${route}`),
-      lastModified: new Date(),
+      lastModified: contentReviewDate,
       changeFrequency: "monthly" as const,
       priority: route === "" ? 1 : 0.8
     })),
     ...allServices.map((service) => ({
       url: withTrailingSlash(`/services/${service.slug}`),
-      lastModified: new Date(),
-      changeFrequency: "weekly" as const,
+      lastModified: contentReviewDate,
+      changeFrequency: "monthly" as const,
       priority: 0.9
     })),
     ...projects.map((project) => ({
       url: withTrailingSlash(`/projects/${project.slug}`),
-      lastModified: new Date(),
+      lastModified: contentReviewDate,
       changeFrequency: "monthly" as const,
       priority: 0.85
     })),
     ...orderedCityPages.map((page) => ({
       url: withTrailingSlash(`/sehirler/${page.slug}`),
-      lastModified: new Date(),
+      lastModified: contentReviewDate,
       changeFrequency: "monthly" as const,
       // Öncelikli iller daima önde ve daha yüksek öncelikle listelenir.
       priority: featuredCitySlugs.includes(page.slug) ? 0.9 : 0.7
     })),
     ...publishedKnowledgeArticles.map((article) => ({
       url: withTrailingSlash(`/knowledge/${article.slug}`),
-      lastModified: new Date(),
-      changeFrequency: "weekly" as const,
+      lastModified: new Date(`${article.updatedAt}T00:00:00+03:00`),
+      changeFrequency: "monthly" as const,
       priority: 0.8
     }))
   ];

@@ -2146,7 +2146,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
         blocks: [
           {
             type: "paragraph",
-            content: "Bina altı jet grout (underpinning); aktif kullanılan yapılarda, Türk Telekom santrallerinde, veri merkezlerinde ve tarihi binalarda ek kazı gerektirmeden temel altında zemin-çimento kolonları oluşturarak taşıma kapasitesini artıran statik ve titreşimsiz bir hidro-enjeksiyon yöntemidir. Darbeli veya vibrasyonlu delgilerin aksine bina strüktürüne ve hassas cihazlara zarar vermez."
+            content: "Bina altı jet grout (underpinning); aktif kullanılan yapılarda, santral yapılarında, veri merkezlerinde ve tarihi binalarda temel altında zemin-çimento kolonları oluşturarak taşıma kapasitesini artırmak için değerlendirilen düşük titreşimli bir hidro-enjeksiyon yöntemidir. Darbeli veya vibrasyonlu delgilere göre titreşim etkisi düşüktür; bina strüktürü ve hassas cihazlara ilişkin riskler proje özelindeki enstrümantasyon planıyla izlenmelidir."
           },
           {
             type: "list",
@@ -2158,7 +2158,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
           },
           {
             type: "paragraph",
-            content: "YER6, kapalı bodrum katlarında ve havalandırması kısıtlı tesislerde zehirli egzoz gazı riskini %100 yok eden özel Elektrikli Jet Grout Makineleri kullanır. Süreç boyunca binaya takılan inklinometre, oturma plakaları ve tiltmetre sensörleri ile bina hareketleri 7/24 izlenir. Sağlıklı bir teklif ve risk değerlendirmesi için zemin etüt raporu (SPT/CPT), temel/mimari projeler ve kuyu kotlarının YER6 Mühendisleri ile paylaşılması yeterlidir."
+            content: "Elektrikli jet grout makineleri, kapalı bodrum katlarında ve havalandırması kısıtlı tesislerde uygulama noktasında doğrudan dizel egzoz emisyonu oluşturmaz. Proje risk sınıfına göre inklinometre, oturma plakaları ve tiltmetre sensörleriyle bina hareketleri izlenebilir. Sağlıklı bir teklif ve risk değerlendirmesi için zemin etüt raporu (SPT/CPT), temel/mimari projeler, kuyu kotları, erişim ve havalandırma koşulları birlikte incelenmelidir."
           },
           {
             type: "note",
@@ -3147,7 +3147,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
         { type: "list", title: "Öne çıkan özellikler", items: ["Yüksek rijitlik, düşük deplasman", "Su geçirimsizlik", "Kalıcı taşıyıcı bodrum perdesi olabilme", "Komşu yapıya duyarlı derin kazı"] }
       ]},
       { id: "kullanim", title: "Nerelerde Kullanılır?", blocks: [
-        { type: "paragraph", content: "Derin bodrumlu yüksek yapılar, metro istasyonları, yüksek yeraltı suyu bulunan derin kazılar ve komşu yapıya sıfır toleranslı kentsel kazılarda tercih edilir." },
+        { type: "paragraph", content: "Derin bodrumlu yüksek yapılar, metro istasyonları, yüksek yeraltı suyu bulunan derin kazılar ve komşu yapı deplasman toleransı çok düşük kentsel kazılarda tercih edilir." },
         { type: "note", title: "Fore kazık perdesine göre", content: "Diyafram duvar daha yüksek rijitlik ve daha iyi su geçirimsizliği sağlar; derin, sulu ve hassas kazılarda avantajlıdır." }
       ]}
     ],
@@ -3362,7 +3362,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     publishedAt: "2026-07-13",
     updatedAt: "2026-07-13",
     heroLabel: "İstanbul Jet Grout",
-    introduction: "İstanbul'da jet grout ihtiyacı; alüvyon zeminler, yüksek yeraltı suyu, sıvılaşma riski ve komşu yapıya sıfır dar parsellerle doğrudan ilişkilidir. Bu yazıda İstanbul'da jet grout firması seçerken dikkat edilmesi gerekenleri ve YER6'nın yaklaşımını açıklıyoruz.",
+    introduction: "İstanbul'da jet grout ihtiyacı; alüvyon zeminler, yüksek yeraltı suyu, sıvılaşma riski ve komşu yapı mesafesi çok dar parsellerle doğrudan ilişkilidir. Bu yazıda İstanbul'da jet grout firması seçerken dikkat edilmesi gerekenleri ve YER6'nın yaklaşımını açıklıyoruz.",
     sections: [
       { id: "secim", title: "İstanbul'da Jet Grout Firması Seçerken Nelere Dikkat Edilmeli?", blocks: [
         { type: "list", title: "Değerlendirme kriterleri", items: ["Kendi makine parkı ve ekipman kapasitesi (delgi, pompa, santral)", "Alüvyon, dolgu ve sıvılaşmaya yatkın zeminlerde saha tecrübesi", "Deneme kolonu ve kalite kontrol (karot, basınç testi) süreci", "Şeffaf metraj ve gerçekçi maliyet öngörüsü", "Referans projeler ve teknik dokümantasyon"] },

@@ -61,6 +61,21 @@ export const serviceSchemaDescriptions: Record<string, string> = {
 
 export const equipmentSeoItems = [
   {
+    name: "Bauer BG 45 BS 95 Fore Kazık Delgi Makinesi",
+    category: "Fore Kazık Delgi Makinesi",
+    description:
+      "Bauer BG 45 BS 95; Kelly delgi, zemin karıştırma ve zemin iyileştirme uygulamalarında kullanılan yüksek kapasiteli, çok amaçlı fore kazık delgi makinesidir.",
+    brand: "Bauer",
+    imageAlt: "Bauer BG 45 BS 95 fore kazık delgi makinesi",
+    additionalProperties: [
+      { name: "Maksimum tork", value: "461 kNm" },
+      { name: "Maksimum Kelly delgi derinliği", value: "100 m" },
+      { name: "Maksimum kılıfsız Kelly delgi çapı", value: "3.700 mm" },
+      { name: "Motor", value: "CAT C15, 433 kW" },
+      { name: "Hidrolik basınç", value: "350 bar" }
+    ]
+  },
+  {
     name: "Bauer BG 28 H PremiumLine Fore Kazık Delgi Makinesi",
     category: "Fore Kazık Delgi Makinesi",
     description:
@@ -126,20 +141,52 @@ export const equipmentSeoItems = [
     ]
   },
   {
-    name: "Soilmec SM-401 Kazık Delgi Makinesi",
-    category: "Kazık Delgi Makinesi",
+    name: "Soilmec SM-401 Hidrolik Delgi Makinesi",
+    category: "Çok Amaçlı Delgi Makinesi",
     description:
-      "Soilmec SM-401; jet grout, ankraj, zemin iyileştirme, zemin güçlendirme ve temel mühendisliği uygulamalarında kullanılan kompakt ve güçlü delgi makinesidir.",
+      "Soilmec SM-401; mikro kazık, ankraj, jet grout, karot, drenaj ve su kuyusu uygulamaları için geliştirilmiş çok amaçlı hidrolik delgi makinesidir.",
     brand: "Soilmec",
-    imageAlt: "Soilmec SM-401 jet grout kazık delgi makinesi"
+    imageAlt: "Soilmec SM-401 hidrolik delgi makinesi",
+    additionalProperties: [
+      { name: "HR 70 V maksimum tork", value: "1.400 daNm" },
+      { name: "HR 70 V maksimum dönüş hızı", value: "238 dev/dk" },
+      { name: "Besleme stroku", value: "4.000 / 7.000 mm" },
+      { name: "Maksimum çekme kuvveti", value: "89 / 61 kN" },
+      { name: "Motor", value: "Cummins QSB 5.9-30-T, 119 kW" },
+      { name: "Çalışma ağırlığı", value: "Yaklaşık 13,4-13,8 ton" }
+    ]
   },
   {
-    name: "MDT 1800 Kazık Delgi Makinesi",
-    category: "Kazık Delgi Makinesi",
+    name: "Soilmec SM-14 Delgi Makinesi",
+    category: "Mikro Kazık ve Jet Grout Delgi Makinesi",
     description:
-      "MDT 1800; jet grout, zemin iyileştirme, zemin güçlendirme ve temel mühendisliği uygulamalarında kullanılan delgi makinesidir.",
+      "Soilmec SM-14; mikro kazık, ankraj, jet grout, drenaj, su kuyusu ve zemin araştırması için kullanılan modüler hidrolik delgi makinesidir.",
+    brand: "Soilmec",
+    imageAlt: "Soilmec SM-14 mikro kazık ve jet grout delgi makinesi",
+    additionalProperties: [
+      { name: "Çalışma ağırlığı", value: "14 ton" },
+      { name: "Motor", value: "119 kW" },
+      { name: "Maksimum çekme kuvveti", value: "89 kN" },
+      { name: "Maksimum itme kuvveti", value: "45 kN" },
+      { name: "Standart strok", value: "7.000 mm" },
+      { name: "Kıskaç aralığı", value: "50-415 mm" }
+    ]
+  },
+  {
+    name: "MDT 180 B Hidrolik Delgi Makinesi",
+    category: "Jet Grout ve Mikro Kazık Delgi Makinesi",
+    description:
+      "MDT 180 B; jet grout, mikro kazık, ankraj ve çok amaçlı delgi uygulamaları için geliştirilmiş hidrolik paletli delgi makinesidir.",
     brand: "MDT",
-    imageAlt: "MDT 1800 zemin iyileştirme kazık delgi makinesi"
+    imageAlt: "MDT 180 B jet grout ve mikro kazık delgi makinesi",
+    additionalProperties: [
+      { name: "Nominal tork", value: "Yaklaşık 15-32 kNm" },
+      { name: "İtme / çekme kuvveti", value: "Yaklaşık 100 kN" },
+      { name: "Döner kafa stroku", value: "Yaklaşık 4,7-6,7 m" },
+      { name: "Tek geçiş delgi derinliği", value: "22 m'ye kadar" },
+      { name: "Motor", value: "Yaklaşık 149-163 kW" },
+      { name: "Çalışma ağırlığı", value: "Yaklaşık 17,7-18,5 ton" }
+    ]
   },
   {
     name: "Casagrande C6 XP-2 Ankraj Delgi Makinesi",
@@ -330,6 +377,19 @@ export function generateArticleSchema(article: {
   authorName?: string;
   url: string;
 }) {
+  const author = article.authorName
+    ? {
+        "@type": "Person",
+        name: article.authorName,
+        jobTitle: "Geoteknik Uzmanı",
+        url: `${siteConfig.siteUrl}/about`
+      }
+    : {
+        "@type": "Organization",
+        name: `${siteConfig.companyName} Teknik İçerik Ekibi`,
+        url: `${siteConfig.siteUrl}/about`
+      };
+
   return {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -338,12 +398,7 @@ export function generateArticleSchema(article: {
     image: article.image || `${siteConfig.siteUrl}/opengraph-image.png`,
     datePublished: article.datePublished,
     dateModified: article.dateModified || article.datePublished,
-    author: {
-      "@type": "Person",
-      name: article.authorName || "Erhan Deniz",
-      jobTitle: "Geoteknik Uzmanı",
-      url: `${siteConfig.siteUrl}/about`
-    },
+    author,
     publisher: {
       "@type": "Organization",
       name: siteConfig.companyName,

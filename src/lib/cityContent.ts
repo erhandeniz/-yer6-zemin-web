@@ -87,7 +87,7 @@ export const cityPages: CityPage[] = [
     description:
       "Ankara'da fore kazık, jet grout, DSM zemin iyileştirme, CFA kazık, ankraj ve iksa sistemleri için YER6 Gölbaşı merkezli geoteknik mühendislik çözümleri.",
     heroLead:
-      "Ankara'da zemin güçlendirme; killi zemin yapısı, derin kazı iksa sistemleri, kamu projeleri ve kot farkı yüksek parsellerde garantili imalat disiplinine dayanır.",
+      "Ankara'da zemin güçlendirme; killi zemin yapısı, derin kazı iksa sistemleri, kamu projeleri ve kot farkı yüksek parsellerde ölçülebilir kabul kriterlerine dayalı imalat disiplini gerektirir.",
     soilContext:
       "Ankara kili, marn ve alüvyal geçişlerde taşıma kapasitesi ve sıvılaşma riskine karşı fore kazık, jet grout ve DSM zemin iyileştirme yöntemleri uygulanır.",
     recommendedApproach:
@@ -1429,7 +1429,7 @@ const cityEnrichmentList: CityEnrichment[] = [
         heading: "Ankara'da uygulanan zemin güçlendirme yöntemleri",
         body: [
           "Yüksek yapısal yüklerin ve derin kazıların söz konusu olduğu kamu ve konut projelerinde fore kazıklı temeller ile ankraj destekli iksa sistemleri öne çıkar. Mevcut yapı altında güçlendirme veya su yalıtımı gereken durumlarda ise jet grout kolonları, dar sahalarda bile düşük titreşimle uygulanabilir.",
-          "Geniş taban alanlı endüstriyel yapılarda oturmayı kontrol etmek için DSM zemin iyileştirme tercih edilir. YER6, her projede kolon çapı, derinlik ve bağlayıcı dozajını Ankara zeminine özgü parametrelerle optimize eder."
+          "Geniş taban alanlı endüstriyel yapılarda oturmayı kontrol etmek için DSM zemin iyileştirme değerlendirilebilir. Kolon çapı, derinlik ve bağlayıcı dozajı zemin etüdü, laboratuvar karışım tasarımı ve deneme kolonlarıyla proje özelinde belirlenir."
         ]
       },
       {
@@ -1479,7 +1479,7 @@ const cityEnrichmentList: CityEnrichment[] = [
         heading: "Derin kazı ve temel güçlendirme yöntemleri",
         body: [
           "Yüksek yapılar ve derin bodrumlu projelerde büyük çaplı fore kazıklar taşıma kapasitesini sağlarken, dar ve erişimi kısıtlı kentsel dönüşüm parsellerinde mini kazık ve underpinning uygulamaları mevcut yapıyı taşımadan güçlendirmeye imkân verir.",
-          "Su geçirimsizliği ve kazı tabanı güvenliği gereken alanlarda jet grout perdeleri devreye alınır. YER6, her projede düşeylik, beton sürekliliği ve ankraj test yüklerini kayıt altına alarak çevre yapı izleme verisiyle birlikte raporlar."
+          "Su geçirimsizliği ve kazı tabanı güvenliği gereken alanlarda jet grout perdeleri değerlendirilebilir. Düşeylik, beton sürekliliği, ankraj test yükleri ve çevre yapı izleme verileri proje kalite planında tanımlanan kapsamda kayıt altına alınır."
         ]
       }
     ],
@@ -3485,7 +3485,7 @@ const cityEnrichmentList: CityEnrichment[] = [
         heading: "Ankara'da uygulanan zemin iyileştirme yöntemleri",
         body: [
           "Mevcut yapı altında güçlendirme veya su kontrolü gereken durumlarda jet grout kolonları, dar sahalarda bile düşük titreşimle uygulanabilir. Geniş taban alanlı endüstriyel yapılarda oturmayı kontrol etmek için DSM zemin iyileştirme tercih edilir.",
-          "YER6, her projede kolon çapı, derinlik ve bağlayıcı dozajını Ankara zeminine özgü parametrelerle optimize eder; oturma ve çatlak sorunu yaşayan mevcut binalarda jet grout ve mini kazık ile temel altı güçlendirme (underpinning) kurgulanır."
+          "Kolon çapı, derinlik ve bağlayıcı dozajı zemin etüdü, laboratuvar karışım tasarımı ve deneme kolonlarıyla proje özelinde belirlenir; oturma ve çatlak sorunu yaşayan mevcut binalarda jet grout ve mini kazık alternatifleri temel mühendisliği hesaplarıyla karşılaştırılır."
         ]
       },
       {
@@ -3552,7 +3552,7 @@ const cityEnrichmentList: CityEnrichment[] = [
         heading: "Derin kazı ve temel güçlendirme yöntemleri",
         body: [
           "Yüksek yapılar ve derin bodrumlu projelerde büyük çaplı fore kazıklar taşıma kapasitesini sağlarken, dar ve erişimi kısıtlı kentsel dönüşüm parsellerinde mini kazık ve underpinning uygulamaları mevcut yapıyı taşımadan güçlendirmeye imkân verir.",
-          "Su geçirimsizliği ve kazı tabanı güvenliği gereken alanlarda jet grout perdeleri devreye alınır. YER6, her projede düşeylik, beton sürekliliği ve ankraj test yüklerini kayıt altına alarak çevre yapı izleme verisiyle birlikte raporlar."
+          "Su geçirimsizliği ve kazı tabanı güvenliği gereken alanlarda jet grout perdeleri değerlendirilebilir. Düşeylik, beton sürekliliği, ankraj test yükleri ve çevre yapı izleme verileri proje kalite planında tanımlanan kapsamda kayıt altına alınır."
         ]
       },
       {

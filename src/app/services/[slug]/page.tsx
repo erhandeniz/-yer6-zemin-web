@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     "mini-kazik": "Mini Kazık Firmaları | Türkiye Geneli Mini Kazık ve Askıya Alma",
     ankraj: "Ankraj Firmaları | Türkiye Geneli Öngermeli Ankraj Uygulaması",
     "iksa-sistemleri": "İksa Firmaları | Derin Kazı İksa Sistemleri ve Çözümleri",
-    "zemin-iyilestirme": "Zemin İyileştirme Teknikleri ve En İyi Zemin İyileştirme Firmaları",
+    "zemin-iyilestirme": "Zemin İyileştirme Teknikleri ve Zemin İyileştirme Firmaları",
     "zemin-guclendirme": "CFA Kazık Firmaları | Continuous Flight Auger Zemin Güçlendirme & Derin Temeller",
     "geoteknik-danismanlik": "Geoteknik Danışmanlık ve Zemin Etüdü Firmaları",
     "zemin-civisi": "Zemin Çivisi (Soil Nailing) Uygulaması ve Avantajları",
@@ -93,13 +93,6 @@ export default async function ServiceDetailPage({ params }: Props) {
       "Zemin Güçlendirme Firmaları",
       "Geoteknik Mühendislik"
     ],
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.9",
-      reviewCount: "128",
-      bestRating: "5",
-      worstRating: "1"
-    },
     areaServed: localSeoServiceAreas.map((name) => ({
       "@type": name === "Türkiye geneli" ? "Country" : "AdministrativeArea",
       name
