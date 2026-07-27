@@ -218,28 +218,75 @@ export const equipmentSeoItems = [
     ]
   },
   {
-    name: "Soilmec 5T 400J Pompa",
-    category: "Jet Grout Pompası",
+    name: "Soilmec 5T-400J Pompa",
+    category: "Yüksek Basınçlı Jet Grout Pompası",
     description:
-      "Soilmec 5T 400J Pompa; yüksek basınçlı jet grout enjeksiyon uygulamalarında kullanılan pompa ekipmanıdır. Zemin iyileştirme, zemin güçlendirme ve temel altı jet grout kolon imalatlarında kullanılır.",
+      "Soilmec 5T-400J; 900 bar kısa süreli maksimum basınç, 442 l/dk maksimum debi ve 298 kW nominal güç değerlerine sahip mekanik tahrikli yüksek basınç pompasıdır. Jet grout, zemin konsolidasyonu ve yüksek basınçlı çimento şerbeti enjeksiyonunda kullanılır.",
     brand: "Soilmec",
-    imageAlt: "Soilmec 5T 400J jet grout pompası"
+    imageAlt: "Soilmec 5T-400J yüksek basınçlı jet grout pompası",
+    additionalProperties: [
+      { name: "Maksimum basınç", value: "900 bar / 13.050 psi (yalnızca kısa süreli acil durum değeri)" },
+      { name: "Maksimum debi", value: "442 l/dk / 116 gpm" },
+      { name: "Nominal güç", value: "298 kW / 400 HP" },
+      { name: "Plunger çapları", value: "3 / 3½ / 4 inç" },
+      { name: "Strok", value: "5 inç / 127 mm" },
+      { name: "Yaklaşık kütle", value: "12.500 kg / 27.560 lb" },
+      { name: "Volümetrik verim", value: "%100" },
+      { name: "Mekanik verim", value: "%90" },
+      { name: "Tahrik sistemi", value: "Kavrama, şanzıman, kardan mili ve zincir üzerinden mekanik tahrik" },
+      { name: "Kurulum seçenekleri", value: "Konteyner veya skid üzerine montaj" },
+      { name: "Konteyner ölçüleri", value: "6.055 × 2.435 × 2.585 mm (U × G × Y)" },
+      {
+        name: "Opsiyonlar",
+        value: "Farklı marka dizel motor, booster pompa, işlem parametrelerini görüntüleme ve kaydetme cihazları"
+      },
+      { name: "Uygulamalar", value: "Jet grout, zemin konsolidasyonu ve yüksek basınçlı grout enjeksiyonu" }
+    ]
   },
   {
     name: "Metax MP7 Pompa",
-    category: "Pompa / Enjeksiyon Pompası",
+    category: "Yüksek Basınçlı Triplex Motopompa",
     description:
-      "Metax MP7 Pompa; jet grout, zemin enjeksiyonu, zemin iyileştirme ve yüksek basınçlı saha uygulamalarında kullanılan pompa ekipmanıdır.",
+      "Metax MP7 serisi; konfigürasyona göre 452-708 kW güç, 700-840 bar maksimum basınç ve 780-1.220 l/dk maksimum debi sunan yüksek basınçlı triplex motopompa ailesidir. Jet grout, soil mixing, tünel enjeksiyonu, backfilling ve özel yüksek basınçlı pompalama uygulamalarında kullanılır.",
     brand: "Metax",
-    imageAlt: "Metax MP7 Pompa jet grout ve enjeksiyon pompası"
+    imageAlt: "Metax MP7 yüksek basınçlı triplex jet grout pompası",
+    additionalProperties: [
+      { name: "Güç aralığı", value: "452-708 kW / 615-950 HP (konfigürasyona göre)" },
+      { name: "Power-end seçenekleri", value: "HD veya STD" },
+      { name: "Aktarma seçenekleri", value: "Dişli veya zincir" },
+      { name: "Maksimum basınç aralığı", value: "700-840 bar / 10.150-12.180 psi" },
+      { name: "Maksimum debi aralığı", value: "780-1.220 l/dk / 205-320 gpm" },
+      { name: "Plunger çapı", value: "88,9-140 mm / 3,5-5,51 inç" },
+      { name: "Maksimum strok hızı", value: "116-148 strok/dk" },
+      { name: "Strok", value: "177,8 mm / 7 inç" },
+      { name: "Emiş çapı", value: "101,6-152,4 mm / 4-6 inç" },
+      { name: "Çıkış çapı", value: "50,8 mm / 2 inç" },
+      {
+        name: "Yaklaşık ölçüler",
+        value: "Standart konfigürasyonlarda 2,45 × 6,06 × 2,59 m; 950 HP konfigürasyonunda 2,54 × 8,03 × 2,90 m"
+      },
+      { name: "Yaklaşık ağırlık", value: "14.000-16.000 kg; 950 HP konfigürasyonunda 26.000 kg" },
+      { name: "Kurulum seçenekleri", value: "Konteyner veya skid üzerine montaj; isteğe göre farklı dizel motor" },
+      {
+        name: "Uygulamalar",
+        value: "Jet grout, soil mixing, zemin konsolidasyonu, tünel ve backfilling, derin delgi ve yüksek basınçlı enjeksiyon"
+      }
+    ]
   },
   {
-    name: "Soilmec Santral",
-    category: "Jet Grout Santrali",
+    name: "Soilmec GM-25 Jet Grout Karıştırma Santrali",
+    category: "Konteyner Tipi Grout Mixing Unit",
     description:
-      "Soilmec Santral; jet grout uygulamalarında çimento şerbeti hazırlama, karıştırma ve enjeksiyon sistemini besleme amacıyla kullanılan santral ekipmanıdır.",
+      "Soilmec GM-25; jet grout ve enjeksiyon uygulamalarında su/çimento şerbetini hazırlayan, homojenleştiren ve yüksek basınç pompa hattını besleyen konteyner tipi grout karıştırma santralidir.",
     brand: "Soilmec",
-    imageAlt: "Soilmec Santral jet grout santrali"
+    imageAlt: "Soilmec GM-25 jet grout çimento şerbeti karıştırma santrali",
+    additionalProperties: [
+      { name: "Sistem tipi", value: "Konteyner tipi grout mixing unit" },
+      { name: "Hazırlanan karışım", value: "Su/çimento şerbeti" },
+      { name: "Malzeme besleme", value: "Silo helezon besleme sistemi" },
+      { name: "Hat görevi", value: "Yüksek basınç jet grout pompasını besleme" },
+      { name: "Uygulamalar", value: "Jet grout ve enjeksiyon işleri" }
+    ]
   },
   {
     name: "60 Tonluk Silo",

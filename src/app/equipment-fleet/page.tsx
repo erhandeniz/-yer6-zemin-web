@@ -33,8 +33,29 @@ export default function EquipmentFleetPage() {
     itemListElement: equipmentSeoItems.map((item, index) => ({
       "@type": "ListItem",
       position: index + 1,
-      name: item.name,
-      description: item.description
+      item: {
+        "@type": "Product",
+        name: item.name,
+        description: item.description,
+        category: item.category,
+        ...("brand" in item
+          ? {
+              brand: {
+                "@type": "Brand",
+                name: item.brand
+              }
+            }
+          : {}),
+        ...("additionalProperties" in item
+          ? {
+              additionalProperty: item.additionalProperties.map((property) => ({
+                "@type": "PropertyValue",
+                name: property.name,
+                value: property.value
+              }))
+            }
+          : {})
+      }
     }))
   };
 

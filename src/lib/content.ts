@@ -1296,7 +1296,8 @@ export const equipment = [
     key: "eq_soilmec_5t_400j_pump",
     groupKey: "fleetGroupPumpPlant",
     icon: "gauge",
-    imageAlt: "Soilmec 5T 400J jet grout pompası"
+    image: "/images/equipment/soilmec-5t-400j-pump.jpg",
+    imageAlt: "Konteyner içerisinde kurulu Soilmec 5T 400J yüksek basınçlı jet grout pompası"
   },
   {
     key: "eq_metax_mp7_pump",
@@ -1308,7 +1309,8 @@ export const equipment = [
     key: "eq_soilmec_santral",
     groupKey: "fleetGroupPumpPlant",
     icon: "layers",
-    imageAlt: "Soilmec Santral jet grout santrali"
+    image: "/images/equipment/soilmec-gm-25-mixing-plant.jpg",
+    imageAlt: "Konteyner içerisinde kurulu Soilmec GM-25 jet grout çimento şerbeti karıştırma santrali"
   },
   {
     key: "eq_silo_60_ton",
