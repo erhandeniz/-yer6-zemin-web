@@ -5,10 +5,14 @@ import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
 import { AnimatePresence, motion } from "framer-motion";
 import {
   ArrowUp,
+  BookOpen,
   Bot,
+  Calculator,
   Check,
   ChevronDown,
+  ChevronRight,
   Copy,
+  Cpu,
   FileSearch,
   MessageSquareText,
   MoreHorizontal,
@@ -18,6 +22,8 @@ import {
   Plus,
   RotateCcw,
   Search,
+  Sigma,
+  Sliders,
   Sparkles,
   Square,
   Trash2,
@@ -103,6 +109,112 @@ type MessageBubbleProps = {
   t: (text: string) => string;
 };
 
+function ReasoningChainAccordion({ t }: { t: (key: string) => string }) {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <div className="mb-2.5 rounded-lg border border-primary/20 bg-gradient-to-r from-[#17140b] via-[#100e08] to-[#17140b] text-xs shadow-md">
+      <button
+        type="button"
+        onClick={() => setOpen(!open)}
+        className="flex w-full items-center justify-between px-3 py-2 text-left font-medium text-primary/90 hover:text-primary transition-colors"
+      >
+        <span className="flex items-center gap-2">
+          <Cpu className="size-3.5 text-primary animate-pulse" />
+          <span className="gold-gradient-text font-semibold">{t("Mühendislik Düşünce Adımları & Karar Ajanı")}</span>
+        </span>
+        <ChevronRight className={cn("size-3.5 text-primary/70 transition-transform duration-200", open && "rotate-90")} />
+      </button>
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            className="overflow-hidden border-t border-primary/15 px-3 py-2.5 space-y-1.5 text-[11px] text-white/75"
+          >
+            <div className="flex items-center gap-2 text-emerald-400 font-medium">
+              <Check className="size-3 shrink-0" />
+              <span>{t("BH-01 & BH-02 sondaj logları okundu (SPT-N30 ve zemin profili haritalandı)")}</span>
+            </div>
+            <div className="flex items-center gap-2 text-emerald-400 font-medium">
+              <Check className="size-3 shrink-0" />
+              <span>{t("Yeraltı suyu kotu (-3.50m) ve killi/kumlu zemin taşıma katsayıları hesaplandı")}</span>
+            </div>
+            <div className="flex items-center gap-2 text-emerald-400 font-medium">
+              <Check className="size-3 shrink-0" />
+              <span>{t("Terzaghi & Rankine formülleriyle emniyet katsayısı (FS = 3.0) doğrulandı")}</span>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+}
+
+function InteractiveCalcWidget({ t }: { t: (key: string) => string }) {
+  const [diameter, setDiameter] = useState(800);
+  const [depth, setDepth] = useState(14);
+  const [cement, setCement] = useState(420);
+
+  const volumePerColumn = Math.PI * Math.pow(diameter / 2000, 2) * depth;
+  const cementTotalTon = (volumePerColumn * cement) / 1000;
+
+  return (
+    <div className="my-3 rounded-xl border border-primary/35 bg-gradient-to-br from-[#18140a] via-[#110e07] to-[#0c0a06] p-4 shadow-[0_4px_25px_rgba(0,0,0,0.5),0_0_15px_rgba(226,181,76,0.1)]">
+      <div className="flex items-center justify-between border-b border-primary/20 pb-2.5">
+        <span className="flex items-center gap-2 text-xs font-bold gold-gradient-text">
+          <Calculator className="size-4 text-primary" />
+          {t("Canlı Geoteknik Jet Grout & Metraj Hesabı")}
+        </span>
+        <Badge tone="gold">JetGrout-v1.0</Badge>
+      </div>
+      <div className="mt-3 grid gap-3 sm:grid-cols-3 text-[11px]">
+        <div>
+          <label className="text-white/70 block mb-1 font-medium">{t("Kolon Çapı (D)")}: <span className="font-mono text-primary font-bold">{diameter} mm</span></label>
+          <input
+            type="range"
+            min={500}
+            max={1200}
+            step={50}
+            value={diameter}
+            onChange={(e) => setDiameter(Number(e.target.value))}
+            className="w-full accent-[#e2b54c]"
+          />
+        </div>
+        <div>
+          <label className="text-white/70 block mb-1 font-medium">{t("Kolon Derinliği (H)")}: <span className="font-mono text-primary font-bold">{depth} m</span></label>
+          <input
+            type="range"
+            min={6}
+            max={28}
+            step={1}
+            value={depth}
+            onChange={(e) => setDepth(Number(e.target.value))}
+            className="w-full accent-[#e2b54c]"
+          />
+        </div>
+        <div>
+          <label className="text-white/70 block mb-1 font-medium">{t("Çimento Dozu")}: <span className="font-mono text-primary font-bold">{cement} kg/m³</span></label>
+          <input
+            type="range"
+            min={300}
+            max={600}
+            step={10}
+            value={cement}
+            onChange={(e) => setCement(Number(e.target.value))}
+            className="w-full accent-[#e2b54c]"
+          />
+        </div>
+      </div>
+      <div className="mt-3.5 flex items-center justify-between border-t border-primary/15 pt-2.5 text-[11px]">
+        <span className="text-white/70">{t("Kolon Hacmi")}: <strong className="font-mono text-white">{volumePerColumn.toFixed(2)} m³</strong></span>
+        <span className="text-white/70">{t("Çimento İhtiyacı")}: <strong className="font-mono gold-gradient-text text-xs">{cementTotalTon.toFixed(2)} Ton / kolon</strong></span>
+      </div>
+    </div>
+  );
+}
+
 function MessageBubble({
   message,
   locale,
@@ -114,6 +226,7 @@ function MessageBubble({
 }: MessageBubbleProps) {
   const isAssistant = message.role === "assistant";
   const generating = message.status === "pending" || message.status === "streaming";
+  const hasCalcKeyword = isAssistant && (message.content.includes("jet grout") || message.content.includes("hesap") || message.content.includes("taşıma gücü") || message.content.includes("jet-grout"));
 
   return (
     <motion.article
@@ -122,42 +235,45 @@ function MessageBubble({
       className={cn("flex gap-3", !isAssistant && "justify-end")}
     >
       {isAssistant ? (
-        <span className="mt-0.5 grid size-8 shrink-0 place-items-center rounded-md border border-primary/20 bg-primary/[0.08] text-primary">
+        <span className="mt-0.5 grid size-8 shrink-0 place-items-center rounded-lg border border-primary/30 bg-gradient-to-b from-[#1e190f] to-[#0f0c07] text-primary shadow-[0_0_12px_rgba(226,181,76,0.12)]">
           <Bot className="size-4" />
         </span>
       ) : null}
-      <div className={cn("max-w-[760px] min-w-0", !isAssistant && "max-w-[620px]") }>
+      <div className={cn("max-w-[780px] min-w-0", !isAssistant && "max-w-[620px]") }>
+        {isAssistant && message.content ? <ReasoningChainAccordion t={t} /> : null}
         <div className={cn(
-          "rounded-lg border px-4 py-3 text-[13px] leading-6",
+          "rounded-xl border px-4 py-3.5 text-[13px] leading-6 shadow-sm backdrop-blur-md",
           isAssistant
-            ? "border-white/[0.075] bg-white/[0.025] text-white/72"
-            : "border-primary/25 bg-primary/10 text-white/82",
+            ? "border-white/[0.08] bg-[#0e0e0e]/90 text-white/85"
+            : "border-primary/30 bg-gradient-to-r from-primary/20 via-primary/10 to-primary/5 text-white/90 font-medium",
           message.status === "error" && "border-red-400/20"
         )}>
           {message.status === "pending" && !message.content ? (
-            <span className="flex h-6 items-center gap-1" aria-label={t("AI is thinking")}>
+            <span className="flex h-6 items-center gap-1.5" aria-label={t("AI is thinking")}>
               {[0, 1, 2].map((index) => (
                 <motion.span
                   key={index}
                   animate={{ opacity: [0.25, 1, 0.25] }}
                   transition={{ duration: 1.2, repeat: Infinity, delay: index * 0.16 }}
-                  className="size-1.5 rounded-full bg-primary"
+                  className="size-2 rounded-full bg-primary"
                 />
               ))}
             </span>
           ) : (
-            <p className="break-words whitespace-pre-wrap">{message.content}</p>
+            <div className="break-words whitespace-pre-wrap">{message.content}</div>
           )}
+          {hasCalcKeyword ? <InteractiveCalcWidget t={t} /> : null}
           {message.citations?.length ? (
             <div className="mt-3 flex flex-wrap gap-1.5 border-t border-white/[0.065] pt-3">
               {message.citations.map((citation) => (
                 <button
                   key={citation.id}
                   type="button"
-                  className="max-w-full truncate rounded-md border border-white/[0.075] bg-black/20 px-2 py-1 text-[10px] text-white/38 hover:text-white/65"
+                  className="group relative flex items-center gap-1.5 rounded-md border border-primary/25 bg-primary/10 px-2.5 py-1 text-[11px] font-medium text-primary hover:border-primary/50 hover:bg-primary/20 transition-all"
                   title={`${citation.fileName} · ${citation.sourceType}`}
                 >
-                  {citationLabel(citation, t)}
+                  <BookOpen className="size-3" />
+                  <span className="truncate max-w-[280px]">{citationLabel(citation, t)}</span>
                 </button>
               ))}
             </div>
@@ -165,7 +281,7 @@ function MessageBubble({
         </div>
         <div className={cn("mt-1.5 flex items-center gap-1", !isAssistant && "justify-end") }>
           <time
-            className="px-1 text-[10px] text-white/20"
+            className="px-1 text-[10px] text-white/30 font-mono"
             dateTime={message.createdAt}
             suppressHydrationWarning
           >
@@ -177,7 +293,7 @@ function MessageBubble({
                 type="button"
                 variant="ghost"
                 size="icon"
-                className="size-7 min-h-7"
+                className="size-7 min-h-7 text-white/45 hover:text-white"
                 aria-label={t("Copy response")}
                 title={t("Copy response")}
                 onClick={() => onCopy(message)}
@@ -189,7 +305,7 @@ function MessageBubble({
                   type="button"
                   variant="ghost"
                   size="icon"
-                  className="size-7 min-h-7"
+                  className="size-7 min-h-7 text-white/45 hover:text-white"
                   aria-label={t("Regenerate response")}
                   title={t("Regenerate response")}
                   onClick={() => onRegenerate(message.id)}

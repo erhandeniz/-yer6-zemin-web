@@ -63,14 +63,14 @@ function SidebarContent({ onNavigate }: { onNavigate?: () => void }) {
         href={targetHref}
         onClick={onNavigate}
         className={cn(
-          "group flex h-9 items-center gap-3 rounded-md px-3 text-[13px] font-medium transition-colors",
+          "group relative flex h-9.5 items-center gap-3 rounded-lg px-3 text-[13px] font-medium transition-all duration-200",
           active
-            ? "bg-primary/10 text-primary shadow-[inset_2px_0_0_#e2b54c]"
-            : "text-white/48 hover:bg-white/[0.045] hover:text-white/85"
+            ? "bg-gradient-to-r from-primary/15 via-primary/8 to-transparent text-white shadow-[inset_2px_0_0_0_#e2b54c]"
+            : "text-white/60 hover:bg-white/[0.04] hover:text-white"
         )}
       >
-        <Icon className="size-4 shrink-0" strokeWidth={1.8} />
-        {t(item.label)}
+        <Icon className={cn("size-4 shrink-0 transition-colors", active ? "text-primary" : "text-white/45 group-hover:text-white/80")} strokeWidth={1.8} />
+        <span className={active ? "font-semibold gold-gradient-text" : ""}>{t(item.label)}</span>
       </Link>
     );
   };

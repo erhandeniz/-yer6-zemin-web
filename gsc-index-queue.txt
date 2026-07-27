@@ -108,15 +108,15 @@ DONE https://www.yer6zemin.com.tr/services/tas-kolon/
 DONE https://www.yer6zemin.com.tr/services/diafram-duvar/
 DONE https://www.yer6zemin.com.tr/services/zemin-civisi/
 DONE https://www.yer6zemin.com.tr/services/puskurtme-beton/
-https://www.yer6zemin.com.tr/services/zemin-etudu/
-https://www.yer6zemin.com.tr/services/kazik-yukleme-testleri/
-https://www.yer6zemin.com.tr/services/geoteknik-danismanlik/
+DONE https://www.yer6zemin.com.tr/services/zemin-etudu/
+DONE https://www.yer6zemin.com.tr/services/kazik-yukleme-testleri/
+DONE https://www.yer6zemin.com.tr/services/geoteknik-danismanlik/
 # --- Oncelik 2: Ust seviye / indeks sayfalari ---
-https://www.yer6zemin.com.tr/services/
-https://www.yer6zemin.com.tr/sehirler/
-https://www.yer6zemin.com.tr/knowledge/
-https://www.yer6zemin.com.tr/projects/
-https://www.yer6zemin.com.tr/about/
+DONE https://www.yer6zemin.com.tr/services/
+DONE https://www.yer6zemin.com.tr/sehirler/
+DONE https://www.yer6zemin.com.tr/knowledge/
+DONE https://www.yer6zemin.com.tr/projects/
+DONE https://www.yer6zemin.com.tr/about/
 https://www.yer6zemin.com.tr/technology/
 https://www.yer6zemin.com.tr/equipment-fleet/
 https://www.yer6zemin.com.tr/contact/

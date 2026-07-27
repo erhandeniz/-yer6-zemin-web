@@ -24,6 +24,7 @@ import { engineeringCategories, projects } from "@/lib/data";
 import { cn } from "@/lib/utils";
 import { useAppStore } from "@/store/app-store";
 import { useAITranslation } from "@/components/i18n-provider";
+import { SoilStratigraphyCanvas } from "@/components/soil-canvas";
 
 export function ProjectsView() {
   const [query, setQuery] = useState("");
@@ -53,6 +54,10 @@ export function ProjectsView() {
         <Button onClick={() => setUploadOpen(true)}><Plus className="size-4" />{t("New project")}</Button>
       </div>
 
+      <div className="mt-6">
+        <SoilStratigraphyCanvas />
+      </div>
+
       <div className="mt-6 flex flex-col gap-2 rounded-lg border border-white/[0.07] bg-[#0f0f0f] p-2.5 md:flex-row md:items-center">
         <label className="relative min-w-0 flex-1">
           <Search className="absolute left-3 top-1/2 size-4 -translate-y-1/2 text-white/25" />
@@ -78,16 +83,16 @@ export function ProjectsView() {
           {filtered.map((project, index) => (
             <motion.article key={project.id} initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: index * .04 }} className="panel group overflow-hidden">
               <div className="relative aspect-[16/7] overflow-hidden bg-white/[0.025]">
-                {project.image ? <Image src={project.image} alt={`${project.name} project site`} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover grayscale-[25%] transition-transform duration-500 group-hover:scale-[1.025]" /> : null}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#101010] via-transparent to-transparent" />
+                {project.image ? <Image src={project.image} alt={`${project.name} project site`} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover grayscale-[20%] transition-transform duration-500 group-hover:scale-105 group-hover:grayscale-0" /> : null}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0e0e0e] via-transparent to-transparent" />
                 <span className="absolute left-3 top-3"><Badge tone={project.status === "Complete" ? "green" : project.status === "Review" ? "blue" : "gold"}>{t(project.status)}</Badge></span>
-                <Button variant="secondary" size="icon" className="absolute right-3 top-3 bg-black/55" aria-label={t("Project options")}><MoreHorizontal className="size-4" /></Button>
+                <Button variant="secondary" size="icon" className="absolute right-3 top-3 bg-black/60 backdrop-blur-md" aria-label={t("Project options")}><MoreHorizontal className="size-4" /></Button>
               </div>
               <div className="p-4">
-                <div className="flex items-start justify-between gap-3"><div className="min-w-0"><p className="technical-label text-white/24">{project.id}</p><h2 className="mt-1.5 truncate text-sm font-semibold text-white/82">{project.name}</h2></div><Button variant="ghost" size="icon" asChild><Link href={chatHref} onClick={() => setSelectedProjectId(project.id)} aria-label={`Open ${project.name}`}><ArrowUpRight className="size-4" /></Link></Button></div>
-                <div className="mt-3 flex items-center gap-4 text-[11px] text-white/32"><span className="flex items-center gap-1.5"><MapPin className="size-3" />{project.location}</span><span className="flex items-center gap-1.5"><FileText className="size-3" />{project.files} files</span></div>
-                <div className="mt-4"><div className="mb-2 flex items-center justify-between text-[10px]"><span className="text-white/28">{t("Analysis progress")}</span><span className="font-mono text-white/46">{project.progress}%</span></div><Progress value={project.progress} /></div>
-                <div className="mt-4 flex items-center justify-between border-t border-white/[0.055] pt-3"><span className="text-[10px] text-white/22">{t("Updated")} {project.updated}</span><span className="text-[10px] text-primary/60">{t(project.category)}</span></div>
+                <div className="flex items-start justify-between gap-3"><div className="min-w-0"><p className="technical-label text-primary/70">{project.id}</p><h2 className="mt-1.5 truncate text-sm font-bold text-white transition-colors group-hover:gold-gradient-text">{project.name}</h2></div><Button variant="ghost" size="icon" asChild><Link href={chatHref} onClick={() => setSelectedProjectId(project.id)} aria-label={`Open ${project.name}`}><ArrowUpRight className="size-4 text-white/50 group-hover:text-primary" /></Link></Button></div>
+                <div className="mt-3 flex items-center gap-4 text-[11px] font-medium text-white/70"><span className="flex items-center gap-1.5"><MapPin className="size-3 text-primary/70" />{project.location}</span><span className="flex items-center gap-1.5"><FileText className="size-3 text-primary/70" />{project.files} files</span></div>
+                <div className="mt-4"><div className="mb-2 flex items-center justify-between text-[10px]"><span className="text-white/40">{t("Analysis progress")}</span><span className="font-mono text-white/70">{project.progress}%</span></div><Progress value={project.progress} /></div>
+                <div className="mt-4 flex items-center justify-between border-t border-white/[0.055] pt-3"><span className="text-[10px] text-white/40">{t("Updated")} {project.updated}</span><span className="text-[10px] font-medium text-primary/90">{t(project.category)}</span></div>
               </div>
             </motion.article>
           ))}

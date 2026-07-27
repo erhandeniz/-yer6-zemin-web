@@ -54,4 +54,22 @@ describe("UploadThing route principal binding", () => {
     await POST(request);
     expect(mocks.post).toHaveBeenCalledWith(request);
   });
+
+  it("binds a demo request to a mock admin principal when not authenticated", async () => {
+    const request = new NextRequest("https://yer6.example/api/uploadthing", {
+      method: "POST",
+      headers: { referer: "https://yer6.example/demo" }
+    });
+    mocks.getServerSession.mockResolvedValue(null);
+
+    let observed: ReturnType<typeof getUploadPrincipal>;
+    mocks.post.mockImplementationOnce(async (received) => {
+      observed = getUploadPrincipal(received);
+      return new Response(null, { status: 200 });
+    });
+
+    await POST(request);
+
+    expect(observed!).toEqual({ id: "demo-user", role: "ADMIN" });
+  });
 });

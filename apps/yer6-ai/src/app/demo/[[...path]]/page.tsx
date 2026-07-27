@@ -2,6 +2,7 @@ import { Dashboard } from "@/components/dashboard/dashboard";
 import { AIWorkspace } from "@/components/chat/ai-workspace";
 import { ProjectsView } from "@/components/projects/projects-view";
 import { OperationalPage } from "@/components/operational-page";
+import { AdminView } from "@/components/admin/admin-view";
 import { notFound } from "next/navigation";
 
 export const runtime = "nodejs";
@@ -22,6 +23,9 @@ export default async function DemoCatchAllPage(props: { params: Promise<{ path?:
   }
   if (sub === "projects") {
     return <ProjectsView />;
+  }
+  if (sub === "admin") {
+    return <AdminView />;
   }
   if (sub === "documents") {
     return <OperationalPage section="documents" />;

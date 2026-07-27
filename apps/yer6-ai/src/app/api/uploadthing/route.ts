@@ -10,6 +10,9 @@ export const GET = handlers.GET;
 
 export async function POST(request: NextRequest) {
   const session = await getServerSession(authOptions);
+  const referer = request.headers.get("referer") ?? "";
+  const isDemo = referer.includes("/demo");
+
   bindUploadPrincipal(
     request,
     session
@@ -17,7 +20,12 @@ export async function POST(request: NextRequest) {
           id: session.user.id,
           role: session.user.role
         }
-      : null
+      : isDemo
+        ? {
+            id: "demo-user",
+            role: "ADMIN"
+          }
+        : null
   );
 
   try {

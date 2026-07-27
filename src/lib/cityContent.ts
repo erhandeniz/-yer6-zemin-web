@@ -66,35 +66,35 @@ export const cityPages: CityPage[] = [
   {
     slug: "istanbul-zemin-guclendirme",
     city: "İstanbul",
-    title: "İstanbul Zemin Güçlendirme ve Temel Güçlendirme",
+    title: "İstanbul Fore Kazık, Jet Grout ve Zemin Güçlendirme Firmaları",
     description:
-      "İstanbul'da derin kazı, temel güçlendirme, fore kazık, mini kazık, ankraj ve zemin iyileştirme projeleri için teknik çözümler.",
+      "İstanbul'da fore kazık, jet grout, bina altı jet grout, DSM, CFA kazık, mini kazık, ankraj ve iksa sistemleri projeleri için YER6 geoteknik mühendislik çözümleri.",
     heroLead:
-      "İstanbul'da zemin güçlendirme; komşu yapı etkisi, yoğun altyapı hatları ve sınırlı şantiye lojistiği nedeniyle yalnızca yöntem seçimi değil risk yönetimi konusudur.",
+      "İstanbul'da zemin güçlendirme; komşu yapı etkisi, yoğun kentsel dönüşüm, deprem riski ve altyapı hatları nedeniyle yüksek disiplin gerektirir.",
     soilContext:
-      "Kıyı dolguları, ayrışmış kaya geçişleri ve değişken yerleşim dokusu temel güçlendirme ve iksa sistemlerinde hassas deplasman kontrolü gerektirir.",
+      "Avrupa ve Anadolu yakalarında kıyı dolguları, kil, alüvyon ve ayrışmış kaya geçişlerinde hassas kazık delgisi ve jet grout kolonları uygulanır.",
     recommendedApproach:
-      "Fore kazık, mini kazık, ankraj ve jet grout kombinasyonları; mevcut yapı, derin kazı ve kentsel dönüşüm senaryolarına göre projelendirilir.",
+      "Fore kazık, mini kazık, bina altı elektrikli jet grout ve ankraj kombinasyonları kentsel dönüşüm ve temel güçlendirme projelerinde projelendirilir.",
     qualityFocus:
-      "İstanbul uygulamalarında düşeylik, beton sürekliliği, ankraj testleri ve çevre yapı izleme kayıtları birlikte takip edilmelidir.",
-    serviceSlugs: ["fore-kazik", "mini-kazik", "ankraj", "jet-grout"],
+      "İstanbul uygulamalarında kazık düşeyliği, beton sürekliliği, karot UCS testleri ve çevre yapı izleme kayıtları anlık takip edilir.",
+    serviceSlugs: ["fore-kazik", "jet-grout", "bina-alti-jet-grout", "dsm", "cfa-kazik", "mini-kazik", "ankraj", "iksa-sistemleri"],
     articleSlugs: ["fore-kazik-nedir", "fore-kazik-uygulama-asamalari", "jet-grout-ve-fore-kazik-farki"]
   },
   {
     slug: "ankara-zemin-guclendirme",
     city: "Ankara",
-    title: "Ankara Zemin Güçlendirme ve Fore Kazık Uygulamaları",
+    title: "Ankara Fore Kazık, Jet Grout ve Zemin Güçlendirme Firmaları",
     description:
-      "Ankara'da temel güçlendirme, fore kazık, ankraj, iksa sistemleri ve zemin iyileştirme uygulamaları için saha odaklı mühendislik.",
+      "Ankara'da fore kazık, jet grout, DSM zemin iyileştirme, CFA kazık, ankraj ve iksa sistemleri için YER6 Gölbaşı merkezli geoteknik mühendislik çözümleri.",
     heroLead:
-      "Ankara'da zemin güçlendirme çalışmaları; derin kazı, ulaşım yapıları, kamu projeleri ve kot farkı yüksek parsellerde güvenli imalat disiplinine dayanır.",
+      "Ankara'da zemin güçlendirme; killi zemin yapısı, derin kazı iksa sistemleri, kamu projeleri ve kot farkı yüksek parsellerde garantili imalat disiplinine dayanır.",
     soilContext:
-      "Kil, marn, ayrışmış kaya ve dolgu geçişleri kısa mesafede değişebildiği için sondaj verisi ile imalat yöntemi birlikte yorumlanmalıdır.",
+      "Ankara kili, marn ve alüvyal geçişlerde taşıma kapasitesi ve sıvılaşma riskine karşı fore kazık, jet grout ve DSM zemin iyileştirme yöntemleri uygulanır.",
     recommendedApproach:
-      "Fore kazık, ankraj ve iksa sistemleri derin kazılarda; [derin zemin iyileştirme yöntemleri](/knowledge/yer-alti-zemin-iyilestirme/) ise taşıma ve oturma kontrolü gereken alanlarda devreye alınır.",
+      "Fore kazık ve ankrajlı iksa sistemleri derin kazılarda; jet grout, DSM ve CFA kazık uygulamaları ise bina temelleri ve zemin iyileştirmede devreye alınır.",
     qualityFocus:
-      "Ankara sahalarında kazı kademeleri, ankraj kabul testleri, beton kayıtları ve deformasyon izleme planı kritik kalite verileridir.",
-    serviceSlugs: ["fore-kazik", "ankraj", "iksa-sistemleri", "zemin-iyilestirme"],
+      "Ankara sahalarında kazı kademeleri, ankraj kabul testleri, karot UCS testleri ve dijital data logger takibi kesintisiz yapılır.",
+    serviceSlugs: ["fore-kazik", "jet-grout", "dsm", "cfa-kazik", "ankraj", "iksa-sistemleri", "mini-kazik", "zemin-iyilestirme"],
     articleSlugs: ["fore-kazik-avantajlari", "zemin-iyilestirme-planlama", "saha-denetimi-numune-testleri", "yer-alti-zemin-iyilestirme"]
   },
   {

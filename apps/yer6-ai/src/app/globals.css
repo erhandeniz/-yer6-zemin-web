@@ -92,7 +92,7 @@ a {
 .text-white\/38,
 .text-white\/40,
 .text-white\/42 {
-  color: rgba(255, 255, 255, 0.48) !important;
+  color: rgba(255, 255, 255, 0.65) !important;
 }
 
 .text-primary\/55,
@@ -100,27 +100,45 @@ a {
 .text-primary\/65,
 .text-primary\/70,
 .text-primary\/75 {
-  color: rgba(226, 181, 76, 0.9) !important;
+  color: rgba(226, 181, 76, 0.95) !important;
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #f7d683 0%, #e2b54c 50%, #b88a28 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #e2b54c 0%, #c49935 100%);
 }
 
 .app-grid {
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.018) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.018) 1px, transparent 1px);
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
   background-size: 32px 32px;
 }
 
 .panel {
-  border: 1px solid rgba(255, 255, 255, 0.075);
-  border-radius: 8px;
-  background: rgba(16, 16, 16, 0.9);
-  box-shadow: 0 18px 55px rgba(0, 0, 0, 0.23);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  background: rgba(14, 14, 14, 0.85);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 18px 55px rgba(0, 0, 0, 0.35);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.panel:hover {
+  border-color: rgba(226, 181, 76, 0.22);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45), 0 0 25px rgba(226, 181, 76, 0.05);
 }
 
 .panel-subtle {
-  border: 1px solid rgba(255, 255, 255, 0.065);
-  border-radius: 7px;
-  background: rgba(255, 255, 255, 0.024);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.025);
+  backdrop-filter: blur(8px);
 }
 
 .top-rule {
@@ -132,14 +150,14 @@ a {
   position: absolute;
   inset: -1px 18px auto;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(226, 181, 76, 0.7), transparent);
+  background: linear-gradient(90deg, transparent, rgba(226, 181, 76, 0.8), transparent);
 }
 
 .technical-label {
   font-family: var(--font-geist-mono), ui-monospace, monospace;
   font-size: 10px;
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
 }
 

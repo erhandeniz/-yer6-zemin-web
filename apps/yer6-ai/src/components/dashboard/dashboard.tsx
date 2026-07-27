@@ -22,6 +22,7 @@ import { Button } from "@/components/ui/button";
 import { engineeringCategories, metrics, projects } from "@/lib/data";
 import { useAppStore } from "@/store/app-store";
 import { useAITranslation } from "@/components/i18n-provider";
+import { SoilStratigraphyCanvas } from "@/components/soil-canvas";
 
 const riskItems = [
   { name: "Liquefaction potential", score: 78, tone: "bg-amber-400" },
@@ -68,6 +69,10 @@ export function Dashboard() {
         </div>
       </motion.div>
 
+      <div className="mt-6">
+        <SoilStratigraphyCanvas />
+      </div>
+
       <section className="mt-6 grid grid-cols-2 gap-3 xl:grid-cols-4" aria-label={t("Workspace metrics")}>
         {metrics.map((metric, index) => {
           const Icon = metric.icon;
@@ -77,14 +82,16 @@ export function Dashboard() {
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.04 }}
-              className="panel top-rule min-h-[126px] p-4 sm:p-5"
+              className="panel top-rule group relative min-h-[128px] overflow-hidden p-4 sm:p-5"
             >
               <div className="flex items-start justify-between gap-2">
-                <span className="text-xs text-white/38">{t(metric.label)}</span>
-                <Icon className="size-4 text-primary/65" strokeWidth={1.7} />
+                <span className="text-xs font-medium text-white/70">{t(metric.label)}</span>
+                <span className="grid size-7.5 place-items-center rounded-md border border-primary/20 bg-primary/10 text-primary transition-transform duration-300 group-hover:scale-110 group-hover:border-primary/40">
+                  <Icon className="size-4" strokeWidth={1.8} />
+                </span>
               </div>
-              <p className="mt-3 text-2xl font-semibold tabular-nums text-white">{metric.value}</p>
-              <p className="mt-1 text-[11px] text-white/30">{t(metric.delta)}</p>
+              <p className="mt-3 text-2.5xl font-bold tabular-nums tracking-tight text-white group-hover:gold-gradient-text">{metric.value}</p>
+              <p className="mt-1 text-[11px] font-medium text-emerald-400/90">{t(metric.delta)}</p>
             </motion.div>
           );
         })}
