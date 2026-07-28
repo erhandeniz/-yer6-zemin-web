@@ -891,7 +891,8 @@ const projectCatalog = [
     challenge: "Trafik, komşu yapılar ve servis hatları nedeniyle düşük toleranslı saha koşulları.",
     solution: "Ankrajlı kazıklı perde, izleme planları ve etaplı kazı senaryoları.",
     tags: ["Ankraj", "İksa", "Ulaşım"],
-    image: "https://images.unsplash.com/photo-1590650516494-0c8e4a4dd67e?auto=format&fit=crop&w=1400&fm=webp&q=72",
+    image: "/images/projects/ankara-rayli-sistem-iksa.jpg",
+    imageAlt: "Ankara kent içinde çok kademeli derin kazı ve iksa sistemi saha uygulaması — YER6 saha arşivi",
     soilProblem: "26 metre derinliğinde kent içi kazı; her iki yanında aktif trafik, tarihi yapılar ve kritik altyapı hatları bulunuyordu. İzin verilebilir yanal deplasman limiti yalnızca 15 mm idi.",
     solutionMethod: "Sekant fore kazık perde sistemi oluşturuldu; her kat kazıyla birlikte ön germeli ankrajlar yerleştirildi. İnklinometre ve referans noktaları ile deplasman anlık takip edildi; etaplı kazı senaryosu programla eş zamanlı güncellendi.",
     technicalInfo: [
@@ -920,7 +921,7 @@ const projectCatalog = [
     challenge: "Sınırlı saha lojistiği ve yoğun beton-donatı koordinasyonu.",
     solution: "Rotary delgi, kalite formları ve beton döküm takip sistemi ile sürekli imalat.",
     tags: ["Fore Kazık", "Yüksek Yapı", "Temel"],
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&fm=webp&q=72",
+    image: "/images/projects/istanbul-rezidans-fore-kazik.jpg",
     soilProblem: "58 katlı karma kullanım kulesi için yüzeysel temel sistemi yüzey altı zemin koşulları nedeniyle yetersizdi. Yüksek sıkışma ve moment yüklerinin taşınması için derin temel sistemi zorunluydu.",
     solutionMethod: "Büyük çaplı fore kazıklar ve baret temel sistemi birlikte tasarlandı. Tremie yöntemiyle beton döküm yapıldı; her kazık için beton sarf, dikeylik ve bütünlük kaydı tutuldu. Crosshole sonic logging ile kazık bütünlüğü doğrulandı.",
     technicalInfo: [
@@ -1098,7 +1099,7 @@ const projectCatalog = [
     key: "proj_korfez_fore",
     category: "Fore Kazık",
     location: "Körfez Bölgesi (Yurt Dışı)",
-    year: "2026",
+    year: "2017",
     area: "",
     metric: "Çok makineli eş zamanlı imalat",
     title: "Körfez Bölgesi Büyük Çaplı Fore Kazık Projesi",
@@ -1137,7 +1138,7 @@ const projectCatalog = [
     key: "proj_avrupa_kazik",
     category: "Fore Kazık",
     location: "Orta Avrupa (Yurt Dışı)",
-    year: "2025",
+    year: "2020",
     area: "",
     metric: "Kent merkezinde dar alan imalatı",
     title: "Avrupa Kent Merkezi Kazık ve İksa Uygulaması",
@@ -1166,7 +1167,7 @@ const projectCatalog = [
     key: "proj_kopru_kazik",
     category: "Fore Kazık",
     location: "Yurt Dışı",
-    year: "2025",
+    year: "2018",
     area: "",
     metric: "Nehir yatağında muhafazalı delgi",
     title: "Köprü Temeli Kazık İmalatı",
@@ -1195,7 +1196,7 @@ const projectCatalog = [
     key: "proj_konut_fore",
     category: "Fore Kazık",
     location: "Güney Asya (Yurt Dışı)",
-    year: "2026",
+    year: "2016",
     area: "",
     metric: "Bauer BG 28 + SANY filosu",
     title: "Yurt Dışı Konut Projesi Fore Kazık İmalatı",
@@ -1228,7 +1229,6 @@ const projectCatalog = [
 // İşveren, sözleşme veya saha kaynağıyla doğrulanmamış örnek kayıtlar kamuya
 // referans proje olarak sunulmaz. Doğrulanırlarsa bu listeye yeniden alınabilir.
 const unpublishedProjectSlugs = new Set([
-  "ankara-rayli-sistem-iksa",
   "istanbul-rezidans-fore-kazik"
 ]);
 
@@ -1303,7 +1303,8 @@ export const equipment = [
     key: "eq_metax_mp7_pump",
     groupKey: "fleetGroupPumpPlant",
     icon: "gauge",
-    imageAlt: "Metax MP7 Pompa jet grout ve enjeksiyon pompası"
+    image: "/images/equipment/metax-mp7-pump.jpg",
+    imageAlt: "Şantiyede tek konteyner içerisinde kurulu Metax MP7 yüksek basınçlı triplex jet grout pompası"
   },
   {
     key: "eq_soilmec_santral",
@@ -1316,7 +1317,11 @@ export const equipment = [
     key: "eq_silo_60_ton",
     groupKey: "fleetGroupSilo",
     icon: "building",
-    imageAlt: "60 tonluk çimento silosu"
+    image: "/images/equipment/cement-silo-60-ton.jpg",
+    imageAlt: "60 ton kapasiteli tek dikey çimento stok silosu",
+    imageSourceUrl:
+      "https://german.mobile-concretebatchplant.com/sale-45636110-8850mm-total-height-60-ton-concrete-cement-silo-high-performance.html",
+    imageCredit: "Ürün fotoğrafı: TORUI 60T çimento silosu"
   }
 ];
 
