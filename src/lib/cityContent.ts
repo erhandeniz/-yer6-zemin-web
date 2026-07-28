@@ -1439,6 +1439,13 @@ const cityEnrichmentList: CityEnrichment[] = [
           "Yüksek plastisiteli killerde nem yönetimi ve numune koruması kritik olduğundan, saha kalite planı mevsim koşullarına göre uyarlanır."
         ]
       }
+      ,{
+        heading: "Ankara jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Ankara genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Ankara ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       {
@@ -1482,6 +1489,13 @@ const cityEnrichmentList: CityEnrichment[] = [
           "Su geçirimsizliği ve kazı tabanı güvenliği gereken alanlarda jet grout perdeleri değerlendirilebilir. Düşeylik, beton sürekliliği, ankraj test yükleri ve çevre yapı izleme verileri proje kalite planında tanımlanan kapsamda kayıt altına alınır."
         ]
       }
+      ,{
+        heading: "İstanbul jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "İstanbul genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için İstanbul ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       {
@@ -1518,6 +1532,13 @@ const cityEnrichmentList: CityEnrichment[] = [
         body: [
           "Su kontrolü ve sıvılaşma azaltımı gereken sahalarda jet grout ve enjeksiyon; oturma kontrolü gereken geniş parsellerde DSM zemin iyileştirme öne çıkar. Derin ve yüksek yükleri kaya/sağlam tabakaya aktarmak için fore kazıklı temeller tercih edilir.",
           "YER6, İzmir sahalarında basınç kayıtları, kolon çapı doğrulaması ve yeraltı suyu davranışını kalite kabul sürecinin merkezine alır."
+        ]
+      }
+      ,{
+        heading: "İzmir jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "İzmir genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için İzmir ve çevresinden teklif alabilirsiniz."
         ]
       }
     ],
@@ -1558,6 +1579,13 @@ const cityEnrichmentList: CityEnrichment[] = [
           "YER6, Bursa sahalarında karot, kolon sürekliliği, bağlayıcı dozajı ve üretim kayıtlarını izleyerek yatırımın işletme yüklerine uygun performans vermesini güvence altına alır."
         ]
       }
+      ,{
+        heading: "Bursa jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Bursa genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Bursa ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       {
@@ -1594,6 +1622,13 @@ const cityEnrichmentList: CityEnrichment[] = [
         body: [
           "Büyük çaplı depolama tankları ve makine temellerinde oturma ve sıvılaşma kontrolü için DSM ve jet grout kolonları; yüksek nokta yüklerinde ise fore kazıklı derin temeller uygulanır.",
           "YER6, Kocaeli sahalarında kolon sürekliliği, bağlayıcı dozajı ve yükleme performansını kayıt altına alarak endüstriyel işletme yüklerine uygun teslim güvencesi verir."
+        ]
+      }
+      ,{
+        heading: "Kocaeli jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Kocaeli genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Kocaeli ve çevresinden teklif alabilirsiniz."
         ]
       }
     ],
@@ -1634,6 +1669,13 @@ const cityEnrichmentList: CityEnrichment[] = [
           "YER6, Eskişehir sahalarında kolon çapı doğrulaması, bağlayıcı dozajı ve üretim kayıtlarını izleyerek kalite kabul sürecini belgelendirir."
         ]
       }
+      ,{
+        heading: "Eskişehir jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Eskişehir genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Eskişehir ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       {
@@ -1670,6 +1712,13 @@ const cityEnrichmentList: CityEnrichment[] = [
         body: [
           "Silo, depo ve üretim tesisleri gibi yüksek ve sürekli yük taşıyan yapılarda oturmayı sınırlamak için DSM zemin iyileştirme ve fore kazıklı temeller öne çıkar. Yerel güçlendirme ve su yalıtımı gereken noktalarda jet grout uygulanır.",
           "YER6, Konya sahalarında kolon sürekliliği, mukavemet testleri ve üretim kayıtlarını izleyerek yatırımın uzun vadeli performansını güvence altına alır."
+        ]
+      }
+      ,{
+        heading: "Konya jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Konya genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Konya ve çevresinden teklif alabilirsiniz."
         ]
       }
     ],
@@ -1710,6 +1759,13 @@ const cityEnrichmentList: CityEnrichment[] = [
           "YER6, Hatay sahalarında sondaj verisiyle kurulan zemin modeli üzerinden kolon parametrelerini belirler; deneme kolonları, karot ve süreklilik kontrolleriyle üretim kalitesini belgeler."
         ]
       }
+      ,{
+        heading: "Hatay jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Hatay genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Hatay ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       {
@@ -1746,6 +1802,13 @@ const cityEnrichmentList: CityEnrichment[] = [
         body: [
           "Oturma ve taşıma gücü sorunlu alüvyon sahalarda DSM ve jet grout ile zemin rijitliği artırılır; yüksek yükler ve derin temeller için fore kazık uygulanır.",
           "YER6, Kahramanmaraş sahalarında zemin modeli, deneme kolonları ve kalite kontrol kayıtlarıyla üretim güvenilirliğini belgeler."
+        ]
+      }
+      ,{
+        heading: "Kahramanmaraş jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Kahramanmaraş genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Kahramanmaraş ve çevresinden teklif alabilirsiniz."
         ]
       }
     ],
@@ -1786,6 +1849,13 @@ const cityEnrichmentList: CityEnrichment[] = [
           "YER6, Malatya sahalarında kolon sürekliliği, mukavemet deneyleri ve üretim kayıtlarını izleyerek kalite kabul sürecini belgeler."
         ]
       }
+      ,{
+        heading: "Malatya jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Malatya genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Malatya ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       {
@@ -1822,6 +1892,13 @@ const cityEnrichmentList: CityEnrichment[] = [
         body: [
           "Oturma ve taşıma gücü sorunlu sahalarda DSM zemin iyileştirme ve jet grout ile zemin rijitliği artırılır; yüksek yapısal yükler fore kazıklı temellerle sağlam tabakaya aktarılır.",
           "YER6, Adıyaman sahalarında deneme kolonları, karot alımı ve süreklilik kontrolleriyle üretim kalitesini belgeleyerek teslim eder."
+        ]
+      }
+      ,{
+        heading: "Adıyaman jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Adıyaman genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Adıyaman ve çevresinden teklif alabilirsiniz."
         ]
       }
     ],
@@ -1862,6 +1939,13 @@ const cityEnrichmentList: CityEnrichment[] = [
           "YER6, Gaziantep sahalarında kolon çapı doğrulaması, bağlayıcı dozajı ve üretim kayıtlarını izleyerek kalite kabul sürecini belgeler."
         ]
       }
+      ,{
+        heading: "Gaziantep jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Gaziantep genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Gaziantep ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       {
@@ -1900,6 +1984,13 @@ const cityEnrichmentList: CityEnrichment[] = [
           "YER6, Adana sahalarında basınç kayıtları, kolon çapı doğrulaması ve yeraltı suyu davranışını kalite kabul sürecinin merkezine alır."
         ]
       }
+      ,{
+        heading: "Adana jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Adana genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Adana ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "Çukurova alüvyonunda sıvılaşma riski nasıl azaltılır?", answer: "Jet grout veya DSM ile zemin rijitliği artırılır; gerektiğinde drenaj ve enjeksiyonla boşluk suyu basıncı kontrol edilir. Yöntem, sondaj ve laboratuvar verisine göre seçilir." },
@@ -1924,6 +2015,13 @@ const cityEnrichmentList: CityEnrichment[] = [
         body: [
           "Karstik boşlukların doldurulması ve su kontrolü için enjeksiyon ve jet grout; yüksek yapı ve derin temellerde fore kazık öne çıkar. Otel ve ticari yapılarda oturmaya duyarlı yükler için temel altı güçlendirme kurgulanır.",
           "YER6, Antalya sahalarında boşluk tespiti, enjeksiyon kayıtları ve kolon sürekliliği kontrolleriyle kaliteyi belgeler."
+        ]
+      }
+      ,{
+        heading: "Antalya jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Antalya genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Antalya ve çevresinden teklif alabilirsiniz."
         ]
       }
     ],
@@ -1952,6 +2050,13 @@ const cityEnrichmentList: CityEnrichment[] = [
           "YER6, Sakarya sahalarında kolon sürekliliği, mukavemet testleri ve yeraltı suyu davranışını kalite kabul sürecinde izler."
         ]
       }
+      ,{
+        heading: "Sakarya jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Sakarya genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Sakarya ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "Adapazarı zemininde sıvılaşma neden bu kadar önemli?", answer: "Gevşek kum-silt ve çok yüksek yeraltı suyu birleşimi deprem sırasında sıvılaşma riskini artırır; 1999'da bölgede bu kaynaklı ağır hasarlar görülmüştür. İyileştirme bu riski azaltır." },
@@ -1976,6 +2081,13 @@ const cityEnrichmentList: CityEnrichment[] = [
         body: [
           "Su kontrolü ve yerel güçlendirme için jet grout; geniş alanlarda oturma kontrolü için DSM; yüksek ve derin yükler için fore kazık uygulanır.",
           "YER6, Samsun sahalarında basınç kayıtları, kolon çapı doğrulaması ve üretim verileriyle kaliteyi belgeler."
+        ]
+      }
+      ,{
+        heading: "Samsun jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Samsun genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Samsun ve çevresinden teklif alabilirsiniz."
         ]
       }
     ],
@@ -2004,6 +2116,13 @@ const cityEnrichmentList: CityEnrichment[] = [
           "YER6, Denizli sahalarında karot, kolon sürekliliği ve üretim kayıtlarıyla kalite kabul sürecini belgeler."
         ]
       }
+      ,{
+        heading: "Denizli jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Denizli genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Denizli ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "Traverten/değişken zeminde temel nasıl kurulur?", answer: "Zemin etüdüyle tabaka davranışı belirlenir; oturmaya duyarlı alanlarda DSM/jet grout ile güçlendirme veya fore kazıkla derin yük aktarımı tercih edilir." },
@@ -2028,6 +2147,13 @@ const cityEnrichmentList: CityEnrichment[] = [
         body: [
           "Alüvyon ve gevşek zemin sahalarında oturma ve taşıma gücü için DSM ve jet grout; yüksek yükler ve derin temeller için fore kazık öne çıkar. Sağlam platform zeminlerinde ise temel çözümleri buna göre optimize edilir.",
           "YER6, Diyarbakır sahalarında kolon sürekliliği, mukavemet testleri ve üretim kayıtlarıyla kaliteyi belgeler."
+        ]
+      }
+      ,{
+        heading: "Diyarbakır jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Diyarbakır genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Diyarbakır ve çevresinden teklif alabilirsiniz."
         ]
       }
     ],
@@ -2056,6 +2182,13 @@ const cityEnrichmentList: CityEnrichment[] = [
           "YER6, Şanlıurfa sahalarında kolon sürekliliği, mukavemet testleri ve üretim kayıtlarıyla kaliteyi belgeler."
         ]
       }
+      ,{
+        heading: "Şanlıurfa jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Şanlıurfa genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Şanlıurfa ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "Sulama etkisiyle killi zemin sorun çıkarır mı?", answer: "Nem artışı yüksek plastisiteli killerde şişme-oturma hareketine yol açabilir. Uygun zemin iyileştirme ve temel sistemi bu hareketleri kontrol altına alır." },
@@ -2080,6 +2213,13 @@ const cityEnrichmentList: CityEnrichment[] = [
         body: [
           "Geniş sanayi parsellerinde oturma kontrolü için DSM zemin iyileştirme; yüksek nokta yükleri ve derin temeller için fore/mini kazık; su kontrolü gereken noktalarda jet grout uygulanır.",
           "YER6, Tekirdağ sahalarında karot, kolon sürekliliği ve üretim kayıtlarıyla kaliteyi belgeler."
+        ]
+      }
+      ,{
+        heading: "Tekirdağ jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Tekirdağ genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Tekirdağ ve çevresinden teklif alabilirsiniz."
         ]
       }
     ],
@@ -2108,6 +2248,13 @@ const cityEnrichmentList: CityEnrichment[] = [
           "YER6, Trabzon sahalarında ankraj test yükleri, delgi sürekliliği ve deplasman izlemesiyle kaliteyi belgeler."
         ]
       }
+      ,{
+        heading: "Trabzon jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Trabzon genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Trabzon ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "Heyelanlı/yamaç zeminde ne yapılır?", answer: "Öngermeli ankraj ve kazıklı iksa perdeleriyle yamaç duraylılığı sağlanır; drenaj çözümleriyle su etkisi azaltılır. Uygulama zemin etüdüne dayanır." },
@@ -2132,6 +2279,13 @@ const cityEnrichmentList: CityEnrichment[] = [
         body: [
           "Oturma kontrolü ve zemin rijitliği için DSM; yüksek yapısal yükler için fore kazık; yerel güçlendirme için jet grout uygulanır. Don derinliği ve numune koruması saha kalite planında öne çıkar.",
           "YER6, Erzurum sahalarında kolon sürekliliği, mukavemet testleri ve mevsimsel kalite planıyla üretim güvenilirliğini belgeler."
+        ]
+      }
+      ,{
+        heading: "Erzurum jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Erzurum genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Erzurum ve çevresinden teklif alabilirsiniz."
         ]
       }
     ],
@@ -2160,6 +2314,13 @@ const cityEnrichmentList: CityEnrichment[] = [
           "YER6, Aydın sahalarında basınç kayıtları, kolon çapı doğrulaması ve yeraltı suyu davranışını kalite kabul sürecinde izler."
         ]
       }
+      ,{
+        heading: "Aydın jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Aydın genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Aydın ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "Menderes ovasında sıvılaşma riski var mı?", answer: "Gevşek kum-silt ve yüksek yeraltı suyu bulunan alüvyon alanlarda sıvılaşma potansiyeli değerlendirilmelidir; gerekli görülürse jet grout/DSM ile azaltılır." },
@@ -2184,6 +2345,13 @@ const cityEnrichmentList: CityEnrichment[] = [
         body: [
           "Geniş sanayi parsellerinde oturma kontrolü için DSM; su kontrolü ve yerel güçlendirme için jet grout; yüksek ve derin yükler için fore kazık uygulanır.",
           "YER6, Balıkesir sahalarında kolon sürekliliği, mukavemet testleri ve üretim kayıtlarıyla kaliteyi belgeler."
+        ]
+      }
+      ,{
+        heading: "Balıkesir jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Balıkesir genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Balıkesir ve çevresinden teklif alabilirsiniz."
         ]
       }
     ],
@@ -2212,6 +2380,13 @@ const cityEnrichmentList: CityEnrichment[] = [
           "YER6, Ordu sahalarında ankraj test yükleri, delgi sürekliliği ve deplasman izlemesiyle kaliteyi belgeler."
         ]
       }
+      ,{
+        heading: "Ordu jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Ordu genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Ordu ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "Yamaç/heyelan sahasında ne yapılır?", answer: "Öngermeli ankraj, kazıklı iksa ve drenaj çözümleriyle yamaç duraylılığı sağlanır. Uygulama zemin etüdü ve stabilite analizine dayanır." },
@@ -2236,6 +2411,13 @@ const cityEnrichmentList: CityEnrichment[] = [
         body: [
           "Oturma ve taşıma gücü sorunlu zeminlerde DSM ve jet grout ile rijitlik artırılır; yüksek yapısal yükler fore kazıklı temellerle sağlam tabakaya aktarılır.",
           "YER6, Elazığ sahalarında deneme kolonları, karot ve süreklilik kontrolleriyle üretim kalitesini belgeler."
+        ]
+      }
+      ,{
+        heading: "Elazığ jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Elazığ genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Elazığ ve çevresinden teklif alabilirsiniz."
         ]
       }
     ],
@@ -2264,6 +2446,13 @@ const cityEnrichmentList: CityEnrichment[] = [
           "YER6, Mersin sahalarında basınç kayıtları, kolon çapı doğrulaması ve yeraltı suyu davranışını kalite kabul sürecinde izler."
         ]
       }
+      ,{
+        heading: "Mersin jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Mersin genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Mersin ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "Liman/sanayi zemini nasıl güçlendirilir?", answer: "Ağır ve dinamik yükler için DSM, jet grout ve fore kazık kombinasyonlarıyla oturma ve taşıma güvenliği sağlanır. Yöntem zemin etüdüne göre seçilir." },
@@ -2288,6 +2477,13 @@ const cityEnrichmentList: CityEnrichment[] = [
         body: [
           "Sıvılaşma azaltımı ve su kontrolü için jet grout/DSM; geniş sanayi parsellerinde oturma kontrolü için DSM; yüksek yükler için fore kazık uygulanır.",
           "YER6, Manisa sahalarında kolon sürekliliği, mukavemet testleri ve yeraltı suyu davranışını izleyerek kaliteyi belgeler."
+        ]
+      }
+      ,{
+        heading: "Manisa jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Manisa genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Manisa ve çevresinden teklif alabilirsiniz."
         ]
       }
     ],
@@ -2316,6 +2512,13 @@ const cityEnrichmentList: CityEnrichment[] = [
           "YER6, Kütahya sahalarında karot, kolon sürekliliği ve üretim kayıtlarıyla kaliteyi belgeler."
         ]
       }
+      ,{
+        heading: "Kütahya jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Kütahya genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Kütahya ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "Killi zeminde hangi yöntem uygun?", answer: "Killi ve oturmaya yatkın zeminlerde DSM veya kazıklı temel çözümleri öne çıkar; yöntem plastisite ve yük koşullarına göre belirlenir." },
@@ -2340,6 +2543,13 @@ const cityEnrichmentList: CityEnrichment[] = [
         body: [
           "Yamaç duraylılığı için öngermeli ankraj ve kazıklı iksa; kıyı yapılarında kaya seviyesine uzanan fore kazıklı derin temeller; gevşek zemin ve su kontrolü için jet grout uygulanır.",
           "YER6, Zonguldak sahalarında ankraj test yükleri, delgi sürekliliği ve su altı beton kalitesini izleyerek belgeler."
+        ]
+      }
+      ,{
+        heading: "Zonguldak jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Zonguldak genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Zonguldak ve çevresinden teklif alabilirsiniz."
         ]
       }
     ],
@@ -2368,6 +2578,13 @@ const cityEnrichmentList: CityEnrichment[] = [
           "YER6, Osmaniye sahalarında deneme kolonları, karot ve süreklilik kontrolleriyle üretim kalitesini belgeler."
         ]
       }
+      ,{
+        heading: "Osmaniye jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Osmaniye genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Osmaniye ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "Deprem sonrası yeni yapıda hangi temel önerilir?", answer: "Zemin profiline göre DSM, jet grout veya fore kazıklı temel çözümleri değerlendirilir; karar güncel zemin etüdüne dayanır." },
@@ -2392,6 +2609,13 @@ const cityEnrichmentList: CityEnrichment[] = [
         body: [
           "Alüvyon ve gevşek zemin sahalarında oturma ve taşıma gücü için DSM ve jet grout; yüksek yükler için fore kazık öne çıkar. Sağlam platform zeminlerinde temel çözümleri buna göre optimize edilir.",
           "YER6, Mardin sahalarında kolon sürekliliği, mukavemet testleri ve üretim kayıtlarıyla kaliteyi belgeler."
+        ]
+      }
+      ,{
+        heading: "Mardin jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Mardin genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Mardin ve çevresinden teklif alabilirsiniz."
         ]
       }
     ],
@@ -2420,6 +2644,13 @@ const cityEnrichmentList: CityEnrichment[] = [
           "YER6, Yalova sahalarında kolon sürekliliği, mukavemet testleri ve yeraltı suyu davranışını kalite kabul sürecinde izler."
         ]
       }
+      ,{
+        heading: "Yalova jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Yalova genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Yalova ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "Yalova zemininde sıvılaşma riski nasıl azaltılır?", answer: "Jet grout, DSM veya taş kolon ile zemin rijitliği artırılır ve drenaj sağlanarak sıvılaşma direnci yükseltilir. Yöntem zemin etüdüne göre seçilir." },
@@ -2444,6 +2675,13 @@ const cityEnrichmentList: CityEnrichment[] = [
         body: [
           "Su kontrolü ve sıvılaşma azaltımı için jet grout; oturma kontrolü için DSM; yüksek ve derin yükler için fore kazık uygulanır.",
           "YER6, Çanakkale sahalarında basınç kayıtları, kolon çapı doğrulaması ve üretim verileriyle kaliteyi belgeler."
+        ]
+      }
+      ,{
+        heading: "Çanakkale jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Çanakkale genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Çanakkale ve çevresinden teklif alabilirsiniz."
         ]
       }
     ],
@@ -2472,6 +2710,13 @@ const cityEnrichmentList: CityEnrichment[] = [
           "YER6, Bolu sahalarında kolon sürekliliği, mukavemet testleri ve deplasman izlemesiyle kaliteyi belgeler."
         ]
       }
+      ,{
+        heading: "Bolu jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Bolu genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Bolu ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "Fay bölgesinde yeni yapı için ne önerilir?", answer: "Zemin profiline göre DSM, jet grout veya fore kazıklı temel çözümleri değerlendirilir; karar güncel zemin etüdüne dayanır." },
@@ -2496,6 +2741,13 @@ const cityEnrichmentList: CityEnrichment[] = [
         body: [
           "Sıvılaşma direncini artırmak ve oturmayı kontrol etmek için DSM, jet grout ve gerektiğinde taş kolon uygulanır; yüksek yapısal yükler fore kazıklı temellerle sağlam tabakaya aktarılır. YER6 bölgede fabrika temel altı jet grout uygulamaları gerçekleştirmiştir.",
           "YER6, Düzce sahalarında kolon sürekliliği, mukavemet testleri ve yeraltı suyu davranışını kalite kabul sürecinde izler."
+        ]
+      }
+      ,{
+        heading: "Düzce jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Düzce genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Düzce ve çevresinden teklif alabilirsiniz."
         ]
       }
     ],
@@ -2524,6 +2776,13 @@ const cityEnrichmentList: CityEnrichment[] = [
           "YER6, Muğla sahalarında boşluk tespiti, enjeksiyon kayıtları ve kolon sürekliliği kontrolleriyle kaliteyi belgeler."
         ]
       }
+      ,{
+        heading: "Muğla jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Muğla genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Muğla ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "Karstik zeminde temel nasıl güvence altına alınır?", answer: "Boşluklar enjeksiyonla doldurulur, gerektiğinde jet grout ile güçlendirilir veya yükler fore kazıkla sağlam tabakaya aktarılır. Öncesinde boşluk tespiti yapılır." },
@@ -2548,6 +2807,13 @@ const cityEnrichmentList: CityEnrichment[] = [
         body: [
           "Geniş sanayi parsellerinde oturma kontrolü için DSM; yerel güçlendirme için jet grout; yüksek yapısal yükler için fore kazık uygulanır.",
           "YER6, Kayseri sahalarında karot, kolon sürekliliği ve üretim kayıtlarıyla kaliteyi belgeler."
+        ]
+      }
+      ,{
+        heading: "Kayseri jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Kayseri genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Kayseri ve çevresinden teklif alabilirsiniz."
         ]
       }
     ],
@@ -2576,6 +2842,13 @@ const cityEnrichmentList: CityEnrichment[] = [
           "YER6, Sivas sahalarında kolon sürekliliği, mukavemet testleri ve üretim kayıtlarıyla kaliteyi belgeler."
         ]
       }
+      ,{
+        heading: "Sivas jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Sivas genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Sivas ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "Jipsli zemin neden özel önlem gerektirir?", answer: "Jips suyla çözünebildiği için zeminde boşluk ve oturma riski oluşabilir. Su kontrolü, uygun temel ve gerektiğinde zemin iyileştirme ile risk yönetilir." },
@@ -2600,6 +2873,13 @@ const cityEnrichmentList: CityEnrichment[] = [
         body: [
           "Oturma ve taşıma gücü için DSM ve jet grout ile rijitlik artırılır; yüksek yapısal yükler fore kazıklı temellerle sağlam tabakaya aktarılır.",
           "YER6, Van sahalarında deneme kolonları, karot ve süreklilik kontrolleriyle üretim kalitesini belgeler."
+        ]
+      }
+      ,{
+        heading: "Van jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Van genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Van ve çevresinden teklif alabilirsiniz."
         ]
       }
     ],
@@ -2628,6 +2908,13 @@ const cityEnrichmentList: CityEnrichment[] = [
           "YER6, Nevşehir sahalarında zemin modeli, kolon sürekliliği ve üretim kayıtlarıyla kaliteyi belgeler."
         ]
       }
+      ,{
+        heading: "Nevşehir jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Nevşehir genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Nevşehir ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "Tüf/yumuşak kaya zeminde temel nasıl kurulur?", answer: "Dayanım ve boşluk durumu sondajla belirlenir; gerektiğinde enjeksiyon/jet grout ile güçlendirme veya fore kazıkla derin yük aktarımı yapılır." },
@@ -2652,6 +2939,13 @@ const cityEnrichmentList: CityEnrichment[] = [
         body: [
           "Oturma kontrolü ve zemin rijitliği için DSM; yerel güçlendirme için jet grout; yüksek yapısal yükler için fore kazık uygulanır.",
           "YER6, Afyonkarahisar sahalarında karot, kolon sürekliliği ve üretim kayıtlarıyla kaliteyi belgeler."
+        ]
+      }
+      ,{
+        heading: "Afyonkarahisar jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Afyonkarahisar genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Afyonkarahisar ve çevresinden teklif alabilirsiniz."
         ]
       }
     ],
@@ -2680,6 +2974,13 @@ const cityEnrichmentList: CityEnrichment[] = [
           "YER6, Aksaray sahalarında kolon sürekliliği, mukavemet testleri ve üretim kayıtlarıyla kaliteyi belgeler."
         ]
       }
+      ,{
+        heading: "Aksaray jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Aksaray genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Aksaray ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "Aksaray OSB'de zemin iyileştirme gerekir mi?", answer: "Killi/gevşek zemin bulunan geniş taban alanlı yapılarda çoğunlukla gereklidir; kesin karar zemin etüdüne bağlıdır." },
@@ -2704,6 +3005,13 @@ const cityEnrichmentList: CityEnrichment[] = [
         body: [
           "Alüvyon sahalarda oturma kontrolü için DSM ve jet grout; yamaç ve derin yükler için fore kazık ve ankraj uygulanır.",
           "YER6, Amasya sahalarında kolon sürekliliği, ankraj testleri ve üretim kayıtlarıyla kaliteyi belgeler."
+        ]
+      }
+      ,{
+        heading: "Amasya jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Amasya genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Amasya ve çevresinden teklif alabilirsiniz."
         ]
       }
     ],
@@ -2732,6 +3040,13 @@ const cityEnrichmentList: CityEnrichment[] = [
           "YER6, Tokat sahalarında kolon sürekliliği, mukavemet testleri ve üretim kayıtlarıyla kaliteyi belgeler."
         ]
       }
+      ,{
+        heading: "Tokat jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Tokat genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Tokat ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "Fay bölgesinde zemin iyileştirme önemli mi?", answer: "Evet; sıvılaşmaya yatkın veya oturmaya duyarlı zeminlerde iyileştirme, deprem performansı açısından kritik olabilir. Zemin etüdüyle karar verilir." },
@@ -2756,6 +3071,13 @@ const cityEnrichmentList: CityEnrichment[] = [
         body: [
           "Oturma kontrolü için DSM; yerel güçlendirme için jet grout; yüksek yapısal yükler için fore kazık uygulanır.",
           "YER6, Kırşehir sahalarında kolon sürekliliği, mukavemet testleri ve üretim kayıtlarıyla kaliteyi belgeler."
+        ]
+      }
+      ,{
+        heading: "Kırşehir jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Kırşehir genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Kırşehir ve çevresinden teklif alabilirsiniz."
         ]
       }
     ],
@@ -2784,6 +3106,13 @@ const cityEnrichmentList: CityEnrichment[] = [
           "YER6, Ağrı sahalarında kolon sürekliliği, mukavemet testleri ve mevsimsel kalite planıyla üretim güvenilirliğini belgeler."
         ]
       }
+      ,{
+        heading: "Ağrı jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Ağrı genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Ağrı ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "Don derinliği temeli nasıl etkiler?", answer: "Temel, don derinliğinin altına indirilmeli veya donma-çözülme etkisine karşı korunmalıdır. Zemin iyileştirme ve uygun temel derinliği birlikte değerlendirilir." },
@@ -2808,6 +3137,13 @@ const cityEnrichmentList: CityEnrichment[] = [
         body: [
           "Su kontrolü ve oturma azaltımı için jet grout ve DSM; yüksek yükler için fore kazık uygulanır.",
           "YER6, Iğdır sahalarında kolon sürekliliği, mukavemet testleri ve yeraltı suyu davranışını kalite kabul sürecinde izler."
+        ]
+      }
+      ,{
+        heading: "Iğdır jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Iğdır genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Iğdır ve çevresinden teklif alabilirsiniz."
         ]
       }
     ],
@@ -2836,6 +3172,13 @@ const cityEnrichmentList: CityEnrichment[] = [
           "YER6, Kars sahalarında kolon sürekliliği, mukavemet testleri ve mevsimsel kalite planıyla üretim güvenilirliğini belgeler."
         ]
       }
+      ,{
+        heading: "Kars jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Kars genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Kars ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "Soğuk iklim temel uygulamasını etkiler mi?", answer: "Evet; don derinliği ve donma-çözülme, temel derinliği ve imalat mevsimini etkiler. Saha kalite planı buna göre uyarlanır." },
@@ -2860,6 +3203,13 @@ const cityEnrichmentList: CityEnrichment[] = [
         body: [
           "Su kontrolü ve oturma azaltımı için jet grout ve DSM; yüksek yükler için fore kazık uygulanır.",
           "YER6, Edirne sahalarında kolon sürekliliği, mukavemet testleri ve yeraltı suyu davranışını kalite kabul sürecinde izler."
+        ]
+      }
+      ,{
+        heading: "Edirne jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Edirne genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Edirne ve çevresinden teklif alabilirsiniz."
         ]
       }
     ],
@@ -2888,6 +3238,13 @@ const cityEnrichmentList: CityEnrichment[] = [
           "YER6, Kırklareli sahalarında karot, kolon sürekliliği ve üretim kayıtlarıyla kaliteyi belgeler."
         ]
       }
+      ,{
+        heading: "Kırklareli jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Kırklareli genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Kırklareli ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "OSB'de zemin iyileştirme gerekir mi?", answer: "Killi/gevşek zemin bulunan geniş taban alanlı yapılarda çoğunlukla gereklidir; kesin karar zemin etüdüne bağlıdır." },
@@ -2912,6 +3269,13 @@ const cityEnrichmentList: CityEnrichment[] = [
         body: [
           "Oturma kontrolü için DSM; yerel güçlendirme için jet grout; yüksek yapısal yükler için fore kazık uygulanır.",
           "YER6, Uşak sahalarında karot, kolon sürekliliği ve üretim kayıtlarıyla kaliteyi belgeler."
+        ]
+      }
+      ,{
+        heading: "Uşak jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Uşak genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Uşak ve çevresinden teklif alabilirsiniz."
         ]
       }
     ],
@@ -2940,6 +3304,13 @@ const cityEnrichmentList: CityEnrichment[] = [
           "YER6, Isparta sahalarında boşluk tespiti, kolon sürekliliği ve üretim kayıtlarıyla kaliteyi belgeler."
         ]
       }
+      ,{
+        heading: "Isparta jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Isparta genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Isparta ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "Karstik/göl kıyısı zeminde temel nasıl kurulur?", answer: "Boşluklar enjeksiyonla doldurulur, gerektiğinde jet grout ile güçlendirilir; gevşek zeminde yük fore kazıkla sağlam tabakaya aktarılır. Öncesinde boşluk tespiti yapılır." },
@@ -2964,6 +3335,13 @@ const cityEnrichmentList: CityEnrichment[] = [
         body: [
           "Sıvılaşma azaltımı ve su kontrolü için jet grout/DSM; oturma kontrolü için DSM; yüksek yükler için fore kazık uygulanır.",
           "YER6, Burdur sahalarında kolon sürekliliği, mukavemet testleri ve yeraltı suyu davranışını kalite kabul sürecinde izler."
+        ]
+      }
+      ,{
+        heading: "Burdur jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Burdur genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Burdur ve çevresinden teklif alabilirsiniz."
         ]
       }
     ],
@@ -2992,6 +3370,13 @@ const cityEnrichmentList: CityEnrichment[] = [
           "YER6, Giresun sahalarında ankraj test yükleri, delgi sürekliliği ve deplasman izlemesiyle kaliteyi belgeler."
         ]
       }
+      ,{
+        heading: "Giresun jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Giresun genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Giresun ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "Heyelanlı/yamaç zeminde ne yapılır?", answer: "Öngermeli ankraj, kazıklı iksa ve drenaj çözümleriyle yamaç duraylılığı sağlanır. Uygulama zemin etüdü ve stabilite analizine dayanır." },
@@ -3018,6 +3403,13 @@ const cityEnrichmentList: CityEnrichment[] = [
           "YER6, Rize sahalarında ankraj test yükleri, drenaj kontrolü ve deplasman izlemesiyle kaliteyi belgeler."
         ]
       }
+      ,{
+        heading: "Rize jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Rize genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Rize ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "Yoğun yağışlı yamaçta ne yapılır?", answer: "Ankraj ve kazıklı iksa ile duraylılık sağlanırken, etkin drenaj ile su etkisi azaltılır. Uygulama stabilite analizine ve zemin etüdüne dayanır." },
@@ -3038,6 +3430,13 @@ const cityEnrichmentList: CityEnrichment[] = [
         "Sıvılaşma direncini artırmak için DSM, jet grout ve gerektiğinde taş kolon; yüksek yükler için fore kazık uygulanır.",
         "YER6, Erzincan sahalarında kolon sürekliliği, mukavemet testleri ve yeraltı suyu davranışını kalite kabul sürecinde izler."
       ]}
+      ,{
+        heading: "Erzincan jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Erzincan genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Erzincan ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "Erzincan'da sıvılaşma neden bu kadar önemli?", answer: "Aktif fay, gevşek alüvyon ve yüksek yeraltı suyu birleşimi deprem sırasında sıvılaşma riskini artırır; geçmiş depremler bunu göstermiştir. İyileştirme bu riski azaltır." },
@@ -3058,6 +3457,13 @@ const cityEnrichmentList: CityEnrichment[] = [
         "Oturma kontrolü için DSM; yerel güçlendirme için jet grout; yüksek yükler için fore kazık uygulanır.",
         "YER6, Çorum sahalarında karot, kolon sürekliliği ve üretim kayıtlarıyla kaliteyi belgeler."
       ]}
+      ,{
+        heading: "Çorum jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Çorum genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Çorum ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "OSB'de zemin iyileştirme gerekir mi?", answer: "Killi/gevşek zemin bulunan geniş taban alanlı yapılarda çoğunlukla gereklidir; kesin karar zemin etüdüne bağlıdır." },
@@ -3078,6 +3484,13 @@ const cityEnrichmentList: CityEnrichment[] = [
         "Oturma ve taşıma gücü için DSM ve jet grout; yüksek yükler için fore kazık uygulanır.",
         "YER6, Bingöl sahalarında deneme kolonları, karot ve süreklilik kontrolleriyle kaliteyi belgeler."
       ]}
+      ,{
+        heading: "Bingöl jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Bingöl genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Bingöl ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "Fay bölgesinde ne önerilir?", answer: "Zemin profiline göre DSM, jet grout veya fore kazıklı temel değerlendirilir; karar güncel zemin etüdüne dayanır." },
@@ -3098,6 +3511,13 @@ const cityEnrichmentList: CityEnrichment[] = [
         "Yamaç duraylılığı için ankraj ve kazıklı iksa; gevşek zeminlerde fore kazık; yerel güçlendirme için jet grout uygulanır.",
         "YER6, Bitlis sahalarında ankraj test yükleri, delgi sürekliliği ve deplasman izlemesiyle kaliteyi belgeler."
       ]}
+      ,{
+        heading: "Bitlis jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Bitlis genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Bitlis ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "Yamaç/heyelan sahasında ne yapılır?", answer: "Ankraj ve kazıklı iksa ile yamaç duraylılığı sağlanır; drenajla su etkisi azaltılır. Uygulama zemin etüdüne dayanır." },
@@ -3118,6 +3538,13 @@ const cityEnrichmentList: CityEnrichment[] = [
         "Alüvyon sahalarda DSM ve jet grout; yüksek yükler için fore kazık; sağlam platformda temel çözümleri buna göre optimize edilir.",
         "YER6, Batman sahalarında kolon sürekliliği, mukavemet testleri ve üretim kayıtlarıyla kaliteyi belgeler."
       ]}
+      ,{
+        heading: "Batman jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Batman genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Batman ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "Aynı bölgede zemin neden farklı?", answer: "Platform ile havza alüvyonu yan yana bulunabilir; her parsel için ayrı sondaj önerilir." },
@@ -3138,6 +3565,13 @@ const cityEnrichmentList: CityEnrichment[] = [
         "Oturma kontrolü için DSM ve jet grout; yüksek yükler ve yamaç için fore kazık ve ankraj uygulanır.",
         "YER6, Siirt sahalarında kolon sürekliliği, mukavemet testleri ve üretim kayıtlarıyla kaliteyi belgeler."
       ]}
+      ,{
+        heading: "Siirt jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Siirt genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Siirt ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "Killi/alüvyon zeminde hangi yöntem uygun?", answer: "DSM, jet grout veya fore kazık değerlendirilir; karar sondaj ve laboratuvar verisine bağlıdır." },
@@ -3158,6 +3592,13 @@ const cityEnrichmentList: CityEnrichment[] = [
         "Yamaç duraylılığı için ankraj ve kazıklı iksa; alüvyon sahalarda DSM ve jet grout; yüksek yükler için fore kazık uygulanır.",
         "YER6, Şırnak sahalarında ankraj test yükleri, kolon sürekliliği ve üretim kayıtlarıyla kaliteyi belgeler."
       ]}
+      ,{
+        heading: "Şırnak jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Şırnak genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Şırnak ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "Yamaç sahasında ne yapılır?", answer: "Ankraj ve kazıklı iksa ile yamaç duraylılığı sağlanır; drenajla su etkisi azaltılır." },
@@ -3178,6 +3619,13 @@ const cityEnrichmentList: CityEnrichment[] = [
         "Yamaç duraylılığı için öngermeli ankraj ve kazıklı iksa; gevşek dolgularda fore kazık; yerel güçlendirme için jet grout uygulanır.",
         "YER6, Hakkari sahalarında ankraj test yükleri, drenaj ve deplasman izlemesiyle kaliteyi belgeler."
       ]}
+      ,{
+        heading: "Hakkari jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Hakkari genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Hakkari ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "Dik yamaçta ne yapılır?", answer: "Ankraj ve kazıklı iksa ile duraylılık sağlanır; etkin drenajla su etkisi azaltılır. Uygulama stabilite analizine dayanır." },
@@ -3198,6 +3646,13 @@ const cityEnrichmentList: CityEnrichment[] = [
         "Sıvılaşma azaltımı ve su kontrolü için jet grout/DSM; yüksek yükler için fore kazık uygulanır.",
         "YER6, Muş sahalarında kolon sürekliliği, mukavemet testleri ve yeraltı suyu davranışını kalite kabul sürecinde izler."
       ]}
+      ,{
+        heading: "Muş jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Muş genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Muş ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "Ova alüvyonunda sıvılaşma riski var mı?", answer: "Gevşek alüvyon ve yüksek yeraltı suyu bulunan alanlarda değerlendirilmeli; gerekirse jet grout/DSM ile azaltılmalıdır." },
@@ -3218,6 +3673,13 @@ const cityEnrichmentList: CityEnrichment[] = [
         "Yamaç duraylılığı için ankraj ve kazıklı iksa; alüvyonda DSM ve jet grout; yüksek yükler için fore kazık uygulanır.",
         "YER6, Kastamonu sahalarında ankraj test yükleri, drenaj ve kolon sürekliliği kontrolleriyle kaliteyi belgeler."
       ]}
+      ,{
+        heading: "Kastamonu jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Kastamonu genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Kastamonu ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "Vadi/yamaç sahasında ne yapılır?", answer: "Ankraj ve kazıklı iksa ile duraylılık, etkin drenajla su etkisi azaltılır. Uygulama zemin etüdüne dayanır." },
@@ -3238,6 +3700,13 @@ const cityEnrichmentList: CityEnrichment[] = [
         "Boşluk ve gevşek zeminde enjeksiyon ve jet grout; oturma kontrolü için DSM; yüksek yükler için fore kazık uygulanır.",
         "YER6, Karaman sahalarında boşluk tespiti, kolon sürekliliği ve üretim kayıtlarıyla kaliteyi belgeler."
       ]}
+      ,{
+        heading: "Karaman jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Karaman genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Karaman ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "Karst/boşluk riski nasıl yönetilir?", answer: "Boşluklar enjeksiyonla doldurulur, gerektiğinde jet grout ile güçlendirilir veya yükler fore kazıkla aktarılır. Öncesinde boşluk tespiti yapılır." },
@@ -3258,6 +3727,13 @@ const cityEnrichmentList: CityEnrichment[] = [
         "Oturma kontrolü için DSM; yerel güçlendirme için jet grout; yüksek yükler için fore kazık uygulanır.",
         "YER6, Niğde sahalarında kolon sürekliliği, mukavemet testleri ve üretim kayıtlarıyla kaliteyi belgeler."
       ]}
+      ,{
+        heading: "Niğde jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Niğde genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Niğde ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "Volkanik/değişken zeminde hangi yöntem uygun?", answer: "Zemin davranışı sondajla belirlenir; oturmaya duyarlı alanlarda DSM/jet grout, yüksek yüklerde fore kazık tercih edilir." },
@@ -3278,6 +3754,13 @@ const cityEnrichmentList: CityEnrichment[] = [
         "Oturma kontrolü için DSM; yerel güçlendirme için jet grout; yüksek yükler için fore kazık uygulanır.",
         "YER6, Kırıkkale sahalarında kolon sürekliliği, mukavemet testleri ve üretim kayıtlarıyla kaliteyi belgeler."
       ]}
+      ,{
+        heading: "Kırıkkale jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Kırıkkale genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Kırıkkale ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "Killi/alüvyon zeminde hangi yöntem uygun?", answer: "DSM, jet grout veya fore kazık değerlendirilir; karar sondaj ve laboratuvar verisine bağlıdır." },
@@ -3291,6 +3774,13 @@ const cityEnrichmentList: CityEnrichment[] = [
     sections: [
       { heading: "Ardahan zemin koşulları", body: ["Yüksek rakım ve donma-çözülme etkileri temel derinliğini belirler; ova zeminleri taşıma gücü açısından değişkenlik gösterir.", "Kısa saha sezonu, imalatın mevsime göre planlanmasını gerektirir."] },
       { heading: "Ardahan'da uygulama", body: ["Oturma kontrolü için DSM; yüksek yükler için fore kazık; yerel güçlendirme için jet grout uygulanır.", "YER6, kolon sürekliliği ve mevsimsel kalite planıyla üretim güvenilirliğini belgeler."] }
+      ,{
+        heading: "Ardahan jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Ardahan genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Ardahan ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "Don derinliği temeli nasıl etkiler?", answer: "Temel don derinliğinin altına indirilmeli veya korunmalıdır; zemin iyileştirme ile birlikte değerlendirilir." },
@@ -3304,6 +3794,13 @@ const cityEnrichmentList: CityEnrichment[] = [
     sections: [
       { heading: "Artvin zemini ve heyelan", body: ["Dik yamaçlar ve yüksek yağış, heyelan ve şev duraysızlığı açısından yüksek risk oluşturur; dere dolgularında gevşek zemin öne çıkar.", "Drenaj ve deplasman kontrolü tasarımın merkezindedir."] },
       { heading: "Artvin'de uygulama", body: ["Yamaç duraylılığı için ankraj ve kazıklı iksa, etkin drenaj; gevşek dolguda fore kazık uygulanır.", "YER6, ankraj test yükleri ve deplasman izlemesiyle kaliteyi belgeler."] }
+      ,{
+        heading: "Artvin jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Artvin genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Artvin ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "Dik/heyelanlı yamaçta ne yapılır?", answer: "Ankraj ve kazıklı iksa ile duraylılık, etkin drenajla su etkisi azaltılır; uygulama stabilite analizine dayanır." },
@@ -3317,6 +3814,13 @@ const cityEnrichmentList: CityEnrichment[] = [
     sections: [
       { heading: "Bartın zemin koşulları", body: ["Bartın Çayı çevresindeki alüvyon ve gevşek çökeller, yüksek yeraltı suyu ve sel etkisiyle oturma açısından hassastır.", "Yamaç alanlarında şev duraylılığı öne çıkar."] },
       { heading: "Bartın'da uygulama", body: ["Alüvyonda DSM ve jet grout; yamaçta ankraj ve iksa; yüksek yükler için fore kazık uygulanır.", "YER6, kolon sürekliliği ve drenaj kontrolüyle kaliteyi belgeler."] }
+      ,{
+        heading: "Bartın jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Bartın genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Bartın ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "Nehir/kıyı alüvyonunda hangi yöntem uygun?", answer: "Gevşek zemin ve yüksek yeraltı suyu nedeniyle jet grout, DSM veya derin temel değerlendirilir; karar zemin etüdüne bağlıdır." },
@@ -3330,6 +3834,13 @@ const cityEnrichmentList: CityEnrichment[] = [
     sections: [
       { heading: "Bayburt zemin koşulları", body: ["Yüksek rakım ve donma-çözülme etkileri temel derinliğini belirler; ova ve vadi zeminleri taşıma gücü açısından değişkendir.", "Kısa saha sezonu imalat planını etkiler."] },
       { heading: "Bayburt'ta uygulama", body: ["Oturma kontrolü için DSM; yüksek yükler için fore kazık; yerel güçlendirme için jet grout uygulanır.", "YER6, kolon sürekliliği ve mevsimsel kalite planıyla üretimi belgeler."] }
+      ,{
+        heading: "Bayburt jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Bayburt genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Bayburt ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "Soğuk iklim temeli etkiler mi?", answer: "Evet; don derinliği temel derinliğini ve imalat mevsimini etkiler. Saha kalite planı buna göre uyarlanır." },
@@ -3343,6 +3854,13 @@ const cityEnrichmentList: CityEnrichment[] = [
     sections: [
       { heading: "Bilecik zemin koşulları", body: ["Ova kesimlerindeki killi-siltli zeminler ve gevşek dolgu alanları, oturma açısından değerlendirilmelidir; fay etkinliği zemin davranışını önemli kılar.", "OSB'lerdeki ağır yüklü yapılar iyileştirme gerektirebilir."] },
       { heading: "Bilecik'te uygulama", body: ["Oturma kontrolü için DSM; yerel güçlendirme için jet grout; yüksek yükler için fore kazık uygulanır.", "YER6, karot ve kolon sürekliliği kontrolleriyle kaliteyi belgeler."] }
+      ,{
+        heading: "Bilecik jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Bilecik genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Bilecik ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "OSB'de zemin iyileştirme gerekir mi?", answer: "Killi/gevşek zemin bulunan geniş taban alanlı yapılarda çoğunlukla gereklidir; karar zemin etüdüne bağlıdır." },
@@ -3356,6 +3874,13 @@ const cityEnrichmentList: CityEnrichment[] = [
     sections: [
       { heading: "Çankırı zemin koşulları", body: ["Killi ve yer yer jipsli/tuzlu zeminler, suyla temasta çözünme ve oturma açısından özel dikkat gerektirir; ova alüvyonunda gevşek çökeller öne çıkar.", "Temel sistemi zemin etüdüne göre seçilmelidir."] },
       { heading: "Çankırı'da uygulama", body: ["Oturma kontrolü için DSM; su kontrolü ve yerel güçlendirme için jet grout; yüksek yükler için fore kazık uygulanır.", "YER6, kolon sürekliliği ve üretim kayıtlarıyla kaliteyi belgeler."] }
+      ,{
+        heading: "Çankırı jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Çankırı genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Çankırı ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "Jipsli/tuzlu zemin neden riskli?", answer: "Suyla çözünebildiği için boşluk ve oturma riski oluşabilir; su kontrolü ve uygun temel ile risk yönetilir." },
@@ -3369,6 +3894,13 @@ const cityEnrichmentList: CityEnrichment[] = [
     sections: [
       { heading: "Gümüşhane zemin koşulları", body: ["Dik yamaçlar ve dere yataklarındaki gevşek dolgular heyelan ve şev duraysızlığı açısından belirleyicidir; eski maden alanları ek risk oluşturabilir.", "Deplasman ve drenaj kontrolü esastır."] },
       { heading: "Gümüşhane'de uygulama", body: ["Yamaç duraylılığı için ankraj ve kazıklı iksa; gevşek dolguda fore kazık; yerel güçlendirme için jet grout uygulanır.", "YER6, ankraj test yükleri ve deplasman izlemesiyle kaliteyi belgeler."] }
+      ,{
+        heading: "Gümüşhane jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Gümüşhane genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Gümüşhane ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "Yamaç/maden dolgusu sahasında ne yapılır?", answer: "Ankraj ve kazıklı iksa ile duraylılık sağlanır; gevşek dolguda yük fore kazıkla aktarılır. Uygulama zemin etüdüne dayanır." },
@@ -3382,6 +3914,13 @@ const cityEnrichmentList: CityEnrichment[] = [
     sections: [
       { heading: "Karabük zemin koşulları", body: ["Vadi alüvyonu ve gevşek dolgu alanları ile yamaç koşulları, oturma ve şev duraysızlığı açısından değerlendirilmelidir; ağır sanayi yükleri belirleyicidir.", "Parsel bazında zemin etüdü esastır."] },
       { heading: "Karabük'te uygulama", body: ["Ağır sanayi temellerinde oturma kontrolü için DSM/jet grout; yüksek nokta yükleri için fore kazık; yamaçta ankraj uygulanır.", "YER6, kolon sürekliliği ve üretim kayıtlarıyla kaliteyi belgeler."] }
+      ,{
+        heading: "Karabük jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Karabük genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Karabük ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "Ağır sanayi zemini nasıl güçlendirilir?", answer: "DSM, jet grout ve fore kazık kombinasyonlarıyla oturma ve taşıma güvenliği sağlanır; yöntem yük ve zemine göre seçilir." },
@@ -3395,6 +3934,13 @@ const cityEnrichmentList: CityEnrichment[] = [
     sections: [
       { heading: "Kilis zemin koşulları", body: ["Platform zeminleri nispeten sağlam olsa da ova kesimlerinde alüvyon ve gevşek dolgu tabakaları bulunur; 2023 depremlerinden etkilenen bölgeye yakınlık dikkat gerektirir.", "Parsel bazında zemin etüdü esastır."] },
       { heading: "Kilis'te uygulama", body: ["Alüvyonda DSM ve jet grout; yüksek yükler için fore kazık; sağlam platformda temel çözümleri optimize edilir.", "YER6, kolon sürekliliği ve üretim kayıtlarıyla kaliteyi belgeler."] }
+      ,{
+        heading: "Kilis jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Kilis genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Kilis ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "Deprem bölgesine yakın alanda ne önerilir?", answer: "Zemin profiline göre DSM, jet grout veya fore kazıklı temel değerlendirilir; karar güncel zemin etüdüne dayanır." },
@@ -3408,6 +3954,13 @@ const cityEnrichmentList: CityEnrichment[] = [
     sections: [
       { heading: "Sinop zemin koşulları", body: ["Kıyı ve dere alüvyonundaki gevşek çökeller ve yüksek yeraltı suyu, oturma açısından hassastır; yamaç alanlarında şev duraylılığı öne çıkar.", "Parsel bazında zemin etüdü esastır."] },
       { heading: "Sinop'ta uygulama", body: ["Su kontrolü için jet grout; oturma kontrolü için DSM; yamaçta ankraj; yüksek yükler için fore kazık uygulanır.", "YER6, kolon sürekliliği ve drenaj kontrolüyle kaliteyi belgeler."] }
+      ,{
+        heading: "Sinop jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Sinop genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Sinop ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "Kıyı alüvyonunda hangi yöntem uygun?", answer: "Yüksek yeraltı suyu ve gevşek zemin nedeniyle jet grout, DSM veya derin temel değerlendirilir; karar zemin etüdüne bağlıdır." },
@@ -3421,6 +3974,13 @@ const cityEnrichmentList: CityEnrichment[] = [
     sections: [
       { heading: "Tunceli zemin koşulları", body: ["Dik yamaçlar ve vadi dolguları heyelan ve şev duraysızlığı açısından belirleyicidir; su yapıları çevresinde zemin koşulları özel önem taşır.", "Deplasman ve drenaj kontrolü esastır."] },
       { heading: "Tunceli'de uygulama", body: ["Yamaç duraylılığı için ankraj ve kazıklı iksa; gevşek dolguda fore kazık; yerel güçlendirme için jet grout uygulanır.", "YER6, ankraj test yükleri ve deplasman izlemesiyle kaliteyi belgeler."] }
+      ,{
+        heading: "Tunceli jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Tunceli genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Tunceli ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "Yamaç/vadi sahasında ne yapılır?", answer: "Ankraj ve kazıklı iksa ile duraylılık, etkin drenajla su etkisi azaltılır; uygulama zemin etüdüne dayanır." },
@@ -3434,6 +3994,13 @@ const cityEnrichmentList: CityEnrichment[] = [
     sections: [
       { heading: "Yozgat zemin koşulları", body: ["Yüksek plastisiteli killer nem değişiminde şişme-büzülme yaparak temellerde düzensiz gerilme oluşturabilir; oturma davranışı kritik olabilir.", "Temel sistemi zemin etüdüne göre seçilmelidir."] },
       { heading: "Yozgat'ta uygulama", body: ["Zemin rijitliğini artırmak ve şişme basınçlarını kontrol için DSM; derin yükler için fore kazık; yerel güçlendirme için jet grout uygulanır.", "YER6, kilin indeks özellikleri ve kolon testleriyle kaliteyi belgeler."] }
+      ,{
+        heading: "Yozgat jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Yozgat genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Yozgat ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       { question: "Şişen kil neden önlem gerektirir?", answer: "Nem değiştikçe şişip büzülür; bu hareket temellerde düzensiz gerilme oluşturur. Zemin iyileştirme ve uygun temel ile kontrol edilir." },
@@ -3493,6 +4060,13 @@ const cityEnrichmentList: CityEnrichment[] = [
         body: [
           "Ankara projelerinde deneme kolonları, karot alımı, tek eksenli basınç deneyleri ve kolon sürekliliği kontrolleri üretim boyunca kayıt altına alınır. Bu veriler, yapının servis yükleri altında beklenen performansı vereceğini belgelemek için teslim dosyasına işlenir.",
           "Yüksek plastisiteli killerde nem yönetimi ve numune koruması kritik olduğundan, saha kalite planı mevsim koşullarına göre uyarlanır."
+        ]
+      }
+      ,{
+        heading: "Ankara jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Ankara genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Ankara ve çevresinden teklif alabilirsiniz."
         ]
       }
     ],
@@ -3562,6 +4136,13 @@ const cityEnrichmentList: CityEnrichment[] = [
           "Üretim etaplı yürütülür, yapı hareketleri izlenir ve tüm imalat kayıtları teslim dosyasında belgelenir."
         ]
       }
+      ,{
+        heading: "İstanbul jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "İstanbul genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için İstanbul ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       {
@@ -3627,6 +4208,13 @@ const cityEnrichmentList: CityEnrichment[] = [
         body: [
           "2020 sonrasında mevcut yapıların temel ve zemin güvenliğine yönelik talep belirgin biçimde artmıştır. Temel altı jet grout ve mini kazık uygulamaları, bina büyük ölçüde kullanımda kalırken etaplı olarak yürütülebilir.",
           "Dar parsellerde kompakt ekipman kullanılır; uygulama boyunca yapı hareketleri izlenir ve kayıtlar teslim dosyasına işlenir."
+        ]
+      }
+      ,{
+        heading: "İzmir jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "İzmir genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için İzmir ve çevresinden teklif alabilirsiniz."
         ]
       }
     ],
@@ -3696,6 +4284,13 @@ const cityEnrichmentList: CityEnrichment[] = [
           "Bu tür projelerde tasarım değerlerinin sahaya aktarılması; doğru aplikasyon, delgi-enjeksiyon kayıtlarının izlenmesi ve imalatın testlerle doğrulanmasına bağlıdır."
         ]
       }
+      ,{
+        heading: "Bursa jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Bursa genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Bursa ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       {
@@ -3758,6 +4353,13 @@ const cityEnrichmentList: CityEnrichment[] = [
           "Bu alanlarda jet grout geçirimsizlik perdesi, DSM ile alan iyileştirmesi ve fore kazıklı derin temeller proje gereksinimine göre birlikte kurgulanır."
         ]
       }
+      ,{
+        heading: "Kocaeli jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Kocaeli genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Kocaeli ve çevresinden teklif alabilirsiniz."
+        ]
+      }
     ],
     faq: [
       {
@@ -3818,6 +4420,13 @@ const cityEnrichmentList: CityEnrichment[] = [
         body: [
           "Karst şüphesi olan parsellerde sondaj programı gerektiğinde jeofizik ölçümlerle desteklenir; tespit edilen boşluklar kontrollü enjeksiyonla doldurulur ve sarf kayıtlarıyla haritalanır.",
           "Dolum sonrası kontrol sondajları ve enjeksiyon sarf karşılaştırmasıyla hedefe ulaşıldığı doğrulanır; tüm veriler teslim dosyasına işlenir."
+        ]
+      }
+      ,{
+        heading: "Antalya jet grout, fore kazık, DSM ve ankraj uygulamaları",
+        body: [
+          "Antalya genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
+          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Antalya ve çevresinden teklif alabilirsiniz."
         ]
       }
     ],

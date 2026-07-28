@@ -60,7 +60,7 @@ export function ContactContent() {
             title="Yer6 Zemin Güçlendirme Geoteknik Mühendislik Zemin İyileştirme - Armut"
           >
             <img
-              src="https://cdn.armut.com/images/armut-member-badge-colour@2x.png"
+              src="/images/site/armut-member-badge-colour@2x.png"
               alt="YER6 Zemin Güçlendirme Geoteknik Mühendislik — Armut üyelik rozeti"
               className="mx-auto block h-auto w-full max-w-[260px]"
               loading="lazy"

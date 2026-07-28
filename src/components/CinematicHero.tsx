@@ -6,8 +6,7 @@ import { ArrowUpRight, Play, ShieldCheck } from "lucide-react";
 import { ParticleField } from "@/components/ParticleField";
 import { useLanguage } from "@/components/LanguageProvider";
 
-const heroPoster =
-  "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1400&fm=webp&q=72";
+const heroPoster = "/images/site/yer6-construction-hero.jpg";
 
 export function CinematicHero() {
   const { t } = useLanguage();
