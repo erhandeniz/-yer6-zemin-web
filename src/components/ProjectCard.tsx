@@ -9,7 +9,11 @@ type Project = (typeof projects)[number];
 
 export function ProjectCard({ project }: { project: Project }) {
   const { t } = useLanguage();
-  const imageAlt = "imageAlt" in project ? (project.imageAlt as string) : t(`${project.key}_title`);
+  // Çeviri anahtarı sözlükte yoksa t() anahtarın kendisini döndürür; kartta
+  // asla ham "proj_..." metni görünmesin diye içerikteki Türkçe alana düşülür.
+  const title = t(`${project.key}_title`) === `${project.key}_title` ? project.title : t(`${project.key}_title`);
+  const summary = t(`${project.key}_summary`) === `${project.key}_summary` ? project.summary : t(`${project.key}_summary`);
+  const imageAlt = "imageAlt" in project ? (project.imageAlt as string) : title;
 
   return (
     <article className="group gsap-reveal overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.045]">
@@ -27,12 +31,12 @@ export function ProjectCard({ project }: { project: Project }) {
             <span className="rounded-full border border-gold-300/30 bg-obsidian/60 px-3 py-1 text-xs text-gold-100 backdrop-blur">
               {project.category}
             </span>
-            <h3 className="mt-3 text-2xl font-semibold text-white">{t(`${project.key}_title`)}</h3>
+            <h3 className="mt-3 text-2xl font-semibold text-white">{title}</h3>
           </div>
           <Link
             href={`/projects/${project.slug}`}
             className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-gold-300 text-obsidian transition group-hover:rotate-45"
-            aria-label={`${t(`${project.key}_title`)} details`}
+            aria-label={`${title} details`}
           >
             <ArrowUpRight className="h-5 w-5" />
           </Link>
@@ -46,7 +50,7 @@ export function ProjectCard({ project }: { project: Project }) {
           <span>{project.year}</span>
           <span>{project.metric}</span>
         </div>
-        <p className="mt-4 text-sm leading-7 text-white/62">{t(`${project.key}_summary`)}</p>
+        <p className="mt-4 text-sm leading-7 text-white/62">{summary}</p>
       </div>
     </article>
   );
