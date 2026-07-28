@@ -11,6 +11,14 @@ export function ProjectDetailContent({ slug }: { slug: string }) {
   const project = projects.find((item) => item.slug === slug);
   if (!project) return null;
 
+  // Çeviri anahtarı sözlükte yoksa t() anahtarın kendisini döndürür; ekranda
+  // asla ham "proj_..." metni görünmesin diye içerikteki Türkçe alana düşülür.
+  const tp = (suffix: "title" | "summary" | "challenge" | "solution", fallback: string) => {
+    const key = `${project.key}_${suffix}`;
+    const value = t(key);
+    return value === key ? fallback : value;
+  };
+
   const technicalInfo = "technicalInfo" in project ? (project.technicalInfo as { label: string; value: string }[]) : [];
   const usedEquipment = "usedEquipment" in project ? (project.usedEquipment as string[]) : [];
   const soilProblem = "soilProblem" in project ? (project.soilProblem as string) : "";
@@ -20,7 +28,7 @@ export function ProjectDetailContent({ slug }: { slug: string }) {
   const technicalSummary = "technicalSummary" in project ? (project.technicalSummary as string) : "";
   const applicationScope = "applicationScope" in project ? (project.applicationScope as string[]) : [];
   const gallery = "gallery" in project ? (project.gallery as { src: string; alt: string }[]) : [];
-  const imageAlt = "imageAlt" in project ? (project.imageAlt as string) : t(`${project.key}_title`);
+  const imageAlt = "imageAlt" in project ? (project.imageAlt as string) : tp("title", project.title);
   const relatedServiceSlugs = "relatedServiceSlugs" in project ? (project.relatedServiceSlugs as string[]) : [];
   const relatedServices = relatedServiceSlugs
     .map((serviceSlug) => getServiceBySlug(serviceSlug))
@@ -48,9 +56,9 @@ export function ProjectDetailContent({ slug }: { slug: string }) {
           <div className="mt-10 max-w-4xl">
             <span className="rounded-full bg-gold-300 px-4 py-2 text-sm font-semibold text-obsidian">{project.category}</span>
             <h1 className="mt-6 text-balance text-4xl font-semibold leading-tight text-white sm:text-5xl md:text-7xl">
-              {t(`${project.key}_title`)}
+              {tp("title", project.title)}
             </h1>
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-white/68">{t(`${project.key}_summary`)}</p>
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-white/68">{tp("summary", project.summary)}</p>
           </div>
         </div>
       </section>
@@ -100,7 +108,7 @@ export function ProjectDetailContent({ slug }: { slug: string }) {
           <article className="gsap-reveal rounded-[2rem] border border-white/10 bg-white/[0.045] p-8">
             <MapPin className="h-8 w-8 text-gold-200" />
             <h2 className="mt-6 text-3xl font-semibold text-white">{t("projectChallenge")}</h2>
-            <p className="mt-4 text-sm leading-7 text-white/62">{t(`${project.key}_challenge`)}</p>
+            <p className="mt-4 text-sm leading-7 text-white/62">{tp("challenge", project.challenge)}</p>
             {soilProblem && (
               <p className="mt-4 text-sm leading-7 text-white/55 border-t border-white/10 pt-4">{soilProblem}</p>
             )}
@@ -108,7 +116,7 @@ export function ProjectDetailContent({ slug }: { slug: string }) {
           <article className="gsap-reveal rounded-[2rem] border border-white/10 bg-white/[0.045] p-8">
             <CheckCircle2 className="h-8 w-8 text-gold-200" />
             <h2 className="mt-6 text-3xl font-semibold text-white">{t("projectSolution")}</h2>
-            <p className="mt-4 text-sm leading-7 text-white/62">{t(`${project.key}_solution`)}</p>
+            <p className="mt-4 text-sm leading-7 text-white/62">{tp("solution", project.solution)}</p>
             {solutionMethod && (
               <p className="mt-4 text-sm leading-7 text-white/55 border-t border-white/10 pt-4">{solutionMethod}</p>
             )}

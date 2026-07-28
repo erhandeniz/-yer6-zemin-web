@@ -1090,7 +1090,7 @@ const projectCatalog = [
     ],
     usedEquipment: ["Kompakt Paletli Jet Grout Delgi Makinesi", "Yüksek Basınç Enjeksiyon Pompası", "Jet Grout Santrali / Mikser"],
     result: "Temel altı zemin, yapı kullanımı kesintiye uğratılmadan jet grout kolonlarıyla güçlendirildi. Kompakt ekipman sayesinde standart makinelerin giremeyeceği alanlarda imalat tamamlandı.",
-    seoTitle: "Bina Altı Jet Grout Güçlendirme Uygulaması | YER6",
+    seoTitle: "Bina Altı Jet Grout Güçlendirme Uygulaması",
     metaDescription: "Mevcut yapı altında sınırlı yükseklikte kompakt ekipmanla jet grout zemin güçlendirme: dar alanda temel altı kolon imalatı ve saha uygulaması.",
     relatedServiceSlugs: ["bina-alti-jet-grout", "jet-grout"]
   },
@@ -1120,7 +1120,7 @@ const projectCatalog = [
     ],
     usedEquipment: ["Bauer BG 40 Rotary Delgi Makinesi", "IFG BG 36 Rotary Delgi Makinesi", "SANY Rotary Delgi Makineleri", "Paletli Servis Vinçleri", "Donatı Kafesi Yerleştirme Ekipmanı"],
     result: "Çok makineli filo düzeniyle yüksek imalat temposu korundu; derin temel kazıkları proje programına uygun şekilde tamamlandı.",
-    seoTitle: "Körfez Bölgesi Büyük Çaplı Fore Kazık Projesi | YER6",
+    seoTitle: "Körfez Bölgesi Büyük Çaplı Fore Kazık Projesi",
     metaDescription: "Körfez bölgesinde Bauer BG 40, IFG BG 36 ve SANY delgi makineleriyle çok makineli eş zamanlı büyük çaplı fore kazık imalatı — YER6 yurt dışı saha uygulaması.",
     gallery: [
       { src: "/images/projects/saha/korfez-fore-kazik-01.webp", alt: "Körfez sahasında sıralı rotary delgi makineleri ve kırmızı paletli vinçler" },
@@ -1158,7 +1158,7 @@ const projectCatalog = [
     ],
     usedEquipment: ["Kompakt Delgi Makinesi", "İksa Perde Sistemi", "Deformasyon İzleme Ekipmanı"],
     result: "Kazı, komşu yapılara zarar vermeden güvenle desteklendi; kent merkezi koşullarında imalat programı korundu.",
-    seoTitle: "Avrupa Kent Merkezi Kazık ve İksa Uygulaması | YER6",
+    seoTitle: "Avrupa Kent Merkezi Kazık ve İksa Uygulaması",
     metaDescription: "Orta Avrupa'da yoğun kent dokusunda iksa perdesi önünde kazık imalatı: dar alan, düşük titreşim ve komşu yapı güvenliği — YER6 yurt dışı uygulaması.",
     relatedServiceSlugs: ["fore-kazik", "iksa-sistemleri"]
   },
@@ -1187,7 +1187,7 @@ const projectCatalog = [
     ],
     usedEquipment: ["Rotary Delgi Makinesi", "Çelik Muhafaza Boruları", "Servis Ekipmanları"],
     result: "Zorlu nehir yatağı koşullarında delgi stabilitesi muhafaza borularıyla sağlandı; köprü temel kazıkları güvenle tamamlandı.",
-    seoTitle: "Köprü Temeli Kazık İmalatı | YER6",
+    seoTitle: "Köprü Temeli Kazık İmalatı",
     metaDescription: "Nehir yatağında mevcut köprü ayaklarına bitişik, çelik muhafaza borulu fore kazık imalatı — YER6 yurt dışı köprü temeli uygulaması.",
     relatedServiceSlugs: ["fore-kazik"]
   },
@@ -1216,7 +1216,7 @@ const projectCatalog = [
     ],
     usedEquipment: ["Bauer BG 28 Rotary Delgi Makinesi", "SANY Rotary Delgi Makinesi", "Donatı Kafesi ve Beton Döküm Ekipmanları"],
     result: "Blok bazlı imalat planıyla makine kaydırmaları ve kazık imalatı kesintisiz yürütüldü; temel imalatları üstyapı programını aksatmadan tamamlandı.",
-    seoTitle: "Yurt Dışı Konut Projesi Fore Kazık İmalatı | YER6",
+    seoTitle: "Yurt Dışı Konut Projesi Fore Kazık İmalatı",
     metaDescription: "Güney Asya'da çok bloklu konut projesinde Bauer BG 28 ve SANY delgi makineleriyle fore kazık imalatı — YER6 yurt dışı saha uygulaması.",
     gallery: [
       { src: "/images/projects/saha/konut-fore-kazik-01.webp", alt: "Konut sahasında kazık imalatı yapan kırmızı SANY rotary delgi makinesi" },
