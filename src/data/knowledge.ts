@@ -4515,6 +4515,368 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     keywords: ["Bursa alüvyon zemin", "Bursa jet grout firmaları", "Bursa OSB zemin güçlendirme", "Bursa fore kazık", "fabrika temeli zemin iyileştirme"],
     published: true
   },
+  // ————————————————————————————————————————————————————————————
+  // MİNİ KAZIK (MİKRO KAZIK) SERİSİ
+  // ————————————————————————————————————————————————————————————
+  {
+    slug: "mini-kazik-nedir",
+    title: "Mini Kazık (Mikro Kazık) Nedir? Uygulama ve Tasarım Esasları",
+    seoTitle: "Mini Kazık Nedir? Mikro Kazık Uygulaması ve Tasarımı | YER6",
+    description:
+      "Mini kazık (mikro kazık) nedir, nasıl imal edilir? Çap aralığı, donatı seçimi, enjeksiyon tipleri ve mevcut yapı altında güçlendirme uygulamaları.",
+    excerpt:
+      "Mini kazık; genellikle 90–300 mm çapında, yüksek dayanımlı donatı ve enjeksiyonla teşkil edilen küçük çaplı kazıktır. Dar ve düşük tavanlı alanlarda, mevcut yapı altında temel güçlendirmede tercih edilir.",
+    category: "Mini Kazık",
+    readingTime: "10 dk",
+    publishedAt: "2026-07-28",
+    updatedAt: "2026-07-28",
+    heroLabel: "Mini Kazık Bilgi Merkezi",
+    introduction:
+      "Mini kazık (mikro kazık), küçük çaplı delgi ile açılan ve içine donatı yerleştirilerek enjeksiyonla doldurulan derin temel elemanıdır. Büyük çaplı fore kazık ekipmanının giremediği dar, alçak tavanlı veya mevcut yapı içindeki sahalarda; yükü sağlam tabakalara aktarmak amacıyla kullanılır.",
+    sections: [
+      {
+        id: "mini-kazik-nedir",
+        title: "Mini Kazık Nedir?",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Mini kazık, tipik olarak 90–300 mm çap aralığında açılan delginin içine çelik boru, nervürlü donatı veya çubuk sistem yerleştirilip çimento şerbeti ile doldurulmasıyla oluşturulan küçük çaplı bir kazıktır. Literatürde mikro kazık, mikropile veya root pile adlarıyla da anılır."
+          },
+          {
+            type: "paragraph",
+            content:
+              "Yük aktarımı ağırlıklı olarak çevre sürtünmesiyle gerçekleşir; uç direnci katkısı büyük çaplı kazıklara göre daha sınırlıdır. Bu nedenle mini kazık tasarımında soket boyu, enjeksiyon tipi ve zemin-şerbet ara yüzeyindeki sürtünme direnci belirleyici parametrelerdir."
+          },
+          {
+            type: "note",
+            title: "Kısa cevap",
+            content:
+              "Mini kazık, dar ve erişimi zor sahalarda yükü derindeki sağlam tabakalara aktaran, küçük çaplı ve donatılı enjeksiyon kazığıdır. En yaygın kullanım alanı mevcut binaların temel güçlendirmesidir."
+          }
+        ]
+      },
+      {
+        id: "nerede-kullanilir",
+        title: "Mini Kazık Nerelerde Kullanılır?",
+        blocks: [
+          {
+            type: "list",
+            title: "Tipik uygulama alanları",
+            items: [
+              "Mevcut binaların altında temel güçlendirme (underpinning)",
+              "Bodrum katı, sanayi tesisi veya işletmedeki yapı içinde düşük tavan yüksekliğinde imalat",
+              "Şehir içinde dar parsellerde büyük ekipmanın giremediği sahalar",
+              "Kazı sırasında komşu yapının temelinin desteklenmesi",
+              "Şev stabilitesi ve heyelan bölgelerinde zemin çivileme ile birlikte kullanım",
+              "Makine temellerinde ve lokal yük artışlarında ilave taşıma kapasitesi",
+              "Köprü ayaklarının ve istinat yapılarının güçlendirilmesi",
+              "Kayalık veya blok içeren zeminlerde delgi kolaylığı gereken durumlar"
+            ]
+          },
+          {
+            type: "paragraph",
+            content:
+              "Küçük ekipmanla çalışabilmesi, mini kazığı işletmenin durdurulamadığı fabrika ve tesislerde öne çıkarır. Uygulama sırasında oluşan titreşim, çakma kazıklara göre belirgin biçimde düşüktür; bu da hassas cihaz bulunan tesislerde tercih sebebidir."
+          }
+        ]
+      },
+      {
+        id: "imalat-asamalari",
+        title: "Mini Kazık İmalat Aşamaları",
+        blocks: [
+          {
+            type: "list",
+            title: "Saha uygulama sırası",
+            items: [
+              "Aplikasyon: kazık akslarının projeye göre sahada işaretlenmesi",
+              "Delgi: zemin koşuluna göre muhafaza borulu, burgulu veya darbeli-döner yöntemle delgi",
+              "Delgi temizliği: delik içindeki gevşek malzemenin su veya hava ile uzaklaştırılması",
+              "Donatı yerleştirme: çelik boru, nervürlü çubuk veya kafes sistemin merkezleyicilerle indirilmesi",
+              "Enjeksiyon: şerbetin delgi tabanından yukarı doğru, temiz şerbet gelene kadar basılması",
+              "Muhafaza çekimi: kullanıldıysa borunun kademeli çekilmesi ve seviye takviyesi",
+              "Başlık teşkili: kazık başının traşlanması, başlık kirişi veya plaka ile üstyapıya bağlanması"
+            ]
+          },
+          {
+            type: "warning",
+            title: "Enjeksiyon sürekliliği kritiktir",
+            content:
+              "Şerbet basımı delgi tabanından başlamalı ve kesintisiz sürdürülmelidir. Kesinti veya erken durdurma, kazık gövdesinde boşluk ve süreksizlik oluşturarak taşıma kapasitesini beklenenin çok altına düşürebilir."
+          }
+        ]
+      },
+      {
+        id: "enjeksiyon-tipleri",
+        title: "Enjeksiyon Tipleri ve Kapasiteye Etkisi",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Mini kazıklar enjeksiyon biçimine göre sınıflandırılır. Basit yerçekimi enjeksiyonundan tekrarlı basınçlı enjeksiyona doğru gidildikçe zemin-şerbet ara yüzeyindeki sürtünme direnci ve dolayısıyla taşıma kapasitesi artar."
+          },
+          {
+            type: "list",
+            title: "Yaygın enjeksiyon türleri",
+            items: [
+              "Yerçekimi (tremie) enjeksiyonu: şerbetin basınçsız doldurulması; en düşük kapasite artışı",
+              "Basınç altında enjeksiyon: muhafaza çekilirken basınç uygulanması; sürtünme direncinde artış",
+              "Sonradan (post-grouting) enjeksiyon: priz sonrası ilave enjeksiyonla ara yüzeyin sıkılaştırılması",
+              "Tekrarlı enjeksiyon (tüp à manchette): manşonlu boru ile kademeli ve tekrarlanabilir enjeksiyon"
+            ]
+          },
+          {
+            type: "note",
+            title: "Tasarım girdisi",
+            content:
+              "Enjeksiyon tipi yalnızca imalat detayı değil, doğrudan tasarım parametresidir. Projede öngörülen enjeksiyon tipi değiştirilecekse taşıma kapasitesi yeniden hesaplanmalı ve yükleme testiyle doğrulanmalıdır."
+          }
+        ]
+      },
+      {
+        id: "kalite-kontrol",
+        title: "Mini Kazıkta Kalite Kontrol",
+        blocks: [
+          {
+            type: "list",
+            title: "İzlenmesi gereken kayıtlar",
+            items: [
+              "Her kazık için delgi derinliği, süresi ve karşılaşılan zemin tanımı",
+              "Kullanılan şerbet hacmi ile teorik hacmin karşılaştırılması (fazla sarfiyat boşluk/kaçak işaretidir)",
+              "Şerbet su/çimento oranı ve alınan numunelerin basınç dayanımı",
+              "Enjeksiyon basıncı ve süresi",
+              "Donatı tipi, boyu, ek detayı ve merkezleyici aralığı",
+              "Statik yükleme testi ve gerekli görülen kazıklarda çekme testi sonuçları"
+            ]
+          },
+          {
+            type: "paragraph",
+            content:
+              "Yükleme testi, mini kazık uygulamalarında hesabın saha gerçeğiyle doğrulanmasının en güvenilir yoludur. Test kazığı adedi ve yük seviyesi, proje büyüklüğü ve zemin belirsizliğine göre şartnamede tanımlanır."
+          }
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "Mini kazık çapı kaç cm olur?",
+        answer:
+          "Uygulamada yaygın çap aralığı 90–300 mm'dir. Çap; zemin koşulu, hedeflenen taşıma kapasitesi, kullanılacak donatı kesiti ve saha erişimine göre projelendirmeyle belirlenir."
+      },
+      {
+        question: "Mini kazık ile fore kazık arasındaki fark nedir?",
+        answer:
+          "Fore kazık büyük çaplı (genellikle 60 cm ve üzeri), yüksek yükleri taşıyan ve uç direncinden de belirgin katkı alan bir derin temel elemanıdır. Mini kazık ise küçük çaplıdır, yükü ağırlıklı olarak çevre sürtünmesiyle aktarır ve büyük ekipmanın giremediği dar veya alçak tavanlı sahalarda uygulanabilir."
+      },
+      {
+        question: "Mevcut binanın altına mini kazık yapılabilir mi?",
+        answer:
+          "Evet; mini kazığın en yaygın kullanım alanlarından biri mevcut yapıların temel güçlendirmesidir. Bodrum katında veya bina çevresinde küçük ekipmanla çalışılabilir. Ancak imalat sırası, yük aktarım detayı ve deformasyon izleme planı proje kapsamında tanımlanmalıdır."
+      },
+      {
+        question: "Mini kazık ne kadar yük taşır?",
+        answer:
+          "Taşıma kapasitesi; çap, soket boyu, zemin sürtünme direnci, donatı kesiti ve enjeksiyon tipine bağlıdır. Tek bir genel değer verilemez; kapasite hesapla belirlenir ve statik yükleme testiyle doğrulanır."
+      },
+      {
+        question: "Mini kazık imalatı binada titreşim ve hasar yapar mı?",
+        answer:
+          "Mini kazık delgi esaslı bir yöntemdir ve çakma kazıklara göre titreşimi düşüktür. Buna karşın her saha kendine özgüdür; hassas yapılarda deformasyon ve titreşim izleme planı kurulması, imalat sırasının kademeli düzenlenmesi önerilir."
+      },
+      {
+        question: "Mini kazık maliyeti neye göre değişir?",
+        answer:
+          "Metre başına maliyeti belirleyen ana kalemler: kazık çapı ve boyu, toplam metraj, donatı tipi ve kesiti, çimento sarfiyatı, delgi zorluğu (kaya, blok, yeraltı suyu), saha erişimi ve mobilizasyon mesafesidir. Sahaya özel metraj için proje dosyası üzerinden değerlendirme yapılması gerekir."
+      },
+      {
+        question: "Mini kazık hangi zeminlerde uygulanır?",
+        answer:
+          "Kum, silt, kil, dolgu, çakıl ve ayrışmış kaya dahil geniş bir zemin yelpazesinde uygulanabilir. Delgi yöntemi zemine göre seçilir; bloklu ve kayalık zeminlerde darbeli-döner delgi, göçmeye eğilimli zeminlerde muhafaza borulu delgi tercih edilir."
+      }
+    ],
+    relatedSlugs: ["mini-kazik-tercih-nedenleri", "fore-kazik-nedir", "temel-alti-zemin-guclendirme"],
+    keywords: [
+      "mini kazık nedir",
+      "mikro kazık",
+      "mini kazık çapı",
+      "mini kazık fiyatı",
+      "mini kazık ile fore kazık farkı",
+      "bina altı mini kazık",
+      "underpinning mini kazık",
+      "mikro kazık uygulaması"
+    ],
+    published: true
+  },
+  // ————————————————————————————————————————————————————————————
+  // ANKRAJ SERİSİ
+  // ————————————————————————————————————————————————————————————
+  {
+    slug: "ankraj-uygulama-asamalari",
+    title: "Ankraj Uygulama Aşamaları: Delgi, Enjeksiyon, Germe ve Test",
+    seoTitle: "Ankraj Nasıl Yapılır? Uygulama Aşamaları ve Germe Testi | YER6",
+    description:
+      "Ankraj nasıl yapılır? Delgi, halat/çubuk yerleştirme, kök enjeksiyonu, germe (öngerme) ve kabul testi adımlarıyla ankraj uygulamasının saha rehberi.",
+    excerpt:
+      "Ankraj imalatı; delgi, tendon yerleştirme, kök bölgesi enjeksiyonu, serbest boy düzenlemesi, germe ve kabul testi adımlarından oluşur. Her adımın kaydı, sistemin güvenliğinin belgesidir.",
+    category: "Ankraj & İksa",
+    readingTime: "11 dk",
+    publishedAt: "2026-07-28",
+    updatedAt: "2026-07-28",
+    heroLabel: "Ankraj Bilgi Merkezi",
+    introduction:
+      "Ankraj, derin kazı perdelerinin ve istinat yapılarının yanal yüklere karşı desteklenmesinde kullanılan öngermeli bir zemin elemanıdır. Çekme kuvveti, kazı arkasındaki sağlam zemine yerleştirilen kök bölgesi üzerinden aktarılır. Uygulamanın güvenliği, aşamaların doğru sırayla ve kayıtlı biçimde yürütülmesine bağlıdır.",
+    sections: [
+      {
+        id: "ankraj-bilesenleri",
+        title: "Ankrajın Bileşenleri",
+        blocks: [
+          {
+            type: "list",
+            title: "Bir ankrajı oluşturan parçalar",
+            items: [
+              "Tendon: yükü taşıyan öngerme halatı (strand) veya çubuk (bar)",
+              "Kök (bond) bölgesi: yükün zemine aktarıldığı, enjeksiyonla bağlanan alt bölge",
+              "Serbest boy: kök ile başlık arasında kalan, zemine bağlanmayan bölüm",
+              "Kılıf ve koruma: serbest boyda sürtünmeyi önleyen ve korozyona karşı koruyan sistem",
+              "Başlık: yükün perdeye veya kuşak kirişine aktarıldığı plaka ve kama grubu",
+              "Kuşak kirişi: ankraj kuvvetini perde boyunca dağıtan çelik veya betonarme eleman"
+            ]
+          }
+        ]
+      },
+      {
+        id: "asamalar",
+        title: "Uygulama Aşamaları",
+        blocks: [
+          {
+            type: "list",
+            title: "Sahada izlenen sıra",
+            items: [
+              "Aplikasyon: ankraj kotu, aksı ve eğiminin projeye göre işaretlenmesi",
+              "Delgi: projede belirtilen çap, boy ve eğimde, zemine uygun yöntemle delgi yapılması",
+              "Delgi temizliği ve kontrolü: derinlik ve eğim teyidi, gevşek malzemenin uzaklaştırılması",
+              "Tendon hazırlığı ve yerleştirme: kök boyunun sıyrılması, serbest boyun kılıflanması, merkezleyicilerin takılması",
+              "Kök enjeksiyonu: kök bölgesinin tabandan yukarı doğru şerbetle doldurulması",
+              "Priz süresi: şerbetin projede öngörülen dayanıma ulaşması için beklenmesi",
+              "Germe (öngerme): kriko ile kademeli yükleme, kilitleme yükünde kama ile sabitleme",
+              "Kabul testi: yük-deplasman ölçümü ve kayıt altına alınması",
+              "Koruma: başlık bölgesinin korozyona karşı korunması ve kapatılması"
+            ]
+          },
+          {
+            type: "warning",
+            title: "Priz süresi beklenmeden germe yapılmaz",
+            content:
+              "Kök enjeksiyonu yeterli dayanıma ulaşmadan germe yapılırsa kök bölgesi sıyrılır ve ankraj tasarım yükünü taşıyamaz. Bekleme süresi çimento tipi, saha sıcaklığı ve numune sonuçlarına göre belirlenir."
+          }
+        ]
+      },
+      {
+        id: "germe-ve-test",
+        title: "Germe ve Kabul Testleri",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Germe işlemi, ankrajın yalnızca kurulumu değil; aynı zamanda taşıma kapasitesinin sahada doğrulandığı aşamadır. Yük kademeli olarak artırılır, her kademede deplasman okunur ve yük-deplasman eğrisi kaydedilir."
+          },
+          {
+            type: "list",
+            title: "Yaygın test türleri",
+            items: [
+              "Uygunluk (suitability) testi: proje başında seçilen ankrajlarda tasarım varsayımlarının doğrulanması",
+              "Kabul (acceptance) testi: her ankrajda uygulanan rutin yükleme ve kilitleme kontrolü",
+              "Sürünme (creep) ölçümü: sabit yük altında zamana bağlı deplasman artışının izlenmesi",
+              "Yük kaybı kontrolü: kilitleme sonrası yükte oluşan düşüşün sınır değerlerle karşılaştırılması"
+            ]
+          },
+          {
+            type: "note",
+            title: "Kayıt zorunludur",
+            content:
+              "Her ankrajın germe kaydı; ankraj numarası, kotu, boyu, kök boyu, uygulanan kademeler, ölçülen deplasmanlar ve kilitleme yükü ile birlikte dosyalanmalıdır. Bu kayıtlar iksa sisteminin güvenlik belgesidir."
+          }
+        ]
+      },
+      {
+        id: "izleme",
+        title: "Kazı Sürecinde İzleme",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Ankrajlı iksa sistemlerinde kazı kademeli ilerler: bir sıra ankraj gerilip kabul edilmeden alt kademe kazısına geçilmez. Kazı süresince perde deplasmanları inklinometre, yüzey hareketleri ise nivelman ve optik ölçümlerle izlenir."
+          },
+          {
+            type: "list",
+            title: "İzlenen büyüklükler",
+            items: [
+              "Perde yatay deplasmanı (inklinometre)",
+              "Komşu yapı ve zemin yüzeyi oturmaları",
+              "Ankraj yüklerinde zamana bağlı değişim (yük hücresi kullanılan noktalarda)",
+              "Yeraltı suyu seviyesi",
+              "Çatlak genişliği takibi (komşu yapılarda)"
+            ]
+          },
+          {
+            type: "warning",
+            title: "Eşik değerler önceden tanımlanmalı",
+            content:
+              "İzleme yalnızca ölçüm yapmak değildir. Uyarı ve müdahale eşikleri kazı başlamadan belirlenmeli, eşik aşıldığında uygulanacak önlemler (kazı durdurma, ilave ankraj, dolgu) yazılı olmalıdır."
+          }
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "Ankraj nasıl yapılır, kaç aşamadan oluşur?",
+        answer:
+          "Temel aşamalar: aplikasyon, delgi, delgi temizliği, tendon yerleştirme, kök enjeksiyonu, priz beklemesi, germe (öngerme), kabul testi ve başlık koruması. Her aşamanın kaydı tutulur."
+      },
+      {
+        question: "Ankraj boyu ve kök boyu nasıl belirlenir?",
+        answer:
+          "Serbest boy, kayma yüzeyinin arkasındaki sağlam bölgeye ulaşacak şekilde; kök boyu ise tasarım yükünü zemine aktaracak sürtünme direncine göre hesaplanır. İkisi de zemin etüdü verisi ve stabilite analizine dayanır; sahada göz kararı uzatılıp kısaltılmaz."
+      },
+      {
+        question: "Ankraj germe testi neden yapılır?",
+        answer:
+          "Germe testi, ankrajın tasarım yükünü taşıdığını ve kök bölgesinin sıyrılmadığını sahada kanıtlar. Yük-deplasman eğrisi ve sürünme ölçümü, hesabın gerçekle uyumunu gösteren tek doğrudan kanıttır."
+      },
+      {
+        question: "Geçici ankraj ile kalıcı ankraj farkı nedir?",
+        answer:
+          "Geçici ankrajlar inşaat süresince (genellikle 2 yıla kadar) görev yapar. Kalıcı ankrajlarda ise yapı ömrü boyunca çalışacağı için korozyon koruması çok daha kapsamlıdır: çift koruma sistemi, kılıf detayları ve başlık kapatma standartları farklıdır."
+      },
+      {
+        question: "Ankraj yerine ne kullanılabilir?",
+        answer:
+          "Saha koşuluna göre payandalı (destekli) iksa, kuşaklı kazıklı perde, berm bırakılarak kademeli kazı, zemin çivisi veya diyafram duvar alternatif olabilir. Seçim; kazı derinliği, komşu yapı mesafesi, mülkiyet sınırı ve deformasyon toleransına göre yapılır."
+      },
+      {
+        question: "Komşu parsele ankraj yapılabilir mi?",
+        answer:
+          "Ankrajın kök bölgesi çoğu zaman kazı sınırının dışına, komşu parselin altına uzanır. Bu nedenle mülkiyet izni gerekir. İzin alınamayan durumlarda payandalı iksa veya kendinden ankastre perde gibi alternatifler değerlendirilir."
+      },
+      {
+        question: "Ankraj maliyeti neye bağlıdır?",
+        answer:
+          "Ankraj adedi ve boyu, halat sayısı (kapasite), delgi çapı ve zemin zorluğu, kalıcı/geçici koruma sınıfı, kuşak kirişi tipi ve test sayısı maliyetin ana bileşenleridir. Sahaya özel değerlendirme için iksa projesi ve zemin etüdü gerekir."
+      }
+    ],
+    relatedSlugs: ["ankraj-nedir", "kazi-destek-sistemleri-nedir", "zemin-etudu-nasil-yapilir"],
+    keywords: [
+      "ankraj nasıl yapılır",
+      "ankraj uygulama aşamaları",
+      "ankraj germe testi",
+      "öngermeli ankraj",
+      "ankraj kök boyu",
+      "geçici ankraj kalıcı ankraj farkı",
+      "iksa ankraj",
+      "ankraj fiyatı"
+    ],
+    published: true
+  },
   ...seoArticles
 ];
 

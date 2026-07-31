@@ -10,7 +10,8 @@
     "seo:test": "node scripts/seo-check.mjs",
     "seo:indexnow": "node scripts/indexnow-ping.mjs",
     "earthquake:test": "node scripts/earthquake-check.mjs",
-    "gates": "npm run typecheck && npm run earthquake:test && npm run build && npm run seo:test"
+    "content:test": "node scripts/content-check.mjs",
+    "gates": "npm run typecheck && npm run content:test && npm run earthquake:test && npm run build && npm run seo:test"
   },
   "dependencies": {
     "@fontsource/roboto": "^5.3.0",

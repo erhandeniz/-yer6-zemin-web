@@ -328,7 +328,7 @@ export const seoArticles: KnowledgeArticle[] = [
       }
     ],
     faq: [],
-    relatedSlugs: ["zemin-iyilestirme-yontemleri", "geoteknik-danismanlik"],
+    relatedSlugs: ["zemin-iyilestirme-yontemleri", "zemin-etudu-nasil-yapilir"],
     keywords: ["zemin iyileştirme firmaları", "geoteknik firmaları", "fore kazık firmaları", "jet grout firmaları", "zemin güçlendirme firmaları"],
     published: true
   },
