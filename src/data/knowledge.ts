@@ -4877,6 +4877,933 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     ],
     published: true
   },
+  // ————————————————————————————————————————————————————————————
+  // İKSA / KAZI DESTEK SERİSİ
+  // ————————————————————————————————————————————————————————————
+  {
+    slug: "iksa-sistemi-nasil-secilir",
+    title: "İksa Sistemi Nasıl Seçilir? Karar Kriterleri ve Karşılaştırma",
+    seoTitle: "İksa Sistemi Nasıl Seçilir? Kazı Destek Sistemi Karşılaştırması | YER6",
+    description:
+      "Ankrajlı perde, payandalı iksa, berlin duvarı, diyafram duvar ve zemin çivisi arasında seçim nasıl yapılır? Kazı derinliği, komşu yapı ve zemin koşuluna göre karar rehberi.",
+    excerpt:
+      "İksa sistemi seçimi; kazı derinliği, komşu yapı mesafesi, zemin türü, yeraltı suyu, mülkiyet sınırı ve izin verilen deformasyona göre yapılır. Tek bir 'en iyi' sistem yoktur.",
+    category: "Ankraj & İksa",
+    readingTime: "10 dk",
+    publishedAt: "2026-07-28",
+    updatedAt: "2026-07-28",
+    heroLabel: "İksa Bilgi Merkezi",
+    introduction:
+      "Derin kazılarda iksa sistemi, kazı çevresindeki zeminin ve komşu yapıların güvenliğini sağlayan geçici ya da kalıcı destek yapısıdır. Doğru sistem, sahanın kısıtlarına göre seçilir; komşu parselde kullanılan çözümün kopyalanması güvenli bir yöntem değildir.",
+    sections: [
+      {
+        id: "karar-kriterleri",
+        title: "Seçimi Belirleyen Kriterler",
+        blocks: [
+          {
+            type: "list",
+            title: "Projede değerlendirilen başlıklar",
+            items: [
+              "Kazı derinliği ve kazı geometrisi",
+              "Komşu yapıların mesafesi, temel tipi ve hassasiyeti",
+              "Zemin profili: kohezyonlu/granüler, dolgu, kaya derinliği",
+              "Yeraltı suyu seviyesi ve su geçirimsizlik ihtiyacı",
+              "İzin verilen yatay deplasman ve komşu yapıdaki oturma sınırı",
+              "Mülkiyet sınırı ve komşu parsele ankraj izni durumu",
+              "İş programı, saha erişimi ve ekipman kısıtları",
+              "Sistemin geçici mi kalıcı mı çalışacağı"
+            ]
+          },
+          {
+            type: "warning",
+            title: "Deformasyon sınırı önce belirlenir",
+            content:
+              "İksa tasarımına başlarken \"ne kadar deplasmana izin verilebilir?\" sorusu yanıtlanmalıdır. Bitişik nizam ve hassas yapı bulunan sahalarda düşük deformasyon toleransı, daha rijit ve daha maliyetli bir sistem gerektirir."
+          }
+        ]
+      },
+      {
+        id: "sistem-karsilastirmasi",
+        title: "Yaygın İksa Sistemleri ve Uygun Oldukları Koşullar",
+        blocks: [
+          {
+            type: "list",
+            title: "Sistemler",
+            items: [
+              "Ankrajlı kazıklı perde: orta-derin kazılarda yaygın; kazı içi engelsiz kalır, komşu parsele ankraj izni gerekir",
+              "Payandalı (destekli) iksa: ankraj izni alınamayan sahalarda; kazı içinde çalışma alanını kısıtlar",
+              "Berlin duvarı: kuru ve stabil zeminlerde, sığ-orta kazılarda ekonomik; su altında uygun değildir",
+              "Diyafram duvar: derin kazı, yüksek su tablası ve kalıcı yapı ihtiyacında; maliyeti yüksektir",
+              "Zemin çivili şev: yeterli kohezyona sahip zeminlerde ve şev bırakılabilen sahalarda",
+              "Sekant/tanjant kazık perde: su kesme gereken kazılarda geçirimsiz perde oluşturur"
+            ]
+          },
+          {
+            type: "note",
+            title: "Hibrit çözümler yaygındır",
+            content:
+              "Bir sahanın farklı cephelerinde farklı sistemler kullanılabilir. Örneğin komşu binaya bakan cephede ankrajlı rijit perde, boş cephede zemin çivili şev tercih edilebilir."
+          }
+        ]
+      },
+      {
+        id: "su-kontrolu",
+        title: "Yeraltı Suyu ve İksa İlişkisi",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Yeraltı suyu, iksa tasarımının en kritik girdilerindendir. Su tablasının kazı tabanının üzerinde olduğu sahalarda yalnızca yanal destek yetmez; su girişinin ve taban kabarmasının da kontrol edilmesi gerekir."
+          },
+          {
+            type: "list",
+            title: "Uygulanan yaklaşımlar",
+            items: [
+              "Geçirimsiz perde teşkili (sekant kazık, diyafram duvar, jet grout perdesi)",
+              "Kuyu veya wellpoint sistemleriyle kontrollü su düşürme",
+              "Taban tıkacı (jet grout veya DSM ile) oluşturarak kaldırma kuvvetinin dengelenmesi",
+              "Drenaj ve tahliye hatlarının kazı programına entegre edilmesi"
+            ]
+          },
+          {
+            type: "warning",
+            title: "Kontrolsüz su düşürme komşu yapıyı etkiler",
+            content:
+              "Su tablasının hızlı düşürülmesi, çevredeki zeminde konsolidasyon oturmasına ve komşu yapılarda hasara yol açabilir. Su düşürme planı, çevre etkisi hesaplanarak yapılmalıdır."
+          }
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "En iyi iksa sistemi hangisidir?",
+        answer:
+          "Her saha için geçerli tek bir en iyi sistem yoktur. Seçim; kazı derinliği, komşu yapı mesafesi, zemin ve su koşulları, mülkiyet sınırı ve izin verilen deformasyona göre yapılır. Aynı şehirde iki komşu parselde farklı sistemler doğru çözüm olabilir."
+      },
+      {
+        question: "İksa projesi zorunlu mu?",
+        answer:
+          "Derin kazılarda kazı destek sistemi mühendislik projesi gerektirir. Proje; zemin etüdü verisine dayanarak stabilite ve deformasyon analizini, imalat sırasını ve izleme planını içerir."
+      },
+      {
+        question: "Ankraj izni alınamazsa ne yapılır?",
+        answer:
+          "Komşu parsel sahibinden izin alınamadığında payandalı (destekli) iksa, kendinden ankastre perde, kademeli kazı ile berm bırakma veya üstten-aşağı (top-down) inşaat yöntemi değerlendirilir."
+      },
+      {
+        question: "İksa sistemi kazı bitince sökülür mü?",
+        answer:
+          "Geçici sistemlerde ankrajlar boşaltılır ve gerekiyorsa çelik elemanlar sökülür; kazık perdesi genellikle yerinde bırakılır. Kalıcı sistemlerde (örneğin diyafram duvar) yapı ömrü boyunca taşıyıcı olarak çalışır."
+      },
+      {
+        question: "İksa maliyetini ne belirler?",
+        answer:
+          "Kazı derinliği ve çevre uzunluğu, seçilen sistem tipi, kazık çapı ve boyu, ankraj adedi ve kapasitesi, su kesme ihtiyacı, izleme kapsamı ve saha erişimi maliyetin ana bileşenleridir."
+      },
+      {
+        question: "Kazı sırasında komşu binada çatlak oluşursa ne yapılır?",
+        answer:
+          "Kazı öncesi komşu yapıların hasar tespiti fotoğraflı olarak yapılmalıdır. Kazı sırasında çatlak gözlenirse imalat durdurulur, izleme verileri değerlendirilir ve tasarımcı mühendis kararıyla ilave destek veya dolgu gibi önlemler uygulanır."
+      }
+    ],
+    relatedSlugs: ["kazi-destek-sistemleri-nedir", "ankraj-uygulama-asamalari", "fore-kazik-nedir"],
+    keywords: [
+      "iksa sistemi nasıl seçilir",
+      "kazı destek sistemi",
+      "ankrajlı iksa",
+      "payandalı iksa",
+      "berlin duvarı",
+      "diyafram duvar iksa",
+      "derin kazı iksa",
+      "iksa maliyeti"
+    ],
+    published: true
+  },
+  {
+    slug: "iksa-deformasyon-izleme",
+    title: "İksa Sistemlerinde Deformasyon İzleme ve Erken Uyarı",
+    seoTitle: "İksa Deformasyon İzleme: İnklinometre, Nivelman ve Eşik Değerler | YER6",
+    description:
+      "Derin kazılarda perde deplasmanı ve komşu yapı oturması nasıl izlenir? İnklinometre, nivelman, yük hücresi ve uyarı-müdahale eşik değerleri rehberi.",
+    excerpt:
+      "İzleme, iksa güvenliğinin gözle görülmeyen kanıtıdır. Eşik değerler kazı başlamadan tanımlanmalı; aşıldığında uygulanacak önlemler yazılı olmalıdır.",
+    category: "Kalite Kontrol",
+    readingTime: "9 dk",
+    publishedAt: "2026-07-28",
+    updatedAt: "2026-07-28",
+    heroLabel: "İksa İzleme",
+    introduction:
+      "Bir iksa sisteminin güvenli çalıştığı ancak ölçümle bilinebilir. Deformasyon izleme; perde hareketini, komşu yapı oturmasını ve ankraj yüklerini kazı ilerledikçe takip ederek beklenmeyen davranışı erken aşamada görünür kılar.",
+    sections: [
+      {
+        id: "olcum-yontemleri",
+        title: "Kullanılan Ölçüm Yöntemleri",
+        blocks: [
+          {
+            type: "list",
+            title: "Yaygın enstrümantasyon",
+            items: [
+              "İnklinometre: perde içine yerleştirilen boru ile derinlik boyunca yatay deplasman profili",
+              "Nivelman ve optik ölçüm: komşu yapı ve zemin yüzeyindeki düşey oturmalar",
+              "Prizma/total station: perde başı ve yapı köşelerinde üç boyutlu hareket",
+              "Yük hücresi: seçilmiş ankrajlarda zamana bağlı yük değişimi",
+              "Piyezometre: yeraltı suyu seviyesi ve boşluk suyu basıncı",
+              "Çatlak ölçer: komşu yapılardaki mevcut çatlakların genişlik takibi"
+            ]
+          },
+          {
+            type: "note",
+            title: "Sıfır okuması şart",
+            content:
+              "Her enstrümanın kazı başlamadan önce referans (sıfır) okuması alınmalıdır. Sıfır okuması olmayan bir ölçüm serisi, hareketin ne kadarının kazıdan kaynaklandığını gösteremez."
+          }
+        ]
+      },
+      {
+        id: "esik-degerler",
+        title: "Uyarı ve Müdahale Eşikleri",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "İzleme planı yalnızca hangi aletin nereye konulacağını değil, hangi değerde ne yapılacağını da tanımlamalıdır. Yaygın uygulama üç kademeli eşik kurmaktır: dikkat, uyarı ve müdahale."
+          },
+          {
+            type: "list",
+            title: "Kademeli yaklaşım",
+            items: [
+              "Dikkat seviyesi: ölçüm sıklığı artırılır, veriler tasarımcıya raporlanır",
+              "Uyarı seviyesi: imalat sırası gözden geçirilir, ilave önlem hazırlığı yapılır",
+              "Müdahale seviyesi: kazı durdurulur, önceden tanımlanmış acil önlemler uygulanır"
+            ]
+          },
+          {
+            type: "warning",
+            title: "Eşikler tasarımdan türetilir",
+            content:
+              "Eşik değerleri genel bir tablodan kopyalanmaz; projenin hesapladığı beklenen deplasman ve komşu yapının kaldırabileceği hasar sınırı esas alınarak belirlenir."
+          }
+        ]
+      },
+      {
+        id: "raporlama",
+        title: "Ölçüm Sıklığı ve Raporlama",
+        blocks: [
+          {
+            type: "list",
+            title: "Pratik yaklaşım",
+            items: [
+              "Kazı ilerlerken ölçüm sıklığı artırılır; her kazı kademesinde ve ankraj germesinden sonra okuma alınır",
+              "Hareket hızlanıyorsa sıklık günlüğe kadar çıkarılabilir",
+              "Ölçüm sonuçları zaman-deplasman grafiğiyle sunulur; tek bir sayı yerine eğilim değerlendirilir",
+              "Raporlar tasarımcı mühendis, yüklenici ve işveren arasında ortak erişilebilir olmalıdır"
+            ]
+          },
+          {
+            type: "paragraph",
+            content:
+              "Eğilim analizi tek okumadan daha değerlidir. Yavaşlayarak duran bir deplasman beklenen davranış; sabit hızla veya hızlanarak süren bir deplasman ise müdahale gerektiren durumdur."
+          }
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "İnklinometre nedir, ne işe yarar?",
+        answer:
+          "İnklinometre, perde veya zemin içine yerleştirilen özel oluklu bir boru ile derinlik boyunca yatay hareketin ölçülmesini sağlayan sistemdir. Perdenin hangi derinlikte ne kadar hareket ettiğini gösterir."
+      },
+      {
+        question: "İzleme ne sıklıkta yapılmalı?",
+        answer:
+          "Sıklık kazı hızına ve ölçülen davranışa bağlıdır. Genel yaklaşım: her kazı kademesinde ve ankraj germesi sonrasında okuma almak; hareket artıyorsa sıklığı günlük seviyeye çıkarmaktır."
+      },
+      {
+        question: "Ne kadar deplasman normaldir?",
+        answer:
+          "Tek bir evrensel değer yoktur. Kabul edilebilir deplasman; kazı derinliğine, sistem rijitliğine ve en önemlisi komşu yapının hasar toleransına göre projede tanımlanır. Bu değer kazı başlamadan yazılı olmalıdır."
+      },
+      {
+        question: "Ankraj yükü zamanla düşer mi?",
+        answer:
+          "Kilitleme sonrası bir miktar yük kaybı beklenen bir davranıştır ve tasarımda öngörülür. Sınırın üzerinde ve süregelen bir kayıp ise kök bölgesinde sıyrılma veya sürünme işareti olabilir; incelenmesi gerekir."
+      },
+      {
+        question: "İzleme yapılmazsa ne olur?",
+        answer:
+          "Sistemin güvenli çalıştığı kanıtlanamaz. Beklenmeyen bir davranış ancak gözle görülür hasar oluştuğunda fark edilir; bu da müdahale için genellikle çok geç bir aşamadır."
+      },
+      {
+        question: "Komşu yapıların hasar tespiti gerekli mi?",
+        answer:
+          "Evet. Kazı öncesi mevcut çatlak ve hasarların fotoğraflı, tarihli tespiti hem komşuyu hem yükleniciyi korur; kazı sonrası oluşan iddiaların objektif değerlendirilmesini sağlar."
+      }
+    ],
+    relatedSlugs: ["iksa-sistemi-nasil-secilir", "ankraj-uygulama-asamalari", "saha-denetimi-numune-testleri"],
+    keywords: [
+      "iksa deformasyon izleme",
+      "inklinometre ölçümü",
+      "derin kazı izleme",
+      "komşu yapı oturma takibi",
+      "ankraj yük hücresi",
+      "kazı güvenliği izleme",
+      "eşik değer iksa"
+    ],
+    published: true
+  },
+  // ————————————————————————————————————————————————————————————
+  // TAŞ KOLON SERİSİ
+  // ————————————————————————————————————————————————————————————
+  {
+    slug: "tas-kolon-uygulama-ve-tasarim",
+    title: "Taş Kolon Uygulaması, Tasarımı ve Sıvılaşma Etkisi",
+    seoTitle: "Taş Kolon Nasıl Yapılır? Vibro Taş Kolon Tasarımı ve Sıvılaşma | YER6",
+    description:
+      "Taş kolon nedir, nasıl yapılır? Islak/kuru yöntem, kolon çapı ve aralığı, sıvılaşma azaltımı, drenaj etkisi ve hangi zeminlerde uygun olduğu.",
+    excerpt:
+      "Taş kolon; gevşek granüler ve yumuşak zeminlerde açılan deliğin kırmataşla sıkıştırılarak doldurulmasıyla oluşan, taşıma gücünü artıran ve drenaj sağlayan bir zemin iyileştirme yöntemidir.",
+    category: "Zemin İyileştirme",
+    readingTime: "10 dk",
+    publishedAt: "2026-07-28",
+    updatedAt: "2026-07-28",
+    heroLabel: "Taş Kolon Bilgi Merkezi",
+    introduction:
+      "Taş kolon (vibro taş kolon), zemin içinde açılan boşluğun kademeli olarak kırmataş ile doldurulup vibrasyonla sıkıştırılmasıyla oluşturulan granüler kolondur. Taşıma gücünü artırır, oturmayı azaltır ve granüler yapısı sayesinde boşluk suyu basıncını sönümleyen bir drenaj yolu oluşturur.",
+    sections: [
+      {
+        id: "calisma-prensibi",
+        title: "Çalışma Prensibi",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Taş kolon çevresindeki zeminle birlikte kompozit bir sistem oluşturur. Yük, rijitliği yüksek olan kolonlara yoğunlaşır; kolon yanal olarak çevre zeminin sağladığı destekle şişmeye karşı tutulur. Bu nedenle çevre zeminin yanal direnç sağlayabilmesi tasarımın ön koşuludur."
+          },
+          {
+            type: "list",
+            title: "Sağladığı üç temel etki",
+            items: [
+              "Taşıma gücü artışı: yükün rijit kolonlar üzerinden daha derine aktarılması",
+              "Oturma azaltımı: kompozit rijitlik sayesinde toplam ve farklı oturmanın düşmesi",
+              "Drenaj: granüler kolonun deprem sırasında boşluk suyu basıncını hızla sönümlemesi"
+            ]
+          },
+          {
+            type: "warning",
+            title: "Çok yumuşak zeminde tek başına yetmez",
+            content:
+              "Kayma dayanımı çok düşük yumuşak killerde çevre zemin yeterli yanal destek veremez ve kolon şişerek göçebilir. Bu koşullarda geotekstil sargılı kolon veya farklı bir yöntem (DSM, jet grout) değerlendirilir."
+          }
+        ]
+      },
+      {
+        id: "uygulama-yontemleri",
+        title: "Islak ve Kuru Uygulama Yöntemleri",
+        blocks: [
+          {
+            type: "list",
+            title: "Yöntemler",
+            items: [
+              "Islak (wet top-feed) yöntem: su jetiyle delik açılır, malzeme yukarıdan beslenir; su tahliyesi ve çamur yönetimi gerektirir",
+              "Kuru (dry bottom-feed) yöntem: vibratör ucundan malzeme beslenir, su kullanılmaz; yeraltı suyu yüksek sahalarda ve temiz saha koşulunda avantajlıdır",
+              "Darbeli (impact) yöntem: ağırlık düşürmeli sistemle sığ derinliklerde kolon teşkili"
+            ]
+          },
+          {
+            type: "paragraph",
+            content:
+              "Yöntem seçimi; zemin türü, yeraltı suyu, hedef derinlik, saha temizliği ve çevresel kısıtlarla belirlenir. Kuru yöntem çamur oluşturmadığı için kentsel ve hassas sahalarda tercih edilir."
+          }
+        ]
+      },
+      {
+        id: "tasarim-parametreleri",
+        title: "Tasarım Parametreleri",
+        blocks: [
+          {
+            type: "list",
+            title: "Belirlenmesi gereken büyüklükler",
+            items: [
+              "Kolon çapı (tipik olarak 60–120 cm arası, ekipman ve zemine bağlı)",
+              "Kolon aralığı ve yerleşim düzeni (üçgen veya kare grid)",
+              "Alan değiştirme oranı (kolon alanının toplam alana oranı)",
+              "Kolon boyu ve sağlam tabakaya oturma durumu",
+              "Kullanılan kırmataş dane dağılımı ve temizliği",
+              "Üstte teşkil edilecek yük dağıtım tabakasının kalınlığı"
+            ]
+          },
+          {
+            type: "note",
+            title: "Kalite kontrol",
+            content:
+              "Her kolon için harcanan malzeme miktarı, vibratör akım/basınç kaydı ve derinlik izlenir. İmalat sonrası plaka yükleme testi, CPT/SPT ve gerekli görülen sahalarda zone testi ile performans doğrulanır."
+          }
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "Taş kolon hangi zeminlerde uygulanır?",
+        answer:
+          "Gevşek kum ve siltli kumlarda, orta katı killerde ve kontrollü dolgularda etkilidir. Çok yumuşak killerde ve organik zeminlerde çevre zemin yeterli yanal destek veremeyeceği için tek başına uygun değildir."
+      },
+      {
+        question: "Taş kolon sıvılaşmayı önler mi?",
+        answer:
+          "Taş kolon, hem zemini sıkılaştırarak hem de granüler yapısıyla drenaj sağlayarak sıvılaşma riskini azaltır. Ancak ince dane oranı yüksek zeminlerde tek başına yeterli olmayabilir; düşey drenlerle desteklenmesi veya farklı yöntem seçilmesi gerekebilir. Riskin tamamen ortadan kalktığı iddia edilemez."
+      },
+      {
+        question: "Taş kolon mu jet grout mu daha uygun?",
+        answer:
+          "Taş kolon geniş alanlarda ve granüler zeminlerde genellikle daha ekonomiktir, ayrıca drenaj sağlar. Jet grout ise dar alanlarda, mevcut yapı altında, kohezyonlu zeminlerde ve su geçirimsizliği gereken durumlarda avantajlıdır. Karar zemin profili ve hedefe göre verilir."
+      },
+      {
+        question: "Taş kolon çapı ve aralığı nasıl belirlenir?",
+        answer:
+          "Çap ekipman ve zemin koşuluna, aralık ise hedeflenen oturma ve taşıma gücüne göre hesapla belirlenir. Alan değiştirme oranı tasarımın temel parametresidir; sahada göz kararı değiştirilmez."
+      },
+      {
+        question: "Taş kolon üzerine doğrudan temel oturur mu?",
+        answer:
+          "Genellikle kolonların üzerine yük dağıtım tabakası (granüler yastık) teşkil edilir. Bu tabaka yükü kolonlar ve çevre zemin arasında dengeli paylaştırır ve farklı oturmayı azaltır."
+      },
+      {
+        question: "Taş kolon imalatı çevreye titreşim verir mi?",
+        answer:
+          "Vibro yöntemler belirli bir titreşim oluşturur. Komşu yapıya yakın sahalarda titreşim ölçümü yapılması, mesafe ve imalat sırasının buna göre planlanması önerilir."
+      }
+    ],
+    relatedSlugs: ["tas-kolon-nedir", "sivilasma-riskine-karsi-zemin-guclendirme", "dsm-nedir"],
+    keywords: [
+      "taş kolon nedir",
+      "vibro taş kolon",
+      "taş kolon uygulaması",
+      "taş kolon sıvılaşma",
+      "taş kolon çapı",
+      "taş kolon fiyatı",
+      "granüler kolon zemin iyileştirme"
+    ],
+    published: true
+  },
+  // ————————————————————————————————————————————————————————————
+  // ZEMİN ÇİVİSİ VE PÜSKÜRTME BETON
+  // ————————————————————————————————————————————————————————————
+  {
+    slug: "zemin-civisi-uygulama-asamalari",
+    title: "Zemin Çivisi Uygulama Aşamaları ve Kullanım Koşulları",
+    seoTitle: "Zemin Çivisi Nasıl Yapılır? Soil Nailing Uygulama Aşamaları | YER6",
+    description:
+      "Zemin çivisi nedir, nasıl uygulanır? Delgi, çubuk yerleştirme, enjeksiyon ve püskürtme beton kaplama adımlarıyla şev ve kazı yüzeyi stabilizasyonu.",
+    excerpt:
+      "Zemin çivisi; kazı yüzeyine kademeli olarak yerleştirilen enjeksiyonlu çubuklarla zemini kendi içinde takviye eden pasif bir destek yöntemidir. Genellikle püskürtme beton kaplama ile birlikte uygulanır.",
+    category: "Ankraj & İksa",
+    readingTime: "9 dk",
+    publishedAt: "2026-07-28",
+    updatedAt: "2026-07-28",
+    heroLabel: "Zemin Çivisi Bilgi Merkezi",
+    introduction:
+      "Zemin çivisi (soil nailing), kazı ilerledikçe yüzeye yerleştirilen çelik çubukların enjeksiyonla zemine bağlanmasıyla zemin kütlesini takviye eden yöntemdir. Ankrajdan farklı olarak öngerme uygulanmaz; çiviler zemin hareket etmeye başladığında pasif olarak devreye girer.",
+    sections: [
+      {
+        id: "calisma-prensibi",
+        title: "Ankrajdan Farkı ve Çalışma Prensibi",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Ankraj öngermelidir: kurulduğu anda zemine kuvvet uygular ve hareketi baştan sınırlar. Zemin çivisi ise pasiftir; zeminde küçük bir hareket başladığında çekme kuvveti alır. Bu nedenle zemin çivili sistemlerde bir miktar deformasyon kabul edilir."
+          },
+          {
+            type: "list",
+            title: "Sistemin bileşenleri",
+            items: [
+              "Çelik çubuk (nervürlü donatı veya özel çivi sistemi)",
+              "Enjeksiyon şerbeti: çubuğu zemine bağlayan bağlayıcı",
+              "Yüzey kaplaması: çelik hasırlı püskürtme beton",
+              "Başlık plakası ve somun: kaplamayla çubuğun birleşimi",
+              "Drenaj elemanları: kaplama arkasında su birikimini önleyen sistem"
+            ]
+          }
+        ]
+      },
+      {
+        id: "uygulama",
+        title: "Uygulama Aşamaları",
+        blocks: [
+          {
+            type: "list",
+            title: "Kademeli imalat sırası",
+            items: [
+              "Sınırlı yükseklikte kazı kademesi açılır (genellikle 1–2 m)",
+              "Yüzeyde delgi yapılır; delgi eğimi ve boyu projeye göre uygulanır",
+              "Çubuk merkezleyicilerle yerleştirilir",
+              "Enjeksiyon delgi tabanından yukarı doğru basılır",
+              "Drenaj elemanları yerleştirilir",
+              "Çelik hasır serilir ve püskürtme beton uygulanır",
+              "Plaka ve somun ile bağlantı tamamlanır, bir alt kademeye geçilir"
+            ]
+          },
+          {
+            type: "warning",
+            title: "Kademe yüksekliği aşılmaz",
+            content:
+              "Projede tanımlanan kademe yüksekliğinden daha derin kazı açmak, desteklenmemiş yüzeyin göçmesine yol açabilir. Zemin çivili sistemlerde imalat sırası güvenliğin ayrılmaz parçasıdır."
+          }
+        ]
+      },
+      {
+        id: "uygun-kosullar",
+        title: "Uygun ve Uygun Olmayan Koşullar",
+        blocks: [
+          {
+            type: "list",
+            title: "Uygun olduğu durumlar",
+            items: [
+              "Kazı yüzeyinin kısa süre desteksiz durabildiği, bir miktar kohezyona sahip zeminler",
+              "Ayrışmış kaya ve sıkı çakıl-kum karışımları",
+              "Şev stabilizasyonu ve heyelan bölgelerinde yüzey takviyesi",
+              "Yol yarmaları ve istinat yapılarının güçlendirilmesi"
+            ]
+          },
+          {
+            type: "list",
+            title: "Uygun olmadığı durumlar",
+            items: [
+              "Yeraltı suyu seviyesinin kazı yüzeyinin üzerinde olduğu sahalar",
+              "Kohezyonsuz, akıcı temiz kum tabakaları",
+              "Çok yumuşak ve yüksek plastisiteli killer",
+              "Deformasyon toleransı çok düşük, hassas komşu yapı bulunan cepheler"
+            ]
+          }
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "Zemin çivisi ile ankraj arasındaki fark nedir?",
+        answer:
+          "Ankraj öngermelidir ve kurulduğu anda zemine kuvvet uygular; deformasyonu baştan sınırlar. Zemin çivisi pasiftir, zemin hareket etmeye başladığında yük alır. Ankraj genellikle daha uzun ve yüksek kapasitelidir; zemin çivisi daha sık ve kısa yerleştirilir."
+      },
+      {
+        question: "Zemin çivisi hangi derinliğe kadar uygulanır?",
+        answer:
+          "Uygulama derinliği zemin koşuluna ve stabilite analizine bağlıdır. Yüksek kazılarda ankraj veya rijit perde ile birlikte hibrit çözümler tercih edilebilir; karar analizle verilir."
+      },
+      {
+        question: "Zemin çivili kazıda su varsa ne yapılır?",
+        answer:
+          "Yeraltı suyu kazı yüzeyine geliyorsa zemin çivisi tek başına uygun değildir. Su düşürme, drenaj ve gerekiyorsa geçirimsiz perde ile birlikte değerlendirilmelidir."
+      },
+      {
+        question: "Püskürtme beton kaplama zorunlu mu?",
+        answer:
+          "Zemin çivili sistemlerde yüzeyin lokal olarak dökülmesini önlemek ve çivileri birbirine bağlamak için kaplama gereklidir. Çelik hasırlı püskürtme beton en yaygın çözümdür."
+      },
+      {
+        question: "Zemin çivisi kalıcı olarak kullanılabilir mi?",
+        answer:
+          "Evet, ancak kalıcı kullanımda korozyon koruması (galvanizli çubuk, kılıf, yeterli paspayı) ve drenaj detayları geçici uygulamalara göre daha kapsamlı tasarlanır."
+      },
+      {
+        question: "Zemin çivisi maliyetini ne belirler?",
+        answer:
+          "Çivi adedi, boyu ve çapı, delgi zorluğu, kaplama alanı ve kalınlığı, drenaj detayları ve kalıcı/geçici koruma sınıfı maliyeti belirleyen ana kalemlerdir."
+      }
+    ],
+    relatedSlugs: ["zemin-civisi-nedir", "iksa-sistemi-nasil-secilir", "ankraj-uygulama-asamalari"],
+    keywords: [
+      "zemin çivisi nedir",
+      "soil nailing",
+      "zemin çivisi uygulaması",
+      "şev stabilizasyonu",
+      "zemin çivisi ankraj farkı",
+      "püskürtme beton zemin çivisi",
+      "zemin çivisi fiyatı"
+    ],
+    published: true
+  },
+  {
+    slug: "puskurtme-beton-uygulamasi",
+    title: "Püskürtme Beton (Shotcrete) Uygulaması ve Kalite Kontrolü",
+    seoTitle: "Püskürtme Beton Nedir? Kuru ve Yaş Sistem Uygulaması | YER6",
+    description:
+      "Püskürtme beton nedir, kuru ve yaş sistem farkı nedir? Kazı yüzeyi kaplaması, çelik hasır ve tel donatı, kalınlık kontrolü ve dayanım testleri.",
+    excerpt:
+      "Püskürtme beton, basınçlı hava ile yüzeye püskürtülerek uygulanan betondur. İksa yüzeylerinde, tünellerde ve şev kaplamalarında hızlı ve kalıpsız kaplama sağlar.",
+    category: "Kalite Kontrol",
+    readingTime: "8 dk",
+    publishedAt: "2026-07-28",
+    updatedAt: "2026-07-28",
+    heroLabel: "Püskürtme Beton",
+    introduction:
+      "Püskürtme beton (shotcrete), kalıp kullanmadan yüzeye basınçlı hava ile uygulanan betondur. Kazı yüzeylerinin lokal göçmesini engeller, zemin çivisi sistemlerinde çivileri birbirine bağlar ve tünellerde ilk destek görevi görür.",
+    sections: [
+      {
+        id: "kuru-yas-sistem",
+        title: "Kuru ve Yaş Sistem",
+        blocks: [
+          {
+            type: "list",
+            title: "İki temel yöntem",
+            items: [
+              "Kuru sistem: kuru karışım hatta taşınır, su nozülde eklenir. Uzun mesafeye pompalanabilir; toz ve geri sıçrama (rebound) daha yüksektir",
+              "Yaş sistem: taze beton hazır olarak pompalanır, nozülde hızlandırıcı eklenir. Toz ve geri sıçrama daha az, karışım kontrolü daha iyidir"
+            ]
+          },
+          {
+            type: "paragraph",
+            content:
+              "Seçim; iş hacmi, mesafe, saha koşulu ve istenen kaliteye göre yapılır. Büyük hacimli ve süreklilik gerektiren işlerde yaş sistem, küçük ve kesintili işlerde kuru sistem daha pratiktir."
+          }
+        ]
+      },
+      {
+        id: "uygulama-kurallari",
+        title: "Uygulama Kuralları",
+        blocks: [
+          {
+            type: "list",
+            title: "Sahada dikkat edilenler",
+            items: [
+              "Yüzey temizliği: gevşek malzeme, toz ve su birikintisi uzaklaştırılmalı",
+              "Nozül mesafesi ve açısı: yüzeye dik ve uygun mesafeden püskürtme, geri sıçramayı azaltır",
+              "Kademeli kalınlık: tek seferde aşırı kalınlık yerine kat kat uygulama",
+              "Donatı arkasının dolması: çelik hasır arkasında boşluk bırakılmamalı",
+              "Drenaj: kaplama arkasında su birikmesini önleyecek barbakan/dren elemanları",
+              "Kür: erken kuruma ve büzülme çatlağını önleyecek koruma"
+            ]
+          },
+          {
+            type: "warning",
+            title: "Geri sıçrayan malzeme tekrar kullanılmaz",
+            content:
+              "Yüzeyden sekerek düşen (rebound) malzeme dane dağılımını ve çimento oranını kaybetmiştir. Kaplamaya karıştırılırsa dayanım ciddi biçimde düşer; sahadan uzaklaştırılmalıdır."
+          }
+        ]
+      },
+      {
+        id: "kalite-kontrol",
+        title: "Kalite Kontrol ve Testler",
+        blocks: [
+          {
+            type: "list",
+            title: "Doğrulama yöntemleri",
+            items: [
+              "Kalınlık kontrolü: ölçüm çivileri veya sonradan delgi ile kaplama kalınlığının teyidi",
+              "Panel numunesi: sahada püskürtülen test panelinden karot alınarak basınç dayanımı",
+              "Erken dayanım takibi: hızlandırıcı kullanılan işlerde saatlik dayanım gelişimi",
+              "Görsel kontrol: boşluk, çatlak, donatı görünmesi ve sıçrama birikimi kontrolü",
+              "Aderans kontrolü: kaplama ile zemin/kaya yüzeyi arasındaki yapışma"
+            ]
+          }
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "Püskürtme beton ile normal beton arasındaki fark nedir?",
+        answer:
+          "Püskürtme beton kalıp kullanılmadan, basınçlı hava ile yüzeye uygulanır ve genellikle hızlandırıcı içerir. Bu sayede düşey ve tavan yüzeylerde akmadan tutunur, erken dayanım kazanır."
+      },
+      {
+        question: "Püskürtme beton kaç cm kalınlıkta uygulanır?",
+        answer:
+          "Kalınlık projeye göre belirlenir; iksa yüzeylerinde tipik olarak 10–20 cm mertebesindedir ve kat kat uygulanır. Kesin değer stabilite ve donatı detayına göre projelendirilir."
+      },
+      {
+        question: "Çelik hasır yerine tel donatı kullanılabilir mi?",
+        answer:
+          "Evet, çelik tel donatılı püskürtme beton yaygın bir alternatiftir. Hasır yerleştirme işçiliğini azaltır ve düzensiz yüzeylerde avantaj sağlar; ancak projede tanımlanmış olmalıdır."
+      },
+      {
+        question: "Püskürtme beton su geçirir mi?",
+        answer:
+          "Kaplama tam geçirimsiz kabul edilmez. Arkasında su basıncı oluşmaması için barbakan veya dren şeritleri ile drenaj sağlanmalıdır; aksi hâlde kaplama arkasında basınç birikir."
+      },
+      {
+        question: "Rebound (geri sıçrama) oranı ne kadar olmalı?",
+        answer:
+          "Oran; sistem, nozül mesafesi, karışım ve operatör becerisine göre değişir. Yaş sistemde genellikle daha düşüktür. Önemli olan sıçrayan malzemenin kaplamaya karıştırılmaması ve sahadan uzaklaştırılmasıdır."
+      },
+      {
+        question: "Soğuk havada püskürtme beton uygulanır mı?",
+        answer:
+          "Uygulanabilir ancak taze betonun donmaya karşı korunması, karışım sıcaklığının kontrolü ve kür önlemleri gerekir. Şartnamede tanımlı sıcaklık sınırlarının altında imalat yapılmamalıdır."
+      }
+    ],
+    relatedSlugs: ["zemin-civisi-uygulama-asamalari", "iksa-sistemi-nasil-secilir", "zemin-kalite-kontrol-standartlari"],
+    keywords: [
+      "püskürtme beton nedir",
+      "shotcrete uygulaması",
+      "kuru sistem yaş sistem püskürtme beton",
+      "püskürtme beton kalınlığı",
+      "iksa yüzey kaplaması",
+      "püskürtme beton fiyatı"
+    ],
+    published: true
+  },
+  // ————————————————————————————————————————————————————————————
+  // ENJEKSİYON SERİSİ
+  // ————————————————————————————————————————————————————————————
+  {
+    slug: "zemin-enjeksiyonu-turleri",
+    title: "Zemin Enjeksiyonu Türleri: Permeasyon, Kompaksiyon ve Çatlatma",
+    seoTitle: "Zemin Enjeksiyonu Nedir? Enjeksiyon Türleri ve Seçimi | YER6",
+    description:
+      "Zemin enjeksiyonu türleri nelerdir? Permeasyon (sızma), kompaksiyon, çatlatma (fracture) ve jet enjeksiyonun farkları, uygun zeminler ve kullanım amaçları.",
+    excerpt:
+      "Enjeksiyon tek bir yöntem değildir. Zeminin dane dağılımı ve hedefe göre permeasyon, kompaksiyon, çatlatma veya jet grout seçilir; yanlış seçim beklenen sonucu vermez.",
+    category: "Zemin İyileştirme",
+    readingTime: "10 dk",
+    publishedAt: "2026-07-28",
+    updatedAt: "2026-07-28",
+    heroLabel: "Enjeksiyon Bilgi Merkezi",
+    introduction:
+      "Zemin enjeksiyonu, zemin boşluklarına veya zemin içine bağlayıcı bir malzemenin kontrollü basınçla verilmesidir. Amaç; dayanımı artırmak, geçirimsizlik sağlamak, boşlukları doldurmak veya oturmuş bir yapıyı kaldırmak olabilir. Yöntem seçimi doğrudan zeminin dane dağılımına bağlıdır.",
+    sections: [
+      {
+        id: "turler",
+        title: "Enjeksiyon Türleri",
+        blocks: [
+          {
+            type: "list",
+            title: "Başlıca yöntemler",
+            items: [
+              "Permeasyon (sızma) enjeksiyonu: zemin yapısı bozulmadan boşlukların doldurulması; iri kum ve çakılda etkilidir",
+              "Kompaksiyon enjeksiyonu: kıvamlı harcın basınçla verilerek çevre zemini sıkıştırması; oturmuş yapıların kaldırılmasında kullanılır",
+              "Çatlatma (fracture/claquage) enjeksiyonu: zeminde kontrollü çatlaklar oluşturup damar ağı teşkili; ince taneli zeminlerde",
+              "Jet grout: yüksek basınçla zeminin parçalanıp şerbetle karıştırılması; en geniş zemin yelpazesinde uygulanabilir",
+              "Kontak/dolgu enjeksiyonu: yapı ile zemin arasındaki boşluğun doldurulması"
+            ]
+          },
+          {
+            type: "note",
+            title: "Seçimin temel kuralı",
+            content:
+              "Zemin ne kadar ince taneli ise şerbetin doğal boşluklara sızması o kadar zorlaşır. Bu nedenle killi ve siltli zeminlerde permeasyon beklenmez; çatlatma veya jet grout gibi zemini mekanik olarak dönüştüren yöntemlere geçilir."
+          }
+        ]
+      },
+      {
+        id: "malzemeler",
+        title: "Enjeksiyon Malzemeleri",
+        blocks: [
+          {
+            type: "list",
+            title: "Yaygın bağlayıcılar",
+            items: [
+              "Çimento esaslı şerbet: en yaygın; ekonomik ve yüksek dayanım sağlar, ince zeminlere sızamaz",
+              "Mikro çimento: daha ince öğütülmüş; orta kumlarda sızma kabiliyeti yüksektir",
+              "Bentonit-çimento karışımları: geçirimsizlik ağırlıklı uygulamalarda",
+              "Kimyasal enjeksiyon (silikat, reçine): çok ince boşluklarda ve acil su kesme işlerinde",
+              "Kum-çimento harcı: kompaksiyon enjeksiyonunda kıvamlı harç olarak"
+            ]
+          },
+          {
+            type: "warning",
+            title: "Basınç kontrolsüz artırılmaz",
+            content:
+              "Aşırı basınç, zeminde istenmeyen çatlaklara, yüzeyde kabarmaya ve komşu yapıda hasara yol açabilir. Basınç ve hacim eşikleri projede tanımlanır; sahada anlık kayıtla izlenir."
+          }
+        ]
+      },
+      {
+        id: "uygulama-ve-kontrol",
+        title: "Uygulama ve Kalite Kontrol",
+        blocks: [
+          {
+            type: "list",
+            title: "Kayıt altına alınanlar",
+            items: [
+              "Delgi derinliği ve enjeksiyon kademeleri",
+              "Her kademede basınç, debi ve verilen hacim",
+              "Şerbet karışım oranı ve viskozite ölçümleri",
+              "Yüzey kabarması ve komşu yapı hareket takibi",
+              "Sonrasında: karot, SPT/CPT, permeabilite (Lugeon) veya sismik kontrol"
+            ]
+          },
+          {
+            type: "paragraph",
+            content:
+              "Enjeksiyon sonucunun görünmez olması nedeniyle kalite güvencesi tamamen kayıt ve doğrulama testlerine dayanır. Beklenenden çok fazla hacim tüketimi kaçak; çok az tüketim ise tıkanma veya erken durdurma işaretidir."
+          }
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "Zemin enjeksiyonu hangi amaçlarla yapılır?",
+        answer:
+          "Taşıma gücünü artırmak, oturmayı azaltmak, boşluk ve karst oyuklarını doldurmak, su geçişini kesmek veya oturmuş bir yapıyı kontrollü şekilde kaldırmak için uygulanır. Amaç, seçilecek yöntemi doğrudan belirler."
+      },
+      {
+        question: "Killi zeminde enjeksiyon yapılabilir mi?",
+        answer:
+          "Killi zeminlerde klasik permeasyon enjeksiyonu etkili değildir çünkü şerbet doğal boşluklara sızamaz. Bu zeminlerde çatlatma enjeksiyonu, kompaksiyon enjeksiyonu veya jet grout gibi zemini mekanik olarak dönüştüren yöntemler tercih edilir."
+      },
+      {
+        question: "Enjeksiyon ile jet grout aynı şey mi?",
+        answer:
+          "Jet grout bir enjeksiyon yöntemidir ancak farkı çok yüksek basınçla zemini parçalayıp şerbetle karıştırmasıdır. Klasik enjeksiyonda zemin yapısı büyük ölçüde korunurken, jet groutta yerinde yeni bir zemin-çimento malzemesi oluşturulur."
+      },
+      {
+        question: "Enjeksiyon oturmuş binayı kaldırabilir mi?",
+        answer:
+          "Kompaksiyon enjeksiyonu ile kontrollü kaldırma mümkündür ve uygulamada kullanılır. Ancak işlem milimetre hassasiyetinde izleme gerektirir; hesapsız uygulama yapıda ilave hasara yol açabilir."
+      },
+      {
+        question: "Enjeksiyonun başarısı nasıl ölçülür?",
+        answer:
+          "Verilen hacim ve basınç kayıtları, imalat sonrası karot ve dayanım deneyleri, su geçirimsizliği hedefleniyorsa permeabilite testleri ve gerekli sahalarda sismik/CPT karşılaştırmaları ile doğrulanır."
+      },
+      {
+        question: "Enjeksiyon maliyetini ne belirler?",
+        answer:
+          "Delgi metrajı ve zorluğu, enjeksiyon nokta sayısı ve derinliği, kullanılan bağlayıcı türü (mikro çimento ve kimyasallar belirgin biçimde pahalıdır), tüketilen hacim, kademe sayısı ve doğrulama testlerinin kapsamı."
+      }
+    ],
+    relatedSlugs: ["zemin-iyilestirme-yontemleri", "jet-grout-nedir", "temel-alti-zemin-guclendirme"],
+    keywords: [
+      "zemin enjeksiyonu nedir",
+      "enjeksiyon türleri",
+      "permeasyon enjeksiyonu",
+      "kompaksiyon enjeksiyonu",
+      "çatlatma enjeksiyonu",
+      "mikro çimento enjeksiyon",
+      "zemin enjeksiyon fiyatı"
+    ],
+    published: true
+  },
+  // ————————————————————————————————————————————————————————————
+  // DSM TAKVİYE
+  // ————————————————————————————————————————————————————————————
+  {
+    slug: "dsm-uygulama-ve-kalite-kontrol",
+    title: "DSM Uygulama Aşamaları ve Kalite Kontrolü",
+    seoTitle: "DSM Nasıl Yapılır? Derin Zemin Karıştırma Uygulaması ve Kontrolü | YER6",
+    description:
+      "DSM (derin zemin karıştırma) nasıl uygulanır? Islak/kuru yöntem, karışım tasarımı, bağlayıcı dozajı, üretim kayıtları ve karot ile dayanım doğrulaması.",
+    excerpt:
+      "DSM'de başarı, karışım tasarımının sahada tekrarlanabilir biçimde uygulanmasına bağlıdır. Bağlayıcı dozajı, karıştırma enerjisi ve üretim kaydı üç temel kontrol noktasıdır.",
+    category: "DSM",
+    readingTime: "10 dk",
+    publishedAt: "2026-07-28",
+    updatedAt: "2026-07-28",
+    heroLabel: "DSM Bilgi Merkezi",
+    introduction:
+      "DSM (Deep Soil Mixing / derin zemin karıştırma), zeminin yerinde bağlayıcı ile mekanik olarak karıştırılarak kolon veya panel biçiminde iyileştirilmesidir. Geniş alanlı platformlarda ve yumuşak killerde homojen taşıma kapasitesi sağlamak için tercih edilir.",
+    sections: [
+      {
+        id: "islak-kuru",
+        title: "Islak ve Kuru Yöntem",
+        blocks: [
+          {
+            type: "list",
+            title: "İki temel yaklaşım",
+            items: [
+              "Islak yöntem (wet mixing): bağlayıcı şerbet hâlinde verilir; su içeriği düşük-orta zeminlerde ve yüksek dayanım hedefinde yaygındır",
+              "Kuru yöntem (dry mixing): bağlayıcı toz hâlinde verilir, zeminin kendi suyunu kullanır; su içeriği yüksek yumuşak killerde avantajlıdır"
+            ]
+          },
+          {
+            type: "paragraph",
+            content:
+              "Seçim; zeminin doğal su muhtevası, hedef dayanım, derinlik ve çevresel kısıtlara göre yapılır. Kuru yöntem daha az atık üretir; ıslak yöntem ise daha yüksek ve daha kontrollü dayanım sağlayabilir."
+          }
+        ]
+      },
+      {
+        id: "uygulama-asamalari",
+        title: "Uygulama Aşamaları",
+        blocks: [
+          {
+            type: "list",
+            title: "Saha sırası",
+            items: [
+              "Laboratuvar karışım tasarımı: saha zemininden alınan numunelerle dozaj-dayanım ilişkisinin kurulması",
+              "Deneme kolonu: sahada tam ölçekli test kolonları ve parametre kalibrasyonu",
+              "Aplikasyon ve kolon yerleşimi",
+              "Karıştırma: burgunun hedef derinliğe inişi ve bağlayıcı verilerek çıkışı",
+              "Karıştırma enerjisinin kontrolü (dönüş sayısı / metre — BRN)",
+              "Kolon başı düzenlemesi ve yük dağıtım tabakası teşkili"
+            ]
+          },
+          {
+            type: "warning",
+            title: "Deneme kolonu atlanmaz",
+            content:
+              "Laboratuvar dayanımı ile saha dayanımı çoğu zaman farklıdır. Deneme kolonu yapılmadan tüm sahaya geçmek, hedef dayanımın tutmaması hâlinde imalatın tekrarı anlamına gelir."
+          }
+        ]
+      },
+      {
+        id: "kalite-kontrol",
+        title: "Kalite Kontrol",
+        blocks: [
+          {
+            type: "list",
+            title: "İzlenen parametreler ve testler",
+            items: [
+              "Her kolon için derinlik, süre, dönüş hızı ve karıştırma enerjisi kaydı",
+              "Verilen bağlayıcı miktarının teorik dozajla karşılaştırılması",
+              "Taze numune alımı ve serbest basınç (UCS) deneyleri",
+              "Sertleşmiş kolonlardan karot alımı ve süreklilik değerlendirmesi",
+              "Gerekli sahalarda plaka yükleme testi ve sismik/CPT kontrolleri",
+              "Kolon eksenel sapma (dikeylik) kontrolü"
+            ]
+          },
+          {
+            type: "paragraph",
+            content:
+              "DSM'de en sık karşılaşılan sorun, hedef dayanımın sağlanamaması veya kolon boyunca dayanımın değişken olmasıdır. Bunun ana nedenleri yetersiz karıştırma enerjisi, dozaj sapması ve zemin profilindeki beklenmedik değişimlerdir."
+          }
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "DSM nasıl yapılır?",
+        answer:
+          "Özel karıştırma başlığı hedef derinliğe indirilir ve bağlayıcı verilerek yukarı çıkarken zeminle mekanik olarak karıştırılır. Böylece yerinde zemin-bağlayıcı kolonu oluşur. Öncesinde laboratuvar karışım tasarımı ve sahada deneme kolonu yapılır."
+      },
+      {
+        question: "DSM ile jet grout arasındaki fark nedir?",
+        answer:
+          "DSM zemini mekanik karıştırma ile iyileştirir; jet grout ise yüksek basınçlı jet ile zemini parçalayıp şerbetle karıştırır. DSM geniş alanlarda genellikle daha ekonomiktir; jet grout ise dar alanlarda, mevcut yapı altında ve sert/heterojen zeminlerde daha esnektir."
+      },
+      {
+        question: "DSM kolon dayanımı ne kadar olur?",
+        answer:
+          "Dayanım; zemin türü, su muhtevası, bağlayıcı tipi ve dozajı ile karıştırma enerjisine bağlıdır. Bu nedenle tek bir değer verilemez; hedef dayanım projede tanımlanır ve karot/UCS deneyleriyle doğrulanır."
+      },
+      {
+        question: "DSM hangi zeminlerde uygulanır?",
+        answer:
+          "Yumuşak ve orta katı killer, siltler, gevşek kumlar ve organik içeriği sınırlı dolgular uygun adaylardır. Çok iri çakıl, blok ve sert kaya içeren zeminlerde karıştırma zorlaşır."
+      },
+      {
+        question: "DSM uygulaması ne kadar sürer?",
+        answer:
+          "Süre; kolon adedi ve boyu, ekipman kapasitesi, bağlayıcı lojistiği ve saha koşullarına bağlıdır. Geniş platformlarda günlük yüksek üretim mümkündür; kesin süre metraj üzerinden planlanır."
+      },
+      {
+        question: "DSM sonrası temel doğrudan kolonlara mı oturur?",
+        answer:
+          "Genellikle kolon başlarının üzerine yük dağıtım tabakası teşkil edilir. Bu tabaka yükü kolonlar ve çevre zemin arasında dengeli aktarır ve farklı oturmayı azaltır."
+      }
+    ],
+    relatedSlugs: ["dsm-nedir", "jet-grout-ve-dsm-farki", "zemin-kalite-kontrol-standartlari"],
+    keywords: [
+      "DSM nasıl yapılır",
+      "derin zemin karıştırma uygulaması",
+      "DSM kalite kontrol",
+      "DSM kolon dayanımı",
+      "ıslak kuru DSM",
+      "deep soil mixing",
+      "DSM fiyatı"
+    ],
+    published: true
+  },
   ...seoArticles
 ];
 
