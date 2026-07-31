@@ -1,6 +1,22 @@
 # YER6 - Google Search Console sehir indeksleme kuyrugu
 # Basinda "DONE " olan satirlar tamamlandi. Her gun 10 tanesi islenir.
 # "# " ile baslayan satirlar yorumdur, atlanir.
+# 28 Tem 2026 - Claude: yeni referans proje sayfalari (oncelik 1)
+DONE https://www.yer6zemin.com.tr/projects/bina-alti-jet-grout-guclendirme/
+DONE https://www.yer6zemin.com.tr/projects/korfez-bolgesi-fore-kazik-projesi/
+DONE https://www.yer6zemin.com.tr/projects/avrupa-kentsel-saha-kazik-imalati/
+DONE https://www.yer6zemin.com.tr/projects/kopru-temeli-kazik-imalati/
+DONE https://www.yer6zemin.com.tr/projects/yurt-disi-konut-fore-kazik/
+# 28 Tem 2026 - Claude: hizmet bolumu eklenen buyuk sehirler, yeniden istek (Istanbul bugun elle istendi)
+DONE https://www.yer6zemin.com.tr/sehirler/ankara-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/izmir-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/bursa-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/hatay-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/mugla-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/manisa-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/kayseri-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/antalya-zemin-guclendirme/
+https://www.yer6zemin.com.tr/sehirler/kocaeli-zemin-guclendirme/
 DONE https://www.yer6zemin.com.tr/sehirler/ankara-zemin-guclendirme/
 DONE https://www.yer6zemin.com.tr/sehirler/istanbul-zemin-guclendirme/
 DONE https://www.yer6zemin.com.tr/sehirler/izmir-zemin-guclendirme/

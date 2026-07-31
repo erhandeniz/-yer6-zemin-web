@@ -832,7 +832,7 @@ const projectCatalog = [
     solution: "DSM kolonları, saha karot testleri ve dijital üretim raporlaması ile performans kontrollü iyileştirme.",
     tags: ["DSM", "Endüstriyel", "Oturma Kontrolü"],
     image: "/images/projects/saha/saha-genel-cok-makineli.webp",
-    imageAlt: "Çok makineli zemin güçlendirme sahası — YER6 saha arşivi (temsili görsel)",
+    imageAlt: "Çok makineli zemin güçlendirme sahası — YER6 saha arşivi",
     soilProblem: "Sahadaki yumuşak kil tabakaları, yüksek raf sistemi yükleri altında kabul edilemez oturma riski taşıyordu. Dolgu kalitesinin değişken olması ek belirsizlik yaratıyordu.",
     solutionMethod: "Derin zemin karıştırma (DSM) yöntemiyle tüm tesis alanında kolon ağı uygulandı. Laboratuvar karışım tasarımı sonrası saha üretimi başlatıldı; her kolona ait üretim verisi dijital olarak kayıt altına alındı. Karot testleri ile kolon mukavemeti doğrulandı.",
     technicalInfo: [
@@ -862,7 +862,7 @@ const projectCatalog = [
     solution: "Triple jet grout, enjeksiyon basınç kayıtları ve aşamalı kalite testleri.",
     tags: ["Jet Grout", "Liman", "Su Kontrolü"],
     image: "/images/projects/saha/su-kenari-kazik-imalati.webp",
-    imageAlt: "Su kenarında kazık imalatı yapan delgi makinesi — YER6 saha arşivi (temsili görsel)",
+    imageAlt: "Su kenarında kazık imalatı yapan delgi makinesi — YER6 saha arşivi",
     soilProblem: "Kıyı alanında yüksek yeraltı suyu seviyesi ve deniz etkisi, liman genişlemesi sırasında su kontrolü ve taşıma kapasitesi sorunlarına yol açıyordu. Dar çalışma koridoru standart ekipman kullanımını kısıtlıyordu.",
     solutionMethod: "Triple jet grout sistemiyle 740 m uzunluğunda geçirimsizlik ve taşıma perdesi oluşturuldu. Her enjeksiyon parametresi saha veri sistemiyle anlık kaydedildi. Aşamalı kalite testleriyle perde bütünlüğü doğrulandı.",
     technicalInfo: [

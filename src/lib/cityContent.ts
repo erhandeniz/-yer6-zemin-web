@@ -1,4 +1,5 @@
 import { districtPages, districtPaths } from "@/lib/districtContent";
+import { priorityCitySlugs } from "@/lib/cityPriority";
 
 export type CitySection = {
   heading: string;
@@ -4485,19 +4486,15 @@ export function getCityPaths() {
 // Öncelikli iller. Tüm iller indekslenir ve sitemap'te yer alır; ancak öncelikli iller
 // her listede DAİMA ÖNDE gösterilir ve sitemap'te daha yüksek önceliğe (priority) sahiptir.
 // Bu listedeki iller ayrıca zenginleştirilmiş (benzersiz, uzun) içeriğe sahiptir.
+// ÖNCELİKLİ ŞEHİRLER — src/lib/cityPriority.ts içindeki puanlama modelinden gelir
+// (TÜİK 2025 nüfus + deprem tehlikesi + sanayi + zemin riski + mobilizasyon).
+// Ankara, YER6'nın merkez üssü ve en yüksek saha kontrolüne sahip il olduğu için
+// listede daima ilk sırada sabitlenir; kalan iller veri puanına göre sıralanır.
+// Bu liste HİÇBİR şehir sayfasını silmez; yalnızca öne çıkarma sırasını belirler.
+// Buradan çıkan iller de /sehirler altında yayında kalmaya devam eder.
 export const featuredCitySlugs = [
   "ankara-zemin-guclendirme",
-  "istanbul-zemin-guclendirme",
-  "izmir-zemin-guclendirme",
-  "bursa-zemin-guclendirme",
-  "kocaeli-zemin-guclendirme",
-  "hatay-zemin-guclendirme",
-  "kahramanmaras-zemin-guclendirme",
-  "malatya-zemin-guclendirme",
-  "adiyaman-zemin-guclendirme",
-  "gaziantep-zemin-guclendirme",
-  "eskisehir-zemin-guclendirme",
-  "konya-zemin-guclendirme"
+  ...priorityCitySlugs.filter((slug) => slug !== "ankara-zemin-guclendirme")
 ];
 
 export function isFeaturedCity(slug: string) {
