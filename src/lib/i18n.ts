@@ -417,8 +417,6 @@ export const dictionary = {
     blogSectionEyebrow: "Makaleler",
     blogSectionTitle: "Saha deneyimiyle hazırlanan teknik içerikler",
     blogReadMore: "Makaleyi aç",
-    blogCMSTitle: "Yazılarımız sahadan çıkar.",
-    blogCMSText: "Blog içeriklerimiz gerçek şantiye uygulamalarından, imalat kayıtlarından ve saha kalite kontrol notlarından derlenir. Kalıcı teknik rehberler için Bilgi Merkezi'ni, deprem ve zemin davranışı için Deprem ve Zemin Bilgi Merkezi'ni inceleyebilirsiniz.",
 
     /* ── BLOG ARTICLES DATA (TR) ── */
     blog_jet_grout_title: "Jet Grout Nedir? Kullanım Alanları ve Çalışma Prensibi",
@@ -948,8 +946,6 @@ export const dictionary = {
     blogSectionEyebrow: "Articles",
     blogSectionTitle: "Technical content built on field experience.",
     blogReadMore: "Open Article",
-    blogCMSTitle: "Our articles come from the field.",
-    blogCMSText: "Our blog content is compiled from real site applications, production records and field quality-control notes. For evergreen technical guides see the Knowledge Centre; for earthquake and ground behaviour see the Earthquake & Ground Knowledge Centre.",
 
     /* ── BLOG ARTICLES DATA (EN) ── */
     blog_jet_grout_title: "What is Jet Grouting? Applications and Working Principle",
@@ -1476,8 +1472,6 @@ export const dictionary = {
     blogSectionEyebrow: "المقالات المهنية",
     blogSectionTitle: "محتوى فني دقيق يبحث عنه المطورون والمهندسون.",
     blogReadMore: "افتح المقال",
-    blogCMSTitle: "مقالاتنا تأتي من الميدان.",
-    blogCMSText: "يُجمَع محتوى مدونتنا من التطبيقات الفعلية في المواقع وسجلات التنفيذ وملاحظات ضبط الجودة الميدانية. للأدلة التقنية الدائمة راجع مركز المعرفة، ولسلوك التربة والزلازل راجع مركز معرفة الزلازل والتربة.",
 
     /* ── BLOG ARTICLES DATA (AR) ── */
     blog_jet_grout_title: "ما هو الحقن النفاث؟ مجالات التطبيق ومبدأ العمل",

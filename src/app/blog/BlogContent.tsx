@@ -49,12 +49,6 @@ export function BlogContent() {
           </div>
         </div>
       </section>
-      <section className="px-5 pb-24">
-        <div className="mx-auto rounded-[2rem] border border-gold-300/20 bg-gold-300 p-8 text-obsidian max-w-7xl">
-          <h2 className="text-4xl font-semibold">{t("blogCMSTitle")}</h2>
-          <p className="mt-4 max-w-3xl text-sm leading-7 font-medium">{t("blogCMSText")}</p>
-        </div>
-      </section>
     </main>
   );
 }
