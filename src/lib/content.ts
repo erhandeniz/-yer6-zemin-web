@@ -644,43 +644,6 @@ export const services = [
       { question: "Bentonit çamuru ne işe yarar?", answer: "Bentonit çamuru, kazı sırasında panel çeperinin göçmesini önleyerek stabiliteyi sağlar ve beton dökümüyle yerini betona bırakır." }
     ]
   },
-  {
-    slug: "cmf-zemin-iyilestirme",
-    key: "svc_cmf_zemin",
-    icon: Drill,
-    title: "CMF Zemin İyileştirme",
-    summary: "Sürekli burgu ve mekanik karıştırma teknolojileriyle (CMF) zemin taşıma kapasitesini artıran gelişmiş geoteknik çözüm.",
-    detail: "CMF (Continuous Mixing Foundation / Zemin İyileştirme), zayıf zemin profillerinde taşıma kapasitesini artırmak, oturmaları azaltmak ve sıvılaşma etkilerini sınırlamak amacıyla değerlendirilen bir zemin karıştırma yöntemidir. Karıştırıcı bıçaklarla zeminin yerinde bağlayıcılarla harmanlanması sonucu zemin-çimento elemanları oluşturulur.",
-    specs: ["Homojen karışım ve hedef dayanım", "Düşük titreşimli uygulama", "Saha koşullarına bağlı üretim hızı"],
-    applications: [
-      "Zayıf ve sıkışabilir zeminlerde temel güçlendirme",
-      "Sıvılaşma potansiyeli yüksek alanlarda zemin ıslahı",
-      "Endüstriyel tesisler ve ağır yük platformları",
-      "Otoyol ve demiryolu yaklaşım dolgularında oturma kontrolü",
-      "Liman ve depolama sahalarında taşıma kapasitesi artırımı"
-    ],
-    advantages: [
-      "Derin zemin karıştırma (DSM) teknolojisiyle entegre yüksek verim",
-      "Darbeli sistemlere göre düşük titreşimli çalışma ve çevre yapı etkilerinin izlenebilmesi",
-      "Uygun zemin ve yük koşullarında kazıklı sistemlere alternatif olabilme",
-      "Zemini yerinde karıştırarak hafriyat ve nakliye ihtiyacını azaltabilme",
-      "Zeminin doğal yapısını bağlayıcılar ile güçlendirerek uzun ömürlü temel oluşturur"
-    ],
-    processSteps: [
-      { title: "Zemin Araştırması", description: "Sahadan alınan numunelerle laboratuvarda en uygun çimento-zemin karışım oranı (binder ratio) hesaplanır." },
-      { title: "Ekipman Kurulumu", description: "Yüksek torklu CMF makine parkuru ve bağlayıcı üniteleri sahaya mobilize edilir." },
-      { title: "Sürekli Karıştırma (Delgi)", description: "CMF helezonları ile hedeflenen derinliğe inilirken mekanik karıştırma işlemi başlatılır." },
-      { title: "Bağlayıcı Enjeksiyonu", description: "Geri çekme aşamasında çimento şerbeti veya özel bağlayıcılar zeminle homojen bir şekilde karıştırılır." },
-      { title: "Kalite Kontrol", description: "İmalat sonrası kolonlardan karot alınarak basınç dayanımı (UCS) ve süreklilik testleri uygulanır." }
-    ],
-    technicalNote: "CMF Zemin İyileştirme teknolojisi, klasik Jet Grout yönteminden farklı olarak hidrolik parçalama yerine mekanik karıştırma prensibini (Soil Mixing) benimser. Bu sayede özellikle killi ve siltli zeminlerde çok daha homojen bir çap ve öngörülebilir bir dayanım profili elde edilir. Ekipman üzerindeki sensörler ile dönüş devri (RPM), ilerleme hızı ve enjeksiyon debisi anlık olarak izlenir.",
-    faq: [
-      { question: "CMF Zemin İyileştirme hangi zeminlerde uygulanır?", answer: "Özellikle taşıma gücü zayıf olan kil, silt, turba ve gevşek kum zeminlerde yüksek verim sağlar. Çok sert kaya formasyonlarında veya yoğun çakıllı alanlarda tercih edilmez." },
-      { question: "Jet Grout ile CMF arasındaki fark nedir?", answer: "Jet Grout yüksek basınçlı enjeksiyon ile zemini parçalar. CMF ise özel kanatlı helezonlar (auger) ile zemini mekanik olarak karıştırıp çimento ile harmanlar. CMF genellikle daha ekonomik ve geniş çaplı kolonlarda daha homojendir." },
-      { question: "CMF Zemin İyileştirme sıvılaşma riskini azaltır mı?", answer: "Uygun grid veya blok geometrisinde tasarlanan zemin-çimento elemanları yanal yayılmayı sınırlandırarak sıvılaşma etkilerinin azaltılmasına katkı sağlayabilir. Uygunluk ve performans, sahaya özel dinamik zemin analizleriyle doğrulanmalıdır." },
-      { question: "Uygulama hızı nasıldır?", answer: "Üretim hızı; zemin türü, hedef derinlik, kolon geometrisi, bağlayıcı lojistiği ve ekipman kapasitesine bağlıdır. Zemini yerinde karıştırması bazı projelerde hafriyat ve saha lojistiği ihtiyacını azaltabilir." }
-    ]
-  }
 ];
 
 export const standaloneServices = [
