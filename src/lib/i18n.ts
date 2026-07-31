@@ -417,8 +417,8 @@ export const dictionary = {
     blogSectionEyebrow: "Makaleler",
     blogSectionTitle: "Saha deneyimiyle hazırlanan teknik içerikler",
     blogReadMore: "Makaleyi aç",
-    blogCMSTitle: "CMS içerik katmanı hazır.",
-    blogCMSText: "Makaleler, hizmetler ve projeler merkezi veri yapından beslenir. Headless CMS, MDX veya kurumsal panel bağlantısı için hazır içerik modeli kullanılır.",
+    blogCMSTitle: "Yazılarımız sahadan çıkar.",
+    blogCMSText: "Blog içeriklerimiz gerçek şantiye uygulamalarından, imalat kayıtlarından ve saha kalite kontrol notlarından derlenir. Kalıcı teknik rehberler için Bilgi Merkezi'ni, deprem ve zemin davranışı için Deprem ve Zemin Bilgi Merkezi'ni inceleyebilirsiniz.",
 
     /* ── BLOG ARTICLES DATA (TR) ── */
     blog_jet_grout_title: "Jet Grout Nedir? Kullanım Alanları ve Çalışma Prensibi",
@@ -509,7 +509,7 @@ export const dictionary = {
     footerAddress: "Gölbaşı, Ankara. Avrupa, Orta Doğu ve Kuzey Afrika projeleri için mobil saha ekipleri.",
     footerQuickQuote: "Hızlı teklif formu",
     footerCopyright: "© 2026 YER6 Zemin Güçlendirme ve Jeoteknik Mühendislik.",
-    footerSubtitle: "Hazır CMS içerik altyapısı • TR / EN / AR",
+    footerSubtitle: "Jet Grout • DSM • Fore Kazık • Ankraj • İksa • TR / EN / AR",
 
     /* ── CALCULATOR ── */
     calcTitle: "Zemin İyileştirme Hacim Hesaplayıcı",
@@ -948,8 +948,8 @@ export const dictionary = {
     blogSectionEyebrow: "Articles",
     blogSectionTitle: "Technical content built on field experience.",
     blogReadMore: "Open Article",
-    blogCMSTitle: "CMS integration ready.",
-    blogCMSText: "Articles, services, and projects feed from a central structured data model. Ready for headless CMS, MDX, or custom corporate dashboards.",
+    blogCMSTitle: "Our articles come from the field.",
+    blogCMSText: "Our blog content is compiled from real site applications, production records and field quality-control notes. For evergreen technical guides see the Knowledge Centre; for earthquake and ground behaviour see the Earthquake & Ground Knowledge Centre.",
 
     /* ── BLOG ARTICLES DATA (EN) ── */
     blog_jet_grout_title: "What is Jet Grouting? Applications and Working Principle",
@@ -1040,7 +1040,7 @@ export const dictionary = {
     footerAddress: "Golbasi, Ankara. Mobile field crews active across Europe, Middle East, and North Africa projects.",
     footerQuickQuote: "Quick quote request",
     footerCopyright: "© 2026 YER6 Ground Improvement & Geotechnical Engineering.",
-    footerSubtitle: "Structured CMS foundation • TR / EN / AR",
+    footerSubtitle: "Jet Grout • DSM • Bored Piles • Anchors • Shoring • TR / EN / AR",
 
     /* ── CALCULATOR ── */
     calcTitle: "Ground Improvement Volume Calculator",
@@ -1476,8 +1476,8 @@ export const dictionary = {
     blogSectionEyebrow: "المقالات المهنية",
     blogSectionTitle: "محتوى فني دقيق يبحث عنه المطورون والمهندسون.",
     blogReadMore: "افتح المقال",
-    blogCMSTitle: "بنية نظام إدارة المحتوى جاهزة.",
-    blogCMSText: "تتغذى المقالات والخدمات والمشاريع من نموذج بيانات مركزي منظم. جاهز للربط مع Headless CMS أو ملفات MDX أو لوحات التحكم المخصصة.",
+    blogCMSTitle: "مقالاتنا تأتي من الميدان.",
+    blogCMSText: "يُجمَع محتوى مدونتنا من التطبيقات الفعلية في المواقع وسجلات التنفيذ وملاحظات ضبط الجودة الميدانية. للأدلة التقنية الدائمة راجع مركز المعرفة، ولسلوك التربة والزلازل راجع مركز معرفة الزلازل والتربة.",
 
     /* ── BLOG ARTICLES DATA (AR) ── */
     blog_jet_grout_title: "ما هو الحقن النفاث؟ مجالات التطبيق ومبدأ العمل",
@@ -1568,7 +1568,7 @@ export const dictionary = {
     footerAddress: "غولباشي، أنقرة. فرق عمل ميدانية متنقلة ونشطة لمشاريع أوروبا والشرق الأوسط وشمال أفريقيا.",
     footerQuickQuote: "طلب تسعير سريع",
     footerCopyright: "© 2026 YER6 لتثبيت التربة والهندسة الجيوتقنية. جميع الحقوق محفوظة.",
-    footerSubtitle: "بنية نظام إدارة محتوى جاهزة • تركية / إنجليزية / عربية",
+    footerSubtitle: "حقن نفاث • خلط عميق • خوازيق حفر • مراسي • سند • تركية / إنجليزية / عربية",
 
     /* ── CALCULATOR ── */
     calcTitle: "حاسبة حجم تحسين التربة الميداني",
