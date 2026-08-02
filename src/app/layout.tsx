@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import "./globals.css";
 import { SiteShell } from "@/components/SiteShell";
-import { FloatingCalculator } from "@/components/FloatingCalculator";
+import { DeferredCalculator } from "@/components/DeferredCalculator";
 import { localBusinessSchema } from "@/lib/seo";
 import { siteConfig } from "@/lib/siteConfig";
 
@@ -120,6 +120,19 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="tr" suppressHydrationWarning>
       <head>
+        {/* LCP hızlandırma: mobil hero görseli erken keşfedilsin diye önceden
+            yüklenir. imageSrcSet/imageSizes sayesinde tarayıcı yalnızca ihtiyacı
+            olan boyutu indirir; masaüstünde (min-width:768px) indirilmez. */}
+        <link
+          rel="preload"
+          as="image"
+          type="image/avif"
+          href="/images/site/yer6-construction-hero-640.avif"
+          imageSrcSet="/images/site/yer6-construction-hero-640.avif 640w, /images/site/yer6-construction-hero-960.avif 960w"
+          imageSizes="100vw"
+          media="(max-width: 767px)"
+          fetchPriority="high"
+        />
         <link rel="license" href={`${siteUrl}/kullanim-sartlari/`} />
         <script
           id="yer6-website-schema"
@@ -135,9 +148,9 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           <>
             <Script
               src={`https://www.googletagmanager.com/gtag/js?id=${siteConfig.gaMeasurementId}`}
-              strategy="afterInteractive"
+              strategy="lazyOnload"
             />
-            <Script id="ga4-init" strategy="afterInteractive">
+            <Script id="ga4-init" strategy="lazyOnload">
               {`
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
@@ -149,7 +162,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         ) : null}
         {siteConfig.yandexMetricaId ? (
           <>
-            <Script id="yandex-metrica" strategy="afterInteractive">
+            <Script id="yandex-metrica" strategy="lazyOnload">
               {`
                 (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
                 m[i].l=1*new Date();
@@ -199,7 +212,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         />
         <div className="noise" />
         <SiteShell>{children}</SiteShell>
-        <FloatingCalculator />
+        <DeferredCalculator />
       </body>
     </html>
   );

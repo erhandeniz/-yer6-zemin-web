@@ -6,7 +6,9 @@ import { ArrowUpRight, Play, ShieldCheck } from "lucide-react";
 import { ParticleField } from "@/components/ParticleField";
 import { useLanguage } from "@/components/LanguageProvider";
 
-const heroPoster = "/images/site/yer6-construction-hero.jpg";
+// Hero görselinin optimize edilmiş sürümleri. Orijinal dosya
+// (yer6-construction-hero.jpg) kaynak olarak korunur, silinmez.
+const HERO_LCP_MOBILE = "/images/site/yer6-construction-hero-640.avif";
 
 export function CinematicHero() {
   const { t } = useLanguage();
@@ -14,21 +16,41 @@ export function CinematicHero() {
   return (
     <section className="relative min-h-screen overflow-hidden pt-24 dark-theme">
       <div className="absolute inset-0">
-        <img
-          src={heroPoster}
-          alt="YER6 zemin güçlendirme ve temel mühendisliği saha uygulaması"
-          className="h-full w-full object-cover opacity-42 md:hidden"
-          loading="eager"
-          decoding="sync"
-        />
+        {/* LCP elemanı (mobil). Görünüm birebir aynıdır; yalnızca aynı görselin
+            daha küçük ve modern formatlı sürümleri sunulur. AVIF > WebP > JPEG
+            sırasıyla tarayıcı desteğine göre seçilir. */}
+        <picture className="md:hidden">
+          <source
+            type="image/avif"
+            srcSet="/images/site/yer6-construction-hero-640.avif 640w, /images/site/yer6-construction-hero-960.avif 960w"
+            sizes="100vw"
+          />
+          <source
+            type="image/webp"
+            srcSet="/images/site/yer6-construction-hero-640.webp 640w, /images/site/yer6-construction-hero-960.webp 960w"
+            sizes="100vw"
+          />
+          <img
+            src="/images/site/yer6-construction-hero-640.jpg"
+            srcSet="/images/site/yer6-construction-hero-640.jpg 640w, /images/site/yer6-construction-hero-960.jpg 960w"
+            sizes="100vw"
+            alt="YER6 zemin güçlendirme ve temel mühendisliği saha uygulaması"
+            className="h-full w-full object-cover opacity-42"
+            width={640}
+            height={427}
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
+          />
+        </picture>
         <video
           className="hidden h-full w-full object-cover opacity-42 md:block"
           autoPlay
           muted
           loop
           playsInline
-          preload="metadata"
-          poster={heroPoster}
+          preload="none"
+          poster="/images/site/yer6-construction-hero-1400.webp"
         >
           <source
             media="(min-width: 768px)"
