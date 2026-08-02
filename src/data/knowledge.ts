@@ -5804,6 +5804,676 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     ],
     published: true
   },
+  // ————————————————————————————————————————————————————————————
+  // STANDART VE OTORİTE SERİSİ
+  // Not: Eurocode, ASTM, ICE gibi standartlar TELİFLİ ve ücretli dokümanlardır.
+  // Bu makaleler standart metnini AKTARMAZ; yalnızca kavramları, yaklaşımı ve
+  // pratikteki karşılığını özgün biçimde açıklar ve resmî kaynağa yönlendirir.
+  // ————————————————————————————————————————————————————————————
+  {
+    slug: "eurocode-7-ve-tbdy-2018-karsilastirmasi",
+    title: "Eurocode 7 ve TBDY 2018: Geoteknik Tasarım Yaklaşımlarının Karşılaştırması",
+    seoTitle: "Eurocode 7 Nedir? TBDY 2018 ile Geoteknik Tasarım Karşılaştırması | YER6",
+    description:
+      "Eurocode 7 (EN 1997) ile TBDY 2018 geoteknik tasarım yaklaşımları: limit durum tasarımı, kısmi katsayılar, zemin sınıfları ve pratikte hangi belgenin ne zaman esas alındığı.",
+    excerpt:
+      "Eurocode 7 limit durum ve kısmi katsayı mantığıyla çalışır; TBDY 2018 ise Türkiye'de deprem etkisi altında bina tasarımının zorunlu çerçevesidir. İkisi rakip değil, farklı kapsamlarda tamamlayıcıdır.",
+    category: "Kalite Kontrol",
+    readingTime: "11 dk",
+    publishedAt: "2026-08-01",
+    updatedAt: "2026-08-01",
+    heroLabel: "Standartlar",
+    introduction:
+      "Geoteknik tasarımda hangi belgeye göre hesap yapıldığı, sonucun kendisi kadar önemlidir. Türkiye'de yapı projelerinde bağlayıcı çerçeve TBDY 2018 ve ilgili yönetmeliklerdir; Eurocode 7 ise uluslararası projelerde ve yöntem tartışmalarında yaygın olarak referans alınır. Bu yazı, iki yaklaşımın mantığını ve pratikteki farkını açıklar.",
+    sections: [
+      {
+        id: "eurocode-7-mantigi",
+        title: "Eurocode 7'nin Temel Mantığı",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Eurocode 7 (EN 1997), geoteknik tasarımı limit durum (limit state) yaklaşımıyla ele alır. Taşıma gücü, kayma, devrilme, kaldırma gibi nihai limit durumlar ile oturma, deplasman ve titreşim gibi kullanılabilirlik limit durumları ayrı ayrı kontrol edilir."
+          },
+          {
+            type: "paragraph",
+            content:
+              "Güvenlik, tek bir global güvenlik sayısıyla değil; yüklere, zemin parametrelerine ve dirence ayrı ayrı uygulanan kısmi katsayılarla sağlanır. Bu, belirsizliğin nerede olduğunu görünür kılar: zemin parametresi mi belirsiz, yük mü değişken, direnç modeli mi tartışmalı?"
+          },
+          {
+            type: "list",
+            title: "Öne çıkan kavramlar",
+            items: [
+              "Geoteknik kategori (1, 2, 3): projenin karmaşıklığına göre gereken inceleme derinliği",
+              "Karakteristik değer: zemin parametresinin dikkatli (temkinli) tahmini",
+              "Kısmi katsayılar: yük, malzeme ve dirence ayrı uygulanan güvenlik payları",
+              "Tasarım yaklaşımları (DA1, DA2, DA3): katsayıların hangi tarafa uygulanacağını belirleyen alternatifler"
+            ]
+          },
+          {
+            type: "note",
+            title: "Kaynak notu",
+            content:
+              "Eurocode 7 telifli ve ücretli bir standarttır. Bu sayfa standardın metnini içermez; yalnızca yaklaşım ve kavramları açıklar. Uygulamada standardın güncel resmî nüshası esas alınmalıdır."
+          }
+        ]
+      },
+      {
+        id: "tbdy-2018",
+        title: "TBDY 2018'in Kapsamı",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Türkiye Bina Deprem Yönetmeliği (TBDY 2018), binaların deprem etkisi altında tasarımını düzenler. Geoteknik açıdan; yerel zemin sınıfı belirlenmesi, saha özgü deprem yer hareketi parametreleri, sıvılaşma değerlendirmesi ve temel sistemi tasarımına ilişkin esaslar içerir."
+          },
+          {
+            type: "list",
+            title: "Geoteknik açıdan öne çıkan başlıklar",
+            items: [
+              "Yerel zemin sınıfı (ZA–ZF) ve kayma dalgası hızına dayalı sınıflandırma",
+              "Sıvılaşma potansiyeli değerlendirmesinin zorunlu olduğu koşullar",
+              "Saha özgü tasarım spektrumu gerektiren durumlar",
+              "Temel-zemin etkileşimi ve kazıklı temel yaklaşımları",
+              "Zemin etüdü ve raporlama gereklilikleri"
+            ]
+          },
+          {
+            type: "warning",
+            title: "Bağlayıcılık farkı",
+            content:
+              "Türkiye'de ruhsata esas projelerde bağlayıcı olan TBDY 2018 ve ilgili mevzuattır. Eurocode 7 ancak sözleşmede açıkça belirtildiğinde veya yurt dışı projelerde esas alınır. İkisi karıştırılmamalı; hangi belgeye göre hesap yapıldığı raporda net yazılmalıdır."
+          }
+        ]
+      },
+      {
+        id: "pratik-farklar",
+        title: "Pratikte Öne Çıkan Farklar",
+        blocks: [
+          {
+            type: "list",
+            title: "Karşılaştırma başlıkları",
+            items: [
+              "Güvenlik felsefesi: Eurocode kısmi katsayı, geleneksel yaklaşım global güvenlik sayısı kullanır",
+              "Kapsam: Eurocode 7 genel geoteknik tasarımı, TBDY 2018 deprem etkisi altında bina tasarımını hedefler",
+              "Zemin sınıflandırması: iki belgede sınıf tanımları ve eşikler birebir aynı değildir",
+              "Sıvılaşma: TBDY 2018 Türkiye koşullarına özgü değerlendirme çerçevesi tanımlar",
+              "Doğrulama: her iki yaklaşımda da saha ve laboratuvar verisi olmadan hesap yapılamaz"
+            ]
+          },
+          {
+            type: "paragraph",
+            content:
+              "Uluslararası bir projede işveren Eurocode 7'ye göre tasarım isteyebilir; aynı proje Türkiye'de inşa ediliyorsa TBDY 2018 gereklilikleri de sağlanmalıdır. Bu durumda iki çerçeve paralel yürütülür ve raporda hangi kontrolün hangi belgeye göre yapıldığı ayrı ayrı gösterilir."
+          }
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "Eurocode 7 Türkiye'de zorunlu mu?",
+        answer:
+          "Hayır. Türkiye'de ruhsata esas projelerde bağlayıcı çerçeve TBDY 2018 ve ilgili yönetmeliklerdir. Eurocode 7 yalnızca sözleşmede öngörüldüğünde veya yurt dışı projelerde esas alınır."
+      },
+      {
+        question: "Kısmi katsayı yaklaşımı ne demek?",
+        answer:
+          "Güvenliğin tek bir sayıyla değil; yüklere, zemin parametrelerine ve dirence ayrı ayrı uygulanan katsayılarla sağlanmasıdır. Böylece belirsizliğin kaynağı hesapta görünür kalır."
+      },
+      {
+        question: "Zemin sınıfı iki belgede aynı mı?",
+        answer:
+          "Sınıflandırma mantığı benzer (kayma dalgası hızı, SPT, drenajsız kayma dayanımı gibi parametrelere dayanır) ancak sınıf tanımları ve eşik değerleri birebir aynı değildir. Doğrudan eşleştirme yapılmamalıdır."
+      },
+      {
+        question: "Jet grout veya DSM tasarımı hangi standarda göre yapılır?",
+        answer:
+          "Zemin iyileştirme uygulamalarında Avrupa'da EN 12716 (jet grouting) ve EN 14679 (derin karıştırma) gibi uygulama standartları referans alınır; tasarım çerçevesi ise projenin tabi olduğu yönetmeliğe göre belirlenir. Her durumda deneme kolonu ve saha doğrulaması esastır."
+      },
+      {
+        question: "Standartların tam metnine nereden ulaşılır?",
+        answer:
+          "Eurocode ve EN standartları TSE üzerinden, ASTM standartları ASTM International üzerinden ücretli olarak temin edilir. TBDY 2018 ise resmî kanallardan yayımlanmıştır. Telifli oldukları için metinleri web sitelerinde paylaşılamaz."
+      }
+    ],
+    relatedSlugs: ["zemin-kalite-kontrol-standartlari", "zemin-etudu-nasil-yapilir", "sivilasma-riskine-karsi-zemin-guclendirme"],
+    keywords: [
+      "Eurocode 7 nedir",
+      "EN 1997 geoteknik tasarım",
+      "TBDY 2018 zemin",
+      "kısmi katsayı yöntemi",
+      "geoteknik kategori",
+      "yerel zemin sınıfı",
+      "geoteknik tasarım standartları"
+    ],
+    published: true
+  },
+  {
+    slug: "karot-ve-ucs-deneyleri",
+    title: "Karot Alma ve UCS (Tek Eksenli Basınç) Deneyleri: Kabul Kriterleri",
+    seoTitle: "Jet Grout Karot ve UCS Deneyi Nasıl Yapılır? Kabul Kriterleri | YER6",
+    description:
+      "Jet grout ve DSM kolonlarında karot alma, numune hazırlama, UCS (tek eksenli basınç) deneyi ve dayanım kabul kriterleri; hangi sonuç neyi gösterir?",
+    excerpt:
+      "Bir zemin iyileştirmesinin performansı ancak numune ve deneyle kanıtlanır. Karot alma yöntemi, numune boyutu ve deney koşulları sonucu doğrudan etkiler.",
+    category: "Kalite Kontrol",
+    readingTime: "10 dk",
+    publishedAt: "2026-08-01",
+    updatedAt: "2026-08-01",
+    heroLabel: "Kalite Kontrol",
+    introduction:
+      "Jet grout ve DSM uygulamalarında imalat yer altında olduğu için sonucu gözle görmek mümkün değildir. Bu nedenle kalite; kolonlardan alınan karot numunelerinin laboratuvarda tek eksenli basınç (UCS) deneyine tabi tutulmasıyla belgelenir. Deneyin nasıl yapıldığı, sonucun ne anlama geldiğini belirler.",
+    sections: [
+      {
+        id: "karot-alma",
+        title: "Karot Alma",
+        blocks: [
+          {
+            type: "list",
+            title: "Dikkat edilmesi gerekenler",
+            items: [
+              "Karot zamanlaması: bağlayıcının yeterli dayanıma ulaşması beklenir (tipik olarak 28 gün, projeye göre değişir)",
+              "Karot çapı: küçük çaplı karotlarda dayanım daha değişken ölçülür; şartnamede tanımlanmalıdır",
+              "Karot verimi (recovery): düşük verim, kolonda süreksizlik veya karıştırma yetersizliği işareti olabilir",
+              "Numune seçimi: kolonun farklı derinliklerinden numune alınmalı, yalnızca en iyi görünen parça seçilmemelidir",
+              "Taşıma ve saklama: numuneler nemli ortamda korunmalı, kurumaya bırakılmamalıdır"
+            ]
+          },
+          {
+            type: "warning",
+            title: "Seçmeli numune sonucu bozar",
+            content:
+              "Sadece sağlam görünen parçalardan numune hazırlamak, sahanın gerçek performansını değil en iyi noktasını raporlar. Numune seçimi tarafsız ve şartnameye uygun olmalıdır."
+          }
+        ]
+      },
+      {
+        id: "ucs-deneyi",
+        title: "UCS (Tek Eksenli Basınç) Deneyi",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "UCS deneyinde silindirik numune yanal destek olmadan eksenel yüke tabi tutulur ve kırılma anındaki gerilme ölçülür. Zemin-çimento karışımlarında bu değer, iyileştirmenin ulaştığı dayanımın en yaygın göstergesidir."
+          },
+          {
+            type: "list",
+            title: "Sonucu etkileyen faktörler",
+            items: [
+              "Boy/çap oranı: standart oran dışındaki numunelerde düzeltme gerekir",
+              "Numune uçlarının düzgünlüğü: eğri yüzey erken kırılmaya yol açar",
+              "Yükleme hızı: hızlı yükleme dayanımı olduğundan yüksek gösterebilir",
+              "Numune yaşı ve kür koşulu",
+              "Zemin türü ve bağlayıcı dozajı"
+            ]
+          },
+          {
+            type: "note",
+            title: "İlgili standartlar",
+            content:
+              "Zemin ve zemin-çimento numunelerinde tek eksenli basınç deneyi için ASTM D2166 gibi standartlar yaygın referanstır. Standart metinleri ücretlidir; laboratuvar hangi standarda göre çalıştığını raporunda belirtmelidir."
+          }
+        ]
+      },
+      {
+        id: "kabul-kriterleri",
+        title: "Kabul Kriterleri Nasıl Kurulur?",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Kabul kriteri tek bir numunenin sonucuna değil, sonuçların istatistiksel dağılımına dayanmalıdır. Zemin-çimento karışımlarında saçılma betona göre belirgin biçimde yüksektir; bu beklenen bir davranıştır."
+          },
+          {
+            type: "list",
+            title: "Şartnamede tanımlanması gerekenler",
+            items: [
+              "Hedef karakteristik dayanım ve hangi yaşta ölçüleceği",
+              "Numune adedi ve alınacağı kolon sayısı",
+              "Kabul edilebilir saçılma ve tek numune alt sınırı",
+              "Yetersiz sonuç halinde uygulanacak prosedür (ilave karot, ilave kolon, yeniden değerlendirme)",
+              "Karot verimi için alt sınır"
+            ]
+          },
+          {
+            type: "warning",
+            title: "Tek numune karar vermez",
+            content:
+              "Düşük çıkan tek bir sonuç imalatın reddi anlamına gelmez; aynı şekilde yüksek çıkan tek bir sonuç da başarı kanıtı değildir. Karar, önceden tanımlanmış istatistiksel kritere göre verilir."
+          }
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "Jet grout kolonundan ne zaman karot alınır?",
+        answer:
+          "Genellikle 28 günlük dayanım esas alınır; ancak projeye göre 7 veya 14 günlük ara kontroller de yapılabilir. Erken karot, henüz dayanım kazanmamış malzemede yanıltıcı düşük sonuç verir."
+      },
+      {
+        question: "UCS değeri kaç olmalı?",
+        answer:
+          "Tek bir evrensel değer yoktur. Hedef dayanım; zemin türü, yapı yükü, iyileştirme amacı (taşıma gücü mü, geçirimsizlik mi, sıvılaşma azaltımı mı) ve tasarım kabullerine göre projede belirlenir."
+      },
+      {
+        question: "Karot verimi düşük çıkarsa ne anlama gelir?",
+        answer:
+          "Kolonda süreksizlik, yetersiz karıştırma, yıkanma veya numune alma sırasında hasar olabileceğini gösterir. Nedeni araştırılmadan sonuç 'başarısız' diye yorumlanmamalı, ancak göz ardı da edilmemelidir."
+      },
+      {
+        question: "Karot yerine başka doğrulama yöntemi var mı?",
+        answer:
+          "Sismik yöntemler, CPT/SPT karşılaştırmaları, plaka yükleme testleri ve kolonun kazıyla açığa çıkarılması tamamlayıcı yöntemlerdir. Ancak dayanım için karot + UCS en doğrudan kanıttır."
+      },
+      {
+        question: "Zemin-çimento numunelerinde saçılma neden yüksek?",
+        answer:
+          "Çünkü karışım homojen bir fabrika ürünü değil, yerinde zeminle oluşturulur. Zemin profilindeki doğal değişkenlik doğrudan sonuca yansır. Bu nedenle kabul kriteri tek numuneye değil dağılıma kurulur."
+      }
+    ],
+    relatedSlugs: ["zemin-kalite-kontrol-standartlari", "dsm-uygulama-ve-kalite-kontrol", "saha-denetimi-numune-testleri"],
+    keywords: [
+      "karot alma",
+      "UCS deneyi",
+      "tek eksenli basınç deneyi",
+      "ASTM D2166",
+      "jet grout karot",
+      "zemin çimento dayanımı",
+      "kalite kabul kriteri"
+    ],
+    published: true
+  },
+  {
+    slug: "kazik-yukleme-testi-turleri",
+    title: "Kazık Yükleme Testi Türleri: Statik, Dinamik, Osterberg ve PIT",
+    seoTitle: "Kazık Yükleme Testi Nasıl Yapılır? Statik, Dinamik ve PIT | YER6",
+    description:
+      "Kazık taşıma kapasitesi ve bütünlüğü nasıl doğrulanır? Statik yükleme, dinamik test, Osterberg (O-cell), PIT ve CSL yöntemlerinin farkları ve ne zaman kullanıldığı.",
+    excerpt:
+      "Bir kazığın hesaplanan kapasiteyi gerçekten taşıdığı ancak testle bilinir. Test türü; hedeflenen kanıt, saha koşulu ve maliyet dengesine göre seçilir.",
+    category: "Kalite Kontrol",
+    readingTime: "11 dk",
+    publishedAt: "2026-08-01",
+    updatedAt: "2026-08-01",
+    heroLabel: "Kazık Testleri",
+    introduction:
+      "Kazık tasarımı zemin parametreleri ve ampirik bağıntılara dayanır; sahadaki gerçek davranış her zaman hesapla birebir örtüşmez. Yükleme ve bütünlük testleri, bu boşluğu kapatan doğrudan kanıtlardır. Testler iki soruya cevap arar: kazık yeterli yükü taşıyor mu, ve gövdesi sağlam mı?",
+    sections: [
+      {
+        id: "kapasite-testleri",
+        title: "Taşıma Kapasitesi Testleri",
+        blocks: [
+          {
+            type: "list",
+            title: "Yaygın yöntemler",
+            items: [
+              "Statik yükleme testi: kazığa kademeli yük uygulanır, oturma ölçülür. En güvenilir ancak en pahalı ve zaman alıcı yöntemdir; reaksiyon sistemi (kazık veya ağırlık) gerekir",
+              "Dinamik yükleme testi: kazık başına düşürülen ağırlıkla oluşan dalga, sensörlerle ölçülür ve analizle kapasiteye çevrilir. Hızlı ve ekonomiktir, statik testle kalibrasyonu önerilir",
+              "Osterberg (O-cell) testi: yük kazığın içine yerleştirilen hücre ile alttan uygulanır; reaksiyon sistemi gerekmez. Çok yüksek kapasiteli ve derin kazıklarda tercih edilir",
+              "Çekme testi: ankraj ve çekme yüküne çalışan kazıklarda uygulanır",
+              "Yanal yükleme testi: köprü ayağı ve iksa kazıklarında yatay davranışın ölçülmesi"
+            ]
+          },
+          {
+            type: "note",
+            title: "Test kazığı ile üretim kazığı",
+            content:
+              "Bazı projelerde yalnızca test amaçlı, üstyapıya girmeyen ayrı kazıklar imal edilir. Bu, göçme yüküne kadar yüklemeye izin verir; üretim kazıklarında ise genellikle tasarım yükünün belirli bir katına kadar test yapılır."
+          }
+        ]
+      },
+      {
+        id: "butunluk-testleri",
+        title: "Bütünlük (Integrity) Testleri",
+        blocks: [
+          {
+            type: "list",
+            title: "Yöntemler",
+            items: [
+              "PIT (Pile Integrity Test): kazık başına küçük darbe uygulanır, yansıyan dalga ile boy ve süreksizlik değerlendirilir. Hızlı ve düşük maliyetlidir, çok sayıda kazığa uygulanabilir",
+              "CSL (Crosshole Sonic Logging): kazık içine önceden yerleştirilen borular arasında ses dalgası gönderilir; kesit boyunca beton kalitesi haritalanır. Büyük çaplı kazıklarda daha güvenilirdir",
+              "Termal bütünlük (TIP): betonun priz sırasında yaydığı ısı ölçülerek kesit değerlendirilir",
+              "Kazık başının traşlanması ve görsel kontrol: en basit ama yalnızca üst kesimi gösterir"
+            ]
+          },
+          {
+            type: "warning",
+            title: "Boru yerleştirmesi önceden planlanır",
+            content:
+              "CSL testi için gerekli borular donatı kafesine imalattan ÖNCE bağlanmalıdır. Kazık dökümü bittikten sonra bu test uygulanamaz. Test planı imalat programının parçasıdır."
+          }
+        ]
+      },
+      {
+        id: "yorumlama",
+        title: "Sonuçların Yorumlanması",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Yükleme testinde ölçülen yük-oturma eğrisi tek başına bir 'geçti/kaldı' cevabı vermez. Göçme yükü tanımı, kabul edilebilir oturma sınırı ve değerlendirme yöntemi şartnamede önceden tanımlanmış olmalıdır."
+          },
+          {
+            type: "list",
+            title: "Raporda bulunması gerekenler",
+            items: [
+              "Test edilen kazığın konumu, çapı, boyu ve imalat kaydı",
+              "Uygulanan yük kademeleri, bekleme süreleri ve ölçülen oturmalar",
+              "Yük-oturma eğrisi ve varsa boşaltma davranışı",
+              "Kullanılan değerlendirme yöntemi ve kabul kriteri",
+              "Test ekipmanının kalibrasyon bilgisi",
+              "Zemin profili ile karşılaştırma"
+            ]
+          },
+          {
+            type: "warning",
+            title: "Test sayısı azsa temsil gücü düşer",
+            content:
+              "Yüzlerce kazıklık bir sahada tek kazık test etmek, sonucun tüm sahayı temsil ettiği anlamına gelmez. Test adedi; saha büyüklüğü, zemin değişkenliği ve risk seviyesine göre belirlenmelidir."
+          }
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "Statik yükleme testi ile dinamik test arasındaki fark nedir?",
+        answer:
+          "Statik testte kazığa gerçek yük kademeli olarak uygulanır ve oturma doğrudan ölçülür; en güvenilir yöntemdir ama pahalı ve yavaştır. Dinamik testte darbe ile oluşan dalga ölçülüp analizle kapasiteye çevrilir; hızlı ve ekonomiktir, ancak analiz varsayımlarına bağlıdır."
+      },
+      {
+        question: "PIT testi kazığın kapasitesini ölçer mi?",
+        answer:
+          "Hayır. PIT bütünlük testidir; kazık boyunu ve gövdedeki olası süreksizlikleri değerlendirir. Taşıma kapasitesi hakkında bilgi vermez; bunun için yükleme testi gerekir."
+      },
+      {
+        question: "Kaç kazığa test yapılmalı?",
+        answer:
+          "Şartnameye ve risk seviyesine bağlıdır. Yaygın pratikte bütünlük testleri kazıkların önemli bir kısmına, yükleme testleri ise belirli bir oranına veya sayısına uygulanır. Zemin değişkenliği yüksekse test adedi artırılır."
+      },
+      {
+        question: "Osterberg testi ne zaman tercih edilir?",
+        answer:
+          "Çok yüksek kapasiteli, derin veya su içindeki kazıklarda; klasik statik test için gereken reaksiyon sistemini kurmanın zor ya da çok pahalı olduğu durumlarda tercih edilir."
+      },
+      {
+        question: "Test sonucu yetersiz çıkarsa ne yapılır?",
+        answer:
+          "Önce imalat kayıtları ve zemin profili incelenir; sorunun tekil mi yaygın mı olduğu belirlenir. Sonrasında ilave test, kazık boyu/çapı revizyonu, ilave kazık veya tasarım gözden geçirmesi gündeme gelir. Karar tasarımcı mühendise aittir."
+      }
+    ],
+    relatedSlugs: ["fore-kazik-nedir", "mini-kazik-nedir", "zemin-kalite-kontrol-standartlari"],
+    keywords: [
+      "kazık yükleme testi",
+      "statik yükleme testi",
+      "dinamik kazık testi",
+      "PIT testi",
+      "CSL crosshole sonic logging",
+      "Osterberg O-cell",
+      "kazık bütünlük testi"
+    ],
+    published: true
+  },
+  {
+    slug: "top-down-insaat-ve-derin-kazi-guvenligi",
+    title: "Top-Down (Yukarıdan Aşağı) İnşaat ve Derin Kazı Güvenliği",
+    seoTitle: "Top-Down İnşaat Nedir? Derin Kazıda Yukarıdan Aşağı Yöntem | YER6",
+    description:
+      "Top-down (yukarıdan aşağı) inşaat yöntemi nedir, ne zaman kullanılır? Kent merkezindeki dar parsellerde derin kazı güvenliği, deformasyon kontrolü ve program avantajı.",
+    excerpt:
+      "Top-down yöntemde kalıcı döşemeler kazı ilerledikçe destek görevi görür. Komşu yapıya çok yakın, deformasyon toleransı düşük sahalarda tercih edilir.",
+    category: "Ankraj & İksa",
+    readingTime: "10 dk",
+    publishedAt: "2026-08-01",
+    updatedAt: "2026-08-01",
+    heroLabel: "Derin Kazı",
+    introduction:
+      "Klasik kazıda önce tüm kazı yapılır, sonra alttan yukarı inşaata başlanır. Top-down yönteminde ise yapının kalıcı döşemeleri kazı ilerledikçe imal edilir ve perdeyi destekleyen rijit eleman olarak çalışır. Bu, hem deformasyonu azaltır hem de üstyapı ile kazının eş zamanlı sürmesine olanak tanır.",
+    sections: [
+      {
+        id: "nasil-calisir",
+        title: "Yöntem Nasıl Çalışır?",
+        blocks: [
+          {
+            type: "list",
+            title: "Tipik sıra",
+            items: [
+              "Çevre perdesi (genellikle diyafram duvar veya sekant kazık) imal edilir",
+              "Kalıcı kolonları taşıyacak temel kazıkları ve içlerine yerleştirilen çelik kolonlar (king post) teşkil edilir",
+              "Zemin kat döşemesi dökülür; bu döşeme perde için ilk destek görevi görür",
+              "Döşemede bırakılan boşluklardan alt kademe kazısı yapılır",
+              "Bir alt kat döşemesi dökülür ve destek görevi üstlenir",
+              "Bu döngü temel kotuna kadar sürer; eş zamanlı olarak üstyapı yükselebilir"
+            ]
+          }
+        ]
+      },
+      {
+        id: "ne-zaman",
+        title: "Ne Zaman Tercih Edilir?",
+        blocks: [
+          {
+            type: "list",
+            title: "Uygun koşullar",
+            items: [
+              "Komşu yapıya çok yakın, deformasyon toleransı düşük parseller",
+              "Ankraj için komşu parsel izni alınamayan sahalar",
+              "Kazı içinde payanda kurmanın çalışmayı imkânsız kılacağı dar alanlar",
+              "Üstyapı ve kazının paralel yürütülmesi gereken sıkışık programlar",
+              "Derin bodrumlu kent merkezi projeleri"
+            ]
+          },
+          {
+            type: "list",
+            title: "Zorlukları",
+            items: [
+              "Kapalı ortamda kazı: havalandırma, aydınlatma ve nakliye planlaması gerekir",
+              "Kolon (king post) düşeyliğinde yüksek hassasiyet zorunludur",
+              "Döşeme-perde birleşim detayları kritik ve karmaşıktır",
+              "İmalat sırası hatası geri dönüşü zor sonuçlar doğurur",
+              "Klasik yönteme göre birim maliyet genellikle daha yüksektir"
+            ]
+          }
+        ]
+      },
+      {
+        id: "guvenlik",
+        title: "Derin Kazı Güvenliğinin Ortak İlkeleri",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Yöntem hangisi olursa olsun derin kazı güvenliği aynı temel ilkelere dayanır: kazı öncesi zemin ve komşu yapı bilgisinin toplanması, kademeli ilerleme, izleme ve önceden tanımlanmış müdahale eşikleri."
+          },
+          {
+            type: "list",
+            title: "Vazgeçilmezler",
+            items: [
+              "Kazı öncesi komşu yapıların fotoğraflı hasar tespiti",
+              "İzleme planı: perde deplasmanı, komşu yapı oturması, yeraltı suyu",
+              "Uyarı ve müdahale eşiklerinin kazı başlamadan yazılı olması",
+              "Bir destek kademesi tamamlanmadan alt kademeye geçilmemesi",
+              "Su kontrolü ve taban kabarması değerlendirmesi",
+              "Acil durum senaryosu ve müdahale malzemesinin sahada hazır bulunması"
+            ]
+          },
+          {
+            type: "warning",
+            title: "Program baskısı güvenliğin önüne geçmemeli",
+            content:
+              "Derin kazı kazalarının önemli bölümü, destek imalatı tamamlanmadan kazının sürdürülmesinden kaynaklanır. İmalat sırası bir öneri değil, tasarımın parçasıdır."
+          }
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "Top-down yöntemi neden daha pahalı?",
+        answer:
+          "Kalıcı kolonların hassas düşeylikte imalatı, kapalı ortamda kazı ve nakliye, karmaşık birleşim detayları ve daha yavaş kazı hızı maliyeti artırır. Buna karşılık program kazancı ve düşük deformasyon bazı projelerde bu farkı karşılar."
+      },
+      {
+        question: "Top-down her projede uygulanabilir mi?",
+        answer:
+          "Hayır. Zemin koşulu, kazı derinliği, yapı geometrisi ve ekipman erişimi belirleyicidir. Geniş ve komşusuz sahalarda klasik kazı genellikle daha ekonomik ve pratiktir."
+      },
+      {
+        question: "Deformasyon top-down ile ne kadar azalır?",
+        answer:
+          "Rijit döşeme desteği sayesinde perde deplasmanları ankrajlı veya payandalı sistemlere göre genellikle daha düşük kalır. Ancak sayısal beklenti projeye özgü analizle belirlenir; genel bir yüzde verilemez."
+      },
+      {
+        question: "King post nedir?",
+        answer:
+          "Top-down yöntemde kalıcı kolon yükünü taşımak üzere temel kazığının içine yerleştirilen çelik kolondur. Düşeylik toleransı çok dardır; sapma sonradan düzeltilmesi zor sorunlar yaratır."
+      },
+      {
+        question: "Kazı sırasında komşu bina hasar görürse sorumluluk kimde?",
+        answer:
+          "Bu hukuki bir konudur ve sözleşme ile mevzuata bağlıdır; teknik açıdan önemli olan, kazı öncesi hasar tespitinin ve kazı boyunca izleme kayıtlarının eksiksiz tutulmuş olmasıdır. Bu belgeler hem yapıyı hem yükleniciyi korur."
+      }
+    ],
+    relatedSlugs: ["iksa-sistemi-nasil-secilir", "iksa-deformasyon-izleme", "kazi-destek-sistemleri-nedir"],
+    keywords: [
+      "top-down inşaat",
+      "yukarıdan aşağı inşaat",
+      "derin kazı güvenliği",
+      "king post kolon",
+      "diyafram duvar top-down",
+      "kent içi derin kazı"
+    ],
+    published: true
+  },
+  {
+    slug: "zemin-guclendirme-sartnamesi-nasil-okunur",
+    title: "Zemin Güçlendirme Şartnamesi Nasıl Okunur? İşveren ve Müteahhit Rehberi",
+    seoTitle: "Zemin Güçlendirme Şartnamesi Nasıl Okunur? Teklif Karşılaştırma | YER6",
+    description:
+      "Zemin iyileştirme şartnamesinde nelere bakılmalı? Metraj, kalite kabul kriteri, test kapsamı ve fiyat farklarının gerçek nedenleri — teklif karşılaştırma rehberi.",
+    excerpt:
+      "İki teklif arasındaki fark çoğu zaman fiyattan değil, kapsamdan gelir. Şartnamenin hangi maddeleri okunursa gerçek karşılaştırma yapılabilir?",
+    category: "Kalite Kontrol",
+    readingTime: "10 dk",
+    publishedAt: "2026-08-01",
+    updatedAt: "2026-08-01",
+    heroLabel: "İşveren Rehberi",
+    introduction:
+      "Zemin güçlendirme tekliflerinde metre fiyatı tek başına anlamlı değildir. Aynı sahaya gelen iki teklif farklı kolon boyu, farklı dozaj ve farklı test kapsamı içeriyorsa karşılaştırma yanıltıcı olur. Bu rehber, işverenin ve müteahhidin şartnamede neye bakması gerektiğini açıklar.",
+    sections: [
+      {
+        id: "kapsam",
+        title: "Önce Kapsamı Netleştirin",
+        blocks: [
+          {
+            type: "list",
+            title: "Şartnamede aranması gerekenler",
+            items: [
+              "Uygulanacak yöntem ve gerekçesi (jet grout, DSM, fore kazık, taş kolon...)",
+              "Kolon/kazık çapı, boyu, aralığı ve toplam metraj",
+              "Bağlayıcı türü ve dozajı (kg/m veya kg/m³)",
+              "Hedef dayanım, hangi yaşta ve hangi deneyle ölçüleceği",
+              "Deneme kolonu yapılıp yapılmayacağı",
+              "Test kapsamı: karot adedi, yükleme testi, bütünlük testi",
+              "Üretim kayıtlarının tutulup teslim edileceği",
+              "Mobilizasyon, saha hazırlığı ve atık/spoil bertarafının kime ait olduğu"
+            ]
+          },
+          {
+            type: "warning",
+            title: "Metraj tanımı belirsizse fiyat da belirsizdir",
+            content:
+              "\"Toplam 3.000 m jet grout\" ifadesi, kolon boyunun nereden ölçüleceği (zemin kotu mu, kolon üst kotu mu) tanımlanmadıkça tartışma yaratır. Ölçüm esası şartnamede yazılı olmalıdır."
+          }
+        ]
+      },
+      {
+        id: "fiyat-farki",
+        title: "Fiyat Farkları Gerçekte Nereden Gelir?",
+        blocks: [
+          {
+            type: "list",
+            title: "Yaygın nedenler",
+            items: [
+              "Bağlayıcı dozajının düşük tutulması (en sık karşılaşılan fark)",
+              "Kolon boyunun kısaltılması veya aralığın açılması",
+              "Deneme kolonunun kapsamdan çıkarılması",
+              "Test adedinin azaltılması veya tamamen kaldırılması",
+              "Üretim kaydı ve raporlamanın kapsam dışı bırakılması",
+              "Spoil bertarafı, saha temizliği ve mobilizasyonun işverene bırakılması",
+              "Farklı ekipman sınıfı (kapasite ve kalite farkı)"
+            ]
+          },
+          {
+            type: "note",
+            title: "Ucuz teklif her zaman kötü değildir",
+            content:
+              "Fark; daha yakın mobilizasyon, saha koşuluna daha uygun ekipman veya daha yüksek üretim verimliliğinden de gelebilir. Önemli olan farkın nereden geldiğinin açıklanabilir olmasıdır."
+          }
+        ]
+      },
+      {
+        id: "teslimatlar",
+        title: "İş Sonunda Ne Teslim Alınmalı?",
+        blocks: [
+          {
+            type: "list",
+            title: "Kalite dosyası içeriği",
+            items: [
+              "Kolon/kazık aplikasyon planı ve gerçekleşen konumlar",
+              "Her eleman için üretim kaydı (derinlik, basınç, dozaj, süre)",
+              "Bağlayıcı irsaliyeleri ve varsa malzeme sertifikaları",
+              "Numune ve karot sonuçları, laboratuvar raporları",
+              "Yükleme/bütünlük testi raporları",
+              "Uygunsuzluk kayıtları ve alınan düzeltici önlemler",
+              "Fotoğraflı saha kayıtları"
+            ]
+          },
+          {
+            type: "paragraph",
+            content:
+              "Bu dosya yalnızca formalite değildir: yapı ömrü boyunca zemin altındaki imalatın tek kanıtıdır. İleride bir oturma veya hasar tartışması olduğunda, kayıt tutulmamış bir imalatın performansı savunulamaz."
+          }
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "En ucuz teklifi seçmek doğru mu?",
+        answer:
+          "Kapsamlar birebir aynıysa evet. Farklıysa karşılaştırma geçersizdir. Önce tüm teklifleri aynı kapsama getirin: aynı kolon boyu, aynı dozaj, aynı test adedi. Fark o zaman anlamlı olur."
+      },
+      {
+        question: "Deneme kolonu şart mı?",
+        answer:
+          "Laboratuvar dayanımı ile saha dayanımı çoğu zaman farklıdır. Deneme kolonu, parametrelerin sahaya kalibre edilmesini sağlar ve tüm imalatın yeniden yapılması riskini azaltır. Kapsamdan çıkarılması ciddi bir risk transferidir."
+      },
+      {
+        question: "Zemin etüdü yoksa teklif alınabilir mi?",
+        answer:
+          "Ön değerlendirme yapılabilir ancak bağlayıcı bir metraj ve yöntem kararı verilemez. Etütsüz verilen fiyat, sahada zemin farklı çıktığında revize edilir. Bu nedenle etüt, teklif sürecinin başında olmalıdır."
+      },
+      {
+        question: "Üretim kayıtları neden önemli?",
+        answer:
+          "İmalat yer altında olduğu için sonradan gözle kontrol edilemez. Basınç, dozaj ve derinlik kayıtları, sözleşmede taahhüt edilen işin gerçekten yapıldığının kanıtıdır."
+      },
+      {
+        question: "Şartnamede hangi standarda atıf yapılmalı?",
+        answer:
+          "Uygulama standardı (örneğin jet grouting ve derin karıştırma için ilgili EN standartları), deney standartları ve Türkiye'de bağlayıcı olan yönetmelik birlikte belirtilmelidir. Atıf yapılan belgenin güncel sürümü esas alınır."
+      }
+    ],
+    relatedSlugs: ["zemin-kalite-kontrol-standartlari", "karot-ve-ucs-deneyleri", "zemin-etudu-nasil-yapilir"],
+    keywords: [
+      "zemin güçlendirme şartnamesi",
+      "jet grout teklifi karşılaştırma",
+      "zemin iyileştirme fiyat farkı",
+      "kalite kabul kriteri",
+      "üretim kaydı",
+      "deneme kolonu",
+      "zemin iyileştirme metraj"
+    ],
+    published: true
+  },
   ...seoArticles
 ];
 
