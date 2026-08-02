@@ -107,6 +107,28 @@ export default async function ProjectDetailPage({ params }: Props) {
     ]
   };
 
+  // VideoObject şeması yalnızca sayfada GERÇEKTEN gömülü video varsa üretilir.
+  const projectVideo =
+    "video" in project
+      ? (project.video as { videoId: string; title: string; caption?: string })
+      : null;
+  const videoSchema = projectVideo
+    ? {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "@id": `${canonical}#video`,
+        name: projectVideo.title,
+        description: projectVideo.caption ?? project.summary,
+        thumbnailUrl: `https://i.ytimg.com/vi/${projectVideo.videoId}/maxresdefault.jpg`,
+        embedUrl: `https://www.youtube.com/embed/${projectVideo.videoId}`,
+        contentUrl: `https://www.youtube.com/watch?v=${projectVideo.videoId}`,
+        uploadDate: "2026-08-01",
+        inLanguage: "tr-TR",
+        publisher: { "@id": `${siteConfig.siteUrl}/#organization` },
+        isPartOf: { "@id": canonical }
+      }
+    : null;
+
   return (
     <>
       <Script
@@ -119,6 +141,13 @@ export default async function ProjectDetailPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      {videoSchema ? (
+        <Script
+          id={`project-video-${project.slug}`}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(videoSchema) }}
+        />
+      ) : null}
       <ProjectDetailContent slug={slug} />
     </>
   );

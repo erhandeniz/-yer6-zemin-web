@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowUpRight, CheckCircle2, MapPin, Wrench } from "lucide-react";
 import { getServiceBySlug, projects } from "@/lib/content";
 import { useLanguage } from "@/components/LanguageProvider";
+import { VideoEmbed } from "@/components/VideoEmbed";
 import { siteConfig } from "@/lib/siteConfig";
 
 export function ProjectDetailContent({ slug }: { slug: string }) {
@@ -28,6 +29,15 @@ export function ProjectDetailContent({ slug }: { slug: string }) {
   const technicalSummary = "technicalSummary" in project ? (project.technicalSummary as string) : "";
   const applicationScope = "applicationScope" in project ? (project.applicationScope as string[]) : [];
   const gallery = "gallery" in project ? (project.gallery as { src: string; alt: string }[]) : [];
+  const video =
+    "video" in project
+      ? (project.video as {
+          videoId: string;
+          title: string;
+          caption?: string;
+          orientation?: "landscape" | "portrait";
+        })
+      : null;
   const imageAlt = "imageAlt" in project ? (project.imageAlt as string) : tp("title", project.title);
   const relatedServiceSlugs = "relatedServiceSlugs" in project ? (project.relatedServiceSlugs as string[]) : [];
   const relatedServices = relatedServiceSlugs
@@ -161,6 +171,20 @@ export function ProjectDetailContent({ slug }: { slug: string }) {
           </div>
         </section>
       )}
+
+      {/* Saha videosu — mevcut kart dilinde, sayfa yapısı değişmeden */}
+      {video ? (
+        <section className="px-5 pb-12">
+          <div className="mx-auto max-w-7xl">
+            <VideoEmbed
+              videoId={video.videoId}
+              title={video.title}
+              caption={video.caption}
+              orientation={video.orientation}
+            />
+          </div>
+        </section>
+      ) : null}
 
       {/* Galeri */}
       {gallery.length > 0 && (

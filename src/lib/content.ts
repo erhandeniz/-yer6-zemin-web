@@ -1055,6 +1055,13 @@ const projectCatalog = [
     result: "Temel altı zemin, yapı kullanımı kesintiye uğratılmadan jet grout kolonlarıyla güçlendirildi. Kompakt ekipman sayesinde standart makinelerin giremeyeceği alanlarda imalat tamamlandı.",
     seoTitle: "Mevcut Bina Altında Jet Grout Temel Güçlendirmesi",
     metaDescription: "Mevcut yapı altında sınırlı yükseklikte kompakt ekipmanla jet grout zemin güçlendirme: dar alanda temel altı kolon imalatı ve saha uygulaması.",
+    video: {
+      videoId: "HcMN8T1X4d8",
+      title: "Bina Kenarında Jet Grout Uygulaması — Saha Videosu",
+      caption:
+        "Mevcut yapının hemen yanında yürütülen jet grout imalatı: delgi, yüksek basınçlı çimento enjeksiyonu ve kolon teşkili. Bina kenarındaki uygulamalarda imalat sırası ve kolon aralığı, komşu yapıda hareket oluşmaması için proje kapsamında planlanır.",
+      orientation: "portrait" as const
+    },
     relatedServiceSlugs: ["bina-alti-jet-grout", "jet-grout"]
   },
   {
