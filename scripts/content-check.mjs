@@ -103,6 +103,64 @@ for (const [phrase, why] of TERM_ERRORS) {
   ok(!hit, hit ? `TERMINOLOJI HATASI: "${phrase}" — ${why}` : `"${phrase}" yok`);
 }
 
+// ——— 4c. SAYFA YAPISI KORUMA ———
+// Erhan'in degismez kurali: header, navigasyon, footer ve ana sayfa yerlesimi
+// hicbir kosulda degistirilmez (bkz. CLAUDE.md). Bu kapi, yapisal dosyalarin
+// bozulmadigini ve zorunlu bolumlerin yerinde oldugunu dogrular.
+console.log("\n— Sayfa yapisi korumasi");
+const structural = [
+  // Navbar metinleri i18n'den gelir; burada YAPI aranir (nav elemani + menu kaynagi)
+  ["src/components/Navbar.tsx", ["<nav", "navItems", "Main Navigation"]],
+  ["src/components/Footer.tsx", ["footer"]],
+  ["src/components/SiteShell.tsx", ["Navbar", "Footer", "LanguageProvider"]],
+  ["src/app/layout.tsx", ["SiteShell"]]
+];
+for (const [file, mustHave] of structural) {
+  let src = "";
+  try {
+    src = read(file);
+  } catch {
+    ok(false, `YAPISAL DOSYA KAYIP: ${file}`);
+    continue;
+  }
+  const missing = mustHave.filter((token) => !src.includes(token));
+  ok(
+    missing.length === 0,
+    missing.length === 0
+      ? `${file} butun (${mustHave.join(", ")})`
+      : `${file} icinde eksik: ${missing.join(", ")}`
+  );
+}
+// Navigasyondaki ana rotalar duruyor mu?
+const navSrc = (() => {
+  try {
+    return read("src/lib/content.ts");
+  } catch {
+    return "";
+  }
+})();
+const REQUIRED_ROUTES = ["/about", "/services", "/projects", "/equipment-fleet", "/technology", "/knowledge", "/blog", "/contact"];
+const lostRoutes = REQUIRED_ROUTES.filter((r) => !navSrc.includes(`"${r}"`));
+ok(
+  lostRoutes.length === 0,
+  lostRoutes.length === 0 ? `navigasyondaki ${REQUIRED_ROUTES.length} ana rota yerinde` : `NAVIGASYONDAN DUSEN ROTA: ${lostRoutes.join(", ")}`
+);
+
+// ——— 4d. ICERIK SILINME KORUMASI ———
+// Icerik daima zenginlesir, azalmaz. Bu esikler mevcut duruma gore konmustur;
+// bir sayi duserse bir sey SILINMIS demektir ve deploy durur.
+console.log("\n— Icerik silinme korumasi (esik kontrolu)");
+const counts = [
+  ["hizmet", (content.match(/key: "svc_/g) || []).length, 18],
+  ["proje", (content.match(/key: "proj_/g) || []).length, 12],
+  ["makale", slugMatches.length, 73],
+  ["sehir sayfasi", uniqueCities.size, 81],
+  ["ilce sayfasi", (read("src/lib/districtContent.ts").match(/slug: "/g) || []).length, 114]
+];
+for (const [label, current, floor] of counts) {
+  ok(current >= floor, current >= floor ? `${label}: ${current} (taban ${floor})` : `${label} AZALMIS: ${current} < ${floor} — bir sey silinmis olabilir`);
+}
+
 // ——— 5. Ham ceviri anahtari sizintisi (icerikte duz metin olarak) ———
 console.log("\n— Ham anahtar sizintisi");
 const rawLeak = /["'>](svc|proj|blog)_[a-z0-9_]+_(title|summary|detail|excerpt)["'<]/.test(content);
