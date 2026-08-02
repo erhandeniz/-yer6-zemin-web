@@ -734,7 +734,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
             type: "list",
             items: [
               "Jet Grout: belirli kolonlar ve su geçirimsizliği",
-              "DSM: karıştırılmış zemin sütunları ve geniş alan stabilizasyonu",
+              "DSM: karıştırılmış zemin kolonları ve geniş alan stabilizasyonu",
               "Her iki yöntemin saha uygulama gereksinimleri"
             ]
           }
@@ -1047,7 +1047,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     title: "DSM Nasıl Uygulanır? Aşamalar ve Ekipman",
     seoTitle: "DSM Nasıl Uygulanır? Aşamalar ve Ekipman | YER6",
     description: "DSM uygulama süreci, kullanılan ekipman ve saha hazırlığı hakkında adım adım rehber.",
-    excerpt: "DSM, derin sütun kesme metoduna göre saha hazırlığı, karıştırma ve sıkıştırma adımlarını içerir.",
+    excerpt: "DSM (derin zemin karıştırma) uygulaması; saha hazırlığı, bağlayıcı beslemeli mekanik karıştırma ve kolon teşkili adımlarını içerir.",
     category: "DSM",
     readingTime: "8 dk",
     publishedAt: "2026-06-21",
@@ -1077,12 +1077,12 @@ export const knowledgeArticles: KnowledgeArticle[] = [
       },
       {
         id: "mixing-and-cutting",
-        title: "Karıştırma ve Kesme Süreci",
+        title: "Karıştırma Süreci ve Kolon Teşkili",
         blocks: [
           {
             type: "paragraph",
             content:
-              "DSM sisteminde zemin, çimento ve su karıştırılır; daha sonra kesme başlığıyla sütun formu oluşur. Malzeme oranı ve karıştırma süresi sütun dayanımını belirler."
+              "DSM'de karıştırma başlığı hedef derinliğe indirilir; bağlayıcı (çimento şerbeti veya kuru bağlayıcı) verilerek yukarı çıkarken zeminle mekanik olarak karıştırılır ve yerinde kolon oluşur. Bağlayıcı dozajı, karıştırma enerjisi (metre başına dönüş sayısı) ve çekme hızı kolon dayanımını belirleyen ana parametrelerdir."
           },
           {
             type: "note",
@@ -1114,7 +1114,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     title: "DSM Malzeme Seçimi ve Reçete Planlaması",
     seoTitle: "DSM Malzeme Seçimi ve Reçete Planlaması | YER6",
     description: "DSM proje planında çimento bağlayıcıları ve katkı maddelerinin seçimi ile ilgili teknik rehber.",
-    excerpt: "DSM malzeme seçimi, sütun dayanımı ve uzun vadeli performans için doğru reçete hazırlanmasını gerektirir.",
+    excerpt: "DSM malzeme seçimi, kolon dayanımı ve uzun vadeli performans için doğru karışım reçetesinin kurulmasını gerektirir.",
     category: "DSM",
     readingTime: "7 dk",
     publishedAt: "2026-06-21",
@@ -1149,7 +1149,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
           {
             type: "paragraph",
             content:
-              "Reçete tasarımı, sahadaki zemin özellikleri ve hedef dayanım düzeyi ile belirlenir. Deneme sütunları, reçetenin optimize edilmesi için kritik bir adım oluşturur."
+              "Reçete tasarımı, sahadaki zemin özellikleri ve hedef dayanım düzeyi ile belirlenir. Deneme kolonları, reçetenin saha koşullarına göre doğrulanması için kritik bir adımdır."
           },
           {
             type: "note",
@@ -1169,7 +1169,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
       {
         question: "Malzeme seçimi uzun vadeli performansı nasıl etkiler?",
         answer:
-          "Uygun bağlayıcı ve katkı seçimi, sütun dayanımı ve çevresel etkiler karşısında performansın korunmasına yardımcı olur."
+          "Uygun bağlayıcı ve katkı seçimi, kolon dayanımı ve çevresel etkiler karşısında performansın korunmasına yardımcı olur."
       }
     ],
     relatedSlugs: ["jet-grout-ve-dsm-farki", "dsm-nasil-uygulanir"],

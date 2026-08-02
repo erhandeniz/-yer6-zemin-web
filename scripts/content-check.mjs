@@ -84,6 +84,25 @@ for (const phrase of FORBIDDEN) {
   ok(!hit, hit ? `YASAKLI IFADE HALA VAR: "${phrase}"` : `"${phrase}" yok`);
 }
 
+// ——— 4b. Teknik terminoloji hatalari ———
+// Geoteknikte "kolon" kullanilir; "sutun" yapisal bir elemani (kolon/kiris)
+// isaret eder ve zemin kolonu icin yanlistir. "derin sutun kesme" ise
+// deep soil mixing'in hatali cevirisidir.
+console.log("\n— Teknik terminoloji");
+const TERM_ERRORS = [
+  ["sütun kesme", "DSM = derin zemin karistirma; 'sutun kesme' hatali ceviri"],
+  ["kesme başlığı", "DSM'de 'karistirma basligi' kullanilir"],
+  ["zemin sütun", "zemin kolonu olmali"],
+  ["Deneme sütun", "deneme kolonu olmali"],
+  ["sütun dayanımı", "kolon dayanimi olmali"],
+  ["kazık çakma yöntemiyle jet grout", "yontem karisikligi"]
+];
+const allContent = content + knowledge + seoArticles + cityContent + i18n;
+for (const [phrase, why] of TERM_ERRORS) {
+  const hit = allContent.includes(phrase);
+  ok(!hit, hit ? `TERMINOLOJI HATASI: "${phrase}" — ${why}` : `"${phrase}" yok`);
+}
+
 // ——— 5. Ham ceviri anahtari sizintisi (icerikte duz metin olarak) ———
 console.log("\n— Ham anahtar sizintisi");
 const rawLeak = /["'>](svc|proj|blog)_[a-z0-9_]+_(title|summary|detail|excerpt)["'<]/.test(content);
