@@ -6474,6 +6474,210 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     ],
     published: true
   },
+  {
+    slug: "mini-kazik-mi-fore-kazik-mi",
+    title: "Mini Kazık mı Fore Kazık mı? Seçim Kriterleri ve Karşılaştırma",
+    seoTitle: "Mini Kazık ve Fore Kazık Farkı: Hangisi Seçilmeli? | YER6",
+    description:
+      "Mini kazık ile fore kazık arasındaki farklar: çap, kapasite, yük aktarım mekanizması, ekipman erişimi ve maliyet. Hangi durumda hangisi tercih edilir?",
+    excerpt:
+      "İkisi de yükü derindeki sağlam tabakalara aktarır; fark kapasitede, ekipman boyutunda ve uygulanabildikleri sahalarda ortaya çıkar.",
+    category: "Fore Kazık",
+    readingTime: "9 dk",
+    publishedAt: "2026-08-01",
+    updatedAt: "2026-08-01",
+    heroLabel: "Yöntem Karşılaştırması",
+    introduction:
+      "Derin temel gerektiren bir projede sık sorulan soru: mini kazık mı, fore kazık mı? Cevap yük büyüklüğü kadar sahaya erişim, tavan yüksekliği ve mevcut yapının varlığıyla da belirlenir.",
+    sections: [
+      {
+        id: "temel-farklar",
+        title: "Temel Farklar",
+        blocks: [
+          {
+            type: "list",
+            title: "Karşılaştırma başlıkları",
+            items: [
+              "Çap: mini kazık tipik olarak 90–300 mm, fore kazık 600 mm ve üzeri",
+              "Yük aktarımı: mini kazıkta ağırlıklı çevre sürtünmesi, fore kazıkta sürtünme + belirgin uç direnci",
+              "Kapasite: fore kazık tek elemanda çok daha yüksek yük taşır; mini kazıkta yük çok sayıda elemana dağıtılır",
+              "Ekipman: mini kazık küçük ve düşük tavanlı ortamda çalışabilir; fore kazık büyük rotary delgi makinesi ister",
+              "Titreşim: her ikisi de delgi esaslıdır, çakma kazığa göre düşüktür",
+              "Donatı: mini kazıkta çelik boru veya çubuk, fore kazıkta donatı kafesi"
+            ]
+          }
+        ]
+      },
+      {
+        id: "hangi-durumda",
+        title: "Hangi Durumda Hangisi?",
+        blocks: [
+          {
+            type: "list",
+            title: "Mini kazık uygun olduğunda",
+            items: [
+              "Mevcut binanın altında veya bodrumda çalışma (underpinning)",
+              "Tavan yüksekliği sınırlı kapalı alanlar",
+              "Dar parseller ve büyük ekipmanın giremediği sahalar",
+              "İşletmesi durdurulamayan tesislerde lokal güçlendirme",
+              "Bloklu, kayalık zeminlerde delgi kolaylığı gereken durumlar"
+            ]
+          },
+          {
+            type: "list",
+            title: "Fore kazık uygun olduğunda",
+            items: [
+              "Yüksek yapı, köprü, endüstriyel tesis gibi büyük yükler",
+              "Açık ve erişilebilir saha",
+              "Derin sağlam tabakaya yükün doğrudan aktarılması gereken durumlar",
+              "İksa perdesi olarak da çalışacak kazıklı sistemler",
+              "Toplam maliyette metre başına verimlilik aranan büyük metrajlı işler"
+            ]
+          },
+          {
+            type: "note",
+            title: "İkisi birlikte de kullanılabilir",
+            content:
+              "Bir projede açık alanlarda fore kazık, mevcut yapıya bitişik cephelerde mini kazık uygulanması yaygın bir çözümdür. Seçim saha bazında yapılır, proje geneli için tek yöntem dayatılmaz."
+          }
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "Mini kazık fore kazığın ucuz alternatifi mi?",
+        answer:
+          "Hayır. Metre başına maliyeti daha düşük görünse de aynı yükü taşımak için çok daha fazla eleman gerekir. Mini kazık, fore kazığın ekonomik alternatifi değil; erişimin kısıtlı olduğu sahalar için teknik alternatifidir."
+      },
+      {
+        question: "Mevcut bina altında fore kazık yapılabilir mi?",
+        answer:
+          "Genellikle hayır; büyük rotary delgi makinesi bina altına giremez ve gerekli tavan yüksekliği bulunmaz. Bu koşulda mini kazık veya bina altı jet grout değerlendirilir."
+      },
+      {
+        question: "Hangi yöntem daha hızlı biter?",
+        answer:
+          "Açık sahada ve büyük metrajda fore kazık genellikle daha hızlıdır. Dar ve kapalı alanlarda ise fore kazık hiç uygulanamayacağı için hız karşılaştırması anlamsızlaşır."
+      },
+      {
+        question: "Karar nasıl verilir?",
+        answer:
+          "Zemin etüdü, yapı yükleri, saha erişimi, tavan yüksekliği, komşu yapı mesafesi ve deformasyon toleransı birlikte değerlendirilerek projelendirmeyle verilir."
+      }
+    ],
+    relatedSlugs: ["mini-kazik-nedir", "fore-kazik-nedir", "temel-alti-zemin-guclendirme"],
+    keywords: [
+      "mini kazık fore kazık farkı",
+      "mikro kazık mı fore kazık mı",
+      "hangi kazık seçilmeli",
+      "underpinning kazık",
+      "derin temel seçimi"
+    ],
+    published: true
+  },
+  {
+    slug: "tas-kolon-mu-jet-grout-mu",
+    title: "Taş Kolon mu Jet Grout mu? Zemin İyileştirmede Yöntem Seçimi",
+    seoTitle: "Taş Kolon ve Jet Grout Karşılaştırması: Hangisi Uygun? | YER6",
+    description:
+      "Taş kolon ile jet grout arasındaki farklar: zemin uygunluğu, drenaj etkisi, sıvılaşma azaltımı, geçirimsizlik ve maliyet açısından karşılaştırma.",
+    excerpt:
+      "Taş kolon drenaj sağlar ve geniş alanda ekonomiktir; jet grout dar alanda, kohezyonlu zeminde ve su kesme gerektiğinde öne çıkar.",
+    category: "Zemin İyileştirme",
+    readingTime: "9 dk",
+    publishedAt: "2026-08-01",
+    updatedAt: "2026-08-01",
+    heroLabel: "Yöntem Karşılaştırması",
+    introduction:
+      "Sıvılaşma riski veya taşıma gücü yetersizliği bulunan bir sahada taş kolon ile jet grout sıklıkla birlikte değerlendirilir. İkisi farklı mekanizmalarla çalışır; doğru seçim zemin türüne ve hedefe bağlıdır.",
+    sections: [
+      {
+        id: "mekanizma-farki",
+        title: "Çalışma Mekanizmaları",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Taş kolon, zemin içinde granüler ve geçirimli bir kolon oluşturur: yükün bir kısmını taşır, çevre zemini sıkıştırır ve deprem sırasında boşluk suyu basıncını sönümleyen bir drenaj yolu sağlar. Jet grout ise zemini yüksek basınçlı jetle parçalayıp bağlayıcıyla karıştırır; sonuçta sert, geçirimsiz bir zemin-çimento kolonu oluşur."
+          },
+          {
+            type: "list",
+            title: "Temel ayrım",
+            items: [
+              "Taş kolon: geçirimli, drenaj sağlar, sünek davranır",
+              "Jet grout: geçirimsiz, yüksek dayanım verir, rijit davranır",
+              "Taş kolon çevre zeminin yanal desteğine ihtiyaç duyar",
+              "Jet grout zemin türünden görece bağımsız uygulanabilir"
+            ]
+          }
+        ]
+      },
+      {
+        id: "secim",
+        title: "Hangi Koşulda Hangisi?",
+        blocks: [
+          {
+            type: "list",
+            title: "Taş kolonun öne çıktığı durumlar",
+            items: [
+              "Gevşek kum ve siltli kumlarda sıvılaşma azaltımı",
+              "Geniş alanlı platform, depo ve lojistik sahaları",
+              "Drenaj etkisinin istendiği projeler",
+              "Büyük metrajda ekonomik çözüm arandığında"
+            ]
+          },
+          {
+            type: "list",
+            title: "Jet groutun öne çıktığı durumlar",
+            items: [
+              "Kohezyonlu (killi) zeminlerde iyileştirme",
+              "Mevcut yapı altında ve dar alanlarda çalışma",
+              "Su geçirimsizlik perdesi veya taban tıkacı ihtiyacı",
+              "Nokta bazlı, yüksek dayanım gereken güçlendirmeler",
+              "Çok yumuşak zeminlerde taş kolonun yanal destek bulamadığı durumlar"
+            ]
+          },
+          {
+            type: "warning",
+            title: "Sıvılaşmada tek yöntem yeterli olmayabilir",
+            content:
+              "İnce dane oranı yüksek zeminlerde taş kolonun drenaj etkisi sınırlı kalabilir; düşey drenlerle desteklenmesi veya farklı yöntemle birleştirilmesi gerekebilir. Karar saha verisiyle verilir."
+          }
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "Hangisi daha ekonomik?",
+        answer:
+          "Geniş alanlı ve granüler zeminlerde taş kolon genellikle metre başına daha ekonomiktir. Ancak dar alanda veya killi zeminde uygulanamayacağı için karşılaştırma her sahada geçerli değildir."
+      },
+      {
+        question: "Taş kolon geçirimsizlik sağlar mı?",
+        answer:
+          "Hayır, aksine geçirimlidir ve bu özelliği drenaj için avantajdır. Su kesme gerekiyorsa jet grout, DSM veya geçirimsiz perde çözümleri değerlendirilir."
+      },
+      {
+        question: "İkisi aynı sahada birlikte kullanılır mı?",
+        answer:
+          "Evet. Örneğin geniş platform alanında taş kolon, yapı temeli altında veya su kesme gereken bölgede jet grout uygulanabilir. Hibrit çözümler yaygındır."
+      },
+      {
+        question: "Kalite kontrolleri aynı mı?",
+        answer:
+          "Hayır. Taş kolonda malzeme sarfiyatı, vibratör kaydı ve plaka yükleme/CPT kontrolleri öne çıkar; jet groutta ise karot ve UCS dayanımı ile kolon çapı doğrulaması esastır."
+      }
+    ],
+    relatedSlugs: ["tas-kolon-uygulama-ve-tasarim", "jet-grout-nedir", "sivilasma-riskine-karsi-zemin-guclendirme"],
+    keywords: [
+      "taş kolon jet grout farkı",
+      "hangi zemin iyileştirme yöntemi",
+      "sıvılaşma yöntem seçimi",
+      "granüler kolon karşılaştırma",
+      "zemin iyileştirme karar"
+    ],
+    published: true
+  },
   ...seoArticles
 ];
 

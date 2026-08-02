@@ -234,7 +234,26 @@ const districtSeeds: DistrictSeed[] = [
   // DENİZLİ / MUĞLA — Ege graben sistemleri
   { slug: "denizli-pamukkale-zemin-guclendirme", district: "Pamukkale", province: "Denizli", fault: "Pamukkale–Denizli graben fayı", soil: "traverten ve jeotermal etkili değişken zeminler", risk: "karstik boşluk, jeotermal etki ve farklı oturma", methods: ["jet-grout", "fore-kazik", "zemin-iyilestirme", "geoteknik-danismanlik"], articles: A.jet },
   { slug: "mugla-bodrum-zemin-guclendirme", district: "Bodrum", province: "Muğla", fault: "Gökova körfezi fay sistemi", soil: "kıyı alüvyonu, yamaç molozu ve dolgu", risk: "kıyı bandında oturma ve şev stabilitesi", methods: ["fore-kazik", "jet-grout", "ankraj", "zemin-iyilestirme"], articles: A.jet },
-  { slug: "mugla-fethiye-zemin-guclendirme", district: "Fethiye", province: "Muğla", fault: "Fethiye–Burdur fay zonu", soil: "ova alüvyonu ve kıyı çökelleri", risk: "sıvılaşma ve taşıma gücü yetersizliği", methods: ["jet-grout", "dsm", "fore-kazik", "zemin-iyilestirme"], articles: A.liq }
+  { slug: "mugla-fethiye-zemin-guclendirme", district: "Fethiye", province: "Muğla", fault: "Fethiye–Burdur fay zonu", soil: "ova alüvyonu ve kıyı çökelleri", risk: "sıvılaşma ve taşıma gücü yetersizliği", methods: ["jet-grout", "dsm", "fore-kazik", "zemin-iyilestirme"], articles: A.liq },
+
+  // ADANA — Çukurova alüvyonu, DAF güney kolu ve sanayi yükleri
+  { slug: "adana-cukurova-zemin-guclendirme", district: "Çukurova", province: "Adana", fault: "Doğu Anadolu Fayı güney kolu etki alanı", soil: "Çukurova ovası kalın alüvyonu, yüksek yeraltı suyu", risk: "sıvılaşma ve yüksek yapı yükünde oturma", methods: ["fore-kazik", "jet-grout", "dsm", "zemin-iyilestirme"], articles: A.liq },
+  { slug: "adana-saricam-zemin-guclendirme", district: "Sarıçam", province: "Adana", fault: "DAF güney kolu etki alanı", soil: "OSB ve lojistik alanlarında ova alüvyonu ile dolgu", risk: "endüstriyel platformda farklı oturma", methods: ["dsm", "jet-grout", "tas-kolon", "zemin-iyilestirme"], articles: A.dsm },
+  { slug: "adana-ceyhan-zemin-guclendirme", district: "Ceyhan", province: "Adana", fault: "DAF (Ceyhan–Osmaniye kesimi)", soil: "Ceyhan nehri alüvyonu ve doygun gevşek tabakalar", risk: "yüksek sıvılaşma potansiyeli", methods: ["jet-grout", "dsm", "tas-kolon", "zemin-iyilestirme"], articles: A.liq },
+
+  // SAKARYA — KAF, 1999 hafızası ve Adapazarı yumuşak alüvyonu
+  { slug: "sakarya-serdivan-zemin-guclendirme", district: "Serdivan", province: "Sakarya", fault: "Kuzey Anadolu Fayı (1999 Adapazarı segmenti)", soil: "Adapazarı ovası yumuşak alüvyonu ve yüksek yeraltı suyu", risk: "çok yüksek sıvılaşma ve büyük oturma", methods: ["jet-grout", "dsm", "fore-kazik", "zemin-iyilestirme"], articles: A.liq },
+  { slug: "sakarya-erenler-zemin-guclendirme", district: "Erenler", province: "Sakarya", fault: "KAF (1999 segmenti)", soil: "ova alüvyonu ve yeni yerleşim dolguları", risk: "sıvılaşma ve toplu konut yükünde oturma", methods: ["dsm", "jet-grout", "fore-kazik", "zemin-iyilestirme"], articles: A.liq },
+  { slug: "sakarya-hendek-zemin-guclendirme", district: "Hendek", province: "Sakarya", fault: "KAF Hendek segmenti", soil: "ova alüvyonu ve sanayi bölgesi dolgusu", risk: "fay yakınlığı ve endüstriyel yükte oturma", methods: ["jet-grout", "dsm", "tas-kolon", "zemin-iyilestirme"], articles: A.liq },
+
+  // MANİSA — Gediz graben sistemi ve OSB
+  { slug: "manisa-turgutlu-zemin-guclendirme", district: "Turgutlu", province: "Manisa", fault: "Gediz graben fay sistemi", soil: "Gediz ovası alüvyonu ve tarımsal sulama etkili nemli zemin", risk: "sıvılaşma ve farklı oturma", methods: ["dsm", "jet-grout", "tas-kolon", "zemin-iyilestirme"], articles: A.liq },
+  { slug: "manisa-salihli-zemin-guclendirme", district: "Salihli", province: "Manisa", fault: "Gediz graben (Salihli fay kesimi)", soil: "ova alüvyonu ve jeotermal etkili tabakalar", risk: "sıvılaşma ve fay yakınlığı", methods: ["jet-grout", "dsm", "fore-kazik", "zemin-iyilestirme"], articles: A.liq },
+  { slug: "manisa-sehzadeler-zemin-guclendirme", district: "Şehzadeler", province: "Manisa", fault: "Manisa fayı", soil: "yamaç molozu ve ova geçiş zonu", risk: "fay yakınlığı ve heterojen zeminde oturma", methods: ["fore-kazik", "jet-grout", "dsm", "zemin-iyilestirme"], articles: A.jet },
+
+  // GAZİANTEP — DAF etki alanı ve sanayi
+  { slug: "gaziantep-sehitkamil-zemin-guclendirme", district: "Şehitkamil", province: "Gaziantep", fault: "Doğu Anadolu Fayı etki alanı", soil: "kireçtaşı üzerinde değişken örtü ve dolgu alanları", risk: "heterojen zeminde farklı oturma (2023 sonrası yeniden inşa)", methods: ["fore-kazik", "jet-grout", "dsm", "zemin-iyilestirme"], articles: A.jet },
+  { slug: "gaziantep-nizip-zemin-guclendirme", district: "Nizip", province: "Gaziantep", fault: "DAF etki alanı", soil: "ova alüvyonu ve tarım arazisi dolgusu", risk: "oturma ve taşıma gücü yetersizliği", methods: ["dsm", "jet-grout", "tas-kolon", "zemin-iyilestirme"], articles: A.dsm }
 ];
 
 export const districtPages: CityPage[] = districtSeeds.map(buildDistrict);
