@@ -1781,7 +1781,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     updatedAt: "2026-07-10",
     heroLabel: "Jet Grout Maliyeti",
     introduction:
-      "Jet grout maliyeti, saha ve proje koşullarına bağlı olarak geniş bir aralıkta değişir. Bu nedenle 'jet grout metretül fiyatı nedir?' sorusunun tek bir cevabı yoktur. Maliyeti gerçekçi biçimde belirlemek için kolon geometrisi, zemin türü, toplam metraj ve uygulama sistemi birlikte değerlendirilmelidir. Bu yazıda jet grout fiyatını belirleyen temel kalemleri ve metraj mantığını açıklıyoruz.",
+      "Jet grout maliyeti, saha ve proje koşullarına bağlı olarak geniş bir aralıkta değişir. Bu nedenle 'jet grout metretül fiyatı nedir?' sorusunun tek bir cevabı yoktur. Maliyeti gerçekçi biçimde belirlemek için kolon geometrisi, zemin türü, toplam metraj ve uygulama sistemi birlikte değerlendirilmelidir. Bu yazıda jet grout fiyatını belirleyen temel kalemleri ve metraj mantığını açıklıyoruz. Kendi projeniz için yaklaşık metraj ve ön maliyet almak isterseniz [jet grout maliyet hesaplama aracını](/hesaplama/jet-grout-maliyet-hesaplama/) kullanabilirsiniz.",
     sections: [
       {
         id: "faktorler",
@@ -2698,7 +2698,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     updatedAt: "2026-07-10",
     heroLabel: "Fore Kazık Maliyeti",
     introduction:
-      "Fore kazık maliyeti, projeden projeye önemli ölçüde değişir; tek bir metretül fiyatı vermek gerçekçi değildir. Kazık geometrisi, beton ve donatı miktarı, zemin koşulları ve saha organizasyonu maliyeti birlikte belirler. Bu yazıda fore kazık fiyatını etkileyen kalemleri ve metraj mantığını ele alıyoruz.",
+      "Fore kazık maliyeti, projeden projeye önemli ölçüde değişir; tek bir metretül fiyatı vermek gerçekçi değildir. Kazık geometrisi, beton ve donatı miktarı, zemin koşulları ve saha organizasyonu maliyeti birlikte belirler. Bu yazıda fore kazık fiyatını etkileyen kalemleri ve metraj mantığını ele alıyoruz. Kendi projeniz için beton, donatı ve delgi metrajını hesaplamak isterseniz [fore kazık maliyet hesaplama aracını](/hesaplama/fore-kazik-maliyet-hesaplama/) kullanabilirsiniz.",
     sections: [
       {
         id: "faktorler",
@@ -3201,7 +3201,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     publishedAt: "2026-07-11",
     updatedAt: "2026-07-11",
     heroLabel: "Maliyet",
-    introduction: "Zemin güçlendirme maliyeti projeden projeye önemli ölçüde değişir. Bu yazıda fiyatı belirleyen temel kalemleri ve maliyeti optimize etmenin yollarını açıklıyoruz.",
+    introduction: "Zemin güçlendirme maliyeti projeden projeye önemli ölçüde değişir. Bu yazıda fiyatı belirleyen temel kalemleri ve maliyeti optimize etmenin yollarını açıklıyoruz. Yöntem bazında yaklaşık metraj ve ön maliyet için [hesaplama araçlarımızı](/hesaplama/) kullanabilirsiniz.",
     sections: [
       { id: "faktorler", title: "Maliyeti Belirleyen Faktörler", blocks: [
         { type: "list", title: "Fiyatı etkileyen kalemler", items: ["Seçilen yöntem (jet grout / DSM / fore kazık / taş kolon)", "Toplam metraj (kolon boyu, adet, alan)", "Zemin türü ve yeraltı suyu", "Saha erişimi ve mobilizasyon", "Kalite kontrol ve testler (karot, yükleme, PIT)"] }

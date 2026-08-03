@@ -1,17 +1,24 @@
 # YER6 - Google Search Console sehir indeksleme kuyrugu
 # Basinda "DONE " olan satirlar tamamlandi. Her gun 10 tanesi islenir.
 # "# " ile baslayan satirlar yorumdur, atlanir.
+# 3 Agu 2026 - Claude: Hesap Merkezi (yeni araclar, hicbiri dizinde degil)
+https://www.yer6zemin.com.tr/hesaplama/
+https://www.yer6zemin.com.tr/hesaplama/jet-grout-maliyet-hesaplama/
+https://www.yer6zemin.com.tr/hesaplama/fore-kazik-maliyet-hesaplama/
+https://www.yer6zemin.com.tr/hesaplama/dsm-maliyet-hesaplama/
+https://www.yer6zemin.com.tr/hesaplama/ankraj-maliyet-hesaplama/
+https://www.yer6zemin.com.tr/hesaplama/mini-kazik-maliyet-hesaplama/
 # 1 Agu 2026 - Claude: Deprem Bilgi Merkezi + 9 yeni teknik makale (hicbiri dizinde degil, en oncelikli)
-https://www.yer6zemin.com.tr/knowledge/deprem/
-https://www.yer6zemin.com.tr/knowledge/mini-kazik-nedir/
-https://www.yer6zemin.com.tr/knowledge/ankraj-uygulama-asamalari/
-https://www.yer6zemin.com.tr/knowledge/iksa-sistemi-nasil-secilir/
-https://www.yer6zemin.com.tr/knowledge/iksa-deformasyon-izleme/
-https://www.yer6zemin.com.tr/knowledge/tas-kolon-uygulama-ve-tasarim/
-https://www.yer6zemin.com.tr/knowledge/zemin-civisi-uygulama-asamalari/
-https://www.yer6zemin.com.tr/knowledge/puskurtme-beton-uygulamasi/
-https://www.yer6zemin.com.tr/knowledge/zemin-enjeksiyonu-turleri/
-https://www.yer6zemin.com.tr/knowledge/dsm-uygulama-ve-kalite-kontrol/
+DONE https://www.yer6zemin.com.tr/knowledge/deprem/
+DONE https://www.yer6zemin.com.tr/knowledge/mini-kazik-nedir/
+DONE https://www.yer6zemin.com.tr/knowledge/ankraj-uygulama-asamalari/
+DONE https://www.yer6zemin.com.tr/knowledge/iksa-sistemi-nasil-secilir/
+DONE https://www.yer6zemin.com.tr/knowledge/iksa-deformasyon-izleme/
+DONE https://www.yer6zemin.com.tr/knowledge/tas-kolon-uygulama-ve-tasarim/
+DONE https://www.yer6zemin.com.tr/knowledge/zemin-civisi-uygulama-asamalari/
+DONE https://www.yer6zemin.com.tr/knowledge/puskurtme-beton-uygulamasi/
+DONE https://www.yer6zemin.com.tr/knowledge/zemin-enjeksiyonu-turleri/
+DONE https://www.yer6zemin.com.tr/knowledge/dsm-uygulama-ve-kalite-kontrol/
 # 28 Tem 2026 - Claude: yeni referans proje sayfalari (oncelik 1)
 DONE https://www.yer6zemin.com.tr/projects/bina-alti-jet-grout-guclendirme/
 DONE https://www.yer6zemin.com.tr/projects/korfez-bolgesi-fore-kazik-projesi/

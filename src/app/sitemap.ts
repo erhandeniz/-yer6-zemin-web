@@ -3,6 +3,7 @@ import { projects, allServices } from "@/lib/content";
 import { orderedCityPages, featuredCitySlugs } from "@/lib/cityContent";
 import { siteConfig } from "@/lib/siteConfig";
 import { publishedKnowledgeArticles } from "@/data/knowledge";
+import { CALCULATOR_TOOLS } from "@/lib/calculators";
 
 const baseUrl = siteConfig.siteUrl;
 const contentReviewDate = new Date("2026-07-27T00:00:00+03:00");
@@ -17,7 +18,7 @@ const withTrailingSlash = (path: string) => {
 };
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticRoutes = ["", "about", "services", "projects", "equipment-fleet", "technology", "knowledge", "knowledge/deprem", "blog", "contact", "sehirler"];
+  const staticRoutes = ["", "about", "services", "projects", "equipment-fleet", "technology", "knowledge", "knowledge/deprem", "hesaplama", "blog", "contact", "sehirler"];
   return [
     ...staticRoutes.map((route) => ({
       url: withTrailingSlash(`/${route}`),
@@ -43,6 +44,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       // Öncelikli iller daima önde ve daha yüksek öncelikle listelenir.
       priority: featuredCitySlugs.includes(page.slug) ? 0.9 : 0.7
+    })),
+    ...CALCULATOR_TOOLS.map((tool) => ({
+      url: withTrailingSlash(`/hesaplama/${tool.slug}`),
+      lastModified: contentReviewDate,
+      changeFrequency: "monthly" as const,
+      priority: 0.9
     })),
     ...publishedKnowledgeArticles.map((article) => ({
       url: withTrailingSlash(`/knowledge/${article.slug}`),
