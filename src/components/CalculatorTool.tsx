@@ -5,11 +5,11 @@ import Link from "next/link";
 import { Calculator, Download, Link2, Loader2, RotateCcw, Send } from "lucide-react";
 import {
   computeEstimate,
-  generateReportNo,
   type Complexity,
   type Estimate,
   type SoilType
 } from "@/lib/costEngine";
+import { generateYer6Report } from "@/lib/pdfReport";
 import { fetchLiveFx, BASELINE_FX, type FxRates } from "@/lib/fx";
 import type { CalculatorTool as Tool } from "@/lib/calculators";
 
@@ -109,68 +109,43 @@ export function CalculatorTool({ tool }: { tool: Tool }) {
   const downloadPdf = async () => {
     setPdfBusy(true);
     try {
-      const { jsPDF } = await import("jspdf");
-      const autoTable = (await import("jspdf-autotable")).default;
-      const doc = new jsPDF();
-      const reportNo = generateReportNo();
+      const q = estimate.quantities;
+      // Yalnızca bu yöntemde anlamlı olan metraj satırlarını raporla.
+      const quantityRows: [string, string][] = [
+        ["Toplam imalat", `${num(q.drillMeters)} m`],
+        ...(q.concreteM3 > 0 ? ([["Beton", `${num(q.concreteM3)} m³`]] as [string, string][]) : []),
+        ...(q.steelTon > 0 ? ([["Donatı", `${num(q.steelTon, 2)} ton`]] as [string, string][]) : []),
+        ...(q.cementTon > 0 ? ([["Çimento", `${num(q.cementTon, 2)} ton`]] as [string, string][]) : []),
+        ...(q.groutM3 > 0 ? ([["Şerbet", `${num(q.groutM3)} m³`]] as [string, string][]) : []),
+        ...(q.strandM > 0 ? ([["Halat", `${num(q.strandM)} m`]] as [string, string][]) : []),
+        ["Mazot", `${num(q.dieselLt)} lt`],
+        ["Tahmini makine günü", `${num(q.rigDays)} gün`],
+        ["Tahmini karbon ayak izi", `${num(q.co2Ton, 1)} ton CO₂`]
+      ];
 
-      doc.setFontSize(16);
-      doc.text("YER6 - On Metraj ve Maliyet Ozeti", 14, 18);
-      doc.setFontSize(10);
-      doc.text(`${tool.h1}`, 14, 26);
-      doc.text(`Rapor No: ${reportNo}`, 14, 32);
-      doc.text(`Tarih: ${new Date().toLocaleDateString("tr-TR")}`, 14, 38);
-
-      autoTable(doc, {
-        startY: 46,
-        head: [["Girdi", "Deger"]],
-        body: [
+      const ok = await generateYer6Report({
+        toolTitle: `${tool.h1} — ön değerlendirme`,
+        methodLabel: tool.mode.toUpperCase().replace("-", " "),
+        inputs: [
           [tool.labels.diameter, String(diameter)],
           [tool.labels.depth, String(depth)],
           [tool.labels.count, String(count)],
-          ["Zemin", soilType === "soft" ? "Yumusak/orta" : "Sert/kayali"]
-        ]
+          ["Zemin Karakteri", soilType === "soft" ? "Yumuşak / orta" : "Sert / kayalı"],
+          ["Hesap Detayı", complexity === "quick" ? "Hızlı" : "Detaylı"]
+        ],
+        quantities: quantityRows,
+        estimate,
+        fileKey: tool.mode
       });
 
-      const q = estimate.quantities;
-      autoTable(doc, {
-        head: [["Metraj", "Deger"]],
-        body: [
-          ["Toplam imalat (m)", num(q.drillMeters)],
-          ["Beton (m3)", num(q.concreteM3)],
-          ["Donati (ton)", num(q.steelTon, 2)],
-          ["Cimento (ton)", num(q.cementTon, 2)],
-          ["Serbet (m3)", num(q.groutM3)],
-          ["Mazot (lt)", num(q.dieselLt)],
-          ["Tahmini makine gunu", num(q.rigDays)]
-        ]
-      });
-
-      autoTable(doc, {
-        head: [["On Maliyet (KDV haric)", "TL"]],
-        body: [
-          ["Dusuk", tl(estimate.turnkeyMin)],
-          ["Olasi", tl(estimate.turnkeyPoint)],
-          ["Yuksek", tl(estimate.turnkeyMax)],
-          ["Sadece iscilik+makine (olasi)", tl(estimate.laborOnlyPoint)]
-        ]
-      });
-
-      const finalY = (doc as unknown as { lastAutoTable?: { finalY: number } }).lastAutoTable?.finalY ?? 200;
-      doc.setFontSize(8);
-      doc.text(
-        "Bu belge YAKLASIK on degerlendirmedir. Kesin metraj ve fiyat; zemin etudu,",
-        14,
-        finalY + 10
-      );
-      doc.text(
-        "projelendirme ve saha kesfi sonrasinda belirlenir. YER6 Zemin Guclendirme.",
-        14,
-        finalY + 15
-      );
-      doc.text(`Model: ${estimate.modelVersion} | Fiyat katalogu: ${estimate.priceBookAsOf}`, 14, finalY + 20);
-
-      doc.save(`YER6-${tool.mode}-on-metraj-${reportNo}.pdf`);
+      if (!ok) {
+        alert(
+          "Rapor fontları yüklenemediği için PDF oluşturulamadı (Türkçe karakterlerin doğru çıkması için font gereklidir). Lütfen internet bağlantınızı kontrol edip tekrar deneyin."
+        );
+      }
+    } catch (error) {
+      console.error("PDF olusturulurken hata olustu:", error);
+      alert("PDF oluşturulurken bir hata oluştu. Lütfen tekrar deneyin.");
     } finally {
       setPdfBusy(false);
     }
