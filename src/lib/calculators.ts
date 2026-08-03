@@ -374,6 +374,27 @@ export function getCalculatorTool(slug: string): CalculatorTool | undefined {
   return CALCULATOR_TOOLS.find((tool) => tool.slug === slug);
 }
 
+/**
+ * Hizmet sayfası → uygun hesaplama aracı eşlemesi.
+ * Eşleşme yoksa hizmet sayfasında kart gösterilmez (zorlama yapılmaz).
+ */
+const SERVICE_TO_TOOL: Record<string, string> = {
+  "jet-grout": "jet-grout-maliyet-hesaplama",
+  "bina-alti-jet-grout": "jet-grout-maliyet-hesaplama",
+  "fore-kazik": "fore-kazik-maliyet-hesaplama",
+  "cfa-kazik": "fore-kazik-maliyet-hesaplama",
+  dsm: "dsm-maliyet-hesaplama",
+  "deep-soil-mixing": "dsm-maliyet-hesaplama",
+  ankraj: "ankraj-maliyet-hesaplama",
+  "iksa-sistemleri": "ankraj-maliyet-hesaplama",
+  "mini-kazik": "mini-kazik-maliyet-hesaplama"
+};
+
+export function getToolForService(serviceSlug: string): CalculatorTool | undefined {
+  const toolSlug = SERVICE_TO_TOOL[serviceSlug];
+  return toolSlug ? getCalculatorTool(toolSlug) : undefined;
+}
+
 export function getCalculatorPaths() {
   return CALCULATOR_TOOLS.map((tool) => ({ slug: tool.slug }));
 }

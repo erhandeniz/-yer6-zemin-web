@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { CheckCircle2, ChevronDown, ChevronUp, Phone } from "lucide-react";
+import { Calculator, CheckCircle2, ChevronDown, ChevronUp, Phone } from "lucide-react";
+import { getToolForService } from "@/lib/calculators";
 import { useState } from "react";
 import { PageHero } from "@/components/PageHero";
 import { SectionHeader } from "@/components/SectionHeader";
@@ -59,6 +60,8 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
 
   if (!service) return null;
 
+  // Bu hizmete karşılık gelen hesaplama aracı (yoksa kart gösterilmez).
+  const calculatorTool = getToolForService(service.slug);
   const relatedArticles = (serviceArticleMap[service.slug] ?? [])
     .map((articleSlug) => publishedKnowledgeArticles.find((article) => article.slug === articleSlug))
     .filter((article): article is (typeof publishedKnowledgeArticles)[number] => Boolean(article));
@@ -188,6 +191,31 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
                     {(service.faq as { question: string; answer: string }[]).map((item, i) => (
                       <FaqItem key={i} question={item.question} answer={item.answer} />
                     ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Bu hizmete ait hesaplama aracı — mevcut kart diliyle */}
+              {calculatorTool && (
+                <div className="rounded-[2rem] border border-gold-300/25 bg-gold-300/[0.06] p-8">
+                  <div className="flex items-start gap-4">
+                    <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-gold-300/15 text-gold-200">
+                      <Calculator className="size-5" />
+                    </span>
+                    <div>
+                      <h2 className="text-2xl font-semibold text-white">Metraj ve ön maliyet hesaplayın</h2>
+                      <p className="mt-3 text-sm leading-7 text-white/62">
+                        {calculatorTool.h1} aracıyla çap, boy ve adet girerek yaklaşık metraj, malzeme
+                        tüketimi, süre ve ön maliyet aralığını saniyeler içinde görün. Ücretsizdir;
+                        sonucu PDF olarak indirebilirsiniz.
+                      </p>
+                      <Link
+                        href={`/hesaplama/${calculatorTool.slug}/`}
+                        className="mt-5 inline-flex items-center gap-2 rounded-full bg-gold-300 px-5 py-2.5 text-sm font-semibold text-obsidian transition hover:bg-gold-200"
+                      >
+                        Hesaplama aracını aç
+                      </Link>
+                    </div>
                   </div>
                 </div>
               )}
