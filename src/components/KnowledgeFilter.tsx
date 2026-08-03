@@ -31,8 +31,12 @@ export function KnowledgeFilter({
     <>
       <div className="mb-10 flex flex-wrap items-center justify-between gap-4">
         <div>
-          <h2 className="text-4xl font-semibold text-white">{t("knowledgeTitle")}</h2>
-          <p className="mt-3 max-w-2xl text-sm leading-7 text-white/60">{t("knowledgeCopy")}</p>
+          {/* NOT: Sayfa başlığı ve açıklaması PageHero'da (H1) zaten var.
+              Burada birebir tekrar edilirse aynı sayfada çift başlık oluşur —
+              hem SEO hem okunabilirlik açısından hatalıdır. Bu bölüm artık
+              yalnızca makale listesini tanıtır. */}
+          <h2 className="text-4xl font-semibold text-white">{t("knowledgeArticlesTitle")}</h2>
+          <p className="mt-3 max-w-2xl text-sm leading-7 text-white/60">{t("knowledgeArticlesCopy")}</p>
         </div>
 
         <div className="flex flex-wrap gap-2">

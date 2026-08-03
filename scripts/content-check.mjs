@@ -110,7 +110,7 @@ for (const [phrase, why] of TERM_ERRORS) {
 console.log("\n— Sayfa yapisi korumasi");
 const structural = [
   // Navbar metinleri i18n'den gelir; burada YAPI aranir (nav elemani + menu kaynagi)
-  ["src/components/Navbar.tsx", ["<nav", "navItems", "Main Navigation"]],
+  ["src/components/Navbar.tsx", ["<nav", "navItems", 't("navAria")']],
   ["src/components/Footer.tsx", ["footer"]],
   ["src/components/SiteShell.tsx", ["Navbar", "Footer", "LanguageProvider"]],
   ["src/app/layout.tsx", ["SiteShell"]]
@@ -160,6 +160,17 @@ const counts = [
 for (const [label, current, floor] of counts) {
   ok(current >= floor, current >= floor ? `${label}: ${current} (taban ${floor})` : `${label} AZALMIS: ${current} < ${floor} — bir sey silinmis olabilir`);
 }
+
+
+// ——— 4e. CIFT BASLIK KONTROLU ———
+// Ayni sayfada H1 ile H2 birebir ayni metni tasirsa hem SEO hem okunabilirlik
+// bozulur. Bilgi Merkezi'nde bu hata yasandi; tekrar etmemesi icin kilitlendi.
+console.log("\n— Cift baslik kontrolu");
+const knowledgeFilter = (() => { try { return read("src/components/KnowledgeFilter.tsx"); } catch { return ""; } })();
+const dupTitle = knowledgeFilter.includes('t("knowledgeTitle")');
+ok(!dupTitle, dupTitle
+  ? "KnowledgeFilter icinde knowledgeTitle tekrar kullanilmis (PageHero'daki H1 ile cakisir)"
+  : "Bilgi Merkezi'nde cift baslik yok");
 
 // ——— 5. Ham ceviri anahtari sizintisi (icerikte duz metin olarak) ———
 console.log("\n— Ham anahtar sizintisi");

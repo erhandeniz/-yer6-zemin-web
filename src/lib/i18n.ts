@@ -15,6 +15,10 @@ export const dictionary = {
     contact: "İletişim",
     quote: "Teklif Al",
     language: "Dil",
+    navAria: "Ana Navigasyon",
+    homeAria: "YER6 Ana Sayfa",
+    menuOpen: "Menüyü Aç",
+    menuClose: "Menüyü Kapat",
 
     /* ── HERO ── */
     heroBadge: "Türkiye Geneli Geoteknik Mühendislik ve Saha Uygulaması",
@@ -220,6 +224,8 @@ export const dictionary = {
     projectsBeforeEyebrow: "Önce / Sonra",
     projectsBeforeTitle: "Zemin performansını görsel olarak karşılaştırın.",
     projectsBeforeCopy: "Temel altında iyileştirme geometrisi, kolon dizilimi ve zemin rijitliği etkisini temsil eden interaktif karşılaştırma.",
+    beforeAfterAria: "Önce ve sonra karşılaştırması",
+    projectDetailsAria: "{title} detayları",
 
     /* ── PROJECT DETAIL ── */
     projectBack: "Projelere dön",
@@ -454,6 +460,8 @@ export const dictionary = {
     knowledgeEyebrow: "Bilgi Merkezi",
     knowledgeTitle: "Zemin Mühendisliği Bilgi Merkezi",
     knowledgeCopy: "YER6 Bilgi Merkezi'nde Jet Grout, Fore Kazık, DSM, Zemin İyileştirme ve Kalite Kontrol kategorilerinde teknik makaleler ve saha odaklı rehberler bulabilirsiniz.",
+    knowledgeArticlesTitle: "Teknik Makaleler",
+    knowledgeArticlesCopy: "Kategoriye göre filtreleyin; her rehber saha uygulaması, kalite kontrol ve tasarım esaslarıyla birlikte hazırlanmıştır.",
     knowledgeReadArticle: "Makaleyi incele",
     knowledgeFilterAll: "Tümü",
 
@@ -461,9 +469,9 @@ export const dictionary = {
     articleTOC: "İçindekiler",
     articleRelated: "İlgili İçerikler",
     articleAuthor: "YER6 Teknik İçerik Ekibi",
-    articleReadTime: "okuma",
-    articlePublished: "Yayın:",
-    articleUpdated: "Güncelleme:",
+    articleReadTime: "{minutes} dakika okuma süresi",
+    articlePublished: "Yayınlanma:",
+    articleUpdated: "Güncellenme:",
     articleRelatedArticles: "İlgili Makaleler",
     articleReadMore: "Daha fazla",
     articleFAQ: "Sık Sorulan Sorular",
@@ -506,6 +514,8 @@ export const dictionary = {
     footerHQ: "Merkez",
     footerAddress: "Gölbaşı, Ankara. Avrupa, Orta Doğu ve Kuzey Afrika projeleri için mobil saha ekipleri.",
     footerQuickQuote: "Hızlı teklif formu",
+    footerCallAria: "Bizi arayın: {value}",
+    footerEmailAria: "Bize e-posta gönderin: {value}",
     footerCopyright: "© 2026 YER6 Zemin Güçlendirme ve Jeoteknik Mühendislik.",
     footerSubtitle: "Jet Grout • DSM • Fore Kazık • Ankraj • İksa • TR / EN / AR",
 
@@ -543,6 +553,10 @@ export const dictionary = {
     contact: "Contact",
     quote: "Request Quote",
     language: "Language",
+    navAria: "Main Navigation",
+    homeAria: "YER6 home",
+    menuOpen: "Open menu",
+    menuClose: "Close menu",
 
     /* ── HERO ── */
     heroBadge: "Premium geotechnical engineering and field operations",
@@ -748,6 +762,8 @@ export const dictionary = {
     projectsBeforeEyebrow: "Before / After",
     projectsBeforeTitle: "Visually compare ground performance.",
     projectsBeforeCopy: "Interactive comparison representing the effect of improvement geometry, column layout, and soil stiffness under foundations.",
+    beforeAfterAria: "Before and after comparison",
+    projectDetailsAria: "{title} details",
 
     /* ── PROJECT DETAIL ── */
     projectBack: "Back to projects",
@@ -983,6 +999,8 @@ export const dictionary = {
     knowledgeEyebrow: "Knowledge Hub",
     knowledgeTitle: "Geotechnical Engineering Knowledge Hub",
     knowledgeCopy: "Explore technical articles, field guides, and specifications on Jet Grouting, Bored Piles, DSM, Ground Improvement, and Quality Control.",
+    knowledgeArticlesTitle: "Technical Articles",
+    knowledgeArticlesCopy: "Filter by category; each guide covers field application, quality control and design principles.",
     knowledgeReadArticle: "Read Article",
     knowledgeFilterAll: "All",
 
@@ -990,7 +1008,7 @@ export const dictionary = {
     articleTOC: "Table of Contents",
     articleRelated: "Related Contents",
     articleAuthor: "YER6 Technical Content Team",
-    articleReadTime: "read",
+    articleReadTime: "{minutes} min read",
     articlePublished: "Published:",
     articleUpdated: "Updated:",
     articleRelatedArticles: "Related Articles",
@@ -1035,6 +1053,8 @@ export const dictionary = {
     footerHQ: "Headquarters",
     footerAddress: "Golbasi, Ankara. Mobile field crews active across Europe, Middle East, and North Africa projects.",
     footerQuickQuote: "Quick quote request",
+    footerCallAria: "Call us at {value}",
+    footerEmailAria: "Email us at {value}",
     footerCopyright: "© 2026 YER6 Ground Improvement & Geotechnical Engineering.",
     footerSubtitle: "Jet Grout • DSM • Bored Piles • Anchors • Shoring • TR / EN / AR",
 
@@ -1072,6 +1092,10 @@ export const dictionary = {
     contact: "اتصال",
     quote: "طلب عرض",
     language: "اللغة",
+    navAria: "التنقل الرئيسي",
+    homeAria: "الصفحة الرئيسية لـ YER6",
+    menuOpen: "فتح القائمة",
+    menuClose: "إغلاق القائمة",
 
     /* ── HERO ── */
     heroBadge: "هندسة جيوتقنية متميزة وعمليات ميدانية دقيقة",
@@ -1277,6 +1301,8 @@ export const dictionary = {
     projectsBeforeEyebrow: "قبل / بعد",
     projectsBeforeTitle: "مقارنة بصرية لأداء التربة بعد التحسين.",
     projectsBeforeCopy: "مقارنة تفاعلية تمثل تأثير هندسة تحسين التربة، وتوزيع الأعمدة، وصلابة التربة تحت الأساسات.",
+    beforeAfterAria: "مقارنة قبل وبعد",
+    projectDetailsAria: "تفاصيل {title}",
 
     /* ── PROJECT DETAIL ── */
     projectBack: "العودة إلى المشاريع",
@@ -1509,6 +1535,8 @@ export const dictionary = {
     knowledgeEyebrow: "مركز المعرفة",
     knowledgeTitle: "مركز المعرفة الهندسي لجيوتقنية التربة",
     knowledgeCopy: "في مركز المعرفة YER6، يمكنك العثور على مقالات فنية وأدلة ميدانية متخصصة في الحقن النفاث، الخوازيق المحفورة، الخلط العميق للتربة، تحسين التربة ومراقبة الجودة.",
+    knowledgeArticlesTitle: "المقالات التقنية",
+    knowledgeArticlesCopy: "قم بالتصفية حسب الفئة؛ كل دليل يغطي التطبيق الميداني ومراقبة الجودة وأسس التصميم.",
     knowledgeReadArticle: "استعرض المقال الفني",
     knowledgeFilterAll: "الكل",
 
@@ -1516,7 +1544,7 @@ export const dictionary = {
     articleTOC: "جدول المحتويات",
     articleRelated: "محتويات ذات صلة",
     articleAuthor: "فريق المحتوى الفني في YER6",
-    articleReadTime: "دقيقة قراءة",
+    articleReadTime: "{minutes} دقيقة قراءة",
     articlePublished: "نشر:",
     articleUpdated: "تحديث:",
     articleRelatedArticles: "مقالات ذات صلة",
@@ -1561,6 +1589,8 @@ export const dictionary = {
     footerHQ: "المقر الرئيسي",
     footerAddress: "غولباشي، أنقرة. فرق عمل ميدانية متنقلة ونشطة لمشاريع أوروبا والشرق الأوسط وشمال أفريقيا.",
     footerQuickQuote: "طلب تسعير سريع",
+    footerCallAria: "اتصل بنا على {value}",
+    footerEmailAria: "راسلنا عبر البريد الإلكتروني: {value}",
     footerCopyright: "© 2026 YER6 لتثبيت التربة والهندسة الجيوتقنية. جميع الحقوق محفوظة.",
     footerSubtitle: "حقن نفاث • خلط عميق • خوازيق حفر • مراسي • سند • تركية / إنجليزية / عربية",
 
