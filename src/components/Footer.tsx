@@ -19,10 +19,10 @@ export function Footer() {
             {t("footerTagline")}
           </p>
           <div className="mt-6 flex flex-wrap gap-3 text-sm text-white/72">
-            <a href={siteConfig.phone.href} aria-label={`Call us at ${siteConfig.phone.display}`} className="inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2">
+            <a href={siteConfig.phone.href} aria-label={t("footerCallAria").replace("{value}", siteConfig.phone.display)} className="inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2">
               <Phone className="h-4 w-4 text-gold-200" /> {siteConfig.phone.display}
             </a>
-            <a href={siteConfig.emailHref} aria-label={`Email us at ${siteConfig.email}`} className="inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2">
+            <a href={siteConfig.emailHref} aria-label={t("footerEmailAria").replace("{value}", siteConfig.email)} className="inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2">
               <Mail className="h-4 w-4 text-gold-200" /> {siteConfig.email}
             </a>
           </div>

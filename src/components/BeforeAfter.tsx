@@ -1,8 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import { useLanguage } from "@/components/LanguageProvider";
 
 export function BeforeAfter() {
+  const { t } = useLanguage();
   const [position, setPosition] = useState(54);
 
   return (
@@ -34,7 +36,7 @@ export function BeforeAfter() {
       </div>
       <div className="border-t border-white/10 p-5">
         <input
-          aria-label="Before after comparison"
+          aria-label={t("beforeAfterAria")}
           type="range"
           min="8"
           max="92"

@@ -11,12 +11,26 @@ import { cityPages } from "@/lib/cityContent";
 import { siteConfig } from "@/lib/siteConfig";
 import { publishedKnowledgeArticles } from "@/data/knowledge";
 import { useLanguage } from "@/components/LanguageProvider";
+import type { Locale } from "@/lib/i18n";
+
+function formatArticleDate(value: string, locale: Locale) {
+  const localeTag = locale === "tr" ? "tr-TR" : locale === "ar" ? "ar-EG-u-ca-gregory" : "en-GB";
+  const date = new Date(`${value}T12:00:00+03:00`);
+
+  return new Intl.DateTimeFormat(localeTag, {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+    timeZone: "Europe/Istanbul"
+  }).format(date);
+}
 
 export function KnowledgeArticleContent({ article }: { article: KnowledgeArticle }) {
-  const { t } = useLanguage();
+  const { locale, t } = useLanguage();
   const related = publishedKnowledgeArticles.filter((other) => article.relatedSlugs.includes(other.slug));
   const canonical = `${siteConfig.siteUrl}/knowledge/${article.slug}/`;
   const relatedCities = cityPages.filter((page) => page.articleSlugs.includes(article.slug)).slice(0, 5);
+  const readingMinutes = article.readingTime.match(/\d+/)?.[0] ?? article.readingTime;
 
   return (
     <main>
@@ -27,9 +41,9 @@ export function KnowledgeArticleContent({ article }: { article: KnowledgeArticle
             <h1 className="mt-6 text-5xl font-semibold leading-tight text-white">{article.title}</h1>
             <div className="mt-4 flex flex-wrap items-center gap-4 text-sm text-white/50">
               <span>{t("articleAuthor")}</span>
-              <span>{article.readingTime} {t("articleReadTime")}</span>
-              <span>{t("articlePublished")} {article.publishedAt}</span>
-              <span>{t("articleUpdated")} {article.updatedAt}</span>
+              <span>{t("articleReadTime").replace("{minutes}", readingMinutes)}</span>
+              <span>{t("articlePublished")} {formatArticleDate(article.publishedAt, locale)}</span>
+              <span>{t("articleUpdated")} {formatArticleDate(article.updatedAt, locale)}</span>
             </div>
             <p className="mt-6 max-w-3xl text-lg leading-8 text-white/70">{article.introduction}</p>
           </div>

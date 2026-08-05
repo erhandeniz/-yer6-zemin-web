@@ -36,7 +36,7 @@ export function ProjectCard({ project }: { project: Project }) {
           <Link
             href={`/projects/${project.slug}`}
             className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-gold-300 text-obsidian transition group-hover:rotate-45"
-            aria-label={`${title} details`}
+            aria-label={t("projectDetailsAria").replace("{title}", title)}
           >
             <ArrowUpRight className="h-5 w-5" />
           </Link>
