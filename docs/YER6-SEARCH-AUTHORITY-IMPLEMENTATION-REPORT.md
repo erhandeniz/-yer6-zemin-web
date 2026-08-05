@@ -1,6 +1,6 @@
 # YER6 Arama Otoritesi Uygulama Raporu
 
-Durum: Release 1 testleri geçti; dağıtım bekliyor
+Durum: Release 1 canlıya alındı ve doğrulandı
 Başlangıç: 5 Ağustos 2026
 Rollback deployment: `a314b32b-e25e-4b61-98f9-0370266ff7df`
 Başlangıç commit: `b1b072cd3a52db3e8ea05c3caf9ee31a4325c32c`
@@ -51,9 +51,9 @@ Bu bölüm kod değişikliği, test, commit, push, deployment ve canlı doğrula
 | Production build | Başarılı | Next.js 16.2.9, 320 statik rota |
 | SEO/rota/bağlantı/schema | Başarılı | 309/309 benzersiz sitemap URL'si; 0 kırık link, 0 yanlış canonical, 0 geçersiz schema |
 | Mobil/desktop smoke | Başarılı | 390×844 ve 1728×980; yatay taşma yok, mobil menü çalışıyor |
-| Commit/push | Bekliyor | — |
-| Cloudflare deploy | Bekliyor | — |
-| Canlı doğrulama | Bekliyor | — |
+| Commit/push | Başarılı | `df878fb`, `600e49b`, `c89c605` |
+| Cloudflare deploy | Başarılı | `391893a5-c586-4677-945c-dbf7aa134f6e` |
+| Canlı doğrulama | Başarılı | Production domaini ve doğrudan Worker URL'si |
 
 ## Çalışma ağacı koruması
 
@@ -61,11 +61,13 @@ Başlangıçta repoda kullanıcıya ait önceden mevcut değişiklikler ve dosya
 
 ## Final alanları
 
-- Release 1 commit: bekliyor
-- Rapor commit: bekliyor
-- Deployment sürümü: bekliyor
+- Release 1 ana commit: `df878fb`
+- Erişilebilirlik koruma commit'i: `600e49b`
+- Türkçe arayüz koruma commit'i: `c89c605`
+- Rapor commit: bu raporu tamamlayan commit
+- Deployment sürümü: `391893a5-c586-4677-945c-dbf7aa134f6e`
 - Rollback sürümü: `a314b32b-e25e-4b61-98f9-0370266ff7df`
-- Canlı kontrol edilen URL'ler: bekliyor
+- Worker URL'si: `https://yer6zemin.dnzyapierhan.workers.dev`
 - İçerik silme: hayır
 - Rota silme/değiştirme: hayır
 - Sayfa yapısı değişikliği: hayır
@@ -79,3 +81,41 @@ Başlangıçta repoda kullanıcıya ait önceden mevcut değişiklikler ve dosya
 - 404 sayfası `Sayfa Bulunamadı` ve `noindex` olarak doğrulandı.
 - Projede ayrı lint veya genel unit-test script'i tanımlı değildir. Mevcut typecheck, içerik, deprem, SEO ve production build kapıları çalıştırılmıştır.
 - Lighthouse paketi projede kurulu değildir; yeni bağımlılık eklenmemiştir. Mobil/desktop taşma ve etkileşim smoke testleri gerçek tarayıcıda yapılmıştır.
+
+## Canlı doğrulanan URL'ler
+
+- `https://www.yer6zemin.com.tr/`
+- `https://www.yer6zemin.com.tr/knowledge/`
+- `https://www.yer6zemin.com.tr/blog/`
+- `https://www.yer6zemin.com.tr/knowledge/jet-grout-nedir/`
+- `https://www.yer6zemin.com.tr/knowledge/fore-kazik-maliyeti/`
+- `https://www.yer6zemin.com.tr/knowledge/dsm-nasil-uygulanir/`
+- `https://www.yer6zemin.com.tr/knowledge/zemin-iyilestirme-yontemleri/`
+- `https://www.yer6zemin.com.tr/knowledge/sivilasma-riskine-karsi-zemin-guclendirme/`
+- `https://www.yer6zemin.com.tr/services/zemin-guclendirme/`
+- `https://www.yer6zemin.com.tr/services/cfa-kazik/`
+- `https://www.yer6zemin.com.tr/services/deep-soil-mixing/`
+- `https://www.yer6zemin.com.tr/services/jet-grout/`
+- `https://www.yer6zemin.com.tr/services/dsm/`
+- `https://www.yer6zemin.com.tr/services/fore-kazik/`
+- `https://www.yer6zemin.com.tr/hesaplama/fore-kazik-maliyet-hesaplama/`
+- `https://www.yer6zemin.com.tr/sehirler/istanbul-zemin-guclendirme/`
+- `https://www.yer6zemin.com.tr/sehirler/ankara-zemin-guclendirme/`
+- `https://www.yer6zemin.com.tr/sehirler/izmir-zemin-guclendirme/`
+- `https://www.yer6zemin.com.tr/sitemap.xml`
+- Bilinmeyen rota üzerinden canlı 404/noindex kontrolü.
+
+## Canlı sonuç özeti
+
+- HTTP → HTTPS: `301 Moved Permanently`, hedef `https://www.yer6zemin.com.tr/`.
+- Sitemap: 309 kayıt, 309 benzersiz URL, 0 tekrar.
+- Zemin Güçlendirme H1/title doğru; yanlış CFA firma metni yok.
+- Deep Soil Mixing teknik sayfası ana DSM hizmet merkezine bağlı.
+- Fore kazık sonucu `1.194,3 m³` beton ve `143,32 ton` donatı; eski milyonlarca m³ sonucu yok.
+- Türkçe erişilebilirlik etiketleri özel domainde doğrulandı: `YER6 Ana Sayfa`, `Menüyü Aç`, `Bizi arayın`, `Bize e-posta gönderin`.
+- Makale tarihleri Türkçe locale ile görünür; ham ISO tarih sunumu yok.
+- İngilizce H1 `Ground Strengthening`; Arapça H1 `تدعيم التربة`, RTL etkin ve ham i18n anahtarı yok.
+- Mobil 390×844 ve desktop görünümde yatay taşma yok.
+- Canonical, Service, FAQPage, BreadcrumbList ve kurum schema yapıları geçerli.
+
+YER6 SEARCH AUTHORITY RELEASE 1 DEPLOYED — PAGE STRUCTURE AND ALL EXISTING CONTENT PRESERVED
