@@ -21,6 +21,7 @@ const serviceArticleMap: Record<string, string[]> = {
   ankraj: ["zemin-iyilestirme-risk-yonetimi", "saha-denetimi-numune-testleri", "zemin-iyilestirme-planlama"],
   "iksa-sistemleri": ["zemin-iyilestirme-risk-yonetimi", "saha-denetimi-numune-testleri", "zemin-kalite-kontrol-standartlari"],
   "zemin-iyilestirme": ["yer-alti-zemin-iyilestirme", "zemin-iyilestirme-yontemleri", "zemin-iyilestirme-planlama", "zemin-iyilestirme-risk-yonetimi"],
+  "zemin-guclendirme": ["temel-alti-zemin-guclendirme", "zemin-iyilestirme-yontemleri", "sivilasma-riskine-karsi-zemin-guclendirme", "zemin-kalite-kontrol-standartlari"],
   "geoteknik-danismanlik": ["zemin-iyilestirme-planlama", "zemin-kalite-kontrol-standartlari", "saha-denetimi-numune-testleri"],
   "zemin-civisi": ["kazi-destek-sistemleri-nedir", "zemin-iyilestirme-risk-yonetimi", "saha-denetimi-numune-testleri"],
   "puskurtme-beton": ["kazi-destek-sistemleri-nedir", "zemin-iyilestirme-risk-yonetimi", "saha-denetimi-numune-testleri"],
@@ -31,6 +32,18 @@ const serviceArticleMap: Record<string, string[]> = {
   "bina-alti-jet-grout": ["temel-alti-zemin-guclendirme", "binalari-yikmadan-zemin-guclendirme", "jet-grout-nedir"],
   "cfa-kazik": ["fore-kazik-nedir", "fore-kazik-sureklilik-ve-yukleme-testleri", "zemin-iyilestirme-risk-yonetimi"],
   "deep-soil-mixing": ["yer-alti-zemin-iyilestirme", "dsm-nasil-uygulanir", "dsm-malzeme-secinimi", "jet-grout-ve-dsm-farki"]
+};
+
+const serviceHubLinks: Partial<Record<string, { href: string; label: string }[]>> = {
+  "zemin-iyilestirme": [
+    { href: "/knowledge/deprem/", label: "Deprem, sıvılaşma ve zemin güvenliği bilgi merkezi" }
+  ],
+  "deep-soil-mixing": [
+    { href: "/services/dsm/", label: "Ana DSM zemin iyileştirme hizmet sayfası" }
+  ],
+  "cfa-kazik": [
+    { href: "/services/zemin-guclendirme/", label: "Zemin güçlendirme yöntemleri ana hizmet sayfası" }
+  ]
 };
 
 function FaqItem({ question, answer }: { question: string; answer: string }) {
@@ -65,6 +78,7 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
   const relatedArticles = (serviceArticleMap[service.slug] ?? [])
     .map((articleSlug) => publishedKnowledgeArticles.find((article) => article.slug === articleSlug))
     .filter((article): article is (typeof publishedKnowledgeArticles)[number] => Boolean(article));
+  const relatedHubLinks = serviceHubLinks[service.slug] ?? [];
   const serviceCities = cityPages.filter((page) => page.serviceSlugs.includes(service.slug)).slice(0, 6);
   const relatedProjects = projects.filter((project) => {
     if (!("relatedServiceSlugs" in project)) return false;
@@ -221,10 +235,19 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
               )}
 
               {/* İlgili Teknik İçerikler */}
-              {relatedArticles.length > 0 && (
+              {(relatedArticles.length > 0 || relatedHubLinks.length > 0) && (
                 <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-8">
                   <h2 className="text-2xl font-semibold text-white">İlgili Teknik İçerikler</h2>
                   <div className="mt-6 grid gap-3 text-sm text-white/70">
+                    {relatedHubLinks.map((item) => (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        className="rounded-2xl bg-white/5 px-4 py-3 transition hover:bg-white/10 hover:text-white"
+                      >
+                        → {item.label}
+                      </Link>
+                    ))}
                     {relatedArticles.map((article) => (
                       <Link
                         key={article.slug}
@@ -322,7 +345,7 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
                 <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-6">
                   <h3 className="text-sm uppercase tracking-[0.32em] text-gold-200">Diğer Hizmetler</h3>
                   <div className="mt-4 space-y-2 text-sm text-white/65">
-                    {["jet-grout", "dsm", "fore-kazik", "mini-kazik", "ankraj", "iksa-sistemleri", "zemin-iyilestirme", "geoteknik-danismanlik", "zemin-civisi", "puskurtme-beton", "kazik-yukleme-testleri", "zemin-etudu", "tas-kolon", "diafram-duvar"]
+                    {["zemin-guclendirme", "jet-grout", "dsm", "deep-soil-mixing", "fore-kazik", "cfa-kazik", "mini-kazik", "ankraj", "iksa-sistemleri", "zemin-iyilestirme", "geoteknik-danismanlik", "zemin-civisi", "puskurtme-beton", "kazik-yukleme-testleri", "zemin-etudu", "tas-kolon", "diafram-duvar"]
                       .filter((s) => s !== service.slug)
                       .map((s) => (
                         <Link key={s} href={`/services/${s}`} className="block py-1 hover:text-white transition">
@@ -342,6 +365,9 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
                           {page.city} {service.title}
                         </Link>
                       ))}
+                      <Link href="/sehirler/" className="block border-t border-white/10 pt-3 text-gold-200 transition hover:text-white">
+                        → Tüm şehirleri gör
+                      </Link>
                     </div>
                   </div>
                 )}

@@ -333,40 +333,40 @@ export const services = [
     slug: "zemin-guclendirme",
     key: "svc_zemin_guc",
     icon: ShieldCheck,
-    title: "CFA Kazık & Zemin Güçlendirme",
-    summary: "Sektörde CFA Kazık olarak bilinen Continuous Flight Auger (Sürekli Burgulu Kazık) teknolojisi ile muhafaza borusuz, yüksek hızlı ve düşük titreşimli derin temel çözümleri.",
-    detail: "Geoteknik sektöründe CFA Kazık (Continuous Flight Auger / Sürekli Burgulu Kazık) olarak adlandırılan zemin güçlendirme teknolojisi; uygun zemin koşullarında muhafaza borusu (casing) ya da bentonit çamuru kullanmaksızın içi boş helezon burgu ile delgi yapılan modern kazık yöntemidir. Delgi hedeflenen kota ulaştığında, burgunun içi boş milinden beton pompalanırken burgu kontrollü olarak yukarı çekilir ve ardından taze betona çelik donatı kafesi yerleştirilir. Üretim hızı ve ekipman seçimi; zemin profili, kazık geometrisi, beton lojistiği ve saha koşullarına göre belirlenir.",
-    specs: ["EN 1536 ve ICE Standartlarında CFA Kazık İmalatı", "Anlık Dijital Veri Kaydı (Data Logger / Tork & Beton Basıncı)", "Muhafaza Borusuz & 300+ m/tül/gün Yüksek Üretim Hızı"],
+    title: "Zemin Güçlendirme",
+    summary: "Zayıf zeminlerde taşıma kapasitesi, oturma, sıvılaşma ve temel güvenliği sorunlarını saha verisine dayalı yöntemlerle yöneten bütünleşik geoteknik mühendislik hizmeti.",
+    detail: "Zemin güçlendirme; yapı yükleri, zemin profili, yeraltı suyu ve deprem etkileri birlikte değerlendirilerek zeminin veya temel sisteminin performansını artırmayı amaçlar. Jet Grout, Deep Soil Mixing (DSM), taş kolon, zemin enjeksiyonu, mini kazık, fore kazık ve CFA kazık gibi yöntemler tek başına ya da hibrit çözüm olarak ele alınır. Yöntem ve üretim parametreleri; zemin etüdü, tasarım şartları, trial column veya deneme imalatı, kalite kontrol sonuçları ve yürürlükteki teknik standartlara göre belirlenir.",
+    specs: ["Saha Verisine Dayalı Yöntem Seçimi", "TBDY 2018 ve Proje Şartnamesine Uygun Tasarım", "Data Logger, Deneme İmalatı ve Kalite Kontrol"],
     applications: [
-      "Yüksek katlı konut, ticari rezidans ve AVM projelerinde CFA derin temel kazıkları",
-      "Yumuşak kil, silt ve akıntılı gevşek kum sahalarında muhafaza borusuz kazık imalatı",
-      "Deprem ve sıvılaşma riski yüksek alüvyon sahalarda bina yüklerinin derin sağlam kayaya aktarılması",
-      "Gürültü ve vibrasyon kısıtlaması olan şehir içi şantiyelerde titreşimsiz delgi",
-      "Sanayi tesisleri, fabrika temelleri ve ağır makine platformlarında oturma kontrolü",
-      "Derin kazı iksa sistemlerinde ankrajlı CFA kazık perdeleri"
+      "Taşıma gücü düşük kil, silt, kum ve kontrolsüz dolgu zeminlerde temel güvenliğinin artırılması",
+      "Deprem ve sıvılaşma riski bulunan alüvyon sahalarda zemin performansının iyileştirilmesi",
+      "Sanayi tesisleri, depolar ve ağır makine temellerinde toplam ve farklı oturma kontrolü",
+      "Mevcut yapılarda temel altı güçlendirme (underpinning) ve oturma riskinin yönetilmesi",
+      "Derin kazı, iksa ve komşu yapı etkilerinde yanal deformasyonların sınırlandırılması",
+      "Yeraltı suyu bulunan sahalarda su geçirimsizlik, taban stabilitesi ve kazı güvenliği"
     ],
     advantages: [
-      "Muhafaza Borusu (Casing) ve Bentonit Çamuru Gerektirmez: Saha temizliğini korur ve çamur arıtma maliyetlerini ortadan kaldırır.",
-      "Ultra Yüksek İmalat Hızı: Geleneksel fore kazık yöntemlerine göre 2 ila 3 kat daha hızlıdır; günde 200 - 400 m/tül delgi ve betonlama tamamlanır.",
-      "Düşük Titreşim ve Gürültü: Çakma ve darbeli yöntemlere göre titreşim etkisi düşüktür; komşu yapılar ve altyapı hatları proje özelinde izlenir.",
-      "Gerçek Zamanlı Dijital Takip (Automated Data Logger): Delgi torku, burgu çekme hızı, beton basıncı ve hacmi izlenerek boğulma (necking) riski azaltılır.",
-      "Süreklilik ve Kalite Kontrolü: Beton pompalama işleminin delgi ucu kuyu tabanındayken başlaması, kuyu tabanında gevşek zemin birikimi riskini sınırlar.",
-      "Uluslararası kabul testleri (PIT - Kazık Bütünlük Testi ve Statik Yükleme Testleri) ile üretimin kalitesi belgelenir."
+      "Tek Yönteme Bağlı Değildir: Zemin ve yapı performansına göre Jet Grout, DSM, kazık, enjeksiyon veya hibrit çözüm karşılaştırılır.",
+      "Ölçülebilir Tasarım: Taşıma gücü, oturma, sıvılaşma ve deformasyon hedefleri proje kabul kriterleriyle tanımlanır.",
+      "Saha Kalibrasyonu: Laboratuvar verileri, trial column ve deneme imalatlarıyla bağlayıcı dozajı ve üretim parametreleri doğrulanır.",
+      "Dijital İzlenebilirlik: Uygun ekipmanda basınç, debi, tork, derinlik ve çekme hızı data logger ile kayıt altına alınır.",
+      "Bağımsız Kalite Doğrulaması: UCS, karot, PIT, CSL, plaka veya static load test gibi deneyler yönteme göre planlanır.",
+      "Yaşam Döngüsü Yaklaşımı: Uygulama hızı kadar çevre yapı etkisi, saha lojistiği, bakım ve toplam proje riski değerlendirilir."
     ],
     processSteps: [
-      { title: "Continuous Auger Drilling (Burgulu Delgi)", description: "İçi boş helezon burgu (hollow-stem auger), yüksek torklu CFA makinesi ile tasarlanan derinlik kotuna kadar kesintisiz olarak zemine sürülür." },
-      { title: "High-Pressure Concreting (Basınçlı Betonlama)", description: "Hedef koda ulaşıldığında kuyu tabanından itibaren içi boş mil içerisinden yüksek basınçlı beton pompalanmaya başlanır." },
-      { title: "Synchronized Auger Extraction (Burgu Çekimi)", description: "Beton basıncı pozitif seviyede tutularak burgu yavaşça ve sabit hızla yukarı çekilir. Süreç boyunca beton debisi ve çekme hızı sensörlerle senkronize edilir." },
-      { title: "Rebar Cage Installation (Donatı Kafesi Montajı)", description: "Burgu tamamen çekildikten sonra, hazırlanan çelik donatı kafesi taze betonun içerisine özel vibratör aparatıyla projekte edilen derinliğe kadar daldırılır." },
-      { title: "Quality Verification & PIT Testing (Kalite Kontrol)", description: "Beton prizini aldıktan sonra kazık başları tıraşlanır, Kazık Bütünlük (PIT) ve Yükleme Testleri uygulanarak teknik rapor teslim edilir." }
+      { title: "Zemin Modeli ve Risk Tanımı", description: "Sondaj, SPT, CPT/CPTu, laboratuvar verileri, yeraltı suyu ve yapı yükleri değerlendirilerek geoteknik model ile performans hedefleri belirlenir." },
+      { title: "Yöntem Karşılaştırması", description: "Jet Grout, DSM, taş kolon, enjeksiyon, mini kazık, fore kazık ve CFA gibi uygulanabilir alternatifler teknik risk, metraj ve saha kısıtlarıyla karşılaştırılır." },
+      { title: "Deneme İmalatı ve Tasarım Doğrulaması", description: "Gerekli projelerde trial column veya test kazığı uygulanır; çap, dayanım, süreklilik ve üretim parametreleri kabul kriterleriyle doğrulanır." },
+      { title: "Kontrollü Saha Uygulaması", description: "Onaylı yöntem beyanı ve kalite planına göre üretim yapılır; kritik parametreler kayıt ve saha kontrolleriyle izlenir." },
+      { title: "Kabul Testleri ve Teknik Rapor", description: "Yönteme uygun karot, UCS, PIT, CSL, plaka veya yükleme testleri değerlendirilerek as-built kayıtları ve kalite raporu hazırlanır." }
     ],
-    technicalNote: "CFA kazık imalatında en kritik geoteknik parametreler, burgu çekimi esnasındaki pozitif beton basıncı ve kuyu içi sürekliliktir. EN 1536 ve ilgili uygulama esaslarına göre beton basıncındaki düşüş veya burgunun gereğinden hızlı çekilmesi boğulmaya (necking) ya da zemin karışmasına (soil inclusion) neden olabilir. Otomatik beton debimetreleri ve tork sensörleri, imalat parametrelerinin izlenmesini ve kabul kriterlerinin kayıtla doğrulanmasını destekler.",
+    technicalNote: "Zemin güçlendirmede üretim parametreleri ve uygulama yöntemleri; saha araştırmaları, tasarım şartları, deneme imalatları ve yürürlükteki teknik standartlara göre belirlenmelidir. Aynı yöntem farklı zemin profillerinde aynı çap, dayanım veya taşıma performansını garanti etmez. Tasarım kabulleri saha testleriyle doğrulanmalı; uygulama kayıtları ile kabul deneyleri birlikte değerlendirilmelidir.",
     faq: [
-      { question: "CFA Kazık nedir ve sektörde neden bu isimle anılır?", answer: "CFA (Continuous Flight Auger / Sürekli Burgulu Kazık), muhafaza borusu çakmadan içi boş tek parça helezon burgu ile delgi yapılıp burgu çekilirken beton pompalanan sistemdir. Sektörde tüm mühendis ve müteahhitler hızlı ve ekonomik derin temel çözümü olduğu için bu yöntemi direkt 'CFA' olarak tanımlar." },
-      { question: "CFA Kazık ile Geleneksel Fore Kazık arasındaki farklar nelerdir?", answer: "Fore kazıkta delgi yapıldıktan sonra muhafaza borusu veya bentonit kullanılır, donatı indirilir ve en son beton dökülür. CFA kazıkta ise delgi, beton dökümü ve donatı daldırma sırasıyla tek ve kesintisiz operasyonda yapılır. CFA kazık 2-3 kat daha hızlıdır ve bentonit çamuru gerektirmez." },
-      { question: "CFA Kazık hangi zemin türlerinde en yüksek verimi sağlar?", answer: "Özellikle orta-sıkı kumlarda, killi ve siltli zeminlerde, yeraltı su seviyesinin yüksek olduğu ve muhafaza borusu sürmenin zor olduğu alüvyal sahalarda en yüksek verimi ve imalat hızını sağlar." },
-      { question: "CFA Kazıkta donatı kafesi taze betona nasıl indirilir?", answer: "Beton dökümü tamamlanıp kuyu tamamen dolduktan hemen sonra, hazırlanan dairesel donatı kafesi vinç ve donatı vibratörü yardımıyla taze betonun içine daldırılarak hedef kota yerleştirilir." },
-      { question: "CFA Kazık imalat kalitesi nasıl doğrulanır?", answer: "İmalat esnasında dijital data logger kayıtları (tork, debi, beton basıncı) tutulur. İmalat sonrasında ise Kazık Bütünlük Testi (PIT - Pile Integrity Test) ve Statik/Dinamik Kazık Yükleme Testleri yapılarak belgelenir." }
+      { question: "Zemin güçlendirme ile zemin iyileştirme arasındaki fark nedir?", answer: "Uygulamada iki ifade sıkça birlikte kullanılır. Zemin iyileştirme çoğunlukla zeminin mühendislik özelliklerini değiştirir; zemin güçlendirme ise buna ek olarak kazık, ankraj veya underpinning gibi yapısal elemanlarla temel-zemin sisteminin performansını artırabilir." },
+      { question: "En uygun zemin güçlendirme yöntemi nasıl seçilir?", answer: "Yöntem; zemin tabakaları, yeraltı suyu, yapı yükü, oturma ve sıvılaşma hedefleri, komşu yapılar, saha erişimi ve kalite doğrulama imkânları birlikte değerlendirilerek seçilir. Tek başına metrekare veya metre fiyatı yeterli seçim ölçütü değildir." },
+      { question: "Mevcut binanın temeli güçlendirilebilir mi?", answer: "Evet. Saha ve temel geometrisine bağlı olarak mini kazık, mikro Jet Grout, zemin enjeksiyonu veya diğer underpinning çözümleri değerlendirilebilir. Uygulama sırası ve deplasman takibi mevcut yapı güvenliği için proje özelinde belirlenir." },
+      { question: "Sıvılaşma riski hangi yöntemlerle azaltılır?", answer: "Dane dağılımı ve zemin geçirgenliğine göre DSM, Jet Grout, taş kolon, drenaj veya sıkıştırma yöntemleri tek başına ya da birlikte kullanılabilir. Performans dinamik zemin analizleri ve saha kabul testleriyle doğrulanmalıdır." },
+      { question: "Zemin güçlendirme kalitesi nasıl kontrol edilir?", answer: "Seçilen yönteme göre data logger kayıtları, karot ve UCS, PIT, CSL, plaka yükleme, static load test, çap/süreklilik kontrolleri ve enstrümantasyon ölçümleri birlikte değerlendirilir." }
     ]
   },
   {
@@ -691,7 +691,7 @@ export const standaloneServices = [
   },
   {
     slug: "cfa-kazik",
-    key: "svc_zemin_guc",
+    key: "svc_cfa",
     icon: Drill,
     title: "CFA Kazık & Zemin Güçlendirme",
     summary: "Continuous Flight Auger (Sürekli Burgulu Kazık) teknolojisi ile muhafaza borusuz, yüksek hızlı ve düşük titreşimli derin temel çözümleri.",
@@ -731,7 +731,7 @@ export const standaloneServices = [
   },
   {
     slug: "deep-soil-mixing",
-    key: "svc_dsm",
+    key: "svc_deep_soil",
     icon: Layers3,
     title: "Deep Soil Mixing (DSM Zemin İyileştirme)",
     summary: "Deep Soil Mixing (DSM), taşıma kapasitesini artırmak ve oturmaları kabul edilebilir proje limitlerine indirmek için değerlendirilen bir derin zemin karıştırma yöntemidir.",

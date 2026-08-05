@@ -256,6 +256,11 @@ const districtSeeds: DistrictSeed[] = [
   { slug: "gaziantep-nizip-zemin-guclendirme", district: "Nizip", province: "Gaziantep", fault: "DAF etki alanı", soil: "ova alüvyonu ve tarım arazisi dolgusu", risk: "oturma ve taşıma gücü yetersizliği", methods: ["dsm", "jet-grout", "tas-kolon", "zemin-iyilestirme"], articles: A.dsm }
 ];
 
-export const districtPages: CityPage[] = districtSeeds.map(buildDistrict);
+// Aynı slug'a ait tekrar eden veri satırları tek bir rota üretmelidir. İlk kayıt
+// korunur; böylece içerik/URL değişmeden sitemap ve static params tekilleşir.
+export const districtPages: CityPage[] = Array.from(
+  new Map(districtSeeds.map((seed) => [seed.slug, seed])).values(),
+  buildDistrict
+);
 export const districtPaths = districtPages.map((page) => ({ slug: page.slug }));
 export const districtSlugSet = new Set(districtPages.map((page) => page.slug));

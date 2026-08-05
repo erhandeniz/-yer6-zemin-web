@@ -77,7 +77,8 @@ export function CalculatorTool({ tool }: { tool: Tool }) {
         mode: tool.mode,
         count,
         depth,
-        diameter,
+        // Form çapı santimetre cinsindedir; costEngine tüm geometrik hesaplarda metre bekler.
+        diameter: diameter / 100,
         complexity,
         soilType,
         factor: 1,
