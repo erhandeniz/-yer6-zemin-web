@@ -13,7 +13,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
       <ScrollEffects />
       <div className="site-shell">
         <Navbar />
-        {children}
+        <div className="min-h-screen">{children}</div>
         <Footer />
       </div>
     </LanguageProvider>

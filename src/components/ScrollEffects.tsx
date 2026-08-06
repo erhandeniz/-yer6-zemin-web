@@ -55,10 +55,26 @@ export function ScrollEffects() {
       };
     }
 
-    void init();
+    const events: Array<keyof WindowEventMap> = ["pointerdown", "keydown", "touchstart", "scroll"];
+    let started = false;
+    const start = () => {
+      if (started) return;
+      started = true;
+      window.clearTimeout(startTimer);
+      events.forEach((event) => window.removeEventListener(event, start));
+      void init();
+    };
+
+    // GSAP yalnızca aşağıdaki bölümlerde gerekir. Kullanıcı etkileşimine kadar
+    // ertelemek ilk hero görünümünü hafifletir; kaydırma başladığı anda mevcut
+    // animasyonlar aynı ayarlarla devreye girer.
+    events.forEach((event) => window.addEventListener(event, start, { once: true, passive: true }));
+    const startTimer = window.setTimeout(start, 8000);
 
     return () => {
       active = false;
+      window.clearTimeout(startTimer);
+      events.forEach((event) => window.removeEventListener(event, start));
       cleanupTriggers?.();
     };
   }, []);

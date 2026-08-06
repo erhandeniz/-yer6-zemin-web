@@ -794,7 +794,7 @@ const projectCatalog = [
     challenge: "Yüksek raf yükleri, sınırlı termin programı ve değişken dolgu kalitesi.",
     solution: "DSM kolonları, saha karot testleri ve dijital üretim raporlaması ile performans kontrollü iyileştirme.",
     tags: ["DSM", "Endüstriyel", "Oturma Kontrolü"],
-    image: "/images/projects/saha/saha-genel-cok-makineli.webp",
+    image: "/images/projects/saha/saha-genel-cok-makineli-card.avif?v=20260806",
     imageAlt: "Çok makineli zemin güçlendirme sahası — YER6 saha arşivi",
     soilProblem: "Sahadaki yumuşak kil tabakaları, yüksek raf sistemi yükleri altında kabul edilemez oturma riski taşıyordu. Dolgu kalitesinin değişken olması ek belirsizlik yaratıyordu.",
     solutionMethod: "Derin zemin karıştırma (DSM) yöntemiyle tüm tesis alanında kolon ağı uygulandı. Laboratuvar karışım tasarımı sonrası saha üretimi başlatıldı; her kolona ait üretim verisi dijital olarak kayıt altına alındı. Karot testleri ile kolon mukavemeti doğrulandı.",
@@ -824,7 +824,7 @@ const projectCatalog = [
     challenge: "Yüksek yer altı suyu, deniz etkisi ve dar çalışma koridoru.",
     solution: "Triple jet grout, enjeksiyon basınç kayıtları ve aşamalı kalite testleri.",
     tags: ["Jet Grout", "Liman", "Su Kontrolü"],
-    image: "/images/projects/saha/su-kenari-kazik-imalati.webp",
+    image: "/images/projects/saha/su-kenari-kazik-imalati-card.avif?v=20260806",
     imageAlt: "Su kenarında kazık imalatı yapan delgi makinesi — YER6 saha arşivi",
     soilProblem: "Kıyı alanında yüksek yeraltı suyu seviyesi ve deniz etkisi, liman genişlemesi sırasında su kontrolü ve taşıma kapasitesi sorunlarına yol açıyordu. Dar çalışma koridoru standart ekipman kullanımını kısıtlıyordu.",
     solutionMethod: "Triple jet grout sistemiyle 740 m uzunluğunda geçirimsizlik ve taşıma perdesi oluşturuldu. Her enjeksiyon parametresi saha veri sistemiyle anlık kaydedildi. Aşamalı kalite testleriyle perde bütünlüğü doğrulandı.",
@@ -1273,7 +1273,7 @@ export const equipment = [
     key: "eq_metax_mp7_pump",
     groupKey: "fleetGroupPumpPlant",
     icon: "gauge",
-    image: "/images/equipment/metax-mp7-pump.jpg",
+    image: "/images/equipment/metax-mp7-pump.jpg?v=20260806",
     imageAlt: "Şantiyede tek konteyner içerisinde kurulu Metax MP7 yüksek basınçlı triplex jet grout pompası"
   },
   {
@@ -1287,7 +1287,7 @@ export const equipment = [
     key: "eq_silo_60_ton",
     groupKey: "fleetGroupSilo",
     icon: "building",
-    image: "/images/equipment/cement-silo-60-ton.jpg",
+    image: "/images/equipment/cement-silo-60-ton.jpg?v=20260806",
     imageAlt: "60 ton kapasiteli tek dikey çimento stok silosu",
     imageSourceUrl:
       "https://german.mobile-concretebatchplant.com/sale-45636110-8850mm-total-height-60-ton-concrete-cement-silo-high-performance.html",

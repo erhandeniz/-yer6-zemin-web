@@ -1,7 +1,7 @@
 "use client";
 
-import dynamic from "next/dynamic";
-import { useEffect, useState } from "react";
+import { Calculator } from "lucide-react";
+import { useCallback, useEffect, useRef, useState, type ComponentType } from "react";
 
 /**
  * Yüzen hesap makinesini ilk boyamadan (first paint) SONRA yükler.
@@ -14,30 +14,53 @@ import { useEffect, useState } from "react";
  * DAVRANIŞ DEĞİŞMEZ: bileşenin kendisine dokunulmadı, yalnızca ne zaman
  * yükleneceği değişti. Kullanıcı sayfaya girdiğinde butonu yine görür.
  */
-const FloatingCalculator = dynamic(
-  () => import("@/components/FloatingCalculator").then((m) => m.FloatingCalculator),
-  { ssr: false }
-);
+type FloatingCalculatorComponent = ComponentType<{ initialOpen?: boolean }>;
 
 export function DeferredCalculator() {
-  const [ready, setReady] = useState(false);
+  const [CalculatorPanel, setCalculatorPanel] = useState<FloatingCalculatorComponent | null>(null);
+  const loadPromise = useRef<Promise<void> | null>(null);
+  const openOnLoad = useRef(false);
 
-  useEffect(() => {
-    // Tarayıcı boştayken yükle; desteklenmiyorsa kısa bir gecikmeyle.
-    const idle = (window as unknown as { requestIdleCallback?: (cb: () => void) => number })
-      .requestIdleCallback;
-    if (typeof idle === "function") {
-      const id = idle(() => setReady(true));
-      return () => {
-        const cancel = (window as unknown as { cancelIdleCallback?: (id: number) => void })
-          .cancelIdleCallback;
-        if (typeof cancel === "function") cancel(id);
-      };
-    }
-    const timer = window.setTimeout(() => setReady(true), 1200);
-    return () => window.clearTimeout(timer);
+  const loadCalculator = useCallback((shouldOpen = false) => {
+    if (shouldOpen) openOnLoad.current = true;
+    if (loadPromise.current) return loadPromise.current;
+
+    loadPromise.current = import("@/components/FloatingCalculator").then((module) => {
+      setCalculatorPanel(() => module.FloatingCalculator);
+    });
+    return loadPromise.current;
   }, []);
 
-  if (!ready) return null;
-  return <FloatingCalculator />;
+  useEffect(() => {
+    const warm = () => void loadCalculator(false);
+    const events: Array<keyof WindowEventMap> = ["pointermove", "keydown", "touchstart", "scroll"];
+    events.forEach((event) => window.addEventListener(event, warm, { once: true, passive: true }));
+    const timer = window.setTimeout(warm, 8000);
+
+    return () => {
+      window.clearTimeout(timer);
+      events.forEach((event) => window.removeEventListener(event, warm));
+    };
+  }, [loadCalculator]);
+
+  if (CalculatorPanel) return <CalculatorPanel initialOpen={openOnLoad.current} />;
+
+  // Ağır hesap/PDF kodu indirilmeden önce gerçek butonla aynı görünüm ve
+  // erişilebilirlik korunur. Dokunulduğunda modül yüklenir ve panel doğrudan açılır.
+  return (
+    <div className="fixed bottom-6 right-6 z-[9999] flex flex-col items-end">
+      <button
+        type="button"
+        onPointerEnter={() => void loadCalculator(false)}
+        onFocus={() => void loadCalculator(false)}
+        onClick={() => void loadCalculator(true)}
+        aria-label="Hesaplama aracını aç"
+        aria-expanded={false}
+        className="group relative flex h-14 w-14 items-center justify-center rounded-full bg-gold-300 shadow-[0_0_20px_rgba(212,175,55,0.4)] transition-transform hover:scale-110 active:scale-95"
+      >
+        <div className="absolute inset-0 rounded-full bg-gold-300 opacity-20 group-hover:animate-ping" />
+        <Calculator className="relative z-10 h-6 w-6 text-obsidian" />
+      </button>
+    </div>
+  );
 }

@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from "next";
-import Script from "next/script";
 import "./globals.css";
 import { SiteShell } from "@/components/SiteShell";
 import { DeferredCalculator } from "@/components/DeferredCalculator";
@@ -128,7 +127,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           as="image"
           type="image/avif"
           href="/images/site/yer6-construction-hero-640.avif"
-          imageSrcSet="/images/site/yer6-construction-hero-640.avif 640w, /images/site/yer6-construction-hero-960.avif 960w"
+          imageSrcSet="/images/site/yer6-construction-hero-640.avif 640w, /images/site/yer6-construction-hero-768.avif 768w, /images/site/yer6-construction-hero-960.avif 960w"
           imageSizes="100vw"
           media="(max-width: 767px)"
           fetchPriority="high"
@@ -144,44 +143,78 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
-        {siteConfig.gaMeasurementId ? (
-          <>
-            <Script
-              src={`https://www.googletagmanager.com/gtag/js?id=${siteConfig.gaMeasurementId}`}
-              strategy="lazyOnload"
-            />
-            <Script id="ga4-init" strategy="lazyOnload">
-              {`
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', '${siteConfig.gaMeasurementId}');
-              `}
-            </Script>
-          </>
+        {siteConfig.gaMeasurementId || siteConfig.yandexMetricaId ? (
+          <script
+            id="yer6-deferred-analytics"
+            dangerouslySetInnerHTML={{
+              __html: `
+                (function () {
+                  var loaded = false;
+                  var events = ["pointerdown", "keydown", "touchstart", "scroll"];
+                  var gaId = ${JSON.stringify(siteConfig.gaMeasurementId || "")};
+                  var yandexId = ${JSON.stringify(siteConfig.yandexMetricaId || "")};
+
+                  function cleanup() {
+                    events.forEach(function (event) {
+                      window.removeEventListener(event, loadAnalytics);
+                    });
+                  }
+
+                  function loadAnalytics() {
+                    if (loaded) return;
+                    loaded = true;
+                    cleanup();
+
+                    if (gaId) {
+                      window.dataLayer = window.dataLayer || [];
+                      window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
+                      window.gtag("js", new Date());
+                      window.gtag("config", gaId);
+                      var gaScript = document.createElement("script");
+                      gaScript.async = true;
+                      gaScript.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(gaId);
+                      document.head.appendChild(gaScript);
+                    }
+
+                    if (yandexId) {
+                      window.ym = window.ym || function () {
+                        (window.ym.a = window.ym.a || []).push(arguments);
+                      };
+                      window.ym.l = Number(new Date());
+                      window.ym(Number(yandexId), "init", {
+                        ssr: true,
+                        webvisor: true,
+                        clickmap: true,
+                        ecommerce: "dataLayer",
+                        accurateTrackBounce: true,
+                        trackLinks: true
+                      });
+                      var yandexScript = document.createElement("script");
+                      yandexScript.async = true;
+                      yandexScript.src = "https://mc.yandex.ru/metrika/tag.js?id=" + encodeURIComponent(yandexId);
+                      document.head.appendChild(yandexScript);
+                    }
+                  }
+
+                  events.forEach(function (event) {
+                    window.addEventListener(event, loadAnalytics, { once: true, passive: true });
+                  });
+                  window.setTimeout(loadAnalytics, 12000);
+                })();
+              `
+            }}
+          />
         ) : null}
         {siteConfig.yandexMetricaId ? (
-          <>
-            <Script id="yandex-metrica" strategy="lazyOnload">
-              {`
-                (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-                m[i].l=1*new Date();
-                for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-                k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-                (window, document, "script", "https://mc.yandex.ru/metrika/tag.js?id=${siteConfig.yandexMetricaId}", "ym");
-                ym(${siteConfig.yandexMetricaId}, "init", {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
-              `}
-            </Script>
-            <noscript>
-              <div>
-                <img
-                  src={`https://mc.yandex.ru/watch/${siteConfig.yandexMetricaId}`}
-                  style={{ position: "absolute", left: "-9999px" }}
-                  alt=""
-                />
-              </div>
-            </noscript>
-          </>
+          <noscript>
+            <div>
+              <img
+                src={`https://mc.yandex.ru/watch/${siteConfig.yandexMetricaId}`}
+                style={{ position: "absolute", left: "-9999px" }}
+                alt=""
+              />
+            </div>
+          </noscript>
         ) : null}
       </head>
       <body>

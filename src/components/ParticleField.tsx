@@ -109,10 +109,23 @@ export function ParticleField({ density = 900, className = "" }: { density?: num
       };
     }
 
-    void init();
+    const events: Array<keyof WindowEventMap> = ["pointerdown", "keydown", "scroll"];
+    let started = false;
+    let startTimer = 0;
+    const start = () => {
+      if (started) return;
+      started = true;
+      window.clearTimeout(startTimer);
+      events.forEach((event) => window.removeEventListener(event, start));
+      void init();
+    };
+    events.forEach((event) => window.addEventListener(event, start, { once: true, passive: true }));
+    startTimer = window.setTimeout(start, 6000);
 
     return () => {
       disposed = true;
+      window.clearTimeout(startTimer);
+      events.forEach((event) => window.removeEventListener(event, start));
       if (frame) cancelAnimationFrame(frame);
       cleanupScene?.();
     };

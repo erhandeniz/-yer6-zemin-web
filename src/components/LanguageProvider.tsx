@@ -13,23 +13,6 @@ type LanguageContextValue = {
 
 const LanguageContext = createContext<LanguageContextValue | null>(null);
 
-const arabicCountries = new Set([
-  "AE", "BH", "DZ", "EG", "IQ", "JO", "KW", "LB", "LY", "MA", "OM", "PS", "QA", "SA", "SD", "SY", "TN", "YE"
-]);
-
-function localeForCountry(country: string): Locale {
-  if (country === "TR") return "tr";
-  if (arabicCountries.has(country)) return "ar";
-  return "en";
-}
-
-function localeForBrowser(): Locale {
-  const language = window.navigator.language.toLowerCase();
-  if (language.startsWith("tr")) return "tr";
-  if (language.startsWith("ar")) return "ar";
-  return "en";
-}
-
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [locale, setLocaleState] = useState<Locale>("tr");
 
@@ -37,26 +20,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     const stored = window.localStorage.getItem("yer6-locale") as Locale | null;
     if (stored && locales.includes(stored)) {
       setLocaleState(stored);
-      return;
     }
-
-    setLocaleState(localeForBrowser());
-    const controller = new AbortController();
-    const timeout = window.setTimeout(() => controller.abort(), 2500);
-
-    fetch("/cdn-cgi/trace", { signal: controller.signal, cache: "no-store" })
-      .then((response) => response.text())
-      .then((trace) => {
-        const country = trace.match(/^loc=([A-Z]{2})$/m)?.[1];
-        if (country) setLocaleState(localeForCountry(country));
-      })
-      .catch(() => undefined)
-      .finally(() => window.clearTimeout(timeout));
-
-    return () => {
-      window.clearTimeout(timeout);
-      controller.abort();
-    };
   }, []);
 
   useEffect(() => {

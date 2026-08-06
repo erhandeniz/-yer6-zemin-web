@@ -21,8 +21,8 @@ type Step = "selection" | "input" | "chat";
 let cachedFonts: { regular: string; bold: string } | null = null;
 let fontLoadFailed = false;
 
-export function FloatingCalculator() {
-  const [isOpen, setIsOpen] = useState(false);
+export function FloatingCalculator({ initialOpen = false }: { initialOpen?: boolean }) {
+  const [isOpen, setIsOpen] = useState(initialOpen);
   const [step, setStep] = useState<Step>("selection");
   const [mode, setMode] = useState<CalcMode>(null);
   const [complexity, setComplexity] = useState<Complexity>("quick");
@@ -626,7 +626,11 @@ export function FloatingCalculator() {
                     <p className="text-xs text-gold-300">Akıllı Metraj & Bütçe Asistanı</p>
                   </div>
                 </div>
-                <button onClick={toggleOpen} className="rounded-full p-2 text-white/50 hover:bg-white/10 hover:text-white transition-colors">
+                <button
+                  onClick={toggleOpen}
+                  aria-label="Hesaplama aracını kapat"
+                  className="rounded-full p-2 text-white/50 hover:bg-white/10 hover:text-white transition-colors"
+                >
                   <X className="h-5 w-5" />
                 </button>
               </div>
@@ -810,6 +814,8 @@ export function FloatingCalculator() {
 
         <button
           onClick={toggleOpen}
+          aria-label={isOpen ? "Hesaplama aracını kapat" : "Hesaplama aracını aç"}
+          aria-expanded={isOpen}
           className="group relative flex h-14 w-14 items-center justify-center rounded-full bg-gold-300 shadow-[0_0_20px_rgba(212,175,55,0.4)] transition-transform hover:scale-110 active:scale-95"
         >
           <div className="absolute inset-0 rounded-full bg-gold-300 opacity-20 group-hover:animate-ping" />

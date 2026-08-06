@@ -3,15 +3,35 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowUpRight, Play, ShieldCheck } from "lucide-react";
+import { useEffect, useState } from "react";
 import { ParticleField } from "@/components/ParticleField";
 import { useLanguage } from "@/components/LanguageProvider";
 
 // Hero görselinin optimize edilmiş sürümleri. Orijinal dosya
 // (yer6-construction-hero.jpg) kaynak olarak korunur, silinmez.
 const HERO_LCP_MOBILE = "/images/site/yer6-construction-hero-640.avif";
+const MEDIA_VERSION = "20260806";
 
 export function CinematicHero() {
   const { t } = useLanguage();
+  const [videoReady, setVideoReady] = useState(false);
+
+  useEffect(() => {
+    // Mobilde video zaten CSS ile gizlidir. Gizli masaüstü videosunu mobil
+    // bağlantıya hiç indirmeyerek görüntüyü ve masaüstü video kalitesini aynen
+    // korur, yalnızca gereksiz ağ trafiğini önleriz.
+    if (!window.matchMedia("(min-width: 768px)").matches) return;
+
+    const revealVideo = () => setVideoReady(true);
+    const events: Array<keyof WindowEventMap> = ["pointerdown", "keydown", "scroll"];
+    events.forEach((event) => window.addEventListener(event, revealVideo, { once: true, passive: true }));
+    const timer = window.setTimeout(revealVideo, 6000);
+
+    return () => {
+      window.clearTimeout(timer);
+      events.forEach((event) => window.removeEventListener(event, revealVideo));
+    };
+  }, []);
 
   return (
     <section className="relative min-h-screen overflow-hidden pt-24 dark-theme">
@@ -22,17 +42,17 @@ export function CinematicHero() {
         <picture className="md:hidden">
           <source
             type="image/avif"
-            srcSet="/images/site/yer6-construction-hero-640.avif 640w, /images/site/yer6-construction-hero-960.avif 960w"
+            srcSet="/images/site/yer6-construction-hero-640.avif 640w, /images/site/yer6-construction-hero-768.avif 768w, /images/site/yer6-construction-hero-960.avif 960w"
             sizes="100vw"
           />
           <source
             type="image/webp"
-            srcSet="/images/site/yer6-construction-hero-640.webp 640w, /images/site/yer6-construction-hero-960.webp 960w"
+            srcSet="/images/site/yer6-construction-hero-640.webp 640w, /images/site/yer6-construction-hero-768.webp 768w, /images/site/yer6-construction-hero-960.webp 960w"
             sizes="100vw"
           />
           <img
             src="/images/site/yer6-construction-hero-640.jpg"
-            srcSet="/images/site/yer6-construction-hero-640.jpg 640w, /images/site/yer6-construction-hero-960.jpg 960w"
+            srcSet="/images/site/yer6-construction-hero-640.jpg 640w, /images/site/yer6-construction-hero-768.jpg 768w, /images/site/yer6-construction-hero-960.jpg 960w"
             sizes="100vw"
             alt="YER6 zemin güçlendirme ve temel mühendisliği saha uygulaması"
             className="h-full w-full object-cover opacity-42"
@@ -50,12 +70,15 @@ export function CinematicHero() {
           loop
           playsInline
           preload="none"
-          poster="/images/site/yer6-construction-hero-1400.webp"
+          src={videoReady ? `/videos/yer6-pile-installation.mp4?v=${MEDIA_VERSION}` : undefined}
+          poster={`/images/site/yer6-construction-hero-1400-poster.avif?v=${MEDIA_VERSION}`}
         >
-          <source
-            media="(min-width: 768px)"
-            src="https://assets.mixkit.co/videos/preview/mixkit-construction-workers-at-a-construction-site-4137-large.mp4"
-            type="video/mp4"
+          <track
+            default
+            kind="captions"
+            src={`/captions/hero-construction-tr.vtt?v=${MEDIA_VERSION}`}
+            srcLang="tr"
+            label="Türkçe"
           />
         </video>
         <div className="absolute inset-0 construction-texture opacity-80" />
@@ -74,24 +97,16 @@ export function CinematicHero() {
             <ShieldCheck className="h-4 w-4" />
             {t("heroBadge")}
           </motion.div>
-          <motion.h1
-            initial={{ opacity: 0, y: 28 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, delay: 0.48, ease: [0.22, 1, 0.36, 1] }}
-            className="max-w-5xl text-balance text-4xl font-semibold leading-tight text-white sm:text-5xl md:text-7xl lg:text-8xl"
-          >
+          <h1 className="max-w-5xl text-balance text-4xl font-semibold leading-tight text-white sm:text-5xl md:text-7xl lg:text-8xl">
             {t("slogan").split(" ").slice(0, 2).join(" ")}{" "}
             <span className="gold-text">{t("slogan").split(" ").slice(2, 4).join(" ")}</span>{" "}
             {t("slogan").split(" ").slice(4).join(" ")}
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.64 }}
-            className="mt-7 max-w-3xl text-lg leading-8 text-white/72 md:text-xl"
-          >
+          </h1>
+          {/* Bu paragraf mobil Lighthouse ölçümünde LCP öğesidir. İlk HTML
+              boyamasında görünür tutulur; yerleşim ve nihai görünüm değişmez. */}
+          <p className="mt-7 max-w-3xl text-lg leading-8 text-white/72 md:text-xl">
             {t("heroLead")}
-          </motion.p>
+          </p>
           <motion.div
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}

@@ -5,9 +5,15 @@ import { AnimatePresence, motion } from "framer-motion";
 
 export function PremiumLoader() {
   const [visible, setVisible] = useState(true);
+  const [compactTiming, setCompactTiming] = useState(false);
 
   useEffect(() => {
-    const timer = window.setTimeout(() => setVisible(false), 1250);
+    const isMobile = window.matchMedia("(max-width: 767px)").matches;
+    setCompactTiming(isMobile);
+
+    // Aynı premium açılış görseli mobilde daha akıcı ve kısa oynar. Renkler,
+    // öğeler ve sayfa yerleşimi değişmez; yalnızca yapay bekleme azaltılır.
+    const timer = window.setTimeout(() => setVisible(false), isMobile ? 480 : 1250);
     return () => window.clearTimeout(timer);
   }, []);
 
@@ -17,26 +23,26 @@ export function PremiumLoader() {
         <motion.div
           className="fixed inset-0 z-[120] grid place-items-center overflow-hidden bg-obsidian text-champagne"
           initial={{ opacity: 1 }}
-          exit={{ opacity: 0, transition: { duration: 0.65, ease: "easeInOut" } }}
+          exit={{ opacity: 0, transition: { duration: compactTiming ? 0.24 : 0.65, ease: "easeInOut" } }}
         >
           <motion.div
             className="absolute inset-x-0 top-1/2 h-px bg-gradient-to-r from-transparent via-gold-300 to-transparent"
             initial={{ scaleX: 0 }}
             animate={{ scaleX: 1 }}
-            transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: compactTiming ? 0.34 : 1, ease: [0.22, 1, 0.36, 1] }}
           />
           <motion.div
             className="relative grid h-36 w-36 place-items-center"
             initial={{ y: 18, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: compactTiming ? 0.38 : 0.75, ease: [0.22, 1, 0.36, 1] }}
           >
             <div className="absolute inset-0 rounded-full border border-gold-400/20" />
             <div className="absolute inset-4 rounded-full border border-gold-200/30" />
             <motion.div
               className="absolute inset-0 rounded-full border-t border-gold-200"
               animate={{ rotate: 360 }}
-              transition={{ duration: 1.35, repeat: Infinity, ease: "linear" }}
+              transition={{ duration: compactTiming ? 0.7 : 1.35, repeat: Infinity, ease: "linear" }}
             />
             <div className="text-center">
               <div className="text-3xl font-semibold tracking-[0.18em] text-white">YER6</div>

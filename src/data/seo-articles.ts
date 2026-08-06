@@ -403,5 +403,128 @@ export const seoArticles: KnowledgeArticle[] = [
     relatedSlugs: ["kazi-destek-sistemleri-nedir", "zemin-iyilestirme-risk-yonetimi"],
     keywords: ["öngermeli ankraj firmaları", "ankraj firmaları", "halatlı ankraj", "ankrajlı iksa"],
     published: true
+  },
+  {
+    slug: "eurocode-7-ve-tbdy-2018-zemin-guclendirme-standartlari",
+    title: "Eurocode 7 ve TBDY 2018 Zemin Güçlendirme Standartları Rehberi",
+    seoTitle: "Eurocode 7 ve TBDY 2018 Zemin Güçlendirme & İyileştirme Standartları | YER6",
+    description: "Eurocode 7 (EN 1997) ve Türkiye Deprem Yönetmeliği (TBDY 2018) geoteknik tasarım esasları, taşıma gücü ve oturma hesabı kriterleri.",
+    excerpt: "Eurocode 7 ve TBDY 2018 yönetmelikleri, zemin güçlendirme projelerinde sınır durumlar (ULS/SLS), kısmi güvenlik katsayıları ve sıvılaşma analizi esaslarını belirler.",
+    category: "Zemin İyileştirme",
+    readingTime: "11 dk",
+    publishedAt: "2026-08-01",
+    updatedAt: "2026-08-01",
+    heroLabel: "Uluslararası Geoteknik Standartlar",
+    introduction: "Modern zemin güçlendirme projelerinde yapısal güvenlik; Eurocode 7 (EN 1997-1) ve TBDY 2018 (Bölüm 16) geoteknik tasarım ilkelerinin sahada eksiksiz uygulanmasına bağlıdır.",
+    sections: [
+      {
+        id: "eurocode7-tasarim",
+        title: "1. Eurocode 7 (EN 1997) Geoteknik Tasarım Yaklaşımları",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Eurocode 7, geoteknik projelerde Tasarım Yaklaşımı 1 (DA1), DA2 ve DA3 olmak üzere 3 farklı kısmi güvenlik katsayısı kombinasyonu tanımlar. Türkiye uygulamasında TBDY 2018 Bölüm 16 ile uyumlu olarak taşıma gücü ve yenilme analizi taşıma gücü katsayıları (DA2/DA1-2) esas alınır."
+          }
+        ]
+      },
+      {
+        id: "tbdy2018-sivilasma",
+        title: "2. TBDY 2018 Bölüm 16 Sıvılaşma ve Zemin İyileştirme Esasları",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "TBDY 2018 standartları gereği, tasarım ivmesi altında sıvılaşma güvenlik faktörü (FS > 1.25 veya FS > 1.10) sağlanamayan zeminlerde Jet Grout, DSM veya Taş Kolon uygulamaları zorunlu kılınmaktadır. YER6, her projede imalat öncesi ve sonrası CPT/SPT doğrulamasını gerçekleştirir."
+          }
+        ]
+      }
+    ],
+    faq: [
+      { question: "TBDY 2018'e göre hangi zeminlerde zemin iyileştirme zorunludur?", answer: "Yeraltı su seviyesi yüksek, SPT N1,60 < 15 olan gevşek kum ve siltti zeminlerde sıvılaşma riski tespit edildiğinde zemin iyileştirme zorunludur." }
+    ],
+    relatedSlugs: ["zemin-iyilestirme-planlama", "zemin-kalite-kontrol-standartlari"],
+    keywords: ["Eurocode 7 zemin", "TBDY 2018 zemin güçlendirme", "geoteknik tasarım standartları", "EN 1997 zemin iyileştirme"],
+    published: true
+  },
+  {
+    slug: "astm-d2166-jet-grout-karot-ucs-basinc-dayanimi-testi",
+    title: "ASTM D2166 Standartına Göre Jet Grout Karot Basınç Dayanımı (UCS) Testi",
+    seoTitle: "ASTM D2166 Jet Grout Karot Basınç Dayanımı (UCS) Testi ve Kabul Kriterleri | YER6",
+    description: "ASTM D2166 ve ASTM D4219 standartlarına göre sertleşmiş jet grout (soilcrete) kolonlarından karot alımı, laboratuvar UCS basınç dayanımı deneyleri ve kabul limitleri.",
+    excerpt: "Jet grout imalatının kalitesini belirleyen en kritik laboratuvar doğrulaması ASTM D2166 standardına göre yapılan Serbest Basınç Dayanımı (UCS) kırım testidir.",
+    category: "Kalite Kontrol",
+    readingTime: "10 dk",
+    publishedAt: "2026-08-03",
+    updatedAt: "2026-08-03",
+    heroLabel: "Laboratuvar Kalite Kabul",
+    introduction: "Sertleşen jet grout (soilcrete) kolonlarının tasarım mukavemetini (ör. 28 günlük UCS: 5.0 - 12.0 MPa) doğrulamanın uluslararası kabul görmüş tek yolu ASTM D2166 kırım deneyidir.",
+    sections: [
+      {
+        id: "karot-alimi",
+        title: "1. Elmas Uçlu Karot Alma Standartları (ASTM D2113)",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "İmalattan 7 ila 28 gün sonra elmas uçlu tam dönerli karotiyer makineleri ile jet grout kolon aksından karot numunesi çıkarılır. Numune çapı minimum 70-100mm olmalı ve kırılmadan özel numune koruma sandıklarında ıslak muhafaza edilmelidir."
+          }
+        ]
+      },
+      {
+        id: "ucs-kirim-deneyi",
+        title: "2. ASTM D2166 UCS Basınç Dayanımı Kırım Prosedürü",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Laboratuvarda başlık giydirilen silindirik numuneler sabit eksenel gerinim hızında (%0.5 - %2.0/dakika) basınç presine tabi tutulur. Maksimum kırılma yükü kaydedilerek UCS mukavemeti (MPa) ve elastisite modülü (E50) hesaplanır."
+          }
+        ]
+      }
+    ],
+    faq: [
+      { question: "Jet grout UCS serbest basınç dayanımı kaç MPa olmalıdır?", answer: "Siltli killi zeminlerde 2.5 - 5.0 MPa, kumlu çakıllı zeminlerde 5.0 - 15.0 MPa aralığı uluslararası tasarım standardıdır." }
+    ],
+    relatedSlugs: ["jet-grout-kalite-kontrol-rehberi", "saha-denetimi-numune-testleri"],
+    keywords: ["ASTM D2166", "UCS testi", "jet grout karot dayanımı", "soilcrete basınç testi", "ASTM D4219"],
+    published: true
+  },
+  {
+    slug: "ice-piling-specification-fore-kazik-kalite-kontrol-rehberi",
+    title: "ICE Kılavuzuna Göre Fore Kazık ve İksa Sistemleri Kalite Kabul Rehberi",
+    seoTitle: "ICE Kılavuzuna Göre Fore Kazık ve İksa Sistemleri Kalite Kabul Rehberi | YER6",
+    description: "ICE (Institution of Civil Engineers) standart şartnamesine göre fore kazık delgisi, bentonit çamuru kalitesi, tremie betonlama ve yükleme testleri kabul kriterleri.",
+    excerpt: "Uluslararası ICE (Institution of Civil Engineers) fore kazık şartnamesi, derin temel imalatlarında sıfır hata ve aksiyal yük kapasitesi garantisi için altın standarttır.",
+    category: "Fore Kazık",
+    readingTime: "12 dk",
+    publishedAt: "2026-08-05",
+    updatedAt: "2026-08-05",
+    heroLabel: "Küresel İhale Kılavuzu",
+    introduction: "Uluslararası prestijli altyapı ve kentsel dönüşüm projelerinde fore kazık imalatları ICE Specification for Piling and Embedded Retaining Walls kılavuzuna göre denetlenir.",
+    sections: [
+      {
+        id: "delgi-duseylik",
+        title: "1. Kazık Düşeyliği ve Çap Toleransları (ICE Kriterleri)",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "ICE standartlarına göre fore kazık düşey eksenden sapma toleransı maksimum 1/75 (yaklaşık %1.33) olmalıdır. Kazık merkez konum sapması ise yüzeyde maksimum 75mm ile sınırlandırılmıştır."
+          }
+        ]
+      },
+      {
+        id: "tremie-betonlama",
+        title: "2. Tremie Borulu Sualtı Betonlaması ve Slump Kabulü",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Yeraltı suyu altındaki delgilerde beton ayrışmasını (segregasyon) engellemek için minimum 180-220mm slump değerine sahip yüksek işlenebilirlikli C30/37 hazır beton kullanılır. Tremie borusu sürekli beton içinde min 2.0m gömülü kalmalıdır."
+          }
+        ]
+      }
+    ],
+    faq: [
+      { question: "ICE kılavuzuna göre fore kazık yükleme testleri nasıl yapılır?", answer: "Maksimum tasarım yükünün 1.5 katı hidrolik krikolarla kademeli uygulanır; oturma ve geri yaylanma değerleri mikrometrelerle 24 saat izlenir." }
+    ],
+    relatedSlugs: ["fore-kazik-tremie-beton-dokum-kriterleri", "kazik-yukleme-testleri"],
+    keywords: ["ICE piling specification", "fore kazık kalite kontrol", "ICE kazık şartnamesi", "tremie betonlama"],
+    published: true
   }
 ];
