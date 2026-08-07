@@ -25,6 +25,9 @@ export function Footer() {
             <a href={siteConfig.emailHref} aria-label={t("footerEmailAria").replace("{value}", siteConfig.email)} className="inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2">
               <Mail className="h-4 w-4 text-gold-200" /> {siteConfig.email}
             </a>
+            <a href={siteConfig.facebookUrl} target="_blank" rel="noopener noreferrer" aria-label="YER6 Facebook Sayfası" className="inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2 hover:border-gold-200/50 hover:text-gold-100 transition-colors">
+              Facebook Sayfamız
+            </a>
           </div>
         </div>
 

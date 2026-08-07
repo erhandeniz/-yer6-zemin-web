@@ -13,6 +13,7 @@ export const siteConfig = {
   // (kalış süresi, kaydırma, tıklama haritası, webvisor) doğrudan Metrica'dan okur
   // ve sıralamaya yansıtır. Boş bırakılırsa yüklenmez.
   yandexMetricaId: "110832579",
+  facebookUrl: "https://www.facebook.com/Yer6ZeminGeoteknik",
   phone: {
     display: "+90 532 378 06 91",
     href: "tel:+905323780691"

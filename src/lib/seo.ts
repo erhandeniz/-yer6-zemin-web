@@ -28,6 +28,7 @@ export const localSeoServices = [
 
 // Sosyal medya profilleri açıldığında doğrulanmış URL'ler buraya eklenebilir.
 export const socialProfiles: string[] = [
+  "https://www.facebook.com/Yer6ZeminGeoteknik",
   "https://armut.com/hizmetveren/yer6-zemin-guclendirme-geoteknik-muhendislik-ankara-golbasi-zemin-iyilestirme_85780374",
   "https://www.youtube.com/channel/UCCikguZzwvtEg3peobxzSQw"
 ];
