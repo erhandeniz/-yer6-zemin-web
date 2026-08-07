@@ -74,6 +74,16 @@ export function ContactContent() {
           >
             Yer6 Zemin Güçlendirme Geoteknik Mühendislik — Armut Profili
           </a>
+          <div className="w-full border-t border-white/10 pt-4">
+            <a
+              href={siteConfig.facebookUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-gold-200 transition hover:text-gold-100"
+            >
+              Resmi Facebook Sayfamız: facebook.com/Yer6ZeminGeoteknik
+            </a>
+          </div>
         </div>
       </section>
       <section className="px-5 pb-24">
