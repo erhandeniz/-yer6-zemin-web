@@ -53,15 +53,26 @@ export function ContactContent() {
       </section>
       <section className="px-5 pb-24">
         <div className="mx-auto flex max-w-7xl flex-col items-center gap-5 rounded-[2rem] border border-white/10 bg-white/[0.045] p-8 text-center">
-          <a
-            href={siteConfig.facebookUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-3 text-base font-semibold text-gold-200 transition hover:text-gold-100"
-          >
-            <span className="rounded-full bg-blue-600/20 px-3 py-1 text-xs text-blue-400 border border-blue-500/30">Resmi Sosyal Medya</span>
-            Resmi Facebook Sayfamız: facebook.com/Yer6ZeminGeoteknik
-          </a>
+          <div className="flex flex-wrap items-center justify-center gap-6">
+            <a
+              href={siteConfig.facebookUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-3 text-base font-semibold text-gold-200 transition hover:text-gold-100"
+            >
+              <span className="rounded-full bg-blue-600/20 px-3 py-1 text-xs text-blue-400 border border-blue-500/30">Facebook</span>
+              facebook.com/Yer6ZeminGeoteknik
+            </a>
+            <a
+              href={siteConfig.linkedinUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-3 text-base font-semibold text-gold-200 transition hover:text-gold-100"
+            >
+              <span className="rounded-full bg-sky-600/20 px-3 py-1 text-xs text-sky-400 border border-sky-500/30">LinkedIn</span>
+              YER6 LinkedIn Kurumsal
+            </a>
+          </div>
           {/* SEO Backlink Verification (Hidden from UI to maintain elite corporate aesthetic) */}
           <a
             href="https://armut.com/hizmetveren/yer6-zemin-guclendirme-geoteknik-muhendislik-ankara-golbasi-zemin-iyilestirme_85780374"

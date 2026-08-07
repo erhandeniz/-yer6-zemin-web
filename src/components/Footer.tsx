@@ -28,6 +28,9 @@ export function Footer() {
             <a href={siteConfig.facebookUrl} target="_blank" rel="noopener noreferrer" aria-label="YER6 Facebook Sayfası" className="inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2 hover:border-gold-200/50 hover:text-gold-100 transition-colors">
               Facebook Sayfamız
             </a>
+            <a href={siteConfig.linkedinUrl} target="_blank" rel="noopener noreferrer" aria-label="YER6 LinkedIn Profili" className="inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2 hover:border-gold-200/50 hover:text-gold-100 transition-colors">
+              LinkedIn Profili
+            </a>
           </div>
         </div>
 
