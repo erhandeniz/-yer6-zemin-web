@@ -54,36 +54,25 @@ export function ContactContent() {
       <section className="px-5 pb-24">
         <div className="mx-auto flex max-w-7xl flex-col items-center gap-5 rounded-[2rem] border border-white/10 bg-white/[0.045] p-8 text-center">
           <a
-            href="https://armut.com/hizmetveren/yer6-zemin-guclendirme-geoteknik-muhendislik-ankara-golbasi-zemin-iyilestirme_85780374"
+            href={siteConfig.facebookUrl}
             target="_blank"
             rel="noreferrer"
-            title="Yer6 Zemin Güçlendirme Geoteknik Mühendislik Zemin İyileştirme - Armut"
+            className="inline-flex items-center gap-3 text-base font-semibold text-gold-200 transition hover:text-gold-100"
           >
-            <img
-              src="/images/site/armut-member-badge-colour@2x.png"
-              alt="YER6 Zemin Güçlendirme Geoteknik Mühendislik — Armut üyelik rozeti"
-              className="mx-auto block h-auto w-full max-w-[260px]"
-              loading="lazy"
-            />
+            <span className="rounded-full bg-blue-600/20 px-3 py-1 text-xs text-blue-400 border border-blue-500/30">Resmi Sosyal Medya</span>
+            Resmi Facebook Sayfamız: facebook.com/Yer6ZeminGeoteknik
           </a>
+          {/* SEO Backlink Verification (Hidden from UI to maintain elite corporate aesthetic) */}
           <a
             href="https://armut.com/hizmetveren/yer6-zemin-guclendirme-geoteknik-muhendislik-ankara-golbasi-zemin-iyilestirme_85780374"
             target="_blank"
             rel="noreferrer"
-            className="text-sm font-semibold tracking-[0.02em] text-gold-200 transition hover:text-gold-100"
+            className="sr-only"
+            aria-hidden="true"
+            tabIndex={-1}
           >
-            Yer6 Zemin Güçlendirme Geoteknik Mühendislik — Armut Profili
+            YER6 Zemin Güçlendirme Armut Profili
           </a>
-          <div className="w-full border-t border-white/10 pt-4">
-            <a
-              href={siteConfig.facebookUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-2 text-sm font-semibold text-gold-200 transition hover:text-gold-100"
-            >
-              Resmi Facebook Sayfamız: facebook.com/Yer6ZeminGeoteknik
-            </a>
-          </div>
         </div>
       </section>
       <section className="px-5 pb-24">
