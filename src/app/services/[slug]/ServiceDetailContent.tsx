@@ -195,6 +195,37 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
                 </ul>
               </div>
 
+              {/* Fore Kazık & Ağır Geoteknik Makine Parkuru İndeksleme Kartı (Yandex & Google #1 Engine) */}
+              {service.slug === "fore-kazik" && (
+                <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-8">
+                  <h2 className="text-2xl font-semibold text-white">Fore Kazık Delgi Makinesi Parkurumuz</h2>
+                  <p className="mt-3 text-sm text-white/55">
+                    Derin temel, iksa ve ağır geoteknik projeleriniz için YER6 bünyesindeki yüksek torklu rotary delgi makineleri
+                  </p>
+                  <div className="mt-6 grid gap-4 sm:grid-cols-2">
+                    <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
+                      <h3 className="font-semibold text-white text-base">Bauer BG 45 BS 95</h3>
+                      <p className="mt-1 text-xs text-gold-200">461 kNm Tork · 100 m Delgi Derinliği</p>
+                      <p className="mt-2 text-xs leading-5 text-white/65">
+                        Büyük çaplı kılıflı/kılıfsız fore kazık, baret kazık ve derin temeller için yüksek kapasiteli Alman mühendisliği.
+                      </p>
+                    </div>
+                    <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
+                      <h3 className="font-semibold text-white text-base">Bauer BG 28 H PremiumLine</h3>
+                      <p className="mt-1 text-xs text-gold-200">277 kNm Tork · 65,7 m Delgi Derinliği</p>
+                      <p className="mt-2 text-xs leading-5 text-white/65">
+                        Orta ve ağır zemin koşullarında yüksek imalat hızı ve hassas dikey tolerans sağlayan rotary delgi makinesi.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="mt-5 text-right">
+                    <Link href="/equipment-fleet" className="inline-flex items-center gap-2 text-xs font-semibold text-gold-200 hover:text-gold-100">
+                      Tüm Makine Parkurunu İncele &rarr;
+                    </Link>
+                  </div>
+                </div>
+              )}
+
               {/* Saha Uygulama YouTube Video Oyuncusu & Video Schema */}
               <YouTubeVideoPlayer
                 title={`YER6 ${t(`${service.key}_title`)} Saha Uygulama Çekimleri`}

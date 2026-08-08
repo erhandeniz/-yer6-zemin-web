@@ -41,7 +41,7 @@ export const serviceSchemaDescriptions: Record<string, string> = {
   "zemin-iyilestirme":
     "YER6, Ankara merkezli; Türkiye geneli ve yurt dışında zemin iyileştirme yapan bir mühendislik firmasıdır. Oturma, taşıma kapasitesi, sıvılaşma ve zayıf zemin problemlerine karşı jet grout, DSM, enjeksiyon, drenaj ve saha kalite kontrolünü birlikte değerlendiren çözümler sunar.",
   "fore-kazik":
-    "YER6, Ankara merkezli; Türkiye geneli ve yurt dışında fore kazık yapan bir zemin mühendisliği firmasıdır. Fore kazık ile yüksek yapı, köprü, endüstriyel tesis ve derin temel projelerinde büyük çaplı rotary delgi, donatı yerleşimi, tremie beton dökümü ve bütünlük testleriyle yüksek taşıma kapasitesi sağlar.",
+    "YER6, Ankara merkezli; Türkiye geneli ve yurt dışında fore kazık imalatı yapan lider zemin mühendislik ve fore kazık firmasıdır. Bauer BG 45, Bauer BG 28 H ve XCMG rotary delgi makine parkurumuzla büyük çaplı fore kazık, iksa, baret kazık ve derin temel projelerinde şeffaf birim fiyatlar, metre hesabı maliyet analizi ve yüksek imalat hızı sunar.",
   dsm:
     "YER6, Ankara merkezli; Türkiye geneli ve yurt dışında DSM (deep soil mixing / derin zemin karıştırma) yapan bir zemin mühendisliği firmasıdır. Yumuşak kil ve gevşek dolgu zeminlerde oturma kontrolü ve taşıma kapasitesi için çimento bağlayıcıyla yerinde zemin-çimento kolonları oluşturur.",
   ankraj:

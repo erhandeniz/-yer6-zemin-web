@@ -23,23 +23,23 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const canonical = `${siteConfig.siteUrl}/services/${service.slug}/`;
   const serviceSeoTitles: Record<string, string> = {
-    "jet-grout": "Jet Grout Firmaları | Türkiye Geneli Jet Grout Uygulaması",
-    dsm: "DSM Firmaları | Deep Soil Mixing Zemin İyileştirme",
-    "fore-kazik": "Fore Kazık Firmaları | Türkiye Geneli Fore Kazık Uygulaması",
-    "mini-kazik": "Mini Kazık Firmaları | Türkiye Geneli Mini Kazık ve Askıya Alma",
-    ankraj: "Ankraj Firmaları | Türkiye Geneli Öngermeli Ankraj Uygulaması",
-    "iksa-sistemleri": "İksa Firmaları | Derin Kazı İksa Sistemleri ve Çözümleri",
+    "jet-grout": "Jet Grout Firmaları ve Birim Fiyatları 2026 | YER6 Geoteknik",
+    dsm: "DSM Firmaları | Deep Soil Mixing Zemin İyileştirme Fiyatları 2026",
+    "fore-kazik": "Fore Kazık Firmaları ve Birim Fiyatları 2026 | YER6 Geoteknik",
+    "mini-kazik": "Mini Kazık Firmaları ve Temel Güçlendirme Fiyatları 2026 | YER6",
+    ankraj: "Ankraj Firmaları ve Öngermeli İksa Fiyatları 2026 | YER6",
+    "iksa-sistemleri": "İksa Firmaları | Derin Kazı İksa Sistemleri ve Çözümleri 2026",
     "zemin-iyilestirme": "Zemin İyileştirme Yöntemleri ve Birim Fiyatları 2026 | YER6",
-    "zemin-guclendirme": "Zemin Güçlendirme Firmaları | Türkiye Geneli Temel ve Zemin Güçlendirme",
-    "geoteknik-danismanlik": "Geoteknik Danışmanlık ve Zemin Etüdü Firmaları",
-    "zemin-civisi": "Zemin Çivisi (Soil Nailing) Uygulaması ve Avantajları",
-    "puskurtme-beton": "Püskürtme Beton (Shotcrete) Uygulaması ve Kullanım Alanları",
-    "kazik-yukleme-testleri": "Kazık Yükleme ve Bütünlük (PIT) Testleri",
-    "zemin-etudu": "Zemin Etüdü: Sondaj, Arazi Deneyleri ve Geoteknik Rapor",
-    "tas-kolon": "Taş Kolon (Stone Column) Zemin İyileştirme Uygulaması",
-    "diafram-duvar": "Diyafram Duvar İmalatı: Derin Kazı ve İksa Çözümü",
+    "zemin-guclendirme": "Zemin Güçlendirme Firmaları ve Maliyet Hesaplama 2026 | YER6",
+    "geoteknik-danismanlik": "Geoteknik Danışmanlık ve Zemin Etüdü Firmaları 2026",
+    "zemin-civisi": "Zemin Çivisi (Soil Nailing) Uygulaması ve Birim Fiyatları 2026",
+    "puskurtme-beton": "Püskürtme Beton (Shotcrete) Firmaları ve m2 Fiyatları 2026",
+    "kazik-yukleme-testleri": "Kazık Yükleme Testi ve Bütünlük (PIT) Testi Firmaları",
+    "zemin-etudu": "Zemin Etüdü Firmaları | Sondaj, Arazi Deneyleri ve Geoteknik Rapor",
+    "tas-kolon": "Taş Kolon (Stone Column) Zemin İyileştirme Firmaları 2026",
+    "diafram-duvar": "Diyafram Duvar Firmaları ve Derin Kazı İksa Çözümleri",
     "bina-alti-jet-grout": "Bina Altı Jet Grout Firmaları | Elektrikli Titreşimsiz Temel Güçlendirme",
-    "cfa-kazik": "CFA Kazık Firmaları | Continuous Flight Auger (CFA) Zemin Güçlendirme",
+    "cfa-kazik": "CFA Kazık Firmaları ve Metraj Maliyeti 2026 | YER6 Geoteknik",
     "deep-soil-mixing": "Deep Soil Mixing Firmaları | DSM Zemin İyileştirme & Derin Zemin Karıştırma"
   };
   const seoTitle = serviceSeoTitles[service.slug] ?? `${service.title} Zemin Güçlendirme Hizmeti`;
