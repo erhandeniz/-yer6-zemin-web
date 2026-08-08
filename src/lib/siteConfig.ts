@@ -15,6 +15,7 @@ export const siteConfig = {
   yandexMetricaId: "110832579",
   facebookUrl: "https://www.facebook.com/Yer6ZeminGeoteknik",
   linkedinUrl: "https://www.linkedin.com/in/yer6-zemin-g%C3%BC%C3%A7lendirme-geoteknik-m%C3%BChendislik-511763428/",
+  googleMapsUrl: "https://maps.google.com/?cid=YER6Geoteknik",
   phone: {
     display: "+90 532 378 06 91",
     href: "tel:+905323780691"

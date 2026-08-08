@@ -12,6 +12,7 @@ import { publishedKnowledgeArticles } from "@/data/knowledge";
 import { useLanguage } from "@/components/LanguageProvider";
 import { siteConfig } from "@/lib/siteConfig";
 import { parseMarkdownLinks } from "@/components/LinkParser";
+import { YouTubeVideoPlayer } from "@/components/YouTubeVideoPlayer";
 
 const serviceArticleMap: Record<string, string[]> = {
   "jet-grout": ["yer-alti-zemin-iyilestirme", "jet-grout-nedir", "jet-grout-hangi-zeminlerde-uygulanir", "jet-grout-kalite-kontrol"],
@@ -194,6 +195,12 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
                 </ul>
               </div>
 
+              {/* Saha Uygulama YouTube Video Oyuncusu & Video Schema */}
+              <YouTubeVideoPlayer
+                title={`YER6 ${t(`${service.key}_title`)} Saha Uygulama Çekimleri`}
+                description={`YER6 Geoteknik mühendislik ekibinin sahada gerçekleştirdiği ${t(`${service.key}_title`)} operasyonu ve kalite kontrol test süreçleri.`}
+              />
+
               {/* Sık Sorulan Sorular */}
               {"faq" in service && service.faq && (service.faq as { question: string; answer: string }[]).length > 0 && (
                 <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-8">
@@ -296,6 +303,31 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
                         </Link>
                       );
                     })}
+                  </div>
+                </div>
+              )}
+
+              {/* ⚡ Canlı Hesaplayıcı Çağrısı (Dwell Time & Engagement Engine) */}
+              {calculatorTool && (
+                <div className="rounded-[2rem] border border-gold-300/30 bg-gradient-to-r from-obsidian via-gold-950/40 to-obsidian p-8 text-white shadow-xl">
+                  <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
+                    <div>
+                      <div className="inline-flex items-center gap-2 rounded-full border border-gold-300/30 bg-gold-300/10 px-3 py-1 text-xs font-semibold text-gold-200">
+                        <Calculator className="h-3.5 w-3.5" /> Anlık Ön Değerlendirme & Metraj
+                      </div>
+                      <h3 className="mt-3 text-xl font-bold text-white">
+                        {calculatorTool.h1}
+                      </h3>
+                      <p className="mt-2 text-sm text-white/70 max-w-xl">
+                        Projenizin tahmini adet, delgi derinliği ve çap parametrelerini girerek canlı döviz kuru üzerinden tahmini metraj ve yaklaşık birim maliyet analizi alın.
+                      </p>
+                    </div>
+                    <Link
+                      href={`/hesaplama/${calculatorTool.slug}/`}
+                      className="inline-flex shrink-0 items-center justify-center gap-2 rounded-2xl bg-gold-300 px-6 py-3.5 text-sm font-bold text-obsidian transition hover:bg-gold-200"
+                    >
+                      <Calculator className="h-4 w-4" /> Hesaplamaya Başla
+                    </Link>
                   </div>
                 </div>
               )}

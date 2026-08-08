@@ -30,6 +30,7 @@ export const localSeoServices = [
 export const socialProfiles: string[] = [
   "https://www.facebook.com/Yer6ZeminGeoteknik",
   "https://www.linkedin.com/in/yer6-zemin-g%C3%BC%C3%A7lendirme-geoteknik-m%C3%BChendislik-511763428/",
+  "https://maps.google.com/?cid=YER6Geoteknik",
   "https://armut.com/hizmetveren/yer6-zemin-guclendirme-geoteknik-muhendislik-ankara-golbasi-zemin-iyilestirme_85780374",
   "https://www.youtube.com/channel/UCCikguZzwvtEg3peobxzSQw"
 ];
