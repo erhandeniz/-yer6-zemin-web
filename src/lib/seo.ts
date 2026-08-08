@@ -418,6 +418,11 @@ export function generateFAQSchema(faqs: { question: string; answer: string }[]) 
   };
 }
 
+export function stripMarkdownLinks(text: string): string {
+  if (!text) return "";
+  return text.replace(/\[([^\]]+)\]\([^)]+\)/g, "$1");
+}
+
 export function generateArticleSchema(article: {
   headline: string;
   description: string;
@@ -444,7 +449,7 @@ export function generateArticleSchema(article: {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: article.headline,
-    description: article.description,
+    description: stripMarkdownLinks(article.description),
     image: article.image || `${siteConfig.siteUrl}/opengraph-image.png`,
     datePublished: article.datePublished,
     dateModified: article.dateModified || article.datePublished,

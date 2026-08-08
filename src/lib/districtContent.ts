@@ -54,7 +54,7 @@ function buildDistrict(s: DistrictSeed): CityPage {
       `bir arada değerlendirilerek verilmelidir.`,
     soilContext:
       `${s.district} ve çevresinde ${s.soil} koşulları öne çıkar. ${cap(s.risk)}; ` +
-      `[zemin iyileştirme yöntemleri](/knowledge/yer-alti-zemin-iyilestirme/) ve saha/laboratuvar parametreleriyle birlikte oturma ve taşıma gücü açısından değerlendirilir.`,
+      `zemin iyileştirme yöntemleri ve saha/laboratuvar parametreleriyle birlikte oturma ve taşıma gücü açısından değerlendirilir.`,
     recommendedApproach:
       `Bu koşullarda ${primary}${secondary ? `, tamamlayıcı olarak ${secondary}` : ""} kurgulanır; ` +
       `çözüm zemin profiline, yeraltı suyuna ve yapı yüklerine göre projelendirilir.`,

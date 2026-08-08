@@ -39,7 +39,7 @@ export const cityPages: CityPage[] = [
     heroLead:
       "Bursa'da zemin güçlendirme kararları; ova alüvyonları, sanayi parsellerindeki dolgu tabakaları ve yüksek işletme yükleri birlikte değerlendirilerek verilmelidir.",
     soilContext:
-      "Nilüfer, Osmangazi ve Gemlik çevresinde gevşek dolgu, yumuşak kil ve yer yer yüksek yeraltı suyu koşulları; [kapsamlı zemin iyileştirme yöntemleri](/knowledge/yer-alti-zemin-iyilestirme/) ve geoteknik parametreler doğrultusunda oturma ve taşıma gücü açısından değerlendirilmelidir.",
+      "Nilüfer, Osmangazi ve Gemlik çevresinde gevşek dolgu, yumuşak kil ve yer yer yüksek yeraltı suyu koşulları; kapsamlı zemin iyileştirme yöntemleri ve geoteknik parametreler doğrultusunda oturma ve taşıma gücü açısından değerlendirilmelidir.",
     recommendedApproach:
       "Lojistik ve üretim tesislerinde DSM zemin iyileştirme, temel altı kolon düzeni ve gerektiğinde jet grout enjeksiyon perdesi birlikte kurgulanır.",
     qualityFocus:
@@ -58,7 +58,7 @@ export const cityPages: CityPage[] = [
     soilContext:
       "Körfez çevresi ve alüvyon alanlarda gevşek kum-silt seviyeleri, su geçirgenliği ve deprem etkisi jet grout veya DSM seçimini doğrudan etkiler.",
     recommendedApproach:
-      "Su kontrolü gereken alanlarda jet grout ve enjeksiyon; oturma kontrolü gereken geniş parsellerde ise [zemine uygun iyileştirme yöntemi seçimi](/knowledge/yer-alti-zemin-iyilestirme/) kriterlerine göre DSM zemin iyileştirme tercih edilebilir.",
+      "Su kontrolü gereken alanlarda jet grout ve enjeksiyon; oturma kontrolü gereken geniş parsellerde ise zemine uygun iyileştirme yöntemi seçimi kriterlerine göre DSM zemin iyileştirme tercih edilebilir.",
     qualityFocus:
       "İzmir sahalarında basins kayıtları, kolon çapı doğrulaması ve yeraltı suyu davranışı kalite kabul sürecinin ana parçalarıdır.",
     serviceSlugs: ["jet-grout", "dsm", "fore-kazik", "zemin-iyilestirme"],
