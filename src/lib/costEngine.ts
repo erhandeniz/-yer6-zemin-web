@@ -60,13 +60,13 @@ const DAILY_METERS: Record<CalcMode, number> = {
   ankraj: 150,
 };
 
-// Delgi metresi başına mazot tüketimi (lt/m).
+// Delgi metresi başına mazot tüketimi (lt/m) — YER6 Saha Gerçekleri
 const DIESEL_PER_METER: Record<CalcMode, number> = {
-  "jet-grout": 6,
-  dsm: 7,
-  "fore-kazik": 12,
-  "mini-kazik": 7,
-  ankraj: 5,
+  "jet-grout": 0.55, // Ø60 kolon: 0.50 - 0.70 lt/m reel sarfiyat
+  dsm: 1.25, // DSM kolon: 1.0 - 1.5 lt/m reel sarfiyat
+  "fore-kazik": 3.0, // Fore kazık: 2.5 - 3.5 lt/m reel sarfiyat
+  "mini-kazik": 0.5, // Mini kazık: 0.4 - 0.6 lt/m reel sarfiyat
+  ankraj: 0.4, // Ankraj delgi: 0.3 - 0.5 lt/m reel sarfiyat
 };
 
 // Mobilizasyon/demobilizasyon (kurulum-sökülüm-nakliye), ₺ sabit.
@@ -78,18 +78,15 @@ const MOBILIZATION: Record<CalcMode, PricedUnit> = {
   ankraj: { price: 90000, fxSensitivity: 0.3, note: "Mobilizasyon-demobilizasyon" },
 };
 
-// Oranlar
-const CONSUMABLES_RATE = 0.06; // sarf/küçük ekipman
-const SITE_OVERHEAD_RATE = 0.08; // şantiye genel gideri
-const PROFIT_RATE = 0.12; // firma kârı
+// Oranlar — YER6 Sözleşme Standartları
+const CONSUMABLES_RATE = 0.05; // sarf/küçük ekipman (%5)
+const SITE_OVERHEAD_RATE = 0.08; // şantiye genel gideri (%8)
+const PROFIT_RATE = 0.35; // FİRMA KÂR MARJI (%35)
 const CONFIDENCE_BAND = 0.1; // ±%10 belirsizlik bandı
 const KDV_RATE = 0.2;
 
-// OTOMATİK ESKALASYON: Katalog tarihinden bu yana geçen her ay için yerel/işçilik
-// payına uygulanan TR inşaat maliyet endeksi mertebesinde artış. Böylece "bir kez
-// kur, hep güncel kalsın" — kur bağlı pay canlı kurla, yerel pay zamanla otomatik
-// güncellenir; katalog elle güncellenmese bile fiyat eskimez.
-const MONTHLY_ESCALATION = 0.025; // ~%2.5/ay (TR inşaat maliyet endeksi mertebesi)
+// OTOMATİK ESKALASYON: Canlı döviz rasyosuna göre güncellenir.
+const MONTHLY_ESCALATION = 0.0; // suni fiyat şişirme engellendi
 const MAX_ESCALATION_MONTHS = 36; // güvenlik tavanı (katalog çok eskirse patlamasın)
 
 /** PRICE_BOOK_AS_OF ("YYYY-MM") tarihinden bugüne geçen tam ay sayısı (0..MAX). */
@@ -209,10 +206,16 @@ export function computeEstimate(input: CostInput): Estimate {
     steelTon = (totalVolume * 120) / 1000; // 120 kg/m³ donatı
     items.push({ name: "Hazır beton C30", qty: concreteM3, unit: "m³", unitPrice: p.concrete + p.pump, total: concreteM3 * (p.concrete + p.pump), group: "malzeme" });
     items.push({ name: "Nervürlü çelik donatı", qty: steelTon, unit: "ton", unitPrice: p.rebar, total: steelTon * p.rebar, group: "malzeme" });
-  } else if (mode === "jet-grout" || mode === "dsm") {
-    const dosage = complexity === "advanced" && soilType === "soft" ? 450 : 350; // kg/m
+  } else if (mode === "jet-grout") {
+    // Ø60 kolon için tam 126 kg/m reel şantiye sarfiyatı (çap karesiyle ölçeklenir)
+    const diameterRatio = Math.pow(diameter / 0.6, 2);
+    const dosage = 126 * diameterRatio * (complexity === "advanced" && soilType === "soft" ? 1.15 : 1.0);
     cementTon = (drillMeters * dosage) / 1000;
     items.push({ name: "Enjeksiyon çimentosu (CEM 42.5)", qty: cementTon, unit: "ton", unitPrice: p.cement, total: cementTon * p.cement, group: "malzeme" });
+  } else if (mode === "dsm") {
+    const dosage = 180 * (complexity === "advanced" && soilType === "soft" ? 1.2 : 1.0); // kg/m³
+    cementTon = (totalVolume * dosage) / 1000;
+    items.push({ name: "Enjeksiyon bağlayıcısı (CEM 42.5)", qty: cementTon, unit: "ton", unitPrice: p.cement, total: cementTon * p.cement, group: "malzeme" });
   } else if (mode === "ankraj") {
     strandM = drillMeters * 4; // 4 halat/ankraj
     groutM3 = drillMeters * 0.05;
