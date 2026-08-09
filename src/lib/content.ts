@@ -678,30 +678,6 @@ export const services = [
       { question: "Palplanş çakımı titreşim yapar mı?", answer: "Standart yüksek frekanslı vibro çakıcılar belirli bir titreşim üretir. Çevre yapılara yakın veya hassas sahalarda titreşimsiz hidrolik pres (press-in) çakım makineleri kullanılır." },
       { question: "Palplanş suyu tamamen keser mi?", answer: "Evet, kenet (interlock) aralarına uygulanan özel su tutucu gres veya poliüretan mastik ile %100 su geçirimsiz batardo ve perde elde edilir." }
     ]
-  },
-  {
-    slug: "pamplas",
-    key: "svc_pamplas",
-    icon: ShieldCheck,
-    title: "Palplanş (Pamplaş Çelik İksa)",
-    summary: "Su geçirimsiz çelik palplanş perdesi ve vibro çakım çözümleri.",
-    detail: "Yeraltı suyunun yoğun olduğu sahalarda Larssen kenetli çelik palplanş (pamplaş) sistemleriyle %100 su kesici perde iksa imalatı.",
-    specs: ["Larssen & Z Profil Çelik Palplanş", "Vibro Çakıcı Vinç", "Su Geçirimsiz Batardo"],
-    applications: [
-      "Derin kazılarda palplanş (pamplaş) perde iksa",
-      "Su kesici batardo ve rıhtım iksa yapısı"
-    ],
-    advantages: [
-      "%100 Su Geçirimsizliği",
-      "Sökülüp Tekrar Kullanılabilir"
-    ],
-    processSteps: [
-      { title: "Aplikasyon ve Çakım", description: "Çelik profiller vibro çakıcı ile zemin kotuna çakılır." }
-    ],
-    technicalNote: "Eurocode 3 Part 5 ve EN 12063 standartlarında palplanş çakımı yapılır.",
-    faq: [
-      { question: "Palplanş / Pamplaş m2 fiyatı nedir?", answer: "Metraj ve profil cinsine göre değişir, sitemizdeki maliyet hesaplayıcı ile anında hesaplayabilirsiniz." }
-    ]
   }
 ];
 
@@ -832,7 +808,8 @@ export const standaloneServices = [
 export const allServices = [...services, ...standaloneServices];
 
 export function getServiceBySlug(slug: string) {
-  return allServices.find((service) => service.slug === slug);
+  const targetSlug = slug === "pamplas" ? "palplans" : slug;
+  return allServices.find((service) => service.slug === targetSlug);
 }
 
 export function getServicePaths() {

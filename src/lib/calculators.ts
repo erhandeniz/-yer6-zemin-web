@@ -465,49 +465,12 @@ export const CALCULATOR_TOOLS: CalculatorTool[] = [
     ],
     relatedServices: ["palplans", "iksa-sistemleri", "diafram-duvar"],
     relatedArticles: ["iksa-sistemi-nasil-secilir", "kazi-destek-sistemleri-nedir"]
-  },
-  {
-    slug: "pamplas-maliyet-hesaplama",
-    mode: "palplans",
-    h1: "Palplanş (Pamplaş) Maliyet Hesaplama 2026",
-    seoTitle: "Pamplaş Hesaplama ve Palplanş m2 Maliyeti 2026 | YER6 Geoteknik",
-    metaDescription:
-      "Pamplaş / Palplanş çelik iksa perdesi maliyet hesaplama aracı ile m² metrajı ve vibro çakım birim fiyatlarını hesaplayın.",
-    keywords: [
-      "pamplaş hesaplama",
-      "pamplaş maliyet hesaplama",
-      "palplanş m2 fiyatı 2026"
-    ],
-    directAnswer:
-      "Palplanş (Pamplaş) maliyeti; çakılacak perde metrajı ve profil kesitine göre değişir. Bu araç girdiğiniz değerlerden tahmini m² maliyetini üretir.",
-    labels: {
-      count: "Profil adedi",
-      depth: "Profil boyu (m)",
-      diameter: "Profil genişliği (cm)",
-      countHelp: "Çakılacak pamplaş çelik profil adedi.",
-      depthHelp: "Profil boyu.",
-      diameterHelp: "Profil modüler genişliği."
-    },
-    defaults: { count: 100, depth: 12, diameter: 60 },
-    methodology: [
-      "Perde alanı (m²) = profil adedi × profil genişliği × boy",
-      "Canlı döviz kuru ve YER6 saha verileriyle kalibre edilir"
-    ],
-    costFactors: ["Profil kesiti", "Zemin sertliği", "Çakım ekipmanı"],
-    limitations: ["Statik zemin analizi ayrı yapılır"],
-    faq: [
-      {
-        question: "Pamplaş maliyeti neye göre belirlenir?",
-        answer: "Profil tonajı, vibro vinç çakım süresi ve mobilizasyon bedeline göre belirlenir."
-      }
-    ],
-    relatedServices: ["palplans", "pamplas"],
-    relatedArticles: ["iksa-sistemi-nasil-secilir"]
   }
 ];
 
 export function getCalculatorTool(slug: string): CalculatorTool | undefined {
-  return CALCULATOR_TOOLS.find((tool) => tool.slug === slug);
+  const targetSlug = slug === "pamplas-maliyet-hesaplama" ? "palplans-maliyet-hesaplama" : slug;
+  return CALCULATOR_TOOLS.find((tool) => tool.slug === targetSlug);
 }
 
 /**
