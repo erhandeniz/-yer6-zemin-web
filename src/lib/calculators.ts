@@ -406,6 +406,103 @@ export const CALCULATOR_TOOLS: CalculatorTool[] = [
     ],
     relatedServices: ["mini-kazik", "bina-alti-jet-grout", "zemin-guclendirme"],
     relatedArticles: ["mini-kazik-nedir", "mini-kazik-mi-fore-kazik-mi", "temel-alti-zemin-guclendirme"]
+  },
+  {
+    slug: "palplans-maliyet-hesaplama",
+    mode: "palplans",
+    h1: "Palplanş (Çelik İksa) Hesaplama ve m2 Maliyeti 2026",
+    seoTitle: "Palplanş Hesaplama ve m2 Maliyet Hesabı 2026 | YER6 Geoteknik",
+    metaDescription:
+      "Palplanş hesaplama aracı ile perde metrajı, profil uzunluğu ve adedine göre toplam m², tonaj, vibro çakım süresi ve m² fiyatı hesabı yapın.",
+    keywords: [
+      "palplanş hesaplama",
+      "palplanş maliyet hesaplama",
+      "palplanş m2 fiyatı 2026",
+      "çelik palplanş iksa hesaplama",
+      "palplanş çakım fiyatları",
+      "larssen palplanş hesabı"
+    ],
+    directAnswer:
+      "Palplanş maliyeti; perde yüksekliği, toplam çevre metrajı, profil kesiti (Larssen/Arcelor), kiralık veya satılık seçimi ile vibro çakım zorluğuna göre değişir. Bu araç girdiğiniz değerlerden toplam palplanş m² alanını, çelik tonajını, tahmini vibro çakım süresini ve düşük–olası–yüksek bandında ön maliyeti hesaplar.",
+    labels: {
+      count: "Profil adedi",
+      depth: "Profil boyu (m)",
+      diameter: "Profil genişliği (cm)",
+      countHelp: "Perde hattı boyunca çakılacak çelik palplanş eleman sayısı.",
+      depthHelp: "Serbest kazı yüksekliği + zemine çakım soket boyu.",
+      diameterHelp: "Palplanş profil modüler genişliği (tipik 60-80 cm)."
+    },
+    defaults: { count: 100, depth: 12, diameter: 60 },
+    methodology: [
+      "Toplam perde alanı (m²) = profil adedi × profil genişliği × boy",
+      "Çelik tonajı, alan ve profil m² ağırlığından (~90 kg/m²) türetilir",
+      "Çakım süresi, vibro hammer vinç günlük m² kapasitesinden bulunur",
+      "Fiyatlar güncel çelik kataloğu ve canlı döviz kuruyla güncellenir"
+    ],
+    costFactors: [
+      "Profil tipi (Larssen 603/604 vb.) ve çelik sınıfı",
+      "Geçici mi kalıcı mı — geçici kullanımda kiralama ve çöküm bedeli düşer",
+      "Zemin sertliği — çakım zorluğuna göre hidrolik pres ihtiyacı",
+      "Kenetleme su tutucu gres / mastik uygulaması",
+      "Saha erişimi ve mobilizasyon"
+    ],
+    limitations: [
+      "Profil boyu ve kesiti yanal zemin basıncı ve stabilite analiziyle belirlenir",
+      "Kuşak kirişi ve boru payanda maliyeti bu hesaba dahil değildir",
+      "Çevre yapılara titreşim sınırı varsa titreşimsiz pres yöntemi seçilmelidir"
+    ],
+    faq: [
+      {
+        question: "Palplanş m2 fiyatı ne kadar?",
+        answer:
+          "Fiyat; profil tipi, çakılacak derinlik, zemin sertliği, geçici (kiralık) veya kalıcı kullanım durumuna göre değişir. Bu araç girdiğiniz metraja göre düşük–olası–yüksek bandında ön maliyet üretir."
+      },
+      {
+        question: "Palplanş çakımı titreşim yapar mı?",
+        answer:
+          "Vibro çakıcı vinçler belirli bir frekansta titreşim üretir. Çevre yapılara çok yakın sahalarda titreşimsiz hidrolik presleme yöntemi tercih edilir."
+      }
+    ],
+    relatedServices: ["palplans", "iksa-sistemleri", "diafram-duvar"],
+    relatedArticles: ["iksa-sistemi-nasil-secilir", "kazi-destek-sistemleri-nedir"]
+  },
+  {
+    slug: "pamplas-maliyet-hesaplama",
+    mode: "palplans",
+    h1: "Palplanş (Pamplaş) Maliyet Hesaplama 2026",
+    seoTitle: "Pamplaş Hesaplama ve Palplanş m2 Maliyeti 2026 | YER6 Geoteknik",
+    metaDescription:
+      "Pamplaş / Palplanş çelik iksa perdesi maliyet hesaplama aracı ile m² metrajı ve vibro çakım birim fiyatlarını hesaplayın.",
+    keywords: [
+      "pamplaş hesaplama",
+      "pamplaş maliyet hesaplama",
+      "palplanş m2 fiyatı 2026"
+    ],
+    directAnswer:
+      "Palplanş (Pamplaş) maliyeti; çakılacak perde metrajı ve profil kesitine göre değişir. Bu araç girdiğiniz değerlerden tahmini m² maliyetini üretir.",
+    labels: {
+      count: "Profil adedi",
+      depth: "Profil boyu (m)",
+      diameter: "Profil genişliği (cm)",
+      countHelp: "Çakılacak pamplaş çelik profil adedi.",
+      depthHelp: "Profil boyu.",
+      diameterHelp: "Profil modüler genişliği."
+    },
+    defaults: { count: 100, depth: 12, diameter: 60 },
+    methodology: [
+      "Perde alanı (m²) = profil adedi × profil genişliği × boy",
+      "Canlı döviz kuru ve YER6 saha verileriyle kalibre edilir"
+    ],
+    costFactors: ["Profil kesiti", "Zemin sertliği", "Çakım ekipmanı"],
+    limitations: ["Statik zemin analizi ayrı yapılır"],
+    faq: [
+      {
+        question: "Pamplaş maliyeti neye göre belirlenir?",
+        answer: "Profil tonajı, vibro vinç çakım süresi ve mobilizasyon bedeline göre belirlenir."
+      }
+    ],
+    relatedServices: ["palplans", "pamplas"],
+    relatedArticles: ["iksa-sistemi-nasil-secilir"]
   }
 ];
 
@@ -426,8 +523,8 @@ const SERVICE_TO_TOOL: Record<string, string> = {
   "deep-soil-mixing": "dsm-maliyet-hesaplama",
   ankraj: "ankraj-maliyet-hesaplama",
   "iksa-sistemleri": "ankraj-maliyet-hesaplama",
-  "mini-kazik": "mini-kazik-maliyet-hesaplama",
-  palplans: "palplans-maliyet-hesaplama"
+  palplans: "palplans-maliyet-hesaplama",
+  pamplas: "palplans-maliyet-hesaplama"
 };
 
 export function getToolForService(serviceSlug: string): CalculatorTool | undefined {

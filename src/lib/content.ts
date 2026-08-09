@@ -644,6 +644,65 @@ export const services = [
       { question: "Bentonit çamuru ne işe yarar?", answer: "Bentonit çamuru, kazı sırasında panel çeperinin göçmesini önleyerek stabiliteyi sağlar ve beton dökümüyle yerini betona bırakır." }
     ]
   },
+  {
+    slug: "palplans",
+    key: "svc_palplans",
+    icon: ShieldCheck,
+    title: "Palplanş (Çelik İksa)",
+    summary: "Yüksek yeraltı suyu ve dar kazı sahalarında titreşimli/titreşimsiz çakım yöntemiyle uygulanan su geçirimsiz çelik iksa perdesi.",
+    detail: "Palplanş çelik profilleri (Larssen/Arcelor) vibro çakıcı vinçler ve çene sistemleriyle birbirine kenetlenerek hızlı, yeniden kullanılabilir ve %100 su tutucu derin kazı perde iksası oluşturur.",
+    specs: ["Larssen & Z Profil Çelik Palplanş", "Vibro Çakıcı Vinç ve Hidrolik Pres", "Su Geçirimsiz Kenetli Perde İksa"],
+    applications: [
+      "Liman, rıhtım, kanal ve su yapılarında su kesici çelik iksa",
+      "Derin kazı ve dar kentsel şantiyelerde palplanş perde",
+      "Yeraltı su seviyesi yüksek sahalarda kuru kazı alanı sağlama",
+      "Köprü ayağı ve nehir içi yapı etrafında batardo (cofferdam) imalatı",
+      "Boru hattı ve altyapı hendek kazılarında geçici palplanş destek",
+      "Acil şev kayması ve heyelan önleme çelik perdeleri"
+    ],
+    advantages: [
+      "%100 Kesintisiz Su Geçirimsizliği: Kenetleme (interlock) detayı sayesinde suyu keser",
+      "Hızlı İmalat ve Sökülebilirlik: Kazı bittikten sonra çekilip başka projede tekrar kullanılır",
+      "Dar Sahalarda Minimum Hafriyat: Kazı genişliği gerektirmez",
+      "Yüksek Çelik Eğilme Rijitliği: Yanal toprak basınçlarına karşı dayanıklı"
+    ],
+    processSteps: [
+      { title: "Aplikasyon ve Kılavuz Kiriş", description: "Palplanş aksonografik hattı çizilir ve dikey çakım kılavuz kirişleri yerleştirilir." },
+      { title: "Kenetleme ve Vibro Çakım", description: "Larssen çelik profiller birbirine kenetlenerek yüksek frekanslı vibro çakıcı ile hedeflenen kotuna kadar çakılır." },
+      { title: "Kazı ve Göğüsleme/Ankraj", description: "Kazı kademeli yapılır; gerekirse çelik kuşak kirişi, ankraj veya boru payanda ile desteklenir." },
+      { title: "Kazı Sonrası Söküm (Opsiyonel)", description: "Nihai yapı tamamlandıktan sonra vibro çektirici ile çekilerek başka projede değerlendirilir." }
+    ],
+    technicalNote: "Palplanş tasarımı EN 12063 ve Eurocode 3 Part 5 standartlarına göre yapılır. Çakım esnasında çevre yapılara titreşim hassasiyeti varsa hidrolik pres (press-in driver) yöntemi seçilmelidir.",
+    faq: [
+      { question: "Palplanş m2 fiyatı ne kadar?", answer: "Palplanş maliyeti; profil tipi (Larssen 603/604 vb.), çakılacak derinlik, zemin sertliği, geçici (kiralık) veya kalıcı (satın alma) kullanım durumuna göre belirlenir. YER6, projenize özel en ekonomik m2 fiyatını sunar." },
+      { question: "Palplanş çakımı titreşim yapar mı?", answer: "Standart yüksek frekanslı vibro çakıcılar belirli bir titreşim üretir. Çevre yapılara yakın veya hassas sahalarda titreşimsiz hidrolik pres (press-in) çakım makineleri kullanılır." },
+      { question: "Palplanş suyu tamamen keser mi?", answer: "Evet, kenet (interlock) aralarına uygulanan özel su tutucu gres veya poliüretan mastik ile %100 su geçirimsiz batardo ve perde elde edilir." }
+    ]
+  },
+  {
+    slug: "pamplas",
+    key: "svc_pamplas",
+    icon: ShieldCheck,
+    title: "Palplanş (Pamplaş Çelik İksa)",
+    summary: "Su geçirimsiz çelik palplanş perdesi ve vibro çakım çözümleri.",
+    detail: "Yeraltı suyunun yoğun olduğu sahalarda Larssen kenetli çelik palplanş (pamplaş) sistemleriyle %100 su kesici perde iksa imalatı.",
+    specs: ["Larssen & Z Profil Çelik Palplanş", "Vibro Çakıcı Vinç", "Su Geçirimsiz Batardo"],
+    applications: [
+      "Derin kazılarda palplanş (pamplaş) perde iksa",
+      "Su kesici batardo ve rıhtım iksa yapısı"
+    ],
+    advantages: [
+      "%100 Su Geçirimsizliği",
+      "Sökülüp Tekrar Kullanılabilir"
+    ],
+    processSteps: [
+      { title: "Aplikasyon ve Çakım", description: "Çelik profiller vibro çakıcı ile zemin kotuna çakılır." }
+    ],
+    technicalNote: "Eurocode 3 Part 5 ve EN 12063 standartlarında palplanş çakımı yapılır.",
+    faq: [
+      { question: "Palplanş / Pamplaş m2 fiyatı nedir?", answer: "Metraj ve profil cinsine göre değişir, sitemizdeki maliyet hesaplayıcı ile anında hesaplayabilirsiniz." }
+    ]
+  }
 ];
 
 export const standaloneServices = [
