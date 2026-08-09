@@ -18,7 +18,7 @@ export const COST_MODEL_VERSION = "yer6-cost-1.0.0";
 // araştırmasıyla doğrulanmıştır (TR piyasası, KDV hariç, ortalama değerler).
 export const PRICE_BOOK_AS_OF = "2026-07";
 
-export type CalcMode = "jet-grout" | "fore-kazik" | "dsm" | "ankraj" | "mini-kazik";
+export type CalcMode = "jet-grout" | "fore-kazik" | "dsm" | "ankraj" | "mini-kazik" | "palplans";
 export type Complexity = "quick" | "advanced";
 export type SoilType = "soft" | "hard";
 
@@ -35,6 +35,7 @@ export const PRICE_BOOK = {
   readyMixC30_m3: { price: 4050, fxSensitivity: 0.2, note: "Hazır beton C30 (pompa hariç), TR ort." } as PricedUnit,
   concretePump_m3: { price: 300, fxSensitivity: 0.25, note: "Beton pompası + nakliye payı" } as PricedUnit,
   rebar_ton: { price: 29000, fxSensitivity: 0.55, note: "Nervürlü inşaat demiri (KDV hariç), global çelik bağlı" } as PricedUnit,
+  sheetPile_ton: { price: 34000, fxSensitivity: 0.6, note: "Çelik palplanş profili (Larssen/Arcelor)" } as PricedUnit,
   cement_ton: { price: 3300, fxSensitivity: 0.2, note: "Dökme CEM 42.5 çimento, TR ort." } as PricedUnit,
   bentonite_ton: { price: 8500, fxSensitivity: 0.5, note: "Sondaj bentoniti" } as PricedUnit,
   strand_m: { price: 120, fxSensitivity: 0.55, note: "Öngerme halatı (0.6\"), metre" } as PricedUnit,
@@ -49,24 +50,27 @@ const RIG_DAY: Record<CalcMode, PricedUnit> = {
   "fore-kazik": { price: 45000, fxSensitivity: 0.35, note: "Fore kazık makinesi günlük (yakıt hariç)" },
   "mini-kazik": { price: 25000, fxSensitivity: 0.35, note: "Mini kazık makinesi günlük (yakıt hariç)" },
   ankraj: { price: 22000, fxSensitivity: 0.35, note: "Ankraj/delgi ünitesi günlük (yakıt hariç)" },
+  palplans: { price: 38000, fxSensitivity: 0.35, note: "Vibro çakıcı vinç iksa ünitesi günlük (yakıt hariç)" },
 };
 
-// Günlük ilerleme (m/gün) — şantiye günü hesabı için.
+// Günlük ilerleme (m veya m²/gün) — şantiye günü hesabı için.
 const DAILY_METERS: Record<CalcMode, number> = {
   "jet-grout": 300,
   dsm: 400,
   "fore-kazik": 80,
   "mini-kazik": 120,
   ankraj: 150,
+  palplans: 250,
 };
 
-// Delgi metresi başına mazot tüketimi (lt/m) — YER6 Saha Gerçekleri
+// Delgi/Çakım metresi başına mazot tüketimi (lt/m) — YER6 Saha Gerçekleri
 const DIESEL_PER_METER: Record<CalcMode, number> = {
   "jet-grout": 0.55, // Ø60 kolon: 0.50 - 0.70 lt/m reel sarfiyat
   dsm: 1.25, // DSM kolon: 1.0 - 1.5 lt/m reel sarfiyat
   "fore-kazik": 3.0, // Fore kazık: 2.5 - 3.5 lt/m reel sarfiyat
   "mini-kazik": 0.5, // Mini kazık: 0.4 - 0.6 lt/m reel sarfiyat
   ankraj: 0.4, // Ankraj delgi: 0.3 - 0.5 lt/m reel sarfiyat
+  palplans: 1.8, // Palplanş vibro çakım: 1.5 - 2.0 lt/m² reel sarfiyat
 };
 
 // Mobilizasyon/demobilizasyon (kurulum-sökülüm-nakliye), ₺ sabit.
@@ -76,6 +80,7 @@ const MOBILIZATION: Record<CalcMode, PricedUnit> = {
   "fore-kazik": { price: 180000, fxSensitivity: 0.3, note: "Mobilizasyon-demobilizasyon" },
   "mini-kazik": { price: 90000, fxSensitivity: 0.3, note: "Mobilizasyon-demobilizasyon" },
   ankraj: { price: 90000, fxSensitivity: 0.3, note: "Mobilizasyon-demobilizasyon" },
+  palplans: { price: 110000, fxSensitivity: 0.3, note: "Mobilizasyon-demobilizasyon" },
 };
 
 // Oranlar — YER6 Sözleşme Standartları
@@ -222,6 +227,10 @@ export function computeEstimate(input: CostInput): Estimate {
     cementTon = groutM3 * 1.3; // enjeksiyon çimentosu (~1.3 t/m³ şerbet)
     items.push({ name: "Öngerme halatı", qty: strandM, unit: "m", unitPrice: p.strand, total: strandM * p.strand, group: "malzeme" });
     items.push({ name: "Enjeksiyon çimentosu", qty: cementTon, unit: "ton", unitPrice: p.cement, total: cementTon * p.cement, group: "malzeme" });
+  } else if (mode === "palplans") {
+    steelTon = (drillMeters * 90) / 1000; // ~90 kg/m² Larssen çelik profil
+    const palplansUnitPrice = autoAdjust(PRICE_BOOK.sheetPile_ton, fx, months);
+    items.push({ name: "Çelik palplanş profili (Larssen/Arcelor)", qty: steelTon, unit: "ton", unitPrice: palplansUnitPrice, total: steelTon * palplansUnitPrice, group: "malzeme" });
   }
 
   // ----- İşçilik, makine, yakıt, mobilizasyon -----

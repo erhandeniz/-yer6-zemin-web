@@ -426,7 +426,8 @@ const SERVICE_TO_TOOL: Record<string, string> = {
   "deep-soil-mixing": "dsm-maliyet-hesaplama",
   ankraj: "ankraj-maliyet-hesaplama",
   "iksa-sistemleri": "ankraj-maliyet-hesaplama",
-  "mini-kazik": "mini-kazik-maliyet-hesaplama"
+  "mini-kazik": "mini-kazik-maliyet-hesaplama",
+  palplans: "palplans-maliyet-hesaplama"
 };
 
 export function getToolForService(serviceSlug: string): CalculatorTool | undefined {

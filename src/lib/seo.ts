@@ -59,7 +59,9 @@ export const serviceSchemaDescriptions: Record<string, string> = {
   "cfa-kazik":
     "YER6, Continuous Flight Auger (CFA) teknolojisiyle muhafaza borusuz, yüksek hızlı ve titreşimsiz delgi ile kazık imalatı yapan geoteknik zemin firmasıdır.",
   "deep-soil-mixing":
-    "YER6, Türkiye genelinde Deep Soil Mixing (DSM / Derin Zemin Karıştırma) teknolojisi ile yumuşak kil ve alüvyon sahalarda atıksız ve homojen zemin-çimento kolonları üreten zemin iyileştirme firmasıdır."
+    "YER6, Türkiye genelinde Deep Soil Mixing (DSM / Derin Zemin Karıştırma) teknolojisi ile yumuşak kil ve alüvyon sahalarda atıksız ve homojen zemin-çimento kolonları üreten zemin iyileştirme firmasıdır.",
+  palplans:
+    "YER6, Türkiye geneli ve yurt dışında Larssen çelik palplanş profilleri, vibro çakıcı vinçler ve hidrolik presleme yöntemi ile su geçirimsiz çelik iksa perdesi ve derin kazı destek sistemleri imalatı yapan zemin mühendislik firmasıdır."
 };
 
 export const equipmentSeoItems = [

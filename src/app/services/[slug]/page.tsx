@@ -40,7 +40,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     "diafram-duvar": "Diyafram Duvar Firmaları ve Derin Kazı İksa Çözümleri",
     "bina-alti-jet-grout": "Bina Altı Jet Grout Firmaları | Elektrikli Titreşimsiz Temel Güçlendirme",
     "cfa-kazik": "CFA Kazık Firmaları ve Metraj Maliyeti 2026 | YER6 Geoteknik",
-    "deep-soil-mixing": "Deep Soil Mixing Firmaları | DSM Zemin İyileştirme & Derin Zemin Karıştırma"
+    "deep-soil-mixing": "Deep Soil Mixing Firmaları | DSM Zemin İyileştirme & Derin Zemin Karıştırma",
+    palplans: "Palplanş Firmaları ve m2 Birim Fiyatları 2026 | YER6 Geoteknik"
   };
   const seoTitle = serviceSeoTitles[service.slug] ?? `${service.title} Zemin Güçlendirme Hizmeti`;
   const description = getServiceSchemaDescription(
