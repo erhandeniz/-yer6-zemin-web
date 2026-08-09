@@ -228,6 +228,19 @@ export const dictionary = {
     svc_bina_alti_jet_grout_spec1: "Elektrikli Jet Grout Rigs (Doğrudan Dizel Egzozu Yok & Düşük Titreşim)",
     svc_bina_alti_jet_grout_spec2: "7/24 Gerçek Zamanlı İzleme (İnklinometre & Oturma Plakaları)",
     svc_bina_alti_jet_grout_spec3: "Şaşırtmalı/Ardışık Kolon İmalat Protokolü",
+    svc_palplans_title: "Palplanş (Çelik İksa)",
+    svc_palplans_summary: "Yüksek yeraltı suyu ve dar kazı sahalarında titreşimli/titreşimsiz çakım yöntemiyle uygulanan su geçirimsiz çelik iksa perdesi.",
+    svc_palplans_detail: "Palplanş çelik profilleri (Larssen/Arcelor) vibro çakıcı vinçler ve çene sistemleriyle birbirine kenetlenerek hızlı, yeniden kullanılabilir ve %100 su tutucu derin kazı perde iksası oluşturur.",
+    svc_palplans_spec1: "Larssen & Z Profil Çelik Palplanş",
+    svc_palplans_spec2: "Vibro Çakıcı Vinç ve Hidrolik Pres",
+    svc_palplans_spec3: "Su Geçirimsiz Kenetli Perde İksa",
+
+    svc_pamplas_title: "Palplanş (Pamplaş Çelik İksa)",
+    svc_pamplas_summary: "Su geçirimsiz çelik palplanş perdesi ve vibro çakım çözümleri.",
+    svc_pamplas_detail: "Yeraltı suyunun yoğun olduğu sahalarda Larssen kenetli çelik palplanş (pamplaş) sistemleriyle %100 su kesici perde iksa imalatı.",
+    svc_pamplas_spec1: "Larssen & Z Profil Çelik Palplanş",
+    svc_pamplas_spec2: "Vibro Çakıcı Vinç",
+    svc_pamplas_spec3: "Su Geçirimsiz Batardo",
 
     /* ── PROJECTS PAGE ── */
     projectsEyebrow: "Projeler",
@@ -778,6 +791,19 @@ export const dictionary = {
     svc_bina_alti_jet_grout_spec1: "Electric Jet Grout Rigs (No Direct Diesel Exhaust & Low Noise)",
     svc_bina_alti_jet_grout_spec2: "24/7 Real-time Structural Monitoring (Inclinometers)",
     svc_bina_alti_jet_grout_spec3: "Alternate-Column Sequencing Protocol",
+    svc_palplans_title: "Sheet Piling (Steel Shoring)",
+    svc_palplans_summary: "Watertight steel sheet pile retaining wall installed with vibratory hammers or silent press-in methods in high groundwater sites.",
+    svc_palplans_detail: "Interlocking Larssen steel profiles installed using high-frequency vibratory hammers to form reusable, 100% watertight excavation retaining walls.",
+    svc_palplans_spec1: "Larssen & Z-Profile Steel Sheet Piles",
+    svc_palplans_spec2: "Vibratory Hammer & Hydraulic Silent Press",
+    svc_palplans_spec3: "Watertight Interlocked Retaining Wall",
+
+    svc_pamplas_title: "Sheet Piling (Pamplas Shoring)",
+    svc_pamplas_summary: "Watertight sheet piling walls and vibratory driving solutions.",
+    svc_pamplas_detail: "Watertight steel sheet piling cofferdam construction in high groundwater sites.",
+    svc_pamplas_spec1: "Larssen & Z-Profile Piles",
+    svc_pamplas_spec2: "Vibratory Hammer Driving",
+    svc_pamplas_spec3: "Watertight Cofferdams",
 
     /* ── PROJECTS PAGE ── */
     projectsEyebrow: "Projects",
@@ -1329,6 +1355,19 @@ export const dictionary = {
     svc_bina_alti_jet_grout_spec1: "معدات حقن كهربائية (لا عادم ديزل مباشر وضوضاء منخفضة)",
     svc_bina_alti_jet_grout_spec2: "رصد هيكلي 24/7 (أجهزة قياس الميل والهبوط)",
     svc_bina_alti_jet_grout_spec3: "بروتوكول تنفيذ متناوب ومرحلي للأعمدة",
+    svc_palplans_title: "الستائر اللوحية المعدنية (Palplanş)",
+    svc_palplans_summary: "جدار ستائر لوحية فولاذية مانعة لندفق المياه في مواقع المياه الجوفية العالية.",
+    svc_palplans_detail: "مقاطع فولاذية متشابكة تُدق بالاهتزاز لتشكيل جدار مساند عازل تماماً للماء قابلة لإعادة الاستخدام.",
+    svc_palplans_spec1: "ستائر لوحية Larssen و Z",
+    svc_palplans_spec2: "مطرق اهتزازي ومكبس هيدروليكي هادئ",
+    svc_palplans_spec3: "جدار مساند متشابك عازل للماء",
+
+    svc_pamplas_title: "الستائر اللوحية المعدنية (Pamplaş)",
+    svc_pamplas_summary: "حلول الستائر اللوحية الفولاذية المانعة للمياه.",
+    svc_pamplas_detail: "تنفيذ سدود ومساند لوحية فولاذية عازلة للماء.",
+    svc_pamplas_spec1: "مقاطع Larssen الفولاذية",
+    svc_pamplas_spec2: "دّق بالاهتزاز",
+    svc_pamplas_spec3: "سدود عازلة للمياه",
 
     /* ── PROJECTS PAGE ── */
     projectsEyebrow: "المشاريع",

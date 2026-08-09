@@ -8,7 +8,7 @@ type TranslationKey = keyof (typeof dictionary)["tr"];
 type LanguageContextValue = {
   locale: Locale;
   setLocale: (locale: Locale) => void;
-  t: (key: string) => string;
+  t: (key: string, fallback?: string) => string;
 };
 
 const LanguageContext = createContext<LanguageContextValue | null>(null);
@@ -37,7 +37,15 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     () => ({
       locale,
       setLocale,
-      t: (key: string) => dictionary[locale][key as TranslationKey] ?? key
+      t: (key: string, fallback?: string) => {
+        const val = dictionary[locale][key as TranslationKey] ?? dictionary["tr"][key as TranslationKey];
+        if (val) return val;
+        if (fallback) return fallback;
+        if (key.startsWith("svc_")) {
+          return key.replace(/^svc_/, "").replace(/_(title|summary|detail|spec\d+)$/, "").replace(/_/g, " ");
+        }
+        return key;
+      }
     }),
     [locale, setLocale]
   );
