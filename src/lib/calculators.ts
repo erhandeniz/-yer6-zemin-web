@@ -44,16 +44,26 @@ export type CalculatorTool = {
   relatedServices: string[];
   /** İlgili bilgi merkezi makaleleri (/knowledge/...) */
   relatedArticles: string[];
+  /** Yandex & Google için hedef kelimeler */
+  keywords: string[];
 };
 
 export const CALCULATOR_TOOLS: CalculatorTool[] = [
   {
     slug: "jet-grout-maliyet-hesaplama",
     mode: "jet-grout",
-    h1: "Jet Grout Maliyet ve Metraj Hesaplama",
-    seoTitle: "Jet Grout Maliyet Hesaplama Aracı | Metraj ve Çimento Hesabı | YER6",
+    h1: "Jet Grout Hesaplama ve Metraj Maliyeti 2026",
+    seoTitle: "Jet Grout Hesaplama ve Maliyet Hesabı 2026 | Metraj & Çimento | YER6",
     metaDescription:
-      "Jet grout kolon çapı, boyu ve adedine göre yaklaşık metraj, çimento tüketimi, makine günü ve ön maliyet hesabı yapın. Ücretsiz mühendislik aracı.",
+      "Jet grout hesaplama aracı ile kolon çapı, boyu ve adedine göre metraj, çimento tüketimi, makine günü ve metre fiyatı hesabı yapın. Ücretsiz mühendislik aracı.",
+    keywords: [
+      "jet grout hesaplama",
+      "jet grout maliyet hesaplama",
+      "jet grout metre fiyatı hesaplama",
+      "jet grout metraj hesabı 2026",
+      "jet grout çimento hesabı",
+      "zemin iyileştirme jet grout hesaplama"
+    ],
     directAnswer:
       "Jet grout maliyeti; toplam kolon metresi, kolon çapı, çimento dozajı, zemin türü ve saha koşullarına göre değişir. Bu araç kolon çapı, boyu ve adedini kullanarak toplam imalat metresini, teorik kolon hacmini, çimento tüketimini, tahmini makine gününü ve düşük–olası–yüksek bandında ön maliyeti hesaplar. Sonuç yaklaşık bir ön değerlendirmedir; kesin metraj ve fiyat, zemin etüdü ve projelendirme sonrası belirlenir.",
     labels: {
@@ -118,10 +128,18 @@ export const CALCULATOR_TOOLS: CalculatorTool[] = [
   {
     slug: "fore-kazik-maliyet-hesaplama",
     mode: "fore-kazik",
-    h1: "Fore Kazık Maliyet ve Metraj Hesaplama",
-    seoTitle: "Fore Kazık Maliyet Hesaplama | Beton, Donatı ve Delgi Metrajı | YER6",
+    h1: "Fore Kazık Hesaplama ve Metraj Maliyeti 2026",
+    seoTitle: "Fore Kazık Hesaplama ve Maliyet Hesabı 2026 | Delgi & Beton | YER6",
     metaDescription:
-      "Fore kazık çapı, boyu ve adedine göre toplam delgi metresi, beton hacmi, donatı tonajı, makine günü ve yaklaşık maliyet hesabı yapın.",
+      "Fore kazık hesaplama aracı ile kazık çapı, boyu ve adedine göre toplam delgi metresi, beton hacmi, donatı tonajı ve metre fiyatı hesabı yapın.",
+    keywords: [
+      "fore kazık hesaplama",
+      "fore kazık maliyet hesaplama",
+      "fore kazık metre fiyatı hesaplama",
+      "fore kazık metraj hesabı 2026",
+      "fore kazık beton donatı hesabı",
+      "derin temel fore kazık hesaplama"
+    ],
     directAnswer:
       "Fore kazık maliyeti; kazık çapı, boyu, adedi, beton ve donatı miktarı ile delgi zorluğuna göre belirlenir. Bu araç girdiğiniz çap, boy ve adet değerlerinden toplam delgi metresini, beton hacmini, donatı tonajını, tahmini makine gününü ve düşük–olası–yüksek bandında ön maliyeti hesaplar. Sonuç yaklaşıktır; kesin metraj zemin etüdü ve statik proje ile netleşir.",
     labels: {
@@ -186,10 +204,17 @@ export const CALCULATOR_TOOLS: CalculatorTool[] = [
   {
     slug: "dsm-maliyet-hesaplama",
     mode: "dsm",
-    h1: "DSM (Derin Zemin Karıştırma) Maliyet ve Metraj Hesaplama",
-    seoTitle: "DSM Zemin İyileştirme Maliyet Hesaplama Aracı | YER6",
+    h1: "DSM (Derin Zemin Karıştırma) Hesaplama ve Maliyeti 2026",
+    seoTitle: "DSM Hesaplama ve Maliyet Hesabı 2026 | Deep Soil Mixing | YER6",
     metaDescription:
-      "DSM kolon çapı, boyu ve adedine göre toplam metraj, bağlayıcı tüketimi, makine günü ve yaklaşık maliyet hesabı yapın.",
+      "DSM hesaplama aracı ile kolon çapı, boyu ve adedine göre toplam metraj, bağlayıcı tüketimi, üretim süresi ve maliyet hesabı yapın.",
+    keywords: [
+      "dsm hesaplama",
+      "dsm maliyet hesaplama",
+      "deep soil mixing hesaplama",
+      "dsm zemin iyileştirme hesaplama",
+      "dsm metraj hesabı 2026"
+    ],
     directAnswer:
       "DSM maliyeti; kolon çapı, boyu, adedi, bağlayıcı dozajı ve zeminin su muhtevasına göre değişir. Bu araç girdiğiniz değerlerden toplam kolon metresini, teorik hacmi, bağlayıcı tüketimini, tahmini üretim süresini ve düşük–olası–yüksek bandında ön maliyeti hesaplar. Geniş alanlı platformlarda DSM genellikle metre başına daha ekonomiktir; kesin değerler karışım tasarımı ve deneme kolonu sonrası netleşir.",
     labels: {
@@ -247,10 +272,17 @@ export const CALCULATOR_TOOLS: CalculatorTool[] = [
   {
     slug: "ankraj-maliyet-hesaplama",
     mode: "ankraj",
-    h1: "Ankraj Metraj ve Maliyet Hesaplama",
-    seoTitle: "Ankraj Metraj ve Maliyet Hesaplama Aracı | İksa Ankrajı | YER6",
+    h1: "Ankraj Hesaplama ve Metraj Maliyeti 2026",
+    seoTitle: "Ankraj Hesaplama ve Maliyet Hesabı 2026 | Öngermeli İksa | YER6",
     metaDescription:
-      "Ankraj adedi, boyu ve delgi çapına göre toplam delgi metresi, halat metrajı, enjeksiyon hacmi, süre ve yaklaşık maliyet hesabı yapın.",
+      "Ankraj hesaplama aracı ile ankraj adedi, boyu ve delgi çapına göre delgi metresi, halat metrajı, enjeksiyon hacmi ve metre fiyatı hesabı yapın.",
+    keywords: [
+      "ankraj hesaplama",
+      "ankraj maliyet hesaplama",
+      "öngermeli ankraj hesaplama",
+      "iksa ankrajı hesaplama",
+      "ankraj metre fiyatı 2026"
+    ],
     directAnswer:
       "Ankraj maliyeti; ankraj adedi, serbest ve kök boyu, delgi çapı, halat sayısı ve test kapsamına göre belirlenir. Bu araç girdiğiniz değerlerden toplam delgi metresini, halat metrajını, enjeksiyon hacmini, tahmini süreyi ve düşük–olası–yüksek bandında ön maliyeti hesaplar. Ankraj boyları stabilite analiziyle belirlenir; bu araç tasarım yapmaz.",
     labels: {
@@ -309,10 +341,17 @@ export const CALCULATOR_TOOLS: CalculatorTool[] = [
   {
     slug: "mini-kazik-maliyet-hesaplama",
     mode: "mini-kazik",
-    h1: "Mini Kazık (Mikro Kazık) Maliyet ve Metraj Hesaplama",
-    seoTitle: "Mini Kazık Maliyet Hesaplama | Mikro Kazık Metrajı | YER6",
+    h1: "Mini Kazık (Mikro Kazık) Hesaplama ve Maliyeti 2026",
+    seoTitle: "Mini Kazık Hesaplama ve Maliyet Hesabı 2026 | YER6 Geoteknik",
     metaDescription:
-      "Mini kazık çapı, boyu ve adedine göre toplam delgi metresi, enjeksiyon hacmi, donatı metrajı, süre ve yaklaşık maliyet hesabı yapın.",
+      "Mini kazık hesaplama aracı ile kazık çapı, boyu ve adedine göre toplam delgi metresi, enjeksiyon hacmi, donatı metrajı ve maliyet hesabı yapın.",
+    keywords: [
+      "mini kazık hesaplama",
+      "mini kazık maliyet hesaplama",
+      "mikro kazık hesaplama",
+      "temel güçlendirme hesaplama",
+      "mini kazık metre fiyatı 2026"
+    ],
     directAnswer:
       "Mini kazık maliyeti; kazık çapı, boyu, adedi, donatı tipi ve enjeksiyon yöntemine göre belirlenir. Bu araç girdiğiniz değerlerden toplam delgi metresini, enjeksiyon hacmini, donatı metrajını, tahmini süreyi ve düşük–olası–yüksek bandında ön maliyeti hesaplar. Mevcut yapı altında çalışmada erişim ve imalat sırası maliyeti belirgin biçimde etkiler.",
     labels: {

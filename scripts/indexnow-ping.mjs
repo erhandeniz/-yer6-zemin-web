@@ -47,15 +47,23 @@ async function main() {
     process.exit(1);
   }
 
-  // 3) IndexNow'a gönder (tek istek, tüm URL listesi).
+  // 3) IndexNow'a gönder (Yandex & Bing tek istek, tüm URL listesi).
   const res = await fetch(ENDPOINT, {
     method: "POST",
     headers: { "Content-Type": "application/json; charset=utf-8" },
     body: JSON.stringify({ host: HOST, key: KEY, keyLocation: KEY_LOCATION, urlList })
   });
 
-  console.log(`IndexNow gönderimi: HTTP ${res.status} · ${urlList.length} URL bildirildi.`);
-  // 200/202 = kabul edildi. 403 = anahtar doğrulanamadı. 422 = URL/host uyumsuz.
+  console.log(`IndexNow gönderimi: HTTP ${res.status} · ${urlList.length} URL Yandex & Bing'e bildirildi.`);
+
+  // 4) Google'a sitemap bildirimi (Google Ping).
+  try {
+    const googleRes = await fetch(`https://www.google.com/ping?sitemap=${encodeURIComponent(SITEMAP)}`);
+    console.log(`Google Sitemap bildirimi gönderildi (Status: ${googleRes.status}).`);
+  } catch (gErr) {
+    console.log("Google ping uyarısı:", String(gErr?.message ?? gErr));
+  }
+
   if (res.status !== 200 && res.status !== 202) {
     const body = await res.text().catch(() => "");
     console.error("Uyarı: beklenmeyen durum.", body.slice(0, 300));

@@ -23,6 +23,7 @@ export async function generateMetadata({
   return {
     title: { absolute: tool.seoTitle },
     description: tool.metaDescription,
+    keywords: tool.keywords,
     // Parametreli URL'ler (?cap=80&boy=18) ayrı sayfa sayılmasın:
     alternates: { canonical: url, languages: { "tr-TR": url } },
     openGraph: {
