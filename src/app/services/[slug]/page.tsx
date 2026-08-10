@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     "mini-kazik": "Mini Kazık Firmaları ve Temel Güçlendirme Fiyatları 2026 | YER6",
     ankraj: "Ankraj Firmaları ve Öngermeli İksa Fiyatları 2026 | YER6",
     "iksa-sistemleri": "İksa Firmaları | Derin Kazı İksa Sistemleri ve Çözümleri 2026",
-    "zemin-iyilestirme": "Zemin İyileştirme Yöntemleri ve Birim Fiyatları 2026 | YER6",
+    "zemin-iyilestirme": "Zemin İyileştirme Yöntemleri, Firmaları ve m2 Fiyatları 2026 | YER6",
     "zemin-guclendirme": "Zemin Güçlendirme Firmaları ve Maliyet Hesaplama 2026 | YER6",
     "geoteknik-danismanlik": "Geoteknik Danışmanlık ve Zemin Etüdü Firmaları 2026",
     "zemin-civisi": "Zemin Çivisi (Soil Nailing) Uygulaması ve Birim Fiyatları 2026",

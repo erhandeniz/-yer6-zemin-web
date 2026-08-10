@@ -226,6 +226,251 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
                 </div>
               )}
 
+              {/* ZEMİN İYİLEŞTİRME KÜRESEL GEOTEKNİK MEGA-HUB (Google #1 Dominance Section) */}
+              {service.slug === "zemin-iyilestirme" && (
+                <div className="space-y-10">
+                  {/* 1. Geoteknik Zemin İyileştirme Karşılaştırma Matrisi */}
+                  <div className="rounded-[2rem] border border-gold-300/30 bg-white/[0.04] p-8 shadow-2xl backdrop-blur-xl">
+                    <div className="flex items-center gap-3">
+                      <span className="flex h-3 w-3 rounded-full bg-gold-300 animate-pulse" />
+                      <h2 className="text-2xl font-bold tracking-tight text-white">
+                        Uluslararası Zemin İyileştirme Yöntemleri Karşılaştırma Matrisi
+                      </h2>
+                    </div>
+                    <p className="mt-3 text-sm leading-6 text-white/65">
+                      TBDY 2018, Eurocode 7, USACE ve ISSMGE şartnamelerine göre projelendirilen başlıca zemin iyileştirme ve iksa yöntemlerinin teknik parametreleri:
+                    </p>
+
+                    <div className="mt-6 overflow-x-auto rounded-xl border border-white/10 bg-black/40">
+                      <table className="w-full text-left text-xs text-white/80">
+                        <thead className="border-b border-white/10 bg-white/10 text-white font-semibold">
+                          <tr>
+                            <th className="p-3.5">İyileştirme Yöntemi</th>
+                            <th className="p-3.5">Çalışma Prensibi</th>
+                            <th className="p-3.5">Uygun Zemin Türü</th>
+                            <th className="p-3.5">Ana Hedef</th>
+                            <th className="p-3.5">İmalat Hızı</th>
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-white/5">
+                          <tr className="hover:bg-white/5 transition-colors">
+                            <td className="p-3.5 font-bold text-gold-200">
+                              <Link href="/services/jet-grout" className="hover:underline">Jet Grout (JG1/JG2)</Link>
+                            </td>
+                            <td className="p-3.5">400-600 Bar Yüksek Basınçlı Enjeksiyon</td>
+                            <td className="p-3.5">Kil, Silt, İnce Kum (Tüm Zeminler)</td>
+                            <td className="p-3.5">Taşıma Gücü + Su Kesme Perdesi</td>
+                            <td className="p-3.5">250-400 m/gün</td>
+                          </tr>
+                          <tr className="hover:bg-white/5 transition-colors">
+                            <td className="p-3.5 font-bold text-gold-200">
+                              <Link href="/services/dsm" className="hover:underline">Deep Soil Mixing (DSM)</Link>
+                            </td>
+                            <td className="p-3.5">Mekanik Bıçaklı Çimento Karıştırma</td>
+                            <td className="p-3.5">Yumuşak Kil, Gevşek Silt, Alüvyon</td>
+                            <td className="p-3.5">Geniş Alan Oturma & Sıvılaşma Kontrolü</td>
+                            <td className="p-3.5">350-500 m/gün</td>
+                          </tr>
+                          <tr className="hover:bg-white/5 transition-colors">
+                            <td className="p-3.5 font-bold text-gold-200">
+                              <Link href="/services/tas-kolon" className="hover:underline">Taş Kolon (Stone Column)</Link>
+                            </td>
+                            <td className="p-3.5">Titreşimli Kırmataş Dolgu (Vibro-Repl.)</td>
+                            <td className="p-3.5">Gevşek Kum, Çakıl, Siltli Kum</td>
+                            <td className="p-3.5">Sıvılaşma Önleme + Düşey Drenaj</td>
+                            <td className="p-3.5">200-350 m/gün</td>
+                          </tr>
+                          <tr className="hover:bg-white/5 transition-colors">
+                            <td className="p-3.5 font-bold text-gold-200">
+                              <Link href="/services/fore-kazik" className="hover:underline">Fore Kazık (Derin Temel)</Link>
+                            </td>
+                            <td className="p-3.5">Rotary Delgi + Beton + Donatı Kalesi</td>
+                            <td className="p-3.5">Her Türlü Zemin ve Kaya Katmanı</td>
+                            <td className="p-3.5">Yüksek Ağır Yapı Yükü Transferi</td>
+                            <td className="p-3.5">60-100 m/gün</td>
+                          </tr>
+                          <tr className="hover:bg-white/5 transition-colors">
+                            <td className="p-3.5 font-bold text-gold-200">
+                              <Link href="/services/mini-kazik" className="hover:underline">Mini Kazık (Underpinning)</Link>
+                            </td>
+                            <td className="p-3.5">Ø15-25 Delgi + Çelik Profil / Donatı</td>
+                            <td className="p-3.5">Mevcut Bina Altı / Dar Sahalar</td>
+                            <td className="p-3.5">Temel Güçlendirme & İksa</td>
+                            <td className="p-3.5">100-180 m/gün</td>
+                          </tr>
+                          <tr className="hover:bg-white/5 transition-colors">
+                            <td className="p-3.5 font-bold text-gold-200">
+                              <Link href="/services/palplans" className="hover:underline">Palplanş (Çelik İksa)</Link>
+                            </td>
+                            <td className="p-3.5">Vibro Çakıcı Vinç ile Kenetli Profil</td>
+                            <td className="p-3.5">Yeraltı Suyu Yüksek Alüvyon</td>
+                            <td className="p-3.5">%100 Su Geçirimsiz Batardo Perdesi</td>
+                            <td className="p-3.5">200-300 m²/gün</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                  {/* 2. Zemin Türüne ve Problemlere Göre Yöntem Seçim Rehberi */}
+                  <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-8">
+                    <h2 className="text-2xl font-bold tracking-tight text-white">
+                      Hangi Zeminde Hangi İyileştirme Yöntemi Seçilmelidir?
+                    </h2>
+                    <p className="mt-3 text-sm text-white/60">
+                      Geoteknik mühendisliğinde tek bir evrensel çözüm yoktur. Zemin sondaj raporundaki (SPT-N, CPT, atterberg limitleri) dane boyutu ve plastisiteye göre karar verilir:
+                    </p>
+
+                    <div className="mt-6 grid gap-4 sm:grid-cols-2">
+                      <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
+                        <h3 className="font-semibold text-gold-200 text-base">1. Ince Taneli Killi ve Siltli Zeminler</h3>
+                        <p className="mt-2 text-xs leading-5 text-white/70">
+                          Yüksek plastisite ve düşük geçirgenliğe sahip killi sahalarda <Link href="/services/dsm" className="text-gold-200 hover:underline font-medium">DSM (Derin Karıştırma)</Link> ve <Link href="/services/jet-grout" className="text-gold-200 hover:underline font-medium">Jet Grout</Link> birincil tercihtir. Çimento bağlayıcı mekanik olarak zeminle karıştırılarak serbest basınç dayanımı (UCS) 1.5 - 4.0 MPa seviyesine çıkarılır.
+                        </p>
+                      </div>
+
+                      <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
+                        <h3 className="font-semibold text-gold-200 text-base">2. Gevşek Kumlu Zeminler & Sıvılaşma</h3>
+                        <p className="mt-2 text-xs leading-5 text-white/70">
+                          Deprem esnasında aşırı boşluk suyu basıncı artışıyla sıvılaşan kumlu ve çakıllı sahalarda <Link href="/services/tas-kolon" className="text-gold-200 hover:underline font-medium">Taş Kolon (Stone Column)</Link> uygulanır. Kırmataş dolgu hem zemini sıkıştırır hem de sönümleyici düşey dren görevi görür.
+                        </p>
+                      </div>
+
+                      <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
+                        <h3 className="font-semibold text-gold-200 text-base">3. Mevcut Bina Altı & Kentsel Dönüşüm</h3>
+                        <p className="mt-2 text-xs leading-5 text-white/70">
+                          Mevcut yapıların temellerinde oturma ve çatlak meydana geldiğinde, binayı yıkmadan titreşimsiz elektrikli ünitelerle <Link href="/services/bina-alti-jet-grout" className="text-gold-200 hover:underline font-medium">Bina Altı Jet Grout</Link> veya mikro kazık (underpinning) enjeksiyonu yapılır.
+                        </p>
+                      </div>
+
+                      <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
+                        <h3 className="font-semibold text-gold-200 text-base">4. Yeraltı Suyu Yüksek Derin Kazı İksaları</h3>
+                        <p className="mt-2 text-xs leading-5 text-white/70">
+                          Deniz veya nehir kenarı kazılarında suyun şantiyeye dolmasını önlemek için kesişen Jet Grout (secant grout) perdesi veya <Link href="/services/palplans" className="text-gold-200 hover:underline font-medium">Çelik Palplanş Batardo</Link> imalatı gerçekleştirilir.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* 3. TBDY 2018 ve Uluslararası Kalite Kontrol Şartnameleri */}
+                  <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-8">
+                    <h2 className="text-2xl font-bold tracking-tight text-white">
+                      TBDY 2018 ve Kalite Kontrol Şartnamelerimiz
+                    </h2>
+                    <p className="mt-3 text-sm text-white/60">
+                      YER6 Geoteknik, yapılan zemin iyileştirmelerini sadece bir hafriyat imalatı olarak değil, raporlanan bir mühendislik garantisi olarak teslim eder:
+                    </p>
+
+                    <div className="mt-6 space-y-3">
+                      <div className="flex items-start gap-3 rounded-2xl bg-white/5 p-4">
+                        <CheckCircle2 className="h-5 w-5 shrink-0 text-gold-200 mt-0.5" />
+                        <div>
+                          <h3 className="font-semibold text-white text-sm">Karot Alımı ve Serbest Basınç (UCS) Testleri</h3>
+                          <p className="mt-1 text-xs text-white/65">
+                            İmal edilen kolonlardan 7, 14 ve 28 günlük periyotlarda karot numunesi alınarak akredite laboratuvarda basma dayanımı (MPa) belgelenir.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="flex items-start gap-3 rounded-2xl bg-white/5 p-4">
+                        <CheckCircle2 className="h-5 w-5 shrink-0 text-gold-200 mt-0.5" />
+                        <div>
+                          <h3 className="font-semibold text-white text-sm">Saha Plaka Yükleme Deneyleri (Plate Load Test)</h3>
+                          <p className="mt-1 text-xs text-white/65">
+                            Kolon başlıkları üzerinde hidrolik krikolarla gerçek yükleme testleri yapılarak oturma miktarı ve zemin yatak katsayısı (ks) sahada doğrulanır.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="flex items-start gap-3 rounded-2xl bg-white/5 p-4">
+                        <CheckCircle2 className="h-5 w-5 shrink-0 text-gold-200 mt-0.5" />
+                        <div>
+                          <h3 className="font-semibold text-white text-sm">Data Logger ile Anlık Dijital Üretim Kaydı</h3>
+                          <p className="mt-1 text-xs text-white/65">
+                            Makine sensörlerimiz ile 600 Bar enjeksiyon basıncı, çimento debisi (L/dk) ve delgi derinliği eş zamanlı dijital olarak kaydedilir.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* 4. YER6 Yapay Zeka Hesaplayıcı Buton Grubu */}
+                  <div className="rounded-[2rem] border border-gold-300/30 bg-gold-300/[0.07] p-8">
+                    <div className="flex items-start gap-4">
+                      <span className="grid size-12 shrink-0 place-items-center rounded-2xl bg-gold-300/20 text-gold-200">
+                        <Calculator className="size-6" />
+                      </span>
+                      <div>
+                        <h2 className="text-2xl font-bold text-white">YER6 AI Zemin İyileştirme Hesaplama Merkezi</h2>
+                        <p className="mt-2 text-sm leading-6 text-white/70">
+                          Projenizin metrajını, çimento/donatı ihtiyacını ve makine süresini saha parametreleriyle anında hesaplayın:
+                        </p>
+                        <div className="mt-5 flex flex-wrap gap-3">
+                          <Link
+                            href="/hesaplama/jet-grout-maliyet-hesaplama/"
+                            className="rounded-full bg-gold-300 px-4 py-2 text-xs font-bold text-obsidian transition hover:bg-gold-200"
+                          >
+                            Jet Grout Hesaplayıcı →
+                          </Link>
+                          <Link
+                            href="/hesaplama/dsm-maliyet-hesaplama/"
+                            className="rounded-full border border-gold-300/40 bg-white/5 px-4 py-2 text-xs font-bold text-white transition hover:bg-white/10"
+                          >
+                            DSM Hesaplayıcı →
+                          </Link>
+                          <Link
+                            href="/hesaplama/fore-kazik-maliyet-hesaplama/"
+                            className="rounded-full border border-gold-300/40 bg-white/5 px-4 py-2 text-xs font-bold text-white transition hover:bg-white/10"
+                          >
+                            Fore Kazık Hesaplayıcı →
+                          </Link>
+                          <Link
+                            href="/hesaplama/palplans-maliyet-hesaplama/"
+                            className="rounded-full border border-gold-300/40 bg-white/5 px-4 py-2 text-xs font-bold text-white transition hover:bg-white/10"
+                          >
+                            Palplanş Hesaplayıcı →
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* 5. Türkiye Geneli Şehir Ağı Bağlantıları */}
+                  <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-8">
+                    <h2 className="text-xl font-bold text-white">Türkiye Geneli Zemin İyileştirme Operasyon Ağımız</h2>
+                    <p className="mt-2 text-xs text-white/60">
+                      Ankara merkezli makine parkımız ve uzman mühendis kadromuzla 81 ilde zemin iyileştirme uygulamaları gerçekleştiriyoruz:
+                    </p>
+                    <div className="mt-4 grid grid-cols-2 gap-2.5 sm:grid-cols-3 md:grid-cols-4 text-xs text-white/70">
+                      <Link href="/sehirler/istanbul-zemin-guclendirme" className="rounded-xl bg-white/5 p-2.5 hover:bg-white/10 hover:text-gold-200 transition">
+                        → İstanbul Zemin İyileştirme
+                      </Link>
+                      <Link href="/sehirler/izmir-zemin-guclendirme" className="rounded-xl bg-white/5 p-2.5 hover:bg-white/10 hover:text-gold-200 transition">
+                        → İzmir Zemin İyileştirme
+                      </Link>
+                      <Link href="/sehirler/ankara-zemin-guclendirme" className="rounded-xl bg-white/5 p-2.5 hover:bg-white/10 hover:text-gold-200 transition">
+                        → Ankara Zemin İyileştirme
+                      </Link>
+                      <Link href="/sehirler/bursa-zemin-guclendirme" className="rounded-xl bg-white/5 p-2.5 hover:bg-white/10 hover:text-gold-200 transition">
+                        → Bursa Zemin İyileştirme
+                      </Link>
+                      <Link href="/sehirler/kocaeli-zemin-guclendirme" className="rounded-xl bg-white/5 p-2.5 hover:bg-white/10 hover:text-gold-200 transition">
+                        → Kocaeli Zemin İyileştirme
+                      </Link>
+                      <Link href="/sehirler/duzce-zemin-guclendirme" className="rounded-xl bg-white/5 p-2.5 hover:bg-white/10 hover:text-gold-200 transition">
+                        → Düzce Zemin İyileştirme
+                      </Link>
+                      <Link href="/sehirler/hatay-zemin-guclendirme" className="rounded-xl bg-white/5 p-2.5 hover:bg-white/10 hover:text-gold-200 transition">
+                        → Hatay Zemin İyileştirme
+                      </Link>
+                      <Link href="/sehirler/gaziantep-zemin-guclendirme" className="rounded-xl bg-white/5 p-2.5 hover:bg-white/10 hover:text-gold-200 transition">
+                        → Gaziantep Zemin İyileştirme
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              )}
+
               {/* Saha Uygulama YouTube Video Oyuncusu & Video Schema */}
               <YouTubeVideoPlayer
                 title={`YER6 ${t(`${service.key}_title`)} Saha Uygulama Çekimleri`}
