@@ -41,7 +41,7 @@ export const dictionary = {
     /* ── HOME PAGE ── */
     homeServicesEyebrow: "Geoteknik Uzmanlık Alanları",
     homeServicesTitle: "Uluslararası standartlarda zemin güçlendirme operasyonu.",
-    homeServicesCopy: "YER6; endüstriyel tesisler, limanlar ve ulaşım altyapıları için tasarım, makine seçimi, zemine uygun iyileştirme yöntemi seçimi ve saha kalite kontrolü süreçlerini tek teslim standardında yönetir.",
+    homeServicesCopy: "YER6; endüstriyel tesisler, limanlar ve ulaşım altyapıları için tasarım, makine seçimi, [zemin iyileştirme yöntemi seçimi](/services/zemin-iyilestirme/) ve saha kalite kontrolü süreçlerini tek teslim standardında yönetir.",
     homeViewAllServices: "Tüm geoteknik hizmetleri gör",
     homeProjectsEyebrow: "Referans Projeler",
     homeProjectsTitle: "Saha gerçeğine uygun tamamlanmış proje portföyü.",

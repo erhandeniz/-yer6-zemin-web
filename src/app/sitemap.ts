@@ -7,6 +7,10 @@ import { CALCULATOR_TOOLS } from "@/lib/calculators";
 
 const baseUrl = siteConfig.siteUrl;
 const contentReviewDate = new Date("2026-07-27T00:00:00+03:00");
+const homeReviewDate = new Date("2026-08-12T00:00:00+03:00");
+const serviceReviewDates: Partial<Record<string, Date>> = {
+  "zemin-iyilestirme": new Date("2026-08-12T00:00:00+03:00")
+};
 export const dynamic = "force-static";
 
 // next.config.mjs -> trailingSlash: true olduğu için tüm sayfalar ".../slug/" olarak
@@ -22,13 +26,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...staticRoutes.map((route) => ({
       url: withTrailingSlash(`/${route}`),
-      lastModified: contentReviewDate,
+      lastModified: route === "" ? homeReviewDate : contentReviewDate,
       changeFrequency: "monthly" as const,
       priority: route === "" ? 1 : 0.8
     })),
     ...allServices.map((service) => ({
       url: withTrailingSlash(`/services/${service.slug}`),
-      lastModified: contentReviewDate,
+      lastModified: serviceReviewDates[service.slug] ?? contentReviewDate,
       changeFrequency: "monthly" as const,
       priority: 0.9
     })),

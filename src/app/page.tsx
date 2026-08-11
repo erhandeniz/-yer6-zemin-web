@@ -5,7 +5,7 @@ import { HomeContent } from "./HomeContent";
 const pageUrl = `${siteConfig.siteUrl}/`;
 const homeTitle = "YER6 Zemin İyileştirme & Güçlendirme | Jet Grout, DSM, Fore Kazık";
 const homeDescription =
-  "YER6, Türkiye ve uluslararası projelerde lider zemin güçlendirme, jet grout yapan firmalar ve fore kazık firmaları arasında premium mühendislik ve saha operasyonu sunar.";
+  "YER6; zemin iyileştirme, zemin güçlendirme, jet grout, DSM ve fore kazık projelerinde Türkiye geneli mühendislik, makine ve saha uygulaması sunar.";
 
 export const metadata: Metadata = {
   title: {

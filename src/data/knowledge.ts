@@ -1187,7 +1187,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     category: "Zemin İyileştirme",
     readingTime: "14 dk",
     publishedAt: "2026-06-21",
-    updatedAt: "2026-07-12",
+    updatedAt: "2026-08-12",
     heroLabel: "Zemin İyileştirme Nedir?",
     introduction:
       "Zemin iyileştirme; zeminin taşıma gücünü artırmak, oturmayı sınırlandırmak, sıvılaşma riskini azaltmak veya geçirimsizliği iyileştirmek için fiziksel, mekanik ya da kimyasal yöntemlerle zeminin mühendislik özelliklerini değiştirme işlemidir. Doğru çözüm, zemin etüdü ve yapı yükleri birlikte değerlendirilerek projeye özel seçilir.",
@@ -1204,7 +1204,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
           {
             type: "paragraph",
             content:
-              "Uygulama yeni yapı alanlarında temel imalatından önce yapılabileceği gibi mevcut binaların altında, endüstriyel sahalarda, dolgu alanlarında, derin kazılarda ve yeraltı suyu etkisindeki bölgelerde de gerçekleştirilebilir. Yer altı zemin iyileştirme rehberi ilkelerine göre, yöntem seçimi yalnızca zeminin adına göre değil; tabaka kalınlığı, yeraltı suyu, yapı yükü, komşu yapılar ve hedef performans birlikte değerlendirilerek yapılır."
+              "Uygulama yeni yapı alanlarında temel imalatından önce yapılabileceği gibi mevcut binaların altında, endüstriyel sahalarda, dolgu alanlarında, derin kazılarda ve yeraltı suyu etkisindeki bölgelerde de gerçekleştirilebilir. [Zemin iyileştirme hizmeti](/services/zemin-iyilestirme/) kapsamında yöntem seçimi yalnızca zeminin adına göre değil; tabaka kalınlığı, yeraltı suyu, yapı yükü, komşu yapılar ve hedef performans birlikte değerlendirilerek yapılır."
           },
           {
             type: "note",
@@ -1281,6 +1281,16 @@ export const knowledgeArticles: KnowledgeArticle[] = [
             type: "paragraph",
             content:
               "Doğru yöntem, hedef performansı en düşük ilk yatırım bedeliyle değil; uygulanabilirlik, kalite doğrulaması, süre, çevresel etkiler ve yaşam döngüsü riski birlikte değerlendirilerek seçilir. Aynı parsel içinde tabakalar değişiyorsa farklı bölgelerde farklı çözümler gerekebilir."
+          },
+          {
+            type: "list",
+            title: "Zemin koşuluna göre ilk teknik değerlendirme",
+            items: [
+              "Gevşek ve doygun kumlarda sıvılaşma hedefi için vibro kompaksiyon, taş kolon, drenaj veya projeye uygun rijit kolon seçenekleri karşılaştırılır.",
+              "Yumuşak kil ve siltlerde oturma kontrolü için DSM, ön yükleme, düşey dren ve gerektiğinde rijit inklüzyon çözümleri değerlendirilir.",
+              "Değişken tabakalı, dar erişimli veya mevcut temel altındaki sahalarda jet grout ve uygun enjeksiyon yöntemleri öne çıkabilir.",
+              "Zayıf tabaka çok derinse veya yapı yükü zemini iyileştirerek güvenle taşınamayacak düzeydeyse fore kazık ya da mini kazık gibi derin temel çözümleri ayrıca incelenir."
+            ]
           },
           {
             type: "list",
@@ -1385,7 +1395,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
           {
             type: "paragraph",
             content:
-              "Zemin iyileştirme için güvenilir birim fiyat; etüt verileri, toplam imalat miktarı, kolon boyu ve çapı, malzeme reçetesi, makine erişimi, mobilizasyon, yeraltı suyu ve test kapsamı görülmeden belirlenemez. Aynı yöntem için bile saha koşulları malzeme tüketimini ve üretim hızını önemli ölçüde değiştirebilir."
+              "Zemin iyileştirme için güvenilir birim fiyat; etüt verileri, toplam imalat miktarı, kolon boyu ve çapı, malzeme reçetesi, makine erişimi, mobilizasyon, yeraltı suyu ve test kapsamı görülmeden belirlenemez. [Geoteknik hesaplama araçları](/hesaplama/) ön metraj ve sarfiyat senaryolarını karşılaştırmaya yardımcı olur; nihai fiyat ve yöntem saha verisi ile projeye özel doğrulanmalıdır. Aynı yöntem için bile saha koşulları malzeme tüketimini ve üretim hızını önemli ölçüde değiştirebilir."
           },
           {
             type: "list",

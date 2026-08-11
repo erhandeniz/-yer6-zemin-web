@@ -31,13 +31,25 @@ function buildMetadata(article: KnowledgeArticle): Metadata {
       absolute: article.seoTitle
     },
     description: article.description,
+    keywords: article.keywords,
     alternates: {
-      canonical
+      canonical,
+      languages: { "tr-TR": canonical }
     },
     openGraph: {
       title: article.seoTitle,
       description: article.description,
-      url: canonical
+      url: canonical,
+      type: "article",
+      locale: "tr_TR",
+      publishedTime: `${article.publishedAt}T00:00:00+03:00`,
+      modifiedTime: `${article.updatedAt}T00:00:00+03:00`,
+      authors: [siteConfig.companyName]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: article.seoTitle,
+      description: article.description
     }
   };
 }
@@ -55,6 +67,8 @@ export default async function KnowledgeArticlePage({ params }: Props) {
     description: article.description,
     datePublished: article.publishedAt,
     dateModified: article.updatedAt,
+    articleSection: article.category,
+    keywords: article.keywords,
     url: canonical
   });
 

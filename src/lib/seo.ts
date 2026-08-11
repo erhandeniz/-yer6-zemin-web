@@ -432,6 +432,8 @@ export function generateArticleSchema(article: {
   datePublished: string;
   dateModified?: string;
   authorName?: string;
+  articleSection?: string;
+  keywords?: string[];
   url: string;
 }) {
   const author = article.authorName
@@ -453,6 +455,10 @@ export function generateArticleSchema(article: {
     headline: article.headline,
     description: stripMarkdownLinks(article.description),
     image: article.image || `${siteConfig.siteUrl}/opengraph-image.png`,
+    inLanguage: "tr-TR",
+    isAccessibleForFree: true,
+    ...(article.articleSection ? { articleSection: article.articleSection } : {}),
+    ...(article.keywords?.length ? { keywords: article.keywords.join(", ") } : {}),
     datePublished: article.datePublished,
     dateModified: article.dateModified || article.datePublished,
     author,

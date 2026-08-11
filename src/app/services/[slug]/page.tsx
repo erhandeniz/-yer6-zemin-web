@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     "mini-kazik": "Mini Kazık Firmaları ve Temel Güçlendirme Fiyatları 2026 | YER6",
     ankraj: "Ankraj Firmaları ve Öngermeli İksa Fiyatları 2026 | YER6",
     "iksa-sistemleri": "İksa Firmaları | Derin Kazı İksa Sistemleri ve Çözümleri 2026",
-    "zemin-iyilestirme": "Zemin İyileştirme Yöntemleri, Firmaları ve m2 Fiyatları 2026 | YER6",
+    "zemin-iyilestirme": "Zemin İyileştirme | Yöntemler, Firma ve Maliyet 2026 | YER6",
     "zemin-guclendirme": "Zemin Güçlendirme Firmaları ve Maliyet Hesaplama 2026 | YER6",
     "geoteknik-danismanlik": "Geoteknik Danışmanlık ve Zemin Etüdü Firmaları 2026",
     "zemin-civisi": "Zemin Çivisi (Soil Nailing) Uygulaması ve Birim Fiyatları 2026",
@@ -44,21 +44,36 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     palplans: "Palplanş Firmaları ve m2 Birim Fiyatları 2026 | YER6 Geoteknik"
   };
   const seoTitle = serviceSeoTitles[service.slug] ?? `${service.title} Zemin Güçlendirme Hizmeti`;
-  const description = getServiceSchemaDescription(
+  const schemaDescription = getServiceSchemaDescription(
     service.slug,
     `${service.summary} ${service.title}, zemin güçlendirme ve zemin iyileştirme projelerinde saha verisi, kalite kontrol ve teknik raporlama ile uygulanır.`
   );
+  const serviceMetaDescriptions: Partial<Record<string, string>> = {
+    "zemin-iyilestirme":
+      "Zemin iyileştirme yöntemleri, maliyet etkenleri ve uygulama süreci. YER6; jet grout, DSM, taş kolon ve enjeksiyonda Türkiye geneli mühendislik sunar."
+  };
+  const description = serviceMetaDescriptions[service.slug] ?? schemaDescription;
 
   return {
-    title: seoTitle,
+    title: {
+      absolute: seoTitle
+    },
     description,
     alternates: {
-      canonical
+      canonical,
+      languages: { "tr-TR": canonical }
     },
     openGraph: {
-      title: `${seoTitle} | YER6`,
+      title: seoTitle,
       description,
-      url: canonical
+      url: canonical,
+      locale: "tr_TR",
+      type: "website"
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: seoTitle,
+      description
     }
   };
 }

@@ -16,8 +16,8 @@ const EXPECT = [
   {
     file: "index.html",
     url: `${SITE}/`,
-    title: "YER6 Zemin Güçlendirme | Jet Grout, DSM ve Fore Kazık",
-    descriptionIncludes: "zemin güçlendirme",
+    title: "YER6 Zemin İyileştirme & Güçlendirme | Jet Grout, DSM, Fore Kazık",
+    descriptionIncludes: "zemin iyileştirme, zemin güçlendirme",
     xDefault: true,
     collection: false
   },
@@ -38,6 +38,22 @@ const EXPECT = [
       "doğrulanmış teknik rehberler, uygulama esasları ve kalite kontrol içerikleri",
     xDefault: false,
     collection: true
+  },
+  {
+    file: "services/zemin-iyilestirme/index.html",
+    url: `${SITE}/services/zemin-iyilestirme/`,
+    title: "Zemin İyileştirme | Yöntemler, Firma ve Maliyet 2026 | YER6",
+    descriptionIncludes: "Zemin iyileştirme yöntemleri, maliyet etkenleri ve uygulama süreci",
+    xDefault: false,
+    collection: false
+  },
+  {
+    file: "knowledge/zemin-iyilestirme-yontemleri/index.html",
+    url: `${SITE}/knowledge/zemin-iyilestirme-yontemleri/`,
+    title: "Zemin İyileştirme Teknikleri ve Yöntemleri Nelerdir? | YER6",
+    descriptionIncludes: "Zemin iyileştirme nedir, ne zaman gerekir",
+    xDefault: false,
+    collection: false
   }
 ];
 
@@ -53,6 +69,13 @@ const attr = (html, regex) => {
   return match ? match[1] : null;
 };
 
+const decodeHtml = (value) =>
+  value
+    ?.replaceAll("&amp;", "&")
+    .replaceAll("&quot;", '"')
+    .replaceAll("&#x27;", "'")
+    .replaceAll("&#39;", "'") ?? null;
+
 for (const spec of EXPECT) {
   console.log(`\n— ${spec.url}`);
   let html;
@@ -64,7 +87,7 @@ for (const spec of EXPECT) {
   }
 
   // Title (tam eşleşme)
-  const title = attr(html, /<title>([^<]*)<\/title>/i);
+  const title = decodeHtml(attr(html, /<title>([^<]*)<\/title>/i));
   title === spec.title
     ? pass(spec.file, `title: "${title}"`)
     : fail(spec.file, `title beklenen "${spec.title}", bulunan "${title}"`);
@@ -98,7 +121,7 @@ for (const spec of EXPECT) {
     : fail(spec.file, `x-default ${spec.xDefault ? "eksik" : "olmamalıydı"}`);
 
   // Open Graph + Twitter eşleşmesi
-  const og = attr(html, /<meta property="og:title" content="([^"]*)"/i);
+  const og = decodeHtml(attr(html, /<meta property="og:title" content="([^"]*)"/i));
   og === spec.title
     ? pass(spec.file, "og:title eşleşiyor")
     : fail(spec.file, `og:title "${og}" ≠ title`);
@@ -106,7 +129,7 @@ for (const spec of EXPECT) {
   ogUrl === spec.url
     ? pass(spec.file, "og:url doğru")
     : fail(spec.file, `og:url beklenen ${spec.url}, bulunan ${ogUrl}`);
-  const tw = attr(html, /<meta name="twitter:title" content="([^"]*)"/i);
+  const tw = decodeHtml(attr(html, /<meta name="twitter:title" content="([^"]*)"/i));
   tw === spec.title
     ? pass(spec.file, "twitter:title eşleşiyor")
     : fail(spec.file, `twitter:title "${tw}" ≠ title`);
