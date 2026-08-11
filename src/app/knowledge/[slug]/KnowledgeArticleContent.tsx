@@ -71,6 +71,23 @@ export function KnowledgeArticleContent({ article }: { article: KnowledgeArticle
                     ))}
                   </ul>
                 </div>
+                <div className="rounded-[2rem] border border-gold-300/30 bg-gold-300/[0.06] p-6">
+                  <p className="text-xs uppercase tracking-[0.3em] text-gold-200">Geoteknik Otorite Merkezleri</p>
+                  <div className="mt-4 space-y-2.5">
+                    <Link href="/services/zemin-iyilestirme/" className="block text-xs font-semibold text-gold-200 hover:text-gold-100 transition">
+                      → Zemin İyileştirme Yöntemleri
+                    </Link>
+                    <Link href="/services/jet-grout/" className="block text-xs text-white/70 hover:text-white transition">
+                      → Jet Grout Uygulamaları
+                    </Link>
+                    <Link href="/services/dsm/" className="block text-xs text-white/70 hover:text-white transition">
+                      → Deep Soil Mixing (DSM)
+                    </Link>
+                    <Link href="/services/fore-kazik/" className="block text-xs text-white/70 hover:text-white transition">
+                      → Fore Kazık Sistemleri
+                    </Link>
+                  </div>
+                </div>
                 <div className="rounded-[2rem] border border-white/10 bg-white/[0.03] p-6">
                   <p className="text-xs uppercase tracking-[0.3em] text-gold-200">{t("articleRelated")}</p>
                   <div className="mt-4 space-y-3">

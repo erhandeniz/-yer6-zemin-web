@@ -214,10 +214,13 @@ export default async function CityPage({ params }: Props) {
 
           <aside className="space-y-6 rounded-[2rem] border border-white/10 bg-white/[0.03] p-8 text-sm text-white/75">
             <div>
-              <h2 className="text-xs uppercase tracking-[0.3em] text-gold-200">İlgili Hizmetler</h2>
+              <h2 className="text-xs uppercase tracking-[0.3em] text-gold-200">İlgili Hizmetler & Otorite Merkezi</h2>
               <div className="mt-4 space-y-3">
+                <Link href="/services/zemin-iyilestirme/" className="block font-semibold text-gold-200 hover:text-gold-100 transition">
+                  → Zemin İyileştirme Yöntemleri Ana Merkezi
+                </Link>
                 {linkedServices.map((service) => (
-                  <Link key={service.slug} href={`/services/${service.slug}`} className="block text-white/70 hover:text-white">
+                  <Link key={service.slug} href={`/services/${service.slug}`} className="block text-white/70 hover:text-white transition">
                     {service.title}
                   </Link>
                 ))}
