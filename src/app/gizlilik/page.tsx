@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     "YER6 Zemin Güçlendirme kişisel verilerin işlenmesi, saklanması ve korunmasına ilişkin gizlilik politikası ve 6698 sayılı KVKK aydınlatma metni.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    siteName: siteConfig.companyName,
     title: "Gizlilik Politikası ve KVKK Aydınlatma Metni | YER6",
     description: "Kişisel verilerin işlenmesi, çerezler, analytics ve KVKK kapsamındaki haklarınız.",
     url: pageUrl

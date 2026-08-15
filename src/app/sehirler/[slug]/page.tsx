@@ -33,6 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       canonical: pageUrl
     },
     openGraph: {
+      siteName: siteConfig.companyName,
       title: `${cityPage.title} | YER6`,
       description: cityPage.description,
       url: pageUrl

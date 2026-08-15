@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     canonical: pageUrl
   },
   openGraph: {
+    siteName: siteConfig.companyName,
     title: "Zemin Güçlendirme Ekibi ve Jeoteknik Mühendislik | YER6",
     description: "Zemin altındaki belirsizliği üstyapıdaki güvene dönüştüren mühendislik ekibimiz. YER6'nın vizyonu, kalite standartları ve uzman kadrosu.",
     url: pageUrl

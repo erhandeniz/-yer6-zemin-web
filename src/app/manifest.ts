@@ -4,7 +4,7 @@ export const dynamic = "force-static";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "YER6 Zemin Güçlendirme ve Jeoteknik Mühendislik",
+    name: "YER6 Zemin Geoteknik Mühendislik",
     short_name: "YER6",
     description: "Premium geoteknik mühendislik ve zemin güçlendirme çözümleri.",
     start_url: "/",

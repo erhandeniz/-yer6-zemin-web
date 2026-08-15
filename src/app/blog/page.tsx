@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     languages: { "tr-TR": pageUrl }
   },
   openGraph: {
+    siteName: siteConfig.companyName,
     title: pageTitle,
     description: pageDescription,
     url: pageUrl,

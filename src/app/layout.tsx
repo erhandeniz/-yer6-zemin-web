@@ -75,7 +75,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "tr_TR",
-    siteName: "YER6 Zemin Güçlendirme Geoteknik Mühendislik",
+    siteName: siteConfig.companyName,
     title: "YER6 Zemin Güçlendirme | Jet Grout, DSM ve Fore Kazık",
     description:
       "Zemin güçlendirme, zemin iyileştirme, jet grout, DSM, fore kazık, mini kazık, ankraj ve iksa sistemleri alanında mühendislik odaklı saha uygulaması.",
@@ -84,7 +84,7 @@ export const metadata: Metadata = {
         url: openGraphImage,
         width: 1200,
         height: 630,
-        alt: "YER6 zemin güçlendirme ve jeoteknik mühendislik"
+        alt: siteConfig.companyName
       }
     ]
   },
@@ -107,7 +107,8 @@ const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "@id": `${siteUrl}/#website`,
-  name: "YER6 Zemin Güçlendirme Geoteknik Mühendislik",
+  name: siteConfig.companyName,
+  alternateName: ["YER6", "YER6 Geotechnical", "yer6zemin.com.tr"],
   url: siteUrl,
   inLanguage: "tr-TR",
   description: "Jet grout, DSM, fore kazık, mini kazık, ankraj ve iksa sistemleri alanında zemin güçlendirme hizmetleri.",

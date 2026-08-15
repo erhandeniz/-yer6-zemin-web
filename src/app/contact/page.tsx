@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     canonical: pageUrl
   },
   openGraph: {
+    siteName: siteConfig.companyName,
     title: "Zemin Güçlendirme Teklif ve İletişim | YER6",
     description: "Projeniz için teknik ön değerlendirme ve hızlı keşif talebi oluşturun. Ankara merkezli geoteknik uzmanlarımızla zemin problemlerinize çözüm bulalım.",
     url: pageUrl

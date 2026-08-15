@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     canonical: pageUrl
   },
   openGraph: {
+    siteName: siteConfig.companyName,
     title: "Zemin İyileştirme Teknolojileri | YER6",
     description: "Dijital saha takibiyle ölçülebilir geoteknik kalite. YER6'nın projelerde kullandığı zemin modeli, makine otomasyonu ve tasarım teknolojileri.",
     url: pageUrl

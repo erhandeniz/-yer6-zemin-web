@@ -207,7 +207,7 @@ export function localBusinessSchema() {
     "@type": ["LocalBusiness", "HomeAndConstructionBusiness", "EngineeringService"],
     "@id": `${siteConfig.siteUrl}/#organization`,
     name: siteConfig.companyName,
-    alternateName: "YER6 Geotechnical",
+    alternateName: ["YER6", "YER6 Geotechnical", "yer6zemin.com.tr"],
     url: siteConfig.siteUrl,
     image: `${siteConfig.siteUrl}/opengraph-image.png`,
     logo: {
@@ -216,10 +216,10 @@ export function localBusinessSchema() {
       url: `${siteConfig.siteUrl}/icon.png`,
       width: 512,
       height: 512,
-      caption: "YER6 Zemin Güçlendirme Geoteknik Mühendislik"
+      caption: siteConfig.companyName
     },
     description:
-      "YER6 Zemin Güçlendirme Geoteknik Mühendislik; jet grout, zemin iyileştirme, zemin güçlendirme, fore kazık, ankraj, iksa sistemleri ve temel mühendisliği alanlarında Ankara merkezli, Türkiye geneli ve yurt dışında geoteknik saha uygulaması sunar.",
+      "YER6 Zemin Geoteknik Mühendislik; jet grout, zemin iyileştirme, zemin güçlendirme, fore kazık, ankraj, iksa sistemleri ve temel mühendisliği alanlarında Ankara merkezli, Türkiye geneli ve yurt dışında geoteknik saha uygulaması sunar.",
     telephone: siteConfig.phone.display,
     email: siteConfig.email,
     currenciesAccepted: "TRY",

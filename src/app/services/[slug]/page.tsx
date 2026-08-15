@@ -54,6 +54,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       canonical
     },
     openGraph: {
+      siteName: siteConfig.companyName,
       title: `${seoTitle} | YER6`,
       description,
       url: canonical

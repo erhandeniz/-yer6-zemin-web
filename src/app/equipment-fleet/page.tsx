@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     canonical: pageUrl
   },
   openGraph: {
+    siteName: siteConfig.companyName,
     title: "Zemin İyileştirme Makine Parkı | YER6",
     description: equipmentFleetDescription,
     url: pageUrl

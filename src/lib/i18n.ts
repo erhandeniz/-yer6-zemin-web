@@ -472,7 +472,7 @@ export const dictionary = {
     footerHQ: "Merkez",
     footerAddress: "Gölbaşı, Ankara. Avrupa, Orta Doğu ve Kuzey Afrika projeleri için mobil saha ekipleri.",
     footerQuickQuote: "Hızlı teklif formu",
-    footerCopyright: "© 2026 YER6 Zemin Güçlendirme ve Jeoteknik Mühendislik.",
+    footerCopyright: "© 2026 YER6 Zemin Geoteknik Mühendislik.",
     footerSubtitle: "Hazır CMS içerik altyapısı • TR / EN / AR",
 
     /* ── CALCULATOR ── */

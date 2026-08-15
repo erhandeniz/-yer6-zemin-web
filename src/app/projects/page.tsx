@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     canonical: pageUrl
   },
   openGraph: {
+    siteName: siteConfig.companyName,
     title: "Zemin Güçlendirme Projeleri | YER6",
     description: "Jet grout, DSM zemin iyileştirme, fore kazık, iksa ve temel güçlendirme projelerinde YER6 saha uygulama örnekleri.",
     url: pageUrl

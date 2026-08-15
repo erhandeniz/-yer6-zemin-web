@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     languages: { "tr-TR": pageUrl, "x-default": pageUrl }
   },
   openGraph: {
+    siteName: siteConfig.companyName,
     title: homeTitle,
     description:
       "Zemin güçlendirme, zemin iyileştirme, jet grout, DSM, fore kazık, enjeksiyon ve temel güçlendirme projelerinde mühendislik odaklı saha uygulaması.",

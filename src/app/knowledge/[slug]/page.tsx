@@ -35,6 +35,7 @@ function buildMetadata(article: KnowledgeArticle): Metadata {
       canonical
     },
     openGraph: {
+      siteName: siteConfig.companyName,
       title: article.seoTitle,
       description: article.description,
       url: canonical

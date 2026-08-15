@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     "YER6 Zemin Güçlendirme web sitesinin içerik, tasarım ve yazılımına ilişkin telif hakkı, fikri mülkiyet ve kullanım şartları. İzinsiz kopyalama ve veri kazıma (scraping) yasaktır.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    siteName: siteConfig.companyName,
     title: "Kullanım Şartları ve Telif Bildirimi | YER6",
     description:
       "Sitenin içerik, tasarım ve yazılımı 5846 sayılı FSEK kapsamında korunmaktadır. İzinsiz kopyalama, çoğaltma ve otomatik veri kazıma yasaktır.",

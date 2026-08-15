@@ -34,14 +34,14 @@ export function Navbar() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 px-3 py-3 sm:px-5">
       <nav aria-label="Main Navigation" className="mx-auto flex max-w-7xl items-center justify-between rounded-full border border-white/10 bg-obsidian/72 px-4 py-3 shadow-glass backdrop-blur-2xl">
-        <Link href="/" className="group flex items-center gap-3.5" aria-label="YER6 home">
+        <Link href="/" className="group flex items-center gap-3.5" aria-label="YER6 Zemin Geoteknik Mühendislik ana sayfa">
           <span className="relative grid h-[52px] w-[52px] place-items-center overflow-hidden rounded-full border border-gold-300/35 bg-gold-400/10 brand-logo-emblem">
             <span className="absolute h-16 w-16 rotate-45 bg-gradient-to-r from-transparent via-gold-300/40 to-transparent animate-shimmer" />
             <span className="relative text-[17px] font-bold text-gold-100 brand-logo-text">Y6</span>
           </span>
           <span className="leading-tight">
             <span className="block brand-title">YER6</span>
-            <span className="hidden brand-subtitle sm:block">Geotechnical</span>
+            <span className="hidden brand-subtitle sm:block">Zemin Geoteknik Mühendislik</span>
           </span>
         </Link>
 

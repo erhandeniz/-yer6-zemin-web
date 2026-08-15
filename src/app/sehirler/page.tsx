@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     canonical: pageUrl
   },
   openGraph: {
+    siteName: siteConfig.companyName,
     title: "Şehirlere Göre Zemin Güçlendirme Hizmetleri | YER6",
     description:
       "Öncelikli şehirlerde jet grout, DSM zemin iyileştirme, fore kazık, enjeksiyon ve temel güçlendirme çözümleri.",
