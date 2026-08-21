@@ -121,12 +121,22 @@ export default async function ProjectDetailPage({ params }: Props) {
     "@id": `${canonical}#video-${idx + 1}`,
     name: v.title,
     description: v.caption ?? project.summary,
-    thumbnailUrl: `https://i.ytimg.com/vi/${v.videoId}/maxresdefault.jpg`,
+    thumbnailUrl: [
+      `https://i.ytimg.com/vi/${v.videoId}/maxresdefault.jpg`,
+      `https://i.ytimg.com/vi/${v.videoId}/hqdefault.jpg`
+    ],
     embedUrl: `https://www.youtube.com/embed/${v.videoId}`,
     contentUrl: `https://www.youtube.com/watch?v=${v.videoId}`,
     uploadDate: "2026-08-01T08:00:00+03:00",
     inLanguage: "tr-TR",
-    publisher: { "@id": `${siteConfig.siteUrl}/#organization` },
+    publisher: {
+      "@type": "Organization",
+      name: siteConfig.companyName,
+      logo: {
+        "@type": "ImageObject",
+        url: `${siteConfig.siteUrl}/icon.png`
+      }
+    },
     isPartOf: { "@id": canonical }
   }));
 

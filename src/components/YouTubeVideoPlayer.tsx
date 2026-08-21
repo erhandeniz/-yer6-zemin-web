@@ -40,12 +40,16 @@ export function YouTubeVideoPlayer({
     "@type": "VideoObject",
     "name": v.title,
     "description": v.description || description,
-    "thumbnailUrl": [`https://i.ytimg.com/vi/${v.id}/hqdefault.jpg`],
+    "thumbnailUrl": [
+      `https://i.ytimg.com/vi/${v.id}/maxresdefault.jpg`,
+      `https://i.ytimg.com/vi/${v.id}/hqdefault.jpg`
+    ],
     "uploadDate": "2026-08-16T08:00:00+03:00",
     "embedUrl": `https://www.youtube-nocookie.com/embed/${v.id}`,
+    "contentUrl": `https://www.youtube.com/watch?v=${v.id}`,
     "publisher": {
       "@type": "Organization",
-      "name": "YER6 Zemin Güçlendirme & Geoteknik Mühendislik",
+      "name": "Yer6 Zemin Geoteknik Mühendislik",
       "logo": {
         "@type": "ImageObject",
         "url": "https://www.yer6zemin.com.tr/icon.png"
