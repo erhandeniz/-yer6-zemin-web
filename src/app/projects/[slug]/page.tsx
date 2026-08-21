@@ -79,7 +79,7 @@ export default async function ProjectDetailPage({ params }: Props) {
       caption: alt,
       representativeOfPage: index === 0
     })),
-    ...(/^\d{4}$/.test(project.year) ? { datePublished: `${project.year}-01-01` } : {}),
+    ...(/^\d{4}$/.test(project.year) ? { datePublished: `${project.year}-01-01T08:00:00+03:00` } : {}),
     author: {
       "@type": "Organization",
       name: siteConfig.companyName,
@@ -108,26 +108,27 @@ export default async function ProjectDetailPage({ params }: Props) {
   };
 
   // VideoObject şeması yalnızca sayfada GERÇEKTEN gömülü video varsa üretilir.
-  const projectVideo =
-    "video" in project
-      ? (project.video as { videoId: string; title: string; caption?: string })
-      : null;
-  const videoSchema = projectVideo
-    ? {
-        "@context": "https://schema.org",
-        "@type": "VideoObject",
-        "@id": `${canonical}#video`,
-        name: projectVideo.title,
-        description: projectVideo.caption ?? project.summary,
-        thumbnailUrl: `https://i.ytimg.com/vi/${projectVideo.videoId}/maxresdefault.jpg`,
-        embedUrl: `https://www.youtube.com/embed/${projectVideo.videoId}`,
-        contentUrl: `https://www.youtube.com/watch?v=${projectVideo.videoId}`,
-        uploadDate: "2026-08-01",
-        inLanguage: "tr-TR",
-        publisher: { "@id": `${siteConfig.siteUrl}/#organization` },
-        isPartOf: { "@id": canonical }
-      }
-    : null;
+  const videoList: { videoId: string; title: string; caption?: string }[] =
+    "videos" in project && Array.isArray(project.videos)
+      ? project.videos
+      : "video" in project && project.video
+      ? [project.video as { videoId: string; title: string; caption?: string }]
+      : [];
+
+  const videoSchemas = videoList.map((v, idx) => ({
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "@id": `${canonical}#video-${idx + 1}`,
+    name: v.title,
+    description: v.caption ?? project.summary,
+    thumbnailUrl: `https://i.ytimg.com/vi/${v.videoId}/maxresdefault.jpg`,
+    embedUrl: `https://www.youtube.com/embed/${v.videoId}`,
+    contentUrl: `https://www.youtube.com/watch?v=${v.videoId}`,
+    uploadDate: "2026-08-01T08:00:00+03:00",
+    inLanguage: "tr-TR",
+    publisher: { "@id": `${siteConfig.siteUrl}/#organization` },
+    isPartOf: { "@id": canonical }
+  }));
 
   return (
     <>
@@ -141,13 +142,14 @@ export default async function ProjectDetailPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      {videoSchema ? (
+      {videoSchemas.map((schema, idx) => (
         <Script
-          id={`project-video-${project.slug}`}
+          key={`project-video-${project.slug}-${idx}`}
+          id={`project-video-${project.slug}-${idx}`}
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(videoSchema) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
-      ) : null}
+      ))}
       <ProjectDetailContent slug={slug} />
     </>
   );

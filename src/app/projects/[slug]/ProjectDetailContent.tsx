@@ -38,6 +38,15 @@ export function ProjectDetailContent({ slug }: { slug: string }) {
           orientation?: "landscape" | "portrait";
         })
       : null;
+  const videos =
+    "videos" in project
+      ? (project.videos as {
+          videoId: string;
+          title: string;
+          caption?: string;
+          orientation?: "landscape" | "portrait";
+        }[])
+      : null;
   const imageAlt = "imageAlt" in project ? (project.imageAlt as string) : tp("title", project.title);
   const relatedServiceSlugs = "relatedServiceSlugs" in project ? (project.relatedServiceSlugs as string[]) : [];
   const relatedServices = relatedServiceSlugs
@@ -173,14 +182,11 @@ export function ProjectDetailContent({ slug }: { slug: string }) {
       )}
 
       {/* Saha videosu — mevcut kart dilinde, sayfa yapısı değişmeden */}
-      {video ? (
+      {videos || video ? (
         <section className="px-5 pb-12">
           <div className="mx-auto max-w-7xl">
             <VideoEmbed
-              videoId={video.videoId}
-              title={video.title}
-              caption={video.caption}
-              orientation={video.orientation}
+              videos={videos || (video ? [video] : undefined)}
             />
           </div>
         </section>

@@ -6688,6 +6688,230 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     ],
     published: true
   },
+  {
+    slug: "yesil-geoteknik-dsm-jet-grout-surdurulebilirlik",
+    title: "Yeşil Geoteknik: DSM ve Jet Grout ile Karbon Ayak İzi & Hafriyat Tasarrufu",
+    seoTitle: "Yeşil Geoteknik: DSM ve Jet Grout Karbon Tasarrufu | YER6",
+    description:
+      "Yeşil Geoteknik nedir? Deep Soil Mixing (DSM) ve Jet Grout ile yerinde zemin karıştırma, %45'e varan karbon ayak izi tasarrufu ve sürdürülebilir temel mühendisliği.",
+    excerpt:
+      "Modern geoteknik mühendisliğinde sürdürülebilirlik, yerinde (in-situ) zemin karıştırma yöntemleriyle hafriyat ve çimento tüketimini optimize ederek karbon salınımını %45'e kadar düşürmeyi hedefler.",
+    category: "Zemin İyileştirme",
+    readingTime: "8 dk",
+    publishedAt: "2026-08-18",
+    updatedAt: "2026-08-18",
+    heroLabel: "Sürdürülebilirlik & Yeşil Geoteknik",
+    introduction:
+      "Küresel inşaat ve altyapı projelerinde Çevresel, Sosyal ve Kurumsal Yönetişim (ESG) standartları, temel mühendisliğinde de çevre dostu çözümleri zorunlu kılmaktadır. Deep Soil Mixing (DSM) ve optimize edilmiş Jet Grout teknolojileri, mevcut zemin malzemesini yerinde dönüştürerek geleneksel kazık ve hafriyat yöntemlerine kıyasla devasa bir lojistik ve karbon avantajı sunar.",
+    sections: [
+      {
+        id: "green-geotechnics-concept",
+        title: "Yeşil Geoteknik Nedir ve Neden Önemlidir?",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Yeşil Geoteknik; zemin iyileştirme ve temel güçlendirme projelerinde doğal kaynakların tüketimini en aza indiren, hafriyat nakliyesini sıfırlayan veya minimize eden ve düşük karbonlu bağlayıcılar kullanan mühendislik yaklaşımıdır."
+          },
+          {
+            type: "paragraph",
+            content:
+              "Geleneksel derin kazı veya yüksek metrajlı kazıklı temel çözümlerinde binlerce metreküp zemin kazılarak kamyonlarla uzak döküm sahalarına taşınır. Buna karşılık in-situ (yerinde) karıştırma teknolojileri, zemini yerinde bir kompozit taşıyıcıya dönüştürür."
+          }
+        ]
+      },
+      {
+        id: "dsm-environmental-benefits",
+        title: "Deep Soil Mixing (DSM) Teknolojisinin Çevresel Kazanımları",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "DSM yöntemi, mekanik karıştırma bıçakları ve çimento şerbeti ile mevcut zayıf zemini harmanlayarak toprak-çimento (soil-cement) kolonları oluşturur. Bu süreçte dışarıya neredeyse hiç atık zemin veya pasa çıkmaz."
+          },
+          {
+            type: "list",
+            title: "DSM ile Elde Edilen ESG & Karbon Avantajları",
+            items: [
+              "Sıfıra Yakın Hafriyat Pasa Çıkışı: Şantiye içi ve şehir trafiğinde yüzlerce kamyonluk nakliye trafiği engellenir.",
+              "%40-50 Karbon Ayak İzi Azalması: Çimento tüketimi optimize edilir, yakıt ve lojistik emisyonları minimize edilir.",
+              "Düşük Gürültü ve Sıfır Titreşim: Şehir merkezlerinde ve hassas komşu yapılarda çevresel etki yaratmadan uygulanır.",
+              "Yeraltı Suyu Korunumu: Kimyasal kirletici içermeyen su-çimento karışımlarıyla yer altı akiferleri korunur."
+            ]
+          }
+        ]
+      },
+      {
+        id: "comparison-table",
+        title: "Geleneksel Temel vs. Yeşil Geoteknik Yöntem Karşılaştırması",
+        blocks: [
+          {
+            type: "list",
+            title: "Hafriyat ve Emisyon Kıyaslama Kriterleri",
+            items: [
+              "Hafriyat Nakliyesi: Geleneksel kazıda %100 pasa atığı oluşurken DSM'de %0-%5, Jet Grout'ta %10-%15 düzeyindedir.",
+              "Karbon Salınımı: DSM ile %45-%50, optimize Jet Grout ile %30-%40 karbon tasarrufu sağlanır.",
+              "Çevresel Titreşim: Kazıklı veya çakma sistemlerin aksine DSM ve Jet Grout sıfır titreşimle çalışır.",
+              "Şantiye Trafiği: Ağır hafriyat kamyonu trafiği ortadan kalkar, çevre ve kentsel yaşam korunur."
+            ]
+          }
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "DSM ve Jet Grout yöntemleri projelerde karbon salınımını nasıl düşürür?",
+        answer:
+          "Zemini kazıp dışarı atmak yerine yerinde çimento şerbetiyle iyileştirdiği için binlerce tonluk kamyon nakliyesini ve aşırı malzeme tüketimini ortadan kaldırarak karbon ayak izini %45'e kadar azaltır."
+      },
+      {
+        question: "Yeşil geoteknik uygulamaları TBDY 2018 standartlarına uygun mudur?",
+        answer:
+          "Evet. TBDY 2018 Bölüm 16 zemin iyileştirme kurallarına tam uyumlu olup taşıma kapasitesi ve oturma sınırları karot UCS ve laboratuvar testleriyle doğrulanır."
+      }
+    ],
+    relatedSlugs: ["dsm-nasil-uygulanir", "jet-grout-nedir", "jet-grout-ve-dsm-farki"],
+    keywords: [
+      "yeşil geoteknik",
+      "dsm karbon tasarrufu",
+      "sürdürülebilir zemin güçlendirme",
+      "in-situ zemin karıştırma",
+      "esg zemin mühendisliği"
+    ],
+    published: true
+  },
+  {
+    slug: "geoteknik-bim-plaxis-sayisal-modelleme",
+    title: "Dijital Geoteknik & BIM: Plaxis 2D/3D ve Sayısal Zemin Modelleme",
+    seoTitle: "Dijital Geoteknik & BIM: Plaxis 2D/3D Zemin Modelleme | YER6",
+    description:
+      "Dijital Geoteknik ve BIM entegrasyonu nedir? Plaxis 2D/3D sonlu elemanlar analizi, zemin-yapı etkileşimi (SSI) ve TBDY 2018 sayısal zemin modelleme rehberi.",
+    excerpt:
+      "Zemin altındaki belirsizlikleri minimize etmek için Plaxis 2D/3D sonlu elemanlar yöntemleri, BIM süreçleri ve gerçek zamanlı sensör verileriyle zemin-yapı etkileşimi modellenir.",
+    category: "Zemin İyileştirme",
+    readingTime: "9 dk",
+    publishedAt: "2026-08-18",
+    updatedAt: "2026-08-18",
+    heroLabel: "Mühendislik & Dijital Geoteknik",
+    introduction:
+      "Karmaşık zemin profillerinde ve yüksek katlı üstyapı projelerinde klasik geoteknik hesap formülleri tek başına yeterli olmamaktadır. YER6 Geoteknik tasarım ofisi; Plaxis 2D/3D, Geo5 ve BIM tabanlı sayısal modelleme yazılımları ile zemin-yapı etkileşimini (SSI) gerçeğe en yakın şekilde modelleyerek projelendirme güvenliğini en üst düzeye çıkarır.",
+    sections: [
+      {
+        id: "fem-plaxis-modeling",
+        title: "Plaxis 2D ve 3D ile Sonlu Elemanlar Modellemesi (FEM)",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Sonlu Elemanlar Yöntemi (FEM), zeminin elastoplastik davranışını (Hardening Soil, Mohr-Coulomb modelleri) aşamalı inşaat adımları altında simüle eder. Derin kazı iksa perdelerinde yanal deplasmanlar, ankraj yükleri ve bina altı jet grout kolonlarının gerilme dağılımları milimetrik hassasiyetle hesaplanır."
+          },
+          {
+            type: "list",
+            title: "Sayısal Modellemenin Temel Çıktıları",
+            items: [
+              "Zemin ve Yapı Arasındaki Etkileşim (SSI - Soil-Structure Interaction)",
+              "Farklı Oturma (Differential Settlement) ve Açısal Çarpılma Analizleri",
+              "Aşamalı Kazı ve Ankraj Germe Adımlarında Deplasman Tahminleri",
+              "Dinamik ve Sismik Zemin Büyütmesi Analizleri (TBDY 2018 Bölüm 16)"
+            ]
+          }
+        ]
+      },
+      {
+        id: "bim-geotechnical-integration",
+        title: "BIM (Building Information Modeling) ve Zemin Veri Entegrasyonu",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "BIM süreçleri, zemin katmanlarını ve geoteknik imalatları (kazıklar, kolonlar, perdeler) 3 boyutlu ortak veri ortamına (CDE) taşır. Böylece mimari, statik ve mekanik disiplinlerle zemin imalatı çakışmasız ve şeffaf şekilde yönetilir."
+          }
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "Plaxis modellemesi zemin iyileştirme projelerinde ne tür avantajlar sağlar?",
+        answer:
+          "Zeminin aşamalı kazı ve yük altındaki gerçek deformasyonlarını milimetrik olarak gösterir; gereksiz imalatı önler ve güvenli optimizasyon sağlar."
+      },
+      {
+        question: "YER6 geoteknik tasarımlarında hangi yazılımlar kullanılmaktadır?",
+        answer:
+          "Plaxis 2D/3D, Geo5, AllPile ve otomatik saha debi-basınç loglama sistemleri kullanılmaktadır."
+      }
+    ],
+    relatedSlugs: ["zemin-iyilestirme-yontemleri", "iksa-sistemi-nasil-secilir", "kazik-yukleme-testi-turleri"],
+    keywords: [
+      "dijital geoteknik",
+      "plaxis 2d 3d zemin modelleme",
+      "bim geoteknik",
+      "zemin yapı etkileşimi",
+      "tbdy 2018 sayısal analiz"
+    ],
+    published: true
+  },
+  {
+    slug: "geoteknik-is-guvenligi-csg-hse-standartlari",
+    title: "Geoteknik Şantiyelerinde ÇSG (HSE) ve Sıfır Kaza Güvenlik Standartları",
+    seoTitle: "Geoteknik Şantiyelerinde ÇSG (HSE) ve Sıfır Kaza Standartları | YER6",
+    description:
+      "Geoteknik mühendisliği şantiyelerinde Çevre, Sağlık ve Güvenlik (ÇSG / HSE) standartları: 400+ bar yüksek basınç güvenliği, ağır delgi rigi stabilitesi ve sıfır kaza protokolleri.",
+    excerpt:
+      "Ağır iş makineleri ve 400-600 bar yüksek basınçlı pompalarla yürütülen geoteknik şantiyelerinde ÇSG (HSE) yönetimi, sıfır iş kazası ve kesintisiz saha güvenliğinin temelidir.",
+    category: "Kalite Kontrol",
+    readingTime: "8 dk",
+    publishedAt: "2026-08-18",
+    updatedAt: "2026-08-18",
+    heroLabel: "İş Güvenliği & Kalite Standartları",
+    introduction:
+      "Zemin güçlendirme ve derin temel uygulamaları; tonlarca ağırlıktaki hidrolik delgi makineleri (Bauer, Soilmec), yüksek torklu kuleler ve 400 ila 600 bar arasında kinetik enerji üreten triplex pompalarla gerçekleştirilir. Bu yüksek enerjili operasyonlarda Çevre, Sağlık ve Güvenlik (ÇSG/HSE) kültürü tavizsiz uygulanmalıdır.",
+    sections: [
+      {
+        id: "high-pressure-safety",
+        title: "400-600 Bar Yüksek Basınçlı Enjeksiyon Güvenlik Protokolleri",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Jet Grout operasyonlarında basınç hatları, hidrolik hortumlar ve swivel başlıkları düzenli basınç testlerine ve periyodik kalite kontrol muayenelerine tabi tutulur. Operatörler ve saha mühendisleri yüksek basınç güvenlik eğitimlerinden geçirilir."
+          },
+          {
+            type: "list",
+            title: "Kritik ÇSG (HSE) Kontrol Maddeleri",
+            items: [
+              "Rig Çalışma Platformu Stabilitesi (Ground Bearing Capacity doğrulaması)",
+              "Yüksek Basınç Emniyet Valfleri ve Otomatik Acil Durdurma Butonları",
+              "Sertifikalı ve Yetkin Ağır Makine Operatörleri",
+              "Saha İçi Kişisel Koruyucu Donanım (KKD) ve Güvenlik Bariyerleri",
+              "Çevreye Karşı Sıfır Çimento Kaçağı ve Drenaj Yönetimi"
+            ]
+          }
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "Geoteknik şantiyelerinde iş güvenliği nasıl sağlanır?",
+        answer:
+          "Zemin taşıma platformunun stabilitesi önceden test edilir, yüksek basınç hatları periyodik muayeneden geçer ve tüm personel sertifikalı güvenlik protokollerine uyar."
+      },
+      {
+        question: "Sıfır kaza hedefi için hangi denetimler yapılır?",
+        answer:
+          "Günlük Tool-Box toplantıları, hidrolik hortum basınç çekleri, rig dikeylik ve denge sensör kalibrasyonları eksiksiz uygulanır."
+      }
+    ],
+    relatedSlugs: ["jet-grout-kalite-kontrol", "kazik-yukleme-testi-turleri", "jet-grout-nedir"],
+    keywords: [
+      "geoteknik iş güvenliği",
+      "çsg hse standartları",
+      "jet grout basınç güvenliği",
+      "delgi makinesi stabilite",
+      "sıfır kaza geoteknik"
+    ],
+    published: true
+  },
   ...seoArticles
 ];
 

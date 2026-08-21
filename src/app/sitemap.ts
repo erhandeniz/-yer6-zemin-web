@@ -22,7 +22,7 @@ const withTrailingSlash = (path: string) => {
 };
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticRoutes = ["", "about", "services", "projects", "equipment-fleet", "technology", "knowledge", "knowledge/deprem", "hesaplama", "blog", "contact", "sehirler"];
+  const staticRoutes = ["", "about", "services", "projects", "equipment-fleet", "technology", "knowledge", "knowledge/deprem", "hesaplama", "blog", "contact", "sehirler", "gizlilik", "kullanim-sartlari"];
   return [
     ...staticRoutes.map((route) => ({
       url: withTrailingSlash(`/${route}`),

@@ -310,6 +310,14 @@ export const dictionary = {
     proj_bursa_yunuseli_summary: "Bursa Yunuseli bölgesinde Nida Evleri projesi için temel altı jet grout zemin iyileştirme uygulaması.",
     proj_bursa_yunuseli_challenge: "Zayıf zemin tabakalarının iyileştirilmesi, oturma risklerinin azaltılması ve temel altı taşıyıcı sistemin güçlendirilmesi ihtiyacı.",
     proj_bursa_yunuseli_solution: "15 m kolon boyu ve 60 cm kolon çapı ile yüksek basınçlı çimento enjeksiyonuna dayalı jet grout kolon imalatı.",
+    proj_aydin_incirliova_title: "Aydın İncirliova Meydan ve Yeraltı Otoparkı Jet Grout Zemin Güçlendirme Projesi",
+    proj_aydin_incirliova_summary: "Aydın İncirliova Meydan ve Yeraltı Otoparkı projesinde sert kumlu zorlu zemin tabakalarında 400-600 bar yüksek basınçlı enjeksiyonla Ø60 cm çap ve 12 m derinlikte Jet Grout kolonları ve su sızdırmazlık perdesi imalatı.",
+    proj_aydin_incirliova_challenge: "Sert kumlu aşındırıcı zemin koşullarında ve yüksek yeraltı suyu altında derin otopark kazısı için taşıma gücünün güvenceye alınması ve su girişini kesen sızdırmazlık perdesi gerekliliği.",
+    proj_aydin_incirliova_solution: "400-600 bar yüksek basınçlı çimento enjeksiyonu ile Ø60 cm çapında 12 m boyunda Jet Grout kolonları teşkil edildi; sahada kumpasla çap doğrulaması ve karot numune testleri ile kalite belgelendi.",
+    proj_bala_karayollari_title: "Ankara Balâ Karayolları Yol Genişletme ve Zemin Sağlamlaştırma Projesi",
+    proj_bala_karayollari_summary: "Karayolları Genel Müdürlüğü (KGM) Ankara-Balâ devlet yolu genişletme projesinde 410 bar yüksek basınçlı enjeksiyonla Ø60 cm çapında Jet Grout kolonları, yol dolgusu sağlamlaştırma ve şev stabilitesi imalatı.",
+    proj_bala_karayollari_challenge: "Yoğun ağır tonajlı transit araç trafiği altındaki güzergahta, değişken dolgu ve zayıf yol taban zeminlerinde oturma, dalgalanma ve şev kayması risklerinin bertaraf edilmesi gerekliliği.",
+    proj_bala_karayollari_solution: "410 bar kinetik enjeksiyon basıncında Ø60 cm çapında Jet Grout kolonları teşkil edilerek yol tabanı homojen taşıyıcı bir platforma dönüştürüldü; şev kaymaları engellendi.",
 
     /* ── FLEET PAGE ── */
     fleetEyebrow: "Makine Parkı",
@@ -873,6 +881,14 @@ export const dictionary = {
     proj_bursa_yunuseli_summary: "Under-foundation jet grout ground improvement for the Nida Evleri project in Yunuseli, Bursa.",
     proj_bursa_yunuseli_challenge: "Improving weak soil layers, reducing settlement risk, and strengthening the under-foundation bearing system.",
     proj_bursa_yunuseli_solution: "Jet grout column production based on high-pressure cement injection with 15 m column length and 60 cm column diameter.",
+    proj_aydin_incirliova_title: "Aydın İncirliova Square & Underground Car Park Jet Grout Ground Improvement",
+    proj_aydin_incirliova_summary: "Sub-foundation jet grout ground improvement and water cut-off wall for the Aydın İncirliova Square and Underground Car Park project; Ø60 cm columns at 12 m depth in dense sandy soils.",
+    proj_aydin_incirliova_challenge: "Ensuring bearing capacity and building an impervious cut-off wall against high groundwater and abrasive hard sand layers during deep underground parking excavation.",
+    proj_aydin_incirliova_solution: "400-600 bar high-pressure cement injection formed Ø60 cm Jet Grout columns at 12 m depth; confirmed by on-site caliper diameter checks and core UCS tests.",
+    proj_bala_karayollari_title: "Ankara Balâ Highway Widening and Soil Stabilisation Project",
+    proj_bala_karayollari_summary: "Sub-grade ground improvement and slope stabilization for the General Directorate of Highways (KGM) Ankara-Balâ highway widening project using 410 bar high-pressure jet grouting with Ø60 cm columns.",
+    proj_bala_karayollari_challenge: "Eliminating settlement, rutting, and slope failure risks under heavy commercial transit traffic across variable embankment and weak subgrade soils.",
+    proj_bala_karayollari_solution: "Ø60 cm Jet Grout columns installed under 410 bar kinetic injection pressure converted the subgrade into a rigid platform, preventing slope displacement.",
 
     /* ── FLEET PAGE ── */
     fleetEyebrow: "Equipment",
@@ -1437,6 +1453,14 @@ export const dictionary = {
     proj_bursa_yunuseli_summary: "تنفيذ تحسين التربة تحت الأساسات بالحقن النفاث لمشروع Nida Evleri في Yunuseli، Bursa.",
     proj_bursa_yunuseli_challenge: "تحسين طبقات التربة الضعيفة، تقليل مخاطر الهبوط، وتقوية النظام الحامل تحت الأساسات.",
     proj_bursa_yunuseli_solution: "تنفيذ أعمدة حقن نفاث تعتمد على حقن الأسمنت عالي الضغط بطول عمود 15 م وقطر 60 سم.",
+    proj_aydin_incirliova_title: "مشروع تحسين التربة بالحقن النفاث لميدان ومواقف سيارات Aydın İncirliova",
+    proj_aydin_incirliova_summary: "تنفيذ أعمدة الحقن النفاث (Jet Grout) بقطر 60 سم وعمق 12 م وستارة عازلة للمياه لمشروع الميدان ومواقف السيارات تحت الأرض في Aydın İncirliova.",
+    proj_aydin_incirliova_challenge: "ضمان قدرة التحمل وإنشاء جدار مانع لتسرب المياه في ظروف التربة الرملية الصلبة ومنسوب المياه الجوفية المرتفع أثناء الحفر العميق للمواقف.",
+    proj_aydin_incirliova_solution: "تم تشكيل أعمدة الحقن النفاث بقطر 60 سم وعمق 12 م تحت ضغط 400-600 بار مع فحص الأقطار ميدانيًا واختبارات العينات الأساسية UCS.",
+    proj_bala_karayollari_title: "مشروع توسعة الطرق وتثبيت التربة بالطرق السريعة في Ankara Balâ",
+    proj_bala_karayollari_summary: "تنفيذ أعمدة الحقن النفاث بقطر 60 سم تحت ضغط 410 بار لتقوية طبقات التربة وتثبيت الميول لمشروع توسعة طريق أنقرة - بالا التابع للمديرية العامة للطرق السريعة.",
+    proj_bala_karayollari_challenge: "القضاء على مخاطر الهبوط والانزلاقات تحت حركة الشاحنات الثقيلة فوق طبقات الردم والتربة الضعيفة.",
+    proj_bala_karayollari_solution: "تم تحويل طبقة الأساس إلى منصة متينة مانعة للانزياح من خلال أعمدة الحقن النفاث بقطر 60 سم وضغط 410 بار.",
 
     /* ── FLEET PAGE ── */
     fleetEyebrow: "أسطول المعدات",

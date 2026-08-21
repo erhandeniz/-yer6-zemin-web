@@ -398,7 +398,7 @@ export const cityPages: CityPage[] = [
     soilContext:
       "Menderes ovasındaki suya doygun gevşek kum-silt tabakaları, olası depremlerde yüksek sıvılaşma potansiyeline sahiptir ve yapılarda ciddi diferansiyel oturmalara zemin hazırlayabilir.",
     recommendedApproach:
-      "Sıvılaşma ve oturma kontrolü için geniş endüstriyel alanlarda DSM zemin iyileştirme; konut ve altyapı projelerinde ise jet grout kolonları ve derin fore kazık sistemleri tercih edilir.",
+      "Sıvılaşma ve oturma kontrolü için geniş endüstriyel alanlarda DSM zemin iyileştirme; İncirliova Meydan Otoparkı gibi projelerde sert kumlu zeminlerde 12 m boyunda Ø60 cm Jet Grout kolonları ve su sızdırmazlık perdesi; konut ve altyapı projelerinde ise derin fore kazık sistemleri tercih edilir.",
     qualityFocus:
       "Aydın şantiyelerinde sıvılaşma direncini artırmaya yönelik kolon yerleşimi, enjeksiyon basıncı doğrulaması ve yerinde karot mukavemet testleri kalite kabulünün ana unsurlarıdır.",
     serviceSlugs: ["dsm", "jet-grout", "fore-kazik", "zemin-iyilestirme"],

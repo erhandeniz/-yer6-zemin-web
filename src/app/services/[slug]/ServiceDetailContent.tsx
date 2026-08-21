@@ -475,6 +475,39 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
               <YouTubeVideoPlayer
                 title={`YER6 ${t(`${service.key}_title`)} Saha Uygulama Çekimleri`}
                 description={`YER6 Geoteknik mühendislik ekibinin sahada gerçekleştirdiği ${t(`${service.key}_title`)} operasyonu ve kalite kontrol test süreçleri.`}
+                videos={
+                  service.slug === "fore-kazik"
+                    ? [
+                        {
+                          id: "-I5Nxlqsphs",
+                          title: "Hatay Arsuz Muhafaza Borulu (Casing) Fore Kazık İmalatı",
+                          location: "Hatay Arsuz Sahası",
+                          description: "Hatay Arsuz'da muhafaza borulu kılıflı rotary delgi fore kazık imalatı ve donatı montaj operasyonu."
+                        },
+                        {
+                          id: "iABCGEeN8F8",
+                          title: "Hatay Merkez Emlak Konut Deprem Konutları Kazıklı Temel",
+                          location: "Hatay Merkez Sahası",
+                          description: "Hatay Merkez Emlak Konut deprem konutları projesinde rotary delgi fore kazık ve kazıklı radye temel uygulaması."
+                        },
+                        {
+                          id: "lOfabQRZuxQ",
+                          title: "Malatya Deprem Konutları Geoteknik Fore Kazık Operasyonu",
+                          location: "Malatya Sahası",
+                          description: "Malatya deprem konutları sahasında yüksek torklu rotary delgi makineleri ile fore kazık delgi ve donatı montajı."
+                        }
+                      ]
+                    : service.slug === "jet-grout"
+                    ? [
+                        {
+                          id: "HcMN8T1X4d8",
+                          title: "YER6 Jet Grout Saha Uygulama ve Basınçlı Enjeksiyon Operasyonu",
+                          location: "Saha İmalatı",
+                          description: "YER6 Geoteknik mühendislik ekibinin sahada gerçekleştirdiği 400-600 bar yüksek basınçlı Jet Grout kolon imalatı."
+                        }
+                      ]
+                    : undefined
+                }
               />
 
               {/* Sık Sorulan Sorular */}

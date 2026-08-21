@@ -158,6 +158,11 @@ export const services = [
     ],
     technicalNote: "Fore kazık kalitesi, delgi hızından çok beton döküm kalitesine bağlıdır. DFI/EFFC kılavuzlarına göre; tremie borusunun beton dökümü esnasında en az 3 metre betonun içinde gömülü kalması, soğuk derz ve çamur sıkışması riskini engellemek için zorunludur. Ayrıca Low-strain (PIT) testleri süreklilik hakkında bilgi verirken, kazığın taşıma kapasitesi ancak Statik veya Dinamik Yükleme Testleri ile doğrulanabilir.",
     faq: [
+      { question: "Fore kazık kaç şiddetinde depreme dayanır?", answer: "Mühendislik hesaplarında deprem dayanımı Richter büyüklüğü yerine Zemin İvmesi (PGA) ve TBDY 2018 spektral ivme parametreleri (S_DS, S_D1) ile boyutlandırılır. Sağlam ana kayaya en az 3-5 metre soketlenen ve donatı kafesi tam boy yerleştirilen bir fore kazık sistemi; 0.60g - 0.80g yer ivmesine (7.5 - 8.0+ Mw büyüklüğündeki yıkıcı depremlere) tam dayanım gösterir. Yüzeydeki alüvyon veya dolgu tabakası tamamen sıvılaşsa dahi yükü doğrudan kayaya ilettiği için yapının batmasını ve yan yatmasını kesin olarak önler." },
+      { question: "Fore kazık mı radye temel mi? Hangi durumda hangisi seçilmelidir?", answer: "Radye temel ve fore kazık birbirinin rakibi değil, zemin sınıfına göre birbirini tamamlayan sistemlerdir. ZA, ZB ve sağlam ZC sınıfı zeminlerde radye temel tek başına yeterli ve en ekonomik çözümdür. Ancak ZD, ZE ve ZF sınıfı yumuşak kil, alüvyon, yüksek yeraltı suyu ve sıvılaşma riski taşıyan sahalarda tek başına radye temel binanın batmasını engelleyemez; bu zeminlerde 'Kazıklı Radye Temel' (Piled Raft Foundation) uygulanarak radye plağın altı fore kazıklarla kayaya kilitlenmelidir." },
+      { question: "Fore kazık ve radye temel arasındaki temel farklar nelerdir?", answer: "Radye temel 1-2.5 metre derinlikte yüzey taban gerilmesiyle yük aktarımı yaparken, fore kazık 15-45+ metre derinlikteki ana kayaya uç mukavemeti ve çevre sürtünmesi ile yük iletir. Sıvılaşabilir zeminlerde radye temel toptan göçme veya yan yatma riski taşırken, fore kazık sıvılaşan katmanı baypas ederek deprem anında mutlak stabilite sağlar." },
+      { question: "Çaplarına göre fore kazıklar (Ø65, Ø80, Ø100, Ø120 cm) nerelerde tercih edilir?", answer: "Ø65 cm kazıklar hafif yapılar, kentsel dönüşüm bina temelleri ve sığ iksalarda; Ø80 cm kazıklar standart 8-15 katlı konut ve ticari binalarda; Ø100 cm kazıklar yüksek katlı kuleler, sanayi tesisleri ve derin ankrajlı iksa perdelerinde; Ø120 cm ve üzeri baret kazıklar ise viyadük, köprü ayakları, metro istasyonları ve ağır endüstriyel santral temellerinde tercih edilir." },
+      { question: "Fore kazık metre fiyatı ve 2026 maliyetleri neye göre belirlenir?", answer: "Fore kazık metre birim fiyatı; kazık çapı (Ø65-Ø120 cm), toplam metraj, zeminin sertliği (kaya soketi veya alüvyon), yeraltı suyu seviyesi (muhafaza borusu/casing veya bentonit kullanımı), demir donatı tonajı ve beton sınıfına (C30/37 vb.) göre belirlenir. YER6 bünyesindeki canlı Fore Kazık Maliyet Hesaplayıcı ile anlık yaklaşık bütçe çıkarılabilir." },
       { question: "Fore kazık ile mini kazık ve zemin çivisi arasındaki mühendislik farkı nedir?", answer: "Fore kazık; genellikle 60-250 cm çaplarında, yüzlerce ton eksenel yük taşıyabilen ana taşıyıcı elemanlardır. Mini kazık ise 15-30 cm çaplı, çimento enjeksiyonu ile oluşturulan destek elemanlarıdır. Zemin çivisi (soil nail) ise daha çok şev stabilitesi ve ankrajlı iksa sistemlerinde (diyafram duvar vb. ile) yüzey dayanımını artırmak için yatay veya açılı düzlemde uygulanır." },
       { question: "Fore kazık hangi zemin türlerinde, ne kadar derine uygulanabilir?", answer: "Fore kazık; kil, kum, çakıl ve uygun kaya delgi ekipmanlarıyla kaya formasyonlarında uygulanabilir. Ulaşılabilir derinlik; ekipman kapasitesi, kazık çapı, zemin/kaya profili, yeraltı suyu ve saha lojistiğine göre proje özelinde belirlenir." },
       { question: "Fore kazık betonunun kalitesi (bütünlüğü) nasıl doğrulanır?", answer: "ICE SPERW spesifikasyonlarına uygun olarak; düşük gerinimli süreklilik testi (PIT) veya donatı kafesine bağlanan borular yardımıyla ultrasonik dalga yansımalarını ölçen Crosshole Sonic Logging (CSL) testi ile doğrulanır." },
@@ -1063,6 +1068,100 @@ const projectCatalog = [
       }
     ],
     relatedServiceSlugs: ["jet-grout", "zemin-iyilestirme"]
+  },
+  {
+    slug: "aydin-incirliova-meydan-otopark-jet-grout",
+    key: "proj_aydin_incirliova",
+    category: "Jet Grout",
+    location: "İncirliova / Aydın",
+    year: "2026",
+    area: "Meydan ve Yeraltı Otoparkı",
+    metric: "Ø60 cm Kolon · 12 m Derinlik",
+    title: "Aydın İncirliova Meydan ve Yeraltı Otoparkı Jet Grout Zemin Güçlendirme Projesi",
+    summary: "Aydın İncirliova Meydan ve Yeraltı Otoparkı projesinde sert kumlu zorlu zemin tabakalarında 400-600 bar yüksek basınçlı enjeksiyonla Ø60 cm çap ve 12 m derinlikte Jet Grout kolonları ve su sızdırmazlık perdesi imalatı.",
+    challenge: "Sert kumlu, aşındırıcı ve yüksek yeraltı suyu seviyesine sahip zemin yapısında, derin otopark kazısı için hem temel taşıma kapasitesinin sağlanması hem de kazı tabanına su girişini engelleyen rijit bir su geçirimsizlik perdesinin teşkil edilmesi gerekliliği.",
+    solution: "Yüksek kinetik enerjili Jet Grout delgi rigi ve 400-600 bar yüksek basınçlı triplex pompalar kullanılarak sert kum katmanları homojen biçimde kesildi; Ø60 cm çapında 12 metre derinlikte kesişen Jet Grout kolonları (soilcrete) imal edildi. Sahada kumpasla kolon çapı ölçümleri, kuyu derinlik kontrolleri ve karot numune testleri (UCS) ile imalat kalitesi belgelendi.",
+    tags: ["Jet Grout", "Aydın", "Otopark Projesi", "Ø60 Kolon", "12m Derinlik", "Sert Kumlu Zemin"],
+    image: "/images/projects/aydin-incirliova/aydin-meydan-otopark-jet-grout-calisma.jpg",
+    imageAlt: "Aydın İncirliova Meydan ve Otopark Projesi Jet Grout zemin güçlendirme şantiye fotoğrafı",
+    soilProblem: "Aydın İncirliova havzasında yüzey altında yer alan sert kumlu, siltli ve değişken drenajlı zemin birimleri; derin yeraltı otopark kazısı esnasında su basması, kazı tabanı kabarması ve yapı temellerinde farklı oturma riskleri barındırmaktaydı. Sert kum katmanlarının yüksek sürtünme ve aşındırıcılığı delgi parametrelerinin hassas yönetimini zorunlu kıldı.",
+    solutionMethod: "YER6 Geoteknik mühendislik ekibi tarafından 400-600 bar basınç altında su/çimento oranı optimize edilmiş çimento şerbeti enjekte edildi. Ø60 cm kolon çapı doğrulaması için sahada açığa çıkarma ve kumpas ölçümleri yapıldı; 12 metre boyundaki kolonlar dama düzeninde imal edilerek hidrolik kuyu stabilitesi ve taşıma gücü maksimum seviyeye çıkarıldı.",
+    technicalInfo: [
+      { label: "Uygulama Yöntemi", value: "Jet Grout (Yüksek Basınçlı Enjeksiyon)" },
+      { label: "Lokasyon", value: "İncirliova / Aydın" },
+      { label: "Proje Tipi", value: "Meydan ve Yeraltı Otoparkı" },
+      { label: "Kolon Çapı", value: "Ø60 cm" },
+      { label: "Kolon Boyu", value: "12 m" },
+      { label: "Zemin Tipi", value: "Sert Kumlu / Zorlu Zemin" },
+      { label: "Kalite Kontrol", value: "Kolon çapı ölçümü, derinlik kontrolü ve karot UCS testi" }
+    ],
+    usedEquipment: ["Jet Grout Delgi Makinesi", "400-600 Bar Yüksek Basınçlı Triplex Pompa", "Otomatik Çimento Mikser Santrali", "Dikey Çimento Silosu"],
+    result: "Ø60 cm çapında ve 12 m derinliğindeki Jet Grout kolonları ile otopark temel altı zemin taşıma kapasitesi güvenceye alındı; su geçirimsizlik perdesi tamamlanarak derin kazı güvenliği sağlandı.",
+    seoTitle: "Aydın İncirliova Meydan Otopark Jet Grout Projesi | YER6",
+    metaDescription: "Aydın İncirliova Meydan ve Yeraltı Otoparkı projesinde sert kumlu zorlu zeminde Ø60 cm çap ve 12 m derinlikte Jet Grout kolon imalatı — YER6 saha uygulaması.",
+    video: {
+      videoId: "IpZDCW3upz0",
+      title: "Aydın İncirliova Meydan Otopark Jet Grout Saha İmalat Videosu",
+      caption: "Aydın İncirliova Meydan ve Yeraltı Otoparkı projesinde 400-600 bar yüksek basınçlı enjeksiyonla Ø60 cm çap ve 12 m derinlikte Jet Grout kolon imalatı saha operasyonu.",
+      orientation: "portrait" as const
+    },
+    gallery: [
+      { src: "/images/projects/aydin-incirliova/aydin-meydan-otopark-jet-grout-calisma.jpg", alt: "Aydın İncirliova Meydan Otopark projesinde Jet Grout delgi ve enjeksiyon çalışması" },
+      { src: "/images/projects/aydin-incirliova/aydin-meydan-otopark-kolon-capi-olcme.jpg", alt: "Aydın İncirliova Jet Grout kolon çapı doğrulama ve saha ölçümü" },
+      { src: "/images/projects/aydin-incirliova/aydin-meydan-otopark-kolon-kontrolu.jpg", alt: "Aydın İncirliova otopark sahasında Jet Grout kolon kalite kontrolü" },
+      { src: "/images/projects/aydin-incirliova/aydin-meydan-otopark-test-alma.jpg", alt: "Aydın İncirliova zemin güçlendirme projesinde saha test alma ve numune kontrolü" }
+    ],
+    relatedServiceSlugs: ["jet-grout", "zemin-iyilestirme", "zemin-guclendirme"]
+  },
+  {
+    slug: "ankara-bala-karayollari-yol-genisletme-jet-grout",
+    key: "proj_bala_karayollari",
+    category: "Jet Grout",
+    location: "Balâ / Ankara",
+    year: "2025",
+    area: "Karayolu Genişletme Güzergahı",
+    metric: "410 Bar Basınç · Ø60 cm Kolon",
+    title: "Ankara Balâ Karayolları Yol Genişletme ve Zemin Sağlamlaştırma Projesi",
+    summary: "Karayolları Genel Müdürlüğü (KGM) Ankara-Balâ devlet yolu genişletme projesinde 410 bar yüksek basınçlı enjeksiyonla Ø60 cm çapında Jet Grout kolonları, yol dolgusu sağlamlaştırma ve şev stabilitesi imalatı.",
+    challenge: "Yoğun ağır tonajlı transit araç trafiği altındaki güzergahta, değişken dolgu ve zayıf yol taban zeminlerinde oturma, dalgalanma ve şev kayması risklerinin bertaraf edilmesi; Karayolları Teknik Şartnamesi (KTŞ) standartlarına tam uyum gerekliliği.",
+    solution: "Yüksek kinetik enerjili Jet Grout makineleri ve triplex yüksek basınç pompaları ile 410 bar enjeksiyon basıncında Ø60 cm çapında Jet Grout kolonları (soilcrete) teşkil edildi. Yol tabanı homojen taşıyıcı bir platforma dönüştürülerek şev kaymaları engellendi; anlık basınç-debi logları ve karot numune testleri ile kalite belgelendi.",
+    tags: ["Jet Grout", "Karayolları", "Ankara Balâ", "410 Bar Basınç", "Ø60 Kolon", "Yol Genişletme", "Şev Stabilitesi"],
+    image: "/images/projects/bala-karayollari-delici-saha.jpg",
+    imageAlt: "Ankara Balâ Karayolları yol genişletme projesinde Jet Grout delici makinesi",
+    soilProblem: "Ankara-Balâ güzergahındaki yol genişletme hattında yer alan heterojen dolgular, killi ve oturmaya meyilli tabakalar; ağır dingil yükleri altında yol platformunda tekerlek izi oturması, deformasyon ve şev göçmesi tehlikesi yaratmaktaydı.",
+    solutionMethod: "YER6 Geoteknik ekibi tarafından 410 bar kinetik enjeksiyon basıncı altında çimento şerbeti zemine enjekte edilerek Ø60 cm çapında kesişen Jet Grout kolonları oluşturuldu. Yol dolgusu altındaki zayıf tabaka rijit bir kompozit zemine dönüştürüldü ve karayolu altyapısı uzun ömürlü hale getirildi.",
+    technicalInfo: [
+      { label: "Uygulama Yöntemi", value: "Jet Grout (410 Bar Yüksek Basınç)" },
+      { label: "İşveren / İdare", value: "Karayolları Genel Müdürlüğü (KGM) Güzergahı" },
+      { label: "Lokasyon", value: "Balâ / Ankara" },
+      { label: "Proje Tipi", value: "Karayolu Genişletme & Zemin Sağlamlaştırma" },
+      { label: "Enjeksiyon Basıncı", value: "410 Bar" },
+      { label: "Kolon Çapı", value: "Ø60 cm" },
+      { label: "Kalite Kontrol", value: "Gerçek zamanlı basınç-debi takibi ve karot UCS testi" }
+    ],
+    usedEquipment: ["Jet Grout Delgi Makinesi", "410 Bar Yüksek Basınçlı Triplex Pompa", "Otomatik Mikser Santrali", "Dikey Çimento Silosu"],
+    result: "410 bar basınçla imal edilen Ø60 cm Jet Grout kolonları sayesinde karayolu tabanı ve şevleri sarsılmaz bir mukavemete ulaştırıldı; ağır trafik yükleri altında sıfır oturma güvencesi sağlandı.",
+    seoTitle: "Ankara Balâ Karayolları Yol Genişletme Jet Grout Projesi | YER6",
+    metaDescription: "Ankara Balâ Karayolları yol genişletme projesinde 410 bar yüksek basınçla Ø60 cm Jet Grout kolon imalatı ve yol sağlamlaştırma — YER6 saha uygulaması.",
+    videos: [
+      {
+        videoId: "-73OodSDeXk",
+        title: "Ankara Balâ Karayolları Yol Genişletme Sahası",
+        caption: "Karayolları Genel Müdürlüğü (KGM) Ankara-Balâ yol genişletme projesinde 410 bar yüksek basınçlı Jet Grout kolon ve yol dolgusu sağlamlaştırma operasyonu.",
+        orientation: "portrait" as const
+      },
+      {
+        videoId: "B-jZjgvcdZ0",
+        title: "410 Bar Yüksek Basınçla Ø60 Kolon İmalatı",
+        caption: "YER6 yüksek basınç pompaları ile 410 barda gerçekleştirilen Ø60 cm Jet Grout kolon imalatı, çimento enjeksiyonu ve gerçek zamanlı saha kontrolleri.",
+        orientation: "portrait" as const
+      }
+    ],
+    gallery: [
+      { src: "/images/projects/bala-karayollari-delici-saha.jpg", alt: "Balâ Karayolları projesinde çalışan Jet Grout delici makinesi" },
+      { src: "/images/projects/bala-karayollari-410-bar-enjeksiyon.jpg", alt: "410 Bar yüksek basınçlı çimento enjeksiyonu ve Jet Grout kolon imalatı" }
+    ],
+    relatedServiceSlugs: ["jet-grout", "zemin-iyilestirme", "zemin-guclendirme"]
   },
   {
     slug: "bina-alti-jet-grout-guclendirme",

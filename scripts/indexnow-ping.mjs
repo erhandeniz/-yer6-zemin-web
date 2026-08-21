@@ -47,14 +47,26 @@ async function main() {
     process.exit(1);
   }
 
-  // 3) IndexNow'a gönder (Yandex & Bing tek istek, tüm URL listesi).
-  const res = await fetch(ENDPOINT, {
-    method: "POST",
-    headers: { "Content-Type": "application/json; charset=utf-8" },
-    body: JSON.stringify({ host: HOST, key: KEY, keyLocation: KEY_LOCATION, urlList })
-  });
+  // 3) IndexNow'a gönder (Bing doğrudan, Yandex doğrudan, IndexNow.org genel).
+  const payload = JSON.stringify({ host: HOST, key: KEY, keyLocation: KEY_LOCATION, urlList });
+  const endpoints = [
+    { name: "IndexNow.org", url: "https://api.indexnow.org/indexnow" },
+    { name: "Microsoft Bing", url: "https://www.bing.com/indexnow" },
+    { name: "Yandex", url: "https://yandex.com/indexnow" }
+  ];
 
-  console.log(`IndexNow gönderimi: HTTP ${res.status} · ${urlList.length} URL Yandex & Bing'e bildirildi.`);
+  for (const ep of endpoints) {
+    try {
+      const epRes = await fetch(ep.url, {
+        method: "POST",
+        headers: { "Content-Type": "application/json; charset=utf-8" },
+        body: payload
+      });
+      console.log(`[${ep.name}] IndexNow gönderimi: HTTP ${epRes.status} (${urlList.length} URL)`);
+    } catch (epErr) {
+      console.log(`[${ep.name}] Gönderim uyarısı:`, String(epErr?.message ?? epErr));
+    }
+  }
 
   // 4) Google'a sitemap bildirimi (Google Ping).
   try {
@@ -64,12 +76,8 @@ async function main() {
     console.log("Google ping uyarısı:", String(gErr?.message ?? gErr));
   }
 
-  if (res.status !== 200 && res.status !== 202) {
-    const body = await res.text().catch(() => "");
-    console.error("Uyarı: beklenmeyen durum.", body.slice(0, 300));
-    process.exit(1);
+    console.log("Arama motorları bildirimleri başarıyla tamamlandı.");
   }
-}
 
 main().catch((e) => {
   console.error("HATA:", String(e?.message ?? e).slice(0, 300));

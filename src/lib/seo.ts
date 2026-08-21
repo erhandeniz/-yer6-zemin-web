@@ -459,8 +459,10 @@ export function generateArticleSchema(article: {
     isAccessibleForFree: true,
     ...(article.articleSection ? { articleSection: article.articleSection } : {}),
     ...(article.keywords?.length ? { keywords: article.keywords.join(", ") } : {}),
-    datePublished: article.datePublished,
-    dateModified: article.dateModified || article.datePublished,
+    datePublished: article.datePublished.includes("T") ? article.datePublished : `${article.datePublished}T08:00:00+03:00`,
+    dateModified: (article.dateModified || article.datePublished).includes("T")
+      ? (article.dateModified || article.datePublished)
+      : `${article.dateModified || article.datePublished}T08:00:00+03:00`,
     author,
     publisher: {
       "@type": "Organization",

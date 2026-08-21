@@ -526,5 +526,225 @@ export const seoArticles: KnowledgeArticle[] = [
     relatedSlugs: ["fore-kazik-tremie-beton-dokum-kriterleri", "kazik-yukleme-testleri"],
     keywords: ["ICE piling specification", "fore kazık kalite kontrol", "ICE kazık şartnamesi", "tremie betonlama"],
     published: true
+  },
+  {
+    slug: "dunya-geoteknik-makine-ozellikleri-rehberi-bauer-soilmec-casagrande",
+    title: "Dünya Geoteknik Makine Özellikleri Rehberi: Bauer, Soilmec, Casagrande & Metax Parkı",
+    seoTitle: "Dünya Geoteknik Makine Özellikleri Rehberi 2026 | YER6",
+    description: "Dünyanın önde gelen geoteknik delgi ve enjeksiyon makinelerinin (Bauer BG, Soilmec SM, Casagrande C6, Metax MP7) tork, delgi derinliği, motor gücü ve saha performans kriterleri.",
+    excerpt: "Geoteknik zemin güçlendirme projelerinin başarısı, zemin matrisine uygun makine parkuru seçimine bağlıdır. Bauer, Soilmec, Casagrande, XCMG ve Metax gibi küresel üreticilerin delgi makineleri, triplex motopompaları ve jet grout santrallerinin mühendislik spesifikasyonları incelemesi.",
+    category: "Zemin İyileştirme",
+    readingTime: "15 dk",
+    publishedAt: "2026-08-13",
+    updatedAt: "2026-08-13",
+    heroLabel: "Küresel Makine Anketi & Şartname",
+    introduction: "Derin temel ve iksa altyapısında projenin süresi, maliyeti ve kalitesi doğru makine ve santral filosu seçimi ile doğrudan ilişkilidir. Bu kapsamlı rehberde, küresel ölçekte kullanılan ağır geoteknik delgi makineleri, yüksek basınçlı enjeksiyon pompaları ve jet grout mikser santrallerinin teknik değerlerini detaylandırıyoruz.",
+    sections: [
+      {
+        id: "fore-kazik-makineleri",
+        title: "1. Ağır Fore Kazık Delgi Makineleri (Bauer & XCMG)",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Derin temel imalatlarında yüksek tork ve eksenel baskı kuvveti (crowd force) gerektiren sert kayalı veya yüksek su seviyeli zeminlerde ağır kuleli hidrolik delgi makineleri kullanılır."
+          },
+          {
+            type: "list",
+            title: "Öne Çıkan Ağır Fore Kazık Makineleri Spesifikasyonları",
+            items: [
+              "Bauer BG 45: 461 kNm Tork, CAT C18 563 kW Motor, Maksimum 125.5m Delgi Derinliği, 3000mm Çap Kapasitesi.",
+              "Bauer BG 28 H: 277 kNm Tork, CAT C13 354 kW Motor, Maksimum 65.8m Delgi Derinliği, 2300mm Çap Kapasitesi.",
+              "Bauer BG 18 H: 177 kNm Tork, CAT C7.1 205 kW Motor, Maksimum 53.4m Delgi Derinliği, 1800mm Çap Kapasitesi.",
+              "XCMG XR220D: 220 kNm Tork, Cummins QSL9 242 kW Motor, Maksimum 67.5m Delgi Derinliği, 2000mm Çap Kapasitesi."
+            ]
+          }
+        ]
+      },
+      {
+        id: "jet-grout-dsm-ankraj-makineleri",
+        title: "2. Jet Grout, DSM ve Ankraj Delgi Makineleri (Soilmec & Casagrande & MDT)",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Esnek kule yapıları, yüksek rotasyon hızı ve hassas açı ayarı sunan hidrolik ankraj ve jet grout delgi makineleri, dar şantiye alanlarında ve zemin çivisi/iksa imalatlarında tercih edilir."
+          },
+          {
+            type: "list",
+            title: "Jet Grout & Ankraj Delgi Makineleri Teknik Değerleri",
+            items: [
+              "Soilmec SM-401: 14 kNm Tork, Deutz TCD 4.1 115 kW Motor, Tek Pas Jet Grout Kapasitesi, Dar Alan Eklemli Kule.",
+              "Soilmec SM-14: 12 kNm Tork, Cummins QSB 4.5 119 kW Motor, Jet Grout / Ankraj / Mini Kazık Kombinasyonu.",
+              "Casagrande C6 XP-2: 15.2 kNm Tork, Deutz TCD 3.6 100 kW Motor, 360 Derece Dönüşlü Kule Mimarisi.",
+              "MDT 180 B: 18 kNm Tork, Perkins 129 kW Motor, Ağır Hizmet Tipi Mini Kazık ve Ankraj Delgi Seti."
+            ]
+          }
+        ]
+      },
+      {
+        id: "yüksek-basinc-pompalar-ve-santraller",
+        title: "3. Yüksek Basınçlı Jet Grout Pompaları ve Otomatik Santraller (Metax & Soilmec)",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Jet Grout imalatının kalitesi (çap ve mukavemet), çimento harcını 400-600 bar aralığında memeden çıkaran triplex motopompalar ve kesintisiz karışım hazırlayan tam otomatik mikser santralleri ile sağlanır."
+          },
+          {
+            type: "list",
+            title: "Pompa ve Santral Ekipman Parametreleri",
+            items: [
+              "Metax MP7 Triplex Pompa: 600 Bar Maks Basınç, 240 L/dk Debisi, 400 kW Motor Gücü, Seramik Piston Yapısı.",
+              "Soilmec 5T-400J Triplex Pompa: 500 Bar Çalışma Basıncı, 350 L/dk Debisi, Ağır Saha İklim Dayanımı.",
+              "GM-25 Otomatik Çimento Santrali: 25 m³/saat Harç Üretim Kapasitesi, Dijital Tartım ve PLC Kontrol.",
+              "60 Tonluk Dikey Çimento Silosu: Pnömatik Dolum, Çift Emniyet Valfi ve Toz Filtreli Çevre Standartları."
+            ]
+          }
+        ]
+      }
+    ],
+    faq: [
+      { question: "Jet grout imalatında pompa basıncı kaç bar olmalıdır?", answer: "Jet 1 yönteminde 400 - 500 bar, Jet 2 ve Jet 3 yöntemlerinde hava ve su desteği ile 500 - 600 bar çalışma basınçları uygulanır." },
+      { question: "Fore kazık delgi makinesi seçiminde tork ve motor gücü ne kadar önemlidir?", answer: "Sert kayalık ve kil tabakalarında kesme kuvveti doğrudan kütle torku (kNm) ile ilgilidir. Ø1500mm üzerindeki delgilerde 200 kNm üzeri makineler zorunludur." }
+    ],
+    relatedSlugs: ["jet-grout-nedir", "fore-kazik-nedir", "dsm-nasil-uygulanir", "jet-grout-kalite-kontrol-rehberi"],
+    keywords: [
+      "dünya geoteknik makineleri",
+      "bauer bg 45 özellikleri",
+      "bauer bg 28 h tork",
+      "soilmec sm 401 jet grout",
+      "casagrande c6 xp-2",
+      "metax mp7 triplex pompa",
+      "fore kazık delgi makinesi",
+      "jet grout pompa basıncı",
+      "geoteknik makine parkı"
+    ],
+    published: true
+  },
+  {
+    slug: "turkiye-fore-kazik-rehberi-caplar-fiyatlar-deprem-dayanimi-ve-radye-temel",
+    title: "Türkiye Fore Kazık Rehberi 2026: Çaplar (Ø65-Ø120), Deprem Dayanımı, Metre Fiyatları ve Radye Temel Karşılaştırması",
+    seoTitle: "Fore Kazık Kaç Şiddetinde Depreme Dayanır? Fore Kazık mı Radye Temel mi? | YER6",
+    description: "Fore kazık kaç şiddetinde depreme dayanır? Fore kazık mı radye temel mi? Ø65, Ø80, Ø100, Ø120 cm çaplar, metre fiyatları ve 81 ilde fore kazık geoteknik analizleri.",
+    excerpt: "Fore kazık (bored pile) derin temel sistemleri; TBDY 2018 ve Eurocode 7 standartlarına göre zayıf zeminlerde bina yüklerini sağlam ana kayaya aktarır. Fore kazık ile radye temel farkları, deprem ivme dayanımı, çap seçim matrisi ve Türkiye genelinde maliyet parametreleri.",
+    category: "Fore Kazık",
+    readingTime: "16 dk",
+    publishedAt: "2026-08-16",
+    updatedAt: "2026-08-16",
+    heroLabel: "Kapsamlı Fore Kazık & Deprem Rehberi",
+    introduction: "Deprem kuşağında yer alan Türkiye'de zemin güvenliği, üstyapı statiğinin en belirleyici unsurudur. Bu kapsamlı mühendislik rehberinde; fore kazıkların kaç şiddetinde depreme dayandığı, radye temel ile fore kazık arasındaki yapısal farklar, zemin sınıflarına (ZA-ZF) göre kazıklı radye temel zorunlulukları, çap seçimleri (Ø65, Ø80, Ø100, Ø120 cm) ve 81 il bazında fore kazık uygulama kriterleri detaylandırılmıştır.",
+    sections: [
+      {
+        id: "fore-kazik-deprem-dayanimi",
+        title: "1. Fore Kazık Kaç Şiddetinde Depreme Dayanır?",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Geoteknik ve deprem mühendisliğinde (TBDY 2018 Bölüm 16) yapı temelleri 'Richter büyüklüğü' yerine 'En Büyük Zemin İvmesi' (PGA - Peak Ground Acceleration) ve spektral ivme katsayıları (S_DS, S_D1) ile projelendirilir."
+          },
+          {
+            type: "paragraph",
+            content: "Doğru tasarlanmış, donatı kafesi tam boy yerleştirilmiş ve sağlam ana kayaya en az 3-5 metre soketlenen (rock-socketed) bir fore kazık sistemi; 0.60g - 0.80g zemin ivmesine (7.5 - 8.0+ Mw büyüklüğündeki yıkıcı depremlere) tam dayanım gösterecek şekilde kesme kuvveti (Vr) ve eğilme momenti (Mr) kapasitesine ulaştırılır."
+          },
+          {
+            type: "paragraph",
+            content: "Deprem esnasında yüzeydeki alüvyon, gevşek kum veya dolgu tabakası tamamen sıvılaşsa (sıvılaşma güvenlik katsayısı FS < 1.0) dahi, kazıklar sıvılaşan tabakayı baypas ederek yükü derindeki rijit kayaya aktarır. Böylece yapının devrilmesi, zemin içine batması veya toptan göçmesi kesin olarak engellenir."
+          }
+        ]
+      },
+      {
+        id: "fore-kazik-mi-radye-temel-mi",
+        title: "2. Fore Kazık mı Radye Temel mi? (Zemin Sınıflarına Göre Seçim)",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Radye temel ve fore kazık birbirinin rakibi değil, zemin sınıfına göre birbirini tamamlayan yüzeysel ve derin temel sistemleridir:"
+          },
+          {
+            type: "list",
+            title: "Zemin Sınıfına Göre Temel Karar Matrisi",
+            items: [
+              "ZA ve ZB Sınıfı (Sağlam / Az Ayrışmış Kaya): Radye temel tek başına yeterlidir. Zemin taşıma gücü yüksek, oturma riski sıfıra yakındır; fore kazık yapılmasına gerek yoktur.",
+              "ZC Sınıfı (Çok Sıkı Kum/Çakıl ve Katı Kil): Yapı kat adedine ve yüküne göre radye temel genellikle yeterlidir.",
+              "ZD ve ZE Sınıfı (Yumuşak Kil, Gevşek Alüvyon, Yüksek Yeraltı Suyu): Tek başına radye temel binayı kurtarmaz. Kahramanmaraş ve Hatay depremlerinde görüldüğü gibi radye temelli binalar kırılmadan bir bütün olarak zemine batmış veya yan yatmıştır. Bu sahalarda 'Kazıklı Radye Temel' (Piled Raft Foundation) zorunludur.",
+              "ZF Sınıfı (Özel Araştırma Gerektiren / Sıvılaşabilir / Bataklık Zeminler): TBDY 2018 uyarınca sahaya özel geoteknik analiz zorunludur; fore kazık veya jet grout / DSM ile zemin güçlendirmesi yapılmadan inşaat ruhsatı verilemez."
+            ]
+          }
+        ]
+      },
+      {
+        id: "fore-kazik-radye-temel-farklari",
+        title: "3. Fore Kazık ve Radye Temel Arasındaki 5 Temel Fark",
+        blocks: [
+          {
+            type: "list",
+            title: "Mühendislik Karşılaştırması",
+            items: [
+              "Yük Aktarım Derinliği: Radye temel 1-2.5 metre derinlikte yüzey gerilmesi oluştururken, fore kazık 15-45+ metre derinlikteki ana kayaya yük aktarır.",
+              "Taşıma Mekanizması: Radye temel taban temas basıncıyla taşır; fore kazık uç mukavemeti (Qb) ve çevre sürtünmesi (Qs) kombinasyonu ile taşır.",
+              "Sıvılaşma Performansı: Radye temel sıvılaşan zeminde taşıma gücünü kaybederek batar; fore kazık sıvılaşan katmanı delip kayaya kilitlenir.",
+              "Oturma Kontrolü: Radye temelde farklı oturma (differential settlement) riski varken, kazıklı temelde oturmalar milimetrik düzeyde sınırlandırılır.",
+              "Maliyet & Ekipman: Radye temel standart kalıp-beton imalatıdır; fore kazık yüksek torklu rotary delgi rigi (Bauer vb.) ve mühendislik uzmanlığı gerektirir."
+            ]
+          }
+        ]
+      },
+      {
+        id: "fore-kazik-cap-matrisi",
+        title: "4. Çaplarına Göre Fore Kazık Kullanım Alanları (Ø65, Ø80, Ø100, Ø120 cm)",
+        blocks: [
+          {
+            type: "list",
+            title: "Çap Boyutlandırma ve Kullanım Kriterleri",
+            items: [
+              "Ø65 cm Fore Kazık: Alçak katlı yapılar, kentsel dönüşüm bina temelleri, sığ iksa perdeleri ve hafif endüstriyel tesisler için ekonomik delgi çapıdır.",
+              "Ø80 cm Fore Kazık: Türkiye'de en yaygın kullanılan standart çaptır; 8-16 katlı konut ve ticari binalarda, derin kazı iksa kazıklarında tercih edilir.",
+              "Ø100 cm Fore Kazık: Yüksek katlı rezidans ve kuleler, ağır sanayi fabrika temelleri, derin ankrajlı iksa sistemlerinde yüksek eksenel ve yanal yük taşır.",
+              "Ø120 cm ve Üzeri Baret Kazıklar: Viyadük, köprü ayakları, metro istasyonları, liman rıhtımları ve enerji santralleri gibi mega altyapı projelerinde kullanılır."
+            ]
+          }
+        ]
+      },
+      {
+        id: "81-ilde-fore-kazik-hizmeti",
+        title: "5. Türkiye'nin 81 İlinde ve Başlıca İlçelerde Fore Kazık Mühendisliği",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "YER6 Geoteknik, güçlü ağır makine parkuru (Bauer BG 45, Bauer BG 28 H, Bauer BG 18 H, XCMG XR220D) ve uzman kadrosuyla Türkiye genelinde 81 ilde anahtar teslim fore kazık ve iksa imalatı gerçekleştirmektedir:"
+          },
+          {
+            type: "list",
+            title: "Bölgesel Zemin Karakteri ve Uygulama Alanları",
+            items: [
+              "İstanbul (Kadıköy, Bakırköy, Esenyurt, Kartal, Pendik, Silivri): Yoğun kentsel dönüşüm, bitişik nizam derin iksa kazıkları ve sahil alüvyonlarında kazıklı temel.",
+              "Ankara (Çankaya, Gölbaşı, İncek, Yenimahalle, Sincan): Yüksek kot farkı bulunan arazilerde derin ankrajlı iksa perdeleri ve Ankara kili üzerinde ağır konut/kamu temelleri.",
+              "İzmir (Bayraklı, Bornova, Karşıyaka, Çiğli, Aliağa): Körfez alüvyonu, yüksek yeraltı suyu ve sıvılaşma riskine karşı kaya soketli fore kazık ve kazıklı radye çözümleri.",
+              "Kocaeli & Bursa (Gebze, İzmit, Nilüfer, Gemlik): Ağır sanayi tesisleri, lojistik depolar ve kıyı liman yapılarında yüksek taşıma kapasiteli kazık sistemleri.",
+              "Deprem Bölgesi (Hatay, Kahramanmaraş, Adıyaman, Malatya, Gaziantep): Sıvılaşabilir ZE/ZF zeminlerde TBDY 2018 standartlarına tam uyumlu yeni nesil sismik derin temel imalatları."
+            ]
+          }
+        ]
+      }
+    ],
+    faq: [
+      { question: "Fore kazık kaç şiddetinde depreme dayanır?", answer: "Mühendislik hesaplarında deprem dayanımı Richter büyüklüğü yerine Zemin İvmesi (PGA) ile belirlenir. TBDY 2018 standartlarında ana kayaya soketlenen donatılı fore kazıklar; 0.60g - 0.80g zemin ivmesine (7.5 - 8.0+ Mw büyüklüğündeki yıkıcı depremlere) tam dayanım sağlayarak binanın batmasını ve yan yatmasını kesin olarak önler." },
+      { question: "Fore kazık mı radye temel mi tercih edilmelidir?", answer: "Sağlam kaya (ZA/ZB/ZC) zeminlerde radye temel tek başına yeterli ve ekonomiktir. Ancak yumuşak kil, alüvyon ve sıvılaşma riski olan ZD, ZE, ZF zeminlerde tek başına radye temel yetmez; radye plağın altı fore kazıklarla kayaya kilitlenerek 'Kazıklı Radye Temel' (Piled Raft) uygulanmalıdır." },
+      { question: "Fore kazık metre fiyatı 2026 yılında nasıl hesaplanır?", answer: "Fore kazık birim fiyatı; kazık çapına (Ø65-Ø120 cm), toplam metraja, zeminin sertliğine (kaya soketi veya alüvyon delgisi), kılıf (casing) kullanımına, demir donatı tonajına ve beton sınıfına göre hesaplanır. YER6 canlı Fore Kazık Hesaplama Motoru üzerinden yaklaşık maliyet anında hesaplanabilir." },
+      { question: "Fore kazık çapı (Ø65, Ø80, Ø100, Ø120 cm) neye göre seçilir?", answer: "Üstyapı statik yükü, kolon eksenel kuvvetleri, zemin taşıma gücü ve yanal deprem kuvvetlerine göre geoteknik proje mühendisi tarafından seçilir. Standart binalarda Ø80 cm, yüksek kulelerde Ø100 cm, köprü ve viyadüklerde Ø120 cm ve üzeri tercih edilir." }
+    ],
+    relatedSlugs: ["fore-kazik-nedir", "fore-kazik-maliyeti", "kazik-yukleme-testleri", "dunya-geoteknik-makine-ozellikleri-rehberi-bauer-soilmec-casagrande"],
+    keywords: [
+      "fore kazık kaç şiddetinde depreme dayanır",
+      "fore kazık mı radye temel mi",
+      "fore kazık ve radye temel arasındaki fark",
+      "kazıklı radye temel nedir",
+      "fore kazık çapları 65 80 100 120",
+      "fore kazık metre fiyatı 2026",
+      "fore kazık firmaları türkiye",
+      "istanbul fore kazık firmaları",
+      "ankara fore kazık firmaları",
+      "izmir fore kazık firmaları"
+    ],
+    published: true
   }
 ];
+
