@@ -1200,6 +1200,123 @@ const projectCatalog = [
     relatedServiceSlugs: ["bina-alti-jet-grout", "jet-grout"]
   },
   {
+    slug: "malatya-deprem-konutlari-fore-kazik",
+    key: "proj_malatya_fore",
+    category: "Fore Kazık",
+    location: "Battalgazi / Malatya",
+    year: "2025",
+    area: "Deprem Konutları Yerleşkesi",
+    metric: "Rotary Delgi · Kazıklı Radye Temel",
+    title: "Malatya Deprem Konutları Fore Kazık ve Derin Temel Projesi",
+    summary: "Malatya deprem konutları yerleşkesinde yüksek torklu rotary delgi makineleri ile zayıf zemin tabakalarını aşarak binaları ana kayaya kilitleyen fore kazık ve kazıklı radye temel imalatı.",
+    challenge: "Deprem bölgesinde heterojen, düşük taşıma kapasiteli ve sismik oturma riski yüksek zemin tabakalarında TBDY 2018 standartlarına tam uyumlu güvenli derin temel inşası.",
+    solution: "Yüksek torklu hidrolik rotary delgi makineleri ile kuyu delgisi açıldı, tam boy donatı kafesleri vinç yardımıyla indirilerek tremie borusuyla kesintisiz su altı beton dökümü gerçekleştirildi.",
+    tags: ["Fore Kazık", "Deprem Konutları", "Malatya", "Rotary Delgi", "Derin Temel", "TBDY 2018"],
+    image: "/images/projects/istanbul-rezidans-fore-kazik.jpg",
+    imageAlt: "Malatya Deprem Konutları sahasında fore kazık delgi makinesi ve derin temel imalatı — YER6",
+    soilProblem: "Deprem bölgesindeki zayıf ve oturmaya meyilli alüvyon zemin profilleri yüzeysel temeller için yetersiz kalmaktaydı. Yapı yüklerinin sağlam ana kayaya güvenle aktarılması için derin kazıklı temel sistemi zorunluydu.",
+    solutionMethod: "Rotary delgi makineleri ile tasarım derinliğinde kuyular açıldı; merkezleme aparatlı tam boy donatı kafesleri kuyuya indirildi. Tremie borusuyla dip seviyeden yüzeye doğru sürekli betonlama yapılarak kazıklar monolitik olarak tamamlandı.",
+    technicalInfo: [
+      { label: "Uygulama Yöntemi", value: "Büyük Çaplı Rotary Fore Kazık" },
+      { label: "Lokasyon", value: "Battalgazi / Malatya" },
+      { label: "Proje Tipi", value: "Kalıcı Deprem Konutları Derin Temeli" },
+      { label: "Yönetmelik Uyumu", value: "TBDY 2018 & TS EN 1536" },
+      { label: "Kalite Kontrol", value: "PIT (Kazık Bütünlük) ve beton basınç testleri" }
+    ],
+    usedEquipment: ["Hidrolik Rotary Delgi Makinesi", "Paletli Servis Vinci", "Tremie Boru Sistemi", "Beton Pompası ve Mikser"],
+    result: "Fore kazıklar ana kayaya kilitlenerek üst yapı yükleri için sıfır oturma güvencesi sağlandı; deprem dayanımı yüksek temel sistemi başarıyla teslim edildi.",
+    seoTitle: "Malatya Deprem Konutları Fore Kazık Projesi | YER6",
+    metaDescription: "Malatya Deprem Konutları projesinde yüksek torklu rotary delgi makineleri ile fore kazık ve kazıklı radye temel imalatı — YER6 saha uygulaması.",
+    video: {
+      videoId: "-I5Nxlqsphs",
+      title: "Malatya Deprem Konutları Fore Kazık Saha İmalat Videosu",
+      caption: "Malatya deprem konutları sahasında rotary delgi makinesi ile fore kazık delgisi, donatı kafesi indirme ve tremie betonlama operasyonu.",
+      orientation: "portrait" as const
+    },
+    gallery: [
+      { src: "/images/projects/saha/saha-genel-cok-makineli-card.avif", alt: "Malatya fore kazık sahasında delgi makinesi ve donatı hazırlığı" }
+    ],
+    relatedServiceSlugs: ["fore-kazik", "zemin-iyilestirme", "zemin-guclendirme"]
+  },
+  {
+    slug: "hatay-merkez-emlak-konut-deprem-konutlari-fore-kazik",
+    key: "proj_hatay_emlak_konut_fore",
+    category: "Fore Kazık",
+    location: "Antakya / Hatay",
+    year: "2025",
+    area: "Emlak Konut Kalıcı Konutlar Sahası",
+    metric: "TBDY 2018 ZD/ZE Zemin · Kazıklı Radye",
+    title: "Hatay Merkez Emlak Konut Deprem Konutları Fore Kazık İmalatı",
+    summary: "Hatay Merkez Emlak Konut kalıcı deprem konutları projesinde, sıvılaşabilir yumuşak alüvyon katmanlarını aşarak yapı yüklerini sağlam ana kayaya aktaran rotary delgi fore kazık ve kazıklı radye temel uygulaması.",
+    challenge: "Antakya havzasında deprem sonrası ZD/ZE zemin sınıflarında sıvılaşma, yanal yayılma ve aşırı oturma risklerinin yüksek olduğu zorlu zemin koşulları.",
+    solution: "Rotary delgi ile derin kazık kuyuları açıldı, tam boy donatı kafesi kuyuya yerleştirilip tremie borusu ile kesintisiz su altı beton dökümü sağlandı; PIT bütünlük testleri ile imalat doğrulandı.",
+    tags: ["Fore Kazık", "Emlak Konut", "Hatay Antakya", "Deprem Konutları", "Kazıklı Radye", "Sıvılaşma Önleme"],
+    image: "/images/projects/istanbul-rezidans-fore-kazik.jpg",
+    imageAlt: "Hatay Merkez Emlak Konut deprem konutları sahasında fore kazık delgi imalatı — YER6",
+    soilProblem: "Antakya merkez havzasındaki yumuşak alüvyon ve killi tabakalar, yüksek katlı kalıcı konut yüklerini güvenle taşımak ve olası sismik sıvılaşma etkilerini bertaraf etmek için derin temel zorunluluğu doğurmaktaydı.",
+    solutionMethod: "YER6 Geoteknik filosu sahaya sevk edildi. Rotary delgi makineleriyle kuyular açıldı; yüksek mukavemetli donatı kafesleri vinçlerle kuyuya merkezlendi ve tremie borusuyla boşluksuz betonlama yapıldı.",
+    technicalInfo: [
+      { label: "Uygulama Yöntemi", value: "Büyük Çaplı Rotary Fore Kazık" },
+      { label: "Lokasyon", value: "Antakya / Hatay" },
+      { label: "İdare / Proje", value: "Emlak Konut Deprem Konutları" },
+      { label: "Zemin Sınıfı", value: "TBDY 2018 ZD / ZE Sismik Zemin" },
+      { label: "Kalite Doğrulama", value: "PIT (Pile Integrity Test) ve CSL Testleri" }
+    ],
+    usedEquipment: ["Yüksek Torklu Rotary Delgi Makinesi", "Paletli Servis Vinci", "Tremie Boru Seti", "Beton Santrali / Mikserler"],
+    result: "Zayıf alüvyon tabakalar aşılarak konut temelleri ana taşıyıcı kayaya kilitlendi; deprem güvenliği en üst düzeye çıkarıldı.",
+    seoTitle: "Hatay Emlak Konut Deprem Konutları Fore Kazık İmalatı | YER6",
+    metaDescription: "Hatay Merkez Emlak Konut deprem konutları sahasında rotary delgi fore kazık ve kazıklı radye temel uygulaması — YER6 Geoteknik saha operasyonu.",
+    video: {
+      videoId: "lOfabQRZuxQ",
+      title: "Hatay Merkez Emlak Konut Fore Kazık İmalatı",
+      caption: "Hatay Emlak Konut kalıcı deprem konutları sahasında rotary delgi makinesi ile fore kazık delgisi ve derin temel imalatı.",
+      orientation: "portrait" as const
+    },
+    gallery: [
+      { src: "/images/projects/saha/su-kenari-kazik-imalati-card.avif", alt: "Hatay Emlak Konut sahasında fore kazık delgi ve donatı montajı" }
+    ],
+    relatedServiceSlugs: ["fore-kazik", "zemin-iyilestirme", "zemin-guclendirme"]
+  },
+  {
+    slug: "hatay-arsuz-muhafaza-borulu-casing-fore-kazik",
+    key: "proj_hatay_arsuz_casing",
+    category: "Fore Kazık",
+    location: "Arsuz / Hatay",
+    year: "2025",
+    area: "Sahil Şeridi & Kıyı Yapıları",
+    metric: "Ø80/Ø100 cm Hidrolik Casing Delgi",
+    title: "Hatay Arsuz Muhafaza Borulu (Casing) Fore Kazık İmalatı",
+    summary: "Hatay Arsuz sahil bölgesinde yüksek yeraltı suyu ve gevşek alüvyon koşullarında, kuyu stabilitesini korumak amacıyla hidrolik çelik muhafaza borusu (casing) sürülerek gerçekleştirilen Ø80/Ø100 cm fore kazık imalatı.",
+    challenge: "Yüksek yeraltı su tablası ve gevşek kum-silt tabakalarında kuyu çeperinin göçmesini engellemek ve kazık geometrisini ekseninde tutmak.",
+    solution: "Hidrolik osilatörlü çelik muhafaza borusu (casing) zemine sürülerek delgi açıldı; su altında donatı indirilip tremie ile betonlanarak kuyu stabilitesi %100 güvenceye alındı.",
+    tags: ["Fore Kazık", "Muhafaza Borusu", "Casing", "Hatay Arsuz", "Su Altı Delgi", "Derin Temel"],
+    image: "/images/projects/istanbul-rezidans-fore-kazik.jpg",
+    imageAlt: "Hatay Arsuz sahilinde muhafaza borulu (casing) fore kazık imalatı — YER6 Geoteknik",
+    soilProblem: "Sahil bandındaki yüksek yeraltı suyu ve kendisini tutamayan gevşek alüvyon tabakalar standart delgide kuyu içi çökme riski oluşturmaktaydı.",
+    solutionMethod: "Çelik muhafaza borusu (casing) hidrolik baskı ile kuyu boyunca zemine sürüldü. Muhafaza içinde delgi temizliği tamamlandıktan sonra donatı kafesi yerleştirildi ve beton dökülürken boru kontrollü olarak geri çekildi.",
+    technicalInfo: [
+      { label: "Uygulama Yöntemi", value: "Muhafaza Borulu (Casing) Fore Kazık" },
+      { label: "Lokasyon", value: "Arsuz / Hatay" },
+      { label: "Kazık Çapları", value: "Ø80 cm ve Ø100 cm" },
+      { label: "Zemin Şartı", value: "Yüksek Yeraltı Suyu & Gevşek Alüvyon" },
+      { label: "Kalite Kontrol", value: "Kuyu düşeylik kontrolü, PIT testi ve numune deneyleri" }
+    ],
+    usedEquipment: ["Rotary Delgi Makinesi", "Çelik Muhafaza Borusu (Casing) & Osilatör", "Paletli Servis Vinci", "Tremie Betonlama Ekipmanı"],
+    result: "Yüksek yeraltı suyuna rağmen kuyu geometrisi ve beton kalitesi sıfır kayıpla tamamlandı; sağlam bir derin temel sistemi inşa edildi.",
+    seoTitle: "Hatay Arsuz Muhafaza Borulu Casing Fore Kazık İmalatı | YER6",
+    metaDescription: "Hatay Arsuz sahil sahasında yüksek yeraltı suyuna karşı çelik muhafaza borusu (casing) ile Ø80/Ø100 cm fore kazık delgi ve imalatı — YER6 saha uygulaması.",
+    video: {
+      videoId: "iABCGEeN8F8",
+      title: "Hatay Arsuz Muhafaza Borulu Fore Kazık Videosu",
+      caption: "Hatay Arsuz sahil sahasında çelik muhafaza borusu (casing) sürülerek gerçekleştirilen fore kazık delgi ve kuyu içi betonlama operasyonu.",
+      orientation: "portrait" as const
+    },
+    gallery: [
+      { src: "/images/projects/saha/saha-genel-cok-makineli-card.avif", alt: "Hatay Arsuz muhafaza borulu fore kazık şantiyesi" }
+    ],
+    relatedServiceSlugs: ["fore-kazik", "zemin-iyilestirme", "zemin-guclendirme"]
+  },
+  {
     slug: "korfez-bolgesi-fore-kazik-projesi",
     key: "proj_korfez_fore",
     category: "Fore Kazık",
