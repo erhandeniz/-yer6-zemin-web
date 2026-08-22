@@ -850,7 +850,8 @@ const projectCatalog = [
     usedEquipment: ["DSM Çift Aks Ekipmanı", "Çimento Şerbeti Mikser Ünitesi", "Dijital Üretim Kayıt Sistemi", "Karot Numune Ekipmanı"],
     result: "Tüm DSM kolon ağı tamamlandıktan sonra yapılan yük testleri tasarım oturma limitlerinin çok altında kaldı. Proje programı dahilinde tamamlandı; tesis, yükleme ve işletim aşamasına sorunsuz geçti.",
     seoTitle: "Marmara Lojistik Merkezi DSM Zemin İyileştirme | YER6",
-    metaDescription: "Yumuşak kil tabakalarında 42.000 m DSM kolon ile yapılan endüstriyel platform zemin iyileştirme projesi detayları."
+    metaDescription: "Yumuşak kil tabakalarında 42.000 m DSM kolon ile yapılan endüstriyel platform zemin iyileştirme projesi detayları.",
+    relatedServiceSlugs: ["deep-soil-mixing", "dsm", "zemin-iyilestirme"]
   },
   {
     slug: "ege-liman-jet-grout-perdesi",
@@ -880,7 +881,8 @@ const projectCatalog = [
     usedEquipment: ["Triple Jet Grout Delgi Makinesi", "Yüksek Basınç Pompası", "Çimento Mikser Ünitesi", "Sondaj Takip Sistemi"],
     result: "Jet grout perdesi tamamlandıktan sonra yapılan sızdırmazlık testleri başarıyla sonuçlandı. Liman genişlemesi güvenli biçimde inşaata başladı; perde boyunca yeraltı suyu kontrolü sağlandı.",
     seoTitle: "Ege Liman Genişleme Jet Grout Perdesi Projesi | YER6",
-    metaDescription: "İzmir Ege Limanı genişleme projesi kapsamında deniz etkisinden korunmak üzere uygulanan 740 m uzunluğunda triple jet grout sızdırmazlık perdesi."
+    metaDescription: "İzmir Ege Limanı genişleme projesi kapsamında deniz etkisinden korunmak üzere uygulanan 740 m uzunluğunda triple jet grout sızdırmazlık perdesi.",
+    relatedServiceSlugs: ["jet-grout", "zemin-iyilestirme"]
   },
   {
     slug: "ankara-rayli-sistem-iksa",
@@ -910,7 +912,8 @@ const projectCatalog = [
     usedEquipment: ["Rotary Delgi Makinesi (Fore Kazık)", "Ankraj Delgi ve Germe Ekipmanı", "İnklinometre Sistemi", "Dijital İzleme Platformu"],
     result: "Tüm kazı sürecinde inklinometre okumaları izin verilen limitin altında kaldı. Raylı sistem istasyonu için gereken bodrum kazısı, komşu yapılara herhangi bir hasar vermeksizin güvenle tamamlandı.",
     seoTitle: "Ankara Raylı Sistem Derin Kazı İksa Projesi | YER6",
-    metaDescription: "Ankara kent içi raylı sistem projesinde 26 metre derinlikte uygulanan ankrajlı sekant fore kazık perde ve iksa sistemi detayları."
+    metaDescription: "Ankara kent içi raylı sistem projesinde 26 metre derinlikte uygulanan ankrajlı sekant fore kazık perde ve iksa sistemi detayları.",
+    relatedServiceSlugs: ["iksa-sistemleri", "ankraj", "fore-kazik"]
   },
   {
     slug: "istanbul-rezidans-fore-kazik",
@@ -939,7 +942,8 @@ const projectCatalog = [
     usedEquipment: ["Büyük Çaplı Rotary Delgi Makinesi (KR300)", "Tremie Boru Sistemi", "Donatı Kafesi Vinaç ve Yerleştirme Ekipmanı", "CSL Test Ekipmanı"],
     result: "Tüm fore kazıklar CSL testini başarıyla geçti. Baret temel sistemi yapı yükleme programına tam uyumla tamamlandı. Kule inşaatının temel aşaması planlanan sürede bitirildi.",
     seoTitle: "İstanbul Karma Kullanım Kulesi Fore Kazık Temeli | YER6",
-    metaDescription: "İstanbul'da 58 katlı kule projesi için uygulanan büyük çaplı fore kazık ve baret derin temel sistemine ait teknik uygulamalar."
+    metaDescription: "İstanbul'da 58 katlı kule projesi için uygulanan büyük çaplı fore kazık ve baret derin temel sistemine ait teknik uygulamalar.",
+    relatedServiceSlugs: ["fore-kazik", "zemin-guclendirme"]
   },
   {
     slug: "bursa-yunuseli-nida-evleri-jet-grout-zemin-iyilestirme",

@@ -478,3 +478,30 @@ export function generateArticleSchema(article: {
     }
   };
 }
+
+export function generateHowToSchema(opts: {
+  name: string;
+  description: string;
+  steps: { title: string; description: string }[];
+  url: string;
+}) {
+  if (!opts.steps || opts.steps.length === 0) return null;
+  return {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: opts.name,
+    description: opts.description,
+    totalTime: `PT${opts.steps.length * 30}M`,
+    tool: [
+      { "@type": "HowToTool", name: "Zemin etüt raporu (SPT/CPT)" },
+      { "@type": "HowToTool", name: "Geoteknik delgi makinesi" }
+    ],
+    step: opts.steps.map((s, i) => ({
+      "@type": "HowToStep",
+      position: i + 1,
+      name: s.title,
+      text: s.description,
+      url: `${opts.url}#adim-${i + 1}`
+    }))
+  };
+}

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import { notFound } from "next/navigation";
 import { getServiceBySlug, getServicePaths } from "@/lib/content";
-import { getServiceSchemaDescription, localSeoServiceAreas, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo";
+import { getServiceSchemaDescription, localSeoServiceAreas, generateFAQSchema, generateBreadcrumbSchema, generateHowToSchema } from "@/lib/seo";
 import { siteConfig } from "@/lib/siteConfig";
 import { ServiceDetailContent } from "./ServiceDetailContent";
 
@@ -154,6 +154,26 @@ export default async function ServiceDetailPage({ params }: Props) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
       )}
+      {(() => {
+        const steps =
+          "processSteps" in service &&
+          Array.isArray((service as { processSteps?: { title: string; description: string }[] }).processSteps)
+            ? (service as { processSteps?: { title: string; description: string }[] }).processSteps ?? []
+            : [];
+        const howToSchema = generateHowToSchema({
+          name: `${service.title} Uygulama Aşamaları`,
+          description: `${service.title} zemin mühendisliği uygulamasının adım adım teknik süreci.`,
+          steps,
+          url: canonical
+        });
+        return howToSchema ? (
+          <Script
+            id={`service-howto-schema-${service.slug}`}
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+          />
+        ) : null;
+      })()}
       <ServiceDetailContent slug={slug} />
     </>
   );
