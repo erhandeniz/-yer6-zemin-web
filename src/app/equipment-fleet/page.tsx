@@ -21,6 +21,21 @@ export const metadata: Metadata = {
   }
 };
 
+const machineImageMap: Record<string, string> = {
+  "Bauer BG 45 BS 95 Fore Kazık Delgi Makinesi": "/images/equipment/bauer-bg-45.jpg",
+  "Bauer BG 28 H PremiumLine Fore Kazık Delgi Makinesi": "/images/equipment/bauer-bg-28.jpg",
+  "Bauer BG 18 H BT 50 PremiumLine Fore Kazık Delgi Makinesi": "/images/equipment/bauer-bg-18.jpg",
+  "XCMG XR220D Fore Kazık Delgi Makinesi": "/images/equipment/xcmg-xr220d.jpg",
+  "Soilmec SM-401 Hidrolik Delgi Makinesi": "/images/equipment/soilmec-sm-401.jpg",
+  "Soilmec SM-14 Delgi Makinesi": "/images/equipment/soilmec-sm-14.jpg",
+  "MDT 180 B Hidrolik Delgi Makinesi": "/images/equipment/mdt-180-b.jpg",
+  "Casagrande C6 XP-2 Ankraj Delgi Makinesi": "/images/equipment/casagrande-c6-xp-2.jpg",
+  "Soilmec 5T-400J Pompa": "/images/equipment/soilmec-5t-400j-pump.jpg",
+  "Metax MP7 Pompa": "/images/equipment/metax-mp7-pump.jpg",
+  "Soilmec GM-25 Jet Grout Karıştırma Santrali": "/images/equipment/soilmec-gm-25-mixing-plant.jpg",
+  "60 Tonluk Silo": "/images/equipment/cement-silo-60-ton.jpg"
+};
+
 export default function EquipmentFleetPage() {
   const equipmentSchema = {
     "@context": "https://schema.org",
@@ -38,6 +53,14 @@ export default function EquipmentFleetPage() {
         name: item.name,
         description: item.description,
         category: item.category,
+        image: `${siteConfig.siteUrl}${machineImageMap[item.name] ?? "/opengraph-image.png"}`,
+        offers: {
+          "@type": "Offer",
+          availability: "https://schema.org/InStock",
+          priceCurrency: "TRY",
+          price: "0",
+          description: "YER6 Geoteknik bünyesinde aktif şantiye operasyonlarında kullanılan resmi makine parkuru."
+        },
         ...("brand" in item
           ? {
               brand: {
