@@ -606,7 +606,20 @@ export function FloatingCalculator({ initialOpen = false }: { initialOpen?: bool
 
   return (
     <>
-      <div className="fixed bottom-6 right-6 z-[9999] flex flex-col items-end">
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={toggleOpen}
+            className="fixed inset-0 z-[9990] bg-black/75 backdrop-blur-sm"
+            aria-hidden="true"
+          />
+        )}
+      </AnimatePresence>
+
+      <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-[9999] flex flex-col items-end">
         <AnimatePresence>
           {isOpen && (
             <motion.div
@@ -614,9 +627,9 @@ export function FloatingCalculator({ initialOpen = false }: { initialOpen?: bool
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 20, scale: 0.95 }}
               transition={{ type: "spring", stiffness: 300, damping: 25 }}
-              className="mb-4 w-[380px] sm:w-[420px] overflow-hidden rounded-[2rem] border border-white/10 bg-[#0A0A0A]/85 backdrop-blur-2xl shadow-2xl"
+              className="mb-3 sm:mb-4 w-[calc(100vw-2rem)] max-w-[390px] sm:w-[420px] overflow-hidden rounded-[2rem] border border-white/15 bg-[#0A0A0A]/95 sm:bg-[#0A0A0A]/90 backdrop-blur-2xl shadow-2xl"
             >
-              <div className="flex items-center justify-between border-b border-white/10 p-5">
+              <div className="flex items-center justify-between border-b border-white/10 p-4 sm:p-5">
                 <div className="flex items-center gap-3">
                   <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gold-300 text-obsidian shadow-[0_0_15px_rgba(212,175,55,0.4)]">
                     <BotAvatar />
@@ -635,7 +648,7 @@ export function FloatingCalculator({ initialOpen = false }: { initialOpen?: bool
                 </button>
               </div>
 
-              <div className="p-5 max-h-[75vh] overflow-y-auto no-scrollbar pb-8 relative">
+              <div className="p-4 sm:p-5 max-h-[70vh] sm:max-h-[75vh] overflow-y-auto no-scrollbar pb-8 relative">
                 <AnimatePresence mode="wait">
                   {step === "selection" && (
                     <motion.div
