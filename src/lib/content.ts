@@ -105,8 +105,8 @@ export const services = [
       "Derin kazılarda yeraltı suyu kesici perde (cutoff wall) imalatı"
     ],
     advantages: [
-      "Zemini dışarı atmadan yerinde kullanarak çevresel etkiyi ve hafriyat maliyetini düşürür.",
-      "Geniş alanlı platform iyileştirmelerinde jet grout veya fore kazığa göre daha hızlı ve ekonomiktir.",
+      "Yeşil Geoteknik (ESG): Zemin hafriyatını dışarı atmadan yerinde iyileştirir; sıfır atık ve geleneksel yöntemlere göre %40 daha düşük karbon ayak izi sağlar.",
+      "Geniş alanlı platform iyileştirmelerinde jet grout veya fore kazığa göre daha hızlı, ekonomik ve seri imalat sunar.",
       "Yeraltı suyu problemini çözer, kapalı sistem karıştırmayla temiz bir şantiye ortamı sağlar.",
       "Organik killi veya turbalı zeminlerde çimento-kireç karışımlarıyla özel tasarım yapılabilir.",
       "Blade Rotation Number (BRN) takibiyle karıştırma enerjisi izlenir ve kolon homojenliği için ölçülebilir kalite kaydı oluşturulur."
