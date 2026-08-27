@@ -307,6 +307,33 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
                             <td className="p-3.5">%100 Su Geçirimsiz Batardo Perdesi</td>
                             <td className="p-3.5">200-300 m²/gün</td>
                           </tr>
+                          <tr className="hover:bg-white/5 transition-colors">
+                            <td className="p-3.5 font-bold text-gold-200">
+                              <span className="text-gold-200">Düşey Dren (PVD) + Ön Yükleme</span>
+                            </td>
+                            <td className="p-3.5">Plastik Şerit Dren + Sürşarj Dolgusu</td>
+                            <td className="p-3.5">Suya Doygun Yumuşak Kil & Silt</td>
+                            <td className="p-3.5">Hızlandırılmış Konsolidasyon Oturması</td>
+                            <td className="p-3.5">800-1.500 m/gün</td>
+                          </tr>
+                          <tr className="hover:bg-white/5 transition-colors">
+                            <td className="p-3.5 font-bold text-gold-200">
+                              <span className="text-gold-200">Dinamik Kompaksiyon</span>
+                            </td>
+                            <td className="p-3.5">15-30 Ton Ağırlığın 15-20 m'den Düşürülmesi</td>
+                            <td className="p-3.5">Gevşek Dolgu, Çakıl, Moloz, Kum</td>
+                            <td className="p-3.5">Derin Zemin Sıkıştırması & Boşluk Azaltma</td>
+                            <td className="p-3.5">600-1.200 m²/gün</td>
+                          </tr>
+                          <tr className="hover:bg-white/5 transition-colors">
+                            <td className="p-3.5 font-bold text-gold-200">
+                              <span className="text-gold-200">Kompansasyon Enjeksiyonu</span>
+                            </td>
+                            <td className="p-3.5">Manşonlu Boru (TAM) ile Mikro Çimento</td>
+                            <td className="p-3.5">Çatlaklı Kaya, Kum, Temel Altı</td>
+                            <td className="p-3.5">Oturma Düzeltme & Zemin Dolgusu</td>
+                            <td className="p-3.5">150-250 m/gün</td>
+                          </tr>
                         </tbody>
                       </table>
                     </div>
@@ -321,7 +348,7 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
                       Geoteknik mühendisliğinde tek bir evrensel çözüm yoktur. Zemin sondaj raporundaki (SPT-N, CPT, atterberg limitleri) dane boyutu ve plastisiteye göre karar verilir:
                     </p>
 
-                    <div className="mt-6 grid gap-4 sm:grid-cols-2">
+                    <div className="mt-6 grid gap-4 sm:grid-cols-2 md:grid-cols-3">
                       <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
                         <h3 className="font-semibold text-gold-200 text-base">1. Ince Taneli Killi ve Siltli Zeminler</h3>
                         <p className="mt-2 text-xs leading-5 text-white/70">
@@ -349,16 +376,30 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
                           Deniz veya nehir kenarı kazılarında suyun şantiyeye dolmasını önlemek için kesişen Jet Grout (secant grout) perdesi veya <Link href="/services/palplans" className="text-gold-200 hover:underline font-medium">Çelik Palplanş Batardo</Link> imalatı gerçekleştirilir.
                         </p>
                       </div>
+
+                      <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
+                        <h3 className="font-semibold text-gold-200 text-base">5. Yumuşak Killerde Konsolidasyon (PVD)</h3>
+                        <p className="mt-2 text-xs leading-5 text-white/70">
+                          Geniş dolgu ve altyapı projelerinde su doygun killi zeminlerin konsolidasyon oturmasını hızlandırmak için <span className="text-gold-200 font-medium">Prefabrike Düşey Drenler (Wick Drains)</span> ve sürşarj yüklemesi uygulanır.
+                        </p>
+                      </div>
+
+                      <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
+                        <h3 className="font-semibold text-gold-200 text-base">6. Sanayi Tesisleri & Lojistik Depolar</h3>
+                        <p className="mt-2 text-xs leading-5 text-white/70">
+                          Ağır döşeme ve raf yüklerinin taşınmasında diferansiyel oturmayı sıfırlamak için DSM kolonları veya taş kolonlar üzerine geogrid donatılı yük transfer platformu (LTP) inşa edilir.
+                        </p>
+                      </div>
                     </div>
                   </div>
 
                   {/* 3. TBDY 2018 ve Uluslararası Kalite Kontrol Şartnameleri */}
                   <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-8">
                     <h2 className="text-2xl font-bold tracking-tight text-white">
-                      TBDY 2018 ve Kalite Kontrol Şartnamelerimiz
+                      TBDY 2018 ve Uluslararası Kalite Kontrol Standartlarımız
                     </h2>
                     <p className="mt-3 text-sm text-white/60">
-                      YER6 Geoteknik, yapılan zemin iyileştirmelerini sadece bir hafriyat imalatı olarak değil, raporlanan bir mühendislik garantisi olarak teslim eder:
+                      YER6 Geoteknik; TBDY 2018 Bölüm 16, Eurocode 7 (EN 1997), FHWA-NHI-06-019 ve ISSMGE şartnamelerine göre imalatı bilimsel verilerle garanti eder:
                     </p>
 
                     <div className="mt-6 space-y-3">
@@ -367,7 +408,7 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
                         <div>
                           <h3 className="font-semibold text-white text-sm">Karot Alımı ve Serbest Basınç (UCS) Testleri</h3>
                           <p className="mt-1 text-xs text-white/65">
-                            İmal edilen kolonlardan 7, 14 ve 28 günlük periyotlarda karot numunesi alınarak akredite laboratuvarda basma dayanımı (MPa) belgelenir.
+                            İmal edilen kolonlardan 7, 14 ve 28 günlük periyotlarda tam boy karot numunesi alınarak akredite laboratuvarda basma dayanımı (MPa) belgelenir.
                           </p>
                         </div>
                       </div>
@@ -375,9 +416,9 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
                       <div className="flex items-start gap-3 rounded-2xl bg-white/5 p-4">
                         <CheckCircle2 className="h-5 w-5 shrink-0 text-gold-200 mt-0.5" />
                         <div>
-                          <h3 className="font-semibold text-white text-sm">Saha Plaka Yükleme Deneyleri (Plate Load Test)</h3>
+                          <h3 className="font-semibold text-white text-sm">Saha Plaka Yükleme Deneyleri (Plate Load Test - ASTM D1194)</h3>
                           <p className="mt-1 text-xs text-white/65">
-                            Kolon başlıkları üzerinde hidrolik krikolarla gerçek yükleme testleri yapılarak oturma miktarı ve zemin yatak katsayısı (ks) sahada doğrulanır.
+                            Kolon başlıkları üzerinde hidrolik krikolar ve deplasman komparatörleriyle gerçek yükleme testleri yapılarak oturma miktarı ve zemin yatak katsayısı (ks) sahada doğrulanır.
                           </p>
                         </div>
                       </div>
@@ -385,9 +426,9 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
                       <div className="flex items-start gap-3 rounded-2xl bg-white/5 p-4">
                         <CheckCircle2 className="h-5 w-5 shrink-0 text-gold-200 mt-0.5" />
                         <div>
-                          <h3 className="font-semibold text-white text-sm">Data Logger ile Anlık Dijital Üretim Kaydı</h3>
+                          <h3 className="font-semibold text-white text-sm">Data Logger ile Anlık Dijital Üretim ve Enerji Kaydı</h3>
                           <p className="mt-1 text-xs text-white/65">
-                            Makine sensörlerimiz ile 600 Bar enjeksiyon basıncı, çimento debisi (L/dk) ve delgi derinliği eş zamanlı dijital olarak kaydedilir.
+                            Makine sensörlerimiz ile 600 Bar enjeksiyon basıncı, çimento debisi (L/dk), delgi derinliği ve Blade Rotation Number (BRN) karıştırma enerjisi eş zamanlı dijital olarak kaydedilir.
                           </p>
                         </div>
                       </div>

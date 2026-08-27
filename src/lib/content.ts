@@ -304,18 +304,22 @@ export const services = [
     applications: [
       "Taşıma gücü düşük siltli ve killi zeminlerde temel güçlendirme",
       "Aktif deprem faylarına yakın (TBDY 2018) bölgelerde sıvılaşma mitigasyonu (önlemi)",
-      "Liman, otoyol ve endüstriyel platformlarda farklı oturma (diferansiyel) kontrolü",
-      "Dolgu ve organik içerikli gevşek zeminlerde taşıma kapasitesi artırımı",
-      "Mevcut yapıların altında titreşimsiz temel güçlendirme (underpinning)",
-      "Yeraltı suyunun yoğun olduğu alüvyal sahalarda su geçirimsizlik perdesi"
+      "Liman, otoyol, demiryolu ve endüstriyel platformlarda farklı oturma (diferansiyel) kontrolü",
+      "Dolgu ve organik içerikli gevşek zeminlerde taşıma kapasitesi artırımı ve konsolidasyon",
+      "Mevcut yapıların altında titreşimsiz temel güçlendirme (underpinning) ve oturma düzeltme",
+      "Yeraltı suyunun yoğun olduğu alüvyal sahalarda su geçirimsizlik perdesi (cutoff wall)",
+      "Ağır sanayi tesisleri, lojistik depolar ve silo temelleri altında geogrid donatılı zemin iyileştirmesi",
+      "Yumuşak killerde prefabrike düşey drenler (PVD / wick drains) ve ön yükleme ile oturma hızlandırma",
+      "Gevşek kum ve çakıl zeminlerde dinamik kompaksiyon ve vibro flotasyon ile derin sıkıştırma"
     ],
     advantages: [
-      "Zemin türüne (kum, kil, silt) en uygun yöntemin veya hibrit çözümlerin (ör. Taş Kolon + Düşey Dren) tek projede entegre edilmesi",
-      "Zemin etüt raporundaki geoteknik verilere (SPT, CPT) dayalı spesifik performans tasarımı",
-      "Geleneksel derin temellere (fore kazık vb.) kıyasla geniş alanlarda çok daha ekonomik ve hızlı sonuç",
-      "Dijital üretim takip sistemleriyle iyileştirme etkinliğinin anlık saha doğrulamasının yapılması",
-      "Sıvılaşma kaynaklı yanal yayılma (lateral spreading) ve taban kabarması risklerinin minimize edilmesi",
-      "İmalat sonrasında TBDY 2018 ve uluslararası normlara uygun yükleme, karot ve kalite doğrulama raporlarının sunulması"
+      "Zemin türüne (kum, kil, silt, dolgu) en uygun yöntemin veya hibrit çözümlerin (ör. DSM + Geogrid veya Taş Kolon + Drenaj) tek projede entegre edilmesi",
+      "Zemin etüt raporundaki geoteknik verilere (SPT-N, CPT, atterberg limitleri) dayalı spesifik performans tasarımı",
+      "Geleneksel derin temellere (fore kazık vb.) kıyasla geniş alanlarda %30 ila %50 maliyet tasarrufu ve seri imalat hızı",
+      "Dijital üretim takip sistemleriyle (data logger) iyileştirme etkinliğinin anlık saha doğrulamasının yapılması",
+      "Sıvılaşma kaynaklı yanal yayılma (lateral spreading), zemin göçmesi ve taban kabarması risklerinin minimize edilmesi",
+      "İmalat sonrasında TBDY 2018, Eurocode 7, FHWA ve ISSMGE normlarına uygun yükleme, karot (UCS) ve kalite doğrulama raporlarının sunulması",
+      "Sıfır hafriyat atığı oluşturan yerinde zemin karıştırma (DSM) çözümleriyle yeşil geoteknik (ESG) uyumluluğu"
     ],
     processSteps: [
       { title: "Zemin Modeli ve Geoteknik Analiz", description: "Mevcut sondaj ve laboratuvar deneyleri (SPT, CPT, atterberg limitleri) incelenerek yeraltı su seviyesi, taşıma gücü ve sıvılaşma risk haritası oluşturulur." },
@@ -329,9 +333,12 @@ export const services = [
       { question: "En iyi zemin iyileştirme yöntemi hangisidir?", answer: "Tek bir 'en iyi' yöntem yoktur. Yöntem; zeminin dane boyutu dağılımına (kil, silt, kum, çakıl), yer altı su seviyesine ve yapısal yüklere göre belirlenir. Kil oranı yüksek zeminlerde DSM veya Jet Grout verimliyken, kumlu zeminlerde Vibro Kompaksiyon veya Taş Kolon öne çıkar." },
       { question: "Zemin iyileştirme sıvılaşmayı kesin olarak önler mi?", answer: "Doğru mühendislik hesaplamaları ve TBDY 2018 standartlarında uygulanan yöntemler (taş kolon, DSM grid sistemleri) deprem esnasında aşırı boşluk suyu basıncını sönümleyerek veya zemini rijitleştirerek sıvılaşmayı ve yanal yayılmayı büyük ölçüde önler." },
       { question: "Zemin iyileştirme firmaları arasında tercih yaparken neye dikkat etmeliyim?", answer: "Geoteknik firmanın tasarım yeterliliğine, deneme kolonu (pilot uygulama) yapıp yapmadığına, makine sensörleriyle veri takibi sunmasına ve imalat sonrası karot/yükleme testlerini raporlayabilme yetkinliğine dikkat edilmelidir. Uygulama bir 'beton dökümü' değil, mühendislik operasyonudur." },
+      { question: "Zemin iyileştirme maliyeti ve birim fiyatları 2026 yılında nasıl hesaplanır?", answer: "Zemin iyileştirme maliyeti; seçilen yönteme (Jet Grout, DSM, Taş Kolon), zemin tabakasının derinliğine, çimento/kırmataş sarfiyat oranına ve sahanın toplam metrajına göre belirlenir. Geniş alanlarda DSM ve taş kolon fore kazığa göre %30–50 daha ekonomiktir. YER6 AI Zemin Hesaplayıcı araçlarımızla anında ön maliyet çıkarabilirsiniz." },
+      { question: "Farklı oturma (diferansiyel oturma) nasıl önlenir?", answer: "Heterojen zemin tabakalarında yapının bir tarafının daha fazla batmasını engellemek için kolon yerleşimi zemin rijitlik profiline göre değişken aralıklarla tasarlanır veya üstüne geogrid donatılı yük dağıtma platformu serilir." },
       { question: "Jet grout ile DSM arasındaki tercih nasıl yapılır?", answer: "Jet grout yüksek basınçla (ör. 400-600 bar) çalışır, dar sahalarda ve su geçirimsizlik perdesi gereken kesişen kolonlarda (secant) idealdir. DSM ise mevcut zemini çimento şerbetiyle düşük basınçta mekanik olarak karıştırır; geniş alanlı platform iyileştirmelerinde (lojistik depo, liman) çok daha ekonomik ve homojen sonuç verir." },
       { question: "Mevcut yapıların (binaların) altına zemin iyileştirme yapılabilir mi?", answer: "Evet, mini kazık, mikro jet grout veya kompansasyon enjeksiyonu teknikleriyle yapının mevcut temellerine zarar vermeden titreşimsiz (underpinning) temel güçlendirme yapılabilir." },
-      { question: "İyileştirilen zeminin kalitesi (dayanımı) nasıl test edilir?", answer: "Uluslararası şartnamelere (FHWA, USACE) göre; imalat sonrası karot numuneleri alınarak serbest basınç dayanım testleri (UCS), kalite kontrol testleri ve taşıma kapasitesi için plaka yükleme testleri uygulanır." }
+      { question: "Prefabrike düşey drenler (PVD / wick drains) ve ön yükleme ne işe yarar?", answer: "Suya doygun yumuşak killi zeminlerde konsolidasyon oturmalarının yıllar yerine haftalar içinde gerçekleşmesini sağlar; zemin üzerine geçici sürşarj dolgusu yapılarak kalıcı yapım öncesi oturma tamamlatılır." },
+      { question: "İyileştirilen zeminin kalitesi (dayanımı) nasıl test edilir?", answer: "Uluslararası şartnamelere (FHWA, USACE, Eurocode 7) göre; imalat sonrası karot numuneleri alınarak serbest basınç dayanım testleri (UCS), kalite kontrol testleri ve taşıma kapasitesi için plaka yükleme testleri uygulanır." }
     ]
   },
   {
