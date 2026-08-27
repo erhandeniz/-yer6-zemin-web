@@ -1,10 +1,11 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { motion } from "framer-motion";
-import { Anchor, Building2, Drill, Gauge, Layers3, X } from "lucide-react";
-import type { equipment } from "@/lib/content";
+import { Anchor, ArrowUpRight, Building2, Drill, Gauge, Layers3, X } from "lucide-react";
+import { projects, type equipment } from "@/lib/content";
 import { useLanguage } from "@/components/LanguageProvider";
 
 type Machine = (typeof equipment)[number];
@@ -98,6 +99,10 @@ export function MachineCard({ machine }: { machine: Machine }) {
         )
       : null;
 
+  const relatedSlugs = "relatedProjectSlugs" in machine && Array.isArray(machine.relatedProjectSlugs)
+    ? (machine.relatedProjectSlugs as string[])
+    : [];
+
   return (
     <>
       <motion.article
@@ -155,6 +160,30 @@ export function MachineCard({ machine }: { machine: Machine }) {
           <div className="mt-8 rounded-2xl bg-gold-300 p-4 text-sm font-semibold text-obsidian">
             {t(`${machine.key}_output`)}
           </div>
+
+          {relatedSlugs.length > 0 && (
+            <div className="mt-6 border-t border-white/10 pt-5">
+              <span className="text-[11px] font-semibold uppercase tracking-wider text-gold-200/80">
+                Çalıştığı Referans Projeler
+              </span>
+              <div className="mt-3 flex flex-wrap gap-2">
+                {relatedSlugs.map((slug) => {
+                  const project = projects.find((p) => p.slug === slug);
+                  if (!project) return null;
+                  return (
+                    <Link
+                      key={slug}
+                      href={`/projects/${slug}`}
+                      className="group inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/[0.04] px-3.5 py-1.5 text-xs text-white/75 transition hover:border-gold-300/40 hover:bg-white/[0.08] hover:text-white"
+                    >
+                      <span className="truncate max-w-[220px]">{project.title}</span>
+                      <ArrowUpRight className="h-3.5 w-3.5 shrink-0 text-gold-200/70 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-gold-100" />
+                    </Link>
+                  );
+                })}
+              </div>
+            </div>
+          )}
         </div>
       </motion.article>
       {preview}

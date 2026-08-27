@@ -928,7 +928,8 @@ const projectCatalog = [
     challenge: "Sınırlı saha lojistiği ve yoğun beton-donatı koordinasyonu.",
     solution: "Rotary delgi, kalite formları ve beton döküm takip sistemi ile sürekli imalat.",
     tags: ["Fore Kazık", "Yüksek Yapı", "Temel"],
-    image: "/images/projects/istanbul-rezidans-fore-kazik.jpg",
+    image: "/images/projects/saha/avrupa-kentsel-kazik-imalati.webp",
+    imageAlt: "İstanbul kentsel projede büyük çaplı rotary delgi ile fore kazık derin temel imalatı — YER6 saha arşivi",
     soilProblem: "58 katlı karma kullanım kulesi için yüzeysel temel sistemi yüzey altı zemin koşulları nedeniyle yetersizdi. Yüksek sıkışma ve moment yüklerinin taşınması için derin temel sistemi zorunluydu.",
     solutionMethod: "Büyük çaplı fore kazıklar ve baret temel sistemi birlikte tasarlandı. Tremie yöntemiyle beton döküm yapıldı; her kazık için beton sarf, dikeylik ve bütünlük kaydı tutuldu. Crosshole sonic logging ile kazık bütünlüğü doğrulandı.",
     technicalInfo: [
@@ -1091,13 +1092,14 @@ const projectCatalog = [
     soilProblem: "Aydın İncirliova havzasında yüzey altında yer alan sert kumlu, siltli ve değişken drenajlı zemin birimleri; derin yeraltı otopark kazısı esnasında su basması, kazı tabanı kabarması ve yapı temellerinde farklı oturma riskleri barındırmaktaydı. Sert kum katmanlarının yüksek sürtünme ve aşındırıcılığı delgi parametrelerinin hassas yönetimini zorunlu kıldı.",
     solutionMethod: "YER6 Geoteknik mühendislik ekibi tarafından 400-600 bar basınç altında su/çimento oranı optimize edilmiş çimento şerbeti enjekte edildi. Ø60 cm kolon çapı doğrulaması için sahada açığa çıkarma ve kumpas ölçümleri yapıldı; 12 metre boyundaki kolonlar dama düzeninde imal edilerek hidrolik kuyu stabilitesi ve taşıma gücü maksimum seviyeye çıkarıldı.",
     technicalInfo: [
-      { label: "Uygulama Yöntemi", value: "Jet Grout (Yüksek Basınçlı Enjeksiyon)" },
+      { label: "Uygulama Yöntemi", value: "Jet Grout (400-600 Bar Yüksek Basınç)" },
+      { label: "İdare / Denetim", value: "Aydın Büyükşehir & İncirliova Belediyesi Kontrollüğü" },
       { label: "Lokasyon", value: "İncirliova / Aydın" },
       { label: "Proje Tipi", value: "Meydan ve Yeraltı Otoparkı" },
       { label: "Kolon Çapı", value: "Ø60 cm" },
       { label: "Kolon Boyu", value: "12 m" },
       { label: "Zemin Tipi", value: "Sert Kumlu / Zorlu Zemin" },
-      { label: "Kalite Kontrol", value: "Kolon çapı ölçümü, derinlik kontrolü ve karot UCS testi" }
+      { label: "Kalite Kontrol", value: "Belediye heyeti denetiminde sahada açığa çıkarma, 150+ cm kesintisiz tam boy karot numunesi alımı ve UCS basınç testleri" }
     ],
     usedEquipment: ["Jet Grout Delgi Makinesi", "400-600 Bar Yüksek Basınçlı Triplex Pompa", "Otomatik Çimento Mikser Santrali", "Dikey Çimento Silosu"],
     result: "Ø60 cm çapında ve 12 m derinliğindeki Jet Grout kolonları ile otopark temel altı zemin taşıma kapasitesi güvenceye alındı; su geçirimsizlik perdesi tamamlanarak derin kazı güvenliği sağlandı.",
@@ -1110,7 +1112,11 @@ const projectCatalog = [
       orientation: "portrait" as const
     },
     gallery: [
+      { src: "/images/projects/aydin-incirliova/aydin-meydan-otopark-tam-boy-karot-numunesi.jpg", alt: "Aydın İncirliova projesinde Jet Grout kolonundan alınan 150 cm'yi aşan kesintisiz tam boy monolitik karot numunesi" },
+      { src: "/images/projects/aydin-incirliova/aydin-belediyesi-kolon-testi-olcum.jpg", alt: "Aydın Belediyesi denetiminde Jet Grout test kolonu çap ölçümü ve kalite kontrolü" },
+      { src: "/images/projects/aydin-incirliova/aydin-meydan-otopark-aciga-cikarilan-kolon.jpg", alt: "Aydın İncirliova sahasında kazı ile açığa çıkarılan monolitik Jet Grout kolonu gövdesi" },
       { src: "/images/projects/aydin-incirliova/aydin-meydan-otopark-jet-grout-calisma.jpg", alt: "Aydın İncirliova Meydan Otopark projesinde Jet Grout delgi ve enjeksiyon çalışması" },
+      { src: "/images/projects/aydin-incirliova/aydin-meydan-otopark-calisma.jpg", alt: "Aydın İncirliova Meydan Otopark projesinde Jet Grout şantiye operasyonu ve delgi süreci" },
       { src: "/images/projects/aydin-incirliova/aydin-meydan-otopark-kolon-capi-olcme.jpg", alt: "Aydın İncirliova Jet Grout kolon çapı doğrulama ve saha ölçümü" },
       { src: "/images/projects/aydin-incirliova/aydin-meydan-otopark-kolon-kontrolu.jpg", alt: "Aydın İncirliova otopark sahasında Jet Grout kolon kalite kontrolü" },
       { src: "/images/projects/aydin-incirliova/aydin-meydan-otopark-test-alma.jpg", alt: "Aydın İncirliova zemin güçlendirme projesinde saha test alma ve numune kontrolü" }
@@ -1454,9 +1460,7 @@ const projectCatalog = [
 
 // İşveren, sözleşme veya saha kaynağıyla doğrulanmamış örnek kayıtlar kamuya
 // referans proje olarak sunulmaz. Doğrulanırlarsa bu listeye yeniden alınabilir.
-const unpublishedProjectSlugs = new Set([
-  "istanbul-rezidans-fore-kazik"
-]);
+const unpublishedProjectSlugs = new Set<string>([]);
 
 export const projects = projectCatalog.filter((project) => !unpublishedProjectSlugs.has(project.slug));
 
@@ -1466,35 +1470,40 @@ export const equipment = [
     groupKey: "fleetGroupForePile",
     icon: "building",
     image: "/images/equipment/bauer-bg-45.jpg",
-    imageAlt: "Bauer BG 45 fore kazık delgi makinesi şantiye fotoğrafı"
+    imageAlt: "Bauer BG 45 fore kazık delgi makinesi şantiye fotoğrafı",
+    relatedProjectSlugs: ["malatya-deprem-konutlari-fore-kazik", "korfez-bolgesi-fore-kazik-projesi"]
   },
   {
     key: "eq_bauer_bg_28_h",
     groupKey: "fleetGroupForePile",
     icon: "building",
     image: "/images/equipment/bauer-bg-28.jpg",
-    imageAlt: "Bauer BG 28 H PremiumLine fore kazık delgi makinesi şantiye fotoğrafı"
+    imageAlt: "Bauer BG 28 H PremiumLine fore kazık delgi makinesi şantiye fotoğrafı",
+    relatedProjectSlugs: ["hatay-merkez-emlak-konut-deprem-konutlari-fore-kazik", "yurt-disi-konut-fore-kazik"]
   },
   {
     key: "eq_bauer_bg_18_h",
     groupKey: "fleetGroupForePile",
     icon: "building",
     image: "/images/equipment/bauer-bg-18.jpg",
-    imageAlt: "Bauer BG 18 H BT 50 PremiumLine fore kazık delgi makinesi şantiye fotoğrafı"
+    imageAlt: "Bauer BG 18 H BT 50 PremiumLine fore kazık delgi makinesi şantiye fotoğrafı",
+    relatedProjectSlugs: ["avrupa-kentsel-saha-kazik-imalati", "istanbul-rezidans-fore-kazik"]
   },
   {
     key: "eq_xcmg_xr220d",
     groupKey: "fleetGroupForePile",
     icon: "building",
     image: "/images/equipment/xcmg-xr220d.jpg",
-    imageAlt: "XCMG XR220D fore kazık delgi makinesi fotoğrafı"
+    imageAlt: "XCMG XR220D fore kazık delgi makinesi fotoğrafı",
+    relatedProjectSlugs: ["hatay-arsuz-muhafaza-borulu-casing-fore-kazik", "ankara-rayli-sistem-iksa"]
   },
   {
     key: "eq_soilmec_sm_401_drill",
     groupKey: "fleetGroupJetAnchor",
     icon: "drill",
     image: "/images/equipment/soilmec-sm-401.jpg",
-    imageAlt: "Soilmec SM-401 kazık delgi makinesi şantiye fotoğrafı"
+    imageAlt: "Soilmec SM-401 kazık delgi makinesi şantiye fotoğrafı",
+    relatedProjectSlugs: ["pekintas-duzce-fabrika-jet-grout", "bursa-yunuseli-nida-evleri-jet-grout-zemin-iyilestirme"]
   },
   {
     key: "eq_soilmec_sm_14_drill",
@@ -1502,42 +1511,48 @@ export const equipment = [
     icon: "drill",
     image: "/images/equipment/soilmec-sm-14.jpg",
     imageAlt: "Soilmec SM-14 jet grout, ankraj ve mikro kazık delgi makinesi fotoğrafı",
-    imageCredit: "Fotoğraf: Tommaso Saccarola"
+    imageCredit: "Fotoğraf: Tommaso Saccarola",
+    relatedProjectSlugs: ["aydin-incirliova-meydan-otopark-jet-grout", "bozuyuk-sok-dondurma-tesisi-jet-grout"]
   },
   {
     key: "eq_mdt_180_b_drill",
     groupKey: "fleetGroupJetAnchor",
     icon: "drill",
     image: "/images/equipment/mdt-180-b.jpg",
-    imageAlt: "MDT 180 B paletli jet grout, ankraj ve mikro kazık delgi makinesi fotoğrafı"
+    imageAlt: "MDT 180 B paletli jet grout, ankraj ve mikro kazık delgi makinesi fotoğrafı",
+    relatedProjectSlugs: ["ankara-bala-karayollari-yol-genisletme-jet-grout", "bozuyuk-sok-dondurma-tesisi-jet-grout"]
   },
   {
     key: "eq_casagrande_c6_xp_2",
     groupKey: "fleetGroupJetAnchor",
     icon: "anchor",
     image: "/images/equipment/casagrande-c6-xp-2.jpg",
-    imageAlt: "Casagrande C6 XP-2 paletli ankraj, mikro kazık ve jet grout delgi makinesi şantiye fotoğrafı"
+    imageAlt: "Casagrande C6 XP-2 paletli ankraj, mikro kazık ve jet grout delgi makinesi şantiye fotoğrafı",
+    relatedProjectSlugs: ["ankara-rayli-sistem-iksa", "ege-liman-jet-grout-perdesi"]
   },
   {
     key: "eq_soilmec_5t_400j_pump",
     groupKey: "fleetGroupPumpPlant",
     icon: "gauge",
     image: "/images/equipment/soilmec-5t-400j-pump.jpg",
-    imageAlt: "Konteyner içerisinde kurulu Soilmec 5T 400J yüksek basınçlı jet grout pompası"
+    imageAlt: "Konteyner içerisinde kurulu Soilmec 5T 400J yüksek basınçlı jet grout pompası",
+    relatedProjectSlugs: ["aydin-incirliova-meydan-otopark-jet-grout", "bozuyuk-sok-dondurma-tesisi-jet-grout"]
   },
   {
     key: "eq_metax_mp7_pump",
     groupKey: "fleetGroupPumpPlant",
     icon: "gauge",
     image: "/images/equipment/metax-mp7-pump.jpg?v=20260806",
-    imageAlt: "Şantiyede tek konteyner içerisinde kurulu Metax MP7 yüksek basınçlı triplex jet grout pompası"
+    imageAlt: "Şantiyede tek konteyner içerisinde kurulu Metax MP7 yüksek basınçlı triplex jet grout pompası",
+    relatedProjectSlugs: ["ankara-bala-karayollari-yol-genisletme-jet-grout", "pekintas-duzce-fabrika-jet-grout"]
   },
   {
     key: "eq_soilmec_santral",
     groupKey: "fleetGroupPumpPlant",
     icon: "layers",
     image: "/images/equipment/soilmec-gm-25-mixing-plant.jpg",
-    imageAlt: "Konteyner içerisinde kurulu Soilmec GM-25 jet grout çimento şerbeti karıştırma santrali"
+    imageAlt: "Konteyner içerisinde kurulu Soilmec GM-25 jet grout çimento şerbeti karıştırma santrali",
+    relatedProjectSlugs: ["marmara-lojistik-temel-guclendirme", "bursa-yunuseli-nida-evleri-jet-grout-zemin-iyilestirme"]
   },
   {
     key: "eq_silo_60_ton",
@@ -1547,7 +1562,8 @@ export const equipment = [
     imageAlt: "60 ton kapasiteli tek dikey çimento stok silosu",
     imageSourceUrl:
       "https://german.mobile-concretebatchplant.com/sale-45636110-8850mm-total-height-60-ton-concrete-cement-silo-high-performance.html",
-    imageCredit: "Ürün fotoğrafı: TORUI 60T çimento silosu"
+    imageCredit: "Ürün fotoğrafı: TORUI 60T çimento silosu",
+    relatedProjectSlugs: ["marmara-lojistik-temel-guclendirme", "ankara-bala-karayollari-yol-genisletme-jet-grout"]
   }
 ];
 

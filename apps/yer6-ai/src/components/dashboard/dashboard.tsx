@@ -31,9 +31,9 @@ const riskItems = [
 ];
 
 const activity = [
-  { icon: FileText, title: "BH-03 borehole log processed", meta: "Duzce Industrial Campus · 8 min ago", tone: "text-sky-300 bg-sky-400/10" },
-  { icon: Sparkles, title: "Ground improvement analysis completed", meta: "Yunuseli Residences · 1 hr ago", tone: "text-primary bg-primary/10" },
-  { icon: CheckCircle2, title: "Technical review approved", meta: "Bozuyuk Cold Storage · Yesterday", tone: "text-emerald-300 bg-emerald-400/10" }
+  { icon: FileText, title: "BH-03 sondaj logu işlendi", meta: "Pekintaş Düzce Fabrikası · 8 dk önce", tone: "text-sky-300 bg-sky-400/10" },
+  { icon: Sparkles, title: "Zemin iyileştirme analizi tamamlandı", meta: "Bursa Yunuseli Nida Evleri · 1 sa önce", tone: "text-primary bg-primary/10" },
+  { icon: CheckCircle2, title: "Teknik inceleme onaylandı", meta: "Bozüyük IQF Tesisi · Dün", tone: "text-emerald-300 bg-emerald-400/10" }
 ];
 
 function statusTone(status: (typeof projects)[number]["status"]) {
@@ -158,7 +158,7 @@ export function Dashboard() {
       <div className="mt-4 grid gap-4 lg:grid-cols-2">
         <section className="panel p-5">
           <div className="flex items-center justify-between">
-            <div><h2 className="text-sm font-semibold text-white/90">{t("Project risk profile")}</h2><p className="mt-1 text-[11px] text-white/30">Duzce Industrial Campus · {t("AI screening")}</p></div>
+            <div><h2 className="text-sm font-semibold text-white/90">{t("Project risk profile")}</h2><p className="mt-1 text-[11px] text-white/30">Pekintaş Düzce Fabrikası · {t("AI screening")}</p></div>
             <Badge tone="neutral">{t("Preliminary")}</Badge>
           </div>
           <div className="mt-6 space-y-4">

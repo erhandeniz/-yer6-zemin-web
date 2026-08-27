@@ -47,7 +47,10 @@ export function ProjectDetailContent({ slug }: { slug: string }) {
           orientation?: "landscape" | "portrait";
         }[])
       : null;
-  const imageAlt = "imageAlt" in project ? (project.imageAlt as string) : tp("title", project.title);
+  const imageAlt =
+    "imageAlt" in project && typeof project.imageAlt === "string"
+      ? (project.imageAlt as string)
+      : tp("title", (project as { title: string }).title);
   const relatedServiceSlugs = "relatedServiceSlugs" in project ? (project.relatedServiceSlugs as string[]) : [];
   const relatedServices = relatedServiceSlugs
     .map((serviceSlug) => getServiceBySlug(serviceSlug))
@@ -249,9 +252,18 @@ export function ProjectDetailContent({ slug }: { slug: string }) {
         <section className="px-5 pb-12">
           <div className="mx-auto max-w-7xl">
             <div className="gsap-reveal rounded-[2rem] border border-white/10 bg-white/[0.03] p-8">
-              <div className="flex items-center gap-3">
-                <Wrench className="h-6 w-6 text-gold-200" />
-                <h2 className="text-2xl font-semibold text-white">Kullanılan Ekipman</h2>
+              <div className="flex flex-wrap items-center justify-between gap-4">
+                <div className="flex items-center gap-3">
+                  <Wrench className="h-6 w-6 text-gold-200" />
+                  <h2 className="text-2xl font-semibold text-white">Kullanılan Ekipman</h2>
+                </div>
+                <Link
+                  href="/equipment-fleet"
+                  className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-gold-200 transition hover:text-gold-100"
+                >
+                  <span>Makine Parkını İncele</span>
+                  <ArrowUpRight className="h-4 w-4" />
+                </Link>
               </div>
               <ul className="mt-6 grid gap-3 sm:grid-cols-2">
                 {usedEquipment.map((item, i) => (
@@ -300,14 +312,12 @@ export function ProjectDetailContent({ slug }: { slug: string }) {
               >
                 İletişime Geç
               </Link>
-              <a
-                href={`${siteConfig.whatsapp.url}?text=${encodeURIComponent("Merhaba YER6, proje hakkında bilgi almak istiyorum.")}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex w-full justify-center rounded-2xl border border-obsidian/20 bg-obsidian/8 px-6 py-3 text-sm font-semibold transition hover:bg-obsidian/15 sm:w-auto"
+              <Link
+                href="/hesaplama"
+                className="inline-flex w-full justify-center rounded-2xl border border-obsidian/20 bg-obsidian/8 px-6 py-3 text-sm font-semibold text-obsidian transition hover:bg-obsidian/15 sm:w-auto"
               >
-                WhatsApp ile Teklif
-              </a>
+                Maliyet & Metraj Hesapla
+              </Link>
             </div>
           </div>
         </div>

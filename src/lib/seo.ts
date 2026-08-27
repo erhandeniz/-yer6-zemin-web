@@ -31,7 +31,6 @@ export const socialProfiles: string[] = [
   "https://www.facebook.com/Yer6ZeminGeoteknik",
   "https://www.linkedin.com/in/yer6-zemin-g%C3%BC%C3%A7lendirme-geoteknik-m%C3%BChendislik-511763428/",
   "https://www.google.com/maps/place/YER6+Zemin+Geoteknik+M%C3%BChendislik/@39.7976857,32.8020419,17z/data=!3m1!4b1!4m6!3m5!1s0x14d341155f5edf6f:0x2078e9e4486b099d!8m2!3d39.7976857!4d32.8020419",
-  "https://armut.com/hizmetveren/yer6-zemin-guclendirme-geoteknik-muhendislik-ankara-golbasi-zemin-iyilestirme_85780374",
   "https://www.youtube.com/channel/UCCikguZzwvtEg3peobxzSQw"
 ];
 

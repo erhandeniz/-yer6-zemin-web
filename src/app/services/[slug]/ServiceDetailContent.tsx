@@ -583,7 +583,10 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
                   <h2 className="text-2xl font-semibold text-white">İlgili Projeler</h2>
                   <div className="mt-6 grid gap-4">
                     {relatedProjects.map((project) => {
-                      const imageAlt = "imageAlt" in project ? (project.imageAlt as string) : t(`${project.key}_title`);
+                      const imageAlt =
+                        "imageAlt" in project && typeof project.imageAlt === "string"
+                          ? (project.imageAlt as string)
+                          : t(`${(project as { key: string }).key}_title`);
 
                       return (
                         <Link

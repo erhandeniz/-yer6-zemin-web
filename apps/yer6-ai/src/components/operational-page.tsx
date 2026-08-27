@@ -7,10 +7,10 @@ import { useAppStore } from "@/store/app-store";
 import { useAITranslation } from "@/components/i18n-provider";
 
 const documents = [
-  ["BH-03_Borehole_Log.pdf", "PDF", "Duzce Industrial Campus", "Ready", "8.4 MB"],
-  ["Foundation_Plan_RevC.dwg", "DWG", "Duzce Industrial Campus", "Indexed", "24.1 MB"],
-  ["Lab_Results_June.pdf", "PDF", "Yunuseli Residences", "Ready", "3.2 MB"],
-  ["Site_Model.ifc", "IFC", "Bozuyuk Cold Storage", "Processing", "86.7 MB"]
+  ["BH-03_Sondaj_Logu.pdf", "PDF", "Pekintaş Düzce Fabrikası", "Hazır", "8.4 MB"],
+  ["Temel_Plani_RevC.dwg", "DWG", "Pekintaş Düzce Fabrikası", "İndekslendi", "24.1 MB"],
+  ["Laboratuvar_Sonuclari.pdf", "PDF", "Bursa Yunuseli Nida Evleri", "Hazır", "3.2 MB"],
+  ["Saha_Modeli.ifc", "IFC", "Bozüyük IQF Tesisi", "İşleniyor", "86.7 MB"]
 ];
 
 export function OperationalPage({ section }: { section: "documents" | "reports" | "team" | "settings" }) {

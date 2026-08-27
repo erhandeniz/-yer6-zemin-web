@@ -73,17 +73,6 @@ export function ContactContent() {
               YER6 LinkedIn Kurumsal
             </a>
           </div>
-          {/* SEO Backlink Verification (Hidden from UI to maintain elite corporate aesthetic) */}
-          <a
-            href="https://armut.com/hizmetveren/yer6-zemin-guclendirme-geoteknik-muhendislik-ankara-golbasi-zemin-iyilestirme_85780374"
-            target="_blank"
-            rel="noreferrer"
-            className="sr-only"
-            aria-hidden="true"
-            tabIndex={-1}
-          >
-            YER6 Zemin Güçlendirme Armut Profili
-          </a>
         </div>
       </section>
       <section className="px-5 pb-24">

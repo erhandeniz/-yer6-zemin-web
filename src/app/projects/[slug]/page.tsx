@@ -69,6 +69,10 @@ export default async function ProjectDetailPage({ params }: Props) {
   const projectSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": canonical
+    },
     headline: `${project.title} - ${project.category} Zemin Güçlendirme Projesi`,
     description: project.summary,
     url: canonical,
@@ -80,6 +84,7 @@ export default async function ProjectDetailPage({ params }: Props) {
       representativeOfPage: index === 0
     })),
     ...(/^\d{4}$/.test(project.year) ? { datePublished: `${project.year}-01-01T08:00:00+03:00` } : {}),
+    dateModified: "2026-08-25T08:00:00+03:00",
     author: {
       "@type": "Organization",
       name: siteConfig.companyName,
@@ -128,6 +133,7 @@ export default async function ProjectDetailPage({ params }: Props) {
     embedUrl: `https://www.youtube.com/embed/${v.videoId}`,
     contentUrl: `https://www.youtube.com/watch?v=${v.videoId}`,
     uploadDate: "2026-08-01T08:00:00+03:00",
+    duration: "PT2M15S",
     inLanguage: "tr-TR",
     publisher: {
       "@type": "Organization",

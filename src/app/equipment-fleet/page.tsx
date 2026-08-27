@@ -49,18 +49,10 @@ export default function EquipmentFleetPage() {
       "@type": "ListItem",
       position: index + 1,
       item: {
-        "@type": "Product",
+        "@type": "Thing",
         name: item.name,
         description: item.description,
-        category: item.category,
         image: `${siteConfig.siteUrl}${machineImageMap[item.name] ?? "/opengraph-image.png"}`,
-        offers: {
-          "@type": "Offer",
-          availability: "https://schema.org/InStock",
-          priceCurrency: "TRY",
-          price: "0",
-          description: "YER6 Geoteknik bünyesinde aktif şantiye operasyonlarında kullanılan resmi makine parkuru."
-        },
         ...("brand" in item
           ? {
               brand: {
