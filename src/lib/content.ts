@@ -928,8 +928,8 @@ const projectCatalog = [
     challenge: "Sınırlı saha lojistiği ve yoğun beton-donatı koordinasyonu.",
     solution: "Rotary delgi, kalite formları ve beton döküm takip sistemi ile sürekli imalat.",
     tags: ["Fore Kazık", "Yüksek Yapı", "Temel"],
-    image: "/images/projects/saha/saha-genel-cok-makineli.webp",
-    imageAlt: "İstanbul yüksek yapı projesinde çok makineli büyük çaplı fore kazık ve derin temel şantiyesi — YER6",
+    image: "/images/projects/saha/konut-fore-kazik-02.webp",
+    imageAlt: "İstanbul karma kullanım kulesi projesinde Bauer BG 28 rotary delgi makinesi ile büyük çaplı fore kazık derin temel imalatı — YER6",
     soilProblem: "58 katlı karma kullanım kulesi için yüzeysel temel sistemi yüzey altı zemin koşulları nedeniyle yetersizdi. Yüksek sıkışma ve moment yüklerinin taşınması için derin temel sistemi zorunluydu.",
     solutionMethod: "Büyük çaplı fore kazıklar ve baret temel sistemi birlikte tasarlandı. Tremie yöntemiyle beton döküm yapıldı; her kazık için beton sarf, dikeylik ve bütünlük kaydı tutuldu. Crosshole sonic logging ile kazık bütünlüğü doğrulandı.",
     technicalInfo: [
