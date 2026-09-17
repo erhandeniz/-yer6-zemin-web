@@ -99,6 +99,19 @@ export default function KaliteKontrolPage() {
       img: "/images/kalite/yeni-2-karot.jpg"
     },
     {
+      id: "karot-delik-yuvasi",
+      title: "Kolon Ekseninden Karot Çıkarma Yuvası & Masif Gövde",
+      standard: "ASTM D2166 / TS EN 12504-1 / TS EN 12716",
+      desc: "Aydın Meydan Otopark projemizde jet grout kolonunun tam merkez ekseninden elmas uçlu karotiyer ile açılan delik yuvası; zemin-çimento karışımının hiçbir merkezkaç ayrışma yaşamaksızın homojen, boşluksuz ve masif bir monolit oluşturduğunu açıkça kanıtlar.",
+      icon: Microscope,
+      highlights: [
+        "Kolon ekseninde milimetrik merkezleme ile numune çıkarma",
+        "Çimento-zemin harcında kusursuz, boşluksuz masif gövde sürekliliği",
+        "Basınç dayanım numuneleri için pürüzsüz karot silindiri yuvası"
+      ],
+      img: "/images/kalite/aydin-meydan-saha-test-2130.jpg"
+    },
+    {
       id: "pit-test",
       title: "PIT (Pile Integrity) Kazık Bütünlük Testi",
       standard: "ASTM D5882 (Düşük Gerinimli Sismik Refleksiyon)",
@@ -110,6 +123,19 @@ export default function KaliteKontrolPage() {
         "TBDY 2018 ve uluslararası standartlara tam uyum"
       ],
       img: "/images/kalite/yeni-1-inceleme.jpg"
+    },
+    {
+      id: "pit-dijital-olcum",
+      title: "PIT Dijital Ekran & Sismik Refleksiyon Saha Ölçümü",
+      standard: "ASTM D5882 / Düşük Gerinim Bütünlük Deneyi",
+      desc: "Aydın Meydan Otopark şantiyemizde imalatı tamamlanan jet grout kolonlarının başlığına yerleştirilen ivmeölçer ve el tipi dijital PIT cihazı ile anlık sismik refleksiyon dalgaları kaydedilir. Cihaz ekranında beliren milisaniyelik yansıma profiliyle kolon boyu, derinliği ve gövde sürekliliği sahada doğrudan doğrulanır.",
+      icon: Activity,
+      highlights: [
+        "Sahada el tipi PIT ekranı ile anlık yansıma ve dalga grafiği analizi",
+        "Kolon boyu boyunca süreksizlik, çatlak ve boğulma kontrolü",
+        "ASTM D5882 standardına tam uyumlu tahribatsız sismik doğrulama"
+      ],
+      img: "/images/kalite/aydin-meydan-saha-test-2142.jpg"
     },
     {
       id: "cap-teyidi",
@@ -125,6 +151,19 @@ export default function KaliteKontrolPage() {
       img: "/images/kalite/yeni-3-denetim.jpg"
     },
     {
+      id: "kazi-ici-cap-olcumu",
+      title: "Kazı İçi Şerit Metre ile Birebir Çap ve Derinlik Teyidi",
+      standard: "TS EN 12716 / TS EN 14679",
+      desc: "Aydın Meydan Otopark şantiye çukurunda kazılarak açığa çıkarılan kolonun başlığı ve gövdesi üzerinde mühendislerimizce şerit metre ile doğrudan çap ölçümü yapılır. Tasarım çapı ile sahadaki fiili çapın birebir uyumu şantiye kabul tutanağıyla tescillenir.",
+      icon: Ruler,
+      highlights: [
+        "Kazı çukuru içinde doğrudan şerit metre ile çap ve geometri muayenesi",
+        "Tasarlanan kolon çapı ve nozul basıncının sahada tam karşılanması",
+        "Yapı denetim ve müşavir heyetine şantiyede yerinde fiziksel teyit"
+      ],
+      img: "/images/kalite/aydin-meydan-saha-test-2138.jpg"
+    },
+    {
       id: "karot-sandiklama",
       title: "Tam Boy Karot Numunesi Sandıklama ve Arşivleme",
       standard: "TS EN ISO 22475-1 / ASTM D2113",
@@ -136,6 +175,19 @@ export default function KaliteKontrolPage() {
         "RQD (Kaya/Kolon Kalite Göstergesi) analiz raporlaması"
       ],
       img: "/images/projects/aydin-incirliova/aydin-meydan-otopark-tam-boy-karot-numunesi.jpg"
+    },
+    {
+      id: "resmi-karot-sandiklama",
+      title: "324 Blok Resmi Karot Sandıklama ve Kotlama (0.00m - 6.00m)",
+      standard: "TS EN ISO 22475-1 / ASTM D2113",
+      desc: "Aydın Meydan Otopark projesi 324 numaralı bloktan 0.00 m ile 6.00 m derinlik boyunca alınan kesintisiz karot silindirleri; 1.50 m, 3.00 m ve 4.50 m kot aralıklarına göre özel sandıklara yerleştirilerek şantiye yazı tahtasıyla resmi kayıt altına alınmıştır.",
+      icon: Layers,
+      highlights: [
+        "0.00 m - 6.00 m derinlik aralığında tam boy silindirik karot dizilimi",
+        "Şantiye yazı tahtası ve resmi numune kabul etiketlemesi",
+        "Laboratuvar UCS kırma testleri için yüksek RQD kalitesi ve homojenlik"
+      ],
+      img: "/images/kalite/aydin-meydan-saha-test-2146.jpg"
     },
     {
       id: "serit-metre-olcumu",
