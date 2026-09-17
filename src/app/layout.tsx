@@ -12,7 +12,11 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
     default: "YER6 Zemin Güçlendirme | Jet Grout, DSM ve Fore Kazık",
-    template: "%s | YER6 Zemin Güçlendirme Geoteknik Mühendislik"
+    // Google, başlığı ~65 karakterde keser; daha uzunsa çoğu zaman kendi
+    // uydurduğu bir başlıkla değiştirir. Eski kuyruk (+47 karakter) bu sınırı
+    // tek başına aşıyordu ve kullanıcıya zaten hiç görünmüyordu.
+    // Marka adı kısaltıldı; anahtar kelimeler ve URL'ler değişmedi.
+    template: "%s | YER6 Geoteknik"
   },
   description:
     "YER6; zemin güçlendirme, zemin iyileştirme, jet grout, fore kazık, DSM, mini kazık, ankraj ve iksa sistemleri alanında Türkiye geneli saha uygulaması sunar.",
@@ -74,7 +78,10 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "tr_TR",
-    siteName: "YER6 Zemin Güçlendirme Geoteknik Mühendislik",
+    // SITE ADI: Google'ın arama sonucunda gösterdiği marka adı buradan okunur.
+    // Yasal unvan (YER6 Zemin Güçlendirme Geoteknik Mühendislik) kaldırılmadı;
+    // schema'da legalName alanında ve telif satırında aynen duruyor.
+    siteName: "YER6 Geoteknik",
     title: "YER6 Zemin Güçlendirme | Jet Grout, DSM ve Fore Kazık",
     description:
       "Zemin güçlendirme, zemin iyileştirme, jet grout, DSM, fore kazık, mini kazık, ankraj ve iksa sistemleri alanında mühendislik odaklı saha uygulaması.",
@@ -106,7 +113,10 @@ const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "@id": `${siteUrl}/#website`,
-  name: "YER6 Zemin Güçlendirme Geoteknik Mühendislik",
+  // Google'ın site adı için baktığı EN ÖNCELİKLİ sinyal budur.
+  // Marka adı burada; yasal unvan Organization şemasındaki legalName alanında.
+  name: "YER6 Geoteknik",
+  alternateName: "YER6 Zemin Güçlendirme Geoteknik Mühendislik",
   url: siteUrl,
   inLanguage: "tr-TR",
   description: "Jet grout, DSM, fore kazık, mini kazık, ankraj ve iksa sistemleri alanında zemin güçlendirme hizmetleri.",

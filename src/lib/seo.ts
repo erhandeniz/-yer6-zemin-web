@@ -310,8 +310,11 @@ export function localBusinessSchema() {
     "@context": "https://schema.org",
     "@type": ["LocalBusiness", "HomeAndConstructionBusiness", "EngineeringService"],
     "@id": `${siteConfig.siteUrl}/#organization`,
-    name: siteConfig.companyName,
-    alternateName: "YER6 Geotechnical",
+    // schema.org'da name = markanın bilinen adı, legalName = yasal unvan.
+    // İkisi ayrı alanlardır; yasal unvan kaldırılmadı, doğru alana taşındı.
+    name: "YER6 Geoteknik",
+    legalName: siteConfig.companyName,
+    alternateName: ["YER6 Zemin Güçlendirme", "YER6 Geotechnical"],
     url: siteConfig.siteUrl,
     image: `${siteConfig.siteUrl}/opengraph-image.png`,
     logo: {

@@ -27,7 +27,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const pageUrl = `${siteConfig.siteUrl}/sehirler/${cityPage.slug}/`;
 
   return {
-    title: cityPage.title,
+    // Şehir/ilçe başlıkları kendi içinde zaten şehir adını, "zemin güçlendirme"
+    // ifadesini ve yöntem kelimelerini taşıyor (medyan 57 karakter). Şablon
+    // kuyruğu eklendiğinde 100+ karaktere çıkıyor ve Google başlığı ya kesiyor
+    // ya da kendisi yeniden yazıyordu. absolute ile başlık olduğu gibi çıkar.
+    // Marka, arama sonucunda WebSite şemasından site adı olarak zaten görünür.
+    title: { absolute: cityPage.title },
     description: cityPage.description,
     alternates: {
       canonical: pageUrl

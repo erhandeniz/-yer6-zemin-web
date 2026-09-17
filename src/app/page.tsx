@@ -18,6 +18,11 @@ export const metadata: Metadata = {
     languages: { "tr-TR": pageUrl, "x-default": pageUrl }
   },
   openGraph: {
+    // ZORUNLU: Next.js, sayfa kendi openGraph bloğunu tanımladığında layout'taki
+    // bloğu birleştirmez, tamamen değiştirir. siteName burada tekrar yazılmazsa
+    // ana sayfada og:site_name HİÇ üretilmez ve Google site adını alan adından
+    // (yer6zemin.com.tr) türetir. Bu satır silinmemelidir.
+    siteName: "YER6 Geoteknik",
     title: homeTitle,
     description:
       "Zemin güçlendirme, zemin iyileştirme, jet grout, DSM, fore kazık, enjeksiyon ve temel güçlendirme projelerinde mühendislik odaklı saha uygulaması.",
