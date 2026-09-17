@@ -1863,76 +1863,126 @@ export const knowledgeArticles: KnowledgeArticle[] = [
   },
   {
     slug: "jet-grout-makineleri",
-    title: "Jet Grout Makineleri ve Ekipmanları",
-    seoTitle: "Jet Grout Makineleri ve Ekipmanları | YER6",
-    description: "Jet grout sahasında kullanılan delgi makinesi, yüksek basınç pompası, mikser, silo ve jet başlığı ekipmanları ve kaliteye etkileri.",
-    excerpt: "Jet grout uygulaması; delgi makinesi, yüksek basınç pompası, karıştırıcı (mikser), çimento silosu ve jet başlığından oluşan bütünleşik bir ekipman zinciriyle yürütülür. Ekipman kapasitesi ve uyumu, kolon kalitesini doğrudan etkiler.",
+    title: "Jet Grout Makineleri, Ekipman Parkı ve Fiyat / Kiralama Rehberi 2026",
+    seoTitle: "Jet Grout Makinesi Fiyatları ve Kiralama Rehberi 2026 | YER6",
+    description: "2026 Jet grout makinesi fiyatları, kiralık delgi makineleri, 300-600 bar yüksek basınç pompaları (Metax/Soilmec), mobilizasyon maliyetleri ve makine kiralama vs. anahtar teslim taahhüt karşılaştırması.",
+    excerpt: "Jet grout makinesi fiyatları, delgi makineleri, yüksek basınç pompaları ve şantiye mobilizasyon maliyetleri. Makine kiralamak mı yoksa anahtar teslim taahhüt mü daha karlı? 2026 kapsamlı geoteknik analizi.",
     category: "Jet Grout",
-    readingTime: "7 dk",
+    readingTime: "9 dk",
     publishedAt: "2026-06-21",
-    updatedAt: "2026-07-10",
-    heroLabel: "Jet Grout Makineleri",
+    updatedAt: "2026-09-17",
+    heroLabel: "Jet Grout Makine ve Fiyat Rehberi",
     introduction:
-      "Jet grout kalitesi yalnızca tasarıma değil, sahadaki ekipman zincirine de bağlıdır. Delgi, yüksek basınçlı enjeksiyon ve karışım hazırlığı birbirine bağlı çalışır; herhangi bir halkadaki kapasite eksikliği kolon çapını ve dayanımını etkiler. Bu yazıda jet grout ekipmanlarını ve kaliteye etkilerini açıklıyoruz.",
+      "Jet grout imalatının kalitesi ve birim maliyeti; sahada kullanılan delgi makinesi, 300-600 bar yüksek basınç pompası, otomatik karıştırma santrali ve çimento silosundan oluşan entegre ekipman zincirine doğrudan bağlıdır. Birçok müteahhit ve proje yöneticisi 'jet grout makinesi satın almak mı, makine kiralamak mı, yoksa anahtar teslim metraj bazlı taahhüt yaptırmak mı daha karlı?' ikilemiyle karşılaşır. Bu rehberde; 2026 piyasa koşullarında jet grout makinesi fiyatlarını, kiralama maliyet parametrelerini, şantiye risklerini ve doğru geoteknik ekipman seçim kriterlerini tüm şeffaflığıyla inceliyoruz.",
     sections: [
       {
         id: "ekipman-zinciri",
-        title: "Jet Grout Ekipman Zinciri",
+        title: "Jet Grout Ekipman Zinciri ve Teknik Kapasiteler",
         blocks: [
           {
             type: "paragraph",
             content:
-              "Jet grout uygulaması; zemine kolon hattını açan delgi makinesi, çimento şerbetini yüksek basınçla ileten pompa, şerbeti hazırlayan mikser, çimentoyu depolayan silo ve enjeksiyonu gerçekleştiren jet başlığından (monitör) oluşur. Bu ekipmanlar senkron çalışarak sürekli ve kontrollü üretim sağlar."
+              "Jet grout uygulaması; zemine kolon hattını açan hidrolik delgi makinesi, çimento şerbetini yüksek basınçla ileten triplex pompa, şerbeti hazırlayan mikser ünitesi, çimentoyu depolayan silo ve enjeksiyonu gerçekleştiren jet başlığından (monitör) oluşan senkronize bir makine parkuruyla yürütülür."
           },
           {
             type: "list",
-            title: "Temel ekipmanlar",
+            title: "Temel Ekipman Zinciri ve Görevleri",
             items: [
-              "Delgi makinesi (kolon hattının açılması)",
-              "Yüksek basınç pompası (enjeksiyon basıncının sağlanması)",
-              "Mikser / karıştırıcı (homojen çimento şerbeti hazırlığı)",
-              "Çimento silosu (sürekli üretim akışı)",
-              "Jet başlığı / monitör ve tijler (enjeksiyon geometrisi)"
+              "Hidrolik Delgi Rigleri (Soilmec SM-401, SM-14, Casagrande C6, MDT 180 B): İstenilen zemin derinliğine kadar tij dönüşü, hassas düşeylik ve penetrasyon hızı sağlar.",
+              "Yüksek Basınç Pompası (Metax MP7, Soilmec 5T-400J): 300 ila 600 bar çalışma basıncı üreterek çimento şerbetini süpersonik hızda nozullardan zemin matrisine fışkırtır.",
+              "Otomatik Karıştırma Santrali (Soilmec GM-25 / Kolloidal Mikser): Su/çimento oranını milimetrik ayarlayan yüksek türbülanslı mikser ve şerbeti homojen tutan ajitatör tankı.",
+              "Çimento Depolama Silosu (40-60 Ton): Kesintisiz günlük imalat kapasitesi için sahada dökme çimento stoğu sağlayan pnömatik dolumlu silo.",
+              "Elektrikli Mini Rigler: Düşük tavan yüksekliğine sahip bodrum katlarında, tarihi binalarda ve veri merkezlerinde sıfır egzoz emisyonu ile çalışan kompakt makineler."
             ]
           }
         ]
       },
       {
-        id: "kapasite-kalite",
-        title: "Ekipman Kapasitesinin Kaliteye Etkisi",
+        id: "makine-fiyatlari",
+        title: "2026 Jet Grout Makinesi Fiyatları ve Yatırım Dinamikleri",
         blocks: [
           {
             type: "paragraph",
             content:
-              "Enjeksiyon basıncı, debi ve geri çekilme hızı kolon çapını belirleyen ana parametrelerdir. Pompanın basınç ve debi kapasitesi yetersizse hedef kolon çapına ulaşılamaz; mikser kapasitesi düşükse şerbet homojenliği ve üretim hızı düşer. Bu nedenle ekipman seçimi, hedef kolon geometrisiyle uyumlu olmalıdır."
+              "Sıfır bir jet grout seti (delgi rigi + 500-600 bar pompa + santral + silo); ağır sanayi hidrolikleri, yüksek mukavemetli triplex pompa gövdesi ve DAQ (dijital veri kayıt) otomasyonu içerdiğinden doğrudan Euro döviz kurlarına ve ithalat gümrüklerine bağlıdır. 2026 yılı piyasa verilerine göre komple bir Avrupa menşeili (İtalya, Almanya) sıfır jet grout setinin anahtar teslim edinim maliyeti 350.000 € ile 750.000 € arasında değişmektedir. İkinci el piyasasında ise çalışma saati, motor revizyon durumu ve hidrolik pompa kondisyonuna bağlı olarak 120.000 € ile 320.000 € bandında ekipman bulunabilmektedir."
+          },
+          {
+            type: "warning",
+            title: "Yüksek Aşınma ve Bakım Amortismanı",
+            content:
+              "Jet grout şerbeti son derece aşındırıcı (abrasive) bir karışımdır. Triplex pompa pistonları, seramik gömlekler, yüksek basınç çekvalfleri ve karbür jet nozulları her 100-200 çalışma saatinde bir aşınır. Makine satın alma bütçesi planlanırken bu düzenli yedek parça ve sarfiyat maliyeti mutlaka amortisman hesabına dahil edilmelidir."
+          }
+        ]
+      },
+      {
+        id: "kiralik-makine-maliyetleri",
+        title: "Kiralık Jet Grout Makinesi ve Şantiye Mobilizasyon Kalemleri",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Jet grout makinesini dönemsel veya proje bazlı kiralamak isteyen müteahhitler için tek maliyet makine kira bedeli değildir. Şantiyede ortaya çıkan lojistik, enerji ve sarfiyat kalemleri toplam kiralama faturasını katlayabilmektedir."
+          },
+          {
+            type: "list",
+            title: "Kiralama Sürecinde Ortaya Çıkan Maliyet Parametreleri",
+            items: [
+              "Aylık / Günlük Takım Kirası: Delgi rigi, yüksek basınç pompası ve mikser ünitesi genellikle takım halinde kiralanır. Operatörlü kiralama modellerinde usta ve operatör hak edişleri eklenir.",
+              "Ağır Mobilizasyon ve Lowbed Lojistiği: Paletli delgi makinesi, 25 tonluk enjeksiyon pompası, santral ve silo en az 3 ila 4 lowbed tır nakliyesi gerektirir. Şantiye mesafesine göre çift yönlü gidiş-dönüş mobilizasyonu önemli bir başlangıç maliyetidir.",
+              "Yüksek Yakıt Tüketimi: 400-500 bar basınç üreten dizel motorlu pompa ünitesi ve delgi makinesi saatte ortalama 45 ila 75 litre motorin sarfiyatı gerçekleştirir.",
+              "Hortum ve Aşınma Sorumluluğu: Kiralama sözleşmelerinde yüksek basınç hortumu patlamaları, nozul aşınmaları ve conta değişimlerinin kimin tarafından karşılanacağı net biçimde belirlenmelidir."
+            ]
+          }
+        ]
+      },
+      {
+        id: "kiralama-vs-taahhut",
+        title: "Müteahhitler İçin Kritik Karar: Makine Kiralamak mı, Anahtar Teslim Taahhüt mü?",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "İnşaat firmalarının ve müteahhitlerin en sık düştüğü yanılgı, yalnızca makine kira bedeline bakarak zemin güçlendirme maliyetini hesaplamaktır. Sahada yaşanabilecek ekipman arızaları, çimento zayiatları, kalibrasyon hataları ve yapı denetim kabul testleri hesaba katılmadığında makine kiralamak, uzman bir geoteknik firmaya metraj bazlı taahhüt vermekten çok daha maliyetli ve riskli hale gelebilmektedir."
+          },
+          {
+            type: "list",
+            title: "Makine Kiralama vs. YER6 Anahtar Teslim Taahhüt Karşılaştırması",
+            items: [
+              "Arıza ve Duruş Riski: Makine kiralandığında pompa veya rig arızalanırsa şantiye durur ancak makine kirası ve personel masrafı işlemeye devam eder. YER6 taahhüdünde arıza riski %100 firmamıza aittir; müteahhit zaman kaybetmez.",
+              "Çimento Zayiatı ve Reçete Kontrolü: Deneyimsiz operatörle yapılan kiralık işlerde çimento fazla kaçar, kuyu göçer ve malzeme zayiatı müteahhidin cebinden çıkar. YER6'da su/çimento oranı otomatik santralle milimetrik kontrol edilir.",
+              "Resmi Kabul ve Kalite Garantisi: Kiralık makineyle yapılan kolon yapı denetim testini (karot basınç ve PIT bütünlük) geçemezse müteahhit imalatı kendi cebinden tekrarlamak zorundadır. YER6 anahtar teslim taahhüdünde sadece akredite laboratuvar onayından geçen sağlam kolon metresi faturalandırılır.",
+              "Sıfır Ekipman Yükü: Çift yönlü lowbed nakliyesi, vinç indirme-bindirme, mazot ikmali ve yüksek basınç hortum bakım derdi müteahhidin üzerinden tamamen kalkar."
+            ]
           },
           {
             type: "note",
-            title: "Gerçek zamanlı takip",
+            title: "Finansal Sonuç",
             content:
-              "Modern jet grout uygulamalarında basınç, debi ve derinlik verileri anlık kaydedilir. Bu veriler hem üretim kontrolü hem de teslim dosyası için kalite kanıtı oluşturur."
+              "Orta ve büyük ölçekli projelerde YER6 gibi kendi özmal makine parkuruna sahip uzman bir geoteknik firmadan 'metre başı anahtar teslim teklif' almak; proje bütçesini sabitlemek, şantiye takvimini garanti altına almak ve resmi kabul riskini sıfırlamak açısından her zaman en ekonomik çözümdür."
           }
         ]
       },
       {
         id: "yer6-park",
-        title: "YER6 Makine Parkı Yaklaşımı",
+        title: "YER6 Makine Parkı Yaklaşımı ve Projeye Özel Çözümler",
         blocks: [
           {
             type: "paragraph",
             content:
-              "YER6, jet grout ve zemin iyileştirme projelerinde delgi, pompa ve santral ekipmanlarını proje gereksinimlerine göre eşleştirir. Ekipman kapasitesinin tasarım hedefleriyle uyumu, kolon çapı ve dayanımının güvenilir biçimde elde edilmesini sağlar."
+              "YER6 Zemin Güçlendirme; Ankara merkezli makine parkurunda yer alan yüksek torklu delgi rigleri (Soilmec, Casagrande, MDT), 500-600 bar Metax ve Soilmec yüksek basınç pompaları, otomatik mikser santralleri ve kapalı alanlara uygun elektrikli mini makineleriyle Türkiye genelinde hizmet vermektedir. Müteahhitlerimizi ağır makine edinim ve kiralama risklerinden kurtararak, doğrudan onaylı geoteknik mühendislik ve şeffaf birim fiyat güvencesi sağlıyoruz."
           }
         ]
       }
     ],
     faq: [
-      { question: "Jet grout için hangi makineler gerekir?", answer: "Delgi makinesi, yüksek basınç pompası, mikser, çimento silosu ve jet başlığı temel ekipmanlardır. Bunlar senkron çalışarak kolon üretimini gerçekleştirir." },
-      { question: "Pompa basıncı kolon çapını etkiler mi?", answer: "Evet. Enjeksiyon basıncı, debi ve geri çekilme hızı kolon çapını doğrudan belirler. Yetersiz pompa kapasitesi hedef çapa ulaşılmasını engelleyebilir." },
-      { question: "Ekipman verileri neden kaydedilir?", answer: "Basınç, debi ve derinlik kayıtları hem üretim kalitesini kontrol etmek hem de teslim dosyasında kalite kanıtı sunmak için tutulur." }
+      { question: "Jet grout makinesi fiyatları ne kadardır ve neleri kapsar?", answer: "Sıfır bir jet grout seti (delgi makinesi, yüksek basınç pompası, mikser santrali ve silo) teknik kapasitesine göre 350.000 € ile 750.000 € arasında değişmektedir. İkinci el takımlar ise 120.000 € - 320.000 € bandındadır. Fiyatlar döviz kuru, çalışma saati ve hidrolik donanıma göre belirlenir." },
+      { question: "Kiralık jet grout makinesi ararken hangi maliyetler hesaba katılmalıdır?", answer: "Sadece aylık kira bedeli değil; çift yönlü lowbed nakliyesi, saatlik 45-75 lt mazot sarfiyatı, operatör giderleri ve aşınan yüksek basınç hortum/nozul masrafları toplam maliyete eklenmelidir." },
+      { question: "Jet grout makinesi kiralamak mı, anahtar teslim taahhüt yaptırmak mı daha karlı?", answer: "Orta ve büyük projelerde anahtar teslim taahhüt her zaman daha karlıdır. Makine kiralandığında arıza duruşları, fazla çimento zayiatı ve testten geçmeyen kolon riski müteahhide aittir. YER6 taahhüdünde ise sadece laboratuvar onayından geçen sağlam kolon metresine ödeme yapılır." },
+      { question: "Jet grout yüksek basınç pompasının basınç kapasitesi ne olmalıdır?", answer: "Standart zemin iyileştirmede en az 300-400 bar, sıkı kil ve çakıllı zeminlerde veya geniş kolon çapı hedeflerinde ise 450-600 bar çalışma basıncı üretebilen triplex pompalar (Metax, Soilmec) gereklidir." },
+      { question: "Bina altı veya kısıtlı tavan yüksekliğinde hangi makineler kullanılır?", answer: "Bodrum katları ve kapalı alanlarda tavan yüksekliği 2.5 - 3.5 metreye uygun kompakt mini delgi rigleri ve kapalı alanda dizel egzoz dumanı yaymayan elektrik motorlu jet grout makineleri kullanılır." }
     ],
     relatedSlugs: ["jet-grout-nedir", "jet-grout-uygulama-asamalari", "jet-grout-kalite-kontrol"],
-    keywords: ["jet grout makineleri", "jet grout ekipmanları", "jet grout pompası", "jet grout delgi makinesi", "jet grout santrali"],
+    keywords: ["jet grout makinesi fiyatları", "kiralık jet grout makinesi", "jet grout makinesi", "jet grout pompası fiyatı", "jet grout delgi makinesi", "jet grout kiralama", "jet grout santrali", "jet grout ekipmanları"],
     published: true
   },
   {
