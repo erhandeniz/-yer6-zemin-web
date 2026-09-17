@@ -59,18 +59,20 @@ export function KnowledgeArticleContent({ article }: { article: KnowledgeArticle
             </div>
             <aside className="space-y-6 rounded-[2rem] border border-white/10 bg-white/[0.04] p-8 text-sm text-white/75">
               <div className="sticky top-24 space-y-4">
-                <div>
-                  <p className="text-xs uppercase tracking-[0.3em] text-gold-200">{t("articleTOC")}</p>
-                  <ul className="mt-4 space-y-3">
-                    {article.sections.map((section) => (
-                      <li key={section.id}>
-                        <a href={`#${section.id}`} className="text-white/70 hover:text-white">
-                          {section.title}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                {article.sections && article.sections.length > 0 && (
+                  <div>
+                    <p className="text-xs uppercase tracking-[0.3em] text-gold-200">{t("articleTOC")}</p>
+                    <ul className="mt-4 space-y-3">
+                      {article.sections.map((section) => (
+                        <li key={section.id}>
+                          <a href={`#${section.id}`} className="text-white/70 hover:text-white">
+                            {section.title}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
                 <div className="rounded-[2rem] border border-gold-300/30 bg-gold-300/[0.06] p-6">
                   <p className="text-xs uppercase tracking-[0.3em] text-gold-200">Geoteknik Otorite Merkezleri</p>
                   <div className="mt-4 space-y-2.5">

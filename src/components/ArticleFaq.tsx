@@ -6,6 +6,10 @@ import { useLanguage } from "@/components/LanguageProvider";
 export function ArticleFaq({ faq }: { faq: KnowledgeFaq[] }) {
   const { t } = useLanguage();
 
+  if (!faq || faq.length === 0) {
+    return null;
+  }
+
   return (
     <section className="scroll-mt-28 pt-10">
       <h2 className="text-3xl font-semibold text-white">{t("articleFAQ")}</h2>

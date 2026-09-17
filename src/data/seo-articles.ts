@@ -312,7 +312,7 @@ export const seoArticles: KnowledgeArticle[] = [
         blocks: [
           {
             type: "paragraph",
-            content: "Geoteknik firmanın, kiralık makine yerine kendi mülkiyetindeki modern makine parkına sahip olması esneklik sağlar. Daha da önemlisi, DSM veya Jet Grout gibi makinelerde basınç, devir, hız verilerini anlık kaydeden dijital sensör (data logger) sistemlerinin bulunması kalite kontrol için zorunludur."
+            content: "Geoteknik firmanın, proje terminlerine ve değişken zemin şartlarına doğrudan uyarlanabilir modern bir makine parkına sahip olması saha operasyonlarında hız ve teknik esneklik sağlar. Daha da önemlisi, DSM veya Jet Grout gibi imalatlarda enjeksiyon basıncı, devir hızı ve debi verilerini anlık kaydeden dijital sensör (data logger) sistemlerinin bulunması kalite güvence ve kalite kontrol (QA/QC) süreçleri için teknik bir zorunluluktur."
           }
         ]
       },
@@ -433,7 +433,7 @@ export const seoArticles: KnowledgeArticle[] = [
         blocks: [
           {
             type: "paragraph",
-            content: "TBDY 2018 standartları gereği, tasarım ivmesi altında sıvılaşma güvenlik faktörü (FS > 1.25 veya FS > 1.10) sağlanamayan zeminlerde Jet Grout, DSM veya Taş Kolon uygulamaları zorunlu kılınmaktadır. YER6, her projede imalat öncesi ve sonrası CPT/SPT doğrulamasını gerçekleştirir."
+            content: "TBDY 2018 Bölüm 16 ve Eurocode 7 (EN 1997-1) esasları uyarınca; tasarım ivmesi altında sıvılaşma güvenlik faktörünün (F_L < 1.10 veya kritik altyapı yapılarında F_L < 1.25) sınır değerlerin altında kaldığı ve tolere edilebilir oturma limitlerinin aşıldığı zemin tabakalarında, geoteknik mühendisliği hesaplarına ve zemin tabakasının plastisite/tane yapısına bağlı olarak Jet Grout, DSM (Deep Soil Mixing) veya Taş Kolon yöntemleri projelendirilir. YER6, her projede imalat öncesi ve sonrası CPT/SPT doğrulamasını gerçekleştirerek tasarım hedeflerini belgeler."
           }
         ]
       }

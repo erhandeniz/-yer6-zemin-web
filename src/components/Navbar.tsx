@@ -32,15 +32,15 @@ export function Navbar() {
   }
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 px-3 py-3 sm:px-5">
-      <nav aria-label={t("navAria")} className="mx-auto flex max-w-7xl items-center justify-between rounded-full border border-white/10 bg-obsidian/72 px-4 py-3 shadow-glass backdrop-blur-2xl">
-        <Link href="/" className="group flex items-center gap-3.5" aria-label={t("homeAria")}>
-          <span className="relative grid h-[52px] w-[52px] place-items-center overflow-hidden rounded-full border border-gold-300/35 bg-gold-400/10 brand-logo-emblem">
+    <header className="fixed inset-x-0 top-0 z-50 px-2 py-2.5 sm:px-5 sm:py-3">
+      <nav aria-label={t("navAria")} className="mx-auto flex max-w-7xl items-center justify-between rounded-full border border-white/10 bg-obsidian/72 px-3 py-2 sm:px-4 sm:py-3 shadow-glass backdrop-blur-2xl">
+        <Link href="/" className="group flex items-center gap-2.5 sm:gap-3.5 shrink-0" aria-label={t("homeAria")}>
+          <span className="relative grid h-10 w-10 sm:h-[52px] sm:w-[52px] place-items-center overflow-hidden rounded-full border border-gold-300/35 bg-gold-400/10 brand-logo-emblem shrink-0">
             <span className="absolute h-16 w-16 rotate-45 bg-gradient-to-r from-transparent via-gold-300/40 to-transparent animate-shimmer" />
-            <span className="relative text-[17px] font-bold text-gold-100 brand-logo-text">Y6</span>
+            <span className="relative text-[15px] sm:text-[17px] font-bold text-gold-100 brand-logo-text">Y6</span>
           </span>
           <span className="leading-tight">
-            <span className="block brand-title">YER6</span>
+            <span className="block brand-title text-base sm:text-[1.22rem]">YER6</span>
             <span className="hidden brand-subtitle sm:block">Geotechnical</span>
           </span>
         </Link>
@@ -62,10 +62,10 @@ export function Navbar() {
           })}
         </div>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
           <Link
             href="https://ai.yer6zemin.com.tr"
-            className="inline-flex h-10 items-center gap-2 rounded-full border border-gold-300/30 bg-gold-300/10 px-3 text-gold-100 transition hover:border-gold-300/60 hover:bg-gold-300/15"
+            className="inline-flex h-9 sm:h-10 items-center gap-2 rounded-full border border-gold-300/30 bg-gold-300/10 px-2.5 sm:px-3 text-gold-100 transition hover:border-gold-300/60 hover:bg-gold-300/15"
             aria-label="YER6 AI"
           >
             <BrainCircuit className="h-4 w-4" />
@@ -89,7 +89,7 @@ export function Navbar() {
           </div>
           <button
             onClick={toggleTheme}
-            className="grid h-10 w-10 place-items-center rounded-full border border-white/10 bg-white/5 text-white transition hover:border-gold-300/50"
+            className="grid h-9 w-9 sm:h-10 sm:w-10 place-items-center rounded-full border border-white/10 bg-white/5 text-white transition hover:border-gold-300/50"
             aria-label="Temayı değiştir"
           >
             {isLight ? <Moon className="h-4 w-4" /> : <Sun className="h-4 w-4" />}
@@ -102,7 +102,7 @@ export function Navbar() {
           </Link>
           <button
             onClick={() => setMenuOpen((value) => !value)}
-            className="grid h-10 w-10 place-items-center rounded-full border border-white/10 bg-white/5 text-white lg:hidden"
+            className="grid h-9 w-9 sm:h-10 sm:w-10 place-items-center rounded-full border border-white/10 bg-white/5 text-white lg:hidden shrink-0"
             aria-label={menuOpen ? t("menuClose") : t("menuOpen")}
           >
             {menuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}

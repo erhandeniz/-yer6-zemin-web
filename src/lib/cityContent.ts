@@ -2926,34 +2926,34 @@ const cityEnrichmentList: CityEnrichment[] = [
   {
     slug: "afyonkarahisar-zemin-guclendirme",
     intro:
-      "Afyonkarahisar'da zemin güçlendirme; jeotermal/fay etkisi, killi ova zeminleri ve sanayi/termal tesis yükleri dikkate alınarak planlanır. YER6, DSM, jet grout ve fore kazık çözümleri sunar.",
+      "Afyonkarahisar genelinde zemin güçlendirme; jeotermal akiferlerin yüksek sülfat etkisi, fay zonları, killi ova zeminleri ve mermer/termal sanayi yapılarının ağır taban yükleri dikkate alınarak planlanır. YER6; DSM, jet grout, fore kazık ve iksa çözümlerini mühendislik güvencesiyle sunar.",
     sections: [
       {
-        heading: "Afyonkarahisar zemin koşulları",
+        heading: "Jeotermal Akiferler, Sülfat Korozyonu ve Traverten Formasyonları",
         body: [
-          "Ova kesimlerindeki killi ve siltli zeminler, yük altında oturma ve nem değişiminde hacim hareketi açısından değerlendirilmelidir. Bölgenin jeotermal ve fay etkinliği ek dikkat gerektirir.",
-          "Termal tesis ve sanayi yapılarının yükleri, bu koşullarda zemin iyileştirmesini gerektirebilir."
+          "Afyonkarahisar grabeninde yer alan termal akiferler ve fay kırıkları; yüksek sıcaklık, kalsiyum ve çözünmüş sülfat içeriğiyle yer altı yapılarında agresif kimyasal etki oluşturur. YER6, bölgedeki imalatlarda sülfata dayanıklı (SRC) çimento katkılı jet grout ve DSM karışımları kullanarak zemin kolonlarının uzun ömürlü mukavemetini sağlar.",
+          "Karstik boşluklu traverten ve kireçtaşı birimlerinde enjeksiyon şerbeti kaçaklarını önlemek amacıyla gerçek zamanlı debi-basınç sensörleri ve priz kontrolü uygulanır."
         ]
       },
       {
-        heading: "Afyonkarahisar'da uygulama yaklaşımı",
+        heading: "Organize Sanayi, Mermer Tesisleri ve Ağır Depolama Taban Yükleri",
         body: [
-          "Oturma kontrolü ve zemin rijitliği için DSM; yerel güçlendirme için jet grout; yüksek yapısal yükler için fore kazık uygulanır.",
-          "YER6, Afyonkarahisar sahalarında karot, kolon sürekliliği ve üretim kayıtlarıyla kaliteyi belgeler."
+          "Afyonkarahisar OSB ve mermer işleme tesislerinde zemin plağı üzerine binen dinamik vinç yükleri ve ağır blok stoklama yükleri, yumuşak kil-silt katmanlarında farklı oturmalara (differential settlement) neden olabilir.",
+          "Izgara düzeninde teşkil edilen DSM (Deep Soil Mixing) kolonları ile zemin rijitliği artırılır; zemin emniyet gerilmesi hedeflenen yük kapasitesine ulaştırılarak endüstriyel zemin plakalarında çatlama riski ortadan kaldırılır."
         ]
-      }
-      ,{
-        heading: "Afyonkarahisar jet grout, fore kazık, DSM ve ankraj uygulamaları",
+      },
+      {
+        heading: "Afyonkarahisar Genelinde Jet Grout, Fore Kazık ve İksa Mühendisliği",
         body: [
-          "Afyonkarahisar genelinde jet grout zemin iyileştirme, fore kazık imalatı, DSM (derin zemin karıştırma) ve ankrajlı iksa sistemleri; zemin etüdü verisine göre projelendirilir. YER6; keşif, geoteknik tasarım ve saha uygulamasını tek elden yürütür.",
-          "Temel altı jet grout güçlendirme, mini kazık, zemin çivisi, püskürtme beton ve kazı destek sistemleri dahil tüm geoteknik iş kalemleri için Afyonkarahisar ve çevresinden teklif alabilirsiniz."
+          "Afyonkarahisar genelinde kentsel dönüşüm, çok katlı yapılar ve derin bodrumlu binalar için kesişen fore kazıklı iksa, mini kazık ve öngermeli ankraj sistemleri zemin etüt raporuna göre projelendirilir. YER6; zemin modeli analizi, saha imalatı ve QA/QC testlerini anahtar teslim yürütür.",
+          "Temel altı jet grout güçlendirme, CPT/SPT doğrulama testleri ve yükleme deneyleri dahil tüm geoteknik kalemler için Afyonkarahisar ve Ege havzasından hızlı teklif alabilirsiniz."
         ]
       }
     ],
     faq: [
-      { question: "Killi ova zemininde hangi yöntem uygun?", answer: "Killi ve oturmaya yatkın zeminlerde DSM veya kazıklı temel çözümleri öne çıkar; yöntem plastisite ve yük koşullarına göre belirlenir." },
-      { question: "Termal tesis zemini güçlendirilebilir mi?", answer: "Evet; ağır ve sürekli yükler için DSM, jet grout ve fore kazık kombinasyonlarıyla oturma ve taşıma güvenliği sağlanır." },
-      { question: "YER6 Afyonkarahisar'da hizmet veriyor mu?", answer: "Evet; Ankara merkezli ekibimizle Afyonkarahisar ve çevresinde zemin güçlendirme uygulamaları yapıyoruz." }
+      { question: "Afyonkarahisar'ın sülfatlı termal sularında hangi çimento kullanılır?", answer: "Yüksek sülfat ve termal mineral içeren akifer zonlarında kimyasal korozyona karşı TS EN 197-1 uyumlu Sülfata Dayanıklı Çimento (SRC) ve özel puzolanik katkılı enjeksiyon reçeteleri tercih edilir." },
+      { question: "Mermer fabrikası ve ağır sanayi zeminlerinde hangi yöntem daha ekonomiktir?", answer: "Büyük taban alanlarında zemin kütlesini yerinde iyileştirerek hafriyat maliyetini sıfırlayan DSM (Deep Soil Mixing) grid sistemi, fore kazıklı çözümlere kıyasla %30-40 maliyet tasarrufu ve hızlı teslim sağlar." },
+      { question: "YER6 Afyonkarahisar'da hizmet veriyor mu?", answer: "Evet; geoteknik makine parkımız ve uzman saha mühendislerimizle Afyonkarahisar ve çevre ilçelerde zemin güçlendirme ve iksa projelerini anahtar teslim gerçekleştiriyoruz." }
     ]
   },
   {
