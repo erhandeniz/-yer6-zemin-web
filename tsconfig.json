@@ -29,5 +29,5 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts"
   ],
-  "exclude": ["node_modules", "apps"]
+  "exclude": ["node_modules", "apps", "YER6 KODLANAN SAYFALAR VE BİLEŞENLER", "YER ALTI ZEMİN İYİLEŞTİRME", "YER6 AI", "YER6 ARŞİV VE ESKİ VERSİYONLAR", "YER6 SAHA MEDYA VE TEKLİFLER"]
 }
