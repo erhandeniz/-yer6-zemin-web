@@ -11,18 +11,26 @@ export function ParticleField({ density = 900, className = "" }: { density?: num
     const container = mount;
 
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const smallScreen = window.matchMedia("(max-width: 767px)").matches;
-    if (reduceMotion || smallScreen) return;
+    if (reduceMotion) return;
 
     let disposed = false;
     let frame = 0;
+    let isVisible = true;
     let cleanupScene: (() => void) | undefined;
+
+    const observer = typeof IntersectionObserver !== "undefined"
+      ? new IntersectionObserver(([entry]) => {
+          isVisible = entry.isIntersecting;
+        }, { rootMargin: "80px" })
+      : null;
+    if (observer) observer.observe(container);
 
     async function init() {
       const THREE = await import("three");
       if (disposed || !container.isConnected) return;
 
-      const activeDensity = Math.min(density, window.innerWidth < 1024 ? 320 : 620);
+      const isMobile = window.innerWidth < 768;
+      const activeDensity = Math.min(density, isMobile ? 120 : window.innerWidth < 1024 ? 260 : 520);
       const scene = new THREE.Scene();
       const camera = new THREE.PerspectiveCamera(60, container.clientWidth / container.clientHeight, 0.1, 100);
       camera.position.z = 34;
@@ -32,7 +40,7 @@ export function ParticleField({ density = 900, className = "" }: { density?: num
         alpha: true,
         powerPreference: "low-power"
       });
-      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.25));
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, isMobile ? 1.0 : 1.25));
       renderer.setSize(container.clientWidth, container.clientHeight);
       container.appendChild(renderer.domElement);
 
@@ -58,10 +66,10 @@ export function ParticleField({ density = 900, className = "" }: { density?: num
       geometry.setAttribute("color", new THREE.BufferAttribute(colors, 3));
 
       const material = new THREE.PointsMaterial({
-        size: 0.08,
+        size: isMobile ? 0.12 : 0.08,
         vertexColors: true,
         transparent: true,
-        opacity: 0.72,
+        opacity: 0.75,
         depthWrite: false,
         blending: THREE.AdditiveBlending
       });
@@ -69,7 +77,7 @@ export function ParticleField({ density = 900, className = "" }: { density?: num
       const points = new THREE.Points(geometry, material);
       scene.add(points);
 
-      const planeGeometry = new THREE.PlaneGeometry(46, 18, 24, 8);
+      const planeGeometry = new THREE.PlaneGeometry(46, 18, isMobile ? 12 : 24, isMobile ? 4 : 8);
       const planeMaterial = new THREE.MeshBasicMaterial({
         color: "#d8a42d",
         wireframe: true,
@@ -83,6 +91,7 @@ export function ParticleField({ density = 900, className = "" }: { density?: num
 
       const animate = () => {
         frame = requestAnimationFrame(animate);
+        if (!isVisible) return;
         points.rotation.y += 0.0015;
         points.rotation.x = Math.sin(Date.now() * 0.00016) * 0.07;
         plane.rotation.z += 0.0007;
@@ -109,23 +118,23 @@ export function ParticleField({ density = 900, className = "" }: { density?: num
       };
     }
 
-    const events: Array<keyof WindowEventMap> = ["pointerdown", "keydown", "scroll"];
     let started = false;
-    let startTimer = 0;
     const start = () => {
       if (started) return;
       started = true;
-      window.clearTimeout(startTimer);
-      events.forEach((event) => window.removeEventListener(event, start));
       void init();
     };
-    events.forEach((event) => window.addEventListener(event, start, { once: true, passive: true }));
-    startTimer = window.setTimeout(start, 6000);
+
+    const win = window as Window & { requestIdleCallback?: (cb: () => void, opts?: { timeout: number }) => number };
+    if (typeof win.requestIdleCallback === "function") {
+      win.requestIdleCallback(start, { timeout: 800 });
+    } else {
+      setTimeout(start, 150);
+    }
 
     return () => {
       disposed = true;
-      window.clearTimeout(startTimer);
-      events.forEach((event) => window.removeEventListener(event, start));
+      observer?.disconnect();
       if (frame) cancelAnimationFrame(frame);
       cleanupScene?.();
     };
