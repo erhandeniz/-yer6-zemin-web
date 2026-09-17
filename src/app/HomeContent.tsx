@@ -16,6 +16,9 @@ import { parseMarkdownLinks } from "@/components/LinkParser";
 
 export function HomeContent() {
   const { t } = useLanguage();
+  const pekintasProject = projects.find((p) => p.slug === "pekintas-duzce-fabrika-jet-grout");
+  const hatayProject = projects.find((p) => p.slug === "hatay-merkez-emlak-konut-deprem-konutlari-fore-kazik");
+  const homeProjects = pekintasProject && hatayProject ? [pekintasProject, hatayProject] : projects.slice(0, 2);
 
   return (
     <main>
@@ -66,7 +69,7 @@ export function HomeContent() {
             </Link>
           </div>
           <div className="mt-12 grid gap-6 lg:grid-cols-2">
-            {projects.slice(0, 2).map((project) => (
+            {homeProjects.map((project) => (
               <ProjectCard key={project.slug} project={project} />
             ))}
           </div>

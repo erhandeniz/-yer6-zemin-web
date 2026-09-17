@@ -836,6 +836,80 @@ export function getServicePaths() {
 
 const projectCatalog = [
   {
+    slug: "pekintas-duzce-fabrika-jet-grout",
+    key: "proj_pekintas_duzce",
+    category: "Jet Grout",
+    location: "Düzce",
+    year: "2025",
+    area: "",
+    metric: "3.500 m jet grout",
+    title: "Pekintaş Düzce Güneş Paneli Fabrikası Zemin Güçlendirme",
+    summary: "Düzce'de Pekintaş güneş paneli fabrikası ek kurulum binası için temel altı zemin güçlendirme; 17 m boyunda jet grout kolonlarıyla toplam 3.500 m imalat.",
+    challenge: "Güneş paneli üretim hattı ve ekipman yükleri altında düşük ve düzgün oturma gerektiren temel zemininin güçlendirilmesi.",
+    solution: "Temel altında 17 m boyunda jet grout kolonları teşkil edilerek toplam 3.500 m imalatla, oturmaya duyarlı üretim tesisi zemini güçlendirildi.",
+    seoTitle: "Pekintaş Düzce Güneş Paneli Fabrikası Jet Grout Zemin Güçlendirme | YER6",
+    metaDescription: "Düzce'de Pekintaş güneş paneli fabrikası ek kurulum binası için temel altı jet grout zemin güçlendirme: 17 m kolon boyu, toplam 3.500 m imalat.",
+    tags: ["Jet Grout", "Güneş Paneli Fabrikası", "Temel Güçlendirme"],
+    image: "/images/projects/pekintas-duzce-fabrika-jet-grout.jpg",
+    imageAlt: "Pekintaş Düzce güneş paneli fabrikası sahasında jet grout santrali, silo ve derin kazı — temel altı zemin güçlendirme",
+    soilProblem:
+      "Düzce'deki proje, Pekintaş'ın güneş paneli üretim fabrikasının ek kurulum binasına aitti. Üretim hatları ve ağır ekipman yükleri temel zemininde düşük ve düzgün oturma gerektirdiğinden, temel altı zeminin güçlendirilmesi kritikti.",
+    solutionMethod:
+      "Temel altı zemin güçlendirme için jet grout yöntemi uygulandı. 17 m boyunda jet grout kolonları teşkil edilerek toplam 3.500 m imalat gerçekleştirildi; kolonlar, oturmaya duyarlı üretim ekipmanı yüklerini daha güvenli biçimde taşıyacak şekilde düzenlendi.",
+    technicalInfo: [
+      { label: "Uygulama Yöntemi", value: "Jet Grout" },
+      { label: "Lokasyon", value: "Düzce" },
+      { label: "İşveren / Yüklenici", value: "Pekintaş" },
+      { label: "Tesis Tipi", value: "Güneş Paneli Fabrikası (ek kurulum binası)" },
+      { label: "Kolon Boyu", value: "17 m" },
+      { label: "Toplam İmalat", value: "3.500 m" },
+      { label: "Uygulama", value: "Temel altı zemin güçlendirme (jet grout)" }
+    ],
+    usedEquipment: ["Jet Grout Delgi Makinesi", "Yüksek Basınç Enjeksiyon Pompası", "Jet Grout Santrali / Mikser"],
+    result:
+      "Temel altı zemin, jet grout kolonlarıyla güçlendirilerek güneş paneli üretim tesisinin taşıma ve oturma güvenliği desteklendi. Uygulama, saha koşullarına uygun biçimde tamamlandı.",
+    relatedServiceSlugs: ["jet-grout", "zemin-iyilestirme"]
+  },
+  {
+    slug: "hatay-merkez-emlak-konut-deprem-konutlari-fore-kazik",
+    key: "proj_hatay_emlak_konut_fore",
+    category: "Fore Kazık",
+    location: "Antakya / Hatay",
+    year: "2025",
+    area: "Emlak Konut Kalıcı Konutlar Sahası",
+    metric: "TBDY 2018 ZD/ZE Zemin · Kazıklı Radye",
+    title: "Hatay Merkez Emlak Konut Deprem Konutları Fore Kazık İmalatı",
+    summary: "Hatay Merkez Emlak Konut kalıcı deprem konutları projesinde, sıvılaşabilir yumuşak alüvyon katmanlarını aşarak yapı yüklerini sağlam ana kayaya aktaran rotary delgi fore kazık ve kazıklı radye temel uygulaması.",
+    challenge: "Antakya havzasında deprem sonrası ZD/ZE zemin sınıflarında sıvılaşma, yanal yayılma ve aşırı oturma risklerinin yüksek olduğu zorlu zemin koşulları.",
+    solution: "Rotary delgi ile derin kazık kuyuları açıldı, tam boy donatı kafesi kuyuya yerleştirilip tremie borusu ile kesintisiz su altı beton dökümü sağlandı; PIT bütünlük testleri ile imalat doğrulandı.",
+    tags: ["Fore Kazık", "Emlak Konut", "Hatay Antakya", "Deprem Konutları", "Kazıklı Radye", "Sıvılaşma Önleme"],
+    image: "/images/projects/hatay-emlak-konut-fore-kazik.jpg",
+    imageAlt: "Hatay Merkez Emlak Konut deprem konutları sahasında fore kazık delgi imalatı — YER6",
+    soilProblem: "Antakya merkez havzasındaki yumuşak alüvyon ve killi tabakalar, yüksek katlı kalıcı konut yüklerini güvenle taşımak ve olası sismik sıvılaşma etkilerini bertaraf etmek için derin temel zorunluluğu doğurmaktaydı.",
+    solutionMethod: "YER6 Geoteknik filosu sahaya sevk edildi. Rotary delgi makineleriyle kuyular açıldı; yüksek mukavemetli donatı kafesleri vinçlerle kuyuya merkezlendi ve tremie borusuyla boşluksuz betonlama yapıldı.",
+    technicalInfo: [
+      { label: "Uygulama Yöntemi", value: "Büyük Çaplı Rotary Fore Kazık" },
+      { label: "Lokasyon", value: "Antakya / Hatay" },
+      { label: "İdare / Proje", value: "Emlak Konut Deprem Konutları" },
+      { label: "Zemin Sınıfı", value: "TBDY 2018 ZD / ZE Sismik Zemin" },
+      { label: "Kalite Doğrulama", value: "PIT (Pile Integrity Test) ve CSL Testleri" }
+    ],
+    usedEquipment: ["Yüksek Torklu Rotary Delgi Makinesi", "Paletli Servis Vinci", "Tremie Boru Seti", "Beton Santrali / Mikserler"],
+    result: "Zayıf alüvyon tabakalar aşılarak konut temelleri ana taşıyıcı kayaya kilitlendi; deprem güvenliği en üst düzeye çıkarıldı.",
+    seoTitle: "Hatay Emlak Konut Deprem Konutları Fore Kazık İmalatı | YER6",
+    metaDescription: "Hatay Merkez Emlak Konut deprem konutları sahasında rotary delgi fore kazık ve kazıklı radye temel uygulaması — YER6 Geoteknik saha operasyonu.",
+    video: {
+      videoId: "lOfabQRZuxQ",
+      title: "Hatay Merkez Emlak Konut Fore Kazık İmalatı",
+      caption: "Hatay Emlak Konut kalıcı deprem konutları sahasında rotary delgi makinesi ile fore kazık delgisi ve derin temel imalatı.",
+      orientation: "portrait" as const
+    },
+    gallery: [
+      { src: "/images/projects/hatay-emlak-konut-fore-kazik.jpg", alt: "Hatay Emlak Konut sahasında fore kazık delgi ve donatı montajı" }
+    ],
+    relatedServiceSlugs: ["fore-kazik", "zemin-iyilestirme", "zemin-guclendirme"]
+  },
+  {
     slug: "marmara-lojistik-temel-guclendirme",
     key: "proj_marmara",
     category: "DSM",
@@ -1004,41 +1078,7 @@ const projectCatalog = [
     ],
     relatedServiceSlugs: ["jet-grout", "zemin-iyilestirme"]
   },
-  {
-    slug: "pekintas-duzce-fabrika-jet-grout",
-    key: "proj_pekintas_duzce",
-    category: "Jet Grout",
-    location: "Düzce",
-    year: "2025",
-    area: "",
-    metric: "3.500 m jet grout",
-    title: "Pekintaş Düzce Güneş Paneli Fabrikası Zemin Güçlendirme",
-    summary: "Düzce'de Pekintaş güneş paneli fabrikası ek kurulum binası için temel altı zemin güçlendirme; 17 m boyunda jet grout kolonlarıyla toplam 3.500 m imalat.",
-    challenge: "Güneş paneli üretim hattı ve ekipman yükleri altında düşük ve düzgün oturma gerektiren temel zemininin güçlendirilmesi.",
-    solution: "Temel altında 17 m boyunda jet grout kolonları teşkil edilerek toplam 3.500 m imalatla, oturmaya duyarlı üretim tesisi zemini güçlendirildi.",
-    seoTitle: "Pekintaş Düzce Güneş Paneli Fabrikası Jet Grout Zemin Güçlendirme | YER6",
-    metaDescription: "Düzce'de Pekintaş güneş paneli fabrikası ek kurulum binası için temel altı jet grout zemin güçlendirme: 17 m kolon boyu, toplam 3.500 m imalat.",
-    tags: ["Jet Grout", "Güneş Paneli Fabrikası", "Temel Güçlendirme"],
-    image: "/images/projects/pekintas-duzce-fabrika-jet-grout.jpg",
-    imageAlt: "Pekintaş Düzce güneş paneli fabrikası sahasında jet grout santrali, silo ve derin kazı — temel altı zemin güçlendirme",
-    soilProblem:
-      "Düzce'deki proje, Pekintaş'ın güneş paneli üretim fabrikasının ek kurulum binasına aitti. Üretim hatları ve ağır ekipman yükleri temel zemininde düşük ve düzgün oturma gerektirdiğinden, temel altı zeminin güçlendirilmesi kritikti.",
-    solutionMethod:
-      "Temel altı zemin güçlendirme için jet grout yöntemi uygulandı. 17 m boyunda jet grout kolonları teşkil edilerek toplam 3.500 m imalat gerçekleştirildi; kolonlar, oturmaya duyarlı üretim ekipmanı yüklerini daha güvenli biçimde taşıyacak şekilde düzenlendi.",
-    technicalInfo: [
-      { label: "Uygulama Yöntemi", value: "Jet Grout" },
-      { label: "Lokasyon", value: "Düzce" },
-      { label: "İşveren / Yüklenici", value: "Pekintaş" },
-      { label: "Tesis Tipi", value: "Güneş Paneli Fabrikası (ek kurulum binası)" },
-      { label: "Kolon Boyu", value: "17 m" },
-      { label: "Toplam İmalat", value: "3.500 m" },
-      { label: "Uygulama", value: "Temel altı zemin güçlendirme (jet grout)" }
-    ],
-    usedEquipment: ["Jet Grout Delgi Makinesi", "Yüksek Basınç Enjeksiyon Pompası", "Jet Grout Santrali / Mikser"],
-    result:
-      "Temel altı zemin, jet grout kolonlarıyla güçlendirilerek güneş paneli üretim tesisinin taşıma ve oturma güvenliği desteklendi. Uygulama, saha koşullarına uygun biçimde tamamlandı.",
-    relatedServiceSlugs: ["jet-grout", "zemin-iyilestirme"]
-  },
+
   {
     slug: "bozuyuk-sok-dondurma-tesisi-jet-grout",
     key: "proj_bozuyuk",
@@ -1258,45 +1298,6 @@ const projectCatalog = [
     },
     gallery: [
       { src: "/images/projects/malatya-deprem-konutlari-fore-kazik.jpg", alt: "Malatya fore kazık sahasında rotary delgi makinesi ve donatı hazırlığı" }
-    ],
-    relatedServiceSlugs: ["fore-kazik", "zemin-iyilestirme", "zemin-guclendirme"]
-  },
-  {
-    slug: "hatay-merkez-emlak-konut-deprem-konutlari-fore-kazik",
-    key: "proj_hatay_emlak_konut_fore",
-    category: "Fore Kazık",
-    location: "Antakya / Hatay",
-    year: "2025",
-    area: "Emlak Konut Kalıcı Konutlar Sahası",
-    metric: "TBDY 2018 ZD/ZE Zemin · Kazıklı Radye",
-    title: "Hatay Merkez Emlak Konut Deprem Konutları Fore Kazık İmalatı",
-    summary: "Hatay Merkez Emlak Konut kalıcı deprem konutları projesinde, sıvılaşabilir yumuşak alüvyon katmanlarını aşarak yapı yüklerini sağlam ana kayaya aktaran rotary delgi fore kazık ve kazıklı radye temel uygulaması.",
-    challenge: "Antakya havzasında deprem sonrası ZD/ZE zemin sınıflarında sıvılaşma, yanal yayılma ve aşırı oturma risklerinin yüksek olduğu zorlu zemin koşulları.",
-    solution: "Rotary delgi ile derin kazık kuyuları açıldı, tam boy donatı kafesi kuyuya yerleştirilip tremie borusu ile kesintisiz su altı beton dökümü sağlandı; PIT bütünlük testleri ile imalat doğrulandı.",
-    tags: ["Fore Kazık", "Emlak Konut", "Hatay Antakya", "Deprem Konutları", "Kazıklı Radye", "Sıvılaşma Önleme"],
-    image: "/images/projects/hatay-emlak-konut-fore-kazik.jpg",
-    imageAlt: "Hatay Merkez Emlak Konut deprem konutları sahasında fore kazık delgi imalatı — YER6",
-    soilProblem: "Antakya merkez havzasındaki yumuşak alüvyon ve killi tabakalar, yüksek katlı kalıcı konut yüklerini güvenle taşımak ve olası sismik sıvılaşma etkilerini bertaraf etmek için derin temel zorunluluğu doğurmaktaydı.",
-    solutionMethod: "YER6 Geoteknik filosu sahaya sevk edildi. Rotary delgi makineleriyle kuyular açıldı; yüksek mukavemetli donatı kafesleri vinçlerle kuyuya merkezlendi ve tremie borusuyla boşluksuz betonlama yapıldı.",
-    technicalInfo: [
-      { label: "Uygulama Yöntemi", value: "Büyük Çaplı Rotary Fore Kazık" },
-      { label: "Lokasyon", value: "Antakya / Hatay" },
-      { label: "İdare / Proje", value: "Emlak Konut Deprem Konutları" },
-      { label: "Zemin Sınıfı", value: "TBDY 2018 ZD / ZE Sismik Zemin" },
-      { label: "Kalite Doğrulama", value: "PIT (Pile Integrity Test) ve CSL Testleri" }
-    ],
-    usedEquipment: ["Yüksek Torklu Rotary Delgi Makinesi", "Paletli Servis Vinci", "Tremie Boru Seti", "Beton Santrali / Mikserler"],
-    result: "Zayıf alüvyon tabakalar aşılarak konut temelleri ana taşıyıcı kayaya kilitlendi; deprem güvenliği en üst düzeye çıkarıldı.",
-    seoTitle: "Hatay Emlak Konut Deprem Konutları Fore Kazık İmalatı | YER6",
-    metaDescription: "Hatay Merkez Emlak Konut deprem konutları sahasında rotary delgi fore kazık ve kazıklı radye temel uygulaması — YER6 Geoteknik saha operasyonu.",
-    video: {
-      videoId: "lOfabQRZuxQ",
-      title: "Hatay Merkez Emlak Konut Fore Kazık İmalatı",
-      caption: "Hatay Emlak Konut kalıcı deprem konutları sahasında rotary delgi makinesi ile fore kazık delgisi ve derin temel imalatı.",
-      orientation: "portrait" as const
-    },
-    gallery: [
-      { src: "/images/projects/hatay-emlak-konut-fore-kazik.jpg", alt: "Hatay Emlak Konut sahasında fore kazık delgi ve donatı montajı" }
     ],
     relatedServiceSlugs: ["fore-kazik", "zemin-iyilestirme", "zemin-guclendirme"]
   },
