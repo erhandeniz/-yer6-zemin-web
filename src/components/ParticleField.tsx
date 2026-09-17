@@ -128,12 +128,13 @@ export function ParticleField({ density = 900, className = "" }: { density?: num
     const events: Array<keyof WindowEventMap> = ["pointerdown", "touchstart", "scroll"];
     events.forEach((event) => window.addEventListener(event, start, { once: true, passive: true }));
 
+    const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
     const win = window as Window & { requestIdleCallback?: (cb: () => void, opts?: { timeout: number }) => number };
     let timerId: number | undefined;
     if (typeof win.requestIdleCallback === "function") {
-      timerId = win.requestIdleCallback(start, { timeout: 1800 });
+      timerId = win.requestIdleCallback(start, { timeout: isMobile ? 3800 : 2000 });
     } else {
-      timerId = (setTimeout(start, 1200) as unknown as number);
+      timerId = (setTimeout(start, isMobile ? 3200 : 1500) as unknown as number);
     }
 
     return () => {
