@@ -10,9 +10,11 @@ import {
   ArrowRight, 
   Microscope, 
   PhoneCall, 
-  DownloadCloud,
   Layers,
-  ChevronRight
+  ChevronRight,
+  Ruler,
+  Users,
+  FileCheck
 } from "lucide-react";
 import { siteConfig } from "@/lib/siteConfig";
 
@@ -121,6 +123,97 @@ export default function KaliteKontrolPage() {
         "İşveren ve yapı denetim heyetine yerinde fiziksel sunum"
       ],
       img: "/images/kalite/yeni-3-denetim.jpg"
+    },
+    {
+      id: "karot-sandiklama",
+      title: "Tam Boy Karot Numunesi Sandıklama ve Arşivleme",
+      standard: "TS EN ISO 22475-1 / ASTM D2113",
+      desc: "Alınan karot numuneleri derinlik kotlarına göre özel numune sandıklarına dizilir; çatlak, süreksizlik, porozite ve bağlayıcı homojenliği milimetrik olarak fotoğraflanıp etiketlenerek laboratuvara teslim edilir.",
+      icon: Layers,
+      highlights: [
+        "Kot kot etiketlenmiş numune sandıkları",
+        "Çatlak ve süreksizlik haritalandırması",
+        "RQD (Kaya/Kolon Kalite Göstergesi) analiz raporlaması"
+      ],
+      img: "/images/projects/aydin-incirliova/aydin-meydan-otopark-tam-boy-karot-numunesi.jpg"
+    },
+    {
+      id: "serit-metre-olcumu",
+      title: "Şerit Metre ile Yerinde Milimetrik Çap Ölçümü",
+      standard: "TS EN 12716 / TS EN 14679",
+      desc: "Açığa çıkarılan kolon gövdesi üzerinde dikey ve yatay çap ölçümleri yapılır. Jet grout enjeksiyon basıncı, nozul çapı ve dönüş hızının tasarlanan kolon geometrisini eksiksiz sağladığı şantiyede bizzat doğrulanır.",
+      icon: Ruler,
+      highlights: [
+        "Çift yönlü dikey ve yatay çap kontrolleri",
+        "İmalat parametreleriyle tasarım çapının birebir eşleşmesi",
+        "Şantiye kabul tutanağına işlenen ölçüm fotoğrafları"
+      ],
+      img: "/images/projects/aydin-incirliova/aydin-meydan-otopark-kolon-capi-olcme.jpg"
+    },
+    {
+      id: "taze-numune-kontrolu",
+      title: "Şantiyede Taze Numune ve Karışım Denetimi",
+      standard: "TS EN 197-1 & TS EN 12350",
+      desc: "Enjeksiyon sırasında mikserden çıkan taze çimento şerbeti yoğunluk hidrometresi (Mud Balance) ve akışkanlık hunisiyle (Marsh Funnel) kontrol edilir. Zemin ile buluşan malzemenin su/çimento oranı her parti imalatta kayıt altına alınır.",
+      icon: FileCheck,
+      highlights: [
+        "Mud Balance ile anlık şerbet yoğunluğu ölçümü",
+        "Marsh Funnel viskozite ve akışkanlık takibi",
+        "Her mikser şarjında standart su/çimento oranı güvencesi"
+      ],
+      img: "/images/projects/aydin-incirliova/aydin-meydan-otopark-test-alma.jpg"
+    },
+    {
+      id: "kolon-ortusme-kontrolu",
+      title: "Kolon Eksen Doğruluğu ve Kesişim Arakesit Muayenesi",
+      standard: "TS EN 12716 & TS EN 1536",
+      desc: "Bina temellerinde ve su yalıtımı sağlayan kesişen (secant) kolon dizilimlerinde kolonların birbiriyle teması ve arakesit sürekliliği kazı yüzeyinde milimetrik olarak incelenir; kaçıklık veya aralık oluşmadığı belgelenir.",
+      icon: ShieldCheck,
+      highlights: [
+        "Kesişen kolonlarda su geçirimsizlik temas kontrolü",
+        "Düşey kaçıklık (sapma) payının toleranslar içinde kalması",
+        "Homojen ve kesintisiz yeraltı taşıyıcı perde yapısı"
+      ],
+      img: "/images/projects/aydin-incirliova/aydin-meydan-otopark-kolon-kontrolu.jpg"
+    },
+    {
+      id: "yekpare-kolon-govdesi",
+      title: "Kazılarak Açığa Çıkarılan Yekpare Gövde Bütünlüğü",
+      standard: "TS EN 1997-1 (Eurocode 7) & TBDY 2018",
+      desc: "Kazı tabanından itibaren derinlemesine açığa çıkarılan kolon yüzeyinde hiçbir segregasyon (ayrışma) veya kohezyonsuz zemin cebi olmadığı gözle muayene edilir. Kolonun yekpare rijit gövdesi fiziksel olarak onaylanır.",
+      icon: Hammer,
+      highlights: [
+        "Tam gövde yüzeyi gözlemsel denetimi",
+        "Segregasyon ve ayrışma kontrolü",
+        "Zeminle kolon arasındaki yüksek sürtünme ve aderans"
+      ],
+      img: "/images/projects/aydin-incirliova/aydin-meydan-otopark-aciga-cikarilan-kolon.jpg"
+    },
+    {
+      id: "idare-heyet-kabulu",
+      title: "İdare, Müşavir ve Yapı Denetim Heyetiyle Saha Kabulü",
+      standard: "Kamu İhale Kurumu & Çevre Şehircilik Şartnameleri",
+      desc: "Yerel yönetimler, müşavir mühendislik firmaları ve yapı denetim heyetleri şantiyeye davet edilerek kazılan kolonlar, karot sandıkları ve ölçüm cihazları eşliğinde müşterek kabul tutanakları imzalanır.",
+      icon: Users,
+      highlights: [
+        "Tarafsız ve şeffaf şantiye heyet incelemesi",
+        "Resmi kabul tutanağı ve imalat onay belgeleri",
+        "%100 işveren güveni ve sıfır şüphe yaklaşımı"
+      ],
+      img: "/images/projects/aydin-incirliova/aydin-belediyesi-kolon-testi-olcum.jpg"
+    },
+    {
+      id: "statik-yukleme-deneyi",
+      title: "Statik Kazık Yükleme ve Deplasman Takibi",
+      standard: "ASTM D1143 (Aksiyel Basınç Yükleme Deneyi)",
+      desc: "Fore kazık ve test kolonlarında hidrolik krikolar ve deplasman komparatörleri ile tasarım yükünün 1.5 - 2 katı basma yükü uygulanır. Yük-oturma eğrileri çıkarılarak zeminin nihai taşıma kapasitesi doğrulanır.",
+      icon: Activity,
+      highlights: [
+        "Tasarım yükünün 1.5 - 2.0 katı aşamalı yükleme",
+        "LVDT komparatörlerle mikron hassasiyetinde oturma ölçümü",
+        "Elastik ve kalıcı deformasyon grafik raporu"
+      ],
+      img: "/images/projects/bozuyuk-jet-grout-test-kazigi-kalite-kontrolu-1.jpg"
     }
   ];
 
@@ -176,7 +269,7 @@ export default function KaliteKontrolPage() {
         </div>
       </section>
 
-      {/* Main Protocols Grid */}
+      {/* Main Protocols Grid (All 10 Real Cards) */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="space-y-16">
           {testProtocols.map((item, idx) => {
