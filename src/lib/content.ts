@@ -847,7 +847,7 @@ const projectCatalog = [
     summary: "Düzce'de Pekintaş güneş paneli fabrikası ek kurulum binası için temel altı zemin güçlendirme; 17 m boyunda jet grout kolonlarıyla toplam 3.500 m imalat.",
     challenge: "Güneş paneli üretim hattı ve ekipman yükleri altında düşük ve düzgün oturma gerektiren temel zemininin güçlendirilmesi.",
     solution: "Temel altında 17 m boyunda jet grout kolonları teşkil edilerek toplam 3.500 m imalatla, oturmaya duyarlı üretim tesisi zemini güçlendirildi.",
-    seoTitle: "Pekintaş Düzce Güneş Paneli Fabrikası Jet Grout Zemin Güçlendirme | YER6",
+    seoTitle: "Pekintaş Düzce Güneş Paneli Fabrikası Jet Grout Zemin Güçlendirme",
     metaDescription: "Düzce'de Pekintaş güneş paneli fabrikası ek kurulum binası için temel altı jet grout zemin güçlendirme: 17 m kolon boyu, toplam 3.500 m imalat.",
     tags: ["Jet Grout", "Güneş Paneli Fabrikası", "Temel Güçlendirme"],
     image: "/images/projects/pekintas-duzce-fabrika-jet-grout.jpg",
@@ -896,7 +896,7 @@ const projectCatalog = [
     ],
     usedEquipment: ["Yüksek Torklu Rotary Delgi Makinesi", "Paletli Servis Vinci", "Tremie Boru Seti", "Beton Santrali / Mikserler"],
     result: "Zayıf alüvyon tabakalar aşılarak konut temelleri ana taşıyıcı kayaya kilitlendi; deprem güvenliği en üst düzeye çıkarıldı.",
-    seoTitle: "Hatay Emlak Konut Deprem Konutları Fore Kazık İmalatı | YER6",
+    seoTitle: "Hatay Emlak Konut Deprem Konutları Fore Kazık İmalatı",
     metaDescription: "Hatay Merkez Emlak Konut deprem konutları sahasında rotary delgi fore kazık ve kazıklı radye temel uygulaması — YER6 Geoteknik saha operasyonu.",
     video: {
       videoId: "lOfabQRZuxQ",
@@ -936,7 +936,7 @@ const projectCatalog = [
     ],
     usedEquipment: ["DSM Çift Aks Ekipmanı", "Çimento Şerbeti Mikser Ünitesi", "Dijital Üretim Kayıt Sistemi", "Karot Numune Ekipmanı"],
     result: "Tüm DSM kolon ağı tamamlandıktan sonra yapılan yük testleri tasarım oturma limitlerinin çok altında kaldı. Proje programı dahilinde tamamlandı; tesis, yükleme ve işletim aşamasına sorunsuz geçti.",
-    seoTitle: "Marmara Lojistik Merkezi DSM Zemin İyileştirme | YER6",
+    seoTitle: "Marmara Lojistik Merkezi DSM Zemin İyileştirme",
     metaDescription: "Yumuşak kil tabakalarında 42.000 m DSM kolon ile yapılan endüstriyel platform zemin iyileştirme projesi detayları.",
     relatedServiceSlugs: ["deep-soil-mixing", "dsm", "zemin-iyilestirme"]
   },
@@ -967,7 +967,7 @@ const projectCatalog = [
     ],
     usedEquipment: ["Triple Jet Grout Delgi Makinesi", "Yüksek Basınç Pompası", "Çimento Mikser Ünitesi", "Sondaj Takip Sistemi"],
     result: "Jet grout perdesi tamamlandıktan sonra yapılan sızdırmazlık testleri başarıyla sonuçlandı. Liman genişlemesi güvenli biçimde inşaata başladı; perde boyunca yeraltı suyu kontrolü sağlandı.",
-    seoTitle: "Ege Liman Genişleme Jet Grout Perdesi Projesi | YER6",
+    seoTitle: "Ege Liman Genişleme Jet Grout Perdesi Projesi",
     metaDescription: "İzmir Ege Limanı genişleme projesi kapsamında deniz etkisinden korunmak üzere uygulanan 740 m uzunluğunda triple jet grout sızdırmazlık perdesi.",
     relatedServiceSlugs: ["jet-grout", "zemin-iyilestirme"]
   },
@@ -998,7 +998,7 @@ const projectCatalog = [
     ],
     usedEquipment: ["Rotary Delgi Makinesi (Fore Kazık)", "Ankraj Delgi ve Germe Ekipmanı", "İnklinometre Sistemi", "Dijital İzleme Platformu"],
     result: "Tüm kazı sürecinde inklinometre okumaları izin verilen limitin altında kaldı. Raylı sistem istasyonu için gereken bodrum kazısı, komşu yapılara herhangi bir hasar vermeksizin güvenle tamamlandı.",
-    seoTitle: "Ankara Raylı Sistem Derin Kazı İksa Projesi | YER6",
+    seoTitle: "Ankara Raylı Sistem Derin Kazı İksa Projesi",
     metaDescription: "Ankara kent içi raylı sistem projesinde 26 metre derinlikte uygulanan ankrajlı sekant fore kazık perde ve iksa sistemi detayları.",
     relatedServiceSlugs: ["iksa-sistemleri", "ankraj", "fore-kazik"]
   },
@@ -1029,7 +1029,7 @@ const projectCatalog = [
     ],
     usedEquipment: ["Büyük Çaplı Rotary Delgi Makinesi (KR300)", "Tremie Boru Sistemi", "Donatı Kafesi Vinaç ve Yerleştirme Ekipmanı", "CSL Test Ekipmanı"],
     result: "Tüm fore kazıklar CSL testini başarıyla geçti. Baret temel sistemi yapı yükleme programına tam uyumla tamamlandı. Kule inşaatının temel aşaması planlanan sürede bitirildi.",
-    seoTitle: "İstanbul Karma Kullanım Kulesi Fore Kazık Temeli | YER6",
+    seoTitle: "İstanbul Karma Kullanım Kulesi Fore Kazık Temeli",
     metaDescription: "İstanbul'da 58 katlı kule projesi için uygulanan büyük çaplı fore kazık ve baret derin temel sistemine ait teknik uygulamalar.",
     relatedServiceSlugs: ["fore-kazik", "zemin-guclendirme"]
   },
@@ -1048,7 +1048,7 @@ const projectCatalog = [
     tags: ["Jet Grout", "Zemin İyileştirme", "Temel Altı Güçlendirme"],
     image: "/images/projects/bursa-yunuseli-nida-evleri/bursa-yunuseli-nida-evleri-jet-grout-hero.webp",
     imageAlt: "Bursa Yunuseli Nida Evleri jet grout zemin iyileştirme sahası ve enjeksiyon ekipmanı",
-    seoTitle: "Bursa Yunuseli Jet Grout Zemin İyileştirme Projesi | YER6 Geotechnical",
+    seoTitle: "Bursa Yunuseli Jet Grout Zemin İyileştirme Projesi",
     metaDescription: "Bursa Yunuseli Nida Evleri projesinde 6.200 metre jet grout zemin iyileştirme uygulaması. 15 m kolon boyu ve 60 cm kolon çapı ile temel altı güçlendirme çalışması.",
     projectOverview: "Bursa Yunuseli bölgesinde yer alan Nida Evleri projesinde, temel altı zemin iyileştirme kapsamında jet grout uygulaması gerçekleştirilmiştir. Yaklaşık 6.200 metre imalat kapsamında 15 metre boyunda ve 60 cm çapında jet grout kolonları oluşturularak zemin taşıma kapasitesinin artırılması ve yapı temel güvenliğinin desteklenmesi hedeflenmiştir.",
     technicalSummary: "Yüksek basınçlı çimento enjeksiyonu ile zeminde kontrollü kolon oluşumu sağlanmış, uygulama saha koşullarına göre planlanmıştır. Jet grout yöntemiyle zayıf zemin tabakalarının iyileştirilmesi, oturma risklerinin azaltılması ve temel altı taşıyıcı sistemin güçlendirilmesi amaçlanmıştır.",
@@ -1091,7 +1091,7 @@ const projectCatalog = [
     summary: "Bozüyük'te meyve işleme ve IQF şok dondurma tesisi için temel altı zemin güçlendirme; 12 m boyunda jet grout kolonlarıyla toplam 2.500 m imalat.",
     challenge: "Şok dondurma hatları, soğuk hava depoları ve ağır ekipman yükleri altında düşük ve düzgün oturma gerektiren temel zemininin güçlendirilmesi.",
     solution: "Temel altında 12 m boyunda jet grout kolonları teşkil edilerek toplam 2.500 m imalatla, oturmaya duyarlı tesis zemini güçlendirildi.",
-    seoTitle: "Bozüyük IQF Tesisi Jet Grout ve Test Kazıkları | YER6",
+    seoTitle: "Bozüyük IQF Tesisi Jet Grout ve Test Kazıkları",
     metaDescription: "Bozüyük IQF şok dondurma tesisinde 12 m jet grout kolonlarıyla 2.500 m zemin güçlendirme; kazıyla açılan test kazıkları ve saha kalite kontrolü.",
     tags: ["Jet Grout", "Test Kazıkları", "Saha Kalite Kontrolü", "Gıda / Şok Dondurma Tesisi", "Temel Güçlendirme"],
     image: "/images/projects/bozuyuk-sok-dondurma-tesisi-jet-grout.jpg",
@@ -1156,7 +1156,7 @@ const projectCatalog = [
     ],
     usedEquipment: ["Jet Grout Delgi Makinesi", "400-600 Bar Yüksek Basınçlı Triplex Pompa", "Otomatik Çimento Mikser Santrali", "Dikey Çimento Silosu"],
     result: "Ø60 cm çapında ve 12 m derinliğindeki Jet Grout kolonları ile otopark temel altı zemin taşıma kapasitesi güvenceye alındı; su geçirimsizlik perdesi tamamlanarak derin kazı güvenliği sağlandı.",
-    seoTitle: "Aydın İncirliova Meydan Otopark Jet Grout Projesi | YER6",
+    seoTitle: "Aydın İncirliova Meydan Otopark Jet Grout Projesi",
     metaDescription: "Aydın İncirliova Meydan ve Yeraltı Otoparkı projesinde sert kumlu zorlu zeminde Ø60 cm çap ve 12 m derinlikte Jet Grout kolon imalatı — YER6 saha uygulaması.",
     video: {
       videoId: "IpZDCW3upz0",
@@ -1204,7 +1204,7 @@ const projectCatalog = [
     ],
     usedEquipment: ["Jet Grout Delgi Makinesi", "410 Bar Yüksek Basınçlı Triplex Pompa", "Otomatik Mikser Santrali", "Dikey Çimento Silosu"],
     result: "410 bar basınçla imal edilen Ø60 cm Jet Grout kolonları sayesinde karayolu tabanı ve şevleri sarsılmaz bir mukavemete ulaştırıldı; ağır trafik yükleri altında sıfır oturma güvencesi sağlandı.",
-    seoTitle: "Ankara Balâ Karayolları Yol Genişletme Jet Grout Projesi | YER6",
+    seoTitle: "Ankara Balâ Karayolları Yol Genişletme Jet Grout Projesi",
     metaDescription: "Ankara Balâ Karayolları yol genişletme projesinde 410 bar yüksek basınçla Ø60 cm Jet Grout kolon imalatı ve yol sağlamlaştırma — YER6 saha uygulaması.",
     videos: [
       {
@@ -1288,7 +1288,7 @@ const projectCatalog = [
     ],
     usedEquipment: ["Hidrolik Rotary Delgi Makinesi", "Paletli Servis Vinci", "Tremie Boru Sistemi", "Beton Pompası ve Mikser"],
     result: "Fore kazıklar ana kayaya kilitlenerek üst yapı yükleri için sıfır oturma güvencesi sağlandı; deprem dayanımı yüksek temel sistemi başarıyla teslim edildi.",
-    seoTitle: "Malatya Deprem Konutları Fore Kazık Projesi | YER6",
+    seoTitle: "Malatya Deprem Konutları Fore Kazık Projesi",
     metaDescription: "Malatya Deprem Konutları projesinde yüksek torklu rotary delgi makineleri ile fore kazık ve kazıklı radye temel imalatı — YER6 saha uygulaması.",
     video: {
       videoId: "-I5Nxlqsphs",
@@ -1327,7 +1327,7 @@ const projectCatalog = [
     ],
     usedEquipment: ["Rotary Delgi Makinesi", "Çelik Muhafaza Borusu (Casing) & Osilatör", "Paletli Servis Vinci", "Tremie Betonlama Ekipmanı"],
     result: "Yüksek yeraltı suyuna rağmen kuyu geometrisi ve beton kalitesi sıfır kayıpla tamamlandı; sağlam bir derin temel sistemi inşa edildi.",
-    seoTitle: "Hatay Arsuz Muhafaza Borulu Casing Fore Kazık İmalatı | YER6",
+    seoTitle: "Hatay Arsuz Muhafaza Borulu Casing Fore Kazık İmalatı",
     metaDescription: "Hatay Arsuz sahil sahasında yüksek yeraltı suyuna karşı çelik muhafaza borusu (casing) ile Ø80/Ø100 cm fore kazık delgi ve imalatı — YER6 saha uygulaması.",
     video: {
       videoId: "iABCGEeN8F8",

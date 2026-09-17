@@ -1,6 +1,11 @@
+// SEMA NOTU: Bu sayfa statik export ile HTML olarak uretilir. next/script
+// bileseni (<Script>) script etiketini tarayicida calistirmak icin tasarlanmistir
+// ve uretilen HTML dosyasina YAZILMAZ. Googlebot HTML dosyasini okudugu icin
+// <Script> ile yazilan schema.org kunyelerini hic gormez. Bu nedenle duz
+// <script> kullanilir; layout.tsx ve knowledge/page.tsx zaten boyle calisiyor.
+// <Script> bilesenine geri donulmemelidir.
 import type { Metadata } from "next";
 import Link from "next/link";
-import Script from "next/script";
 import { notFound } from "next/navigation";
 import { ArrowUpRight, CheckCircle2, MapPin } from "lucide-react";
 import { getCityPageBySlug, getCityPaths, featuredCityPages } from "@/lib/cityContent";
@@ -140,18 +145,18 @@ export default async function CityPage({ params }: Props) {
 
   return (
     <main>
-      <Script
+      <script
         id={`city-service-schema-${cityPage.slug}`}
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
-      <Script
+      <script
         id={`city-breadcrumb-schema-${cityPage.slug}`}
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       {faqSchema && (
-        <Script
+        <script
           id={`city-faq-schema-${cityPage.slug}`}
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}

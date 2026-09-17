@@ -1,5 +1,10 @@
+// SEMA NOTU: Bu sayfa statik export ile HTML olarak uretilir. next/script
+// bileseni (<Script>) script etiketini tarayicida calistirmak icin tasarlanmistir
+// ve uretilen HTML dosyasina YAZILMAZ. Googlebot HTML dosyasini okudugu icin
+// <Script> ile yazilan schema.org kunyelerini hic gormez. Bu nedenle duz
+// <script> kullanilir; layout.tsx ve knowledge/page.tsx zaten boyle calisiyor.
+// <Script> bilesenine geri donulmemelidir.
 import type { Metadata } from "next";
-import Script from "next/script";
 import { notFound } from "next/navigation";
 import { getServiceBySlug, getServicePaths } from "@/lib/content";
 import { getServiceSchemaDescription, localSeoServiceAreas, generateFAQSchema, generateBreadcrumbSchema, generateHowToSchema } from "@/lib/seo";
@@ -137,18 +142,18 @@ export default async function ServiceDetailPage({ params }: Props) {
 
   return (
     <>
-      <Script
+      <script
         id={`service-schema-${service.slug}`}
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
-      <Script
+      <script
         id={`service-breadcrumb-schema-${service.slug}`}
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       {faqSchema && (
-        <Script
+        <script
           id={`service-faq-schema-${service.slug}`}
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
@@ -167,7 +172,7 @@ export default async function ServiceDetailPage({ params }: Props) {
           url: canonical
         });
         return howToSchema ? (
-          <Script
+          <script
             id={`service-howto-schema-${service.slug}`}
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}

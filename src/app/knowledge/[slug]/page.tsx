@@ -1,5 +1,10 @@
+// SEMA NOTU: Bu sayfa statik export ile HTML olarak uretilir. next/script
+// bileseni (<Script>) script etiketini tarayicida calistirmak icin tasarlanmistir
+// ve uretilen HTML dosyasina YAZILMAZ. Googlebot HTML dosyasini okudugu icin
+// <Script> ile yazilan schema.org kunyelerini hic gormez. Bu nedenle duz
+// <script> kullanilir; layout.tsx ve knowledge/page.tsx zaten boyle calisiyor.
+// <Script> bilesenine geri donulmemelidir.
 import type { Metadata } from "next";
-import Script from "next/script";
 import { notFound } from "next/navigation";
 import type { KnowledgeArticle } from "@/types/knowledge";
 import { publishedKnowledgeArticles, getKnowledgeArticleBySlug } from "@/data/knowledge";
@@ -82,18 +87,18 @@ export default async function KnowledgeArticlePage({ params }: Props) {
 
   return (
     <>
-      <Script
+      <script
         id={`article-schema-${article.slug}`}
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
-      <Script
+      <script
         id={`article-breadcrumb-schema-${article.slug}`}
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       {faqSchema ? (
-        <Script
+        <script
           id={`article-faq-schema-${article.slug}`}
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}

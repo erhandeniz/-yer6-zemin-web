@@ -1,6 +1,11 @@
+// SEMA NOTU: Bu sayfa statik export ile HTML olarak uretilir. next/script
+// bileseni (<Script>) script etiketini tarayicida calistirmak icin tasarlanmistir
+// ve uretilen HTML dosyasina YAZILMAZ. Googlebot HTML dosyasini okudugu icin
+// <Script> ile yazilan schema.org kunyelerini hic gormez. Bu nedenle duz
+// <script> kullanilir; layout.tsx ve knowledge/page.tsx zaten boyle calisiyor.
+// <Script> bilesenine geri donulmemelidir.
 import type { Metadata } from "next";
 import Link from "next/link";
-import Script from "next/script";
 import { 
   ShieldCheck, 
   Activity, 
@@ -21,13 +26,13 @@ import { siteConfig } from "@/lib/siteConfig";
 const pageUrl = `${siteConfig.siteUrl}/kalite-kontrol-saha-testleri/`;
 
 export const metadata: Metadata = {
-  title: "Saha Testleri ve Kalite Kontrol Protokolü | YER6",
+  title: "Saha Testleri ve Kalite Kontrol Protokolü",
   description: "Zemin güçlendirme ve iyileştirmede şantiye kalite güvencesi: PIT bütünlük testi, merkezden karot alımı, UCS basınç dayanımı ve kolon çapı teyidi.",
   alternates: {
     canonical: pageUrl
   },
   openGraph: {
-    title: "Saha Testleri ve Kalite Kontrol Protokolü | YER6",
+    title: "Saha Testleri ve Kalite Kontrol Protokolü",
     description: "Zemin güçlendirme ve iyileştirmede şantiye kalite güvencesi: PIT bütünlük testi, merkezden karot alımı, UCS basınç dayanımı ve kolon çapı teyidi.",
     url: pageUrl
   }
@@ -271,12 +276,12 @@ export default function KaliteKontrolPage() {
 
   return (
     <main className="min-h-screen bg-[#070707] text-white pt-24 pb-20">
-      <Script
+      <script
         id="kalite-breadcrumb-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      <Script
+      <script
         id="kalite-faq-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}

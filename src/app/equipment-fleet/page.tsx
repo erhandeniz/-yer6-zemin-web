@@ -1,8 +1,13 @@
+// SEMA NOTU: Bu sayfa statik export ile HTML olarak uretilir. next/script
+// bileseni (<Script>) script etiketini tarayicida calistirmak icin tasarlanmistir
+// ve uretilen HTML dosyasina YAZILMAZ. Googlebot HTML dosyasini okudugu icin
+// <Script> ile yazilan schema.org kunyelerini hic gormez. Bu nedenle duz
+// <script> kullanilir; layout.tsx ve knowledge/page.tsx zaten boyle calisiyor.
+// <Script> bilesenine geri donulmemelidir.
 import type { Metadata } from "next";
 import { EquipmentContent } from "./EquipmentContent";
 import { equipmentSeoItems } from "@/lib/seo";
 import { siteConfig } from "@/lib/siteConfig";
-import Script from "next/script";
 
 const pageUrl = `${siteConfig.siteUrl}/equipment-fleet/`;
 const equipmentFleetDescription =
@@ -95,12 +100,12 @@ export default function EquipmentFleetPage() {
 
   return (
     <>
-      <Script
+      <script
         id="equipment-fleet-breadcrumb-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      <Script
+      <script
         id="equipment-fleet-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(equipmentSchema) }}

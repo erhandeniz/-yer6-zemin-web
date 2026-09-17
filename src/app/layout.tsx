@@ -41,6 +41,10 @@ export const metadata: Metadata = {
     "YER6",
     "Ankara zemin güçlendirme"
   ],
+  // SITE ADI SINYALI: Google'ın site adı için okuduğu kaynaklardan biri de
+  // application-name meta etiketidir. WebSite şeması, og:site_name ve manifest
+  // ile aynı marka adını söylemesi gerekir.
+  applicationName: "YER6 Geoteknik",
   authors: [{ name: siteConfig.companyName, url: siteUrl }],
   creator: siteConfig.companyName,
   publisher: siteConfig.companyName,

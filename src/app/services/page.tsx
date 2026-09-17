@@ -1,5 +1,10 @@
+// SEMA NOTU: Bu sayfa statik export ile HTML olarak uretilir. next/script
+// bileseni (<Script>) script etiketini tarayicida calistirmak icin tasarlanmistir
+// ve uretilen HTML dosyasina YAZILMAZ. Googlebot HTML dosyasini okudugu icin
+// <Script> ile yazilan schema.org kunyelerini hic gormez. Bu nedenle duz
+// <script> kullanilir; layout.tsx ve knowledge/page.tsx zaten boyle calisiyor.
+// <Script> bilesenine geri donulmemelidir.
 import type { Metadata } from "next";
-import Script from "next/script";
 import { ServicesContent } from "./ServicesContent";
 import { localSeoServiceAreas, serviceSchemaDescriptions } from "@/lib/seo";
 import { siteConfig } from "@/lib/siteConfig";
@@ -47,7 +52,7 @@ export default function ServicesPage() {
 
   return (
     <>
-      <Script
+      <script
         id="service-schema-zemin-guclendirme"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(zeminGuclendirmeSchema) }}

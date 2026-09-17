@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { NotFoundContent } from "@/components/NotFoundContent";
 
 export const metadata: Metadata = {
-  title: "Sayfa Bulunamadı (404) | YER6",
+  title: "Sayfa Bulunamadı (404)",
   description: "Aradığınız sayfa mevcut değil veya taşınmış olabilir.",
   robots: {
     index: false,

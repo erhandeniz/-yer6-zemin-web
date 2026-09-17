@@ -1,5 +1,10 @@
+// SEMA NOTU: Bu sayfa statik export ile HTML olarak uretilir. next/script
+// bileseni (<Script>) script etiketini tarayicida calistirmak icin tasarlanmistir
+// ve uretilen HTML dosyasina YAZILMAZ. Googlebot HTML dosyasini okudugu icin
+// <Script> ile yazilan schema.org kunyelerini hic gormez. Bu nedenle duz
+// <script> kullanilir; layout.tsx ve knowledge/page.tsx zaten boyle calisiyor.
+// <Script> bilesenine geri donulmemelidir.
 import type { Metadata } from "next";
-import Script from "next/script";
 import { notFound } from "next/navigation";
 import { projects } from "@/lib/content";
 import { siteConfig } from "@/lib/siteConfig";
@@ -148,18 +153,18 @@ export default async function ProjectDetailPage({ params }: Props) {
 
   return (
     <>
-      <Script
+      <script
         id={`project-schema-${project.slug}`}
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(projectSchema) }}
       />
-      <Script
+      <script
         id={`project-breadcrumb-${project.slug}`}
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       {videoSchemas.map((schema, idx) => (
-        <Script
+        <script
           key={`project-video-${project.slug}-${idx}`}
           id={`project-video-${project.slug}-${idx}`}
           type="application/ld+json"
