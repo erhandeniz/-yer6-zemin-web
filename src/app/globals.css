@@ -34,12 +34,15 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 
 body {
   margin: 0;
   min-height: 100vh;
   overflow-x: hidden;
+  max-width: 100vw;
   background:
     radial-gradient(circle at top left, rgba(216, 164, 45, 0.18), transparent 28rem),
     radial-gradient(circle at 80% 15%, rgba(255, 255, 255, 0.08), transparent 22rem),
@@ -424,6 +427,166 @@ textarea {
 .light .brand-subtitle {
   color: #916117 !important; /* High contrast gold/bronze color matching light theme */
   font-weight: 700 !important; /* Extra weight for crisp readability on light background */
+}
+
+/* ── 3 HERO BUTONU: DÖNEN BEYAZ & ALTIN ÇİZGİ + ALTIN-BEYAZ YAZI IŞILTI EFEKTİ ── */
+@keyframes siriBeamSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.siri-button-wrapper {
+  position: relative;
+  display: inline-flex;
+  padding: 2px;
+  border-radius: 9999px;
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.25);
+}
+
+.siri-button-wrapper:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 40px rgba(212, 175, 55, 0.5);
+}
+
+.siri-rotating-beam {
+  position: absolute;
+  top: -150%;
+  left: -150%;
+  width: 400%;
+  height: 400%;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    transparent 260deg,
+    rgba(212, 175, 55, 0.4) 285deg,
+    #fceabb 315deg,
+    #ffffff 345deg,
+    #d4af37 360deg
+  );
+  animation: siriBeamSpin 2.8s linear infinite !important;
+  opacity: 1;
+  pointer-events: none;
+  will-change: transform;
+}
+
+.hero-offscreen .siri-rotating-beam {
+  animation-play-state: paused !important;
+}
+
+.siri-button-inner {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 28px;
+  border-radius: 9999px;
+  background: rgba(14, 14, 18, 0.55);
+  backdrop-filter: blur(20px) saturate(190%);
+  -webkit-backdrop-filter: blur(20px) saturate(190%);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.35), inset 0 0 15px rgba(212, 175, 55, 0.2), 0 8px 30px rgba(0, 0, 0, 0.45);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  transition: all 0.25s ease;
+  overflow: hidden;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .siri-button-inner {
+    width: auto;
+  }
+}
+
+/* Camın içindeki asil altın derinliği */
+.siri-button-inner::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at 50% 50%,
+    rgba(245, 194, 67, 0.18) 0%,
+    rgba(212, 175, 55, 0.08) 60%,
+    transparent 100%
+  );
+  opacity: 0.65;
+  pointer-events: none;
+}
+
+.siri-button-wrapper:hover .siri-button-inner {
+  background: rgba(25, 25, 32, 0.35);
+  border-color: rgba(212, 175, 55, 0.5);
+  box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.5), inset 0 0 25px rgba(212, 175, 55, 0.25), 0 10px 40px rgba(0, 0, 0, 0.6);
+}
+
+.siri-shimmer-text {
+  position: relative;
+  z-index: 2;
+  color: #f5c243;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.85));
+}
+
+/* Üst katman: Beyaz metin penceresi */
+.siri-shimmer-text::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #ffffff;
+  pointer-events: none;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    transparent 15%,
+    rgba(0, 0, 0, 1) 42%,
+    rgba(0, 0, 0, 1) 58%,
+    transparent 85%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    transparent 15%,
+    rgba(0, 0, 0, 1) 42%,
+    rgba(0, 0, 0, 1) 58%,
+    transparent 85%,
+    transparent 100%
+  );
+  -webkit-mask-size: 200% 100%;
+  mask-size: 200% 100%;
+  animation: siriTextSplitSweep 4.6s linear infinite !important;
+  will-change: -webkit-mask-position, mask-position;
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.9));
+}
+
+@keyframes siriTextSplitSweep {
+  0% {
+    -webkit-mask-position: 250% 0;
+    mask-position: 250% 0;
+  }
+  100% {
+    -webkit-mask-position: -150% 0;
+    mask-position: -150% 0;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -10,6 +10,7 @@ import { ProjectCard } from "@/components/ProjectCard";
 import { SectionHeader } from "@/components/SectionHeader";
 import { ServiceCard } from "@/components/ServiceCard";
 import { WorkflowDiagram } from "@/components/WorkflowDiagram";
+import { QualityShowcase } from "@/components/QualityShowcase";
 import { projects, services } from "@/lib/content";
 import { useLanguage } from "@/components/LanguageProvider";
 import { parseMarkdownLinks } from "@/components/LinkParser";
@@ -97,7 +98,11 @@ export function HomeContent() {
         </div>
       </section>
 
-      <section className="px-5 py-24">
+      <section className="px-5 py-24 overflow-hidden">
+        <QualityShowcase />
+      </section>
+
+      <section className="px-5 py-24 overflow-hidden">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
           <div className="gsap-reveal">
             <div className="mb-5 flex items-center gap-4">

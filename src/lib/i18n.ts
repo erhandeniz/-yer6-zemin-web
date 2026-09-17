@@ -25,6 +25,7 @@ export const dictionary = {
     slogan: "Geleceğin Yapıları Güçlü Zeminlerle Başlar",
     heroLead: "YER6; jet grout, DSM, fore kazık, ankraj ve iksa sistemlerinde kendi yüksek kapasiteli makine parkı ve uzman mühendislik kadrosuyla uluslararası standartlarda zemin güçlendirme çözümleri sunar.",
     explore: "Referans Projeleri İncele",
+    calculator: "Ön Maliyet Hesaplama",
     call: "Teknik Ön Değerlendirme Talebi",
     heroScroll: "Keşfet",
 
@@ -608,6 +609,7 @@ export const dictionary = {
     slogan: "Future Structures Begin With Strong Ground",
     heroLead: "YER6 delivers precision engineering, disciplined field operations, and premium project handover across jet grouting, DSM, bored piling, ground anchors, and shoring systems.",
     explore: "View Projects",
+    calculator: "Cost Calculator",
     call: "Request Site Assessment",
     heroScroll: "Scroll",
 
@@ -1192,6 +1194,7 @@ export const dictionary = {
     slogan: "تبدأ مباني المستقبل بتربة قوية",
     heroLead: "تقدم YER6 هندسة دقيقة وتنفيذا ميدانيا منضبطا وتسليما متميزا للمشاريع في الحقن النفاث (Jet Grouting)، والخلط العميق للتربة (DSM)، والخوازيق المحفورة، والمراسي الأرضية، وأنظمة تدعيم الحفريات.",
     explore: "استعراض المشاريع",
+    calculator: "حاسبة التكلفة المسبقة",
     call: "طلب تقييم الموقع",
     heroScroll: "التمرير",
 

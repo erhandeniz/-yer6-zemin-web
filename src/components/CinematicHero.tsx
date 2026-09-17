@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowUpRight, Play, ShieldCheck } from "lucide-react";
-import { useEffect, useState } from "react";
+import { ArrowUpRight, Calculator, Play, ShieldCheck } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 import { ParticleField } from "@/components/ParticleField";
 import { useLanguage } from "@/components/LanguageProvider";
 
@@ -15,6 +15,20 @@ const MEDIA_VERSION = "20260806";
 export function CinematicHero() {
   const { t } = useLanguage();
   const [videoReady, setVideoReady] = useState(false);
+  const heroRef = useRef<HTMLElement | null>(null);
+
+  useEffect(() => {
+    const el = heroRef.current;
+    if (!el || typeof IntersectionObserver === "undefined") return;
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        el.classList.toggle("hero-offscreen", !entry.isIntersecting);
+      },
+      { rootMargin: "120px" }
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
 
   useEffect(() => {
     // Mobilde video zaten CSS ile gizlidir. Gizli masaüstü videosunu mobil
@@ -34,7 +48,7 @@ export function CinematicHero() {
   }, []);
 
   return (
-    <section className="relative min-h-screen overflow-hidden pt-24 dark-theme">
+    <section ref={heroRef} className="relative min-h-screen overflow-hidden pt-24 dark-theme">
       <div className="absolute inset-0">
         {/* LCP elemanı (mobil). Görünüm birebir aynıdır; yalnızca aynı görselin
             daha küçük ve modern formatlı sürümleri sunulur. AVIF > WebP > JPEG
@@ -108,22 +122,41 @@ export function CinematicHero() {
             {t("heroLead")}
           </p>
           <motion.div
-            initial={{ opacity: 0, y: 18 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.78 }}
-            className="mt-10 flex flex-col gap-4 sm:flex-row"
+            className="mt-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap"
           >
-            <Link
-              href="/projects"
-              className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-gold-300 px-6 py-4 text-sm font-semibold text-obsidian shadow-gold transition hover:bg-gold-200 sm:w-auto"
-            >
-              {t("explore")} <ArrowUpRight className="h-4 w-4" />
+            {/* 1. Buton: Referans Projeleri İncele */}
+            <Link href="/projects" className="siri-button-wrapper w-full sm:w-auto">
+              <span className="siri-rotating-beam" />
+              <span className="siri-button-inner">
+                <span className="siri-shimmer-text" data-text={t("explore")}>
+                  {t("explore")}
+                </span>
+                <ArrowUpRight className="relative z-10 h-4 w-4 text-gold-300 drop-shadow-[0_0_8px_rgba(212,175,55,0.8)]" />
+              </span>
             </Link>
-            <Link
-              href="/contact"
-              className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-white/16 bg-white/8 px-6 py-4 text-sm font-semibold text-white backdrop-blur transition hover:border-gold-300/50 sm:w-auto"
-            >
-              <Play className="h-4 w-4 fill-current" /> {t("call")}
+
+            {/* 2. Buton: Ön Maliyet Hesaplama */}
+            <Link href="/hesaplama" className="siri-button-wrapper w-full sm:w-auto">
+              <span className="siri-rotating-beam" />
+              <span className="siri-button-inner">
+                <Calculator className="relative z-10 h-4 w-4 text-gold-300 drop-shadow-[0_0_8px_rgba(212,175,55,0.8)]" />
+                <span className="siri-shimmer-text" data-text={t("calculator")}>
+                  {t("calculator")}
+                </span>
+              </span>
+            </Link>
+
+            {/* 3. Buton: Teknik Ön Değerlendirme Talebi */}
+            <Link href="/contact" className="siri-button-wrapper w-full sm:w-auto">
+              <span className="siri-rotating-beam" />
+              <span className="siri-button-inner">
+                <Play className="relative z-10 h-4 w-4 fill-current text-gold-300 drop-shadow-[0_0_8px_rgba(212,175,55,0.8)]" />
+                <span className="siri-shimmer-text" data-text={t("call")}>
+                  {t("call")}
+                </span>
+              </span>
             </Link>
           </motion.div>
         </div>
