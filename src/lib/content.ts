@@ -97,7 +97,7 @@ export const services = [
     icon: Layers3,
     title: "DSM (Deep Soil Mixing)",
     summary: "YER6, derin zemin karıştırma yöntemiyle taşıma kapasitesi ve oturma performansı hedeflerine yönelik DSM uygulamaları gerçekleştirir.",
-    detail: "DSM (Derin Zemin Karıştırma), mevcut zemin ile çimento bazlı bağlayıcıların yerinde mekanik olarak karıştırılarak zemin-çimento (soil-cement) kolonları oluşturulması işlemidir. Yüksek yeraltı suyuna sahip yumuşak kil, silt ve gevşek kumlu sahalarda, yanal yayılmayı ve sıvılaşmayı engellemek, oturmayı azaltmak ve taşıma gücünü homojen biçimde artırmak için en ekonomik ve seri yöntemdir.",
+    detail: "DSM (Deep Soil Mixing / Derin Zemin Karıştırma), EN 14679 ve FHWA standartlarına uygun olarak zayıf zeminlerin çimento bazlı bağlayıcılarla yerinde mekanik karıştırılması işlemidir. Çift milli (twin-shaft) yüksek torklu makinelerle sahada hafriyat çıkarmadan ve çamur atığı oluşturmadan zemin-çimento kolonları (soil-cement) üretilir. Lojistik depolar, fabrika zeminleri ve alüvyon sahalarda; fore kazığa göre %50, jet grout'a göre %35-40 maliyet avantajı sağlarken, günlük 400-600 metreye varan imalat hızıyla şantiye süresini kısaltır.",
     specs: ["Mekanik karıştırma enerjisi (BRN) kontrolü", "Laboratuvar karışım (UCS) tasarımı", "Kolon kalite ve homojenlik kaydı"],
     applications: [
       "Yumuşak killi zeminlerde lojistik depo ve endüstriyel tesis platformu",
@@ -667,7 +667,7 @@ export const services = [
     icon: ShieldCheck,
     title: "Palplanş (Çelik İksa)",
     summary: "Yüksek yeraltı suyu ve dar kazı sahalarında titreşimli/titreşimsiz çakım yöntemiyle uygulanan su geçirimsiz çelik iksa perdesi.",
-    detail: "Palplanş çelik profilleri (Larssen/Arcelor) vibro çakıcı vinçler ve çene sistemleriyle birbirine kenetlenerek hızlı, yeniden kullanılabilir ve %100 su tutucu derin kazı perde iksası oluşturur.",
+    detail: "Palplanş çelik profilleri (Larssen/Arcelor) vibro çakıcı vinçler ve çene sistemleriyle birbirine kenetlenerek hızlı, yeniden kullanılabilir ve yüksek su geçirimsizliği sağlayan derin kazı perde iksası oluşturur.",
     specs: ["Larssen & Z Profil Çelik Palplanş", "Vibro Çakıcı Vinç ve Hidrolik Pres", "Su Geçirimsiz Kenetli Perde İksa"],
     applications: [
       "Liman, rıhtım, kanal ve su yapılarında su kesici çelik iksa",
@@ -678,7 +678,7 @@ export const services = [
       "Acil şev kayması ve heyelan önleme çelik perdeleri"
     ],
     advantages: [
-      "%100 Kesintisiz Su Geçirimsizliği: Kenetleme (interlock) detayı sayesinde suyu keser",
+      "Yüksek Su Geçirimsizliği: Kenetleme (interlock) detayı ve kenet dolgusu ile su girişi büyük ölçüde sınırlandırılır",
       "Hızlı İmalat ve Sökülebilirlik: Kazı bittikten sonra çekilip başka projede tekrar kullanılır",
       "Dar Sahalarda Minimum Hafriyat: Kazı genişliği gerektirmez",
       "Yüksek Çelik Eğilme Rijitliği: Yanal toprak basınçlarına karşı dayanıklı"
@@ -693,7 +693,7 @@ export const services = [
     faq: [
       { question: "Palplanş m2 fiyatı ne kadar?", answer: "Palplanş maliyeti; profil tipi (Larssen 603/604 vb.), çakılacak derinlik, zemin sertliği, geçici (kiralık) veya kalıcı (satın alma) kullanım durumuna göre belirlenir. YER6, projenize özel en ekonomik m2 fiyatını sunar." },
       { question: "Palplanş çakımı titreşim yapar mı?", answer: "Standart yüksek frekanslı vibro çakıcılar belirli bir titreşim üretir. Çevre yapılara yakın veya hassas sahalarda titreşimsiz hidrolik pres (press-in) çakım makineleri kullanılır." },
-      { question: "Palplanş suyu tamamen keser mi?", answer: "Evet, kenet (interlock) aralarına uygulanan özel su tutucu gres veya poliüretan mastik ile %100 su geçirimsiz batardo ve perde elde edilir." }
+      { question: "Palplanş suyu tamamen keser mi?", answer: "Kenetli palplanş perdesi su girişini büyük ölçüde sınırlar; kenet (interlock) aralarına uygulanan su tutucu gres veya poliüretan mastik sızdırmazlığı belirgin biçimde artırır. Ancak kenetli sistemlerde sınırlı sızıntı her zaman olasıdır; bu nedenle derin kazılarda genellikle bir drenaj ve pompaj planı birlikte kurgulanır. Gereken geçirimsizlik düzeyi, zemin ve su koşullarına göre projede tanımlanır." }
     ]
   }
 ];
@@ -1314,7 +1314,7 @@ const projectCatalog = [
     title: "Hatay Arsuz Muhafaza Borulu (Casing) Fore Kazık İmalatı",
     summary: "Hatay Arsuz sahil bölgesinde yüksek yeraltı suyu ve gevşek alüvyon koşullarında, kuyu stabilitesini korumak amacıyla hidrolik çelik muhafaza borusu (casing) sürülerek gerçekleştirilen Ø80/Ø100 cm fore kazık imalatı.",
     challenge: "Yüksek yeraltı su tablası ve gevşek kum-silt tabakalarında kuyu çeperinin göçmesini engellemek ve kazık geometrisini ekseninde tutmak.",
-    solution: "Hidrolik osilatörlü çelik muhafaza borusu (casing) zemine sürülerek delgi açıldı; su altında donatı indirilip tremie ile betonlanarak kuyu stabilitesi %100 güvenceye alındı.",
+    solution: "Hidrolik osilatörlü çelik muhafaza borusu (casing) zemine sürülerek delgi açıldı; su altında donatı indirilip tremie yöntemiyle dipten yukarı betonlandı. Muhafaza borusu beton seviyesiyle kontrollü biçimde geri çekilerek kuyu çeperi delgi ve döküm boyunca desteklendi.",
     tags: ["Fore Kazık", "Muhafaza Borusu", "Casing", "Hatay Arsuz", "Su Altı Delgi", "Derin Temel"],
     image: "/images/projects/hatay-arsuz-casing-fore-kazik.jpg",
     imageAlt: "Hatay Arsuz sahilinde muhafaza borulu (casing) fore kazık imalatı — YER6 Geoteknik",

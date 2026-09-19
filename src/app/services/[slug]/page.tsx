@@ -26,10 +26,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     notFound();
   }
 
-  const canonical = `${siteConfig.siteUrl}/services/${service.slug}/`;
+  const canonical = service.slug === "deep-soil-mixing"
+    ? `${siteConfig.siteUrl}/services/dsm/`
+    : `${siteConfig.siteUrl}/services/${service.slug}/`;
+
   const serviceSeoTitles: Record<string, string> = {
     "jet-grout": "Jet Grout Firmaları ve Birim Fiyatları 2026 | YER6 Geoteknik",
-    dsm: "DSM Firmaları | Deep Soil Mixing Zemin İyileştirme Fiyatları 2026",
+    dsm: "DSM Zemin İyileştirme | Deep Soil Mixing Firmaları | YER6",
     "fore-kazik": "Fore Kazık Firmaları ve Birim Fiyatları 2026 | YER6 Geoteknik",
     "mini-kazik": "Mini Kazık Firmaları ve Temel Güçlendirme Fiyatları 2026 | YER6",
     ankraj: "Ankraj Firmaları ve Öngermeli İksa Fiyatları 2026 | YER6",
@@ -55,7 +58,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   );
   const serviceMetaDescriptions: Partial<Record<string, string>> = {
     "zemin-iyilestirme":
-      "Zemin iyileştirme yöntemleri, maliyet etkenleri ve uygulama süreci. YER6; jet grout, DSM, taş kolon ve enjeksiyonda Türkiye geneli mühendislik sunar."
+      "Zemin iyileştirme yöntemleri, maliyet etkenleri ve uygulama süreci. YER6; jet grout, DSM, taş kolon ve enjeksiyonda Türkiye geneli mühendislik sunar.",
+    dsm:
+      "DSM zemin iyileştirme ve deep soil mixing firmaları arasında YER6; çift milli makineler, UCS karot testleri, sıvılaşma önleme ve 2026 birim fiyatları sunar.",
+    "deep-soil-mixing":
+      "Deep soil mixing (DSM) zemin iyileştirme uygulamaları ve 2026 maliyetleri. Çift milli derin zemin karıştırma ve anahtar teslim geoteknik mühendislik."
   };
   const description = serviceMetaDescriptions[service.slug] ?? schemaDescription;
 
@@ -88,7 +95,9 @@ export default async function ServiceDetailPage({ params }: Props) {
   const service = getServiceBySlug(slug);
   if (!service) notFound();
 
-  const canonical = `${siteConfig.siteUrl}/services/${service.slug}/`;
+  const canonical = service.slug === "deep-soil-mixing"
+    ? `${siteConfig.siteUrl}/services/dsm/`
+    : `${siteConfig.siteUrl}/services/${service.slug}/`;
   const description = getServiceSchemaDescription(
     service.slug,
     `${service.summary} ${service.title}, zemin güçlendirme ve zemin iyileştirme projelerinde saha verisi, kalite kontrol ve teknik raporlama ile uygulanır.`
@@ -104,6 +113,7 @@ export default async function ServiceDetailPage({ params }: Props) {
     category: "Zemin Güçlendirme ve Geoteknik Mühendislik",
     provider: { "@id": `${siteConfig.siteUrl}/#organization` },
     knowsAbout: [
+      "https://en.wikipedia.org/wiki/Deep_soil_mixing",
       "Deep Soil Mixing",
       "DSM Zemin İyileştirme",
       "Jet Grout",
