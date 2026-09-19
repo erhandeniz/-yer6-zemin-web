@@ -304,7 +304,7 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
                             </td>
                             <td className="p-3.5">Vibro Çakıcı Vinç ile Kenetli Profil</td>
                             <td className="p-3.5">Yeraltı Suyu Yüksek Alüvyon</td>
-                            <td className="p-3.5">%100 Su Geçirimsiz Batardo Perdesi</td>
+                            <td className="p-3.5">Su Geçirimsiz Batardo Perdesi</td>
                             <td className="p-3.5">200-300 m²/gün</td>
                           </tr>
                           <tr className="hover:bg-white/5 transition-colors">
@@ -545,6 +545,15 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
                           title: "YER6 Jet Grout Saha Uygulama ve Basınçlı Enjeksiyon Operasyonu",
                           location: "Saha İmalatı",
                           description: "YER6 Geoteknik mühendislik ekibinin sahada gerçekleştirdiği 400-600 bar yüksek basınçlı Jet Grout kolon imalatı."
+                        }
+                      ]
+                    : service.slug === "dsm" || service.slug === "deep-soil-mixing"
+                    ? [
+                        {
+                          id: "wbIv8gXSw-4",
+                          title: "YER6 DSM (Deep Soil Mixing) Saha Uygulaması ve Derin Zemin Karıştırma",
+                          location: "Saha İmalatı",
+                          description: "YER6 Geoteknik ekibinin sahada çift milli DSM makineleriyle gerçekleştirdiği derin zemin karıştırma ve kolon operasyonu."
                         }
                       ]
                     : undefined

@@ -938,6 +938,11 @@ const projectCatalog = [
     ],
     usedEquipment: ["DSM Çift Aks Ekipmanı", "Çimento Şerbeti Mikser Ünitesi", "Dijital Üretim Kayıt Sistemi", "Karot Numune Ekipmanı"],
     result: "Tüm DSM kolon ağı tamamlandıktan sonra yapılan yük testleri tasarım oturma limitlerinin çok altında kaldı. Proje programı dahilinde tamamlandı; tesis, yükleme ve işletim aşamasına sorunsuz geçti.",
+    video: {
+      videoId: "wbIv8gXSw-4",
+      title: "Marmara Lojistik Merkezi DSM Saha İmalatı",
+      caption: "YER6 Geoteknik çift milli DSM makineleri ile gerçekleştirilen derin zemin karıştırma saha operasyonu."
+    },
     seoTitle: "Marmara Lojistik Merkezi DSM Zemin İyileştirme",
     metaDescription: "Yumuşak kil tabakalarında 42.000 m DSM kolon ile yapılan endüstriyel platform zemin iyileştirme projesi detayları.",
     relatedServiceSlugs: ["deep-soil-mixing", "dsm", "zemin-iyilestirme"]
