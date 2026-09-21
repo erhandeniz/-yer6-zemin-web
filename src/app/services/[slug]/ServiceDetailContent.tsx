@@ -18,8 +18,8 @@ const serviceArticleMap: Record<string, string[]> = {
   "jet-grout": ["yer-alti-zemin-iyilestirme", "jet-grout-nedir", "jet-grout-hangi-zeminlerde-uygulanir", "jet-grout-kalite-kontrol"],
   dsm: ["yer-alti-zemin-iyilestirme", "dsm-nasil-uygulanir", "dsm-malzeme-secinimi", "jet-grout-ve-dsm-farki"],
   "fore-kazik": ["yer-alti-zemin-iyilestirme", "fore-kazik-nedir", "fore-kazik-uygulama-asamalari", "fore-kazik-avantajlari"],
-  "mini-kazik": ["fore-kazik-nedir", "saha-denetimi-numune-testleri", "zemin-iyilestirme-planlama"],
-  ankraj: ["zemin-iyilestirme-risk-yonetimi", "saha-denetimi-numune-testleri", "zemin-iyilestirme-planlama"],
+  "mini-kazik": ["mini-kazik-nedir", "mini-kazik-tercih-nedenleri", "mini-kazik-mi-fore-kazik-mi", "saha-denetimi-numune-testleri"],
+  ankraj: ["ankraj-nedir", "ongermeli-ankraj-firmalari-ve-uygulama-rehberi", "ankraj-uygulama-asamalari", "zemin-iyilestirme-risk-yonetimi"],
   "iksa-sistemleri": ["zemin-iyilestirme-risk-yonetimi", "saha-denetimi-numune-testleri", "zemin-kalite-kontrol-standartlari"],
   "zemin-iyilestirme": ["yer-alti-zemin-iyilestirme", "zemin-iyilestirme-yontemleri", "zemin-iyilestirme-planlama", "zemin-iyilestirme-risk-yonetimi"],
   "zemin-guclendirme": ["temel-alti-zemin-guclendirme", "zemin-iyilestirme-yontemleri", "sivilasma-riskine-karsi-zemin-guclendirme", "zemin-kalite-kontrol-standartlari"],
@@ -238,6 +238,37 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
                       <p className="mt-1 text-xs text-gold-200">277 kNm Tork · 65,7 m Delgi Derinliği</p>
                       <p className="mt-2 text-xs leading-5 text-white/65">
                         Orta ve ağır zemin koşullarında yüksek imalat hızı ve hassas dikey tolerans sağlayan rotary delgi makinesi.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="mt-5 text-right">
+                    <Link href="/equipment-fleet" className="inline-flex items-center gap-2 text-xs font-semibold text-gold-200 hover:text-gold-100">
+                      Tüm Makine Parkurunu İncele &rarr;
+                    </Link>
+                  </div>
+                </div>
+              )}
+
+              {/* Jet Grout & Yüksek Basınçlı Enjeksiyon Makine Parkuru İndeksleme Kartı */}
+              {service.slug === "jet-grout" && (
+                <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-8">
+                  <h2 className="text-2xl font-semibold text-white">Jet Grout Delgi ve Yüksek Basınç Ekipman Parkurumuz</h2>
+                  <p className="mt-3 text-sm text-white/55">
+                    TS EN 12716 ve TBDY 2018 standartlarında zemin iyileştirme ve sıvılaşma önleme kolonları teşkili için YER6 makine filosu
+                  </p>
+                  <div className="mt-6 grid gap-4 sm:grid-cols-2">
+                    <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
+                      <h3 className="font-semibold text-white text-base">Soilmec SM-14 Delgi Makinesi</h3>
+                      <p className="mt-1 text-xs text-gold-200">14 Ton · Modüler Hidrolik Tij Sistemi</p>
+                      <p className="mt-2 text-xs leading-5 text-white/65">
+                        Dar şehir içi şantiyelerde, kentsel dönüşüm alanlarında ve sanayi sahalarında yüksek hızlı jet grout ve mikro kazık delgisi.
+                      </p>
+                    </div>
+                    <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
+                      <h3 className="font-semibold text-white text-base">Soilmec 5T-400J / Metax Pompa</h3>
+                      <p className="mt-1 text-xs text-gold-200">400-600 Bar Hidrolik Basınç · 450 L/dk Debi</p>
+                      <p className="mt-2 text-xs leading-5 text-white/65">
+                        Zemin matrisini parçalayarak homojen soilcrete kolonları oluşturan dijital basınç ve debi kontrollü yüksek basınç enjeksiyon santrali.
                       </p>
                     </div>
                   </div>

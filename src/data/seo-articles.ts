@@ -343,7 +343,7 @@ export const seoArticles: KnowledgeArticle[] = [
     publishedAt: "2026-07-25",
     updatedAt: "2026-07-25",
     heroLabel: "Mühendislik ve Maliyet Rehberi",
-    introduction: "Türkiye'de ve dünyada lojistik depolar, sanayi parselleri, otoyol rampları ve liman arkası yapılarında zemin taşıma kapasitesini artırmak için en bütçe dostu yöntem Deep Soil Mixing (DSM) uygulamasıdır. Doğru DSM zemin iyileştirme firması seçimi, projenin bütçesini ve güvenliğini belirler.",
+    introduction: "Türkiye'de ve dünyada lojistik depolar, organize sanayi bölgeleri (OSB), otoyol rampları ve liman arkası yapılarında zemin taşıma kapasitesini artırmak ve farklı oturmaları önlemek için en bütçe dostu mühendislik yöntemi Deep Soil Mixing (DSM) uygulamasıdır. Doğru DSM zemin iyileştirme firması seçimi, hafriyatsız imalat hızı ve laboratuvar karışım tasarımıyla projenin toplam maliyetini yarı yarıya düşürür.",
     sections: [
       {
         id: "dsm-firmalari-secimi",
@@ -364,13 +364,35 @@ export const seoArticles: KnowledgeArticle[] = [
             content: "DSM birim fiyatları; zeminin plastik indeksine, çimento dozajına (ör. 150-250 kg/m³), kuyu derinliğine (15-30 metre) ve sahaya harcanan BRN karıştırma enerjisine bağlıdır. Hafriyat çıkarma ve nakliye maliyeti olmadığı için DSM, geleneksel derin temellere ve fore kazıklara göre %40-%60 arasında maliyet avantajı sağlar."
           }
         ]
+      },
+      {
+        id: "dsm-endustriyel-osb",
+        title: "3. Sanayi Parselleri ve Lojistik Depolarda DSM Kafes (Grid) Sistemi",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Ağır zemin yükü taşıyan lojistik antrepolar ve endüstriyel zemin betonlarında, noktasal kazıklar yerine kesişen veya kafes (grid) düzeninde imal edilen DSM kolonları zemin rijitliğini homojenleştirir. Bu sistem diferansiyel oturmaları sıfırlarken, deprem anında alüvyal tabakanın sıvılaşma potansiyelini tamamen ortadan kaldırır."
+          }
+        ]
+      },
+      {
+        id: "dsm-ts-en-14679-standart",
+        title: "4. TS EN 14679 Standartlarında Kalite Kontrol ve UCS Basınç Deneyleri",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "TS EN 14679 (Özel Jeoteknik İşlerin Yapımı - Derin Zemin Karıştırma) standardı uyarınca imalat sürecinde çimento şerbeti yoğunluğu areometre ile periyodik kontrol edilir. İmalattan 28 gün sonra kolonlardan karot numuneleri alınarak Tek Eksenli Serbest Basınç Dayanımı (UCS) testlerine tabi tutulur; hedeflenen 1.5 - 4.0 MPa dayanım eşiği bağımsız akredite laboratuvarlarca raporlanır."
+          }
+        ]
       }
     ],
     faq: [
-      { question: "DSM zemin iyileştirme metraj ve teklifi nasıl hesaplanır?", answer: "Saha zemin etüt raporu (SPT/CPT verileri) incelenir, hedeflenen UCS dayanımına göre çimento dozajı belirlenir ve toplam kolon metrajı (m/tül veya m³) üzerinden projelendirilir." }
+      { question: "DSM zemin iyileştirme metraj ve teklifi nasıl hesaplanır?", answer: "Saha zemin etüt raporu (SPT/CPT verileri) incelenir, hedeflenen UCS dayanımına göre çimento dozajı belirlenir ve toplam kolon metrajı (m/tül veya m³) üzerinden projelendirilir." },
+      { question: "DSM yöntemi fore kazığa göre neden daha ekonomiktir?", answer: "DSM yerindeki zemini bağlayıcı ile karıştırarak kolon oluşturur. Dışarıya hafriyat toprağı ve çamur atığı çıkmaz, demir donatı kafesi gerektirmez ve günlük 400-600 metre delgi hızıyla şantiye süresini %60 kısaltır." },
+      { question: "DSM hangi zemin türlerinde en yüksek verimi sağlar?", answer: "Yumuşak killer, siltli alüvyonlar, gevşek ince kumlar ve kontrolsüz dolgularda en yüksek performans ve taşıma gücü artışını sağlar." }
     ],
     relatedSlugs: ["dsm-nasil-uygulanir", "jet-grout-ve-dsm-farki"],
-    keywords: ["dsm zemin iyileştirme firmaları", "deep soil mixing firmaları", "dsm metre fiyatı", "dsm zemin güçlendirme"],
+    keywords: ["dsm zemin iyileştirme firmaları", "deep soil mixing firmaları", "dsm metre fiyatı", "dsm zemin güçlendirme", "dsm zemin iyileştirme"],
     published: true
   },
   {
@@ -395,13 +417,35 @@ export const seoArticles: KnowledgeArticle[] = [
             content: "Ankraj imalatında kuyu delgisi, halat demetlerinin yerleşimi ve enjeksiyon kalitesi kadar hayati olan bir diğer aşama 'Ön Germe (Pre-stressing)' ve Kabul Testleridir. YER6, her ankraj imalatında kalibre edilmiş hidrolik krikolarla eksenel germe ve yük tutma testlerini eksiksiz raporlar."
           }
         ]
+      },
+      {
+        id: "ankraj-kapasite-ve-kök-boyu",
+        title: "2. Halat (Strand) Sayısı, Serbest Boy ve Kök Enjeksiyonu Hesabı",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Derin kazılarda yanal toprak yüküne göre 3x0.6\", 4x0.6\" veya 5x0.6\" yüksek dayanımlı çelik halat demetleri kullanılır. Serbest boy (free length), kazı göçme prizmasının ötesine geçecek şekilde tasarlanırken; kök boyu (bond length) sağlam kaya veya sıkı çakıl katmanına en az 6-10 metre soketlenerek yüksek basınçlı çimento grout enjeksiyonu ile kilitlenir."
+          }
+        ]
+      },
+      {
+        id: "ankraj-ts-en-1537-test",
+        title: "3. TS EN 1537 Standardında Uygunluk ve Kabul Çekme Testleri",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "TS EN 1537 standardına göre her öngermeli ankraj, kilit yüküne (lock-off load) getirilmeden önce tasarım yükünün %125-%150'si kadar çekme testine (proof/acceptance test) tabi tutulur. Krikonun deplasman-zaman grafiği (sürünme testi / creep test) incelenerek zeminle kök arasındaki aderans doğrulanır."
+          }
+        ]
       }
     ],
     faq: [
-      { question: "Geçici ve kalıcı ankraj arasındaki fark nedir?", answer: "Geçici ankrajlar inşaat süresince (12-24 ay) kazı yüzeyini tutar; kalıcı ankrajlar ise bina ömrü boyunca (50+ yıl) özel korozyon korumalı gres ve kılıflarla çalışır." }
+      { question: "Geçici ve kalıcı ankraj arasındaki fark nedir?", answer: "Geçici ankrajlar inşaat süresince (12-24 ay) kazı yüzeyini tutar; kalıcı ankrajlar ise bina ömrü boyunca (50+ yıl) özel korozyon korumalı gres ve kılıflarla çalışır." },
+      { question: "Ankrajlı iksa sistemi derin kazılarda neden zorunludur?", answer: "Kent içi dar parsellerde komşu yapıların ve yolların kazı çukuruna doğru kaymasını ve oturmasını engellemek için fore kazık perdesi arkasına öngermeli ankraj uygulanarak deplasmanlar milimetrik düzeyde tutulur." },
+      { question: "Öngermeli halatlı ankraj hangi zeminlerde uygulanır?", answer: "Kaya, çakıl, sıkı kum ve sert killi zeminlerde yüksek tutunma kapasitesi sağlar. Gevşek dolgularda ise kademeli (tüp à manchette) enjeksiyonla kök bölgesi iyileştirilerek uygulanır." }
     ],
     relatedSlugs: ["kazi-destek-sistemleri-nedir", "zemin-iyilestirme-risk-yonetimi"],
-    keywords: ["öngermeli ankraj firmaları", "ankraj firmaları", "halatlı ankraj", "ankrajlı iksa"],
+    keywords: ["öngermeli ankraj firmaları", "ankraj firmaları", "halatlı ankraj", "ankrajlı iksa", "öngermeli zemin ankrajı"],
     published: true
   },
   {
@@ -744,6 +788,69 @@ export const seoArticles: KnowledgeArticle[] = [
       "ankara fore kazık firmaları",
       "izmir fore kazık firmaları"
     ],
+    published: true
+  },
+  {
+    slug: "mini-kazik-ile-bina-temel-guclendirme-rehberi",
+    title: "Mini Kazık ile Bina Temel Güçlendirme Rehberi: Kentsel Dönüşüm, Çatlak Tamiri ve 2026 Fiyatları",
+    seoTitle: "Mini Kazık ile Bina Temel Güçlendirme & Kentsel Dönüşüm 2026 | YER6",
+    description: "Mini kazık ile bina temel güçlendirme nasıl yapılır? Kentsel dönüşüm dar alanlar, alçak tavanlı bodrum katlar (H < 2.40m), oturan bina kurtarma ve 2026 metre fiyatları.",
+    excerpt: "Mini kazık (mikropile) sistemleri; TS EN 14199 standardına göre büyük delgi makinelerinin giremediği dar şehir içi parsellerde ve mevcut binaların bodrum katlarında titreşimsiz temel güçlendirmesi sağlar.",
+    category: "Mini Kazık",
+    readingTime: "12 dk",
+    publishedAt: "2026-09-21",
+    updatedAt: "2026-09-21",
+    heroLabel: "Kentsel Dönüşüm & Güçlendirme Rehberi",
+    introduction: "Türkiye'nin kentsel dönüşüm seferberliğinde ve deprem kuşağındaki şehirlerimizde karşılaşılan en büyük mühendislik zorluğu; dar sokaklar, bitişik nizam yapılar ve alçak tavanlı bodrum katlarında ağır fore kazık makinelerinin çalışamamasıdır. Bu rehberde, oturan ve çatlayan binaların mini kazıkla nasıl kurtarıldığını (underpinning), Ø150-Ø300 mm delgi çaplarını ve 2026 maliyet parametrelerini inceliyoruz.",
+    sections: [
+      {
+        id: "oturan-bina-kurtarma-underpinning",
+        title: "1. Oturan veya Çatlayan Binalarda Mini Kazık ile Kurtarma (Underpinning)",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Temel altındaki dolgu veya killi zeminlerin konsolidasyonu sonucu binada farklı oturma ve duvarlarda 45 derece diyagonal çatlaklar oluştuğunda en güvenli çözüm 'Underpinning' yani mini kazıklarla temel altı takviyesidir. Mevcut radye temel veya sömel kenarlarından açılan karot deliklerinden zemine Ø200-Ø250 mm çelik borulu mini kazıklar çakılır ve epoksi ankraj filizleriyle mevcut temele kilitlenir. Yapı yükü zayıf dolgudan alınarak sağlam derin tabakalara aktarılır."
+          }
+        ]
+      },
+      {
+        id: "alçak-tavan-bodrum-mini-rig",
+        title: "2. Alçak Tavanlı Bodrum Katlarda (H < 2.40 m) Kompakt Mini Delgi Operasyonu",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Klasik fore kazık makineleri en az 8-12 metre tavan yüksekliğine ihtiyaç duyar. YER6 makine parkurunda yer alan özel elektrikli ve modüler mini kazık kuleleri, 2.00 - 2.40 metre tavan yüksekliğine sahip kapalı bodrum katlarında, otoparklarda ve kazan dairelerinde binaya zerre titreşim vermeden ve dizel egzoz dumanı çıkarmadan hidrolik torkla imalat yapar."
+          }
+        ]
+      },
+      {
+        id: "dar-parsel-bitisik-nizam",
+        title: "3. Dar Sokaklarda ve Bitişik Nizam Parsellerde İksa Güvenliği",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Kentsel dönüşümde yan binaya sıfır mesafede yapılan derin bodrum kazılarında, komşu binanın temeline zarar vermemek için kesişen veya aralıklı mini kazık perdesi imal edilir. Mini kazıkların arkasına öngermeli ankrajlar uygulanarak komşu yapının temeli milimetrik deplasman toleransıyla askıya alınır."
+          }
+        ]
+      },
+      {
+        id: "2026-mini-kazik-metre-fiyati",
+        title: "4. 2026 Mini Kazık Metre Birim Fiyatı ve Maliyet Bileşenleri",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Mini kazık metre birim fiyatı; delgi çapına (Ø150, Ø200, Ø250, Ø300 mm), kuyu derinliğine, kullanılan çelik muhafaza borusu (casing) veya donatı demiri tonajına ve m³ başına çimento grout sarfiyatına göre belirlenir. YER6 canlı Mini Kazık Maliyet Hesaplama aracı üzerinden projenizin yaklaşık metraj maliyetini saniyeler içinde hesaplayabilirsiniz."
+          }
+        ]
+      }
+    ],
+    faq: [
+      { question: "Mini kazık mevcut oturan bir binayı düzeltir mi?", answer: "Mini kazıklar hidrolik krikolarla birlikte kullanıldığında (hidrolik kriko underpinning) binadaki oturmayı durdurur ve kademeli yükleme ile binayı güvenli terazi kotuna alabilir." },
+      { question: "Mini kazık yapımı sırasında binada yaşayanların tahliye edilmesi gerekir mi?", answer: "Titreşimsiz rotary ve hidrolik delgi makineleri kullanıldığı için çoğu güçlendirme projesinde bina sakinlerinin tahliye edilmesine gerek kalmadan bodrum kattan imalat tamamlanabilir." },
+      { question: "Mini kazık mı jet grout mu bina güçlendirmede tercih edilmelidir?", answer: "Alçak tavanlı bodrumlarda ve çamur tahliyesinin riskli olduğu killi sahalarda mini kazık daha temiz ve kontrollüdür. Su geçirimsizlik perdesi gereken veya kumlu sıvılaşabilir sahalarda ise jet grout öne çıkar." }
+    ],
+    relatedSlugs: ["mini-kazik-nedir", "mini-kazik-tercih-nedenleri", "mini-kazik-mi-fore-kazik-mi"],
+    keywords: ["mini kazık ile bina güçlendirme", "mini kazık firmaları", "kentsel dönüşüm mini kazık", "oturan bina güçlendirme", "mini kazık metre fiyatı 2026", "underpinning"],
     published: true
   }
 ];

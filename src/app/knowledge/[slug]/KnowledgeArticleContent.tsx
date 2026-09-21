@@ -80,13 +80,19 @@ export function KnowledgeArticleContent({ article }: { article: KnowledgeArticle
                       → Zemin İyileştirme Yöntemleri
                     </Link>
                     <Link href="/services/jet-grout/" className="block text-xs text-white/70 hover:text-white transition">
-                      → Jet Grout Uygulamaları
+                      → Jet Grout Zemin İyileştirme
+                    </Link>
+                    <Link href="/services/fore-kazik/" className="block text-xs text-white/70 hover:text-white transition">
+                      → Fore Kazık Sistemleri
                     </Link>
                     <Link href="/services/dsm/" className="block text-xs text-white/70 hover:text-white transition">
                       → Deep Soil Mixing (DSM)
                     </Link>
-                    <Link href="/services/fore-kazik/" className="block text-xs text-white/70 hover:text-white transition">
-                      → Fore Kazık Sistemleri
+                    <Link href="/services/ankraj/" className="block text-xs text-white/70 hover:text-white transition">
+                      → Öngermeli Ankraj & İksa
+                    </Link>
+                    <Link href="/services/mini-kazik/" className="block text-xs text-white/70 hover:text-white transition">
+                      → Mini Kazık Temel Güçlendirme
                     </Link>
                   </div>
                 </div>

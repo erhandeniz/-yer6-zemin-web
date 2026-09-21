@@ -49,17 +49,17 @@ export const services = [
     key: "svc_jet_grout",
     icon: Drill,
     title: "Jet Grout",
-    summary: "YER6, zayıf zeminlerde taşıma kapasitesini artırmak için yüksek basınçlı enjeksiyonla zemin-çimento kolonları oluşturan jet grout uygulamaları gerçekleştirir.",
-    detail: "Jet grout yapan firmalar arasında ileri mühendislik standartlarıyla öne çıkan YER6; 400-600 bar aralığındaki yüksek basınçlı çimento şerbetinin (grout), zemin matrisini parçalayarak yerinde zemin-çimento kolonları (soilcrete) oluşturması prensibine dayanır. Zorlu saha koşullarında, dar alanlarda ve mevcut yapılara bitişik (underpinning) kazılarda taşıma kapasitesini artırmak ve su geçirimsizlik perdesi (secant wall) sağlamak için en etkili geoteknik çözümdür.",
-    specs: ["Mono, double ve triple sistem", "Gerçek zamanlı basınç ve debi takibi", "Kesintisiz yüzey dönüş (spoil) kontrolü"],
+    summary: "YER6, TS EN 12716 ve TBDY 2018 standartlarında zayıf zeminlerin taşıma kapasitesini artırmak, sıvılaşmayı önlemek ve oturma kontrolü sağlamak için 400-600 bar yüksek basınçlı enjeksiyonla jet grout zemin iyileştirme uygulamaları gerçekleştirir.",
+    detail: "Türkiye ve dünya çapında jet grout zemin iyileştirme yapan firmalar arasında ileri mühendislik standartlarıyla öne çıkan YER6; 400-600 bar kinetik hidrolik basınçla çimento şerbetini (grout) zemin matrisine püskürterek yerinde yüksek dayanımlı soilcrete kolonları teşkili gerçekleştirir. TBDY 2018 Bölüm 16 zemin sıvılaşma kriterleri, TS EN 12716 uygulama esasları ve Eurocode 7 normlarına göre projelendirilen imalatlarımız; endüstriyel tesisler, lojistik depolar, köprü yaklaşım dolguları ve kentsel dönüşüm alanlarında taşıma gücünü maksimize eder, sıvılaşma riskini sönümler ve sızdırmazlık perdeleri (secant cutoff wall) oluşturur.",
+    specs: ["TS EN 12716 & TBDY 2018 Standartları", "Mono, Double ve Triple (JG1/JG2/JG3) Sistem", "400-600 Bar Gerçek Zamanlı Basınç Takibi"],
     applications: [
-      "Mevcut yapılarda bina altı temel güçlendirmesi (underpinning)",
+      "Deprem kuşağında zemin sıvılaşmasına karşı jet grout zemin iyileştirme ve oturma sönümleme",
+      "Endüstriyel tesis, lojistik ambar ve ağır sanayi zeminlerinde taşıma gücü (bearing capacity) artırımı",
+      "Mevcut yapılarda bina altı temel güçlendirmesi (underpinning) ve oturma önleme",
       "Aktif kullanılan Türk Telekom binaları, veri merkezleri ve santral tesisleri altında elektrikli makinelerle titreşimsiz uygulama",
-      "Derin kazılarda yeraltı suyu kesici (cutoff) geçirimsizlik perdeleri",
-      "Yumuşak kil ve gevşek kumlarda taşıma gücü (bearing capacity) artırımı",
-      "Tünel ayna ve portal giriş stabilizasyonu, şaft kazıları",
-      "Kıyı yapılarında deniz suyu girişini engelleyen sızdırmazlık perdeleri",
-      "Sıvılaşma riskine karşı zemin iyileştirmesi"
+      "Derin kazılarda yeraltı suyu kesici (cutoff) sızdırmazlık ve geçirimsizlik perdeleri",
+      "Tünel ayna ve portal giriş stabilizasyonu, şaft kazıları ve şev takviyesi",
+      "Kıyı yapılarında deniz suyu girişini engelleyen sızdırmazlık perdeleri"
     ],
     advantages: [
       "Düşük Titreşimli Yöntem: Kazık çakma veya darbeli delgi yöntemlerine göre titreşim etkisi düşüktür; komşu yapılar ve hassas cihazlar proje özelindeki izleme planıyla korunur.",
@@ -180,16 +180,16 @@ export const services = [
     key: "svc_mini_kazik",
     icon: Mountain,
     title: "Mini Kazık",
-    summary: "Sınırlı erişimli alanlarda güçlendirme, underpinning ve hassas temel çözümleri.",
-    detail: "Mevcut yapı temellerinde düşük titreşimli, güvenli ve kontrollü kapasite artışı.",
-    specs: ["Kompakt ekipman", "Çelik donatı seçenekleri", "Enjeksiyonlu imalat"],
+    summary: "YER6; kentsel dönüşüm, alçak tavanlı bodrum katlar (H < 2.40 m), dar sokaklar ve oturan binaların kurtarılmasında hidrolik mini riglerle titreşimsiz mini kazık ve temel güçlendirme çözümleri sunar.",
+    detail: "Mini kazık firmaları arasında Türkiye geneli ve uluslararası tecrübesiyle öne çıkan YER6; TS EN 14199 (Özel Jeoteknik İşlerin Yapımı - Mikro Kazıklar) ve TBDY 2018 esaslarına uygun olarak Ø150-Ø300 mm çaplarında enjeksiyonlu mini kazık imalatı yapar. Ağır iş makinelerinin ve büyük fore kazık riglerinin giremediği bitişik nizam şehir içi parsellerde, bodrum katından temel takviyesi gerektiren oturan/çatlayan binalarda ve derin kazı iksa perdelerinde sürtünme ve uç kazığı olarak yapı yükünü güvenle sağlam zemin katmanlarına aktarır.",
+    specs: ["TS EN 14199 & TBDY 2018 Standardı", "Ø150 - Ø300 mm Çap Aralığı", "Alçak Tavan (H < 2.40 m) Kompakt Mini Delgi"],
     applications: [
-      "Mevcut yapı temellerinde underpinning (temel altı takviyesi)",
-      "Tarihi yapı ve anıt restorasyon projelerinde temel güçlendirme",
-      "Düşük tavan yüksekliğine sahip bodrum ve yeraltı geçişleri",
-      "Eğimli arazilerde şev stabilitesi ve toprak ankrajı",
-      "Bina içi veya yapıya bitişik sınırlı alanlarda güçlendirme",
-      "Yenileme projelerinde mevcut temelin taşıma kapasitesi artırımı"
+      "Kentsel dönüşüm alanlarında dar sokak ve bitişik nizam bina temellerinde mini kazık uygulaması",
+      "Oturan, eğilen veya çatlak oluşan binalarda bodrum kattan temel altı takviyesi (underpinning)",
+      "Mevcut radye temel ve tekil sömel altına epoksi filiz ekimiyle mini kazık yük transferi",
+      "Derin kazılarda fore kazık veya mini kazık perde ile ankrajlı iksa sistemleri",
+      "Tarihi eser, anıt ve kentsel sit alanı yapılarında titreşimsiz temel güçlendirmesi",
+      "Heyelan ve dik şev stabilizasyonunda çekme ve basınç mini kazıkları"
     ],
     advantages: [
       "Kompakt ekipmanla dar, kapalı ve düşük tavanlı alanlarda uygulanır",
@@ -221,16 +221,16 @@ export const services = [
     key: "svc_ankraj",
     icon: Anchor,
     title: "Ankraj",
-    summary: "Derin kazılar, iksa perdeleri ve stabilizasyon işleri için aktif pasif ankraj sistemleri.",
-    detail: "Proje yüklerine göre delgi, enjeksiyon, germe ve kabul testi süreçlerinin yönetimi.",
-    specs: ["Ön germeli ankraj", "Kabul ve uygunluk testleri", "Korozyon koruması"],
+    summary: "YER6; derin kazı iksa perdeleri, şev stabilizasyonu ve zemin destekleme projelerinde TS EN 1537 standartlarında yüksek tonajlı öngermeli halatlı zemin ankrajı imalatı gerçekleştirir.",
+    detail: "Ankraj firmaları arasında ileri mühendislik ve test altyapısıyla lider konumda bulunan YER6; kimyasal dübel veya basit yapısal bağlantılardan tamamen farklı olarak, derin kazılarda oluşan devasa yanal zemin basınçlarını 3'lü, 4'lü ve 5'li 0.6 inç çelik halat demetleri (strand) ve çimento enjeksiyonuyla sağlam zemin kütlesine aktaran geoteknik öngermeli zemin ankrajı sistemleri uygular. TS EN 1537 (Özel Jeoteknik İşlerin Yapımı - Zemin Ankrajları) normlarına göre hidrolik krikolarla eksenel germe ve çekme kabul testleri (acceptance test) eksiksiz raporlanır.",
+    specs: ["TS EN 1537 Normunda Kabul Testi", "0.6 inç Çok Telli Çelik Halat (Strand)", "Kalıcı ve Geçici Çift Korozyon Koruması"],
     applications: [
-      "İksa perde sistemlerinde yanal yük aktarımı",
-      "Derin kazılarda zemin ankrajlı destekleme",
-      "Şev ve heyelan önleme stabilizasyon ankrajları",
-      "Yer altı geçişi ve tünel destek sistemleri",
-      "Zemin çivisi (soil nail) uygulamaları",
-      "Yüzdürme kuvvetine karşı yapı altı basınç ankrajları"
+      "Derin bina kazılarında fore kazık perde ve diyafram duvar arkası öngermeli zemin ankrajı",
+      "Kentsel dönüşüm dar şantiyelerinde komşu parsel deplasmanlarını sıfırlayan iksa ankrajları",
+      "Karayolu, demiryolu ve viyadük yaklaşım şevlerinde heyelan önleme ankrajları",
+      "Yüksek yeraltı su basıncına karşı yapı tabanında yüzme önleyici (uplift) çekme ankrajları",
+      "Tünel portalları ve dikey şaft kazılarında kaya ve zemin stabilitesi ankrajı",
+      "Çelik kuşak kirişi (waling beam) ve başlık kirişi bağlantılı entegre iksa sistemleri"
     ],
     advantages: [
       "İksa sistemine aktif ön yükleme ile deplasman kontrolü",
