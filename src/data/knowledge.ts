@@ -4,7 +4,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
   {
     slug: "jet-grout-nedir",
     title: "Jet Grout Nedir? Kullanım Alanları ve Çalışma Prensibi",
-    seoTitle: "Jet Grout Nedir? Zemin Güçlendirme ve Jet Grouting Firmaları | YER6",
+    seoTitle: "Jet Grout Nedir? Zemin Güçlendirme Yöntemi ve Çalışma Prensibi | YER6",
     description:
       "Jet Grout nedir? Zemin güçlendirme yöntemleri, DSM, mini kazık ve zemin enjeksiyonu ile karşılaştırmalı jet grouting taşıma kapasitesi rehberi.",
     excerpt:
@@ -3445,7 +3445,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
   {
     slug: "yer-alti-zemin-iyilestirme",
     title: "Yer Altı Zemin İyileştirme Rehberi: Yöntemler, Tasarım ve Uygulama",
-    seoTitle: "Yer Altı Zemin İyileştirme: 2026 Kapsamlı Rehber | YER6",
+    seoTitle: "Zemin İyileştirme Rehberi 2026 | Yöntemler, Seçim ve Kalite Kontrol | YER6",
     description: "Yer altı zemin iyileştirme rehberi: jet grout, DSM, taş kolon, enjeksiyon ve 15+ yöntem; seçim matrisi, TBDY 2018, maliyet faktörleri. Uzmanından okuyun.",
     excerpt: "Yer altı zemin iyileştirme yöntemlerinin tamamını — jet grout'tan taş kolona, DSM'den derin kompaksiyona — seçim kriterleri, tasarım parametreleri ve kalite kontrol testleriyle birlikte anlatan Türkiye'nin en kapsamlı rehberi.",
     category: "Zemin İyileştirme",

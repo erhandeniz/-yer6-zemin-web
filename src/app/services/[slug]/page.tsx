@@ -31,38 +31,70 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     : `${siteConfig.siteUrl}/services/${service.slug}/`;
 
   const serviceSeoTitles: Record<string, string> = {
-    "jet-grout": "Jet Grout Firmaları ve Birim Fiyatları 2026 | YER6 Geoteknik",
+    "jet-grout": "Jet Grout Firmaları | Birim Fiyat ve Zemin İyileştirme",
     dsm: "DSM Zemin İyileştirme | Deep Soil Mixing Firmaları | YER6",
-    "fore-kazik": "Fore Kazık Firmaları ve Birim Fiyatları 2026 | YER6 Geoteknik",
-    "mini-kazik": "Mini Kazık Firmaları ve Temel Güçlendirme Fiyatları 2026 | YER6",
-    ankraj: "Ankraj Firmaları ve Öngermeli İksa Fiyatları 2026 | YER6",
-    "iksa-sistemleri": "İksa Firmaları | Derin Kazı İksa Sistemleri ve Çözümleri 2026",
+    "fore-kazik": "Fore Kazık Firmaları | Birim Fiyat ve Derin Temel 2026",
+    "mini-kazik": "Mini Kazık Firmaları | Dar Alan Temel Güçlendirme | YER6",
+    ankraj: "Ankraj Firmaları | Öngermeli İksa ve Derin Kazı | YER6",
+    "iksa-sistemleri": "İksa Sistemleri Firmaları | Derin Kazı Çözümleri | YER6",
     "zemin-iyilestirme": "Zemin İyileştirme | Yöntemler, Firma ve Maliyet 2026 | YER6",
-    "zemin-guclendirme": "Zemin Güçlendirme Firmaları ve Maliyet Hesaplama 2026 | YER6",
-    "geoteknik-danismanlik": "Geoteknik Danışmanlık ve Zemin Etüdü Firmaları 2026",
-    "zemin-civisi": "Zemin Çivisi (Soil Nailing) Uygulaması ve Birim Fiyatları 2026",
-    "puskurtme-beton": "Püskürtme Beton (Shotcrete) Firmaları ve m2 Fiyatları 2026",
-    "kazik-yukleme-testleri": "Kazık Yükleme Testi ve Bütünlük (PIT) Testi Firmaları",
-    "zemin-etudu": "Zemin Etüdü Firmaları | Sondaj, Arazi Deneyleri ve Geoteknik Rapor",
-    "tas-kolon": "Taş Kolon (Stone Column) Zemin İyileştirme Firmaları 2026",
-    "diafram-duvar": "Diyafram Duvar Firmaları ve Derin Kazı İksa Çözümleri",
-    "bina-alti-jet-grout": "Bina Altı Jet Grout Firmaları | Elektrikli Titreşimsiz Temel Güçlendirme",
-    "cfa-kazik": "CFA Kazık Firmaları ve Metraj Maliyeti 2026 | YER6 Geoteknik",
-    "deep-soil-mixing": "Deep Soil Mixing Firmaları | DSM Zemin İyileştirme & Derin Zemin Karıştırma",
-    palplans: "Palplanş Firmaları ve m2 Birim Fiyatları 2026 | YER6 Geoteknik"
+    "zemin-guclendirme": "Zemin Güçlendirme Firmaları | Maliyet ve Yöntemler 2026",
+    "geoteknik-danismanlik": "Geoteknik Danışmanlık | Zemin Etüdü Firmaları | YER6",
+    "zemin-civisi": "Zemin Çivisi (Soil Nailing) Firmaları | YER6 Geoteknik",
+    "puskurtme-beton": "Püskürtme Beton (Shotcrete) Firmaları | YER6 Geoteknik",
+    "kazik-yukleme-testleri": "Kazık Yükleme ve PIT Testi Firmaları | YER6 Geoteknik",
+    "zemin-etudu": "Zemin Etüdü Firmaları | Sondaj ve Geoteknik Rapor 2026",
+    "tas-kolon": "Taş Kolon (Stone Column) Firmaları | Zemin İyileştirme",
+    "diafram-duvar": "Diyafram Duvar Firmaları | Derin Kazı İksa | YER6",
+    "bina-alti-jet-grout": "Bina Altı Jet Grout Firmaları | Temel Güçlendirme | YER6",
+    "cfa-kazik": "CFA Kazık Firmaları | Sürekli Burgulu Kazık Maliyeti",
+    "deep-soil-mixing": "Deep Soil Mixing Firmaları | DSM Zemin Karıştırma | YER6",
+    palplans: "Palplanş Firmaları | Çelik İksa Perdesi ve m2 Fiyatı"
   };
-  const seoTitle = serviceSeoTitles[service.slug] ?? `${service.title} Zemin Güçlendirme Hizmeti`;
+  const seoTitle = serviceSeoTitles[service.slug] ?? `${service.title} | YER6 Geoteknik`;
   const schemaDescription = getServiceSchemaDescription(
     service.slug,
     `${service.summary} ${service.title}, zemin güçlendirme ve zemin iyileştirme projelerinde saha verisi, kalite kontrol ve teknik raporlama ile uygulanır.`
   );
   const serviceMetaDescriptions: Partial<Record<string, string>> = {
-    "zemin-iyilestirme":
-      "Zemin iyileştirme yöntemleri, maliyet etkenleri ve uygulama süreci. YER6; jet grout, DSM, taş kolon ve enjeksiyonda Türkiye geneli mühendislik sunar.",
+    "jet-grout":
+      "Jet grout firmaları arasında YER6; Ankara merkezli, Türkiye geneli yüksek basınçlı çimento enjeksiyonu ile temel altı güçlendirme, su geçirimsizlik perdesi ve sıvılaşma önleme uygular. 2026 birim fiyatı için arayın.",
     dsm:
       "DSM zemin iyileştirme ve deep soil mixing firmaları arasında YER6; çift milli makineler, UCS karot testleri, sıvılaşma önleme ve 2026 birim fiyatları sunar.",
+    "fore-kazik":
+      "Fore kazık firmaları arasında YER6; Bauer BG 45 ve XCMG makine parkuruyla büyük çaplı fore kazık, baret kazık ve derin temel imalatı yapar. Şeffaf metraj ve birim fiyat için arayın.",
+    "mini-kazik":
+      "Mini kazık firmaları arasında YER6; dar alanlarda, bina içinde ve aktif yapıların altında enjeksiyonlu mini kazık ile titreşimsiz temel güçlendirme uygular.",
+    ankraj:
+      "Ankraj firmaları arasında YER6; derin kazı, iksa perdesi ve şev stabilitesi projelerinde öngermeli ankraj, delgi, enjeksiyon ve kabul testleriyle yatay yükleri güvenle zemine aktarır.",
+    "iksa-sistemleri":
+      "İksa sistemleri firmaları arasında YER6; kent içi derin kazılarda fore kazık perde, diyafram duvar, ankraj ve enstrümantasyon entegrasyonu ile komşu yapı güvenliğini sağlar.",
+    "zemin-iyilestirme":
+      "Zemin iyileştirme yöntemleri, maliyet etkenleri ve uygulama süreci. YER6; jet grout, DSM, taş kolon ve enjeksiyonda Türkiye geneli mühendislik sunar.",
+    "zemin-guclendirme":
+      "Zemin güçlendirme firmaları arasında YER6; jet grout, fore kazık, ankraj ve iksa yöntemleriyle deprem bölgelerinde taşıma kapasitesi, oturma kontrolü ve temel güvenliği sağlar.",
+    "geoteknik-danismanlik":
+      "Geoteknik danışmanlık ve zemin etüdü firmaları arasında YER6; saha araştırması, tasarım denetimi, metraj optimizasyonu ve risk yönetimiyle anahtar teslim mühendislik sunar.",
+    "zemin-civisi":
+      "Zemin çivisi (soil nailing) firmaları arasında YER6; şev stabilizasyonu, eğimli araziler ve derin kazılarda demir çivi ile püskürtme beton kombinasyonu uygular.",
+    "puskurtme-beton":
+      "Püskürtme beton (shotcrete) firmaları arasında YER6; tünel, iksa ve şev güçlendirmede yüksek basınçlı beton püskürtme ile hızlı ve dayanıklı yüzey koruması sağlar.",
+    "kazik-yukleme-testleri":
+      "Kazık yükleme testi ve bütünlük (PIT) testi firmaları arasında YER6; statik, dinamik yükleme ve CSL testleriyle fore kazık ve jet grout kalite doğrulaması yapar.",
+    "zemin-etudu":
+      "Zemin etüdü firmaları arasında YER6; sondaj, SPT/CPT arazi deneyleri, laboratuvar testleri ve geoteknik raporlama ile yapı güvenliği için zemin verisi sunar.",
+    "tas-kolon":
+      "Taş kolon (stone column) firmaları arasında YER6; granüler zeminlerde vibro kompaksiyon ile taşıma kapasitesini artırır, sıvılaşma riskini minimize eder.",
+    "diafram-duvar":
+      "Diyafram duvar firmaları arasında YER6; derin kazılarda bentonit tremi beton ve lamellerle su geçirimsiz, yüksek rijitlikte iksa perdesi ve yapısal taşıyıcı eleman oluşturur.",
+    "bina-alti-jet-grout":
+      "Bina altı jet grout firmaları arasında YER6; elektrikli titreşimsiz makinelerle aktif yapıların temel altında zemin iyileştirme ve oturma önleme imalatı yapar.",
+    "cfa-kazik":
+      "CFA kazık firmaları arasında YER6; Continuous Flight Auger teknolojisiyle muhafaza borusuz, hızlı ve titreşimsiz delgi ile kazık imalatı ve 2026 maliyet analizi sunar.",
     "deep-soil-mixing":
-      "Deep soil mixing (DSM) zemin iyileştirme uygulamaları ve 2026 maliyetleri. Çift milli derin zemin karıştırma ve anahtar teslim geoteknik mühendislik."
+      "Deep soil mixing (DSM) firmaları arasında YER6; çift milli makinelerle atıksız derin zemin karıştırma ve yerinde zemin-çimento kolonu oluşturarak alüvyon sahalarda zemin iyileştirme yapar.",
+    palplans:
+      "Palplanş firmaları arasında YER6; Larssen çelik palplanş profilleri, vibro çakıcı ve hidrolik presleme ile su geçirimsiz çelik iksa perdesi ve derin kazı destek sistemleri imalatı yapar."
   };
   const description = serviceMetaDescriptions[service.slug] ?? schemaDescription;
 

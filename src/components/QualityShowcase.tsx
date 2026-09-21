@@ -28,12 +28,12 @@ export function QualityShowcase() {
     {
       src: "/images/kalite/yeni-2-karot.jpg",
       title: "Merkezden Karot Alımı",
-      desc: "İmalatı tamamlanmış jet grout kolonunun tam merkezinden (core) özel karot makineleriyle numune alınarak kesintisiz kolon bütünlüğü kanıtlanır."
+      desc: "İmalatı tamamlanmış jet grout kolonunun tam merkezinden (core) özel karot makineleriyle numune alınır; alınan hat boyunca malzeme sürekliliği gözlenir ve laboratuvarda UCS dayanımı doğrulanır."
     },
     {
       src: "/images/kalite/yeni-1-inceleme.jpg",
       title: "PIT (Bütünlük) Testi",
-      desc: "İmalatı tamamlanan jet grout kolonlarında PIT (Pile Integrity Test) cihazlarıyla sismik ölçüm yapılır, kolon boyu ve yapısal bütünlüğü mühendislerimizce sahada anlık olarak onaylanır."
+      desc: "İmalatı tamamlanan kolonlarda PIT (Pile Integrity Test) cihazlarıyla düşük gerinimli sismik ölçüm yapılır; kolon boyu ve süreklilik anomalileri sahada mühendislerimizce değerlendirilir."
     },
     {
       src: "/images/kalite/yeni-3-denetim.jpg",

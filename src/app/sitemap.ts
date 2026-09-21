@@ -27,14 +27,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...staticRoutes.map((route) => ({
       url: withTrailingSlash(`/${route}`),
       lastModified: route === "" ? homeReviewDate : contentReviewDate,
-      changeFrequency: "monthly" as const,
+      changeFrequency: "weekly" as const,
       priority: route === "" ? 1 : 0.8
     })),
     ...allServices.map((service) => ({
       url: withTrailingSlash(`/services/${service.slug}`),
       lastModified: serviceReviewDates[service.slug] ?? contentReviewDate,
-      changeFrequency: "monthly" as const,
-      priority: 0.9
+      changeFrequency: "weekly" as const,
+      priority: 1.0
     })),
     ...projects.map((project) => ({
       url: withTrailingSlash(`/projects/${project.slug}`),
@@ -52,14 +52,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...CALCULATOR_TOOLS.map((tool) => ({
       url: withTrailingSlash(`/hesaplama/${tool.slug}`),
       lastModified: contentReviewDate,
-      changeFrequency: "monthly" as const,
+      changeFrequency: "weekly" as const,
       priority: 0.9
     })),
     ...publishedKnowledgeArticles.map((article) => ({
       url: withTrailingSlash(`/knowledge/${article.slug}`),
       lastModified: new Date(`${article.updatedAt}T00:00:00+03:00`),
-      changeFrequency: "monthly" as const,
-      priority: 0.8
+      changeFrequency: "weekly" as const,
+      priority: 0.85
     }))
   ];
 }
+

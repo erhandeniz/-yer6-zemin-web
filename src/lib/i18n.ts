@@ -231,7 +231,7 @@ export const dictionary = {
     svc_bina_alti_jet_grout_spec3: "Şaşırtmalı/Ardışık Kolon İmalat Protokolü",
     svc_palplans_title: "Palplanş (Çelik İksa)",
     svc_palplans_summary: "Yüksek yeraltı suyu ve dar kazı sahalarında titreşimli/titreşimsiz çakım yöntemiyle uygulanan su geçirimsiz çelik iksa perdesi.",
-    svc_palplans_detail: "Palplanş çelik profilleri (Larssen/Arcelor) vibro çakıcı vinçler ve çene sistemleriyle birbirine kenetlenerek hızlı, yeniden kullanılabilir ve %100 su tutucu derin kazı perde iksası oluşturur.",
+    svc_palplans_detail: "Palplanş çelik profilleri (Larssen/Arcelor) vibro çakıcı vinçler ve çene sistemleriyle birbirine kenetlenerek hızlı, yeniden kullanılabilir ve yüksek su geçirimsizliği sağlayan derin kazı perde iksası oluşturur.",
     svc_palplans_spec1: "Larssen & Z Profil Çelik Palplanş",
     svc_palplans_spec2: "Vibro Çakıcı Vinç ve Hidrolik Pres",
     svc_palplans_spec3: "Su Geçirimsiz Kenetli Perde İksa",
@@ -330,7 +330,7 @@ export const dictionary = {
     proj_hatay_arsuz_casing_title: "Hatay Arsuz Muhafaza Borulu (Casing) Fore Kazık İmalatı",
     proj_hatay_arsuz_casing_summary: "Hatay Arsuz sahil bölgesinde yüksek yeraltı suyu ve gevşek alüvyon koşullarında, kuyu stabilitesini korumak amacıyla hidrolik çelik muhafaza borusu (casing) sürülerek gerçekleştirilen Ø80/Ø100 cm fore kazık imalatı.",
     proj_hatay_arsuz_casing_challenge: "Yüksek yeraltı su tablası ve gevşek kum-silt tabakalarında kuyu çeperinin göçmesini engellemek ve kazık geometrisini ekseninde tutmak.",
-    proj_hatay_arsuz_casing_solution: "Hidrolik osilatörlü çelik muhafaza borusu (casing) zemine sürülerek delgi açıldı; su altında donatı indirilip tremie ile betonlanarak kuyu stabilitesi %100 güvenceye alındı.",
+    proj_hatay_arsuz_casing_solution: "Hidrolik osilatörlü çelik muhafaza borusu (casing) zemine sürülerek delgi açıldı; su altında donatı indirilip tremie yöntemiyle dipten yukarı betonlandı. Muhafaza borusu beton seviyesiyle kontrollü biçimde geri çekilerek kuyu çeperi delgi ve döküm boyunca desteklendi.",
 
     /* ── FLEET PAGE ── */
     fleetEyebrow: "Makine Parkı",
@@ -815,7 +815,7 @@ export const dictionary = {
     svc_bina_alti_jet_grout_spec3: "Alternate-Column Sequencing Protocol",
     svc_palplans_title: "Sheet Piling (Steel Shoring)",
     svc_palplans_summary: "Watertight steel sheet pile retaining wall installed with vibratory hammers or silent press-in methods in high groundwater sites.",
-    svc_palplans_detail: "Interlocking Larssen steel profiles installed using high-frequency vibratory hammers to form reusable, 100% watertight excavation retaining walls.",
+    svc_palplans_detail: "Interlocking Larssen steel profiles installed using high-frequency vibratory hammers to form reusable excavation retaining walls with high water tightness.",
     svc_palplans_spec1: "Larssen & Z-Profile Steel Sheet Piles",
     svc_palplans_spec2: "Vibratory Hammer & Hydraulic Silent Press",
     svc_palplans_spec3: "Watertight Interlocked Retaining Wall",
@@ -914,7 +914,7 @@ export const dictionary = {
     proj_hatay_arsuz_casing_title: "Hatay Arsuz Cased Bored Pile (Casing) Marine Ground Engineering",
     proj_hatay_arsuz_casing_summary: "Hydraulic temporary/permanent cased bored piling (Ø80/Ø100 cm) to secure borehole stability against high groundwater and loose coastal alluvial sands in Arsuz, Hatay.",
     proj_hatay_arsuz_casing_challenge: "Preventing borehole sidewall collapse and maintaining geometric verticality in loose coastal sands under high groundwater pressure.",
-    proj_hatay_arsuz_casing_solution: "Steel casing driven with hydraulic oscillators down to firm stratum, borehole cleaned, and underwater tremie concreting executed with zero defect.",
+    proj_hatay_arsuz_casing_solution: "Steel casing driven with hydraulic oscillators down to firm stratum, borehole cleaned, and underwater tremie concreting carried out from the base upwards, with the casing withdrawn in step with the concrete level.",
 
     /* ── FLEET PAGE ── */
     fleetEyebrow: "Equipment",
@@ -1400,7 +1400,7 @@ export const dictionary = {
     svc_bina_alti_jet_grout_spec3: "بروتوكول تنفيذ متناوب ومرحلي للأعمدة",
     svc_palplans_title: "الستائر اللوحية المعدنية (Palplanş)",
     svc_palplans_summary: "جدار ستائر لوحية فولاذية مانعة لندفق المياه في مواقع المياه الجوفية العالية.",
-    svc_palplans_detail: "مقاطع فولاذية متشابكة تُدق بالاهتزاز لتشكيل جدار مساند عازل تماماً للماء قابلة لإعادة الاستخدام.",
+    svc_palplans_detail: "مقاطع فولاذية متشابكة تُدق بالاهتزاز لتشكيل جدار مساند قابل لإعادة الاستخدام يوفر درجة عالية من منع تسرب المياه.",
     svc_palplans_spec1: "ستائر لوحية Larssen و Z",
     svc_palplans_spec2: "مطرق اهتزازي ومكبس هيدروليكي هادئ",
     svc_palplans_spec3: "جدار مساند متشابك عازل للماء",

@@ -6,20 +6,17 @@ import { CinematicHero } from "@/components/CinematicHero";
 import { ClientLogoRail } from "@/components/ClientLogoRail";
 import { EngineeringCalculator } from "@/components/EngineeringCalculator";
 import { MetricStrip } from "@/components/MetricStrip";
-import { ProjectCard } from "@/components/ProjectCard";
 import { SectionHeader } from "@/components/SectionHeader";
 import { ServiceCard } from "@/components/ServiceCard";
 import { WorkflowDiagram } from "@/components/WorkflowDiagram";
 import { QualityShowcase } from "@/components/QualityShowcase";
-import { projects, services } from "@/lib/content";
+import { HomeProjectShowcase } from "@/components/HomeProjectShowcase";
+import { services } from "@/lib/content";
 import { useLanguage } from "@/components/LanguageProvider";
 import { parseMarkdownLinks } from "@/components/LinkParser";
 
 export function HomeContent() {
   const { t } = useLanguage();
-  const pekintasProject = projects.find((p) => p.slug === "pekintas-duzce-fabrika-jet-grout");
-  const hatayProject = projects.find((p) => p.slug === "hatay-merkez-emlak-konut-deprem-konutlari-fore-kazik");
-  const homeProjects = pekintasProject && hatayProject ? [pekintasProject, hatayProject] : projects.slice(0, 2);
 
   return (
     <main>
@@ -69,11 +66,7 @@ export function HomeContent() {
               {t("homeProjectGallery")} <ArrowUpRight className="h-4 w-4" />
             </Link>
           </div>
-          <div className="mt-12 grid gap-6 lg:grid-cols-2">
-            {homeProjects.map((project) => (
-              <ProjectCard key={project.slug} project={project} />
-            ))}
-          </div>
+          <HomeProjectShowcase />
         </div>
       </section>
 

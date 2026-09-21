@@ -433,7 +433,7 @@ export const seoArticles: KnowledgeArticle[] = [
         blocks: [
           {
             type: "paragraph",
-            content: "TBDY 2018 Bölüm 16 ve Eurocode 7 (EN 1997-1) esasları uyarınca; tasarım ivmesi altında sıvılaşma güvenlik faktörünün (F_L < 1.10 veya kritik altyapı yapılarında F_L < 1.25) sınır değerlerin altında kaldığı ve tolere edilebilir oturma limitlerinin aşıldığı zemin tabakalarında, geoteknik mühendisliği hesaplarına ve zemin tabakasının plastisite/tane yapısına bağlı olarak Jet Grout, DSM (Deep Soil Mixing) veya Taş Kolon yöntemleri projelendirilir. YER6, her projede imalat öncesi ve sonrası CPT/SPT doğrulamasını gerçekleştirerek tasarım hedeflerini belgeler."
+            content: "TBDY 2018 Bölüm 16, sıvılaşma değerlendirmesinde güvenlik koşulunu sağlamayan tabakalar için taşıma gücü kaybı, oturma ve yanal yayılma gibi sonuçların incelenmesini; gerekli görüldüğünde üstyapı ve/veya zemin iyileştirmesi uygulanmasını öngörür. Yönetmelik belirli bir yöntemi isim vererek zorunlu kılmaz; sıvılaşma değerlendirmesi düzeltilmiş SPT (N1,60) veya CPT verisi, plastisite indisi, dane dağılımı ve yeraltı suyu seviyesi birlikte ele alınarak yapılır. Yöntem seçimi (Jet Grout, DSM, taş kolon, kazıklı temel veya bunların kombinasyonu) zemin profiline, yapı yüklerine, hedeflenen performansa ve proje şartnamesine göre geoteknik mühendisliği hesaplarıyla belirlenir. YER6, her projede imalat öncesi ve sonrası CPT/SPT doğrulamasını gerçekleştirerek tasarım hedeflerini belgeler."
           }
         ]
       }
