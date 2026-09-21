@@ -11,15 +11,11 @@ const openGraphImage = `${siteUrl}/opengraph-image.png`;
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "YER6 Zemin Güçlendirme | Jet Grout, DSM ve Fore Kazık",
-    // Google, başlığı ~65 karakterde keser; daha uzunsa çoğu zaman kendi
-    // uydurduğu bir başlıkla değiştirir. Eski kuyruk (+47 karakter) bu sınırı
-    // tek başına aşıyordu ve kullanıcıya zaten hiç görünmüyordu.
-    // Marka adı kısaltıldı; anahtar kelimeler ve URL'ler değişmedi.
-    template: "%s | YER6 Geoteknik"
+    default: "YER6 Geoteknik Zemin İyileştirme | Jet Grout, DSM ve Fore Kazık",
+    template: "%s | YER6 Geoteknik Zemin İyileştirme"
   },
   description:
-    "YER6; zemin güçlendirme, zemin iyileştirme, jet grout, fore kazık, DSM, mini kazık, ankraj ve iksa sistemleri alanında Türkiye geneli saha uygulaması sunar.",
+    "YER6 Geoteknik; zemin iyileştirme, jet grout, fore kazık, DSM, mini kazık, ankraj ve iksa sistemleri alanında Türkiye geneli saha uygulaması sunar.",
   keywords: [
     "zemin güçlendirme",
     "zemin iyileştirme",
