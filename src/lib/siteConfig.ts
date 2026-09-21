@@ -1,6 +1,6 @@
 export const siteConfig = {
   siteUrl: "https://www.yer6zemin.com.tr",
-  companyName: "YER6 Geoteknik Zemin İyileştirme",
+  companyName: "YER6 Geoteknik",
   // Google Analytics 4 ölçüm kimliği (ör. "G-XXXXXXXXXX"). Boş bırakılırsa GA yüklenmez.
   gaMeasurementId: "G-QMGDGQH317",
   // Google Search Console doğrulama meta içeriği (Property > HTML etiketi yöntemindeki content değeri).
@@ -23,7 +23,7 @@ export const siteConfig = {
   whatsapp: {
     number: "905323780691",
     url: "https://wa.me/905323780691",
-    message: "Merhaba YER6 Geoteknik Zemin İyileştirme, zemin iyileştirme hizmetleri hakkında bilgi ve fiyat teklifi almak istiyorum."
+    message: "Merhaba YER6 Geoteknik, zemin iyileştirme hizmetleri hakkında bilgi ve fiyat teklifi almak istiyorum."
   },
   email: "info@yer6zemin.com.tr",
   emailHref: "mailto:info@yer6zemin.com.tr?subject=Zemin%20%C4%B0yile%C5%9Ftirme%20Fiyat%20Teklifi",

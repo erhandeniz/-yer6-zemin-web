@@ -11,8 +11,8 @@ const openGraphImage = `${siteUrl}/opengraph-image.png`;
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "YER6 Geoteknik Zemin İyileştirme | Jet Grout, DSM ve Fore Kazık",
-    template: "%s | YER6 Geoteknik Zemin İyileştirme"
+    default: "YER6 Geoteknik | Jet Grout, DSM ve Fore Kazık",
+    template: "%s | YER6 Geoteknik"
   },
   description:
     "YER6 Geoteknik; zemin iyileştirme, jet grout, fore kazık, DSM, mini kazık, ankraj ve iksa sistemleri alanında Türkiye geneli saha uygulaması sunar.",
@@ -82,21 +82,21 @@ export const metadata: Metadata = {
     // Yasal unvan (YER6 Zemin Güçlendirme Geoteknik Mühendislik) kaldırılmadı;
     // schema'da legalName alanında ve telif satırında aynen duruyor.
     siteName: "YER6 Geoteknik",
-    title: "YER6 Zemin Güçlendirme | Jet Grout, DSM ve Fore Kazık",
+    title: "YER6 Geoteknik | Jet Grout, DSM ve Fore Kazık",
     description:
-      "Zemin güçlendirme, zemin iyileştirme, jet grout, DSM, fore kazık, mini kazık, ankraj ve iksa sistemleri alanında mühendislik odaklı saha uygulaması.",
+      "Zemin iyileştirme, jet grout, DSM, fore kazık, mini kazık, ankraj ve iksa sistemleri alanında mühendislik odaklı saha uygulaması.",
     images: [
       {
         url: openGraphImage,
         width: 1200,
         height: 630,
-        alt: "YER6 zemin güçlendirme ve jeoteknik mühendislik"
+        alt: "YER6 Geoteknik"
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
-    title: "YER6 Zemin Güçlendirme | Jet Grout, Fore Kazık, DSM",
+    title: "YER6 Geoteknik | Jet Grout, DSM ve Fore Kazık",
     description: "Jet grout, DSM zemin iyileştirme, fore kazık, mini kazık, ankraj, iksa sistemleri. Türkiye geneli saha uygulaması.",
     images: [openGraphImage]
   }
@@ -116,10 +116,10 @@ const websiteSchema = {
   // Google'ın site adı için baktığı EN ÖNCELİKLİ sinyal budur.
   // Marka adı burada; yasal unvan Organization şemasındaki legalName alanında.
   name: "YER6 Geoteknik",
-  alternateName: "YER6 Zemin Güçlendirme Geoteknik Mühendislik",
+  alternateName: "YER6 Geoteknik",
   url: siteUrl,
   inLanguage: "tr-TR",
-  description: "Jet grout, DSM, fore kazık, mini kazık, ankraj ve iksa sistemleri alanında zemin güçlendirme hizmetleri.",
+  description: "Jet grout, DSM, fore kazık, mini kazık, ankraj ve iksa sistemleri alanında zemin iyileştirme hizmetleri.",
   publisher: { "@id": `${siteUrl}/#organization` }
 };
 
