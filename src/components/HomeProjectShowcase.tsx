@@ -33,13 +33,19 @@ export function HomeProjectShowcase() {
     setCurrentPage((prev) => (prev - 1 < 0 ? totalPages - 1 : prev - 1));
   }, [totalPages]);
 
-  // Otomatik rotasyon: her 3.8 saniyede bir sonraki 2 projeye kayar
+  // Otomatik rotasyon: ilk sayfa yüklemesinden sonra devreye girer
   useEffect(() => {
     if (isPaused) return;
-    const timer = setInterval(() => {
-      nextPage();
-    }, 3800);
-    return () => clearInterval(timer);
+    let intervalTimer: ReturnType<typeof setInterval> | undefined;
+    const startTimer = setTimeout(() => {
+      intervalTimer = setInterval(() => {
+        nextPage();
+      }, 4200);
+    }, 6000);
+    return () => {
+      clearTimeout(startTimer);
+      if (intervalTimer) clearInterval(intervalTimer);
+    };
   }, [isPaused, nextPage]);
 
   return (

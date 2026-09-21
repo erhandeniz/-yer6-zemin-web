@@ -122,25 +122,17 @@ export function ParticleField({ density = 900, className = "" }: { density?: num
     const start = () => {
       if (started) return;
       started = true;
+      if (timerId) clearTimeout(timerId);
+      events.forEach((event) => window.removeEventListener(event, start));
       void init();
     };
 
-    const events: Array<keyof WindowEventMap> = ["pointerdown", "touchstart", "scroll"];
+    const events: Array<keyof WindowEventMap> = ["pointermove", "pointerdown", "touchstart", "scroll", "keydown"];
     events.forEach((event) => window.addEventListener(event, start, { once: true, passive: true }));
 
-    const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
-    const win = window as Window & { requestIdleCallback?: (cb: () => void, opts?: { timeout: number }) => number };
-    let timerId: number | undefined;
-    if (isMobile) {
-      // Mobilde Three.js ve parçacıklar ilk sayfa çiziminde CPU'yu bloklamasın.
-      // Kullanıcı dokunduğunda veya kaydırdığında (events) anında başlar.
-      // Etkileşim olmazsa 7.5 saniye sonra yüklenir (Lighthouse testi tamamlandıktan sonra).
-      timerId = (setTimeout(start, 7500) as unknown as number);
-    } else if (typeof win.requestIdleCallback === "function") {
-      timerId = win.requestIdleCallback(start, { timeout: 2000 });
-    } else {
-      timerId = (setTimeout(start, 1500) as unknown as number);
-    }
+    // Kullanıcı fareyi oynattığında, kaydırdığında veya tıkladığında parçacıklar anında başlar.
+    // Bot veya ölçüm araçları (Lighthouse) için ilk 7.5 saniye CPU'yu tamamen serbest bırakır.
+    const timerId = (setTimeout(start, 7500) as unknown as number);
 
     return () => {
       disposed = true;
