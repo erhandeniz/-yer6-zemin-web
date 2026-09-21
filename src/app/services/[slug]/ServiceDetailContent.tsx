@@ -68,6 +68,28 @@ function FaqItem({ question, answer }: { question: string; answer: string }) {
   );
 }
 
+const serviceHeroH1s: Record<string, string> = {
+  "jet-grout": "Jet Grout Zemin İyileştirme ve Güçlendirme",
+  dsm: "DSM Zemin İyileştirme (Deep Soil Mixing)",
+  "fore-kazik": "Fore Kazık ve Derin Temel Sistemleri",
+  "mini-kazik": "Mini Kazık ve Temel Güçlendirme Çözümleri",
+  ankraj: "Öngermeli Ankraj ve İksa Destek Sistemleri",
+  "iksa-sistemleri": "Derin Kazı İksa Sistemleri ve Çözümleri",
+  "zemin-iyilestirme": "Zemin İyileştirme Yöntemleri ve Mühendislik Çözümleri",
+  "zemin-guclendirme": "Zemin Güçlendirme ve Taşıma Kapasitesi Çözümleri",
+  "geoteknik-danismanlik": "Geoteknik Danışmanlık ve Zemin Etüdü Hizmetleri",
+  "zemin-civisi": "Zemin Çivisi (Soil Nailing) ve Şev Stabilitesi",
+  "puskurtme-beton": "Püskürtme Beton (Shotcrete) İksa Uygulamaları",
+  "kazik-yukleme-testleri": "Kazık Yükleme ve PIT Bütünlük Testleri",
+  "zemin-etudu": "Zemin Etüdü, Sondaj ve Geoteknik Raporlama",
+  "tas-kolon": "Taş Kolon (Stone Column) Zemin İyileştirme",
+  "diafram-duvar": "Diyafram Duvar ve Derin Kazı İksa Perdesi",
+  "bina-alti-jet-grout": "Bina Altı Jet Grout ile Temel Güçlendirme",
+  "cfa-kazik": "CFA Kazık (Sürekli Burgulu Kazık) Sistemleri",
+  "deep-soil-mixing": "Deep Soil Mixing (DSM) Zemin Karıştırma",
+  palplans: "Palplanş ve Çelik İksa Perdesi Sistemleri"
+};
+
 export function ServiceDetailContent({ slug }: { slug: string }) {
   const { t } = useLanguage();
   const service = getServiceBySlug(slug);
@@ -93,6 +115,7 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
         eyebrowKey="servicesEyebrow"
         titleKey={`${service.key}_title`}
         copyKey={`${service.key}_detail`}
+        titleOverride={serviceHeroH1s[service.slug]}
       />
 
       <section className="px-5 py-24">

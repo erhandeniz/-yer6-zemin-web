@@ -6,13 +6,16 @@ import { useLanguage } from "@/components/LanguageProvider";
 export function PageHero({
   eyebrowKey,
   titleKey,
-  copyKey
+  copyKey,
+  titleOverride
 }: {
   eyebrowKey: string;
   titleKey: string;
   copyKey: string;
+  titleOverride?: string;
 }) {
-  const { t } = useLanguage();
+  const { t, locale } = useLanguage();
+  const title = (locale === "tr" && titleOverride) ? titleOverride : t(titleKey);
 
   return (
     <section className="relative overflow-hidden px-5 pb-20 pt-40">
@@ -24,7 +27,7 @@ export function PageHero({
             <span className="h-px w-14 bg-gold-300 gold-line" />
             <span className="text-xs font-semibold uppercase tracking-[0.36em] text-gold-200">{t(eyebrowKey)}</span>
           </div>
-          <h1 className="text-balance text-4xl font-semibold leading-tight text-white sm:text-5xl md:text-7xl">{t(titleKey)}</h1>
+          <h1 className="text-balance text-4xl font-semibold leading-tight text-white sm:text-5xl md:text-7xl">{title}</h1>
           <p className="mt-7 max-w-3xl text-lg leading-8 text-white/64">{t(copyKey)}</p>
         </div>
       </div>

@@ -58,7 +58,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   );
   const serviceMetaDescriptions: Partial<Record<string, string>> = {
     "jet-grout":
-      "Jet grout firmaları arasında YER6; Ankara merkezli, Türkiye geneli yüksek basınçlı çimento enjeksiyonu ile temel altı güçlendirme, su geçirimsizlik perdesi ve sıvılaşma önleme uygular. 2026 birim fiyatı için arayın.",
+      "Jet grout firmaları arasında YER6; Türkiye geneli ve yurt dışında, yüksek basınçlı çimento enjeksiyonu ile temel altı güçlendirme, su perdesi ve sıvılaşma önleme uygular. 2026 birim fiyatı için arayın.",
     dsm:
       "DSM zemin iyileştirme ve deep soil mixing firmaları arasında YER6; çift milli makineler, UCS karot testleri, sıvılaşma önleme ve 2026 birim fiyatları sunar.",
     "fore-kazik":

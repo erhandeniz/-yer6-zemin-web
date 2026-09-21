@@ -334,8 +334,8 @@ export const seoArticles: KnowledgeArticle[] = [
   },
   {
     slug: "dsm-zemin-iyilestirme-firmalari-ve-birim-fiyatlari",
-    title: "DSM Zemin İyileştirme Firmaları ve Birim Fiyat (m³/m²) Rehberi",
-    seoTitle: "DSM Zemin İyileştirme Firmaları | Deep Soil Mixing Birim Fiyat & Hesabı | YER6",
+    title: "DSM Zemin İyileştirme ve Deep Soil Mixing Metraj Rehberi",
+    seoTitle: "Deep Soil Mixing (DSM) Nedir? Tasarım Kriterleri ve Metraj Hesabı | YER6",
     description: "DSM (Deep Soil Mixing) zemin iyileştirme firmaları seçimi, m³ ve m² metraj maliyet analizi, karıştırma enerjisi (BRN) ve sıvılaşma önleme rehberi.",
     excerpt: "Deep Soil Mixing (DSM / Derin Zemin Karıştırma), mekanik karıştırma kanatlarıyla zayıf alüvyal zeminlerde hafriyatsız ve son derece hızlı zemin-çimento kolonları oluşturan modern bir geoteknik yöntemdir.",
     category: "DSM",
@@ -375,8 +375,8 @@ export const seoArticles: KnowledgeArticle[] = [
   },
   {
     slug: "ongermeli-ankraj-firmalari-ve-uygulama-rehberi",
-    title: "Öngermeli Ankraj Firmaları: Derin Kazı İksa ve Halatlı Ankraj Çözümleri",
-    seoTitle: "Öngermeli Ankraj Firmaları | Derin Kazı İksa & Halatlı Ankraj Uygulaması | YER6",
+    title: "Öngermeli Ankraj Uygulama Rehberi: Derin Kazı İksa ve Halatlı Ankraj",
+    seoTitle: "Öngermeli Ankraj Rehberi: İksa Tasarımı, Halatlı Ankraj ve Kabul Testi | YER6",
     description: "Öngermeli ankraj firmaları seçimi, kalıcı ve geçici halatlı ankraj imalatı, ön germe kuvveti ve iksa perdesi enstrümantasyon rehberi.",
     excerpt: "Öngermeli ankraj, derin kazılarda oluşan yanal zemin basınçlarını germe halatları ve çimento enjeksiyonuyla derin sağlam zemin kütlesine aktaran aktif destek sistemidir.",
     category: "Ankraj & İksa",
