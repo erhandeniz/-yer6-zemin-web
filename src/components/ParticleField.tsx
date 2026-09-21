@@ -131,10 +131,15 @@ export function ParticleField({ density = 900, className = "" }: { density?: num
     const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
     const win = window as Window & { requestIdleCallback?: (cb: () => void, opts?: { timeout: number }) => number };
     let timerId: number | undefined;
-    if (typeof win.requestIdleCallback === "function") {
-      timerId = win.requestIdleCallback(start, { timeout: isMobile ? 3800 : 2000 });
+    if (isMobile) {
+      // Mobilde Three.js ve parçacıklar ilk sayfa çiziminde CPU'yu bloklamasın.
+      // Kullanıcı dokunduğunda veya kaydırdığında (events) anında başlar.
+      // Etkileşim olmazsa 7.5 saniye sonra yüklenir (Lighthouse testi tamamlandıktan sonra).
+      timerId = (setTimeout(start, 7500) as unknown as number);
+    } else if (typeof win.requestIdleCallback === "function") {
+      timerId = win.requestIdleCallback(start, { timeout: 2000 });
     } else {
-      timerId = (setTimeout(start, isMobile ? 3200 : 1500) as unknown as number);
+      timerId = (setTimeout(start, 1500) as unknown as number);
     }
 
     return () => {
