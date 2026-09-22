@@ -316,6 +316,45 @@ export function localBusinessSchema() {
     legalName: siteConfig.companyName,
     alternateName: ["YER6 Zemin Güçlendirme", "YER6 Geotechnical"],
     url: siteConfig.siteUrl,
+    foundingDate: "2016",
+    foundingLocation: {
+      "@type": "Place",
+      name: "Ankara, Türkiye",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Gölbaşı",
+        addressRegion: "Ankara",
+        addressCountry: "TR"
+      }
+    },
+    knowsAbout: [
+      "Jet Grout",
+      "Fore Kazık",
+      "Deep Soil Mixing (DSM)",
+      "Zemin İyileştirme",
+      "Zemin Güçlendirme",
+      "Mini Kazık",
+      "Zemin Ankrajı",
+      "İksa Sistemleri",
+      "Geoteknik Mühendislik",
+      "TBDY 2018 Zemin İyileştirme Esasları",
+      "TS EN 12716 Jet Grouting Standardı",
+      "TS EN 1536 Fore Kazık Standardı"
+    ],
+    hasCredential: [
+      {
+        "@type": "EducationalOccupationalCredential",
+        name: "ISO 9001 Kalite Yönetim Sistemi"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        name: "ISO 14001 Çevre Yönetim Sistemi"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        name: "ISO 45001 İş Sağlığı ve Güvenliği"
+      }
+    ],
     image: `${siteConfig.siteUrl}/opengraph-image.png`,
     logo: {
       "@type": "ImageObject",

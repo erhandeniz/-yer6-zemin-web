@@ -43,12 +43,37 @@ export default function AboutPage() {
     ]
   };
 
+  const aboutPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "@id": `${pageUrl}#webpage`,
+    url: pageUrl,
+    name: "YER6 Geoteknik Hakkında",
+    description: "2016 yılında kurulan YER6 Geoteknik; jet grout, fore kazık, DSM, mini kazık, ankraj ve iksa sistemlerinde uzman mühendislik kadrosu ve modern makine parkıyla hizmet vermektedir.",
+    isPartOf: { "@id": `${siteConfig.siteUrl}/#website` },
+    about: {
+      "@type": "Organization",
+      "@id": `${siteConfig.siteUrl}/#organization`,
+      name: "YER6 Geoteknik",
+      foundingDate: "2016",
+      foundingLocation: {
+        "@type": "Place",
+        name: "Ankara, Türkiye"
+      }
+    }
+  };
+
   return (
     <>
       <script
         id="about-breadcrumb-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        id="about-page-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutPageSchema) }}
       />
       <AboutContent />
     </>

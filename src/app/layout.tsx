@@ -119,7 +119,7 @@ const websiteSchema = {
   alternateName: "YER6 Geoteknik",
   url: siteUrl,
   inLanguage: "tr-TR",
-  description: "Jet grout, DSM, fore kazık, mini kazık, ankraj ve iksa sistemleri alanında zemin iyileştirme hizmetleri.",
+  description: "2016'dan beri Ankara merkezli; jet grout, DSM, fore kazık, mini kazık, ankraj ve iksa sistemleri alanında zemin iyileştirme hizmetleri.",
   publisher: { "@id": `${siteUrl}/#organization` }
 };
 
