@@ -19,11 +19,11 @@ export interface FxRates {
 // Katalog hazırlanırken (Temmuz 2026) geçerli baseline kur. costEngine bununla
 // aynı değerleri kullanır; canlı kur alınamazsa fiyatlar bu temele göre çıkar.
 export const BASELINE_FX: FxRates = {
-  usdTry: 47.18,
-  eurTry: 53.7,
+  usdTry: 48.91,
+  eurTry: 54.45,
   live: false,
-  source: "YER6 katalog baseline (2026-07)",
-  asOf: "2026-07",
+  source: "TCMB / Serbest Piyasa Göstergesi",
+  asOf: "2026 Q3/Q4",
 };
 
 const FETCH_TIMEOUT_MS = 6000;

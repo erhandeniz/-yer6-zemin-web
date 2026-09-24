@@ -16,7 +16,7 @@ import { BASELINE_FX } from "@/lib/fx";
 export const COST_MODEL_VERSION = "yer6-cost-1.0.0";
 // Katalog birim fiyatlarının geçerlilik dönemi. Fiyatlar bu tarihte web
 // araştırmasıyla doğrulanmıştır (TR piyasası, KDV hariç, ortalama değerler).
-export const PRICE_BOOK_AS_OF = "2026-07";
+export const PRICE_BOOK_AS_OF = "2026 Q3/Q4 Revizyonu";
 
 export type CalcMode = "jet-grout" | "fore-kazik" | "dsm" | "ankraj" | "mini-kazik" | "palplans";
 export type Complexity = "quick" | "advanced";

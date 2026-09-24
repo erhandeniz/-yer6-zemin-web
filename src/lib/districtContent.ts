@@ -39,6 +39,18 @@ function methodLabel(slug: string) {
   return METHOD_PHRASE[slug] ?? "zemine uygun iyileştirme yöntemi";
 }
 
+function locative(name: string): string {
+  const clean = name.trim();
+  const vowels = clean.match(/[aıoueiöüAIOUEİÖÜ]/g);
+  const lastVowel = vowels ? vowels[vowels.length - 1].toLowerCase() : "e";
+  const isBack = ["a", "ı", "o", "u"].includes(lastVowel);
+  const lastChar = clean[clean.length - 1].toLowerCase();
+  const isHard = ["f", "s", "t", "k", "ç", "ş", "h", "p"].includes(lastChar);
+  const consonant = isHard ? "t" : "d";
+  const vowel = isBack ? "a" : "e";
+  return `${clean}'${consonant}${vowel}`;
+}
+
 function buildDistrict(s: DistrictSeed): CityPage {
   const primary = methodLabel(s.methods[0]);
   const secondary = s.methods[1] ? methodLabel(s.methods[1]) : null;
@@ -47,11 +59,11 @@ function buildDistrict(s: DistrictSeed): CityPage {
     city: `${s.district} (${s.province})`,
     title: `${s.district} Zemin Güçlendirme ve Zemin İyileştirme | ${s.province}`,
     description:
-      `${s.district}, ${s.province}: ${s.fault} etkisindeki zeminlerde jet grout, DSM zemin iyileştirme, fore kazık ve enjeksiyon ile ${s.risk} ` +
+      `${s.district}, ${s.province}: ${s.fault} etkisindeki sahalarda jet grout, DSM zemin iyileştirme, fore kazık ve enjeksiyon ile ${s.risk} ` +
       `karşısında taşıma gücü ve deprem güvenliği. YER6 saha uygulaması.`.slice(0, 300),
     heroLead:
-      `${s.district}'de zemin güçlendirme ve zemin iyileştirme kararı; ${s.fault} kaynaklı deprem etkisi, ${s.soil} ve ${s.risk} ` +
-      `bir arada değerlendirilerek verilmelidir.`,
+      `${locative(s.district)} zemin güçlendirme ve iyileştirme kararı; ${s.fault} kaynaklı sismik etkiler, ${s.soil} yapısı ile ${s.risk} ` +
+      `parametreleri bir arada değerlendirilerek verilmelidir.`,
     soilContext:
       `${s.district} ve çevresinde ${s.soil} koşulları öne çıkar. ${cap(s.risk)}; ` +
       `zemin iyileştirme yöntemleri ve saha/laboratuvar parametreleriyle birlikte oturma ve taşıma gücü açısından değerlendirilir.`,

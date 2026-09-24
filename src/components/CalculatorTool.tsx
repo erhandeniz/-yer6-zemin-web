@@ -185,7 +185,7 @@ export function CalculatorTool({ tool }: { tool: Tool }) {
               "Güncel kur alınıyor…"
             ) : (
               <span>
-                Piyasa Kuru:{" "}
+                Piyasa Kuru (Referans):{" "}
                 <a
                   href="https://www.tcmb.gov.tr"
                   target="_blank"
@@ -197,7 +197,7 @@ export function CalculatorTool({ tool }: { tool: Tool }) {
                 </a>
               </span>
             )}{" "}
-            · Fiyat kataloğu: {estimate.priceBookAsOf} (2026 Güncel)
+            · Birim fiyat kataloğu: {estimate.priceBookAsOf}
           </p>
         </div>
       </div>

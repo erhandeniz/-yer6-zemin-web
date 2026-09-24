@@ -343,7 +343,7 @@ export const seoArticles: KnowledgeArticle[] = [
     publishedAt: "2026-07-25",
     updatedAt: "2026-07-25",
     heroLabel: "Mühendislik ve Maliyet Rehberi",
-    introduction: "Türkiye'de ve dünyada lojistik depolar, organize sanayi bölgeleri (OSB), otoyol rampları ve liman arkası yapılarında zemin taşıma kapasitesini artırmak ve farklı oturmaları önlemek için en bütçe dostu mühendislik yöntemi Deep Soil Mixing (DSM) uygulamasıdır. Doğru DSM zemin iyileştirme firması seçimi, hafriyatsız imalat hızı ve laboratuvar karışım tasarımıyla projenin toplam maliyetini yarı yarıya düşürür.",
+    introduction: "Endüstriyel tesisler, lojistik depolar, organize sanayi bölgeleri (OSB), otoyol rampları ve liman arkası yapılarında zemin taşıma kapasitesini artırmak ve farklı oturmaları sınırlandırmak amacıyla Deep Soil Mixing (DSM) yüksek hızlı ve çevre dostu bir geoteknik yöntemdir. Doğru DSM zemin iyileştirme mühendisliği, hafriyatsız yerinde imalat hızı ve laboratuvar karışım tasarımıyla şantiye ekonomisini optimize eder.",
     sections: [
       {
         id: "dsm-firmalari-secimi",
@@ -361,7 +361,7 @@ export const seoArticles: KnowledgeArticle[] = [
         blocks: [
           {
             type: "paragraph",
-            content: "DSM birim fiyatları; zeminin plastik indeksine, çimento dozajına (ör. 150-250 kg/m³), kuyu derinliğine (15-30 metre) ve sahaya harcanan BRN karıştırma enerjisine bağlıdır. Hafriyat çıkarma ve nakliye maliyeti olmadığı için DSM, geleneksel derin temellere ve fore kazıklara göre %40-%60 arasında maliyet avantajı sağlar."
+            content: "DSM birim maliyeti; zemin stratigrafisine, bağlayıcı (çimento) dozajına (ör. 150-250 kg/m³), kuyu derinliğine (15-30 metre), kolon yerleşim düzenine (tekil, teğet, grid), replasman oranına ve sahada harcanan BRN karıştırma enerjisine bağlıdır. Dışarıya hafriyat toprağı ve çamur atığı çıkarılmaması, uygun zemin profillerinde şantiye süresi, nakliye ve malzeme lojistiğinde belirgin bir verimlilik sağlar."
           }
         ]
       },
@@ -371,7 +371,7 @@ export const seoArticles: KnowledgeArticle[] = [
         blocks: [
           {
             type: "paragraph",
-            content: "Ağır zemin yükü taşıyan lojistik antrepolar ve endüstriyel zemin betonlarında, noktasal kazıklar yerine kesişen veya kafes (grid) düzeninde imal edilen DSM kolonları zemin rijitliğini homojenleştirir. Bu sistem diferansiyel oturmaları sıfırlarken, deprem anında alüvyal tabakanın sıvılaşma potansiyelini tamamen ortadan kaldırır."
+            content: "Ağır zemin yükü taşıyan lojistik antrepolar ve endüstriyel zemin betonlarında, noktasal kazıklar yerine kesişen veya kafes (grid) düzeninde imal edilen DSM kolonları zemin rijitliğini homojenleştirir. Bu sistem diferansiyel oturmaları sınırlandırırken, deprem anında alüvyal tabakanın sıvılaşma potansiyelini ortadan kaldırır."
           }
         ]
       },
@@ -381,14 +381,14 @@ export const seoArticles: KnowledgeArticle[] = [
         blocks: [
           {
             type: "paragraph",
-            content: "TS EN 14679 (Özel Jeoteknik İşlerin Yapımı - Derin Zemin Karıştırma) standardı uyarınca imalat sürecinde çimento şerbeti yoğunluğu areometre ile periyodik kontrol edilir. İmalattan 28 gün sonra kolonlardan karot numuneleri alınarak Tek Eksenli Serbest Basınç Dayanımı (UCS) testlerine tabi tutulur; hedeflenen 1.5 - 4.0 MPa dayanım eşiği bağımsız akredite laboratuvarlarca raporlanır."
+            content: "TS EN 14679 ve güncel Avrupa normları (EN 14679) uyarınca derin zemin karıştırma; dry ve wet mixing yöntemleri, süpervizyon, enstrümantasyon, periyodik şerbet yoğunluk kontrolleri ve kalite denetimlerini kapsar. İmalattan 28 gün sonra kolonlardan karot numuneleri alınarak Tek Eksenli Serbest Basınç Dayanımı (UCS) testlerine tabi tutulur; hedeflenen 1.5 - 4.0 MPa dayanım eşiği bağımsız akredite laboratuvarlarca raporlanır."
           }
         ]
       }
     ],
     faq: [
       { question: "DSM zemin iyileştirme metraj ve teklifi nasıl hesaplanır?", answer: "Saha zemin etüt raporu (SPT/CPT verileri) incelenir, hedeflenen UCS dayanımına göre çimento dozajı belirlenir ve toplam kolon metrajı (m/tül veya m³) üzerinden projelendirilir." },
-      { question: "DSM yöntemi fore kazığa göre neden daha ekonomiktir?", answer: "DSM yerindeki zemini bağlayıcı ile karıştırarak kolon oluşturur. Dışarıya hafriyat toprağı ve çamur atığı çıkmaz, demir donatı kafesi gerektirmez ve günlük 400-600 metre delgi hızıyla şantiye süresini %60 kısaltır." },
+      { question: "DSM yöntemi geniş platformlarda neden tercih edilir?", answer: "DSM yerindeki zemini bağlayıcı ile karıştırarak kolon oluşturur. Dışarıya hafriyat toprağı ve çamur atığı çıkarmaz, donatı kafesi gerektirmez ve yüksek günlük delgi kapasitesiyle geniş platformlarda imalat takvimini belirgin biçimde hızlandırır." },
       { question: "DSM hangi zemin türlerinde en yüksek verimi sağlar?", answer: "Yumuşak killer, siltli alüvyonlar, gevşek ince kumlar ve kontrolsüz dolgularda en yüksek performans ve taşıma gücü artışını sağlar." }
     ],
     relatedSlugs: ["dsm-nasil-uygulanir", "jet-grout-ve-dsm-farki"],
@@ -406,43 +406,53 @@ export const seoArticles: KnowledgeArticle[] = [
     publishedAt: "2026-07-25",
     updatedAt: "2026-07-25",
     heroLabel: "İksa ve Derin Kazı Rehberi",
-    introduction: "Kent içi dar şantiyelerde ve derin bina kazılarında güvenli çalışma ortamı oluşturmak için öngermeli ankraj ve kazıklı iksa sistemleri bir arada uygulanır.",
+    introduction: "Kent içi dar şantiyelerde, komşu parsel sınırlarında ve derin bina kazılarında güvenli çalışma ortamı oluşturmak için öngermeli ankraj ve kazıklı iksa sistemleri bir arada projelendirilir. TS EN 1537 ve EN ISO 22477-5 standartlarına uygun tasarım, iksa stabilitesinin temel güvencesidir.",
     sections: [
       {
         id: "ankraj-firmalari-kritik",
-        title: "1. Öngermeli Ankraj Uygulamasında Firma Yeterliliği",
+        title: "1. Öngermeli Ankraj Uygulamasında Firma Yeterliliği ve Saha Uzmanlığı",
         blocks: [
           {
             type: "paragraph",
-            content: "Ankraj imalatında kuyu delgisi, halat demetlerinin yerleşimi ve enjeksiyon kalitesi kadar hayati olan bir diğer aşama 'Ön Germe (Pre-stressing)' ve Kabul Testleridir. YER6, her ankraj imalatında kalibre edilmiş hidrolik krikolarla eksenel germe ve yük tutma testlerini eksiksiz raporlar."
+            content: "Ankraj imalatında rotary veya darbeli delgi kalitesi, kuyu sapma kontrolü ve çimento grout enjeksiyonu kadar hayati olan diğer aşamalar; kalibre edilmiş hidrolik krikolarla ön germe (pre-stressing), kilitlenme yükü (lock-off load) ayarı ve EN ISO 22477-5 uyarınca kabul testleridir. YER6, her ankraj imalatında basınç-deplasman ve sünme (creep) grafiklerini anlık sensörlerle kayıt altına alır."
           }
         ]
       },
       {
         id: "ankraj-kapasite-ve-kök-boyu",
-        title: "2. Halat (Strand) Sayısı, Serbest Boy ve Kök Enjeksiyonu Hesabı",
+        title: "2. Halat Sayısı, Serbest Boy (Free Length) ve Kök Boyu (Bond Length) Mekaniği",
         blocks: [
           {
             type: "paragraph",
-            content: "Derin kazılarda yanal toprak yüküne göre 3x0.6\", 4x0.6\" veya 5x0.6\" yüksek dayanımlı çelik halat demetleri kullanılır. Serbest boy (free length), kazı göçme prizmasının ötesine geçecek şekilde tasarlanırken; kök boyu (bond length) sağlam kaya veya sıkı çakıl katmanına en az 6-10 metre soketlenerek yüksek basınçlı çimento grout enjeksiyonu ile kilitlenir."
+            content: "Derin kazılarda yanal zemin basıncına göre 3x0.6\", 4x0.6\" veya 5x0.6\" yüksek mukavemetli çelik halat (strand) demetleri kullanılır. Serbest boy (L_fr), potansiyel Rankine/Coulomb aktif kayma prizmasının en az 1.5 ila 2.0 metre ötesine uzatılmalıdır. Kök boyu (L_b) ise sağlam kaya veya sıkı tabakada genellikle 6 ila 10 metre arasında projelendirilerek basınçlı grout enjeksiyonu ile zemine kilitlenir."
           }
         ]
       },
       {
         id: "ankraj-ts-en-1537-test",
-        title: "3. TS EN 1537 Standardında Uygunluk ve Kabul Çekme Testleri",
+        title: "3. TS EN 1537 ve EN ISO 22477-5 Standartlarında Test Metodolojisi",
         blocks: [
           {
             type: "paragraph",
-            content: "TS EN 1537 standardına göre her öngermeli ankraj, kilit yüküne (lock-off load) getirilmeden önce tasarım yükünün %125-%150'si kadar çekme testine (proof/acceptance test) tabi tutulur. Krikonun deplasman-zaman grafiği (sürünme testi / creep test) incelenerek zeminle kök arasındaki aderans doğrulanır."
+            content: "TS EN 1537 ve EN ISO 22477-5 standartları; Araştırma (Investigation), Uygunluk (Suitability) ve Kabul (Acceptance/Proof) testlerini zorunlu kılar. İmal edilen her üretim ankrajı, servis yükünün 1.25 ila 1.50 katına kadar kademeli gerilerek yük tutma periyotlarında sünme/yük kaybı (creep displacement rate) sınırları denetlenir. Kabul kriterlerini sağlayan ankrajlar kilit yüküne sabitlenir."
+          }
+        ]
+      },
+      {
+        id: "ankraj-cift-korozyon-korumasi",
+        title: "4. Kalıcı Ankrajlarda Çift Korozyon Koruması (DCP)",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Hizmet ömrü 2 yılı aşan kalıcı zemin ankrajlarında çift korozyon koruması (Double Corrosion Protection - DCP) uygulanır. Halat demetleri hem fabrika ortamında oluklu yüksek yoğunluklu polietilen (HDPE) kılıf içine harçla hapsedilir hem de saha enjeksiyonu ile zemin temasından tamamen yalıtılarak 50-100 yıllık tasarım ömrü güvenceye alınır."
           }
         ]
       }
     ],
     faq: [
-      { question: "Geçici ve kalıcı ankraj arasındaki fark nedir?", answer: "Geçici ankrajlar inşaat süresince (12-24 ay) kazı yüzeyini tutar; kalıcı ankrajlar ise bina ömrü boyunca (50+ yıl) özel korozyon korumalı gres ve kılıflarla çalışır." },
-      { question: "Ankrajlı iksa sistemi derin kazılarda neden zorunludur?", answer: "Kent içi dar parsellerde komşu yapıların ve yolların kazı çukuruna doğru kaymasını ve oturmasını engellemek için fore kazık perdesi arkasına öngermeli ankraj uygulanarak deplasmanlar milimetrik düzeyde tutulur." },
-      { question: "Öngermeli halatlı ankraj hangi zeminlerde uygulanır?", answer: "Kaya, çakıl, sıkı kum ve sert killi zeminlerde yüksek tutunma kapasitesi sağlar. Gevşek dolgularda ise kademeli (tüp à manchette) enjeksiyonla kök bölgesi iyileştirilerek uygulanır." }
+      { question: "Geçici ve kalıcı ankraj arasındaki fark nedir?", answer: "Geçici ankrajlar inşaat süresince (12-24 ay) kazı yüzeyini tutar; kalıcı ankrajlar ise yapı ömrü boyunca (50-100 yıl) çift korozyon korumalı (DCP) HDPE kılıf ve özel enjeksiyon bariyerleri ile çalışır." },
+      { question: "Ankrajlı iksa sistemi derin kazılarda neden zorunludur?", answer: "Kent içi bitişik nizam kazılarda komşu yapıların ve çevre yolların kazı çukuruna doğru yatay ötelenmesini önlemek için iksa perdesi arkasına öngermeli ankraj uygulanarak deformasyonlar milimetrik toleranslarda sınırlandırılır." },
+      { question: "Öngermeli halatlı ankraj hangi zeminlerde uygulanır?", answer: "Kaya, çakıl, sıkı kum ve sert killi zeminlerde yüksek kök tutunma kapasitesi sağlar. Zayıf ve gevşek zeminlerde ise mansetli boru (tube à manchette) ile kademeli basınçlı enjeksiyon uygulanarak kök mukavemeti artırılır." }
     ],
     relatedSlugs: ["kazi-destek-sistemleri-nedir", "zemin-iyilestirme-risk-yonetimi"],
     keywords: ["öngermeli ankraj firmaları", "ankraj firmaları", "halatlı ankraj", "ankrajlı iksa", "öngermeli zemin ankrajı"],
@@ -686,11 +696,11 @@ export const seoArticles: KnowledgeArticle[] = [
           },
           {
             type: "paragraph",
-            content: "Doğru tasarlanmış, donatı kafesi tam boy yerleştirilmiş ve sağlam ana kayaya en az 3-5 metre soketlenen (rock-socketed) bir fore kazık sistemi; 0.60g - 0.80g zemin ivmesine (7.5 - 8.0+ Mw büyüklüğündeki yıkıcı depremlere) tam dayanım gösterecek şekilde kesme kuvveti (Vr) ve eğilme momenti (Mr) kapasitesine ulaştırılır."
+            content: "Doğru tasarlanmış, donatı kafesi tam boy yerleştirilmiş ve sağlam ana kayaya zemin etüdü, RQD (Kaya Kalite Göstergesi), tek eksenli basınç dayanımı (UCS), süreksizlik geometrisi ve yapı yüklerine göre hesaplanan derinlikte soketlenen (rock-socketed) bir fore kazık sistemi; 0.60g - 0.80g zemin ivmesine (7.5 - 8.0+ Mw büyüklüğündeki yıkıcı depremlere) tam dayanım gösterecek şekilde kesme kuvveti (Vr) ve eğilme momenti (Mr) kapasitesine ulaştırılır."
           },
           {
             type: "paragraph",
-            content: "Deprem esnasında yüzeydeki alüvyon, gevşek kum veya dolgu tabakası tamamen sıvılaşsa (sıvılaşma güvenlik katsayısı FS < 1.0) dahi, kazıklar sıvılaşan tabakayı baypas ederek yükü derindeki rijit kayaya aktarır. Böylece yapının devrilmesi, zemin içine batması veya toptan göçmesi kesin olarak engellenir."
+            content: "Deprem esnasında yüzeydeki alüvyon, gevşek kum veya dolgu tabakası tamamen sıvılaşsa (sıvılaşma güvenlik katsayısı FS < 1.0) dahi, kazıklar sıvılaşan tabakayı baypas ederek yükü derindeki rijit kayaya aktarır. Böylece yapının devrilmesi, zemin içine batması veya toptan göçmesi mühendislik güvenlik katsayıları dahilinde engellenir."
           }
         ]
       },
@@ -706,9 +716,9 @@ export const seoArticles: KnowledgeArticle[] = [
             type: "list",
             title: "Zemin Sınıfına Göre Temel Karar Matrisi",
             items: [
-              "ZA ve ZB Sınıfı (Sağlam / Az Ayrışmış Kaya): Radye temel tek başına yeterlidir. Zemin taşıma gücü yüksek, oturma riski sıfıra yakındır; fore kazık yapılmasına gerek yoktur.",
-              "ZC Sınıfı (Çok Sıkı Kum/Çakıl ve Katı Kil): Yapı kat adedine ve yüküne göre radye temel genellikle yeterlidir.",
-              "ZD ve ZE Sınıfı (Yumuşak Kil, Gevşek Alüvyon, Yüksek Yeraltı Suyu): Tek başına radye temel binayı kurtarmaz. Kahramanmaraş ve Hatay depremlerinde görüldüğü gibi radye temelli binalar kırılmadan bir bütün olarak zemine batmış veya yan yatmıştır. Bu sahalarda 'Kazıklı Radye Temel' (Piled Raft Foundation) zorunludur.",
+              "ZA ve ZB Sınıfı (Sağlam / Az Ayrışmış Kaya): Yapı yükleri ve oturma kriterleri elverdiği takdirde radye temel öncelikli ve ekonomik seçenektir; yüksek yapı yükleri, eğimli araziler, fay zonları veya derin bodrum iksası gerektiren durumlar geoteknik tahkikle belirlenir.",
+              "ZC Sınıfı (Çok Sıkı Kum/Çakıl ve Katı Kil): Yapı kat adedine, yapı-zemin periyoduna ve beklenen oturma mertebelerine göre radye temel genellikle yeterli olabilmektedir.",
+              "ZD ve ZE Sınıfı (Yumuşak Kil, Gevşek Alüvyon, Yüksek Yeraltı Suyu): Salt yüzeysel radye temel; yüksek farklı oturma, yetersiz zemin taşıma gücü veya sıvılaşma durumlarında yapı güvenliğini tek başına sağlayamayabilir. Kahramanmaraş ve Hatay depremlerinde gözlemlendiği üzere, zayıf alüvyal tabakalarda binaların toptan göçme, yan yatma veya batma riskine karşı derin temel (kazıklı radye) veya zemin güçlendirme (DSM, Jet Grout) yöntemleriyle yapı-zemin etkileşimi (SSI) güvenceye alınır.",
               "ZF Sınıfı (Özel Araştırma Gerektiren / Sıvılaşabilir / Bataklık Zeminler): TBDY 2018 uyarınca sahaya özel geoteknik analiz zorunludur; fore kazık veya jet grout / DSM ile zemin güçlendirmesi yapılmadan inşaat ruhsatı verilemez."
             ]
           }
@@ -739,10 +749,10 @@ export const seoArticles: KnowledgeArticle[] = [
             type: "list",
             title: "Çap Boyutlandırma ve Kullanım Kriterleri",
             items: [
-              "Ø65 cm Fore Kazık: Alçak katlı yapılar, kentsel dönüşüm bina temelleri, sığ iksa perdeleri ve hafif endüstriyel tesisler için ekonomik delgi çapıdır.",
-              "Ø80 cm Fore Kazık: Türkiye'de en yaygın kullanılan standart çaptır; 8-16 katlı konut ve ticari binalarda, derin kazı iksa kazıklarında tercih edilir.",
-              "Ø100 cm Fore Kazık: Yüksek katlı rezidans ve kuleler, ağır sanayi fabrika temelleri, derin ankrajlı iksa sistemlerinde yüksek eksenel ve yanal yük taşır.",
-              "Ø120 cm ve Üzeri Baret Kazıklar: Viyadük, köprü ayakları, metro istasyonları, liman rıhtımları ve enerji santralleri gibi mega altyapı projelerinde kullanılır."
+              "Ø65 cm Fore Kazık: Düşük ve orta eksenel yüke sahip yapılar, kentsel dönüşüm bina temelleri, sığ iksa perdeleri ve hafif endüstriyel tesisler için değerlendirilen delgi çapıdır.",
+              "Ø80 cm Fore Kazık: Konut ve ticari binalarda, orta derinlikteki iksa kazıklarında ve kentsel dönüşüm sahalarında sıkça tercih edilen standart çaptır.",
+              "Ø100 cm Fore Kazık: Yüksek katlı yapılar, ağır sanayi fabrika temelleri, derin ankrajlı iksa sistemlerinde yüksek eksenel ve yanal moment taleplerini karşılar.",
+              "Ø120 cm ve Üzeri Baret / Fore Kazıklar: Viyadük, köprü ayakları, metro istasyonları, liman rıhtımları ve enerji santralleri gibi mega altyapı projelerinde ağır eksenel ve kesme kuvvetlerini taşır."
             ]
           }
         ]
@@ -770,10 +780,10 @@ export const seoArticles: KnowledgeArticle[] = [
       }
     ],
     faq: [
-      { question: "Fore kazık kaç şiddetinde depreme dayanır?", answer: "Mühendislik hesaplarında deprem dayanımı Richter büyüklüğü yerine Zemin İvmesi (PGA) ile belirlenir. TBDY 2018 standartlarında ana kayaya soketlenen donatılı fore kazıklar; 0.60g - 0.80g zemin ivmesine (7.5 - 8.0+ Mw büyüklüğündeki yıkıcı depremlere) tam dayanım sağlayarak binanın batmasını ve yan yatmasını kesin olarak önler." },
-      { question: "Fore kazık mı radye temel mi tercih edilmelidir?", answer: "Sağlam kaya (ZA/ZB/ZC) zeminlerde radye temel tek başına yeterli ve ekonomiktir. Ancak yumuşak kil, alüvyon ve sıvılaşma riski olan ZD, ZE, ZF zeminlerde tek başına radye temel yetmez; radye plağın altı fore kazıklarla kayaya kilitlenerek 'Kazıklı Radye Temel' (Piled Raft) uygulanmalıdır." },
+      { question: "Fore kazık kaç şiddetinde depreme dayanır?", answer: "Mühendislik hesaplarında deprem dayanımı Richter büyüklüğü yerine Zemin İvmesi (PGA) ile belirlenir. TBDY 2018 standartlarında ana kayaya soketlenen donatılı fore kazıklar; 0.60g - 0.80g zemin ivmesine (7.5 - 8.0+ Mw büyüklüğündeki yıkıcı depremlere) tam dayanım sağlayarak binanın devrilmesini ve oturmasını mühendislik sınırları içinde tutar." },
+      { question: "Fore kazık mı radye temel mi tercih edilmelidir?", answer: "Sağlam kaya ve sıkı zeminlerde (ZA, ZB) yapı yükleri izin verdiği sürece radye temel öncelikli ve ekonomiktir. Ancak yumuşak kil, dolgu ve sıvılaşma potansiyeli olan ZD, ZE, ZF zeminlerde farklı oturma ve taşıma yetersizliklerini önlemek için radye plağın altı fore kazıklarla derin taşıyıcı tabakalara bağlanarak 'Kazıklı Radye Temel' (Piled Raft) veya zemin güçlendirme çözümleri uygulanmalıdır." },
       { question: "Fore kazık metre fiyatı 2026 yılında nasıl hesaplanır?", answer: "Fore kazık birim fiyatı; kazık çapına (Ø65-Ø120 cm), toplam metraja, zeminin sertliğine (kaya soketi veya alüvyon delgisi), kılıf (casing) kullanımına, demir donatı tonajına ve beton sınıfına göre hesaplanır. YER6 canlı Fore Kazık Hesaplama Motoru üzerinden yaklaşık maliyet anında hesaplanabilir." },
-      { question: "Fore kazık çapı (Ø65, Ø80, Ø100, Ø120 cm) neye göre seçilir?", answer: "Üstyapı statik yükü, kolon eksenel kuvvetleri, zemin taşıma gücü ve yanal deprem kuvvetlerine göre geoteknik proje mühendisi tarafından seçilir. Standart binalarda Ø80 cm, yüksek kulelerde Ø100 cm, köprü ve viyadüklerde Ø120 cm ve üzeri tercih edilir." }
+      { question: "Fore kazık çapı (Ø65, Ø80, Ø100, Ø120 cm) neye göre seçilir?", answer: "Çap seçimi; üstyapı statik yükleri, kolon eksenel kuvvetleri, devrilme momentleri, yanal deprem kuvvetleri ve zemin taşıma gücüne göre geoteknik proje mühendisi tarafından optimize edilir. Tipik olarak orta yüklerde Ø65–Ø80 cm, yüksek katlı yapılarda Ø100 cm, köprü ve altyapı projelerinde Ø120 cm ve üzeri çaplar boyutlandırılır." }
     ],
     relatedSlugs: ["fore-kazik-nedir", "fore-kazik-maliyeti", "kazik-yukleme-testleri", "dunya-geoteknik-makine-ozellikleri-rehberi-bauer-soilmec-casagrande"],
     keywords: [

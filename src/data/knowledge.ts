@@ -8,14 +8,14 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     description:
       "Jet Grout nedir? TS EN 12716 standardında 300-600 bar yüksek basınçlı çimento enjeksiyonu, Jet-1, Jet-2, Jet-3 sistemleri, kolon çapları ve kalite kontrol kılavuzu.",
     excerpt:
-      "Jet Grout; gevşek kum, silt ve yumuşak kil zeminlerde, 300 ila 600 bar arasındaki ultra yüksek kinetik enerjili çimento şerbeti jetiyle zemin yapısını parçalayarak zeminle çimentoyu yerinde homojen bir şekilde kaynaştıran ve yüksek taşıma gücüne sahip zemin-çimento kolonları (soil-cement columns) oluşturan öncü bir zemin iyileştirme yöntemidir.",
+      "Jet Grout; gevşek kum, silt ve yumuşak kil zeminlerde, 300 ila 600 bar arasındaki ultra yüksek kinetik enerjili çimento şerbeti jetiyle zemin yapısını hidrolik erozyonla parçalayarak zeminle çimentoyu yerinde kaynaştıran, sürekli, düşük geçirgenlikli ve mekanik özellikleri kontrol edilen zemin-çimento kütlesi (soilcrete kolonları) oluşturan öncü bir derin zemin iyileştirme yöntemidir.",
     category: "Jet Grout",
     readingTime: "17 dk",
     publishedAt: "2026-06-21",
     updatedAt: "2026-09-25",
     heroLabel: "Jet Grout Bilgi Merkezi",
     introduction:
-      "Jet Grout (yüksek basınçlı zemin enjeksiyonu), geoteknik mühendisliğinde zayıf zemin katmanlarının taşıma kapasitesini artırmak, toplam ve farklı oturmaları sınırlandırmak, sıvılaşma riskini bertaraf etmek ve su geçirimsizlik perdesi oluşturmak amacıyla dünya genelinde en yaygın uygulanan derin zemin iyileştirme teknolojilerinden biridir. YER6 Geoteknik olarak, TS EN 12716 standartlarına tam uyumlu yüksek basınçlı pompa parkımız ve uzman mühendis kadromuzla Jet-1, Jet-2 ve Jet-3 sistemlerini projenin zemin parametrelerine göre optimize ediyoruz.",
+      "Jet Grout (yüksek basınçlı zemin enjeksiyonu), geoteknik mühendisliğinde zayıf zemin katmanlarının taşıma kapasitesini artırmak, toplam ve farklı oturmaları sınırlandırmak, sıvılaşma riskini bertaraf etmek ve su kesme / sızdırmazlık perdesi (cutoff wall) oluşturmak amacıyla dünya genelinde en yaygın uygulanan derin zemin iyileştirme teknolojilerinden biridir. YER6 Geoteknik olarak, TS EN 12716 standartlarına tam uyumlu yüksek basınçlı pompa parkımız ve uzman mühendis kadromuzla Jet-1, Jet-2 ve Jet-3 sistemlerini projenin zemin parametrelerine göre optimize ediyoruz.",
     sections: [
       {
         id: "jet-grout-tanimi-ve-geoteknik-prensibi",
@@ -24,12 +24,12 @@ export const knowledgeArticles: KnowledgeArticle[] = [
           {
             type: "paragraph",
             content:
-              "Jet Grout, küçük çaplı (genellikle 90–150 mm) bir kılavuz delgi ile hedeflenen zemin kotuna inildikten sonra, delici takımın ucundaki özel püskürtme memelerinden (monitör / nozül) 300 ila 600 bar ultra yüksek basınçla çimento şerbeti püskürtülerek uygulanan bir geoteknik yöntemdir. Bu olağanüstü yüksek kinetik enerji, mevcut zemin matriksinin doğal yapısını mikroskobik ölçekte parçalar (hidrolik erozyon) ve zemin danelerini yüksek hızlı sıvı jeti içinde türbülanslı bir şekilde çimento hamuru ile harmanlar."
+              "Jet Grout, küçük çaplı (genellikle 90–150 mm) bir kılavuz delgi ile hedeflenen zemin kotuna inildikten sonra, delici takımın ucundaki özel püskürtme memelerinden (monitör / nozül) 300 ila 600 bar ultra yüksek basınçla çimento şerbeti püskürtülerek uygulanan bir geoteknik yöntemdir. Bu olağanüstü yüksek kinetik enerji, mevcut zemin matriksinin doğal yapısını hidrolik erozyonla parçalar ve zemin danelerini yüksek hızlı sıvı jeti içinde türbülanslı bir şekilde çimento hamuru ile harmanlar."
           },
           {
             type: "paragraph",
             content:
-              "Delici tijin önceden hesaplanan dönme hızı (rotasyon / rpm) ve yukarı çekilme hızı (lift speed / cm/dk) ile zemin içerisinde silindirik, sürekli ve homojen bir [zemin-çimento kolonu](/services/jet-grout/) (soilcrete) inşa edilir. Parçalanan zeminin iri ve sağlam daneleri çimento hamuru ile kaynaşırken, fazlalık olan ince daneli çamur karışımı (deburbe / spoil) kuyu ağzından dışarı tahliye edilir. Böylece zeminin boşluk oranı radikal biçimde düşürülür, elastisite modülü ($E_s$) katbekat artırılır ve zemine yapay bir kohezyon kazandırılır."
+              "Delici tijin önceden hesaplanan dönme hızı (rotasyon / rpm) ve yukarı çekilme hızı (lift speed / cm/dk) ile zemin içerisinde silindirik, sürekli, düşük geçirgenlikli ve proje hedeflerine göre mekanik özellikleri (dayanım, rijitlik) kontrol edilen bir zemin-çimento kütlesi (soilcrete kolonu) inşa edilir. Parçalanan zeminin iri ve sağlam daneleri çimento hamuru ile kaynaşırken, fazlalık olan ince daneli çamur karışımı (deburbe / spoil) kuyu ağzından dışarı tahliye edilir. Böylece zeminin boşluk oranı radikal biçimde düşürülür, hidrolik iletkenlik (geçirgenlik) minimize edilir ve taşıma gücü katbekat artırılır."
           },
           {
             type: "note",
@@ -2329,7 +2329,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
           {
             type: "note",
             title: "Kaya soket uygulaması",
-            content: "Köprü ayaklarında kaya soketi, fore kazığın kaya tabakasına en az 3–5 çap derinlikte gömülmesiyle oluşturulur ve çok yüksek uç taşıma kapasitesi sağlar."
+            content: "Köprü ve viyadük ayaklarında kaya soket boyu; yapı yükleri, kayanın ayrışma derecesi, RQD, tek eksenli basınç dayanımı (UCS) ve süreksizlik geometrisine göre hesaplanarak (tipik olarak 2–4 kazık çapı mertebesinde) yüksek uç ve çevre sürtünmesi direnci elde edilir."
           }
         ]
       },
