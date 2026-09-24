@@ -214,7 +214,7 @@ export async function generateYer6Report(params: ReportParams): Promise<boolean>
   doc.setFont("Roboto", "normal");
   doc.setFontSize(7.5);
   doc.setTextColor(110, 110, 110);
-  const kurEtiket = est.fx.live ? "Canlı kur" : "Kur (baseline)";
+  const kurEtiket = est.fx.live ? "Piyasa Kuru (Referans)" : "Kur (baseline)";
   doc.text(
     `${kurEtiket}: 1 USD = ${fmt(est.fx.usdTry, 2)} ₺  •  1 EUR = ${fmt(est.fx.eurTry, 2)} ₺  •  kaynak: ${est.fx.source}`,
     14,

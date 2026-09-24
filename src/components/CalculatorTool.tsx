@@ -181,8 +181,23 @@ export function CalculatorTool({ tool }: { tool: Tool }) {
         <div>
           <h2 className="text-2xl font-semibold text-white">Hesaplama aracı</h2>
           <p className="text-xs text-white/45">
-            {fxLoading ? "Güncel kur alınıyor…" : `Canlı kur: 1 USD = ${num(fx.usdTry, 2)} ₺`} · Fiyat kataloğu:{" "}
-            {estimate.priceBookAsOf}
+            {fxLoading ? (
+              "Güncel kur alınıyor…"
+            ) : (
+              <span>
+                Piyasa Kuru:{" "}
+                <a
+                  href="https://www.tcmb.gov.tr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gold-200 hover:underline"
+                  title="TCMB ve serbest piyasa döviz kurları"
+                >
+                  1 USD = {num(fx.usdTry, 2)} ₺
+                </a>
+              </span>
+            )}{" "}
+            · Fiyat kataloğu: {estimate.priceBookAsOf} (2026 Güncel)
           </p>
         </div>
       </div>

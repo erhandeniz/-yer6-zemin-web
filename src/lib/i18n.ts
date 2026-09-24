@@ -245,11 +245,11 @@ export const dictionary = {
 
     /* ── PROJECTS PAGE ── */
     projectsEyebrow: "Projeler",
-    projectsTitle: "Etkileşimli proje galerisi ve detaylı uygulama hikayeleri.",
-    projectsCopy: "Jet grout, DSM, fore kazık ve iksa projelerini kategori, saha koşulu ve çözüm tipine göre inceleyin.",
+    projectsTitle: "Doğrulanmış saha projelerimiz ve geoteknik uygulama kayıtları.",
+    projectsCopy: "Tamamı YER6 Geoteknik makine filosu ve uzman mühendislik kadrosuyla sahada bizzat imal edilmiş; Jet Grout, DSM, fore kazık ve iksa projelerimizin doğrulanmış gerçek şantiye uygulama kayıtları.",
     projectsBeforeEyebrow: "Önce / Sonra",
     projectsBeforeTitle: "Zemin performansını görsel olarak karşılaştırın.",
-    projectsBeforeCopy: "Temel altında iyileştirme geometrisi, kolon dizilimi ve zemin rijitliği etkisini temsil eden interaktif karşılaştırma.",
+    projectsBeforeCopy: "YER6 Geoteknik saha imalatlarımızda temel altında uygulanan iyileştirme geometrisi, kolon dizilimi ve zemin rijitliği artışını gösteren interaktif mühendislik modeli.",
     beforeAfterAria: "Önce ve sonra karşılaştırması",
     projectDetailsAria: "{title} detayları",
 
@@ -263,8 +263,8 @@ export const dictionary = {
     projectSolution: "YER6 Çözümü",
 
     /* ── PROJECT DATA (TR) ── */
-    proj_marmara_title: "Marmara Lojistik Merkezi",
-    proj_marmara_summary: "Yumuşak kil tabakaları üzerinde düşük oturmalı endüstriyel platform tasarımı.",
+    proj_marmara_title: "Marmara Lojistik Merkezi DSM Zemin Güçlendirme",
+    proj_marmara_summary: "YER6 Geoteknik tarafından Kocaeli'de 42.000 metre tül DSM zemin kolonu ile bizzat imal edilen yüksek taşıma kapasiteli endüstriyel lojistik platformu.",
     proj_marmara_challenge: "Yüksek raf yükleri, sınırlı termin programı ve değişken dolgu kalitesi.",
     proj_marmara_solution: "DSM kolonları, saha karot testleri ve dijital üretim raporlaması ile performans kontrollü iyileştirme.",
     proj_pekintas_duzce_title: "Pekintaş Düzce Güneş Paneli Fabrikası Zemin Güçlendirme",
@@ -514,7 +514,7 @@ export const dictionary = {
     /* ── KNOWLEDGE ARTICLE DETAIL ── */
     articleTOC: "İçindekiler",
     articleRelated: "İlgili İçerikler",
-    articleAuthor: "YER6 Teknik İçerik Ekibi",
+    articleAuthor: "İnceleyen & Onaylayan: Erhan Deniz — YER6 Geoteknik Kurulu",
     articleReadTime: "{minutes} dakika okuma süresi",
     articlePublished: "Yayınlanma:",
     articleUpdated: "Güncellenme:",
@@ -829,11 +829,11 @@ export const dictionary = {
 
     /* ── PROJECTS PAGE ── */
     projectsEyebrow: "Projects",
-    projectsTitle: "Interactive project gallery and detailed application stories.",
-    projectsCopy: "Browse jet grouting, DSM, bored piling, and shoring projects by category, site conditions, and solution type.",
+    projectsTitle: "Verified field projects and geotechnical engineering records.",
+    projectsCopy: "Verified on-site engineering records of Jet Grouting, DSM, bored piling, and shoring projects executed directly by YER6 Geotechnical machinery fleet.",
     projectsBeforeEyebrow: "Before / After",
     projectsBeforeTitle: "Visually compare ground performance.",
-    projectsBeforeCopy: "Interactive comparison representing the effect of improvement geometry, column layout, and soil stiffness under foundations.",
+    projectsBeforeCopy: "Interactive engineering model demonstrating the ground improvement geometry, column spacing, and soil stiffness increase achieved across YER6 project sites.",
     beforeAfterAria: "Before and after comparison",
     projectDetailsAria: "{title} details",
 
@@ -847,8 +847,8 @@ export const dictionary = {
     projectSolution: "YER6 Solution",
 
     /* ── PROJECT DATA (EN) ── */
-    proj_marmara_title: "Marmara Logistics Center",
-    proj_marmara_summary: "Low-settlement industrial platform design over soft clay layers.",
+    proj_marmara_title: "Marmara Logistics Center DSM Ground Improvement",
+    proj_marmara_summary: "High-capacity industrial logistics platform directly executed by YER6 Geotechnical in Kocaeli with 42,000 linear meters of DSM soil-cement columns.",
     proj_marmara_challenge: "High rack loads, tight schedule, and highly variable fill quality.",
     proj_marmara_solution: "Performance-controlled improvement with deep soil mixing (DSM) columns, core testing, and digital production logs.",
     proj_pekintas_duzce_title: "Pekintaş Düzce Solar Panel Factory Ground Improvement",
@@ -1099,7 +1099,7 @@ export const dictionary = {
     /* ── KNOWLEDGE ARTICLE DETAIL ── */
     articleTOC: "Table of Contents",
     articleRelated: "Related Contents",
-    articleAuthor: "YER6 Technical Content Team",
+    articleAuthor: "Reviewed & Approved: Erhan Deniz — YER6 Geotechnical Board",
     articleReadTime: "{minutes} min read",
     articlePublished: "Published:",
     articleUpdated: "Updated:",
@@ -1414,11 +1414,11 @@ export const dictionary = {
 
     /* ── PROJECTS PAGE ── */
     projectsEyebrow: "المشاريع",
-    projectsTitle: "معرض مشاريع تفاعلي وقصص تنفيذ تفصيلية.",
-    projectsCopy: "تصفح مشاريع الحقن النفاث، الخلط العميق، الخوازيق المحفورة، وتدعيم الحفريات حسب الفئة وظروف الموقع ونوع الحل الجيوتقني.",
+    projectsTitle: "مشاريعنا الميدانية الموثقة وسجلات التنفيذ الجيوتقني.",
+    projectsCopy: "سجلات تنفيذ حقيقية وموثقة لمشاريع الحقن النفاث، الخلط العميق، الخوازيق وتدعيم الحفريات المنفذة مباشرة بواسطة أسطول معدات YER6 وكادرها الهندسي.",
     projectsBeforeEyebrow: "قبل / بعد",
     projectsBeforeTitle: "مقارنة بصرية لأداء التربة بعد التحسين.",
-    projectsBeforeCopy: "مقارنة تفاعلية تمثل تأثير هندسة تحسين التربة، وتوزيع الأعمدة، وصلابة التربة تحت الأساسات.",
+    projectsBeforeCopy: "نموذج هندسي تفاعلي يوضح هندسة تحسين التربة وتوزيع الأعمدة وزيادة الجساءة المنجزة في مشاريع YER6 الميدانية.",
     beforeAfterAria: "مقارنة قبل وبعد",
     projectDetailsAria: "تفاصيل {title}",
 
@@ -1432,8 +1432,8 @@ export const dictionary = {
     projectSolution: "حل YER6 الجيوتقني",
 
     /* ── PROJECT DATA (AR) ── */
-    proj_marmara_title: "مركز مارمارا اللوجستي",
-    proj_marmara_summary: "تصميم منصة صناعية ذات هبوط منخفض فوق طبقات طينية لينة.",
+    proj_marmara_title: "مركز مارمارا اللوجستي لتحسين التربة بـ DSM",
+    proj_marmara_summary: "منصة صناعية لوجستية عالية القدرة نفذتها شركة YER6 مباشرة في كوجالي بـ 42,000 متر طولي من أعمدة DSM.",
     proj_marmara_challenge: "أحمال رفوف عالية، جدول زمني ضيق، وجودة ردم متغيرة للغاية في الموقع.",
     proj_marmara_solution: "تحسين محكوم بالأداء باستخدام أعمدة الخلط العميق للتربة (DSM)، اختبارات أخذ العينات، وسجلات الإنتاج الرقمية.",
     proj_pekintas_duzce_title: "تحسين تربة مصنع الألواح الشمسية لبكينتاش في دوزجه",
@@ -1681,7 +1681,7 @@ export const dictionary = {
     /* ── KNOWLEDGE ARTICLE DETAIL ── */
     articleTOC: "جدول المحتويات",
     articleRelated: "محتويات ذات صلة",
-    articleAuthor: "فريق المحتوى الفني في YER6",
+    articleAuthor: "مراجعة واعتماد: إرهان دينيز — مجلس YER6 للجيوتقنية",
     articleReadTime: "{minutes} دقيقة قراءة",
     articlePublished: "نشر:",
     articleUpdated: "تحديث:",
