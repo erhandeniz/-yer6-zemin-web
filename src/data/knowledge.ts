@@ -3,154 +3,187 @@ import { seoArticles } from "./seo-articles";
 export const knowledgeArticles: KnowledgeArticle[] = [
   {
     slug: "jet-grout-nedir",
-    title: "Jet Grout Nedir? Kullanım Alanları ve Çalışma Prensibi",
-    seoTitle: "Jet Grout Nedir? Zemin Güçlendirme Yöntemi ve Çalışma Prensibi | YER6",
+    title: "Jet Grout Nedir? TS EN 12716 Standartlarında Yüksek Basınçlı Zemin İyileştirme Rehberi",
+    seoTitle: "Jet Grout Nedir? TS EN 12716 Zemin İyileştirme ve Kolon Rehberi | YER6",
     description:
-      "Jet Grout nedir? Zemin güçlendirme yöntemleri, DSM, mini kazık ve zemin enjeksiyonu ile karşılaştırmalı jet grouting taşıma kapasitesi rehberi.",
+      "Jet Grout nedir? TS EN 12716 standardında 300-600 bar yüksek basınçlı çimento enjeksiyonu, Jet-1, Jet-2, Jet-3 sistemleri, kolon çapları ve kalite kontrol kılavuzu.",
     excerpt:
-      "Jet Grout; kum, silt ve kil gibi farklı zeminlerde yüksek basınçlı çimento şerbetiyle zemin-çimento kolonları oluşturan bir zemin iyileştirme yöntemidir. Zeminin taşıma gücünü artırmaya, oturmaları azaltmaya ve geçirimsizliği iyileştirmeye yardımcı olur.",
+      "Jet Grout; gevşek kum, silt ve yumuşak kil zeminlerde, 300 ila 600 bar arasındaki ultra yüksek kinetik enerjili çimento şerbeti jetiyle zemin yapısını parçalayarak zeminle çimentoyu yerinde homojen bir şekilde kaynaştıran ve yüksek taşıma gücüne sahip zemin-çimento kolonları (soil-cement columns) oluşturan öncü bir zemin iyileştirme yöntemidir.",
     category: "Jet Grout",
-    readingTime: "9 dk",
+    readingTime: "17 dk",
     publishedAt: "2026-06-21",
-    updatedAt: "2026-06-21",
+    updatedAt: "2026-09-25",
     heroLabel: "Jet Grout Bilgi Merkezi",
     introduction:
-      "Jet Grout, yerinde zemin iyileştirmede sık kullanılan enjeksiyon tekniklerinden biridir. Saha koşullarına göre ayarlanabilen basınç, karışım ve delgi stratejileri sayesinde farklı zemin özelliklerinde kolonlar oluşturur.",
+      "Jet Grout (yüksek basınçlı zemin enjeksiyonu), geoteknik mühendisliğinde zayıf zemin katmanlarının taşıma kapasitesini artırmak, toplam ve farklı oturmaları sınırlandırmak, sıvılaşma riskini bertaraf etmek ve su geçirimsizlik perdesi oluşturmak amacıyla dünya genelinde en yaygın uygulanan derin zemin iyileştirme teknolojilerinden biridir. YER6 Geoteknik olarak, TS EN 12716 standartlarına tam uyumlu yüksek basınçlı pompa parkımız ve uzman mühendis kadromuzla Jet-1, Jet-2 ve Jet-3 sistemlerini projenin zemin parametrelerine göre optimize ediyoruz.",
     sections: [
       {
-        id: "definition",
-        title: "Jet Grout Tanımı",
+        id: "jet-grout-tanimi-ve-geoteknik-prensibi",
+        title: "Jet Grout Nedir ve Zemin İyileştirme Mekanizması Nasıl Çalışır?",
         blocks: [
           {
             type: "paragraph",
             content:
-              "Jet Grout, yüksek basınçlı su ve çimento karışımının aynı anda zemine enjekte edilmesiyle zemin-çimento karışımı oluşturan bir geoteknik uygulamadır. Bu yöntem, zemin içinde kolonlar oluşturarak taşıma kapasitesini ve stabiliteyi artırır."
+              "Jet Grout, küçük çaplı (genellikle 90–150 mm) bir kılavuz delgi ile hedeflenen zemin kotuna inildikten sonra, delici takımın ucundaki özel püskürtme memelerinden (monitör / nozül) 300 ila 600 bar ultra yüksek basınçla çimento şerbeti püskürtülerek uygulanan bir geoteknik yöntemdir. Bu olağanüstü yüksek kinetik enerji, mevcut zemin matriksinin doğal yapısını mikroskobik ölçekte parçalar (hidrolik erozyon) ve zemin danelerini yüksek hızlı sıvı jeti içinde türbülanslı bir şekilde çimento hamuru ile harmanlar."
           },
           {
             type: "paragraph",
             content:
-              "Jet Grout kolonları, sadece dolgu veya zemini aktifleştirmekle kalmaz; aynı zamanda su geçirimsizlik performansını da destekler. Bu nedenle uygulama, hem çökelme kontrolü hem de yeraltı suyu yönetimine yönelik çözümlerde tercih edilir."
-          }
-        ]
-      },
-      {
-        id: "working-principle",
-        title: "Çalışma Prensibi",
-        blocks: [
-          {
-            type: "paragraph",
-            content:
-              "Jet Grout uygulamasında önce delgi yapılır, sonra enjeksiyon başlığı ile yüksek hızlı bir sıvı jeti oluşturulur. Bu jet, zemini parçalar ve aynı anda çimento karışımı zemine dağıtarak zemin-çimento karışımı üretir."
-          },
-          {
-            type: "list",
-            title: "Temel adımlar",
-            items: [
-              "Delgi makinesi ile kolon hattının açılması",
-              "Jet başlığının zemine yerleştirilmesi",
-              "Yüksek basınçlı çimento karışımının enjekte edilmesi",
-              "Kolon oluşurken kontrollü geri çekilme"
-            ]
+              "Delici tijin önceden hesaplanan dönme hızı (rotasyon / rpm) ve yukarı çekilme hızı (lift speed / cm/dk) ile zemin içerisinde silindirik, sürekli ve homojen bir [zemin-çimento kolonu](/services/jet-grout/) (soilcrete) inşa edilir. Parçalanan zeminin iri ve sağlam daneleri çimento hamuru ile kaynaşırken, fazlalık olan ince daneli çamur karışımı (deburbe / spoil) kuyu ağzından dışarı tahliye edilir. Böylece zeminin boşluk oranı radikal biçimde düşürülür, elastisite modülü ($E_s$) katbekat artırılır ve zemine yapay bir kohezyon kazandırılır."
           },
           {
             type: "note",
-            title: "Saha uyumu",
+            title: "Mühendislik Standart Referansı",
             content:
-              "Jet Grout uygulaması, sondaj ve zemin verilerini temel alarak projelendirilmelidir. Farklı zemin türleri için basınç, karışım oranı ve geri çekilme hızı değişir."
+              "Türkiye'de ve Avrupa Birliği'nde jet grout projeleri, TS EN 12716 'Özel Geoteknik İşlerin Uygulanması - Jet Grout' standardı ile TBDY 2018 (Türkiye Bina Deprem Yönetmeliği) Bölüm 16 derin zemin iyileştirme esaslarına göre tasarlanır ve denetlenir."
           }
         ]
       },
       {
-        id: "column-formation",
-        title: "Zemin-Çimento Kolonunun Oluşması",
+        id: "jet-grout-sistemleri-jet1-jet2-jet3",
+        title: "Jet Grout Sistemleri: Jet-1, Jet-2 ve Jet-3 Kıyaslaması",
         blocks: [
           {
             type: "paragraph",
             content:
-              "Jet Grout kolonları, zemin ve çimento arasındaki sınırda devamlı bir geçirgen zemin-çimento karışımı oluşturur. Bu kolonlar, yüksek basınçlı jetin zemini parçalayarak karışımı dağıtmasıyla meydana gelir."
+              "Jet grout uygulamaları, zemini parçalamak ve kolon oluşturmak için kullanılan akışkan sayısına göre üç farklı sisteme ayrılır. Hangi sistemin seçileceği zemin stratigrafisine, yeraltı suyu seviyesine, hedeflenen kolon çapına ve projenin ekonomik hedeflerine göre geoteknik tasarım aşamasında belirlenir:"
           },
           {
-            type: "paragraph",
-            content:
-              "Kolon çapı, kullanılan sistem, karışım viskozitesi ve geri çekilme hızına göre kontrol edilir. Yerinde deneyler, kolon geometrisinin tasarımda netleşmesini sağlar."
-          }
-        ]
-      },
-      {
-        id: "applications",
-        title: "Uygulamanın Temel Bileşenleri",
-        blocks: [
-          {
             type: "list",
-            title: "Jet Grout uygulamasının ana bileşenleri",
+            title: "Üç Temel Jet Grout Sistemi",
             items: [
-              "Delgi makinesi ve kolon hattı aplikasyonu",
-              "Yüksek basınç pompası ve enjeksiyon tesisatı",
-              "Çimento karışım tankları ile dozaj kontrolü",
-              "Jet başlığı ve geri çekme mekanizması",
-              "Karot, numune ve saha kalibrasyonu"
+              "Jet-1 (Tek Akışkanlı Sistem): Yalnızca yüksek basınçlı çimento şerbeti (350–500 bar) kullanılır. Şerbet hem parçalama (kesme) hem de bağlama görevini aynı anda üstlenir. Kumlu ve çakıllı zeminlerde tipik olarak Ø60 cm ile Ø100 cm arasında kolon çapı üretir. Uygulama basitliği ve kentsel dar parsellerdeki kompakt makine uyumuyla çok popülerdir.",
+              "Jet-2 (Çift Akışkanlı Sistem): Yüksek basınçlı çimento şerbeti jeti, eş merkezli olarak dışarıdan basınçlı hava konisi (8–12 bar) ile sarılır. Hava kalkanı, çimento jetinin kinetik enerjisini zemin sürtünmesine karşı koruyarak erozyon yarıçapını belirgin şekilde genişletir. Tipik kolon çapı Ø100 cm ile Ø160 cm arasındadır.",
+              "Jet-3 (Üç Akışkanlı Sistem): Parçalama ve bağlama fonksiyonları tamamen ayrılmıştır. Zemin önce ultra yüksek basınçlı su jeti ve etrafındaki hava konisi ile parçalanır; hemen altındaki bağımsız nozülden ise daha düşük basınçlı çimento şerbeti enjekte edilir. İri çaplı (Ø150 cm – Ø250 cm) kolonlar elde edilir ve su geçirimsizlik perdelerinde yüksek verim sağlar."
             ]
           },
           {
             type: "warning",
-            title: "Proje reçetesinde kesinlik",
+            title: "Sistem Seçiminde Zemin Faktörü",
             content:
-              "Jet Grout parametreleri projeye, zemin koşullarına ve mühendislik gereksinimlerine göre belirlenmelidir; bu yüzden saha uygulaması sırasında sabit bir reçete kullanılmamalıdır."
+              "Yüksek plastisiteli killi zeminlerde Jet-1 sistemiyle büyük çaplar elde etmek zordur; kilin yüksek kohezyonu jeti sönümler. Bu tür zeminlerde erozyon enerjisini artıran Jet-2 veya derin mekanik harmanlama sunan [DSM zemin iyileştirme](/services/dsm/) yöntemi tercih edilmelidir."
           }
         ]
       },
       {
-        id: "use-cases",
-        title: "Hangi Sorunların Çözümünde Kullanılır?",
+        id: "jet-grout-ekipmanlari-ve-saha-tesisati",
+        title: "Jet Grout Makine Parkı ve Şantiye Tesisatı",
         blocks: [
           {
             type: "paragraph",
             content:
-              "Jet Grout, zemin taşıma gücünü artırmak, oturmayı azaltmak, su geçirimsizlik sağlamak veya mevcut yapı altındaki zemin koşullarını iyileştirmek için kullanılır. Bu yöntem, özellikle sıkı yerleşimlerde ve su etkisi olan zeminde tercih edilir."
+              "Başarılı bir jet grout imalatı, hassas hidrolik dengeler ve yüksek kapasiteli endüstriyel ekipman zinciri gerektirir. Şantiye sahasında birbirine senkronize çalışan 4 ana ünite bulunur:"
           },
           {
             type: "list",
             items: [
-              "Temel altı zemin iyileştirmesi",
-              "Bodrum ve kazı tabanı stabilizasyonu",
-              "Zemin geçirimsizlik ve su sızdırmazlığı",
-              "Yeraltı suyu yakınındaki taşıma gücü artırımı"
+              "Yüksek Basınçlı Tripleks Enjeksiyon Pompası: 300 ile 600 bar arasında kesintisiz basınç ve dakikada 150–450 litre debi üretebilen, seramik pistonlu endüstriyel pompalar (Metax, Tecniwell vb.).",
+              "Otomatik Tartımlı Kolloidal Mikser ve Dinlendirici Santrali: Su ve çimentoyu dakikada 1500–2000 devirle homojen karıştıran, topaklanmayı önleyen yüksek hızlı kolloidal mikser ile çökmeyi engelleyen kanatlı karıştırıcı ajitasyon tankı.",
+              "Hidrolik Delgi Makinesi (Rig): Yüksek kule boyuna sahip, dönme torku ve hassas çekme hızına (feed/pull rate) sahip paletli sondaj makineleri (Soilmec, Casagrande, Comacchio).",
+              "Monitör ve Nozül Takımı: Delici tijin ucunda yer alan, tungsten karbür veya elmas alaşımlı 1.8 mm – 3.2 mm çapındaki aşınmaya dirençli özel nozüller."
             ]
           }
         ]
       },
       {
-        id: "advantages-limitations",
-        title: "Avantajları ve Sınırlamaları",
+        id: "uygulama-asamalari-ve-saha-protokolu",
+        title: "Adım Adım Jet Grout Şantiye Uygulama Protokolü",
         blocks: [
           {
             type: "paragraph",
             content:
-              "Jet Grout, tekniğine uygun uygulandığında çok yönlü bir çözüm sunar. Zemin-çimento kolonları farklı derinliklerde ve çaplarda üretilebilir. Ancak her zemin türü için aynı parametre geçerli değildir."
-          },
-          {
-            type: "note",
-            title: "Teknik sınırlama",
-            content:
-              "Çakıllı veya çok heterojen zeminler, enjeksiyon kontrolü ve kolon sürekliliği açısından özel tasarım gerektirir. Bu nedenle saha çalışmaları ve deneme kolonları önem kazanır."
-          }
-        ]
-      },
-      {
-        id: "comparison",
-        title: "Diğer Yöntemlerle İlişkisi",
-        blocks: [
-          {
-            type: "paragraph",
-            content:
-              "Jet Grout, DSM veya fore kazık gibi yöntemlerden farklı bir üretim karakteri taşır. Jet Grout, yüksek basınçlı sıvı jeti vasıtasıyla zemini dönüştürürken, DSM daha çok karıştırma ve zemini stabilize etme prensibine dayanır."
+              "Jet grout üretimi, milimetrik toleranslarla yönetilen bir mühendislik operasyonudur. İmalat döngüsü 5 ana basamaktan meydana gelir:"
           },
           {
             type: "list",
             items: [
-              "Jet Grout: yüksek basınçlı enjeksiyon ile kolon üretimi",
-              "DSM: zemin-karışım homojenizasyonu",
-              "Fore kazık: donatı ve beton temelli taşıyıcı eleman"
+              "1. Aplikasyon ve Konumlandırma: Projedeki kolon koordinatları total station ile sahada çakılır. Delgi makinesi kuyu eksenine sıfır sapmayla konumlandırılır; şakül ve eğim sensörleri doğrulanır (maksimum sapma toleransı: %1).",
+              "2. Kılavuz Delgi: Delici takım su veya düşük basınçlı çimento şerbeti sirkülasyonu eşliğinde proje taban kotuna kadar indirilir.",
+              "3. Yüksek Basıncın Başlatılması ve Jetleme: Hedef derinliğe ulaşıldığında kuyu tabanında vana sistemi mekanik veya bilye atımıyla devreye alınır; pompa basıncı 400–500 bara çıkarılır.",
+              "4. Rotasyon ve Kontrollü Geri Çekilme: Tij belirlenen devirle (örn. 15–25 rpm) dönerken, hidrolik kule tiji santim santim (örn. 25–40 cm/dk) yukarı çeker. Bu esnada tabandan yukarıya doğru silindirik zemin-çimento kolonu oluşur.",
+              "5. Deburbe (Spoil) Tahliyesi: Basınçla birlikte yukarı yükselen fazla çamur ve zemin kırıntıları kanallarla kuyu başından deburbe havuzuna yönlendirilir; kuyunun basınç altında şişmesi veya sıkışması önlenir."
+            ]
+          },
+          {
+            type: "warning",
+            title: "Deburbe Çıkışı Kesilirse İmalat Durdurulmalıdır",
+            content:
+              "Jetleme esnasında kuyu ağzından deburbe (geri dönüş çamuru) gelmesi hayati önem taşır. Çıkış durursa zemin içinde aşırı basınç birikir; bu durum çevre zeminlerde kontrolsüz kabarmalara, komşu temellerde deplasmana ve tıkalı kuyu patlamalarına yol açabilir."
+          }
+        ]
+      },
+      {
+        id: "hangi-zeminlerde-ve-hangi-projelerde-kullanilir",
+        title: "Jet Grout Hangi Zeminlerde ve Ne Zaman Tercih Edilir?",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Jet Grout, diğer geleneksel enjeksiyon tekniklerinin giremediği ince daneli zeminlerde dahi yüksek başarı sağlayan evrensel bir iyileştirme yöntemidir. Uygulamanın en verimli olduğu zeminler ve proje tipleri şunlardır:"
+          },
+          {
+            type: "list",
+            items: [
+              "Gevşek ve Orta Sıkı Alüvyon Zeminler: Yeraltı su seviyesi yüksek vadilerde ve nehir yataklarında taşıma gücü artırımı.",
+              "Depremde Sıvılaşma Riski Taşıyan Kumlu-Siltli Zeminler: Boşluk suyu basıncı artışını engelleyerek sıvılaşma ve zemin göçmelerini önleme.",
+              "Radye Temel Altı Oturma Kontrolü: Yüksek katlı binalarda farklı oturmaları minimize etmek için zemin rijitleştirme.",
+              "Derin Kazı Geçirimsizlik Taban Tıkacı (Plug): Ankrajlı veya fore kazıklı iksa sistemlerinde tabandan su basmasını önleyen sızdırmaz zemin tıkacı.",
+              "Kentsel Dönüşümde Mevcut Yapı Güçlendirmesi: Bina içine girebilen kompakt delgi makineleri ile temeli kazmadan bina altından zemin ıslahı."
+            ]
+          }
+        ]
+      },
+      {
+        id: "tasarim-parametreleri-ve-karisim-hesabi",
+        title: "Mühendislik Tasarım Parametreleri: Su/Çimento Oranı ve Mukavemet",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Jet grout karışım tasarımında bağlayıcı olarak genellikle CEM I 42.5 R veya sülfata dayanıklı CEM I 42.5 SR çimentolar kullanılır. Su/çimento (W/C) ağırlık oranı genellikle 0.8:1 ile 1.0:1 arasında tutulur. Çok akışkan şerbetler priz süresini uzatıp kolon mukavemetini düşürürken, çok koyu şerbetler yüksek basınç pompalarının nozüllerinde aşırı aşınmaya neden olur."
+          },
+          {
+            type: "paragraph",
+            content:
+              "Zeminin türüne bağlı olarak elde edilen 28 günlük serbest basınç dayanımları ($q_u$) değişkenlik gösterir: Kil ve siltli zeminlerde 2 ila 5 MPa arasında mukavemet elde edilirken; kumlu ve çakıllı zeminlerde bu değer 10 ila 20 MPa seviyelerine kadar tırmanır. Bu değerler zemin taşıma gücünü 3 ila 8 kat arasında artırmak için fazlasıyla yeterlidir."
+          }
+        ]
+      },
+      {
+        id: "jet-grout-vs-dsm-vs-fore-kazik",
+        title: "Geoteknik Kıyaslama: Jet Grout vs DSM vs Fore Kazık",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Zemin iyileştirme projelerinde en sık karşılaşılan soru, hangi yöntemin sahaya en uygun olduğudur. Üç yöntemin kritik mühendislik kıyaslaması şu şekildedir:"
+          },
+          {
+            type: "list",
+            items: [
+              "Jet Grout vs DSM (Deep Soil Mixing): Jet Grout 400 bar hidrolik güç kullanırken, DSM 10–20 bar gibi düşük basınçla mekanik karıştırma yapar. DSM'de deburbe atığı neredeyse sıfırdır ve geniş platformlarda daha ekonomiktir. Ancak Jet Grout; dar alanlarda, mevcut bina içlerinde ve boru/kablo geçişi olan engelli zeminlerde eşsiz bir manevra kabiliyeti sağlar.",
+              "Jet Grout vs Fore Kazık: [Fore kazık](/services/fore-kazik/) betonarme donatılı ağır taşıyıcı elemandır; tekil kolon başına yüzlerce ton yük taşır. Jet Grout ise donatısız (veya nadiren tek profilli) bir zemin kompozitidir; amacı zeminin genel elastisite modülünü yükselterek zeminle temelin birlikte çalışmasını sağlamaktır.",
+              "Jet Grout vs Mini Kazık: [Mini kazık](/services/mini-kazik/) çekme ve eğilme momentlerine karşı çelik donatı taşır. Jet Grout ise geniş kolon gövdesiyle zemin geçirimsizliği ve kütlesel zemin iyileştirmesinde üstündür."
+            ]
+          }
+        ]
+      },
+      {
+        id: "kalite-kontrol-karot-ve-deneme-kolonlari",
+        title: "Saha Kalite Kontrolü: Deneme Kolonları, Karot Alımı ve Basınç Testleri",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "TS EN 12716 standardı uyarınca asıl imalata geçilmeden önce şantiye sahasında en az 2 veya 3 adet deneme kolonu (test column) imal edilmelidir. Bu kolonlar 7–14 gün sonra iş makineleriyle kazılarak açığa çıkarılır; kolon çapı, sürekliliği, et kalınlığı ve zeminle kaynaşma kalitesi yerinde gözlemlenerek ölçülür."
+          },
+          {
+            type: "list",
+            title: "Uygulanan Kalite Kontrol Deneyleri",
+            items: [
+              "Karot Delgisi ve Basınç Testi: Kolon gövdesinden ASTM D2166 standardına göre karot numuneleri alınarak laboratuvarda tek eksenli serbest basınç dayanımı (UCS) tayini yapılır.",
+              "Deburbe Yoğunluk Kontrolü: İmalat sırasında çıkan çamurun yoğunluğu günde en az 3 kez çamur terazisi ile ölçülür; zemin erozyonunun dengeli gittiği teyit edilir.",
+              "Öz Kütle ve Çimento Sarfiyat Kaydı: Her bir kolon için harcanan net çimento torba adedi dijital debimetre ve kantar fişleriyle kayıt altına alınarak kolon raporuna işlenir."
             ]
           }
         ]
@@ -158,23 +191,55 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     ],
     faq: [
       {
-        question: "Jet Grout uygulaması hangi zeminde uygundur?",
+        question: "Jet Grout nedir ve temel amacı nedir?",
         answer:
-          "Jet Grout, kumlu, siltli ve kil içeren zeminlerde uygulanabilir; ancak zemin heterojenliği ve yeraltı suyu seviyesi projelendirme sürecinde belirleyici olur."
+          "Jet Grout, 300-600 bar gibi çok yüksek basınçlı çimento şerbeti jetiyle zeminin yerinde parçalanarak zemin-çimento kolonları (soilcrete) oluşturulması işlemidir. Temel amacı; zayıf zeminlerin taşıma kapasitesini artırmak, bina oturmalarını önlemek, depremde zemin sıvılaşmasını engellemek ve kazılarda su geçirimsizlik sağlamaktır."
       },
       {
-        question: "Deneme kolonları neden önemlidir?",
+        question: "Jet Grout kolon çapı ne kadardır ve nasıl belirlenir?",
         answer:
-          "Deneme kolonları, enjeksiyon basıncı, karışım oranı ve kolon geometrisini saha koşullarına göre test etmek için kullanılır. Böylece uygulamanın tasarımı güvenilir verilerle desteklenir."
+          "Kolon çapı kullanılan sisteme (Jet-1, Jet-2, Jet-3), zemin türüne, enjeksiyon basıncına ve geri çekme hızına bağlı olarak genellikle 60 cm ile 150 cm arasında değişir. İri daneli kumlarda çap büyürken, sert killi zeminlerde çap daralır. Kesin çap, şantiyede yapılan deneme kolonu kazısıyla doğrulanır."
+      },
+      {
+        question: "Jet Grout ile Fore Kazık arasındaki fark nedir?",
+        answer:
+          "Fore kazık, zemin çıkarılarak içine çelik donatı kafesi indirilen ve hazır beton dökülen yapısal bir derin temel elemanıdır. Jet grout ise zemin çıkarılmadan, zeminle çimentonun yüksek basınçla kaynaştırıldığı bir zemin ıslahı yöntemidir. Fore kazık yüksek eğilme ve çekme yüklerini karşılarken, jet grout kütlesel zemin güçlendirmesi ve sızdırmazlık sağlar."
+      },
+      {
+        question: "Mevcut binanın altına Jet Grout yapılabilir mi?",
+        answer:
+          "Evet. Jet grout delgi makinelerinin küçük ve kompakt modelleri 2-2.5 metre gibi düşük tavanlı bodrum katlarına girebilir. Mevcut temeller delinerek altındaki zayıf zemin tabakaları binaya zarar vermeden jet grout kolonlarıyla tahkim edilebilir."
+      },
+      {
+        question: "Jet Grout hangi zeminlerde başarılı sonuç verir?",
+        answer:
+          "Gevşek ve orta sıkı kumlar, siltli zeminler, çakıllı alüvyonlar ve yumuşak killerde son derece başarılıdır. Ancak saf organik turba zeminlerde veya çok çatlaklı-boşluklu karstik kireçtaşlarında şerbet kaçağı oluşabileceğinden özel katkılar ve deneme kolonları şarttır."
+      },
+      {
+        question: "Jet Grout su geçirimsizlik sağlar mı?",
+        answer:
+          "Evet. Birbirine bindirmeli (kesişen) olarak imal edilen jet grout kolonları mükemmel bir su geçirimsizlik perdesi oluşturur. Özellikle derin kazıların tabanında su basmasını önleyen taban tıkacı (jet grout plug) uygulamasında rakipsizdir."
+      },
+      {
+        question: "Jet Grout imalatında kalite kontrol nasıl yapılır?",
+        answer:
+          "TS EN 12716 standardı gereğince saha başında deneme kolonları açılarak fiziki çap ölçülür. İmal edilen kolonlardan 28 gün sonra karot numuneleri alınarak laboratuvarda tek eksenli serbest basınç dayanımı (UCS) testleri yapılır."
+      },
+      {
+        question: "Jet Grout kolonlarının mukavemeti ne kadardır?",
+        answer:
+          "Killi ve siltli zeminlerde 2 ila 5 MPa, kumlu ve çakıllı zeminlerde ise 8 ila 15 MPa arasında tek eksenli basınç dayanımı elde edilir. Bu mukavemet, gevşek bir zemini kaya benzeri rijit bir tabakaya dönüştürmek için fazlasıyla yeterlidir."
       }
     ],
-    relatedSlugs: ["jet-grout-uygulama-asamalari", "jet-grout-hangi-zeminlerde-uygulanir"],
+    relatedSlugs: ["jet-grout-uygulama-asamalari", "jet-grout-ve-fore-kazik-farki", "jet-grout-ve-dsm-farki"],
     keywords: [
       "jet grout nedir",
-      "jet grout uygulama aşamaları",
-      "zemin iyileştirme",
-      "zemin güçlendirme",
-      "geoteknik enjeksiyon"
+      "jet grout zemin iyileştirme",
+      "jet grout kolon çapı",
+      "TS EN 12716 jet grout",
+      "jet grout firmaları",
+      "jet grout birim fiyat",
+      "jet-1 jet-2 jet-3 farkı"
     ],
     published: true
   },
@@ -843,69 +908,258 @@ export const knowledgeArticles: KnowledgeArticle[] = [
   },
   {
     slug: "fore-kazik-nedir",
-    title: "Fore Kazık Nedir? Temel İlkeler",
-    seoTitle: "Fore Kazık Nedir? Temel İlkeler | YER6",
-    description: "Fore kazık uygulamasının temel prensipleri, kullanım alanları ve taşıyıcı sistem özellikleri.",
-    excerpt: "Fore kazık, derin temel sistemlerinde kullanılan sondajlı kazık elemanıdır; taşıyıcı güç ve yatay yük dayanımı sağlar.",
+    title: "Fore Kazık Nedir? TS EN 1536 ve TBDY 2018 Esasları, Çaplar, Delgi ve Donatılı İmalat Rehberi",
+    seoTitle: "Fore Kazık Nedir? TS EN 1536 Standartları, İmalat ve Çaplar | YER6",
+    description:
+      "Fore kazık nedir? TS EN 1536 ve TBDY 2018 standartlarında derin temel, iksa perdesi, delgi makineleri, tremi beton dökümü, çap tablosu ve PIT testleri rehberi.",
+    excerpt:
+      "Fore kazık; zemin taşıma gücünün yetersiz olduğu sahalarda üst yapı yüklerini derinlerdeki sağlam jeolojik formasyonlara aktarmak veya derin kazılarda rijit iksa perdesi oluşturmak amacıyla rotary makinelerle açılan kuyuya donatı kafesi indirilip tremi borusuyla yerinde beton dökülerek teşkil edilen yüksek taşıma kapasiteli derin temel elemanıdır.",
     category: "Fore Kazık",
-    readingTime: "8 dk",
+    readingTime: "18 dk",
     publishedAt: "2026-06-21",
-    updatedAt: "2026-06-21",
+    updatedAt: "2026-09-25",
     heroLabel: "Fore Kazık Bilgi Merkezi",
     introduction:
-      "Fore kazık, sondajla açılan deliklere beton dökülerek oluşturulan taşıyıcı elemandır. Özellikle derin temellerde ve zemin mikroayarlarında yaygın olarak kullanılır.",
+      "Fore kazık (yerinde dökme betonarme kazık / bored pile), modern geoteknik mühendisliğinin en kritik taşıyıcı sistem elemanıdır. Yüksek katlı yapılar, köprü ayakları, viyadükler, endüstriyel tesisler ve derin bodrumlu kazı iksa projelerinde; zayıf üst zemin tabakalarını baypas ederek yapı yüklerini sağlam ana kayaya veya sıkı çakıl/kum tabakalarına güvenle iletir. YER6 Geoteknik olarak, TS EN 1536 ve TBDY 2018 standartlarında Ø65 cm'den Ø150 cm'ye kadar geniş çap yelpazesinde son teknoloji hidrolik rotary makinelerle fore kazık imalatı gerçekleştiriyoruz.",
     sections: [
       {
-        id: "principles",
-        title: "Fore Kazık Temel Prensipleri",
+        id: "fore-kazik-tanimi-ve-calisma-mekanigi",
+        title: "Fore Kazık Nedir ve Yük Aktarım Mekaniği Nasıl Çalışır?",
         blocks: [
           {
             type: "paragraph",
             content:
-              "Fore kazıklar, sondaj süreci, donatı yerleşimi ve beton dökümü ile inşa edilir. Sistem, taşıyıcı zemine aktarılacak yüklerin emniyetle taşınmasını sağlayacak şekilde tasarlanmalıdır."
+              "Fore kazık; hidrolik rotary delgi makineleri yardımıyla zeminde silindirik bir kuyu açılması, kuyu içerisine projeye uygun olarak hazırlanan çelik donatı kafesinin vinçle indirilmesi ve ardından tabandan yukarıya doğru tremi borusuyla yüksek kaliteli hazır beton dökülmesiyle yerinde imal edilen bir derin temel elemanıdır."
+          },
+          {
+            type: "paragraph",
+            content:
+              "Fore kazıklar üst yapıdan gelen eksenel basma, çekme (uplift) ve yanal (deprem/rüzgar) kesme kuvvetlerini zemine iki temel mekanizma ile aktarır:"
           },
           {
             type: "list",
             items: [
-              "Sondaj derinliği ve çapı",
-              "Donatı ve beton standardı",
-              "Kazık uç dayanımı ve sürtünme"  
+              "Uç Direnci (End Bearing): Kazık ucunun sağlam kayaya veya yüksek taşıma gücüne sahip sıkı tabakalara oturmasıyla oluşan direkt basma direncidir ($Q_b$). Sağlam tabakaya soketlenen kazıklarda toplam taşıma gücünün büyük bölümünü uç direnci karşılar.",
+              "Çevre Sürtünmesi (Skin Friction): Kazık betonunun silindirik dış yüzeyi ile temas ettiği zemin katmanları arasındaki kayma gerilmesi direncidir ($Q_s$). Kil ve kum tabakalarında kazık boyu boyunca oluşan sürtünme kuvveti, yükün çevre zemine sönümlenerek yayılmasını sağlar."
+            ]
+          },
+          {
+            type: "note",
+            title: "Mühendislik Tasarım Eşitliği",
+            content:
+              "Fore kazığın toplam nihai taşıma kapasitesi ($Q_{ult}$), uç direnci ve çevre sürtünmesinin toplamına eşittir: $Q_{ult} = Q_b + Q_s$. TBDY 2018 Bölüm 16 uyarınca tasarımda geoteknik güvenlik katsayıları ve grup etkisi faktörleri titizlikle hesaba katılır."
+          }
+        ]
+      },
+      {
+        id: "uygulama-alanlari-ve-amaclari",
+        title: "Fore Kazık Hangi Projelerde ve Ne Amaçla Kullanılır?",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Fore kazık sistemleri yalnızca bina temelleriyle sınırlı kalmayıp çok geniş bir inşaat mühendisliği spektrumunda kullanılır:"
+          },
+          {
+            type: "list",
+            items: [
+              "Yüksek Yapı ve Ağır Sanayi Temelleri: Zemin oturmalarını ve farklı oturmaları milimetrik mertebede sınırlamak için radye temel altına kazık grubu teşkil edilmesi.",
+              "Derin Kazı İksa Sistemleri: Bitişik nizam şehir içi inşaatlarda çevre binaların ve yolların güvenliğini sağlamak üzere kesişen (secant) veya teğet (tangent) [fore kazık iksa perdeleri](/services/fore-kazik/) oluşturulması.",
+              "Köprü, Viyadük ve Liman İskeleleri: Nehir, göl veya deniz tabanındaki suya doygun alüvyon tabakaları geçerek yükleri derindeki ana kayaya bağlama.",
+              "Heyelan ve Şev Stabilitesi Önleme: Kayma düzlemini dikine keserek toprak kaymasını durduran ve yanal itkileri karşılayan kuyu kazık perdeleri."
             ]
           }
         ]
       },
       {
-        id: "field-conditions",
-        title: "Saha Koşullarının Etkisi",
+        id: "delgi-ekipmanlari-ve-makine-parki",
+        title: "Fore Kazık Delgi Ekipmanları ve Şantiye Makineleri",
         blocks: [
           {
             type: "paragraph",
             content:
-              "Zemin türü ve su seviyesi fore kazık uygulamasını etkiler. Heterojen zeminlerde sondaj kontrolü ve beton büzülmesi için ek önlemler alınmalıdır."
+              "Fore kazık imalatının hızı ve kuyu düşeyliği, kullanılan delgi makinesinin tork kapasitesine ve kule rijitliğine doğrudan bağlıdır. Şantiyede kullanılan başlıca ekipmanlar şunlardır:"
+          },
+          {
+            type: "list",
+            items: [
+              "Hidrolik Rotary Delgi Makineleri (Bauer BG, Soilmec SR, Casagrande serisi): 150 kNm ile 450 kNm arasında yüksek dönme torku üreten, teleskopik Kelly bar sistemiyle 30–60 metre derinliğe kadar inebilen paletli dev iş makineleri.",
+              "Burgu (Auger): Kohezyonlu killerde ve orta sıkı kumlarda zemin malzemesini helezonik kanatlarıyla yukarı taşıyan delici uç.",
+              "Kova (Drilling Bucket): Yeraltı suyu bulunan sahalarda gevşek kum, çakıl ve çamuru içine hapsedip kuyu dışına çıkaran kapaklı kova sistemi.",
+              "Karotiyer (Core Barrel): Sert kayaları ve andezit/bazalt gibi dirençli formasyonları elmas/tungsten dişlerle dairesel keserek soket açan silindirik delici başlık."
+            ]
+          }
+        ]
+      },
+      {
+        id: "kuyu-stabilitesi-muhafaza-ve-bentonit",
+        title: "Kuyu Stabilitesi: Muhafaza Borusu (Casing) ve Bentonit Çamuru",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Delgi sırasında kuyu çeperlerinin göçmesini ve yeraltı suyunun kuyuya hücum etmesini engellemek için zeminin jeolojik karakterine göre iki temel yöntem uygulanır:"
+          },
+          {
+            type: "list",
+            items: [
+              "Çelik Muhafaza Borusu (Casing / Kılıf): Göçüntülü alüvyon veya dolgu tabakalarında, delgi makinesinin döner kafası (rotary head) veya hidrolik osilatör yardımıyla zemine çakılan/çevrilen geçici veya kalıcı çelik borulardır. Beton dökümü esnasında kontrollü olarak geri çekilir.",
+              "Bentonit Süspansiyonu ile Kuyu Koruma: Yeraltı su seviyesinin yüksek olduğu derin kuyularda kuyu içi bentonit veya polimer çamuruyla doldurulur. Çamurun hidrostatik basıncı çeperlere 'kek' (cake) tabakası oluşturarak göçmeyi engeller. TS EN 1536 standardına göre çamur yoğunluğu 1.03–1.10 g/cm³, kum içeriği <%3 olmalıdır."
+            ]
+          }
+        ]
+      },
+      {
+        id: "donati-kafesi-ve-paspayi-disiplini",
+        title: "Donatı Kafesinin İmalatı, İndirilmesi ve Paspayı Disiplini",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Fore kazık donatısı, statik projeye göre sahada özel tezgahlarda silindirik kafes olarak örülür. Boyuna donatı demirleri (B420C / B500C) dairesel dizilir ve etrafları spiral fret veya etriyelerle kaynaklı/bağlı olarak sarılır."
           },
           {
             type: "warning",
-            title: "Su seviyesi kontrolü",
+            title: "Paspayı Tekerlekleri Hayatidir",
             content:
-              "Yüksek su tablası olan sahalarda çamur kontrollü sondaj ve uygun basınçlı beton pompalama teknikleri kullanılmalıdır."
+              "Kafesin kuyu merkezinde kalması ve donatının kuyu çeperine temas ederek korozyona uğramaması için kafes boyunca her 2-3 metrede bir çevreye en az 4 adet plastik paspayı tekerleği (centralizer) takılmalıdır. Paspayı kalınlığı TS EN 1536 uyarınca en az 60–75 mm olmalıdır."
+          }
+        ]
+      },
+      {
+        id: "tremi-borusu-ve-su-altinda-beton-dokumu",
+        title: "Tremi Borusu ile Su Altında Beton Döküm Protokolü",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Fore kazık betonlaması, serbest düşmeyle ASLA yapılmaz. Betonun ayrışmasını (segregasyon) ve kuyu içindeki su veya bentonitle karışmasını önlemek için kuyu tabanına kadar indirilen 200–250 mm çapındaki su sızdırmaz çelik tremi boruları kullanılır."
+          },
+          {
+            type: "list",
+            title: "Tremi Betonlama Kuralları",
+            items: [
+              "Tremi borusu kuyu tabanına 15–20 cm kala konumlandırılır ve boru içine sünger/tıkaç (plug) yerleştirilerek beton pompalanır.",
+              "Beton tabandan yükselirken tremi borusu ucu HER ZAMAN taze betonun içinde en az 2 ila 3 metre gömülü kalmalıdır.",
+              "Kullanılan beton S4/S5 kıvamında (slump: 18–22 cm), kendiliğinden yerleşen, ayrışmayan ve süperakışkanlaştırıcı katkılı C25/30 veya C30/37 sınıfı özel hazır betondur.",
+              "Kazık başı kotunun en az 50–100 cm üzerine kadar beton taşırılarak döküm tamamlanır; daha sonra üstteki çamurlu ve zayıf beton başlık kırılarak sağlam betona ulaşılır."
+            ]
+          }
+        ]
+      },
+      {
+        id: "standart-cap-ve-derinlik-matrisi",
+        title: "Fore Kazık Standart Çap ve Derinlik Matrisi",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Şantiyelerde en çok kullanılan standart kazık çapları ve tipik taşıma kapasitesi kullanım alanları aşağıdaki gibidir:"
+          },
+          {
+            type: "list",
+            items: [
+              "Ø65 cm Fore Kazık: Orta ölçekli yapılar, hafif sanayi binaları ve 6–10 metreye kadar olan iksa perdelerinde ekonomik ve hızlı çözüm.",
+              "Ø80 cm Fore Kazık: Türkiye genelinde konut ve ticari projelerde en yaygın tercih edilen standart derin temel ve ankrajlı iksa kazığı çapı.",
+              "Ø100 cm Fore Kazık: Yüksek katlı binalar, fabrika ağır makine temelleri ve derin bodrumlu çok kademeli iksa projeleri.",
+              "Ø120 cm Fore Kazık: Köprü ve viyadük ayakları, metro istasyonu kazıları ve ağır yük taşıyan sanayi tesisleri.",
+              "Ø150 cm Fore Kazık: Mega altyapı projeleri, rüzgar türbini temelleri, liman yapıları ve aşırı yatay yüklere maruz kalan özel geoteknik mühendislik yapıları."
+            ]
+          }
+        ]
+      },
+      {
+        id: "geoteknik-karsilastirma-matrisi",
+        title: "Fore Kazık vs Mini Kazık vs Jet Grout Kıyaslaması",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Projelerinizde doğru yöntemi seçebilmeniz için geoteknik yöntemlerin karşılaştırma parametreleri:"
+          },
+          {
+            type: "list",
+            items: [
+              "Fore Kazık: Ağır taşıyıcı temel elemanıdır; donatılıdır; tek kazık 100–500 ton yük taşır; geniş şantiye alanı ve ağır makine gerektirir.",
+              "[Mini Kazık](/services/mini-kazik/): Ø10–30 cm çaplıdır; dar ve basık alanlarda (mevcut bina içi) çalışabilir; yükü sürtünmeyle aktarır.",
+              "[Jet Grout](/services/jet-grout/): Donatısız zemin ıslahıdır; zeminle çimentoyu yüksek basınçla kaynaştırır; taşıma gücünü artırır ve su geçirimsizlik sağlar."
+            ]
+          }
+        ]
+      },
+      {
+        id: "kalite-kontrol-ve-saha-kabul-deneyleri",
+        title: "Kalite Kontrol: PIT ve Sonik Bütünlük Testleri",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Fore kazık imalatının yer altında kalması nedeniyle kalitesinin tahribatsız yöntemlerle doğrulanması zorunludur. Projelerimizde uyguladığımız standart testler:"
+          },
+          {
+            type: "list",
+            items: [
+              "Düşük Gerinimli Kazık Bütünlük Testi (PIT / ASTM D5882): Kazık başına el çekici ile vurularak ivmeölçer yardımıyla ses dalgasının kazık ucu boyunca yansıması izlenir. Kazıkta boğulma, çatlak, boşluk veya süreksizlik olup olmadığı tespit edilir.",
+              "Cross-Hole Sonic Logging (CSL / ASTM D6760): Donatı kafesine önceden bağlanan çelik rezervasyon boruları içerisinden ultrasonik problar sarkıtılarak betonun yoğunluğu ve homojenliği milimetrik olarak taranır.",
+              "Statik Eksenel Yükleme Deneyi (ASTM D1143): Test kazığı üzerine hidrolik krikolar ve reaksiyon kazıkları yardımıyla servis yükünün 1.5–2.0 katı yük uygulanarak oturma-yük grafiği çizilir."
+            ]
           }
         ]
       }
     ],
     faq: [
       {
-        question: "Fore kazık hangi zemin tiplerinde daha uygundur?",
+        question: "Fore kazık nedir ve neden yapılır?",
         answer:
-          "Fore kazıklar, iyi derecede sıkışmış zeminlerden geçirimsiz tabakalara kadar geniş bir yelpazede kullanılabilir. Proje gereksinimleri ve yükleme tipleri belirleyici olur."
+          "Fore kazık, zayıf zeminlerde bina yüklerini derindeki sağlam zemin veya kaya tabakalarına aktarmak amacıyla açılan kuyuya donatı kafesi indirilip yerinde beton dökülerek oluşturulan betonarme derin temel elemanıdır. Aşırı oturmaları ve bina hasarlarını önler."
       },
       {
-        question: "Fore kazık ve diğer kazık türleri arasındaki fark nedir?",
+        question: "Fore kazık çapları kaç cm olur?",
         answer:
-          "Fore kazık, sahada yerinde üretilen sondajlı bir kazık tipidir. Diğer prefabrik kazıklar ise fabrikada üretildikten sonra yerleştirilir."
+          "Uygulamada yaygın olarak Ø65 cm, Ø80 cm, Ø100 cm, Ø120 cm ve Ø150 cm çaplarında imal edilir. Projenin bina yüklerine ve zemin özelliklerine göre geoteknik mühendisler tarafından belirlenir."
+      },
+      {
+        question: "Fore kazık delgisinde kuyu çökmesi nasıl engellenir?",
+        answer:
+          "Zeminin yapısına göre iki yöntem kullanılır: Göçüntülü üst tabakalarda çelik muhafaza borusu (casing) çakılır; sulu ve derin zeminlerde ise kuyu içi bentonit veya polimer çamuru doldurularak hidrostatik basınçla çeperler korunur."
+      },
+      {
+        question: "Tremi borusu nedir ve neden kullanılır?",
+        answer:
+          "Tremi borusu, betonun serbest düşerek ayrışmasını veya kuyu içindeki su ve çamurla karışmasını önleyen çelik boru sistemidir. Beton kuyu tabanından yukarı doğru basılır ve tremi ucu sürekli taze betonun içinde tutulur."
+      },
+      {
+        question: "Fore kazık kaç metre derinliğe kadar yapılabilir?",
+        answer:
+          "Modern hidrolik rotary makinelerle zemin koşullarına bağlı olarak 15 metreden 60 metreye kadar derinlikte fore kazık imalatı başarıyla gerçekleştirilebilir."
+      },
+      {
+        question: "Kesişen ve teğet fore kazık iksa perdesi nedir?",
+        answer:
+          "Derin kazılarda yanal toprak itkisini ve yeraltı suyunu tutmak için kazıkların yan yana dizilmesidir. Teğet kazıklar birbirine değerken, kesişen (secant) kazıklar birbirinin içine geçerek tam su geçirimsizlik sağlar."
+      },
+      {
+        question: "Fore kazık kalite kontrolü nasıl yapılır?",
+        answer:
+          "Her kazıktan alınan taze beton numuneleri 7 ve 28 günlük basınç testine tabi tutulur. Priz sonrasında kazıklara PIT (kazık süreklilik / bütünlük testi) uygulanarak gövdede boşluk veya kusur olup olmadığı tahribatsız olarak kontrol edilir."
+      },
+      {
+        question: "Fore kazık ile mini kazık arasındaki fark nedir?",
+        answer:
+          "Fore kazık büyük çaplı (65–150 cm), yüksek taşıma kapasiteli ve ağır makineler gerektiren bir sistemdir. Mini kazık ise küçük çaplı (10–30 cm), daha hafif makinelerle dar ve alçak tavanlı alanlarda uygulanabilen bir sistemdir."
       }
     ],
-    relatedSlugs: ["jet-grout-ve-fore-kazik-farki", "fore-kazik-uygulama-asamalari"],
-    keywords: ["fore kazık nedir", "fore kazık uygulama", "derin temel"],
+    relatedSlugs: ["fore-kazik-uygulama-asamalari", "jet-grout-ve-fore-kazik-farki", "kazi-destek-sistemleri-nedir"],
+    keywords: [
+      "fore kazık nedir",
+      "fore kazık birim fiyat",
+      "TS EN 1536 fore kazık",
+      "fore kazık çapları",
+      "fore kazık delgi makinesi",
+      "fore kazık firmaları",
+      "tremi borusu beton dökümü",
+      "fore kazık iksa"
+    ],
     published: true
   },
   {
@@ -2395,106 +2649,224 @@ export const knowledgeArticles: KnowledgeArticle[] = [
   },
   {
     slug: "dsm-nedir",
-    title: "DSM Nedir? Deep Soil Mixing Zemin İyileştirme Yöntemi",
-    seoTitle: "DSM (Derin Zemin Karıştırma) Nedir? Deep Soil Mixing Yöntemleri | YER6",
-    description: "DSM (Deep Soil Mixing - Derin Zemin Karıştırma), zemin ve çimento şerbetinin yerinde karıştırılmasıyla oluşturulan kolonlardır. Taş kolon ve jet grout ile kıyaslamalı zemin iyileştirme rehberi.",
-    excerpt: "DSM yani Derin Zemin Karıştırma, yumuşak kil ve gevşek kum zeminlerde taşıma kapasitesini artırmak, oturmayı kontrol etmek ve sıvılaşmayı önlemek için kullanılan modern bir zemin iyileştirme yöntemidir.",
+    title: "DSM Nedir? TS EN 14679 Standartlarında Derin Zemin Karıştırma (Deep Soil Mixing) Kılavuzu",
+    seoTitle: "DSM (Deep Soil Mixing) Nedir? Derin Zemin Karıştırma Esasları | YER6",
+    description:
+      "DSM (Deep Soil Mixing) nedir? TS EN 14679 standardında mekanik karıştırma, tek ve çift akslı sistemler, bağlayıcı dozajı, taş kolon ve jet grout kıyaslaması.",
+    excerpt:
+      "DSM (Deep Soil Mixing – Derin Zemin Karıştırma); özel tasarımlı tek veya çok akslı mekanik karıştırıcı bıçakların zemin içinde dönerek çimento şerbetini mevcut zemin matriksiyle yüksek basınç kullanmaksızın yerinde homojen olarak karıştırması prensibine dayanan, geniş alanlarda yüksek hız ve sıfır çamur atığı ile zemin-çimento kolonları üreten çevre dostu bir zemin iyileştirme yöntemidir.",
     category: "DSM",
-    readingTime: "9 dk",
+    readingTime: "16 dk",
     publishedAt: "2026-06-23",
-    updatedAt: "2026-06-23",
-    heroLabel: "DSM Zemin İyileştirme",
-    introduction: "DSM (Deep Soil Mixing – Derin Zemin Karıştırma), zemin katmanları içinde dönen bir aks yardımıyla çimento şerbetinin zemin ile karıştırılarak zemin-çimento kolonları oluşturulduğu yerinde zemin iyileştirme yöntemidir. Düşük titreşim, hızlı ilerleme ve geniş uygulama kapsamıyla endüstriyel projeler başta olmak üzere altyapı iyileştirmesinde sıkça tercih edilir.",
+    updatedAt: "2026-09-25",
+    heroLabel: "DSM Bilgi Merkezi",
+    introduction:
+      "DSM (Deep Soil Mixing / Derin Zemin Karıştırma), modern geoteknik mühendisliğinde yumuşak killi, gevşek siltli ve kumlu zeminlerin taşıma kapasitesini artırmak, toplam ve farklı oturmaları kontrol altına almak ve deprem kaynaklı sıvılaşma riskini sıfırlamak için kullanılan en ekonomik ve çevre dostu zemin iyileştirme teknolojilerinden biridir. YER6 Geoteknik olarak, TS EN 14679 standartlarına tam uyumlu yüksek torklu tek ve çift akslı derin karıştırma filomuzla Türkiye genelinde endüstriyel tesisler, lojistik depolar ve altyapı projeleri için yüksek performanslı zemin-çimento kolonları inşa ediyoruz.",
     sections: [
       {
-        id: "calisma-prensibi",
-        title: "DSM Nasıl Çalışır?",
+        id: "dsm-tanimi-ve-calisma-mekanigi",
+        title: "DSM Nedir ve Mekanik Karıştırma Mekaniği Nasıl Çalışır?",
         blocks: [
           {
             type: "paragraph",
-            content: "DSM uygulamasında, özel bir delgi aletinin ucuna monte edilen karıştırıcı kanatlar zemine indirilir. Aynı anda pompayla basılan çimento şerbeti, zemin ile karıştırılarak homojen bir zemin-çimento kütlesi oluşturulur."
+            content:
+              "DSM (Derin Zemin Karıştırma); ucunda özel geometrili karıştırıcı kanatlar ve nozüller bulunan tek veya çoklu burgu millerinin (auger shafts), hidrolik tork motorları vasıtasıyla zemine döndürülerek daldırılması ve bu esnada kuyu içine kontrollü debide çimento şerbeti enjekte edilerek mevcut zeminin yerinde mekanik olarak harmanlanması işlemidir."
           },
           {
-            type: "list",
-            title: "Temel çalışma adımları",
-            items: [
-              "Çimento şerbeti laboratuvarda belirlenen oranda hazırlanır",
-              "Karıştırıcı aks zemine belirlenen derinliğe indirilir",
-              "İniş ve çıkış sırasında çimento şerbeti enjekte edilir",
-              "Zemin-çimento karışımı homojen biçimde oluşur",
-              "Kürlenmiş kolonun kalitesi karot ve basınç testleriyle doğrulanır"
-            ]
-          }
-        ]
-      },
-      {
-        id: "dsm-cesitleri",
-        title: "DSM Sistem Çeşitleri",
-        blocks: [
-          {
             type: "paragraph",
-            content: "DSM sistemleri genel olarak tek aks (single axis) ve çift aks (twin shaft) olmak üzere iki gruba ayrılır. Çift aks sistemler daha yüksek günlük ilerleme kapasitesi sunarak büyük ölçekli projelerde ekonomik avantaj sağlar."
-          },
-          {
-            type: "list",
-            items: [
-              "Tek aks DSM: Küçük ve orta ölçekli alanlar için uygundur",
-              "Çift aks DSM: Yüksek günlük üretim kapasitesi, büyük alanlar için idealdir",
-              "Jet karıştırma (CDM): Yüksek basınçlı jet desteğiyle DSM; zor geçimli zeminlerde kullanılır"
-            ]
-          }
-        ]
-      },
-      {
-        id: "kullanim-alanlari",
-        title: "DSM Kullanım Alanları",
-        blocks: [
-          {
-            type: "list",
-            title: "DSM'nin tercih edildiği proje tipleri",
-            items: [
-              "Endüstriyel tesis ve depo zemin platformu iyileştirmesi",
-              "Raylı sistem ve karayolu alt yapısı stabilizasyonu",
-              "Lojistik merkezi ve fabrika temeli oturma kontrolü",
-              "Sıvılaşmaya yatkın zemin güçlendirme",
-              "Deniz dolgusu ve yumuşak zemin stabilizasyonu",
-              "İksa perdesi olarak zemin geçirimsizlik uygulaması"
-            ]
-          }
-        ]
-      },
-      {
-        id: "tasarim",
-        title: "DSM Tasarım Kriterleri",
-        blocks: [
-          {
-            type: "paragraph",
-            content: "DSM tasarımı iki temel adımdan oluşur: Laboratuvar karışım tasarımı ve saha uygulama tasarımı. Laboratuvarda zemin numuneleri ile farklı çimento dozajlarında karıştırma yapılarak hedef mukavemet değerini karşılayan optimum dozaj belirlenir."
+            content:
+              "Jet grout yönteminin aksine DSM'de 400 bar gibi yıkıcı bir hidrolik erozyon basıncı kullanılmaz; bunun yerine 10 ila 25 bar gibi düşük bir enjeksiyon basıncıyla çimento şerbeti beslenirken mekanik bıçakların parçalama ve yoğurma torku devreye girer. Çimento hamuru ile zemin daneleri arasında gerçekleşen pozzolanik reaksiyonlar ve kalsiyum silikat hidrat (C-S-H) kristalleri oluşumu sayesinde, gevşek zemin yerinde homojen, yarı rijit ve monolitik bir zemin-çimento kolonuna (soil-cement column) dönüşür."
           },
           {
             type: "note",
-            title: "Hedef mukavemet değeri",
-            content: "DSM kolonlarında unconfined sıkıştırma mukavemeti (qu) genellikle 500 kPa ile 3000 kPa arasında hedeflenir. Bu değer zemin türü, bağlayıcı dozajı ve kürleme koşullarına bağlıdır."
+            title: "Mühendislik Standart Referansı",
+            content:
+              "Türkiye ve Avrupa geoteknik şartnamelerinde DSM projeleri, TS EN 14679 'Özel Geoteknik İşlerin Uygulanması - Derin Zemin Karıştırma' standardı ile TBDY 2018 (Türkiye Bina Deprem Yönetmeliği) Bölüm 16 zemin iyileştirme kriterlerine göre projelendirilir ve kabul edilir."
+          }
+        ]
+      },
+      {
+        id: "dsm-sistem-turleri-tek-ve-cok-aksli-sistemler",
+        title: "DSM Sistem Türleri: Tek Aks, Çift Aks ve Çoklu Bıçak Teknolojisi",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Saha zemin profilinin sertliğine, projenin toplam metrajına ve günlük iş programı hızına bağlı olarak şantiyede farklı mekanik konfigürasyonlar tercih edilir:"
+          },
+          {
+            type: "list",
+            title: "Mekanik Karıştırma Konfigürasyonları",
+            items: [
+              "Tek Akslı DSM (Single Shaft): Genellikle Ø60 cm ile Ø100 cm çapındaki karıştırıcı takımın tek bir hidrolik burgu mili üzerinden çalışmasıdır. Kompakt yapısıyla kentsel sahalarda, orta ölçekli projelerde ve derin kazı köşelerinde yüksek hassasiyet sunar.",
+              "Çift Akslı DSM (Twin Shaft / Bi-Axial): Yan yana konumlandırılmış iki bağımsız milin ters yönlerde (zıt rotasyonla) dönerek aynı anda birbirine geçmeli iki kolonu tek seferde imal etmesidir. Çift aks sistemler devasa endüstriyel platformlarda, lojistik depolarında ve otoyol dolgularında günlük 400–800 metre tül üretim hızına ulaşarak olağanüstü bir zaman ve maliyet avantajı sağlar.",
+              "Cutter Soil Mixing (CSM): İki yatay tamburlu dişli kesici başlığın zemin içinde dönerek dikdörtgen panel şeklinde zemin-çimento perdesi üretmesidir; özellikle derin kazı sızdırmazlık perdelerinde tercih edilir."
+            ]
+          }
+        ]
+      },
+      {
+        id: "dsm-uygulama-protokolu-ve-santiye-adimlari",
+        title: "Adım Adım DSM Şantiye Uygulama Protokolü",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "DSM imalatının başarısı, dönme torku, iniş-çıkış hızı ve enjekte edilen şerbet debisinin bilgisayarlı veri kayıt (data-logger) sistemleriyle anlık izlenmesine bağlıdır. İmalat 4 temel fazda tamamlanır:"
+          },
+          {
+            type: "list",
+            items: [
+              "1. Aplikasyon ve Şakül Doğrulaması: Delgi kulesi kolon eksenine getirilir; lazer ve elektronik eğim ölçerlerle düşeylik sapmasının %1'in altında olduğu kontrol edilir.",
+              "2. İniş ve Ön Parçalama Fazı (Penetration): Karıştırıcı aks zemin içine dönerken, bıçakların aşınmasını ve tıkanmasını önlemek amacıyla düşük debide ön şerbet (veya hava/su desteği) verilerek zemin matriksi yumuşatılır ve tasarım taban kotuna inilir.",
+              "3. Karıştırma ve Ana Bağlayıcı Enjeksiyonu: Taban kotuna ulaşıldığında kuyu tabanı 1-2 dakika ters yönde döndürülerek taban tıkacı oluşturulur; ardından tasarlanan net çimento şerbeti hacmi tabandan yukarıya doğru enjekte edilmeye başlanır.",
+              "4. Geri Çekilme ve Homojenizasyon (Withdrawal): Karıştırıcı takım kontrollü hızla (örn. 0.5–1.0 m/dk) ve yüksek rotasyonla yukarı çekilir. Bıçaklar şerbeti zeminle tekrar tekrar harmanlayarak kolon boyunca homojen bir karışım sağlar."
+            ]
+          }
+        ]
+      },
+      {
+        id: "kullanim-alanlari-ve-genis-platform-projeleri",
+        title: "DSM Nerelerde ve Hangi Projelerde Tercih Edilir?",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "DSM, özellikle geniş taban alanına yayılan ve kütlesel zemin iyileştirmesi gerektiren mühendislik yapılarında tartışmasız en ekonomik yöntemdir:"
+          },
+          {
+            type: "list",
+            items: [
+              "Endüstriyel Tesis ve Fabrika Zeminleri: Ağır makine yükleri, yüksek raflı depolama sistemleri ve forklift trafiğine maruz kalan fabrika zemin betonlarının altındaki oturmaları engelleme.",
+              "Lojistik Merkezleri ve Antrepolar: On binlerce metrekarelik zemin platformlarında taşıma gücünü homojen hale getirme.",
+              "Karayolu, Otoyol ve Demiryolu Dolgu Altı İyileştirmesi: Yumuşak alüvyon zeminlerde yol oturmalarını ve dolgu göçmelerini önleme.",
+              "Depremde Sıvılaşmaya Karşı Izgara / Kafes Hücreleri: Birbirini kesen DSM kolonları ile zemin hücrelere bölünerek yanal deformasyonlar ve sıvılaşma kaynaklı oturmalar sıfıra indirilir.",
+              "Liman, Kıyı ve Deniz Dolgusu Stabilizasyonu: Yüksek su tablasına sahip suya doygun sahillere inşa edilen depolama alanları."
+            ]
+          }
+        ]
+      },
+      {
+        id: "baglayici-recetesi-ve-laboratuvar-tasarimi",
+        title: "Bağlayıcı Dozajı, Çimento/Kireç Oranları ve Tasarım",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "TS EN 14679 standardı uyarınca sahaya inmeden önce zemin etüt sondajlarından alınan zemin numuneleri üzerinde laboratuvarda karışım ön tasarımı (pre-design) yapılır. Doğal zemin su içeriği ($w_n$), organik madde oranı ve dane dağılımı incelenir."
+          },
+          {
+            type: "paragraph",
+            content:
+              "Şantiyede en yaygın uygulanan 'Islak Yöntem'de (Wet Soil Mixing), su/çimento ağırlık oranı genellikle 0.8:1 ile 1.2:1 arasında ayarlanır. Bir metreküp zemine zerk edilen kuru bağlayıcı miktarı zemin türüne göre 150 kg/m³ ile 350 kg/m³ arasında değişir. Hedeflenen 28 günlük serbest basınç mukavemeti ($q_u$) projeye göre 1.0 MPa ile 4.0 MPa arasındadır."
+          },
+          {
+            type: "note",
+            title: "Organik Zeminlerde Kireç Takviyesi",
+            content:
+              "Yüksek plastisiteli ve organik içerikli killerde sadece çimento kullanılması priz süresini uzatabilir. Bu zeminlerde çimentoya %10–25 oranında sönmüş kireç katkısı yapılarak katyon değişimi ve flokülasyon reaksiyonları hızlandırılır."
+          }
+        ]
+      },
+      {
+        id: "dsm-avantajlari-ve-atik-yonetimi",
+        title: "DSM Yönteminin Jet Grout ve Kazıklara Göre Üstünlükleri",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Geleneksel derin temel ve enjeksiyon sistemleriyle kıyaslandığında DSM teknolojisi şu benzersiz avantajları sağlar:"
+          },
+          {
+            type: "list",
+            items: [
+              "Sıfır Çamur Atığı (Zero Spoil): Jet grout uygulamasında çıkan devasa deburbe çamuru havuzları ve hafriyat nakliyesi maliyeti DSM'de yoktur. Zemin yerinde karıştırıldığı için kuyu ağzından çıkan malzeme ihmal edilebilir düzeydedir.",
+              "Ekonomik Maliyet ve Yüksek Hız: Geniş metrajlarda birim metre tül maliyeti jet grout veya fore kazığa oranla %40–60 daha ekonomiktir.",
+              "Sıfır Titreşim ve Komşu Yapı Güvenliği: Delgi ve karıştırma hidrolik torkla yapıldığından çakma kazıklar gibi çevre yapılarda çatlak veya dinamik hasar riski oluşturmaz.",
+              "Çevre Dostu Düşük Karbon Salımı: Yüksek basınç dizel pompaları gerektirmediği için yakıt tüketimi ve karbon ayak izi son derece düşüktür."
+            ]
+          }
+        ]
+      },
+      {
+        id: "dsm-vs-jet-grout-vs-tas-kolon-karsilastirmasi",
+        title: "DSM vs Jet Grout vs Taş Kolon Karşılaştırma Matrisi",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Zemin iyileştirme projelerinde yöntem seçiminde dikkate alınması gereken teknik kriterler:"
+          },
+          {
+            type: "list",
+            items: [
+              "DSM (Deep Soil Mixing): Yumuşak kil, silt ve gevşek kumlarda mekanik karıştırma yapar; deburbe atığı yoktur; geniş alanlarda çok hızlı ve ekonomiktir.",
+              "[Jet Grout](/services/jet-grout/): 400 bar yüksek basınçla her türlü heterojen zeminde ve dar kentsel alanlarda uygulanabilir; deburbe çamuru çıkar; su geçirimsizliği mükemmeldir.",
+              "Taş Kolon (Vibro Stone Column): Çimento bağlayıcı kullanmaz; kırmataş sıkıştırmasıyla drenaj ve sürtünme artışı sağlar; kohezyonsuz zeminlerde oturma ve sıvılaşma kontrolünde tercih edilir."
+            ]
+          }
+        ]
+      },
+      {
+        id: "kalite-kontrol-karot-ve-plaka-yukleme-testleri",
+        title: "Kalite Güvencesi: Yaş Numune Alma, Karot ve Plaka Yükleme Deneyleri",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "DSM kolonlarının tasarım taşıma gücünü ve homojenliğini doğrulamak amacıyla TS EN 14679 kapsamında üç aşamalı kalite kontrol süreci işletilir:"
+          },
+          {
+            type: "list",
+            items: [
+              "Taze Karışımdan Yaş Numune Alma (Wet Grab Sampling): İmalatın hemen ardından kolonun farklı derinliklerinden özel numune alma aparatıyla taze zemin-çimento harcı alınarak silindir kalıplara doldurulur. 7, 14 ve 28 günlük basınç mukavemetleri test edilir.",
+              "Prizini Almış Kolondan Karot Alımı: 28 gün sonra kolon gövdesinden tam boy karotiyerle karot numuneleri çıkarılarak TS EN 12390-3 standardına göre serbest basınç dayanımı (UCS) belirlenir.",
+              "Kolon Üzeri Statik Plaka Yükleme Deneyi: Kolon başına rijit çelik plaka yerleştirilerek hidrolik krikoyla tasarım yükünün 1.5 katı basma yükü uygulanır; oturma-zaman deformasyon grafiği çıkartılır."
+            ]
           }
         ]
       }
     ],
     faq: [
       {
-        question: "DSM ile jet grout arasındaki temel fark nedir?",
-        answer: "DSM, karıştırıcı kanatlarla zemini mekanik olarak karıştırırken, jet grout yüksek basınçlı sıvı jetiyle zemini parçalayarak kolon oluşturur. DSM daha düşük basınçla çalışır ve geniş alanlarda ekonomiktir."
+        question: "DSM (Deep Soil Mixing) nedir ve ne işe yarar?",
+        answer:
+          "DSM (Derin Zemin Karıştırma), mekanik burgu bıçakları ile zeminin çimento şerbetiyle yerinde harmanlanarak zemin-çimento kolonları oluşturulması yöntemidir. Amacı zayıf zeminlerin taşıma gücünü artırmak, oturmaları engellemek ve depremde sıvılaşmayı önlemektir."
       },
       {
-        question: "DSM hangi zeminlerde uygulanmaz?",
-        answer: "Çakıl ve iri dane içeriği yüksek zeminlerde karıştırıcı kanatların geçişi zorlaşır ve DSM verimliliği düşer. Bu durumda jet grout veya vibro kompaksiyon daha uygun seçenek olabilir."
+        question: "DSM ile Jet Grout arasındaki temel fark nedir?",
+        answer:
+          "Jet Grout 300–600 bar gibi çok yüksek basınçlı püskürtmeyle zemini parçalayıp dışarı çamur (deburbe) atarken; DSM düşük basınçla döner mekanik bıçaklarla zemini yerinde yoğurur. DSM'de çamur atığı neredeyse sıfırdır ve geniş platformlarda çok daha ekonomiktir."
       },
       {
-        question: "DSM kolonu ne kadar mukavemet sağlar?",
-        answer: "Zemin tipine ve çimento dozajına göre genellikle 0,5 MPa ile 3 MPa arasında unconfined basınç mukavemeti elde edilir. Organik içerikli zeminlerde daha yüksek dozaj veya kireç katkısı gerekebilir."
+        question: "DSM kolon çapı kaç cm olur ve ne kadar derine inebilir?",
+        answer:
+          "DSM kolon çapları tek akslı makinelerde genellikle 60 cm ile 100 cm, çift akslı makinelerde ise birbirine geçmeli 2x80 cm veya 2x100 cm olur. Modern ekipmanlarla 15 ila 25 metre derinliğe kadar başarıyla inilebilir."
       },
       {
-        question: "DSM oturma sorunlarını çözer mi?",
-        answer: "Evet. DSM kolon ağı, zemin taşıma kapasitesini artırarak hem toplam oturmayı hem de fark oturmayı önemli ölçüde azaltır. Performans hedefleri proje başında belirlenir ve tasarım buna göre yapılır."
+        question: "DSM hangi zeminlerde başarılı sonuç verir?",
+        answer:
+          "Yumuşak ve orta katı killer, siltli zeminler, gevşek alüvyon kumları ve deniz dolgularında olağanüstü verimlidir. İri bloklu kaya dolguları veya sert çakıllı zeminlerde burgu bıçakları zorlanabileceğinden diğer yöntemler değerlendirilir."
+      },
+      {
+        question: "DSM çamur hafriyatı çıkarır mı?",
+        answer:
+          "Hayır, DSM yerinde harmanlama prensibiyle çalıştığı için dışarı neredeyse hiç zemin çıkarmaz. Bu özelliği sayesinde şantiyede deburbe çamuru havuzu kurma ve kamyonlarla çamur hafriyatı taşıma maliyetini tamamen ortadan kaldırır."
+      },
+      {
+        question: "DSM kolonlarının mukavemeti ne kadardır?",
+        answer:
+          "Zemin özelliklerine ve çimento dozajına bağlı olarak 28 günlük serbest basınç dayanımı genellikle 1.0 MPa ile 4.0 MPa (10–40 kg/cm²) arasında hedeflenir. Bu mukavemet, yumuşak bir zeminin taşıma kapasitesini 3 ila 6 kat artırır."
+      },
+      {
+        question: "DSM sıvılaşmayı nasıl önler?",
+        answer:
+          "Deprem esnasında gevşek suya doygun kumlarda oluşan boşluk suyu basıncı zemin danelerini birbirinden ayırarak sıvılaşmaya yol açar. Birbirine ızgara veya hücre şeklinde bağlanan rijit DSM kolonları, zemin kütlesinin kayma deformasyonunu kısıtlar ve sıvılaşmayı engeller."
+      },
+      {
+        question: "DSM kalite kontrolü nasıl yapılır?",
+        answer:
+          "İmalat sırasında bilgisayarlı sensörlerle tork ve çimento debisi kaydedilir. İmalat sonrasında taze karışımdan alınan numuneler ve 28 günlük priz sonrasında kolon gövdesinden alınan karotlar laboratuvarda tek eksenli basınç deneyine tabi tutulur."
       }
     ],
     relatedSlugs: ["dsm-nasil-uygulanir", "dsm-malzeme-secinimi", "jet-grout-ve-dsm-farki"],
@@ -2502,9 +2874,11 @@ export const knowledgeArticles: KnowledgeArticle[] = [
       "DSM nedir",
       "deep soil mixing nedir",
       "derin zemin karıştırma",
+      "TS EN 14679 DSM",
       "DSM zemin iyileştirme",
-      "zemin çimento kolon",
-      "DSM avantajları"
+      "DSM birim fiyat",
+      "çift akslı DSM",
+      "zemin çimento kolonu"
     ],
     published: true
   },
@@ -3129,33 +3503,229 @@ export const knowledgeArticles: KnowledgeArticle[] = [
   },
   {
     slug: "ankraj-nedir",
-    title: "Ankraj Nedir? Öngermeli Ankraj Uygulaması ve Kullanım Alanları",
-    seoTitle: "Ankraj Nedir? Zemin Ankrajı, İksa ve Öngermeli Ankraj Uygulamaları | YER6",
-    description: "Zemin ankrajı nedir? Derin kazı iksası, şev stabilizasyonu, zemin çivisi ve ankrajlı fore kazık perde sistemlerinde kullanılan öngermeli ankraj yöntemleri.",
-    excerpt: "Ankraj; zemine açılan delgiye yerleştirilen çelik tendonun enjeksiyonla kenetlenmesi ve ön germe uygulanmasıyla yatay yükleri güvenle zemine aktaran bir sistemdir. Derin kazı iksası ve şev stabilizasyonunda kullanılır.",
+    title: "Ankraj Nedir? TS EN 1537 Standartlarında Öngermeli Zemin ve Kaya Ankrajı Rehberi",
+    seoTitle: "Ankraj Nedir? TS EN 1537 Öngermeli Zemin Ankrajı ve İksa Sistemleri | YER6",
+    description:
+      "Zemin ankrajı nedir? TS EN 1537 standardında geçici ve kalıcı öngermeli ankraj, tendon donatısı, serbest ve kök boyu, enjeksiyon ve çekme testi rehberi.",
+    excerpt:
+      "Zemin ankrajı (öngermeli ankraj); derin kazılarda oluşan yanal zemin ve yeraltı suyu basınçlarını karşılamak, şevleri stabilize etmek veya yapıları kaldırma kuvvetlerine karşı zemine sabitlemek amacıyla, açılan delgi kuyusuna yüksek mukavemetli çelik halat demetlerinin yerleştirilip kök bölgesinin çimento şerbetiyle kilitlenmesi ve hidrolik krikoyla gerilerek kilitlenmesiyle çalışan aktif bir geoteknik iksa elemanıdır.",
     category: "Ankraj & İksa",
-    readingTime: "7 dk",
+    readingTime: "17 dk",
     publishedAt: "2026-07-11",
-    updatedAt: "2026-07-11",
-    heroLabel: "Ankraj",
-    introduction: "Ankraj, derin kazılarda perde sistemlerini destekleyen ve yamaçları stabilize eden en yaygın geoteknik çözümlerden biridir. Bu yazıda ankrajın ne olduğunu, nasıl uygulandığını ve nerelerde kullanıldığını açıklıyoruz.",
+    updatedAt: "2026-09-25",
+    heroLabel: "Ankraj & İksa Bilgi Merkezi",
+    introduction:
+      "Zemin ankrajı (öngermeli ankraj / prestressed ground anchor), derin kazı iksa mühendisliğinin ve şev stabilitesinin en hayati aktif emniyet unsurudur. Şehir merkezlerinde bitişik nizam derin bodrum kazıları yapılırken komşu binaların, ana arter yolların ve altyapı hatlarının milimetrik deplasman dahi yapmadan yerinde tutulmasını sağlar. YER6 Geoteknik olarak, TS EN 1537 standartlarında yüksek mukavemetli 7 telli çelik öngerme halatları, korozyon korumalı tendon sistemleri ve kalibre hidrolik krikolarımızla geçici ve kalıcı ankraj uygulamalarını anahtar teslim projelendirip sahada hayata geçiriyoruz.",
     sections: [
-      { id: "tanim", title: "Ankraj Nedir?", blocks: [
-        { type: "paragraph", content: "Ankraj; zemine belirli açı ve derinlikte açılan delgiye çelik tendon (halat veya çubuk) yerleştirilmesi, enjeksiyonla zemine kenetlenmesi ve ön germe uygulanarak yatay yüklerin güvenli biçimde zemine aktarılmasıdır. Geçici veya kalıcı olarak tasarlanabilir." },
-        { type: "list", title: "Temel bileşenler", items: ["Serbest boy ve kök (kenetlenme) bölgesi", "Çelik tendon (halat/çubuk)", "Enjeksiyon (kök aderansı)", "Ön germe ve kilitleme başlığı"] }
-      ]},
-      { id: "kullanim", title: "Nerelerde Kullanılır?", blocks: [
-        { type: "list", title: "Uygulama alanları", items: ["Derin kazılarda iksa perdesi desteği", "Şev ve yamaç stabilizasyonu", "İstinat yapılarının güçlendirilmesi", "Yüzer temel/kaldırma kuvvetine karşı ankastre"] },
-        { type: "note", title: "Kabul testi", content: "Ankrajlar kabul/çekme testleriyle taşıma kapasitesi açısından doğrulanmalı; kalıcı sistemlerde korozyon koruması sağlanmalıdır." }
-      ]}
+      {
+        id: "ankraj-tanimi-ve-calisma-mekanigi",
+        title: "Zemin Ankrajı Nedir ve Aktif Yük Aktarım Prensibi Nasıl Çalışır?",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Zemin ankrajı; yatay ile genellikle 10° ila 20° açı yapacak şekilde zemine veya kayaya açılan silindirik delgi kuyusuna yüksek çekme dayanımlı çelik tendonların yerleştirilmesi, kök bölgesinin basınçlı çimento şerbeti ile enjekte edilerek çevre zemine aderansla kenetlenmesi ve şerbet prizini aldıktan sonra kuyu başından hidrolik krikoyla tasarım yükünde gerilerek kilitlenmesi işlemidir."
+          },
+          {
+            type: "paragraph",
+            content:
+              "Ankrajı geleneksel pasif iksa sistemlerinden (zemin çivisi veya konsol perdeler) ayıran en kritik özellik 'aktif' bir sistem olmasıdır. Pasif elemanlar yük taşıyabilmek için zeminin ve perdenin öne doğru hareket etmesini (deplasman yapmasını) beklerken; öngermeli ankraj henüz hafriyat kazısı ilerlemeden iksa perdesine yapay bir basma kuvveti uygular. Bu aktif ön yükleme sayesinde derin kazı perdesinin deformasyonu sıfıra yakın seviyelerde tutulur ve komşu yapılarda çatlama riski tamamen bertaraf edilir."
+          },
+          {
+            type: "note",
+            title: "Mühendislik Standart Referansı",
+            content:
+              "Türkiye'de ve uluslararası geoteknik şartnamelerde ankraj tasarımları, TS EN 1537 'Özel Geoteknik İşlerin Uygulanması - Zemin Ankrajları' standardı ile TBDY 2018 Bölüm 16 derin kazı güvenlik koşullarına göre yürütülür."
+          }
+        ]
+      },
+      {
+        id: "ankraj-bilesenleri-ve-anatomisi",
+        title: "Ankrajın Anatomisi: Serbest Boy, Kök Boyu ve Ankraj Kafası",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Bir öngermeli zemin ankrajı, boyunca farklı mühendislik görevleri üstlenen 3 ana bölümden oluşur:"
+          },
+          {
+            type: "list",
+            items: [
+              "Serbest Boy (Free Length / $L_{fr}$): Ankraj kafası ile kök bölgesi arasında kalan, çelik halatların zeminle temas etmeyerek serbestçe esneyebildiği bölgedir. Çelik tendonlar korozyona dayanıklı pürüzsüz polietilen (HDPE) kılıflar içine alınır ve içi korozyon önleyici gres yağıyla doldurulur. Serbest boy, aktif kayma kamasının (Rankine kayma düzlemi) en az 1.5–2.0 metre gerisine uzanmak zorundadır; minimum serbest boy şartnameler gereği 4.5–5.0 metredir.",
+              "Kök Boyu (Bonded Length / $L_b$): Ankraj yükünün zemine veya kayaya aktarıldığı kenetlenme bölgesidir. Çelik halatlar oluklu koruge boru içinde çimento harcı ile sarılır; çimento şerbeti çevre zemine sızarak yüksek bir sürtünme aderansı kurar. Kök boyu zemin direncine göre genellikle 5 ila 10 metre arasında boyutlandırılır.",
+              "Ankraj Kafası ve Kilitleme Plakası (Anchor Head): İksa perdesi veya göğüsleme kirişi yüzeyine oturan döküm ankraj plakası, çok delikli çelik kafa bloğu ve her bir halatı tekil olarak kilitleyen 3 parçalı konik çelik kamalardan (wedges) oluşur."
+            ]
+          }
+        ]
+      },
+      {
+        id: "gecici-ve-kalici-ankraj-turleri",
+        title: "Geçici vs Kalıcı Ankraj Sistemleri ve Korozyon Koruması",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Hizmet ömrüne ve çevre maruziyet koşullarına göre ankrajlar iki farklı sınıfta imal edilir:"
+          },
+          {
+            type: "list",
+            items: [
+              "Geçici Ankrajlar (Temporary Anchors): İnşaat süresince, yani temel ve bodrum perdeleri tamamlanıp dolgu yapılana kadar (maksimum 2 yıl) görev yapan sistemlerdir. Geçici ankrajlarda tek katmanlı plastik kılıf ve standart çimento enjeksiyonu yeterli görülür.",
+              "Kalıcı Ankrajlar (Permanent Anchors): Yapının tüm ekonomik ömrü boyunca (50–100 yıl) servis vermesi hedeflenen sistemlerdir (örneğin kalıcı istinat duvarları, liman rıhtımları, köprü kenar ayakları). Kalıcı ankrajlarda TS EN 1537 uyarınca çift kademeli korozyon kalkanı (double corrosion protection), epoksi kaplı tendonlar ve kafa bölgesinde paslanmaz sızdırmaz koruma çanları zorunludur.",
+              "Sökülebilir Geçici Ankrajlar (Removable Anchors): Komşu parsel sınırını ihlal etmemek adına, inşaat bitiminde krikoyla kökünden çözülerek çelik halatların kuyu içinden tamamen geri çekilmesine olanak tanıyan özel patentli sistemlerdir."
+            ]
+          }
+        ]
+      },
+      {
+        id: "tendon-secimi-ve-celik-halat-ozellikleri",
+        title: "Çelik Tendon Özellikleri: 7 Telli Öngerme Halatları",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Öngermeli zemin ankrajlarında taşıyıcı donatı olarak normal inşaat demiri değil; ASTM A416 Grade 270 veya EN 10138 standardında üretilen 7 telli, düşük gevşemeli (low relaxation), ultra yüksek mukavemetli çelik halatlar (öngerme toronları) kullanılır."
+          },
+          {
+            type: "list",
+            title: "Tendon Karakteristikleri",
+            items: [
+              "Halat Çapı: En yaygın olarak 0.6 inç (15.2 mm) veya 0.5 inç (12.7 mm) halatlar kullanılır.",
+              "Çekme Mukavemeti: Karakteristik akma dayanımı $f_{pk} = 1860$ MPa ($186 kg/mm^2$) mertebesindedir; bu normal donatı çeliğinin yaklaşık 4.5 katıdır.",
+              "Demet Sayısı ve Kapasite: Ankraj kuyusu içine projenin yük ihtiyacına göre 3'lü, 4'lü, 5'li veya 6'lı toron demetleri halinde tendon hazırlanır. Örneğin 4 halatlı bir 0.6\" ankrajın nihai kopma kapasitesi yaklaşık 1040 kN (~105 ton) olup, servis yükü 50–65 ton aralığında güvenle çalışır."
+            ]
+          }
+        ]
+      },
+      {
+        id: "adim-adim-saha-imalat-protokolu",
+        title: "Adım Adım Ankraj Şantiye Uygulama Protokolü",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Ankraj imalatı, yüksek hassasiyetli hidrolik delgi ve enjeksiyon disiplini gerektirir. Saha operasyonu 5 ana kademede yürütülür:"
+          },
+          {
+            type: "list",
+            items: [
+              "1. Delgi Operasyonu: Paletli mini delgi makineleriyle projede belirtilen açı (15°) ve çapta (genellikle Ø100–150 mm) delik açılır. Zemin gevşek veya sulu ise kuyu çökmesini önlemek için muhafaza borulu delgi (casing) uygulanır.",
+              "2. Kuyu Yıkama ve Temizlik: Delgi taban kotuna ulaşıldığında kuyu içi basınçlı hava veya suyla yıkanarak kuyu tabanındaki gevşek kırıntılar dışarı atılır.",
+              "3. Tendonun İndirilmesi: Hazırlanan tendon demeti, kuyu merkezinde kalmasını ve zeminle homojen temasını sağlayan plastik merkezleyiciler (centralizers) eşliğinde kuyuya itilir.",
+              "4. Birincil (Primer) Enjeksiyon: Su/çimento oranı 0.40–0.45 olan yüksek dayanımlı saf çimento şerbeti, enjeksiyon hortumuyla kuyu tabanından yukarı doğru temiz şerbet gelene kadar basılır.",
+              "5. İkincil Basınçlı Enjeksiyon (Gerektiğinde): Kohezyonlu zeminlerde kök aderansını artırmak için manşonlu boru (tüp à manchette) üzerinden 20–40 bar basınçla ilave enjeksiyon yapılır."
+            ]
+          }
+        ]
+      },
+      {
+        id: "ongerme-ve-kilitleme-prosesi",
+        title: "Öngerme Operasyonu ve Hidrolik Krikolu Kilitleme",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Kök bölgesindeki çimento şerbeti hedef küp basınç dayanımına (en az $f_{ck} = 30$ MPa; genellikle 7–10 gün) ulaştıktan sonra öngerme operasyonuna başlanır. Şantiye sahasında kalibre edilmiş çok delikli hidrolik germe krikosu ve hidrolik güç ünitesi ankraj kafasına monte edilir."
+          },
+          {
+            type: "paragraph",
+            content:
+              "Öngerme işlemi kademeli olarak (örneğin %25, %50, %75, %100 ve %125 test yükü adımlarıyla) uygulanır. Her kademede çelik halatların uzaması dijital komparatörlerle milimetrik olarak ölçülür. Teorik elastik uzama ile sahadaki fiili uzama karşılaştırılır; kök bölgesinin kayıp kaymadığı ve serbest boyun çalıştığı teyit edildikten sonra krikodan basınç düşürülerek kamalar kafa bloğuna oturtulur ve ankraj tasarım kilitleme yükünde ($P_0$) kilitlenir."
+          }
+        ]
+      },
+      {
+        id: "saha-kabul-deneyleri-ve-guvenlik-kriterleri",
+        title: "TS EN 1537 Saha Testleri: Uygunluk, Kabul ve Sünme Deneyleri",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "TS EN 1537 standardı, imal edilen zemin ankrajlarının performansının yerinde doğrulanmasını zorunlu kılar. Şantiyede gerçekleştirilen testler:"
+          },
+          {
+            type: "list",
+            items: [
+              "Kabul Deneyi (Acceptance Test): Sahadaki HER BİR ankraja istisnasız uygulanır. Ankraj, tasarım servis yükünün 1.25 ila 1.50 katına kadar çekilerek 15 dakika beklenir; yük kaybı ve sünme (creep rate) izlenir.",
+              "Uygunluk Deneyi (Suitability Test): İmalat başında farklı zemin katmanlarını temsil eden seçilmiş ankrajlarda daha uzun bekleme süreleriyle (60 dk) detaylı deformasyon analizi yapılır.",
+              "Araştırma Deneyi (Investigation Test): Proje öncesinde ankraj kökünün nihai zemin-şerbet aderans sınırını bulmak amacıyla ankraj kopma veya sıyrılma limitine kadar zorlanır."
+            ]
+          }
+        ]
+      },
+      {
+        id: "derin-kazi-iksa-sistemlerinde-ankraj-entegrasyonu",
+        title: "İksa Sistemleri Entegrasyonu: Fore Kazık ve Göğüsleme Kirişleri",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Öngermeli zemin ankrajları tek başlarına değil; derin kazı düşey elemanları ile bir bütün olarak çalışır. En sık uygulanan kombinasyonlar:"
+          },
+          {
+            type: "list",
+            items: [
+              "Ankrajlı [Fore Kazık İksa Perdesi](/services/fore-kazik/): Kazıkların önüne betonarme veya çift UPN/HEB çelik profillerden göğüsleme kirişi (waler beam) yapılarak ankraj yükü kazıklara dağıtılır.",
+              "Ankrajlı [Mini Kazık Perdesi](/services/mini-kazik/): Dar kentsel parsellerde mini kazık sırası arkasından ankraj delgisi yapılarak yüksek rijitlik sağlanır.",
+              "Diyafram Duvar ve Ankraj: Metro istasyonları ve aşırı derin su basmanlı kazılarda kesintisiz su geçirimsizlik ve sıfır deplasman kalkanı oluşturur."
+            ]
+          }
+        ]
+      }
     ],
     faq: [
-      { question: "Geçici ve kalıcı ankraj farkı nedir?", answer: "Geçici ankrajlar inşaat süresince görev yapar ve sökülebilir; kalıcı ankrajlar korozyon korumasıyla yapının ömrü boyunca çalışır." },
-      { question: "Ankraj hangi zeminlerde uygulanır?", answer: "Kaya, sert kil ve yeterli kenetlenme sağlayan zeminlerde etkilidir; kök bölgesi zemin dayanımına göre tasarlanır." },
-      { question: "Ankraj kalitesi nasıl doğrulanır?", answer: "Her ankraj ön germe sırasında test edilir; ayrıca seçili ankrajlarda çekme (kabul) testi yapılır." }
+      {
+        question: "Zemin ankrajı nedir ve ne amaçla kullanılır?",
+        answer:
+          "Zemin ankrajı, derin kazılarda oluşan yanal toprak ve su basınçlarını karşılamak amacıyla açılan kuyuya yüksek dayanımlı çelik halat demetlerinin yerleştirilip enjeksiyonla kenetlenmesi ve hidrolik krikoyla gerilerek kilitlenmesidir. Kazı perdesinin hareket etmesini ve komşu binaların çökmesini önler."
+      },
+      {
+        question: "Öngermeli ankraj ile zemin çivisi arasındaki fark nedir?",
+        answer:
+          "Öngermeli ankraj 'aktif' bir sistemdir; hidrolik krikoyla gerilerek perdeye ön yük uygular ve deformasyonu sıfıra yakın tutar. Zemin çivisi ise 'pasif' bir sistemdir; ancak zemin hareket edip deforme oldukça yük almaya başlar. Derin ve hassas kazılarda her zaman öngermeli ankraj tercih edilir."
+      },
+      {
+        question: "Serbest boy ve kök boyu ne demektir?",
+        answer:
+          "Serbest boy, çelik halatların kılıf içinde serbestçe esneyebildiği ve yükü kayma dairesinin gerisine taşıdığı sürtünmesiz bölümdür. Kök boyu ise çimento şerbetiyle zemin arasında aderans kurularak yükün zemine aktarıldığı kilitlenme bölgesidir."
+      },
+      {
+        question: "Geçici ve kalıcı ankraj farkı nedir?",
+        answer:
+          "Geçici ankrajlar inşaat süresince (en fazla 2 yıl) görev yapar ve binanın bodrum perdeleri tamamlanınca işlevi biter. Kalıcı ankrajlar ise yapının ömrü boyunca (50–100 yıl) hizmet verir ve paslanmaya karşı çift kademeli korozyon koruması (HDPE kılıf, epoksi, gres) içerir."
+      },
+      {
+        question: "Bir ankraj kaç ton yük taşır?",
+        answer:
+          "Ankrajın taşıma gücü kullanılan halat sayısına ve zemin direncine bağlıdır. Tipik bir 3 halatlı ankraj 35–45 ton, 4 halatlı ankraj 50–65 ton, 5 halatlı ankraj ise 70–85 ton güvenli servis yükü taşıyabilir."
+      },
+      {
+        question: "Ankraj hangi açıyla delinir?",
+        answer:
+          "Ankraj kuyuları genellikle yatayla 10° ila 20° (en yaygın 15°) aşağı eğimle delinir. Bu açı hem enjeksiyon şerbetinin kuyu tabanından kuyu ağzına doğru rahat dolmasını sağlar hem de kayma dairesini dik keser."
+      },
+      {
+        question: "Ankraj çekme testi (kabul testi) nasıl yapılır?",
+        answer:
+          "TS EN 1537 uyarınca şantiyedeki her bir ankraj, hidrolik germe krikosu ile servis yükünün 1.25 ila 1.50 katına kadar kademeli gerilir. Deformasyon ve sünme kriterleri sağlanırsa krikodan yük düşülerek kamalarla kilitlenir."
+      },
+      {
+        question: "Komşu parsel altına ankraj yapılabilir mi?",
+        answer:
+          "Evet, ancak yasal izinler veya komşu parsel protokolleri çerçevesinde uygulanır. İleride komşu parselde yapılacak kazılarda çelik halatların hafriyat makinesine takılmaması için inşaat bitiminde çekilebilen 'sökülebilir ankraj' sistemleri de sıkça kullanılır."
+      }
     ],
-    relatedSlugs: ["kazi-destek-sistemleri-nedir", "zemin-iyilestirme-risk-yonetimi", "saha-denetimi-numune-testleri"],
-    keywords: ["ankraj nedir", "öngermeli ankraj", "ankraj uygulaması", "iksa ankraj", "zemin ankrajı"],
+    relatedSlugs: ["kazi-destek-sistemleri-nedir", "fore-kazik-nedir", "saha-denetimi-numune-testleri"],
+    keywords: [
+      "ankraj nedir",
+      "öngermeli ankraj",
+      "TS EN 1537 ankraj",
+      "zemin ankrajı firmaları",
+      "ankraj birim fiyat",
+      "geçici ankraj kalıcı ankraj",
+      "ankraj çekme testi",
+      "iksa sistemleri"
+    ],
     published: true
   },
   {
@@ -4580,190 +5150,229 @@ export const knowledgeArticles: KnowledgeArticle[] = [
   // ————————————————————————————————————————————————————————————
   {
     slug: "mini-kazik-nedir",
-    title: "Mini Kazık (Mikro Kazık) Nedir? Uygulama ve Tasarım Esasları",
-    seoTitle: "Mini Kazık Nedir? Mikro Kazık Uygulaması ve Tasarımı | YER6",
+    title: "Mini Kazık Nedir? TS EN 14199 Standartlarında Mikro Kazık, İksa ve Temel Güçlendirme Rehberi",
+    seoTitle: "Mini Kazık Nedir? TS EN 14199 Mikro Kazık ve Temel Güçlendirme | YER6",
     description:
-      "Mini kazık (mikro kazık) nedir, nasıl imal edilir? Çap aralığı, donatı seçimi, enjeksiyon tipleri ve mevcut yapı altında güçlendirme uygulamaları.",
+      "Mini kazık (mikro kazık) nedir? TS EN 14199 standardında 100-300 mm çaplı kazıklar, kentsel dönüşüm bina altı güçlendirme, enjeksiyon tipleri ve yükleme testleri.",
     excerpt:
-      "Mini kazık; genellikle 90–300 mm çapında, yüksek dayanımlı donatı ve enjeksiyonla teşkil edilen küçük çaplı kazıktır. Dar ve düşük tavanlı alanlarda, mevcut yapı altında temel güçlendirmede tercih edilir.",
+      "Mini kazık (mikro kazık); 100 mm ile 300 mm çap aralığında açılan kuyuya yüksek dayanımlı nervürlü donatı, kalın etli çelik boru veya donatı kafesi yerleştirilerek çimento enjeksiyonu ile doldurulan, dar parsellerde ve düşük tavanlı kapalı mekanlarda derin temel ve iksa çözümü sunan yüksek sürtünme kapasiteli geoteknik yapı elemanıdır.",
     category: "Mini Kazık",
-    readingTime: "10 dk",
+    readingTime: "17 dk",
     publishedAt: "2026-07-28",
-    updatedAt: "2026-07-28",
+    updatedAt: "2026-09-25",
     heroLabel: "Mini Kazık Bilgi Merkezi",
     introduction:
-      "Mini kazık (mikro kazık), küçük çaplı delgi ile açılan ve içine donatı yerleştirilerek enjeksiyonla doldurulan derin temel elemanıdır. Büyük çaplı fore kazık ekipmanının giremediği dar, alçak tavanlı veya mevcut yapı içindeki sahalarda; yükü sağlam tabakalara aktarmak amacıyla kullanılır.",
+      "Mini kazık (mikro kazık / micropile), büyük çaplı fore kazık makinelerinin sığamadığı dar kentsel parsellerde, mevcut binaların alçak tavanlı bodrum katlarında ve eğimli şevlerde derin temel ve iksa perdesi teşkil etmek için geliştirilmiş ileri bir geoteknik mühendislik elemanıdır. YER6 Geoteknik olarak, TS EN 14199 standartlarına tam uyumlu kompakt paletli delgi makinelerimiz, yüksek basınçlı enjeksiyon sistemlerimiz ve uzman mühendis kadromuzla Türkiye genelinde kentsel dönüşüm temel altı güçlendirme (underpinning) ve derin kazı iksa projelerinde sıfır deformasyon garantili mini kazık çözümleri üretiyoruz.",
     sections: [
       {
-        id: "mini-kazik-nedir",
-        title: "Mini Kazık Nedir?",
+        id: "mini-kazik-tanimi-ve-yapisi",
+        title: "Mini Kazık (Mikro Kazık) Nedir ve Yapısal Çalışma Mekanizması Nasıl İşler?",
         blocks: [
           {
             type: "paragraph",
             content:
-              "Mini kazık, tipik olarak 90–300 mm çap aralığında açılan delginin içine çelik boru, nervürlü donatı veya çubuk sistem yerleştirilip çimento şerbeti ile doldurulmasıyla oluşturulan küçük çaplı bir kazıktır. Literatürde mikro kazık, mikropile veya root pile adlarıyla da anılır."
+              "Mini kazık; dönme (rotary) veya döner-darbeli (rotary percussive) delgi teknikleriyle zeminde 100 mm ila 300 mm çapında açılan kuyu içerisine çelik donatı yerleştirilmesi ve kuyu tabanından yukarı doğru yüksek mukavemetli saf çimento şerbeti basılarak zeminle monolitik bir bağ oluşturulması prensibine dayanan küçük çaplı derin temel kazığıdır."
           },
           {
             type: "paragraph",
             content:
-              "Yük aktarımı ağırlıklı olarak çevre sürtünmesiyle gerçekleşir; uç direnci katkısı büyük çaplı kazıklara göre daha sınırlıdır. Bu nedenle mini kazık tasarımında soket boyu, enjeksiyon tipi ve zemin-şerbet ara yüzeyindeki sürtünme direnci belirleyici parametrelerdir."
+              "Mini kazıklar büyük çaplı fore kazıklardan farklı olarak yükü ağırlıklı olarak 'çevre sürtünmesi' (skin friction) yoluyla çevre zemine aktarır. Küçük kuyu çapı nedeniyle uç direnci katkısı sınırlı kalırken, enjeksiyon şerbetinin delgi çeperindeki zemin boşluklarına basınçla nüfuz etmesi zemin-şerbet ara yüzeyinde çok yüksek bir aderans ve kayma direnci ($q_s$) meydana getirir. Özel yüksek mukavemetli donatı çubukları ve dikişsiz çelik borular sayesinde tek bir mini kazık 20 ila 80 ton arasında güvenli eksenel servis yükünü taşır."
           },
           {
             type: "note",
-            title: "Kısa cevap",
+            title: "Mühendislik Standart Referansı",
             content:
-              "Mini kazık, dar ve erişimi zor sahalarda yükü derindeki sağlam tabakalara aktaran, küçük çaplı ve donatılı enjeksiyon kazığıdır. En yaygın kullanım alanı mevcut binaların temel güçlendirmesidir."
+              "Türkiye'de ve uluslararası geoteknik şartnamelerde mini kazık projeleri, TS EN 14199 'Özel Geoteknik İşlerin Uygulanması - Mikro Kazıklar' standardı ile TBDY 2018 (Türkiye Bina Deprem Yönetmeliği) Bölüm 16 derin temel kurallarına göre tasarlanır ve test edilir."
           }
         ]
       },
       {
-        id: "nerede-kullanilir",
-        title: "Mini Kazık Nerelerde Kullanılır?",
-        blocks: [
-          {
-            type: "list",
-            title: "Tipik uygulama alanları",
-            items: [
-              "Mevcut binaların altında temel güçlendirme (underpinning)",
-              "Bodrum katı, sanayi tesisi veya işletmedeki yapı içinde düşük tavan yüksekliğinde imalat",
-              "Şehir içinde dar parsellerde büyük ekipmanın giremediği sahalar",
-              "Kazı sırasında komşu yapının temelinin desteklenmesi",
-              "Şev stabilitesi ve heyelan bölgelerinde zemin çivileme ile birlikte kullanım",
-              "Makine temellerinde ve lokal yük artışlarında ilave taşıma kapasitesi",
-              "Köprü ayaklarının ve istinat yapılarının güçlendirilmesi",
-              "Kayalık veya blok içeren zeminlerde delgi kolaylığı gereken durumlar"
-            ]
-          },
-          {
-            type: "paragraph",
-            content:
-              "Küçük ekipmanla çalışabilmesi, mini kazığı işletmenin durdurulamadığı fabrika ve tesislerde öne çıkarır. Uygulama sırasında oluşan titreşim, çakma kazıklara göre belirgin biçimde düşüktür; bu da hassas cihaz bulunan tesislerde tercih sebebidir."
-          }
-        ]
-      },
-      {
-        id: "imalat-asamalari",
-        title: "Mini Kazık İmalat Aşamaları",
-        blocks: [
-          {
-            type: "list",
-            title: "Saha uygulama sırası",
-            items: [
-              "Aplikasyon: kazık akslarının projeye göre sahada işaretlenmesi",
-              "Delgi: zemin koşuluna göre muhafaza borulu, burgulu veya darbeli-döner yöntemle delgi",
-              "Delgi temizliği: delik içindeki gevşek malzemenin su veya hava ile uzaklaştırılması",
-              "Donatı yerleştirme: çelik boru, nervürlü çubuk veya kafes sistemin merkezleyicilerle indirilmesi",
-              "Enjeksiyon: şerbetin delgi tabanından yukarı doğru, temiz şerbet gelene kadar basılması",
-              "Muhafaza çekimi: kullanıldıysa borunun kademeli çekilmesi ve seviye takviyesi",
-              "Başlık teşkili: kazık başının traşlanması, başlık kirişi veya plaka ile üstyapıya bağlanması"
-            ]
-          },
-          {
-            type: "warning",
-            title: "Enjeksiyon sürekliliği kritiktir",
-            content:
-              "Şerbet basımı delgi tabanından başlamalı ve kesintisiz sürdürülmelidir. Kesinti veya erken durdurma, kazık gövdesinde boşluk ve süreksizlik oluşturarak taşıma kapasitesini beklenenin çok altına düşürebilir."
-          }
-        ]
-      },
-      {
-        id: "enjeksiyon-tipleri",
-        title: "Enjeksiyon Tipleri ve Kapasiteye Etkisi",
+        id: "kentsel-donusum-ve-mevcut-bina-alti-guclendirme",
+        title: "Kentsel Dönüşüm ve Mevcut Yapı Altında Temel Güçlendirme (Underpinning)",
         blocks: [
           {
             type: "paragraph",
             content:
-              "Mini kazıklar enjeksiyon biçimine göre sınıflandırılır. Basit yerçekimi enjeksiyonundan tekrarlı basınçlı enjeksiyona doğru gidildikçe zemin-şerbet ara yüzeyindeki sürtünme direnci ve dolayısıyla taşıma kapasitesi artar."
+              "Mini kazık sisteminin inşaat sektöründeki en kritik ve vazgeçilmez uygulama alanı, mevcut oturmuş veya deprem riski taşıyan binaların temel altı güçlendirilmesidir (underpinning). Yüksek katlı binalarda kat ilavesi yapılması, kullanım amacının değişmesi veya temel altındaki zayıf zeminlerin oturma yapması durumunda mevcut binayı yıkmadan temeli kurtarmanın tek mühendislik yoludur."
           },
           {
             type: "list",
-            title: "Yaygın enjeksiyon türleri",
             items: [
-              "Yerçekimi (tremie) enjeksiyonu: şerbetin basınçsız doldurulması; en düşük kapasite artışı",
-              "Basınç altında enjeksiyon: muhafaza çekilirken basınç uygulanması; sürtünme direncinde artış",
-              "Sonradan (post-grouting) enjeksiyon: priz sonrası ilave enjeksiyonla ara yüzeyin sıkılaştırılması",
-              "Tekrarlı enjeksiyon (tüp à manchette): manşonlu boru ile kademeli ve tekrarlanabilir enjeksiyon"
+              "Alçak Tavan Çalışması (Low Headroom): Kule yüksekliği 2.0 ila 2.4 metreye kadar katlanabilen özel kauçuk paletli elektrikli veya dizel kompakt delgi makineleri, binanın bodrum kapısından içeri sokularak kolon ve perde kenarlarından delgi yapar.",
+              "Mevcut Radyenin Delinmesi: Karot makineleriyle mevcut radye temel delinir; mini kazık bu delikten sağlam ana kayaya soketlenir.",
+              "Yük Aktarımı (Epoksi Ankraj ve Başlık Kirişi): Mini kazığın üst başlığı mevcut temel ile donatılı betonarme başlıklar ve epoksi kimyasal ankrajlarla kilitlenerek üstyapı yükü eski zayıf zeminden alınıp doğrudan mini kazıklar üzerinden derindeki taşıyıcı tabakalara aktarılır."
             ]
-          },
-          {
-            type: "note",
-            title: "Tasarım girdisi",
-            content:
-              "Enjeksiyon tipi yalnızca imalat detayı değil, doğrudan tasarım parametresidir. Projede öngörülen enjeksiyon tipi değiştirilecekse taşıma kapasitesi yeniden hesaplanmalı ve yükleme testiyle doğrulanmalıdır."
           }
         ]
       },
       {
-        id: "kalite-kontrol",
-        title: "Mini Kazıkta Kalite Kontrol",
+        id: "derin-kazi-iksa-sistemlerinde-mini-kazik",
+        title: "Derin Kazı İksası: Mini Kazık + Püskürtme Beton + Ankraj Sistemi",
         blocks: [
-          {
-            type: "list",
-            title: "İzlenmesi gereken kayıtlar",
-            items: [
-              "Her kazık için delgi derinliği, süresi ve karşılaşılan zemin tanımı",
-              "Kullanılan şerbet hacmi ile teorik hacmin karşılaştırılması (fazla sarfiyat boşluk/kaçak işaretidir)",
-              "Şerbet su/çimento oranı ve alınan numunelerin basınç dayanımı",
-              "Enjeksiyon basıncı ve süresi",
-              "Donatı tipi, boyu, ek detayı ve merkezleyici aralığı",
-              "Statik yükleme testi ve gerekli görülen kazıklarda çekme testi sonuçları"
-            ]
-          },
           {
             type: "paragraph",
             content:
-              "Yükleme testi, mini kazık uygulamalarında hesabın saha gerçeğiyle doğrulanmasının en güvenilir yoludur. Test kazığı adedi ve yük seviyesi, proje büyüklüğü ve zemin belirsizliğine göre şartnamede tanımlanır."
+              "Şehir merkezlerindeki dar sokaklarda ve bitişik nizam yapı adalarında 30–40 tonluk dev fore kazık makinelerinin sığamadığı parsellerde [mini kazıklı iksa perdesi](/services/mini-kazik/) inşa edilir:"
+          },
+          {
+            type: "list",
+            items: [
+              "Sık Kazık Aksı: Genellikle 40–60 cm aks aralıklarıyla yan yana açılan Ø25–30 cm çaplı mini kazık dizisi oluşturulur.",
+              "Kuşak Kirişi ve [Öngermeli Ankraj](/services/ankraj/): Kazı kademeli olarak indirilirken mini kazıkların önüne çelik profillerden göğüsleme kirişi çekilir ve arkasından 15° eğimli öngermeli ankrajlar çakılarak kilitlenir.",
+              "Çelik Hasır ve Püskürtme Beton (Shotcrete): Kazık aralarından zemin dökülmesini engellemek için yüzeye Q188/Q221 çelik hasır çekilerek 10–15 cm kalınlığında C25/30 püskürtme beton uygulanır; rijit ve sıfır deplasmanlı bir iksa duvarı elde edilir."
+            ]
+          }
+        ]
+      },
+      {
+        id: "delgi-yontemleri-ve-makine-parki",
+        title: "Delgi Yöntemleri ve Kompakt Makine Parkı",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Mini kazık imalatında zeminin sertliğine ve yeraltı suyu durumuna göre farklı delgi teknikleri uygulanır:"
+          },
+          {
+            type: "list",
+            items: [
+              "Darbeli-Döner Delgi (DTH Tabanca / Down-The-Hole Hammer): Sert kaya, andezit, bazalt ve iri çakıllı bloklu formasyonlarda yüksek basınçlı hava kompresörü (12–20 bar) ile kuyu tabanındaki pnömatik tabancanın kayayı çekiçleyerek kırması yöntemidir. İlerleme hızı çok yüksektir.",
+              "Sürekli Burgulu Delgi (Continuous Flight Auger - CFA): Kohezyonlu killerde ve yumuşak kumlarda helezonik burgu ile zemini yukarı taşıyarak kuyu açma tekniğidir.",
+              "Muhafaza Borulu Delgi (Casing): Yeraltı suyu altında göçen alüvyon kumlarında çelik muhafaza borusu ile kuyu çeperi korunarak delgi yapılır; enjeksiyon basılırken boru geri çekilir."
+            ]
+          }
+        ]
+      },
+      {
+        id: "donati-alternatifleri-ve-enjeksiyon-sistemleri",
+        title: "Donatı Seçenekleri: Çelik Boru vs Dişli Çubuk vs Donatı Kafesi",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Mini kazığın yük taşıma kapasitesi ve eğilme direnci, kuyu içine yerleştirilen çelik elemanın türüyle belirlenir:"
+          },
+          {
+            type: "list",
+            items: [
+              "Dikişsiz Kalın Etli Çelik Boru (N80, J55 / API Standartları): Hem yüksek eksenel yükleri hem de kazı iksasındaki yanal kesme ve eğilme momentlerini karşılamak için kullanılan en dayanıklı donatı tipidir (örn. Ø114.3/8 mm veya Ø139.7/10 mm). Borular manşonlu dişli eklerle birbirine bağlanır.",
+              "Yüksek Dayanımlı Sürekli Dişli Çelik Çubuklar (SAS, Dywidag 500/550, 670/800): Özellikle sadece eksenel çekme veya basma yükü taşıyacak kazıklarda montaj kolaylığı ve tam boy diş avantajıyla tercih edilir.",
+              "Geleneksel Nervürlü Donatı Kafesi: Ø25–30 cm gibi daha geniş çaplı mini kazıklarda 4–6 adet boyuna nervürlü inşaat demiri (B420C/B500C) ve spiral etriyeden örülen kafes sistemidir."
+            ]
+          }
+        ]
+      },
+      {
+        id: "enjeksiyon-tipleri-ve-kapasite-siniflandirmasi",
+        title: "TS EN 14199 Enjeksiyon Tipleri: Tip A, Tip B, Tip C ve Tip D",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Avrupa ve Türk mikro kazık standardı TS EN 14199, enjeksiyon yöntemini ve zemin aderans mekanizmasını 4 temel kategoriye ayırır:"
+          },
+          {
+            type: "list",
+            items: [
+              "Tip A (Yerçekimi Enjeksiyonu): Çimento şerbeti kuyu tabanından tremi hortumuyla yerçekimi basıncıyla doldurulur. Yalnızca kuyu boşluğunu doldurur; zemin içine yayılma sınırlıdır.",
+              "Tip B (Düşük Basınçlı Enjeksiyon): Muhafaza borusu çekilirken kuyu ağzı kapatılarak 2 ila 10 bar basınç altında şerbet basılır; zemin sürtünmesi belirgin şekilde artar.",
+              "Tip C (Tek Seferlik Yüksek Basınçlı Enjeksiyon): Birincil enjeksiyon priz almadan önce özel enjeksiyon boruları vasıtasıyla zemin içine yüksek basınçla şerbet püskürtülür.",
+              "Tip D (Tekrarlı Manşonlu Enjeksiyon - Post-Grouting): Donatı borusunun dışına yerleştirilen manşonlu borular (tüp à manchette) üzerinden, şerbet sertleştikten sonra paker indirilerek 20–40 bar basınçla zemin çatlatılır ve tekrarlı enjeksiyon yapılır. Bu yöntemle zemin sürtünme kapasitesi 2 ila 3 katına çıkar."
+            ]
+          }
+        ]
+      },
+      {
+        id: "mini-kazik-vs-fore-kazik-karsilastirmasi",
+        title: "Mini Kazık vs Fore Kazık: Karar Kriterleri Matrisi",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Şantiyenizde mini kazık mı yoksa fore kazık mı kullanmanız gerektiğine karar verirken dikkate alacağınız kriterler:"
+          },
+          {
+            type: "list",
+            items: [
+              "Saha Erişimi ve Gabari: [Fore kazık](/services/fore-kazik/) kule yüksekliği 15–25 metre, ağırlığı 35–80 tondur; geniş açık şantiye gerektirir. Mini kazık makineleri ise 3–8 ton ağırlığında olup bina içine ve dar sokaklara rahatlıkla girer.",
+              "Yük Kapasitesi: Tekil kolon yükü 150 tonun üzerindeyse fore kazık daha ekonomiktir. Tekil yükler 30–70 ton civarındaysa veya mevcut bina güçlendiriliyorsa mini kazık tek mantıklı seçenektir.",
+              "Titreşim ve Komşu Hassasiyeti: Mini kazık hidrolik ve pnömatik çalıştığı için çevre binalarda çatlak veya rezonans riski oluşturmaz."
+            ]
+          }
+        ]
+      },
+      {
+        id: "saha-kalite-kontrolu-ve-statik-yukleme-testleri",
+        title: "Saha Kalite Kontrolü ve Statik Yükleme Testleri",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Mini kazıkların taşıma gücünün yerinde ispatlanması için şantiye sahasında titiz kalite kontrol aşamaları uygulanır:"
+          },
+          {
+            type: "list",
+            items: [
+              "Şerbet Karışım Kalitesi: Su/çimento oranı 0.45–0.50 arasında tutulur. Her dökümden alınan küp veya silindir numuneler 7 ve 28 günlük basınç testlerine tabi tutulur ($f_{ck} \ge 30$ MPa).",
+              "Statik Eksenel Basma Yükleme Testi (ASTM D1143): Test kazığı üzerine hidrolik krikolar ve deplasman komparatörleri bağlanarak servis yükünün 1.5–2.0 katı kademeli olarak uygulanır; oturma-yük eğrisi çıkartılır.",
+              "Eksenel Çekme Testi (ASTM D3689): Çekme kazıklarında zemin-şerbet sürtünme limitini doğrulamak için ankraj krikolarıyla çekme testi gerçekleştirilir."
+            ]
           }
         ]
       }
     ],
     faq: [
       {
-        question: "Mini kazık çapı kaç cm olur?",
+        question: "Mini kazık (mikro kazık) nedir ve ne işe yarar?",
         answer:
-          "Uygulamada yaygın çap aralığı 90–300 mm'dir. Çap; zemin koşulu, hedeflenen taşıma kapasitesi, kullanılacak donatı kesiti ve saha erişimine göre projelendirmeyle belirlenir."
+          "Mini kazık, genellikle 100 mm ile 300 mm çapında açılan kuyuya yüksek mukavemetli çelik donatı veya çelik boru yerleştirilip çimento enjeksiyonu ile doldurulan derin temel elemanıdır. Bina yüklerini sağlam zemin tabakalarına aktarır ve derin kazılarda iksa perdesi görevi görür."
       },
       {
-        question: "Mini kazık ile fore kazık arasındaki fark nedir?",
+        question: "Mini kazık çapları kaç cm olur?",
         answer:
-          "Fore kazık büyük çaplı (genellikle 60 cm ve üzeri), yüksek yükleri taşıyan ve uç direncinden de belirgin katkı alan bir derin temel elemanıdır. Mini kazık ise küçük çaplıdır, yükü ağırlıklı olarak çevre sürtünmesiyle aktarır ve büyük ekipmanın giremediği dar veya alçak tavanlı sahalarda uygulanabilir."
+          "Uygulamada en sık kullanılan çaplar Ø15 cm, Ø20 cm, Ø25 cm ve Ø30 cm'dir. Donatı olarak nervürlü inşaat demiri kafesi, dikişsiz çelik boru (casing) veya yüksek mukavemetli dişli çubuklar kullanılır."
       },
       {
-        question: "Mevcut binanın altına mini kazık yapılabilir mi?",
+        question: "Mevcut binanın bodrum katında mini kazık yapılabilir mi?",
         answer:
-          "Evet; mini kazığın en yaygın kullanım alanlarından biri mevcut yapıların temel güçlendirmesidir. Bodrum katında veya bina çevresinde küçük ekipmanla çalışılabilir. Ancak imalat sırası, yük aktarım detayı ve deformasyon izleme planı proje kapsamında tanımlanmalıdır."
+          "Evet. Mini kazık makinelerinin tavan yüksekliği 2 metrenin altına inebilen kompakt ve kauçuk paletli modelleri mevcuttur. Mevcut binanın bodrum katından girilerek radye temel delinir ve bina altından zemin güçlendirmesi (underpinning) güvenle yapılır."
       },
       {
-        question: "Mini kazık ne kadar yük taşır?",
+        question: "Bir mini kazık kaç ton yük taşır?",
         answer:
-          "Taşıma kapasitesi; çap, soket boyu, zemin sürtünme direnci, donatı kesiti ve enjeksiyon tipine bağlıdır. Tek bir genel değer verilemez; kapasite hesapla belirlenir ve statik yükleme testiyle doğrulanır."
+          "Mini kazığın taşıma gücü çapına, boyuna, zemin sürtünme direncine ve kullanılan çelik kesitine bağlıdır. Tipik bir Ø25 cm mini kazık zemin şartlarına göre 25 ila 70 ton arasında güvenli eksenel servis yükü taşıyabilir."
       },
       {
-        question: "Mini kazık imalatı binada titreşim ve hasar yapar mı?",
+        question: "Mini kazık ile fore kazık arasındaki temel fark nedir?",
         answer:
-          "Mini kazık delgi esaslı bir yöntemdir ve çakma kazıklara göre titreşimi düşüktür. Buna karşın her saha kendine özgüdür; hassas yapılarda deformasyon ve titreşim izleme planı kurulması, imalat sırasının kademeli düzenlenmesi önerilir."
+          "Fore kazık büyük çaplı (65–150 cm) ve ağır tonajlı makineler gerektiren yüksek kapasiteli bir sistemdir. Mini kazık ise küçük çaplı (10–30 cm), hafif makinelerle dar sokaklarda ve kapalı alanlarda imal edilebilen kompakt bir sistemdir."
       },
       {
-        question: "Mini kazık maliyeti neye göre değişir?",
+        question: "Mini kazıklı iksa perdesi nasıl yapılır?",
         answer:
-          "Metre başına maliyeti belirleyen ana kalemler: kazık çapı ve boyu, toplam metraj, donatı tipi ve kesiti, çimento sarfiyatı, delgi zorluğu (kaya, blok, yeraltı suyu), saha erişimi ve mobilizasyon mesafesidir. Sahaya özel metraj için proje dosyası üzerinden değerlendirme yapılması gerekir."
+          "Derin kazı hattı boyunca 40–50 cm aralıklarla mini kazıklar dizilir. Kazı kademe kademe indirilirken yüzeye çelik hasır çekilip püskürtme beton (shotcrete) atılır ve arkasına öngermeli zemin ankrajları yapılarak kilitlenir."
       },
       {
-        question: "Mini kazık hangi zeminlerde uygulanır?",
+        question: "Mini kazık imalatında titreşim olur mu?",
         answer:
-          "Kum, silt, kil, dolgu, çakıl ve ayrışmış kaya dahil geniş bir zemin yelpazesinde uygulanabilir. Delgi yöntemi zemine göre seçilir; bloklu ve kayalık zeminlerde darbeli-döner delgi, göçmeye eğilimli zeminlerde muhafaza borulu delgi tercih edilir."
+          "Hayır, mini kazık delgi esaslı bir yöntem olduğu için çakma kazıklar gibi çevre binalara zarar veren dinamik darbe veya yıkıcı titreşim üretmez. Bitişik nizam eski yapılarda dahi güvenle çalışır."
+      },
+      {
+        question: "Mini kazık kalite kontrolü ve yükleme testi nasıl yapılır?",
+        answer:
+          "Her şantiyede enjeksiyon şerbetinden küp numuneler alınarak 28 günlük basınç dayanımı ölçülür. Ayrıca TS EN 14199 standardına göre seçilen test kazıklarına hidrolik kriko ile statik eksenel basma ve çekme yükleme deneyleri uygulanarak taşıma gücü sahada kanıtlanır."
       }
     ],
     relatedSlugs: ["mini-kazik-tercih-nedenleri", "fore-kazik-nedir", "temel-alti-zemin-guclendirme"],
     keywords: [
       "mini kazık nedir",
-      "mikro kazık",
+      "mikro kazık nedir",
+      "TS EN 14199 mini kazık",
       "mini kazık çapı",
-      "mini kazık fiyatı",
-      "mini kazık ile fore kazık farkı",
-      "bina altı mini kazık",
+      "bina altı temel güçlendirme",
       "underpinning mini kazık",
-      "mikro kazık uygulaması"
+      "mini kazık firmaları",
+      "mini kazık birim fiyat"
     ],
     published: true
   },
