@@ -28,17 +28,17 @@ export function QualityShowcase() {
     {
       src: "/images/kalite/yeni-2-karot.jpg",
       title: "Merkezden Karot Alımı",
-      desc: "İmalatı tamamlanmış jet grout kolonunun tam merkezinden (core) özel karot makineleriyle numune alınır; alınan hat boyunca malzeme sürekliliği gözlenir ve laboratuvarda UCS dayanımı doğrulanır."
+      desc: "İmalatı tamamlanmış zemin kolonlarından karot makineleriyle silindirik numuneler alınır; alınan hat boyunca malzeme homojenliği incelenir ve akredite laboratuvarda UCS tek eksenli basınç dayanımı test edilir."
     },
     {
       src: "/images/kalite/yeni-1-inceleme.jpg",
       title: "PIT (Bütünlük) Testi",
-      desc: "İmalatı tamamlanan kolonlarda PIT (Pile Integrity Test) cihazlarıyla düşük gerinimli sismik ölçüm yapılır; kolon boyu ve süreklilik anomalileri sahada mühendislerimizce değerlendirilir."
+      desc: "İmalatı tamamlanan derin temel elemanlarında ve kazıklarda PIT (Pile Integrity Test) cihazlarıyla düşük gerinimli sismik ölçüm yapılır; boy profili ve süreklilik anomalileri saha kayıtlarıyla birlikte değerlendirilir."
     },
     {
       src: "/images/kalite/yeni-3-denetim.jpg",
       title: "Birebir Saha Denetimi",
-      desc: "Projenin sıfır hata ile teslimi için kolon çapı bizzat kazılarak açığa çıkarılır; tasarım ile sahadaki çap (çap doğrulaması) milimetrik kontrol edilir."
+      desc: "Tasarım kriterlerine uygunluğu doğrulamak için kolon başları kazılarak açığa çıkarılır; proje çapı ile sahadaki fiili kolon geometrisi kontrol edilir."
     }
   ];
 
@@ -75,7 +75,7 @@ export function QualityShowcase() {
             Laboratuvar ve <span className="font-bold text-white drop-shadow-[0_0_20px_rgba(255,255,255,0.8)]">Saha Testlerimiz</span>
           </h2>
           <p className="text-zinc-300 text-lg max-w-3xl mx-auto font-light leading-relaxed">
-            Bizde &quot;yaptık bitti&quot; yoktur. Türkiye genelindeki tüm şantiyelerimizde istisnasız uyguladığımız saha denetim prosedürleri gereği; işin sonunda zemin kolonlarını kazıyla açığa çıkarır, karot alır ve laboratuvar sonuçlarıyla size şeffaf ve kanıtlanmış mühendislik sunarız.
+            Şantiye kalite yönetim planı ve şartname gereklilikleri doğrultusunda; imalat sonrası kolon başları açılarak görsel inceleme yapılır, karot numuneleri alınır ve akredite laboratuvar testleriyle doğrulanmış mühendislik sunulur.
           </p>
         </div>
 

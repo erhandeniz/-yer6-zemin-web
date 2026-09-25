@@ -2466,8 +2466,8 @@ export const knowledgeArticles: KnowledgeArticle[] = [
             type: "list",
             title: "Bina Altı Jet Grout İmalatında İki Kritik Risk ve Yönetimi",
             items: [
-              "Oturma (Settlement): Delgi esnasında akışkan sirkülasyonunun ve zemin matrisinin geçici gevşemesi sonucu oluşabilecek lokal oturmaları engellemek için Şaşırtmalı/Ardışık (dama düzeni) döküm sekansı uygulanır. Yan yana kolonlar aynı anda yapılmaz; en az 2 kolon mesafesi bırakılarak 24 saatlik priz süresi verilir.",
-              "Kabarma (Heave / Hydro-fracture): Killi zeminlerde 400-600 bar yüksek basıncın ve kuyu ağzında tıkanan çamur (spoil) yolunun zemini yukarı kaldırmasını önlemek için kademeli basınç kalibrasyonu yapılır ve spoil çıkış yolu sürekli açık tutulur."
+              "Oturma (Settlement): Delgi esnasında akışkan sirkülasyonunun ve zemin matrisinin geçici gevşemesi sonucu oluşabilecek lokal oturmaları engellemek için şaşırtmalı/atlamalı (primary-secondary) döküm sekansı uygulanır. Yan yana kolonlar eş zamanlı imal edilmez; zemin tipine ve priz alma süresine bağlı olarak komşu kolon imalatına geçiş zamanı zemin oturma izleme verileriyle koordine edilir.",
+              "Kabarma (Heave / Hydro-fracture): Killi zeminlerde yüksek enjeksiyon basıncının ve kuyu ağzında tıkanabilecek deburbe (spoil) çıkışının zemini yukarı kaldırmasını önlemek amacıyla kademeli basınç kalibrasyonu yapılır ve deburbe tahliye kanalı sürekli açık ve gözlem altında tutulur."
             ]
           },
           {
@@ -2477,7 +2477,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
           {
             type: "note",
             title: "YER6 Mühendislik Protokolü",
-            content: "Temel altı jet grout uygulamalarında, uluslararası ISSMGE TC211 ve FHWA standartları gereği imalat öncesinde sahada mutlaka deneme kolonları (trial columns) yapılır; tij çekme hızı, dönüş sayısı (rpm) ve enjeksiyon basıncı zemin ortamında doğrulanarak imalata geçilir."
+            content: "Temel altı jet grout uygulamalarında, ISSMGE TC211 ve TS EN 12716 kalite standartları uyarınca imalat öncesinde saha parametrelerinin doğrulanması için deneme kolonları (trial columns) oluşturulur; tij çekme hızı, devir (rpm) ve enjeksiyon basıncı saha ortamında test edilip kolon çapı ve sürekliliği teyit edildikten sonra ana imalata geçilir."
           }
         ]
       },
@@ -2781,7 +2781,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
             type: "list",
             items: [
               "Sıfır Çamur Atığı (Zero Spoil): Jet grout uygulamasında çıkan devasa deburbe çamuru havuzları ve hafriyat nakliyesi maliyeti DSM'de yoktur. Zemin yerinde karıştırıldığı için kuyu ağzından çıkan malzeme ihmal edilebilir düzeydedir.",
-              "Ekonomik Maliyet ve Yüksek Hız: Geniş metrajlarda birim metre tül maliyeti jet grout veya fore kazığa oranla %40–60 daha ekonomiktir.",
+              "Yüksek İmalat Hızı ve Lojistik Verimlilik: Geniş metrajlı zemin iyileştirme projelerinde yerinde karıştırma tekniği sayesinde günlük imalat metrajı yüksektir; çimento şerbeti doğrudan burgu kanatlarından zemine homojen aktarıldığından ve hafriyat/deburbe nakliye ihtiyacını asgariye indirdiğinden toplam şantiye bütçesinde ve iş programında belirgin optimizasyon sağlar.",
               "Sıfır Titreşim ve Komşu Yapı Güvenliği: Delgi ve karıştırma hidrolik torkla yapıldığından çakma kazıklar gibi çevre yapılarda çatlak veya dinamik hasar riski oluşturmaz.",
               "Çevre Dostu Düşük Karbon Salımı: Yüksek basınç dizel pompaları gerektirmediği için yakıt tüketimi ve karbon ayak izi son derece düşüktür."
             ]
@@ -6399,9 +6399,9 @@ export const knowledgeArticles: KnowledgeArticle[] = [
           },
           {
             type: "warning",
-            title: "Deneme kolonu atlanmaz",
+            title: "Saha Doğrulama ve Deneme Kolonları",
             content:
-              "Laboratuvar dayanımı ile saha dayanımı çoğu zaman farklıdır. Deneme kolonu yapılmadan tüm sahaya geçmek, hedef dayanımın tutmaması hâlinde imalatın tekrarı anlamına gelir."
+              "Laboratuvar karışım tasarımları ile in-situ saha dayanımları zemin değişkenliği sebebiyle farklılık gösterebilir. FHWA ve TS EN 14679 kalite protokolleri doğrultusunda, seri imalata geçilmeden önce sahada deneme kolonları oluşturularak çekme/dönüş parametreleri kalibre edilir, karot numuneleri ve süreklilik testleriyle tasarım hedefleri sahada doğrulanır."
           }
         ]
       },

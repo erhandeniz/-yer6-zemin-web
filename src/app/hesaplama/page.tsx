@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image", title: pageTitle, description: pageDescription }
 };
 
-const LAST_UPDATED = "2026-08-03";
+const LAST_UPDATED = "2026-09-25";
 
 export default function CalculatorHubPage() {
   const breadcrumbSchema = {
@@ -150,7 +150,7 @@ export default function CalculatorHubPage() {
               </div>
             </div>
             <p className="mt-6 text-xs leading-6 text-white/40">
-              Son güncelleme: {LAST_UPDATED} · Fiyat kataloğu ve döviz kuru otomatik güncellenir ·
+              Referans Piyasa Kuru: 1 USD = 48,91 ₺ (TCMB / Serbest Piyasa Göstergesi) · Birim Fiyat Kataloğu: 2026 Q3/Q4 Revizyonu · Son Teknik Güncelleme: {LAST_UPDATED} ·
               Sonuçlar KDV hariçtir ve yaklaşık ön değerlendirmedir.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">

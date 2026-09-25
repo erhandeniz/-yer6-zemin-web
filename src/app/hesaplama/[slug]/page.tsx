@@ -37,7 +37,7 @@ export async function generateMetadata({
   };
 }
 
-const LAST_UPDATED = "2026-08-03";
+const LAST_UPDATED = "2026-09-25";
 
 export default async function CalculatorPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
@@ -258,7 +258,7 @@ export default async function CalculatorPage({ params }: { params: Promise<{ slu
                 Projeniz için teklif alın
               </Link>
               <span className="text-xs text-white/40">
-                Son güncelleme: {LAST_UPDATED} · Fiyat kataloğu ve döviz kuru otomatik güncellenir
+                Referans Kur: 1 USD = 48,91 ₺ (TCMB / Serbest Piyasa) · 2026 Q3/Q4 Revizyonu · Son Güncelleme: {LAST_UPDATED}
               </span>
             </div>
           </div>
