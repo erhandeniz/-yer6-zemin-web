@@ -30,7 +30,7 @@ export const localSeoServices = [
 export const socialProfiles: string[] = [
   "https://www.facebook.com/Yer6ZeminGeoteknik",
   "https://www.linkedin.com/in/yer6-zemin-g%C3%BC%C3%A7lendirme-geoteknik-m%C3%BChendislik-511763428/",
-  "https://www.google.com/maps/place/YER6+Zemin+Geoteknik+M%C3%BChendislik/@39.7976857,32.8020419,17z/data=!3m1!4b1!4m6!3m5!1s0x14d341155f5edf6f:0x2078e9e4486b099d!8m2!3d39.7976857!4d32.8020419",
+  "https://www.google.com/maps/place/YER6+Geoteknik/@39.7976857,32.8020419,17z/data=!3m1!4b1!4m6!3m5!1s0x14d341155f5edf6f:0x2078e9e4486b099d!8m2!3d39.7976857!4d32.8020419",
   "https://www.youtube.com/channel/UCCikguZzwvtEg3peobxzSQw"
 ];
 
@@ -83,7 +83,7 @@ export const equipmentSeoItems = [
     name: "Bauer BG 28 H PremiumLine Fore Kazık Delgi Makinesi",
     category: "Fore Kazık Delgi Makinesi",
     description:
-      "Bauer BG 28 H PremiumLine; büyük çaplı fore kazık, derin temel, iksa, muhafaza borulu delgi, CFA ve zemin güçlendirme projelerinde kullanılan yüksek kapasiteli fore kazık delgi makinesidir. YER6 Zemin Güçlendirme Geoteknik Mühendislik makine parkurunda ağır zemin koşulları ve yüksek kapasiteli temel mühendisliği projeleri için güçlü çözüm sunar.",
+      "Bauer BG 28 H PremiumLine; büyük çaplı fore kazık, derin temel, iksa, muhafaza borulu delgi, CFA ve zemin güçlendirme projelerinde kullanılan yüksek kapasiteli fore kazık delgi makinesidir. YER6 Geoteknik makine parkurunda ağır zemin koşulları ve yüksek kapasiteli temel mühendisliği projeleri için güçlü çözüm sunar.",
     brand: "Bauer",
     imageAlt: "Bauer BG 28 H PremiumLine fore kazık delgi makinesi",
     additionalProperties: [
@@ -106,7 +106,7 @@ export const equipmentSeoItems = [
     name: "Bauer BG 18 H BT 50 PremiumLine Fore Kazık Delgi Makinesi",
     category: "Fore Kazık Delgi Makinesi",
     description:
-      "Bauer BG 18 H BT 50 PremiumLine; fore kazık, derin temel, iksa, muhafaza borulu delgi, kılıfsız delgi, CFA ve FDP uygulamaları için kullanılan kompakt ve güçlü fore kazık delgi makinesidir. YER6 Zemin Güçlendirme Geoteknik Mühendislik makine parkurunda orta ve büyük ölçekli temel mühendisliği projeleri için yüksek performanslı çözüm sunar.",
+      "Bauer BG 18 H BT 50 PremiumLine; fore kazık, derin temel, iksa, muhafaza borulu delgi, kılıfsız delgi, CFA ve FDP uygulamaları için kullanılan kompakt ve güçlü fore kazık delgi makinesidir. YER6 Geoteknik makine parkurunda orta ve büyük ölçekli temel mühendisliği projeleri için yüksek performanslı çözüm sunar.",
     brand: "Bauer",
     imageAlt: "Bauer BG 18 H BT 50 PremiumLine fore kazık delgi makinesi",
     additionalProperties: [
@@ -132,7 +132,7 @@ export const equipmentSeoItems = [
     name: "XCMG XR220D Fore Kazık Delgi Makinesi",
     category: "Fore Kazık Delgi Makinesi",
     description:
-      "XCMG XR220D; fore kazık, derin temel, iksa, muhafaza borulu delgi ve zemin güçlendirme projelerinde kullanılan yüksek kapasiteli fore kazık delgi makinesidir. YER6 Zemin Güçlendirme Geoteknik Mühendislik makine parkurunda büyük çaplı ve derin delgi gerektiren projeler için teknik çözüm sunar.",
+      "XCMG XR220D; fore kazık, derin temel, iksa, muhafaza borulu delgi ve zemin güçlendirme projelerinde kullanılan yüksek kapasiteli fore kazık delgi makinesidir. YER6 Geoteknik makine parkurunda büyük çaplı ve derin delgi gerektiren projeler için teknik çözüm sunar.",
     brand: "XCMG",
     imageAlt: "XCMG XR220D fore kazık delgi makinesi",
     additionalProperties: [
@@ -313,8 +313,12 @@ export function localBusinessSchema() {
     // schema.org'da name = markanın bilinen adı, legalName = yasal unvan.
     // İkisi ayrı alanlardır; yasal unvan kaldırılmadı, doğru alana taşındı.
     name: "YER6 Geoteknik",
-    legalName: siteConfig.companyName,
-    alternateName: ["YER6 Zemin Güçlendirme", "YER6 Geotechnical"],
+    legalName: "YER6 Geoteknik",
+    alternateName: [
+      "YER6",
+      "yer6zemin.com.tr",
+      "YER6 Geotechnical"
+    ],
     url: siteConfig.siteUrl,
     foundingDate: "2016",
     foundingLocation: {
@@ -362,10 +366,10 @@ export function localBusinessSchema() {
       url: `${siteConfig.siteUrl}/icon.png`,
       width: 512,
       height: 512,
-      caption: "YER6 Zemin Güçlendirme Geoteknik Mühendislik"
+      caption: "YER6 Geoteknik"
     },
     description:
-      "YER6 Zemin Güçlendirme Geoteknik Mühendislik; jet grout, zemin iyileştirme, zemin güçlendirme, fore kazık, ankraj, iksa sistemleri ve temel mühendisliği alanlarında Ankara merkezli, Türkiye geneli ve yurt dışında geoteknik saha uygulaması sunar.",
+      "YER6 Geoteknik; jet grout, zemin iyileştirme, zemin güçlendirme, fore kazık, ankraj, iksa sistemleri ve temel mühendisliği alanlarında Ankara merkezli, Türkiye geneli ve yurt dışında geoteknik saha uygulaması sunar.",
     telephone: siteConfig.phone.display,
     email: siteConfig.email,
     currenciesAccepted: "TRY",

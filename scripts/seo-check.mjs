@@ -16,7 +16,7 @@ const EXPECT = [
   {
     file: "index.html",
     url: `${SITE}/`,
-    title: "YER6 Zemin İyileştirme & Güçlendirme | Jet Grout, DSM, Fore Kazık",
+    title: "YER6 Geoteknik — Zemin İyileştirme & Güçlendirme | Jet Grout, DSM, Fore Kazık",
     descriptionIncludes: "zemin iyileştirme, zemin güçlendirme",
     xDefault: true,
     collection: false

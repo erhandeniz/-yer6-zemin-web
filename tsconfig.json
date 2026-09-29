@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "ES2018",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": false,
     "skipLibCheck": true,
     "strict": true,
@@ -19,7 +23,9 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": [
+        "./src/*"
+      ]
     }
   },
   "include": [
@@ -29,5 +35,13 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts"
   ],
-  "exclude": ["node_modules", "apps", "YER6 KODLANAN SAYFALAR VE BİLEŞENLER", "YER ALTI ZEMİN İYİLEŞTİRME", "YER6 AI", "YER6 ARŞİV VE ESKİ VERSİYONLAR", "YER6 SAHA MEDYA VE TEKLİFLER"]
+  "exclude": [
+    "node_modules",
+    "apps",
+    "YER6 KODLANAN SAYFALAR VE BİLEŞENLER",
+    "YER ALTI ZEMİN İYİLEŞTİRME",
+    "YER6 AI",
+    "YER6 ARŞİV VE ESKİ VERSİYONLAR",
+    "YER6 SAHA MEDYA VE TEKLİFLER"
+  ]
 }

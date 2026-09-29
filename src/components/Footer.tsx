@@ -68,7 +68,7 @@ export function Footer() {
         </div>
       </div>
       <div className="mx-auto mt-12 flex max-w-7xl flex-col justify-between gap-4 border-t border-white/10 pt-6 text-xs text-white/70 md:flex-row">
-        <p>© 2026 YER6 Zemin Güçlendirme Geoteknik Mühendislik. Tüm hakları saklıdır.</p>
+        <p>© 2026 YER6 Geoteknik. Tüm hakları saklıdır.</p>
         <div className="flex flex-wrap gap-x-5 gap-y-2">
           <Link href="/kullanim-sartlari" className="hover:text-gold-100">Kullanım Şartları &amp; Telif</Link>
           <Link href="/gizlilik" className="hover:text-gold-100">Gizlilik &amp; KVKK</Link>

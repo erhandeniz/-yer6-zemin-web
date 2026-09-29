@@ -79,8 +79,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "tr_TR",
     // SITE ADI: Google'ın arama sonucunda gösterdiği marka adı buradan okunur.
-    // Yasal unvan (YER6 Zemin Güçlendirme Geoteknik Mühendislik) kaldırılmadı;
-    // schema'da legalName alanında ve telif satırında aynen duruyor.
+    // Marka ve tüzel isim YER6 Geoteknik olarak standartlaştırıldı.
     siteName: "YER6 Geoteknik",
     title: "YER6 Geoteknik | Jet Grout, DSM ve Fore Kazık",
     description:
@@ -116,7 +115,7 @@ const websiteSchema = {
   // Google'ın site adı için baktığı EN ÖNCELİKLİ sinyal budur.
   // Marka adı burada; yasal unvan Organization şemasındaki legalName alanında.
   name: "YER6 Geoteknik",
-  alternateName: "YER6 Geoteknik",
+  alternateName: ["YER6", "yer6zemin.com.tr", "YER6 Geotechnical"],
   url: siteUrl,
   inLanguage: "tr-TR",
   description: "2016'dan beri Ankara merkezli; jet grout, DSM, fore kazık, mini kazık, ankraj ve iksa sistemleri alanında zemin iyileştirme hizmetleri.",

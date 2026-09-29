@@ -11,7 +11,7 @@ import { siteConfig } from "@/lib/siteConfig";
 
 const pageUrl = `${siteConfig.siteUrl}/equipment-fleet/`;
 const equipmentFleetDescription =
-  "YER6 Zemin Güçlendirme Geoteknik Mühendislik; fore kazık, jet grout, ankraj, zemin iyileştirme, zemin güçlendirme, derin temel ve iksa uygulamalarında kendi makine parkuru ile sahada hızlı, güvenilir ve teknik çözüm üretir.";
+  "YER6 Geoteknik; fore kazık, jet grout, ankraj, zemin iyileştirme, zemin güçlendirme, derin temel ve iksa uygulamalarında kendi makine parkuru ile sahada hızlı, güvenilir ve teknik çözüm üretir.";
 
 export const metadata: Metadata = {
   title: "Zemin İyileştirme Makine Parkı",

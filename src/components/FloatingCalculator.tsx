@@ -184,7 +184,7 @@ export function FloatingCalculator({ initialOpen = false }: { initialOpen?: bool
     const e = results.estimate;
     const q = e.quantities;
     return [
-      "Sen YER6 Zemin Güçlendirme Geoteknik Mühendislik firmasının uzman AI danışmanısın.",
+      "Sen YER6 Geoteknik firmasının uzman AI danışmanısın.",
       "Kısa, net, profesyonel ve dürüst Türkçe yanıt ver. Bilmediğini uydurma; kesin rakam için saha etüdü ve uzman görüşmesi öner.",
       "Aşağıdaki proje ve YER6 maliyet motorunun ürettiği tahmini temel al:",
       `Yöntem: ${mode}`,
