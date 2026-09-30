@@ -214,20 +214,14 @@ export async function generateYer6Report(params: ReportParams): Promise<boolean>
   doc.setFont("Roboto", "normal");
   doc.setFontSize(7.5);
   doc.setTextColor(110, 110, 110);
-  const kurEtiket = est.fx.live ? "Piyasa Kuru (Referans)" : "Kur (baseline)";
   doc.text(
-    `${kurEtiket}: 1 USD = ${fmt(est.fx.usdTry, 2)} ₺  •  1 EUR = ${fmt(est.fx.eurTry, 2)} ₺  •  kaynak: ${est.fx.source}`,
+    `Referans Piyasa Kuru: 1 USD = ${fmt(est.fx.usdTry, 2)} ₺  •  1 EUR = ${fmt(est.fx.eurTry, 2)} ₺  •  Birim Fiyat Kataloğu: ${est.priceBookAsOf}`,
     14,
     finalY + 17
   );
-  doc.text(
-    `Birim fiyat kataloğu: ${est.priceBookAsOf} • otomatik güncelleme (canlı kur + zaman endeksi, +${est.escalationMonths} ay) • model ${est.modelVersion}`,
-    14,
-    finalY + 21
-  );
 
   autoTable(doc, {
-    startY: finalY + 24,
+    startY: finalY + 20,
     head: [["KALEM", "MİKTAR", "BİRİM FİYAT (₺)", "TUTAR (₺)"]],
     body: est.lineItems.map((li) => [
       li.name,
