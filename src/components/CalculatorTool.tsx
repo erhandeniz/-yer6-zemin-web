@@ -363,10 +363,10 @@ export function CalculatorTool({ tool }: { tool: Tool }) {
           )}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 rounded-full bg-emerald-600 px-5 py-2.5 text-sm font-semibold text-white shadow-md shadow-emerald-950/30 transition hover:bg-emerald-500"
+          className="inline-flex max-w-full items-center justify-center gap-2 rounded-full bg-emerald-600 px-4 sm:px-5 py-2.5 text-sm font-semibold text-white shadow-md shadow-emerald-950/30 transition hover:bg-emerald-500 text-center"
         >
-          <Send className="size-4" />
-          WhatsApp ile Teklif Al
+          <Send className="size-4 shrink-0" />
+          <span>WhatsApp ile Teklif Al</span>
         </a>
         <button
           type="button"
