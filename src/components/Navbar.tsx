@@ -32,16 +32,16 @@ export function Navbar() {
   }
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 px-2 py-2.5 sm:px-5 sm:py-3">
-      <nav aria-label={t("navAria")} className="mx-auto flex max-w-7xl items-center justify-between rounded-full border border-white/10 bg-obsidian/72 px-3 py-2 sm:px-4 sm:py-3 shadow-glass backdrop-blur-2xl">
-        <Link href="/" className="group flex items-center gap-2.5 sm:gap-3.5 shrink-0" aria-label={t("homeAria")}>
-          <span className="relative grid h-10 w-10 sm:h-[52px] sm:w-[52px] place-items-center overflow-hidden rounded-full border border-gold-300/35 bg-gold-400/10 brand-logo-emblem shrink-0">
+    <header className="fixed inset-x-0 top-0 z-50 px-2 py-2 sm:px-4 sm:py-2.5 xl:px-5 xl:py-3">
+      <nav aria-label={t("navAria")} className="mx-auto flex max-w-7xl items-center justify-between rounded-full border border-white/10 bg-obsidian/72 px-3 py-1.5 sm:px-4 sm:py-2 xl:py-2.5 shadow-glass backdrop-blur-2xl">
+        <Link href="/" className="group flex items-center gap-2 sm:gap-3 shrink-0" aria-label={t("homeAria")}>
+          <span className="relative grid h-9 w-9 sm:h-10 sm:w-10 xl:h-[46px] xl:w-[46px] 2xl:h-[52px] 2xl:w-[52px] place-items-center overflow-hidden rounded-full border border-gold-300/35 bg-gold-400/10 brand-logo-emblem shrink-0">
             <span className="absolute h-16 w-16 rotate-45 bg-gradient-to-r from-transparent via-gold-300/40 to-transparent animate-shimmer" />
-            <span className="relative text-[15px] sm:text-[17px] font-bold text-gold-100 brand-logo-text">Y6</span>
+            <span className="relative text-[14px] sm:text-[15px] xl:text-[16px] 2xl:text-[17px] font-bold text-gold-100 brand-logo-text">Y6</span>
           </span>
           <span className="leading-tight">
-            <span className="block brand-title text-base sm:text-[1.22rem]">YER6</span>
-            <span className="hidden brand-subtitle sm:block">Geotechnical</span>
+            <span className="block brand-title text-sm sm:text-base xl:text-[1.18rem] 2xl:text-[1.22rem]">YER6</span>
+            <span className="hidden brand-subtitle sm:block text-[11px] xl:text-xs">Geotechnical</span>
           </span>
         </Link>
 
@@ -52,7 +52,7 @@ export function Navbar() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`rounded-full px-2 py-1.5 text-xs xl:px-2.5 xl:text-[13px] 2xl:px-3 2xl:text-sm whitespace-nowrap transition ${
+                className={`rounded-full px-1.5 py-1 text-[11px] xl:px-2 xl:py-1.5 xl:text-xs 2xl:px-3 2xl:py-2 2xl:text-sm whitespace-nowrap transition ${
                   active ? "bg-white/10 text-gold-100" : "text-white/72 hover:bg-white/8 hover:text-white"
                 }`}
               >
@@ -62,22 +62,22 @@ export function Navbar() {
           })}
         </div>
 
-        <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
+        <div className="flex items-center gap-1 sm:gap-1.5 xl:gap-2 shrink-0">
           <Link
             href="https://ai.yer6zemin.com.tr"
-            className="inline-flex h-9 sm:h-10 items-center gap-2 rounded-full border border-gold-300/30 bg-gold-300/10 px-2.5 sm:px-3 text-gold-100 transition hover:border-gold-300/60 hover:bg-gold-300/15 shrink-0"
+            className="inline-flex h-8 sm:h-9 items-center gap-1.5 rounded-full border border-gold-300/30 bg-gold-300/10 px-2 sm:px-2.5 text-gold-100 transition hover:border-gold-300/60 hover:bg-gold-300/15 shrink-0"
             aria-label="YER6 AI"
           >
-            <BrainCircuit className="h-4 w-4" />
-            <span className="hidden text-xs font-semibold xl:inline">YER6 AI</span>
+            <BrainCircuit className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+            <span className="hidden text-[11px] font-semibold xl:inline">YER6 AI</span>
           </Link>
-          <div className="hidden items-center gap-1 rounded-full border border-white/10 bg-white/5 px-2 py-1 md:flex shrink-0">
-            <Languages className="h-4 w-4 text-gold-200" />
+          <div className="hidden items-center gap-0.5 rounded-full border border-white/10 bg-white/5 px-1.5 py-0.5 md:flex shrink-0">
+            <Languages className="h-3.5 w-3.5 text-gold-200" />
             {locales.map((item) => (
               <button
                 key={item}
                 onClick={() => setLocale(item as Locale)}
-                className={`rounded-full px-2 py-1 text-xs uppercase transition ${
+                className={`rounded-full px-1.5 py-0.5 text-[10px] xl:text-[11px] uppercase transition ${
                   locale === item ? "bg-gold-300 text-obsidian" : "text-white/70 hover:text-white"
                 }`}
                 aria-label={`${t("language")} ${item}`}
@@ -89,23 +89,23 @@ export function Navbar() {
           </div>
           <button
             onClick={toggleTheme}
-            className="grid h-9 w-9 sm:h-10 sm:w-10 place-items-center rounded-full border border-white/10 bg-white/5 text-white transition hover:border-gold-300/50 shrink-0"
+            className="grid h-8 w-8 sm:h-9 sm:w-9 place-items-center rounded-full border border-white/10 bg-white/5 text-white transition hover:border-gold-300/50 shrink-0"
             aria-label="Temayı değiştir"
           >
-            {isLight ? <Moon className="h-4 w-4" /> : <Sun className="h-4 w-4" />}
+            {isLight ? <Moon className="h-3.5 w-3.5 sm:h-4 sm:w-4" /> : <Sun className="h-3.5 w-3.5 sm:h-4 sm:w-4" />}
           </button>
           <Link
             href="/contact"
-            className="hidden rounded-full bg-gold-300 px-3.5 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm font-semibold text-obsidian shadow-gold transition hover:bg-gold-200 whitespace-nowrap sm:inline-flex shrink-0"
+            className="hidden rounded-full bg-gold-300 px-3 py-1.5 sm:px-3.5 sm:py-1.5 xl:px-4 xl:py-2 text-xs xl:text-sm font-semibold text-obsidian shadow-gold transition hover:bg-gold-200 whitespace-nowrap sm:inline-flex shrink-0"
           >
             {t("quote")}
           </Link>
           <button
             onClick={() => setMenuOpen((value) => !value)}
-            className="grid h-9 w-9 sm:h-10 sm:w-10 place-items-center rounded-full border border-white/10 bg-white/5 text-white lg:hidden shrink-0"
+            className="grid h-8 w-8 sm:h-9 sm:w-9 place-items-center rounded-full border border-white/10 bg-white/5 text-white lg:hidden shrink-0"
             aria-label={menuOpen ? t("menuClose") : t("menuOpen")}
           >
-            {menuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+            {menuOpen ? <X className="h-4 w-4 sm:h-5 sm:w-5" /> : <Menu className="h-4 w-4 sm:h-5 sm:w-5" />}
           </button>
         </div>
       </nav>
