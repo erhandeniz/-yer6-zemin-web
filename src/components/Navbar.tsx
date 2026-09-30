@@ -45,15 +45,15 @@ export function Navbar() {
           </span>
         </Link>
 
-        <div className="hidden items-center gap-1 lg:flex">
+        <div className="hidden items-center gap-0.5 xl:gap-1 lg:flex">
           {navItems.map((item) => {
             const active = item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
             return (
               <Link
                 key={item.href}
                 href={item.href}
-                className={`rounded-full px-3 py-2 text-sm transition ${
-                  active ? "bg-gold-300 text-obsidian font-semibold shadow-gold" : "text-white/72 hover:bg-white/8 hover:text-white"
+                className={`rounded-full px-2.5 py-1.5 xl:px-3 xl:py-2 text-xs xl:text-sm text-center leading-tight transition ${
+                  active ? "bg-white/10 text-white font-medium" : "text-white/72 hover:bg-white/8 hover:text-white"
                 }`}
               >
                 {t(item.key)}
@@ -65,13 +65,13 @@ export function Navbar() {
         <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
           <Link
             href="https://ai.yer6zemin.com.tr"
-            className="inline-flex h-9 sm:h-10 items-center gap-2 rounded-full border border-gold-300/30 bg-gold-300/10 px-2.5 sm:px-3 text-gold-100 transition hover:border-gold-300/60 hover:bg-gold-300/15"
+            className="inline-flex h-9 sm:h-10 items-center gap-2 rounded-full border border-gold-300/30 bg-gold-300/10 px-2.5 sm:px-3 text-gold-100 transition hover:border-gold-300/60 hover:bg-gold-300/15 shrink-0"
             aria-label="YER6 AI"
           >
             <BrainCircuit className="h-4 w-4" />
             <span className="hidden text-xs font-semibold xl:inline">YER6 AI</span>
           </Link>
-          <div className="hidden items-center gap-1 rounded-full border border-white/10 bg-white/5 px-2 py-1 md:flex">
+          <div className="hidden items-center gap-1 rounded-full border border-white/10 bg-white/5 px-2 py-1 md:flex shrink-0">
             <Languages className="h-4 w-4 text-gold-200" />
             {locales.map((item) => (
               <button
@@ -89,11 +89,17 @@ export function Navbar() {
           </div>
           <button
             onClick={toggleTheme}
-            className="grid h-9 w-9 sm:h-10 sm:w-10 place-items-center rounded-full border border-white/10 bg-white/5 text-white transition hover:border-gold-300/50"
+            className="grid h-9 w-9 sm:h-10 sm:w-10 place-items-center rounded-full border border-white/10 bg-white/5 text-white transition hover:border-gold-300/50 shrink-0"
             aria-label="Temayı değiştir"
           >
             {isLight ? <Moon className="h-4 w-4" /> : <Sun className="h-4 w-4" />}
           </button>
+          <Link
+            href="/contact"
+            className="hidden rounded-full bg-gold-300 px-3.5 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm font-semibold text-obsidian shadow-gold transition hover:bg-gold-200 whitespace-nowrap sm:inline-flex shrink-0"
+          >
+            {t("quote")}
+          </Link>
           <button
             onClick={() => setMenuOpen((value) => !value)}
             className="grid h-9 w-9 sm:h-10 sm:w-10 place-items-center rounded-full border border-white/10 bg-white/5 text-white lg:hidden shrink-0"
