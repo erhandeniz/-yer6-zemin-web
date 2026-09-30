@@ -94,12 +94,6 @@ export function Navbar() {
           >
             {isLight ? <Moon className="h-4 w-4" /> : <Sun className="h-4 w-4" />}
           </button>
-          <Link
-            href="/contact"
-            className="hidden rounded-full bg-gold-300 px-3.5 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm font-semibold text-obsidian shadow-gold transition hover:bg-gold-200 whitespace-nowrap sm:inline-flex shrink-0"
-          >
-            {t("quote")}
-          </Link>
           <button
             onClick={() => setMenuOpen((value) => !value)}
             className="grid h-9 w-9 sm:h-10 sm:w-10 place-items-center rounded-full border border-white/10 bg-white/5 text-white lg:hidden shrink-0"
