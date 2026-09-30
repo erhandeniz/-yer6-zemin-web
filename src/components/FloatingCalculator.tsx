@@ -806,13 +806,26 @@ export function FloatingCalculator({ initialOpen = false }: { initialOpen?: bool
                               </button>
                             </div>
 
-                            <button
-                              onClick={generatePDF}
-                              className="group relative flex items-center gap-2 self-end rounded-xl bg-gold-300/10 border border-gold-300/30 px-4 py-2.5 text-xs font-semibold text-gold-300 hover:bg-gold-300 hover:text-obsidian transition-all shadow-[0_0_10px_rgba(212,175,55,0.1)] hover:shadow-[0_0_15px_rgba(212,175,55,0.3)]"
-                            >
-                              <Download className="h-4 w-4 group-hover:scale-110 transition-transform" />
-                              PDF Raporu İndir
-                            </button>
+                            <div className="flex flex-wrap items-center justify-end gap-2">
+                              <a
+                                href={`https://wa.me/905323780691?text=${encodeURIComponent(
+                                  `Merhaba YER6 Geoteknik, sitenizdeki hesaplayıcıdan ${mode?.toUpperCase() || "ZEMİN"} için ön metraj hesapladım (${count} adet, ${depth} m derinlik). Bu proje için resmi teklif ve şantiye programı rica ediyorum.`
+                                )}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="group relative flex items-center gap-1.5 rounded-xl bg-emerald-600/30 border border-emerald-500/50 px-3.5 py-2 text-xs font-semibold text-emerald-300 hover:bg-emerald-600 hover:text-white transition-all shadow-[0_0_10px_rgba(16,185,129,0.15)]"
+                              >
+                                <Send className="h-3.5 w-3.5 group-hover:scale-110 transition-transform" />
+                                WhatsApp Teklif İste
+                              </a>
+                              <button
+                                onClick={generatePDF}
+                                className="group relative flex items-center gap-2 rounded-xl bg-gold-300/10 border border-gold-300/30 px-4 py-2 text-xs font-semibold text-gold-300 hover:bg-gold-300 hover:text-obsidian transition-all shadow-[0_0_10px_rgba(212,175,55,0.1)] hover:shadow-[0_0_15px_rgba(212,175,55,0.3)]"
+                              >
+                                <Download className="h-4 w-4 group-hover:scale-110 transition-transform" />
+                                PDF Raporu İndir
+                              </button>
+                            </div>
                           </motion.div>
                         )}
                       </AnimatePresence>

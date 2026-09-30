@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
-import { Calculator, Download, Link2, Loader2, RotateCcw, Send } from "lucide-react";
+import { Calculator, Download, Link2, Loader2, Phone, RotateCcw, Send } from "lucide-react";
 import {
   computeEstimate,
   type Complexity,
@@ -342,7 +342,24 @@ export function CalculatorTool({ tool }: { tool: Tool }) {
       </div>
 
       {/* Eylemler */}
-      <div className="mt-7 flex flex-wrap gap-3">
+      <div className="mt-7 flex flex-wrap items-center gap-3">
+        <a
+          href={`https://wa.me/905323780691?text=${encodeURIComponent(
+            `Merhaba YER6 Geoteknik, ${tool.h1} üzerinden bir ön metraj hesapladım:\n` +
+            `• İmalat Yöntemi: ${tool.mode.toUpperCase().replace("-", " ")}\n` +
+            `• Adet: ${count} adet\n` +
+            `• Derinlik: ${depth} m\n` +
+            `• Çap: ${diameter} cm\n` +
+            `• Toplam Metraj: ${num(q.drillMeters)} m\n` +
+            `Bu metraj için şantiye keşfi ve resmi birim fiyat teklifi rica ediyorum.`
+          )}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 rounded-full bg-emerald-600 px-5 py-2.5 text-sm font-semibold text-white shadow-md shadow-emerald-950/30 transition hover:bg-emerald-500"
+        >
+          <Send className="size-4" />
+          WhatsApp ile Teklif Al
+        </a>
         <button
           type="button"
           onClick={downloadPdf}
@@ -368,13 +385,13 @@ export function CalculatorTool({ tool }: { tool: Tool }) {
           <RotateCcw className="size-4" />
           Sıfırla
         </button>
-        <Link
-          href="/contact/"
-          className="inline-flex items-center gap-2 rounded-full border border-gold-300/40 px-5 py-2.5 text-sm font-semibold text-gold-200 transition hover:bg-gold-300/10"
+        <a
+          href="tel:+905323780691"
+          className="inline-flex items-center gap-2 rounded-full border border-gold-300/40 bg-gold-300/10 px-5 py-2.5 text-sm font-semibold text-gold-200 transition hover:bg-gold-300/20"
         >
-          <Send className="size-4" />
-          Teklif al
-        </Link>
+          <Phone className="size-4" />
+          0532 378 06 91
+        </a>
       </div>
     </div>
   );
