@@ -153,9 +153,9 @@ export function CalculatorTool({ tool }: { tool: Tool }) {
   };
 
   const reset = () => {
-    setCount(tool.defaults.count);
-    setDepth(tool.defaults.depth);
-    setDiameter(tool.defaults.diameter);
+    setCount(0);
+    setDepth(0);
+    setDiameter(0);
     setSoilType("soft");
     setComplexity("quick");
   };
@@ -222,7 +222,7 @@ export function CalculatorTool({ tool }: { tool: Tool }) {
               min={field.min}
               max={field.max}
               step={field.step}
-              placeholder={String(field.min)}
+              placeholder="0"
               value={field.value === 0 ? "" : field.value}
               onChange={(event) => {
                 const raw = event.target.value.trim();
@@ -233,11 +233,6 @@ export function CalculatorTool({ tool }: { tool: Tool }) {
                 const next = Number(raw);
                 if (Number.isFinite(next) && next >= 0) {
                   field.set(next);
-                }
-              }}
-              onBlur={() => {
-                if (field.value === 0) {
-                  field.set(field.min);
                 }
               }}
               className="mt-2 w-full rounded-xl border border-white/12 bg-obsidian/60 px-4 py-3 text-lg font-semibold text-white outline-none transition focus:border-gold-300/60"

@@ -175,6 +175,44 @@ export interface Estimate {
 export function computeEstimate(input: CostInput): Estimate {
   const { mode, count, depth, diameter, complexity, soilType, factor, fx } = input;
 
+  if (count <= 0 || depth <= 0 || diameter <= 0) {
+    return {
+      mode,
+      quantities: {
+        concreteM3: 0,
+        steelTon: 0,
+        cementTon: 0,
+        dieselLt: 0,
+        strandM: 0,
+        groutM3: 0,
+        drillMeters: 0,
+        rigDays: 0,
+        co2Ton: 0
+      },
+      lineItems: [],
+      materials: 0,
+      labor: 0,
+      equipment: 0,
+      fuel: 0,
+      consumables: 0,
+      mobilization: 0,
+      directCost: 0,
+      overhead: 0,
+      profit: 0,
+      turnkeyPoint: 0,
+      laborOnlyPoint: 0,
+      turnkeyMin: 0,
+      turnkeyMax: 0,
+      laborMin: 0,
+      laborMax: 0,
+      kdvRate: KDV_RATE,
+      fx,
+      priceBookAsOf: PRICE_BOOK_AS_OF,
+      escalationMonths: monthsSincePriceBook(),
+      modelVersion: COST_MODEL_VERSION
+    };
+  }
+
   const overbreak = complexity === "advanced" ? factor : 1.1;
   const r = diameter / 2;
   const singleVolume = Math.PI * r * r * depth;
