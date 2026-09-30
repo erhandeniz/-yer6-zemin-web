@@ -222,10 +222,23 @@ export function CalculatorTool({ tool }: { tool: Tool }) {
               min={field.min}
               max={field.max}
               step={field.step}
-              value={field.value}
+              placeholder={String(field.min)}
+              value={field.value === 0 ? "" : field.value}
               onChange={(event) => {
-                const next = Number(event.target.value);
-                if (Number.isFinite(next) && next >= 0) field.set(next);
+                const raw = event.target.value.trim();
+                if (raw === "") {
+                  field.set(0);
+                  return;
+                }
+                const next = Number(raw);
+                if (Number.isFinite(next) && next >= 0) {
+                  field.set(next);
+                }
+              }}
+              onBlur={() => {
+                if (field.value === 0) {
+                  field.set(field.min);
+                }
               }}
               className="mt-2 w-full rounded-xl border border-white/12 bg-obsidian/60 px-4 py-3 text-lg font-semibold text-white outline-none transition focus:border-gold-300/60"
             />
