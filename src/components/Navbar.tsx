@@ -53,7 +53,7 @@ export function Navbar() {
                 key={item.href}
                 href={item.href}
                 className={`rounded-full px-3 py-2 text-sm transition ${
-                  active ? "bg-white/10 text-gold-100" : "text-white/72 hover:bg-white/8 hover:text-white"
+                  active ? "bg-gold-300 text-obsidian font-semibold shadow-gold" : "text-white/72 hover:bg-white/8 hover:text-white"
                 }`}
               >
                 {t(item.key)}
@@ -123,7 +123,7 @@ export function Navbar() {
                     href={item.href}
                     onClick={() => setMenuOpen(false)}
                     className={`rounded-2xl px-4 py-3 text-sm font-semibold transition ${
-                      active ? "bg-white/10 text-gold-100" : "text-white/70 hover:bg-white/5 hover:text-white"
+                      active ? "bg-gold-300 text-obsidian font-semibold shadow-gold" : "text-white/70 hover:bg-white/5 hover:text-white"
                     }`}
                   >
                     {t(item.key)}
