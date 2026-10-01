@@ -9,7 +9,7 @@ const BIO: Record<string, { title: string; body: string; back: string; areas: st
   tr: {
     title: "Kurucu & Geoteknik Proje Yöneticisi",
     body:
-      "Erhan Deniz, YER6 Zemin Güçlendirme Geoteknik Mühendislik'in kurucusu ve Geoteknik Proje Yöneticisidir. Jet grout, fore kazık, zemin iyileştirme ve temel güçlendirme çalışmalarında saha organizasyonu, ekip yönetimi, maliyet takibi ve proje uygulama süreçleri üzerine çalışmaktadır. YER6 AI'ın geliştirilmesinde, mühendislik bilgisini daha erişilebilir, anlaşılır ve uygulanabilir hâle getirmeyi hedeflemektedir.",
+      "Erhan Deniz, YER6 Geoteknik'in kurucusu ve Geoteknik Proje Yöneticisidir. Jet grout, fore kazık, zemin iyileştirme ve temel güçlendirme çalışmalarında saha organizasyonu, ekip yönetimi, maliyet takibi ve proje uygulama süreçleri üzerine çalışmaktadır. YER6 AI'ın geliştirilmesinde, mühendislik bilgisini daha erişilebilir, anlaşılır ve uygulanabilir hâle getirmeyi hedeflemektedir.",
     back: "Girişe dön",
     areas: "Jet grout · Fore kazık · Zemin iyileştirme · Temel güçlendirme"
   },
@@ -57,7 +57,7 @@ export function FounderProfile() {
 
           <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 border-t border-white/[0.065] pt-5 text-[11px] text-white/40">
             <span className="flex items-center gap-1.5"><HardHat className="size-3.5 text-primary/70" />{content.areas}</span>
-            <span className="flex items-center gap-1.5"><Landmark className="size-3.5 text-primary/70" />YER6 Zemin Güçlendirme Geoteknik Mühendislik</span>
+            <span className="flex items-center gap-1.5"><Landmark className="size-3.5 text-primary/70" />YER6 Geoteknik</span>
             <span className="flex items-center gap-1.5"><MapPin className="size-3.5 text-primary/70" />Ankara, Türkiye</span>
           </div>
         </section>

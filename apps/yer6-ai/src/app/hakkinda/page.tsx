@@ -4,7 +4,7 @@ import { FounderProfile } from "@/components/founder-profile";
 export const metadata: Metadata = {
   title: "Erhan Deniz — Kurucu & Geoteknik Proje Yöneticisi | YER6 AI",
   description:
-    "Erhan Deniz, YER6 Zemin Güçlendirme Geoteknik Mühendislik'in kurucusu ve Geoteknik Proje Yöneticisidir."
+    "Erhan Deniz, YER6 Geoteknik'in kurucusu ve Geoteknik Proje Yöneticisidir."
 };
 
 // Public founder profile (Package C): reachable WITHOUT signing in — the
