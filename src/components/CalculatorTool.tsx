@@ -172,6 +172,40 @@ export function CalculatorTool({ tool }: { tool: Tool }) {
     { label: "Tahmini süre", value: `${num(q.rigDays)} gün` }
   ];
 
+  // 2026 Geoteknik & Şantiye Saha Göstergeleri (TBDY 2018 & Eurocode 7 Esaslı)
+  const pileCapacityTon = useMemo(() => {
+    if (depth <= 0 || diameter <= 0) return 0;
+    const dM = diameter / 100;
+    const shaftArea = Math.PI * dM * depth;
+    const baseArea = Math.PI * Math.pow(dM / 2, 2);
+    const fs = soilType === "hard" ? 95 : 55;
+    const qb = soilType === "hard" ? 4200 : 2100;
+    const qUltKn = shaftArea * fs + baseArea * qb;
+    const qAllKn = qUltKn / 2.2;
+    return Math.round(qAllKn / 9.81);
+  }, [depth, diameter, soilType]);
+
+  const concreteMixerTrips = useMemo(() => {
+    if (q.concreteM3 <= 0) return 0;
+    return Math.ceil(q.concreteM3 / 8);
+  }, [q.concreteM3]);
+
+  const cementSilobasCount = useMemo(() => {
+    if (q.cementTon <= 0) return 0;
+    return Math.max(1, Math.ceil(q.cementTon / 27));
+  }, [q.cementTon]);
+
+  const spoilTruckTrips = useMemo(() => {
+    if (q.groutM3 <= 0) return 0;
+    const spoilM3 = q.groutM3 * 0.38 * 1.25;
+    return Math.max(1, Math.ceil(spoilM3 / 15));
+  }, [q.groutM3]);
+
+  const rebarCouplerSavingTon = useMemo(() => {
+    if (tool.mode !== "fore-kazik" || depth < 12 || count <= 0) return 0;
+    return Math.round(count * (depth / 12) * 0.045 * 10) / 10;
+  }, [tool.mode, depth, count]);
+
   return (
     <div className="gsap-reveal rounded-[2rem] border border-white/10 bg-white/[0.04] p-6 sm:p-8">
       <div className="flex items-center gap-3">
@@ -309,6 +343,79 @@ export function CalculatorTool({ tool }: { tool: Tool }) {
         </div>
       </div>
 
+      {/* 2026 Şantiye ve Geoteknik Saha Analizi */}
+      {(pileCapacityTon > 0 || concreteMixerTrips > 0 || cementSilobasCount > 0 || spoilTruckTrips > 0 || rebarCouplerSavingTon > 0) && (
+        <div className="mt-8 rounded-2xl border border-gold-300/25 bg-gold-300/[0.04] p-5">
+          <div className="flex flex-wrap items-center justify-between gap-2 border-b border-white/10 pb-3">
+            <h3 className="text-xs uppercase tracking-[0.25em] text-gold-200 font-semibold flex items-center gap-2">
+              <span className="size-2 rounded-full bg-gold-300 animate-pulse" />
+              2026 Şantiye &amp; Geoteknik Saha Analizi
+            </h3>
+            <span className="text-[11px] text-white/50">TBDY 2018 &amp; TS EN Esaslı Ön Değerlendirme</span>
+          </div>
+
+          <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3 text-sm">
+            {tool.mode === "fore-kazik" && pileCapacityTon > 0 && (
+              <div className="rounded-xl border border-white/10 bg-obsidian/60 p-3.5">
+                <p className="text-xs text-white/50">Tahmini Taşıma Gücü (Kazık Başı)</p>
+                <p className="mt-1 text-base font-semibold text-gold-100">
+                  ~{pileCapacityTon} Ton / Kazık
+                </p>
+                <p className="mt-1 text-[11px] text-white/45">
+                  Toplam grup kapasitesi: ~{tl(pileCapacityTon * count)} Ton ({soilType === "hard" ? "Sert / ZC" : "Orta / ZD"} zemin)
+                </p>
+              </div>
+            )}
+
+            {concreteMixerTrips > 0 && (
+              <div className="rounded-xl border border-white/10 bg-obsidian/60 p-3.5">
+                <p className="text-xs text-white/50">Hazır Beton Lojistiği</p>
+                <p className="mt-1 text-base font-semibold text-white">
+                  ~{concreteMixerTrips} Transmikser
+                </p>
+                <p className="mt-1 text-[11px] text-white/45">
+                  8 m³ mikser kapasitesi · %10–12 kuyu taşma / zayiat dahil
+                </p>
+              </div>
+            )}
+
+            {cementSilobasCount > 0 && (
+              <div className="rounded-xl border border-white/10 bg-obsidian/60 p-3.5">
+                <p className="text-xs text-white/50">Dökme Çimento İntikali</p>
+                <p className="mt-1 text-base font-semibold text-white">
+                  ~{cementSilobasCount} Silobas ({num(q.cementTon, 1)} Ton)
+                </p>
+                <p className="mt-1 text-[11px] text-white/45">
+                  27 ton silobas kapasitesi · CEM I / CEM III uyumlu
+                </p>
+              </div>
+            )}
+
+            {spoilTruckTrips > 0 && (
+              <div className="rounded-xl border border-white/10 bg-obsidian/60 p-3.5">
+                <p className="text-xs text-white/50">Pasa / Atık Çamur (Spoil)</p>
+                <p className="mt-1 text-base font-semibold text-white">
+                  ~{spoilTruckTrips} Hafriyat Kamyonu
+                </p>
+                <p className="mt-1 text-[11px] text-white/45">
+                  ~{num(q.groutM3 * 0.38 * 1.25, 0)} m³ kabarmış pasa bertaraf hacmi
+                </p>
+              </div>
+            )}
+
+            {rebarCouplerSavingTon > 0 && (
+              <div className="rounded-xl border border-emerald-500/30 bg-emerald-500/[0.06] p-3.5 sm:col-span-2 lg:col-span-2">
+                <p className="text-xs font-semibold text-emerald-300">💡 Mekanik Manşon (Coupler) Tasarrufu</p>
+                <p className="mt-1 text-sm text-white/80">
+                  12 m üzeri kazıklarda bindirme yerine mekanik manşon kullanımı bu projede yaklaşık{" "}
+                  <span className="font-bold text-white">~{num(rebarCouplerSavingTon, 1)} Ton inşaat demiri</span> tasarrufu sağlayabilir.
+                </p>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+
       {/* Maliyet bandı */}
       <div className="mt-8">
         <h3 className="text-xs uppercase tracking-[0.3em] text-gold-200">Ön maliyet aralığı (KDV hariç)</h3>
@@ -353,13 +460,13 @@ export function CalculatorTool({ tool }: { tool: Tool }) {
       <div className="mt-7 flex flex-wrap items-center gap-3">
         <a
           href={`https://wa.me/905323780691?text=${encodeURIComponent(
-            `Merhaba YER6 Geoteknik, ${tool.h1} üzerinden bir ön metraj hesapladım:\n` +
+            `Merhaba YER6 Geoteknik, ${tool.h1} üzerinden bir ön keşif hesapladım:\n` +
             `• İmalat Yöntemi: ${tool.mode.toUpperCase().replace("-", " ")}\n` +
-            `• Adet: ${count} adet\n` +
-            `• Derinlik: ${depth} m\n` +
-            `• Çap: ${diameter} cm\n` +
-            `• Toplam Metraj: ${num(q.drillMeters)} m\n` +
-            `Bu metraj için şantiye keşfi ve resmi birim fiyat teklifi rica ediyorum.`
+            `• Metraj: ${count} adet × ${depth} m (${num(q.drillMeters)} m)\n` +
+            `• Çap: Ø${diameter} cm\n` +
+            `• Zemin: ${soilType === "soft" ? "Yumuşak / Orta (ZD)" : "Sert / Kayalı (ZC)"}\n` +
+            `• Tahmini Bütçe Bandı: ${tl(estimate.turnkeyMin)} - ${tl(estimate.turnkeyMax)} ₺ (2026 Q3/Q4 Revizyonu)\n` +
+            `Bu proje için zemin etüdümüzü paylaşmak ve resmi birim fiyat teklifi almak istiyorum.`
           )}`}
           target="_blank"
           rel="noopener noreferrer"
