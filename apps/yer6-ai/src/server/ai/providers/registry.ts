@@ -150,7 +150,7 @@ export function createPublicProviderChain(config: AIConfig, workersAI?: WorkersA
     ? createCloudflareWorkersAIProvider(workersAI, config.cloudflareModel)
     : null;
 
-  return [
+  const freeFirst = [
     geminiProvider,
     groqProvider,
     cerebrasProvider,
@@ -158,5 +158,18 @@ export function createPublicProviderChain(config: AIConfig, workersAI?: WorkersA
     deepSeekProvider,
     openAIProvider,
     cloudflareProvider
-  ].filter((provider): provider is AIProvider => Boolean(provider));
+  ];
+  const paidFirst = [
+    openAIProvider,
+    geminiProvider,
+    groqProvider,
+    cerebrasProvider,
+    mistralProvider,
+    deepSeekProvider,
+    cloudflareProvider
+  ];
+
+  return (config.providerPreference === "openai" ? paidFirst : freeFirst).filter(
+    (provider): provider is AIProvider => Boolean(provider)
+  );
 }

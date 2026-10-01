@@ -1,25 +1,19 @@
 export const DEFAULT_AI_MODELS = {
-  // Primary brain: GPT-5.6 via the OpenAI Responses API. Override with
-  // OPENAI_MODEL only for verified, accessible model ids.
+  // Primary brain: GPT-5.6 (fast, authoritative).
   openai: "gpt-5.6",
   cloudflare: "@cf/openai/gpt-oss-120b",
-  // DeepSeek is OpenAI-compatible (chat completions). Used in the PUBLIC
-  // marketing-bot chain. 2026-07: API accepts deepseek-v4-flash / deepseek-v4-pro
-  // ("deepseek-chat" alias was retired — providers also carry a candidate list).
+  // DeepSeek is OpenAI-compatible (chat completions).
   deepseek: "deepseek-v4-flash",
-  // Gemini (Google AI Studio) exposes an OpenAI-compatible endpoint. Free tier
-  // (Flash class) = the FREE primary brain for the public bot. "-latest" alias
-  // auto-tracks Google's newest Flash so the id never goes stale.
-  gemini: "gemini-flash-latest"
+  // Gemini 2.5 Flash: ultra-low latency, authoritative reasoning.
+  gemini: "gemini-2.5-flash"
 } as const;
 
-// Model-id drift protection: if the configured/default id returns "not found",
-// providers retry these in order (before any output has streamed).
+// Model-id drift protection: official active Google Gemini Flash models in priority order.
 export const GEMINI_MODEL_CANDIDATES = [
-  "gemini-flash-latest",
-  "gemini-3.5-flash",
-  "gemini-3-flash",
-  "gemini-2.5-flash"
+  "gemini-2.5-flash",
+  "gemini-2.5-flash-lite",
+  "gemini-2.0-flash",
+  "gemini-1.5-flash"
 ] as const;
 export const DEEPSEEK_MODEL_CANDIDATES = ["deepseek-v4-flash", "deepseek-v4-pro"] as const;
 // Groq: try the strong 70B pool (1,000/day free) first, then the huge 8B pool (14,400/day free).

@@ -22,7 +22,7 @@ const ALLOWED_ORIGINS = new Set([
   "https://yer6zemin.com.tr"
 ]);
 
-const DELTA_FLUSH_CHARS = 90;
+const DELTA_FLUSH_CHARS = 24;
 
 function corsHeaders(origin: string | null): Record<string, string> {
   const allow = origin && ALLOWED_ORIGINS.has(origin) ? origin : "https://www.yer6zemin.com.tr";
