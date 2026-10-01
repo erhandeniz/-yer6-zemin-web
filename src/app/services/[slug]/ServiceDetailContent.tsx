@@ -47,6 +47,37 @@ const serviceHubLinks: Partial<Record<string, { href: string; label: string }[]>
   ]
 };
 
+const serviceGuideMap: Partial<Record<string, { href: string; label: string }>> = {
+  "fore-kazik": {
+    href: "/knowledge/fore-kazik-nedir",
+    label: "Ayrıntılı Teknik Rehber: Fore kazık nedir, nasıl yapılır ve çap standartları nelerdir?"
+  },
+  dsm: {
+    href: "/knowledge/dsm-nedir",
+    label: "Ayrıntılı Teknik Rehber: DSM (Deep Soil Mixing) nedir ve derin zemin karıştırma nasıl uygulanır?"
+  },
+  "jet-grout": {
+    href: "/knowledge/jet-grout-nedir",
+    label: "Ayrıntılı Teknik Rehber: Jet grout nedir, uygulama aşamaları ve birim fiyatları nelerdir?"
+  },
+  ankraj: {
+    href: "/knowledge/ankraj-nedir",
+    label: "Ayrıntılı Teknik Rehber: Zemin ankrajı nedir, öngermeli iksa ve çekme testleri nasıl yapılır?"
+  },
+  "mini-kazik": {
+    href: "/knowledge/mini-kazik-nedir",
+    label: "Ayrıntılı Teknik Rehber: Mini kazık nedir ve bina temel güçlendirmede ne zaman tercih edilir?"
+  },
+  "tas-kolon": {
+    href: "/knowledge/tas-kolon-nedir",
+    label: "Ayrıntılı Teknik Rehber: Taş kolon nedir ve zemin iyileştirmede ne zaman uygulanır?"
+  },
+  "diafram-duvar": {
+    href: "/knowledge/diafram-duvar-nedir",
+    label: "Ayrıntılı Teknik Rehber: Diyafram duvar nedir ve derin kazılarda sızdırmazlık nasıl sağlanır?"
+  }
+};
+
 function FaqItem({ question, answer }: { question: string; answer: string }) {
   const [open, setOpen] = useState(false);
   return (
@@ -130,6 +161,17 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
                 <h2 className="text-3xl font-semibold text-white">{t(`${service.key}_title`)} Nedir?</h2>
                 <p className="mt-6 text-lg leading-8 text-white/70">{parseMarkdownLinks(t(`${service.key}_summary`))}</p>
                 <p className="mt-4 text-base leading-7 text-white/65">{parseMarkdownLinks(t(`${service.key}_detail`))}</p>
+                {serviceGuideMap[service.slug] && (
+                  <div className="mt-6 border-t border-white/10 pt-5">
+                    <Link
+                      href={serviceGuideMap[service.slug]!.href}
+                      className="inline-flex items-center gap-2 text-sm font-semibold text-gold-200 transition hover:text-gold-100"
+                    >
+                      <span>{serviceGuideMap[service.slug]!.label}</span>
+                      <span aria-hidden="true">&rarr;</span>
+                    </Link>
+                  </div>
+                )}
               </div>
 
               {/* Uygulama Alanları */}

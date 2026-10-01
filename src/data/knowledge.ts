@@ -4,9 +4,9 @@ export const knowledgeArticles: KnowledgeArticle[] = [
   {
     slug: "jet-grout-nedir",
     title: "Jet Grout Nedir? TS EN 12716 Standartlarında Yüksek Basınçlı Zemin İyileştirme Rehberi",
-    seoTitle: "Jet Grout Nedir? TS EN 12716 Zemin İyileştirme ve Kolon Rehberi | YER6",
+    seoTitle: "Jet Grout Nedir? Nasıl Yapılır, Kolon Çapları ve Maliyeti | YER6",
     description:
-      "Jet Grout nedir? TS EN 12716 standardında 300-600 bar yüksek basınçlı çimento enjeksiyonu, Jet-1, Jet-2, Jet-3 sistemleri, kolon çapları ve kalite kontrol kılavuzu.",
+      "Jet Grout nedir ve nasıl uygulanır? TS EN 12716 standardında 300-600 bar yüksek basınçlı enjeksiyon, Jet-1, Jet-2, Jet-3 sistemleri ve kolon çapları rehberi.",
     excerpt:
       "Jet Grout; gevşek kum, silt ve yumuşak kil zeminlerde, 300 ila 600 bar arasındaki ultra yüksek kinetik enerjili çimento şerbeti jetiyle zemin yapısını hidrolik erozyonla parçalayarak zeminle çimentoyu yerinde kaynaştıran, sürekli, düşük geçirgenlikli ve mekanik özellikleri kontrol edilen zemin-çimento kütlesi (soilcrete kolonları) oluşturan öncü bir derin zemin iyileştirme yöntemidir.",
     category: "Jet Grout",
@@ -15,7 +15,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     updatedAt: "2026-09-25",
     heroLabel: "Jet Grout Bilgi Merkezi",
     introduction:
-      "Jet Grout (yüksek basınçlı zemin enjeksiyonu), geoteknik mühendisliğinde zayıf zemin katmanlarının taşıma kapasitesini artırmak, toplam ve farklı oturmaları sınırlandırmak, sıvılaşma riskini bertaraf etmek ve su kesme / sızdırmazlık perdesi (cutoff wall) oluşturmak amacıyla dünya genelinde en yaygın uygulanan derin zemin iyileştirme teknolojilerinden biridir. YER6 Geoteknik olarak, TS EN 12716 standartlarına tam uyumlu yüksek basınçlı pompa parkımız ve uzman mühendis kadromuzla Jet-1, Jet-2 ve Jet-3 sistemlerini projenin zemin parametrelerine göre optimize ediyoruz.",
+      "**Jet Grout (yüksek basınçlı zemin enjeksiyonu)**, zayıf zemin katmanlarının taşıma kapasitesini artırmak, oturma ve deprem kaynaklı sıvılaşma riskini sıfırlamak ve sızdırmazlık perdesi oluşturmak amacıyla, 300 ila 600 bar ultra yüksek basınçlı çimento şerbeti jetiyle zemin yapısını hidrolik erozyonla parçalayıp zeminle çimentoyu yerinde kaynaştırarak monolitik zemin-çimento kolonları (soilcrete) üreten modern bir **derin zemin iyileştirme yöntemi**dir. YER6 Geoteknik olarak, TS EN 12716 ve TBDY 2018 standartlarına tam uyumlu yüksek basınçlı pompa parkımız ve uzman mühendis kadromuzla Jet-1, Jet-2 ve Jet-3 sistemlerini Türkiye genelinde projelendirip uyguluyoruz.",
     sections: [
       {
         id: "jet-grout-tanimi-ve-geoteknik-prensibi",
@@ -909,9 +909,9 @@ export const knowledgeArticles: KnowledgeArticle[] = [
   {
     slug: "fore-kazik-nedir",
     title: "Fore Kazık Nedir? TS EN 1536 ve TBDY 2018 Esasları, Çaplar, Delgi ve Donatılı İmalat Rehberi",
-    seoTitle: "Fore Kazık Nedir? TS EN 1536 Standartları, İmalat ve Çaplar | YER6",
+    seoTitle: "Fore Kazık Nedir? Nasıl Yapılır, Standartları ve Çaplar | YER6",
     description:
-      "Fore kazık nedir? TS EN 1536 ve TBDY 2018 standartlarında derin temel, iksa perdesi, delgi makineleri, tremi beton dökümü, çap tablosu ve PIT testleri rehberi.",
+      "Fore kazık nedir ve nasıl yapılır? TS EN 1536 ve TBDY 2018 standartlarında derin temel ve iksa, rotary delgi makineleri, tremi beton dökümü ve çap tablosu rehberi.",
     excerpt:
       "Fore kazık; zemin taşıma gücünün yetersiz olduğu sahalarda üst yapı yüklerini derinlerdeki sağlam jeolojik formasyonlara aktarmak veya derin kazılarda rijit iksa perdesi oluşturmak amacıyla rotary makinelerle açılan kuyuya donatı kafesi indirilip tremi borusuyla yerinde beton dökülerek teşkil edilen yüksek taşıma kapasiteli derin temel elemanıdır.",
     category: "Fore Kazık",
@@ -920,7 +920,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     updatedAt: "2026-09-25",
     heroLabel: "Fore Kazık Bilgi Merkezi",
     introduction:
-      "Fore kazık (yerinde dökme betonarme kazık / bored pile), modern geoteknik mühendisliğinin en kritik taşıyıcı sistem elemanıdır. Yüksek katlı yapılar, köprü ayakları, viyadükler, endüstriyel tesisler ve derin bodrumlu kazı iksa projelerinde; zayıf üst zemin tabakalarını baypas ederek yapı yüklerini sağlam ana kayaya veya sıkı çakıl/kum tabakalarına güvenle iletir. YER6 Geoteknik olarak, TS EN 1536 ve TBDY 2018 standartlarında Ø65 cm'den Ø150 cm'ye kadar geniş çap yelpazesinde son teknoloji hidrolik rotary makinelerle fore kazık imalatı gerçekleştiriyoruz.",
+      "**Fore kazık**, taşıma gücü yetersiz olan zeminlerde bina ve altyapı yüklerini derindeki sağlam zemin veya ana kaya tabakalarına güvenle aktarmak amacıyla hidrolik rotary delgi makineleriyle açılan dairesel kuyuya çelik donatı kafesi indirilip tremi borusuyla yerinde beton dökülerek teşkil edilen yüksek taşıma kapasiteli bir **betonarme derin temel ve iksa sistemi**dir. Yüksek katlı yapılar, köprü ayakları, viyadükler ve derin kazı projelerinde zayıf üst zemin katmanlarını baypas ederek güvenli yapılaşma sağlar. YER6 Geoteknik olarak, TS EN 1536 ve TBDY 2018 standartlarında Ø65 cm'den Ø150 cm'ye kadar geniş çap yelpazesinde son teknoloji hidrolik rotary makinelerle fore kazık imalatı gerçekleştiriyoruz.",
     sections: [
       {
         id: "fore-kazik-tanimi-ve-calisma-mekanigi",
@@ -2650,9 +2650,9 @@ export const knowledgeArticles: KnowledgeArticle[] = [
   {
     slug: "dsm-nedir",
     title: "DSM Nedir? TS EN 14679 Standartlarında Derin Zemin Karıştırma (Deep Soil Mixing) Kılavuzu",
-    seoTitle: "DSM (Deep Soil Mixing) Nedir? Derin Zemin Karıştırma Esasları | YER6",
+    seoTitle: "DSM (Deep Soil Mixing) Nedir? Nasıl Yapılır ve Standartları | YER6",
     description:
-      "DSM (Deep Soil Mixing) nedir? TS EN 14679 standardında mekanik karıştırma, tek ve çift akslı sistemler, bağlayıcı dozajı, taş kolon ve jet grout kıyaslaması.",
+      "DSM (Deep Soil Mixing) nedir ve nasıl uygulanır? TS EN 14679 standardında mekanik karıştırma, tek ve çift akslı sistemler, bağlayıcı dozajı ve jet grout farkı.",
     excerpt:
       "DSM (Deep Soil Mixing – Derin Zemin Karıştırma); özel tasarımlı tek veya çok akslı mekanik karıştırıcı bıçakların zemin içinde dönerek çimento şerbetini mevcut zemin matriksiyle yüksek basınç kullanmaksızın yerinde homojen olarak karıştırması prensibine dayanan, geniş alanlarda yüksek hız ve sıfır çamur atığı ile zemin-çimento kolonları üreten çevre dostu bir zemin iyileştirme yöntemidir.",
     category: "DSM",
@@ -2661,7 +2661,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     updatedAt: "2026-09-25",
     heroLabel: "DSM Bilgi Merkezi",
     introduction:
-      "DSM (Deep Soil Mixing / Derin Zemin Karıştırma), modern geoteknik mühendisliğinde yumuşak killi, gevşek siltli ve kumlu zeminlerin taşıma kapasitesini artırmak, toplam ve farklı oturmaları kontrol altına almak ve deprem kaynaklı sıvılaşma riskini sıfırlamak için kullanılan en ekonomik ve çevre dostu zemin iyileştirme teknolojilerinden biridir. YER6 Geoteknik olarak, TS EN 14679 standartlarına tam uyumlu yüksek torklu tek ve çift akslı derin karıştırma filomuzla Türkiye genelinde endüstriyel tesisler, lojistik depolar ve altyapı projeleri için yüksek performanslı zemin-çimento kolonları inşa ediyoruz.",
+      "**DSM (Deep Soil Mixing - Derin Zemin Karıştırma)**, zayıf, yumuşak killi veya sıvılaşma riski taşıyan zeminlerin taşıma kapasitesini artırmak ve oturmaları sınırlandırmak amacıyla, özel tasarımlı mekanik karıştırıcı bıçakların zemin içinde dönerek çimento şerbetini mevcut zemin matriksiyle yerinde homojen olarak karıştırmasıyla zemin-çimento kolonları oluşturan modern, ekonomik ve çevre dostu bir **zemin iyileştirme yöntemi**dir. Yüksek hızlı imalat kabiliyeti ve sıfır çamur atığı avantajıyla endüstriyel tesisler, depolar ve altyapı projelerinde güvenli zemin ıslahı sağlar. YER6 Geoteknik olarak, TS EN 14679 standartlarına tam uyumlu yüksek torklu tek ve çift akslı derin karıştırma filomuzla Türkiye genelinde hizmet veriyoruz.",
     sections: [
       {
         id: "dsm-tanimi-ve-calisma-mekanigi",
