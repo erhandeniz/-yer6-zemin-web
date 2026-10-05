@@ -48,7 +48,7 @@ export function Footer() {
         <div>
           <h2 className="text-sm font-semibold uppercase tracking-[0.22em] text-gold-200">{t("footerServices")}</h2>
           <div className="mt-5 grid gap-3 text-sm text-white/64">
-            {services.slice(0, 6).map((service) => (
+            {services.slice(0, 8).map((service) => (
               <Link key={service.slug} href={`/services/${service.slug}`} className="hover:text-gold-100">
                 {t(`${service.key}_title`)}
               </Link>

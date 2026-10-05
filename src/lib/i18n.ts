@@ -42,7 +42,7 @@ export const dictionary = {
     /* ── HOME PAGE ── */
     homeServicesEyebrow: "Geoteknik Uzmanlık Alanları",
     homeServicesTitle: "Uluslararası standartlarda zemin güçlendirme operasyonu.",
-    homeServicesCopy: "YER6; endüstriyel tesisler, limanlar ve ulaşım altyapıları için tasarım, makine seçimi, [zemin iyileştirme yöntemi seçimi](/services/zemin-iyilestirme/) ve saha kalite kontrolü süreçlerini tek teslim standardında yönetir.",
+    homeServicesCopy: "YER6; endüstriyel tesisler, limanlar ve ulaşım altyapıları için tasarım, makine seçimi, [zemin iyileştirme](/services/zemin-iyilestirme/) yöntemi seçimi ve saha kalite kontrolü süreçlerini tek teslim standardında yönetir.",
     homeViewAllServices: "Tüm geoteknik hizmetleri gör",
     homeProjectsEyebrow: "Referans Projeler",
     homeProjectsTitle: "Saha gerçeğine uygun tamamlanmış proje portföyü.",
@@ -163,7 +163,7 @@ export const dictionary = {
     svc_iksa_spec1: "Kazıklı perde",
     svc_iksa_spec2: "Kuşak kirişleri",
     svc_iksa_spec3: "Enstrümantasyon uyumu",
-    svc_zemin_iy_title: "Zemin İyileştirme Yöntemleri ve Mühendislik Çözümleri",
+    svc_zemin_iy_title: "Zemin İyileştirme",
     svc_zemin_iy_summary: "Deprem sıvılaşması, aşırı oturma ve yetersiz taşıma kapasitesi gösteren zayıf zeminlerde TBDY 2018, Eurocode 7 ve FHWA standartlarında Jet Grout, DSM, Taş Kolon ve Enjeksiyon uygulamaları.",
     svc_zemin_iy_detail: "Zemin iyileştirme; yapı yüklerini güvenle taşıyamayan, sıvılaşma potansiyeli yüksek veya aşırı farklı oturma riski taşıyan zeminlerin fiziksel ve geoteknik parametrelerinin iyileştirilmesidir. YER6 Geoteknik, sondaj (SPT, CPT) verilerine dayalı statik ve dinamik performans tasarımı, saha deneme kolonları, data-logger üretimi ve imalat sonrası karot (UCS)/plaka yükleme testleriyle Türkiye geneli ve uluslararası sahalarda anahtar teslim mühendislik projeleri yürütür.",
     svc_zemin_iy_spec1: "Jet Grout, DSM, Taş Kolon ve Enjeksiyon",

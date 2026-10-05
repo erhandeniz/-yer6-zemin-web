@@ -1,8 +1,8 @@
 "use client";
 
-import { useState, useEffect, useId } from "react";
+import { useState, useEffect, useId, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Calculator, X, ChevronRight, Download, Activity, Zap, HardHat, Hammer, MountainSnow, ArrowLeft, Loader2, Send } from "lucide-react";
+import { Calculator, X, ChevronRight, Download, Activity, Zap, HardHat, Hammer, MountainSnow, ArrowLeft, Loader2, Send, MessageCircle } from "lucide-react";
 import { computeEstimate, generateReportNo, type Estimate, type CalcMode as EngineMode } from "@/lib/costEngine";
 import { fetchLiveFx, BASELINE_FX, type FxRates } from "@/lib/fx";
 
@@ -47,6 +47,14 @@ export function FloatingCalculator({ initialOpen = false }: { initialOpen?: bool
 
   // Canlı döviz kuru — hesaplayıcı açıldığında bir kez çekilir, baseline'a düşer.
   const [fx, setFx] = useState<FxRates>(BASELINE_FX);
+
+  const messagesEndRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (step === "chat") {
+      messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [step, typedText, chatMessages, chatLoading]);
 
   useEffect(() => {
     if (!isOpen) return;
@@ -141,7 +149,7 @@ export function FloatingCalculator({ initialOpen = false }: { initialOpen?: bool
   const getFullAiMessage = () => {
     if (!mode || !results) return "";
     
-    let text = `YER6 Yapay Zeka Mühendisi olarak projenizi analiz ettim. Yüksek standartlı kalite politikalarımıza göre çıkardığım sonuçlar:\n\n`;
+    let text = `YER6 Geoteknik Yapay Zeka Mühendisi olarak projenizi analiz ettim. Yüksek standartlı kalite politikalarımıza göre çıkardığım sonuçlar:\n\n`;
     
     if (mode === "fore-kazik" || mode === "mini-kazik") {
       text += `Seçmiş olduğunuz ${depth} metre derinliğinde, ${diameter}m çapındaki ${count} adet ${mode.replace("-", " ")} kuyu imalatı için güvenli tolerans paylarıyla birlikte ${Math.round(results.metric1.value).toLocaleString("tr-TR")} m³ beton ve ${Math.round(results.metric2.value).toLocaleString("tr-TR")} Ton çelik donatı kullanılacaktır. `;
@@ -152,10 +160,10 @@ export function FloatingCalculator({ initialOpen = false }: { initialOpen?: bool
     }
     
     text += `\n\n🕒 Şantiye çalışma süresi makine parkımıza göre tahmini ${results.metric3.value} gün olarak hesaplanmıştır.`;
-    text += `\n💰 YER6 Mühendisleri tarafından yapılan değerlendirmeye göre tahmini bütçe aralıkları şu şekildedir:`;
+    text += `\n💰 YER6 Geoteknik Mühendisleri tarafından yapılan değerlendirmeye göre tahmini bütçe aralıkları şu şekildedir:`;
     text += `\n- **Sadece İşçilik (Makine & Ekipman):** ${results.price.laborValue}`;
     text += `\n- **Malzemeli + İşçilik (Anahtar Teslim):** ${results.price.value}`;
-    text += `\n\n⚠️ *Detaylı ve kesin bütçe analizi için lütfen uzman YER6 mühendislerimizle iletişime geçiniz.*`;
+    text += `\n\n⚠️ *Detaylı ve kesin bütçe analizi için lütfen uzman YER6 Geoteknik mühendislerimizle iletişime geçiniz.*`;
     
     return text;
   };
@@ -642,192 +650,192 @@ export function FloatingCalculator({ initialOpen = false }: { initialOpen?: bool
                 </button>
               </div>
 
-              <div className="p-4 sm:p-5 max-h-[70vh] sm:max-h-[75vh] overflow-y-auto no-scrollbar pb-8 relative">
-                <AnimatePresence mode="wait">
-                  {step === "selection" && (
-                    <motion.div
-                      key="selection"
-                      initial={{ opacity: 0, x: -20 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      exit={{ opacity: 0, x: 20 }}
-                      className="grid gap-3"
-                    >
-                      <p className="text-sm text-white/80 mb-2 font-medium">Merhaba, projeniz için hangi geoteknik imalatı analiz etmek istersiniz?</p>
-                      <MethodButton icon={<Zap />} title="Jet Grout" desc="Zemin iyileştirme & sıvılaşma önlemi" onClick={() => handleModeSelect("jet-grout")} />
-                      <MethodButton icon={<HardHat />} title="Fore Kazık" desc="Derin temel & ağır yük taşıyıcı" onClick={() => handleModeSelect("fore-kazik")} />
-                      <MethodButton icon={<MountainSnow />} title="Deep Soil Mixing (DSM)" desc="Yumuşak killi zemin iyileştirmesi" onClick={() => handleModeSelect("dsm")} />
-                      <MethodButton icon={<Hammer />} title="Öngermeli Ankraj" desc="Derin kazı ve iksa sistemleri" onClick={() => handleModeSelect("ankraj")} />
-                      <MethodButton icon={<Activity />} title="Mini Kazık" desc="Dar alan ve temel altı güçlendirme" onClick={() => handleModeSelect("mini-kazik")} />
-                    </motion.div>
-                  )}
-
-                  {step === "input" && mode && (
-                    <motion.div
-                      key="input"
-                      initial={{ opacity: 0, x: -20 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      exit={{ opacity: 0, x: 20 }}
-                      className="flex flex-col gap-6"
-                    >
-                      <div className="flex items-center gap-2">
-                        <button onClick={() => setStep("selection")} className="text-xs text-white/50 hover:text-gold-300 flex items-center gap-1">
-                          <ArrowLeft className="h-3 w-3" /> Geri
-                        </button>
-                        <span className="text-white/30 text-xs">|</span>
-                        <span className="text-xs font-semibold text-gold-300 uppercase tracking-wider">{mode.replace("-", " ")}</span>
-                      </div>
-
-                      <div className="flex rounded-full bg-white/5 p-1 border border-white/10">
-                        <button onClick={() => setComplexity("quick")} className={`flex-1 rounded-full py-1.5 text-xs font-medium transition-colors ${complexity === "quick" ? "bg-white/10 text-white" : "text-white/40 hover:text-white/80"}`}>⚡ Hızlı Metraj</button>
-                        <button onClick={() => setComplexity("advanced")} className={`flex-1 rounded-full py-1.5 text-xs font-medium transition-colors ${complexity === "advanced" ? "bg-white/10 text-white" : "text-white/40 hover:text-white/80"}`}>📐 İleri Mühendislik</button>
-                      </div>
-
-                      <div className="grid gap-5">
-                        <RangeInput label={mode === "ankraj" ? "Delik Çapı (m)" : "Çap (m)"} value={diameter} min={0.1} max={1.5} step={0.05} onChange={setDiameter} />
-                        <RangeInput label={mode === "ankraj" ? "Kök Boyu (m)" : "Derinlik/Boy (m)"} value={depth} min={5} max={60} step={1} onChange={setDepth} />
-                        <RangeInput label="Adet (Kuyu/Kolon)" value={count} min={10} max={2000} step={10} onChange={setCount} />
-                        
-                        {complexity === "advanced" && (
-                          <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: "auto" }} className="grid gap-5 border-t border-white/10 pt-5">
-                             <div className="flex flex-col gap-2">
-                              <span className="text-xs font-medium text-white/70">Zemin Sınıfı</span>
-                              <div className="flex gap-2">
-                                <button onClick={() => setSoilType("soft")} className={`flex-1 rounded-lg py-2.5 text-xs border transition-colors ${soilType === "soft" ? "border-gold-300 bg-gold-300/10 text-gold-300 shadow-[0_0_10px_rgba(212,175,55,0.2)]" : "border-white/10 bg-white/5 text-white/50 hover:bg-white/10"}`}>Yumuşak (Kil/Silt)</button>
-                                <button onClick={() => setSoilType("hard")} className={`flex-1 rounded-lg py-2.5 text-xs border transition-colors ${soilType === "hard" ? "border-gold-300 bg-gold-300/10 text-gold-300 shadow-[0_0_10px_rgba(212,175,55,0.2)]" : "border-white/10 bg-white/5 text-white/50 hover:bg-white/10"}`}>Sert (Kum/Çakıl)</button>
-                              </div>
-                             </div>
-                             <RangeInput label="Güvenlik/Fire Katsayısı" value={factor} min={1.0} max={1.5} step={0.05} onChange={setFactor} />
-                          </motion.div>
-                        )}
-                      </div>
-
-                      <button
-                        onClick={startChatAnalysis}
-                        className="group relative flex w-full items-center justify-center gap-2 overflow-hidden rounded-xl bg-gold-300 py-4 text-sm font-bold text-obsidian shadow-[0_0_20px_rgba(212,175,55,0.3)] transition-all hover:scale-[1.02] active:scale-95"
+              {step !== "chat" ? (
+                <div className="p-4 sm:p-5 max-h-[70vh] sm:max-h-[75vh] overflow-y-auto no-scrollbar pb-8 relative">
+                  <AnimatePresence mode="wait">
+                    {step === "selection" && (
+                      <motion.div
+                        key="selection"
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        exit={{ opacity: 0, x: 20 }}
+                        className="grid gap-3"
                       >
-                        <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity" />
-                        <Loader2 className="h-4 w-4 animate-spin hidden group-active:block" />
-                        <span className="group-active:hidden">Analizi Başlat</span>
-                      </button>
-                    </motion.div>
-                  )}
+                        <p className="text-sm text-white/80 mb-2 font-medium">Merhaba, projeniz için hangi geoteknik imalatı analiz etmek istersiniz?</p>
+                        <MethodButton icon={<Zap />} title="Jet Grout" desc="Zemin iyileştirme & sıvılaşma önlemi" onClick={() => handleModeSelect("jet-grout")} />
+                        <MethodButton icon={<HardHat />} title="Fore Kazık" desc="Derin temel & ağır yük taşıyıcı" onClick={() => handleModeSelect("fore-kazik")} />
+                        <MethodButton icon={<MountainSnow />} title="Deep Soil Mixing (DSM)" desc="Yumuşak killi zemin iyileştirmesi" onClick={() => handleModeSelect("dsm")} />
+                        <MethodButton icon={<Hammer />} title="Öngermeli Ankraj" desc="Derin kazı ve iksa sistemleri" onClick={() => handleModeSelect("ankraj")} />
+                        <MethodButton icon={<Activity />} title="Mini Kazık" desc="Dar alan ve temel altı güçlendirme" onClick={() => handleModeSelect("mini-kazik")} />
+                      </motion.div>
+                    )}
 
-                  {step === "chat" && (
-                    <motion.div
-                      key="chat"
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      className="flex flex-col gap-4 relative"
-                    >
-                      <div className="flex items-center justify-between">
-                        <button onClick={() => setStep("input")} className="text-xs text-white/50 hover:text-gold-300 flex items-center gap-1">
-                          <ArrowLeft className="h-3 w-3" /> Parametreleri Değiştir
-                        </button>
-                      </div>
-
-                      <div className="flex gap-4">
-                        <div className="flex-shrink-0">
-                          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gold-300 text-obsidian shadow-[0_0_15px_rgba(212,175,55,0.4)]">
-                            <BotAvatar />
-                          </div>
+                    {step === "input" && mode && (
+                      <motion.div
+                        key="input"
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        exit={{ opacity: 0, x: 20 }}
+                        className="flex flex-col gap-6"
+                      >
+                        <div className="flex items-center gap-2">
+                          <button onClick={() => setStep("selection")} className="text-xs text-white/50 hover:text-gold-300 flex items-center gap-1">
+                            <ArrowLeft className="h-3 w-3" /> Geri
+                          </button>
+                          <span className="text-white/30 text-xs">|</span>
+                          <span className="text-xs font-semibold text-gold-300 uppercase tracking-wider">{mode.replace("-", " ")}</span>
                         </div>
-                        <div className="flex-1 rounded-2xl rounded-tl-none bg-[#111] border border-white/10 p-5 shadow-inner">
-                          <div className="text-sm leading-relaxed text-white/90 whitespace-pre-line font-light">
-                            {/* Simple Markdown-like bold parser for **text** */}
-                            {typedText.split("**").map((text, i) => i % 2 !== 0 ? <strong key={i} className="text-gold-300 font-semibold">{text}</strong> : text)}
-                            {isTyping && <span className="inline-block w-2 h-4 ml-1 bg-gold-300 animate-pulse" />}
-                          </div>
-                        </div>
-                      </div>
 
-                      {/* Canlı danışman soru-cevap balonları */}
-                      {chatMessages.map((m, i) => (
-                        <div key={i} className={`flex gap-4 ${m.role === "user" ? "justify-end" : ""}`}>
-                          {m.role === "assistant" && (
-                            <div className="flex-shrink-0">
-                              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gold-300 text-obsidian shadow-[0_0_15px_rgba(212,175,55,0.4)]">
-                                <BotAvatar />
-                              </div>
-                            </div>
+                        <div className="flex rounded-full bg-white/5 p-1 border border-white/10">
+                          <button onClick={() => setComplexity("quick")} className={`flex-1 rounded-full py-1.5 text-xs font-medium transition-colors ${complexity === "quick" ? "bg-white/10 text-white" : "text-white/40 hover:text-white/80"}`}>⚡ Hızlı Metraj</button>
+                          <button onClick={() => setComplexity("advanced")} className={`flex-1 rounded-full py-1.5 text-xs font-medium transition-colors ${complexity === "advanced" ? "bg-white/10 text-white" : "text-white/40 hover:text-white/80"}`}>📐 İleri Mühendislik</button>
+                        </div>
+
+                        <div className="grid gap-5">
+                          <RangeInput label={mode === "ankraj" ? "Delik Çapı (m)" : "Çap (m)"} value={diameter} min={0.1} max={1.5} step={0.05} onChange={setDiameter} />
+                          <RangeInput label={mode === "ankraj" ? "Kök Boyu (m)" : "Derinlik/Boy (m)"} value={depth} min={5} max={60} step={1} onChange={setDepth} />
+                          <RangeInput label="Adet (Kuyu/Kolon)" value={count} min={10} max={2000} step={10} onChange={setCount} />
+                          
+                          {complexity === "advanced" && (
+                            <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: "auto" }} className="grid gap-5 border-t border-white/10 pt-5">
+                               <div className="flex flex-col gap-2">
+                                <span className="text-xs font-medium text-white/70">Zemin Sınıfı</span>
+                                <div className="flex gap-2">
+                                  <button onClick={() => setSoilType("soft")} className={`flex-1 rounded-lg py-2.5 text-xs border transition-colors ${soilType === "soft" ? "border-gold-300 bg-gold-300/10 text-gold-300 shadow-[0_0_10px_rgba(212,175,55,0.2)]" : "border-white/10 bg-white/5 text-white/50 hover:bg-white/10"}`}>Yumuşak (Kil/Silt)</button>
+                                  <button onClick={() => setSoilType("hard")} className={`flex-1 rounded-lg py-2.5 text-xs border transition-colors ${soilType === "hard" ? "border-gold-300 bg-gold-300/10 text-gold-300 shadow-[0_0_10px_rgba(212,175,55,0.2)]" : "border-white/10 bg-white/5 text-white/50 hover:bg-white/10"}`}>Sert (Kum/Çakıl)</button>
+                                </div>
+                               </div>
+                               <RangeInput label="Güvenlik/Fire Katsayısı" value={factor} min={1.0} max={1.5} step={0.05} onChange={setFactor} />
+                            </motion.div>
                           )}
-                          <div
-                            className={
-                              m.role === "user"
-                                ? "max-w-[80%] rounded-2xl rounded-tr-none bg-gold-300/15 border border-gold-300/25 p-3 text-sm text-white/90"
-                                : "flex-1 rounded-2xl rounded-tl-none bg-[#111] border border-white/10 p-4 text-sm leading-relaxed text-white/90 whitespace-pre-line font-light shadow-inner"
-                            }
-                          >
-                            {m.role === "assistant"
-                              ? m.content
-                                ? m.content.split("**").map((t, j) => (j % 2 !== 0 ? <strong key={j} className="text-gold-300 font-semibold">{t}</strong> : t))
-                                : chatLoading && i === chatMessages.length - 1
-                                  ? <span className="inline-flex items-center gap-1 text-white/50"><Loader2 className="h-3.5 w-3.5 animate-spin" /> Danışman yazıyor…</span>
-                                  : null
-                              : m.content}
-                          </div>
                         </div>
-                      ))}
 
-                      <AnimatePresence>
-                        {!isTyping && (
-                          <motion.div
-                            initial={{ opacity: 0, scale: 0.9, y: 10 }}
-                            animate={{ opacity: 1, scale: 1, y: 0 }}
-                            className="mt-2 flex flex-col gap-3"
-                          >
-                            {/* Canlı danışmana soru sor */}
-                            <div className="flex items-end gap-2">
-                              <textarea
-                                value={chatInput}
-                                onChange={(e) => setChatInput(e.target.value)}
-                                onKeyDown={(e) => {
-                                  if (e.key === "Enter" && !e.shiftKey) {
-                                    e.preventDefault();
-                                    sendChat();
-                                  }
-                                }}
-                                rows={1}
-                                placeholder="YER6 danışmanına sorun (ör. bu yöntem zeminime uygun mu?)"
-                                className="flex-1 resize-none rounded-xl border border-white/10 bg-white/5 px-3 py-2.5 text-sm text-white placeholder:text-white/30 focus:border-gold-300/50 focus:outline-none"
-                              />
-                              <button
-                                onClick={sendChat}
-                                disabled={chatLoading || !chatInput.trim()}
-                                aria-label="Gönder"
-                                className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl bg-gold-300 text-obsidian transition-transform hover:scale-105 disabled:cursor-not-allowed disabled:opacity-40"
-                              >
-                                {chatLoading ? <Loader2 className="h-4 w-4 animate-spin" /> : <Send className="h-4 w-4" />}
-                              </button>
-                            </div>
+                        <button
+                          onClick={startChatAnalysis}
+                          className="group relative flex w-full items-center justify-center gap-2 overflow-hidden rounded-xl bg-gold-300 py-4 text-sm font-bold text-obsidian shadow-[0_0_20px_rgba(212,175,55,0.3)] transition-all hover:scale-[1.02] active:scale-95"
+                        >
+                          <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity" />
+                          <Loader2 className="h-4 w-4 animate-spin hidden group-active:block" />
+                          <span className="group-active:hidden">Analizi Başlat</span>
+                        </button>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+              ) : (
+                <div className="flex flex-col flex-1 overflow-hidden">
+                  {/* Kaydırılabilir mesaj alanı */}
+                  <div className="p-4 sm:p-5 max-h-[46vh] sm:max-h-[50vh] overflow-y-auto no-scrollbar flex flex-col gap-3 relative">
+                    <div className="flex items-center justify-between pb-1">
+                      <button onClick={() => setStep("input")} className="text-xs text-white/50 hover:text-gold-300 flex items-center gap-1 transition-colors">
+                        <ArrowLeft className="h-3 w-3" /> Parametreleri Değiştir
+                      </button>
+                      <span className="text-[10px] text-gold-300/80 font-mono">Ön Fizibilite Özeti</span>
+                    </div>
 
-                            <div className="flex flex-wrap items-center justify-end gap-2">
-                              <a
-                                href={`https://wa.me/905323780691?text=${encodeURIComponent(
-                                  `Merhaba YER6 Geoteknik, sitenizdeki hesaplayıcıdan ${mode?.toUpperCase() || "ZEMİN"} için ön metraj hesapladım (${count} adet, ${depth} m derinlik). Bu proje için resmi teklif ve şantiye programı rica ediyorum.`
-                                )}`}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="group relative flex items-center gap-1.5 rounded-xl bg-emerald-600/30 border border-emerald-500/50 px-3.5 py-2 text-xs font-semibold text-emerald-300 hover:bg-emerald-600 hover:text-white transition-all shadow-[0_0_10px_rgba(16,185,129,0.15)]"
-                              >
-                                <Send className="h-3.5 w-3.5 group-hover:scale-110 transition-transform" />
-                                WhatsApp Teklif İste
-                              </a>
-                              <button
-                                onClick={generatePDF}
-                                className="group relative flex items-center gap-2 rounded-xl bg-gold-300/10 border border-gold-300/30 px-4 py-2 text-xs font-semibold text-gold-300 hover:bg-gold-300 hover:text-obsidian transition-all shadow-[0_0_10px_rgba(212,175,55,0.1)] hover:shadow-[0_0_15px_rgba(212,175,55,0.3)]"
-                              >
-                                <Download className="h-4 w-4 group-hover:scale-110 transition-transform" />
-                                PDF Raporu İndir
-                              </button>
+                    <div className="flex gap-3">
+                      <div className="flex-shrink-0 pt-0.5">
+                        <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gold-300 text-obsidian shadow-[0_0_12px_rgba(212,175,55,0.35)]">
+                          <BotAvatar />
+                        </div>
+                      </div>
+                      <div className="flex-1 rounded-2xl rounded-tl-none bg-[#111] border border-white/10 p-3.5 sm:p-4 shadow-inner">
+                        <div className="text-xs sm:text-sm leading-relaxed text-white/90 whitespace-pre-line font-light">
+                          {typedText.split("**").map((text, i) => i % 2 !== 0 ? <strong key={i} className="text-gold-300 font-semibold">{text}</strong> : text)}
+                          {isTyping && <span className="inline-block w-2 h-3.5 ml-1 bg-gold-300 animate-pulse" />}
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Canlı danışman soru-cevap balonları */}
+                    {chatMessages.map((m, i) => (
+                      <div key={i} className={`flex gap-3 ${m.role === "user" ? "justify-end" : ""}`}>
+                        {m.role === "assistant" && (
+                          <div className="flex-shrink-0 pt-0.5">
+                            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gold-300 text-obsidian shadow-[0_0_12px_rgba(212,175,55,0.35)]">
+                              <BotAvatar />
                             </div>
-                          </motion.div>
+                          </div>
                         )}
-                      </AnimatePresence>
+                        <div
+                          className={
+                            m.role === "user"
+                              ? "max-w-[85%] rounded-2xl rounded-tr-none bg-gold-300/15 border border-gold-300/25 p-3 text-xs sm:text-sm text-white/90"
+                              : "flex-1 rounded-2xl rounded-tl-none bg-[#111] border border-white/10 p-3.5 text-xs sm:text-sm leading-relaxed text-white/90 whitespace-pre-line font-light shadow-inner"
+                          }
+                        >
+                          {m.role === "assistant"
+                            ? m.content
+                              ? m.content.split("**").map((t, j) => (j % 2 !== 0 ? <strong key={j} className="text-gold-300 font-semibold">{t}</strong> : t))
+                              : chatLoading && i === chatMessages.length - 1
+                                ? <span className="inline-flex items-center gap-1.5 text-white/50 text-xs"><Loader2 className="h-3.5 w-3.5 animate-spin" /> Danışman yazıyor…</span>
+                                : null
+                            : m.content}
+                        </div>
+                      </div>
+                    ))}
+                    <div ref={messagesEndRef} />
+                  </div>
 
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </div>
+                  {/* SABİT VE HER ZAMAN GÖRÜNÜR ALT PANEL: SOHBET KUTUSU + WHATSAPP + PDF */}
+                  <div className="border-t border-white/10 bg-[#0C0C0D] p-3 sm:p-4 flex-shrink-0 flex flex-col gap-2.5">
+                    <div className="flex items-center justify-between text-[11px] px-0.5">
+                      <span className="flex items-center gap-1.5 font-semibold text-white/90">
+                        <span className="size-2 rounded-full bg-emerald-400 animate-pulse" />
+                        Mühendisle Canlı Sohbet
+                      </span>
+                      <span className="text-gold-300/80 text-[10px]">Canlı Yanıt & Teklif</span>
+                    </div>
+
+                    {/* Canlı danışmana soru sor */}
+                    <div className="flex items-end gap-2">
+                      <textarea
+                        value={chatInput}
+                        onChange={(e) => setChatInput(e.target.value)}
+                        onKeyDown={(e) => {
+                          if (e.key === "Enter" && !e.shiftKey) {
+                            e.preventDefault();
+                            sendChat();
+                          }
+                        }}
+                        rows={1}
+                        placeholder={isTyping ? "Danışman analizi hazırlıyor..." : "Mühendisimize soru sorun (ör. zeminime uygun mu?)"}
+                        className="flex-1 resize-none rounded-xl border border-white/15 bg-white/5 px-3 py-2 text-xs sm:text-sm text-white placeholder:text-white/35 focus:border-gold-300/60 focus:bg-white/10 focus:outline-none"
+                      />
+                      <button
+                        onClick={sendChat}
+                        disabled={chatLoading || !chatInput.trim()}
+                        aria-label="Gönder"
+                        className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-xl bg-gold-300 text-obsidian transition-transform hover:scale-105 active:scale-95 disabled:cursor-not-allowed disabled:opacity-40 shadow-[0_0_10px_rgba(212,175,55,0.3)]"
+                      >
+                        {chatLoading ? <Loader2 className="h-4 w-4 animate-spin" /> : <Send className="h-4 w-4" />}
+                      </button>
+                    </div>
+
+                    {/* Butonlar: WhatsApp Teklif İste (Yeşil ve belirgin) + PDF İndir */}
+                    <div className="flex items-center gap-2 pt-0.5">
+                      <a
+                        href={`https://wa.me/905323780691?text=${encodeURIComponent(
+                          `Merhaba YER6 Geoteknik, sitenizdeki hesaplayıcıdan ${mode?.toUpperCase() || "ZEMİN"} için ön metraj hesapladım (${count} adet, ${depth} m derinlik). Bu proje için resmi teklif ve şantiye programı rica ediyorum.`
+                        )}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 flex items-center justify-center gap-1.5 rounded-xl bg-[#25D366] text-black font-bold px-3 py-2 text-xs hover:bg-[#20ba5a] transition-all shadow-[0_0_12px_rgba(37,211,102,0.35)] active:scale-98"
+                      >
+                        <MessageCircle className="h-3.5 w-3.5 fill-current" />
+                        WhatsApp Teklif İste
+                      </a>
+                      <button
+                        onClick={generatePDF}
+                        className="flex items-center justify-center gap-1.5 rounded-xl bg-gold-300/10 border border-gold-300/30 px-3 py-2 text-xs font-semibold text-gold-300 hover:bg-gold-300 hover:text-obsidian transition-all shadow-[0_0_10px_rgba(212,175,55,0.1)] active:scale-98"
+                      >
+                        <Download className="h-3.5 w-3.5" />
+                        PDF İndir
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              )}
             </motion.div>
           )}
         </AnimatePresence>

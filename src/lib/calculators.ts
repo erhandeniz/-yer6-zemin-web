@@ -487,7 +487,10 @@ const SERVICE_TO_TOOL: Record<string, string> = {
   ankraj: "ankraj-maliyet-hesaplama",
   "iksa-sistemleri": "ankraj-maliyet-hesaplama",
   palplans: "palplans-maliyet-hesaplama",
-  pamplas: "palplans-maliyet-hesaplama"
+  pamplas: "palplans-maliyet-hesaplama",
+  "zemin-iyilestirme": "jet-grout-maliyet-hesaplama",
+  "zemin-guclendirme": "jet-grout-maliyet-hesaplama",
+  "tas-kolon": "dsm-maliyet-hesaplama"
 };
 
 export function getToolForService(serviceSlug: string): CalculatorTool | undefined {

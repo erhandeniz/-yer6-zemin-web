@@ -75,6 +75,14 @@ const serviceGuideMap: Partial<Record<string, { href: string; label: string }>> 
   "diafram-duvar": {
     href: "/knowledge/diafram-duvar-nedir",
     label: "Ayrıntılı Teknik Rehber: Diyafram duvar nedir ve derin kazılarda sızdırmazlık nasıl sağlanır?"
+  },
+  "zemin-iyilestirme": {
+    href: "/knowledge/zemin-iyilestirme-yontemleri",
+    label: "Ayrıntılı Teknik Rehber: Zemin iyileştirme nedir, yöntemler ve TBDY 2018 seçim kriterleri nelerdir?"
+  },
+  "zemin-guclendirme": {
+    href: "/knowledge/temel-alti-zemin-guclendirme",
+    label: "Ayrıntılı Teknik Rehber: Bina altı zemin güçlendirme ve temel güçlendirme yöntemleri nelerdir?"
   }
 };
 
@@ -106,7 +114,7 @@ const serviceHeroH1s: Record<string, string> = {
   "mini-kazik": "Mini Kazık ve Temel Güçlendirme Çözümleri",
   ankraj: "Öngermeli Ankraj ve İksa Destek Sistemleri",
   "iksa-sistemleri": "Derin Kazı İksa Sistemleri ve Çözümleri",
-  "zemin-iyilestirme": "Zemin İyileştirme Yöntemleri ve Mühendislik Çözümleri",
+  "zemin-iyilestirme": "Zemin İyileştirme Firmaları, Yöntemleri ve Uygulamaları",
   "zemin-guclendirme": "Zemin Güçlendirme ve Taşıma Kapasitesi Çözümleri",
   "geoteknik-danismanlik": "Geoteknik Danışmanlık ve Zemin Etüdü Hizmetleri",
   "zemin-civisi": "Zemin Çivisi (Soil Nailing) ve Şev Stabilitesi",
@@ -650,6 +658,21 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
                           title: "YER6 DSM (Deep Soil Mixing) Saha Uygulaması ve Derin Zemin Karıştırma",
                           location: "Saha İmalatı",
                           description: "YER6 Geoteknik ekibinin sahada çift milli DSM makineleriyle gerçekleştirdiği derin zemin karıştırma ve kolon operasyonu."
+                        }
+                      ]
+                    : service.slug === "zemin-iyilestirme" || service.slug === "zemin-guclendirme"
+                    ? [
+                        {
+                          id: "HcMN8T1X4d8",
+                          title: "YER6 Jet Grout Basınçlı Enjeksiyon ile Zemin İyileştirme Operasyonu",
+                          location: "Saha İmalatı",
+                          description: "YER6 Geoteknik mühendislik ekibinin sahada gerçekleştirdiği 400-600 bar yüksek basınçlı Jet Grout zemin iyileştirme kolon imalatı."
+                        },
+                        {
+                          id: "wbIv8gXSw-4",
+                          title: "YER6 DSM (Deep Soil Mixing) Derin Zemin Karıştırma Operasyonu",
+                          location: "Saha İmalatı",
+                          description: "YER6 Geoteknik ekibinin sahada çift milli DSM makineleriyle gerçekleştirdiği derin zemin karıştırma ve yerinde iyileştirme kolonları."
                         }
                       ]
                     : undefined

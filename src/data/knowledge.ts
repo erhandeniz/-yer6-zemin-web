@@ -1458,7 +1458,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
           {
             type: "paragraph",
             content:
-              "Uygulama yeni yapı alanlarında temel imalatından önce yapılabileceği gibi mevcut binaların altında, endüstriyel sahalarda, dolgu alanlarında, derin kazılarda ve yeraltı suyu etkisindeki bölgelerde de gerçekleştirilebilir. [Zemin iyileştirme hizmeti](/services/zemin-iyilestirme/) kapsamında yöntem seçimi yalnızca zeminin adına göre değil; tabaka kalınlığı, yeraltı suyu, yapı yükü, komşu yapılar ve hedef performans birlikte değerlendirilerek yapılır."
+              "Uygulama yeni yapı alanlarında temel imalatından önce yapılabileceği gibi mevcut binaların altında, endüstriyel sahalarda, dolgu alanlarında, derin kazılarda ve yeraltı suyu etkisindeki bölgelerde de gerçekleştirilebilir. YER6 [zemin iyileştirme](/services/zemin-iyilestirme/) uzmanlığı kapsamında yöntem seçimi yalnızca zeminin adına göre değil; tabaka kalınlığı, yeraltı suyu, yapı yükü, komşu yapılar ve hedef performans birlikte değerlendirilerek yapılır."
           },
           {
             type: "note",
