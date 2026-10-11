@@ -2017,84 +2017,164 @@ export const knowledgeArticles: KnowledgeArticle[] = [
   },
   {
     slug: "jet-grout-maliyeti",
-    title: "Jet Grout Maliyeti 2026: Fiyatı Belirleyen Faktörler",
-    seoTitle: "Jet Grout Maliyeti 2026 | Fiyatı Neler Belirler? | YER6",
-    description: "Jet grout maliyeti; kolon çapı ve derinliği, zemin türü, metraj, sistem tipi ve saha koşullarına göre belirlenir. Fiyatı etkileyen faktörler ve metraj mantığı.",
-    excerpt: "Jet grout maliyeti tek bir birim fiyatla ifade edilemez; kolon çapı ve derinliği, zemin türü, toplam metraj, mono/double/triple sistem seçimi ve saha erişimi gibi değişkenlerle belirlenir. Doğru maliyet, ancak zemin verisi ve projeye özel metrajla hesaplanır.",
+    title: "Jet Grout Maliyeti 2026: Metre Birim Fiyatı, Sarfiyat ve Şantiye Analizi",
+    seoTitle: "Jet Grout Maliyeti 2026 | Metre Birim Fiyatı ve Analiz | YER6",
+    description: "Jet grout maliyeti 2026 metre birim fiyatları; Ø60 cm, Ø80 cm ve Ø100 cm kolon çapı, çimento tonajı (120-400 kg/m), 400-600 bar pompa mazotu ve şantiye metraj analiz rehberi.",
+    excerpt: "2026 şantiye koşullarında jet grout metre birim fiyatları; kolon çapına (Ø60 cm için 120-150 kg çimento, Ø80 cm için 240-280 kg çimento), 400-600 bar pompa mazot tüketimine, kuyu ağzı pasa bertarafına ve mobilizasyon lojistiğine göre belirlenir.",
     category: "Jet Grout",
-    readingTime: "8 dk",
+    readingTime: "15 dk",
     publishedAt: "2026-06-21",
-    updatedAt: "2026-07-10",
-    heroLabel: "Jet Grout Maliyeti",
+    updatedAt: "2026-10-12",
+    heroLabel: "Jet Grout Maliyet Analizi 2026",
     introduction:
-      "Jet grout maliyeti, saha ve proje koşullarına bağlı olarak geniş bir aralıkta değişir. Bu nedenle 'jet grout metretül fiyatı nedir?' sorusunun tek bir cevabı yoktur. Maliyeti gerçekçi biçimde belirlemek için kolon geometrisi, zemin türü, toplam metraj ve uygulama sistemi birlikte değerlendirilmelidir. Bu yazıda jet grout fiyatını belirleyen temel kalemleri ve metraj mantığını açıklıyoruz. Kendi projeniz için yaklaşık metraj ve ön maliyet almak isterseniz [jet grout maliyet hesaplama aracını](/hesaplama/jet-grout-maliyet-hesaplama/) kullanabilirsiniz.",
+      "Jet grout maliyeti, geoteknik şantiyelerde yalnızca basit bir 'delgi-enjeksiyon metre fiyatı' ile açıklanamaz. 400-600 bar aşırı yüksek basınç altında çalışan hidrolik pompaların enerji tüketimi, kolon çapına göre katlanarak artan çimento tonajı, kuyu ağzından çıkan çimento-zemin çamurunun (deburbe / spoil) şantiyeden hafriyatla tahliyesi ve ağır makine mobilizasyonu maliyeti doğrudan şekillendirir. Bu kapsamlı geoteknik rehberde; 2026 güncel şantiye girdi maliyetleriyle 1 metre jet grout kolonunun maliyet ayrıştırmasını, Ø60 cm, Ø80 cm ve Ø100 cm kolon çapı bazında çimento ve mazot sarfiyatlarını ve müteahhitler için birim fiyat risk yönetimini eksiksiz inceliyoruz. Kendi projenizin zemin verilerine göre milimetrik metraj ve teklif özeti çıkarmak için [İnteraktif Jet Grout Maliyet Hesaplama Aracımızı](/hesaplama/jet-grout-maliyet-hesaplama/) kullanabilirsiniz.",
     sections: [
       {
-        id: "faktorler",
-        title: "Jet Grout Maliyetini Belirleyen Faktörler",
+        id: "birim-fiyat-ve-ozet",
+        title: "1. 2026 Jet Grout Metre Birim Fiyatı ve Şantiye Sarfiyat Özeti",
         blocks: [
           {
             type: "paragraph",
             content:
-              "Jet grout maliyeti; imalat metrajı (toplam kolon boyu veya iyileştirilen zemin hacmi), kolon çapı, uygulama sistemi ve saha koşullarının birleşimiyle oluşur. Aynı m² alanda dahi, farklı zemin ve derinlik koşulları maliyeti önemli ölçüde değiştirebilir."
+              "2026 inşaat ve zemin piyasasında jet grout imalatı genellikle metretül (kolon boyu) veya iyileştirilen hacim (m³) esasına göre tekliflendirilir. Fiyatı belirleyen en belirleyici parametre kolon çapıdır; çünkü kolon çapı 60 cm'den 80 cm'ye çıktığında teorik hacim ve dolayısıyla çimento tüketimi yaklaşık 1.8 katına, 100 cm'ye çıktığında ise 2.8 katına yükselir."
           },
           {
             type: "list",
-            title: "Fiyatı etkileyen başlıca kalemler",
+            title: "2026 Kolon Çapına Göre Ortalama Şantiye Girdi ve Sarfiyat Parametreleri",
             items: [
-              "Kolon çapı ve derinliği (metraj)",
-              "Zemin türü ve geçirimliliği (mono/double/triple sistem seçimi)",
-              "Toplam kolon adedi ve saha büyüklüğü",
-              "Çimento dozajı ve bağlayıcı sarfı",
-              "Yeraltı suyu seviyesi ve saha erişimi",
-              "Mobilizasyon, deneme kolonu ve kalite kontrol testleri"
+              "Ø60 cm Jet Grout Kolonu: Metretül başına 110 - 140 kg çimento (CEM I 42.5R / CEM II 42.5), 0.9 - 1.2 litre mazot (pompa + delgi rigi). Güncel şantiye imalat maliyeti piyasa zemin koşullarına ve toplam metraja göre değişkenlik gösterir.",
+              "Ø80 cm Jet Grout Kolonu: Metretül başına 230 - 280 kg çimento, 1.4 - 1.8 litre mazot. Su/çimento oranı W/C = 1.0 alındığında zemin-çimento matrisi (soilcrete) homojenliği sağlanır.",
+              "Ø100 cm Jet Grout Kolonu (JG2 / Çift Akışkanlı): Metretül başına 370 - 440 kg çimento, 2.0 - 2.6 litre mazot ve yüksek kapasiteli hava kompresörü işletme bedeli."
             ]
-          }
-        ]
-      },
-      {
-        id: "metraj",
-        title: "Metraj ve Birim Fiyat Mantığı",
-        blocks: [
-          {
-            type: "paragraph",
-            content:
-              "Jet grout işleri genellikle toplam kolon boyu (metretül) veya iyileştirilen zemin hacmi (m³) üzerinden metrajlanır. Birim fiyat; çimento sarfı, delgi süresi, ekipman ve işçilik kalemlerini kapsar. Üretim öncesi yapılan deneme kolonları, gerçek sarf ve üretim hızını doğrulayarak metrajın güvenilirliğini artırır."
           },
           {
             type: "note",
-            title: "Sağlıklı teklif için gereken",
+            title: "Önemli Maliyet Uyarısı (Eski Bilgiler Hakkında)",
             content:
-              "Gerçekçi bir jet grout maliyeti için zemin etüdü verisi ve proje bilgisi gerekir. YER6, ihale öncesi zemin koşullarına göre yaklaşık metraj ve maliyet öngörüsü hazırlayarak karar sürecini destekler."
+              "İnternette dolaşan 'metre başına 5-7 dolar sabit fiyat' veya 'mazot 22 TL iken hesaplanan birim fiyatlar' 2026 şantiye gerçeklerini yansıtmaz. Güncel çimento tonaj maliyetleri, elektrik altyapısı, lisanslı hafriyat döküm sahası harçları ve ağır nakliye navlunları dikkate alınmadan verilen eksik teklifler şantiyede müteahhidin durmasına ve maliyet patlamalarına yol açar."
           }
         ]
       },
       {
-        id: "optimizasyon",
-        title: "Maliyeti Optimize Etmenin Yolları",
+        id: "sarfiyat-kalemleri",
+        title: "2. 1 Metre Jet Grout Kolonunun Ayrıştırılmış Şantiye Maliyet Bileşenleri",
         blocks: [
           {
+            type: "paragraph",
+            content:
+              "1 metre jet grout imalatının maliyet faturası 4 temel ana bileşenin toplamından oluşur:"
+          },
+          {
             type: "list",
-            title: "Maliyeti kontrol altında tutan yaklaşımlar",
+            title: "1 Metre Kolonun Maliyet Dağılımı",
             items: [
-              "Kolon çapı ve aralığını zemin verisine göre optimize etmek",
-              "Uygun sistem (mono/double/triple) seçimiyle gereksiz sarftan kaçınmak",
-              "Deneme kolonlarıyla üretim parametrelerini kalibre etmek",
-              "Alternatif yöntemleri (DSM, fore kazık) teknik-ekonomik karşılaştırmak",
-              "Saha organizasyonuyla mobilizasyon ve bekleme sürelerini azaltmak"
+              "1. Çimento Maliyeti (%45 - %55): Jet groutta en büyük gider kalemidir. Genellikle dökme çimento silobaslarla şantiyedeki silolara basılır. 1 metre Ø80 cm kolonda çeyrek tondan fazla (250 kg) çimento tüketilir.",
+              "2. Akaryakıt ve Enerji Maliyeti (%18 - %25): 400-600 bar yüksek basınç pompası saatte 60-80 litre, hidrolik delgi makinesi ise saatte 25-35 litre dizel yakıt tüketir. Günlük 150-250 metretül imalat yapan bir şantiyede akaryakıt lojistiği kritik nakit akışıdır.",
+              "3. Ekipman Amortismanı ve Aşınma Payı (%12 - %18): Yüksek basınç altında çalışan döner kafa salmastrası (swivel), karbür uçlu nozullar, yüksek basınç hortumları ve tij dişleri aşırı aşınmaya maruz kalır.",
+              "4. Nitelikli İşçilik ve Operatör Kadrosu (%10 - %15): Jet grout operatörü, pompa şefi, santral operatörü ve şantiye geoteknik mühendisi işletme maliyetidir."
             ]
+          }
+        ]
+      },
+      {
+        id: "pasa-ve-hafriyat",
+        title: "3. Kuyu Ağzı Pasa (Deburbe / Spoil) Tahliyesi ve Gizli Şantiye Maliyeti",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Birçok ihale ve fizibilite dosyasında unutulan en büyük 'gizli maliyet', kuyu ağzından taşan çamurdur (deburbe / spoil). 400 bar jet enerjisi zemini parçalarken hidrolik yarılmayı (blowout) önlemek için hacimce %30 - %50 oranında zemin-çimento çamuru kuyu ağzından dışarı püskürür."
+          },
+          {
+            type: "paragraph",
+            content:
+              "10.000 metretül Ø80 cm jet grout imalatında yaklaşık 2.500 - 3.500 m³ sıvı çamur ortaya çıkar. Bu çamur sahada dinlendirilip kepçelerle kurutulduktan sonra onlarca hafriyat kamyonuyla resmi belediye döküm sahalarına taşınmak zorundadır. Hafriyat ve döküm giderleri, toplam ihale bedeline metretül başına %15-25 ek maliyet getirebilir."
+          }
+        ]
+      },
+      {
+        id: "mobilizasyon-ve-lojistik",
+        title: "4. Mobilizasyon, Makine Lojistiği ve Şantiye Kurulum Giderleri",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Jet grout ekipman parkı hafif bir kamyonetle sahaya sevk edilemez. Tam teşekküllü bir jet grout ekibinin şantiyeye gelişi ve kurulumu (mobilizasyon) başlı başına bir mühendislik operasyonudur:"
+          },
+          {
+            type: "list",
+            title: "Mobilizasyon Kapsamındaki Ağır Lojistik Kalemleri",
+            items: [
+              "Ağır Nakliye (Lowbed): 35-50 tonluk paletli delgi makinesi, 25 tonluk yüksek basınç pompa konteyneri ve mikser istasyonu için en az 3-4 adet lowbed tır sevkiyatı.",
+              "Silo Kurulumu ve Vinç: 60-100 tonluk dökme çimento silolarının dikilmesi için 50-70 tonluk mobil vinç mesaisi.",
+              "Altyapı İhtiyacı: Saatte en az 10-15 m³ kesintisiz temiz su kaynağı (su tankeri veya hidrofor hattı) ve yüksek amperli elektrik trafosu ya da 400-500 kVA şantiye jeneratörü.",
+              "Deneme Kolonları (Trial Columns): İmalat öncesi sahada kazı açılarak kolon çapını, sürekliliğini ve UCS dayanımını doğrulamak için yapılan feda deneme kolonları."
+            ]
+          }
+        ]
+      },
+      {
+        id: "fiyat-sozlesme-ve-risk",
+        title: "5. Müteahhitler İçin Birim Fiyat Risk Yönetimi ve Sözleşme Maddeleri",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Geoteknik işlerde en büyük uyuşmazlıklar beklenmeyen zemin koşullarından (Differing Site Conditions) doğar. Müteahhit ve işveren arasında sağlıklı bir sözleşme için şu maddeler netleştirilmelidir:"
+          },
+          {
+            type: "list",
+            title: "FIDIC ve TS Standartlarında Sözleşme Güvenliği",
+            items: [
+              "Götürü Bedel vs Metretül: Zemin profilinde derinlik boyunca siltli tabakalardan sert çakıllı veya bloklu seviyelere geçiş riski varsa götürü bedel yerine metretül (m) bazlı birim fiyatlı sözleşme iki tarafı da korur.",
+              "Bekleme Süresi (Standby Rate): Şantiye sahasının teslim edilmemesi, elektrik/su kesintisi veya ruhsat izinleri sebebiyle dev makine parkının sahada boş beklemesi durumunda günlük bekleme bedeli belirlenmelidir.",
+              "Çimento Fiyat Farkı: Enflasyonist dönemlerde çimento fabrika çıkış fiyatındaki dalgalanmalar için sözleşmeye eskalasyon (fiyat farkı) formülü eklenmelidir."
+            ]
+          }
+        ]
+      },
+      {
+        id: "hesaplama-entegrasyonu",
+        title: "6. Kendi Projenizin Metraj ve Maliyetini Anında Hesaplayın",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "YER6 Geoteknik olarak sektördeki şeffaflığı artırmak amacıyla geliştirdiğimiz interaktif hesaplama motoruyla, projenizin temel alanını, kolon çapını, kazık aralığını ve zemin sınıfını girerek anlık çimento tonajı, delgi süresi ve tahmini bütçe öngörüsünü saniyeler içinde hesaplayabilirsiniz."
+          },
+          {
+            type: "note",
+            title: "İnteraktif Araç Bağlantısı",
+            content:
+              "Projenizin yaklaşık metraj ve ön maliyet tablosunu hemen oluşturmak için [Jet Grout Maliyet Hesaplama Aracımızı](/hesaplama/jet-grout-maliyet-hesaplama/) kullanabilir, resmi birim fiyat teklifi için zemin etüdü raporunuzla bize doğrudan ulaşabilirsiniz."
           }
         ]
       }
     ],
     faq: [
-      { question: "Jet grout metretül fiyatı ne kadar?", answer: "Tek bir sabit fiyat yoktur. Metretül fiyatı; zemin türü, kolon çapı ve derinliği, sistem tipi ve toplam metraja göre değişir. Gerçekçi rakam ancak zemin verisi ve projeye özel metrajla verilebilir." },
-      { question: "Jet grout mu fore kazık mı daha ekonomik?", answer: "Duruma bağlıdır. Su kontrolü ve dar saha için jet grout, yüksek eksenel yük ve derin temel için fore kazık öne çıkar. En ekonomik çözüm, zemin koşulu ve yük hedefine göre teknik karşılaştırmayla belirlenir." },
-      { question: "Maliyeti en çok ne artırır?", answer: "Büyük kolon çapı/derinliği, zorlu zemin, yüksek yeraltı suyu, geniş metraj ve erişimi kısıtlı saha maliyeti artıran başlıca etkenlerdir." },
-      { question: "Teklif almak için ne gerekli?", answer: "Mevcut zemin etüdü raporu ve proje bilgileri (yapı tipi, kazı/derinlik, kolon düzeni) ile yaklaşık metraj ve maliyet öngörüsü hazırlayabiliriz." }
+      {
+        question: "2026 yılında jet grout metre birim fiyatı ne kadar?",
+        answer: "Jet grout metretül fiyatı sabit değildir. Kolon çapına (Ø60 cm, Ø80 cm, Ø100 cm), toplam metraja, zemin geçirgenliğine ve çimento sarfiyatına göre belirlenir. Ø60 cm kolonda 110-140 kg çimento harcanırken, Ø80 cm kolonda 230-280 kg çimento harcanır; bu nedenle 80'lik kolon maliyeti yaklaşık %70-90 daha yüksektir."
+      },
+      {
+        question: "Jet groutta çimento sarfiyatı nasıl hesaplanır?",
+        answer: "W/C (su/çimento) oranı genellikle 1.0 alınır. 1 m³ çimento şerbeti için yaklaşık 750-800 kg çimento kullanılır. Tijin çekme hızı (örn: 25-35 cm/dk) ve pompa debisine (örn: 70-100 lt/dk) bağlı olarak metre başına harcanan şerbet hacmi üzerinden net çimento tonajı hesaplanır."
+      },
+      {
+        question: "Pasa (spoil) bertaraf maliyetini kim karşılar?",
+        answer: "Sözleşmede aksi belirtilmedikçe kuyu ağzından çıkan çimento-zemin çamurunun şantiye içinde toplanması geoteknik yükleniciye, sahadan kamyonlarla döküm sahasına nakliyesi ise genellikle ana işverene aittir. Sözleşme aşamasında bu madde netleştirilmelidir."
+      },
+      {
+        question: "Jet grout mu fore kazık mı daha ekonomiktir?",
+        answer: "Yeraltı suyunun yüksek olduğu sıvılaşabilir zeminlerde geçirimsizlik perdesi ve geniş alan yayılı taşıma gücü için jet grout çok daha ekonomiktir. Ancak tekil kolon yüklerinin çok yüksek olduğu ağır sanayi ve gökdelen temellerinde derin ana kayaya oturması gereken fore kazık öne çıkar."
+      },
+      {
+        question: "Şantiye mobilizasyon bedeli neye göre belirlenir?",
+        answer: "Şantiyenin Ankara merkezimize veya lojistik üslerimize mesafesine, nakledilecek lowbed tır sayısına (delgi rigi, 400-600 bar pompa, silolar, mikser santrali) ve şantiye zemin hazırlığına göre belirlenir."
+      }
     ],
-    relatedSlugs: ["jet-grout-nedir", "jet-grout-kolon-capi", "jet-grout-ve-fore-kazik-farki"],
-    keywords: ["jet grout maliyeti", "jet grout fiyatları", "jet grout metretül fiyatı", "zemin iyileştirme maliyeti", "jet grout fiyatı 2026"],
+    relatedSlugs: ["jet-grout-nedir", "jet-grout-kolon-capi", "jet-grout-ve-fore-kazik-farki", "zemin-iyilestirme-yontemleri"],
+    keywords: ["jet grout maliyeti", "jet grout metre fiyatı", "jet grout fiyatları 2026", "jet grout birim fiyatı", "jet grout çimento sarfiyatı", "jet grout maliyet hesabı", "zemin iyileştirme maliyeti"],
     published: true
   },
   {
