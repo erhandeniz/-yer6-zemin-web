@@ -262,40 +262,38 @@ export const services = [
     key: "svc_iksa",
     icon: ShieldCheck,
     title: "İksa Sistemleri",
-    summary: "Kent içi derin kazılarda diyafram, kazıklı perde, ankraj ve kuşak entegrasyonu.",
-    detail: "Yanal deplasman, komşu yapı etkisi ve saha lojistiğini birlikte düşünen tasarım.",
-    specs: ["Kazıklı perde", "Kuşak kirişleri", "Enstrümantasyon uyumu"],
+    summary: "Kent içi derin kazılarda diyafram duvar, kesişen/tanjant kazıklı perde, öngermeli zemin ankrajı ve çelik kuşak kirişi entegrasyonuyla sıfır deformasyon hedefli geoteknik iksa çözümleri.",
+    detail: "Derin kazı iksa sistemleri; TS EN 1997-1 (Eurocode 7) ve TBDY 2018 Bölüm 16 esaslarına uygun olarak, kentsel yoğun yapılaşma altında komşu binaların, yolların ve altyapı hatlarının güvenliğini mutlak surette temin etmek üzere boyutlandırılır. Klasik Rankine ve Coulomb üçgen toprak basıncı kabullerinin yetersiz kaldığı çok kademeli ankrajlı kazılarda; Peck (1969) ve Tschebotarioff görünür toprak basıncı (apparent earth pressure) trapez ve dikdörtgen zarfları ile Plaxis 2D/3D sonlu elemanlar (FEM) zemin-yapı etkileşimi analizleri uygulanır. YER6; tanjant ve kesişen fore kazıklı perdeler, diyafram duvarlar, asker kazıklı (Berlin duvarı) sistemler ve hidrolik öngermeli ankrajları tek merkezden projelendirip sahada uygular.",
+    specs: ["TS EN 1997-1 & TBDY 2018 Standartları", "Peck Görünür Toprak Basıncı & Plaxis 3D FEM Modelleme", "İnklinometre, Yük Hücresi & Otomatik Optik İzleme"],
     applications: [
-      "Kent içi derin kazı ve otopark/bodrum kat inşaatı",
-      "Metro, raylı sistem tünel girişi ve istasyon kazıları",
-      "Komşu yapılara yakın hassas saha kazıları",
-      "Sanayi, enerji ve altyapı kazıları",
-      "Derin temel çukurları ve silo kazıları",
-      "Kıyı ve su kenarı kazıları ile zemin ıslahı"
+      "Kent içi çok bodrumlu yüksek yapı, rezidans ve iş merkezi derin kazıları",
+      "Metro istasyonları, yeraltı raylı sistem geçişleri ve şaft kazı iksaları",
+      "Bitişik nizam tarihi eserler ve hassas komşu binalara sıfır mesafedeki kentsel dönüşüm kazıları",
+      "Yüksek yeraltı su tablası altındaki su geçirimsiz batardo ve kesişen kazık (secant pile) perdeleri",
+      "Liman, rıhtım, enerji santrali ve ağır sanayi derin temel çukurları",
+      "Top-down (yukarıdan aşağıya) inşaat yöntemine entegre taşıyıcı iksa perdeleri"
     ],
     advantages: [
-      "Komşu yapılara ve altyapıya minimum etkiyle derin kazı imkânı",
-      "Deplasman izleme ile gerçek zamanlı güvenlik kontrolü",
-      "Farklı zemin koşullarına uygun çözüm yelpazesi",
-      "Ankraj ve kuşak kombinasyonuyla geniş açıklıklara çözüm",
-      "Aşamalı kazı planlamasıyla inşaat programı optimizasyonu",
-      "Kazı tamamlandıktan sonra kalıcı yapı elemanı olarak kullanılabilir"
+      "Hardening Soil with Small-Strain Stiffness (HSsmall) zemin bünye modeli ile milimetrik deplasman tahmini ve çevre yapılarda çatlak kontrolü",
+      "Komşu bina temellerinde Boscardin & Cording açısal çarpılma sınırının (β < 1/500) altında kalacak şekilde ön yüklemeli ankraj optimizasyonu",
+      "Kuyu içi çok kademeli inklinometre boruları ve yük hücreleri (load cell) ile 7/24 anlık yanal deformasyon takibi",
+      "Zemin profiline göre ekonomik optimizasyon: Kuru zeminlerde asker kazık + püskürtme beton, sulu zeminlerde kesişen kazık veya diyafram duvar",
+      "Kalıcı yapı perdesi olarak tasarlanarak bodrum kat dış betonarme duvar maliyetinde tasarruf sağlama",
+      "Yeraltı suyu bulunan sahalarda kritik hidrolik eğim (i_cr) tahkikiyle taban kabarması (basal heave) ve hidrolik taban patlaması risklerinin sıfırlanması"
     ],
     processSteps: [
-      { title: "Geoteknik Tasarım ve Deplasman Analizi", description: "Zemin profili, yapı yükleri ve deplasman limitleri doğrultusunda perde tipi, derinliği ve destekleme sistemi belirlenir." },
-      { title: "İksa Perdesi İmalatı", description: "Fore kazık, diyafram duvar veya çelik profil perde seçeneğine göre imalat gerçekleştirilir." },
-      { title: "Ankraj veya Strüt Uygulaması", description: "Tasarım yükleri doğrultusunda ankrajlar veya strütler yerleştirilir; kuşak kirişleri monte edilir." },
-      { title: "Aşamalı Kazı", description: "Proje planına göre katlar halinde kazı yapılır; her katta ankraj germe ve deplasman ölçümü gerçekleştirilir." },
-      { title: "İzleme ve Teslim", description: "İnklinometre, referans noktaları ve yapısal izleme verileri kayıt altına alınır; teslim dosyası hazırlanır." }
+      { title: "Geoteknik Sayısal Modelleme (Plaxis 2D/3D)", description: "Zemin profili, komşu bina sürşarj yükleri ve yeraltı suyu verileriyle sonlu elemanlar modellemesi yapılarak kademe kademe kazı ve deplasman simülasyonu tamamlanır." },
+      { title: "İksa Perdesi İmalatı (Fore Kazık / Diyafram)", description: "Proje şartnamesine göre kesişen/tanjant fore kazıklar veya diyafram duvar panelleri imal edilerek rijit dış çevreleme kabuğu oluşturulur." },
+      { title: "Kademeli Kazı ve Başlık / Kuşak Kirişleri", description: "Kazı ilk ankraj kotuna kadar indirilir; kazıkların başına betonarme başlık kirişi veya aralara çift UPN/HEB çelik kuşak kirişleri monte edilir." },
+      { title: "Öngermeli Ankraj Delgisi ve Yüksek Basınçlı Enjeksiyon", description: "10-15 derece eğimle delgi delinir, 3-5 toronlu yüksek dayanımlı çelik tendonlar yerleştirilir ve manşonlu borularla TAM basınçlı kök enjeksiyonu yapılır." },
+      { title: "Hidrolik Ön Germe, Kilitleme ve Enstrümantasyon", description: "Prizini alan ankrajlar hidrolik krikoyla test yüküne kadar gerilir, kitleme yükünde kamalanır; inklinometre ve reflektör okumalarıyla güvenlik belgelenir." }
     ],
-    technicalNote: "İksa sistemi tasarımında kritik parametre, izin verilebilir yanal deplasman limitidir. Kent içi projelerde bu limit komşu yapıların hassasiyetine göre genellikle 10–25 mm aralığında tutulur. Enstrümantasyon planı, kazı programına paralel olarak yürütülmeli; ölçüm verileri alarm eşikleriyle birlikte değerlendirilmelidir.",
+    technicalNote: "Derin kazılarda ankrajlı perdelerin arkasında oluşan zemin gerilmesi, klasik Rankine üçgen diyagramına uymaz. Kazı kademeli yapıldıkça ve ankrajlar gerildikçe gerilme yukarıya transfer olur; bu sebeple Peck (1969) trapez zemin basıncı zarfları kullanılmalıdır. Ayrıca komşu yapı hasarlarını önlemek için Boscardin ve Cording açısal çarpılma kriteri (β = δ/L < 1/500) sağlanmalıdır. Yeraltı su seviyesi altında kazı yapılıyorsa, kritik hidrolik eğim (i_cr = (γ_sat - γ_w) / γ_w ≈ 1.0) dikkate alınarak taban kabarması ve hidrolik taban kırılması tahkiki yapılmadan kazı tabanına inilmemelidir.",
     faq: [
-      { question: "Derin kazı için hangi iksa sistemi seçilir?", answer: "Zemin türü, kazı derinliği, komşu yapı durumu ve bütçeye göre fore kazık perde, diyafram duvar veya çelik profil perde tercih edilir. Her seçenek farklı maliyet ve performans dengeleri sunar." },
-      { question: "İksa perdesi kalıcı yapı elemanı olarak kullanılabilir mi?", answer: "Evet. Diyafram duvar ve fore kazık perdeler çoğu zaman bodrum duvarı veya su yalıtım perdesi olarak kalıcı yapı sistemine entegre edilir." },
-      { question: "Komşu binalara zarar verir mi?", answer: "Doğru tasarım, ankraj ön yüklemesi ve deplasman izleme planı ile komşu yapılara deformasyon iletimi kontrol altında tutulabilir. İzleme sistemi şüpheli okumada alarm verir." },
-      { question: "İksa sisteminde izleme neden önemlidir?", answer: "İnklinometre ve referans noktası ölçümleri, perde deplasman davranışını gerçek zamanlı takip eder. Tasarım dışı deplasman erken tespit edilerek önlem alınabilir." },
-      { question: "İksa yapan firma seçerken nelere dikkat edilmeli?", answer: "Derin kazı ve komşu yapı tecrübesi, fore kazık/diyafram/ankraj kapasitesi, enstrümantasyon (izleme) yaklaşımı, statik tasarım desteği ve referans projeleri belirleyicidir. YER6, Ankara merkezli olarak Türkiye geneli ve yurt dışında iksa sistemleri uygular." },
-      { question: "İksa sistemleri uyguladığınız alanlar nerelerdir?", answer: "Başkent Ankara'dan yönettiğimiz operasyonlarla, Türkiye genelindeki kent içi derin kazı ve yurt dışı altyapı projelerinde iksa desteği sunmaktayız." }
+      { question: "Derin kazılarda hangi iksa sistemi seçilmelidir?", answer: "Seçim; kazı derinliği, zemin cinsi, yeraltı su seviyesi ve komşu parsel hassasiyetine bağlıdır. Kuru ve orta sıkı zeminlerde asker kazıklı (berlin duvarı) iksa ekonomikken; yüksek yeraltı suyu ve yumuşak killi alüvyon sahalarda kesişen kazık (secant pile) veya diyafram duvar zorunludur." },
+      { question: "İksa perdesi kalıcı bina bodrum perdesi olarak kullanılabilir mi?", answer: "Evet. Özellikle diyafram duvarlar ve kesişen fore kazık perdeleri, uygun su yalıtım contaları ve yapısal donatı tasarımıyla nihai binanın kalıcı bodrum dış duvarı olarak tasarlanabilir; böylece kalıp ve çift cidarlı beton maliyeti ortadan kalkar." },
+      { question: "Komşu binalarda oturma ve çatlak oluşması nasıl engellenir?", answer: "Ankrajlara hidrolik krikolarla aktif ön yükleme (pre-stressing) uygulanarak zemin masifinin kazıya doğru gevşemesi engellenir. İnklinometrelerle yatay deplasman 10-15 mm sınırında tutulur ve Plaxis analizleriyle komşu temellerdeki açısal çarpılma (β < 1/500) garanti edilir." },
+      { question: "İksa sistemlerinde izleme ve enstrümantasyon neden zorunludur?", answer: "Derin kazılarda zemin davranışı dinamiktir. İnklinometre ile derinlik boyunca yatay deplasman eğrisi, yük hücreleriyle (load cell) ankraj halat gerilimi ve optik reflektörlerle komşu binaların oturması anlık izlenerek kırmızı alarm eşiklerinde anında müdahale edilir." }
     ]
   },
   {
@@ -436,38 +434,38 @@ export const services = [
     key: "svc_zemin_civisi",
     icon: Mountain,
     title: "Zemin Çivisi",
-    summary: "Kazı yüzeylerinin çelik çubuk ve püskürtme betonla in-situ güçlendirilmesiyle oluşturulan esnek destek sistemi.",
-    detail: "Derin kazı şevlerinde ve yamaç stabilizasyonunda, kademeli kazıyla birlikte uygulanan ekonomik ve hızlı iksa çözümü.",
-    specs: ["Çelik çubuk ve enjeksiyon aderansı", "Püskürtme beton yüzey kaplaması", "Kademeli kazı ile eş zamanlı imalat"],
+    summary: "Kazı yüzeylerinin yüksek dayanımlı çelik donatılar, çimento enjeksiyonu ve lifli püskürtme betonla in-situ kompozit bloğa dönüştürülmesiyle oluşturulan zemin çivili şev stabilizasyon sistemi.",
+    detail: "Zemin çivisi (soil nailing); FHWA-NHI-14-007 (GEC-007), EN 14490 ve TBDY 2018 Bölüm 16 normlarına uygun olarak, doğal zemin masifinin kademeli kazı ile yukarıdan aşağıya (top-down) pasif çelik donatılar ve çimento enjeksiyonuyla kompozit bir taşıyıcı bloğa dönüştürülmesidir. Zemin masifinin milimetrik deformasyonuyla kayma gerilmesini çelik donatı üzerinde çekme kuvvetine aktaran sistem; otoyol yarmaları, kentsel derin kazı şevleri ve heyelan önleme projelerinde Morgenstern-Price ve Spencer limit denge yöntemleriyle statik ve sismik güvenlik faktörlerini (FS ≥ 1.30-1.50) tam olarak sağlar.",
+    specs: ["FHWA-GEC-007 & EN 14490 Standartları", "Çift Kılıflı (HDPE) Kalıcı Korozyon Koruması", "Morgenstern-Price & Bishop Limit Denge Analizi"],
     applications: [
-      "Derin kazı şevlerinin güvenli hale getirilmesi",
-      "Yamaç ve şev stabilizasyonu",
-      "Mevcut istinat yapılarının güçlendirilmesi",
-      "Geçici ve kalıcı kazı destek sistemleri",
-      "Kentsel dönüşümde dar sahalı derin kazılar",
-      "Karayolu ve altyapı yarma şevleri"
+      "Derin bina temel kazı şevlerinin ve kentsel dönüşüm kademeli iksalarının güvenliğe alınması",
+      "Karayolu, demiryolu ve viyadük yaklaşım yarma şevlerinin heyelana karşı stabilizasyonu",
+      "Mevcut taş ve betonarme istinat duvarlarının arkadan çivilenerek kapasite artırımı",
+      "Tünel yaklaşım portalları ve dikey şaft kazı aynalarının stabilitesi",
+      "Bitişik nizam yapıların bulunmadığı geniş parsel derin kazılarında ekonomik iksa perdesi",
+      "Köprü kenar ayakları ve dolgu altı şev destekleme mühendisliği"
     ],
     advantages: [
-      "Kademeli kazıyla eş zamanlı, hızlı ve ekonomik uygulama",
-      "Dar ve erişimi kısıtlı sahalarda kompakt ekipmanla imalat",
-      "Esnek geometriyle düzensiz kazı yüzeylerine uyum",
-      "Düşük titreşim ile çevre yapılara duyarlı çalışma",
-      "Kalıcı veya geçici sistem olarak tasarlanabilir",
-      "Ankraj sistemleriyle birlikte hibrit çözüm imkânı"
+      "Top-down (kademeli kazı) ile eş zamanlı imalat sayesinde hafriyat ve iksa süresini yarı yarıya kısaltma",
+      "Kompozit zemin bloğu davranışı: Zeminin kendi kendini taşımasını sağlayarak geleneksel istinat duvarlarına kıyasla %40-60 maliyet avantajı",
+      "Dar, engebeli ve paletli büyük iş makinelerinin yanaşamadığı dik şevlerde kompakt delgi rigleriyle imalat imkânı",
+      "Plastik merkezleyiciler (centralizers) ile kuyu boyunca asgari 25-38 mm çimento örtü payı (grout cover) güvencesi",
+      "Kalıcı yapılarda fabrikasyon oluklu HDPE kılıf ve galvanizleme ile 50-100 yıllık çift katmanlı korozyon koruması",
+      "Saha hidrolik çekme deneyleri (Verification, Proof ve Creep testleri) ile tasarım sürtünme direncinin (q_u) yerinde doğrulanması"
     ],
     processSteps: [
-      { title: "Tasarım ve Kademe Planı", description: "Zemin parametreleri ve kazı geometrisine göre çivi boyu, açısı, aralığı ve kademe yükseklikleri belirlenir." },
-      { title: "Kademeli Kazı", description: "Kazı, tasarım kademe yüksekliğinde adım adım gerçekleştirilerek yüzey stabilitesi korunur." },
-      { title: "Delgi ve Çivi Yerleşimi", description: "Her kademede delgi yapılır, çelik çubuk yerleştirilir ve enjeksiyonla zemine aderans sağlanır." },
-      { title: "Hasır Donatı ve Püskürtme Beton", description: "Yüzeye hasır donatı serilir ve püskürtme beton (shotcrete) ile yüzey kaplaması oluşturulur." },
-      { title: "Drenaj ve Kontrol", description: "Yüzey arkası drenaj boşaltması sağlanır; deplasman ve gerilme kontrolleriyle sistem izlenir." }
+      { title: "Geoteknik Limit Denge Tasarımı", description: "Zemin kohezyonu, sürtünme açısı ve deprem ivmesine göre çivi boyu (0.6-1.0 H), aks aralığı (1.2-1.8 m) ve Morgenstern-Price güvenlik katsayısı hesaplanır." },
+      { title: "Kademeli Kazı (Basamak Yüksekliği: 1.2-1.8 m)", description: "Şev duraylılığını kaybetmemesi için kazı kademe yüksekliği kesinlikle çivi düşey aralığını aşmayacak şekilde etaplar halinde açılır." },
+      { title: "Delgi ve Çivi Montajı", description: "10-15 derece aşağı eğimle rotary/darbeli delgi delinir; plastik merkezleyiciler takılmış nervürlü donatı kuyu eksenine sürülür." },
+      { title: "Basınçlı Çimento Enjeksiyonu (Tremie)", description: "W/C = 0.40-0.45 oranlı mikro-genleşmeli çimento şerbeti, delgi tabanından temiz şerbet taşana kadar tremie hortumuyla dipten dışa basılır." },
+      { title: "Lifli Püskürtme Beton, Plaka ve Barbakan Montajı", description: "Yüzeye lifli/hasırlı püskürtme beton atılır; çelik başlık plakası torklanır ve delikli geotekstil filtreli barbakan boruları yerleştirilir." }
     ],
-    technicalNote: "Zemin çivisi sistemi, ankrajlı iksa perdelerine göre daha esnek ve genellikle daha ekonomiktir; ancak kohezyonsuz, suya doygun veya çok yumuşak zeminlerde uygulanabilirliği sınırlıdır. Çivi boyu tipik olarak kazı yüksekliğinin 0,6–1,0 katı arasında, aralık ise 1,0–2,0 m arasında tasarlanır. Kalıcı sistemlerde korozyon koruması ve drenaj detayları kritik öneme sahiptir.",
+    technicalNote: "Zemin çivisi pasif bir donatıdır; zemin deforme oldukça çivi üzerinde çekme gerilmesi (T) oluşur. FHWA-GEC-007 uyarınca üç kritik sınır durum tahkik edilir: Donatı akma kapasitesi (Tp = As·fy / γs), zemin-enjeksiyon sınır sürtünmesi (RL = qu·π·D·La / FS_po, burada qu zemin cinsine göre 40-250 kPa arasıdır) ve başlık plakasında püskürtme beton zımbalama kesmesi (VF = 0.33·√f'c·bo·d). Kalıcı yapılarda çift kılıflı HDPE korozyon koruması şarttır; su birikimini sıfırlamak için delikli barbakanlar yatayla %5-10 yukarı eğimli yerleştirilmelidir.",
     faq: [
-      { question: "Zemin çivisi ile ankraj arasındaki fark nedir?", answer: "Ankraj öngermeli (aktif) bir sistemdir ve yükü serbest boyla derin sağlam zemine aktarır. Zemin çivisi ise öngermesiz (pasif) çalışır; kazı yüzeyini bir bütün olarak güçlendirir. Zemin çivisi çoğu durumda daha hızlı ve ekonomiktir." },
-      { question: "Zemin çivisi hangi zeminlerde uygun değildir?", answer: "Kohezyonsuz gevşek kum, suya doygun zeminler ve çok yumuşak killerde uygulanabilirliği sınırlıdır; bu koşullarda ankraj veya kazıklı iksa değerlendirilir." },
-      { question: "Kalıcı zemin çivisi sistemi yapılabilir mi?", answer: "Evet. Korozyon koruması, drenaj ve yüzey kaplaması uygun tasarlandığında zemin çivisi kalıcı istinat sistemi olarak kullanılabilir." },
-      { question: "Uygulama ne kadar sürer?", answer: "Süre kazı yüksekliği, kademe sayısı ve zemin koşullarına bağlıdır; kademeli imalat kazıyla eş zamanlı ilerlediği için genel proje süresini kısaltır." }
+      { question: "Zemin çivisi ile öngermeli ankraj arasındaki temel fark nedir?", answer: "Ankrajlar öngermeli (aktif) sistemlerdir; hidrolik krikoyla çekilip kilitlenerek zemine ön yük uygular. Zemin çivileri ise pasiftir; şev masifinin kayma deformasyonu yapmasıyla gerilme kazanır ve zemini yerinde donatılı blok haline getirir. Zemin çivisi uygun zeminlerde çok daha hızlı ve ekonomiktir." },
+      { question: "Zemin çivisi hangi zemin profillerinde uygulanamaz?", answer: "Suya doygun gevşek siltli kumlar, yeraltı su tablası altındaki akıcı zeminler, organik bataklıklar ve kohezyonsuz gevşek dolgular zemin çivisine uygun değildir; bu zeminlerde kesişen kazık veya diyafram duvar perdesi gerekir." },
+      { question: "Kalıcı zemin çivisi paslanmaya karşı nasıl korunur?", answer: "Kalıcı yapılarda (50-100 yıl ömür) çelik çubuk, fabrika ortamında oluklu HDPE kılıf içerisine yerleştirilip harçlanır (çift kılıf koruması) veya sıcak daldırma galvanizlenir. Dış enjeksiyonla birlikte çeliğe su ve klor iyonu girişi tamamen engellenir." },
+      { question: "Zemin çivili şevlerde su drenajı neden hayati önem taşır?", answer: "Püskürtme beton su geçirimsiz bir kabuk oluşturur. Arkada biriken suyun hidrostatik basıncı efektif gerilmeyi düşürerek şevi toptan patlatabilir. Bu riski sıfırlamak için geotekstil filtreli delikli PVC barbakanlar ve şev başı trapez hendekleri zorunludur." }
     ]
   },
   {
@@ -475,38 +473,38 @@ export const services = [
     key: "svc_puskurtme_beton",
     icon: Sparkles,
     title: "Püskürtme Beton",
-    summary: "Yüksek basınçla uygulanan, kazı yüzeylerini hızlı biçimde koruyan ve taşıyan shotcrete kaplama sistemi.",
-    detail: "Derin kazı, tünel ve şev yüzeylerinde hasır donatı veya çelik tel takviyesiyle uygulanan koruyucu ve taşıyıcı beton kabuk.",
-    specs: ["Kuru ve yaş sistem uygulama", "Hasır/çelik tel donatı seçeneği", "Hızlı priz ve erken dayanım"],
+    summary: "EFNARC ve ACI 506 normlarında, yaş sistem (wet-mix), alkali-free priz hızlandırıcı ve makro lif takviyesiyle uygulanan yüksek tokluklu shotcrete kaplama mühendisliği.",
+    detail: "Püskürtme beton (shotcrete); EFNARC, ACI 506R-16 ve EN 14487-1/2 normlarına uygun olarak yüksek kinetik enerjiyle yüzeye püskürtülüp yerinde sıkışan özel bir beton teknolojisidir. Hazır beton santralinde W/C = 0.38-0.44 oranıyla hassas üretilen yaş karışım (wet-mix) betonu, nozulda sıvı alkali-free (alkali içermeyen) hızlandırıcı ve basınçlı havayla birleşerek 3 dakikada başlangıç, 12 dakikada son prize ulaşır. Hooked-end çelik lif ve polipropilen makro sentetik lif takviyesiyle donatı arkası gölge kusurlarını (shadowing) sıfırlar; EFNARC kare panel testlerinde 500-1000 Joule enerji yutma tokluğuna ulaşarak derin kazı iksalarında ve şevlerde çatlak kontrolü sağlar.",
+    specs: ["EFNARC & ACI 506R-16 Standartları", "Yaş Karışım (Wet-Mix) & Düşük Rebound (%5-10)", "Alkali-Free Priz Hızlandırıcı & Makro Lif Tokluğu"],
     applications: [
-      "Zemin çivisi ve ankrajlı iksa yüzey kaplaması",
-      "Derin kazı ve yarma şev yüzeylerinin korunması",
-      "Tünel ve galeri iç yüzey desteği",
-      "Şev stabilizasyonu ve erozyon kontrolü",
-      "Mevcut beton yüzeylerin onarım ve güçlendirmesi",
-      "Havuz, kanal ve istinat yapılarında kaplama"
+      "Zemin çivili ve ankrajlı derin kazı iksa perdelerinde taşıyıcı yüzey kaplaması",
+      "Karayolu, demiryolu ve baraj yaklaşım yarmalarında şev koruma ve stabilizasyon",
+      "Metro tünelleri, maden galerileri ve yeraltı şaftlarında NATM birincil ve ikincil tahkimat",
+      "Mevcut betonarme yapı, köprü ayağı ve viyadüklerde yapısal manto ve güçlendirme",
+      "Su kanalları, havuzlar ve istinat duvarlarında sızdırmazlık ve aşınma koruması",
+      "Kaya düşmesi riski taşıyan dik şev yüzeylerinde çelik grid takviyeli püskürtme kabuk"
     ],
     advantages: [
-      "Kalıp gerektirmeden hızlı uygulama",
-      "Düzensiz ve eğimli yüzeylere tam uyum",
-      "Hasır/çelik tel takviyesiyle yüksek yüzey dayanımı",
-      "Erken dayanım kazanımıyla kademeli kazıyı hızlandırır",
-      "Su geçişini ve yüzey erozyonunu sınırlar",
-      "İksa sistemleriyle bütünleşik çalışma"
+      "Yaş karışım (wet-mix) teknolojisiyle rebound (geri sıçrama) kayıplarını %5-10 aralığına düşürerek malzeme tasarrufu sağlama",
+      "Sıvı alkali-free priz hızlandırıcılar sayesinde 28 günlük nihai beton mukavemetinde kayıp yaşamama (Referans betona göre %90-95 dayanım koruma)",
+      "Makro sentetik veya çelik lif entegrasyonu ile çelik hasırın nozul arkasında yarattığı gölge boşluklarını (shadowing) ve korozyon ceplerini tamamen yok etme",
+      "Kalıp gerektirmeyen esnek uygulama: Düzensiz şev, kaya kırığı ve kazı yüzeylerine mükemmel mekanik intibak",
+      "EFNARC panel deneyinde 500-1000 Joule enerji yutma kapasitesiyle dinamik deprem hareketlerinde sünek davranış",
+      "Nozulda basınçlı hava ve sıvı hızlandırıcı dozaj pompası senkronizasyonu ile operatör hatasından bağımsız homojen kalite"
     ],
     processSteps: [
-      { title: "Yüzey Hazırlığı", description: "Kazı yüzeyi temizlenir, gevşek malzeme alınır ve gerekli drenaj noktaları oluşturulur." },
-      { title: "Donatı Yerleşimi", description: "Hasır çelik donatı sabitlenir veya karışıma çelik tel (fiber) katkısı eklenir." },
-      { title: "Karışım ve Pompalama", description: "Kuru veya yaş sistemle hazırlanan beton, yüksek basınçlı ekipmanla nozula taşınır." },
-      { title: "Püskürtme Uygulaması", description: "Beton, yüzeye kontrollü mesafe ve açıyla püskürtülerek istenen kalınlıkta tabaka oluşturulur." },
-      { title: "Kür ve Kalite Kontrol", description: "Yüzey kürü sağlanır; kalınlık, aderans ve dayanım kontrolleriyle uygulama doğrulanır." }
+      { title: "Şev Yüzeyi Tıraşlama ve Temizliği", description: "Kazı aynasındaki gevşek toprak ve ayrışmış taşlar temizlenir; geokompozit düşey şerit drenler yüzeye sabitlenir." },
+      { title: "Yaş Karışım Tasarımı ve Lojistiği", description: "Transmikserde W/C = 0.38-0.44 oranlı, silis dumanı ve makro lif içeren C30/37 kıvamlı yaş karışım hazırlanır." },
+      { title: "Nozul Kalibrasyonu ve Püskürtme (90 Derece Dik)", description: "Nozul yüzeye 1.0-1.5 metre mesafeden ve kesinlikle dik tutularak ilk katman (50-75 mm) sıkışma enerjisiyle püskürtülür." },
+      { title: "Başlık Plakası ve İkinci Katman Kaplama", description: "Zemin çivisi başlık plakaları monte edilip torklandıktan sonra nihai tasarım kalınlığına ulaşacak ikinci katman atılır." },
+      { title: "Barbakan Açımı ve Karot Basınç Testleri", description: "Püskürtme beton delinerek delikli geotekstil filtreli barbakanlar yerleştirilir; şantiyeden alınan panellerden karot kesilerek UCS dayanımı belgelenir." }
     ],
-    technicalNote: "Püskürtme beton uygulamasında yaş sistem daha düşük toz ve daha stabil kalite sunarken, kuru sistem uzun pompalama mesafeleri ve aralıklı çalışmalarda avantajlıdır. Çelik tel (fiber) takviyesi, hasır donatıya göre daha homojen çatlak kontrolü sağlayabilir. Katman kalınlığı ve donatı, iksa sisteminin statik tasarımına göre belirlenir.",
+    technicalNote: "Püskürtme betonda kaliteyi belirleyen en önemli faktörler su/çimento oranı ve nozul operatörünün disiplinidir. Geleneksel kuru karışımda w/c operatörün vanayı açmasına bağlıyken, yaş karışımda (wet-mix) santralde mikron hassasiyetinde sabitlenir (w/c ≤ 0.42). Alkali-free hızlandırıcılar, ettringit kristalleri çöktürerek 3 dakikada başlangıç prizi sağlarken nihai dayanımı korur. Çelik hasır yerine makro sentetik lif kullanımı donatı arkası boşluk (shadowing) kusurunu önler. Şev arkasındaki suyun betonu patlatmasını önlemek için şev masifine en az 1.0 m giren, %5-10 pozitif eğimli geotekstil filtreli barbakanlar zorunludur.",
     faq: [
-      { question: "Kuru sistem mi yaş sistem mi daha iyidir?", answer: "Yaş sistem daha düşük toz ve daha stabil kalite verir; kuru sistem uzun pompalama mesafeleri ve kesintili işlerde avantajlıdır. Seçim, saha koşullarına ve proje büyüklüğüne göre yapılır." },
-      { question: "Püskürtme beton tek başına iksa sistemi midir?", answer: "Hayır. Püskürtme beton genellikle zemin çivisi veya ankrajlı sistemin yüzey kaplaması olarak çalışır; taşıyıcı sistemle birlikte tasarlanır." },
-      { question: "Çelik tel (fiber) takviyesi ne sağlar?", answer: "Fiber takviyesi, çatlak kontrolünü iyileştirir ve hasır donatı montaj süresini ortadan kaldırarak uygulamayı hızlandırabilir." },
-      { question: "Uygulama kalınlığı ne kadardır?", answer: "Kalınlık projeye göre değişir; koruyucu kaplamalarda birkaç santimetre, taşıyıcı uygulamalarda daha yüksek katman kalınlıkları tasarlanabilir." }
+      { question: "Püskürtme betonda neden yaş karışım (wet-mix) tercih edilmelidir?", answer: "Kuru karışımda nozulda su ayarı operatörün göz kararına bağlıdır, tozuma yüksektir ve rebound kaybı %20-35'tir. Yaş karışımda ise su/çimento oranı santralde kontrol edilir, tozuma sıfıra yakındır ve rebound %5-10 seviyesine inerek çok daha yüksek dayanımlı ve ekonomik beton sağlar." },
+      { question: "Priz hızlandırıcı katkılarda 'Alkali-Free' neden zorunludur?", answer: "Geleneksel alkali hızlandırıcılar (su camı, alüminat) betona erken priz verir ancak 28 günlük mukavemette %25-40 kalıcı kayba yol açar ve alkali-silika reaksiyonunu tetikler. Sıvı alkali-free katkılar ise nihai mukavemeti düşürmeden 3 dakikada priz aldırır ve çevreye zararsızdır." },
+      { question: "Çelik hasır mı yoksa makro lif takviyesi mi daha avantajlıdır?", answer: "Püskürtme beton nozulundan çıkan harç çelik hasır çubuklarına çarptığında çubuğun arkasında boşluklar (shadowing) kalır ve korozyon başlar. Karışıma homojen katılan makro sentetik lifler gölge kusurunu sıfırlar, çatlak köprüleme tokluğunu 700-1000 Joule seviyesine çıkarır." },
+      { question: "Barbakan (drenaj deliği) olmadan püskürtme beton yapılırsa ne olur?", answer: "Püskürtme beton kabuğu su geçirimsizdir. Arkasında biriken yağış ve yeraltı suyu hidrostatik basınç oluşturur; Terzaghi prensibine göre efektif gerilme sıfırlanır, şev kayma direncini kaybeder ve püskürtme beton kabuğu patlayarak toptan göçme gerçekleşir." }
     ]
   },
   {
@@ -631,38 +629,38 @@ export const services = [
     key: "svc_diafram_duvar",
     icon: Building2,
     title: "Diafram Duvar",
-    summary: "Bentonit çamuru desteğinde teşkil edilen, hem iksa hem su geçirimsizlik sağlayan betonarme sürekli perde duvar.",
-    detail: "Derin kazılarda yüksek rijitlik ve su kontrolü gereken, komşu yapıya duyarlı projeler için kalıcı taşıyıcı perde sistemi.",
-    specs: ["Bentonit çamuru destekli panel imalatı", "Yüksek rijitlik ve su geçirimsizliği", "Kalıcı taşıyıcı sistem entegrasyonu"],
+    summary: "EN 1538 ve DIN 4126 normlarında, hidrolik freze (trench cutter) veya kepçe ile bentonit süspansiyonu altında 30-70 m derinliğe kadar inşa edilen yüksek rijitlikli ve su geçirimsiz monolitik betonarme diyafram duvar mühendisliği.",
+    detail: "Diyafram duvar (slurry wall / diaphragm wall); EN 1538 ve DIN 4126 standartlarına uygun olarak, yüksek yeraltı suyu bulunan sahalarda ve derin kent içi metro/istasyon kazılarında hem en rijit iksa perdesi hem de nihai yapının kalıcı taşıyıcı bodrum perdesi olarak inşa edilen sürekli betonarme duvardır. Bauer BC 40 / Soilmec SC-130 hidrolik frezeler (trench cutter / hydrofraise) ile sert kaya birimlerinde (qu > 50-150 MPa) dahi ters sirkülasyonlu (reverse circulation) 500 m³/saat çamur tahliyesiyle derin paneller açılır. İki eksenli gerçek zamanlı eğimölçerler ve hidrolik yönlendirme kanatçıklarıyla düşeylik sapması %0.2'nin (her 50 metrede maksimum 10 cm) altında tutulur. CWS (Continuous Waterstop) contalı kilitler veya freze ile birincil panellerin 15-20 cm tıraşlanması (overcutting) sayesinde metro istasyonlarında ve derin otoparklarda sıfır su sızıntılı geçirimsizlik perdesi elde edilir.",
+    specs: ["EN 1538 & DIN 4126 Standartları", "Hidrolik Freze (Trench Cutter) & Reverse Circulation", "Bi-Axial Düşeylik Kontrolü (≤ %0.2) & CWS Kilit"],
     applications: [
-      "Derin bodrumlu yüksek yapı kazıları",
-      "Metro istasyonu ve tünel giriş yapıları",
-      "Yüksek yeraltı suyu bulunan derin kazılar",
-      "Komşu yapı deplasman toleransı çok düşük kentsel kazılar",
-      "Liman, rıhtım ve kıyı yapıları",
-      "Kalıcı istinat ve bodrum perde duvarları"
+      "Çok katlı gökdelenler ve derin bodrumlu kent içi rezidans kazıları",
+      "Metro istasyonları, yeraltı aktarma merkezleri ve demiryolu tünel portalları",
+      "Yüksek yeraltı su tablası ve deniz kıyısı liman, tersane ve rıhtım batardoları",
+      "Top-down inşaat metodolojisine entegre ana taşıyıcı düşey yapı perdesi",
+      "Nükleer santral, baraj temelleri ve çevre kirleticilerini hapseden geçirimsiz cutoff perdeleri",
+      "Hassas tarihi binalara ve aktif raylı sistem hatlarına komşu sıfır-deplasman kazıları"
     ],
     advantages: [
-      "Yüksek rijitlikle deplasmanı en aza indirir",
-      "Su geçirimsizlik sağlayarak kazı tabanını korur",
-      "Kalıcı taşıyıcı yapı elemanı olarak kullanılabilir",
-      "Derin kazılarda güvenli ve güvenilir çözüm",
-      "Komşu yapı etkilerini sınırlar",
-      "Ankraj veya iç destekle birlikte optimize edilir"
+      "En Yüksek Yapısal Rijitlik: Fore kazıklı perdelere kıyasla kazı kaynaklı yanal zemin hareketlerini ve komşu bina oturmalarını minimuma indirme",
+      "Mutlak Su Geçirimsizliği: CWS elastomerik su tutucu kilitler ve freze ile panel overcutting sayesinde su akiferlerini tamamen bloke etme",
+      "Kalıcı Taşıyıcı Duvar Fonksiyonu: Nihai binanın kalıcı taşıyıcı bodrum dış perdesi olarak çalışarak kalıp ve çift cidarlı beton işçiliğini sıfırlama",
+      "Hidrolik Freze (Hydrofraise) Üstünlüğü: Standart kepçelerin delemediği sert kaya tabakalarını 70 metre derinliğe kadar hassas kesebilme",
+      "Gerçek Zamanlı İki Eksenli Düşeylik Düzeltmesi: Bi-axial inklinometreler ve kuyu içi yönlendirme kanatçıklarıyla düşeylik sapmasını ≤ %0.2 ile sınırlandırma",
+      "Büyük Taşıma Kapasitesi: Ağır süper-strüktür kolon yüklerini doğrudan taşıyabilen barret (barrette pile) temel olarak kullanılabilme"
     ],
     processSteps: [
-      { title: "Kılavuz Duvar İmalatı", description: "Panel hattı boyunca imalatı yönlendiren ve stabiliteyi artıran kılavuz duvarlar yapılır." },
-      { title: "Bentonit Destekli Hafriyat", description: "Panel, bentonit çamuru desteğinde özel kepçelerle (grab) kazılır; çamur çeper stabilitesini sağlar." },
-      { title: "Donatı Kafesi Yerleşimi", description: "Fabrikasyon donatı kafesi panele indirilir ve konumlandırılır." },
-      { title: "Tremie Beton Dökümü", description: "Beton, tremie borusuyla tabandan yukarı dökülerek çamur yerini alır ve panel oluşturulur." },
-      { title: "Panel Birleşimi ve Kontrol", description: "Panjur/su tutucu ile paneller birleştirilir; süreklilik ve düşeylik kontrolleriyle sistem tamamlanır." }
+      { title: "Kılavuz Duvar (Guide Wall) İnşası", description: "Hafriyat hattı boyunca 1.0-1.5 m derinliğinde betonarme kılavuz duvarlar inşa edilerek panel ekseni ve yüzey zemin stabilitesi sabitlenir." },
+      { title: "Bentonitli Hendek Kazısı (DIN 4126)", description: "Panel içi sürekli bentonit süspansiyonu ile doldurularak hidrostatik çamur basıncı dengesi (Δh ≥ 1.50 m) altında freze veya kepçe ile kazı yürütülür." },
+      { title: "Çamur Arıtma (Desanding) ve Birleşim Kilitleri", description: "Kum ayrıştırıcı (desander) ünitelerle çamurdaki kum oranı <%3 seviyesine indirilir; CWS kilit panjurları veya stop-end boruları yerleştirilir." },
+      { title: "Ağır Donatı Kafesi İndirilmesi (Tandem Lifting)", description: "25 ila 45 tonluk devasa donatı kafesleri bükülmeyi önlemek için çift vinçle (tandem) kaldırılarak lazer doğrultusunda hendek içine indirilir." },
+      { title: "Çift Tremie ile Senkronize Betonlama", description: "İki adet tremie borusuyla beton eş zamanlı olarak tabandan yukarı basılır; yükselen bentonit çamuru emilerek geri kazanım havuzuna aktarılır." }
     ],
-    technicalNote: "Diafram duvar, fore kazık perdelerine göre daha yüksek rijitlik ve daha iyi su geçirimsizliği sağlar; bu nedenle derin, sulu ve komşu yapıya duyarlı kazılarda tercih edilir. Panel düşeyliği, birleşim detayları (su tutucu) ve tremie beton kalitesi sistemin performansını belirleyen kritik unsurlardır. Kalıcı sistemlerde duvar, nihai yapının bodrum perdesi olarak da çalışabilir.",
+    technicalNote: "DIN 4126 ve EN 1538 normlarına göre hendek stabilitesi için bentonit çamuru seviyesi, yeraltı su tablasının en az 1.50 m üzerinde (Δh ≥ 1.50 m) tutulmalıdır. Çamur yoğunluğu 1.04-1.12 g/cm³, Marsh hunisi viskozitesi 32-50 saniye ve kum oranı <%3 olmalıdır; aksi halde donatı kafesi tabana inmez veya beton dökümünde kum cepleri oluşur. Geniş panellerde (≥ 5.0 m) beton yükselme hızının homojen olması ve soğuk derz oluşmaması için çift tremie borusu ile senkronize döküm zorunludur. Düşeylik kontrolü freze gövdesindeki bi-axial inklinometre sensörleriyle anlık takip edilmelidir.",
     faq: [
-      { question: "Diafram duvar mı fore kazık perdesi mi?", answer: "Diafram duvar daha yüksek rijitlik ve daha iyi su geçirimsizliği sağlar; derin, sulu ve komşu yapıya duyarlı kazılarda avantajlıdır. Fore kazık perdesi ise bazı koşullarda daha hızlı ve ekonomik olabilir." },
-      { question: "Diafram duvar kalıcı yapı elemanı olur mu?", answer: "Evet. Uygun tasarlandığında nihai yapının bodrum perde duvarı olarak taşıyıcı görev üstlenebilir." },
-      { question: "Su geçirimsizliği nasıl sağlanır?", answer: "Sürekli betonarme panel ve paneller arası su tutucu (waterstop) detayları sayesinde yüksek yeraltı suyu koşullarında dahi kazı tabanı korunur." },
-      { question: "Bentonit çamuru ne işe yarar?", answer: "Bentonit çamuru, kazı sırasında panel çeperinin göçmesini önleyerek stabiliteyi sağlar ve beton dökümüyle yerini betona bırakır." }
+      { question: "Diyafram duvar ile kesişen fore kazık arasındaki mühendislik farkı nedir?", answer: "Kesişen kazıklarda kuyu birleşimlerinde dikey sapma sebebiyle derz açılma ve su sızma riski vardır. Diyafram duvarlar ise kesintisiz paneller halinde imal edilir, eğilme rijitliği fore kazığa göre katbekat yüksektir ve CWS contaları sayesinde yeraltı otoparklarında sıfır su sızıntısı sağlar." },
+      { question: "Hidrolik freze (trench cutter) hangi zeminlerde zorunludur?", answer: "Standart mekanik kepçeler (grab) sert konglomera, andezit, bazalt veya 50 MPa'yı aşan sert kaya tabakalarında ilerleyemez. Hidrolik freze elmas uçlu kesici tamburlarıyla bu sert katmanları ufalayarak ters sirkülasyonla dışarı emer ve 40-70 metreye kadar iner." },
+      { question: "Diyafram duvar kalıcı bina dış duvarı olarak kullanılabilir mi?", answer: "Evet, metro istasyonlarında ve çok katlı bodrumlu rezidanslarda standart çözümdür. İç tarafa ayrıca kalıp çakıp perde dökülmesine gerek kalmaz; su yalıtımlı panel derzleri ve brüt betonarme yapısıyla kalıcı istinat görevini üstlenir." },
+      { question: "Bentonit çamuru hendek göçmesini nasıl engeller?", answer: "Bentonit çamuru zemin yüzeyine ince ve geçirimsiz bir filtre keki (mud cake) bırakır. Çamur seviyesi yeraltı suyundan yüksek tutulduğunda hidrostatik basınç zemini dışa doğru iter ve onlarca metre derinlikteki hendek kalıpsız olarak göçmeden açık kalır." }
     ]
   },
   {
