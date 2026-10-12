@@ -31,10 +31,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     : `${siteConfig.siteUrl}/services/${service.slug}/`;
 
   const serviceSeoTitles: Record<string, string> = {
-    "jet-grout": "Jet Grout Firmaları | Birim Fiyat ve Zemin İyileştirme",
+    "jet-grout": "Jet Grout Zemin İyileştirme Firmaları | Birim Fiyat 2026 | YER6",
     dsm: "DSM Zemin İyileştirme | Deep Soil Mixing Firmaları | YER6",
-    "fore-kazik": "Fore Kazık Firmaları | Birim Fiyat ve Derin Temel 2026",
-    "mini-kazik": "Mini Kazık Firmaları | Dar Alan Temel Güçlendirme | YER6",
+    "fore-kazik": "Fore Kazık Zemin İyileştirme & Derin Temel Firmaları | YER6",
+    "mini-kazik": "Mini Kazık Zemin İyileştirme & Güçlendirme Firmaları | YER6",
     ankraj: "Ankraj Firmaları | Öngermeli İksa ve Derin Kazı | YER6",
     "iksa-sistemleri": "İksa Sistemleri Firmaları | Derin Kazı Çözümleri | YER6",
     "zemin-iyilestirme": "Zemin İyileştirme | Yöntemler, Firma ve Maliyet 2026 | YER6",
@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     "puskurtme-beton": "Püskürtme Beton (Shotcrete) Firmaları | YER6 Geoteknik",
     "kazik-yukleme-testleri": "Kazık Yükleme ve PIT Testi Firmaları | YER6 Geoteknik",
     "zemin-etudu": "Zemin Etüdü Firmaları | Sondaj ve Geoteknik Rapor 2026",
-    "tas-kolon": "Taş Kolon (Stone Column) Firmaları | Zemin İyileştirme",
+    "tas-kolon": "Taş Kolon Zemin İyileştirme Firmaları | Vibro Replacement | YER6",
     "diafram-duvar": "Diyafram Duvar Firmaları | Derin Kazı İksa | YER6",
     "bina-alti-jet-grout": "Bina Altı Jet Grout Firmaları | Temel Güçlendirme | YER6",
     "cfa-kazik": "CFA Kazık Firmaları | Sürekli Burgulu Kazık Maliyeti",

@@ -40,6 +40,25 @@ export const knowledgeArticles: KnowledgeArticle[] = [
         ]
       },
       {
+        id: "jet-grout-zemin-iyilestirme-sivilasma",
+        title: "Jet Grout ile Zemin İyileştirme: Sıvılaşma Önleme ve Taşıma Gücü Artışı",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Jet grout; deprem riski yüksek bölgelerde suya doygun ince kum, silt ve gevşek alüvyon zeminlerde sıvılaşmayı tamamen engellemek ve zemin taşıma gücünü katbekat artırmak için uygulanan birincil zemin iyileştirme yöntemidir. 400-600 bar yüksek basınçla teşkil edilen soilcrete kolonları, zemin masifini kompozit bir kütleye dönüştürerek deprem kayma gerilmelerini (CSR) sönümler ve farklı oturmaları sıfıra indirir."
+          },
+          {
+            type: "list",
+            title: "Jet Grout Zemin İyileştirmenin Temel Fonksiyonları",
+            items: [
+              "Sıvılaşma Tetiklenmesini Önleme: Zemin boşluk oranını düşürerek ve rijitliği artırarak çevrimsel direnç oranını (CRR) yükseltir.",
+              "Taşıma Gücü Takviyesi: Zayıf zemin tabakalarının elastisite modülünü ve tek eksenli basınç dayanımını (qu = 2-15 MPa) artırır.",
+              "Geçirimsizlik Perdesi: Kesişen jet grout kolonları ile yeraltı suyu akışını keserek kazı çukuruna su girişini engeller."
+            ]
+          }
+        ]
+      },
+      {
         id: "hidrodinamik-parcalama-ve-kinetik-enerji-fizigi",
         title: "Kinetik Enerji ve Hidrodinamik Parçalama Fiziği (TS EN 12716)",
         blocks: [
@@ -1458,7 +1477,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     updatedAt: "2026-10-12",
     heroLabel: "Zemin İyileştirme Karar ve Mühendislik Platformu",
     introduction:
-      "**Zemin iyileştirme (ground improvement)**; zayıf, aşırı sıkışabilir veya deprem anında sıvılaşma riski taşıyan zemin tabakalarının kazılarak uzaklaştırılması yerine, yerinde (in-situ) fiziksel, hidrodinamik, mekanik ve kimyasal mühendislik müdahaleleriyle taşıma gücünün artırılması, toplam ve farklı (diferansiyel) oturmaların sınırlandırılması, sıvılaşma direncinin maksimize edilmesi ve hidrolik iletkenliğinin kontrol altına alınması işlemidir. YER6 Geoteknik olarak; ISSMGE TC211 (Zemin İyileştirme Teknik Komitesi), DFI (Deep Foundations Institute), TBDY 2018 Bölüm 16 ve Eurocode 7 (EN 1997) standartlarına tam uyumlu yüksek teknolojili makine parkımızla [Jet Grout](/services/jet-grout/), [DSM (Deep Soil Mixing)](/services/dsm/), [Taş Kolon](/services/tas-kolon/), Prefabrike Düşey Drenler (PVD), Dinamik Kompaksiyon ve zemin stabilizasyonu çözümlerini Türkiye genelinde projelendirip anahtar teslim uyguluyoruz.",
+      "**Zemin iyileştirme (ground improvement)**; zayıf, aşırı sıkışabilir veya deprem anında sıvılaşma riski taşıyan zemin tabakalarının kazılarak uzaklaştırılması yerine, yerinde (in-situ) fiziksel, hidrodinamik, mekanik ve kimyasal mühendislik müdahaleleriyle taşıma gücünün artırılması, toplam ve farklı (diferansiyel) oturmaların sınırlandırılması, sıvılaşma direncinin maksimize edilmesi ve hidrolik iletkenliğinin kontrol altına alınması işlemidir. YER6 Geoteknik olarak; ISSMGE TC211 (Zemin İyileştirme Teknik Komitesi), DFI (Deep Foundations Institute), TBDY 2018 Bölüm 16 ve Eurocode 7 (EN 1997) standartlarına tam uyumlu yüksek teknolojili makine parkımızla [Jet Grout Zemin İyileştirme](/services/jet-grout/), [DSM Zemin İyileştirme](/services/dsm/), [Taş Kolon Zemin İyileştirme](/services/tas-kolon/), [Fore Kazık Zemin İyileştirme](/services/fore-kazik/), Prefabrike Düşey Drenler (PVD), Dinamik Kompaksiyon ve zemin stabilizasyonu çözümlerini Türkiye genelinde projelendirip anahtar teslim uyguluyoruz.",
     sections: [
       {
         id: "zemin-iyilestirme-tanimi-ve-geoteknik-felsefe",
@@ -3852,33 +3871,92 @@ export const knowledgeArticles: KnowledgeArticle[] = [
   },
   {
     slug: "tas-kolon-nedir",
-    title: "Taş Kolon Nedir? Uygulaması ve Avantajları",
-    seoTitle: "Taş Kolon Nedir? Vibro Taş Kolon Uygulaması | YER6",
-    description: "Taş kolon; yumuşak zemine sıkıştırılmış çakıl/kırmataş kolonları teşkil ederek taşıma gücünü artıran, oturmayı azaltan ve drenaj sağlayan zemin iyileştirme yöntemidir.",
-    excerpt: "Taş kolon; yumuşak kil ve gevşek zeminlere vibro yöntemiyle sıkıştırılmış çakıl/kırmataş kolonları teşkil ederek taşıma gücünü artıran, oturmayı azaltan ve drenaj sağlayarak sıvılaşma direncine katkıda bulunan bir yöntemdir.",
+    title: "Taş Kolon (Vibro-Replacement) Nedir? Zemin İyileştirme, Priebe Yöntemi ve Sıvılaşma Rehberi",
+    seoTitle: "Taş Kolon Zemin İyileştirme Nedir? Vibro Taş Kolon | YER6",
+    description: "Taş kolon zemin iyileştirme; Priebe gerilme konsantrasyonu, vibro-flotasyon çakıl enjeksiyonu ve radyal drenajla yumuşak zeminde oturmayı azaltıp sıvılaşmayı önleyen geoteknik sistemdir.",
+    excerpt: "Taş kolon (vibro replacement); suya doygun yumuşak kil, silt ve gevşek kum zeminlerde derin vibratörler yardımıyla sıkıştırılmış kırmataş ve çakıl kolonları inşa ederek zemin taşıma kapasitesini artıran, oturmayı sınırlandıran ve radyal drenajla deprem sıvılaşma riskini sıfırlayan doğal agrega zemin iyileştirme yöntemidir.",
     category: "Zemin İyileştirme",
-    readingTime: "6 dk",
+    readingTime: "16 dk",
     publishedAt: "2026-07-11",
-    updatedAt: "2026-07-11",
-    heroLabel: "Taş Kolon",
-    introduction: "Taş kolon, yumuşak ve gevşek zeminlerde oturma kontrolü ile sıvılaşma azaltımı için etkili bir zemin iyileştirme yöntemidir. Bu yazıda taş kolonun ne olduğunu ve avantajlarını açıklıyoruz.",
+    updatedAt: "2026-10-12",
+    heroLabel: "Taş Kolon Zemin İyileştirme",
+    introduction: "Taş kolon (vibro-replacement / stone columns), özellikle alüvyal ovalarda, deniz dolgularında, yumuşak killi ve suya doygun gevşek siltli/kumlu zeminlerde uygulanan dünyadaki en yaygın, çevre dostu ve ekonomik zemin iyileştirme yöntemlerinden biridir. Çimento ve kimyasal bağlayıcı kullanmadan yalnızca doğal kırmataş agregası ve yüksek frekanslı yatay titreşim enerjisiyle imal edilen taş kolonlar; hem taşıma gücünü artırır, hem oturmaları Priebe teorisine göre sönümler, hem de deprem esnasında boşluk suyu basıncını hızla tahliye eden dikey çakıl drenler görevi üstlenir.",
     sections: [
-      { id: "tanim", title: "Taş Kolon Nedir?", blocks: [
-        { type: "paragraph", content: "Taş kolon, vibratör yardımıyla zemine açılan boşluğa çakıl/kırmataş beslenip sıkıştırılarak oluşturulan, yanal zemine kenetlenmiş agrega kolonlarıdır. Islak veya kuru sistemle uygulanır." },
-        { type: "list", title: "Sağladıkları", items: ["Taşıma kapasitesi artışı", "Oturma ve fark oturma azaltımı", "Drenaj ile hızlı konsolidasyon", "Sıvılaşma direncine katkı"] }
-      ]},
-      { id: "avantaj", title: "Avantajları ve Uygulama Alanları", blocks: [
-        { type: "paragraph", content: "Doğal agrega kullanımıyla çevre dostudur ve geniş alanlarda hızlı-ekonomik uygulanır. Depo, lojistik ve endüstriyel platformlar ile dolgu altı iyileştirmede tercih edilir." },
-        { type: "note", title: "Çok yumuşak zemin", content: "Yanal destek sağlayamayan çok yumuşak zeminlerde kolon şişmesine karşı geotekstil kılıflı taş kolon değerlendirilebilir." }
-      ]}
+      {
+        id: "tanim-ve-mekanizma",
+        title: "1. Taş Kolon Nedir ve Zemin İyileştirme Mekanizması Nasıl Çalışır?",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Taş kolon yöntemi; zemin içerisine derin vibratör (vibroflot) yardımıyla yüksek frekanslı yatay titreşim ve su/hava jeti desteğiyle istenen derinliğe (tipik 5 - 20 metre) kadar kuyu açılması, ardından açılan bu boşluğa kademeli olarak temiz, dereceli kırmataş/çakıl (15 - 45 mm dane çaplı) beslenip vibratörle yanal olarak zemin çeperine doğru sıkıştırılmasıyla silindirik (tipik Ø60 - Ø100 cm) agrega kolonları oluşturulması işlemidir."
+          },
+          {
+            type: "list",
+            title: "Taş Kolonun Zemin İyileştirmedeki Üçlü Etki Mekanizması",
+            items: [
+              "1. Alan Değiştirme ve Sıkıştırma (Densification): Çakıl kolonun oluşturulması sırasında zemin yanal olarak itilerek çevre kohezyonsuz zeminlerin rölatif sıkılığı ve sürtünme açısı (phi) artırılır.",
+              "2. Gerilme Konsantrasyonu (Stress Concentration): Taş kolonun elastisite modülü çevre yumuşak zeminden çok daha yüksek olduğu için, üstyapı yükünün büyük kısmı doğrudan taş kolonlara aktarılır (Priebe gerilme azaltma faktörü).",
+              "3. Radyal Konsolidasyon ve Drenaj (Rapid Drainage): Kırmataş agregasının aşırı yüksek hidrolik geçirgenliği (k > 10^-2 m/s), deprem anında sıvılaşmaya yol açan aşırı boşluk suyu basıncını anında tahliye eder ve konsolidasyon oturmalarını yıllardan haftalara indirir."
+            ]
+          }
+        ]
+      },
+      {
+        id: "priebe-tasarim-ve-formuller",
+        title: "2. Priebe (1995) Yöntemi ile Taş Kolon Hesap Esasları",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Taş kolonlu zemin iyileştirmesi tasarımında dünya standardı Priebe (1995) yöntemidir. Temelden gelen toplam düşey gerilme, taş kolon ile çevre zemin arasında rijitlik farkına göre paylaşılır:"
+          },
+          {
+            type: "note",
+            title: "Priebe Alan Değiştirme Oranı ve İyileştirme Faktörü",
+            content: "Formül: a_s = A_c / A ve n = sigma_c / sigma_s. Burada a_s alan değiştirme oranı (tipik %15 - %35), A_c taş kolon kesit alanı, A toplam etki alanı, n gerilme konsantrasyon faktörüdür (tipik 2.5 - 5.0). İyileştirme faktörü n_0 sayesinde zemin oturması s = s_0 / n_0 mertebesine düşürülür."
+          }
+        ]
+      },
+      {
+        id: "sivilasma-ve-tbdy-2018",
+        title: "3. TBDY 2018 Sıvılaşma Direnci ve Taş Kolon Drenaj Fonksiyonu",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Deprem esnasında gevşek suya doygun kumlarda su basıncı artarak efektif gerilmeyi sıfırlar ve zemin sıvılaşır. Taş kolonlar; Seed-Booker teorisine göre deprem çevrimsel kayma enerjisinin oluştuğu süreden çok daha hızlı bir şekilde suyu dikey olarak yukarı tahliye eder. Böylece zemin masifinde boşluk suyu basıncı oranı r_u = Delta_u / sigma'_v0 hiçbir zaman 1.0 kritik eşiğine ulaşamaz ve sıvılaşma engellenir."
+          }
+        ]
+      },
+      {
+        id: "geotekstil-kilifli-tas-kolon",
+        title: "4. Geotekstil Kılıflı Taş Kolon (Geotextile Encased Columns - GEC)",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Çok yumuşak turba ve drenajsız kayma mukavemeti c_u < 15 kPa olan bataklık zeminlerde sıradan taş kolonlar yanal zemin desteği yetersiz olduğu için aşırı şişme (bulging) yaparak taşıma kapasitesini yitirebilir. Bu zeminlerde yüksek çekme mukavemetli dairesel geotekstil kılıflar (GEC) kuyuya indirilir ve agrega kılıfın içine doldurulur; kılıf çakıla yapay halka gerilmesi sağlayarak devasa taşıma gücü üretir."
+          }
+        ]
+      }
     ],
     faq: [
-      { question: "Taş kolon hangi zeminlerde uygun?", answer: "Yumuşak kil, gevşek silt ve kumlu zeminlerde etkilidir; çok yumuşak zeminlerde geotekstil kılıflı çözüm tercih edilebilir." },
-      { question: "Taş kolon sıvılaşmayı önler mi?", answer: "Drenaj sağlayıp rijitliği artırarak sıvılaşma direncine katkıda bulunur." },
-      { question: "Taş kolon mu DSM mi?", answer: "Taş kolon drenaj ve doğal agrega avantajı sunar; DSM daha yüksek ve kontrollü mukavemet sağlar. Karar zemin ve hedefe bağlıdır." }
+      {
+        question: "Taş kolon hangi zemin iyileştirme projelerinde zorunludur?",
+        answer: "Yüksek yeraltı suyu seviyesine sahip gevşek kum, silt ve yumuşak alüvyal zeminlerde; endüstriyel tesisler, lojistik depolar, tank temelleri ve karayolu/demiryolu dolgularında oturmayı sınırlamak ve sıvılaşmayı engellemek için birincil zemin iyileştirme yöntemidir."
+      },
+      {
+        question: "Taş kolon ile jet grout zemin iyileştirme arasındaki fark nedir?",
+        answer: "Taş kolon çimento gerektirmeyen, doğal agregayla yapılan, zemin drenajını artıran son derece çevreci ve ekonomik bir yöntemdir. Jet grout ise çimento şerbetiyle sertleşen yüksek dayanımlı rijit soilcrete kolonları üretir ve su geçirimsizlik perdelerinde tercih edilir."
+      },
+      {
+        question: "Taş kolon zemin iyileştirmede Priebe yöntemi nedir?",
+        answer: "Taş kolonların üstyapı yükünü ne oranda üstlendiğini (gerilme konsantrasyon faktörü n) ve toplam zemin oturmasını ne kadar azalttığını (iyileştirme faktörü n_0) hesaplayan uluslararası kabul görmüş geoteknik tasarım teorisidir."
+      },
+      {
+        question: "Taş kolon sıvılaşmayı nasıl engeller?",
+        answer: "Taş kolonlar hem zemin masifini yatay vibrasyonla sıkıştırarak rölatif sıkılığını artırır, hem de depremde hızla yükselen boşluk suyu basıncını dikey çakıl drenaj kanalları vasıtasıyla yüzeye tahliye ederek sıvılaşma basıncının birikmesini önler."
+      }
     ],
-    relatedSlugs: ["zemin-iyilestirme-yontemleri", "sivilasma-riskine-karsi-zemin-guclendirme", "zemin-iyilestirme-planlama"],
-    keywords: ["taş kolon nedir", "vibro taş kolon", "taş kolon uygulaması", "zemin iyileştirme taş kolon", "geotekstil kılıflı taş kolon"],
+    relatedSlugs: ["zemin-iyilestirme-yontemleri", "jet-grout-nedir", "dsm-nedir", "fore-kazik-nedir"],
+    keywords: ["taş kolon nedir", "taş kolon zemin iyileştirme", "taş kolon zemin iyileştirme firmaları", "vibro taş kolon", "vibro replacement", "priebe zemin iyileştirme", "geotekstil kılıflı taş kolon"],
     published: true
   },
   {
