@@ -3296,67 +3296,169 @@ export const knowledgeArticles: KnowledgeArticle[] = [
   },
   {
     slug: "fore-kazik-maliyeti",
-    title: "Fore Kazık Maliyeti 2026: Fiyatı Belirleyen Faktörler",
-    seoTitle: "Fore Kazık Maliyeti 2026 | Fiyatı Neler Belirler? | YER6",
-    description: "Fore kazık maliyeti; kazık çapı ve derinliği, beton ve donatı miktarı, zemin koşulları, kazık adedi ve saha erişimine göre belirlenir. Metraj mantığı ve maliyet kalemleri.",
-    excerpt: "Fore kazık maliyeti; kazık çapı ve derinliği, beton–donatı sarfı, zemin koşulları, toplam kazık adedi ve saha erişimi gibi kalemlerin birleşimiyle oluşur. Gerçekçi fiyat, zemin verisi ve projeye özel metrajla hesaplanır.",
+    title: "Fore Kazık Metre Fiyatı 2026: Güncel Delgi, Donatı ve Malzemeli Maliyet Analizi",
+    seoTitle: "Fore Kazık Metre Fiyatı 2026 | Güncel Delgi ve Maliyet | YER6",
+    description: "Fore kazık metre fiyatı 2026 güncel maliyetleri; Ø65 cm, Ø80 cm ve Ø100 cm delgi metre fiyatı, C30/37 hazır beton, demir donatı ve anahtar teslim şantiye metraj tablosu.",
+    excerpt: "2026 yılı güncel fore kazık metre fiyatları; delgi çapına (Ø65 cm, Ø80 cm, Ø100 cm, Ø120 cm), zemin sınıfına, kılıflı boru kullanımına, C30/37 beton hacmine ve çelik donatı tonajına göre belirlenir.",
     category: "Fore Kazık",
-    readingTime: "8 dk",
+    readingTime: "16 dk",
     publishedAt: "2026-07-10",
-    updatedAt: "2026-07-10",
-    heroLabel: "Fore Kazık Maliyeti",
+    updatedAt: "2026-10-12",
+    heroLabel: "Fore Kazık Metre Fiyatı 2026",
     introduction:
-      "Fore kazık maliyeti, projeden projeye önemli ölçüde değişir; tek bir metretül fiyatı vermek gerçekçi değildir. Kazık geometrisi, beton ve donatı miktarı, zemin koşulları ve saha organizasyonu maliyeti birlikte belirler. Bu yazıda fore kazık fiyatını etkileyen kalemleri ve metraj mantığını ele alıyoruz. Kendi projeniz için beton, donatı ve delgi metrajını hesaplamak isterseniz [fore kazık maliyet hesaplama aracını](/hesaplama/fore-kazik-maliyet-hesaplama/) kullanabilirsiniz.",
+      "Fore kazık metre fiyatı 2026 yılı inşaat ve geoteknik piyasasında; zemin koşullarına, kazık çapına, delgi derinliğine, kuyu muhafaza kılıfı ihtiyacına ve projenin gerektirdiği hazır beton ile çelik donatı metrajına göre belirlenir. Şantiyelerde bütçe planlaması yapılırken 'sadece delgi işçiliği' ile 'malzemeli anahtar teslim imalat' kalemlerinin doğru ayrıştırılması hayati önem taşır. Bu kapsamlı rehberde; 2026 güncel fore kazık metre fiyatları tablosunu, çap bazında delgi ve malzemeli birim fiyatları, 10 metrelik örnek kazık maliyet analizini ve müteahhitler için sözleşme risklerini eksiksiz açıklıyoruz. Kendi projenizin zemin sınıfı ve metrajına göre anlık bütçe çıkarmak için [İnteraktif Fore Kazık Maliyet Hesaplama Aracımızı](/hesaplama/fore-kazik-maliyet-hesaplama/) kullanabilirsiniz.",
     sections: [
       {
-        id: "faktorler",
-        title: "Fore Kazık Maliyetini Belirleyen Faktörler",
+        id: "2026-metre-fiyati-ve-delgi-tablosu",
+        title: "1. 2026 Yılı Fore Kazık Delgi Metre Fiyatları Ne Kadar?",
         blocks: [
           {
             type: "paragraph",
             content:
-              "Fore kazık maliyeti; delgi metrajı (toplam kazık boyu), kazık çapı, beton ve donatı sarfı, zemin sertliği ve saha koşullarına bağlıdır. Sert kaya veya yüksek yeraltı suyu gibi koşullar hem delgi süresini hem de muhafaza borusu ihtiyacını artırarak maliyeti yükseltir."
+              "Fore kazık imalatında temel maliyet iki ana kategoriye ayrılır: 'Sadece Delgi İşçiliği (Makine Bedeli)' ve 'Malzemeli Anahtar Teslim İmalat'. Kazık çapı büyüdükçe hidrolik rotary delgi makinesinin tork ihtiyacı (150 - 450 kNm), mazot sarfiyatı ve kuyu başında harcanan süre arttığı için birim fiyatlar kademeli olarak yükselir."
           },
           {
             type: "list",
-            title: "Fiyatı etkileyen başlıca kalemler",
+            title: "2026 Ortalama Fore Kazık Delgi Metre Fiyatları Tablosu (Sadece Makine ve İşçilik)",
             items: [
-              "Kazık çapı ve derinliği (delgi metrajı)",
-              "Beton sınıfı ve donatı (çelik) miktarı",
-              "Zemin sertliği ve muhafaza borusu ihtiyacı",
-              "Yeraltı suyu ve tremie beton koşulları",
-              "Toplam kazık adedi ve saha büyüklüğü",
-              "Mobilizasyon, deneme kazığı ve yükleme testleri"
+              "Ø65 cm Fore Kazık Delgi Fiyatı: 500 – 850 TL / metre (Standart alüvyal ve killi zeminlerde)",
+              "Ø80 cm Fore Kazık Delgi Fiyatı: 700 – 1.250 TL / metre (Orta sertlikte zemin ve çakıllı formasyonlarda)",
+              "Ø100 cm Fore Kazık Delgi Fiyatı: 1.000 – 2.400 TL / metre (Sert kil, ayrışmış kaya ve derin temellerde)",
+              "Ø120 cm Fore Kazık Delgi Fiyatı: 1.800 – 3.500 TL / metre (Ağır yük taşıyıcı ve viyadük ayaklarında)",
+              "Kılıflı (Muhafazalı Borulu) Delgi Ek Bedeli: +350 – 1.100 TL / metre (Yeraltı suyu yüksek ve kuyu çökme riski olan sahalarda osilatörle boru sürme farkı)"
+            ]
+          },
+          {
+            type: "note",
+            title: "Sert Kaya ve Bloklu Zemin Uyarısı",
+            content:
+              "Zemin profilinde tek eksenli serbest basınç mukavemeti qu > 30-50 MPa olan sert ana kaya, bazalt veya andezit tabakaları bulunuyorsa standart burgu (auger) yerine elmas uçlu kaya kovası (core barrel / rock auger) kullanılır. Sert kaya delgilerinde metre birim fiyatları zemin sertliğine göre %50 ile %150 oranında artış gösterir."
+          }
+        ]
+      },
+      {
+        id: "malzemeli-anahtar-teslim-fiyatlar",
+        title: "2. Malzemeli (C30/37 Beton + Donatı + Delgi) Anahtar Teslim Metre Fiyatı",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Müteahhitlerin ve yatırımcıların ihale dosyalarında en çok talep ettiği model 'malzemeli anahtar teslim' fore kazık imalatıdır. Bu fiyata delgi işçiliği, C25/30 veya C30/37 hazır beton, nervürlü inşaat demiri (B420C) donatı kafesi imalatı ve tremie dökümü dahildir."
+          },
+          {
+            type: "list",
+            title: "2026 Malzemeli Anahtar Teslim Ortalama Metre Fiyatları",
+            items: [
+              "Ø65 cm Malzemeli Fore Kazık: 3.400 – 4.200 TL / metre (Metrede yaklaşık 0.33 m³ beton ve 35-45 kg demir)",
+              "Ø80 cm Malzemeli Fore Kazık: 4.500 – 5.500 TL / metre (Metrede yaklaşık 0.50 m³ beton ve 55-70 kg demir)",
+              "Ø100 cm Malzemeli Fore Kazık: 6.800 – 8.400 TL / metre (Metrede yaklaşık 0.78 m³ beton ve 85-110 kg demir)",
+              "Ø120 cm Malzemeli Fore Kazık: 9.000 – 11.500 TL / metre (Metrede yaklaşık 1.13 m³ beton ve 120-160 kg demir)"
             ]
           }
         ]
       },
       {
-        id: "metraj",
-        title: "Metraj ve Maliyet Mantığı",
+        id: "ornek-kazik-maliyet-hesabi",
+        title: "3. 10 Metrelik Ø80 cm Örnek Kazık Maliyet Hesabı (2026 Şantiye Matematiği)",
         blocks: [
           {
             type: "paragraph",
             content:
-              "Fore kazık işleri genellikle toplam kazık boyu (metretül) üzerinden metrajlanır; birim fiyat delgi, beton, donatı, ekipman ve işçilik kalemlerini içerir. Kazık yükleme ve bütünlük (PIT) testleri kalite güvencesi için maliyete eklenen kalemlerdir."
+              "Piyasada internette dolaşan '10 metre kazık 9.300 TL' gibi demirin kilosunun 5 TL, betonun 300 TL olduğu 7 yıl öncesine ait sahte hesaplamalar şantiyelerde büyük bütçe yanılgılarına yol açar. 2026 yılı güncel şantiye dinamiklerinde 10 metre boyunda ve Ø80 cm çapında tek bir fore kazığın gerçekçi maliyeti şu şekilde hesaplanır:"
+          },
+          {
+            type: "list",
+            title: "1 Adet 10 Metre Ø80 cm Kazık İçin Maliyet Dökümü",
+            items: [
+              "1. Delgi İşçiliği ve Makine Bedeli: 10 m x 900 TL/m = 9.000 TL",
+              "2. Hazır Beton Maliyeti: Silindirik hacim V = pi x r^2 x h = 3.14 x (0.40)^2 x 10 m = 5.03 m³. %10 kuyu taşma/zayiat payı ile 5.53 m³ x 2.800 TL/m³ (C30/37 pompa dahil) = 15.484 TL",
+              "3. Çelik Donatı Kafesi Maliyeti: Metrede ortalama 60 kg donatı x 10 m = 600 kg. 600 kg x 26 TL/kg (B420C demir + bağlama işçiliği) = 15.600 TL",
+              "4. Paspayı Tekerlekleri ve Sarfiyat: 1.000 TL",
+              "Toplam 1 Kazık Maliyeti: 9.000 TL + 15.484 TL + 15.600 TL + 1.000 TL = 41.084 TL (Metresi yaklaşık 4.100 TL / m)"
+            ]
+          }
+        ]
+      },
+      {
+        id: "maliyeti-etkileyen-faktorler",
+        title: "4. Fore Kazık Fiyatlarını Değiştiren Kritik Şantiye Faktörleri",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "Aynı çapta iki farklı şantiyede fore kazık metre fiyatının birbirinden farklı çıkmasının arkasında 4 temel saha gerçeği yatar:"
+          },
+          {
+            type: "list",
+            title: "Fiyata Etki Eden Temel Faktörler",
+            items: [
+              "1. Zemin Sınıfı ve Yeraltı Suyu: Su seviyesi yüksek sahalarda bentonit çamuru ve kuyu kılıfı (casing) zorunluluğu operasyon hızını düşürür ve maliyeti artırır.",
+              "2. Toplam Metraj (İş Büyüklüğü): 1.000 metrenin altındaki küçük metrajlı şantiyelerde mobilizasyon amortismanı yüksek olduğu için birim fiyatlar yükselir; 10.000 metre üzeri projelerde ölçek ekonomisiyle ciddi fiyat avantajı sağlanır.",
+              "3. Kuyu Taşma Payı (Overbreak): Yumuşak ve gevşek zeminlerde kuyu çapı beton dökümünde %15-20 oranında genişleyebilir; bu durum beton sarfiyatını artırır.",
+              "4. Test ve Kalite Kontrol: Şartnamede yer alan PIT (Kazık Bütünlük Testi), CSL (Ultrasonik Kros-Hol Testi) ve Statik Eksenel Yükleme Testleri bütçeye eklenir."
+            ]
+          }
+        ]
+      },
+      {
+        id: "mobilizasyon-ve-lojistik",
+        title: "5. Makine Parkı Mobilizasyonu ve Sözleşme Şartları",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "50-80 tonluk dev hidrolik rotary delgi makineleri, servis vinçleri ve tremie boru takımları ağır nakliye (lowbed) tırlarıyla şantiyeye sevk edilir. Şantiyenin şehir merkezine veya Ankara lojistik üssümüze uzaklığına göre mobilizasyon-demobilizasyon bedeli sözleşmede netleştirilmelidir."
           },
           {
             type: "note",
-            title: "Sağlıklı teklif için",
+            title: "Bekleme Süresi (Standby Rate) Maddesi",
             content:
-              "Gerçekçi bir fore kazık maliyeti, zemin etüdü verisi ve projeye özel kazık düzeniyle hesaplanır. YER6 ihale öncesi yaklaşık metraj ve maliyet öngörüsü hazırlar."
+              "Ruhsat gecikmesi, elektrik-su kesintisi veya hafriyat alanının teslim edilmemesi sebebiyle dev kazık makinesinin sahada beklemesi durumunda günlük bekleme bedeli sözleşmede iki tarafı da koruyacak şekilde tanımlanmalıdır."
+          }
+        ]
+      },
+      {
+        id: "hesaplama-araci-entegrasyonu",
+        title: "6. Kendi Projenizin Fore Kazık Metrajını Anında Hesaplayın",
+        blocks: [
+          {
+            type: "paragraph",
+            content:
+              "YER6 Geoteknik'in geliştirdiği interaktif hesaplama motoruyla, projenizin kazık adedini, çapını, boyunu ve zemin özelliklerini seçerek tahmini beton metreküpünü, demir tonajını ve yaklaşık bütçesini saniyeler içinde hesaplayabilirsiniz."
+          },
+          {
+            type: "note",
+            title: "İnteraktif Araç Bağlantısı",
+            content:
+              "Projenizin beton ve demir metraj tablosunu hemen oluşturmak için [Fore Kazık Maliyet Hesaplama Aracımızı](/hesaplama/fore-kazik-maliyet-hesaplama/) kullanabilir, zemin etüdü raporunuzla bize ulaşarak resmi birim fiyat teklifi alabilirsiniz."
           }
         ]
       }
     ],
     faq: [
-      { question: "Fore kazık metretül fiyatı ne kadar?", answer: "Sabit bir fiyat yoktur; çap, derinlik, beton–donatı miktarı ve zemin koşullarına göre değişir. Gerçekçi rakam ancak zemin verisi ve projeye özel metrajla verilir." },
-      { question: "Fore kazık maliyetini en çok ne artırır?", answer: "Sert kaya, yüksek yeraltı suyu, büyük çap/derinlik, muhafaza borusu ihtiyacı ve geniş kazık adedi maliyeti artıran başlıca etkenlerdir." },
-      { question: "Mini kazık fore kazıktan ucuz mu?", answer: "Dar sahalarda ve düşük yüklerde mini kazık avantajlı olabilir; ancak yüksek eksenel yüklerde fore kazık gerekir. Karar yük ve saha koşullarına bağlıdır." },
-      { question: "Yükleme testi maliyeti neye göre belirlenir?", answer: "Test yöntemi (statik/dinamik), test adedi ve şartname gereklilikleri maliyeti belirler. Test kapsamı proje riskine göre planlanır." }
+      {
+        question: "2026 yılında fore kazık delgi metre fiyatı ne kadardır?",
+        answer: "2026 güncel şantiye koşullarında sadece delgi işçiliği metre fiyatı; Ø65 cm için 500 – 850 TL/m, Ø80 cm için 700 – 1.250 TL/m, Ø100 cm için 1.000 – 2.400 TL/m aralığındadır. Zemin sertliğine ve kılıflı boru kullanımına göre değişkenlik gösterir."
+      },
+      {
+        question: "Fore kazık fiyatlarına beton ve demir dahil midir?",
+        answer: "Sözleşme tipine göre değişir. 'Sadece delgi' işlerinde beton ve demir işveren tarafından karşılanır. 'Malzemeli anahtar teslim' sözleşmelerde ise C30/37 hazır beton, nervürlü demir donatı ve delgi dahil metre fiyatı Ø80 cm için ortalama 4.500 – 5.500 TL/m seviyesindedir."
+      },
+      {
+        question: "Kılıflı (muhafaza borulu) delgi maliyeti neden daha yüksektir?",
+        answer: "Yeraltı suyu seviyesi yüksek veya kendini tutamayan gevşek zeminlerde kuyu çeperinin göçmesini önlemek için çelik muhafaza boruları osilatör veya rotary kafa ile zemine sürülüp çekilir. Ek ekipman ve zaman gerektirdiğinden metre başına 350 – 1.100 TL ek maliyet oluşturur."
+      },
+      {
+        question: "10 metre Ø80 cm tek bir fore kazık maliyeti ne kadardır?",
+        answer: "2026 şantiye girdi fiyatlarıyla (delgi + 5.5 m³ C30 beton + 600 kg B420C demir donatı) 10 metrelik tek bir kazığın anahtar teslim maliyeti yaklaşık 40.000 – 43.000 TL aralığında gerçekleşmektedir."
+      },
+      {
+        question: "Fore kazıkta kuyu zayiatı (overbreak) ne kadardır?",
+        answer: "Yumuşak ve alüvyal zeminlerde kuyu çeperindeki gevşeme sebebiyle teorik beton hacminin üzerine tipik olarak %10 ile %15 arasında kuyu taşma ve zayiat payı eklenerek beton siparişi verilir."
+      }
     ],
-    relatedSlugs: ["fore-kazik-nedir", "fore-kazik-avantajlari", "kazi-destek-sistemleri-nedir"],
-    keywords: ["fore kazık maliyeti", "fore kazık fiyatları", "fore kazık metretül fiyatı", "kazıklı temel maliyeti", "fore kazık fiyatı 2026"],
+    relatedSlugs: ["fore-kazik-nedir", "fore-kazik-avantajlari", "kazi-destek-sistemleri-nedir", "jet-grout-maliyeti"],
+    keywords: ["fore kazık metre fiyatı 2026", "fore kazık maliyeti", "fore kazık maliyet hesaplama", "fore kazık delgi fiyatı", "fore kazık birim fiyatı", "fore kazık metre fiyatı", "kazıklı temel maliyeti"],
     published: true
   },
   {
