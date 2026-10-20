@@ -7319,7 +7319,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     title: "Jet Grout Firması Ankara: Seçim Kriterleri ve YER6",
     seoTitle: "Jet Grout Firması Ankara | Ankara Jet Grout Uygulaması | YER6",
     description: "Ankara'da jet grout firması seçerken makine parkı, saha tecrübesi, kalite kontrol ve referanslar önemlidir. Ankara zemin koşullarına uygun jet grout uygulaması için YER6.",
-    excerpt: "Ankara'da jet grout firması seçerken makine parkı, saha tecrübesi, kalite kontrol süreci ve yerel zemin bilgisi belirleyicidir. YER6, Gölbaşı merkezli ekibiyle Ankara ve çevresinde jet grout uygular.",
+    excerpt: "Ankara'da jet grout firması seçerken makine parkı, saha tecrübesi, kalite kontrol süreci ve yerel zemin bilgisi belirleyicidir. YER6, İvedik OSB / Yenimahalle merkezli ekibiyle Ankara ve çevresinde jet grout uygular.",
     category: "Jet Grout",
     readingTime: "7 dk",
     publishedAt: "2026-07-10",
@@ -7370,7 +7370,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     ],
     faq: [
       { question: "Ankara'da jet grout firması nasıl seçilir?", answer: "Makine parkı, Ankara zemininde saha tecrübesi, deneme kolonu ve kalite kontrol süreci, şeffaf metraj ve referanslar en önemli kriterlerdir." },
-      { question: "YER6 Ankara'nın hangi bölgelerinde çalışıyor?", answer: "Gölbaşı merkezli ekibimizle Ankara'nın tüm ilçelerinde ve çevre illerde jet grout ve zemin güçlendirme uygulamaları yapıyoruz." },
+      { question: "YER6 Ankara'nın hangi bölgelerinde çalışıyor?", answer: "İvedik OSB / Yenimahalle merkezli ekibimizle Ankara'nın tüm ilçelerinde ve çevre illerde jet grout ve zemin güçlendirme uygulamaları yapıyoruz." },
       { question: "Ankara jet grout maliyeti neye bağlı?", answer: "Kolon çapı ve derinliği, zemin türü, metraj ve saha koşullarına bağlıdır. Gerçekçi rakam zemin verisi ve projeye özel metrajla verilir." }
     ],
     relatedSlugs: ["jet-grout-nedir", "jet-grout-maliyeti", "jet-grout-hangi-zeminlerde-uygulanir"],
@@ -7434,7 +7434,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     faq: [
       { question: "Ankara'da fore kazık firması nasıl seçilir?", answer: "Delgi kapasitesi, makine parkı, kalite kontrol (PIT ve yükleme testi), uygulama disiplini ve referanslar en önemli kriterlerdir." },
       { question: "Fore kazık kalitesi nasıl doğrulanır?", answer: "Düşük gerilme bütünlük testi (PIT) ile süreklilik, statik/dinamik yükleme testleriyle taşıma kapasitesi bağımsız olarak doğrulanır." },
-      { question: "YER6 Ankara'da fore kazık uyguluyor mu?", answer: "Evet. Gölbaşı merkezli ekibimizle Ankara'nın tüm ilçelerinde ve çevre illerde fore kazık ve derin temel uygulamaları yapıyoruz." }
+      { question: "YER6 Ankara'da fore kazık uyguluyor mu?", answer: "Evet. İvedik OSB / Yenimahalle merkezli ekibimizle Ankara'nın tüm ilçelerinde ve çevre illerde fore kazık ve derin temel uygulamaları yapıyoruz." }
     ],
     relatedSlugs: ["fore-kazik-nedir", "fore-kazik-maliyeti", "fore-kazik-avantajlari"],
     keywords: ["fore kazık firması ankara", "ankara fore kazık", "fore kazık ankara", "fore kazık firmaları ankara", "ankara kazıklı temel"],
@@ -7497,7 +7497,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     faq: [
       { question: "DSM Ankara'da hangi projelerde uygulanır?", answer: "Yumuşak zemin ve dolgu alanlarında, özellikle depo, lojistik ve endüstriyel yapılar gibi geniş taban alanlı projelerde oturma kontrolü için uygulanır." },
       { question: "DSM firması seçerken nelere dikkat edilmeli?", answer: "Laboratuvar karışım tasarımı, ekipman kapasitesi, karot ve basınç testleriyle kalite doğrulaması ve dijital üretim kaydı en önemli kriterlerdir." },
-      { question: "YER6 Ankara'da DSM uyguluyor mu?", answer: "Evet. Gölbaşı merkezli ekibimizle Ankara ve çevresinde DSM zemin iyileştirme uygulamaları yapıyoruz." }
+      { question: "YER6 Ankara'da DSM uyguluyor mu?", answer: "Evet. İvedik OSB / Yenimahalle merkezli ekibimizle Ankara ve çevresinde DSM zemin iyileştirme uygulamaları yapıyoruz." }
     ],
     relatedSlugs: ["dsm-nedir", "dsm-nasil-uygulanir", "jet-grout-ve-dsm-farki"],
     keywords: ["deep soil mixing ankara", "dsm ankara", "derin zemin karıştırma ankara", "dsm firması ankara", "ankara zemin iyileştirme"],

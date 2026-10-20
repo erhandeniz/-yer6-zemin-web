@@ -326,9 +326,11 @@ export function localBusinessSchema() {
       name: "Ankara, Türkiye",
       address: {
         "@type": "PostalAddress",
-        addressLocality: "Gölbaşı",
-        addressRegion: "Ankara",
-        addressCountry: "TR"
+        streetAddress: siteConfig.address.streetAddress,
+        addressLocality: siteConfig.address.locality,
+        addressRegion: siteConfig.address.region,
+        postalCode: siteConfig.address.postalCode,
+        addressCountry: siteConfig.address.country
       }
     },
     knowsAbout: [
