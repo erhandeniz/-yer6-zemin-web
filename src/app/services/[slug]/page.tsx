@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const serviceSeoTitles: Record<string, string> = {
     "jet-grout": "Jet Grout Zemin İyileştirme Firmaları | Birim Fiyat 2026 | YER6",
-    dsm: "DSM Zemin İyileştirme | Deep Soil Mixing Firmaları | YER6",
+    dsm: "Deep Soil Mixing (DSM) Zemin İyileştirme Firmaları | YER6",
     "fore-kazik": "Fore Kazık Zemin İyileştirme & Derin Temel Firmaları | YER6",
     "mini-kazik": "Mini Kazık Zemin İyileştirme & Güçlendirme Firmaları | YER6",
     ankraj: "Ankraj Firmaları | Öngermeli İksa ve Derin Kazı | YER6",
@@ -60,7 +60,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     "jet-grout":
       "Jet grout firmaları arasında YER6; Türkiye geneli ve yurt dışında, yüksek basınçlı çimento enjeksiyonu ile temel altı güçlendirme, su perdesi ve sıvılaşma önleme uygular. 2026 birim fiyatı için arayın.",
     dsm:
-      "DSM zemin iyileştirme ve deep soil mixing firmaları arasında YER6; çift milli makineler, UCS karot testleri, sıvılaşma önleme ve 2026 birim fiyatları sunar.",
+      "Deep soil mixing zemin iyileştirme ve DSM firmaları arasında YER6; TS EN 14679 standartlarında atıksız zemin karıştırma, çift milli makineler, UCS testleri ve 2026 birim fiyatları sunar.",
     "fore-kazik":
       "Fore kazık firmaları arasında YER6; Bauer BG 45 ve XCMG makine parkuruyla büyük çaplı fore kazık, baret kazık ve derin temel imalatı yapar. Şeffaf metraj ve birim fiyat için arayın.",
     "mini-kazik":

@@ -392,7 +392,7 @@ export const seoArticles: KnowledgeArticle[] = [
       { question: "DSM hangi zemin türlerinde en yüksek verimi sağlar?", answer: "Yumuşak killer, siltli alüvyonlar, gevşek ince kumlar ve kontrolsüz dolgularda en yüksek performans ve taşıma gücü artışını sağlar." }
     ],
     relatedSlugs: ["dsm-nasil-uygulanir", "jet-grout-ve-dsm-farki"],
-    keywords: ["dsm zemin iyileştirme firmaları", "deep soil mixing firmaları", "dsm metre fiyatı", "dsm zemin güçlendirme", "dsm zemin iyileştirme"],
+    keywords: ["dsm zemin iyileştirme firmaları", "deep soil mixing firmaları", "deep soil mixing zemin iyileştirme", "dsm metre fiyatı", "dsm zemin güçlendirme", "dsm zemin iyileştirme"],
     published: true
   },
   {

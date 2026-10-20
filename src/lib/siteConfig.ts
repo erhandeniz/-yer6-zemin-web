@@ -15,7 +15,7 @@ export const siteConfig = {
   yandexMetricaId: "110832579",
   facebookUrl: "https://www.facebook.com/Yer6ZeminGeoteknik",
   linkedinUrl: "https://www.linkedin.com/in/yer6-zemin-g%C3%BC%C3%A7lendirme-geoteknik-m%C3%BChendislik-511763428/",
-  googleMapsUrl: "https://www.google.com/maps/place/YER6+Geoteknik/@39.7976857,32.8020419,17z/data=!3m1!4b1!4m6!3m5!1s0x14d341155f5edf6f:0x2078e9e4486b099d!8m2!3d39.7976857!4d32.8020419",
+  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=%C4%B0vedikosb+Mahallesi+1440+Cadde+No+1+Yenimahalle+Ankara",
   phone: {
     display: "+90 532 378 06 91",
     href: "tel:+905323780691"
@@ -28,11 +28,11 @@ export const siteConfig = {
   email: "info@yer6zemin.com.tr",
   emailHref: "mailto:info@yer6zemin.com.tr?subject=Zemin%20%C4%B0yile%C5%9Ftirme%20Fiyat%20Teklifi",
   address: {
-    streetAddress: "Karşıyaka, Şht. Ali Gaffar Okan Cd. 42-A",
-    postalLine: "06830 Gölbaşı / Ankara",
-    locality: "Gölbaşı",
+    streetAddress: "İvedikosb Mah. 1440 Cad. No: 1 İç Kapı No: 44",
+    postalLine: "06378 Yenimahalle / Ankara",
+    locality: "Yenimahalle",
     region: "Ankara",
-    postalCode: "06830",
+    postalCode: "06378",
     country: "TR"
   }
 };

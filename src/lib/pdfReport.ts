@@ -21,7 +21,7 @@ const DARK: [number, number, number] = [15, 15, 15];
 const INK: [number, number, number] = [20, 20, 20];
 
 const COMPANY = "YER6 ZEMİN GÜÇLENDİRME JEOTEKNİK MÜHENDİSLİK LTD. ŞTİ.";
-const ADDRESS = "Şht. Ali Gaffar Okan Cad. No:42-A Gölbaşı / ANKARA";
+const ADDRESS = "İvedikosb Mah. 1440 Cad. No: 1 İç Kapı No: 44 Yenimahalle / ANKARA";
 const CONTACT = "T: +90 532 378 06 91   •   info@yer6zemin.com.tr   •   www.yer6zemin.com.tr";
 
 async function loadFonts(): Promise<boolean> {

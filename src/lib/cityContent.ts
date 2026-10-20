@@ -86,7 +86,7 @@ export const cityPages: CityPage[] = [
     city: "Ankara",
     title: "Ankara Fore Kazık, Jet Grout ve Zemin Güçlendirme Firmaları",
     description:
-      "Ankara'da fore kazık, jet grout, DSM zemin iyileştirme, CFA kazık, ankraj ve iksa sistemleri için YER6 Gölbaşı merkezli geoteknik mühendislik çözümleri.",
+      "Ankara'da fore kazık, jet grout, DSM zemin iyileştirme, CFA kazık, ankraj ve iksa sistemleri için YER6 İvedik OSB merkezli geoteknik mühendislik çözümleri.",
     heroLead:
       "Ankara'da zemin güçlendirme; killi zemin yapısı, derin kazı iksa sistemleri, kamu projeleri ve kot farkı yüksek parsellerde ölçülebilir kabul kriterlerine dayalı imalat disiplini gerektirir.",
     soilContext:
@@ -1417,7 +1417,7 @@ const cityEnrichmentList: CityEnrichment[] = [
   {
     slug: "ankara-zemin-guclendirme",
     intro:
-      "Ankara'da zemin güçlendirme, başkentin kendine özgü ve mühendislik literatüründe 'Ankara kili' olarak anılan yüksek plastisiteli, şişme-büzülme davranışı gösteren zemin yapısıyla doğrudan ilişkilidir. YER6, Gölbaşı merkezli saha ekibiyle Ankara ve çevresinde jet grout, fore kazık ve DSM zemin iyileştirme uygulamalarını tek bir kalite standardında yürütür.",
+      "Ankara'da zemin güçlendirme, başkentin kendine özgü ve mühendislik literatüründe 'Ankara kili' olarak anılan yüksek plastisiteli, şişme-büzülme davranışı gösteren zemin yapısıyla doğrudan ilişkilidir. YER6, İvedik OSB / Yenimahalle merkezli saha ekibiyle Ankara ve çevresinde jet grout, fore kazık ve DSM zemin iyileştirme uygulamalarını tek bir kalite standardında yürütür.",
     sections: [
       {
         heading: "Ankara kili ve yerel zemin davranışı",
@@ -1462,7 +1462,7 @@ const cityEnrichmentList: CityEnrichment[] = [
       {
         question: "YER6 Ankara'nın hangi bölgelerinde çalışıyor?",
         answer:
-          "Gölbaşı merkezli ekibimizle Ankara'nın tüm ilçelerinde ve çevre illerde saha uygulaması yapıyoruz."
+          "İvedik OSB merkezli ekibimizle Ankara'nın tüm ilçelerinde ve çevre illerde saha uygulaması yapıyoruz."
       },
       {
         question: "Zemin etüdü olmadan fiyat teklifi alabilir miyim?",
@@ -4026,7 +4026,7 @@ const cityEnrichmentList: CityEnrichment[] = [
   {
     slug: "ankara-zemin-guclendirme",
     intro:
-      "Ankara'da zemin güçlendirme, mühendislik literatüründe 'Ankara kili' olarak anılan yüksek plastisiteli, şişme-büzülme davranışı gösteren zemin yapısıyla doğrudan ilişkilidir. YER6, Gölbaşı merkezli saha ekibiyle Ankara ve çevresinde jet grout, fore kazık, ankraj-iksa ve DSM zemin iyileştirme uygulamalarını tek bir kalite standardında yürütür; Türkiye geneli ve yurt dışı projelere de buradan mobilize olur.",
+      "Ankara'da zemin güçlendirme, mühendislik literatüründe 'Ankara kili' olarak anılan yüksek plastisiteli, şişme-büzülme davranışı gösteren zemin yapısıyla doğrudan ilişkilidir. YER6, İvedik OSB / Yenimahalle merkezli saha ekibiyle Ankara ve çevresinde jet grout, fore kazık, ankraj-iksa ve DSM zemin iyileştirme uygulamalarını tek bir kalite standardında yürütür; Türkiye geneli ve yurt dışı projelere de buradan mobilize olur.",
     sections: [
       {
         heading: "Ankara kili ve yerel zemin davranışı",
@@ -4095,7 +4095,7 @@ const cityEnrichmentList: CityEnrichment[] = [
       {
         question: "YER6 Ankara'nın hangi bölgelerinde çalışıyor?",
         answer:
-          "Gölbaşı merkezli ekibimizle Ankara'nın tüm ilçelerinde ve çevre illerde saha uygulaması yapıyoruz; Türkiye geneli ve yurt dışı projelere de mobilize oluyoruz."
+          "İvedik OSB merkezli ekibimizle Ankara'nın tüm ilçelerinde ve çevre illerde saha uygulaması yapıyoruz; Türkiye geneli ve yurt dışı projelere de mobilize oluyoruz."
       },
       {
         question: "Zemin etüdü olmadan fiyat teklifi alabilir miyim?",

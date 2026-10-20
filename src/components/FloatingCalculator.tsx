@@ -595,7 +595,7 @@ export function FloatingCalculator({ initialOpen = false }: { initialOpen?: bool
       doc.setFont("Roboto", "normal");
       doc.setFontSize(7);
       doc.setTextColor(120, 120, 120);
-      doc.text("YER6 ZEMİN GÜÇLENDİRME JEOTEKNİK MÜHENDİSLİK LTD. ŞTİ. • Şht. Ali Gaffar Okan Cad. No:42-A Gölbaşı / ANKARA", 14, pageHeight - 11);
+      doc.text("YER6 ZEMİN GÜÇLENDİRME JEOTEKNİK MÜHENDİSLİK LTD. ŞTİ. • İvedikosb Mah. 1440 Cad. No: 1 İç Kapı No: 44 Yenimahalle / ANKARA", 14, pageHeight - 11);
       doc.text("T: +90 532 378 06 91   •   info@yer6zemin.com.tr   •   www.yer6zemin.com.tr", 14, pageHeight - 7);
 
       const safeMode = (mode || "rapor").replace(/[^a-z0-9-]/gi, "-");

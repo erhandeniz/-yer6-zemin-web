@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { Calculator, CheckCircle2, ChevronDown, ChevronUp, Phone } from "lucide-react";
 import { getToolForService } from "@/lib/calculators";
+import { CalculatorTool } from "@/components/CalculatorTool";
 import { useState } from "react";
 import { PageHero } from "@/components/PageHero";
 import { SectionHeader } from "@/components/SectionHeader";
@@ -157,7 +158,16 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
         titleOverride={serviceHeroH1s[service.slug]}
       />
 
-      <section className="px-5 py-24">
+      {/* ── Canlı Hesaplama Aracı (Doğrudan Başta - Ön Metraj ve Maliyet) ── */}
+      {calculatorTool && (
+        <section className="px-5 pt-8 pb-4">
+          <div className="mx-auto max-w-7xl">
+            <CalculatorTool tool={calculatorTool} />
+          </div>
+        </section>
+      )}
+
+      <section className={`px-5 ${calculatorTool ? "pt-10 pb-24" : "py-24"}`}>
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_360px]">
 
@@ -359,7 +369,7 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
                         <tbody className="divide-y divide-white/5">
                           <tr className="hover:bg-white/5 transition-colors">
                             <td className="p-3.5 font-bold text-gold-200">
-                              <Link href="/services/jet-grout" className="hover:underline">Jet Grout (JG1/JG2)</Link>
+                              <Link href="/services/jet-grout/" className="hover:underline">Jet Grout (JG1/JG2)</Link>
                             </td>
                             <td className="p-3.5">400-600 Bar Yüksek Basınçlı Enjeksiyon</td>
                             <td className="p-3.5">Kil, Silt, İnce Kum (Tüm Zeminler)</td>
@@ -368,7 +378,7 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
                           </tr>
                           <tr className="hover:bg-white/5 transition-colors">
                             <td className="p-3.5 font-bold text-gold-200">
-                              <Link href="/services/dsm" className="hover:underline">Deep Soil Mixing (DSM)</Link>
+                              <Link href="/services/dsm/" className="hover:underline">Deep Soil Mixing (DSM)</Link>
                             </td>
                             <td className="p-3.5">Mekanik Bıçaklı Çimento Karıştırma</td>
                             <td className="p-3.5">Yumuşak Kil, Gevşek Silt, Alüvyon</td>
@@ -377,7 +387,7 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
                           </tr>
                           <tr className="hover:bg-white/5 transition-colors">
                             <td className="p-3.5 font-bold text-gold-200">
-                              <Link href="/services/tas-kolon" className="hover:underline">Taş Kolon (Stone Column)</Link>
+                              <Link href="/services/tas-kolon/" className="hover:underline">Taş Kolon (Stone Column)</Link>
                             </td>
                             <td className="p-3.5">Titreşimli Kırmataş Dolgu (Vibro-Repl.)</td>
                             <td className="p-3.5">Gevşek Kum, Çakıl, Siltli Kum</td>
@@ -386,7 +396,7 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
                           </tr>
                           <tr className="hover:bg-white/5 transition-colors">
                             <td className="p-3.5 font-bold text-gold-200">
-                              <Link href="/services/fore-kazik" className="hover:underline">Fore Kazık (Derin Temel)</Link>
+                              <Link href="/services/fore-kazik/" className="hover:underline">Fore Kazık (Derin Temel)</Link>
                             </td>
                             <td className="p-3.5">Rotary Delgi + Beton + Donatı Kalesi</td>
                             <td className="p-3.5">Her Türlü Zemin ve Kaya Katmanı</td>
@@ -395,7 +405,7 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
                           </tr>
                           <tr className="hover:bg-white/5 transition-colors">
                             <td className="p-3.5 font-bold text-gold-200">
-                              <Link href="/services/mini-kazik" className="hover:underline">Mini Kazık (Underpinning)</Link>
+                              <Link href="/services/mini-kazik/" className="hover:underline">Mini Kazık (Underpinning)</Link>
                             </td>
                             <td className="p-3.5">Ø15-25 Delgi + Çelik Profil / Donatı</td>
                             <td className="p-3.5">Mevcut Bina Altı / Dar Sahalar</td>
@@ -404,7 +414,7 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
                           </tr>
                           <tr className="hover:bg-white/5 transition-colors">
                             <td className="p-3.5 font-bold text-gold-200">
-                              <Link href="/services/palplans" className="hover:underline">Palplanş (Çelik İksa)</Link>
+                              <Link href="/services/palplans/" className="hover:underline">Palplanş (Çelik İksa)</Link>
                             </td>
                             <td className="p-3.5">Vibro Çakıcı Vinç ile Kenetli Profil</td>
                             <td className="p-3.5">Yeraltı Suyu Yüksek Alüvyon</td>
@@ -456,28 +466,28 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
                       <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
                         <h3 className="font-semibold text-gold-200 text-base">1. Ince Taneli Killi ve Siltli Zeminler</h3>
                         <p className="mt-2 text-xs leading-5 text-white/70">
-                          Yüksek plastisite ve düşük geçirgenliğe sahip killi sahalarda <Link href="/services/dsm" className="text-gold-200 hover:underline font-medium">DSM (Derin Karıştırma)</Link> ve <Link href="/services/jet-grout" className="text-gold-200 hover:underline font-medium">Jet Grout</Link> birincil tercihtir. Çimento bağlayıcı mekanik olarak zeminle karıştırılarak serbest basınç dayanımı (UCS) 1.5 - 4.0 MPa seviyesine çıkarılır.
+                          Yüksek plastisite ve düşük geçirgenliğe sahip killi sahalarda <Link href="/services/dsm/" className="text-gold-200 hover:underline font-medium">DSM (Derin Karıştırma)</Link> ve <Link href="/services/jet-grout/" className="text-gold-200 hover:underline font-medium">Jet Grout</Link> birincil tercihtir. Çimento bağlayıcı mekanik olarak zeminle karıştırılarak serbest basınç dayanımı (UCS) 1.5 - 4.0 MPa seviyesine çıkarılır.
                         </p>
                       </div>
 
                       <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
                         <h3 className="font-semibold text-gold-200 text-base">2. Gevşek Kumlu Zeminler & Sıvılaşma</h3>
                         <p className="mt-2 text-xs leading-5 text-white/70">
-                          Deprem esnasında aşırı boşluk suyu basıncı artışıyla sıvılaşan kumlu ve çakıllı sahalarda <Link href="/services/tas-kolon" className="text-gold-200 hover:underline font-medium">Taş Kolon (Stone Column)</Link> uygulanır. Kırmataş dolgu hem zemini sıkıştırır hem de sönümleyici düşey dren görevi görür.
+                          Deprem esnasında aşırı boşluk suyu basıncı artışıyla sıvılaşan kumlu ve çakıllı sahalarda <Link href="/services/tas-kolon/" className="text-gold-200 hover:underline font-medium">Taş Kolon (Stone Column)</Link> uygulanır. Kırmataş dolgu hem zemini sıkıştırır hem de sönümleyici düşey dren görevi görür.
                         </p>
                       </div>
 
                       <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
                         <h3 className="font-semibold text-gold-200 text-base">3. Mevcut Bina Altı & Kentsel Dönüşüm</h3>
                         <p className="mt-2 text-xs leading-5 text-white/70">
-                          Mevcut yapıların temellerinde oturma ve çatlak meydana geldiğinde, binayı yıkmadan titreşimsiz elektrikli ünitelerle <Link href="/services/bina-alti-jet-grout" className="text-gold-200 hover:underline font-medium">Bina Altı Jet Grout</Link> veya mikro kazık (underpinning) enjeksiyonu yapılır.
+                          Mevcut yapıların temellerinde oturma ve çatlak meydana geldiğinde, binayı yıkmadan titreşimsiz elektrikli ünitelerle <Link href="/services/bina-alti-jet-grout/" className="text-gold-200 hover:underline font-medium">Bina Altı Jet Grout</Link> veya mikro kazık (underpinning) enjeksiyonu yapılır.
                         </p>
                       </div>
 
                       <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
                         <h3 className="font-semibold text-gold-200 text-base">4. Yeraltı Suyu Yüksek Derin Kazı İksaları</h3>
                         <p className="mt-2 text-xs leading-5 text-white/70">
-                          Deniz veya nehir kenarı kazılarında suyun şantiyeye dolmasını önlemek için kesişen Jet Grout (secant grout) perdesi veya <Link href="/services/palplans" className="text-gold-200 hover:underline font-medium">Çelik Palplanş Batardo</Link> imalatı gerçekleştirilir.
+                          Deniz veya nehir kenarı kazılarında suyun şantiyeye dolmasını önlemek için kesişen Jet Grout (secant grout) perdesi veya <Link href="/services/palplans/" className="text-gold-200 hover:underline font-medium">Çelik Palplanş Batardo</Link> imalatı gerçekleştirilir.
                         </p>
                       </div>
 

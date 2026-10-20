@@ -79,7 +79,7 @@ export function ContactContent() {
         <div className="mx-auto overflow-hidden rounded-[2rem] border border-white/10 max-w-7xl">
           <iframe
             title="YER6 Google Maps"
-            src="https://www.google.com/maps?q=Karsiyaka%20Mahallesi%2C%20Sehit%20Ali%20Gaffar%20Okan%20Caddesi%2042A%2C%20Golbasi%2C%20Ankara&output=embed"
+            src="https://www.google.com/maps?q=Ivedikosb%20Mahallesi%2C%201440%20Caddesi%20No%3A1%2C%20Yenimahalle%2C%20Ankara&output=embed"
             className="h-[430px] w-full border-0 grayscale contrast-125 invert"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"

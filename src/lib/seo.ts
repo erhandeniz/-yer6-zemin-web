@@ -30,7 +30,7 @@ export const localSeoServices = [
 export const socialProfiles: string[] = [
   "https://www.facebook.com/Yer6ZeminGeoteknik",
   "https://www.linkedin.com/in/yer6-zemin-g%C3%BC%C3%A7lendirme-geoteknik-m%C3%BChendislik-511763428/",
-  "https://www.google.com/maps/place/YER6+Geoteknik/@39.7976857,32.8020419,17z/data=!3m1!4b1!4m6!3m5!1s0x14d341155f5edf6f:0x2078e9e4486b099d!8m2!3d39.7976857!4d32.8020419",
+  "https://www.google.com/maps/search/?api=1&query=%C4%B0vedikosb+Mahallesi+1440+Cadde+No+1+Yenimahalle+Ankara",
   "https://www.youtube.com/channel/UCCikguZzwvtEg3peobxzSQw"
 ];
 
@@ -383,8 +383,8 @@ export function localBusinessSchema() {
     },
     geo: {
       "@type": "GeoCoordinates",
-      latitude: 39.7976857,
-      longitude: 32.8020419
+      latitude: 39.986448,
+      longitude: 32.738409
     },
     hasMap: siteConfig.googleMapsUrl,
     contactPoint: [

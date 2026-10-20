@@ -212,11 +212,13 @@ export const CALCULATOR_TOOLS: CalculatorTool[] = [
       "dsm hesaplama",
       "dsm maliyet hesaplama",
       "deep soil mixing hesaplama",
+      "deep soil mixing zemin iyileştirme",
+      "dsm zemin iyileştirme",
       "dsm zemin iyileştirme hesaplama",
       "dsm metraj hesabı 2026"
     ],
     directAnswer:
-      "DSM maliyeti; kolon çapı, boyu, adedi, bağlayıcı dozajı ve zeminin su muhtevasına göre değişir. Bu araç girdiğiniz değerlerden toplam kolon metresini, teorik hacmi, bağlayıcı tüketimini, tahmini üretim süresini ve düşük–olası–yüksek bandında ön maliyeti hesaplar. Geniş alanlı platformlarda DSM genellikle metre başına daha ekonomiktir; kesin değerler karışım tasarımı ve deneme kolonu sonrası netleşir.",
+      "Deep soil mixing zemin iyileştirme ve DSM maliyeti; kolon çapı, boyu, adedi, bağlayıcı dozajı ve zeminin su muhtevasına göre değişir. Bu araç girdiğiniz değerlerden toplam kolon metresini, teorik hacmi, bağlayıcı tüketimini, tahmini üretim süresini ve düşük–olası–yüksek bandında ön maliyeti hesaplar. Geniş alanlı platformlarda DSM genellikle metre başına daha ekonomiktir; kesin değerler karışım tasarımı ve deneme kolonu sonrası netleşir.",
     labels: {
       count: "Kolon adedi",
       depth: "Kolon boyu (m)",
