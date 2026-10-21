@@ -866,10 +866,10 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     category: "Fore Kazık",
     readingTime: "7 dk",
     publishedAt: "2026-06-21",
-    updatedAt: "2026-06-21",
+    updatedAt: "2026-10-21",
     heroLabel: "Jet Grout ve Fore Kazık Farkı",
     introduction:
-      "Jet Grout ve fore kazık iki farklı zemin iyileştirme yaklaşımıdır. Birinin seçimi, projenin taşıma gücü, derinlik ve alan gereksinimlerine göre yapılır.",
+      "Jet Grout ve fore kazık iki farklı [zemin iyileştirme](/services/zemin-iyilestirme/) ve derin temel yaklaşımıdır. Birinin seçimi, projenin taşıma gücü, derinlik ve saha gereksinimlerine göre yapılır. Şantiye koşullarına uygun yöntem seçimi ve uygulama detayları için [Jet Grout Zemin İyileştirme](/services/jet-grout/) ve [Fore Kazık Sistemleri](/services/fore-kazik/) hizmet sayfalarımızı inceleyebilirsiniz.",
     sections: [
       {
         id: "technical-comparison",
@@ -878,7 +878,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
           {
             type: "paragraph",
             content:
-              "Fore kazık, sondaj ve beton dökümüyle çalışan bir taşıyıcı eleman sistemidir. Jet Grout ise enjeksiyonla zemin-çimento kolonları üretir. Fore kazık daha yüksek taşıma kapasiteli olabilir; Jet Grout ise geçirimsizlik ve yeraltı suyu kontrolünde avantaj sağlar."
+              "[Fore kazık](/services/fore-kazik/), sondaj ve beton dökümüyle çalışan bir derin temel ve iksa taşıyıcı eleman sistemidir. [Jet Grout](/services/jet-grout/) ise yüksek basınçlı enjeksiyonla zemin-çimento (soilcrete) kolonları üretir. Fore kazık noktasal ve yanal yüklerde daha yüksek taşıma kapasitesi sunarken, Jet Grout sıvılaşma azaltımı, geçirimsizlik ve yeraltı suyu kontrolünde avantaj sağlar. Projeniz için ön bütçe karşılaştırmasını [Fore Kazık Maliyet Hesaplama](/hesaplama/fore-kazik-maliyet-hesaplama/) ve [Jet Grout Maliyet Hesaplama](/hesaplama/jet-grout-maliyet-hesaplama/) araçlarımızla yapabilirsiniz."
           },
           {
             type: "list",
@@ -5235,7 +5235,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     updatedAt: "2026-10-21",
     heroLabel: "Jet Grout Maliyet Analizi 2026",
     introduction:
-      "Jet grout maliyeti, geoteknik şantiyelerde yalnızca basit bir 'delgi-enjeksiyon metre fiyatı' ile açıklanamaz. 400-600 bar aşırı yüksek basınç altında çalışan hidrolik pompaların enerji tüketimi, kolon çapına göre katlanarak artan çimento tonajı, kuyu ağzından çıkan çimento-zemin çamurunun (deburbe / spoil) şantiyeden hafriyatla tahliyesi ve ağır makine mobilizasyonu maliyeti doğrudan şekillendirir. Bu kapsamlı geoteknik rehberde; 2026 güncel şantiye girdi maliyetleriyle 1 metre jet grout kolonunun maliyet ayrıştırmasını, Ø60 cm, Ø80 cm ve Ø100 cm kolon çapı bazında çimento ve mazot sarfiyatlarını ve müteahhitler için birim fiyat risk yönetimini eksiksiz inceliyoruz. Kendi projenizin zemin verilerine göre milimetrik metraj ve teklif özeti çıkarmak için [İnteraktif Jet Grout Maliyet Hesaplama Aracımızı](/hesaplama/jet-grout-maliyet-hesaplama/) kullanabilirsiniz.",
+      "Jet grout maliyeti, geoteknik şantiyelerde yalnızca basit bir 'delgi-enjeksiyon metre fiyatı' ile açıklanamaz. 400-600 bar aşırı yüksek basınç altında çalışan hidrolik pompaların enerji tüketimi, kolon çapına göre katlanarak artan çimento tonajı, kuyu ağzından çıkan çimento-zemin çamurunun (deburbe / spoil) şantiyeden hafriyatla tahliyesi ve ağır makine mobilizasyonu maliyeti doğrudan şekillendirir. Bu kapsamlı geoteknik rehberde; 2026 güncel şantiye girdi maliyetleriyle 1 metre jet grout kolonunun maliyet ayrıştırmasını, Ø60 cm, Ø80 cm ve Ø100 cm kolon çapı bazında çimento ve mazot sarfiyatlarını ve müteahhitler için birim fiyat risk yönetimini eksiksiz inceliyoruz. Anahtar teslim saha taahhüdü için [Jet Grout Zemin İyileştirme Hizmetimiz](/services/jet-grout/) ve [Zemin İyileştirme Uygulamalarımız](/services/zemin-iyilestirme/) sayfalarını inceleyebilir, kendi projenizin zemin verilerine göre milimetrik metraj ve teklif özeti çıkarmak için [İnteraktif Jet Grout Maliyet Hesaplama Aracımızı](/hesaplama/jet-grout-maliyet-hesaplama/) kullanabilirsiniz.",
     sections: [
       {
         id: "birim-fiyat-ve-ozet",
@@ -5244,7 +5244,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
           {
             type: "paragraph",
             content:
-              "2026 inşaat ve zemin piyasasında jet grout imalatı genellikle metretül (kolon boyu) veya iyileştirilen hacim (m³) esasına göre tekliflendirilir. Fiyatı belirleyen en belirleyici parametre kolon çapıdır; çünkü kolon çapı 60 cm'den 80 cm'ye çıktığında teorik hacim ve dolayısıyla çimento tüketimi yaklaşık 1.8 katına, 100 cm'ye çıktığında ise 2.8 katına yükselir."
+              "2026 inşaat ve zemin piyasasında [jet grout zemin iyileştirme](/services/jet-grout/) imalatı genellikle metretül (kolon boyu) veya iyileştirilen hacim (m³) esasına göre tekliflendirilir. Fiyatı belirleyen en belirleyici parametre kolon çapıdır; çünkü kolon çapı 60 cm'den 80 cm'ye çıktığında teorik hacim ve dolayısıyla çimento tüketimi yaklaşık 1.8 katına, 100 cm'ye çıktığında ise 2.8 katına yükselir."
           },
           {
             type: "list",
@@ -5394,10 +5394,10 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     category: "Jet Grout",
     readingTime: "9 dk",
     publishedAt: "2026-06-21",
-    updatedAt: "2026-09-17",
+    updatedAt: "2026-10-21",
     heroLabel: "Jet Grout Makine ve Fiyat Rehberi",
     introduction:
-      "Jet grout imalatının kalitesi ve birim maliyeti; sahada kullanılan delgi makinesi, 300-600 bar yüksek basınç pompası, otomatik karıştırma santrali ve çimento silosundan oluşan entegre ekipman zincirine doğrudan bağlıdır. Birçok müteahhit ve proje yöneticisi 'jet grout makinesi satın almak mı, makine kiralamak mı, yoksa anahtar teslim metraj bazlı taahhüt yaptırmak mı daha karlı?' ikilemiyle karşılaşır. Bu rehberde; 2026 piyasa koşullarında jet grout makinesi fiyatlarını, kiralama maliyet parametrelerini, şantiye risklerini ve doğru geoteknik ekipman seçim kriterlerini tüm şeffaflığıyla inceliyoruz.",
+      "Jet grout imalatının kalitesi ve birim maliyeti; sahada kullanılan delgi makinesi, 300-600 bar yüksek basınç pompası, otomatik karıştırma santrali ve çimento silosundan oluşan entegre ekipman zincirine doğrudan bağlıdır. Birçok müteahhit ve proje yöneticisi 'jet grout makinesi satın almak mı, makine kiralamak mı, yoksa anahtar teslim metraj bazlı taahhüt yaptırmak mı daha karlı?' ikilemiyle karşılaşır. Bu rehberde; 2026 piyasa koşullarında jet grout makinesi fiyatlarını, kiralama maliyet parametrelerini, şantiye risklerini ve doğru geoteknik ekipman seçim kriterlerini tüm şeffaflığıyla inceliyoruz. Anahtar teslim saha imalatı için [Jet Grout Zemin İyileştirme Hizmetimiz](/services/jet-grout/) sayfasını inceleyebilir, metraj bazlı bütçe için [Jet Grout Maliyet Hesaplama Aracımızı](/hesaplama/jet-grout-maliyet-hesaplama/) kullanabilirsiniz.",
     sections: [
       {
         id: "ekipman-zinciri",
@@ -6493,10 +6493,10 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     category: "Fore Kazık",
     readingTime: "16 dk",
     publishedAt: "2026-07-10",
-    updatedAt: "2026-10-12",
+    updatedAt: "2026-10-21",
     heroLabel: "Fore Kazık Metre Fiyatı 2026",
     introduction:
-      "Fore kazık metre fiyatı 2026 yılı inşaat ve geoteknik piyasasında; zemin koşullarına, kazık çapına, delgi derinliğine, kuyu muhafaza kılıfı ihtiyacına ve projenin gerektirdiği hazır beton ile çelik donatı metrajına göre belirlenir. Şantiyelerde bütçe planlaması yapılırken 'sadece delgi işçiliği' ile 'malzemeli anahtar teslim imalat' kalemlerinin doğru ayrıştırılması hayati önem taşır. Bu kapsamlı rehberde; 2026 güncel fore kazık metre fiyatları tablosunu, çap bazında delgi ve malzemeli birim fiyatları, 10 metrelik örnek kazık maliyet analizini ve müteahhitler için sözleşme risklerini eksiksiz açıklıyoruz. Kendi projenizin zemin sınıfı ve metrajına göre anlık bütçe çıkarmak için [İnteraktif Fore Kazık Maliyet Hesaplama Aracımızı](/hesaplama/fore-kazik-maliyet-hesaplama/) kullanabilirsiniz.",
+      "Fore kazık metre fiyatı 2026 yılı inşaat ve geoteknik piyasasında; zemin koşullarına, kazık çapına, delgi derinliğine, kuyu muhafaza kılıfı ihtiyacına ve projenin gerektirdiği hazır beton ile çelik donatı metrajına göre belirlenir. Şantiyelerde bütçe planlaması yapılırken 'sadece delgi işçiliği' ile 'malzemeli anahtar teslim imalat' kalemlerinin doğru ayrıştırılması hayati önem taşır. Bu kapsamlı rehberde; 2026 güncel fore kazık metre fiyatları tablosunu, çap bazında delgi ve malzemeli birim fiyatları, 10 metrelik örnek kazık maliyet analizini ve müteahhitler için sözleşme risklerini eksiksiz açıklıyoruz. Anahtar teslim saha taahhüdü için [Fore Kazık Zemin İyileştirme ve Derin Temel Hizmetimiz](/services/fore-kazik/) ile [Zemin İyileştirme Çözümlerimiz](/services/zemin-iyilestirme/) sayfalarını inceleyebilir, kendi projenizin zemin sınıfı ve metrajına göre anlık bütçe çıkarmak için [İnteraktif Fore Kazık Maliyet Hesaplama Aracımızı](/hesaplama/fore-kazik-maliyet-hesaplama/) kullanabilirsiniz.",
     sections: [
       {
         id: "2026-metre-fiyati-ve-delgi-tablosu",
@@ -6505,7 +6505,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
           {
             type: "paragraph",
             content:
-              "Fore kazık imalatında temel maliyet iki ana kategoriye ayrılır: 'Sadece Delgi İşçiliği (Makine Bedeli)' ve 'Malzemeli Anahtar Teslim İmalat'. Kazık çapı büyüdükçe hidrolik rotary delgi makinesinin tork ihtiyacı (150 - 450 kNm), mazot sarfiyatı ve kuyu başında harcanan süre arttığı için birim fiyatlar kademeli olarak yükselir."
+              "[Fore kazık](/services/fore-kazik/) imalatında temel maliyet iki ana kategoriye ayrılır: 'Sadece Delgi İşçiliği (Makine Bedeli)' ve 'Malzemeli Anahtar Teslim İmalat'. Kazık çapı büyüdükçe hidrolik rotary delgi makinesinin tork ihtiyacı (150 - 450 kNm), mazot sarfiyatı ve kuyu başında harcanan süre arttığı için birim fiyatlar kademeli olarak yükselir."
           },
           {
             type: "list",
@@ -7906,9 +7906,9 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     category: "Zemin İyileştirme",
     readingTime: "25 dk",
     publishedAt: "2026-07-14",
-    updatedAt: "2026-07-14",
+    updatedAt: "2026-10-21",
     heroLabel: "Mega Rehber",
-    introduction: "Yer altı zemin iyileştirme, yapı yükünü güvenle taşıyamayan zeminlerin jet grout, derin karıştırma (DSM), taş kolon, derin kompaksiyon ve enjeksiyon gibi tekniklerle metrelerce derinlikte yerinde güçlendirilmesidir. Bu rehberde 15'ten fazla yöntemi; zemin türüne göre seçim matrisi, TBDY 2018 zemin sınıfları, tasarım parametreleri, kalite kontrol testleri ve maliyet-süre faktörleriyle birlikte tek sayfada topladık. Ankara merkezli YER6 Geoteknik'in saha tecrübesiyle hazırlanan bu kılavuz, arsa sahibinden geoteknik mühendisine kadar herkesin \"hangi zemine hangi yöntem?\" sorusuna net cevap bulması için tasarlandı.",
+    introduction: "Yer altı zemin iyileştirme, yapı yükünü güvenle taşıyamayan zeminlerin [jet grout](/services/jet-grout/), [derin karıştırma (DSM)](/services/dsm/), [taş kolon](/services/tas-kolon/), derin kompaksiyon ve enjeksiyon gibi tekniklerle metrelerce derinlikte yerinde güçlendirilmesidir. Bu rehberde 15'ten fazla yöntemi; zemin türüne göre seçim matrisi, TBDY 2018 zemin sınıfları, tasarım parametreleri, kalite kontrol testleri ve maliyet-süre faktörleriyle birlikte tek sayfada topladık. Ankara merkezli YER6 Geoteknik'in saha tecrübesiyle hazırlanan bu kılavuz, arsa sahibinden geoteknik mühendisine kadar herkesin \"hangi zemine hangi yöntem?\" sorusuna net cevap bulması için tasarlandı; projenize özel mühendislik ve uygulama teklifi için doğrudan [Zemin İyileştirme Hizmetimiz ve Şantiye Uygulamalarımız](/services/zemin-iyilestirme/) sayfasını inceleyebilirsiniz.",
     sections: [
       {
         id: "yer-alti-zemin-iyilestirme-nedir",
@@ -7917,15 +7917,15 @@ export const knowledgeArticles: KnowledgeArticle[] = [
           {
             type: "note",
             title: "Kısa cevap",
-            content: "Yer altı zemin iyileştirme; yapı yükünü güvenle taşıyamayan zeminin taşıma gücü, oturma davranışı, geçirimlilik ve sıvılaşma direnci gibi mühendislik özelliklerinin, zemin yerinde bırakılarak derinlemesine ve kalıcı biçimde değiştirilmesidir."
+            content: "Yer altı [zemin iyileştirme](/services/zemin-iyilestirme/); yapı yükünü güvenle taşıyamayan zeminin taşıma gücü, oturma davranışı, geçirimlilik ve sıvılaşma direnci gibi mühendislik özelliklerinin, zemin yerinde bırakılarak derinlemesine ve kalıcı biçimde değiştirilmesidir."
           },
           {
             type: "paragraph",
-            content: "Türkçe teknik literatürde birbirinin yerine kullanılan terimler arasında nüans farkları vardır. \"Zemin ıslahı\" en genel şemsiye terimdir ve her tür müdahaleyi kapsar. \"Zemin stabilizasyonu\" ağırlıklı olarak çimento veya kireç gibi katkılarla kimyasal bağlanma yoluyla kalıcı dayanım kazandırmayı; \"zemin modifikasyonu\" kıvam ve işlenebilirlik gibi özelliklerin sınırlı ölçüde değiştirilmesini; \"zemin güçlendirme\" ise zemine taş kolon veya ankraj gibi taşıyıcı elemanlar eklenmesini ifade eder. Üç temel kavramın ayrımı da önemlidir: kompaksiyon, zemin boşluklarındaki havanın mekanik enerjiyle kısa sürede atılmasıdır; konsolidasyon, boşluk suyunun zamana bağlı olarak dışarı atılmasıyla gelişen hacim azalmasıdır; stabilizasyon ise kimyasal bağlanmayla kazanılan kalıcı dayanımı anlatır."
+            content: "Türkçe teknik literatürde birbirinin yerine kullanılan terimler arasında nüans farkları vardır. \"Zemin ıslahı\" en genel şemsiye terimdir ve her tür müdahaleyi kapsar. \"Zemin stabilizasyonu\" ağırlıklı olarak çimento veya kireç gibi katkılarla kimyasal bağlanma yoluyla kalıcı dayanım kazandırmayı; \"zemin modifikasyonu\" kıvam ve işlenebilirlik gibi özelliklerin sınırlı ölçüde değiştirilmesini; \"[zemin güçlendirme](/services/zemin-guclendirme/)\" ise zemine [taş kolon](/services/tas-kolon/) veya [ankraj](/services/ankraj/) gibi taşıyıcı elemanlar eklenmesini ifade eder. Üç temel kavramın ayrımı da önemlidir: kompaksiyon, zemin boşluklarındaki havanın mekanik enerjiyle kısa sürede atılmasıdır; konsolidasyon, boşluk suyunun zamana bağlı olarak dışarı atılmasıyla gelişen hacim azalmasıdır; stabilizasyon ise kimyasal bağlanmayla kazanılan kalıcı dayanımı anlatır."
           },
           {
             type: "paragraph",
-            content: "Uygulama derinliği temel ayrım eksenidir. Yüzeysel iyileştirme (yaklaşık 0-3 m) silindirle kompaksiyon ve kireç-çimento serimi gibi işlemleri kapsar; yer altı (derin) iyileştirme ise projeye ve yönteme bağlı olarak tipik biçimde 3-50 m derinlik aralığında jet grout, derin karıştırma (DSM), taş kolon, derin kompaksiyon ve derin enjeksiyon gibi tekniklerle yürütülür. Bu rehberin odağı derin uygulamalardır. Yaklaşım felsefesi bakımından yer altı zemin iyileştirme, kazıklı temelden ayrılır: iyileştirme zeminin kendisini düzelterek yüzeysel veya radye temel kullanımına imkân verir; kazık ise zemini değiştirmeden yapı yükünü derindeki sağlam tabakaya aktarır. İki yaklaşım arasındaki seçim yapı yüküne, zemin profiline ve toplam maliyet analizine göre yapılır."
+            content: "Uygulama derinliği temel ayrım eksenidir. Yüzeysel iyileştirme (yaklaşık 0-3 m) silindirle kompaksiyon ve kireç-çimento serimi gibi işlemleri kapsar; yer altı (derin) [zemin iyileştirme](/services/zemin-iyilestirme/) ise projeye ve yönteme bağlı olarak tipik biçimde 3-50 m derinlik aralığında [jet grout](/services/jet-grout/), [derin karıştırma (DSM)](/services/dsm/), [taş kolon](/services/tas-kolon/), derin kompaksiyon ve derin enjeksiyon gibi tekniklerle yürütülür. Bu rehberin odağı derin uygulamalardır. Yaklaşım felsefesi bakımından yer altı zemin iyileştirme, [fore kazık](/services/fore-kazik/) ve [mini kazık](/services/mini-kazik/) gibi kazıklı temelden ayrılır: iyileştirme zeminin kendisini düzelterek yüzeysel veya radye temel kullanımına imkân verir; kazık ise zemini değiştirmeden yapı yükünü derindeki sağlam tabakaya aktarır. İki yaklaşım arasındaki seçim yapı yüküne, zemin profiline ve toplam maliyet analizine göre yapılır."
           },
           {
             type: "paragraph",
@@ -9257,10 +9257,10 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     category: "Ankraj & İksa",
     readingTime: "11 dk",
     publishedAt: "2026-07-28",
-    updatedAt: "2026-07-28",
+    updatedAt: "2026-10-21",
     heroLabel: "Ankraj Bilgi Merkezi",
     introduction:
-      "Ankraj, derin kazı perdelerinin ve istinat yapılarının yanal yüklere karşı desteklenmesinde kullanılan öngermeli bir zemin elemanıdır. Çekme kuvveti, kazı arkasındaki sağlam zemine yerleştirilen kök bölgesi üzerinden aktarılır. Uygulamanın güvenliği, aşamaların doğru sırayla ve kayıtlı biçimde yürütülmesine bağlıdır.",
+      "Ankraj, derin kazı perdelerinin ve istinat yapılarının yanal yüklere karşı desteklenmesinde kullanılan öngermeli bir zemin elemanıdır. Çekme kuvveti, kazı arkasındaki sağlam zemine yerleştirilen kök bölgesi üzerinden aktarılır. Uygulamanın güvenliği, aşamaların doğru sırayla ve kayıtlı biçimde yürütülmesine bağlıdır. Anahtar teslim saha taahhüdü için [Öngermeli Zemin Ankrajı Hizmetimiz](/services/ankraj/) ve [İksa Sistemleri Çözümlerimiz](/services/iksa-sistemleri/) sayfalarını inceleyebilir, metraj bazlı ön bütçe için [Ankraj Maliyet Hesaplama Aracımızı](/hesaplama/ankraj-maliyet-hesaplama/) kullanabilirsiniz.",
     sections: [
       {
         id: "ankraj-bilesenleri",
@@ -9427,10 +9427,10 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     category: "Ankraj & İksa",
     readingTime: "10 dk",
     publishedAt: "2026-07-28",
-    updatedAt: "2026-07-28",
+    updatedAt: "2026-10-21",
     heroLabel: "İksa Bilgi Merkezi",
     introduction:
-      "Derin kazılarda iksa sistemi, kazı çevresindeki zeminin ve komşu yapıların güvenliğini sağlayan geçici ya da kalıcı destek yapısıdır. Doğru sistem, sahanın kısıtlarına göre seçilir; komşu parselde kullanılan çözümün kopyalanması güvenli bir yöntem değildir.",
+      "Derin kazılarda iksa sistemi, kazı çevresindeki zeminin ve komşu yapıların güvenliğini sağlayan geçici ya da kalıcı destek yapısıdır. Doğru sistem, sahanın kısıtlarına göre seçilir; komşu parselde kullanılan çözümün kopyalanması güvenli bir yöntem değildir. Projenize özel derin kazı tasarımı ve saha imalatı için [İksa Sistemleri Hizmetimiz](/services/iksa-sistemleri/), [Fore Kazık İksa Perdesi](/services/fore-kazik/) ve [Öngermeli Ankraj Uygulamalarımız](/services/ankraj/) sayfalarını inceleyebilir, metraj hesabı için [Ankraj ve İksa Maliyet Hesaplama Aracımızı](/hesaplama/ankraj-maliyet-hesaplama/) kullanabilirsiniz.",
     sections: [
       {
         id: "karar-kriterleri",

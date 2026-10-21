@@ -682,9 +682,9 @@ export const seoArticles: KnowledgeArticle[] = [
     category: "Fore Kazık",
     readingTime: "16 dk",
     publishedAt: "2026-08-16",
-    updatedAt: "2026-08-16",
+    updatedAt: "2026-10-21",
     heroLabel: "Kapsamlı Fore Kazık & Deprem Rehberi",
-    introduction: "Deprem kuşağında yer alan Türkiye'de zemin güvenliği, üstyapı statiğinin en belirleyici unsurudur. Bu kapsamlı mühendislik rehberinde; fore kazıkların kaç şiddetinde depreme dayandığı, radye temel ile fore kazık arasındaki yapısal farklar, zemin sınıflarına (ZA-ZF) göre kazıklı radye temel zorunlulukları, çap seçimleri (Ø65, Ø80, Ø100, Ø120 cm) ve 81 il bazında fore kazık uygulama kriterleri detaylandırılmıştır.",
+    introduction: "Deprem kuşağında yer alan Türkiye'de zemin güvenliği, üstyapı statiğinin en belirleyici unsurudur. Bu kapsamlı mühendislik rehberinde; fore kazıkların kaç şiddetinde depreme dayandığı, radye temel ile fore kazık arasındaki yapısal farklar, zemin sınıflarına (ZA-ZF) göre kazıklı radye temel zorunlulukları, çap seçimleri (Ø65, Ø80, Ø100, Ø120 cm) ve 81 il bazında fore kazık uygulama kriterleri detaylandırılmıştır. Projenize özel saha taahhüdü için [Fore Kazık Zemin İyileştirme ve Derin Temel Hizmetimiz](/services/fore-kazik/) ile [Zemin İyileştirme Uygulamalarımız](/services/zemin-iyilestirme/) sayfalarını inceleyebilir, metraj bazlı ön bütçe için [Fore Kazık Maliyet Hesaplama Aracımızı](/hesaplama/fore-kazik-maliyet-hesaplama/) kullanabilirsiniz.",
     sections: [
       {
         id: "fore-kazik-deprem-dayanimi",

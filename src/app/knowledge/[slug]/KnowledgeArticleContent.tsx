@@ -78,7 +78,7 @@ export function KnowledgeArticleContent({ article }: { article: KnowledgeArticle
                   <p className="text-xs uppercase tracking-[0.3em] text-gold-200">Geoteknik Otorite Merkezleri</p>
                   <div className="mt-4 space-y-2.5">
                     <Link href="/services/zemin-iyilestirme/" className="block text-xs font-semibold text-gold-200 hover:text-gold-100 transition">
-                      → Zemin İyileştirme Yöntemleri
+                      → Zemin İyileştirme Hizmeti & Uygulamaları
                     </Link>
                     <Link href="/services/jet-grout/" className="block text-xs text-white/70 hover:text-white transition">
                       → Jet Grout Zemin İyileştirme
