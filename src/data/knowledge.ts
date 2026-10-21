@@ -1465,67 +1465,67 @@ export const knowledgeArticles: KnowledgeArticle[] = [
   },
     {
     slug: "zemin-iyilestirme-yontemleri",
-    "title": "Zemin İyileştirme Nedir? Yöntemler, ISSMGE Karar Ağacı, Sıvılaşma ve Tasarım Rehberi",
-    "seoTitle": "Zemin İyileştirme Teknikleri ve Yöntemleri Nelerdir? | YER6",
-    "description": "Zemin iyileştirme nedir, ne zaman gerekir ve nasıl yapılır? ISSMGE TC211 karar ağacı, TBDY 2018 sıvılaşma analizi, Jet Grout, DSM, Taş Kolon ve 2026 maliyet rehberi.",
-    "excerpt": "Zemin iyileştirme; taşıma gücü yetersiz, aşırı oturmaya veya depremde sıvılaşmaya yatkın zemin katmanlarının ISSMGE TC211, TBDY 2018 ve Eurocode 7 standartlarında mekanik, hidrolik ve kimyasal yöntemlerle ıslah edilerek süper-strüktür yüklerini güvenle taşıyacak kompozit masife dönüştürülmesidir.",
-    "category": "Zemin İyileştirme",
-    "readingTime": "52 dk",
-    "publishedAt": "2026-06-21",
-    "updatedAt": "2026-10-21",
-    "heroLabel": "Zemin İyileştirme Karar ve Mühendislik Platformu",
-    "introduction": "**Zemin iyileştirme (ground improvement)**; zayıf, aşırı sıkışabilir veya deprem anında sıvılaşma riski taşıyan zemin tabakalarının kazılarak uzaklaştırılması yerine, yerinde (in-situ) fiziksel, hidrodinamik, mekanik ve kimyasal mühendislik müdahaleleriyle taşıma gücünün artırılması, toplam ve farklı (diferansiyel) oturmaların sınırlandırılması, sıvılaşma direncinin maksimize edilmesi ve hidrolik iletkenliğinin kontrol altına alınması işlemidir. YER6 Geoteknik olarak; ISSMGE TC211 (Zemin İyileştirme Teknik Komitesi), DFI (Deep Foundations Institute), TBDY 2018 Bölüm 16 ve Eurocode 7 (EN 1997) standartlarına tam uyumlu yüksek teknolojili makine parkımızla [Jet Grout Zemin İyileştirme](/services/jet-grout/), [DSM Zemin İyileştirme](/services/dsm/), [Taş Kolon Zemin İyileştirme](/services/tas-kolon/), [Fore Kazık](/services/fore-kazik/), Prefabrike Düşey Drenler (PVD), Dinamik Kompaksiyon ve zemin stabilizasyonu çözümlerini Türkiye genelinde projelendirip anahtar teslim uyguluyoruz.",
-    "sections": [
+    title: "Zemin İyileştirme Nedir? Yöntemler, ISSMGE Karar Ağacı, Sıvılaşma ve Tasarım Rehberi",
+    seoTitle: "Zemin İyileştirme Teknikleri ve Yöntemleri Nelerdir? | YER6",
+    description: "Zemin iyileştirme nedir, ne zaman gerekir ve nasıl yapılır? ISSMGE TC211 karar ağacı, TBDY 2018 sıvılaşma analizi, Jet Grout, DSM, Taş Kolon ve 2026 maliyet rehberi.",
+    excerpt: "Zemin iyileştirme; taşıma gücü yetersiz, aşırı oturmaya veya depremde sıvılaşmaya yatkın zemin katmanlarının ISSMGE TC211, TBDY 2018 ve Eurocode 7 standartlarında mekanik, hidrolik ve kimyasal yöntemlerle ıslah edilerek süper-strüktür yüklerini güvenle taşıyacak kompozit masife dönüştürülmesidir.",
+    category: "Zemin İyileştirme",
+    readingTime: "52 dk",
+    publishedAt: "2026-06-21",
+    updatedAt: "2026-10-21",
+    heroLabel: "Zemin İyileştirme Karar ve Mühendislik Platformu",
+    introduction: "**Zemin iyileştirme (ground improvement)**; zayıf, aşırı sıkışabilir veya deprem anında sıvılaşma riski taşıyan zemin tabakalarının kazılarak uzaklaştırılması yerine, yerinde (in-situ) fiziksel, hidrodinamik, mekanik ve kimyasal mühendislik müdahaleleriyle taşıma gücünün artırılması, toplam ve farklı (diferansiyel) oturmaların sınırlandırılması, sıvılaşma direncinin maksimize edilmesi ve hidrolik iletkenliğinin kontrol altına alınması işlemidir. YER6 Geoteknik olarak; Türkiye'nin önde gelen **zemin iyileştirme firmaları** arasında, ISSMGE TC211 (Zemin İyileştirme Teknik Komitesi), DFI (Deep Foundations Institute), TBDY 2018 Bölüm 16 ve Eurocode 7 (EN 1997) standartlarına tam uyumlu yüksek teknolojili makine parkımızla [Jet Grout Zemin İyileştirme](/services/jet-grout/), [DSM Zemin İyileştirme](/services/dsm/), [Taş Kolon Zemin İyileştirme](/services/tas-kolon/), [Fore Kazık](/services/fore-kazik/), Prefabrike Düşey Drenler (PVD), Dinamik Kompaksiyon ve zemin stabilizasyonu gibi tüm modern **zemin iyileştirme yöntemleri**ni Türkiye genelinde projelendirip anahtar teslim uyguluyoruz.",
+    sections: [
       {
-        "id": "zemin-iyilestirme-tanimi-ve-geoteknik-felsefe",
-        "title": "1. Zemin İyileştirmenin Mühendislik Tanımı, Efektif Gerilme Prensibi ve Geoteknik Felsefesi",
-        "blocks": [
+        id: "zemin-iyilestirme-tanimi-ve-geoteknik-felsefe",
+        title: "1. Zemin İyileştirmenin Mühendislik Tanımı, Efektif Gerilme Prensibi ve Geoteknik Felsefesi",
+        blocks: [
           {
-            "type": "paragraph",
-            "content": "Zemin mekaniğinde Karl Terzaghi tarafından formüle edilen klasik efektif gerilme prensibi (σ' = σ - u), zemin danelerinin birbirine temas ederek sürtünme ve kohezyon direnci ürettiğini kanıtlar. Doğal alüvyon tabakaları, genç Kuvaterner sedimanları, yüksek plastisiteli siltli killer, gevşek kumsal deltalar ve kontrolsüz dolgular; yüksek boşluk oranı (e), aşırı doğal su muhtevası (w) ve düşük efektif kayma mukavemeti parametreleri (c', φ') nedeniyle üstyapı yüklerini güvenle taşıyamaz veya deprem döngüsel kayma gerilmeleri altında boşluk suyu basıncının (u) aniden artmasıyla akışkanlaşarak sıvılaşır."
+            type: "paragraph",
+            content: "Zemin mekaniğinde Karl Terzaghi tarafından formüle edilen klasik efektif gerilme prensibi (σ' = σ - u), zemin danelerinin birbirine temas ederek sürtünme ve kohezyon direnci ürettiğini kanıtlar. Doğal alüvyon tabakaları, genç Kuvaterner sedimanları, yüksek plastisiteli siltli killer, gevşek kumsal deltalar ve kontrolsüz dolgular; yüksek boşluk oranı (e), aşırı doğal su muhtevası (w) ve düşük efektif kayma mukavemeti parametreleri (c', φ') nedeniyle üstyapı yüklerini güvenle taşıyamaz veya deprem döngüsel kayma gerilmeleri altında boşluk suyu basıncının (u) aniden artmasıyla akışkanlaşarak sıvılaşır."
           },
           {
-            "type": "paragraph",
-            "content": "Zemin iyileştirme mühendisliğinin temel felsefesi; temel tabanında zayıf zemini tamamen kazıp taşımak ve yerine harici malzeme doldurmak gibi devasa maliyetli, çevreye zararlı ve derin iksa gerektiren hafriyat çözümleri yerine, mevcut zemin iskeletini derinlemesine yerinde (in-situ) modifiye etmektir. Bu modifikasyon; taneleri dinamik enerjiyle sıkıştırarak boşluk oranını düşürmek (Vibro-Kompaksiyon, Dinamik Kompaksiyon), yüksek basınçlı çimento şerbetiyle yerinde zemin-çimento kolonları oluşturmak ([Jet Grout](/services/jet-grout/)), mekanik bıçaklarla zemin ile bağlayıcıyı harmanlamak ([DSM](/services/dsm/)), granüler taş kolonlarla radyal drenaj ve gerilme konsantrasyonu sağlamak ([Taş Kolon](/services/tas-kolon/)) veya prefabrike düşey drenlerle konsolidasyon süresini yıllardan haftalara indirmek suretiyle gerçekleştirilir."
+            type: "paragraph",
+            content: "Zemin iyileştirme mühendisliğinin temel felsefesi; temel tabanında zayıf zemini tamamen kazıp taşımak ve yerine harici malzeme doldurmak gibi devasa maliyetli, çevreye zararlı ve derin iksa gerektiren hafriyat çözümleri yerine, mevcut zemin iskeletini derinlemesine yerinde (in-situ) modifiye etmektir. Bu modifikasyon; taneleri dinamik enerjiyle sıkıştırarak boşluk oranını düşürmek (Vibro-Kompaksiyon, Dinamik Kompaksiyon), yüksek basınçlı çimento şerbetiyle yerinde zemin-çimento kolonları oluşturmak ([Jet Grout](/services/jet-grout/)), mekanik bıçaklarla zemin ile bağlayıcıyı harmanlamak ([DSM](/services/dsm/)), granüler taş kolonlarla radyal drenaj ve gerilme konsantrasyonu sağlamak ([Taş Kolon](/services/tas-kolon/)) veya prefabrike düşey drenlerle konsolidasyon süresini yıllardan haftalara indirmek suretiyle gerçekleştirilir."
           },
           {
-            "type": "paragraph",
-            "content": "Zemin iyileştirme sistemleri, üstyapı ile zemin etkileşimini doğrudan dönüştürür. Klasik temel tasarımında temel zemini homojen bir yarı sonsuz elastik ortam (Boussinesq veya Westergaard modeli) kabul edilirken, iyileştirilmiş masif kompozit bir ortamdır (composite ground). Kompozit ortamda, rijit kolonlar (Jet Grout, DSM) veya sünek granüler elemanlar (Taş Kolon) temel yükünün %60 ila %85'ini kendi üzerine çekerken, kolonlar arasında kalan doğal zemin yalnızca geriye kalan küçük gerilme payını taşır. Bu mekanizma, diferansiyel oturma riskini sıfıra yaklaştırır."
+            type: "paragraph",
+            content: "Modern **zemin iyileştirme yöntemleri**, üstyapı ile zemin etkileşimini doğrudan dönüştürür. Klasik temel tasarımında temel zemini homojen bir yarı sonsuz elastik ortam (Boussinesq veya Westergaard modeli) kabul edilirken, iyileştirilmiş masif kompozit bir ortamdır (composite ground). Kompozit ortamda, rijit kolonlar (Jet Grout, DSM) veya sünek granüler elemanlar (Taş Kolon) temel yükünün %60 ila %85'ini kendi üzerine çekerken, kolonlar arasında kalan doğal zemin yalnızca geriye kalan küçük gerilme payını taşır. Bu mekanizma, diferansiyel oturma riskini sıfıra yaklaştırır."
           },
           {
-            "type": "paragraph",
-            "content": "Zemin bünye modelleri (constitutive models) açısından ele alındığında, geleneksel Mohr-Coulomb (MC) modeli zemin gerilme bağımlı rijitliğini ve küçük şekil değiştirme rijitliğini (small-strain stiffness) doğru temsil edemez. Plaxis 2D/3D sonlu elemanlar analizlerinde, zemin iyileştirme kolonlarının kompozit masifteki davranışını simüle etmek için Hardening Soil with Small-Strain Stiffness (HSsmall) modeli kullanılır. Bu modelde primer yükleme modülü (E50_ref), odometre modülü (Eoed_ref) ve boşalma-tekrar yükleme modülü (Eur_ref) üzerinden kolon-zemin ara yüzeyindeki (interface R_inter) kayma gerilmesi transferi hassasiyetle doğrulanır."
+            type: "paragraph",
+            content: "Zemin bünye modelleri (constitutive models) açısından ele alındığında, geleneksel Mohr-Coulomb (MC) modeli zemin gerilme bağımlı rijitliğini ve küçük şekil değiştirme rijitliğini (small-strain stiffness) doğru temsil edemez. Plaxis 2D/3D sonlu elemanlar analizlerinde, zemin iyileştirme kolonlarının kompozit masifteki davranışını simüle etmek için Hardening Soil with Small-Strain Stiffness (HSsmall) modeli kullanılır. Bu modelde primer yükleme modülü (E50_ref), odometre modülü (Eoed_ref) ve boşalma-tekrar yükleme modülü (Eur_ref) üzerinden kolon-zemin ara yüzeyindeki (interface R_inter) kayma gerilmesi transferi hassasiyetle doğrulanır."
           },
           {
-            "type": "note",
-            "title": "TBDY 2018 ve Eurocode 7 Yasal ve Teknik Zorunluluğu",
-            "content": "Türkiye Bina Deprem Yönetmeliği (TBDY 2018) Bölüm 16 uyarınca ZD (orta sıkı kum / katı kil), ZE (gevşek kum / yumuşak kil) ve ZF (özel inceleme gerektiren sıvılaşabilir, turbalı veya bataklık) zemin sınıflarında yer alan parsellerde; sıvılaşma tahkiki, farklı oturma hesabı ve taşıma gücü analizleri yapılmadan yüzeysel radye temel inşa edilemez. Geoteknik modelde güvenlik sınırını aşan durumlarda zemin iyileştirmesi veya derin temel uygulaması yasal ve teknik bir zorunluluktur."
+            type: "note",
+            title: "TBDY 2018 ve Eurocode 7 Yasal ve Teknik Zorunluluğu",
+            content: "Türkiye Bina Deprem Yönetmeliği (TBDY 2018) Bölüm 16 uyarınca ZD (orta sıkı kum / katı kil), ZE (gevşek kum / yumuşak kil) ve ZF (özel inceleme gerektiren sıvılaşabilir, turbalı veya bataklık) zemin sınıflarında yer alan parsellerde; sıvılaşma tahkiki, farklı oturma hesabı ve taşıma gücü analizleri yapılmadan yüzeysel radye temel inşa edilemez. Geoteknik modelde güvenlik sınırını aşan durumlarda zemin iyileştirmesi veya derin temel uygulaması yasal ve teknik bir zorunluluktur."
           }
         ]
       },
       {
-        "id": "issmge-tc211-karar-agaci-ve-dane-dagilimi",
-        "title": "2. ISSMGE TC211 Dane Dağılımı ve Plastisiteye Dayalı Yöntem Seçim Matrisi",
-        "blocks": [
+        id: "issmge-tc211-karar-agaci-ve-dane-dagilimi",
+        title: "2. Zemin İyileştirme Yöntemleri: ISSMGE TC211 Dane Dağılımı ve Plastisiteye Dayalı Seçim Matrisi",
+        blocks: [
           {
-            "type": "paragraph",
-            "content": "Zemin iyileştirme yönteminin seçimi; zemin profilinin tane boyutu dağılımı (D_10, D_50, D_60), üniformluk katsayısı (C_u), süreklilik/eğrilik katsayısı (C_c), ince dane oranı (FC), plastisite indisi (PI), kıvam indisleri, yeraltı su seviyesi (YASS) ve hidrolik iletkenlik (permeabilite, k) sınır koşullarına göre deterministik bir süzgeçten geçirilmelidir."
+            type: "paragraph",
+            content: "Zemin iyileştirme yönteminin seçimi; zemin profilinin tane boyutu dağılımı (D_10, D_50, D_60), üniformluk katsayısı (C_u), süreklilik/eğrilik katsayısı (C_c), ince dane oranı (FC), plastisite indisi (PI), kıvam indisleri, yeraltı su seviyesi (YASS) ve hidrolik iletkenlik (permeabilite, k) sınır koşullarına göre deterministik bir süzgeçten geçirilmelidir."
           },
           {
-            "type": "paragraph",
-            "content": "**2.1. Dane Dağılımı ve Plastisiteye Dayalı Karar Eşikleri**"
+            type: "paragraph",
+            content: "**2.1. Dane Dağılımı ve Plastisiteye Dayalı Karar Eşikleri**"
           },
           {
-            "type": "paragraph",
-            "content": "Dane boyutu eğrisinin matematiksel tanımı:"
+            type: "paragraph",
+            content: "Dane boyutu eğrisinin matematiksel tanımı:"
           },
           {
-            "type": "paragraph",
-            "content": "C_u = D_60 / D_10, C_c = (D_30)² / (D_10 · D_60)"
+            type: "paragraph",
+            content: "C_u = D_60 / D_10, C_c = (D_30)² / (D_10 · D_60)"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Vibro-Kompaksiyon (Vibroflotasyon):**",
               "**Kriterler:** Kohezyonsuz kaba daneli zeminler; İnce Dane Oranı FC ≤ %5 (katı sınır: %10'un altında kesinlikle kalınmalıdır, silt fraksiyonu %5'i aştıkça dinamik titreşim enerjisi daneler arası kohezyon ve temas suyu viskozitesi nedeniyle sönümlenir).",
               "D_50 ≥ 0.20 mm ve D_10 ≥ 0.05 mm şartı aranır.",
@@ -1549,86 +1549,60 @@ export const knowledgeArticles: KnowledgeArticle[] = [
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**2.2. Kimyasal ve Çimento Enjeksiyonunda Hidrolik İletkenlik (k) Sınırları**"
+            type: "paragraph",
+            content: "**2.2. Kimyasal ve Çimento Enjeksiyonunda Hidrolik İletkenlik (k) Sınırları**"
           },
           {
-            "type": "paragraph",
-            "content": "Enjeksiyon harcının zemin boşluklarına hidrolik çatlatma (hydrofracture/claquage) yapmadan, laminer permeasyon (boşluk doldurma) şeklinde nüfuz edebilmesi için hidrolik iletkenlik katsayısı (k) ve geometrik tane boyutu oranı (N kriteri) esastır:"
+            type: "paragraph",
+            content: "Enjeksiyon harcının zemin boşluklarına hidrolik çatlatma (hydrofracture/claquage) yapmadan, laminer permeasyon (boşluk doldurma) şeklinde nüfuz edebilmesi için hidrolik iletkenlik katsayısı (k) ve geometrik tane boyutu oranı (N kriteri) esastır:"
           },
           {
-            "type": "paragraph",
-            "content": "N = D_15 (zemin) / (D_85 (enjeksiyon çimentosu)) > 24 ⇒ Başarılı Permeasyon Enjeksiyonu"
+            type: "paragraph",
+            content: "N = D_15 (zemin) / (D_85 (enjeksiyon çimentosu)) > 24 ⇒ Başarılı Permeasyon Enjeksiyonu"
           },
           {
-            "type": "paragraph",
-            "content": "N < 11 ⇒ Permeasyon İmkansız (Sadece Kompaksiyon veya Hidrolik Çatlatma Oluşur)"
+            type: "paragraph",
+            content: "N < 11 ⇒ Permeasyon İmkansız (Sadece Kompaksiyon veya Hidrolik Çatlatma Oluşur)"
           },
           {
-            "type": "list",
-            "items": [
-              "Enjeksiyon Malzemesi — Dinamik Viskozite (μ, mPa·s) — Minimum Permeabilite Sınırı (k, m/s) — Uygulanabilir Zemin Aralığı"
-            ]
-          },
-          {
-            "type": "list",
-            "items": [
-              "**Standart Portland Çimentosu (OPC)** — 10 - 100 — k > 1 × 10^(-4) m/s (10^(-2) cm/s) — Kaba kum, çakıl, temiz kırmataş dolgu"
-            ]
-          },
-          {
-            "type": "list",
-            "items": [
-              "**Mikroçimento / Ultra-Fine (d_95 < 10 μm)** — 5 - 20 — 1 × 10^(-5) < k ≤ 1 × 10^(-4) m/s — İnce kum, orta kum, düşük siltli kum"
-            ]
-          },
-          {
-            "type": "list",
-            "items": [
-              "**Sodyum Silikat Bazlı Sert Jeller** — 2 - 10 — 1 × 10^(-5) < k ≤ 5 × 10^(-5) m/s — İnce-orta kum, siltli kum"
-            ]
-          },
-          {
-            "type": "list",
-            "items": [
-              "**Düşük Viskoziteli Reçineler (Akrilat, Poliüretan)** — 1.2 - 3.0 — 1 × 10^(-6) < k ≤ 1 × 10^(-5) m/s — Çok ince kum, kaba silt"
-            ]
-          },
-          {
-            "type": "list",
-            "items": [
-              "**Koloidal Silika (Nano-boyut)** — 1.1 - 2.0 — k ≈ 1 × 10^(-6) m/s — Silt, siltli ince kum (nano-geçiş)"
+            type: "list",
+            items: [
+              "**Standart Portland Çimentosu (OPC)** — Dinamik Viskozite (μ, mPa·s): 10 - 100 | Minimum Permeabilite Sınırı (k, m/s): k > 1 × 10^(-4) m/s (10^(-2) cm/s) | Uygulanabilir Zemin Aralığı: Kaba kum, çakıl, temiz kırmataş dolgu",
+              "**Mikroçimento / Ultra-Fine (d_95 < 10 μm)** — Dinamik Viskozite (μ, mPa·s): 5 - 20 | Minimum Permeabilite Sınırı (k, m/s): 1 × 10^(-5) < k ≤ 1 × 10^(-4) m/s | Uygulanabilir Zemin Aralığı: İnce kum, orta kum, düşük siltli kum",
+              "**Sodyum Silikat Bazlı Sert Jeller** — Dinamik Viskozite (μ, mPa·s): 2 - 10 | Minimum Permeabilite Sınırı (k, m/s): 1 × 10^(-5) < k ≤ 5 × 10^(-5) m/s | Uygulanabilir Zemin Aralığı: İnce-orta kum, siltli kum",
+              "**Düşük Viskoziteli Reçineler (Akrilat, Poliüretan)** — Dinamik Viskozite (μ, mPa·s): 1.2 - 3.0 | Minimum Permeabilite Sınırı (k, m/s): 1 × 10^(-6) < k ≤ 1 × 10^(-5) m/s | Uygulanabilir Zemin Aralığı: Çok ince kum, kaba silt",
+              "**Koloidal Silika (Nano-boyut)** — Dinamik Viskozite (μ, mPa·s): 1.1 - 2.0 | Minimum Permeabilite Sınırı (k, m/s): k ≈ 1 × 10^(-6) m/s | Uygulanabilir Zemin Aralığı: Silt, siltli ince kum (nano-geçiş)"
             ]
           }
         ]
       },
       {
-        "id": "tbdy-2018-sivilasma-tetiklenme-ve-deformasyon-analizi",
-        "title": "3. TBDY 2018 Bölüm 16 ve NCEER/Youd et al. (2001) Sıvılaşma Tetiklenme ve Deformasyon Analizleri",
-        "blocks": [
+        id: "tbdy-2018-sivilasma-tetiklenme-ve-deformasyon-analizi",
+        title: "3. TBDY 2018 Bölüm 16 ve NCEER/Youd et al. (2001) Sıvılaşma Tetiklenme ve Deformasyon Analizleri",
+        blocks: [
           {
-            "type": "paragraph",
-            "content": "Sıvılaşma analizi; deprem kaynaklı tekrarlı kayma gerilmeleri talebi (CSR) ile zeminin tekrarlı yükler altındaki kayma dayanımı kapasitesinin (CRR) derinlik boyunca nokta nokta oranlanması prensibine dayanır."
+            type: "paragraph",
+            content: "Sıvılaşma analizi; deprem kaynaklı tekrarlı kayma gerilmeleri talebi (CSR) ile zeminin tekrarlı yükler altındaki kayma dayanımı kapasitesinin (CRR) derinlik boyunca nokta nokta oranlanması prensibine dayanır."
           },
           {
-            "type": "paragraph",
-            "content": "**3.1. Deprem Kayma Gerilmesi Oranı (CSR_7.5) Formülasyonu**"
+            type: "paragraph",
+            content: "**3.1. Deprem Kayma Gerilmesi Oranı (CSR_7.5) Formülasyonu**"
           },
           {
-            "type": "paragraph",
-            "content": "TBDY 2018 Denklem (16.1) ve NCEER (Youd et al., 2001) uyarınca M_w = 7.5 referans deprem büyüklüğü için normalize edilmiş kayma gerilmesi oranı:"
+            type: "paragraph",
+            content: "TBDY 2018 Denklem (16.1) ve NCEER (Youd et al., 2001) uyarınca M_w = 7.5 referans deprem büyüklüğü için normalize edilmiş kayma gerilmesi oranı:"
           },
           {
-            "type": "paragraph",
-            "content": "CSR_7.5 = 0.65 · (a_max / g) · (σ_v0 / σ'_v0) · r_d · 1 / MSF"
+            type: "paragraph",
+            content: "CSR_7.5 = 0.65 · (a_max / g) · (σ_v0 / σ'_v0) · r_d · 1 / MSF"
           },
           {
-            "type": "paragraph",
-            "content": "Burada:"
+            type: "paragraph",
+            content: "Burada:"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "a_max / g: Zemin yüzeyindeki en büyük yatay ivme katsayısı (PGA). TBDY 2018 Tablo 2.1'e göre S_DS üzerinden veya sahaya özel zemin davranışı analizi çıktısı olarak alınır (a_max = 0.4 · S_DS · g eşdeğeri basitleştirilmiş formülasyon yerine, yer hareketine özel yüzey pik ivmesi doğrudan konulmalıdır).",
               "σ_v0: İncelenen derinlikteki toplam düşey gerilme (kPa).",
               "σ'_v0: İncelenen derinlikteki efektif düşey gerilme (kPa = σ_v0 - u_0).",
@@ -1636,189 +1610,189 @@ export const knowledgeArticles: KnowledgeArticle[] = [
             ]
           },
           {
-            "type": "paragraph",
-            "content": "r_d = [ 1.0 - 0.00765 · z (z ≤ 9.15 m) ; 1.174 - 0.0267 · z (9.15 m < z ≤ 23.0 m) ; 0.744 - 0.008 · z (23.0 m < z ≤ 30.0 m) ; 0.50 (z > 30.0 m) ]"
+            type: "paragraph",
+            content: "r_d = [ 1.0 - 0.00765 · z (z ≤ 9.15 m) ; 1.174 - 0.0267 · z (9.15 m < z ≤ 23.0 m) ; 0.744 - 0.008 · z (23.0 m < z ≤ 30.0 m) ; 0.50 (z > 30.0 m) ]"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "MSF: Büyüklük Ölçekleme Faktörü (Magnitude Scaling Factor). Farklı deprem büyüklüklerindeki çevrim sayısını M_w = 7.5 eşdeğerine indirger:"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "MSF = 10^(2.24) / M_w^(2.56) (NCEER Alt Sınırı)"
+            type: "paragraph",
+            content: "MSF = 10^(2.24) / M_w^(2.56) (NCEER Alt Sınırı)"
           },
           {
-            "type": "paragraph",
-            "content": "MSF = 6.9 · exp(-M_w / 4) - 0.058 ≤ 1.8 (Idriss, 1999)"
+            type: "paragraph",
+            content: "MSF = 6.9 · exp(-M_w / 4) - 0.058 ≤ 1.8 (Idriss, 1999)"
           },
           {
-            "type": "paragraph",
-            "content": "**3.2. Çevrimsel Direnç Oranı (CRR_7.5) Hesabı**"
+            type: "paragraph",
+            content: "**3.2. Çevrimsel Direnç Oranı (CRR_7.5) Hesabı**"
           },
           {
-            "type": "paragraph",
-            "content": "**3.2.1. Standart Penetrasyon Testi (SPT) Bazlı Hesap** Saha SPT darbe sayısı (N_SPT), enerji, tij uzunluğu, tüp tipi ve örtü gerilmesine göre normalize edilir:"
+            type: "paragraph",
+            content: "**Standart Penetrasyon Testi (SPT) Bazlı Hesap** Saha SPT darbe sayısı (N_SPT), enerji, tij uzunluğu, tüp tipi ve örtü gerilmesine göre normalize edilir:"
           },
           {
-            "type": "paragraph",
-            "content": "(N_1)_60 = N_SPT · C_N · C_E · C_B · C_R · C_S"
+            type: "paragraph",
+            content: "(N_1)_60 = N_SPT · C_N · C_E · C_B · C_R · C_S"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "C_N = √(P_a / σ'_v0) ≤ 1.7 (P_a = 100 kPa atmosfer basıncı).",
               "C_E = ER / %60 (Otomatik şahmerdanda ER ≈ %70 - %85 ⇒ C_E ≈ 1.17 - 1.42; manuel donanımlı ipli sistemlerde ER ≈ %45 - %60 ⇒ C_E ≈ 0.75 - 1.00).",
               "İnce dane düzeltmesi (FC ≥ %5 için temiz kum eşdeğeri vuruş sayısı, (N_1)_60cs):"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "(N_1)_60cs = α + β · (N_1)_60"
+            type: "paragraph",
+            content: "(N_1)_60cs = α + β · (N_1)_60"
           },
           {
-            "type": "paragraph",
-            "content": "α = [ 0 (FC ≤ %5) ; exp(1.76 - 190 / FC²) (%5 < FC < %35) ; 5.0 (FC ≥ %35) ]"
+            type: "paragraph",
+            content: "α = [ 0 (FC ≤ %5) ; exp(1.76 - 190 / FC²) (%5 < FC < %35) ; 5.0 (FC ≥ %35) ]"
           },
           {
-            "type": "paragraph",
-            "content": "β = [ 1.0 (FC ≤ %5) ; 0.99 + FC^(1.5) / 1000 (%5 < FC < %35) ; 1.20 (FC ≥ %35) ]"
+            type: "paragraph",
+            content: "β = [ 1.0 (FC ≤ %5) ; 0.99 + FC^(1.5) / 1000 (%5 < FC < %35) ; 1.20 (FC ≥ %35) ]"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "Temiz kum için CRR_7.5 denklemi (Youd et al., 2001):"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "CRR_7.5 = 1 / (34 - (N_1)_60cs) + (N_1)_60cs / 135 + 50 / ([10 · (N_1)_60cs + 45]²) - 1 / 200"
+            type: "paragraph",
+            content: "CRR_7.5 = 1 / (34 - (N_1)_60cs) + (N_1)_60cs / 135 + 50 / ([10 · (N_1)_60cs + 45]²) - 1 / 200"
           },
           {
-            "type": "paragraph",
-            "content": "**3.2.2. Koni Penetrasyon Testi (CPT) Bazlı Hesap** Uç direnci q_c ve sürtünme direnci f_s üzerinden:"
+            type: "paragraph",
+            content: "**Koni Penetrasyon Testi (CPT) Bazlı Hesap** Uç direnci q_c ve sürtünme direnci f_s üzerinden:"
           },
           {
-            "type": "paragraph",
-            "content": "q_c1N = (q_c / P_a) · (P_a / σ'_v0)^n"
+            type: "paragraph",
+            content: "q_c1N = (q_c / P_a) · (P_a / σ'_v0)^n"
           },
           {
-            "type": "paragraph",
-            "content": "Normalleştirilmiş sürtünme oranı: F = f_s / (q_c - σ_v0) · 100 Zemin Davranış Tipi İndisi (I_c):"
+            type: "paragraph",
+            content: "Normalleştirilmiş sürtünme oranı: F = f_s / (q_c - σ_v0) · 100 Zemin Davranış Tipi İndisi (I_c):"
           },
           {
-            "type": "paragraph",
-            "content": "I_c = √((3.47 - log q_c1N)² + (1.22 + log F)²)"
+            type: "paragraph",
+            content: "I_c = √((3.47 - log q_c1N)² + (1.22 + log F)²)"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "I_c > 2.6 ⇒ Zemin kil davranışı sergiler (klasik granüler sıvılaşma beklenmez, çevrimsel yumuşama analizi yapılır).",
               "I_c ≤ 2.6 ⇒ Sıvılaşabilir granüler zemin; CPT ince dane düzeltmesi:"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "q_c1Ncs = K_c · q_c1N"
+            type: "paragraph",
+            content: "q_c1Ncs = K_c · q_c1N"
           },
           {
-            "type": "paragraph",
-            "content": "K_c = [ 1.0 (I_c ≤ 1.64) ; -0.403 · I_c^4 + 5.581 · I_c³ - 21.63 · I_c² + 33.75 · I_c - 17.88 (I_c > 1.64) ]"
+            type: "paragraph",
+            content: "K_c = [ 1.0 (I_c ≤ 1.64) ; -0.403 · I_c^4 + 5.581 · I_c³ - 21.63 · I_c² + 33.75 · I_c - 17.88 (I_c > 1.64) ]"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "CPT temiz kum çevrimsel direnç oranı:"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "CRR_7.5 = [ 0.833 · (q_c1Ncs / 1000) + 0.05 (q_c1Ncs < 50) ; 93 · (q_c1Ncs / 1000)³ + 0.08 (50 ≤ q_c1Ncs < 160) ]"
+            type: "paragraph",
+            content: "CRR_7.5 = [ 0.833 · (q_c1Ncs / 1000) + 0.05 (q_c1Ncs < 50) ; 93 · (q_c1Ncs / 1000)³ + 0.08 (50 ≤ q_c1Ncs < 160) ]"
           },
           {
-            "type": "paragraph",
-            "content": "**3.2.3. Yüksek Efektif Gerilme (K_σ) ve Statik Kayma Gerilmesi (K_α) Düzeltmeleri** Sahadaki efektif düşey gerilme σ'_v0 > 100 kPa olduğunda zemin sıkışabilirliği artar ve dilatans potansiyeli düşer:"
+            type: "paragraph",
+            content: "**Yüksek Efektif Gerilme (K_σ) ve Statik Kayma Gerilmesi (K_α) Düzeltmeleri** Sahadaki efektif düşey gerilme σ'_v0 > 100 kPa olduğunda zemin sıkışabilirliği artar ve dilatans potansiyeli düşer:"
           },
           {
-            "type": "paragraph",
-            "content": "CRR = CRR_7.5 · MSF · K_σ · K_α"
+            type: "paragraph",
+            content: "CRR = CRR_7.5 · MSF · K_σ · K_α"
           },
           {
-            "type": "paragraph",
-            "content": "K_σ = (σ'_v0 / P_a)^(f-1) ≤ 1.5 (f ≈ 0.7 - 0.8 rölatif sıkılığa bağlı)"
+            type: "paragraph",
+            content: "K_σ = (σ'_v0 / P_a)^(f-1) ≤ 1.5 (f ≈ 0.7 - 0.8 rölatif sıkılığa bağlı)"
           },
           {
-            "type": "paragraph",
-            "content": "**3.3. Sıvılaşma Güvenlik Katsayısı (F_L) Eşikleri**"
+            type: "paragraph",
+            content: "**3.3. Sıvılaşma Güvenlik Katsayısı (F_L) Eşikleri**"
           },
           {
-            "type": "paragraph",
-            "content": "F_L = CRR / CSR"
+            type: "paragraph",
+            content: "F_L = CRR / CSR"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**F_L < 1.0:** Sıvılaşma kesin olarak tetiklenir (Aşırı boşluk suyu basıncı oranı r_u = Δ u / σ'_v0 arrow 1.0). Efektif gerilme sıfırlanır, kayma modülü çöker.",
               "**1.0 ≤ F_L ≤ 1.1:** Marjinal/Kritik sınır (Kısmi sıvılaşma ve yüksek çevrimsel deformasyon).",
               "**TBDY 2018 Güvenlik Şartı:** Temel altı taşıma ve zemin tasarımı için F_L ≥ 1.10 - 1.25 sağlanmalıdır. F_L < 1.1 olan tüm tabakalar için zemin iyileştirmesi yasal bir zorunluluktur."
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**3.4. Sıvılaşma Sonrası Oturma ve Yanal Yayılma Formülasyonları**"
+            type: "paragraph",
+            content: "**3.4. Sıvılaşma Sonrası Oturma ve Yanal Yayılma Formülasyonları**"
           },
           {
-            "type": "paragraph",
-            "content": "**3.4.1. Hacimsel Birim Boy Değişimi ve Düşey Oturma (Ishihara & Yoshimine, 1992)** Sıvılaşan tabakada aşırı boşluk suyu basıncının disipasyonu sırasında suyun dışarı atılmasıyla zemin iskeletinde hacimsel büzülme (ε_v) meydana gelir:"
+            type: "paragraph",
+            content: "**Hacimsel Birim Boy Değişimi ve Düşey Oturma (Ishihara & Yoshimine, 1992)** Sıvılaşan tabakada aşırı boşluk suyu basıncının disipasyonu sırasında suyun dışarı atılmasıyla zemin iskeletinde hacimsel büzülme (ε_v) meydana gelir:"
           },
           {
-            "type": "paragraph",
-            "content": "ε_v = 0.0389 · (1 - F_L / F_L,lim) · exp[-0.057 · (N_1)_60cs]"
+            type: "paragraph",
+            content: "ε_v = 0.0389 · (1 - F_L / F_L,lim) · exp[-0.057 · (N_1)_60cs]"
           },
           {
-            "type": "paragraph",
-            "content": "Toplam sıvılaşma kaynaklı oturma (S_liq):"
+            type: "paragraph",
+            content: "Toplam sıvılaşma kaynaklı oturma (S_liq):"
           },
           {
-            "type": "paragraph",
-            "content": "S_liq = ∑_i=1^(n) ε_v,i · Δ z_i"
+            type: "paragraph",
+            content: "S_liq = ∑_i=1^(n) ε_v,i · Δ z_i"
           },
           {
-            "type": "paragraph",
-            "content": "**3.4.2. Yanal Yayılma (Lateral Spreading) Deplasmanı (Youd, Hansen & Bartlett, 2002)** Eğimli arazilerde veya serbest şev aynası (nehir/deniz rıhtımı) bulunan zemin profillerinde sıvılaşan tabakanın yerçekimi etkisiyle akması:"
+            type: "paragraph",
+            content: "**Yanal Yayılma (Lateral Spreading) Deplasmanı (Youd, Hansen & Bartlett, 2002)** Eğimli arazilerde veya serbest şev aynası (nehir/deniz rıhtımı) bulunan zemin profillerinde sıvılaşan tabakanın yerçekimi etkisiyle akması:"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Serbest Ayna (Free-Face) Koşulu:**"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "beginaligned log D_H = &-16.713 + 1.532 M_w - 1.406 log R^* - 0.059 R &- 0.514 log W + 0.498 log T_15 + 0.587 log(100 - F_15) &+ 0.278 log D50_15 endaligned"
+            type: "paragraph",
+            content: "beginaligned log D_H = &-16.713 + 1.532 M_w - 1.406 log R^* - 0.059 R &- 0.514 log W + 0.498 log T_15 + 0.587 log(100 - F_15) &+ 0.278 log D50_15 endaligned"
           },
           {
-            "type": "paragraph",
-            "content": "Burada W = (H_face / L_dist) · 100 (Serbest ayna serbestlik oranı, %)."
+            type: "paragraph",
+            content: "Burada W = (H_face / L_dist) · 100 (Serbest ayna serbestlik oranı, %)."
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Eğimli Arazi (Sloping Ground) Koşulu:**"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "beginaligned log D_H = &-16.213 + 1.532 M_w - 1.406 log R^* - 0.059 R &+ 0.338 log S + 0.543 log T_15 + 0.344 log(100 - F_15) &+ 0.278 log D50_15 endaligned"
+            type: "paragraph",
+            content: "beginaligned log D_H = &-16.213 + 1.532 M_w - 1.406 log R^* - 0.059 R &+ 0.338 log S + 0.543 log T_15 + 0.344 log(100 - F_15) &+ 0.278 log D50_15 endaligned"
           },
           {
-            "type": "paragraph",
-            "content": "Burada:"
+            type: "paragraph",
+            content: "Burada:"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "D_H: Yanal deplasman büyüklüğü (metre).",
               "S: Zemin yüzey eğimi (%).",
               "T_15: Profilde (N_1)_60 < 15 olan doymuş tabakaların toplam kümülatif kalınlığı (metre).",
@@ -1830,151 +1804,151 @@ export const knowledgeArticles: KnowledgeArticle[] = [
         ]
       },
       {
-        "id": "tas-kolon-ve-kirmatas-kolon-mekanigi-priebe",
-        "title": "4. Taş Kolon (Stone Column) ve Kırmataş Kolon Mekaniği: Priebe Yöntemi ve Radyal Konsolidasyon",
-        "blocks": [
+        id: "tas-kolon-ve-kirmatas-kolon-mekanigi-priebe",
+        title: "4. Taş Kolon (Stone Column) ve Kırmataş Kolon Mekaniği: Priebe Yöntemi ve Radyal Konsolidasyon",
+        blocks: [
           {
-            "type": "paragraph",
-            "content": "Taş kolonlar; düşük taşıma gücüne ve yüksek oturma potansiyeline sahip kohezyonlu-gevşek zeminlerde, zeminin belirli bir hacmini yüksek sürtünme açılı (φ'_c ≥ 38^° - 45^°) kırmataş silindirlerle ikame ederek rijitlik ve kayma dayanımını artıran kompozit bir temel sistemi oluşturur."
+            type: "paragraph",
+            content: "Taş kolonlar; düşük taşıma gücüne ve yüksek oturma potansiyeline sahip kohezyonlu-gevşek zeminlerde, zeminin belirli bir hacmini yüksek sürtünme açılı (φ'_c ≥ 38^° - 45^°) kırmataş silindirlerle ikame ederek rijitlik ve kayma dayanımını artıran kompozit bir temel sistemi oluşturur."
           },
           {
-            "type": "paragraph",
-            "content": "**4.1. Alan Değiştirme Oranı (a_s) ve Geometri**"
+            type: "paragraph",
+            content: "**4.1. Alan Değiştirme Oranı (a_s) ve Geometri**"
           },
           {
-            "type": "paragraph",
-            "content": "Birim hücre (Unit Cell) modelinde kolonun etki alanı:"
+            type: "paragraph",
+            content: "Birim hücre (Unit Cell) modelinde kolonun etki alanı:"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Eşkenar Üçgen Izgara (En Verimli):** A = √(3) / 2 · s² ≈ 0.866 · s² (s: aks aralığı).",
               "**Kare Izgara:** A = s²."
             ]
           },
           {
-            "type": "paragraph",
-            "content": "Tek bir taş kolonun enkesit alanı:"
+            type: "paragraph",
+            content: "Tek bir taş kolonun enkesit alanı:"
           },
           {
-            "type": "paragraph",
-            "content": "A_c = π · d² / 4 (d: sıkıştırılmış kolon nominal çapı, sahada tipik 0.60 - 1.00 m)"
+            type: "paragraph",
+            content: "A_c = π · d² / 4 (d: sıkıştırılmış kolon nominal çapı, sahada tipik 0.60 - 1.00 m)"
           },
           {
-            "type": "paragraph",
-            "content": "Alan Değiştirme Oranı:"
+            type: "paragraph",
+            content: "Alan Değiştirme Oranı:"
           },
           {
-            "type": "paragraph",
-            "content": "a_s = A_c / A = A_c / (A_c + A_s)"
+            type: "paragraph",
+            content: "a_s = A_c / A = A_c / (A_c + A_s)"
           },
           {
-            "type": "paragraph",
-            "content": "**4.2. Gerilme Konsantrasyon Faktörü (n) ve Gerilme Azaltma Katsayısı (μ)**"
+            type: "paragraph",
+            content: "**4.2. Gerilme Konsantrasyon Faktörü (n) ve Gerilme Azaltma Katsayısı (μ)**"
           },
           {
-            "type": "paragraph",
-            "content": "Taş kolon rijitliğinin (E_c) çevre zemin rijitliğinden (E_s) yüksek olması sebebiyle, üstyapıdan gelen homojen düşey gerilme (σ), birim hücre içinde kolon tepesinde yoğunlaşır:"
+            type: "paragraph",
+            content: "Taş kolon rijitliğinin (E_c) çevre zemin rijitliğinden (E_s) yüksek olması sebebiyle, üstyapıdan gelen homojen düşey gerilme (σ), birim hücre içinde kolon tepesinde yoğunlaşır:"
           },
           {
-            "type": "paragraph",
-            "content": "n = σ_c / σ_s (Sahada ölçülen tipik değerler: n = 2.5 - 5.0)"
+            type: "paragraph",
+            content: "n = σ_c / σ_s (Sahada ölçülen tipik değerler: n = 2.5 - 5.0)"
           },
           {
-            "type": "paragraph",
-            "content": "Toplam gerilme dengesi:"
+            type: "paragraph",
+            content: "Toplam gerilme dengesi:"
           },
           {
-            "type": "paragraph",
-            "content": "σ = σ_c · a_s + σ_s · (1 - a_s)"
+            type: "paragraph",
+            content: "σ = σ_c · a_s + σ_s · (1 - a_s)"
           },
           {
-            "type": "paragraph",
-            "content": "Buradan çevre zemin üzerine düşen azaltılmış gerilme faktörü (μ):"
+            type: "paragraph",
+            content: "Buradan çevre zemin üzerine düşen azaltılmış gerilme faktörü (μ):"
           },
           {
-            "type": "paragraph",
-            "content": "σ_s = μ · σ ⇒ μ = 1 / (1 + (n - 1) · a_s)"
+            type: "paragraph",
+            content: "σ_s = μ · σ ⇒ μ = 1 / (1 + (n - 1) · a_s)"
           },
           {
-            "type": "paragraph",
-            "content": "Kolona aktarılan gerilme:"
+            type: "paragraph",
+            content: "Kolona aktarılan gerilme:"
           },
           {
-            "type": "paragraph",
-            "content": "σ_c = n · μ · σ = n / (1 + (n - 1) · a_s) · σ"
+            type: "paragraph",
+            content: "σ_c = n · μ · σ = n / (1 + (n - 1) · a_s) · σ"
           },
           {
-            "type": "paragraph",
-            "content": "**4.3. Priebe (1995) Oturma İyileşme Faktörü Formülasyonu**"
+            type: "paragraph",
+            content: "**4.3. Priebe (1995) Oturma İyileşme Faktörü Formülasyonu**"
           },
           {
-            "type": "paragraph",
-            "content": "Priebe yönteminde birim hücre elastik-plastik kabule dayanır. Kolon radyal yönde genişleyerek çevre zemini pasif duruma iter."
+            type: "paragraph",
+            content: "Priebe yönteminde birim hücre elastik-plastik kabule dayanır. Kolon radyal yönde genişleyerek çevre zemini pasif duruma iter."
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Temel İyileşme Katsayısı (n_0, rijit kolon / sıkışmayan malzeme varsayımı):**"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "n_0 = 1 + a_s · [ (5 - a_s) / (4 · K_ac · (1 - a_s)) - 1 ]"
+            type: "paragraph",
+            content: "n_0 = 1 + a_s · [ (5 - a_s) / (4 · K_ac · (1 - a_s)) - 1 ]"
           },
           {
-            "type": "paragraph",
-            "content": "Burada Rankine aktif toprak basıncı katsayısı:"
+            type: "paragraph",
+            content: "Burada Rankine aktif toprak basıncı katsayısı:"
           },
           {
-            "type": "paragraph",
-            "content": "K_ac = tan²(45^° - φ'_c / 2)"
+            type: "paragraph",
+            content: "K_ac = tan²(45^° - φ'_c / 2)"
           },
           {
-            "type": "paragraph",
-            "content": "φ'_c: Kırmataş kolonun içsel sürtünme açısı (40^° - 43^° ⇒ K_ac ≈ 0.20 - 0.24)."
+            type: "paragraph",
+            content: "φ'_c: Kırmataş kolonun içsel sürtünme açısı (40^° - 43^° ⇒ K_ac ≈ 0.20 - 0.24)."
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Zemin ve Kolon Sıkışabilirliğinin Dikkate Alınması (n_1):**"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "Taş kolonun sonlu deformasyon modülü (E_c) ve çevre zeminin ödometre modülü (E_s) dikkate alındığında gerçek iyileşme faktörü (n_1):"
+            type: "paragraph",
+            content: "Taş kolonun sonlu deformasyon modülü (E_c) ve çevre zeminin ödometre modülü (E_s) dikkate alındığında gerçek iyileşme faktörü (n_1):"
           },
           {
-            "type": "paragraph",
-            "content": "n_1 = 1 + fracbarf(a_s, ν_s)E_s / E_c + K_ac · ..."
+            type: "paragraph",
+            content: "n_1 = 1 + fracbarf(a_s, ν_s)E_s / E_c + K_ac · ..."
           },
           {
-            "type": "paragraph",
-            "content": "Genel mühendislik pratiğinde oturma azaltma oranı (β):"
+            type: "paragraph",
+            content: "Genel mühendislik pratiğinde oturma azaltma oranı (β):"
           },
           {
-            "type": "paragraph",
-            "content": "β = s_iyileştirilmiş / s_doğal = 1 / n_1"
+            type: "paragraph",
+            content: "β = s_iyileştirilmiş / s_doğal = 1 / n_1"
           },
           {
-            "type": "paragraph",
-            "content": "Taş kolonlu sistemin nihai oturması:"
+            type: "paragraph",
+            content: "Taş kolonlu sistemin nihai oturması:"
           },
           {
-            "type": "paragraph",
-            "content": "s = β · s_0"
+            type: "paragraph",
+            content: "s = β · s_0"
           },
           {
-            "type": "paragraph",
-            "content": "**4.4. Taş Kolonun Düşey Drenaj ve Sıvılaşma Sönümleme Fonksiyonu**"
+            type: "paragraph",
+            content: "**4.4. Taş Kolonun Düşey Drenaj ve Sıvılaşma Sönümleme Fonksiyonu**"
           },
           {
-            "type": "paragraph",
-            "content": "Taş kolon sadece taşıma gücünü artırmakla kalmaz; serbest drenaj sağlayan kırmataş omurgası (k_kolon ≥ 10^(-1) m/s) sayesinde deprem sırasında oluşan aşırı boşluk suyu basıncını anında tahliye eder:"
+            type: "paragraph",
+            content: "Taş kolon sadece taşıma gücünü artırmakla kalmaz; serbest drenaj sağlayan kırmataş omurgası (k_kolon ≥ 10^(-1) m/s) sayesinde deprem sırasında oluşan aşırı boşluk suyu basıncını anında tahliye eder:"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "Seed ve Booker (1977) teorisine göre radyal akış mesafesi r_e ≈ 0.525 · s mesafesine düşer.",
               "Boşluk suyu basıncı oranı r_u = Δ u / σ'_v < 0.40 sınırında tutularak zemin sıvılaşma sınırına ulaşmadan drene edilir."
             ]
@@ -1982,28 +1956,28 @@ export const knowledgeArticles: KnowledgeArticle[] = [
         ]
       },
       {
-        "id": "jet-grouting-yuksek-basincli-hidrolik-erozyon",
-        "title": "5. Yüksek Basınçlı Zemin Enjeksiyonu (Jet Grouting): TS EN 12716 Standartları, Kinetik Enerji Fiziği ve Sistem Karşılaştırması",
-        "blocks": [
+        id: "jet-grouting-yuksek-basincli-hidrolik-erozyon",
+        title: "5. Yüksek Basınçlı Zemin Enjeksiyonu (Jet Grouting): TS EN 12716 Standartları, Kinetik Enerji Fiziği ve Sistem Karşılaştırması",
+        blocks: [
           {
-            "type": "paragraph",
-            "content": "**5.1. Nozul Çıkış Hidroliği ve Bernoulli / Torricelli Prensipleri** Jet grouting monitörünün üzerinde yer alan tungsten karbür veya safir nozullardan çıkan yüksek basınçlı akışkanın kinetik dönüşümü, sıkıştırılamaz akışkanlar için genişletilmiş Bernoulli ve süreklilik denklemleriyle tanımlanır."
+            type: "paragraph",
+            content: "**5.1. Nozul Çıkış Hidroliği ve Bernoulli / Torricelli Prensipleri** Jet grouting monitörünün üzerinde yer alan tungsten karbür veya safir nozullardan çıkan yüksek basınçlı akışkanın kinetik dönüşümü, sıkıştırılamaz akışkanlar için genişletilmiş Bernoulli ve süreklilik denklemleriyle tanımlanır."
           },
           {
-            "type": "paragraph",
-            "content": "**Nozul Çıkış Debisi (Q):**"
+            type: "paragraph",
+            content: "**Nozul Çıkış Debisi (Q):**"
           },
           {
-            "type": "paragraph",
-            "content": "Q = n · C_d · A_n · v = n · C_d · (π · d_n² / 4) · √(2 · Δ P / ρ_g)"
+            type: "paragraph",
+            content: "Q = n · C_d · A_n · v = n · C_d · (π · d_n² / 4) · √(2 · Δ P / ρ_g)"
           },
           {
-            "type": "paragraph",
-            "content": "Burada:"
+            type: "paragraph",
+            content: "Burada:"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "n: Aktif nozul sayısı (adet).",
               "C_d: Nozul deşarj katsayısı (Boyutsuz; yüksek işlenmiş konik nozullarda tipik olarak 0.88 - 0.94, aşınmış nozullarda 0.80 - 0.85).",
               "d_n: Nozul çapı (m veya mm, tipik olarak 1.8 - 4.5 mm).",
@@ -2013,301 +1987,216 @@ export const knowledgeArticles: KnowledgeArticle[] = [
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**Nozul Çıkış Hızı (v):**"
+            type: "paragraph",
+            content: "**Nozul Çıkış Hızı (v):**"
           },
           {
-            "type": "paragraph",
-            "content": "v = C_v · √(2 · Δ P / ρ_g)"
+            type: "paragraph",
+            content: "v = C_v · √(2 · Δ P / ρ_g)"
           },
           {
-            "type": "paragraph",
-            "content": "Burada C_v nozul hız katsayısıdır (0.95 - 0.98)."
+            type: "paragraph",
+            content: "Burada C_v nozul hız katsayısıdır (0.95 - 0.98)."
           },
           {
-            "type": "paragraph",
-            "content": "Örnek Saha Değeri: Δ P = 450 bar = 45 × 10^6 Pa ve ρ_g = 1750 kg/m³ (W/C = 1.0 için):"
+            type: "paragraph",
+            content: "Örnek Saha Değeri: Δ P = 450 bar = 45 × 10^6 Pa ve ρ_g = 1750 kg/m³ (W/C = 1.0 için):"
           },
           {
-            "type": "paragraph",
-            "content": "v ≈ 0.96 · √(2 · 45 × 10^6 / 1750) = 0.96 · √(51428.57) ≈ 0.96 · 226.78 ≈ 217.7 m/sn"
+            type: "paragraph",
+            content: "v ≈ 0.96 · √(2 · 45 × 10^6 / 1750) = 0.96 · √(51428.57) ≈ 0.96 · 226.78 ≈ 217.7 m/sn"
           },
           {
-            "type": "paragraph",
-            "content": "Bu hız, ses hızının zemin altı ortamındaki dinamik etkilerine yakın bir hidrodinamik darbe dalgası üretir."
+            type: "paragraph",
+            content: "Bu hız, ses hızının zemin altı ortamındaki dinamik etkilerine yakın bir hidrodinamik darbe dalgası üretir."
           },
           {
-            "type": "paragraph",
-            "content": "**5.2. Spesifik Kinetik Enerji (E ve E_s) Fiziği** Jetin akışkan gücü (P_jet, Watt):"
+            type: "paragraph",
+            content: "**5.2. Spesifik Kinetik Enerji (E ve E_s) Fiziği** Jetin akışkan gücü (P_jet, Watt):"
           },
           {
-            "type": "paragraph",
-            "content": "P_jet = 1 / 2 · dotm · v² = 1 / 2 · (ρ_g · Q) · v² = Δ P · Q"
+            type: "paragraph",
+            content: "P_jet = 1 / 2 · dotm · v² = 1 / 2 · (ρ_g · Q) · v² = Δ P · Q"
           },
           {
-            "type": "paragraph",
-            "content": "Kolonun birim boyu (metre) başına zemine aktarılan **Spesifik Kinetik Enerji (E_s, MJ/m)**:"
+            type: "paragraph",
+            content: "Kolonun birim boyu (metre) başına zemine aktarılan **Spesifik Kinetik Enerji (E_s, MJ/m)**:"
           },
           {
-            "type": "paragraph",
-            "content": "E_s = P_jet / v_t = Δ P · Q / v_t = 1 / 2 · ρ_g · Q · v² / v_t"
+            type: "paragraph",
+            content: "E_s = P_jet / v_t = Δ P · Q / v_t = 1 / 2 · ρ_g · Q · v² / v_t"
           },
           {
-            "type": "paragraph",
-            "content": "Burada:"
+            type: "paragraph",
+            content: "Burada:"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "v_t: Monitörün yukarı çekilme adımı/hızı (m/sn veya cm/dak).",
               "Q: Toplam şerbet debisi (m³/sn)."
             ]
           },
           {
-            "type": "paragraph",
-            "content": "Hacimsel Spesifik Enerji (E_v, MJ/m³): Oluşan kolon çapı D (m) olduğunda:"
+            type: "paragraph",
+            content: "Hacimsel Spesifik Enerji (E_v, MJ/m³): Oluşan kolon çapı D (m) olduğunda:"
           },
           {
-            "type": "paragraph",
-            "content": "E_v = E_s / (π · D² / 4) = 4 · Δ P · Q / (π · D² · v_t)"
+            type: "paragraph",
+            content: "E_v = E_s / (π · D² / 4) = 4 · Δ P · Q / (π · D² · v_t)"
           },
           {
-            "type": "paragraph",
-            "content": "**5.3. 400–600 Bar Basınç Altında Hidrodinamik Parçalama Fiziği (Tollmien-Schlichting Türbülans Teorisi)** Nozuldan 200–300 m/sn hızla çıkan dairesel sıvı jeti, kuyu içerisindeki akışkan ortamına girdiğinde serbest batık jet (submerged turbulent jet) davranışı sergiler:"
+            type: "paragraph",
+            content: "**5.3. 400–600 Bar Basınç Altında Hidrodinamik Parçalama Fiziği (Tollmien-Schlichting Türbülans Teorisi)** Nozuldan 200–300 m/sn hızla çıkan dairesel sıvı jeti, kuyu içerisindeki akışkan ortamına girdiğinde serbest batık jet (submerged turbulent jet) davranışı sergiler:"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Potansiyel Çekirdek Bölgesi (Core Region):**"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "Nozul çıkışından itibaren eksenel mesafede x ≤ 4 · d_n - 6 · d_n aralığında eksenel hız nozul çıkış hızına eşittir (v_x = v_0)."
+            type: "paragraph",
+            content: "Nozul çıkışından itibaren eksenel mesafede x ≤ 4 · d_n - 6 · d_n aralığında eksenel hız nozul çıkış hızına eşittir (v_x = v_0)."
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Geçiş ve Türbülanslı Yayılma Bölgesi (Fully Developed Turbulent Jet):**"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "Akışkanın çevre ortamla viskoz sürtünmesi nedeniyle sınır tabakada momentum transferi başlar. Eksenel jet hızı mesafeyle (x) ters orantılı olarak azalır:"
+            type: "paragraph",
+            content: "Akışkanın çevre ortamla viskoz sürtünmesi nedeniyle sınır tabakada momentum transferi başlar. Eksenel jet hızı mesafeyle (x) ters orantılı olarak azalır:"
           },
           {
-            "type": "paragraph",
-            "content": "v(x, r) = v_0 · K · d_n / x · exp(-β · (r / x)²)"
+            type: "paragraph",
+            content: "v(x, r) = v_0 · K · d_n / x · exp(-β · (r / x)²)"
           },
           {
-            "type": "paragraph",
-            "content": "(Burada K jet yapısı sabiti, β yayılma parametresi, r eksenden radyal uzaklıktır)."
+            type: "paragraph",
+            content: "(Burada K jet yapısı sabiti, β yayılma parametresi, r eksenden radyal uzaklıktır)."
           },
           {
-            "type": "paragraph",
-            "content": "**Zemin Parçalanma Kriteri (Erozyon Eşiği):** Zemin tanelerinin matristen sökülmesi, jetin zemin yüzeyinde ürettiği türbülanslı kayma gerilmesi (τ_jet) ile zemin kritik erozyon direncinin (τ_c) kıyaslanması ile gerçekleşir:"
+            type: "paragraph",
+            content: "**Zemin Parçalanma Kriteri (Erozyon Eşiği):** Zemin tanelerinin matristen sökülmesi, jetin zemin yüzeyinde ürettiği türbülanslı kayma gerilmesi (τ_jet) ile zemin kritik erozyon direncinin (τ_c) kıyaslanması ile gerçekleşir:"
           },
           {
-            "type": "paragraph",
-            "content": "τ_jet = 1 / 2 · C_f · ρ_m · v(x)² ≥ τ_c"
+            type: "paragraph",
+            content: "τ_jet = 1 / 2 · C_f · ρ_m · v(x)² ≥ τ_c"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Kohezyonsuz zeminlerde (kum, çakıl):** Parçalanma, taneler arasındaki sürtünme direncinin aşılması ve hidrostatik/dinamik kaldırma kuvvetiyle (pore pressure gradient) tanelerin sürüklenmesiyle gerçekleşir:"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "τ_c ≈ σ'_v0 · tanφ'"
+            type: "paragraph",
+            content: "τ_c ≈ σ'_v0 · tanφ'"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Kohezyonlu zeminlerde (kil, silt):** Parçalanma zemin kohezyonuna (c_u) ve çekme dayanımına (f_t) bağlıdır. Kil agregatları mikroskobik çatlaklardan giren yüksek basınçlı sıvının mikro-hidrofraktür oluşturmasıyla koparılır:"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "τ_c ≈ (2.5 - 4.0) · c_u"
+            type: "paragraph",
+            content: "τ_c ≈ (2.5 - 4.0) · c_u"
           },
           {
-            "type": "paragraph",
-            "content": "Bu nedenle kohezyonlu zeminlerde erozyon yarıçapı R_e, kohezyonsuz zeminlere kıyasla %40–60 daha düşüktür ve daha yüksek E_s gerektirir."
+            type: "paragraph",
+            content: "Bu nedenle kohezyonlu zeminlerde erozyon yarıçapı R_e, kohezyonsuz zeminlere kıyasla %40–60 daha düşüktür ve daha yüksek E_s gerektirir."
           },
           {
-            "type": "paragraph",
-            "content": "**JG1, JG2, JG3 SİSTEMLERİNİN KARŞILAŞTIRMALI MÜHENDİSLİK ANALİZİ**"
+            type: "paragraph",
+            content: "**5.4. JG1, JG2, JG3 SİSTEMLERİNİN KARŞILAŞTIRMALI MÜHENDİSLİK ANALİZİ**"
           },
           {
-            "type": "list",
-            "items": [
-              "Parametre — JG1 (Tek Akışkanlı) — JG2 (Çift Akışkanlı) — JG3 (Üç Akışkanlı)"
+            type: "list",
+            items: [
+              "**Kullanılan Akışkanlar** — JG1 (Tek Akışkanlı): Yalnızca Çimento Şerbeti | JG2 (Çift Akışkanlı): Çimento Şerbeti + Basınçlı Hava | JG3 (Üç Akışkanlı): Yüksek Basınçlı Su + Hava + Çimento Şerbeti",
+              "**Monitör Mimarisi** — JG1 (Tek Akışkanlı): Tek cidarlı tij, tek kanal | JG2 (Çift Akışkanlı): Çift cidarlı eşmerkezli (koaksiyel) tij | JG3 (Üç Akışkanlı): Üç cidarlı eşmerkezli tij (3 bağımsız hat)",
+              "**Parçalama Ajanı** — JG1 (Tek Akışkanlı): Yüksek basınçlı şerbet | JG2 (Çift Akışkanlı): Hava zırhlı yüksek basınçlı şerbet | JG3 (Üç Akışkanlı): Hava zırhlı yüksek basınçlı su jeti",
+              "**Bağlayıcı Enjeksiyonu** — JG1 (Tek Akışkanlı): Parçalayan jet aynı zamanda bağlayıcıdır | JG2 (Çift Akışkanlı): Parçalayan jet aynı zamanda bağlayıcıdır | JG3 (Üç Akışkanlı): Ayrı alt nozuldan düşük/orta basınçla (P ≈ 20-50 bar) bağımsız verilir",
+              "**Şerbet Basıncı (P_g)** — JG1 (Tek Akışkanlı): 350 – 500 bar | JG2 (Çift Akışkanlı): 400 – 600 bar | JG3 (Üç Akışkanlı): 20 – 70 bar",
+              "**Hava Basıncı (P_a)** — JG1 (Tek Akışkanlı): Yok | JG2 (Çift Akışkanlı): 6 – 12 bar (Q_a ≈ 6-12 m³/dk) | JG3 (Üç Akışkanlı): 6 – 12 bar (Q_a ≈ 8-15 m³/dk)",
+              "**Su Jeti Basıncı (P_w)** — JG1 (Tek Akışkanlı): Yok | JG2 (Çift Akışkanlı): Yok | JG3 (Üç Akışkanlı): 400 – 600 bar",
+              "**Nozul Çapları (d_n)** — JG1 (Tek Akışkanlı): 1.8 – 3.0 mm (1-2 adet) | JG2 (Çift Akışkanlı): 2.0 – 4.0 mm (1-2 adet grout) + 1-2 mm dairesel hava aralığı | JG3 (Üç Akışkanlı): Su: 1.8 – 2.5 mm; Grout: 4.0 – 8.0 mm",
+              "**Tipik Kolon Çapı (D)** — JG1 (Tek Akışkanlı): **0.6 – 1.0 m** | JG2 (Çift Akışkanlı): **1.0 – 1.8 m** | JG3 (Üç Akışkanlı): **1.5 – 3.0+ m**",
+              "**Zemin Deplasmanı / Değişimi** — JG1 (Tek Akışkanlı): Kısmi zemin değişimi (%30-50 passa, %50-70 yerinde karışım) | JG2 (Çift Akışkanlı): Orta zemin değişimi (%50-70 passa, %30-50 karışım) | JG3 (Üç Akışkanlı): Yüksek zemin değişimi (%70-90 zemin dışarı atılır - substitution)"
             ]
           },
           {
-            "type": "list",
-            "items": [
-              "**Kullanılan Akışkanlar** — Yalnızca Çimento Şerbeti — Çimento Şerbeti + Basınçlı Hava — Yüksek Basınçlı Su + Hava + Çimento Şerbeti"
-            ]
+            type: "paragraph",
+            content: "**5.5. Koaksiyel Hava Zarfının (Air Shroud) Fiziği ve Erozyon Yarıçapına Etkisi** JG2 ve JG3 sistemlerinde yüksek hızlı sıvı jetinin çevresine eşmerkezli dairesel bir yarıkla (annular ring) yüksek debili basınçlı hava verilir."
           },
           {
-            "type": "list",
-            "items": [
-              "**Monitör Mimarisi** — Tek cidarlı tij, tek kanal — Çift cidarlı eşmerkezli (koaksiyel) tij — Üç cidarlı eşmerkezli tij (3 bağımsız hat)"
-            ]
+            type: "paragraph",
+            content: "**Hava Zarfının İki Temel Fiziksel Etkisi:**"
           },
           {
-            "type": "list",
-            "items": [
-              "**Parçalama Ajanı** — Yüksek basınçlı şerbet — Hava zırhlı yüksek basınçlı şerbet — Hava zırhlı yüksek basınçlı su jeti"
-            ]
-          },
-          {
-            "type": "list",
-            "items": [
-              "**Bağlayıcı Enjeksiyonu** — Parçalayan jet aynı zamanda bağlayıcıdır — Parçalayan jet aynı zamanda bağlayıcıdır — Ayrı alt nozuldan düşük/orta basınçla (P ≈ 20-50 bar) bağımsız verilir"
-            ]
-          },
-          {
-            "type": "list",
-            "items": [
-              "**Şerbet Basıncı (P_g)** — 350 – 500 bar — 400 – 600 bar — 20 – 70 bar"
-            ]
-          },
-          {
-            "type": "list",
-            "items": [
-              "**Hava Basıncı (P_a)** — Yok — 6 – 12 bar (Q_a ≈ 6-12 m³/dk) — 6 – 12 bar (Q_a ≈ 8-15 m³/dk)"
-            ]
-          },
-          {
-            "type": "list",
-            "items": [
-              "**Su Jeti Basıncı (P_w)** — Yok — Yok — 400 – 600 bar"
-            ]
-          },
-          {
-            "type": "list",
-            "items": [
-              "**Nozul Çapları (d_n)** — 1.8 – 3.0 mm (1-2 adet) — 2.0 – 4.0 mm (1-2 adet grout) + 1-2 mm dairesel hava aralığı — Su: 1.8 – 2.5 mm; Grout: 4.0 – 8.0 mm"
-            ]
-          },
-          {
-            "type": "list",
-            "items": [
-              "**Tipik Kolon Çapı (D)** — **0.6 – 1.0 m** — **1.0 – 1.8 m** — **1.5 – 3.0+ m**"
-            ]
-          },
-          {
-            "type": "list",
-            "items": [
-              "**Zemin Deplasmanı / Değişimi** — Kısmi zemin değişimi (%30-50 passa, %50-70 yerinde karışım) — Orta zemin değişimi (%50-70 passa, %30-50 karışım) — Yüksek zemin değişimi (%70-90 zemin dışarı atılır - substitution)"
-            ]
-          },
-          {
-            "type": "paragraph",
-            "content": "**5.1. Koaksiyel Hava Zarfının (Air Shroud) Fiziği ve Erozyon Yarıçapına Etkisi** JG2 ve JG3 sistemlerinde yüksek hızlı sıvı jetinin çevresine eşmerkezli dairesel bir yarıkla (annular ring) yüksek debili basınçlı hava verilir."
-          },
-          {
-            "type": "list",
-            "items": [
-              "[ BASINÇLI HAVA ZARFI (P_a = 8-12 bar) ]",
-              "NOZUL ÇIKIŞI → → SIVI JETİ (v = 250 m/s) → ZEMİN EROZYONU",
-              "[ BASINÇLI HAVA ZARFI (P_a = 8-12 bar) ]"
-            ]
-          },
-          {
-            "type": "paragraph",
-            "content": "**Hava Zarfının İki Temel Fiziksel Etkisi:**"
-          },
-          {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Yoğunluk Değişimi ve Sürtünme Kayıplarının Bastırılması:**"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "Sıvı jeti su veya çamur dolu bir kuyu içinde ilerlerken çevre akışkanın yoğunluğu ρ_çevre ≈ 1000 - 1400 kg/m³'tür. Hava zarfı enjekte edildiğinde jetin hemen etrafındaki sınır tabaka yoğunluğu hava-gaz karışımına dönüşür (ρ_sınır ≈ 10 - 50 kg/m³). Momentum transfer denklemi uyarınca:"
+            type: "paragraph",
+            content: "Sıvı jeti su veya çamur dolu bir kuyu içinde ilerlerken çevre akışkanın yoğunluğu ρ_çevre ≈ 1000 - 1400 kg/m³'tür. Hava zarfı enjekte edildiğinde jetin hemen etrafındaki sınır tabaka yoğunluğu hava-gaz karışımına dönüşür (ρ_sınır ≈ 10 - 50 kg/m³). Momentum transfer denklemi uyarınca:"
           },
           {
-            "type": "paragraph",
-            "content": "dM / dx = -2π · R · τ_wall ∝ -ρ_sınır · v²"
+            type: "paragraph",
+            content: "dM / dx = -2π · R · τ_wall ∝ -ρ_sınır · v²"
           },
           {
-            "type": "paragraph",
-            "content": "Sınır tabaka yoğunluğu 50 kat düştüğü için jetin momentum sönümlenmesi (momentum dissipation) dramatik biçimde azalır. Jetin kinetik enerjisini koruduğu etkin çekirdek uzunluğu 4-5 katına çıkar."
+            type: "paragraph",
+            content: "Sınır tabaka yoğunluğu 50 kat düştüğü için jetin momentum sönümlenmesi (momentum dissipation) dramatik biçimde azalır. Jetin kinetik enerjisini koruduğu etkin çekirdek uzunluğu 4-5 katına çıkar."
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Hava Asansörü (Air-Lift) Etkisi ve Kuyu İçi Hidrostatik Karşı Basıncın Azaltılması:**"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "Basınçlı hava kabarcıkları kuyu annulusunda yukarı doğru hareket ederken kuyu içi akışkan yoğunluğunu düşürür (ρ_efektif ≈ 600 - 900 kg/m³). Bu durum kuyu tabanındaki hidrostatik karşı basıncı düşürerek nozuldaki net diferansiyel basıncı (Δ P) ve deşarj hızını (v) artırır, aynı zamanda pasa deşarjını kolaylaştırır."
+            type: "paragraph",
+            content: "Basınçlı hava kabarcıkları kuyu annulusunda yukarı doğru hareket ederken kuyu içi akışkan yoğunluğunu düşürür (ρ_efektif ≈ 600 - 900 kg/m³). Bu durum kuyu tabanındaki hidrostatik karşı basıncı düşürerek nozuldaki net diferansiyel basıncı (Δ P) ve deşarj hızını (v) artırır, aynı zamanda pasa deşarjını kolaylaştırır."
           },
           {
-            "type": "paragraph",
-            "content": "**5.2. Zemin Tipi / Dane Dağılımına Göre Sistem Seçim Matrisi**"
+            type: "paragraph",
+            content: "**5.6. Zemin Tipi / Dane Dağılımına Göre Sistem Seçim Matrisi**"
           },
           {
-            "type": "list",
-            "items": [
-              "Zemin Tipi — Dane Çapı / Kohezyon — Önerilen Sistem — Çap Beklentisi (D) — Açıklama ve Mekanizma"
+            type: "list",
+            items: [
+              "**Temiz Çakıl / İri Kum** — Dane Çapı / Kohezyon: d_50 > 2 mm, U_c > 5 | Önerilen Sistem: **JG1 veya JG2** | Çap Beklentisi (D): JG1: 1.0–1.2 m / JG2: 1.6–2.2 m | Açıklama ve Mekanizma: Yüksek permeabilite, parçalanma kolay, enjeksiyon zemin gözeneklerine nüfuz eder. Aşırı grout kaçağına dikkat edilmelidir.",
+              "**İnce Kum / Siltli Kum** — Dane Çapı / Kohezyon: 0.075 mm < d_50 ≤ 0.5 mm | Önerilen Sistem: **JG1 veya JG2** | Çap Beklentisi (D): JG1: 0.8–1.0 m / JG2: 1.3–1.8 m | Açıklama ve Mekanizma: Standart uygulama alanı. İdeal erozyon verimi, mükemmel soilcrete homojenliği.",
+              "**İnorganik Silt / Siltli Kil** — Dane Çapı / Kohezyon: PI < 12, c_u = 25-50 kPa | Önerilen Sistem: **JG2 veya JG3** | Çap Beklentisi (D): JG2: 1.0–1.4 m / JG3: 1.8–2.4 m | Açıklama ve Mekanizma: Parçalanma eşiği yüksek. JG1 yetersiz kalır. JG2 hava zarfı veya JG3 su jeti ile kesme zorunludur.",
+              "**Sert / Aşırı Konsolide Kil** — Dane Çapı / Kohezyon: PI > 25, c_u > 100 kPa | Önerilen Sistem: **JG3 (Zorunlu)** | Çap Beklentisi (D): JG3: 1.4–2.0 m | Açıklama ve Mekanizma: Zemin parçalanıp dışarı atılmalıdır (tam zemin değişimi). Aksi halde şerbet kili erozyona uğratamaz, gövdede killi cepler (clay balls) kalır.",
+              "**Organik Zemin / Turba** — Dane Çapı / Kohezyon: w > %100, Organik Madde > %10 | Önerilen Sistem: **JG3** | Çap Beklentisi (D): Değişken (Ön Deneme Zorunlu) | Açıklama ve Mekanizma: Çimento hidratasyonunu bozan hümik asitler içerir; zemin jetle tamamen dışarı atılmalı, saf soilcrete kolon oluşturulmalıdır. W/C düşük tutulmalı ve çimento dozajı artırılmalıdır."
             ]
           },
           {
-            "type": "list",
-            "items": [
-              "**Temiz Çakıl / İri Kum** — d_50 > 2 mm, U_c > 5 — **JG1 veya JG2** — JG1: 1.0–1.2 m<br>JG2: 1.6–2.2 m — Yüksek permeabilite, parçalanma kolay, enjeksiyon zemin gözeneklerine nüfuz eder. Aşırı grout kaçağına dikkat edilmelidir."
-            ]
+            type: "paragraph",
+            content: "**5.7. ÇİMENTO ŞERBETİ REOLOJİSİ VE KARIŞIM TASARIMI**"
           },
           {
-            "type": "list",
-            "items": [
-              "**İnce Kum / Siltli Kum** — 0.075 mm < d_50 ≤ 0.5 mm — **JG1 veya JG2** — JG1: 0.8–1.0 m<br>JG2: 1.3–1.8 m — Standart uygulama alanı. İdeal erozyon verimi, mükemmel soilcrete homojenliği."
-            ]
+            type: "paragraph",
+            content: "**5.8. Su/Çimento (W/C) Oranı ve Reolojik Karakterizasyon** Jet grouting şerbeti, Newton tipi olmayan (Non-Newtonian), akma gerilmeli **Bingham Plastik** akışkanı davranışı sergiler:"
           },
           {
-            "type": "list",
-            "items": [
-              "**İnorganik Silt / Siltli Kil** — PI < 12, c_u = 25-50 kPa — **JG2 veya JG3** — JG2: 1.0–1.4 m<br>JG3: 1.8–2.4 m — Parçalanma eşiği yüksek. JG1 yetersiz kalır. JG2 hava zarfı veya JG3 su jeti ile kesme zorunludur."
-            ]
+            type: "paragraph",
+            content: "τ = τ_y + μ_p · dotγ"
           },
           {
-            "type": "list",
-            "items": [
-              "**Sert / Aşırı Konsolide Kil** — PI > 25, c_u > 100 kPa — **JG3 (Zorunlu)** — JG3: 1.4–2.0 m — Zemin parçalanıp dışarı atılmalıdır (tam zemin değişimi). Aksi halde şerbet kili erozyona uğratamaz, gövdede killi cepler (clay balls) kalır."
-            ]
+            type: "paragraph",
+            content: "Burada:"
           },
           {
-            "type": "list",
-            "items": [
-              "**Organik Zemin / Turba** — w > %100, Organik Madde > %10 — **JG3** — Değişken (Ön Deneme Zorunlu) — Çimento hidratasyonunu bozan hümik asitler içerir; zemin jetle tamamen dışarı atılmalı, saf soilcrete kolon oluşturulmalıdır. W/C düşük tutulmalı ve çimento dozajı artırılmalıdır."
-            ]
-          },
-          {
-            "type": "paragraph",
-            "content": "**ÇİMENTO ŞERBETİ REOLOJİSİ VE KARIŞIM TASARIMI**"
-          },
-          {
-            "type": "paragraph",
-            "content": "**5.1. Su/Çimento (W/C) Oranı ve Reolojik Karakterizasyon** Jet grouting şerbeti, Newton tipi olmayan (Non-Newtonian), akma gerilmeli **Bingham Plastik** akışkanı davranışı sergiler:"
-          },
-          {
-            "type": "paragraph",
-            "content": "τ = τ_y + μ_p · dotγ"
-          },
-          {
-            "type": "paragraph",
-            "content": "Burada:"
-          },
-          {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "τ: Kayma gerilmesi (Pa).",
               "τ_y: Akma eşiği (Yield stress, Pa).",
               "μ_p: Plastik viskozite (Pa·sn).",
@@ -2315,69 +2204,69 @@ export const knowledgeArticles: KnowledgeArticle[] = [
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**W/C Oranı Karşılaştırma Matrisi:**"
+            type: "paragraph",
+            content: "**W/C Oranı Karşılaştırma Matrisi:**"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**W/C = 0.6 – 0.8:** Yüksek mukavemet (UCS > 20 MPa), ancak aşırı viskozite (μ_p > 0.08 Pa·sn, Marsh süresi > 55 sn). Yüksek basınç pompalarında aşırı kavitasyon, vana/nozul aşınması ve kuyu içi tıkanma riski yüksektir.",
               "**W/C = 0.8 – 1.0 (Optimal Saha Aralığı):** Dengeli viskozite (Marsh süresi 32 - 42 sn), mükemmel penetrasyon ve erozyon enerjisi, homojen soilcrete matrisi.",
               "**W/C = 1.1 – 1.3:** Çok düşük viskozite, yüksek debi kolaylığı, ancak aşırı terleme (bleeding > %8), çökeltilme, düşük yoğunluk (ρ < 1550 kg/m³) ve dramatik mukavemet kaybı."
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**5.2. Katkı Maddeleri ve Kimyasal Optimizasyon**"
+            type: "paragraph",
+            content: "**5.9. Katkı Maddeleri ve Kimyasal Optimizasyon**"
           },
           {
-            "type": "paragraph",
-            "content": "**Tiksotropik Sodyum Bentonit Katkısı (%1.0 – %2.5 Çimento Ağırlığınca):**"
+            type: "paragraph",
+            content: "**Tiksotropik Sodyum Bentonit Katkısı (%1.0 – %2.5 Çimento Ağırlığınca):**"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Amacı:** Çimento tanelerinin süspansiyon içinde kalmasını sağlamak, su kusmasını (bleeding) <%2 seviyesine çekmek.",
               "**Etki Mekanizması:** Bentonit levhacıkları (montmorillonit) \"kart evi\" (card-house) elektrostatik yapısı kurarak durağan halde yüksek τ_y oluşturur; jet delgisi sırasında uygulanan yüksek dotγ altında viskozite hızla düşer (shear-thinning / psödoplastik etki).",
               "**Mukavemet Etkisi:** Aşırı bentonit (>%3) çimento jellerinin (C-S-H) gelişimini engelleyerek 28 günlük UCS'yi %20–30 düşürebilir. Bu nedenle optimum oran %1.0–1.5'tir."
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**Polikarboksilat Eter (PCE) Esaslı Süperakışkanlaştırıcılar (%0.3 – %0.8):**"
+            type: "paragraph",
+            content: "**Polikarboksilat Eter (PCE) Esaslı Süperakışkanlaştırıcılar (%0.3 – %0.8):**"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Amacı:** Düşük W/C oranlarında bile Marsh hunisi akışkanlığını 30 - 35 sn aralığında tutmak.",
               "**Etki Mekanizması:** Çimento taneleri üzerinde sterik engelleme (steric hindrance) oluşturarak flokülasyonu önler, serbest su moleküllerini açığa çıkarır. Pompa hatlarındaki hidrolik sürtünme kaybını %35 azaltır."
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**Priz Hızlandırıcılar ve Kararlılık Katkıları (Sodyum Silikat / Su Camı, Kalsiyum Klorür):**"
+            type: "paragraph",
+            content: "**Priz Hızlandırıcılar ve Kararlılık Katkıları (Sodyum Silikat / Su Camı, Kalsiyum Klorür):**"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "Yeraltı suyunun akıntılı olduğu (seepage velocity > 10^(-3) m/sn) durumlarda şerbetin yıkanmasını önlemek amacıyla tünel tipi koaksiyel sistemlerde kullanılır. Erken priz (1-5 dakika) sağlar; ancak nihai 28 günlük mukavemeti %15–20 oranında düşürebilir."
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**5.3. Soilcrete Serbest Basınç Mukavemeti (UCS - q_u) Tahmin Modelleri** Soilcrete serbest basınç mukavemeti zeminin dane dağılımına, doğal su içeriğine, organik madde oranına ve enjekte edilen çimento faktörüne (C_F, kg çimento / m³ soilcrete) bağlıdır:"
+            type: "paragraph",
+            content: "**5.10. Soilcrete Serbest Basınç Mukavemeti (UCS - q_u) Tahmin Modelleri** Soilcrete serbest basınç mukavemeti zeminin dane dağılımına, doğal su içeriğine, organik madde oranına ve enjekte edilen çimento faktörüne (C_F, kg çimento / m³ soilcrete) bağlıdır:"
           },
           {
-            "type": "paragraph",
-            "content": "q_u = A · (C_F / 100)^B · (1 / w_n)^C"
+            type: "paragraph",
+            content: "q_u = A · (C_F / 100)^B · (1 / w_n)^C"
           },
           {
-            "type": "paragraph",
-            "content": "**Zemin Türüne Göre 28 Günlük UCS (q_u) Değerleri:**"
+            type: "paragraph",
+            content: "**Zemin Türüne Göre 28 Günlük UCS (q_u) Değerleri:**"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Çakıl ve İri Kum:** q_u = 12 - 25 MPa (E_s ≈ 1000 - 1500 · q_u)",
               "**İnce Kum ve Siltli Kum:** q_u = 7 - 15 MPa (E_s ≈ 800 - 1200 · q_u)",
               "**İnorganik Düşük Plastisiteli Kil/Silt:** q_u = 2 - 5 MPa (E_s ≈ 400 - 700 · q_u)",
@@ -2385,59 +2274,47 @@ export const knowledgeArticles: KnowledgeArticle[] = [
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**KUYU AĞZI PASA (SPOIL) ÇIKIŞI VE HİDRO-FRAKTÜR RİSK YÖNETİMİ**"
+            type: "paragraph",
+            content: "**5.11. KUYU AĞZI PASA (SPOIL) ÇIKIŞI VE HİDRO-FRAKTÜR RİSK YÖNETİMİ**"
           },
           {
-            "type": "paragraph",
-            "content": "**5.1. Kuyu İçi Hidrolik Süreklilik ve Annulus Dinamiği** Jet grouting imalatında kuyuya giren akışkan hacmi (Q_grout + Q_hava + Q_su), parçalanan zemin hacmiyle birleşerek kuyu ağzından dışarı atılmalıdır."
+            type: "paragraph",
+            content: "**5.12. Kuyu İçi Hidrolik Süreklilik ve Annulus Dinamiği** Jet grouting imalatında kuyuya giren akışkan hacmi (Q_grout + Q_hava + Q_su), parçalanan zemin hacmiyle birleşerek kuyu ağzından dışarı atılmalıdır."
           },
           {
-            "type": "list",
-            "items": [
-              "[ KUYU AĞZI PASA ÇIKIŞI (SPOIL) ]",
-              "ANNULUS",
-              "ZEMİN — TIJ GÖVDESİ — ZEMİN",
-              "<- Annulus Akışı:",
-              "P_annulus < sigma_h0 + u_0 + sigma_t",
-              "[MONİTÖR]",
-              "--- → ---+ <- 400-600 bar JET BÖLGESİ"
-            ]
+            type: "paragraph",
+            content: "**Annulus Basınç Dengesi:** Kuyu içerisindeki akışkan basıncı (P_annulus):"
           },
           {
-            "type": "paragraph",
-            "content": "**Annulus Basınç Dengesi:** Kuyu içerisindeki akışkan basıncı (P_annulus):"
+            type: "paragraph",
+            content: "P_annulus(z) = ∫_0^z ρ_spoil(z) · g · dz + Δ P_sürtünme(z)"
           },
           {
-            "type": "paragraph",
-            "content": "P_annulus(z) = ∫_0^z ρ_spoil(z) · g · dz + Δ P_sürtünme(z)"
+            type: "paragraph",
+            content: "Burada Δ P_sürtünme, pasa akışkanının kuyu cidarı ile tij dış çapı arasındaki dar dairesel aralıktan (annulus) yukarı çıkarken maruz kaldığı hidrolik sürtünme kaybıdır."
           },
           {
-            "type": "paragraph",
-            "content": "Burada Δ P_sürtünme, pasa akışkanının kuyu cidarı ile tij dış çapı arasındaki dar dairesel aralıktan (annulus) yukarı çıkarken maruz kaldığı hidrolik sürtünme kaybıdır."
+            type: "paragraph",
+            content: "**5.13. Hidro-Fraktür (Hidrolik Yarılma) ve Zemin Kabarması (Heave) Mekaniği** Eğer kuyu cidarında yerel bir göçme, çakıl sıkışması veya aşırı viskoz pasa birikimi nedeniyle annulus tıkanırsa (Q_spoil → 0):"
           },
           {
-            "type": "paragraph",
-            "content": "**5.2. Hidro-Fraktür (Hidrolik Yarılma) ve Zemin Kabarması (Heave) Mekaniği** Eğer kuyu cidarında yerel bir göçme, çakıl sıkışması veya aşırı viskoz pasa birikimi nedeniyle annulus tıkanırsa (Q_spoil → 0):"
-          },
-          {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Basınç Artışı:** Nozuldan basılmaya devam eden akışkan sıkıştırılamadığı için kuyu içi hidrostatik basıncı saniyeler içinde P_annulus → P_pompa (400 - 500 bar) mertebesine tırmanır.",
               "**Kritik Yarılma Eşiği:** Zemin içi hidrolik yarılma kriteri aşılır:"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "P_annulus ≥ σ_h0 + u_0 + σ_t"
+            type: "paragraph",
+            content: "P_annulus ≥ σ_h0 + u_0 + σ_t"
           },
           {
-            "type": "paragraph",
-            "content": "(Burada σ_h0 = K_0 · σ'_v0 efektif yanal zemin gerilmesi, u_0 yeraltı suyu basıncı, σ_t zeminin çekme dayanımıdır)."
+            type: "paragraph",
+            content: "(Burada σ_h0 = K_0 · σ'_v0 efektif yanal zemin gerilmesi, u_0 yeraltı suyu basıncı, σ_t zeminin çekme dayanımıdır)."
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Hidrolik Yarılma ve Deformasyon:** Basınçlı şerbet zemin tabakaları boyunca çatlaklar açarak ilerler (hydraulic fracturing). Bu durum:",
               "Zemin yüzeyinde kontrolsüz kabarmalara (**heave** > 50-100 mm),",
               "Komşu yapı temellerinde diferansiyel oturma/kalkma ve yapısal çatlaklara,",
@@ -2445,140 +2322,98 @@ export const knowledgeArticles: KnowledgeArticle[] = [
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**5.3. Spoil Kesilmesi Anında Acil Şantiye Aksiyon Protokolü (SOP)**"
+            type: "paragraph",
+            content: "**5.14. Spoil Kesilmesi Anında Acil Şantiye Aksiyon Protokolü (SOP)**"
           },
           {
-            "type": "list",
-            "items": [
-              "[ Pasa (Spoil) Çıkışı Azaldı veya Kesildi ]",
-              "[ ADIM 1: REAKSİYON SÜRESİ < 3 SANİYE ]",
-              "→ Yüksek basınç pompasını anında STOP durumuna getir (Debiyi ve basıncı sıfırla).",
-              "→ Basınçlı hava hattını kes (JG2/JG3).",
-              "[ ADIM 2: MONİTÖRÜ KORUMA VE TIKANIKLIĞI GEÇME ]",
-              "→ Tij rotasyonunu artır (40-60 RPM).",
-              "→ Tiji derhal 0.5 - 1.0 metre YUKARI çek (Nozulun kuyu tabanında çimentolaşmasını önle).",
-              "[ ADIM 3: DÜŞÜK BASINÇLI HİDROLİK YIKAMA ]",
-              "→ Düşük basınçlı su/şerbet pompasıyla (10-20 bar) kuyu içi ters veya düz yıkama yap.",
-              "→ Annulus hattında pasa akışının başladığını gözle teyit et.",
-              "[ ADIM 4: YENİDEN BAŞLATMA ]",
-              "→ Pasa çıkışı tam olarak sağlanmadan ASLA 400-600 bar yüksek basınca geçme.",
-              "→ İmalata kalınan derinliğin en az 0.5 metre altından örtüşmeli (overlap) olarak devam et."
-            ]
+            type: "paragraph",
+            content: "**5.15. ŞAŞIRTMALI (ARDIŞIK / DAMA TAHTASI) İMALAT SEKANSI**"
           },
           {
-            "type": "paragraph",
-            "content": "**ŞAŞIRTMALI (ARDIŞIK / DAMA TAHTASI) İMALAT SEKANSI**"
+            type: "paragraph",
+            content: "**5.16. Dama Tahtası (Primary - Secondary) Deseni Kuralları** Jet grouting ile kesişen kolonlardan oluşan bir istinat perdesi (secant jet grout wall) veya masif zemin iyileştirme ızgarası yapılırken ardışık yan yana kolon delgisi yapılması kesinlikle yasaktır."
           },
           {
-            "type": "paragraph",
-            "content": "**5.1. Dama Tahtası (Primary - Secondary) Deseni Kuralları** Jet grouting ile kesişen kolonlardan oluşan bir istinat perdesi (secant jet grout wall) veya masif zemin iyileştirme ızgarası yapılırken ardışık yan yana kolon delgisi yapılması kesinlikle yasaktır."
+            type: "paragraph",
+            content: "**İmalat Sekansı Kuralları:**"
           },
           {
-            "type": "list",
-            "items": [
-              "İMALAT ADIMI 1: BİRİNCİL (PRİMER) KOLONLAR",
-              "(O) [ ] (O) [ ] (O)",
-              "P1 P2 P3",
-              "İMALAT ADIMI 2: PRİZ SÜRESİ (24 - 48 SAAT BEKLEME)",
-              "P1, P2, P3 Prizini Tamamlar (UCS > 1.5 - 2.5 MPa)",
-              "İMALAT ADIMI 3: İKİNCİL (SEKONDER) KOLONLAR",
-              "(O) ===== (X) ===== (O) ===== (X) ===== (O)",
-              "P1 S1 P2 S2 P3"
-            ]
-          },
-          {
-            "type": "paragraph",
-            "content": "**İmalat Sekansı Kuralları:**"
-          },
-          {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Minimum Mesafe Kuralı:** Eşzamanlı veya ardışık imalatta aktif delgi yapılan nokta ile taze dökülmüş kolon arasında merkezden merkeze en az **2.5 × D** (veya en az 2 boş kolon aralığı) bırakılmalıdır.",
               "**Minimum Kürleşme Süresi:** Birincil (primer) kolon tamamlandıktan sonra, hemen bitişiğindeki kesişen ikincil (sekonder) kolon delgisine başlamak için minimum **24 – 36 saat** (düşük sıcaklıklarda veya geciktiricili karışımlarda **48 saat**) beklenmelidir."
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**5.2. Termo-Mekanik ve Geoteknik Risklerin Önlenmesi**"
+            type: "paragraph",
+            content: "**5.17. Termo-Mekanik ve Geoteknik Risklerin Önlenmesi**"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Taze Kolon Gövdesinin Hidrolik Olarak Yutulması (Washing Out):**"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "Taze enjekte edilmiş bir kolon henüz ilk prizini (initial set) almamışken (≤ 12 saat) yanına yapılan 500 bar'lık bir jet, komşu kolonun henüz sertleşmemiş taze gövdesini hidrodinamik olarak keser, aşındırır ve pasa olarak kuyu dışına atar. Bu durum perdede süreksizlik ve devasa pencerelere (windows/voids) yol açar."
+            type: "paragraph",
+            content: "Taze enjekte edilmiş bir kolon henüz ilk prizini (initial set) almamışken (≤ 12 saat) yanına yapılan 500 bar'lık bir jet, komşu kolonun henüz sertleşmemiş taze gövdesini hidrodinamik olarak keser, aşındırır ve pasa olarak kuyu dışına atar. Bu durum perdede süreksizlik ve devasa pencerelere (windows/voids) yol açar."
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Termal Hidratasyon Isısı ve Termal Gerilmeler:**"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "Çimento hidratasyonu kuvvetli bir ekzotermik reaksiyondur (500 kJ/kg çimento). Büyük çaplı kolonların (D ≥ 1.5 m) merkez çekirdeğinde sıcaklık 55 - 65^°C'ye ulaşabilir:"
+            type: "paragraph",
+            content: "Çimento hidratasyonu kuvvetli bir ekzotermik reaksiyondur (500 kJ/kg çimento). Büyük çaplı kolonların (D ≥ 1.5 m) merkez çekirdeğinde sıcaklık 55 - 65^°C'ye ulaşabilir:"
           },
           {
-            "type": "paragraph",
-            "content": "Δ T = C_F · Q_h / (ρ_sc · c_p)"
+            type: "paragraph",
+            content: "Δ T = C_F · Q_h / (ρ_sc · c_p)"
           },
           {
-            "type": "paragraph",
-            "content": "Yan yana taze kolonlar yapıldığında aşırı ısı birikimi termal çatlaklara (thermal cracking) ve matris gevşemesine sebep olur."
+            type: "paragraph",
+            content: "Yan yana taze kolonlar yapıldığında aşırı ısı birikimi termal çatlaklara (thermal cracking) ve matris gevşemesine sebep olur."
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Zemin Gerilme Boşalması (Stress Relief) ve Sıvılaşma Benzeri Davranış:**"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "Geniş bir alanda tüm kolonların aynı anda sıvı fazda olması, zemin kütlesinin efektif gerilmesini (σ' → 0) sıfırlar ve şantiye genelinde global stabilite kayıplarına yol açar."
+            type: "paragraph",
+            content: "Geniş bir alanda tüm kolonların aynı anda sıvı fazda olması, zemin kütlesinin efektif gerilmesini (σ' → 0) sıfırlar ve şantiye genelinde global stabilite kayıplarına yol açar."
           }
         ]
       },
       {
-        "id": "derin-zemin-karistirma-dsm-mekanik-baglayici",
-        "title": "6. Derin Zemin Karıştırma (Deep Soil Mixing - DSM): EN 14679 Normları, Karıştırma Enerjisi ve Hücresel Izgara Tasarımı",
-        "blocks": [
+        id: "derin-zemin-karistirma-dsm-mekanik-baglayici",
+        title: "6. Derin Zemin Karıştırma (Deep Soil Mixing - DSM): EN 14679 Normları, Karıştırma Enerjisi ve Hücresel Izgara Tasarımı",
+        blocks: [
           {
-            "type": "paragraph",
-            "content": "**6.1 Normatif Çerçeve ve Geometrik Sınıflandırma** DSM uygulamaları uluslararası alanda iki temel ana şartnameye göre tasarlanır ve yürütülür:"
+            type: "paragraph",
+            content: "**6.1. Normatif Çerçeve ve Geometrik Sınıflandırma** DSM uygulamaları uluslararası alanda iki temel ana şartnameye göre tasarlanır ve yürütülür:"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**EN 14679:** Execution of special geotechnical works - Deep mixing (Avrupa Standardı)",
               "**FHWA-HRT-13-046:** Design and Construction of Field Mixed Soils - Deep Soil Mixing (Federal Highway Administration Araştırma Raporu)"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "Sistem kinematiği; karıştırma milinin konfigürasyonu, kesici-kanat geometrisi ve bağlayıcı besleme yönü ile sınıflandırılır:"
+            type: "paragraph",
+            content: "Sistem kinematiği; karıştırma milinin konfigürasyonu, kesici-kanat geometrisi ve bağlayıcı besleme yönü ile sınıflandırılır:"
           },
           {
-            "type": "list",
-            "items": [
-              "[DSM KULE TİPLERİ]",
-              "[TEK MİLLİ (SINGLE SHAFT)] [ÇİFT / ÇOK MİLLİ (TWIN / MULTI-SHAFT)]",
-              "- Çap: D = 600 - 1500 mm - Çap: D = 2 x (600 - 1000 mm)",
-              "- Yüksek derinlik erişimi (z > 25 m) - Zıt yönlü dönüş (Counter-rotation)",
-              "- Tekil kolon & Kesişen kazık - Sıvılaşma kafesleri ve kesişen paneller",
-              "- Düşük tork reaksiyon dengesi - Sıfır net tork reaksiyonu (Mast stabilitesi)"
-            ]
+            type: "paragraph",
+            content: "**6.2. Kinematik Yapı: Tek Milli vs Çift Milli Kuleler ve Kesici Takımlar**"
           },
           {
-            "type": "paragraph",
-            "content": "**6.2 Kinematik Yapı: Tek Milli vs Çift Milli Kuleler ve Kesici Takımlar**"
-          },
-          {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Tek Milli (Single Shaft) Kuleler:**",
               "Tek bir rijit kelly bar veya kuyu içi hidrolik motor vasıtasıyla tahrik edilir.",
               "Düşeylik sapması kontrolü: L ≤ 20 m derinliklerde %1.0, L > 20 m derinliklerde %1.5 tolerans sınırı.",
@@ -2590,12 +2425,12 @@ export const knowledgeArticles: KnowledgeArticle[] = [
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**6.3 Delme-Karıştırma Güç Dinamiği: Tork, Baskı Kuvveti ve Dönme Hızı** DSM operasyonunda zeminin doğal makaslama dayanımının aşılması ve şerbetle parçalanması için hidrolik güç kafası (rotary head) şu parametre sınırlarında çalışır:"
+            type: "paragraph",
+            content: "**6.3. Delme-Karıştırma Güç Dinamiği: Tork, Baskı Kuvveti ve Dönme Hızı** DSM operasyonunda zeminin doğal makaslama dayanımının aşılması ve şerbetle parçalanması için hidrolik güç kafası (rotary head) şu parametre sınırlarında çalışır:"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Tork Kapasitesi (T):** 80 kNm - 250 kNm (Ağır killi ve sıkı kumlu tabakalar için asgari 140 kNm önerilir).",
               "**Baskı Kuvveti (Crowd Force - F_c):** 150 kN - 450 kN (Aşağı yönlü hidrolik baskı veya serbest ağırlık zincir mekanizması).",
               "**Dönme Hızı (N):** 15 - 50 RPM (Penetrasyonda tipik 20–30 RPM, geri çekmede homojenizasyon için 35–45 RPM).",
@@ -2605,32 +2440,32 @@ export const knowledgeArticles: KnowledgeArticle[] = [
             ]
           },
           {
-            "type": "paragraph",
-            "content": "Mekanik kesme anındaki anlık hidrolik güç (P_h):"
+            type: "paragraph",
+            content: "Mekanik kesme anındaki anlık hidrolik güç (P_h):"
           },
           {
-            "type": "paragraph",
-            "content": "P_h = 2 π · N · T / (60 · 1000) [kW]"
+            type: "paragraph",
+            content: "P_h = 2 π · N · T / (60 · 1000) [kW]"
           },
           {
-            "type": "paragraph",
-            "content": "Örnek: N = 30 RPM ve T = 180 kNm için kafa gücü P_h ≈ 565.5 kW olmalıdır."
+            type: "paragraph",
+            content: "Örnek: N = 30 RPM ve T = 180 kNm için kafa gücü P_h ≈ 565.5 kW olmalıdır."
           },
           {
-            "type": "paragraph",
-            "content": "**6.4 Karıştırma Enerjisi ve Bıçak Dönüş Sayısı (BRN)** Zeminin tane boyut dağılımı ile çimento moleküllerinin temas yüzeyini belirleyen en kritik geoteknik indeks **Bıçak Dönüş Sayısı (BRN / Blade Rotation Number)**’dır. EN 14679 ve FHWA modellerine göre formülasyon:"
+            type: "paragraph",
+            content: "**6.4. Karıştırma Enerjisi ve Bıçak Dönüş Sayısı (BRN)** Zeminin tane boyut dağılımı ile çimento moleküllerinin temas yüzeyini belirleyen en kritik geoteknik indeks **Bıçak Dönüş Sayısı (BRN / Blade Rotation Number)**’dır. EN 14679 ve FHWA modellerine göre formülasyon:"
           },
           {
-            "type": "paragraph",
-            "content": "BRN = ∑_i=1^(k) M_i · (N_d / v_d + N_w / v_w)"
+            type: "paragraph",
+            content: "BRN = ∑_i=1^(k) M_i · (N_d / v_d + N_w / v_w)"
           },
           {
-            "type": "paragraph",
-            "content": "Burada:"
+            type: "paragraph",
+            content: "Burada:"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "M_i: Karıştırma mili üzerindeki kesici bıçakların toplam sayısı (tipik olarak 2 ila 6 çift bıçak).",
               "N_d: Penetrasyon (aşağı iniş) esnasındaki dönme hızı (devir/dak).",
               "v_d: Penetrasyon ilerleme hızı (m/dak).",
@@ -2639,74 +2474,62 @@ export const knowledgeArticles: KnowledgeArticle[] = [
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**Kalite ve Homojenlik Kriteri:**"
+            type: "paragraph",
+            content: "**Kalite ve Homojenlik Kriteri:**"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Kohezyonsuz zeminlerde (Kum, Siltli Kum):** BRN ≥ 250 - 350 bıçak/metre",
               "**Kohezyonlu zeminlerde (Yumuşak-Orta Plastik Kil):** BRN ≥ 400 - 600 bıçak/metre",
               "BRN < 200 olan uygulamalarda çimento cepleri (cement pockets) ve karışmamış kil yumruları (clay lumps) oluşarak zemin-çimento kolonunun homojenliği bozulur ve varyasyon katsayısı (COV) %40’ın üzerine çıkar."
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**6.5 Karıştırma Homojenliği İndeksi (I_m) ve Spesifik Karıştırma Enerjisi (E_m)** Spesifik Karıştırma Enerjisi (E_m), zemin hacmi başına harcanan mekanik enerjidir:"
+            type: "paragraph",
+            content: "**6.5. Karıştırma Homojenliği İndeksi (I_m) ve Spesifik Karıştırma Enerjisi (E_m)** Spesifik Karıştırma Enerjisi (E_m), zemin hacmi başına harcanan mekanik enerjidir:"
           },
           {
-            "type": "paragraph",
-            "content": "E_m = (∫_0^(t) (2 π N(t) · T(t) + F_c(t) · v(t)) dt) / V_kolon [MJ / m³]"
+            type: "paragraph",
+            content: "E_m = (∫_0^(t) (2 π N(t) · T(t) + F_c(t) · v(t)) dt) / V_kolon [MJ / m³]"
           },
           {
-            "type": "paragraph",
-            "content": "Karıştırma Homojenliği İndeksi (I_m) ise mikro-düzeyde kesme gerilmesi hızına (dotγ) bağlıdır:"
+            type: "paragraph",
+            content: "Karıştırma Homojenliği İndeksi (I_m) ise mikro-düzeyde kesme gerilmesi hızına (dotγ) bağlıdır:"
           },
           {
-            "type": "paragraph",
-            "content": "dotγ = 2 π N · r_max / (Δ r_blade) [s^(-1)]"
+            type: "paragraph",
+            content: "dotγ = 2 π N · r_max / (Δ r_blade) [s^(-1)]"
           },
           {
-            "type": "paragraph",
-            "content": "Tasarım hedefi: E_m ≥ 80 - 150 MJ/m³ düzeyinde tutularak, kolon çekirdeği ile çevresi arasındaki mukavemet sapmasını asgari düzeyde tutmaktır."
+            type: "paragraph",
+            content: "Tasarım hedefi: E_m ≥ 80 - 150 MJ/m³ düzeyinde tutularak, kolon çekirdeği ile çevresi arasındaki mukavemet sapmasını asgari düzeyde tutmaktır."
           },
           {
-            "type": "paragraph",
-            "content": "**ISLAK YÖNTEM (WET MIXING) VS KURU YÖNTEM (DRY MIXING) KARŞILAŞTIRMASI**"
+            type: "paragraph",
+            content: "**6.6. ISLAK YÖNTEM (WET MIXING) VS KURU YÖNTEM (DRY MIXING) KARŞILAŞTIRMASI**"
           },
           {
-            "type": "list",
-            "items": [
-              "ISLAK YÖNTEM (WET MIXING) — KURU YÖNTEM (DRY MIXING)",
-              "- Sıvı çimento şerbeti enjeksiyonu — - Pnömatik kuru toz enjeksiyonu",
-              "- Tipik su/çimento: w/c = 0.8-1.2 — - Zemin suyu ile hidratasyon",
-              "- Basınç: p = 5 - 20 bar — - Basınç: p = 2 - 6 bar (kuru hava)",
-              "- Dayanım: qu = 1.5 - 6.0 MPa — - Dayanım: qu = 0.5 - 2.0 MPa",
-              "- YASS altı killi/kumlu zeminler — - Yüksek su muhtevalı zeminler (w>50%)",
-              "- Hacim artışı: %10 - %25 spoil — - Minimum yüzey kabarması / spoil yok"
-            ]
+            type: "paragraph",
+            content: "**6.7. Islak Yöntem (Wet Mixing): Hidrolik Şerbet ve Reoloji** Islak yöntem, yeraltı su seviyesi (YASS) altında kalan suya doygun alüvyal kum, silt ve yumuşak killi zeminlerde mutlak tercihtir."
           },
           {
-            "type": "paragraph",
-            "content": "**6.1 Islak Yöntem (Wet Mixing): Hidrolik Şerbet ve Reoloji** Islak yöntem, yeraltı su seviyesi (YASS) altında kalan suya doygun alüvyal kum, silt ve yumuşak killi zeminlerde mutlak tercihtir."
-          },
-          {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Şerbet Dinamiği ve Reolojik Akış Modeli:**"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "Çimento şerbeti Bingham Plastiği veya Herschel-Bulkley akış davranışı sergiler:"
+            type: "paragraph",
+            content: "Çimento şerbeti Bingham Plastiği veya Herschel-Bulkley akış davranışı sergiler:"
           },
           {
-            "type": "paragraph",
-            "content": "τ = τ_0 + μ_p · dotγ^n"
+            type: "paragraph",
+            content: "τ = τ_0 + μ_p · dotγ^n"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "τ_0: Eşik kayma gerilmesi (5 - 25 Pa)",
               "μ_p: Plastik viskozite (0.02 - 0.10 Pa·s)",
               "n: Akış indeksi (n ≈ 0.85 - 1.0)",
@@ -2718,94 +2541,94 @@ export const knowledgeArticles: KnowledgeArticle[] = [
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**6.2 Kuru Yöntem (Dry Mixing): Termodinamik Nem Çekme ve Konsolidasyon** Kuru yöntem (İskandinav ve Japon geleneği: Lime-Cement Columns), doğal su muhtevasının çok yüksek olduğu (w_n > %50, turba, organik silt ve aşırı yumuşak killer) durumlarda uygulanır."
+            type: "paragraph",
+            content: "**6.8. Kuru Yöntem (Dry Mixing): Termodinamik Nem Çekme ve Konsolidasyon** Kuru yöntem (İskandinav ve Japon geleneği: Lime-Cement Columns), doğal su muhtevasının çok yüksek olduğu (w_n > %50, turba, organik silt ve aşırı yumuşak killer) durumlarda uygulanır."
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Termokimyasal Nem Çekme Mekanizması:**"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "Sönmemiş kireç (CaO) ve çimento kuru basınçlı hava ile (2 - 6 bar) nozullardan zemine üflenir. Kirecin su ile reaksiyonu şiddetli ekzotermiktir:"
+            type: "paragraph",
+            content: "Sönmemiş kireç (CaO) ve çimento kuru basınçlı hava ile (2 - 6 bar) nozullardan zemine üflenir. Kirecin su ile reaksiyonu şiddetli ekzotermiktir:"
           },
           {
-            "type": "paragraph",
-            "content": "CaO + H_2O arrow Ca(OH)_2 + 65.2 kJ/mol"
+            type: "paragraph",
+            content: "CaO + H_2O arrow Ca(OH)_2 + 65.2 kJ/mol"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "1 kg CaO, yaklaşık 0.32 kg suyu doğrudan kristal yapısına bağlar.",
               "Açığa çıkan ısı (T ≈ 50 - 80^°C), gözenek suyunun bir kısmını buharlaştırarak zeminin boşluk oranını hızla düşürür.",
               "**Efektif Gerilme Artışı ve Hızlandırılmış Konsolidasyon:**"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "Su muhtevasının azalmasıyla zemin plastisite indeksi (PI) düşer, likit limit geriler. Efektif gerilme (σ' = σ - u) hızla yükselerek zeminde konsolidasyon oturmalarını aylar mertebesinden günler mertebesine çeker."
+            type: "paragraph",
+            content: "Su muhtevasının azalmasıyla zemin plastisite indeksi (PI) düşer, likit limit geriler. Efektif gerilme (σ' = σ - u) hızla yükselerek zeminde konsolidasyon oturmalarını aylar mertebesinden günler mertebesine çeker."
           },
           {
-            "type": "paragraph",
-            "content": "**6.3 Jeoteknik Karar Matrisi**"
+            type: "paragraph",
+            content: "**6.9. Jeoteknik Karar Matrisi**"
           },
           {
-            "type": "paragraph",
-            "content": "beginarray|l|c|c|c|c| hline Zemin Türü & Su Muhtevası w_n & YASS Konumu & Önerilen Yöntem & Hedef q_u (MPa) hline Gevşek Alüvyal Kum & < %25 & YASS Altı & Islak (Wet) & 2.5 - 5.0 Yumuşak Silt / Kil & %25 - %45 & YASS Altı / Üstü & Islak (Wet) & 1.5 - 3.5 Yüksek Plastisiteli Hassas Kil & %50 - %90 & YASS Doygun & Kuru (Kireç/Çimento) & 0.8 - 2.0 Organik Zemin / Turba & > %100 & Doygun & Kuru + Cüruflu Katkı & 0.4 - 1.2 hline endarray"
+            type: "paragraph",
+            content: "beginarray|l|c|c|c|c| hline Zemin Türü & Su Muhtevası w_n & YASS Konumu & Önerilen Yöntem & Hedef q_u (MPa) hline Gevşek Alüvyal Kum & < %25 & YASS Altı & Islak (Wet) & 2.5 - 5.0 Yumuşak Silt / Kil & %25 - %45 & YASS Altı / Üstü & Islak (Wet) & 1.5 - 3.5 Yüksek Plastisiteli Hassas Kil & %50 - %90 & YASS Doygun & Kuru (Kireç/Çimento) & 0.8 - 2.0 Organik Zemin / Turba & > %100 & Doygun & Kuru + Cüruflu Katkı & 0.4 - 1.2 hline endarray"
           },
           {
-            "type": "paragraph",
-            "content": "**BAĞLAYICI DOZAJI, KİMYASI VE MUKAVEMET OPTİMİZASYONU**"
+            type: "paragraph",
+            content: "**6.10. BAĞLAYICI DOZAJI, KİMYASI VE MUKAVEMET OPTİMİZASYONU**"
           },
           {
-            "type": "paragraph",
-            "content": "**6.1 Bağlayıcı Dozaj Parametreleri ve Formülasyonu** Zemin karıştırma tasarımında bağlayıcı miktarı iki farklı standart formatta ifade edilir:"
+            type: "paragraph",
+            content: "**6.11. Bağlayıcı Dozaj Parametreleri ve Formülasyonu** Zemin karıştırma tasarımında bağlayıcı miktarı iki farklı standart formatta ifade edilir:"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Zemin Kuru Ağırlığına Oranı (a_w):**"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "a_w = W_binder / W_soil,dry × 100 [%]"
+            type: "paragraph",
+            content: "a_w = W_binder / W_soil,dry × 100 [%]"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Birim Hacim Başına Çimento Miktarı (α):**"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "α = W_binder / V_soil [kg / m³]"
+            type: "paragraph",
+            content: "α = W_binder / V_soil [kg / m³]"
           },
           {
-            "type": "paragraph",
-            "content": "DSM projelerinde tipik değer aralığı: α = 150 - 350 kg/m³."
+            type: "paragraph",
+            content: "DSM projelerinde tipik değer aralığı: α = 150 - 350 kg/m³."
           },
           {
-            "type": "paragraph",
-            "content": "Enjeksiyon Şerbet Hacmi Oranı (VR - Volume Ratio):"
+            type: "paragraph",
+            content: "Enjeksiyon Şerbet Hacmi Oranı (VR - Volume Ratio):"
           },
           {
-            "type": "paragraph",
-            "content": "VR = V_slurry / V_soil = α / (ρ_b · (1 / (1 + (w/c)))) ≈ 0.20 - 0.45"
+            type: "paragraph",
+            content: "VR = V_slurry / V_soil = α / (ρ_b · (1 / (1 + (w/c)))) ≈ 0.20 - 0.45"
           },
           {
-            "type": "paragraph",
-            "content": "Burada ρ_b kuru bağlayıcı yoğunluğudur (≈ 3100 kg/m³)."
+            type: "paragraph",
+            content: "Burada ρ_b kuru bağlayıcı yoğunluğudur (≈ 3100 kg/m³)."
           },
           {
-            "type": "paragraph",
-            "content": "**6.2 Çimento Türü Seçimi ve Pozolanik Kinetik**"
+            type: "paragraph",
+            content: "**6.12. Çimento Türü Seçimi ve Pozolanik Kinetik**"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**CEM I (Portland Çimentosu):**",
               "Hızlı erken mukavemet gelişimi (C_3S ve C_2S hidratasyonu).",
               "Dezavantajı: Yüksek hidratasyon ısısı ve yüksek kalsiyum hidroksit açığa çıkması (Ca(OH)_2), sülfat ataklarına karşı hassasiyet oluşturur.",
@@ -2818,75 +2641,75 @@ export const knowledgeArticles: KnowledgeArticle[] = [
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**Pozolanik Reaksiyon Kinetiği:** Kil mineralleri (Kaolinit, İllit, Montmorillonit) yüksek pH ortamında (pH > 12.4) çözünerek silis ve alümin açığa çıkarır:"
+            type: "paragraph",
+            content: "**Pozolanik Reaksiyon Kinetiği:** Kil mineralleri (Kaolinit, İllit, Montmorillonit) yüksek pH ortamında (pH > 12.4) çözünerek silis ve alümin açığa çıkarır:"
           },
           {
-            "type": "paragraph",
-            "content": "Ca(OH)_2 arrow Ca^(2+) + 2OH^-"
+            type: "paragraph",
+            content: "Ca(OH)_2 arrow Ca^(2+) + 2OH^-"
           },
           {
-            "type": "paragraph",
-            "content": "Ca^(2+) + 2OH^- + SiO_2 (kil) arrow C-S-H (kalsiyum silikat hidrat jeli)"
+            type: "paragraph",
+            content: "Ca^(2+) + 2OH^- + SiO_2 (kil) arrow C-S-H (kalsiyum silikat hidrat jeli)"
           },
           {
-            "type": "paragraph",
-            "content": "Ca^(2+) + 2OH^- + Al_2O_3 (kil) arrow C-A-H (kalsiyum alüminat hidrat jeli)"
+            type: "paragraph",
+            content: "Ca^(2+) + 2OH^- + Al_2O_3 (kil) arrow C-A-H (kalsiyum alüminat hidrat jeli)"
           },
           {
-            "type": "paragraph",
-            "content": "Bu ikincil reaksiyonlar aylar boyu sürer ve malzemenin kırılma tokluğunu artırır."
+            type: "paragraph",
+            content: "Bu ikincil reaksiyonlar aylar boyu sürer ve malzemenin kırılma tokluğunu artırır."
           },
           {
-            "type": "paragraph",
-            "content": "**6.3 Mukavemet ve Deformasyon Modelleri (q_u ve E_50)**"
+            type: "paragraph",
+            content: "**6.13. Mukavemet ve Deformasyon Modelleri (q_u ve E_50)**"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Tek Eksenli Basınç Dayanımı (q_u):**"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "DSM kolonları için hedef 28 günlük mukavemet: q_u,28 = 1.5 - 5.0 MPa. Mukavemetin zamana bağlı gelişimi hiperbolik modelle ifade edilir:"
+            type: "paragraph",
+            content: "DSM kolonları için hedef 28 günlük mukavemet: q_u,28 = 1.5 - 5.0 MPa. Mukavemetin zamana bağlı gelişimi hiperbolik modelle ifade edilir:"
           },
           {
-            "type": "paragraph",
-            "content": "q_u(t) = q_u,28 · t / (a + b · t)"
+            type: "paragraph",
+            content: "q_u(t) = q_u,28 · t / (a + b · t)"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "CEM III/B içeren karışımlarda 90 günlük mukavemet (q_u,90), 28 günlük mukavemetin %130 - %160’ına ulaşır.",
               "Su/Çimento oranının mukavemete etkisi (Abrams Kanunu benzeri DSM modeli):"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "q_u = A / ((W_T / C)^B)"
+            type: "paragraph",
+            content: "q_u = A / ((W_T / C)^B)"
           },
           {
-            "type": "paragraph",
-            "content": "Burada W_T = W_water,soil + W_water,slurry (sistemdeki toplam su kütlesidir)."
+            type: "paragraph",
+            content: "Burada W_T = W_water,soil + W_water,slurry (sistemdeki toplam su kütlesidir)."
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Sekant Elastisite Modülü (E_50):**"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "Gerilme-şekil değiştirme eğrisinde nihai mukavemetin %50'sine karşılık gelen sekant modülü:"
+            type: "paragraph",
+            content: "Gerilme-şekil değiştirme eğrisinde nihai mukavemetin %50'sine karşılık gelen sekant modülü:"
           },
           {
-            "type": "paragraph",
-            "content": "E_50 = ξ · q_u"
+            type: "paragraph",
+            content: "E_50 = ξ · q_u"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Killi / Siltli Zeminlerde:** ξ = 100 - 250 ⇒ E_50 = 150 · q_u - 250 · q_u",
               "**Kumlu / Çakıllı Zeminlerde:** ξ = 300 - 500 ⇒ E_50 = 300 · q_u - 500 · q_u",
               "Örnek: q_u = 3.0 MPa olan killi bir DSM kolonu için E_50 ≈ 450 - 750 MPa.",
@@ -2897,245 +2720,223 @@ export const knowledgeArticles: KnowledgeArticle[] = [
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**GEOTEKNİK TASARIM, DÜZENLEME VE DEPREM MODELLERİ**"
+            type: "paragraph",
+            content: "**6.14. GEOTEKNİK TASARIM, DÜZENLEME VE DEPREM MODELLERİ**"
           },
           {
-            "type": "paragraph",
-            "content": "**6.1 Geometrik Konfigürasyonlar** DSM kolonlarının yerleşim geometrisi amaca göre 4 ana grupta toplanır:"
+            type: "paragraph",
+            content: "**6.15. Geometrik Konfigürasyonlar** DSM kolonlarının yerleşim geometrisi amaca göre 4 ana grupta toplanır:"
           },
           {
-            "type": "list",
-            "items": [
-              "[A] TEKİL KOLONLAR [B] TEĞET/KESİŞEN DUVAR [C] IZGARA / KAFES (GRID)",
-              "(Isolated) (Secant Wall) (Cell Pattern)",
-              "O O OO==OO==OO +---+---+---+",
-              "O O OO==OO==OO +---+---+---+",
-              "- Oturma Kontrolü - İksa Duvarı - SIVI LAŞMA ÖNLEME",
-              "- Temel Altı Taşıma - Geçirimsizlik Perdesi - Yanal Yayılma Bariyeri"
-            ]
+            type: "paragraph",
+            content: "**6.16. Sıvılaşabilir Tabakalarda DSM Hücresel Grid Mekanizması** Deprem yükleri altında gevşek suya doygun kumların sıvılaşmasını engellemek için DSM kolonları kapalı hücreli **kafes / ızgara (cellular grid pattern)** formunda inşa edilir. Bu mekanizmanın çalışma prensipleri:"
           },
           {
-            "type": "paragraph",
-            "content": "**6.2 Sıvılaşabilir Tabakalarda DSM Hücresel Grid Mekanizması** Deprem yükleri altında gevşek suya doygun kumların sıvılaşmasını engellemek için DSM kolonları kapalı hücreli **kafes / ızgara (cellular grid pattern)** formunda inşa edilir. Bu mekanizmanın çalışma prensipleri:"
-          },
-          {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Kayma Gerilmesi Sönümleme ve Rijitlik Kontrastı:**",
               "DSM malzemesinin kayma modülü (G_DSM), hapsedilen doğal zeminin kayma modülünden (G_soil) 20 ila 50 kat büyüktür (G_DSM / G_soil gg 20).",
               "Deprem dalgaları (S-dalgaları) tabakaya ulaştığında, kayma gerilmeleri rijit DSM duvarlarına transfer olur:"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "τ_avg = a_s · τ_DSM + (1 - a_s) · τ_soil"
+            type: "paragraph",
+            content: "τ_avg = a_s · τ_DSM + (1 - a_s) · τ_soil"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "Duvarlar kayma gerilmesinin %75 - %90’ını üzerine çekerek hapsedilen iç kumdaki çevrimsel gerilme oranını (CSR) kritik sıvılaşma eşiğinin altına indirir.",
               "**Yanal Hapsedilme (Confinement) ve Boşluk Suyu Basıncı Kontrolü:**"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "Hücre içindeki kum zemin, rijit DSM çeperleri tarafından hapsedildiği için hacimsel daralma (volumetric contraction) yapamaz. Bu durum aşırı boşluk suyu basıncı oranını (r_u = Δ u / σ'_v0) sınırlar:"
+            type: "paragraph",
+            content: "Hücre içindeki kum zemin, rijit DSM çeperleri tarafından hapsedildiği için hacimsel daralma (volumetric contraction) yapamaz. Bu durum aşırı boşluk suyu basıncı oranını (r_u = Δ u / σ'_v0) sınırlar:"
           },
           {
-            "type": "paragraph",
-            "content": "r_u < 0.40 - 0.50 (Sıvılaşma için kritik sınır r_u = 1.0'dir)"
+            type: "paragraph",
+            content: "r_u < 0.40 - 0.50 (Sıvılaşma için kritik sınır r_u = 1.0'dir)"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Yanal Yayılma (Lateral Spreading) Engelleme:**"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "Eğimli arazilerde veya rıhtım/deniz yapılarında sıvılaşan zeminin denize doğru akması, kesişen DSM duvar blokları ile engellenir. Duvarlar bükülme ve kesme rijitliğiyle bir diyafram bariyer gibi çalışır."
+            type: "paragraph",
+            content: "Eğimli arazilerde veya rıhtım/deniz yapılarında sıvılaşan zeminin denize doğru akması, kesişen DSM duvar blokları ile engellenir. Duvarlar bükülme ve kesme rijitliğiyle bir diyafram bariyer gibi çalışır."
           },
           {
-            "type": "paragraph",
-            "content": "**6.3 Dolgu ve Döşeme Altında Yük Transfer Platformu (LTP) ve Geogrid Entegrasyonu** DSM kolonları üzerine inşa edilen yol dolguları veya döşemeler altında gerilme yığılmasını yönetmek için bir **Yük Transfer Platformu (LTP - Load Transfer Platform)** tesis edilir."
+            type: "paragraph",
+            content: "**6.17. Dolgu ve Döşeme Altında Yük Transfer Platformu (LTP) ve Geogrid Entegrasyonu** DSM kolonları üzerine inşa edilen yol dolguları veya döşemeler altında gerilme yığılmasını yönetmek için bir **Yük Transfer Platformu (LTP - Load Transfer Platform)** tesis edilir."
           },
           {
-            "type": "list",
-            "items": [
-              "YOL / DEMİRYOLU DOLGUSU VEYA ENDÜSTRİYEL DÖŞEME",
-              "YÜK TRANSFER PLATFORMU (LTP) : 0.5 - 1.0 m Kırma Taş / Çakıl",
-              "================== ÇİFT EKSENLİ GEOGRID KATMANI ============",
-              "================== İKİNCİ GEOGRID KATMANI ==================",
-              "DSM — — DSM — — DSM",
-              "KOLON — — KOLON — — KOLON"
-            ]
-          },
-          {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Toprak Kemerlenme Etkisi (Soil Arching):**"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "Hewlett & Randolph ve BS 8006 modellerine göre dolgu yükünün büyük kısmı kolon başlarına aktarılır."
+            type: "paragraph",
+            content: "Hewlett & Randolph ve BS 8006 modellerine göre dolgu yükünün büyük kısmı kolon başlarına aktarılır."
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "Alan Değiştirme Oranı (a_s):"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "a_s = π D² / (4 · s_x · s_y)"
+            type: "paragraph",
+            content: "a_s = π D² / (4 · s_x · s_y)"
           },
           {
-            "type": "paragraph",
-            "content": "(Tipik a_s = %15 - %35)."
+            type: "paragraph",
+            content: "(Tipik a_s = %15 - %35)."
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "Gerilme Azaltma Oranı (SRR - Stress Reduction Ratio):"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "SRR = σ'_soil / (γ H + q) ≤ 0.10 - 0.25"
+            type: "paragraph",
+            content: "SRR = σ'_soil / (γ H + q) ≤ 0.10 - 0.25"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Geogrid Çekme Gerilmesi Hesabı:**"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "Kolonlar arasındaki zayıf zemine oturan dolgu yükü geogrid tarafından askıya alınır. Geogridde oluşan çekme kuvveti (T_rg):"
+            type: "paragraph",
+            content: "Kolonlar arasındaki zayıf zemine oturan dolgu yükü geogrid tarafından askıya alınır. Geogridde oluşan çekme kuvveti (T_rg):"
           },
           {
-            "type": "paragraph",
-            "content": "T_rg = (σ'_geogrid · (s - D)) / (2 · sin(θ))"
+            type: "paragraph",
+            content: "T_rg = (σ'_geogrid · (s - D)) / (2 · sin(θ))"
           },
           {
-            "type": "paragraph",
-            "content": "Yüksek mukavemetli çift katmanlı polyester/bazalt geogridler (T_ult = 100 - 400 kN/m) kullanılarak diferansiyel oturmalar tamamen sıfırlanır."
+            type: "paragraph",
+            content: "Yüksek mukavemetli çift katmanlı polyester/bazalt geogridler (T_ult = 100 - 400 kN/m) kullanılarak diferansiyel oturmalar tamamen sıfırlanır."
           },
           {
-            "type": "paragraph",
-            "content": "**6.4 MATEMATİKSEL TASARIM ÖRNEĞİ: TAŞIMA GÜCÜ VE OTURMA ANALİZİ** Aşağıdaki hesap modeli tekil bir DSM kolonunun nihai taşıma gücünü ve kompozit temel oturmasını tam formüle eder:"
+            type: "paragraph",
+            content: "**6.18. MATEMATİKSEL TASARIM ÖRNEĞİ: TAŞIMA GÜCÜ VE OTURMA ANALİZİ** Aşağıdaki hesap modeli tekil bir DSM kolonunun nihai taşıma gücünü ve kompozit temel oturmasını tam formüle eder:"
           },
           {
-            "type": "paragraph",
-            "content": "**A. Tekil DSM Kolonunun Yapısal Taşıma Gücü (Q_str):**"
+            type: "paragraph",
+            content: "**6.19. A. Tekil DSM Kolonunun Yapısal Taşıma Gücü (Q_str):**"
           },
           {
-            "type": "paragraph",
-            "content": "Q_str = A_c · f_cd = (π D² / 4) · (q_u,design / γ_m)"
+            type: "paragraph",
+            content: "Q_str = A_c · f_cd = (π D² / 4) · (q_u,design / γ_m)"
           },
           {
-            "type": "paragraph",
-            "content": "Burada γ_m = 2.0 - 2.5 malzeme güvenlik katsayısıdır. Örnek: D = 0.80 m (A_c = 0.503 m²), q_u = 2.5 MPa, γ_m = 2.0:"
+            type: "paragraph",
+            content: "Burada γ_m = 2.0 - 2.5 malzeme güvenlik katsayısıdır. Örnek: D = 0.80 m (A_c = 0.503 m²), q_u = 2.5 MPa, γ_m = 2.0:"
           },
           {
-            "type": "paragraph",
-            "content": "Q_str = 0.503 · (2500 / 2.0) = 628.7 kN"
+            type: "paragraph",
+            content: "Q_str = 0.503 · (2500 / 2.0) = 628.7 kN"
           },
           {
-            "type": "paragraph",
-            "content": "**B. Geoteknik Taşıma Gücü (Çevre Sürtünmesi + Uç Direnci):**"
+            type: "paragraph",
+            content: "**6.20. B. Geoteknik Taşıma Gücü (Çevre Sürtünmesi + Uç Direnci):**"
           },
           {
-            "type": "paragraph",
-            "content": "Q_geo = ∑ (π D · Δ L_i · q_s,i) + A_c · q_b"
+            type: "paragraph",
+            content: "Q_geo = ∑ (π D · Δ L_i · q_s,i) + A_c · q_b"
           },
           {
-            "type": "paragraph",
-            "content": "Zemin-çimento ile doğal zemin arasındaki birim sürtünme: q_s = α_s · c_u veya β · σ'_v. İzin verilen kolon taşıma kapasitesi: Q_all = min(Q_str, Q_geo / FS_geo)."
+            type: "paragraph",
+            content: "Zemin-çimento ile doğal zemin arasındaki birim sürtünme: q_s = α_s · c_u veya β · σ'_v. İzin verilen kolon taşıma kapasitesi: Q_all = min(Q_str, Q_geo / FS_geo)."
           },
           {
-            "type": "paragraph",
-            "content": "**C. Kompozit Zemin Eşdeğer Deformasyon Modülü (E_comp):**"
+            type: "paragraph",
+            content: "**6.21. C. Kompozit Zemin Eşdeğer Deformasyon Modülü (E_comp):**"
           },
           {
-            "type": "paragraph",
-            "content": "E_comp = a_s · E_DSM + (1 - a_s) · E_soil"
+            type: "paragraph",
+            content: "E_comp = a_s · E_DSM + (1 - a_s) · E_soil"
           },
           {
-            "type": "paragraph",
-            "content": "Örnek: a_s = 0.20, E_DSM = 600 MPa, E_soil = 15 MPa:"
+            type: "paragraph",
+            content: "Örnek: a_s = 0.20, E_DSM = 600 MPa, E_soil = 15 MPa:"
           },
           {
-            "type": "paragraph",
-            "content": "E_comp = (0.20 · 600) + (0.80 · 15) = 120 + 12 = 132 MPa"
+            type: "paragraph",
+            content: "E_comp = (0.20 · 600) + (0.80 · 15) = 120 + 12 = 132 MPa"
           },
           {
-            "type": "paragraph",
-            "content": "Oturma Azaltma Faktörü:"
+            type: "paragraph",
+            content: "Oturma Azaltma Faktörü:"
           },
           {
-            "type": "paragraph",
-            "content": "β_s = S_iyilestirilmis / S_dogal = E_soil / E_comp = 15 / 132 ≈ 0.114"
+            type: "paragraph",
+            content: "β_s = S_iyilestirilmis / S_dogal = E_soil / E_comp = 15 / 132 ≈ 0.114"
           },
           {
-            "type": "paragraph",
-            "content": "Oturmalar %88.6 oranında sönümlenir."
+            type: "paragraph",
+            content: "Oturmalar %88.6 oranında sönümlenir."
           }
         ]
       },
       {
-        "id": "fore-kazik-ve-derin-temel-mekanigi",
-        "title": "7. Fore Kazık ve Derin Temel Mühendisliği: TS EN 1536 Rotary Delgi, Bentonit Reolojisi ve Tremi Betonlama Fiziği",
-        "blocks": [
+        id: "fore-kazik-ve-derin-temel-mekanigi",
+        title: "7. Fore Kazık ve Derin Temel Mühendisliği: TS EN 1536 Rotary Delgi, Bentonit Reolojisi ve Tremi Betonlama Fiziği",
+        blocks: [
           {
-            "type": "paragraph",
-            "content": "Fore kazık imalatında zeminin veya anakayanın parçalanarak kuyu dışına çıkarılması işlemi, hidrolik rotary delgi makinelerinin (örn. Bauer BG 28/36/45, Soilmec SR-95/125, Liebherr LB 36) aktardığı dinamik güç dengesiyle yönetilir."
+            type: "paragraph",
+            content: "Fore kazık imalatında zeminin veya anakayanın parçalanarak kuyu dışına çıkarılması işlemi, hidrolik rotary delgi makinelerinin (örn. Bauer BG 28/36/45, Soilmec SR-95/125, Liebherr LB 36) aktardığı dinamik güç dengesiyle yönetilir."
           },
           {
-            "type": "paragraph",
-            "content": "**7.1 Hidrolik Güç Aktarımı ve Enerji Dengesi** Rotary delgi kafasının (rotary drive) zemine aktardığı teorik rotasyonel güç (P_rotary):"
+            type: "paragraph",
+            content: "**7.1. Hidrolik Güç Aktarımı ve Enerji Dengesi** Rotary delgi kafasının (rotary drive) zemine aktardığı teorik rotasyonel güç (P_rotary):"
           },
           {
-            "type": "paragraph",
-            "content": "P_rotary = M_t · ω = M_t · (2 π n / 60)"
+            type: "paragraph",
+            content: "P_rotary = M_t · ω = M_t · (2 π n / 60)"
           },
           {
-            "type": "paragraph",
-            "content": "Burada:"
+            type: "paragraph",
+            content: "Burada:"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "M_t: Matkap ucundaki efektif delgi torku (kNm),",
               "n: Dönme devri (devir/dakika - rpm),",
               "ω: Açısal hız (rad/s)."
             ]
           },
           {
-            "type": "paragraph",
-            "content": "Dizel motordan hidrolik ana pompalara, oradan da hidrolik motorlar ve planet redüktörler vasıtasıyla delgi kafasına aktarılan toplam sistem verimi (η_sys ≈ 0.72 - 0.82) dikkate alındığında, şantiyede çekilen net hidrolik güç:"
+            type: "paragraph",
+            content: "Dizel motordan hidrolik ana pompalara, oradan da hidrolik motorlar ve planet redüktörler vasıtasıyla delgi kafasına aktarılan toplam sistem verimi (η_sys ≈ 0.72 - 0.82) dikkate alındığında, şantiyede çekilen net hidrolik güç:"
           },
           {
-            "type": "paragraph",
-            "content": "P_hidrolik = Δ p_hid · Q_debi / (600 · η_sys)"
+            type: "paragraph",
+            content: "P_hidrolik = Δ p_hid · Q_debi / (600 · η_sys)"
           },
           {
-            "type": "paragraph",
-            "content": "Formasyonun kesilme eşiğinde, matkap tırnaklarının zeminde oluşturduğu kayma gerilmesi (τ), zeminin yenilme zarfını aşmak zorundadır:"
+            type: "paragraph",
+            content: "Formasyonun kesilme eşiğinde, matkap tırnaklarının zeminde oluşturduğu kayma gerilmesi (τ), zeminin yenilme zarfını aşmak zorundadır:"
           },
           {
-            "type": "paragraph",
-            "content": "M_t ≥ ∫_0^(R) τ(r) · 2 π r² dr"
+            type: "paragraph",
+            content: "M_t ≥ ∫_0^(R) τ(r) · 2 π r² dr"
           },
           {
-            "type": "paragraph",
-            "content": "**7.2 Delgi Torku ve Baskı Kuvveti (Crowd Force) Kinematiği** Yalnızca tork uygulanması formasyonun içine penetrasyon sağlamaz. Matkap ucunun (auger, bucket veya core barrel) formasyon içine sokulması için düşey baskı kuvveti (F_crowd) zorunludur."
+            type: "paragraph",
+            content: "**7.2. Delgi Torku ve Baskı Kuvveti (Crowd Force) Kinematiği** Yalnızca tork uygulanması formasyonun içine penetrasyon sağlamaz. Matkap ucunun (auger, bucket veya core barrel) formasyon içine sokulması için düşey baskı kuvveti (F_crowd) zorunludur."
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Silindirli Baskı Sistemi (Ram / Cylinder Crowd):**",
               "Kısa kuleli ve yüksek rijitlik gerektiren makinelerde hidrolik stroklu silindir kullanılır.",
               "Maksimum baskı kuvveti (F_crowd ≈ 300 - 500 kN) ve çekme kuvveti (F_pull ≈ 400 - 800 kN) kısıtlı bir strokta (örn. 6-10 m) doğrudan iletilir.",
@@ -3145,24 +2946,24 @@ export const knowledgeArticles: KnowledgeArticle[] = [
             ]
           },
           {
-            "type": "paragraph",
-            "content": "Sert kaya formasyonlarında (tek eksenli basınç dayanımı q_u > 50 MPa) penetrasyon hızı (ROP - Rate of Penetration, m/saat):"
+            type: "paragraph",
+            content: "Sert kaya formasyonlarında (tek eksenli basınç dayanımı q_u > 50 MPa) penetrasyon hızı (ROP - Rate of Penetration, m/saat):"
           },
           {
-            "type": "paragraph",
-            "content": "ROP = k_rig · (F_crowd · n / (D_kazık · q_u)) · exp(-ξ · M_t,req / M_t,avail)"
+            type: "paragraph",
+            content: "ROP = k_rig · (F_crowd · n / (D_kazık · q_u)) · exp(-ξ · M_t,req / M_t,avail)"
           },
           {
-            "type": "paragraph",
-            "content": "Burada k_rig mekanik rijitlik katsayısı, ξ tork doyum faktörüdür."
+            type: "paragraph",
+            content: "Burada k_rig mekanik rijitlik katsayısı, ξ tork doyum faktörüdür."
           },
           {
-            "type": "paragraph",
-            "content": "**7.3 Kelly Bar Tipleri ve Yapısal Yorulma Dinamiği** Kelly bar, delgi kulesindeki rotary kafanın tork ve baskı kuvvetini kuyu tabanındaki takıma ileten teleskopik çok cidarlı kare veya dairesel kesitli boru demetidir (3, 4 veya 5 parçalı teleskopik elemanlar)."
+            type: "paragraph",
+            content: "**7.3. Kelly Bar Tipleri ve Yapısal Yorulma Dinamiği** Kelly bar, delgi kulesindeki rotary kafanın tork ve baskı kuvvetini kuyu tabanındaki takıma ileten teleskopik çok cidarlı kare veya dairesel kesitli boru demetidir (3, 4 veya 5 parçalı teleskopik elemanlar)."
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Sürtünmeli Kelly Bar (Friction Kelly):**",
               "Boru segmentleri arasında mekanik kilit cepleri bulunmaz; segmentler birbirini sürtünme şeritleri (friction drive strips) vasıtasıyla kavrar.",
               "Baskı kuvveti sınırlıdır; kelly barın ve takımın kendi ölü ağırlığı ile tahrik edilir.",
@@ -3174,12 +2975,12 @@ export const knowledgeArticles: KnowledgeArticle[] = [
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**7.4 Kesici Takım Geometrisi ve Seçim Matrisi**"
+            type: "paragraph",
+            content: "**7.4. Kesici Takım Geometrisi ve Seçim Matrisi**"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Helezon Matkap (Continuous/Short Flight Auger):**",
               "Soil Auger: Yumuşak-orta katı killer ve kohezyonsuz siltli kumlar için yassı dişli (flat teeth) tasarım.",
               "Rock Auger: Çakıllı zeminler, konglomera ve ayrışmış kayaçlar için konik karbür tırnaklar (tungsten carbide round-shank chisels).",
@@ -3191,80 +2992,80 @@ export const knowledgeArticles: KnowledgeArticle[] = [
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**YERALTI SU SEVİYESİ ALTINDA KUYU STABİLİTESİ: ÇAMUR REOLOJİSİ VE FİLTRASYON MEKANİĞİ**"
+            type: "paragraph",
+            content: "**7.5. YERALTI SU SEVİYESİ ALTINDA KUYU STABİLİTESİ: ÇAMUR REOLOJİSİ VE FİLTRASYON MEKANİĞİ**"
           },
           {
-            "type": "paragraph",
-            "content": "Fore kazık imalatında kuyu çeperlerinin çökmesi (borehole caving/spalling), zemin daneleri arasındaki efektif gerilmenin yeraltı suyu sızıntısı nedeniyle sıfıra inmesiyle başlar. Kuyu stabilitesi, kuyu içi süspansiyon basıncının yer altı hidrostatik basıncından ve yanal zemin basıncından yüksek tutulmasıyla sağlanır."
+            type: "paragraph",
+            content: "Fore kazık imalatında kuyu çeperlerinin çökmesi (borehole caving/spalling), zemin daneleri arasındaki efektif gerilmenin yeraltı suyu sızıntısı nedeniyle sıfıra inmesiyle başlar. Kuyu stabilitesi, kuyu içi süspansiyon basıncının yer altı hidrostatik basıncından ve yanal zemin basıncından yüksek tutulmasıyla sağlanır."
           },
           {
-            "type": "paragraph",
-            "content": "**7.1 Kuyu Stabilitesi Hidrolik ve Efektif Gerilme Dengesi** Kuyu derinliği boyunca z kotundaki sıvı basıncı p_f(z) ve yeraltı suyu hidrostatik basıncı u_w(z):"
+            type: "paragraph",
+            content: "**7.6. Kuyu Stabilitesi Hidrolik ve Efektif Gerilme Dengesi** Kuyu derinliği boyunca z kotundaki sıvı basıncı p_f(z) ve yeraltı suyu hidrostatik basıncı u_w(z):"
           },
           {
-            "type": "paragraph",
-            "content": "p_f(z) = γ_f · z"
+            type: "paragraph",
+            content: "p_f(z) = γ_f · z"
           },
           {
-            "type": "paragraph",
-            "content": "u_w(z) = γ_w · (z - z_w) (için z > z_w)"
+            type: "paragraph",
+            content: "u_w(z) = γ_w · (z - z_w) (için z > z_w)"
           },
           {
-            "type": "paragraph",
-            "content": "Efektif destek basıncı (Δ p(z)):"
+            type: "paragraph",
+            content: "Efektif destek basıncı (Δ p(z)):"
           },
           {
-            "type": "paragraph",
-            "content": "Δ p(z) = p_f(z) - u_w(z) = γ_f · z - γ_w · (z - z_w)"
+            type: "paragraph",
+            content: "Δ p(z) = p_f(z) - u_w(z) = γ_f · z - γ_w · (z - z_w)"
           },
           {
-            "type": "paragraph",
-            "content": "**TS EN 1536 Standardı Kritik Kuralı:** Süspansiyon seviyesi, sahada tespit edilen en yüksek yeraltı su seviyesinin (veya artezyen basınç seviyesinin) **en az 1.50 m (tercihen 2.0 m)** üzerinde tutulmalıdır:"
+            type: "paragraph",
+            content: "**TS EN 1536 Standardı Kritik Kuralı:** Süspansiyon seviyesi, sahada tespit edilen en yüksek yeraltı su seviyesinin (veya artezyen basınç seviyesinin) **en az 1.50 m (tercihen 2.0 m)** üzerinde tutulmalıdır:"
           },
           {
-            "type": "paragraph",
-            "content": "h_f ≥ h_w + 1.50 m"
+            type: "paragraph",
+            content: "h_f ≥ h_w + 1.50 m"
           },
           {
-            "type": "paragraph",
-            "content": "Kuyu cidarındaki Mohr-Coulomb göçme kriteri:"
+            type: "paragraph",
+            content: "Kuyu cidarındaki Mohr-Coulomb göçme kriteri:"
           },
           {
-            "type": "paragraph",
-            "content": "σ'_3 = Δ p(z) ≥ σ'_1 · K_a - 2 c' √(K_a)"
+            type: "paragraph",
+            content: "σ'_3 = Δ p(z) ≥ σ'_1 · K_a - 2 c' √(K_a)"
           },
           {
-            "type": "paragraph",
-            "content": "**7.2 Bentonit Süspansiyonu Reolojisi (Sodyum Bentonit)** Bentonit (özellikle sodyum montmorillonit), levhamsı kristal yapısıyla suda şişerek tiksotropik kolloidal bir jel oluşturur."
+            type: "paragraph",
+            content: "**7.7. Bentonit Süspansiyonu Reolojisi (Sodyum Bentonit)** Bentonit (özellikle sodyum montmorillonit), levhamsı kristal yapısıyla suda şişerek tiksotropik kolloidal bir jel oluşturur."
           },
           {
-            "type": "paragraph",
-            "content": "**7.2.1 Reolojik Akışkan Modeli** Bentonit süspansiyonu Newton-tipi olmayan, akma gerilmeli plastik bir akışkandır (Herschel-Bulkley veya Bingham Plastic Modeli):"
+            type: "paragraph",
+            content: "**Reolojik Akışkan Modeli** Bentonit süspansiyonu Newton-tipi olmayan, akma gerilmeli plastik bir akışkandır (Herschel-Bulkley veya Bingham Plastic Modeli):"
           },
           {
-            "type": "paragraph",
-            "content": "τ = τ_0 + μ_p · dotγ"
+            type: "paragraph",
+            content: "τ = τ_0 + μ_p · dotγ"
           },
           {
-            "type": "paragraph",
-            "content": "Burada:"
+            type: "paragraph",
+            content: "Burada:"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "τ_0: Dinamik akma noktası / gerilmesi (Yield Point - Pa veya lb/100 ft²),",
               "μ_p: Plastik viskozite (mPa·s veya cP),",
               "dotγ: Kayma deformasyon hızı (shear rate - s^(-1))."
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**7.2.2 Kritik Kalite Kontrol Parametreleri (TS EN 1536 & API RP 13B-1)**"
+            type: "paragraph",
+            content: "**Kritik Kalite Kontrol Parametreleri (TS EN 1536 & API RP 13B-1)**"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Yoğunluk (ρ, ASTM D4380):**",
               "Taze süspansiyon: 1.02 - 1.06 g/cm³.",
               "Kuyu içi (delgi esnasında): 1.06 - 1.15 g/cm³.",
@@ -3283,89 +3084,48 @@ export const knowledgeArticles: KnowledgeArticle[] = [
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**7.3 Sentetik Polimer Çamuru (PHPA) ve Bentonit Karşılaştırması** Sentetik polimerler (kısmen hidrolize poliakrilamid - PHPA), bentonitin yerini alan uzun zincirli moleküler yapılardır."
+            type: "paragraph",
+            content: "**7.8. Sentetik Polimer Çamuru (PHPA) ve Bentonit Karşılaştırması** Sentetik polimerler (kısmen hidrolize poliakrilamid - PHPA), bentonitin yerini alan uzun zincirli moleküler yapılardır."
           },
           {
-            "type": "list",
-            "items": [
-              "Parametre / Özellik — Sodyum Bentonit Süspansiyonu — PHPA Sentetik Polimer Çamuru"
+            type: "list",
+            items: [
+              "**Stabilizasyon Mekanizması** — Sodyum Bentonit Süspansiyonu: Geçirimsiz filtre keki + hidrostatik karşı basınç | PHPA Sentetik Polimer Çamuru: Elektrostatik yüklerle kil şişmesini engelleme + viskoz penetrasyon",
+              "**Yoğunluk Aralığı** — Sodyum Bentonit Süspansiyonu: 1.04 - 1.15 g/cm³ | PHPA Sentetik Polimer Çamuru: 1.00 - 1.02 g/cm³ (Suya çok yakın)",
+              "**Reolojik Davranış** — Sodyum Bentonit Süspansiyonu: Tiksotropik Bingham jeli | PHPA Sentetik Polimer Çamuru: Yüksek kesme incelmesi (Pseudoplastic shear-thinning)",
+              "**Kum Tutma ve Çöktürme** — Sodyum Bentonit Süspansiyonu: Kumu askıda tutar; mekanik Desander (hidrosiklon) şarttır | PHPA Sentetik Polimer Çamuru: Kumu bünyesinde tutmaz; kum hızla kuyu dibine çöker",
+              "**Kuyu Dibi Temizliği** — Sodyum Bentonit Süspansiyonu: Desanding + hava asansörü (air-lift) gerekir | PHPA Sentetik Polimer Çamuru: Clean-out bucket ile taban temizliği yeterlidir",
+              "**Çeper Taşıma Kapasitesi (q_s)** — Sodyum Bentonit Süspansiyonu: Kek kalınlaşırsa sürtünmeyi düşürebilir | PHPA Sentetik Polimer Çamuru: Cidar temiz kalır; q_s sürtünme katsayısı %15 - 30 daha yüksektir",
+              "**Tuzlu Su Kontaminasyonu** — Sodyum Bentonit Süspansiyonu: Tuzdan topaklanır (flokülasyon), reolojisi çöker | PHPA Sentetik Polimer Çamuru: Tuzlu suya dayanıklı özel polimer zincirleri kullanılabilir",
+              "**Bertaraf ve Çevre** — Sodyum Bentonit Süspansiyonu: Ağır kimyasal atık; sahada depolama ve bertaraf pahalıdır | PHPA Sentetik Polimer Çamuru: Kimyasal oksitleyicilerle (çamaşır suyu / hipoklorit) zincirleri kırılarak zararsız suya dönüştürülür"
             ]
           },
           {
-            "type": "list",
-            "items": [
-              "**Stabilizasyon Mekanizması** — Geçirimsiz filtre keki + hidrostatik karşı basınç — Elektrostatik yüklerle kil şişmesini engelleme + viskoz penetrasyon"
-            ]
+            type: "paragraph",
+            content: "**7.9. KILIFLI DELGİ (CASING) DİNAMİKLERİ: OSİLATÖR VE DÖNER KAFA İLE SÜRME-ÇEKME**"
           },
           {
-            "type": "list",
-            "items": [
-              "**Yoğunluk Aralığı** — 1.04 - 1.15 g/cm³ — 1.00 - 1.02 g/cm³ (Suya çok yakın)"
-            ]
+            type: "paragraph",
+            content: "Kuyu cidarının sıvı süspansiyonlarla dahi tutulamayacağı yüksek akışkan kumlar, kontrolsüz yeraltı suyu boşalımları veya tarihi yapıların bitişiğindeki deplasman hassasiyeti olan projelerde kılıflı delgi (casing) zorunludur."
           },
           {
-            "type": "list",
-            "items": [
-              "**Reolojik Davranış** — Tiksotropik Bingham jeli — Yüksek kesme incelmesi (Pseudoplastic shear-thinning)"
-            ]
+            type: "paragraph",
+            content: "**7.10. Muhafaza Borusu (Casing) Yapısal Özellikleri**"
           },
           {
-            "type": "list",
-            "items": [
-              "**Kum Tutma ve Çöktürme** — Kumu askıda tutar; mekanik Desander (hidrosiklon) şarttır — Kumu bünyesinde tutmaz; kum hızla kuyu dibine çöker"
-            ]
-          },
-          {
-            "type": "list",
-            "items": [
-              "**Kuyu Dibi Temizliği** — Desanding + hava asansörü (air-lift) gerekir — Clean-out bucket ile taban temizliği yeterlidir"
-            ]
-          },
-          {
-            "type": "list",
-            "items": [
-              "**Çeper Taşıma Kapasitesi (q_s)** — Kek kalınlaşırsa sürtünmeyi düşürebilir — Cidar temiz kalır; q_s sürtünme katsayısı %15 - 30 daha yüksektir"
-            ]
-          },
-          {
-            "type": "list",
-            "items": [
-              "**Tuzlu Su Kontaminasyonu** — Tuzdan topaklanır (flokülasyon), reolojisi çöker — Tuzlu suya dayanıklı özel polimer zincirleri kullanılabilir"
-            ]
-          },
-          {
-            "type": "list",
-            "items": [
-              "**Bertaraf ve Çevre** — Ağır kimyasal atık; sahada depolama ve bertaraf pahalıdır — Kimyasal oksitleyicilerle (çamaşır suyu / hipoklorit) zincirleri kırılarak zararsız suya dönüştürülür"
-            ]
-          },
-          {
-            "type": "paragraph",
-            "content": "**KILIFLI DELGİ (CASING) DİNAMİKLERİ: OSİLATÖR VE DÖNER KAFA İLE SÜRME-ÇEKME**"
-          },
-          {
-            "type": "paragraph",
-            "content": "Kuyu cidarının sıvı süspansiyonlarla dahi tutulamayacağı yüksek akışkan kumlar, kontrolsüz yeraltı suyu boşalımları veya tarihi yapıların bitişiğindeki deplasman hassasiyeti olan projelerde kılıflı delgi (casing) zorunludur."
-          },
-          {
-            "type": "paragraph",
-            "content": "**7.1 Muhafaza Borusu (Casing) Yapısal Özellikleri**"
-          },
-          {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Çift Cidarlı Kılıf (Double-Walled Casing):** İç ve dış çelik boru arasında takviye federleri bulunan, yüksek tork ve burulma rijitliğine sahip elemanlardır. Erkek-dişi konik kilit vidaları (conical pins/bolts) ile birbirine bağlanır.",
               "**Kılıf Pabucu (Casing Shoe):** Kılıfın en alt segmanına kaynaklanmış, sert kaya formasyonlarını ve blokları parçalayabilen aşınmaya dayanıklı karbür dişli kesici bilezik."
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**7.2 Kılıf Sürme Yöntemleri**"
+            type: "paragraph",
+            content: "**7.11. Kılıf Sürme Yöntemleri**"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Döner Kafa Adaptörü (Rotary Casing Drive):**",
               "Delgi makinesinin kendi rotary kafasına takılan hidrolik kılıf adaptörü vasıtasıyla kılıf borusu doğrudan döndürülerek zemine sürülür.",
               "Sınırlayıcı faktör: Makinenin torku ve kule ağırlığıdır. Genellikle 15 - 25 m derinliğe ve ≤ 1500 mm çapa kadar uygulanabilir.",
@@ -3376,90 +3136,90 @@ export const knowledgeArticles: KnowledgeArticle[] = [
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**7.3 Kılıf Sürme ve Çekme Kuvveti Formülasyonu** Kılıfın zemine penetrasyonu ve beton dökümü sırasında kılıfın geri çekilmesi sırasındaki toplam direnç kuvveti:"
+            type: "paragraph",
+            content: "**7.12. Kılıf Sürme ve Çekme Kuvveti Formülasyonu** Kılıfın zemine penetrasyonu ve beton dökümü sırasında kılıfın geri çekilmesi sırasındaki toplam direnç kuvveti:"
           },
           {
-            "type": "paragraph",
-            "content": "F_toplam = F_fric, dış + F_fric, iç + F_toe + W_casing"
+            type: "paragraph",
+            content: "F_toplam = F_fric, dış + F_fric, iç + F_toe + W_casing"
           },
           {
-            "type": "paragraph",
-            "content": "Burada:"
+            type: "paragraph",
+            content: "Burada:"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "Dış çeper sürtünmesi:"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "F_fric, dış = π · D_o ∫_0^(L_kılıf) σ'_h(z) · tan(δ) dz = π · D_o ∫_0^(L_kılıf) (K · σ'_v(z)) · tan(δ) dz"
+            type: "paragraph",
+            content: "F_fric, dış = π · D_o ∫_0^(L_kılıf) σ'_h(z) · tan(δ) dz = π · D_o ∫_0^(L_kılıf) (K · σ'_v(z)) · tan(δ) dz"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "Pabucun uç penetrasyon direnci:"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "F_toe = π · D_ort · t_et · q_c"
+            type: "paragraph",
+            content: "F_toe = π · D_ort · t_et · q_c"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "W_casing: Çelik kılıf borularının toplam kütlesi (kN)."
             ]
           },
           {
-            "type": "paragraph",
-            "content": "Osilasyon hareketinin kinetik avantajı: Açısal salınım (ω_osc) esnasında zemin ile çelik cidar arasındaki statik sürtünme katsayısı (μ_s), dinamik kayma sürtünmesine (μ_d) dönüşür (μ_d ≈ 0.6 · μ_s). Bu durum sürme ve çekme kuvveti ihtiyacını %40'a varan oranda düşürür."
+            type: "paragraph",
+            content: "Osilasyon hareketinin kinetik avantajı: Açısal salınım (ω_osc) esnasında zemin ile çelik cidar arasındaki statik sürtünme katsayısı (μ_s), dinamik kayma sürtünmesine (μ_d) dönüşür (μ_d ≈ 0.6 · μ_s). Bu durum sürme ve çekme kuvveti ihtiyacını %40'a varan oranda düşürür."
           },
           {
-            "type": "paragraph",
-            "content": "**7.4 Hidrolik Taban Kabarması ve Taban Patlaması (Boiling / Piping) Mekaniği** Kılıflı delgide kılıf içi kazılırken en kritik geoteknik felaket, kılıf alt kotundaki zemin tıkacının (soil plug) yukarı doğru patlamasıdır."
+            type: "paragraph",
+            content: "**7.13. Hidrolik Taban Kabarması ve Taban Patlaması (Boiling / Piping) Mekaniği** Kılıflı delgide kılıf içi kazılırken en kritik geoteknik felaket, kılıf alt kotundaki zemin tıkacının (soil plug) yukarı doğru patlamasıdır."
           },
           {
-            "type": "paragraph",
-            "content": "Kılıf tabanındaki kritik hidrolik eğim (i_cr):"
+            type: "paragraph",
+            content: "Kılıf tabanındaki kritik hidrolik eğim (i_cr):"
           },
           {
-            "type": "paragraph",
-            "content": "i_cr = γ' / γ_w = (γ_sat - γ_w) / γ_w ≈ 0.9 - 1.1"
+            type: "paragraph",
+            content: "i_cr = γ' / γ_w = (γ_sat - γ_w) / γ_w ≈ 0.9 - 1.1"
           },
           {
-            "type": "paragraph",
-            "content": "Kazı seviyesi su tablasının altına indiğinde kuyu içi su seviyesi kuyu dışındaki seviyenin altına düşürülürse:"
+            type: "paragraph",
+            content: "Kazı seviyesi su tablasının altına indiğinde kuyu içi su seviyesi kuyu dışındaki seviyenin altına düşürülürse:"
           },
           {
-            "type": "paragraph",
-            "content": "i_etkin = Δ h_su / L_tıkaç ≥ i_cr"
+            type: "paragraph",
+            content: "i_etkin = Δ h_su / L_tıkaç ≥ i_cr"
           },
           {
-            "type": "paragraph",
-            "content": "şartı sağlandığı an kuyu tabanındaki kum sıvılaşır (quicksand condition), kuyu tabanından içeriye binlerce metreküp kum dolar; çevre binalarda ani oturmalar ve delgi makinesinde devrilme riski oluşur."
+            type: "paragraph",
+            content: "şartı sağlandığı an kuyu tabanındaki kum sıvılaşır (quicksand condition), kuyu tabanından içeriye binlerce metreküp kum dolar; çevre binalarda ani oturmalar ve delgi makinesinde devrilme riski oluşur."
           },
           {
-            "type": "paragraph",
-            "content": "**Zorunlu Şantiye Kuralı:** Kılıfın alt ucu, daima kuyu içi kazı seviyesinin en az **1.50 - 3.0 m önünde (derininde)** tutulmalı ve kuyu içi daima su/çamurla dolu tutularak dış su seviyesine karşı pozitif hidrolik yük sağlanmalıdır."
+            type: "paragraph",
+            content: "**Zorunlu Şantiye Kuralı:** Kılıfın alt ucu, daima kuyu içi kazı seviyesinin en az **1.50 - 3.0 m önünde (derininde)** tutulmalı ve kuyu içi daima su/çamurla dolu tutularak dış su seviyesine karşı pozitif hidrolik yük sağlanmalıdır."
           },
           {
-            "type": "paragraph",
-            "content": "**TREMİ BORUSUYLA SU ALTI BETON DÖKÜM FİZİĞİ: AKIŞ DİNAMİĞİ VE SEGREGASYON KONTROLÜ**"
+            type: "paragraph",
+            content: "**7.14. TREMİ BORUSUYLA SU ALTI BETON DÖKÜM FİZİĞİ: AKIŞ DİNAMİĞİ VE SEGREGASYON KONTROLÜ**"
           },
           {
-            "type": "paragraph",
-            "content": "Fore kazık gövdesinde meydana gelen kusurların (boyun verme, çatlak, süngerleşme, soğuk derz) %85'i beton döküm fiziğinin ihlal edilmesinden kaynaklanır."
+            type: "paragraph",
+            content: "Fore kazık gövdesinde meydana gelen kusurların (boyun verme, çatlak, süngerleşme, soğuk derz) %85'i beton döküm fiziğinin ihlal edilmesinden kaynaklanır."
           },
           {
-            "type": "paragraph",
-            "content": "**7.1 Taze Beton Reolojisi (TS EN 206, TS EN 1536, EFFC/DFI Kılavuzu)** Su veya stabilizasyon sıvısı altında tremi yöntemiyle dökülen beton, harici vibrasyon uygulanamayacağı için kendi ağırlığıyla akmalı ve donatı kafesinin aralarından boşluk bırakmadan geçmelidir."
+            type: "paragraph",
+            content: "**7.15. Taze Beton Reolojisi (TS EN 206, TS EN 1536, EFFC/DFI Kılavuzu)** Su veya stabilizasyon sıvısı altında tremi yöntemiyle dökülen beton, harici vibrasyon uygulanamayacağı için kendi ağırlığıyla akmalı ve donatı kafesinin aralarından boşluk bırakmadan geçmelidir."
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Kıvam ve Akma Sınıfı:**",
               "Slump değeri: ≥ 200 - 220 mm.",
               "Slump-Flow (Yayılma) Sınıfı: **SF1 (550 - 650 mm)** veya **SF2 (660 - 750 mm)**.",
@@ -3473,123 +3233,98 @@ export const knowledgeArticles: KnowledgeArticle[] = [
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**7.2 Kuyu Dibi Temizliği (Base Cleaning)** Beton dökülmeden hemen önce kuyu dibinde çökelmiş tortuların temizlenmesi taşıma kapasitesi için hayati öneme sahiptir:"
+            type: "paragraph",
+            content: "**7.16. Kuyu Dibi Temizliği (Base Cleaning)** Beton dökülmeden hemen önce kuyu dibinde çökelmiş tortuların temizlenmesi taşıma kapasitesi için hayati öneme sahiptir:"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "Uç taşıyan kazıklarda tortu kalınlığı: **h_sediment ≤ 25 mm**.",
               "Sürtünme kazıklarında tortu kalınlığı: **h_sediment ≤ 50 - 75 mm**.",
               "Yöntem: Düz tabanlı temizleme kovası (clean-out bucket) ile sıyırma ve/veya kuyu tabanına indirilen hava asansörü (air-lift) borusu ile ters sirkülasyonlu çamur vakumlama."
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**7.3 Tremi Borusu Hidrolik Denge Modeli** Tremi boru çapı tipik olarak D_tremie = 200 - 250 mm seçilir. Dökümün başlangıcında, boru içindeki çamur/su ile betonu ayıran serbest hareketli poliüretan sünger top (traveling plug / go-devil) boru tepesine yerleştirilir."
+            type: "paragraph",
+            content: "**7.17. Tremi Borusu Hidrolik Denge Modeli** Tremi boru çapı tipik olarak D_tremie = 200 - 250 mm seçilir. Dökümün başlangıcında, boru içindeki çamur/su ile betonu ayıran serbest hareketli poliüretan sünger top (traveling plug / go-devil) boru tepesine yerleştirilir."
           },
           {
-            "type": "paragraph",
-            "content": "Tremi borusu içindeki beton seviyesinin kuyu içindeki süspansiyon seviyesine karşı hidrolik itki dengesi:"
+            type: "paragraph",
+            content: "Tremi borusu içindeki beton seviyesinin kuyu içindeki süspansiyon seviyesine karşı hidrolik itki dengesi:"
           },
           {
-            "type": "paragraph",
-            "content": "γ_c · H_c,tremie ≥ γ_f · H_kuyu + Δ p_sürtünme + Δ p_akma"
+            type: "paragraph",
+            content: "γ_c · H_c,tremie ≥ γ_f · H_kuyu + Δ p_sürtünme + Δ p_akma"
           },
           {
-            "type": "paragraph",
-            "content": "Burada:"
+            type: "paragraph",
+            content: "Burada:"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "γ_c ≈ 23.5 - 24.5 kN/m³ (taze beton birim hacim ağırlığı),",
               "γ_f ≈ 10.5 - 11.5 kN/m³ (kuyu çamuru birim hacim ağırlığı),",
               "Δ p_akma: Betonun boru ağzından çıkıp yukarı doğru yükselmesi için gereken dinamik akma direnci."
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**7.4 Tremi Borusunun Betona Gömülme Derinliği (h_embed)** Tremi ucu betonun içine daima gömülü kalmalıdır."
+            type: "paragraph",
+            content: "**7.18. Tremi Borusunun Betona Gömülme Derinliği (h_embed)** Tremi ucu betonun içine daima gömülü kalmalıdır."
           },
           {
-            "type": "paragraph",
-            "content": "mathbf2.0 m ≤ h_embed ≤ 4.0 m (Maksimum limit: 6.0 m)"
+            type: "paragraph",
+            content: "mathbf2.0 m ≤ h_embed ≤ 4.0 m (Maksimum limit: 6.0 m)"
           },
           {
-            "type": "list",
-            "items": [
-              "KUYU İÇİ VE TREMİ BORUSU HİDROLİK DİNAMİĞİ",
-              "<--- Tremi Haznesi (Hopper)",
-              "T",
-              "R",
-              "E — ~~~~ Yeraltı Su Seviyesi / Çamur Seviyesi",
-              "M —",
-              "İ — — Kuyu İçi Süspansiyon (Bentonit/Polimer)",
-              "(γ_f ≈ 1.05 - 1.15 g/cm³)",
-              "B —",
-              "======= — O — ====== — ========================================",
-              "R — — Kirlenmiş Üst Beton Arayüzü",
-              "U — — (Overpour / Kırım Payı: 0.5 - 1.0 m)",
-              "...... — S — ...... — ........................................",
-              "U —",
-              "h_embed: 2.0 m - 4.0 m",
-              "=== — — — (Beton İçi Gömülme Derinliği)",
-              "Taze Beton",
-              "Akış Soğanı — Taze, Temiz Yapısal Beton",
-              "(Bulbous Flow) — (γ_c ≈ 2.40 g/cm³)",
-              "///////////////// Kuyu Tabanı (Temizlenmiş) ////////////////"
-            ]
+            type: "paragraph",
+            content: "**İki Ölümcül Şantiye Hatası:**"
           },
           {
-            "type": "paragraph",
-            "content": "**İki Ölümcül Şantiye Hatası:**"
-          },
-          {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Borunun Betondan Çıkması (h_embed < 0):**"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "Tremi borusu sehven taze beton seviyesinin üzerine çekilirse kuyu çamuru boru içine hücum eder (breach of seal). Betonlama durdurulup tremi yeniden tabana sürülmez ve özel tapa atılmazsa kazık gövdesinde kesintisiz bir çamur boşluğu (soğuk derz/kopukluk) oluşur; kazık eksenel yük altında göçer."
+            type: "paragraph",
+            content: "Tremi borusu sehven taze beton seviyesinin üzerine çekilirse kuyu çamuru boru içine hücum eder (breach of seal). Betonlama durdurulup tremi yeniden tabana sürülmez ve özel tapa atılmazsa kazık gövdesinde kesintisiz bir çamur boşluğu (soğuk derz/kopukluk) oluşur; kazık eksenel yük altında göçer."
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Aşırı Gömülme (h_embed > 6.0 m):**"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "Aşırı hidrostatik ve reolojik sürtünme nedeniyle beton tremi içinde kilitlenir (plugging). Yukarı yükselen beton donatı kafesini yukarı doğru sürükleyip deforme eder (cage floating)."
+            type: "paragraph",
+            content: "Aşırı hidrostatik ve reolojik sürtünme nedeniyle beton tremi içinde kilitlenir (plugging). Yukarı yükselen beton donatı kafesini yukarı doğru sürükleyip deforme eder (cage floating)."
           },
           {
-            "type": "paragraph",
-            "content": "**7.5 Beton Akış Morfolojisi ve Başlık Kırım Payı (Overpour)** Beton tremi ağzından çıkarken soğan zarı şeklinde (bulbous upward flow) dışarı ve yukarı doğru genişler. Kuyu içindeki çamurla temas eden en üst beton tabakası çamurla kontamine olur, agrega oranı düşer ve çimentosu zayıflar."
+            type: "paragraph",
+            content: "**7.19. Beton Akış Morfolojisi ve Başlık Kırım Payı (Overpour)** Beton tremi ağzından çıkarken soğan zarı şeklinde (bulbous upward flow) dışarı ve yukarı doğru genişler. Kuyu içindeki çamurla temas eden en üst beton tabakası çamurla kontamine olur, agrega oranı düşer ve çimentosu zayıflar."
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "Kazık projesinde belirlenen kazık üst kotunun üzerine **en az 0.50 - 1.00 m** fazla beton dökülmeli (overpour) ve bu kirli beton tabakası priz aldıktan sonra hidrolik başlık kırıcılarla tasfiye edilerek sağlam gövde betonuna ulaşılmalıdır."
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**DONATI KAFESİ MÜHENDİSLİĞİ: PASPAYI, EKLEME VE KALDIRMA DİNAMİKLERİ**"
+            type: "paragraph",
+            content: "**7.20. DONATI KAFESİ MÜHENDİSLİĞİ: PASPAYI, EKLEME VE KALDIRMA DİNAMİKLERİ**"
           },
           {
-            "type": "paragraph",
-            "content": "Fore kazık donatı kafesi, dökülen taze betonun hidrostatik akış kuvvetlerine, kuyu cidarına sürtünmeye ve montaj sırasındaki ağır dinamik burkulma kuvvetlerine dayanacak şekilde tasarlanmış üç boyutlu uzaysal bir çelik kafestir."
+            type: "paragraph",
+            content: "Fore kazık donatı kafesi, dökülen taze betonun hidrostatik akış kuvvetlerine, kuyu cidarına sürtünmeye ve montaj sırasındaki ağır dinamik burkulma kuvvetlerine dayanacak şekilde tasarlanmış üç boyutlu uzaysal bir çelik kafestir."
           },
           {
-            "type": "paragraph",
-            "content": "**7.1 Paspayı Mühendisliği (Centering & Roller Spacers)**"
+            type: "paragraph",
+            content: "**7.21. Paspayı Mühendisliği (Centering & Roller Spacers)**"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**TS EN 1536 Minimum Net Paspayı:**",
               "Kılıflı kuyularda: ≥ 60 mm.",
               "Kılıfsız (çamurlu veya kuru) kuyularda: **≥ 75 mm** (agregadaki D_max + 50 mm değerinden küçük olamaz).",
@@ -3598,239 +3333,221 @@ export const knowledgeArticles: KnowledgeArticle[] = [
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**7.2 Donatı Kafesi Kaldırma ve Rijitlik Dinamikleri** Kafes imalat sahasında yatay olarak üretilir ve vinç yardımıyla düşey konuma getirilerek kuyuya indirilir."
+            type: "paragraph",
+            content: "**7.22. Donatı Kafesi Kaldırma ve Rijitlik Dinamikleri** Kafes imalat sahasında yatay olarak üretilir ve vinç yardımıyla düşey konuma getirilerek kuyuya indirilir."
           },
           {
-            "type": "paragraph",
-            "content": "**7.2.1 Kaldırma Gerilmeleri ve Burkulma Kontrolü** Kafes yataydan kaldırılırken kendi öz ağırlığı altında iki mesnetli kiriş gibi davranır:"
+            type: "paragraph",
+            content: "**Kaldırma Gerilmeleri ve Burkulma Kontrolü** Kafes yataydan kaldırılırken kendi öz ağırlığı altında iki mesnetli kiriş gibi davranır:"
           },
           {
-            "type": "paragraph",
-            "content": "M_kaldırma, maks = ψ · w_kafes · L_segman² / 8"
+            type: "paragraph",
+            content: "M_kaldırma, maks = ψ · w_kafes · L_segman² / 8"
           },
           {
-            "type": "paragraph",
-            "content": "Burkulmayı ve kalıcı plastik deformasyonu önlemek için:"
+            type: "paragraph",
+            content: "Burkulmayı ve kalıcı plastik deformasyonu önlemek için:"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**İç Rijitlik Halkaları (Stiffener Rings):** Kafes boyunca her 2.0 - 3.0 m'de bir boyuna donatıların içine φ 20 - φ 32 inşaat demirinden rijit çemberler kaynaklanır.",
               "**Geçici Kaldırma Çaprazları:** Vinç kancalarının takıldığı boğumlarda geçici sökülebilir rijit çelik profiller (lifting cross-bracing) yerleştirilir."
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**7.3 Boyuna Donatı Ekleme Yöntemleri: Bindirme vs Mekanik Manşon**"
+            type: "paragraph",
+            content: "**7.23. Boyuna Donatı Ekleme Yöntemleri: Bindirme vs Mekanik Manşon**"
           },
           {
-            "type": "list",
-            "items": [
-              "PARAMETRE — KLASİK BİNDİRMELİ EK (LAP SPLICE) — MEKANİK MANŞON (COUPLER)",
-              "Net Donatı Aralığı — Çubuklar çiftlendiği için — Donatı eksenel hizalanır;",
-              "aralık daralır: — serbest aralık korunur:",
-              "c_clear < 100 mm (Tıkanma Riski) — c_clear > 100 mm (İdeal Akış)",
-              "Beton Akışına Direnç — Yüksek; tremi agregasını süzer — Sıfıra yakın; beton serbestçe",
-              "gövdede boşluk (honeycombing) yapar — çevreye yayılır",
-              "Eksenel Hizalama — Donatıda dışmerkezlik (eksentrisite) — Mükemmel koaksiyel",
-              "ve ikincil eğilme momenti doğar — yük aktarımı",
-              "Montaj Süresi — Tel bağlama / kaynak: — Vidalama / tork anahtarı:",
-              "45 - 90 dakika (Kuyu açık kalır) — 15 - 25 dakika (Hızlı montaj)",
-              "Soğuk Derz Riski — Yüksek (Kuyu bekleme süresi uzar) — Minimum",
-              "Maliyet ve Çelik Tonajı — %15 - 20 ilave bindirme çeliği — Manşon birim maliyeti var,",
-              "hurdaya gider — ancak çelikten tasarruf sağlar"
-            ]
-          },
-          {
-            "type": "paragraph",
-            "content": "**Mekanik Manşon Standart Şartı:** Kullanılan manşonlar **ISO 15835 / ACI 318 Type 2** sınıfında olmalı; statik çekmede donatının karakteristik akma dayanımının en az **1.25 katı (1.25 · f_yk)** ve çekme kopma dayanımının en az **1.10 katı (1.10 · f_tk)** yük taşımalı, kopma manşon içinde değil donatı gövdesinde gerçekleşmelidir."
+            type: "paragraph",
+            content: "**Mekanik Manşon Standart Şartı:** Kullanılan manşonlar **ISO 15835 / ACI 318 Type 2** sınıfında olmalı; statik çekmede donatının karakteristik akma dayanımının en az **1.25 katı (1.25 · f_yk)** ve çekme kopma dayanımının en az **1.10 katı (1.10 · f_tk)** yük taşımalı, kopma manşon içinde değil donatı gövdesinde gerçekleşmelidir."
           }
         ]
       },
       {
-        "id": "pvd-prefabrike-dusey-drenler-ve-on-yukleme",
-        "title": "8. Prefabrike Düşey Drenler (PVD) ve Ön Yükleme (Sürşarj) Mekaniği",
-        "blocks": [
+        id: "pvd-prefabrike-dusey-drenler-ve-on-yukleme",
+        title: "8. Prefabrike Düşey Drenler (PVD) ve Ön Yükleme (Sürşarj) Mekaniği",
+        blocks: [
           {
-            "type": "paragraph",
-            "content": "Kritik derecede az geçirimli doymuş kohezyonlu zeminlerde (k = 10^(-8) - 10^(-10) m/s), primer konsolidasyon oturmalarının inşaat süresi içinde tamamlanması amacıyla radyal drenaj boyunu kısaltan geosentetik fitil drenler (PVD) ve geçici sürşarj dolgusu kullanılır."
+            type: "paragraph",
+            content: "Kritik derecede az geçirimli doymuş kohezyonlu zeminlerde (k = 10^(-8) - 10^(-10) m/s), primer konsolidasyon oturmalarının inşaat süresi içinde tamamlanması amacıyla radyal drenaj boyunu kısaltan geosentetik fitil drenler (PVD) ve geçici sürşarj dolgusu kullanılır."
           },
           {
-            "type": "paragraph",
-            "content": "**8.1. Barron (1948) ve Hansbo (1979) Radyal Konsolidasyon Teorisi**"
+            type: "paragraph",
+            content: "**8.1. Barron (1948) ve Hansbo (1979) Radyal Konsolidasyon Teorisi**"
           },
           {
-            "type": "paragraph",
-            "content": "Konsolidasyon diferansiyel denkleminin radyal akış çözümü:"
+            type: "paragraph",
+            content: "Konsolidasyon diferansiyel denkleminin radyal akış çözümü:"
           },
           {
-            "type": "paragraph",
-            "content": "∂ u / (∂ t) = c_h · ( ∂² u / (∂ r²) + 1 / r ∂ u / (∂ r) ) + c_v · ∂² u / (∂ z²)"
+            type: "paragraph",
+            content: "∂ u / (∂ t) = c_h · ( ∂² u / (∂ r²) + 1 / r ∂ u / (∂ r) ) + c_v · ∂² u / (∂ z²)"
           },
           {
-            "type": "paragraph",
-            "content": "Düşey ve radyal konsolidasyonun birleşik konsolidasyon derecesi (U):"
+            type: "paragraph",
+            content: "Düşey ve radyal konsolidasyonun birleşik konsolidasyon derecesi (U):"
           },
           {
-            "type": "paragraph",
-            "content": "U = 1 - (1 - U_v) · (1 - U_h)"
+            type: "paragraph",
+            content: "U = 1 - (1 - U_v) · (1 - U_h)"
           },
           {
-            "type": "paragraph",
-            "content": "Hansbo (1979) formülasyonuna göre t süresi sonundaki radyal konsolidasyon derecesi (U_h):"
+            type: "paragraph",
+            content: "Hansbo (1979) formülasyonuna göre t süresi sonundaki radyal konsolidasyon derecesi (U_h):"
           },
           {
-            "type": "paragraph",
-            "content": "U_h = 1 - exp( - 8 · c_h · t / (D² · μ_n) )"
+            type: "paragraph",
+            content: "U_h = 1 - exp( - 8 · c_h · t / (D² · μ_n) )"
           },
           {
-            "type": "paragraph",
-            "content": "Gereken konsolidasyon süresi (t):"
+            type: "paragraph",
+            content: "Gereken konsolidasyon süresi (t):"
           },
           {
-            "type": "paragraph",
-            "content": "t = D² / (8 · c_h) · μ_n · ln( 1 / (1 - U_h) )"
+            type: "paragraph",
+            content: "t = D² / (8 · c_h) · μ_n · ln( 1 / (1 - U_h) )"
           },
           {
-            "type": "paragraph",
-            "content": "**8.2. Parametrik Tanımlar ve Geometrik Bağıntılar**"
+            type: "paragraph",
+            content: "**8.2. Parametrik Tanımlar ve Geometrik Bağıntılar**"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**D (Eşdeğer Silindir Etki Çapı):**"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "D = [ 1.05 · s (Eşkenar Üçgen Izgara) ; 1.13 · s (Kare Izgara) ]"
+            type: "paragraph",
+            content: "D = [ 1.05 · s (Eşkenar Üçgen Izgara) ; 1.13 · s (Kare Izgara) ]"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**d_w (Eşdeğer Dren Çapı):** Düz PVD şeridinin (b: genişlik ≈ 100 mm, t_d: et kalınlığı ≈ 3.5 - 4.0 mm):"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "d_w = (2 · (b + t_d)) / π ≈ (2 · (100 + 4)) / π ≈ 66.2 mm"
+            type: "paragraph",
+            content: "d_w = (2 · (b + t_d)) / π ≈ (2 · (100 + 4)) / π ≈ 66.2 mm"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**c_h (Yatay Konsolidasyon Katsayısı):** Sedimanter killerde tabii laminasyon ve varv yapısı nedeniyle yatay geçirgenlik düşeyden büyüktür: c_h ≈ (1.5 - 4.0) · c_v."
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**8.3. Dren Geometrisi, Örselenme (Smear Zone) ve Kuyu Direnci (μ_n)**"
+            type: "paragraph",
+            content: "**8.3. Dren Geometrisi, Örselenme (Smear Zone) ve Kuyu Direnci (μ_n)**"
           },
           {
-            "type": "paragraph",
-            "content": "μ_n = ln(n_d / s_r) + (k_h / k_s) · ln(s_r) - 3 / 4 + π · z · (2 · l - z) · k_h / q_w"
+            type: "paragraph",
+            content: "μ_n = ln(n_d / s_r) + (k_h / k_s) · ln(s_r) - 3 / 4 + π · z · (2 · l - z) · k_h / q_w"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Aralık Oranı (n_d):**"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "n_d = D / d_w"
+            type: "paragraph",
+            content: "n_d = D / d_w"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Örselenme Bölgesi Oranı (s_r):**"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "Mandrelin çakılması esnasında kılıf etrafında zemin makaslanır ve gözenekler tıkanır."
+            type: "paragraph",
+            content: "Mandrelin çakılması esnasında kılıf etrafında zemin makaslanır ve gözenekler tıkanır."
           },
           {
-            "type": "paragraph",
-            "content": "s_r = d_s / d_w ≈ 2.0 - 3.5"
+            type: "paragraph",
+            content: "s_r = d_s / d_w ≈ 2.0 - 3.5"
           },
           {
-            "type": "paragraph",
-            "content": "Burada d_s: örselenme bölgesi çapı, mandrel enkesit eşdeğer çapının 2 ila 3 katıdır."
+            type: "paragraph",
+            content: "Burada d_s: örselenme bölgesi çapı, mandrel enkesit eşdeğer çapının 2 ila 3 katıdır."
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Geçirgenlik Bozulma Oranı:**"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "Örselenmiş bölgenin yatay geçirgenliği düşer: k_h / k_s ≈ 2.0 - 5.0."
+            type: "paragraph",
+            content: "Örselenmiş bölgenin yatay geçirgenliği düşer: k_h / k_s ≈ 2.0 - 5.0."
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Kuyu Direnci (Well Resistance) ve Boşalma Kapasitesi (q_w):**"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "PVD drenaj çekirdeğinin boyuna su iletkenlik debisi (q_w, m³/s). Yanal efektif toprak basıncı 300 - 400 kPa mertebesine ulaştığında dren gövdesinde boyuna katlanma (kinking) meydana gelir; bu sebeple ASTM D4716 uyarınca sahada q_w ≥ 100 - 150 m³/yıl tasarım eşiği sağlanmalıdır."
+            type: "paragraph",
+            content: "PVD drenaj çekirdeğinin boyuna su iletkenlik debisi (q_w, m³/s). Yanal efektif toprak basıncı 300 - 400 kPa mertebesine ulaştığında dren gövdesinde boyuna katlanma (kinking) meydana gelir; bu sebeple ASTM D4716 uyarınca sahada q_w ≥ 100 - 150 m³/yıl tasarım eşiği sağlanmalıdır."
           },
           {
-            "type": "paragraph",
-            "content": "**8.4. Ön Yükleme ve Sürşarj Dolgusu Mekaniği**"
+            type: "paragraph",
+            content: "**8.4. Ön Yükleme ve Sürşarj Dolgusu Mekaniği**"
           },
           {
-            "type": "paragraph",
-            "content": "Tasarım yükü Δ σ_des altındaki primer oturmanın t_p süresi yerine sürşarj yükü Δ σ_sur eklenerek t_s ll t_p süresinde tamamlanması sağlanır."
+            type: "paragraph",
+            content: "Tasarım yükü Δ σ_des altındaki primer oturmanın t_p süresi yerine sürşarj yükü Δ σ_sur eklenerek t_s ll t_p süresinde tamamlanması sağlanır."
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Aşırı Konsolidasyon Oranı Yaratma:**"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "Zeminde suni olarak bir ön konsolidasyon basıncı (σ'_p) yaratılır:"
+            type: "paragraph",
+            content: "Zeminde suni olarak bir ön konsolidasyon basıncı (σ'_p) yaratılır:"
           },
           {
-            "type": "paragraph",
-            "content": "OCR = (σ'_v0 + Δσ_des + Δσ_sur) / (σ'_v0 + Δσ_des) > 1.0"
+            type: "paragraph",
+            content: "OCR = (σ'_v0 + Δσ_des + Δσ_sur) / (σ'_v0 + Δσ_des) > 1.0"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**İkincil Oturmanın (Sünme - Creep) Yok Edilmesi:**"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "İkincil sıkışma katsayısı C_α; zemin aşırı konsolide (OC) duruma geçirildiğinde C_α,NC değerinin %10 - %20'sine düşer. Sürşarj kaldırıldığında zemin boşalma indisi (C_r) eğrisinde kalır ve operasyonel ömür boyunca yapısal oturma yapmaz."
+            type: "paragraph",
+            content: "İkincil sıkışma katsayısı C_α; zemin aşırı konsolide (OC) duruma geçirildiğinde C_α,NC değerinin %10 - %20'sine düşer. Sürşarj kaldırıldığında zemin boşalma indisi (C_r) eğrisinde kalır ve operasyonel ömür boyunca yapısal oturma yapmaz."
           }
         ]
       },
       {
-        "id": "derin-dinamik-kompaksiyon-ve-zemin-stabilizasyonu",
-        "title": "9. Derin Dinamik Kompaksiyon (DDC) ve Kireç/Çimento Zemin Stabilizasyonu",
-        "blocks": [
+        id: "derin-dinamik-kompaksiyon-ve-zemin-stabilizasyonu",
+        title: "9. Derin Dinamik Kompaksiyon (DDC) ve Kireç/Çimento Zemin Stabilizasyonu",
+        blocks: [
           {
-            "type": "paragraph",
-            "content": "Ağır bir tokmak kütlesinin serbest düşüşle zemin yüzeyine bırakılarak zemine yüksek kinetik enerji aktarılması ve şok dalgaları (P ve S dalgaları) ile zemin iskeletinin yeniden düzenlenmesi işlemidir."
+            type: "paragraph",
+            content: "Ağır bir tokmak kütlesinin serbest düşüşle zemin yüzeyine bırakılarak zemine yüksek kinetik enerji aktarılması ve şok dalgaları (P ve S dalgaları) ile zemin iskeletinin yeniden düzenlenmesi işlemidir."
           },
           {
-            "type": "paragraph",
-            "content": "**9.1. Menard ve Lukas Etki Derinliği Formülü**"
+            type: "paragraph",
+            content: "**9.1. Menard ve Lukas Etki Derinliği Formülü**"
           },
           {
-            "type": "paragraph",
-            "content": "D = n · √(W · H)"
+            type: "paragraph",
+            content: "D = n · √(W · H)"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "D: Efektif sıkıştırma derinliği (metre).",
               "W: Tokmak ağırlığı (metrik ton, sahada tipik 12 - 30 ton, özel vinçlerde 40 tona kadar).",
               "H: Düşü yüksekliği (metre, vinç bom kapasitesine bağlı olarak serbest düşüşte 15 - 30 m).",
@@ -3841,24 +3558,24 @@ export const knowledgeArticles: KnowledgeArticle[] = [
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**9.2. Enerji Dağılımı ve Çok Fazlı Grid Sekansı**"
+            type: "paragraph",
+            content: "**9.2. Enerji Dağılımı ve Çok Fazlı Grid Sekansı**"
           },
           {
-            "type": "paragraph",
-            "content": "Toplam uygulanan spesifik enerji:"
+            type: "paragraph",
+            content: "Toplam uygulanan spesifik enerji:"
           },
           {
-            "type": "paragraph",
-            "content": "E = N_darbe · W · H / A_grid (ton·m/m²) veya E_spesifik = ∑ (W · g · H) / V_zemin (kJ/m³)"
+            type: "paragraph",
+            content: "E = N_darbe · W · H / A_grid (ton·m/m²) veya E_spesifik = ∑ (W · g · H) / V_zemin (kJ/m³)"
           },
           {
-            "type": "paragraph",
-            "content": "Uygulanan toplam enerji genelde zemin hacmi başına 150 - 300 kJ/m³ (alan bazında 1500 - 3500 kJ/m²) seçilir."
+            type: "paragraph",
+            content: "Uygulanan toplam enerji genelde zemin hacmi başına 150 - 300 kJ/m³ (alan bazında 1500 - 3500 kJ/m²) seçilir."
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Faz 1 (Birincil Izgara / Primary Grid):** Geniş aralıklı akslar (6 m × 6 m veya 8 m × 8 m). Amaç, en derin tabakaları sıkıştırmaktır. Krater derinliği 1.0 - 2.5 m seviyesine ulaşır.",
               "**Faz 2 (İkincil Izgara / Secondary Grid):** Birincil noktaların ortasına \"split-spacing\" olarak yerleştirilir. Orta derinliklerin sıkışmasını sağlar.",
               "**Krater Doldurma (Crater Backfill):** Her vuruş fazından sonra oluşan kraterler granüler malzeme (kırmataş/tüvenan) ile doldurulur ve dozerle tesviye edilir.",
@@ -3866,111 +3583,111 @@ export const knowledgeArticles: KnowledgeArticle[] = [
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**9.3. Aşırı Boşluk Suyu Basıncı ve Sıvılaşma Sönümleme Mekanizması**"
+            type: "paragraph",
+            content: "**9.3. Aşırı Boşluk Suyu Basıncı ve Sıvılaşma Sönümleme Mekanizması**"
           },
           {
-            "type": "paragraph",
-            "content": "Doygun kumlarda her darbede şok dalgası boşluk suyu basıncını tepe noktasına fırlatır (r_u = Δ u / σ'_v arrow 1.0). Zemin krater tabanında anlık sıvılaşır."
+            type: "paragraph",
+            content: "Doygun kumlarda her darbede şok dalgası boşluk suyu basıncını tepe noktasına fırlatır (r_u = Δ u / σ'_v arrow 1.0). Zemin krater tabanında anlık sıvılaşır."
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "Hacimsel daralma sonucu su basınç altında krater çevresindeki radyal çatlaklardan fışkırır.",
               "**Dinlenme Süresi (Rest Period):** Boşluk suyu basıncı disipe olmadan bir sonraki vuruş fazına geçilirse zemin sıkışmaz, sıvılaşarak yana doğru akar (heave/kabarma meydana gelir). Kohezyonsuz kumlarda dinlenme süresi 1-3 gün iken, siltli zeminlerde piezometre takibi ile 1-3 hafta beklenmelidir."
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**KİREÇ VE ÇİMENTO STABİLİZASYONU (LIME/CEMENT SOIL STABILIZATION)**"
+            type: "paragraph",
+            content: "**9.4. KİREÇ VE ÇİMENTO STABİLİZASYONU (LIME/CEMENT SOIL STABILIZATION)**"
           },
           {
-            "type": "paragraph",
-            "content": "Yüksek plastisiteli, suya duyarlı ve düşük taşıma güçlü zeminlerin geoteknik indeks özelliklerini ve mukavemetini kimyasal bağlayıcılarla kalıcı olarak iyileştirme mekanizmasıdır."
+            type: "paragraph",
+            content: "Yüksek plastisiteli, suya duyarlı ve düşük taşıma güçlü zeminlerin geoteknik indeks özelliklerini ve mukavemetini kimyasal bağlayıcılarla kalıcı olarak iyileştirme mekanizmasıdır."
           },
           {
-            "type": "paragraph",
-            "content": "**9.1. Killi Zeminlerde Kimyasal Reaksiyon Fazları**"
+            type: "paragraph",
+            content: "**9.5. Killi Zeminlerde Kimyasal Reaksiyon Fazları**"
           },
           {
-            "type": "paragraph",
-            "content": "**9.1.1. Kısa Dönemli Reaksiyonlar (Modifikasyon Fazı - İlk Birkaç Saat)**"
+            type: "paragraph",
+            content: "**Kısa Dönemli Reaksiyonlar (Modifikasyon Fazı - İlk Birkaç Saat)**"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Katyon Değişimi (Cation Exchange):**"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "Sönmemiş kireç (CaO) veya sönmüş kireç (Ca(OH)_2) suya girdiğinde ortama bol miktarda iki değerlikli kalsiyum iyonu (Ca^(2+)) salar. Kil minerallerinin (montmorillonit, illit) kristal tabakaları arasında tutulan tek değerlikli sodyum (Na^+) ve potasyum (K^+) iyonları, yüksek afiniteli Ca^(2+) ile yer değiştirir. Difüz çift tabaka (diffuse double layer) kalınlığı dramatik biçimde incelir; parçacıklar arasındaki elektrostatik itme kuvveti yerini çekme kuvvetine bırakır."
+            type: "paragraph",
+            content: "Sönmemiş kireç (CaO) veya sönmüş kireç (Ca(OH)_2) suya girdiğinde ortama bol miktarda iki değerlikli kalsiyum iyonu (Ca^(2+)) salar. Kil minerallerinin (montmorillonit, illit) kristal tabakaları arasında tutulan tek değerlikli sodyum (Na^+) ve potasyum (K^+) iyonları, yüksek afiniteli Ca^(2+) ile yer değiştirir. Difüz çift tabaka (diffuse double layer) kalınlığı dramatik biçimde incelir; parçacıklar arasındaki elektrostatik itme kuvveti yerini çekme kuvvetine bırakır."
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Flokülasyon ve Aglomerasyon:**"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "Çift tabakanın büzülmesiyle düzensiz dizilimli kil levhacıkları \"kenar-yüzey\" (edge-to-face) temaslı karton kutu yapısına geçer. Kil fiziksel olarak topaklaşır ve kum/silt kıvamında granüler bir doku kazanır."
+            type: "paragraph",
+            content: "Çift tabakanın büzülmesiyle düzensiz dizilimli kil levhacıkları \"kenar-yüzey\" (edge-to-face) temaslı karton kutu yapısına geçer. Kil fiziksel olarak topaklaşır ve kum/silt kıvamında granüler bir doku kazanır."
           },
           {
-            "type": "paragraph",
-            "content": "**9.1.2. Uzun Dönemli Reaksiyonlar (Puzolanik Çimentolaşma - Aylar/Yıllar)** Kireç ilavesiyle ortamın pH değeri 12.4'ün üzerine çıkar. Bu aşırı alkali ortam kil minerallerinin kafes yapısındaki silika (SiO_2) ve alüminayı (Al_2O_3) çözer:"
+            type: "paragraph",
+            content: "**Uzun Dönemli Reaksiyonlar (Puzolanik Çimentolaşma - Aylar/Yıllar)** Kireç ilavesiyle ortamın pH değeri 12.4'ün üzerine çıkar. Bu aşırı alkali ortam kil minerallerinin kafes yapısındaki silika (SiO_2) ve alüminayı (Al_2O_3) çözer:"
           },
           {
-            "type": "paragraph",
-            "content": "Ca^(2+) + 2(OH)^- + SiO_2 longrightarrow C-S-H (Kalsiyum Silikat Hidrat)"
+            type: "paragraph",
+            content: "Ca^(2+) + 2(OH)^- + SiO_2 longrightarrow C-S-H (Kalsiyum Silikat Hidrat)"
           },
           {
-            "type": "paragraph",
-            "content": "Ca^(2+) + 2(OH)^- + Al_2O_3 longrightarrow C-A-H (Kalsiyum Alüminat Hidrat)"
+            type: "paragraph",
+            content: "Ca^(2+) + 2(OH)^- + Al_2O_3 longrightarrow C-A-H (Kalsiyum Alüminat Hidrat)"
           },
           {
-            "type": "paragraph",
-            "content": "Bu hidrate kristaller zemin boşluklarını doldurur, taneler arasında kalıcı kristal köprüler kurarak mukavemeti beton benzeri bir matrise dönüştürür."
+            type: "paragraph",
+            content: "Bu hidrate kristaller zemin boşluklarını doldurur, taneler arasında kalıcı kristal köprüler kurarak mukavemeti beton benzeri bir matrise dönüştürür."
           },
           {
-            "type": "paragraph",
-            "content": "**9.1.3. Çimento Stabilizasyonu Mekanizması** Portland çimentosu hidrasyonu için zemindeki çözünmüş silikaya ihtiyaç duymaz. Kendi bünyesindeki trikalsiyum silikat (C_3S) ve dikalsiyum silikat (C_2S) suyla reaksiyona girerek birincil C-S-H jelini ve kalsiyum hidroksiti üretir. Bu sayede çimento; silt, kum, çakıl ve düşük plastisiteli killerde üniversal bir hidrolik bağlayıcıdır."
+            type: "paragraph",
+            content: "**Çimento Stabilizasyonu Mekanizması** Portland çimentosu hidrasyonu için zemindeki çözünmüş silikaya ihtiyaç duymaz. Kendi bünyesindeki trikalsiyum silikat (C_3S) ve dikalsiyum silikat (C_2S) suyla reaksiyona girerek birincil C-S-H jelini ve kalsiyum hidroksiti üretir. Bu sayede çimento; silt, kum, çakıl ve düşük plastisiteli killerde üniversal bir hidrolik bağlayıcıdır."
           },
           {
-            "type": "paragraph",
-            "content": "**9.2. Geoteknik İndeks ve Mukavemet Değişimleri**"
+            type: "paragraph",
+            content: "**9.6. Geoteknik İndeks ve Mukavemet Değişimleri**"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Plastisite İndisinin (PI) Düşmesi:**"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "Kireç/çimento ilavesi ile zeminin Plastik Limiti (w_P) anında yukarı fırlar, Likit Limit (w_L) ise sabit kalır veya hafifçe düşer:"
+            type: "paragraph",
+            content: "Kireç/çimento ilavesi ile zeminin Plastik Limiti (w_P) anında yukarı fırlar, Likit Limit (w_L) ise sabit kalır veya hafifçe düşer:"
           },
           {
-            "type": "paragraph",
-            "content": "PI = w_L - w_P ⇒ Hızla küçülür (Örn: PI: %45 arrow %12)"
+            type: "paragraph",
+            content: "PI = w_L - w_P ⇒ Hızla küçülür (Örn: PI: %45 arrow %12)"
           },
           {
-            "type": "paragraph",
-            "content": "Zemin yüksek plastisiteli kilden (CH), az plastisiteli inorganik kil veya silt (CL/ML) karakterine geçer."
+            type: "paragraph",
+            content: "Zemin yüksek plastisiteli kilden (CH), az plastisiteli inorganik kil veya silt (CL/ML) karakterine geçer."
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Proctor Kompaksiyon Eğrilerinin Kayması:**"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "Flokülasyon sonucu zemin su tutma yapısını değiştirir:"
+            type: "paragraph",
+            content: "Flokülasyon sonucu zemin su tutma yapısını değiştirir:"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "Optimum Su Muhtevası (w_opt): %2 - %5 oranında **artar**.",
               "Maksimum Kuru Yoğunluk (γ_d,max): Hafifçe **azalır** (~ %5 - %8).",
               "Şantiye Pratiği Avantajı: Doğal su muhtevası yüksek, bataklık kıvamındaki arazilerde zemin kurutulmaya gerek kalmadan sahada derhal sıkıştırılabilir hale gelir.",
@@ -3981,118 +3698,102 @@ export const knowledgeArticles: KnowledgeArticle[] = [
             ]
           },
           {
-            "type": "paragraph",
-            "content": "Şişme yüzdesi %10 - %15'ten %0.1'in altına düşer, zemin suya doygun hale gelse dahi hacimsel stabilite korunur."
+            type: "paragraph",
+            content: "Şişme yüzdesi %10 - %15'ten %0.1'in altına düşer, zemin suya doygun hale gelse dahi hacimsel stabilite korunur."
           },
           {
-            "type": "paragraph",
-            "content": "**9.3. Sülfat Tehlikesi ve Ettringit/Thaumasite Hasarı** Zeminde doğal çözünebilir sülfat içeriği (SO_4^(2-) > 3000 ppm veya %0.3) bulunuyorsa, kireç ilavesi kalsiyum, alümina ve sülfatın reaksiyona girmesine yol açar. Bu durumda yüksek hacim genişlemesi yapan **Ettringit** ve **Thaumasite** kristalleri oluşur. Bu kristaller zeminde %100'e varan yıkıcı genleşmeye ve yol gövdesinin patlamasına neden olur. Çözüm: Sülfat içeriği yüksek zeminlerde kireç yerine granüle yüksek fırın cürufu (GGBS) ve sülfata dayanıklı çimento kombinasyonları seçilmelidir."
+            type: "paragraph",
+            content: "**9.7. Sülfat Tehlikesi ve Ettringit/Thaumasite Hasarı** Zeminde doğal çözünebilir sülfat içeriği (SO_4^(2-) > 3000 ppm veya %0.3) bulunuyorsa, kireç ilavesi kalsiyum, alümina ve sülfatın reaksiyona girmesine yol açar. Bu durumda yüksek hacim genişlemesi yapan **Ettringit** ve **Thaumasite** kristalleri oluşur. Bu kristaller zeminde %100'e varan yıkıcı genleşmeye ve yol gövdesinin patlamasına neden olur. Çözüm: Sülfat içeriği yüksek zeminlerde kireç yerine granüle yüksek fırın cürufu (GGBS) ve sülfata dayanıklı çimento kombinasyonları seçilmelidir."
           }
         ]
       },
       {
-        "id": "kalite-kontrol-kabul-deneyleri-ve-sayisal-modelleme",
-        "title": "10. Kalite Güvence (QA/QC), Tahribatsız Bütünlük Testleri, Yükleme Deneyleri ve Plaxis FEM Modellemesi",
-        "blocks": [
+        id: "kalite-kontrol-kabul-deneyleri-ve-sayisal-modelleme",
+        title: "10. Kalite Güvence (QA/QC), Tahribatsız Bütünlük Testleri, Yükleme Deneyleri ve Plaxis FEM Modellemesi",
+        blocks: [
           {
-            "type": "paragraph",
-            "content": "Derin temeller yer altında kaldığı için yapısal bütünlük ve taşıma kapasitesi uluslararası kabul görmüş geofiziksel ve geoteknik deney protokolleriyle doğrulanmalıdır."
+            type: "paragraph",
+            content: "Derin temeller yer altında kaldığı için yapısal bütünlük ve taşıma kapasitesi uluslararası kabul görmüş geofiziksel ve geoteknik deney protokolleriyle doğrulanmalıdır."
           },
           {
-            "type": "paragraph",
-            "content": "**10.1 PIT (Pile Integrity Test - Düşük Deformasyonlu Bütünlük Testi, ASTM D5882)** Bir boyutlu gerilme dalgası yayılım teorisine dayanır. Kazık başına el çekiciyle hafif bir darbe vurulur ve ivmeölçer (akselerometre) ile tepki sinyali kaydedilir."
+            type: "paragraph",
+            content: "**10.1. PIT (Pile Integrity Test - Düşük Deformasyonlu Bütünlük Testi, ASTM D5882)** Bir boyutlu gerilme dalgası yayılım teorisine dayanır. Kazık başına el çekiciyle hafif bir darbe vurulur ve ivmeölçer (akselerometre) ile tepki sinyali kaydedilir."
           },
           {
-            "type": "paragraph",
-            "content": "**10.1.1 Dalga Mekaniği ve Akustik Empedans** Elastik çubukta boyuna dalga hızı (c):"
+            type: "paragraph",
+            content: "**Dalga Mekaniği ve Akustik Empedans** Elastik çubukta boyuna dalga hızı (c):"
           },
           {
-            "type": "paragraph",
-            "content": "c = √(E_c / ρ_c) ≈ 3600 - 4200 m/s"
+            type: "paragraph",
+            content: "c = √(E_c / ρ_c) ≈ 3600 - 4200 m/s"
           },
           {
-            "type": "paragraph",
-            "content": "Kazık gövdesinin mekanik empedansı (Z):"
+            type: "paragraph",
+            content: "Kazık gövdesinin mekanik empedansı (Z):"
           },
           {
-            "type": "paragraph",
-            "content": "Z = E_c · A / c = ρ_c · c · A"
+            type: "paragraph",
+            content: "Z = E_c · A / c = ρ_c · c · A"
           },
           {
-            "type": "paragraph",
-            "content": "İki farklı kesit veya malzeme arayüzündeki dalga yansıma katsayısı (R):"
+            type: "paragraph",
+            content: "İki farklı kesit veya malzeme arayüzündeki dalga yansıma katsayısı (R):"
           },
           {
-            "type": "paragraph",
-            "content": "R = (Z_2 - Z_1) / (Z_2 + Z_1) = (ρ_2 c_2 A_2 - ρ_1 c_1 A_1) / (ρ_2 c_2 A_2 + ρ_1 c_1 A_1)"
+            type: "paragraph",
+            content: "R = (Z_2 - Z_1) / (Z_2 + Z_1) = (ρ_2 c_2 A_2 - ρ_1 c_1 A_1) / (ρ_2 c_2 A_2 + ρ_1 c_1 A_1)"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Daralma / Süngerleşme (Z_2 < Z_1):** Yansıma katsayısı R < 0 olur; hız grafiğinde darbe yönüyle aynı yönde pozitif bir hız pik'i görülür.",
               "**Genişleme / Soğan (Z_2 > Z_1):** Yansıma katsayısı R > 0 olur; negatif yönde bir hız pik'i oluşur.",
               "**Kazık Ucu Yansıması:** Uçtan gelen yansımanın gidiş-dönüş zamanı:"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "t = 2 L / c"
+            type: "paragraph",
+            content: "t = 2 L / c"
           },
           {
-            "type": "paragraph",
-            "content": "**10.1.2 PIT Testinin Sınırları** Narinlik oranı L/D > 30 olan kazıklarda veya aşırı sert kil/sıkı kum tabakalarındaki yüksek çeper sürtünmesi gerilme dalgasını tamamen sönümler. Kazık ucundan yansıma gelmemesi kazığın kırık olduğu anlamına gelmez."
+            type: "paragraph",
+            content: "**PIT Testinin Sınırları** Narinlik oranı L/D > 30 olan kazıklarda veya aşırı sert kil/sıkı kum tabakalarındaki yüksek çeper sürtünmesi gerilme dalgasını tamamen sönümler. Kazık ucundan yansıma gelmemesi kazığın kırık olduğu anlamına gelmez."
           },
           {
-            "type": "paragraph",
-            "content": "**10.2 CSL (Cross-Hole Sonic Logging - Ultrasonik Kros-Hol Testi, ASTM D6760)** Donatı kafesine imalat öncesinde bağlanan içi su dolu çelik servis boruları (iç çap ≥ 50 mm) içerisine indirilen ultrasonik verici ve alıcı problarla P-dalgası geçiş süresi ölçülür."
+            type: "paragraph",
+            content: "**10.2. CSL (Cross-Hole Sonic Logging - Ultrasonik Kros-Hol Testi, ASTM D6760)** Donatı kafesine imalat öncesinde bağlanan içi su dolu çelik servis boruları (iç çap ≥ 50 mm) içerisine indirilen ultrasonik verici ve alıcı problarla P-dalgası geçiş süresi ölçülür."
           },
           {
-            "type": "list",
-            "items": [
-              "CSL (CROSS-HOLE SONIC LOGGING) PROB MEKANİZMASI",
-              "Çelik Tüp 1 (Tx - Verici) Çelik Tüp 2 (Rx - Alıcı)",
-              "Kablosu — — Kablosu",
-              "[Ultrasonik] — — [Ultrasonik]",
-              "[ Verici ] ---- P-Dalgası -→ [ Alıcı ]",
-              "[ (Tx) ] — — [ (Rx) ]",
-              "Su Dolu — — Su Dolu",
-              "Çelik Servis — — Çelik Servis",
-              "Borusu — — Borusu",
-              "SAĞLAM BETON: FAT (First Arrival Time) Normal, Enerji Yüksek",
-              "KUSURLU BETON (Hava/Çamur Boşluğu): FAT Gecikmeli, Enerji Düşük"
-            ]
+            type: "paragraph",
+            content: "**Ölçüm Parametreleri**"
           },
           {
-            "type": "paragraph",
-            "content": "**10.2.1 Ölçüm Parametreleri**"
-          },
-          {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**İlk Varış Süresi (FAT - First Arrival Time):**"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "v_p = d_tüpler arası / FAT"
+            type: "paragraph",
+            content: "v_p = d_tüpler arası / FAT"
           },
           {
-            "type": "paragraph",
-            "content": "Normal beton için v_p ≈ 3800 - 4400 m/s."
+            type: "paragraph",
+            content: "Normal beton için v_p ≈ 3800 - 4400 m/s."
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Göreceli Enerji / Genlik Kaybı (E_r):** Sinyalin entegre edilmiş dalga alanı enerjisi."
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**10.2.2 Değerlendirme Kriterleri**"
+            type: "paragraph",
+            content: "**Değerlendirme Kriterleri**"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Kabul Edilebilir (Normal):** FAT artışı <%10 ve enerji kaybı < 6 dB.",
               "**Şüpheli (Questionable):** FAT artışı %11 - %20 veya enerji kaybı 6 - 9 dB.",
               "**Kusurlu (Defect / Flaw):** FAT artışı > %20 ve enerji kaybı > 9 dB.",
@@ -4100,55 +3801,55 @@ export const knowledgeArticles: KnowledgeArticle[] = [
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**10.3 Statik Eksenel Yükleme Deneyleri (ASTM D1143 Basınç, ASTM D3689 Çekme)** Kazık taşıma kapasitesinin sahadaki mutlak nihai hakemidir."
+            type: "paragraph",
+            content: "**10.3. Statik Eksenel Yükleme Deneyleri (ASTM D1143 Basınç, ASTM D3689 Çekme)** Kazık taşıma kapasitesinin sahadaki mutlak nihai hakemidir."
           },
           {
-            "type": "paragraph",
-            "content": "**10.3.1 Reaksiyon Sistemleri**"
+            type: "paragraph",
+            content: "**Reaksiyon Sistemleri**"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Kentledge (Balast Yığını):** Test kazığının üzerine kurulan çelik platforma beton bloklar veya çelik külçeler yüklenir. Balast ağırlığı hedeflenen maksimum test yükünün en az **1.20 katı** olmalıdır (W_kentledge ≥ 1.20 · Q_test).",
               "**Ankrajlı / Reaksiyon Kazıklı Sistem:** Test kazığının etrafına simetrik olarak yerleştirilen çekme fore kazıkları veya zemin ankrajları reaksiyon kirişine bağlanır."
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**10.3.2 Davisson Göçme Kriteri (Limit Yük Tayini)** Kazığın nihai limit taşıma yükü (Q_ult), toplam baş oturmasının (S_t) elastik kısalma sınırını aştığı nokta olarak tanımlanır:"
+            type: "paragraph",
+            content: "**Davisson Göçme Kriteri (Limit Yük Tayini)** Kazığın nihai limit taşıma yükü (Q_ult), toplam baş oturmasının (S_t) elastik kısalma sınırını aştığı nokta olarak tanımlanır:"
           },
           {
-            "type": "paragraph",
-            "content": "S_limit = Δ_elastik + 3.81 mm + D_kazık / 120"
+            type: "paragraph",
+            content: "S_limit = Δ_elastik + 3.81 mm + D_kazık / 120"
           },
           {
-            "type": "paragraph",
-            "content": "Burada kazık gövdesinin elastik deformasyonu:"
+            type: "paragraph",
+            content: "Burada kazık gövdesinin elastik deformasyonu:"
           },
           {
-            "type": "paragraph",
-            "content": "Δ_elastik = Q · L / (A_c · E_c)"
+            type: "paragraph",
+            content: "Δ_elastik = Q · L / (A_c · E_c)"
           },
           {
-            "type": "paragraph",
-            "content": "**10.4 Yanal Yükleme Deneyi (ASTM D3966) ve p-y Eğrileri Analizi** Kazıklar deprem, rüzgar veya zemin itkisi gibi yatay kuvvetlere maruz kaldığında zemin-kazık etkileşimi lineer olmayan p-y eğrileriyle modellenir."
+            type: "paragraph",
+            content: "**10.4. Yanal Yükleme Deneyi (ASTM D3966) ve p-y Eğrileri Analizi** Kazıklar deprem, rüzgar veya zemin itkisi gibi yatay kuvvetlere maruz kaldığında zemin-kazık etkileşimi lineer olmayan p-y eğrileriyle modellenir."
           },
           {
-            "type": "paragraph",
-            "content": "**10.4.1 Eğilme Diferansiyel Denklemi** Kazık gövdesi boyunca elastik eğri diferansiyel denklemi:"
+            type: "paragraph",
+            content: "**Eğilme Diferansiyel Denklemi** Kazık gövdesi boyunca elastik eğri diferansiyel denklemi:"
           },
           {
-            "type": "paragraph",
-            "content": "E_p I_p d^4 y / dz^4 + P_x d² y / dz² + p(y, z) = 0"
+            type: "paragraph",
+            content: "E_p I_p d^4 y / dz^4 + P_x d² y / dz² + p(y, z) = 0"
           },
           {
-            "type": "paragraph",
-            "content": "Burada:"
+            type: "paragraph",
+            content: "Burada:"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "E_p I_p: Kazığın eğilme rijitliği (kN·m²),",
               "y: z derinliğindeki yanal deplasman (m),",
               "p: Birim boydaki zemin yanal reaksiyon direnci (kN/m),",
@@ -4156,32 +3857,28 @@ export const knowledgeArticles: KnowledgeArticle[] = [
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**10.4.2 Matlock ve Reese p-y Formülasyonu** Yumuşak killerde statik yükleme için normalize p-y eğrisi:"
+            type: "paragraph",
+            content: "**Matlock ve Reese p-y Formülasyonu** Yumuşak killerde statik yükleme için normalize p-y eğrisi:"
           },
           {
-            "type": "paragraph",
-            "content": "p / p_ult = 0.5 · (y / y_50)^(1/3) (için y / y_50 ≤ 8.0)"
+            type: "paragraph",
+            content: "p / p_ult = 0.5 · (y / y_50)^(1/3) (için y / y_50 ≤ 8.0)"
           },
           {
-            "type": "paragraph",
-            "content": "Burada y_50 = 2.5 · ε_50 · D_kazık, p_ult = N_p · c_u · D_kazık (N_p ≈ 3 - 9)."
+            type: "paragraph",
+            content: "Burada y_50 = 2.5 · ε_50 · D_kazık, p_ult = N_p · c_u · D_kazık (N_p ≈ 3 - 9)."
           },
           {
-            "type": "paragraph",
-            "content": "**KALİTE GÜVENCE VE DOĞRULAMA DENEYLERİ (QA / QC)**"
+            type: "paragraph",
+            content: "**10.5. İmalat Öncesi Zorunlu Deneme Kolonu (Trial / Test Column)** Sahada asıl imalata geçilmeden önce geoteknik proje parametrelerini sahada kalibre etmek amacıyla şantiye sahasında en az 2–4 adet deneme kolonu imal edilir."
           },
           {
-            "type": "paragraph",
-            "content": "**10.1. İmalat Öncesi Zorunlu Deneme Kolonu (Trial / Test Column)** Sahada asıl imalata geçilmeden önce geoteknik proje parametrelerini sahada kalibre etmek amacıyla şantiye sahasında en az 2–4 adet deneme kolonu imal edilir."
+            type: "paragraph",
+            content: "**Deneme Kolonu Protokolü:**"
           },
           {
-            "type": "paragraph",
-            "content": "**Deneme Kolonu Protokolü:**"
-          },
-          {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Değişken Parametre Grupları:**",
               "Grup A: P = 400 bar, v_t = 35 cm/dk, ω = 18 RPM",
               "Grup B: P = 450 bar, v_t = 25 cm/dk, ω = 14 RPM",
@@ -4190,164 +3887,142 @@ export const knowledgeArticles: KnowledgeArticle[] = [
             ]
           },
           {
-            "type": "paragraph",
-            "content": "Test kolonları derinliği ilk 3.0 - 5.0 metresi 7–14 gün sonra ekskavatörle etrafı açılarak açığa çıkarılır."
+            type: "paragraph",
+            content: "Test kolonları derinliği ilk 3.0 - 5.0 metresi 7–14 gün sonra ekskavatörle etrafı açılarak açığa çıkarılır."
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "Kolon gerçek geometrisi, çapı (D_gerçek), dikeylikten sapması,",
               "Kolonun homojenliği, zemin inklüzyonları veya killi ceplerin varlığı doğrudan ölçülür ve fotoğraflanarak raporlanır."
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**10.2. İmalat Sonrası Karot Alımı ve Laboratuvar Testleri (RQD ve UCS)**"
+            type: "paragraph",
+            content: "**10.6. İmalat Sonrası Karot Alımı ve Laboratuvar Testleri (RQD ve UCS)**"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Ekipman:** Çift veya üç cidarlı döner karotiyer (Double/Triple Tube Core Barrel - HQ / PQ çapında, elmas matkap ucu, su soğutmalı).",
               "**Numune Alma Yaşı:** 14 ve 28 günlük periyotlar."
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**Kalite Kriterleri:**"
+            type: "paragraph",
+            content: "**Kalite Kriterleri:**"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Toplam Karot Yüzdesi (TCR - Total Core Recovery):**"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "TCR = ∑ L_karot / L_sefer × 100 ≥ %85 - %90"
+            type: "paragraph",
+            content: "TCR = ∑ L_karot / L_sefer × 100 ≥ %85 - %90"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Modifiye RQD (Rock Quality Designation) Eşdeğeri:**"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "RQD = ∑ L_parça ≥ 10 cm / L_sefer × 100 ≥ %70 - %85"
+            type: "paragraph",
+            content: "RQD = ∑ L_parça ≥ 10 cm / L_sefer × 100 ≥ %70 - %85"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Tek Eksenli Basınç Mukavemeti (UCS - ASTM D2166 / TS EN 12504-1):**"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "Karot numuneleri çap/boy oranı 1:2 olacak şekilde taşlanarak preslenir."
+            type: "paragraph",
+            content: "Karot numuneleri çap/boy oranı 1:2 olacak şekilde taşlanarak preslenir."
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "Her kolondan en az 3 derinlikten (üst, orta, alt) numune alınır.",
               "Tasarım mukavemetine uygunluk karakteristik dayanım üzerinden doğrulanır:"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "f_ck = f_cm - 1.64 · s ≥ f_tasarım"
+            type: "paragraph",
+            content: "f_ck = f_cm - 1.64 · s ≥ f_tasarım"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Elastisite Modülü (E_50):** Gerilme-şekil değiştirme eğrisinin %50 seviyesindeki sekant modülü hesaplanır (E_50 = 400 - 1000 · q_u)."
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**10.3. Su Geçirimsizlik Testleri (Lugeon Deneyi ve Permeabilite)** Kesişen jet grout kolon perdesi (impermeable cut-off wall) uygulamalarında hidrolik geçirimsizlik Lugeon su basma deneyi ile kontrol edilir."
+            type: "paragraph",
+            content: "**10.7. Su Geçirimsizlik Testleri (Lugeon Deneyi ve Permeabilite)** Kesişen jet grout kolon perdesi (impermeable cut-off wall) uygulamalarında hidrolik geçirimsizlik Lugeon su basma deneyi ile kontrol edilir."
           },
           {
-            "type": "paragraph",
-            "content": "**Lugeon Deney Metodolojisi:** Kolon kesişim arakesitine denk gelecek şekilde eğik veya düşey kontrol kuyusu delinir. Çift manset (packer) sistemiyle test zonu izole edilir. Kuyuya 5 kademeli basınç altında (2, 5, 10, 5, 2 bar) su basılarak birim zamandaki kaçak ölçülür:"
+            type: "paragraph",
+            content: "**Lugeon Deney Metodolojisi:** Kolon kesişim arakesitine denk gelecek şekilde eğik veya düşey kontrol kuyusu delinir. Çift manset (packer) sistemiyle test zonu izole edilir. Kuyuya 5 kademeli basınç altında (2, 5, 10, 5, 2 bar) su basılarak birim zamandaki kaçak ölçülür:"
           },
           {
-            "type": "paragraph",
-            "content": "1 Lugeon (LU) = 1 Litre su / (1 metre kuyu boyu · 1 dakika) (10 bar net basınç altında)"
+            type: "paragraph",
+            content: "1 Lugeon (LU) = 1 Litre su / (1 metre kuyu boyu · 1 dakika) (10 bar net basınç altında)"
           },
           {
-            "type": "paragraph",
-            "content": "1 LU ≈ 1.3 × 10^(-7) m/sn"
+            type: "paragraph",
+            content: "1 LU ≈ 1.3 × 10^(-7) m/sn"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Kabul Kriteri:** Su tutucu geçirimsizlik perdelerinde hedef sızıntı değeri:"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "Kayıp ≤ 1.0 - 2.0 LU (k ≤ 10^(-7) m/sn)"
+            type: "paragraph",
+            content: "Kayıp ≤ 1.0 - 2.0 LU (k ≤ 10^(-7) m/sn)"
           },
           {
-            "type": "paragraph",
-            "content": "Eğer test zonunda > 5 LU ölçülürse perdede pencere (kesişim hatası veya erozyon boşluğu) olduğu tespit edilir ve bölge düşük basınçlı çimento şerbetiyle re-enjeksiyona (permeation grouting) tabi tutulur."
+            type: "paragraph",
+            content: "Eğer test zonunda > 5 LU ölçülürse perdede pencere (kesişim hatası veya erozyon boşluğu) olduğu tespit edilir ve bölge düşük basınçlı çimento şerbetiyle re-enjeksiyona (permeation grouting) tabi tutulur."
           },
           {
-            "type": "paragraph",
-            "content": "**10.4. Statik Yükleme Testleri (Basınç ve Çekme)**"
+            type: "paragraph",
+            content: "**10.8. Statik Yükleme Testleri (Basınç ve Çekme)**"
           },
           {
-            "type": "paragraph",
-            "content": "**Eksenel Basınç Yükleme Testi (ASTM D1143 / TS EN 1997-1):**"
+            type: "paragraph",
+            content: "**Eksenel Basınç Yükleme Testi (ASTM D1143 / TS EN 1997-1):**"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "Deney kolonuna tasarım yükünün (Q_des) en az %150 - %200'ü (1.5 - 2.0 × Q_des) hidrolik krikolar ve reaksiyon ankrajları yardımıyla kademeli olarak uygulanır.",
               "Kriter: Tasarım yükünde toplam oturma s ≤ 10 - 15 mm, kalıcı plastik deformasyon s_p ≤ 5 mm olmalıdır."
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**Eksenel Çekme Yükleme Testi (ASTM D3689):**"
+            type: "paragraph",
+            content: "**Eksenel Çekme Yükleme Testi (ASTM D3689):**"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "Çekmeye çalışan kolonlarda (örneğin derin temel su basma taban kabarmasına karşı çekme kazığı olarak kullanılan jet groutlar):",
               "Kolonun merkezine tam boy yerleştirilmiş yüksek mukavemetli donatı çubuğu (Dywidag / Freyssinet ankraj çeliği) üzerinden krikoyla çekme kuvveti uygulanır.",
               "Soilcrete ile zemin arasındaki sürtünme direnci (τ_ult = 30 - 80 kPa) ve çelik-soilcrete aderansı doğrulanır."
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**KALİTE KONTROL (QA/QC), SAHA TESTLERİ VE VERİFİKASYON**"
+            type: "paragraph",
+            content: "**10.9. Üretim Esnası Sayısal İzleme (MWD - Measurement While Drilling)** DSM makinesine entegre veri kayıt ünitesi (data-logger) saniyede 1 veri frekansıyla şu parametreleri kaydeder:"
           },
           {
-            "type": "list",
-            "items": [
-              "[QA/QC AŞAMALARI]",
-              "1. GERÇEK ZAMANLI İZLEME (MWD - Otomasyon)",
-              "Tork, Baskı, RPM, İlerleme Hızı",
-              "Debimetre (Flowmeter) & Şerbet Basıncı (5-20 bar)",
-              "2. TAZE MALZEME KONTROLÜ",
-              "Islak Numune Alma (Wet Grab / Kiso-Jiban)",
-              "Şerbet Yoğunluğu (Mud Balance: 1.55 - 1.85 g/cm³)",
-              "3. SERTLEŞMİŞ MALZEME DOĞRULAMASI",
-              "Sürekli Karot Alma (HQ/PQ Çift Tüp, TCR ≥ %85, RQD)",
-              "Laboratuvar UCS & Elastisite Modülü (28 & 90 gün)",
-              "4. YERİNDE (IN-SITU) JEOFİZİK & GEOTEKNİK DOĞRULAMA",
-              "Sismik Koni Penetrasyonu (SCPT → Vs, G0)",
-              "Dilatometre (DMT → KD, ED modül artışı)"
-            ]
-          },
-          {
-            "type": "paragraph",
-            "content": "**10.1 Üretim Esnası Sayısal İzleme (MWD - Measurement While Drilling)** DSM makinesine entegre veri kayıt ünitesi (data-logger) saniyede 1 veri frekansıyla şu parametreleri kaydeder:"
-          },
-          {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "Derinlik (z ± 2 cm) ve inklinometre x/y düşeylik eğimi.",
               "Dönme hızı (N), hidrolik kafa torku (T), baskı kuvveti (F_c).",
               "Manyetik debimetre ile anlık şerbet enjeksiyon debisi (Q, L/dak).",
@@ -4355,12 +4030,12 @@ export const knowledgeArticles: KnowledgeArticle[] = [
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**10.2 Taze Malzeme Testleri: Islak Numune Alma (Wet Grab Sampling)** Kolon imalatı tamamlandığı anda, çimento henüz priz almadan kuyu içine özel pistonlu numune alıcılar daldırılır:"
+            type: "paragraph",
+            content: "**10.10. Taze Malzeme Testleri: Islak Numune Alma (Wet Grab Sampling)** Kolon imalatı tamamlandığı anda, çimento henüz priz almadan kuyu içine özel pistonlu numune alıcılar daldırılır:"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Kiso-Jiban veya Ters Valfli Kova Numune Alıcısı:** Kolon boyunun 3 kritik derinliğinden (0.25H, 0.50H, 0.75H) taze karışım çekilir.",
               "Alınan taze numuneler 100 × 200 mm silindir kalıplara vibrasyonsuz, standart sıkıştırma protokolüyle yerleştirilir.",
               "Kür Koşulları: ASTM D1632 standartlarına göre 20 ± 2^°C sıcaklıkta ve >%95 bağıl nem odasında 7, 28 ve 90 gün kürlenir.",
@@ -4368,12 +4043,12 @@ export const knowledgeArticles: KnowledgeArticle[] = [
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**10.3 Sertleşmiş Malzeme Testleri: Elmas Uçlu Karot Alma** Priz almış kolondan karot alma işlemi imalattan en erken 21–28 gün sonra gerçekleştirilir:"
+            type: "paragraph",
+            content: "**10.11. Sertleşmiş Malzeme Testleri: Elmas Uçlu Karot Alma** Priz almış kolondan karot alma işlemi imalattan en erken 21–28 gün sonra gerçekleştirilir:"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Karot Ekipmanı:** HQ veya PQ çapında, elmas matrisli uçlu, üç tüplü (triple-tube) karotiyer.",
               "**Performans Kriterleri:**",
               "Toplam Karot Geri Kazanımı (TCR - Total Core Recovery): TCR ≥ %85 (Başarılı karıştırmanın birincil göstergesidir).",
@@ -4385,81 +4060,81 @@ export const knowledgeArticles: KnowledgeArticle[] = [
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**10.4 Yerinde (In-situ) Rijitlik Doğrulaması: SCPT ve DMT**"
+            type: "paragraph",
+            content: "**10.12. Yerinde (In-situ) Rijitlik Doğrulaması: SCPT ve DMT**"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Sismik Koni Penetrasyon Testi (SCPT):**",
               "Kolon merkezine veya kolon-zemin ara yüzeyine daldırılan sismik koni ile derinlik boyunca kayma dalgası hızı (V_s) ölçülür.",
               "Küçük deformasyon kayma modülü (G_0):"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "G_0 = ρ · V_s²"
+            type: "paragraph",
+            content: "G_0 = ρ · V_s²"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "İyileştirme öncesi V_s ≈ 100 - 150 m/s olan zeminlerde, DSM uygulaması sonrası kolon-zemin matrisinin eşdeğer V_s değeri 350 - 600 m/s bandına çıkarak zemin sınıfını ZD/ZE'den ZB/ZC seviyesine yükseltir.",
               "**Marchetti Dilatometre Testi (DMT):**",
               "Kolonların arasına daldırılarak DSM uygulamasının çevre zeminde yarattığı yanal gerilme artışı haritalanır:"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "K_D = (p_0 - u_0) / σ'_v0 ve E_D = 34.7 · (p_1 - p_0)"
+            type: "paragraph",
+            content: "K_D = (p_0 - u_0) / σ'_v0 ve E_D = 34.7 · (p_1 - p_0)"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "Kolon imalatı esnasındaki yanal deplasman ve çimento iyon difüzyonunun çevre zemini ne ölçüde pekiştirdiği doğrudan doğrulanır."
             ]
           }
         ]
       },
       {
-        "id": "2026-zemin-iyilestirme-maliyetleri-ve-sozlesme-risk-yonetimi",
-        "title": "11. 2026 Zemin İyileştirme Birim Maliyet Ayrıştırması, Şantiye Girdi Analizleri ve FIDIC Sözleşme Risk Yönetimi",
-        "blocks": [
+        id: "2026-zemin-iyilestirme-maliyetleri-ve-sozlesme-risk-yonetimi",
+        title: "11. 2026 Zemin İyileştirme Birim Maliyet Ayrıştırması, Şantiye Girdi Analizleri ve FIDIC Sözleşme Risk Yönetimi",
+        blocks: [
           {
-            "type": "paragraph",
-            "content": "Jet Grout imalatı, zeminin yüksek basınçlı çimento şerbeti ile parçalanıp yerinde karıştırılması (soil-cement matrix) esasına dayanır. Maliyet yapısını belirleyen üç ana unsur: **çimento kütlesi**, **enerji tüketimi (pompa + delgi)** ve **aşırı şerbetin kuyu ağzından pasa (spoil) olarak dışarı atılmasıdır**."
+            type: "paragraph",
+            content: "Jet Grout imalatı, zeminin yüksek basınçlı çimento şerbeti ile parçalanıp yerinde karıştırılması (soil-cement matrix) esasına dayanır. Maliyet yapısını belirleyen üç ana unsur: **çimento kütlesi**, **enerji tüketimi (pompa + delgi)** ve **aşırı şerbetin kuyu ağzından pasa (spoil) olarak dışarı atılmasıdır**."
           },
           {
-            "type": "paragraph",
-            "content": "**11.1. Geometrik ve Reolojik Çimento Sarfiyat Formülasyonu**"
+            type: "paragraph",
+            content: "**11.1. Geometrik ve Reolojik Çimento Sarfiyat Formülasyonu**"
           },
           {
-            "type": "paragraph",
-            "content": "**A. Teorik ve Pratik Kolon Hacmi**"
+            type: "paragraph",
+            content: "**A. Teorik ve Pratik Kolon Hacmi**"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "Standart kolon çapı: D = 0.80 m (Ø 80 cm)",
               "Teorik metretül hacmi:"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "V_teorik = π · D² / 4 = 3.1416 · (0.80)² / 4 ≈ 0.5027 m³/mt"
+            type: "paragraph",
+            content: "V_teorik = π · D² / 4 = 3.1416 · (0.80)² / 4 ≈ 0.5027 m³/mt"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "Zemin geçirgenliği, kohezyonu ve over-injection (aşırı enjeksiyon) katsayısı: α_zemin ≈ 1.10 - 1.20."
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**B. Enjeksiyon Harcı (Grout) Karışım Hesabı**"
+            type: "paragraph",
+            content: "**B. Enjeksiyon Harcı (Grout) Karışım Hesabı**"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "Su / Çimento Ağırlık Oranı: W/C = 1.0",
               "Çimento özgül ağırlığı: ρ_c ≈ 3.15 t/m³ (3,150 kg/m³)",
               "Su özgül ağırlığı: ρ_w = 1.00 t/m³ (1,000 kg/m³)",
@@ -4467,30 +4142,30 @@ export const knowledgeArticles: KnowledgeArticle[] = [
             ]
           },
           {
-            "type": "paragraph",
-            "content": "V_grout = M_c / ρ_c + M_w / ρ_w = 1.0 m³"
+            type: "paragraph",
+            content: "V_grout = M_c / ρ_c + M_w / ρ_w = 1.0 m³"
           },
           {
-            "type": "paragraph",
-            "content": "M_w = 1.0 · M_c ⇒ M_c / 3150 + M_c / 1000 = 1.0 ⇒ M_c · (0.0003175 + 0.001) = 1.0"
+            type: "paragraph",
+            content: "M_w = 1.0 · M_c ⇒ M_c / 3150 + M_c / 1000 = 1.0 ⇒ M_c · (0.0003175 + 0.001) = 1.0"
           },
           {
-            "type": "paragraph",
-            "content": "M_c ≈ 759 kg çimento/m³ harç, M_w ≈ 759 kg su/m³ harç"
+            type: "paragraph",
+            content: "M_c ≈ 759 kg çimento/m³ harç, M_w ≈ 759 kg su/m³ harç"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "Taze grout yoğunluğu: γ_grout ≈ 1.52 t/m³."
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**C. Delgi & Geri Çekme Kinematiği ve 1 Metre Sarfiyatı (Jet 1 Sistemi)**"
+            type: "paragraph",
+            content: "**C. Delgi & Geri Çekme Kinematiği ve 1 Metre Sarfiyatı (Jet 1 Sistemi)**"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "Nozul Takımı: 2 adet Ø 2.4 mm tungsten karbür nozul",
               "Pompa Basıncı: P = 400 - 450 bar",
               "Pompa Debisi (Q): 190 - 210 lt/dk (ortalama 200 lt/dk = 0.200 m³/dk)",
@@ -4500,81 +4175,60 @@ export const knowledgeArticles: KnowledgeArticle[] = [
             ]
           },
           {
-            "type": "paragraph",
-            "content": "t_mt = 1 mt / v_r = 1 / 0.30 ≈ 3.33 dakika/mt"
+            type: "paragraph",
+            content: "t_mt = 1 mt / v_r = 1 / 0.30 ≈ 3.33 dakika/mt"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "1 metre kolona enjekte edilen toplam grout hacmi (V_enj):"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "V_enj = Q · t_mt = 0.200 m³/dk × 3.33 dk ≈ 0.667 m³/mt"
+            type: "paragraph",
+            content: "V_enj = Q · t_mt = 0.200 m³/dk × 3.33 dk ≈ 0.667 m³/mt"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "1 metre kolona harcanan teorik dökme çimento tonajı:"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "M_c/mt = 0.667 m³ × 759 kg/m³ ≈ 506 kg/mt"
+            type: "paragraph",
+            content: "M_c/mt = 0.667 m³ × 759 kg/m³ ≈ 506 kg/mt"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Saha Gerçeği (Optimizasyon):** Kumlu-killi zeminlerde geri çekme hızı v_r = 35 - 38 cm/dk mertebesine ayarlanarak sahada hedeflenen optimum tüketim: **380 – 420 kg çimento / metre** bandında kilitlenir.",
               "**2026 Çimento Birim Fiyatı:** Dökme CEM I 42.5R / CEM II 42.5 şantiye silosu teslimi ≈ 3,000 TL/ton (3.00 TL/kg)."
             ]
           },
           {
-            "type": "paragraph",
-            "content": "Çimento Maliyeti (400 kg/mt) = 400 × 3.00 = 1,200 TL/mt (≈ 32.50 USD/mt)"
+            type: "paragraph",
+            content: "Çimento Maliyeti (400 kg/mt) = 400 × 3.00 = 1,200 TL/mt (≈ 32.50 USD/mt)"
           },
           {
-            "type": "paragraph",
-            "content": "**11.2. Enerji ve Mazot Sarfiyatı (Pompa İstasyonu + Hidrolik Rig + Mikser)**"
+            type: "paragraph",
+            content: "**11.2. Enerji ve Mazot Sarfiyatı (Pompa İstasyonu + Hidrolik Rig + Mikser)**"
           },
           {
-            "type": "list",
-            "items": [
-              "Ekipman — Motor Gücü — Çalışma Rejimi — 2026 Saatlik Tüketim — Efektif Yük Faktörü"
+            type: "list",
+            items: [
+              "**Yüksek Basınç Tripleks Pompa (Tecniwell / Metax / Soilmec 500-600 kW)** — Motor Gücü: 550 - 700 HP Dizel | Çalışma Rejimi: 400-450 bar kesintisiz enjeksiyon | 2026 Saatlik Tüketim: 68 – 78 lt/saat | Efektif Yük Faktörü: 0.85",
+              "**Hidrolik Delgi Makinesi (Casagrande / Comacchio / Soilmec)** — Motor Gücü: 160 - 220 HP Dizel | Çalışma Rejimi: Delgi + Manivela + Konumlanma | 2026 Saatlik Tüketim: 24 – 30 lt/saat | Efektif Yük Faktörü: 0.65",
+              "**Otomatik Mikser Ünitesi & Helezon (Kolloid mikser + transfer)** — Motor Gücü: 45 - 75 kW Jeneratör | Çalışma Rejimi: Çimento tartımı ve harç karıştırma | 2026 Saatlik Tüketim: 8 – 12 lt/saat | Efektif Yük Faktörü: 0.70",
+              "**TOPLAM İSTASYON SAATLİK MAZOT TÜKETİMİ** — 2026 Saatlik Tüketim: **100 – 120 lt/saat** (Ort. 108 lt/saat)"
             ]
           },
           {
-            "type": "list",
-            "items": [
-              "**Yüksek Basınç Tripleks Pompa** (Tecniwell / Metax / Soilmec 500-600 kW) — 550 - 700 HP Dizel — 400-450 bar kesintisiz enjeksiyon — 68 – 78 lt/saat — 0.85"
-            ]
+            type: "paragraph",
+            content: "**Metretül Başına Mazot Sarfiyatı Analizi:**"
           },
           {
-            "type": "list",
-            "items": [
-              "**Hidrolik Delgi Makinesi** (Casagrande / Comacchio / Soilmec) — 160 - 220 HP Dizel — Delgi + Manivela + Konumlanma — 24 – 30 lt/saat — 0.65"
-            ]
-          },
-          {
-            "type": "list",
-            "items": [
-              "**Otomatik Mikser Ünitesi & Helezon** (Kolloid mikser + transfer) — 45 - 75 kW Jeneratör — Çimento tartımı ve harç karıştırma — 8 – 12 lt/saat — 0.70"
-            ]
-          },
-          {
-            "type": "list",
-            "items": [
-              "**TOPLAM İSTASYON SAATLİK MAZOT TÜKETİMİ** — - — - — **100 – 120 lt/saat** (Ort. 108 lt/saat) — -"
-            ]
-          },
-          {
-            "type": "paragraph",
-            "content": "**Metretül Başına Mazot Sarfiyatı Analizi:**"
-          },
-          {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "10 saatlik vardiyada net çalışma verimi (delgi + enjeksiyon + tij sökme/bağlama + paspayı beklemesi): %65 net verim ⇒ 6.5 efektif saat/vardiya.",
               "Vardiyalık üretim (12-15 m kolon boylarında, zemin stabilitesine bağlı): 65 - 75 metre/gün (Ortalama 70 mt/vardiya).",
               "Günlük toplam mazot tüketimi: 108 lt/saat × 6.5 saat + rölanti (15 lt) ≈ 720 litre/vardiya.",
@@ -4582,229 +4236,188 @@ export const knowledgeArticles: KnowledgeArticle[] = [
             ]
           },
           {
-            "type": "paragraph",
-            "content": "Mazot Sarfiyatı = 720 lt / (70 mt) ≈ 10.28 lt/metre (Saha Aralığı: 9.5 - 11.5 lt/mt)"
+            type: "paragraph",
+            content: "Mazot Sarfiyatı = 720 lt / (70 mt) ≈ 10.28 lt/metre (Saha Aralığı: 9.5 - 11.5 lt/mt)"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**2026 Mazot Birim Fiyatı:** ≈ 50.00 TL/lt (KDV hariç şantiye dökme akaryakıt)."
             ]
           },
           {
-            "type": "paragraph",
-            "content": "Mazot Maliyeti = 10.28 lt × 50.00 TL = 514 TL/mt (≈ 13.90 USD/mt)"
+            type: "paragraph",
+            content: "Mazot Maliyeti = 10.28 lt × 50.00 TL = 514 TL/mt (≈ 13.90 USD/mt)"
           },
           {
-            "type": "paragraph",
-            "content": "**11.3. Yüksek Basınç Aşınma Parçaları ve Amortisman Modeli**"
+            type: "paragraph",
+            content: "**11.3. Yüksek Basınç Aşınma Parçaları ve Amortisman Modeli**"
           },
           {
-            "type": "paragraph",
-            "content": "450 bar basınç altında çimento kristalleri zımpara etkisi (erozyon ve kavitasyon) yaratır."
+            type: "paragraph",
+            content: "450 bar basınç altında çimento kristalleri zımpara etkisi (erozyon ve kavitasyon) yaratır."
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Tungsten Karbür Nozul:** 2 adet nozul seti yaklaşık 350 - 450 metrede bir aşınarak delik çapı 2.4 mm'den 2.8 mm'ye genişler, basınç düşüşü yaratır ve değiştirilir."
             ]
           },
           {
-            "type": "paragraph",
-            "content": "⇒ 2 adet × 90 USD / 400 mt ≈ 0.45 USD/mt ≈ 17 TL/mt."
+            type: "paragraph",
+            content: "⇒ 2 adet × 90 USD / 400 mt ≈ 0.45 USD/mt ≈ 17 TL/mt."
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Yüksek Basınç Döner Kafa (Swivel) Salmastrası:** Yüksek devirde dönen 450 bar şerbet sızdırmazlık pakingleri her 250 - 350 metrede patlar/sızdırır."
             ]
           },
           {
-            "type": "paragraph",
-            "content": "⇒ Set maliyeti 450 USD / 300 mt ≈ 1.50 USD/mt ≈ 55 TL/mt."
+            type: "paragraph",
+            content: "⇒ Set maliyeti 450 USD / 300 mt ≈ 1.50 USD/mt ≈ 55 TL/mt."
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Jet Grout Delgi Tijleri ve Özel Contalar:** Yüksek tork ve eğilme gerilimi altındaki çift/tek cidarlı tij diş aşınmaları:"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "⇒ 42 TL/mt."
+            type: "paragraph",
+            content: "⇒ 42 TL/mt."
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Yüksek Basınç Hortumları (4/6 Telli Çelik Örgülü, 700 bar dayanımlı):** Sürekli sürtünme ve pulsasyon yıpranması:"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "⇒ 28 TL/mt."
+            type: "paragraph",
+            content: "⇒ 28 TL/mt."
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Pompa Sıvı Sonu (Fluid End) Valf, Yay ve Seramik Piston Gömlekleri:**"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "⇒ 58 TL/mt."
+            type: "paragraph",
+            content: "⇒ 58 TL/mt."
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Toplam Aşınma ve Amortisman Maliyeti:** 200 TL/mt (≈ 5.40 USD/mt)."
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**11.4. Pasa (Spoil) Yönetimi ve Bertaraf Hafriyatı**"
+            type: "paragraph",
+            content: "**11.4. Pasa (Spoil) Yönetimi ve Bertaraf Hafriyatı**"
           },
           {
-            "type": "paragraph",
-            "content": "Zemin içine basılan yüksek enerjili grout, zemin tanecikleriyle yer değiştirirken hacimsel fazlalık kuyu ağzından sıvı çamur-çimento karışımı (pasa) olarak fışkırır."
+            type: "paragraph",
+            content: "Zemin içine basılan yüksek enerjili grout, zemin tanecikleriyle yer değiştirirken hacimsel fazlalık kuyu ağzından sıvı çamur-çimento karışımı (pasa) olarak fışkırır."
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "Basılan grout hacminin yaklaşık %65 - 75'i kuyu ağzından pasa olarak dışarı taşar:"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "V_pasa = 0.667 m³/mt × 0.70 ≈ 0.47 m³ pasa / metre"
+            type: "paragraph",
+            content: "V_pasa = 0.667 m³/mt × 0.70 ≈ 0.47 m³ pasa / metre"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "Sahada çamur havuzunda dinlendirme, katılaştırma ve ekskavatörle kamyona yükleme: ≈ 50 TL/mt.",
               "Ruhsatlı döküm sahasına damperli kamyonla nakliye ve resmi döküm kabul ücreti (2026 büyükşehir tarifesi: 450 - 550 TL/m³):"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "0.47 m³ × 500 TL/m³ = 235 TL/mt"
+            type: "paragraph",
+            content: "0.47 m³ × 500 TL/m³ = 235 TL/mt"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Toplam Pasa Bertaraf Maliyeti:** 285 TL/mt (≈ 7.70 USD/mt)."
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**11.5. İşçilik, Genel Gider ve Ekipman Sermaye Amortismanı**"
+            type: "paragraph",
+            content: "**11.5. İşçilik, Genel Gider ve Ekipman Sermaye Amortismanı**"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Şantiye Ekibi:** 1 Geoteknik Mühendisi, 1 Delgi Operatörü, 1 Pompa/Mikser Operatörü, 1 Mikser Yardımcısı, 2 Tij İşçisi, 1 Formen ⇒ Günlük brüt maliyet: ≈ 24,500 TL/gün ⇒ 24,500 / (70 mt) = 350 TL/mt.",
               "**Makine Parkı Finansal Amortismanı (Rig + Pompa + Silo):** 225 TL/mt."
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**JET GROUT (Ø80 cm) 1 METRE BİRİM MALİYET ÖZET TABLOSU (2026)**"
+            type: "paragraph",
+            content: "**11.6. JET GROUT (Ø80 cm) 1 METRE BİRİM MALİYET ÖZET TABLOSU (2026)**"
           },
           {
-            "type": "list",
-            "items": [
-              "Maliyet Bileşeni — Sarfiyat / Birim — 2026 Birim Fiyatı — Metre Başına Tutar (TL) — Payı (%)"
+            type: "list",
+            items: [
+              "**Dökme Çimento (CEM I 42.5)** — Sarfiyat / Birim: 400 kg | 2026 Birim Fiyatı: 3.00 TL/kg | Metre Başına Tutar (TL): 1,200.00 TL | Payı (%): %43.2",
+              "**Dizel Yakıt (Mazot)** — Sarfiyat / Birim: 10.28 litre | 2026 Birim Fiyatı: 50.00 TL/lt | Metre Başına Tutar (TL): 514.00 TL | Payı (%): %18.5",
+              "**Aşınma Parçaları & Swivel** — Sarfiyat / Birim: Götürü analiz | Metre Başına Tutar (TL): 200.00 TL | Payı (%): %7.2",
+              "**Pasa Yükleme & Döküm** — Sarfiyat / Birim: 0.47 m³ | 2026 Birim Fiyatı: 606.00 TL/m³ | Metre Başına Tutar (TL): 285.00 TL | Payı (%): %10.3",
+              "**Ekip İşçilik Maliyeti** — Sarfiyat / Birim: 70 mt/gün bazlı | Metre Başına Tutar (TL): 350.00 TL | Payı (%): %12.6",
+              "**Ekipman Sermaye Amortismanı** — Sarfiyat / Birim: Makine parkı | Metre Başına Tutar (TL): 225.00 TL | Payı (%): %8.1",
+              "**1 METRE JET GROUT NET TABAN ŞANTİYE MALİYETİ** — Metre Başına Tutar (TL): **2,774.00 TL/mt** | Payı (%): **%100.0**",
+              "**(Döviz Karşılığı / 2026 Q1-Q2)** — Metre Başına Tutar (TL): **~75.00 USD/mt**"
             ]
           },
           {
-            "type": "list",
-            "items": [
-              "**Dökme Çimento (CEM I 42.5)** — 400 kg — 3.00 TL/kg — 1,200.00 TL — %43.2"
-            ]
+            type: "paragraph",
+            content: "(Not: Müteahhit kârı, genel merkez gideri, stopaj ve finansman maliyeti hariç yalın şantiye taban maliyetidir.)"
           },
           {
-            "type": "list",
-            "items": [
-              "**Dizel Yakıt (Mazot)** — 10.28 litre — 50.00 TL/lt — 514.00 TL — %18.5"
-            ]
+            type: "paragraph",
+            content: "**11.7. FORE KAZIK BİRİM MALİYET AYRIŞTIRMASI (1 METRE KAZIK ANALİZİ)**"
           },
           {
-            "type": "list",
-            "items": [
-              "**Aşınma Parçaları & Swivel** — Götürü analiz — - — 200.00 TL — %7.2"
-            ]
+            type: "paragraph",
+            content: "Fore kazık imalatı, zeminde dairesel kesitli kuyu açılması, kuyuya çelik donatı kafesinin indirilmesi ve tremie borusu ile dipten yukarıya hazır beton dökülmesi sürecidir."
           },
           {
-            "type": "list",
-            "items": [
-              "**Pasa Yükleme & Döküm** — 0.47 m³ — 606.00 TL/m³ — 285.00 TL — %10.3"
-            ]
+            type: "paragraph",
+            content: "**11.8. Beton Hacmi ve Kuyu Taşma / Zayiat Analizi**"
           },
           {
-            "type": "list",
-            "items": [
-              "**Ekip İşçilik Maliyeti** — 70 mt/gün bazlı — - — 350.00 TL — %12.6"
-            ]
+            type: "paragraph",
+            content: "**A. Geometrik Hacim**"
           },
           {
-            "type": "list",
-            "items": [
-              "**Ekipman Sermaye Amortismanı** — Makine parkı — - — 225.00 TL — %8.1"
-            ]
-          },
-          {
-            "type": "list",
-            "items": [
-              "**1 METRE JET GROUT NET TABAN ŞANTİYE MALİYETİ** — - — - — **2,774.00 TL/mt** — **%100.0**"
-            ]
-          },
-          {
-            "type": "list",
-            "items": [
-              "(Döviz Karşılığı / 2026 Q1-Q2) — - — - — **~75.00 USD/mt** — -"
-            ]
-          },
-          {
-            "type": "paragraph",
-            "content": "(Not: Müteahhit kârı, genel merkez gideri, stopaj ve finansman maliyeti hariç yalın şantiye taban maliyetidir.)"
-          },
-          {
-            "type": "paragraph",
-            "content": "**FORE KAZIK BİRİM MALİYET AYRIŞTIRMASI (1 METRE KAZIK ANALİZİ)**"
-          },
-          {
-            "type": "paragraph",
-            "content": "Fore kazık imalatı, zeminde dairesel kesitli kuyu açılması, kuyuya çelik donatı kafesinin indirilmesi ve tremie borusu ile dipten yukarıya hazır beton dökülmesi sürecidir."
-          },
-          {
-            "type": "paragraph",
-            "content": "**11.1. Beton Hacmi ve Kuyu Taşma / Zayiat Analizi**"
-          },
-          {
-            "type": "paragraph",
-            "content": "**A. Geometrik Hacim**"
-          },
-          {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "Kazık Çapı: D = 0.80 m (Ø 80 cm)",
               "Teorik Kazık Hacmi:"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "V_kazık = π · D² / 4 = 3.1416 · (0.80)² / 4 ≈ 0.5027 m³/mt"
+            type: "paragraph",
+            content: "V_kazık = π · D² / 4 = 3.1416 · (0.80)² / 4 ≈ 0.5027 m³/mt"
           },
           {
-            "type": "paragraph",
-            "content": "(Karşılaştırma: Ø 100 cm kazık için teorik hacim: 0.7854 m³/mt)."
+            type: "paragraph",
+            content: "(Karşılaştırma: Ø 100 cm kazık için teorik hacim: 0.7854 m³/mt)."
           },
           {
-            "type": "paragraph",
-            "content": "**B. Aşırı Kazı (Overbreak), Yeraltı Suyu ve Kuyu Başı Zayiat Faktörü**"
+            type: "paragraph",
+            content: "**B. Aşırı Kazı (Overbreak), Yeraltı Suyu ve Kuyu Başı Zayiat Faktörü**"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "Zemin kohezyonsuz (kum-çakıl), yeraltı su seviyesi yüksek veya ayrışmış tabakalı ise kuyu çeperinde lokal dökülmeler oluşur.",
               "Kazık başındaki kirlenmiş tremie betonunun (balçıkla karışan ilk beton) proje kotunun 50 - 100 cm üzerinde dökülüp sonradan kırılması (başlık kırma) zorunludur.",
               "Pratik zayiat / aşırı döküm katsayısı: K_zayiat = 1.10 - 1.15 (Ortalama **%12 aşırı sarfiyat**).",
@@ -4812,34 +4425,34 @@ export const knowledgeArticles: KnowledgeArticle[] = [
             ]
           },
           {
-            "type": "paragraph",
-            "content": "V_fiili = 0.5027 m³ × 1.12 ≈ 0.563 m³/mt"
+            type: "paragraph",
+            content: "V_fiili = 0.5027 m³ × 1.12 ≈ 0.563 m³/mt"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**2026 Hazır Beton Birim Fiyatı:** C30/37 Sülfata Dayanıklı (SRC), Slump S4/S5 (18 - 22 cm yayılma), D_max = 16 mm tremie betonu pompa dahil şantiye teslimi ≈ 2,850 TL/m³."
             ]
           },
           {
-            "type": "paragraph",
-            "content": "Beton Maliyeti = 0.563 m³ × 2,850 TL/m³ = 1,604.55 TL/mt (≈ 43.40 USD/mt)"
+            type: "paragraph",
+            content: "Beton Maliyeti = 0.563 m³ × 2,850 TL/m³ = 1,604.55 TL/mt (≈ 43.40 USD/mt)"
           },
           {
-            "type": "paragraph",
-            "content": "**11.2. Donatı Kafesi Demir Tonajı ve İşçiliği**"
+            type: "paragraph",
+            content: "**11.9. Donatı Kafesi Demir Tonajı ve İşçiliği**"
           },
           {
-            "type": "paragraph",
-            "content": "Geoteknik ve deprem yönetmeliklerine göre dairesel kazıklarda donatı oranı genellikle kesit alanının en az %0.8 – %1.0'ı mertebesindedir."
+            type: "paragraph",
+            content: "Geoteknik ve deprem yönetmeliklerine göre dairesel kazıklarda donatı oranı genellikle kesit alanının en az %0.8 – %1.0'ı mertebesindedir."
           },
           {
-            "type": "paragraph",
-            "content": "**A. Kesit Donatı Hesabı (Ø 80 cm)**"
+            type: "paragraph",
+            content: "**A. Kesit Donatı Hesabı (Ø 80 cm)**"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "Kazık Kesit Alanı: A_c = 5,026.5 cm²",
               "Çelik Oranı: ρ_s = %1.0 ⇒ A_s = 50.26 cm²",
               "**Boyuna Donatı Seçimi:** 16 adet Ø 20 mm B420C/B500C nervürlü demir.",
@@ -4858,31 +4471,31 @@ export const knowledgeArticles: KnowledgeArticle[] = [
             ]
           },
           {
-            "type": "paragraph",
-            "content": "M_demir = 39.52 + 8.53 + 2.80 + 4.05 ≈ 54.90 kg çelik/metre"
+            type: "paragraph",
+            content: "M_demir = 39.52 + 8.53 + 2.80 + 4.05 ≈ 54.90 kg çelik/metre"
           },
           {
-            "type": "paragraph",
-            "content": "**B. 2026 Demir Maliyeti & Bağlama İşçiliği**"
+            type: "paragraph",
+            content: "**B. 2026 Demir Maliyeti & Bağlama İşçiliği**"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "Nervürlü İnşaat Demiri Şantiye Teslim Fabrika Satış (2026): ≈ 26.50 TL/kg.",
               "Kafes İmalatı (Demirci Taşeronu bağlama teli, kaynak, şablon tezgâhı işçiliği): ≈ 4.50 TL/kg."
             ]
           },
           {
-            "type": "paragraph",
-            "content": "Toplam Donatı Maliyeti = 54.90 kg × 31.00 TL/kg = 1,701.90 TL/mt (≈ 46.00 USD/mt)"
+            type: "paragraph",
+            content: "Toplam Donatı Maliyeti = 54.90 kg × 31.00 TL/kg = 1,701.90 TL/mt (≈ 46.00 USD/mt)"
           },
           {
-            "type": "paragraph",
-            "content": "**11.3. Rotary Delgi Makinesi (Rig), Kelly Bar ve Elmas Uçlu Diş Aşınması**"
+            type: "paragraph",
+            content: "**11.10. Rotary Delgi Makinesi (Rig), Kelly Bar ve Elmas Uçlu Diş Aşınması**"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Makine:** 70 - 85 tonluk Ağır Hizmet Rotary Delgi Makinesi (Bauer BG 24 / Soilmec SR-65 / Casagrande B175).",
               "**Makine Yatırım / İkame Değeri:** 950,000 - 1,200,000 Euro.",
               "**Yakıt Tüketimi:** Delgi ve tij çekme torkunda saatte 34 - 42 litre mazot (Ortalama 38 lt/saat).",
@@ -4899,16 +4512,16 @@ export const knowledgeArticles: KnowledgeArticle[] = [
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**11.4. Muhafaza Borusu (Casing) Sürme/Çekme ve Vinç Maliyeti**"
+            type: "paragraph",
+            content: "**11.11. Muhafaza Borusu (Casing) Sürme/Çekme ve Vinç Maliyeti**"
           },
           {
-            "type": "paragraph",
-            "content": "Kendini tutamayan alüvyon zeminlerde, gevşek dolgularda ve yer altı suyu mevcudiyetinde kuyu stabilitesi için çelik kılıf borusu (casing) zorunludur."
+            type: "paragraph",
+            content: "Kendini tutamayan alüvyon zeminlerde, gevşek dolgularda ve yer altı suyu mevcudiyetinde kuyu stabilitesi için çelik kılıf borusu (casing) zorunludur."
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Casing Sürme Yöntemi:** Rıg döner kafası (rotary drive adapter) veya hidrolik vibro çakıcı.",
               "Çift cidarlı, özel dişli kilit bilezikli ağır kılıf borusu aşınması, ovallik bozulması, kilit revizyonu: ≈ 185 TL/mt.",
               "Yardımcı Servis Vinci (Paletli / Lastikli 40-50 tonluk vinç) kafes indirme, tremie borusu indirme/sökme payı: ≈ 160 TL/mt.",
@@ -4916,117 +4529,65 @@ export const knowledgeArticles: KnowledgeArticle[] = [
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**11.5. Kazık Hafriyat Pasası ve Bertarafı**"
+            type: "paragraph",
+            content: "**11.12. Kazık Hafriyat Pasası ve Bertarafı**"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "Kuyudan çıkan net hacim: 0.503 m³/mt.",
               "Kabarma katsayısı (K_kabarma ≈ 1.30): 0.503 × 1.30 ≈ 0.654 m³ gevşek hafriyat/mt.",
               "Kamyona yükleme ve döküm sahası nakliyesi (480 TL/m³):"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "0.654 m³ × 480 TL = 313.92 TL/mt (≈ 8.50 USD/mt)"
+            type: "paragraph",
+            content: "0.654 m³ × 480 TL = 313.92 TL/mt (≈ 8.50 USD/mt)"
           },
           {
-            "type": "paragraph",
-            "content": "**FORE KAZIK (Ø80 cm - CASİNGLİ) 1 METRE BİRİM MALİYET ÖZET TABLOSU (2026)**"
+            type: "paragraph",
+            content: "**11.13. FORE KAZIK (Ø80 cm - CASİNGLİ) 1 METRE BİRİM MALİYET ÖZET TABLOSU (2026)**"
           },
           {
-            "type": "list",
-            "items": [
-              "Maliyet Bileşeni — Sarfiyat / Birim — 2026 Birim Fiyatı — Metre Başına Tutar (TL) — Payı (%)"
+            type: "list",
+            items: [
+              "**Hazır Beton (C30/37 SRC)** — Sarfiyat / Birim: 0.563 m³ (%12 zayiatlı) | 2026 Birim Fiyatı: 2,850.00 TL/m³ | Metre Başına Tutar (TL): 1,604.55 TL | Payı (%): %30.8",
+              "**Donatı Çeliği (B420C)** — Sarfiyat / Birim: 54.90 kg (işçilik dahil) | 2026 Birim Fiyatı: 31.00 TL/kg | Metre Başına Tutar (TL): 1,701.90 TL | Payı (%): %32.7",
+              "**Rotary Delgi + Yakıt + Diş** — Sarfiyat / Birim: Makine & sarfiyat | Metre Başına Tutar (TL): 880.00 TL | Payı (%): %16.9",
+              "**Casing (Kılıf) & Servis Vinci** — Sarfiyat / Birim: Amortisman ve operasyon | Metre Başına Tutar (TL): 345.00 TL | Payı (%): %6.6",
+              "**Kuyu Pasası Bertarafı** — Sarfiyat / Birim: 0.654 m³ | 2026 Birim Fiyatı: 480.00 TL/m³ | Metre Başına Tutar (TL): 313.92 TL | Payı (%): %6.0",
+              "**Operatör & Saha İşçiliği** — Sarfiyat / Birim: 50 mt/gün bazlı | Metre Başına Tutar (TL): 365.00 TL | Payı (%): %7.0",
+              "**1 METRE FORE KAZIK NET TABAN ŞANTİYE MALİYETİ** — Metre Başına Tutar (TL): **5,210.37 TL/mt** | Payı (%): **%100.0**",
+              "**(Döviz Karşılığı / 2026 Q1-Q2)** — Metre Başına Tutar (TL): **~140.80 USD/mt**"
             ]
           },
           {
-            "type": "list",
-            "items": [
-              "**Hazır Beton (C30/37 SRC)** — 0.563 m³ (%12 zayiatlı) — 2,850.00 TL/m³ — 1,604.55 TL — %30.8"
-            ]
+            type: "paragraph",
+            content: "*(Ø100 cm Kazık için 2026 Taban Şantiye Maliyeti: **~8,450 TL/mt / ~228 USD/mt** seviyesindedir).*"
           },
           {
-            "type": "list",
-            "items": [
-              "**Donatı Çeliği (B420C)** — 54.90 kg (işçilik dahil) — 31.00 TL/kg — 1,701.90 TL — %32.7"
-            ]
+            type: "paragraph",
+            content: "**11.14. MOBİLİZASYON VE DEMOBİLİZASYON DİNAMİKLERİ**"
           },
           {
-            "type": "list",
-            "items": [
-              "**Rotary Delgi + Yakıt + Diş** — Makine & sarfiyat — - — 880.00 TL — %16.9"
-            ]
+            type: "paragraph",
+            content: "Geoteknik taahhüt projelerinde mobilizasyon, sadece \"araç nakliyesi\" değil, şantiyenin endüstriyel bir fabrikaya dönüştürülmesidir."
           },
           {
-            "type": "list",
-            "items": [
-              "**Casing (Kılıf) & Servis Vinci** — Amortisman ve operasyon — - — 345.00 TL — %6.6"
-            ]
+            type: "paragraph",
+            content: "**11.15. Ağır Nakliye (Lowbed) Filosu ve İzin Dinamikleri**"
           },
           {
-            "type": "list",
-            "items": [
-              "**Kuyu Pasası Bertarafı** — 0.654 m³ — 480.00 TL/m³ — 313.92 TL — %6.0"
-            ]
+            type: "paragraph",
+            content: "Standart bir geoteknik şantiyesinin sevkiyat matrisi:"
           },
           {
-            "type": "list",
-            "items": [
-              "**Operatör & Saha İşçiliği** — 50 mt/gün bazlı — - — 365.00 TL — %7.0"
-            ]
+            type: "paragraph",
+            content: "**Lojistik Fiyatlama Matrisi (Sevk + Dönüş Demobilizasyon Toplamı):**"
           },
           {
-            "type": "list",
-            "items": [
-              "**1 METRE FORE KAZIK NET TABAN ŞANTİYE MALİYETİ** — - — - — **5,210.37 TL/mt** — **%100.0**"
-            ]
-          },
-          {
-            "type": "list",
-            "items": [
-              "(Döviz Karşılığı / 2026 Q1-Q2) — - — - — **~140.80 USD/mt** — -"
-            ]
-          },
-          {
-            "type": "paragraph",
-            "content": "*(Ø100 cm Kazık için 2026 Taban Şantiye Maliyeti: **~8,450 TL/mt / ~228 USD/mt** seviyesindedir).*"
-          },
-          {
-            "type": "paragraph",
-            "content": "**MOBİLİZASYON VE DEMOBİLİZASYON DİNAMİKLERİ**"
-          },
-          {
-            "type": "paragraph",
-            "content": "Geoteknik taahhüt projelerinde mobilizasyon, sadece \"araç nakliyesi\" değil, şantiyenin endüstriyel bir fabrikaya dönüştürülmesidir."
-          },
-          {
-            "type": "paragraph",
-            "content": "**11.1. Ağır Nakliye (Lowbed) Filosu ve İzin Dinamikleri**"
-          },
-          {
-            "type": "paragraph",
-            "content": "Standart bir geoteknik şantiyesinin sevkiyat matrisi:"
-          },
-          {
-            "type": "list",
-            "items": [
-              "[ Ağır Makine Gövdesi (60-80 Ton) ] → 8 Dingilli Hidrolik Lowbed (Gabari Dışı İzin + Karayolları Eskortu)",
-              "[ Kule (Mast) & Karşı Ağırlıklar ] → 4 Dingilli Ağır Hizmet Lowbed",
-              "[ Delgi Takımları (Kelly, Auger) ] → 2 Adet Sal Kasa Açık TIR",
-              "[ Jet Grout Pompa İstasyonu ] → Özel Konteyner Taşıyıcı Lowbed",
-              "[ Çimento Siloları (60-100 Ton) ] → 2 Adet Uzatmalı Silo TIR'ı",
-              "[ Şantiye Ofisi / Yatakhane / Takım] → 2 Adet Standart Kapalı TIR"
-            ]
-          },
-          {
-            "type": "paragraph",
-            "content": "**2026 Lojistik Fiyatlama Matrisi (Sevk + Dönüş Demobilizasyon Toplamı):**"
-          },
-          {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Bölgesel / Şehir İçi (0 - 80 km yarıçap):**",
               "Gabari dışı hidrolik lowbed: 85,000 TL/sefer × 2 (gidiş-dönüş) = 170,000 TL",
               "Standart TIR taşımaları (6 araç): 28,000 TL × 6 × 2 = 336,000 TL",
@@ -5040,350 +4601,340 @@ export const knowledgeArticles: KnowledgeArticle[] = [
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**11.2. Saha Kurulumu, Zemin İyileştirmesi ve Altyapı Bağlantıları**"
+            type: "paragraph",
+            content: "**11.16. Saha Kurulumu, Zemin İyileştirmesi ve Altyapı Bağlantıları**"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Çalışma Platformu (Platform Hazırlığı):**",
               "75 tonluk bir kazık makinesinin devrilmemesi için palet tabanında minimum 180 - 220 kPa taşıma gücü gerekir.",
               "Çamurlu zeminlerde geogrid serimi + 40 cm kırmataş/tuvönan serilip silindirle sıkıştırılması:"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "⇒ 1,500 m² × 160 TL/m² = 240,000 TL."
+            type: "paragraph",
+            content: "⇒ 1,500 m² × 160 TL/m² = 240,000 TL."
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Silo Montajı ve Mobil Vinç Kiralaması:**",
               "80 tonluk çimento silosunun yatay vaziyetten dikilip ankrajlanması ve jet grout pompası indirmesi için 70 tonluk mobil teleskopik vinç (2 gün kurulum + 2 gün söküm):"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "⇒ 4 gün × 40,000 TL/gün = 160,000 TL."
+            type: "paragraph",
+            content: "⇒ 4 gün × 40,000 TL/gün = 160,000 TL."
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Şantiye Enerji İstasyonu:**",
               "Jet Grout ve şantiye yerleşkesi için 500 kVA Dizel Jeneratör nakliyesi, panolama, kablolama ve yakıt tankı tesisatı:"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "⇒ 140,000 TL sabit kurulum maliyeti."
+            type: "paragraph",
+            content: "⇒ 140,000 TL sabit kurulum maliyeti."
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Su Temin Havuzları:**",
               "Jet Grout için saatte en az 18 - 25 m³ kesintisiz debi gerekir. 50 tonluk sızdırmaz havuz açılması, membran yalıtımı ve hidrofor sistemi:"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "⇒ 85,000 TL."
+            type: "paragraph",
+            content: "⇒ 85,000 TL."
           },
           {
-            "type": "paragraph",
-            "content": "**TOPLAM SABİT MOBİLİZASYON & DEMOBİLİZASYON BÜTÇESİ:**"
+            type: "paragraph",
+            content: "**TOPLAM SABİT MOBİLİZASYON & DEMOBİLİZASYON BÜTÇESİ:**"
           },
           {
-            "type": "paragraph",
-            "content": "Sabit Paket Maliyeti = 1,176,000 TL – 1,690,000 TL (≈ 32,000 – 45,000 USD)"
+            type: "paragraph",
+            content: "Sabit Paket Maliyeti = 1,176,000 TL – 1,690,000 TL (≈ 32,000 – 45,000 USD)"
           },
           {
-            "type": "paragraph",
-            "content": "**11.3. Metraj Büyüklüğünün Birim Fiyata Lojistik Etkisi (Amortisman Dağılımı)**"
+            type: "paragraph",
+            content: "**11.17. Metraj Büyüklüğünün Birim Fiyata Lojistik Etkisi (Amortisman Dağılımı)**"
           },
           {
-            "type": "paragraph",
-            "content": "Müteahhitlerin ihalede battığı en kritik matematiksel olgu: **Mobilizasyon Sabit Maliyetinin Metraj Üzerinden Sönümlenmesidir.**"
+            type: "paragraph",
+            content: "Müteahhitlerin ihalede battığı en kritik matematiksel olgu: **Mobilizasyon Sabit Maliyetinin Metraj Üzerinden Sönümlenmesidir.**"
           },
           {
-            "type": "paragraph",
-            "content": "Metretüle Yansıyan Mobilizasyon Yükü = Toplam Mobilizasyon Maliyeti (1,400,000 TL) / (Sözleşme Metrajı)"
+            type: "paragraph",
+            content: "Metretüle Yansıyan Mobilizasyon Yükü = Toplam Mobilizasyon Maliyeti (1,400,000 TL) / (Sözleşme Metrajı)"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**1,000 Metrelik Küçük Projede:**"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "1,400,000 TL / (1,000 mt) = 1,400.00 TL/metre ek maliyet!"
+            type: "paragraph",
+            content: "1,400,000 TL / (1,000 mt) = 1,400.00 TL/metre ek maliyet!"
           },
           {
-            "type": "paragraph",
-            "content": "(Fore kazık birim maliyetini %27 oranında tek başına artırır!)"
+            type: "paragraph",
+            content: "(Fore kazık birim maliyetini %27 oranında tek başına artırır!)"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**3,000 Metrelik Orta Projede:**"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "1,400,000 TL / (3,000 mt) = 466.67 TL/metre ek maliyet."
+            type: "paragraph",
+            content: "1,400,000 TL / (3,000 mt) = 466.67 TL/metre ek maliyet."
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**10,000 Metrelik Büyük Projede:**"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "1,400,000 TL / (10,000 mt) = 140.00 TL/metre ek maliyet."
+            type: "paragraph",
+            content: "1,400,000 TL / (10,000 mt) = 140.00 TL/metre ek maliyet."
           },
           {
-            "type": "note",
-            "title": "Teknik Bilgi & Standart Referansı",
-            "content": "**İhale Kuralı:** 2,000 metrenin altındaki işlerde mobilizasyon kesinlikle birim fiyata yedirilmemeli; ihale teklif mektubunda **\"Mobilizasyon & Demobilizasyon: Götürü Bedel (Lump Sum)\"** olarak ayrı bir satırda faturalandırılmalıdır."
+            type: "note",
+            title: "Teknik Bilgi & Standart Referansı",
+            content: "**İhale Kuralı:** 2,000 metrenin altındaki işlerde mobilizasyon kesinlikle birim fiyata yedirilmemeli; ihale teklif mektubunda **\"Mobilizasyon & Demobilizasyon: Götürü Bedel (Lump Sum)\"** olarak ayrı bir satırda faturalandırılmalıdır."
           },
           {
-            "type": "paragraph",
-            "content": "**MÜTEAHHİTLER İÇİN 2026 BİRİM FİYAT RİSK YÖNETİMİ**"
+            type: "paragraph",
+            content: "**11.18. MÜTEAHHİTLER İÇİN 2026 BİRİM FİYAT RİSK YÖNETİMİ**"
           },
           {
-            "type": "paragraph",
-            "content": "Geoteknik mühendisliği, imalatın doğrudan yerin altında yapıldığı ve malzemenin homojen olmadığı tek inşaat disiplinidir. Bu nedenle standart bina inşaatı sözleşmeleri geoteknikte mali intihardır."
+            type: "paragraph",
+            content: "Geoteknik mühendisliği, imalatın doğrudan yerin altında yapıldığı ve malzemenin homojen olmadığı tek inşaat disiplinidir. Bu nedenle standart bina inşaatı sözleşmeleri geoteknikte mali intihardır."
           },
           {
-            "type": "paragraph",
-            "content": "**11.1. Sözleşme Modellerinin Risk Dağılımı: Götürü Bedel (Lump Sum) vs. Birim Fiyatlı (Unit Rate)**"
+            type: "paragraph",
+            content: "**11.19. Sözleşme Modellerinin Risk Dağılımı: Götürü Bedel (Lump Sum) vs. Birim Fiyatlı (Unit Rate)**"
           },
           {
-            "type": "list",
-            "items": [
-              "[ GÖTÜRÜ BEDEL (LUMP SUM) ]",
-              "Müteahhit Riski: [] %100 (Ölümcül)",
-              "İşveren Riski: [] %0",
-              "Tehlike: Karstik boşlukta 400 kg yerine 900 kg çimento gitmesi,",
-              "kaya soketinin 3 m derinleşmesi müteahhidin sırtındadır.",
-              "[ AYRIŞTIRILMIŞ BİRİM FİYATLI (UNIT RATE) ]",
-              "Müteahhit Riski: [] %25 (Operasyonel Verim)",
-              "İşveren Riski: [] %75 (Jeolojik Belirsizlik)",
-              "Felsefe: Delgi metresi, çimento tonajı ve beton hacmi fiili",
-              "kantar fişleri ve kuyu tutanakları ile hakedişe bağlanır."
-            ]
+            type: "paragraph",
+            content: "**Götürü Bedel Sözleşmelerin Geoteknik İflas Tuzakları:**"
           },
           {
-            "type": "paragraph",
-            "content": "**Götürü Bedel Sözleşmelerin Geoteknik İflas Tuzakları:**"
-          },
-          {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Çimento ve Harç Tüketimi Belirsizliği:** Yeraltında çatlaklı kireçtaşı veya alüvyon cepleri varsa, jet grout enjeksiyonu kontrolsüz yayılır. 1 metreye 400 kg hesaplanan çimento tüketimi fiiliyatta 750 kg çıktığında müteahhidin kâr marjı buharlaşır.",
               "**Soketlenme Derinliği Değişkenliği:** Sondaj logları her 25 metrede birdir. Aradaki faylanma veya tabaka eğiminde sağlam anakaya (soket kotu) 4 metre daha derinde çıkarsa, fore kazık delgisinde hem yüksek maliyetli sert kaya delgisi uzar hem de donatı/beton metrajı şişer.",
               "**Müteahhidin Korunma Mekanizması:** Götürü bedel dayatılan ihalelerde, müteahhit teklifine en az **%35 - 50 \"Jeolojik Belirsizlik Primi\"** eklemek zorundadır."
             ]
           },
           {
-            "type": "paragraph",
-            "content": "**11.2. Bekleme Süresi (Standby Rate / Demurrage) Maddesi**"
+            type: "paragraph",
+            content: "**11.20. Bekleme Süresi (Standby Rate / Demurrage) Maddesi**"
           },
           {
-            "type": "paragraph",
-            "content": "Ağır geoteknik makine parkının şantiyede işverenden kaynaklı rölantide kalmasının günlük maliyeti yıkıcıdır."
+            type: "paragraph",
+            content: "Ağır geoteknik makine parkının şantiyede işverenden kaynaklı rölantide kalmasının günlük maliyeti yıkıcıdır."
           },
           {
-            "type": "paragraph",
-            "content": "**2026 Saha Bekleme Maliyeti (Standby Rate) Hesabı (Günlük):**"
+            type: "paragraph",
+            content: "**Saha Bekleme Maliyeti (Standby Rate) Hesabı (Günlük):**"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Fore Kazık Takımı:** 80 tonluk rig + servis vinci + 6 kişilik uzman kadro + mobilizasyon faiz yükü:"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "Standby Bedeli = 85,000 – 120,000 TL/gün (≈ 2,300 – 3,250 USD/gün)"
+            type: "paragraph",
+            content: "Standby Bedeli = 85,000 – 120,000 TL/gün (≈ 2,300 – 3,250 USD/gün)"
           },
           {
-            "type": "list",
-            "items": [
+            type: "list",
+            items: [
               "**Jet Grout Takımı:** Delgi rigi + yüksek basınç pompası + mikser istasyonu + jeneratör + 7 kişilik kadro:"
             ]
           },
           {
-            "type": "paragraph",
-            "content": "Standby Bedeli = 75,000 – 105,000 TL/gün (≈ 2,000 – 2,850 USD/gün)"
+            type: "paragraph",
+            content: "Standby Bedeli = 75,000 – 105,000 TL/gün (≈ 2,000 – 2,850 USD/gün)"
           },
           {
-            "type": "paragraph",
-            "content": "**Sözleşmeye Konulması Zorunlu Standby Maddesi Şablonu:**"
+            type: "paragraph",
+            content: "**Sözleşmeye Konulması Zorunlu Standby Maddesi Şablonu:**"
           },
           {
-            "type": "note",
-            "title": "Teknik Bilgi & Standart Referansı",
-            "content": "**Madde X.X — Ekipman ve Personel Bekleme Bedeli (Standby):**"
+            type: "note",
+            title: "Teknik Bilgi & Standart Referansı",
+            content: "**Madde X.X — Ekipman ve Personel Bekleme Bedeli (Standby):**"
           },
           {
-            "type": "note",
-            "title": "Teknik Bilgi & Standart Referansı",
-            "content": "\"İşverenin yükümlülüğünde bulunan sahanın tesviye edilmemesi, palet çalışma platformunun çökmesi, şantiye elektrik/su hatlarının kesilmesi, onaylı projelerin veya kuyu koordinat aplikasyonunun gecikmesi, hazır beton/çimento sevkiyat aksamaları veya resmi makamlarca şantiyenin durdurulması hallerinde; günde 4 (dört) saati aşan duruşlar 'Tam Günlük Bekleme (Standby)' sayılır."
+            type: "note",
+            title: "Teknik Bilgi & Standart Referansı",
+            content: "\"İşverenin yükümlülüğünde bulunan sahanın tesviye edilmemesi, palet çalışma platformunun çökmesi, şantiye elektrik/su hatlarının kesilmesi, onaylı projelerin veya kuyu koordinat aplikasyonunun gecikmesi, hazır beton/çimento sevkiyat aksamaları veya resmi makamlarca şantiyenin durdurulması hallerinde; günde 4 (dört) saati aşan duruşlar 'Tam Günlük Bekleme (Standby)' sayılır."
           },
           {
-            "type": "note",
-            "title": "Teknik Bilgi & Standart Referansı",
-            "content": "*Bu durumda Müteahhide, duruşun gerçekleştiği her takvim günü için işbu sözleşme ekinde belirtilen **Günlük Standby Ücreti (Fore Kazık Takımı için 95,000 TL/gün; Jet Grout Takımı için 85,000 TL/gün)** herhangi bir ihtara gerek kalmaksızın ilk ara hakedişe ilave edilerek ödenir. Bekleme süresince geçen günler iş programına gün-be-gün süre uzatımı olarak eklenir.\"*"
+            type: "note",
+            title: "Teknik Bilgi & Standart Referansı",
+            content: "*Bu durumda Müteahhide, duruşun gerçekleştiği her takvim günü için işbu sözleşme ekinde belirtilen **Günlük Standby Ücreti (Fore Kazık Takımı için 95,000 TL/gün; Jet Grout Takımı için 85,000 TL/gün)** herhangi bir ihtara gerek kalmaksızın ilk ara hakedişe ilave edilerek ödenir. Bekleme süresince geçen günler iş programına gün-be-gün süre uzatımı olarak eklenir.\"*"
           },
           {
-            "type": "paragraph",
-            "content": "**11.3. Beklenmeyen Zemin Koşulları (Differing Site Conditions - DSC / FIDIC Clause 4.12)**"
+            type: "paragraph",
+            content: "**11.21. Beklenmeyen Zemin Koşulları (Differing Site Conditions - DSC / FIDIC Clause 4.12)**"
           },
           {
-            "type": "paragraph",
-            "content": "FIDIC Kırmızı Kitap (Red Book) Madde 4.12 standardına dayanan ve yerel sözleşmelere adapte edilmesi gereken en hayati madde:"
+            type: "paragraph",
+            content: "FIDIC Kırmızı Kitap (Red Book) Madde 4.12 standardına dayanan ve yerel sözleşmelere adapte edilmesi gereken en hayati madde:"
           },
           {
-            "type": "paragraph",
-            "content": "**Sözleşmeye Konulması Zorunlu DSC Maddesi Şablonu:**"
+            type: "paragraph",
+            content: "**Sözleşmeye Konulması Zorunlu DSC Maddesi Şablonu:**"
           },
           {
-            "type": "note",
-            "title": "Teknik Bilgi & Standart Referansı",
-            "content": "**Madde Y.Y — Beklenmeyen Fiziksel ve Jeolojik Koşullar (Differing Site Conditions):**"
+            type: "note",
+            title: "Teknik Bilgi & Standart Referansı",
+            content: "**Madde Y.Y — Beklenmeyen Fiziksel ve Jeolojik Koşullar (Differing Site Conditions):**"
           },
           {
-            "type": "note",
-            "title": "Teknik Bilgi & Standart Referansı",
-            "content": "\"İhale öncesinde İşveren tarafından Müteahhide teslim edilen Geoteknik Zemin Etüt Raporu, delgi hızları ve sarfiyat hesaplamalarında 'Sözleşmesel Temel Çizgi (Geotechnical Baseline)' kabul edilmiştir."
+            type: "note",
+            title: "Teknik Bilgi & Standart Referansı",
+            content: "\"İhale öncesinde İşveren tarafından Müteahhide teslim edilen Geoteknik Zemin Etüt Raporu, delgi hızları ve sarfiyat hesaplamalarında 'Sözleşmesel Temel Çizgi (Geotechnical Baseline)' kabul edilmiştir."
           },
           {
-            "type": "note",
-            "title": "Teknik Bilgi & Standart Referansı",
-            "content": "İmalat esnasında aşağıdaki koşullarla karşılaşılması halinde durum 'Öngörülemeyen Zemin Koşulu' olarak nitelendirilir:"
+            type: "note",
+            title: "Teknik Bilgi & Standart Referansı",
+            content: "İmalat esnasında aşağıdaki koşullarla karşılaşılması halinde durum 'Öngörülemeyen Zemin Koşulu' olarak nitelendirilir:"
           },
           {
-            "type": "note",
-            "title": "Teknik Bilgi & Standart Referansı",
-            "content": "1. Zemin etüt raporunda belirtilenden daha yüksek dayanımlı sert kaya formasyonuna (UCS > 40 MPa veya RQD > %70) rastlanması ve delgi için Core Barrel (Kaya Karotiyeri) kullanımının zorunlu hale gelmesi,"
+            type: "note",
+            title: "Teknik Bilgi & Standart Referansı",
+            content: "1. Zemin etüt raporunda belirtilenden daha yüksek dayanımlı sert kaya formasyonuna (UCS > 40 MPa veya RQD > %70) rastlanması ve delgi için Core Barrel (Kaya Karotiyeri) kullanımının zorunlu hale gelmesi,"
           },
           {
-            "type": "note",
-            "title": "Teknik Bilgi & Standart Referansı",
-            "content": "2. Doğal olmayan engeller (tarihi sarnıç/temel kalıntıları, gömülü betonarme bloklar, kontrolsüz cüruf/dolgu, altyapı boruları),"
+            type: "note",
+            title: "Teknik Bilgi & Standart Referansı",
+            content: "2. Doğal olmayan engeller (tarihi sarnıç/temel kalıntıları, gömülü betonarme bloklar, kontrolsüz cüruf/dolgu, altyapı boruları),"
           },
           {
-            "type": "note",
-            "title": "Teknik Bilgi & Standart Referansı",
-            "content": "3. Yüksek basınçlı artezyen yeraltı suyu çıkışı veya kuyu cidarının tutulamadığı sıvılaşabilir/akıcı kum tabakaları nedeniyle sözleşmede öngörülmeyen Çelik Muhafaza Borusu (Casing) veya Bentonit/Polimer çamuru kullanım zorunluluğu,"
+            type: "note",
+            title: "Teknik Bilgi & Standart Referansı",
+            content: "3. Yüksek basınçlı artezyen yeraltı suyu çıkışı veya kuyu cidarının tutulamadığı sıvılaşabilir/akıcı kum tabakaları nedeniyle sözleşmede öngörülmeyen Çelik Muhafaza Borusu (Casing) veya Bentonit/Polimer çamuru kullanım zorunluluğu,"
           },
           {
-            "type": "note",
-            "title": "Teknik Bilgi & Standart Referansı",
-            "content": "4. Karstik boşluklar veya yüksek çatlaklı yapı sebebiyle teorik tasarımın %25'ini aşan aşırı enjeksiyon şerbeti emilimi."
+            type: "note",
+            title: "Teknik Bilgi & Standart Referansı",
+            content: "4. Karstik boşluklar veya yüksek çatlaklı yapı sebebiyle teorik tasarımın %25'ini aşan aşırı enjeksiyon şerbeti emilimi."
           },
           {
-            "type": "note",
-            "title": "Teknik Bilgi & Standart Referansı",
-            "content": "Bu hallerde Müteahhit imalatı durdurarak 24 saat içinde İşverene yazılı bildirim yapar. İşveren ve Müteahhit teknik heyetince tutanak altına alınan yeni şartlar doğrultusunda:"
+            type: "note",
+            title: "Teknik Bilgi & Standart Referansı",
+            content: "Bu hallerde Müteahhit imalatı durdurarak 24 saat içinde İşverene yazılı bildirim yapar. İşveren ve Müteahhit teknik heyetince tutanak altına alınan yeni şartlar doğrultusunda:"
           },
           {
-            "type": "note",
-            "title": "Teknik Bilgi & Standart Referansı",
-            "content": "a) Delgi birim fiyatı 'Kaya Delgisi Analizi' üzerinden revize edilir,"
+            type: "note",
+            title: "Teknik Bilgi & Standart Referansı",
+            content: "a) Delgi birim fiyatı 'Kaya Delgisi Analizi' üzerinden revize edilir,"
           },
           {
-            "type": "note",
-            "title": "Teknik Bilgi & Standart Referansı",
-            "content": "b) Sarf edilen ilave çimento, beton ve kimyasallar kantar irsaliyesi üzerinden birim fiyata eklenir,"
+            type: "note",
+            title: "Teknik Bilgi & Standart Referansı",
+            content: "b) Sarf edilen ilave çimento, beton ve kimyasallar kantar irsaliyesi üzerinden birim fiyata eklenir,"
           },
           {
-            "type": "note",
-            "title": "Teknik Bilgi & Standart Referansı",
-            "content": "c) Geciken süreler için cezai şartsız 'Süre Uzatımı (Extension of Time)' verilir.\""
+            type: "note",
+            title: "Teknik Bilgi & Standart Referansı",
+            content: "c) Geciken süreler için cezai şartsız 'Süre Uzatımı (Extension of Time)' verilir.\""
           }
         ]
       },
       {
-        "id": "zemin-iyilestirme-firmalari-secim-rehberi-ve-yer6-farki",
-        "title": "12. Zemin İyileştirme Firmaları Seçim Kriterleri, Makine Parkı Yeterliliği ve YER6 Geoteknik Saha Mühendisliği",
-        "blocks": [
+        id: "zemin-iyilestirme-firmalari-secim-rehberi-ve-yer6-farki",
+        title: "12. Zemin İyileştirme Firmaları Seçim Kriterleri, Makine Parkı Yeterliliği ve YER6 Geoteknik Saha Mühendisliği",
+        blocks: [
           {
-            "type": "paragraph",
-            "content": "Bir üstyapı veya altyapı projesinde zemin iyileştirme taahhüdü verilirken, en düşük fiyat teklifini veren taşeronu seçmek çoğu zaman projeyi şantiye duruşlarına, kuyu çökmelerine, kontrolsüz maliyet artışlarına ve hukuki uyuşmazlıklara sürükler. Zemin iyileştirme; toprağın metrelerce altına müdahale eden, geriye dönüşü olmayan ve doğrudan yapısal can güvenliğini ilgilendiren yüksek teknolojili bir geoteknik uzmanlık sahasıdır."
+            type: "paragraph",
+            content: "Bir üstyapı veya altyapı projesinde zemin iyileştirme taahhüdü verilirken, **zemin iyileştirme firmaları** arasında yalnızca en düşük metretül fiyat teklifini veren taşeronu seçmek çoğu zaman projeyi şantiye duruşlarına, kuyu çökmelerine, kontrolsüz maliyet artışlarına ve hukuki uyuşmazlıklara sürükler. Zemin iyileştirme; toprağın metrelerce altına müdahale eden, geriye dönüşü olmayan ve doğrudan yapısal can güvenliğini ilgilendiren yüksek teknolojili bir geoteknik uzmanlık sahasıdır."
           },
           {
-            "type": "list",
-            "title": "Zemin İyileştirme Firması Seçerken Sorgulanması Gereken 5 Temel Kriter",
-            "items": [
-              "1. Makine Parkının Tork ve Hidrolik Kapasitesi: Projede öngörülen delgi çapı ve derinliği için rig torkunun (min. 80-160 kNm) ve jet grout yüksek basınç pompa debisinin (min. 400-600 bar, 200 lt/dak) yeterli olup olmadığı sahada belgelenmelidir.",
-              "2. Tescilli Geoteknik Mühendisliği Kadrosu: Şantiye yönetiminin başında TBDY 2018 ve Eurocode 7 hesap raporlarını okuyabilen, zemin stratigrafisindeki beklenmeyen değişimleri yorumlayarak parametreleri anlık revize edebilen yetkin geoteknik mühendisleri bulunmalıdır.",
-              "3. Saha İçi QA/QC Test Ekipmanları: Karot alma, PIT bütünlük testi, CSL ultrasonik test ve yükleme krikolarının taşeronun kendi bünyesinde bulunması veya bağımsız akredite laboratuvarlarca kesintisiz raporlanması şarttır.",
-              "4. Şeffaf Birim Analiz ve Metraj Disiplini: Çimento tonajı, su/çimento oranı, mazot sarfiyatı ve pasa hafriyatı gibi gizli maliyet kalemlerinin sözleşmede açıkça tanımlanmış olması gerekir.",
+            type: "list",
+            title: "Zemin İyileştirme Firmaları Seçilirken Sorgulanması Gereken 5 Temel Kriter",
+            items: [
+              "1. Makine Parkının Tork ve Hidrolik Kapasitesi: Profesyonel **zemin iyileştirme firmaları**, projede öngörülen delgi çapı ve derinliği için rig torkunun (min. 80-160 kNm) ve jet grout yüksek basınç pompa debisinin (min. 400-600 bar, 200 lt/dak) yeterli olduğunu sahada belgelemelidir.",
+              "2. Tescilli Geoteknik Mühendisliği Kadrosu: Şantiye yönetiminin başında TBDY 2018 ve Eurocode 7 hesap raporlarını okuyabilen, zemin stratigrafisindeki beklenmeyen değişimleri yorumlayarak **zemin iyileştirme yöntemleri** parametrelerini anlık revize edebilen yetkin geoteknik mühendisleri bulunmalıdır.",
+              "3. Saha İçi QA/QC Test Ekipmanları: Karot alma, PIT bütünlük testi, CSL ultrasonik test ve yükleme krikolarının yüklenici firmanın kendi bünyesinde bulunması veya bağımsız akredite laboratuvarlarca kesintisiz raporlanması şarttır.",
+              "4. Şeffaf Birim Analiz ve Metraj Disiplini: Çimento tonajı, su/çimento oranı, mazot sarfiyatı ve pasa hafriyatı gibi maliyet kalemlerinin sözleşmede açıkça tanımlanmış olması gerekir.",
               "5. FIDIC Şartnamelerine Uyum: Beklenmeyen zemin koşulları (Differing Site Conditions) ve bekleme süresi (Standby Rate) maddelerinin tarafsız, dengeli ve şeffaf sözleşme şablonlarıyla güvenceye alınması esastır."
             ]
           },
           {
-            "type": "paragraph",
-            "content": "YER6 Geoteknik olarak; Ankara merkez ofisimiz, Türkiye genelinde 81 ilde ve deprem bölgesinde faaliyet gösteren geniş makine filomuz, tescilli geoteknik baş mühendislerimiz ve şeffaf mühendislik yaklaşımımızla [Zemin İyileştirme Hizmetleri](/services/zemin-iyilestirme/), [Jet Grout](/services/jet-grout/), [DSM](/services/dsm/), [Taş Kolon](/services/tas-kolon/) ve [Fore Kazık](/services/fore-kazik/) projelerini sıfır risk prensibiyle tamamlıyoruz. Projenizin zemin etüt raporunu incelemek ve 2026 birim fiyatlarıyla optimize edilmiş geoteknik fizibilite teklifi almak için [YER6 Geoteknik İletişim](/contact/) sayfamızdan uzman mühendislerimizle 7/24 doğrudan irtibata geçebilirsiniz."
+            type: "paragraph",
+            content: "YER6 Geoteknik olarak; Ankara merkez ofisimiz, Türkiye genelinde 81 ilde ve deprem bölgesinde faaliyet gösteren geniş makine filomuz, tescilli geoteknik baş mühendislerimiz ve şeffaf mühendislik yaklaşımımızla **zemin iyileştirme firmaları** arasında uçtan uca mühendislik ve uygulama güvencesi sunuyoruz. [Zemin İyileştirme Hizmetleri](/services/zemin-iyilestirme/), [Jet Grout](/services/jet-grout/), [DSM](/services/dsm/), [Taş Kolon](/services/tas-kolon/) ve [Fore Kazık](/services/fore-kazik/) projelerini sıfır risk prensibiyle tamamlıyoruz. Projenizin zemin etüt raporunu incelemek ve 2026 birim fiyatlarıyla optimize edilmiş geoteknik fizibilite teklifi almak için [YER6 Geoteknik İletişim](/contact/) sayfamızdan uzman mühendislerimizle 7/24 doğrudan irtibata geçebilirsiniz."
           }
         ]
       }
     ],
-    "faq": [
+    faq: [
       {
-        "question": "Zemin iyileştirme nedir ve ne zaman yasal bir zorunluluktur?",
-        "answer": "Zemin iyileştirme; taşıma gücü yetersiz, aşırı konsolidasyon oturmasına yatkın veya depremde sıvılaşma riski taşıyan zemin tabakalarının yerinde fiziksel, mekanik veya hidrolik yöntemlerle ıslah edilerek taşıma kapasitesinin artırılması ve oturmaları sınırlandırma işlemidir. TBDY 2018 Bölüm 16 gereğince ZD, ZE ve ZF zemin sınıflarında sıvılaşma ve oturma tahkikleri sınır değerleri aşıyorsa zemin iyileştirmesi yapılması kanunen zorunludur."
+        question: "Zemin iyileştirme nedir ve ne zaman yasal bir zorunluluktur?",
+        answer: "Zemin iyileştirme; taşıma gücü yetersiz, aşırı konsolidasyon oturmasına yatkın veya depremde sıvılaşma riski taşıyan zemin tabakalarının yerinde fiziksel, mekanik veya hidrolik yöntemlerle ıslah edilerek taşıma kapasitesinin artırılması ve oturmaları sınırlandırma işlemidir. TBDY 2018 Bölüm 16 gereğince ZD, ZE ve ZF zemin sınıflarında sıvılaşma ve oturma tahkikleri sınır değerleri aşıyorsa zemin iyileştirmesi yapılması kanunen zorunludur."
       },
       {
-        "question": "Zemin iyileştirme ile derin temel (fore kazık) arasındaki fark nedir?",
-        "answer": "Fore kazık gibi derin temel elemanları yapı yüklerini zayıf zemin tabakalarından geçirerek doğrudan derindeki sağlam ana kayaya veya sıkı tabakaya aktarır. Zemin iyileştirme yöntemleri (Jet Grout, DSM, Taş Kolon) ise mevcut zemin kütlesiyle kaynaşarak kompozit bir masif oluşturur; zeminin rijitliğini, drenajını ve kayma mukavemetini artırarak yükün zeminle kolonlar arasında paylaşılmasını sağlar."
+        question: "Zemin iyileştirme ile derin temel (fore kazık) arasındaki fark nedir?",
+        answer: "Fore kazık gibi derin temel elemanları yapı yüklerini zayıf zemin tabakalarından geçirerek doğrudan derindeki sağlam ana kayaya veya sıkı tabakaya aktarır. Zemin iyileştirme yöntemleri (Jet Grout, DSM, Taş Kolon) ise mevcut zemin kütlesiyle kaynaşarak kompozit bir masif oluşturur; zeminin rijitliğini, drenajını ve kayma mukavemetini artırarak yükün zeminle kolonlar arasında paylaşılmasını sağlar."
       },
       {
-        "question": "Jet Grout mu yoksa Deep Soil Mixing (DSM) mi tercih edilmelidir?",
-        "answer": "Zeminin dane boyutu ve kohezyonuna göre karar verilir. Gevşek kumlarda, çakıllarda ve heterojen alüvyonlarda 400-600 bar yüksek kinetik enerjili Jet Grout üstün hidrolik parçalama sağlar. Yüksek su muhtevalı yumuşak killerde, siltlerde ve pasa (spoil) çıkışının istenmediği kentsel dönüşüm sahalarında ise mekanik bıçaklarla yerinde harmanlama yapan DSM (Deep Soil Mixing) hem ekonomik hem de çevresel açıdan daha avantajlıdır."
+        question: "Jet Grout mu yoksa Deep Soil Mixing (DSM) mi tercih edilmelidir?",
+        answer: "Zeminin dane boyutu ve kohezyonuna göre karar verilir. Gevşek kumlarda, çakıllarda ve heterojen alüvyonlarda 400-600 bar yüksek kinetik enerjili Jet Grout üstün hidrolik parçalama sağlar. Yüksek su muhtevalı yumuşak killerde, siltlerde ve pasa (spoil) çıkışının istenmediği kentsel dönüşüm sahalarında ise mekanik bıçaklarla yerinde harmanlama yapan DSM (Deep Soil Mixing) hem ekonomik hem de çevresel açıdan daha avantajlıdır."
       },
       {
-        "question": "Taş kolon (vibro-stone column) hangi zeminlerde en yüksek verimi sağlar?",
-        "answer": "Taş kolonlar; ince dane oranı %15'in üzerinde olan, kohezyonlu siltli-killi zeminlerde ve sıvılaşabilir kumlu siltlerde mükemmel sonuç verir. Hem radyal drenaj yolu oluşturarak aşırı boşluk suyu basıncının hızla tahliye edilmesini sağlar hem de Priebe yöntemine göre gerilme konsantrasyonu oluşturarak oturmayı 2 ila 4 kat azaltır."
+        question: "Taş kolon (vibro-stone column) hangi zeminlerde en yüksek verimi sağlar?",
+        answer: "Taş kolonlar; ince dane oranı %15'in üzerinde olan, kohezyonlu siltli-killi zeminlerde ve sıvılaşabilir kumlu siltlerde mükemmel sonuç verir. Hem radyal drenaj yolu oluşturarak aşırı boşluk suyu basıncının hızla tahliye edilmesini sağlar hem de Priebe yöntemine göre gerilme konsantrasyonu oluşturarak oturmayı 2 ila 4 kat azaltır."
       },
       {
-        "question": "TBDY 2018'e göre sıvılaşma güvenlik katsayısı (FL) kaç olmalıdır?",
-        "answer": "TBDY 2018 Bölüm 16 uyarınca sıvılaşma güvenlik katsayısı FL = CRR7.5 / CSR7.5 formülüyle hesaplanır. Güvenli kabul edilmek için FL değerinin 1.10 veya üzerinde olması (FL ≥ 1.10) şarttır. FL < 1.00 olan durumlarda kesin sıvılaşma beklenir ve zemin iyileştirmesi zorunludur."
+        question: "TBDY 2018'e göre sıvılaşma güvenlik katsayısı (FL) kaç olmalıdır?",
+        answer: "TBDY 2018 Bölüm 16 uyarınca sıvılaşma güvenlik katsayısı FL = CRR7.5 / CSR7.5 formülüyle hesaplanır. Güvenli kabul edilmek için FL değerinin 1.10 veya üzerinde olması (FL ≥ 1.10) şarttır. FL < 1.00 olan durumlarda kesin sıvılaşma beklenir ve zemin iyileştirmesi zorunludur."
       },
       {
-        "question": "Jet Grout uygulamasında su/çimento oranı (W/C) ne olmalıdır?",
-        "answer": "Uluslararası TS EN 12716 standardı ve şantiye reolojisi gereğince enjeksiyon şerbetinin W/C oranı ağırlıkça 0.8 ila 1.2 arasında olmalıdır. Tipik olarak 1:1 oranı tercih edilir. 1.2'nin üzerindeki oranlar priz sonrası aşırı rötreye ve dayanım düşüşüne, 0.8'in altındaki oranlar ise yüksek basınç pompalarında nozül tıkanmalarına yol açar."
+        question: "Jet Grout uygulamasında su/çimento oranı (W/C) ne olmalıdır?",
+        answer: "Uluslararası TS EN 12716 standardı ve şantiye reolojisi gereğince enjeksiyon şerbetinin W/C oranı ağırlıkça 0.8 ila 1.2 arasında olmalıdır. Tipik olarak 1:1 oranı tercih edilir. 1.2'nin üzerindeki oranlar priz sonrası aşırı rötreye ve dayanım düşüşüne, 0.8'in altındaki oranlar ise yüksek basınç pompalarında nozül tıkanmalarına yol açar."
       },
       {
-        "question": "Şantiyede pasa (spoil) çıkışı aniden kesilirse ne yapılmalıdır?",
-        "answer": "Kuyu ağzından deburbe (pasa) çıkışının durması acil durumdur; zemin içinde aşırı basınç birikmesine ve komşu binalarda hidrolik kabarmaya (heave) yol açabilir. Bu durumda operatör derhal enjeksiyon debisini kesmeli, tijleri rotasyonla 1-2 metre yukarı çekmeli ve su sirkülasyonu ile kuyu cidarı yıkanarak hidrolik pasaj yeniden açılmalıdır."
+        question: "Şantiyede pasa (spoil) çıkışı aniden kesilirse ne yapılmalıdır?",
+        answer: "Kuyu ağzından deburbe (pasa) çıkışının durması acil durumdur; zemin içinde aşırı basınç birikmesine ve komşu binalarda hidrolik kabarmaya (heave) yol açabilir. Bu durumda operatör derhal enjeksiyon debisini kesmeli, tijleri rotasyonla 1-2 metre yukarı çekmeli ve su sirkülasyonu ile kuyu cidarı yıkanarak hidrolik pasaj yeniden açılmalıdır."
       },
       {
-        "question": "Zemin iyileştirme kolonlarının kabulü için hangi testler yapılır?",
-        "answer": "İmalat öncesinde zorunlu olarak deneme kolonları açılarak çap doğrulanır. İmalat sonrasında ise 28 günlük soilcrete kütlesinden çift cidarlı karotiyerle karot alınarak tek eksenli basınç dayanımı (UCS) kırılma testleri yapılır. Ayrıca sızdırmazlık perdesi projelerinde Lugeon su basınç testi, fore kazıklarda ise PIT (bütünlük) ve CSL (kros-hol ultrasonik) testleri uygulanır."
+        question: "Zemin iyileştirme kolonlarının kabulü için hangi testler yapılır?",
+        answer: "İmalat öncesinde zorunlu olarak deneme kolonları açılarak çap doğrulanır. İmalat sonrasında ise 28 günlük soilcrete kütlesinden çift cidarlı karotiyerle karot alınarak tek eksenli basınç dayanımı (UCS) kırılma testleri yapılır. Ayrıca sızdırmazlık perdesi projelerinde Lugeon su basınç testi, fore kazıklarda ise PIT (bütünlük) ve CSL (kros-hol ultrasonik) testleri uygulanır."
       },
       {
-        "question": "2026 yılında zemin iyileştirme maliyeti nasıl hesaplanır?",
-        "answer": "Zemin iyileştirme maliyeti; zemin profilinin delgi zorluğuna, kolon çapına (Ø60-Ø100 cm), derinliğine, çimento dozajına (350-450 kg/m), mazot tüketimine, pasa hafriyat nakliyesine ve ekipman mobilizasyon mesafesine bağlı olarak metretül (m) veya metreküp (m³) bazında birim fiyat analizleriyle hesaplanır."
+        question: "2026 yılında zemin iyileştirme maliyeti nasıl hesaplanır?",
+        answer: "Zemin iyileştirme maliyeti; zemin profilinin delgi zorluğuna, kolon çapına (Ø60-Ø100 cm), derinliğine, çimento dozajına (350-450 kg/m), mazot tüketimine, pasa hafriyat nakliyesine ve ekipman mobilizasyon mesafesine bağlı olarak metretül (m) veya metreküp (m³) bazında birim fiyat analizleriyle hesaplanır."
       },
       {
-        "question": "Mevcut oturmuş veya hasarlı binaların altına zemin iyileştirmesi yapılabilir mi?",
-        "answer": "Evet. Mevcut yapıların bodrum katlarında 2.5-3.0 m basık tavan yüksekliklerinde çalışabilen özel paletli mini makinelerle bina altı mini kazık, mikrokazık ve düşük debili kılavuz delgili jet grout uygulamaları (underpinning) yapılarak yapı yükleri güvenli tabakalara aktarılır ve oturmaları durdurulur."
+        question: "Mevcut oturmuş veya hasarlı binaların altına zemin iyileştirmesi yapılabilir mi?",
+        answer: "Evet. Mevcut yapıların bodrum katlarında 2.5-3.0 m basık tavan yüksekliklerinde çalışabilen özel paletli mini makinelerle bina altı mini kazık, mikrokazık ve düşük debili kılavuz delgili jet grout uygulamaları (underpinning) yapılarak yapı yükleri güvenli tabakalara aktarılır ve oturmaları durdurulur."
       }
     ],
-    "relatedSlugs": [
+    relatedSlugs: [
+      "yer-alti-zemin-iyilestirme",
       "jet-grout-nedir",
-      "dsm-nasil-uygulanir",
+      "dsm-nedir",
       "fore-kazik-nedir",
-      "zemin-iyilestirme-planlama",
-      "jet-grout-birim-fiyati",
-      "dsm-maliyeti",
-      "fore-kazik-maliyeti"
+      "tas-kolon-nedir",
+      "sivilasma-riskine-karsi-zemin-guclendirme",
+      "jet-grout-maliyeti",
+      "fore-kazik-maliyeti",
+      "zemin-guclendirme-maliyeti",
+      "zemin-turune-gore-iyilestirme-yontemi-secimi",
+      "geoteknik-firma-secimi-ve-kriterleri",
+      "dsm-zemin-iyilestirme-firmalari-ve-birim-fiyatlari"
     ],
-    "keywords": [
+    keywords: [
       "zemin iyileştirme",
       "zemin iyileştirme nedir",
       "zemin iyileştirme yöntemleri",
@@ -5397,7 +4948,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
       "issmge zemin iyileştirme",
       "zemin iyileştirme maliyeti 2026"
     ],
-    "published": true
+    published: true
   },
   {
     slug: "zemin-iyilestirme-planlama",

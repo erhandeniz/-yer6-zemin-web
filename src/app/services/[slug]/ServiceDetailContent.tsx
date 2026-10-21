@@ -99,11 +99,9 @@ function FaqItem({ question, answer }: { question: string; answer: string }) {
         <span className="font-medium">{question}</span>
         {open ? <ChevronUp className="h-4 w-4 shrink-0 text-gold-200" /> : <ChevronDown className="h-4 w-4 shrink-0 text-gold-200" />}
       </button>
-      {open && (
-        <div className="px-6 pb-5 text-sm leading-7 text-white/65">
-          {answer}
-        </div>
-      )}
+      <div className={open ? "px-6 pb-5 text-sm leading-7 text-white/65" : "hidden px-6 pb-5 text-sm leading-7 text-white/65"}>
+        {parseMarkdownLinks(answer)}
+      </div>
     </div>
   );
 }
@@ -131,7 +129,7 @@ const serviceHeroH1s: Record<string, string> = {
 };
 
 export function ServiceDetailContent({ slug }: { slug: string }) {
-  const { t } = useLanguage();
+  const { t, locale } = useLanguage();
   const service = getServiceBySlug(slug);
 
   if (!service) return null;
@@ -178,7 +176,9 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
               <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-8">
                 <h2 className="text-3xl font-semibold text-white">{t(`${service.key}_title`)} Nedir?</h2>
                 <p className="mt-6 text-lg leading-8 text-white/70">{parseMarkdownLinks(t(`${service.key}_summary`))}</p>
-                <p className="mt-4 text-base leading-7 text-white/65">{parseMarkdownLinks(t(`${service.key}_detail`))}</p>
+                <p className="mt-4 text-base leading-7 text-white/65">
+                  {parseMarkdownLinks(locale === "tr" && service.detail ? service.detail : t(`${service.key}_detail`))}
+                </p>
                 {serviceGuideMap[service.slug] && (
                   <div className="mt-6 border-t border-white/10 pt-5">
                     <Link
