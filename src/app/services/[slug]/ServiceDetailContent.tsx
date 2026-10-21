@@ -14,6 +14,7 @@ import { useLanguage } from "@/components/LanguageProvider";
 import { siteConfig } from "@/lib/siteConfig";
 import { parseMarkdownLinks } from "@/components/LinkParser";
 import { YouTubeVideoPlayer } from "@/components/YouTubeVideoPlayer";
+import { ZeminIyilestirmeAuthoritySections } from "@/components/ZeminIyilestirmeAuthoritySections";
 
 const serviceArticleMap: Record<string, string[]> = {
   "jet-grout": ["yer-alti-zemin-iyilestirme", "jet-grout-nedir", "jet-grout-hangi-zeminlerde-uygulanir", "jet-grout-kalite-kontrol"],
@@ -623,6 +624,9 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
                       </Link>
                     </div>
                   </div>
+
+                  {/* 6. Kapsamlı Mühendislik, Tasarım, Bölgesel Zemin ve Şartname Modülleri */}
+                  <ZeminIyilestirmeAuthoritySections />
                 </div>
               )}
 
