@@ -12,7 +12,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     category: "Jet Grout",
     readingTime: "30 dk",
     publishedAt: "2026-06-21",
-    updatedAt: "2026-10-12",
+    updatedAt: "2026-10-21",
     heroLabel: "Jet Grout Geoteknik Bilgi Merkezi",
     introduction:
       "**Jet Grout (yüksek basınçlı zemin enjeksiyonu)**, zayıf zemin katmanlarının taşıma kapasitesini artırmak, oturmaları mühendislik sınırlarına çekmek, deprem kaynaklı sıvılaşma güvenlik katsayısını TBDY 2018 sınırlarının üzerine çıkarmak ve sızdırmazlık perdesi oluşturmak amacıyla, 300 ila 600 bar ultra yüksek basınçlı çimento şerbeti jetiyle zemin yapısını hidrolik erozyonla parçalayıp zeminle çimentoyu yerinde kaynaştırarak monolitik zemin-çimento kolonları (soilcrete) üreten modern bir **derin zemin iyileştirme yöntemi**dir. YER6 Geoteknik olarak, TS EN 12716 ve TBDY 2018 standartlarına tam uyumlu yüksek basınçlı pompa parkımız ve uzman mühendis kadromuzla Jet-1, Jet-2 ve Jet-3 sistemlerini Türkiye genelinde projelendirip uyguluyoruz.",
@@ -935,7 +935,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     category: "Fore Kazık",
     readingTime: "32 dk",
     publishedAt: "2026-06-21",
-    updatedAt: "2026-10-12",
+    updatedAt: "2026-10-21",
     heroLabel: "Fore Kazık Geoteknik Bilgi Merkezi",
     introduction:
       "**Fore kazık (bored pile / drilled shaft)**; taşıma gücü yetersiz olan zeminlerde bina, köprü, viyadük ve rüzgar türbini gibi ağır süper-strüktür yüklerini derindeki sağlam zemin veya ana kaya tabakalarına güvenle aktarmak amacıyla hidrolik rotary delgi makineleriyle açılan dairesel kuyuya çelik donatı kafesi indirilip tremi borusuyla yerinde beton dökülerek teşkil edilen yüksek taşıma kapasiteli bir **betonarme derin temel ve iksa sistemi**dir. YER6 Geoteknik olarak; TS EN 1536, FHWA GEC-010 ve TBDY 2018 standartlarında Ø65 cm'den Ø150 cm'ye kadar geniş çap yelpazesinde son teknoloji hidrolik rotary makineler, osilatörlü muhafaza borusu (casing) sistemleri ve bağımsız akredite zemin laboratuvarı doğrulama protokollerimizle Türkiye genelinde fore kazık projelerini anahtar teslim gerçekleştiriyoruz.",
@@ -1134,7 +1134,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
       {
         question: "Fore kazık kaç şiddetinde depreme dayanır?",
         answer:
-          "Mühendislikte deprem dayanımı Richter veya moment büyüklüğü (Mw) ile doğrudan eşleştirilmez; sahaya özel tasarım yer ivmesi (PGA), faya uzaklık, yerel zemin sınıfı büyütme katsayıları ve spektral ivme (S_DS, S_D1) ile hesaplanır. TBDY 2018 standartlarında sağlam kayaya soketlenen fore kazıklar, 0.60g - 0.80g düzeyindeki yüksek tasarım yer ivmelerinde oluşan deprem kesme ve moment kuvvetlerini güvenle taşıyacak şekilde boyutlandırılır."
+          "Mühendislikte deprem dayanımı Richter veya moment büyüklüğü (Mw) ile doğrudan eşleştirilmez; her yapı için genel bir garanti olarak değil, sahaya özel zemin etüdü, tasarım yer ivmesi (PGA), yerel zemin sınıfı büyütme katsayıları ve spektral ivme (S_DS, S_D1) verileriyle proje bazında değerlendirilir. TBDY 2018 standartlarında sağlam kayaya soketlenen fore kazıklar, yüksek sismik tehlike bölgelerinde öngörülen 0.60g - 0.80g tasarım yer ivmesi hedeflerinde oluşan deprem kesme ve moment kuvvetlerini karşılamak üzere projelendirilir."
       },
       {
         question: "Fore kazık mı yoksa radye temel mi seçilmelidir?",
@@ -5232,7 +5232,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     category: "Jet Grout",
     readingTime: "15 dk",
     publishedAt: "2026-06-21",
-    updatedAt: "2026-10-12",
+    updatedAt: "2026-10-21",
     heroLabel: "Jet Grout Maliyet Analizi 2026",
     introduction:
       "Jet grout maliyeti, geoteknik şantiyelerde yalnızca basit bir 'delgi-enjeksiyon metre fiyatı' ile açıklanamaz. 400-600 bar aşırı yüksek basınç altında çalışan hidrolik pompaların enerji tüketimi, kolon çapına göre katlanarak artan çimento tonajı, kuyu ağzından çıkan çimento-zemin çamurunun (deburbe / spoil) şantiyeden hafriyatla tahliyesi ve ağır makine mobilizasyonu maliyeti doğrudan şekillendirir. Bu kapsamlı geoteknik rehberde; 2026 güncel şantiye girdi maliyetleriyle 1 metre jet grout kolonunun maliyet ayrıştırmasını, Ø60 cm, Ø80 cm ve Ø100 cm kolon çapı bazında çimento ve mazot sarfiyatlarını ve müteahhitler için birim fiyat risk yönetimini eksiksiz inceliyoruz. Kendi projenizin zemin verilerine göre milimetrik metraj ve teklif özeti çıkarmak için [İnteraktif Jet Grout Maliyet Hesaplama Aracımızı](/hesaplama/jet-grout-maliyet-hesaplama/) kullanabilirsiniz.",
@@ -5928,7 +5928,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     category: "DSM",
     readingTime: "30 dk",
     publishedAt: "2026-06-23",
-    updatedAt: "2026-10-12",
+    updatedAt: "2026-10-21",
     heroLabel: "DSM Bilgi Merkezi",
     introduction:
       "**DSM (Deep Soil Mixing - Derin Zemin Karıştırma)**, zayıf, yumuşak killi veya sıvılaşma riski taşıyan zeminlerin taşıma kapasitesini artırmak ve oturmaları sınırlandırmak amacıyla, özel tasarımlı mekanik karıştırıcı bıçakların zemin içinde dönerek çimento şerbetini mevcut zemin matriksiyle yerinde homojen olarak karıştırmasıyla zemin-çimento kolonları oluşturan modern, ekonomik ve çevre dostu bir **zemin iyileştirme yöntemi**dir. Yüksek hızlı imalat kabiliyeti ve sıfır çamur atığı avantajıyla endüstriyel tesisler, lojistik ambarlar, demiryolu ve otoyol platformlarında güvenli zemin ıslahı sağlar. YER6 Geoteknik olarak, TS EN 14679 ve FHWA-HRT-13-046 standartlarına tam uyumlu yüksek torklu tek ve çift milli derin karıştırma filomuzla Türkiye genelinde hizmet veriyoruz.",
@@ -6787,7 +6787,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     category: "Jet Grout",
     readingTime: "7 dk",
     publishedAt: "2026-07-10",
-    updatedAt: "2026-07-10",
+    updatedAt: "2026-10-21",
     heroLabel: "Ankara Jet Grout",
     introduction:
       "Ankara'da jet grout ihtiyacı; başkentin yüksek plastisiteli 'Ankara kili' ve değişken dolgu koşullarıyla doğrudan ilişkilidir. Doğru firma seçimi, uygulamanın kalitesini ve maliyetini belirler. Bu yazıda Ankara'da jet grout firması seçerken dikkat edilmesi gerekenleri ve YER6'nın yaklaşımını açıklıyoruz.",
@@ -6850,7 +6850,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     category: "Fore Kazık",
     readingTime: "7 dk",
     publishedAt: "2026-07-10",
-    updatedAt: "2026-07-10",
+    updatedAt: "2026-10-21",
     heroLabel: "Ankara Fore Kazık",
     introduction:
       "Ankara'da yüksek yapı temelleri, derin kazılar ve altyapı projeleri fore kazık gerektirir. Doğru firma seçimi; delgi kapasitesi, kalite kontrol ve yerel saha tecrübesiyle şekillenir. Bu yazıda Ankara'da fore kazık firması seçerken dikkat edilmesi gerekenleri ve YER6'nın yaklaşımını açıklıyoruz.",
@@ -6913,7 +6913,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     category: "DSM",
     readingTime: "7 dk",
     publishedAt: "2026-07-10",
-    updatedAt: "2026-07-10",
+    updatedAt: "2026-10-21",
     heroLabel: "Ankara DSM",
     introduction:
       "Deep Soil Mixing (derin zemin karıştırma / DSM), yumuşak kil ve gevşek dolgu zeminlerde oturmayı ve taşıma gücü sorunlarını kontrol etmek için etkili bir zemin iyileştirme yöntemidir. Ankara ve çevresinde geniş taban alanlı yapılarda tercih edilir. Bu yazıda DSM'in Ankara'daki uygulamasını ve firma seçim kriterlerini açıklıyoruz.",
@@ -7170,7 +7170,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     category: "Zemin İyileştirme",
     readingTime: "16 dk",
     publishedAt: "2026-07-11",
-    updatedAt: "2026-10-12",
+    updatedAt: "2026-10-21",
     heroLabel: "Taş Kolon Zemin İyileştirme",
     introduction: "Taş kolon (vibro-replacement / stone columns), özellikle alüvyal ovalarda, deniz dolgularında, yumuşak killi ve suya doygun gevşek siltli/kumlu zeminlerde uygulanan dünyadaki en yaygın, çevre dostu ve ekonomik zemin iyileştirme yöntemlerinden biridir. Çimento ve kimyasal bağlayıcı kullanmadan yalnızca doğal kırmataş agregası ve yüksek frekanslı yatay titreşim enerjisiyle imal edilen taş kolonlar; hem taşıma gücünü artırır, hem oturmaları Priebe teorisine göre sönümler, hem de deprem esnasında boşluk suyu basıncını hızla tahliye eden dikey çakıl drenler görevi üstlenir.",
     sections: [
