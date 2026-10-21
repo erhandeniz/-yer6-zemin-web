@@ -228,7 +228,7 @@ export const services = [
     specs: ["TS EN 1537 Normunda Kabul Testi", "0.6 inç Çok Telli Çelik Halat (Strand)", "Kalıcı ve Geçici Çift Korozyon Koruması"],
     applications: [
       "Derin bina kazılarında fore kazık perde ve diyafram duvar arkası öngermeli zemin ankrajı",
-      "Kentsel dönüşüm dar şantiyelerinde komşu parsel deplasmanlarını sıfırlayan iksa ankrajları",
+      "Kentsel dönüşüm dar şantiyelerinde komşu parsel deplasmanlarını sınırlandıran iksa ankrajları",
       "Karayolu, demiryolu ve viyadük yaklaşım şevlerinde heyelan önleme ankrajları",
       "Yüksek yeraltı su basıncına karşı yapı tabanında yüzme önleyici (uplift) çekme ankrajları",
       "Tünel portalları ve dikey şaft kazılarında kaya ve zemin stabilitesi ankrajı",
@@ -281,7 +281,7 @@ export const services = [
       "Kuyu içi çok kademeli inklinometre boruları ve yük hücreleri (load cell) ile 7/24 anlık yanal deformasyon takibi",
       "Zemin profiline göre ekonomik optimizasyon: Kuru zeminlerde asker kazık + püskürtme beton, sulu zeminlerde kesişen kazık veya diyafram duvar",
       "Kalıcı yapı perdesi olarak tasarlanarak bodrum kat dış betonarme duvar maliyetinde tasarruf sağlama",
-      "Yeraltı suyu bulunan sahalarda kritik hidrolik eğim (i_cr) tahkikiyle taban kabarması (basal heave) ve hidrolik taban patlaması risklerinin sıfırlanması"
+      "Yeraltı suyu bulunan sahalarda kritik hidrolik eğim (i_cr) tahkikiyle taban kabarması (basal heave) ve hidrolik taban patlaması risklerinin kontrol altına alınması"
     ],
     processSteps: [
       { title: "Geoteknik Sayısal Modelleme (Plaxis 2D/3D)", description: "Zemin profili, komşu bina sürşarj yükleri ve yeraltı suyu verileriyle sonlu elemanlar modellemesi yapılarak kademe kademe kazı ve deplasman simülasyonu tamamlanır." },
@@ -829,7 +829,7 @@ export const standaloneServices = [
       { question: "Deep Soil Mixing (DSM) sıvılaşma etkilerini nasıl azaltır?", answer: "Uygun grid veya blok geometrisinde tasarlanan DSM elemanları, yanal deformasyonu sınırlandırıp zeminin rijitliğini artırarak sıvılaşma etkilerinin azaltılmasına katkı sağlayabilir. Performans, sahaya özel dinamik zemin analizleri ve kabul kriterleriyle doğrulanmalıdır." },
       { question: "DSM zemin iyileştirme metre fiyatı ve 2026 maliyetleri neye göre belirlenir?", answer: "DSM birim fiyatı; kolon çapı (Ø60-Ø100 cm), imalat derinliği, zeminin su muhtevası ve çimento sarfiyatına (150-300 kg/m³) göre hesaplanır. Büyük sanayi sahalarında hafriyat atığı oluşturmadığı için Jet Grout'a göre %30-40, Fore Kazık'a göre %50 daha ekonomiktir." },
       { question: "DSM kalite kontrolünde karot alma ve UCS test kriterleri nelerdir?", answer: "ASTM D2166 ve EN 14679 standartlarına göre imalattan 28 gün sonra kolon gövdesinden karot alınır. Laboratuvarda Serbest Basınç Dayanımı (UCS) kırım testleri yapılarak 1.0 - 3.5 MPa tasarım dayanımı belgelenir. İmalat sırasında data logger ile karıştırma enerjisi (BRN) kesintisiz kaydedilir." },
-      { question: "Lojistik depo ve sanayi yapılarında DSM neden fore kazığa tercih edilir?", answer: "Geniş taban alanına sahip tesislerde zemin kütlesini grid (kafes) halinde monolitik bir blok olarak güçlendirir. Diferansiyel oturmaları sıfırlarken, fore kazığa kıyasla günlük 400-600 metre imalat hızıyla şantiye takvimini ciddi oranda kısaltır." },
+      { question: "Lojistik depo ve sanayi yapılarında DSM neden fore kazığa tercih edilir?", answer: "Geniş taban alanına sahip tesislerde zemin kütlesini grid (kafes) halinde monolitik bir blok olarak güçlendirir. Diferansiyel oturmaları minimize ederken, fore kazığa kıyasla günlük 400-600 metre imalat hızıyla şantiye takvimini ciddi oranda kısaltır." },
       { question: "Deep Soil Mixing firmaları seçerken nelere dikkat edilmelidir?", answer: "Firmanın projeye uygun makine kapasitesi, sahada BRN (Blade Rotation Number) ve bağlayıcı dozajı verilerini kaydedebilmesi, deneme kolonları uygulaması ve 28 günlük karot/UCS testlerini sunabilmesi önemlidir. Kabul kriterleri proje şartnamesi ve kalite planında açıkça tanımlanmalıdır." }
     ]
   }

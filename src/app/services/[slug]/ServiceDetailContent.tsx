@@ -502,7 +502,7 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
                       <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
                         <h3 className="font-semibold text-gold-200 text-base">6. Sanayi Tesisleri & Lojistik Depolar</h3>
                         <p className="mt-2 text-xs leading-5 text-white/70">
-                          Ağır döşeme ve raf yüklerinin taşınmasında diferansiyel oturmayı sıfırlamak için DSM kolonları veya taş kolonlar üzerine geogrid donatılı yük transfer platformu (LTP) inşa edilir.
+                          Ağır döşeme ve raf yüklerinin taşınmasında diferansiyel oturmaları mühendislik sınırları içinde tutmak için DSM kolonları veya taş kolonlar üzerine geogrid donatılı yük transfer platformu (LTP) inşa edilir.
                         </p>
                       </div>
                     </div>

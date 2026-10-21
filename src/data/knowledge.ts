@@ -45,15 +45,15 @@ export const knowledgeArticles: KnowledgeArticle[] = [
         blocks: [
           {
             type: "paragraph",
-            content: "Jet grout; deprem riski yüksek bölgelerde suya doygun ince kum, silt ve gevşek alüvyon zeminlerde sıvılaşmayı tamamen engellemek ve zemin taşıma gücünü katbekat artırmak için uygulanan birincil zemin iyileştirme yöntemidir. 400-600 bar yüksek basınçla teşkil edilen soilcrete kolonları, zemin masifini kompozit bir kütleye dönüştürerek deprem kayma gerilmelerini (CSR) sönümler ve farklı oturmaları sıfıra indirir."
+            content: "Jet grout; deprem riski yüksek bölgelerde suya doygun ince kum, silt ve gevşek alüvyon zeminlerde proje ve zemin koşullarına bağlı olarak sıvılaşma riskini azaltmak ve zemin taşıma gücünü artırmak için uygulanan başlıca derin zemin iyileştirme yöntemlerinden biridir. 400-600 bar yüksek basınçla teşkil edilen soilcrete kolonları, zemin masifini kompozit bir kütleye dönüştürerek deprem kayma gerilmelerini (CSR) sönümler ve farklı oturma risklerini izin verilen mühendislik sınırları içine çeker."
           },
           {
             type: "list",
             title: "Jet Grout Zemin İyileştirmenin Temel Fonksiyonları",
             items: [
-              "Sıvılaşma Tetiklenmesini Önleme: Zemin boşluk oranını düşürerek ve rijitliği artırarak çevrimsel direnç oranını (CRR) yükseltir.",
+              "Sıvılaşma Riskinin Azaltılması: Zemin boşluk oranını düşürerek ve kompozit rijitliği artırarak çevrimsel direnç oranını (CRR) yükseltir.",
               "Taşıma Gücü Takviyesi: Zayıf zemin tabakalarının elastisite modülünü ve tek eksenli basınç dayanımını (qu = 2-15 MPa) artırır.",
-              "Geçirimsizlik Perdesi: Kesişen jet grout kolonları ile yeraltı suyu akışını keserek kazı çukuruna su girişini engeller."
+              "Geçirimsizlik Perdesi: Kesişen jet grout kolonları ile yeraltı suyu akışını sınırlandırarak kazı çukuruna su girişini kontrol altına alır."
             ]
           }
         ]
@@ -149,7 +149,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
             type: "list",
             items: [
               "Dama Tahtası Prensibi: Kolonlar şaşırtmalı olarak üretilir (1-3-5 sırasıyla birincil kolonlar; 24-36 saat priz süresi sonrasında ara 2-4-6 ikincil kolonlar tamamlanır).",
-              "Termal Hidratasyon Isısı: Masif çimento hidratasyonu esnasında kolon merkezinde sıcaklık 50-65°C'ye çıkabilir. Şaşırtmalı imalat bu ısının çevre zemine kontrollü dağılmasını sağlayarak termal rötre çatlaklarını sıfırlar."
+              "Termal Hidratasyon Isısı: Masif çimento hidratasyonu esnasında kolon merkezinde sıcaklık 50-65°C'ye çıkabilir. Şaşırtmalı imalat bu ısının çevre zemine kontrollü dağılmasını sağlayarak termal rötre çatlaklarını minimize eder."
             ]
           }
         ]
@@ -161,14 +161,14 @@ export const knowledgeArticles: KnowledgeArticle[] = [
           {
             type: "paragraph",
             content:
-              "TS EN 12716 standardı gereği jet grout kolonlarının kalitesi tasarım hedefleriyle tam uyumlu saha ve laboratuvar testleriyle belgelenmelidir:"
+              "TS EN 12716 standardı gereği jet grout kolonlarının kalitesi tasarım hedefleriyle tam uyumlu saha ve bağımsız akredite laboratuvar testleriyle belgelenmelidir:"
           },
           {
             type: "list",
             items: [
               "Zorunlu Deneme Kolonları (Trial Columns): Asıl imalattan önce sahada 2-3 adet deneme kolonu yapılır; kazı açılarak çap, düşeylik ve homojenlik doğrudan gözlemlenir.",
               "Çift Cidarlı Karotiyer ile Karot Alımı: Kolon yaşının 7, 14 ve 28. günlerinde kolon ekseninden boydan boya karot alınarak süreklilik doğrulanır.",
-              "Tek Eksenli Basınç Testi (UCS, ASTM D2166): Karot numuneleri laboratuvarda kırılarak tasarım mukavemeti (UCS >= 3.0 - 15.0 MPa) raporlanır.",
+              "Tek Eksenli Basınç Testi (UCS, ASTM D2166): Karot numuneleri bağımsız akredite laboratuvarda kırılarak tasarım mukavemeti (UCS >= 3.0 - 15.0 MPa) raporlanır.",
               "Lugeon Su Geçirimsizlik Testi: Kesişen jet grout sızdırmazlık perdelerinde su geçirimsizliği Lugeon deneyi ile kontrol edilir (hedef: Lu < 1.0 - 3.0)."
             ]
           }
@@ -181,12 +181,12 @@ export const knowledgeArticles: KnowledgeArticle[] = [
           {
             type: "paragraph",
             content:
-              "2026 şantiye dinamiklerinde 1 metre Ø80 cm Jet Grout kolonunun birim maliyeti; W/C = 1.0 oranında yaklaşık 380-420 kg çimento sarfiyatı, yüksek basınç pompası ve delgi kulesinin saatlik mazot tüketimi (45-75 lt/saat), yüksek basınç nozül ve döner kafa (swivel) aşınma payı ve pasa (spoil) hafriyat bertaraf bedeli toplamından oluşur."
+              "2026 şantiye dinamiklerinde 1 metre Ø80 cm Jet Grout kolonunun birim maliyeti; W/C = 1.0 oranında standart kumlu-siltli alüvyon zeminlerde yaklaşık 230-280 kg/m çimento sarfiyatı (yüksek plastisiteli yumuşak kil reçetelerinde veya Ø100 cm kolonlarda 370-440 kg/m), yüksek basınç pompası ve delgi kulesinin saatlik mazot tüketimi (45-75 lt/saat), yüksek basınç nozül ve döner kafa (swivel) aşınma payı ve pasa (spoil) hafriyat bertaraf bedeli toplamından oluşur."
           },
           {
             type: "paragraph",
             content:
-              "Müteahhitler için makine kiralama yerine YER6'dan anahtar teslim metre bazlı taahhüt almak, şantiyedeki arıza duruşu, kuyu göçmesi ve testten geçmeyen kolon risklerini tamamen bertaraf eder."
+              "Müteahhitler için makine kiralama yerine YER6'dan anahtar teslim metre bazlı taahhüt almak, şantiyedeki arıza duruşu, kuyu göçmesi ve kalite kontrol testlerinden geçmeyen kolonların tekrar imalat sorumluluğunu sözleşme güvencesi altına alır."
           }
         ]
       }
@@ -215,7 +215,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
       {
         question: "Şaşırtmalı (dama tahtası) imalat sekansı nedir?",
         answer:
-          "Yan yana olan kolonların aynı gün yapılmayıp aralarında en az 2 kolon boşluk bırakılması ve 24-36 saat priz süresi beklendikten sonra ara kolonların tamamlanması disiplinidir; oturma ve termal çatlak riskini sıfırlar."
+          "Yan yana olan kolonların aynı gün yapılmayıp aralarında en az 2 kolon boşluk bırakılması ve 24-36 saat priz süresi beklendikten sonra ara kolonların tamamlanması disiplinidir; komşu kolonların birbirini zayıflatmasını, oturma ve termal çatlak risklerini minimize eder."
       },
       {
         question: "Jet Grout kolonlarının mukavemeti nasıl test edilir?",
@@ -2827,7 +2827,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
           },
           {
             type: "paragraph",
-            content: "Yüksek mukavemetli çift katmanlı polyester/bazalt geogridler (T_ult = 100 - 400 kN/m) kullanılarak diferansiyel oturmalar tamamen sıfırlanır."
+            content: "Yüksek mukavemetli çift katmanlı polyester/bazalt geogridler (T_ult = 100 - 400 kN/m) kullanılarak diferansiyel oturmalar izin verilen yapısal sınırların altına çekilir."
           },
           {
             type: "paragraph",
@@ -3699,7 +3699,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
               "**Taşıma Gücü ve CBR (California Bearing Ratio) Artışı:**",
               "Doğal zeminde CBR = %1 - %3 (üzerinde iş makinesi yürüyemeyen bataklık) olan zemin, %3 - %5 kireç veya %5 - %8 çimento ile 28 gün sonunda CBR ≥ %30 - %80+ seviyesine ulaşır.",
               "Tek Eksenli Basınç Mukavemeti (q_u): 100 kPa mertebesinden 1.5 - 5.0 MPa (15 - 50 kg/cm²) mertebesine yükselir.",
-              "**Şişme Potansiyelinin Sıfırlanması:**"
+              "**Şişme Potansiyelinin Sınırlandırılması:**"
             ]
           },
           {
@@ -4206,7 +4206,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
           {
             type: "list",
             items: [
-              "**Saha Gerçeği (Optimizasyon):** Kumlu-killi zeminlerde geri çekme hızı v_r = 35 - 38 cm/dk mertebesine ayarlanarak sahada hedeflenen optimum tüketim: **380 – 420 kg çimento / metre** bandında kilitlenir.",
+              "**Saha Gerçeği (Zemin Reçetesine Göre Optimizasyon):** Standart kumlu-siltli alüvyon zeminlerde Ø80 cm kolon için geri çekme hızı ve debi optimize edilerek metretül başına **230 – 280 kg/m** çimento tüketilirken; yukarıdaki gibi yüksek plastisiteli yumuşak kil reçetelerinde (veya Ø100 cm JG2 kolonlarda) yüksek debi nedeniyle tüketim **380 – 420 kg çimento / metre** bandına ulaşır.",
               "**2026 Çimento Birim Fiyatı:** Dökme CEM I 42.5R / CEM II 42.5 şantiye silosu teslimi ≈ 3,000 TL/ton (3.00 TL/kg)."
             ]
           },
@@ -5228,7 +5228,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     title: "Jet Grout Maliyeti 2026: Metre Birim Fiyatı, Sarfiyat ve Şantiye Analizi",
     seoTitle: "Jet Grout Maliyeti 2026 | Metre Birim Fiyatı ve Analiz | YER6",
     description: "Jet grout maliyeti 2026 metre birim fiyatları; Ø60 cm, Ø80 cm ve Ø100 cm kolon çapı, çimento tonajı (120-400 kg/m), 400-600 bar pompa mazotu ve şantiye metraj analiz rehberi.",
-    excerpt: "2026 şantiye koşullarında jet grout metre birim fiyatları; kolon çapına (Ø60 cm için 120-150 kg çimento, Ø80 cm için 240-280 kg çimento), 400-600 bar pompa mazot tüketimine, kuyu ağzı pasa bertarafına ve mobilizasyon lojistiğine göre belirlenir.",
+    excerpt: "2026 şantiye koşullarında jet grout metre birim fiyatları; kolon çapına ve zemin reçetesine (Ø60 cm için 110-140 kg/m, Ø80 cm standart alüvyonda 230-280 kg/m, yumuşak kil reçeteleri ve Ø100 cm kolonlarda 370-440 kg/m çimento), 400-600 bar pompa mazot tüketimine, kuyu ağzı pasa bertarafına ve mobilizasyon lojistiğine göre belirlenir.",
     category: "Jet Grout",
     readingTime: "15 dk",
     publishedAt: "2026-06-21",
@@ -5251,7 +5251,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
             title: "2026 Kolon Çapına Göre Ortalama Şantiye Girdi ve Sarfiyat Parametreleri",
             items: [
               "Ø60 cm Jet Grout Kolonu: Metretül başına 110 - 140 kg çimento (CEM I 42.5R / CEM II 42.5), 0.9 - 1.2 litre mazot (pompa + delgi rigi). Güncel şantiye imalat maliyeti piyasa zemin koşullarına ve toplam metraja göre değişkenlik gösterir.",
-              "Ø80 cm Jet Grout Kolonu: Metretül başına 230 - 280 kg çimento, 1.4 - 1.8 litre mazot. Su/çimento oranı W/C = 1.0 alındığında zemin-çimento matrisi (soilcrete) homojenliği sağlanır.",
+              "Ø80 cm Jet Grout Kolonu: Standart kumlu-siltli alüvyon zeminlerde metretül başına 230 - 280 kg çimento (yüksek plastisiteli yumuşak kil reçetelerinde 380 - 420 kg/m), 1.4 - 1.8 litre mazot. Su/çimento oranı W/C = 1.0 alındığında zemin-çimento matrisi (soilcrete) homojenliği sağlanır.",
               "Ø100 cm Jet Grout Kolonu (JG2 / Çift Akışkanlı): Metretül başına 370 - 440 kg çimento, 2.0 - 2.6 litre mazot ve yüksek kapasiteli hava kompresörü işletme bedeli."
             ]
           },
@@ -6024,8 +6024,8 @@ export const knowledgeArticles: KnowledgeArticle[] = [
           {
             type: "list",
             items: [
-              "Kayma Gerilmesi Sönümleme: DSM kafesi içeride kalan doğal zemin bloğunu yanal olarak çevreler (confinement etkisi); deprem çevrimsel kayma gerilmelerinin zemin tanelerine iletilmesini engelleyerek sıvılaşma tetiklenmesini ve yanal yayılmayı (lateral spreading) bütünüyle önler.",
-              "Yük Transfer Platformu (LTP) ve Zemin Kemerlenmesi: DSM kolon başlıkları üzerine 0.5 - 1.0 m kalınlığında çift kat çift eksenli geogrid donatılı kırmataş platform (LTP) serilir. Hewlett & Randolph kemerlenme mekanizması uyarınca üstyapı yükünün %75-85'i doğrudan DSM kolonlarına aktarılır; taban oturması sıfırlanır."
+              "Kayma Gerilmesi Sönümleme: DSM kafesi içeride kalan doğal zemin bloğunu yanal olarak çevreler (confinement etkisi); deprem çevrimsel kayma gerilmelerinin zemin tanelerine iletilmesini azaltarak sıvılaşma tetiklenmesini ve yanal yayılmayı (lateral spreading) sınırlandırır.",
+              "Yük Transfer Platformu (LTP) ve Zemin Kemerlenmesi: DSM kolon başlıkları üzerine 0.5 - 1.0 m kalınlığında çift kat çift eksenli geogrid donatılı kırmataş platform (LTP) serilir. Hewlett & Randolph kemerlenme mekanizması uyarınca üstyapı yükünün %75-85'i doğrudan DSM kolonlarına aktarılır; farklı taban oturmaları izin verilen mühendislik sınırlarına çekilir."
             ]
           }
         ]
@@ -6100,7 +6100,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
       {
         question: "Lojistik depo zeminlerinde DSM neden fore kazıktan üstündür?",
         answer:
-          "Fore kazık noktasal rijit destek verirken, DSM tüm zemin kütlesini üniform olarak güçlendirir. Diferansiyel oturmayı sıfırlar, hafriyat çıkarmaz ve %50 daha düşük maliyetle teslim edilir."
+          "Fore kazık noktasal rijit destek verirken, DSM tüm zemin kütlesini üniform olarak güçlendirir. Diferansiyel oturmaları minimize eder, hafriyat çıkarmaz ve geniş sahalarda %40-50 daha düşük maliyetle teslim edilir."
       },
       {
         question: "2026 DSM birim metre fiyatı ne kadardır?",
