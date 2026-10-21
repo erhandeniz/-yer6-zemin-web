@@ -152,11 +152,11 @@ export const seoArticles: KnowledgeArticle[] = [
       },
       {
         id: "gomulme-derinligi",
-        title: "3 Metre Kuralı (DFI/EFFC Rehberi)",
+        title: "1.5 - 3.0 Metre Gömülme Kuralı (TS EN 1536 & DFI/EFFC Rehberi)",
         blocks: [
           {
             type: "paragraph",
-            content: "DFI/EFFC 'Tremie Concrete for Deep Foundations' rehberine göre, beton dökümü boyunca tremie borusunun ucu sürekli olarak taze betonun içinde kalmalıdır (minimum 2-3 metre gömülü). Borunun yanlışlıkla betondan çıkması, kuyu içindeki çamurun betonun içine akmasına (soğuk derz) neden olur ve o kazık ret (red) edilir."
+            content: "TS EN 1536 ve DFI/EFFC 'Tremie Concrete for Deep Foundations' rehberine göre, beton dökümü boyunca tremie borusunun ucu sürekli olarak taze betonun içinde kalmalıdır (en az 1.5 metre, ideal saha uygulaması olarak 1.5 ila 3.0 metre aralığında gömülü). Borunun yanlışlıkla betondan çıkması, kuyu içindeki çamurun betonun içine akmasına (soğuk derz) neden olur ve o kazık ret (red) edilir."
           }
         ]
       }
@@ -569,7 +569,7 @@ export const seoArticles: KnowledgeArticle[] = [
         blocks: [
           {
             type: "paragraph",
-            content: "Yeraltı suyu altındaki delgilerde beton ayrışmasını (segregasyon) engellemek için minimum 180-220mm slump değerine sahip yüksek işlenebilirlikli C30/37 hazır beton kullanılır. Tremie borusu sürekli beton içinde min 2.0m gömülü kalmalıdır."
+            content: "Yeraltı suyu altındaki delgilerde beton ayrışmasını (segregasyon) engellemek için minimum 180-220mm slump değerine sahip yüksek işlenebilirlikli C30/37 hazır beton kullanılır. Tremie borusu sürekli taze beton içinde en az 1.5 metre (ideal saha uygulaması olarak 1.5 ila 3.0 metre aralığında) gömülü kalmalıdır."
           }
         ]
       }
@@ -696,7 +696,7 @@ export const seoArticles: KnowledgeArticle[] = [
           },
           {
             type: "paragraph",
-            content: "Doğru tasarlanmış, donatı kafesi tam boy yerleştirilmiş ve sağlam ana kayaya zemin etüdü, RQD (Kaya Kalite Göstergesi), tek eksenli basınç dayanımı (UCS), süreksizlik geometrisi ve yapı yüklerine göre hesaplanan derinlikte soketlenen (rock-socketed) bir fore kazık sistemi; 0.60g - 0.80g zemin ivmesine (7.5 - 8.0+ Mw büyüklüğündeki yıkıcı depremlere) tam dayanım gösterecek şekilde kesme kuvveti (Vr) ve eğilme momenti (Mr) kapasitesine ulaştırılır."
+            content: "Doğru tasarlanmış, donatı kafesi tam boy yerleştirilmiş ve sağlam ana kayaya zemin etüdü, RQD (Kaya Kalite Göstergesi), tek eksenli basınç dayanımı (UCS), süreksizlik geometrisi ve yapı yüklerine göre hesaplanan derinlikte soketlenen (rock-socketed) bir fore kazık sistemi; sahaya özel deprem tehlike haritasında öngörülen 0.60g - 0.80g düzeyindeki yüksek tasarım yer ivmelerinde oluşan deprem kesme kuvveti (Vr) ve eğilme momenti (Mr) istemlerini güvenle karşılayacak kapasiteye ulaştırılır."
           },
           {
             type: "paragraph",
@@ -780,7 +780,7 @@ export const seoArticles: KnowledgeArticle[] = [
       }
     ],
     faq: [
-      { question: "Fore kazık kaç şiddetinde depreme dayanır?", answer: "Mühendislik hesaplarında deprem dayanımı Richter büyüklüğü yerine Zemin İvmesi (PGA) ile belirlenir. TBDY 2018 standartlarında ana kayaya soketlenen donatılı fore kazıklar; 0.60g - 0.80g zemin ivmesine (7.5 - 8.0+ Mw büyüklüğündeki yıkıcı depremlere) tam dayanım sağlayarak binanın devrilmesini ve oturmasını mühendislik sınırları içinde tutar." },
+      { question: "Fore kazık kaç şiddetinde depreme dayanır?", answer: "Mühendislik hesaplarında deprem dayanımı Richter veya moment büyüklüğü (Mw) ile doğrudan eşitlenmez; sahaya özel tasarım yer ivmesi (PGA), faya uzaklık, yerel zemin sınıfı büyütme katsayıları ve TBDY 2018 spektral ivme parametreleri (S_DS, S_D1) ile belirlenir. TBDY 2018 standartlarında ana kayaya soketlenen donatılı fore kazıklar; 0.60g - 0.80g düzeyindeki yüksek tasarım yer ivmelerinde oluşan kesme ve moment kuvvetlerini karşılayarak binanın devrilmesini ve oturmasını mühendislik sınırları içinde tutar." },
       { question: "Fore kazık mı radye temel mi tercih edilmelidir?", answer: "Sağlam kaya ve sıkı zeminlerde (ZA, ZB) yapı yükleri izin verdiği sürece radye temel öncelikli ve ekonomiktir. Ancak yumuşak kil, dolgu ve sıvılaşma potansiyeli olan ZD, ZE, ZF zeminlerde farklı oturma ve taşıma yetersizliklerini önlemek için radye plağın altı fore kazıklarla derin taşıyıcı tabakalara bağlanarak 'Kazıklı Radye Temel' (Piled Raft) veya zemin güçlendirme çözümleri uygulanmalıdır." },
       { question: "Fore kazık metre fiyatı 2026 yılında nasıl hesaplanır?", answer: "Fore kazık birim fiyatı; kazık çapına (Ø65-Ø120 cm), toplam metraja, zeminin sertliğine (kaya soketi veya alüvyon delgisi), kılıf (casing) kullanımına, demir donatı tonajına ve beton sınıfına göre hesaplanır. YER6 canlı Fore Kazık Hesaplama Motoru üzerinden yaklaşık maliyet anında hesaplanabilir." },
       { question: "Fore kazık çapı (Ø65, Ø80, Ø100, Ø120 cm) neye göre seçilir?", answer: "Çap seçimi; üstyapı statik yükleri, kolon eksenel kuvvetleri, devrilme momentleri, yanal deprem kuvvetleri ve zemin taşıma gücüne göre geoteknik proje mühendisi tarafından optimize edilir. Tipik olarak orta yüklerde Ø65–Ø80 cm, yüksek katlı yapılarda Ø100 cm, köprü ve altyapı projelerinde Ø120 cm ve üzeri çaplar boyutlandırılır." }

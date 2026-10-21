@@ -15,7 +15,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     updatedAt: "2026-10-12",
     heroLabel: "Jet Grout Geoteknik Bilgi Merkezi",
     introduction:
-      "**Jet Grout (yüksek basınçlı zemin enjeksiyonu)**, zayıf zemin katmanlarının taşıma kapasitesini artırmak, oturma ve deprem kaynaklı sıvılaşma riskini sıfırlamak ve sızdırmazlık perdesi oluşturmak amacıyla, 300 ila 600 bar ultra yüksek basınçlı çimento şerbeti jetiyle zemin yapısını hidrolik erozyonla parçalayıp zeminle çimentoyu yerinde kaynaştırarak monolitik zemin-çimento kolonları (soilcrete) üreten modern bir **derin zemin iyileştirme yöntemi**dir. YER6 Geoteknik olarak, TS EN 12716 ve TBDY 2018 standartlarına tam uyumlu yüksek basınçlı pompa parkımız ve uzman mühendis kadromuzla Jet-1, Jet-2 ve Jet-3 sistemlerini Türkiye genelinde projelendirip uyguluyoruz.",
+      "**Jet Grout (yüksek basınçlı zemin enjeksiyonu)**, zayıf zemin katmanlarının taşıma kapasitesini artırmak, oturmaları mühendislik sınırlarına çekmek, deprem kaynaklı sıvılaşma güvenlik katsayısını TBDY 2018 sınırlarının üzerine çıkarmak ve sızdırmazlık perdesi oluşturmak amacıyla, 300 ila 600 bar ultra yüksek basınçlı çimento şerbeti jetiyle zemin yapısını hidrolik erozyonla parçalayıp zeminle çimentoyu yerinde kaynaştırarak monolitik zemin-çimento kolonları (soilcrete) üreten modern bir **derin zemin iyileştirme yöntemi**dir. YER6 Geoteknik olarak, TS EN 12716 ve TBDY 2018 standartlarına tam uyumlu yüksek basınçlı pompa parkımız ve uzman mühendis kadromuzla Jet-1, Jet-2 ve Jet-3 sistemlerini Türkiye genelinde projelendirip uyguluyoruz.",
     sections: [
       {
         id: "jet-grout-tanimi-ve-geoteknik-prensibi",
@@ -938,7 +938,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     updatedAt: "2026-10-12",
     heroLabel: "Fore Kazık Geoteknik Bilgi Merkezi",
     introduction:
-      "**Fore kazık (bored pile / drilled shaft)**; taşıma gücü yetersiz olan zeminlerde bina, köprü, viyadük ve rüzgar türbini gibi ağır süper-strüktür yüklerini derindeki sağlam zemin veya ana kaya tabakalarına güvenle aktarmak amacıyla hidrolik rotary delgi makineleriyle açılan dairesel kuyuya çelik donatı kafesi indirilip tremi borusuyla yerinde beton dökülerek teşkil edilen yüksek taşıma kapasiteli bir **betonarme derin temel ve iksa sistemi**dir. YER6 Geoteknik olarak; TS EN 1536, FHWA GEC-010 ve TBDY 2018 standartlarında Ø65 cm'den Ø150 cm'ye kadar geniş çap yelpazesinde son teknoloji hidrolik rotary makineler, osilatörlü muhafaza borusu (casing) sistemleri ve akredite test laboratuvarımızla Türkiye genelinde fore kazık projelerini anahtar teslim gerçekleştiriyoruz.",
+      "**Fore kazık (bored pile / drilled shaft)**; taşıma gücü yetersiz olan zeminlerde bina, köprü, viyadük ve rüzgar türbini gibi ağır süper-strüktür yüklerini derindeki sağlam zemin veya ana kaya tabakalarına güvenle aktarmak amacıyla hidrolik rotary delgi makineleriyle açılan dairesel kuyuya çelik donatı kafesi indirilip tremi borusuyla yerinde beton dökülerek teşkil edilen yüksek taşıma kapasiteli bir **betonarme derin temel ve iksa sistemi**dir. YER6 Geoteknik olarak; TS EN 1536, FHWA GEC-010 ve TBDY 2018 standartlarında Ø65 cm'den Ø150 cm'ye kadar geniş çap yelpazesinde son teknoloji hidrolik rotary makineler, osilatörlü muhafaza borusu (casing) sistemleri ve bağımsız akredite zemin laboratuvarı doğrulama protokollerimizle Türkiye genelinde fore kazık projelerini anahtar teslim gerçekleştiriyoruz.",
     sections: [
       {
         id: "fore-kazik-tanimi-ve-calisma-mekanigi",
@@ -1044,7 +1044,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
             items: [
               "Beton Kıvamı ve Akma Sınıfı: Slump değeri 180-220 mm veya yayılma tablası SF1/SF2 (550-650 mm slump-flow) olmalıdır. Beton kendi ağırlığıyla sıkışabilmeli ve ayrışmamalıdır (segregasyon direnci).",
               "Açılış Topu (Go-Devil): İlk transmikser dökülürken tremi borusunun içine köpük top veya kauçuk tıpa konur; beton çamurla karışmadan boru tabanına iner ve tıkacı dışarı iterek tabanı mühürler.",
-              "Gömülme Derinliği Dengesi: Döküm boyunca tremi borusu ucu taze betonun içinde KESİNTİSİZ olarak 2.0 ila 4.0 metre gömülü tutulmalıdır. Borunun betondan dışarı çıkması (pull-out) betonun çamurla kirlenmesine ve soğuk derz oluşmasına yol açar.",
+              "Gömülme Derinliği Dengesi: EFFC/DFI ve TS EN 1536 uyarınca döküm boyunca tremi borusu ucu taze betonun içinde KESİNTİSİZ olarak en az 1.5 metre, ideal saha uygulaması olarak 1.5 ila 3.0 metre aralığında gömülü tutulmalıdır. Borunun betondan dışarı çıkması (pull-out) betonun çamurla kirlenmesine ve soğuk derz oluşmasına yol açar.",
               "Kuyu Başı Taşması (Overpouring): Kuyu ağzında çamurla temas eden ilk 0.5 - 1.0 metrelik zayıf ve kirlenmiş beton tamamen dışarı taşırılarak temiz beton seviyesine ulaşılmalıdır."
             ]
           }
@@ -1134,7 +1134,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
       {
         question: "Fore kazık kaç şiddetinde depreme dayanır?",
         answer:
-          "Mühendislikte dayanım Richter büyüklüğüyle değil, tasarım yer ivmesi (PGA) ve spektral ivme (S_DS) ile hesaplanır. TBDY 2018 standartlarında sağlam kayaya soketlenen fore kazıklar 0.60g - 0.80g yer ivmesine (7.5 - 8.0+ Mw büyüklüğündeki depremlere) tam dayanım gösterecek şekilde boyutlandırılır."
+          "Mühendislikte deprem dayanımı Richter veya moment büyüklüğü (Mw) ile doğrudan eşleştirilmez; sahaya özel tasarım yer ivmesi (PGA), faya uzaklık, yerel zemin sınıfı büyütme katsayıları ve spektral ivme (S_DS, S_D1) ile hesaplanır. TBDY 2018 standartlarında sağlam kayaya soketlenen fore kazıklar, 0.60g - 0.80g düzeyindeki yüksek tasarım yer ivmelerinde oluşan deprem kesme ve moment kuvvetlerini güvenle taşıyacak şekilde boyutlandırılır."
       },
       {
         question: "Fore kazık mı yoksa radye temel mi seçilmelidir?",
@@ -1149,7 +1149,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
       {
         question: "Tremi borusu ile beton dökümünde en kritik kural nedir?",
         answer:
-          "Tremi borusunun alt ucu, döküm süresince KESİNTİSİZ olarak taze betonun içine 2.0 ila 4.0 metre gömülü tutulmalıdır. Borunun betondan çıkması kuyu çamurunun betona karışmasına ve kazığın kırılmasına yol açar."
+          "EFFC/DFI kılavuzları ve TS EN 1536 uyarınca tremi borusunun alt ucu, döküm süresince KESİNTİSİZ olarak taze betonun içine en az 1.5 metre, ideal saha uygulaması olarak 1.5 ila 3.0 metre aralığında gömülü tutulmalıdır. Borunun betondan çıkması kuyu çamurunun betona karışmasına ve soğuk derz oluşmasına yol açar."
       },
       {
         question: "Kazık Bütünlük Testi (PIT) ve CSL testi nedir?",
@@ -1733,7 +1733,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
           {
             type: "list",
             items: [
-              "**F_L < 1.0:** Sıvılaşma kesin olarak tetiklenir (Aşırı boşluk suyu basıncı oranı r_u = Δ u / σ'_v0 arrow 1.0). Efektif gerilme sıfırlanır, kayma modülü çöker.",
+              "**F_L < 1.0:** Sıvılaşma kesin olarak tetiklenir (Aşırı boşluk suyu basıncı oranı r_u = Δu / σ'_v0 → 1.0). Efektif gerilme sıfırlanır, kayma modülü çöker.",
               "**1.0 ≤ F_L ≤ 1.1:** Marjinal/Kritik sınır (Kısmi sıvılaşma ve yüksek çevrimsel deformasyon).",
               "**TBDY 2018 Güvenlik Şartı:** Temel altı taşıma ve zemin tasarımı için F_L ≥ 1.10 - 1.25 sağlanmalıdır. F_L < 1.1 olan tüm tabakalar için zemin iyileştirmesi yasal bir zorunluluktur."
             ]
@@ -1920,7 +1920,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
           },
           {
             type: "paragraph",
-            content: "n_1 = 1 + fracbarf(a_s, ν_s)E_s / E_c + K_ac · ..."
+            content: "n_1 = 1 + a_s · [ ((1 / (a_s + f(ν_s, a_s) · (1 - a_s))) / (f(ν_s, a_s) + E_s / E_c)) - 1 ]"
           },
           {
             type: "paragraph",
@@ -2556,13 +2556,13 @@ export const knowledgeArticles: KnowledgeArticle[] = [
           },
           {
             type: "paragraph",
-            content: "CaO + H_2O arrow Ca(OH)_2 + 65.2 kJ/mol"
+            content: "CaO + H_2O → Ca(OH)_2 + 65.2 kJ/mol"
           },
           {
             type: "list",
             items: [
               "1 kg CaO, yaklaşık 0.32 kg suyu doğrudan kristal yapısına bağlar.",
-              "Açığa çıkan ısı (T ≈ 50 - 80^°C), gözenek suyunun bir kısmını buharlaştırarak zeminin boşluk oranını hızla düşürür.",
+              "Açığa çıkan ısı (T ≈ 50 - 80°C), gözenek suyunun bir kısmını buharlaştırarak zeminin boşluk oranını hızla düşürür.",
               "**Efektif Gerilme Artışı ve Hızlandırılmış Konsolidasyon:**"
             ]
           },
@@ -2575,8 +2575,13 @@ export const knowledgeArticles: KnowledgeArticle[] = [
             content: "**6.9. Jeoteknik Karar Matrisi**"
           },
           {
-            type: "paragraph",
-            content: "beginarray|l|c|c|c|c| hline Zemin Türü & Su Muhtevası w_n & YASS Konumu & Önerilen Yöntem & Hedef q_u (MPa) hline Gevşek Alüvyal Kum & < %25 & YASS Altı & Islak (Wet) & 2.5 - 5.0 Yumuşak Silt / Kil & %25 - %45 & YASS Altı / Üstü & Islak (Wet) & 1.5 - 3.5 Yüksek Plastisiteli Hassas Kil & %50 - %90 & YASS Doygun & Kuru (Kireç/Çimento) & 0.8 - 2.0 Organik Zemin / Turba & > %100 & Doygun & Kuru + Cüruflu Katkı & 0.4 - 1.2 hline endarray"
+            type: "list",
+            items: [
+              "**Gevşek Alüvyal Kum** — Su Muhtevası (w_n): < %25 | YASS Konumu: YASS Altı | Önerilen Yöntem: Islak (Wet) | Hedef q_u (MPa): 2.5 - 5.0",
+              "**Yumuşak Silt / Kil** — Su Muhtevası (w_n): %25 - %45 | YASS Konumu: YASS Altı / Üstü | Önerilen Yöntem: Islak (Wet) | Hedef q_u (MPa): 1.5 - 3.5",
+              "**Yüksek Plastisiteli Hassas Kil** — Su Muhtevası (w_n): %50 - %90 | YASS Konumu: YASS Doygun | Önerilen Yöntem: Kuru (Kireç/Çimento) | Hedef q_u (MPa): 0.8 - 2.0",
+              "**Organik Zemin / Turba** — Su Muhtevası (w_n): > %100 | YASS Konumu: Doygun | Önerilen Yöntem: Kuru + Cüruflu Katkı | Hedef q_u (MPa): 0.4 - 1.2"
+            ]
           },
           {
             type: "paragraph",
@@ -2646,15 +2651,15 @@ export const knowledgeArticles: KnowledgeArticle[] = [
           },
           {
             type: "paragraph",
-            content: "Ca(OH)_2 arrow Ca^(2+) + 2OH^-"
+            content: "Ca(OH)_2 → Ca^(2+) + 2OH^-"
           },
           {
             type: "paragraph",
-            content: "Ca^(2+) + 2OH^- + SiO_2 (kil) arrow C-S-H (kalsiyum silikat hidrat jeli)"
+            content: "Ca^(2+) + 2OH^- + SiO_2 (kil) → C-S-H (kalsiyum silikat hidrat jeli)"
           },
           {
             type: "paragraph",
-            content: "Ca^(2+) + 2OH^- + Al_2O_3 (kil) arrow C-A-H (kalsiyum alüminat hidrat jeli)"
+            content: "Ca^(2+) + 2OH^- + Al_2O_3 (kil) → C-A-H (kalsiyum alüminat hidrat jeli)"
           },
           {
             type: "paragraph",
@@ -3274,7 +3279,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
           },
           {
             type: "paragraph",
-            content: "mathbf2.0 m ≤ h_embed ≤ 4.0 m (Maksimum limit: 6.0 m)"
+            content: "1.5 m ≤ h_embed ≤ 3.0 m (Minimum: 1.5 m, Maksimum limit: 4.5 - 6.0 m)"
           },
           {
             type: "paragraph",
@@ -3588,7 +3593,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
           },
           {
             type: "paragraph",
-            content: "Doygun kumlarda her darbede şok dalgası boşluk suyu basıncını tepe noktasına fırlatır (r_u = Δ u / σ'_v arrow 1.0). Zemin krater tabanında anlık sıvılaşır."
+            content: "Doygun kumlarda her darbede şok dalgası boşluk suyu basıncını tepe noktasına fırlatır (r_u = Δu / σ'_v → 1.0). Zemin krater tabanında anlık sıvılaşır."
           },
           {
             type: "list",
@@ -3639,11 +3644,11 @@ export const knowledgeArticles: KnowledgeArticle[] = [
           },
           {
             type: "paragraph",
-            content: "Ca^(2+) + 2(OH)^- + SiO_2 longrightarrow C-S-H (Kalsiyum Silikat Hidrat)"
+            content: "Ca^(2+) + 2(OH)^- + SiO_2 → C-S-H (Kalsiyum Silikat Hidrat)"
           },
           {
             type: "paragraph",
-            content: "Ca^(2+) + 2(OH)^- + Al_2O_3 longrightarrow C-A-H (Kalsiyum Alüminat Hidrat)"
+            content: "Ca^(2+) + 2(OH)^- + Al_2O_3 → C-A-H (Kalsiyum Alüminat Hidrat)"
           },
           {
             type: "paragraph",
@@ -3669,7 +3674,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
           },
           {
             type: "paragraph",
-            content: "PI = w_L - w_P ⇒ Hızla küçülür (Örn: PI: %45 arrow %12)"
+            content: "PI = w_L - w_P ⇒ Hızla küçülür (Örn: PI: %45 → %12)"
           },
           {
             type: "paragraph",
@@ -7161,7 +7166,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     title: "Taş Kolon (Vibro-Replacement) Nedir? Zemin İyileştirme, Priebe Yöntemi ve Sıvılaşma Rehberi",
     seoTitle: "Taş Kolon Zemin İyileştirme Nedir? Vibro Taş Kolon | YER6",
     description: "Taş kolon zemin iyileştirme; Priebe gerilme konsantrasyonu, vibro-flotasyon çakıl enjeksiyonu ve radyal drenajla yumuşak zeminde oturmayı azaltıp sıvılaşmayı önleyen geoteknik sistemdir.",
-    excerpt: "Taş kolon (vibro replacement); suya doygun yumuşak kil, silt ve gevşek kum zeminlerde derin vibratörler yardımıyla sıkıştırılmış kırmataş ve çakıl kolonları inşa ederek zemin taşıma kapasitesini artıran, oturmayı sınırlandıran ve radyal drenajla deprem sıvılaşma riskini sıfırlayan doğal agrega zemin iyileştirme yöntemidir.",
+    excerpt: "Taş kolon (vibro replacement); suya doygun yumuşak kil, silt ve gevşek kum zeminlerde derin vibratörler yardımıyla sıkıştırılmış kırmataş ve çakıl kolonları inşa ederek zemin taşıma kapasitesini artıran, oturmayı sınırlandıran ve radyal drenajla deprem sıvılaşma riskini TBDY 2018 güvenlik sınırları altına indiren doğal agrega zemin iyileştirme yöntemidir.",
     category: "Zemin İyileştirme",
     readingTime: "16 dk",
     publishedAt: "2026-07-11",
