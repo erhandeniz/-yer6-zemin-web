@@ -13,10 +13,10 @@ export function ArticleSection({ section }: { section: KnowledgeSection }) {
             case "list":
               return (
                 <div key={index}>
-                  {block.title ? <p className="mb-3 font-semibold text-white">{block.title}</p> : null}
+                  {block.title ? <p className="mb-3 font-semibold text-white">{parseMarkdownLinks(block.title)}</p> : null}
                   <ul className="list-inside list-disc space-y-2 pl-5 text-white/70">
                     {block.items.map((item) => (
-                      <li key={item}>{item}</li>
+                      <li key={item}>{parseMarkdownLinks(item)}</li>
                     ))}
                   </ul>
                 </div>
@@ -26,7 +26,7 @@ export function ArticleSection({ section }: { section: KnowledgeSection }) {
               return (
                 <div key={index} className="rounded-3xl border border-gold-300/20 bg-gold-300/10 p-5 text-sm text-white/90">
                   <div className="font-semibold uppercase tracking-[0.2em] text-gold-100">{block.title}</div>
-                  <p className="mt-3 text-white/80">{block.content}</p>
+                  <p className="mt-3 text-white/80">{parseMarkdownLinks(block.content)}</p>
                 </div>
               );
             default:

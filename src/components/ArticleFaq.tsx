@@ -2,6 +2,7 @@
 
 import type { KnowledgeFaq } from "@/types/knowledge";
 import { useLanguage } from "@/components/LanguageProvider";
+import { parseMarkdownLinks } from "./LinkParser";
 
 export function ArticleFaq({ faq }: { faq: KnowledgeFaq[] }) {
   const { t } = useLanguage();
@@ -17,7 +18,7 @@ export function ArticleFaq({ faq }: { faq: KnowledgeFaq[] }) {
         {faq.map((item) => (
           <div key={item.question} className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-6">
             <h3 className="text-lg font-semibold text-white">{item.question}</h3>
-            <p className="mt-3 text-sm leading-7 text-white/75">{item.answer}</p>
+            <p className="mt-3 text-sm leading-7 text-white/75">{parseMarkdownLinks(item.answer)}</p>
           </div>
         ))}
       </div>

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import type { KnowledgeArticle } from "@/types/knowledge";
 import { ArticleSection } from "@/components/ArticleSection";
+import { parseMarkdownLinks } from "@/components/LinkParser";
 import { ArticleFaq } from "@/components/ArticleFaq";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { TechnicalDisclaimer } from "@/components/TechnicalDisclaimer";
@@ -45,7 +46,7 @@ export function KnowledgeArticleContent({ article }: { article: KnowledgeArticle
               <span>{t("articlePublished")} {formatArticleDate(article.publishedAt, locale)}</span>
               <span>{t("articleUpdated")} {formatArticleDate(article.updatedAt, locale)}</span>
             </div>
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-white/70">{article.introduction}</p>
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-white/70">{parseMarkdownLinks(article.introduction)}</p>
           </div>
 
           <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_320px]">
