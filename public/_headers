@@ -6,3 +6,13 @@
   Content-Security-Policy: frame-ancestors 'self'
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
   X-Robots-Tag: index, follow
+
+/404/*
+  X-Robots-Tag: noindex, nofollow
+
+/404.html
+  X-Robots-Tag: noindex, nofollow
+
+/_not-found/*
+  X-Robots-Tag: noindex, nofollow
+

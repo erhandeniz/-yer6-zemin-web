@@ -227,10 +227,10 @@ export default async function CityPage({ params }: Props) {
               <h2 className="text-xs uppercase tracking-[0.3em] text-gold-200">İlgili Hizmetler & Otorite Merkezi</h2>
               <div className="mt-4 space-y-3">
                 <Link href="/services/zemin-iyilestirme/" className="block font-semibold text-gold-200 hover:text-gold-100 transition">
-                  → Zemin İyileştirme Yöntemleri Ana Merkezi
+                  → Zemin İyileştirme Hizmeti & Uygulamaları
                 </Link>
                 {linkedServices.map((service) => (
-                  <Link key={service.slug} href={`/services/${service.slug}`} className="block text-white/70 hover:text-white transition">
+                  <Link key={service.slug} href={`/services/${service.slug}/`} className="block text-white/70 hover:text-white transition">
                     {service.title}
                   </Link>
                 ))}
@@ -241,7 +241,7 @@ export default async function CityPage({ params }: Props) {
               <h2 className="text-xs uppercase tracking-[0.3em] text-gold-200">Teknik Makaleler</h2>
               <div className="mt-4 space-y-3">
                 {linkedArticles.map((article) => (
-                  <Link key={article.slug} href={`/knowledge/${article.slug}`} className="block text-white/70 hover:text-white">
+                  <Link key={article.slug} href={`/knowledge/${article.slug}/`} className="block text-white/70 hover:text-white">
                     {article.title}
                   </Link>
                 ))}
@@ -252,14 +252,14 @@ export default async function CityPage({ params }: Props) {
               <h2 className="text-xs uppercase tracking-[0.3em] text-gold-200">Diğer Şehirler</h2>
               <div className="mt-4 space-y-3">
                 {nearbyCities.map((page) => (
-                  <Link key={page.slug} href={`/sehirler/${page.slug}`} className="block text-white/70 hover:text-white">
+                  <Link key={page.slug} href={`/sehirler/${page.slug}/`} className="block text-white/70 hover:text-white">
                     {page.city} zemin güçlendirme
                   </Link>
                 ))}
               </div>
             </div>
 
-            <Link href="/contact" className="inline-flex items-center gap-2 text-sm font-semibold text-gold-100">
+            <Link href="/contact/" className="inline-flex items-center gap-2 text-sm font-semibold text-gold-100">
               Teknik ön değerlendirme al <ArrowUpRight className="h-4 w-4" />
             </Link>
           </aside>

@@ -9,7 +9,7 @@ export function KnowledgeCard({ article }: { article: KnowledgeArticle }) {
   const { t } = useLanguage();
 
   return (
-    <Link href={`/knowledge/${article.slug}`} className="group block rounded-[2rem] border border-white/10 bg-white/[0.045] p-8 transition hover:border-gold-200/30 hover:bg-white/[0.08] focus:outline-none focus:ring-2 focus:ring-gold-300/50 focus:ring-offset-2 focus:ring-offset-obsidian">
+    <Link href={`/knowledge/${article.slug}/`} className="group block rounded-[2rem] border border-white/10 bg-white/[0.045] p-8 transition hover:border-gold-200/30 hover:bg-white/[0.08] focus:outline-none focus:ring-2 focus:ring-gold-300/50 focus:ring-offset-2 focus:ring-offset-obsidian">
       <article>
         <div className="flex items-center justify-between gap-4">
           <span className="rounded-full bg-gold-300/12 px-3 py-1 text-xs uppercase tracking-[0.22em] text-gold-100">{article.category}</span>

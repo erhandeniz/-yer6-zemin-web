@@ -12,11 +12,13 @@ export const dynamic = "force-static";
 //    agresif SEO-casusluk kaziyicilari engellenir. Bunlar Google botu DEGILDIR; siralamayi
 //    ETKILEMEZ. Sosyal medya onizleme botlari (Facebook vb.) da engellenmez.
 const blockedBots = [
-  // Yapay zeka MODEL EGITIM botlari (icerigi alir, karsiliginda hicbir sey vermez)
-  "GPTBot", "CCBot", "Google-Extended", "anthropic-ai", "ClaudeBot", "Claude-Web",
-  "Amazonbot", "Applebot-Extended", "Bytespider", "meta-externalagent",
+  // Yalnizca trafik getirmeyen agresif veri kaziyicilar ve SEO-casusluk botlari engellenir.
+  // GPTBot, Google-Extended, ClaudeBot ve Applebot-Extended acik birakilir ki yapay zeka
+  // asistanlari ve AI arama ozetleri YER6 sayfalarini ve sitemap.xml'i dogrudan okuyabilsin.
+  "CCBot", "anthropic-ai",
+  "Amazonbot", "Bytespider", "meta-externalagent",
   "cohere-ai", "Diffbot", "ImagesiftBot", "Omgili", "Omgilibot", "Timpibot",
-  "YouBot", "DataForSeoBot", "AI2Bot", "PanguBot",
+  "DataForSeoBot", "AI2Bot", "PanguBot",
   // Agresif SEO-casusluk / toplu kazima botlari (Google DEGILDIR; siralamayi etkilemez)
   "AhrefsBot", "SemrushBot", "MJ12bot", "DotBot", "BLEXBot", "MegaIndex",
   "SeekportBot", "Scrapy"

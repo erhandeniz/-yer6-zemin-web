@@ -20,7 +20,7 @@ export function RelatedArticles({ articles }: { articles: KnowledgeArticle[] }) 
           {articles.map((article) => (
             <Link
               key={article.slug}
-              href={`/knowledge/${article.slug}`}
+              href={`/knowledge/${article.slug}/`}
               className="rounded-[2rem] border border-white/10 bg-white/[0.05] p-6 transition hover:border-gold-300/30"
             >
               <p className="text-sm uppercase tracking-[0.22em] text-gold-100">{article.category}</p>

@@ -489,12 +489,12 @@ export function generateArticleSchema(article: {
         "@type": "Person",
         name: article.authorName,
         jobTitle: "Geoteknik Uzmanı",
-        url: `${siteConfig.siteUrl}/about`
+        url: `${siteConfig.siteUrl}/about/`
       }
     : {
         "@type": "Organization",
         name: `${siteConfig.companyName} Teknik İçerik Ekibi`,
-        url: `${siteConfig.siteUrl}/about`
+        url: `${siteConfig.siteUrl}/about/`
       };
 
   return {

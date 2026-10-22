@@ -101,7 +101,7 @@ export function KnowledgeArticleContent({ article }: { article: KnowledgeArticle
                   <p className="text-xs uppercase tracking-[0.3em] text-gold-200">{t("articleRelated")}</p>
                   <div className="mt-4 space-y-3">
                     {related.map((item) => (
-                      <Link key={item.slug} href={`/knowledge/${item.slug}`} className="block text-white/70 hover:text-white">
+                      <Link key={item.slug} href={`/knowledge/${item.slug}/`} className="block text-white/70 hover:text-white">
                         {item.title}
                       </Link>
                     ))}
@@ -112,7 +112,7 @@ export function KnowledgeArticleContent({ article }: { article: KnowledgeArticle
                     <p className="text-xs uppercase tracking-[0.3em] text-gold-200">Şehir Uygulamaları</p>
                     <div className="mt-4 space-y-3">
                       {relatedCities.map((page) => (
-                        <Link key={page.slug} href={`/sehirler/${page.slug}`} className="block text-white/70 hover:text-white">
+                        <Link key={page.slug} href={`/sehirler/${page.slug}/`} className="block text-white/70 hover:text-white">
                           {page.city} zemin güçlendirme
                         </Link>
                       ))}

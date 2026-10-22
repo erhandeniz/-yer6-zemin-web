@@ -47,7 +47,7 @@ export default function CitiesPage() {
           {orderedCityPages.map((page) => (
             <Link
               key={page.slug}
-              href={`/sehirler/${page.slug}`}
+              href={`/sehirler/${page.slug}/`}
               className="group block rounded-[2rem] border border-white/10 bg-white/[0.045] p-7 transition hover:border-gold-300/30 hover:bg-white/[0.07]"
             >
               <MapPin className="h-7 w-7 text-gold-200" />
