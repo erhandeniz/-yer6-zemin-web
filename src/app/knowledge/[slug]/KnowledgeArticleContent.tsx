@@ -15,6 +15,8 @@ import { useLanguage } from "@/components/LanguageProvider";
 import type { Locale } from "@/lib/i18n";
 import { CalculatorTool } from "@/components/CalculatorTool";
 import { getToolForArticle } from "@/lib/calculators";
+import { GeotechAiEngineer } from "@/components/GeotechAiEngineer";
+import { EncyclopediaHub } from "@/components/EncyclopediaHub";
 
 function formatArticleDate(value: string, locale: Locale) {
   const localeTag = locale === "tr" ? "tr-TR" : locale === "ar" ? "ar-EG-u-ca-gregory" : "en-GB";
@@ -54,6 +56,10 @@ export function KnowledgeArticleContent({ article }: { article: KnowledgeArticle
 
           <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_320px]">
             <div className="space-y-16">
+              {/* 1. YER6 AI Geoteknik Mühendisi (Doğrudan Açık Canlı Sohbet) */}
+              <GeotechAiEngineer />
+
+              {/* 2. İnteraktif Saha Aracı ve Maliyet Hesaplayıcı */}
               {calculatorTool && (
                 <section className="rounded-[2rem] border border-gold-300/30 bg-gold-300/[0.04] p-6 sm:p-8">
                   <div className="mb-6 flex flex-wrap items-center justify-between gap-4 border-b border-white/10 pb-5">
@@ -78,6 +84,11 @@ export function KnowledgeArticleContent({ article }: { article: KnowledgeArticle
                   <CalculatorTool tool={calculatorTool} />
                 </section>
               )}
+
+              {/* 3. İnteraktif Geoteknik Veri Merkezi & Ansiklopedi Fihristi */}
+              <EncyclopediaHub sections={article.sections} />
+
+              {/* 4. Tam Metin Bölümleri (Googlebot için eksiksiz indekslenebilir statik içerik) */}
               {article.sections.map((section) => (
                 <ArticleSection key={section.id} section={section} />
               ))}
