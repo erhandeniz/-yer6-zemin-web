@@ -115,7 +115,7 @@ const websiteSchema = {
   // Google'ın site adı için baktığı EN ÖNCELİKLİ sinyal budur.
   // Marka adı burada; yasal unvan Organization şemasındaki legalName alanında.
   name: "YER6 Geoteknik",
-  alternateName: ["YER6", "yer6zemin.com.tr", "YER6 Geotechnical"],
+  alternateName: ["YER6", "YER6 Geoteknik", "YER6 Geotechnical"],
   url: siteUrl,
   inLanguage: "tr-TR",
   description: "2016'dan beri Ankara merkezli; jet grout, DSM, fore kazık, mini kazık, ankraj ve iksa sistemleri alanında zemin iyileştirme hizmetleri.",

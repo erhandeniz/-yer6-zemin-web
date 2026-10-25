@@ -316,7 +316,7 @@ export function localBusinessSchema() {
     legalName: "YER6 Geoteknik",
     alternateName: [
       "YER6",
-      "yer6zemin.com.tr",
+      "YER6 Geoteknik",
       "YER6 Geotechnical"
     ],
     url: siteConfig.siteUrl,
