@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
-import { Calculator, Download, Link2, Loader2, Phone, RotateCcw, Send } from "lucide-react";
+import { Bot, Calculator, Download, Link2, Loader2, Phone, RotateCcw, Send, Sparkles } from "lucide-react";
 import {
   computeEstimate,
   type Complexity,
@@ -458,6 +458,20 @@ export function CalculatorTool({ tool }: { tool: Tool }) {
 
       {/* Eylemler */}
       <div className="mt-7 flex flex-wrap items-center gap-3">
+        <button
+          type="button"
+          onClick={() => {
+            const methodLabel = tool.mode.toUpperCase().replace("-", " ");
+            const prompt = `Seçtiğim metraj: ${methodLabel} (Çap: Ø${diameter} cm, Boy: ${depth} m, Adet: ${count} adet, Zemin: ${soilType === "soft" ? "Yumuşak/Orta (ZD)" : "Sert/Kayalı (ZC)"}). Bu imalat için zemin sınıfı, şantiye riskleri ve çimento/beton optimizasyonu hakkında teknik bilgi verir misiniz?`;
+            window.dispatchEvent(new CustomEvent("yer6:ai-query", { detail: prompt }));
+            const el = document.getElementById("geotech-ai-engineer");
+            el?.scrollIntoView({ behavior: "smooth" });
+          }}
+          className="inline-flex items-center gap-2 rounded-full border border-gold-300/60 bg-gold-400/20 px-5 py-2.5 text-sm font-semibold text-gold-100 shadow-[0_0_15px_rgba(226,181,76,0.25)] transition hover:bg-gold-400/30 cursor-pointer"
+        >
+          <Bot className="size-4 shrink-0 text-gold-300" />
+          <span>Bu Metrajı YER6 AI ile Analiz Et</span>
+        </button>
         <a
           href={`https://wa.me/905323780691?text=${encodeURIComponent(
             `Merhaba YER6 Geoteknik, ${tool.h1} üzerinden bir ön keşif hesapladım:\n` +
@@ -482,7 +496,7 @@ export function CalculatorTool({ tool }: { tool: Tool }) {
           className="inline-flex items-center gap-2 rounded-full bg-gold-300 px-5 py-2.5 text-sm font-semibold text-obsidian transition hover:bg-gold-200 disabled:opacity-60"
         >
           {pdfBusy ? <Loader2 className="size-4 animate-spin" /> : <Download className="size-4" />}
-          PDF indir
+          Ön Fizibilite Raporu (PDF)
         </button>
         <button
           type="button"

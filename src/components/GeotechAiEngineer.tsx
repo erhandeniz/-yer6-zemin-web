@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { Bot, Send, Sparkles, User, Phone, ShieldCheck, Loader2 } from "lucide-react";
+import { Bot, Send, Sparkles, User, Phone, ShieldCheck, Loader2, FileText, MessageSquare } from "lucide-react";
 import Link from "next/link";
 import { siteConfig } from "@/lib/siteConfig";
 
@@ -66,6 +66,19 @@ export function GeotechAiEngineer() {
 
   useEffect(() => {
     scrollToBottom();
+  }, [messages, isTyping]);
+
+  useEffect(() => {
+    const handleAiQuery = (e: Event) => {
+      const customEvent = e as CustomEvent<string>;
+      if (customEvent.detail) {
+        handleSend(customEvent.detail);
+        const el = document.getElementById("geotech-ai-engineer");
+        el?.scrollIntoView({ behavior: "smooth" });
+      }
+    };
+    window.addEventListener("yer6:ai-query", handleAiQuery);
+    return () => window.removeEventListener("yer6:ai-query", handleAiQuery);
   }, [messages, isTyping]);
 
   const handleSend = async (textToSend?: string) => {
@@ -181,7 +194,7 @@ export function GeotechAiEngineer() {
   };
 
   return (
-    <section className="mb-12 rounded-[2rem] border border-gold-300/40 bg-gradient-to-b from-white/[0.07] to-white/[0.02] p-5 shadow-2xl backdrop-blur-md sm:p-8">
+    <section id="geotech-ai-engineer" className="mb-12 rounded-[2rem] border border-gold-300/40 bg-gradient-to-b from-white/[0.07] to-white/[0.02] p-5 shadow-2xl backdrop-blur-md sm:p-8">
       {/* Üst Bilgi Başlığı */}
       <div className="flex flex-wrap items-center justify-between gap-4 border-b border-white/10 pb-5">
         <div className="flex items-center gap-3.5">
@@ -348,6 +361,30 @@ export function GeotechAiEngineer() {
           <span className="hidden sm:inline">Gönder</span>
         </button>
       </form>
+
+      {/* Zemin Etüdü & Proje İletim Bannerı (Doğrudan Saha Direktörlüğü WhatsApp) */}
+      <div className="mt-5 flex flex-col items-start justify-between gap-3.5 rounded-2xl border border-emerald-500/30 bg-emerald-500/[0.08] p-4 sm:flex-row sm:items-center">
+        <div className="flex items-center gap-3">
+          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-emerald-400/30 bg-emerald-500/20 text-emerald-300">
+            <FileText className="h-5 w-5" />
+          </span>
+          <div>
+            <h4 className="text-xs font-bold text-white sm:text-sm">Zemin Etüt Raporunuz veya Projeniz Hazır mı?</h4>
+            <p className="mt-0.5 text-[11px] text-white/65 sm:text-xs">
+              PDF/DWG dosyalarınızı doğrudan Saha Direktörlüğümüze iletin; 2 saat içinde teknik ön değerlendirme ve resmi birim fiyat teklifinizi hazırlayalım.
+            </p>
+          </div>
+        </div>
+        <a
+          href="https://wa.me/905323780691?text=Merhaba%20Erhan%20Bey,%20YER6%20web%20sitesinden%20ula%C5%9F%C4%B1yorum.%20Projemiz%20i%C3%A7in%20zemin%20et%C3%BCd%C3%BC%20veya%20mimari/statik%20projemizi%20payla%C5%9Farak%20teknik%20de%C4%9Ferlendirme%20ve%20birim%20fiyat%20teklifi%20almak%20istiyorum."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex shrink-0 items-center gap-2 rounded-xl border border-emerald-400/40 bg-emerald-600 px-4 py-2.5 text-xs font-semibold text-white shadow-lg shadow-emerald-950/40 transition hover:bg-emerald-500"
+        >
+          <MessageSquare className="h-4 w-4" />
+          <span>WhatsApp ile Proje İlet</span>
+        </a>
+      </div>
     </section>
   );
 }
