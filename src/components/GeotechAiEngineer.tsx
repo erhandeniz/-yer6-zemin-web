@@ -58,10 +58,15 @@ export function GeotechAiEngineer() {
   const [input, setInput] = useState("");
   const [isTyping, setIsTyping] = useState(false);
   const [conversationId] = useState(() => `geotech-${Date.now()}`);
-  const messagesEndRef = useRef<HTMLDivElement>(null);
+  const chatContainerRef = useRef<HTMLDivElement>(null);
 
   const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    if (chatContainerRef.current) {
+      chatContainerRef.current.scrollTo({
+        top: chatContainerRef.current.scrollHeight,
+        behavior: "smooth"
+      });
+    }
   };
 
   useEffect(() => {
@@ -254,7 +259,10 @@ export function GeotechAiEngineer() {
       </div>
 
       {/* Mesaj Akışı Kutusu */}
-      <div className="mt-3 max-h-[420px] min-h-[220px] space-y-4 overflow-y-auto rounded-2xl border border-white/10 bg-black/40 p-4 sm:p-5">
+      <div
+        ref={chatContainerRef}
+        className="mt-3 max-h-[420px] min-h-[220px] space-y-4 overflow-y-auto rounded-2xl border border-white/10 bg-black/40 p-4 sm:p-5"
+      >
         {messages.map((msg) => (
           <div
             key={msg.id}
@@ -334,7 +342,6 @@ export function GeotechAiEngineer() {
             </div>
           </div>
         )}
-        <div ref={messagesEndRef} />
       </div>
 
       {/* Mesaj Giriş Alanı */}
