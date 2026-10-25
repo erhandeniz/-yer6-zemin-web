@@ -27,18 +27,6 @@ const METHOD_TABS = [
   { slug: "palplans-maliyet-hesaplama", name: "Palplanş", tag: "Çelik İksa", icon: "🧱" }
 ];
 
-function formatArticleDate(value: string, locale: Locale) {
-  const localeTag = locale === "tr" ? "tr-TR" : locale === "ar" ? "ar-EG-u-ca-gregory" : "en-GB";
-  const date = new Date(`${value}T12:00:00+03:00`);
-
-  return new Intl.DateTimeFormat(localeTag, {
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-    timeZone: "Europe/Istanbul"
-  }).format(date);
-}
-
 export function KnowledgeArticleContent({ article }: { article: KnowledgeArticle }) {
   const { locale, t } = useLanguage();
   const related = publishedKnowledgeArticles.filter((other) => article.relatedSlugs.includes(other.slug));
@@ -63,10 +51,6 @@ export function KnowledgeArticleContent({ article }: { article: KnowledgeArticle
               <span>{t("articleAuthor")}</span>
               <span>•</span>
               <span>{t("articleReadTime").replace("{minutes}", readingMinutes)}</span>
-              <span>•</span>
-              <span>{t("articlePublished")} {formatArticleDate(article.publishedAt, locale)}</span>
-              <span>•</span>
-              <span>{t("articleUpdated")} {formatArticleDate(article.updatedAt, locale)}</span>
             </div>
           </div>
 
