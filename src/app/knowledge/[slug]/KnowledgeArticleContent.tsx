@@ -13,6 +13,8 @@ import { siteConfig } from "@/lib/siteConfig";
 import { publishedKnowledgeArticles } from "@/data/knowledge";
 import { useLanguage } from "@/components/LanguageProvider";
 import type { Locale } from "@/lib/i18n";
+import { CalculatorTool } from "@/components/CalculatorTool";
+import { getToolForArticle } from "@/lib/calculators";
 
 function formatArticleDate(value: string, locale: Locale) {
   const localeTag = locale === "tr" ? "tr-TR" : locale === "ar" ? "ar-EG-u-ca-gregory" : "en-GB";
@@ -32,6 +34,7 @@ export function KnowledgeArticleContent({ article }: { article: KnowledgeArticle
   const canonical = `${siteConfig.siteUrl}/knowledge/${article.slug}/`;
   const relatedCities = cityPages.filter((page) => page.articleSlugs.includes(article.slug)).slice(0, 5);
   const readingMinutes = article.readingTime.match(/\d+/)?.[0] ?? article.readingTime;
+  const calculatorTool = getToolForArticle(article.slug);
 
   return (
     <main>
@@ -51,6 +54,30 @@ export function KnowledgeArticleContent({ article }: { article: KnowledgeArticle
 
           <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_320px]">
             <div className="space-y-16">
+              {calculatorTool && (
+                <section className="rounded-[2rem] border border-gold-300/30 bg-gold-300/[0.04] p-6 sm:p-8">
+                  <div className="mb-6 flex flex-wrap items-center justify-between gap-4 border-b border-white/10 pb-5">
+                    <div>
+                      <span className="text-xs font-semibold uppercase tracking-[0.25em] text-gold-300">
+                        İnteraktif Saha Aracı
+                      </span>
+                      <h2 className="mt-1 text-2xl font-bold text-white">
+                        2026 Metraj ve Ön Maliyet Hesaplayıcı
+                      </h2>
+                      <p className="mt-1 text-sm text-white/70">
+                        Projenizin çap, boy ve adet verilerini girerek anlık metraj ve yaklaşık maliyet bandını hesaplayın.
+                      </p>
+                    </div>
+                    <Link
+                      href={`/hesaplama/${calculatorTool.slug}/`}
+                      className="inline-flex items-center gap-2 rounded-xl border border-gold-300/40 bg-gold-300/10 px-4 py-2 text-xs font-semibold text-gold-200 transition hover:bg-gold-300/20"
+                    >
+                      Tam Ekran Hesaplayıcı →
+                    </Link>
+                  </div>
+                  <CalculatorTool tool={calculatorTool} />
+                </section>
+              )}
               {article.sections.map((section) => (
                 <ArticleSection key={section.id} section={section} />
               ))}

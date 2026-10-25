@@ -500,6 +500,34 @@ export function getToolForService(serviceSlug: string): CalculatorTool | undefin
   return toolSlug ? getCalculatorTool(toolSlug) : undefined;
 }
 
+/**
+ * Bilgi Merkezi makalesi → uygun hesaplama aracı eşlemesi.
+ * Ziyaretçinin makaleden ayrılmadan anlık metraj ve maliyet hesabı yapmasını sağlar.
+ */
+const ARTICLE_TO_TOOL: Record<string, string> = {
+  "yer-alti-zemin-iyilestirme": "jet-grout-maliyet-hesaplama",
+  "zemin-iyilestirme-yontemleri": "jet-grout-maliyet-hesaplama",
+  "zemin-guclendirme-yontemleri": "jet-grout-maliyet-hesaplama",
+  "jet-grout-maliyeti": "jet-grout-maliyet-hesaplama",
+  "jet-grout-nedir": "jet-grout-maliyet-hesaplama",
+  "jet-grout-makineleri": "jet-grout-maliyet-hesaplama",
+  "jet-grout-uygulama-asamalari": "jet-grout-maliyet-hesaplama",
+  "jet-grout-ve-fore-kazik-farki": "jet-grout-maliyet-hesaplama",
+  "fore-kazik-maliyeti": "fore-kazik-maliyet-hesaplama",
+  "fore-kazik-nedir": "fore-kazik-maliyet-hesaplama",
+  "turkiye-fore-kazik-rehberi-tbdy-2018-standartlari-ve-derin-temel-uygulamalari": "fore-kazik-maliyet-hesaplama",
+  "dsm-nedir": "dsm-maliyet-hesaplama",
+  "dsm-derin-karistirma-hesap-esaslari": "dsm-maliyet-hesaplama",
+  "ankraj-nedir": "ankraj-maliyet-hesaplama",
+  "ankraj-uygulama-asamalari": "ankraj-maliyet-hesaplama",
+  "iksa-sistemi-nasil-secilir": "ankraj-maliyet-hesaplama"
+};
+
+export function getToolForArticle(articleSlug: string): CalculatorTool | undefined {
+  const toolSlug = ARTICLE_TO_TOOL[articleSlug];
+  return toolSlug ? getCalculatorTool(toolSlug) : undefined;
+}
+
 export function getCalculatorPaths() {
   return CALCULATOR_TOOLS.map((tool) => ({ slug: tool.slug }));
 }

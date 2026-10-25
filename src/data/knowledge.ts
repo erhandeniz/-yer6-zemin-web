@@ -1472,7 +1472,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     category: "Zemin İyileştirme",
     readingTime: "52 dk",
     publishedAt: "2026-06-21",
-    updatedAt: "2026-10-21",
+    updatedAt: "2026-10-25",
     heroLabel: "Zemin İyileştirme Karar ve Mühendislik Platformu",
     introduction: "**Zemin iyileştirme (ground improvement)**; zayıf, aşırı sıkışabilir veya deprem anında sıvılaşma riski taşıyan zemin tabakalarının kazılarak uzaklaştırılması yerine, yerinde (in-situ) fiziksel, hidrodinamik, mekanik ve kimyasal mühendislik müdahaleleriyle taşıma gücünün artırılması, toplam ve farklı (diferansiyel) oturmaların sınırlandırılması, sıvılaşma direncinin maksimize edilmesi ve hidrolik iletkenliğinin kontrol altına alınması işlemidir. YER6 Geoteknik olarak; Türkiye'nin önde gelen **zemin iyileştirme firmaları** arasında, ISSMGE TC211 (Zemin İyileştirme Teknik Komitesi), DFI (Deep Foundations Institute), TBDY 2018 Bölüm 16 ve Eurocode 7 (EN 1997) standartlarına tam uyumlu yüksek teknolojili makine parkımızla [Jet Grout Zemin İyileştirme](/services/jet-grout/), [DSM Zemin İyileştirme](/services/dsm/), [Taş Kolon Zemin İyileştirme](/services/tas-kolon/), [Fore Kazık](/services/fore-kazik/), Prefabrike Düşey Drenler (PVD), Dinamik Kompaksiyon ve zemin stabilizasyonu gibi tüm modern **zemin iyileştirme yöntemleri**ni Türkiye genelinde projelendirip anahtar teslim uyguluyoruz.",
     sections: [
@@ -7900,13 +7900,13 @@ export const knowledgeArticles: KnowledgeArticle[] = [
   {
     slug: "yer-alti-zemin-iyilestirme",
     title: "Yer Altı Zemin İyileştirme Rehberi: Yöntemler, Tasarım ve Uygulama",
-    seoTitle: "Zemin İyileştirme Rehberi 2026 | Yöntemler, Seçim ve Kalite Kontrol | YER6",
+    seoTitle: "Zemin İyileştirme Yöntemleri ve Maliyet Hesabı 2026 | YER6",
     description: "Yer altı zemin iyileştirme rehberi: jet grout, DSM, taş kolon, enjeksiyon ve 15+ yöntem; seçim matrisi, TBDY 2018, maliyet faktörleri. Uzmanından okuyun.",
     excerpt: "Yer altı zemin iyileştirme yöntemlerinin tamamını — jet grout'tan taş kolona, DSM'den derin kompaksiyona — seçim kriterleri, tasarım parametreleri ve kalite kontrol testleriyle birlikte anlatan Türkiye'nin en kapsamlı rehberi.",
     category: "Zemin İyileştirme",
     readingTime: "25 dk",
     publishedAt: "2026-07-14",
-    updatedAt: "2026-10-21",
+    updatedAt: "2026-10-25",
     heroLabel: "Mega Rehber",
     introduction: "Yer altı zemin iyileştirme, yapı yükünü güvenle taşıyamayan zeminlerin [jet grout](/services/jet-grout/), [derin karıştırma (DSM)](/services/dsm/), [taş kolon](/services/tas-kolon/), derin kompaksiyon ve enjeksiyon gibi tekniklerle metrelerce derinlikte yerinde güçlendirilmesidir. Bu rehberde 15'ten fazla yöntemi; zemin türüne göre seçim matrisi, TBDY 2018 zemin sınıfları, tasarım parametreleri, kalite kontrol testleri ve maliyet-süre faktörleriyle birlikte tek sayfada topladık. Ankara merkezli YER6 Geoteknik'in saha tecrübesiyle hazırlanan bu kılavuz, arsa sahibinden geoteknik mühendisine kadar herkesin \"hangi zemine hangi yöntem?\" sorusuna net cevap bulması için tasarlandı; projenize özel mühendislik ve uygulama teklifi için doğrudan [Zemin İyileştirme Hizmetimiz ve Şantiye Uygulamalarımız](/services/zemin-iyilestirme/) sayfasını inceleyebilirsiniz.",
     sections: [
