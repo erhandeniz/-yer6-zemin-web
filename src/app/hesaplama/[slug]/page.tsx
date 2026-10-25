@@ -137,6 +137,37 @@ export default async function CalculatorPage({ params }: { params: Promise<{ slu
         <section className="px-5 pb-14">
           <div className="mx-auto max-w-7xl">
             <CalculatorTool tool={tool} />
+
+            {/* Birincil Teknik Kılavuz & Saha Analiz Köprüsü (Topic Cluster) */}
+            {articles.length > 0 && (
+              <div className="mt-8 rounded-2xl border border-gold-300/30 bg-gold-400/[0.05] p-5 sm:p-6 transition hover:border-gold-300/50">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                  <div className="flex items-start gap-3.5">
+                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gold-400/20 text-gold-300 text-lg">
+                      📖
+                    </span>
+                    <div>
+                      <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-gold-300">
+                        Detaylı Geoteknik Şantiye Analizi
+                      </span>
+                      <h3 className="mt-0.5 text-base font-bold text-white sm:text-lg">
+                        {articles[0].title}
+                      </h3>
+                      <p className="mt-1 text-xs text-white/60">
+                        {tool.h1} hesaplamasının saha imalat aşamaları, birim analizleri, zemin parametreleri ve sözleşme detayları için kapsamlı teknik rehberimizi inceleyin.
+                      </p>
+                    </div>
+                  </div>
+                  <Link
+                    href={`/knowledge/${articles[0].slug}/`}
+                    className="inline-flex shrink-0 items-center gap-2 rounded-xl border border-gold-300/40 bg-gold-300/20 px-5 py-2.5 text-xs font-semibold text-gold-200 transition hover:bg-gold-300/30"
+                  >
+                    <span>Maliyet Rehberini Oku</span>
+                    <span>→</span>
+                  </Link>
+                </div>
+              </div>
+            )}
           </div>
         </section>
 
