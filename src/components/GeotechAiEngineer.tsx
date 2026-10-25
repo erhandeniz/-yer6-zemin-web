@@ -1,9 +1,11 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { Bot, Send, Sparkles, User, ArrowRight, Phone, MessageSquare, ShieldCheck, RefreshCw } from "lucide-react";
+import { Bot, Send, Sparkles, User, Phone, ShieldCheck, Loader2 } from "lucide-react";
 import Link from "next/link";
 import { siteConfig } from "@/lib/siteConfig";
+
+const YER6_AI_URL = (process.env.NEXT_PUBLIC_YER6_AI_URL || "https://ai.yer6zemin.com.tr").replace(/\/$/, "");
 
 interface ChatMessage {
   id: string;
@@ -33,17 +35,29 @@ function getTimeString(): string {
   return `${String(d.getHours()).padStart(2, "0")}:${String(d.getMinutes()).padStart(2, "0")}`;
 }
 
+function generateUUID(): string {
+  if (typeof crypto !== "undefined" && typeof crypto.randomUUID === "function") {
+    return crypto.randomUUID();
+  }
+  return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, (c) => {
+    const r = (Math.random() * 16) | 0;
+    const v = c === "x" ? r : (r & 0x3) | 0x8;
+    return v.toString(16);
+  });
+}
+
 export function GeotechAiEngineer() {
   const [messages, setMessages] = useState<ChatMessage[]>([
     {
       id: "initial-1",
       sender: "bot",
-      text: "Merhaba! Ben YER6 Geoteknik Yapay Zekâ Baş Mühendisiyim. Sahadaki zemin etüdü verilerinizi (SPT darbe sayısı, zemin sınıfı, yeraltı suyu derinliği veya bina yükü) yazın; projeniz için teknik ve maliyet açısından en doğru zemin iyileştirme yöntemini anında analiz edeyim.",
+      text: "Merhaba! Ben YER6 Geoteknik Yapay Zekâ Baş Mühendisiyim. Sahadaki zemin etüt raporunuzu, sondaj SPT değerlerinizi, zemin sınıfınızı (ZA-ZF) veya aklınıza gelen herhangi bir geoteknik soruyu yazabilirsiniz. Projenizi anında analiz edip teknik standartlar ve maliyet optimizasyonuyla yanıtlayabilirim.",
       timestamp: getTimeString()
     }
   ]);
   const [input, setInput] = useState("");
   const [isTyping, setIsTyping] = useState(false);
+  const [conversationId] = useState(() => `geotech-${Date.now()}`);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   const scrollToBottom = () => {
@@ -54,9 +68,9 @@ export function GeotechAiEngineer() {
     scrollToBottom();
   }, [messages, isTyping]);
 
-  const handleSend = (textToSend?: string) => {
+  const handleSend = async (textToSend?: string) => {
     const query = (textToSend || input).trim();
-    if (!query) return;
+    if (!query || isTyping) return;
 
     const userMsg: ChatMessage = {
       id: `user-${Date.now()}`,
@@ -65,15 +79,105 @@ export function GeotechAiEngineer() {
       timestamp: getTimeString()
     };
 
-    setMessages((prev) => [...prev, userMsg]);
+    const nextHistory = [...messages, userMsg];
+    setMessages(nextHistory);
     if (!textToSend) setInput("");
     setIsTyping(true);
 
-    setTimeout(() => {
-      const response = generateGeotechResponse(query);
-      setMessages((prev) => [...prev, response]);
-      setIsTyping(false);
-    }, 700);
+    const botMsgId = `bot-${Date.now()}`;
+    let streamedText = "";
+    let apiSuccess = false;
+
+    // 1. Canlı YER6 AI Endpoint'ine bağlanmayı dene (Streaming SSE)
+    try {
+      const apiPayloadMessages = nextHistory
+        .filter((m) => m.text.trim().length > 0)
+        .slice(-10)
+        .map((m) => ({
+          role: m.sender === "user" ? ("user" as const) : ("assistant" as const),
+          content: m.text
+        }));
+
+      const res = await fetch(`${YER6_AI_URL}/api/public/estimate-chat`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          requestId: generateUUID(),
+          conversationId,
+          locale: "tr",
+          messages: apiPayloadMessages
+        })
+      });
+
+      if (res.ok && res.body) {
+        const reader = res.body.getReader();
+        const decoder = new TextDecoder();
+        let buffer = "";
+
+        // Placeholder bot mesajı ekle
+        setMessages((prev) => [
+          ...prev,
+          {
+            id: botMsgId,
+            sender: "bot",
+            text: "",
+            timestamp: getTimeString()
+          }
+        ]);
+
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+          buffer += decoder.decode(value, { stream: true });
+          const parts = buffer.split("\n\n");
+          buffer = parts.pop() || "";
+
+          for (const part of parts) {
+            const dataLine = part.split("\n").find((l) => l.startsWith("data:"));
+            if (!dataLine) continue;
+            try {
+              const evt = JSON.parse(dataLine.slice(5).trim());
+              if (evt.type === "delta" && evt.text) {
+                streamedText += evt.text;
+                setMessages((prev) =>
+                  prev.map((m) => (m.id === botMsgId ? { ...m, text: streamedText } : m))
+                );
+              }
+            } catch {
+              /* SSE yarım parçası bir sonraki turda tamamlanır */
+            }
+          }
+        }
+
+        if (streamedText.trim().length > 0) {
+          apiSuccess = true;
+          // Metin içindeki yöntemi analiz edip öneri kartı ekle
+          const rec = extractRecommendation(query, streamedText);
+          if (rec) {
+            setMessages((prev) =>
+              prev.map((m) => (m.id === botMsgId ? { ...m, recommendation: rec } : m))
+            );
+          }
+        }
+      }
+    } catch {
+      apiSuccess = false;
+    }
+
+    // 2. API başarısız olduysa (localhost, offline veya bağlantı kesintisi), yerel geoteknik motorla yanıtla
+    if (!apiSuccess) {
+      const fallbackResponse = generateGeotechResponse(query);
+      setMessages((prev) => {
+        // Eğer placeholder varsa onun yerine yaz, yoksa ekle
+        const exists = prev.some((m) => m.id === botMsgId);
+        if (exists) {
+          return prev.map((m) => (m.id === botMsgId ? fallbackResponse : m));
+        }
+        return [...prev, fallbackResponse];
+      });
+    }
+
+    setIsTyping(false);
   };
 
   return (
@@ -92,11 +196,11 @@ export function GeotechAiEngineer() {
             <div className="flex items-center gap-2">
               <h2 className="text-lg font-bold text-white sm:text-xl">YER6 AI Geoteknik Mühendisi</h2>
               <span className="inline-flex items-center gap-1 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-emerald-400">
-                Canlı Danışman
+                Canlı Bağlantı
               </span>
             </div>
             <p className="text-xs text-white/60">
-              TBDY 2018, TS EN 12716 ve Eurocode 7 standartlarıyla sahanıza özel yöntem seçimi ve metraj analizi.
+              Tüm sorularınızı yanıtlar; TBDY 2018 ve Eurocode 7 standartlarıyla sahanıza özel yöntem seçimi yapar.
             </p>
           </div>
         </div>
@@ -116,7 +220,7 @@ export function GeotechAiEngineer() {
             className="inline-flex items-center gap-1.5 rounded-xl border border-gold-300/50 bg-gold-300/15 px-3.5 py-1.5 text-xs font-semibold text-gold-200 shadow-[0_0_12px_rgba(226,181,76,0.2)] transition hover:bg-gold-300/25"
           >
             <Sparkles className="h-3.5 w-3.5" />
-            YER6 AI Portal →
+            Tam Portal →
           </a>
         </div>
       </div>
@@ -127,8 +231,9 @@ export function GeotechAiEngineer() {
         {QUICK_PROMPTS.map((prompt, i) => (
           <button
             key={i}
+            type="button"
             onClick={() => handleSend(prompt)}
-            className="rounded-lg border border-white/10 bg-white/[0.03] px-2.5 py-1 text-xs text-white/75 transition hover:border-gold-300/40 hover:bg-gold-300/10 hover:text-gold-100"
+            className="rounded-lg border border-white/10 bg-white/[0.03] px-2.5 py-1 text-xs text-white/75 transition hover:border-gold-300/40 hover:bg-gold-300/10 hover:text-gold-100 cursor-pointer"
           >
             {prompt}
           </button>
@@ -136,7 +241,7 @@ export function GeotechAiEngineer() {
       </div>
 
       {/* Mesaj Akışı Kutusu */}
-      <div className="mt-3 max-h-[380px] min-h-[220px] space-y-4 overflow-y-auto rounded-2xl border border-white/10 bg-black/40 p-4 sm:p-5">
+      <div className="mt-3 max-h-[420px] min-h-[220px] space-y-4 overflow-y-auto rounded-2xl border border-white/10 bg-black/40 p-4 sm:p-5">
         {messages.map((msg) => (
           <div
             key={msg.id}
@@ -159,7 +264,9 @@ export function GeotechAiEngineer() {
                   : "bg-white/[0.05] text-white/90 border border-white/10"
               }`}
             >
-              <div className="whitespace-pre-line leading-6">{msg.text}</div>
+              <div className="whitespace-pre-line leading-6">
+                {msg.text || (isTyping && msg.id.startsWith("bot-") ? "Yanıt hazırlanıyor..." : "")}
+              </div>
 
               {/* Mühendislik Ön Metraj Tavsiyesi Varsa */}
               {msg.recommendation && (
@@ -208,11 +315,9 @@ export function GeotechAiEngineer() {
             <div className="flex h-8 w-8 items-center justify-center rounded-xl border border-gold-300/50 bg-gold-400/15 text-gold-200">
               <Bot className="h-4 w-4" />
             </div>
-            <div className="flex items-center gap-1.5 rounded-2xl border border-white/10 bg-white/[0.05] px-4 py-3 text-xs text-white/60">
-              <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-gold-300" style={{ animationDelay: "0ms" }} />
-              <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-gold-300" style={{ animationDelay: "150ms" }} />
-              <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-gold-300" style={{ animationDelay: "300ms" }} />
-              <span className="ml-2 font-mono text-[11px]">Geoteknik standartlar taranıyor...</span>
+            <div className="flex items-center gap-2 rounded-2xl border border-white/10 bg-white/[0.05] px-4 py-3 text-xs text-white/60">
+              <Loader2 className="h-3.5 w-3.5 animate-spin text-gold-300" />
+              <span className="font-mono text-[11px]">YER6 AI Geoteknik veritabanı taranıyor...</span>
             </div>
           </div>
         )}
@@ -231,16 +336,16 @@ export function GeotechAiEngineer() {
           type="text"
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          placeholder="Örn: 'Arsamda SPT N: 7 çıktı, yeraltı suyu 2.5m, sıvılaşma riski var, ne yapmalıyım?'"
+          placeholder="İstediğiniz herhangi bir soruyu yazın (Örn: 'Killi zeminde oturmayı nasıl engelleriz?')"
           className="flex-1 rounded-xl border border-white/15 bg-white/[0.05] px-4 py-3 text-xs text-white placeholder-white/40 outline-none transition focus:border-gold-300 focus:bg-white/[0.08] sm:text-sm"
         />
         <button
           type="submit"
-          disabled={!input.trim()}
-          className="flex h-11 items-center justify-center gap-2 rounded-xl border border-gold-300/40 bg-gold-300/20 px-5 text-xs font-semibold text-gold-200 transition hover:bg-gold-300/30 disabled:opacity-40 sm:text-sm"
+          disabled={!input.trim() || isTyping}
+          className="flex h-11 items-center justify-center gap-2 rounded-xl border border-gold-300/40 bg-gold-300/20 px-5 text-xs font-semibold text-gold-200 transition hover:bg-gold-300/30 disabled:opacity-40 sm:text-sm cursor-pointer"
         >
           <Send className="h-4 w-4" />
-          <span className="hidden sm:inline">Sor</span>
+          <span className="hidden sm:inline">Gönder</span>
         </button>
       </form>
     </section>
@@ -248,13 +353,59 @@ export function GeotechAiEngineer() {
 }
 
 /**
- * Geoteknik kural motoru — TBDY 2018 ve Eurocode 7 standartlarına göre
- * kullanıcı girdilerini anında analiz ederek teknik tavsiye üretir.
+ * Yanıt metninden veya sorudan zemin parametrelerini çıkarıp öneri kartı üretir.
+ */
+function extractRecommendation(query: string, text: string) {
+  const combined = `${query} ${text}`.toLowerCase();
+  if (combined.includes("sıvılaşma") || combined.includes("sivilasma") || combined.includes("spt")) {
+    return {
+      method: "Jet Grout (JG-1/JG-2)",
+      diameterCm: 80,
+      depthM: 12,
+      countEst: 160,
+      reason: "Sıvılaşma riskine karşı sağlam tabakaya soketlenen ızgara zemin iyileştirmesi.",
+      calcUrl: "/hesaplama/jet-grout-maliyet-hesaplama/?cap=80&boy=12&adet=160"
+    };
+  }
+  if (combined.includes("dsm") || combined.includes("deep soil mixing") || combined.includes("karıştırma")) {
+    return {
+      method: "Deep Soil Mixing (DSM)",
+      diameterCm: 80,
+      depthM: 14,
+      countEst: 200,
+      reason: "Büyük alanda yumuşak killer için pasa oluşturmayan en ekonomik yöntem.",
+      calcUrl: "/hesaplama/dsm-maliyet-hesaplama/?cap=80&boy=14&adet=200"
+    };
+  }
+  if (combined.includes("fore kazık") || combined.includes("kazık") || combined.includes("derin temel")) {
+    return {
+      method: "Fore Kazık Sistemi",
+      diameterCm: 80,
+      depthM: 18,
+      countEst: 120,
+      reason: "Ağır yapı yüklerini sağlam ana kayaya ileten yerinde dökme betonarme kazık.",
+      calcUrl: "/hesaplama/fore-kazik-maliyet-hesaplama/?cap=80&boy=18&adet=120"
+    };
+  }
+  if (combined.includes("bina") || combined.includes("dar alan") || combined.includes("oturma")) {
+    return {
+      method: "Kompakt Mini Jet Grout / Mini Kazık",
+      diameterCm: 60,
+      depthM: 9,
+      countEst: 80,
+      reason: "Mevcut bina altına girebilen kompakt makinelerle temel askıya alma.",
+      calcUrl: "/hesaplama/jet-grout-maliyet-hesaplama/?cap=60&boy=9&adet=80"
+    };
+  }
+  return undefined;
+}
+
+/**
+ * Çevrimdışı / yedek yerel geoteknik motor
  */
 function generateGeotechResponse(query: string): ChatMessage {
   const q = query.toLowerCase();
 
-  // 1. Sıvılaşma / SPT Düşük / Kum
   if (q.includes("sıvılaşma") || q.includes("sivilasma") || q.includes("spt") || q.includes("kum")) {
     return {
       id: `bot-${Date.now()}`,
@@ -266,13 +417,12 @@ function generateGeotechResponse(query: string): ChatMessage {
         diameterCm: 80,
         depthM: 12,
         countEst: 160,
-        reason: "Sıvılaşma zonunun altına (sağlam tabakaya) en az 1.5 - 2 metre soketlenerek ızgara geometrisi kurulmalıdır.",
+        reason: "Sıvılaşma zonunun altına en az 1.5 - 2 metre soketlenerek ızgara geometrisi kurulmalıdır.",
         calcUrl: "/hesaplama/jet-grout-maliyet-hesaplama/?cap=80&boy=12&adet=160"
       }
     };
   }
 
-  // 2. Mevcut Bina Altı / Güçlendirme / Dar Alan
   if (q.includes("bina altı") || q.includes("bina alti") || q.includes("mevcut") || q.includes("dar") || q.includes("bodrum")) {
     return {
       id: `bot-${Date.now()}`,
@@ -290,7 +440,6 @@ function generateGeotechResponse(query: string): ChatMessage {
     };
   }
 
-  // 3. Jet Grout mu DSM mi?
   if (q.includes("dsm") || q.includes("deep soil mixing") || (q.includes("jet") && q.includes("fark"))) {
     return {
       id: `bot-${Date.now()}`,
@@ -308,7 +457,6 @@ function generateGeotechResponse(query: string): ChatMessage {
     };
   }
 
-  // 4. ZE Zemin / Zemin Sınıfları (TBDY 2018)
   if (q.includes("ze") || q.includes("zf") || q.includes("zemin sınıfı") || q.includes("yönetmelik")) {
     return {
       id: `bot-${Date.now()}`,
@@ -318,7 +466,6 @@ function generateGeotechResponse(query: string): ChatMessage {
     };
   }
 
-  // 5. Fiyat / Maliyet
   if (q.includes("fiyat") || q.includes("maliyet") || q.includes("kaç para") || q.includes("metre fiyatı")) {
     return {
       id: `bot-${Date.now()}`,
@@ -336,7 +483,6 @@ function generateGeotechResponse(query: string): ChatMessage {
     };
   }
 
-  // Genel Cevap (Fallback)
   return {
     id: `bot-${Date.now()}`,
     sender: "bot",

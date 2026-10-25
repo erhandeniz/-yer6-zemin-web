@@ -514,7 +514,7 @@ export const dictionary = {
     /* ── KNOWLEDGE ARTICLE DETAIL ── */
     articleTOC: "İçindekiler",
     articleRelated: "İlgili İçerikler",
-    articleAuthor: "Teknik İnceleyen & Onaylayan: Erhan Deniz — YER6 Geoteknik Kurulu (İnş. Müh. / Geoteknik Uzmanı)",
+    articleAuthor: "Teknik İnceleme & Onay: YER6 Geoteknik Mühendislik Kurulu | Genel Koordinatör: Erhan Deniz (Kurucu / Saha Direktörü)",
     articleReadTime: "{minutes} dakika okuma süresi",
     articlePublished: "Yayınlanma:",
     articleUpdated: "Güncellenme:",
@@ -1099,7 +1099,7 @@ export const dictionary = {
     /* ── KNOWLEDGE ARTICLE DETAIL ── */
     articleTOC: "Table of Contents",
     articleRelated: "Related Contents",
-    articleAuthor: "Reviewed & Approved: Erhan Deniz — YER6 Geotechnical Board (Civil Eng. / Geotechnical Specialist)",
+    articleAuthor: "Technical Review & Approval: YER6 Geotechnical Engineering Board | General Coordinator: Erhan Deniz (Founder / Operations Director)",
     articleReadTime: "{minutes} min read",
     articlePublished: "Published:",
     articleUpdated: "Updated:",
@@ -1681,7 +1681,7 @@ export const dictionary = {
     /* ── KNOWLEDGE ARTICLE DETAIL ── */
     articleTOC: "جدول المحتويات",
     articleRelated: "محتويات ذات صلة",
-    articleAuthor: "مراجعة واعتماد: إرهان دينيز — مجلس YER6 للجيوتقنية (مهندس مدني / خبير جيوتقني)",
+    articleAuthor: "المراجعة والاعتماد الفني: مجلس YER6 للهندسة الجيوتقنية | المنسق العام: إرهان دينيز (المؤسس / مدير العمليات الميدانية)",
     articleReadTime: "{minutes} دقيقة قراءة",
     articlePublished: "نشر:",
     articleUpdated: "تحديث:",
