@@ -11438,6 +11438,175 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     ],
     published: true
   },
+  {
+    slug: "ges-zemin-delgisi-ve-kazik-ayak-uygulamalari",
+    title: "GES Zemin Delgisi, Kazık Ayak İmalatı ve Çekme Testi (Pull-Out) Rehberi",
+    seoTitle: "GES Zemin Delgisi ve Kazık Ayak İmalatı | Güneş Santrali Zemin | YER6",
+    description: "Güneş enerjisi santralleri (GES) için zemin delgisi, çakma kazık, mini kazık panel ayakları, ASTM D3689 çekme (pull-out) testleri ve zemin güçlendirme çözümleri.",
+    excerpt: "Güneş enerji santrallerinde (GES) taşıyıcı konstrüksiyon ayaklarının zemin etüdü, sert kayalık sahalarda ön delgili (pre-drill) mini kazık, rüzgar kaldırma kuvvetine karşı ASTM D3689 çekme (pull-out) testleri ve korozyon dayanımı esasları.",
+    category: "Zemin İyileştirme",
+    readingTime: "15 dk",
+    publishedAt: "2026-06-21",
+    updatedAt: "2026-10-27",
+    heroLabel: "Güneş Enerji Santralleri Geoteknik ve Zemin Mühendisliği",
+    introduction: "Güneş Enerjisi Santralleri (GES); hektarlarca geniş arazilerde kurulan ve 25-30 yıllık işletme ömrü boyunca aşırı rüzgar yüklerine, fırtınalara ve zemin hareketlerine maruz kalan hassas enerji yatırımlarıdır. GES projelerinde en sık yapılan hata; sadece güneş paneli ve invertör kalitesine odaklanıp, tüm konstrüksiyonu ayakta tutan **zemin delgisi, kazık çakımı ve zemin mekaniği** parametrelerini göz ardı etmektir. YER6 Geoteknik olarak; kayalık, bloklu veya aşırı gevşek sahalarda ön delgi (pre-drilling), hidrolik profil çakımı, enjeksiyonlu mini kazık soketleri ve sahada zorunlu ASTM D3689 çekme testleriyle (Pull-Out Test) GES zemin güvenliğini uluslararası standartlarda garanti altına alıyoruz.",
+    sections: [
+      {
+        id: "ges-arazilerinde-geoteknik-riskler-ve-zemin-etudu",
+        title: "1. GES Arazilerinde Karşılaşılan Geoteknik Riskler ve Saha Araştırması",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Türkiye'de GES yatırımları genellikle tarım dışı araziler, taşlık meyilli yamaçlar, kurak kireçtaşı platoları veya geçmiş dolgu sahaları üzerinde projelendirilir. Bu zeminler homojen değildir; santral sahasının bir ucunda sert kireçtaşı veya bazalt tabakası yüzeylenirken, birkaç yüz metre ilerisinde gevşek alüvyon veya aşırı plastisiteli kil katmanlarıyla karşılaşılabilir."
+          },
+          {
+            type: "list",
+            title: "GES Sahalarında En Çok Yaşanan Zemin Problemleri:",
+            items: [
+              "Yüzeye Yakın Sert Kaya ve Bloklu Zemin: Çakıcı makinelerin profilleri bükmesi (refusal), hedeflenen çakma derinliğine (1.8 - 2.5 m) inememesi ve eksen kaçıklıkları.",
+              "Gevşek / Şişen Killi Zeminler: Kış aylarında yağışla yumuşayan zeminde panellerin oturması, yazın kuruma çatlaklarıyla kazık sürtünme kaybı ve eksenel devrilmeler.",
+              "Korozyon ve Agresif Yeraltı Suyu: Zemin özdirencinin düşük, sülfat veya klorür oranının yüksek olduğu sahalarda galvanizli çelik kazıkların 8-10 yıl içinde paslanarak kesit kaybetmesi.",
+              "Eğimli Arazilerde Yüzey Akışı ve Heyelan: Yağışlarla birlikte panel ayaklarının altındaki toprağın oyulması (scour) ve yanal zemin deformasyonları."
+            ]
+          },
+          {
+            type: "note",
+            title: "GES Zemin Etüdü ve Ön Test Önemi",
+            content: "GES sahasında panel yerleşimi kesinleşmeden önce arazi genelini temsil eden noktalarda jeolojik sondajlar, sismik kırılma etütleri ve sahada pilot çakım/çekme testleri yapılmalıdır. Yalnızca yüzeysel gözlemle kazık boyu ve çakım yöntemi belirlemek, santral sahasında binlerce panel ayağının çakılamayarak projenin durmasına neden olur."
+          }
+        ]
+      },
+      {
+        id: "panel-tasiyici-kazik-ayak-yontemleri",
+        title: "2. GES Konstrüksiyon Ayaklarında Kazık Yöntemleri: Çakma vs. Ön Delgili Mini Kazık",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "GES panel sehpalarının zemine sabitlenmesinde arazinin SPT ve jeolojik litolojisine bağlı olarak 3 ana geoteknik yöntem uygulanır:"
+          },
+          {
+            type: "list",
+            title: "GES Kazık Ayak İmalat Türleri:",
+            items: [
+              "Doğrudan Çakma Profil (Direct Ramming): Zemin çakılabilir kum, çakıllı kil veya ayrışmış yumuşak kaya niteliğinde olduğunda (N_SPT < 35); C, U, IPE veya Sigma profiller paletli hidrolik çakıcılarla (GPS koordinatlı) doğrudan zemine çakılır. En hızlı ve ekonomik yöntemdir.",
+              "Ön Delgili Çakma / Soketleme (Pre-Drilling): Masif kalker, bazalt, andezit veya iri bloklu zeminlerde doğrudan çakım imkansızdır. Rotary delgi makineleriyle profil çapından 20-50 mm daha dar pilot delikler delinir; ardından profil bu kılavuz deliğe hidrolik tokmakla sürülür.",
+              "Enjeksiyonlu Mini Kazık Soketi (Micropile / Grout Socket): Gevşek veya aşırı çatlaklı kayalık arazilerde kuyu çapı 150 - 250 mm delinir, çelik profil kuyu merkezine indirilir ve tabandan yukarı çimento harcı basılarak monolitik betonarme kazık ayağı elde edilir."
+            ]
+          },
+          {
+            type: "warning",
+            title: "Şantiye Uyarı: Zorla Çakım Yapmayın",
+            content: "Sert kayaya rastlandığında çakıcı tokmak enerjisini aşırı artırmak, çelik profilin başlığını ezer, gövdesinde burkulma oluşturur ve galvaniz kaplamasını kazıyarak korozyon direncini yok eder. Refusal (çakım durması) anında derhal ön delgi (pre-drilling) makinesine geçilmelidir."
+          }
+        ]
+      },
+      {
+        id: "ruzgar-kaldirma-kuvveti-ve-yanal-yuk-hesabi",
+        title: "3. Rüzgar Kaldırma Yükü (Wind Uplift) ve Geoteknik Mukavemet",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Geleneksel bina temellerinde yapının kendi ağırlığı yerçekimi yönünde zemine basar. Güneş Enerjisi Santrallerinde ise durum tam tersidir: Paneller hafif çelik konstrüksiyon üzerine monte edilir; ancak rüzgar açılı panel yüzeyine vurduğunda devasa bir aerodinamik kaldırma (wind uplift) ve yanal itme (lateral shear) kuvveti yaratır."
+          },
+          {
+            type: "paragraph",
+            content: "Eurocode 1 (EN 1991-1-4) ve TBDY 2018 standartlarına göre bir GES kazık ayağının tasarımında belirleyici olan parametre basma mukavemeti değil, çekme (uplift) mukavemetidir. Kazık-zemin çevre sürtünmesi (skin friction - f_s) rüzgar çekme kuvvetini karşılayamadığı takdirde paneller fırtınada kökünden sökülerek santralde milyonlarca liralık hasar oluşturur."
+          }
+        ]
+      },
+      {
+        id: "saha-cekme-testi-astm-d3689-pull-out",
+        title: "4. Sahada Çekme Testi (Pull-Out Test — ASTM D3689) ve Kabul Kriterleri",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "GES yatırımlarında uluslararası bankaların, sigorta şirketlerinin ve TEDAŞ kabul heyetlerinin zorunlu tuttuğu en kritik kalite doğrulama aşaması **Pull-Out (Çekme) Testi**dir. Bu test imalat öncesinde tasarım parametrelerini kesinleştirmek, imalat sırasında ise çakılan kazıkların güvenliğini teyit etmek için sahada bizzat uygulanır.",
+          },
+          {
+            type: "list",
+            title: "Çekme Testi Uygulama Metodolojisi (ASTM D3689 / ASTM D1143):",
+            items: [
+              "Test Düzeneği: Çakılan pilot kazık üzerine kalibre edilmiş hidrolik kriko, yük hücresi (load cell) ve 0.01 mm hassasiyetli komparatör saatleri monte edilir.",
+              "Kademeli Yükleme: Tasarım çekme yükünün %25, %50, %75, %100, %125 ve %150'si kademeli olarak uygulanır ve her kademede deplasman oturması beklenir.",
+              "Yanal İtme Testi (Lateral Load Test): Rüzgarın panele yandan uyguladığı makaslama kuvvetine karşı kazığın zemin üstü eğilme ve kalıcı deplasman limiti ölçülür.",
+              "Kabul Kriteri: Tasarım yükü altında kazıkta kalıcı elastik olmayan çekme deplasmanının mühendislik tolerans sınırları (genellikle 5 - 10 mm) içinde kaldığı onaylanarak akredite geoteknik rapor düzenlenir."
+            ]
+          }
+        ]
+      },
+      {
+        id: "korozyon-topraklama-ve-sicak-daldirma-galvaniz",
+        title: "5. Zemin Korozyon Riski, Özdirenç ve Korozyon Payı Yönetimi",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "Toprak altında kalan çelik konstrüksiyon ayakları; zemin nemi, çözünmüş tuzlar, pH seviyesi ve topraklama kaçak akımları nedeniyle elektrokimyasal korozyona uğrar. TS EN ISO 1461 standartlarına uygun olarak en az 80-100 mikron sıcak daldırma galvaniz (HDG) kaplama uygulanmalıdır."
+          },
+          {
+            type: "paragraph",
+            content: "Agresif sahalarda galvaniz tek başına 30 yılı çıkaramaz. Zemin aşındırıcılığı yüksekse (pH < 5 veya özdirenç < 2000 ohm.cm), statik hesaplarda çelik profil et kalınlığına 'korozyon payı (corrosion allowance)' eklenmeli veya kuyu içerisine bazik çimento enjeksiyonu basılarak çeliğin zeminle doğrudan teması kesilmelidir."
+          }
+        ]
+      },
+      {
+        id: "yer6-geoteknik-ges-makine-parki-ve-saha-metodolojisi",
+        title: "6. YER6 Geoteknik GES Saha Metodolojisi ve İmalat Kapasitesi",
+        blocks: [
+          {
+            type: "paragraph",
+            content: "YER6 Geoteknik; arazi tipi (Ground-Mounted) ve çatı tipi güneş enerjisi santrallerinde yatırımcılara, EPC yüklenicilerine ve montaj firmalarına entegre saha geoteknik çözümleri sunar. Mobilize ettiğimiz paletli hidrolik delgi riglerimiz, hidrolik tokmaklı çakıcılarımız ve sahada anlık kalibre edilen çekme testi enstrümanlarımızla şantiye takvimine hız kazandırıyoruz."
+          },
+          {
+            type: "list",
+            title: "YER6 GES Geoteknik Hizmet Kapsamı:",
+            items: [
+              "Saha Ön Etüdü, Jeolojik Sondaj ve Refusal Haritalama",
+              "Kayalık Sahalarda Yüksek Hızlı Ön Delgi (Pre-Drilling) İmalatı",
+              "GPS / Total Station Destekli Milimetrik Kazık Çakımı",
+              "Enjeksiyonlu Mini Kazık ve Betonarme Panel Ayak Soketleri",
+              "Akredite Mühendislik Onaylı Pull-Out (Çekme) ve Yanal Yükleme Testleri",
+              "Yamaç ve Eğimli GES Sahalarında İksa ve Şev Güçlendirme"
+            ]
+          }
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "GES sahalarında doğrudan çakma kazık ne zaman yapılamaz, ne zaman ön delgi gerekir?",
+        answer: "Zeminde N_SPT > 50 olan aşırı sıkı çakıl, masif kireçtaşı, andezit, bazalt veya iri bloklu zemin tabakaları bulunduğunda çakıcı makineler profili bükebilir veya hedeflenen gömülme derinliğine (genellikle 1.5 - 2.5 metre) ulaşamaz. Bu durumlarda hidrolik veya darbeli delgi makineleriyle ön delgi (pre-drilling) açılır; profil yerleştirilerek çimento enjeksiyonu veya sıkıştırılmış stabilize dolgu ile sabitlenir."
+      },
+      {
+        question: "GES çekme testi (Pull-out test) neden zorunludur ve nasıl uygulanır?",
+        answer: "Güneş panelleri geniş yüzey alanları nedeniyle rüzgarı bir yelken gibi yakalar ve ayaklara doğrudan yukarı yönlü çekme (uplift) kuvveti uygular. ASTM D3689 normlarına uygun olarak kalibre edilmiş hidrolik krikolar ve deplasman saatleri ile kazık tepe noktasından yukarı çekilerek zemin-kazık sürtünme direnci ölçülür ve projelendirilen emniyet katsayısı doğrulanır."
+      },
+      {
+        question: "Gevşek veya killi arazilerde GES ayaklarının oturması veya oynaması nasıl engellenir?",
+        answer: "Yumuşak killi veya dolgu sahalarda standart çakma profiller zamanla gevşeyebilir. Bu zeminlerde çapı 150-250 mm olan enjeksiyonlu mini kazık soketleri oluşturularak profil zemin içerisine çimento harcı ile kilitlenir, böylece hem oturma hem de yanal deplasmanlar sınırlandırılır."
+      },
+      {
+        question: "GES projelerinde kazık çakma ve delgi hızı günlük ne kadardır?",
+        answer: "Zemin formasyonuna bağlı olarak; çakılabilir zeminlerde hidrolik paletli çakıcılarla günlük 250 - 400 adet direk çakılabilirken, ön delgi gerektiren sert kayalık arazilerde rotary delgi makineleriyle günlük 120 - 200 kuyu delinerek montaja hazır hale getirilir."
+      }
+    ],
+    relatedSlugs: [
+      "mini-kazik-tercih-nedenleri",
+      "zemin-iyilestirme-yontemleri",
+      "kazik-yukleme-testleri",
+      "fore-kazik-nedir"
+    ],
+    keywords: [
+      "ges zemin delgisi",
+      "ges kazık ayak",
+      "ges çekme testi",
+      "pull out testi ges",
+      "güneş santrali mini kazık",
+      "ges ön delgi",
+      "solar panel kazık çakma",
+      "ges zemin iyileştirme"
+    ],
+    published: true
+  },
   ...seoArticles
 ];
 

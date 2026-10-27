@@ -187,6 +187,7 @@ export const services = [
     specs: ["TS EN 14199 & TBDY 2018 Standardı", "Ø150 - Ø300 mm Çap Aralığı", "Alçak Tavan (H < 2.40 m) Kompakt Mini Delgi"],
     applications: [
       "Kentsel dönüşüm alanlarında dar sokak ve bitişik nizam bina temellerinde mini kazık uygulaması",
+      "Güneş Enerjisi Santralleri (GES) kayalık arazilerde ön delgili mini kazık panel ayak montajı ve çekme testleri",
       "Oturan, eğilen veya çatlak oluşan binalarda bodrum kattan temel altı takviyesi (underpinning)",
       "Mevcut radye temel ve tekil sömel altına epoksi filiz ekimiyle mini kazık yük transferi",
       "Derin kazılarda fore kazık veya mini kazık perde ile ankrajlı iksa sistemleri",
@@ -215,6 +216,7 @@ export const services = [
       { question: "Mini kazık mevcut bir yapının altında uygulanabilir mi?", answer: "Evet, bu mini kazığın en sık kullanıldığı durumdur. Yapı içinde ya da çevresinde kompakt ekipmanlarla, mevcut temele zarar vermeden uygulama yapılabilir." },
       { question: "Mini kazık ne kadar yük taşıyabilir?", answer: "Çap, uzunluk, zemin tipi ve enjeksiyon yöntemine bağlı olarak genellikle 30–500 kN arasında eksenel kapasite elde edilebilir. Tasarım hesapları projeye özgü yapılır." },
       { question: "Mini kazık yapan firma seçerken nelere dikkat edilmeli?", answer: "Dar alan/underpinning tecrübesi, enjeksiyonlu imalat kalitesi, ekipman uygunluğu, yükleme testi ve referans projeleri belirleyicidir. YER6, Ankara merkezli olarak Türkiye geneli ve yurt dışında mini kazık ve underpinning uygular." },
+      { question: "Güneş Enerjisi Santrallerinde (GES) mini kazık ve zemin delgisi nasıl uygulanır?", answer: "Sert kayalık, kireçtaşı veya bloklu GES arazilerinde doğrudan profil çakımı yapılamadığında; kompakt rotary delgilerle ön delgi (pre-drilling) açılır veya enjeksiyonlu mini kazık soketleri oluşturulur. İmalat sonrası ASTM D3689 standardına uygun hidrolik çekme testleri (Pull-Out Test) ile rüzgar yükü güvenliği doğrulanır. Detaylı teknik bilgi için [GES Zemin Delgisi ve Kazık Ayak Rehberimizi](/knowledge/ges-zemin-delgisi-ve-kazik-ayak-uygulamalari/) inceleyebilirsiniz." },
       { question: "Mini kazık hizmetinizi hangi şehirlere sunuyorsunuz?", answer: "Türkiye genelinde ve yurt dışındaki projelerde, özellikle dar alan ve underpinning gereksinimlerine yönelik mini kazık hizmetleri sağlamaktayız." }
     ]
   },
