@@ -31,25 +31,25 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     : `${siteConfig.siteUrl}/services/${service.slug}/`;
 
   const serviceSeoTitles: Record<string, string> = {
-    "jet-grout": "Jet Grout Zemin İyileştirme Firmaları | Birim Fiyat 2026 | YER6",
-    dsm: "Deep Soil Mixing (DSM) Zemin İyileştirme Firmaları | YER6",
-    "fore-kazik": "Fore Kazık Zemin İyileştirme & Derin Temel Firmaları | YER6",
-    "mini-kazik": "Mini Kazık Zemin İyileştirme & Güçlendirme Firmaları | YER6",
-    ankraj: "Ankraj Firmaları | Öngermeli İksa ve Derin Kazı | YER6",
-    "iksa-sistemleri": "İksa Sistemleri Firmaları | Derin Kazı Çözümleri | YER6",
+    "jet-grout": "Jet Grout Zemin İyileştirme ve Güçlendirme | YER6 Geoteknik",
+    dsm: "Deep Soil Mixing (DSM) Zemin İyileştirme | YER6 Geoteknik",
+    "fore-kazik": "Fore Kazık Zemin İyileştirme ve Derin Temel | YER6 Geoteknik",
+    "mini-kazik": "Mini Kazık Zemin İyileştirme ve Temel Güçlendirme | YER6 Geoteknik",
+    ankraj: "Zemin Ankrajı ve İksa Sistemleri | YER6 Geoteknik",
+    "iksa-sistemleri": "İksa Sistemleri ve Derin Kazı Çözümleri | YER6 Geoteknik",
     "zemin-iyilestirme": "Zemin İyileştirme | Yöntemler, Firma ve Maliyet 2026 | YER6",
-    "zemin-guclendirme": "Zemin Güçlendirme Firmaları | Maliyet ve Yöntemler 2026",
-    "geoteknik-danismanlik": "Geoteknik Danışmanlık | Zemin Etüdü Firmaları | YER6",
-    "zemin-civisi": "Zemin Çivisi (Soil Nailing) Firmaları | YER6 Geoteknik",
-    "puskurtme-beton": "Püskürtme Beton (Shotcrete) Firmaları | YER6 Geoteknik",
-    "kazik-yukleme-testleri": "Kazık Yükleme ve PIT Testi Firmaları | YER6 Geoteknik",
-    "zemin-etudu": "Zemin Etüdü Firmaları | Sondaj ve Geoteknik Rapor 2026",
-    "tas-kolon": "Taş Kolon Zemin İyileştirme Firmaları | Vibro Replacement | YER6",
-    "diafram-duvar": "Diyafram Duvar Firmaları | Derin Kazı İksa | YER6",
-    "bina-alti-jet-grout": "Bina Altı Jet Grout Firmaları | Temel Güçlendirme | YER6",
-    "cfa-kazik": "CFA Kazık Firmaları | Sürekli Burgulu Kazık Maliyeti",
-    "deep-soil-mixing": "Deep Soil Mixing Firmaları | DSM Zemin Karıştırma | YER6",
-    palplans: "Palplanş Firmaları | Çelik İksa Perdesi ve m2 Fiyatı"
+    "zemin-guclendirme": "Zemin Güçlendirme Yöntemleri ve Uygulamaları | YER6 Geoteknik",
+    "geoteknik-danismanlik": "Geoteknik Danışmanlık ve Mühendislik Hizmetleri | YER6",
+    "zemin-civisi": "Zemin Çivisi (Soil Nailing) ve Şev Stabilitesi | YER6",
+    "puskurtme-beton": "Püskürtme Beton (Shotcrete) İksa Sistemleri | YER6",
+    "kazik-yukleme-testleri": "Kazık Yükleme ve Bütünlük (PIT) Testleri | YER6",
+    "zemin-etudu": "Zemin Etüdü ve Geoteknik Raporlama | YER6 Geoteknik",
+    "tas-kolon": "Taş Kolon Zemin İyileştirme ve Vibro Kompaksiyon | YER6",
+    "diafram-duvar": "Diyafram Duvar ve Derin Kazı İksa Sistemleri | YER6",
+    "bina-alti-jet-grout": "Bina Altı Jet Grout ve Temel Güçlendirme | YER6",
+    "cfa-kazik": "CFA Kazık ve Sürekli Burgulu Kazık Sistemleri | YER6",
+    "deep-soil-mixing": "Deep Soil Mixing (DSM) Zemin İyileştirme | YER6 Geoteknik",
+    palplans: "Palplanş ve Çelik İksa Perdesi Sistemleri | YER6"
   };
   const seoTitle = serviceSeoTitles[service.slug] ?? `${service.title} | YER6 Geoteknik`;
   const schemaDescription = getServiceSchemaDescription(
@@ -58,15 +58,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   );
   const serviceMetaDescriptions: Partial<Record<string, string>> = {
     "jet-grout":
-      "Jet grout firmaları arasında YER6; Türkiye geneli ve yurt dışında, yüksek basınçlı çimento enjeksiyonu ile temel altı güçlendirme, su perdesi ve sıvılaşma önleme uygular. 2026 birim fiyatı için arayın.",
+      "Jet grout zemin iyileştirme ve zemin güçlendirme projelerinde YER6; yüksek basınçlı çimento enjeksiyonu ile temel altı takviye, su perdesi ve sıvılaşma önleme uygular.",
     dsm:
-      "Deep soil mixing zemin iyileştirme ve DSM firmaları arasında YER6; TS EN 14679 standartlarında atıksız zemin karıştırma, çift milli makineler, UCS testleri ve 2026 birim fiyatları sunar.",
+      "Deep soil mixing (DSM) zemin iyileştirme projelerinde YER6; TS EN 14679 standartlarında hafriyatsız zemin karıştırma, çift milli makineler ve UCS testleri sunar.",
     "fore-kazik":
-      "Fore kazık firmaları arasında YER6; Bauer BG 45 ve XCMG makine parkuruyla büyük çaplı fore kazık, baret kazık ve derin temel imalatı yapar. Şeffaf metraj ve birim fiyat için arayın.",
+      "Fore kazık zemin iyileştirme ve derin temel projelerinde YER6; Bauer ve XCMG makine parkuruyla büyük çaplı fore kazık, baret kazık ve iksa imalatı yapar.",
     "mini-kazik":
-      "Mini kazık firmaları arasında YER6; dar alanlarda, bina içinde ve aktif yapıların altında enjeksiyonlu mini kazık ile titreşimsiz temel güçlendirme uygular.",
+      "Mini kazık zemin iyileştirme ve temel güçlendirme projelerinde YER6; dar alanlarda, bina içinde ve aktif yapıların altında enjeksiyonlu mini kazık imalatı sunar.",
     ankraj:
-      "Ankraj firmaları arasında YER6; derin kazı, iksa perdesi ve şev stabilitesi projelerinde öngermeli ankraj, delgi, enjeksiyon ve kabul testleriyle yatay yükleri güvenle zemine aktarır.",
+      "Zemin ankrajı ve iksa sistemlerinde YER6; derin kazı, zemin iyileştirme ve şev stabilitesi projelerinde öngermeli ankraj, delgi, enjeksiyon ve testlerle yatay yükleri güvenle zemine aktarır.",
     "iksa-sistemleri":
       "İksa sistemleri firmaları arasında YER6; kent içi derin kazılarda fore kazık perde, diyafram duvar, ankraj ve enstrümantasyon entegrasyonu ile komşu yapı güvenliğini sağlar.",
     "zemin-iyilestirme":
