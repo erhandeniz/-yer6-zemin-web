@@ -13,7 +13,7 @@ export function ServiceCard({ service, index = 0 }: { service: Service; index?: 
 
   return (
     <Link
-      href={`/services/${service.slug}`}
+      href={`/services/${service.slug}/`}
       className="group block gsap-reveal relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.045] p-6 transition duration-500 hover:-translate-y-2 hover:border-gold-300/40 hover:bg-white/[0.07] focus:outline-none focus:ring-2 focus:ring-gold-300/50 focus:ring-offset-2 focus:ring-offset-obsidian"
       style={{ transitionDelay: `${index * 35}ms` }}
     >

@@ -6,10 +6,10 @@ import { publishedKnowledgeArticles } from "@/data/knowledge";
 import { CALCULATOR_TOOLS } from "@/lib/calculators";
 
 const baseUrl = siteConfig.siteUrl;
-const contentReviewDate = new Date("2026-07-27T00:00:00+03:00");
-const homeReviewDate = new Date("2026-08-12T00:00:00+03:00");
+const contentReviewDate = new Date("2026-10-25T00:00:00+03:00");
+const homeReviewDate = new Date("2026-10-27T00:00:00+03:00");
 const serviceReviewDates: Partial<Record<string, Date>> = {
-  "zemin-iyilestirme": new Date("2026-08-12T00:00:00+03:00")
+  "zemin-iyilestirme": new Date("2026-10-27T00:00:00+03:00")
 };
 export const dynamic = "force-static";
 

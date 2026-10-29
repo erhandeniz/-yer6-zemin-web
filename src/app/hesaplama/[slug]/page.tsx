@@ -154,17 +154,33 @@ export default async function CalculatorPage({ params }: { params: Promise<{ slu
                         {articles[0].title}
                       </h3>
                       <p className="mt-1 text-xs text-white/60">
-                        {tool.h1} hesaplamasının saha imalat aşamaları, birim analizleri, zemin parametreleri ve sözleşme detayları için kapsamlı teknik rehberimizi inceleyin.
+                        {tool.h1} hesaplamasının saha imalat aşamaları, birim analizleri, zemin parametreleri ve sözleşme detayları için kapsamlı teknik rehberimizi veya doğrudan{" "}
+                        <Link
+                          href="/services/zemin-iyilestirme/"
+                          className="font-semibold text-gold-200 underline decoration-gold-300/40 underline-offset-4 hover:text-gold-100"
+                        >
+                          Zemin İyileştirme Yöntemleri ve Saha Uygulamaları
+                        </Link>{" "}
+                        merkezimizi inceleyin.
                       </p>
                     </div>
                   </div>
-                  <Link
-                    href={`/knowledge/${articles[0].slug}/`}
-                    className="inline-flex shrink-0 items-center gap-2 rounded-xl border border-gold-300/40 bg-gold-300/20 px-5 py-2.5 text-xs font-semibold text-gold-200 transition hover:bg-gold-300/30"
-                  >
-                    <span>Maliyet Rehberini Oku</span>
-                    <span>→</span>
-                  </Link>
+                  <div className="flex flex-wrap items-center gap-2 shrink-0">
+                    <Link
+                      href="/services/zemin-iyilestirme/"
+                      className="inline-flex items-center gap-2 rounded-xl border border-white/15 bg-white/[0.06] px-4 py-2.5 text-xs font-semibold text-white/85 transition hover:border-gold-300/40 hover:text-white"
+                    >
+                      <span>Zemin İyileştirme Merkezi</span>
+                      <span>→</span>
+                    </Link>
+                    <Link
+                      href={`/knowledge/${articles[0].slug}/`}
+                      className="inline-flex items-center gap-2 rounded-xl border border-gold-300/40 bg-gold-300/20 px-5 py-2.5 text-xs font-semibold text-gold-200 transition hover:bg-gold-300/30"
+                    >
+                      <span>Maliyet Rehberini Oku</span>
+                      <span>→</span>
+                    </Link>
+                  </div>
                 </div>
               </div>
             )}

@@ -87,19 +87,33 @@ export function CalculatorTool({ tool }: { tool: Tool }) {
     [tool.mode, count, depth, diameter, complexity, soilType, fx]
   );
 
-  // Değerler değiştikçe URL'i güncelle (sayfa yenilenmeden, geçmişi kirletmeden).
+  // Değerler yalnızca kullanıcı varsayılandan farklı bir değer girdiğinde URL'e yazılsın.
+  // Böylece sayfa ilk açıldığında Googlebot ve ziyaretçiler her zaman temiz (parametresiz) canonical URL görür.
   useEffect(() => {
+    const isDefault =
+      diameter === tool.defaults.diameter &&
+      depth === tool.defaults.depth &&
+      count === tool.defaults.count &&
+      soilType === "soft";
+    if (isDefault) return;
+
     const params = new URLSearchParams();
     params.set("cap", String(diameter));
     params.set("boy", String(depth));
     params.set("adet", String(count));
     if (soilType === "hard") params.set("zemin", "hard");
     window.history.replaceState(null, "", `${window.location.pathname}?${params.toString()}`);
-  }, [diameter, depth, count, soilType]);
+  }, [diameter, depth, count, soilType, tool.defaults.diameter, tool.defaults.depth, tool.defaults.count]);
 
   const copyLink = async () => {
     try {
-      await navigator.clipboard.writeText(window.location.href);
+      const params = new URLSearchParams();
+      params.set("cap", String(diameter));
+      params.set("boy", String(depth));
+      params.set("adet", String(count));
+      if (soilType === "hard") params.set("zemin", "hard");
+      const shareUrl = `${window.location.origin}${window.location.pathname}?${params.toString()}`;
+      await navigator.clipboard.writeText(shareUrl);
       setCopied(true);
       window.setTimeout(() => setCopied(false), 2000);
     } catch {

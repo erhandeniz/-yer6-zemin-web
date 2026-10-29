@@ -7900,7 +7900,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
   {
     slug: "yer-alti-zemin-iyilestirme",
     title: "Yer Altı Zemin İyileştirme Rehberi: Yöntemler, Tasarım ve Uygulama",
-    seoTitle: "Zemin İyileştirme Yöntemleri ve Maliyet Hesabı 2026 | YER6",
+    seoTitle: "Yer Altı Zemin İyileştirme Rehberi: Teknikler ve Saha Uygulaması | YER6",
     description: "Yer altı zemin iyileştirme rehberi: jet grout, DSM, taş kolon, enjeksiyon ve 15+ yöntem; seçim matrisi, TBDY 2018, maliyet faktörleri. Uzmanından okuyun.",
     excerpt: "Yer altı zemin iyileştirme yöntemlerinin tamamını — jet grout'tan taş kolona, DSM'den derin kompaksiyona — seçim kriterleri, tasarım parametreleri ve kalite kontrol testleriyle birlikte anlatan Türkiye'nin en kapsamlı rehberi.",
     category: "Zemin İyileştirme",

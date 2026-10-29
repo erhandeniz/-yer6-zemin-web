@@ -44,14 +44,38 @@ export function KnowledgeArticleContent({ article }: { article: KnowledgeArticle
       <article className="px-5 py-24">
         <div className="mx-auto max-w-7xl">
           {/* Başlık ve Üst Bilgi Kartı (Sade, Hızlı ve Modern) */}
-          <div className="mb-8 rounded-[2rem] border border-white/10 bg-white/[0.04] p-6 sm:p-8">
-            <p className="text-xs uppercase tracking-[0.3em] text-gold-200">{article.heroLabel}</p>
-            <h1 className="mt-3 text-3xl font-semibold leading-tight text-white sm:text-5xl">{article.title}</h1>
-            <div className="mt-4 flex flex-wrap items-center gap-3 border-t border-white/10 pt-4 text-xs text-white/50 sm:text-sm">
-              <span>{t("articleAuthor")}</span>
-              <span>•</span>
-              <span>{t("articleReadTime").replace("{minutes}", readingMinutes)}</span>
+          <div className="mb-5 rounded-[2rem] border border-white/10 bg-white/[0.04] p-5 sm:mb-8 sm:p-8">
+            <p className="text-[11px] uppercase tracking-[0.28em] text-gold-200 sm:text-xs">{article.heroLabel}</p>
+            <h1 className="mt-2 text-2xl font-semibold leading-snug text-white sm:mt-3 sm:text-5xl sm:leading-tight">{article.title}</h1>
+            <div className="mt-3 flex flex-wrap items-center justify-between gap-3 border-t border-white/10 pt-3 text-xs text-white/50 sm:mt-4 sm:pt-4 sm:text-sm">
+              <div className="flex flex-wrap items-center gap-2.5">
+                <span>{t("articleAuthor")}</span>
+                <span>•</span>
+                <span>{t("articleReadTime").replace("{minutes}", readingMinutes)}</span>
+              </div>
+              <Link
+                href="/services/zemin-iyilestirme/"
+                className="font-semibold text-gold-200 hover:text-gold-100 transition"
+              >
+                Zemin İyileştirme Hizmeti →
+              </Link>
             </div>
+            {article.sections && article.sections.length > 0 && (
+              <details className="mt-3 rounded-xl border border-white/10 bg-black/30 px-4 py-2.5 text-xs text-white/80 lg:hidden">
+                <summary className="cursor-pointer font-semibold text-gold-200 select-none">
+                  📑 {t("articleTOC")} ({article.sections.length} Bölüm — Hızlı Atlama)
+                </summary>
+                <ul className="mt-3 space-y-2 border-t border-white/10 pt-2.5">
+                  {article.sections.map((section) => (
+                    <li key={section.id}>
+                      <a href={`#${section.id}`} className="block py-0.5 text-white/75 hover:text-gold-200">
+                        {section.title}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </details>
+            )}
           </div>
 
           <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_320px]">

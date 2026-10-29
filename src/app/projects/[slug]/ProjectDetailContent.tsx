@@ -229,7 +229,7 @@ export function ProjectDetailContent({ slug }: { slug: string }) {
                 {relatedServices.map((service) => (
                   <Link
                     key={service.slug}
-                    href={`/services/${service.slug}`}
+                    href={`/services/${service.slug}/`}
                     className="group rounded-2xl border border-white/10 bg-white/[0.04] p-5 transition hover:border-gold-300/40 hover:bg-white/[0.07]"
                   >
                     <div className="flex items-start justify-between gap-4">

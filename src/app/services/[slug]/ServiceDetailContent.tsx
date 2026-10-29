@@ -17,13 +17,13 @@ import { YouTubeVideoPlayer } from "@/components/YouTubeVideoPlayer";
 import { ZeminIyilestirmeAuthoritySections } from "@/components/ZeminIyilestirmeAuthoritySections";
 
 const serviceArticleMap: Record<string, string[]> = {
-  "jet-grout": ["yer-alti-zemin-iyilestirme", "jet-grout-nedir", "jet-grout-hangi-zeminlerde-uygulanir", "jet-grout-kalite-kontrol"],
-  dsm: ["yer-alti-zemin-iyilestirme", "dsm-nasil-uygulanir", "dsm-malzeme-secinimi", "jet-grout-ve-dsm-farki"],
-  "fore-kazik": ["yer-alti-zemin-iyilestirme", "fore-kazik-nedir", "fore-kazik-uygulama-asamalari", "fore-kazik-avantajlari"],
+  "jet-grout": ["zemin-iyilestirme-yontemleri", "jet-grout-nedir", "jet-grout-hangi-zeminlerde-uygulanir", "jet-grout-kalite-kontrol"],
+  dsm: ["zemin-iyilestirme-yontemleri", "dsm-nasil-uygulanir", "dsm-malzeme-secinimi", "jet-grout-ve-dsm-farki"],
+  "fore-kazik": ["zemin-iyilestirme-yontemleri", "fore-kazik-nedir", "fore-kazik-uygulama-asamalari", "fore-kazik-avantajlari"],
   "mini-kazik": ["mini-kazik-nedir", "mini-kazik-tercih-nedenleri", "mini-kazik-mi-fore-kazik-mi", "saha-denetimi-numune-testleri"],
   ankraj: ["ankraj-nedir", "ongermeli-ankraj-firmalari-ve-uygulama-rehberi", "ankraj-uygulama-asamalari", "zemin-iyilestirme-risk-yonetimi"],
   "iksa-sistemleri": ["zemin-iyilestirme-risk-yonetimi", "saha-denetimi-numune-testleri", "zemin-kalite-kontrol-standartlari"],
-  "zemin-iyilestirme": ["yer-alti-zemin-iyilestirme", "zemin-iyilestirme-yontemleri", "zemin-iyilestirme-planlama", "zemin-iyilestirme-risk-yonetimi"],
+  "zemin-iyilestirme": ["zemin-iyilestirme-yontemleri", "yer-alti-zemin-iyilestirme", "zemin-iyilestirme-planlama", "zemin-iyilestirme-risk-yonetimi"],
   "zemin-guclendirme": ["temel-alti-zemin-guclendirme", "zemin-iyilestirme-yontemleri", "sivilasma-riskine-karsi-zemin-guclendirme", "zemin-kalite-kontrol-standartlari"],
   "geoteknik-danismanlik": ["zemin-iyilestirme-planlama", "zemin-kalite-kontrol-standartlari", "saha-denetimi-numune-testleri"],
   "zemin-civisi": ["kazi-destek-sistemleri-nedir", "zemin-iyilestirme-risk-yonetimi", "saha-denetimi-numune-testleri"],
@@ -34,7 +34,7 @@ const serviceArticleMap: Record<string, string[]> = {
   "diafram-duvar": ["kazi-destek-sistemleri-nedir", "zemin-iyilestirme-risk-yonetimi", "fore-kazik-nedir"],
   "bina-alti-jet-grout": ["temel-alti-zemin-guclendirme", "binalari-yikmadan-zemin-guclendirme", "jet-grout-nedir"],
   "cfa-kazik": ["fore-kazik-nedir", "fore-kazik-sureklilik-ve-yukleme-testleri", "zemin-iyilestirme-risk-yonetimi"],
-  "deep-soil-mixing": ["yer-alti-zemin-iyilestirme", "dsm-nasil-uygulanir", "dsm-malzeme-secinimi", "jet-grout-ve-dsm-farki"]
+  "deep-soil-mixing": ["zemin-iyilestirme-yontemleri", "dsm-nasil-uygulanir", "dsm-malzeme-secinimi", "jet-grout-ve-dsm-farki"]
 };
 
 const serviceHubLinks: Partial<Record<string, { href: string; label: string }[]>> = {
@@ -51,39 +51,39 @@ const serviceHubLinks: Partial<Record<string, { href: string; label: string }[]>
 
 const serviceGuideMap: Partial<Record<string, { href: string; label: string }>> = {
   "fore-kazik": {
-    href: "/knowledge/fore-kazik-nedir",
+    href: "/knowledge/fore-kazik-nedir/",
     label: "Ayrıntılı Teknik Rehber: Fore kazık nedir, nasıl yapılır ve çap standartları nelerdir?"
   },
   dsm: {
-    href: "/knowledge/dsm-nedir",
+    href: "/knowledge/dsm-nedir/",
     label: "Ayrıntılı Teknik Rehber: DSM (Deep Soil Mixing) nedir ve derin zemin karıştırma nasıl uygulanır?"
   },
   "jet-grout": {
-    href: "/knowledge/jet-grout-nedir",
+    href: "/knowledge/jet-grout-nedir/",
     label: "Ayrıntılı Teknik Rehber: Jet grout nedir, uygulama aşamaları ve birim fiyatları nelerdir?"
   },
   ankraj: {
-    href: "/knowledge/ankraj-nedir",
+    href: "/knowledge/ankraj-nedir/",
     label: "Ayrıntılı Teknik Rehber: Zemin ankrajı nedir, öngermeli iksa ve çekme testleri nasıl yapılır?"
   },
   "mini-kazik": {
-    href: "/knowledge/mini-kazik-nedir",
+    href: "/knowledge/mini-kazik-nedir/",
     label: "Ayrıntılı Teknik Rehber: Mini kazık nedir ve bina temel güçlendirmede ne zaman tercih edilir?"
   },
   "tas-kolon": {
-    href: "/knowledge/tas-kolon-nedir",
+    href: "/knowledge/tas-kolon-nedir/",
     label: "Ayrıntılı Teknik Rehber: Taş kolon nedir ve zemin iyileştirmede ne zaman uygulanır?"
   },
   "diafram-duvar": {
-    href: "/knowledge/diafram-duvar-nedir",
+    href: "/knowledge/diafram-duvar-nedir/",
     label: "Ayrıntılı Teknik Rehber: Diyafram duvar nedir ve derin kazılarda sızdırmazlık nasıl sağlanır?"
   },
   "zemin-iyilestirme": {
-    href: "/knowledge/zemin-iyilestirme-yontemleri",
+    href: "/knowledge/zemin-iyilestirme-yontemleri/",
     label: "Ayrıntılı Teknik Rehber: Zemin iyileştirme nedir, yöntemler ve TBDY 2018 seçim kriterleri nelerdir?"
   },
   "zemin-guclendirme": {
-    href: "/knowledge/temel-alti-zemin-guclendirme",
+    href: "/knowledge/temel-alti-zemin-guclendirme/",
     label: "Ayrıntılı Teknik Rehber: Bina altı zemin güçlendirme ve temel güçlendirme yöntemleri nelerdir?"
   }
 };
@@ -875,7 +875,7 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
                     {["zemin-guclendirme", "jet-grout", "dsm", "deep-soil-mixing", "fore-kazik", "cfa-kazik", "mini-kazik", "ankraj", "iksa-sistemleri", "zemin-iyilestirme", "geoteknik-danismanlik", "zemin-civisi", "puskurtme-beton", "kazik-yukleme-testleri", "zemin-etudu", "tas-kolon", "diafram-duvar"]
                       .filter((s) => s !== service.slug)
                       .map((s) => (
-                        <Link key={s} href={`/services/${s}`} className="block py-1 hover:text-white transition">
+                        <Link key={s} href={`/services/${s}/`} className="block py-1 hover:text-white transition">
                           → {s.split("-").map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(" ")}
                         </Link>
                       ))}
