@@ -334,16 +334,16 @@ export const seoArticles: KnowledgeArticle[] = [
   },
   {
     slug: "dsm-zemin-iyilestirme-firmalari-ve-birim-fiyatlari",
-    title: "DSM Zemin İyileştirme ve Deep Soil Mixing Metraj Rehberi",
-    seoTitle: "Deep Soil Mixing (DSM) Nedir? Tasarım Kriterleri ve Metraj Hesabı | YER6",
-    description: "DSM (Deep Soil Mixing) zemin iyileştirme firmaları seçimi, m³ ve m² metraj maliyet analizi, karıştırma enerjisi (BRN) ve sıvılaşma önleme rehberi.",
+    title: "Deep Soil Mixing (DSM) Metraj Hesabı, BRN Enerjisi ve Çimento Dozajı Rehberi",
+    seoTitle: "DSM Metraj Hesabı, BRN Enerjisi ve Çimento Dozajı Rehberi | YER6",
+    description: "Deep Soil Mixing (DSM) projelerinde m³ ve m² metraj analizi, alan ikame oranı, karıştırma enerjisi (BRN) ve laboratuvar çimento dozajı kriterleri.",
     excerpt: "Deep Soil Mixing (DSM / Derin Zemin Karıştırma), mekanik karıştırma kanatlarıyla zayıf alüvyal zeminlerde hafriyatsız ve son derece hızlı zemin-çimento kolonları oluşturan modern bir geoteknik yöntemdir.",
     category: "DSM",
     readingTime: "10 dk",
     publishedAt: "2026-07-25",
-    updatedAt: "2026-07-25",
-    heroLabel: "Mühendislik ve Maliyet Rehberi",
-    introduction: "Endüstriyel tesisler, lojistik depolar, organize sanayi bölgeleri (OSB), otoyol rampları ve liman arkası yapılarında zemin taşıma kapasitesini artırmak ve farklı oturmaları sınırlandırmak amacıyla Deep Soil Mixing (DSM) yüksek hızlı ve çevre dostu bir geoteknik yöntemdir. Doğru DSM zemin iyileştirme mühendisliği, hafriyatsız yerinde imalat hızı ve laboratuvar karışım tasarımıyla şantiye ekonomisini optimize eder.",
+    updatedAt: "2026-10-30",
+    heroLabel: "DSM Metraj ve Dozaj Rehberi",
+    introduction: "Endüstriyel tesisler, lojistik depolar, organize sanayi bölgeleri (OSB), otoyol rampları ve liman arkası yapılarında zemin taşıma kapasitesini artırmak ve farklı oturmaları sınırlandırmak amacıyla Deep Soil Mixing (DSM) yüksek hızlı ve çevre dostu bir geoteknik yöntemdir. Doğrudan uygulama ve teklif için ana [DSM Zemin İyileştirme](/services/dsm/) hizmet sayfamızı ve teknik standartlar için [DSM Nedir?](/knowledge/dsm-nedir/) rehberimizi inceleyebilirsiniz.",
     sections: [
       {
         id: "dsm-firmalari-secimi",

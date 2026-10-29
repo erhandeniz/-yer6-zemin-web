@@ -110,7 +110,7 @@ function FaqItem({ question, answer }: { question: string; answer: string }) {
 const serviceHeroH1s: Record<string, string> = {
   "jet-grout": "Jet Grout Zemin İyileştirme ve Güçlendirme",
   dsm: "DSM Zemin İyileştirme (Deep Soil Mixing)",
-  "fore-kazik": "Fore Kazık ve Derin Temel Sistemleri",
+  "fore-kazik": "Fore Kazık Zemin İyileştirme ve Derin Temel Sistemleri",
   "mini-kazik": "Mini Kazık ve Temel Güçlendirme Çözümleri",
   ankraj: "Öngermeli Ankraj ve İksa Destek Sistemleri",
   "iksa-sistemleri": "Derin Kazı İksa Sistemleri ve Çözümleri",
@@ -239,7 +239,11 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
 
               {/* Giriş paragrafı */}
               <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-8">
-                <h2 className="text-3xl font-semibold text-white">{t(`${service.key}_title`)} Nedir?</h2>
+                <h2 className="text-3xl font-semibold text-white">
+                  {service.slug === "zemin-iyilestirme"
+                    ? `${t(`${service.key}_title`)} Mühendislik Uygulaması ve Kapsamı`
+                    : `${t(`${service.key}_title`)} Zemin İyileştirme ve Mühendislik Uygulaması`}
+                </h2>
                 <p className="mt-6 text-lg leading-8 text-white/70">{parseMarkdownLinks(t(`${service.key}_summary`))}</p>
                 <p className="mt-4 text-base leading-7 text-white/65">
                   {parseMarkdownLinks(locale === "tr" && service.detail ? service.detail : t(`${service.key}_detail`))}
@@ -260,7 +264,7 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
               {/* Uygulama Alanları */}
               {"applications" in service && service.applications && service.applications.length > 0 && (
                 <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-8">
-                  <h2 className="text-2xl font-semibold text-white">Uygulama Alanları</h2>
+                  <h2 className="text-2xl font-semibold text-white">{t(`${service.key}_title`)} Uygulama Alanları</h2>
                   <p className="mt-3 text-sm text-white/55">
                     {t(`${service.key}_title`)} hangi projelerde ve zemin koşullarında uygulanır?
                   </p>
@@ -278,7 +282,7 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
               {/* Avantajlar */}
               {"advantages" in service && service.advantages && service.advantages.length > 0 && (
                 <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-8">
-                  <h2 className="text-2xl font-semibold text-white">Avantajlar</h2>
+                  <h2 className="text-2xl font-semibold text-white">{t(`${service.key}_title`)} Avantajları ve Saha Üstünlükleri</h2>
                   <p className="mt-3 text-sm text-white/55">
                     {t(`${service.key}_title`)} uygulamasının teknik ve operasyonel üstünlükleri
                   </p>
@@ -296,7 +300,7 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
               {/* Uygulama Süreci */}
               {"processSteps" in service && service.processSteps && service.processSteps.length > 0 && (
                 <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-8">
-                  <h2 className="text-2xl font-semibold text-white">Uygulama Süreci</h2>
+                  <h2 className="text-2xl font-semibold text-white">{t(`${service.key}_title`)} Saha Uygulama Süreci</h2>
                   <p className="mt-3 text-sm text-white/55">
                     Sahada izlenen adım adım {t(`${service.key}_title`)} uygulama süreci
                   </p>
@@ -319,7 +323,7 @@ export function ServiceDetailContent({ slug }: { slug: string }) {
               {/* Teknik Değerlendirme */}
               {"technicalNote" in service && service.technicalNote && (
                 <div className="rounded-[2rem] border border-gold-300/20 bg-gold-300/[0.06] p-8">
-                  <h2 className="text-2xl font-semibold text-white">Teknik Değerlendirme</h2>
+                  <h2 className="text-2xl font-semibold text-white">{t(`${service.key}_title`)} Mühendislik ve Kalite Değerlendirmesi</h2>
                   <p className="mt-4 text-sm leading-7 text-white/70">
                     {parseMarkdownLinks(service.technicalNote as string)}
                   </p>
