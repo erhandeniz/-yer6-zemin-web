@@ -67,7 +67,7 @@ export const cityPages: CityPage[] = [
   {
     slug: "istanbul-zemin-guclendirme",
     city: "İstanbul",
-    title: "İstanbul Fore Kazık, Jet Grout ve Zemin Güçlendirme Firmaları",
+    title: "İstanbul Zemin Güçlendirme, Fore Kazık ve Jet Grout Uygulamaları",
     description:
       "İstanbul'da fore kazık, jet grout, bina altı jet grout, DSM, CFA kazık, mini kazık, ankraj ve iksa sistemleri projeleri için YER6 geoteknik mühendislik çözümleri.",
     heroLead:
@@ -84,7 +84,7 @@ export const cityPages: CityPage[] = [
   {
     slug: "ankara-zemin-guclendirme",
     city: "Ankara",
-    title: "Ankara Fore Kazık, Jet Grout ve Zemin Güçlendirme Firmaları",
+    title: "Ankara Zemin Güçlendirme, Fore Kazık ve Jet Grout Uygulamaları",
     description:
       "Ankara'da fore kazık, jet grout, DSM zemin iyileştirme, CFA kazık, ankraj ve iksa sistemleri için YER6 İvedik OSB merkezli geoteknik mühendislik çözümleri.",
     heroLead:

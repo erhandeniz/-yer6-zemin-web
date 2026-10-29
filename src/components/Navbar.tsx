@@ -41,7 +41,7 @@ export function Navbar() {
           </span>
           <span className="leading-tight">
             <span className="block brand-title text-base sm:text-[1.22rem]">YER6</span>
-            <span className="hidden brand-subtitle sm:block">Geotechnical</span>
+            <span lang="en" className="hidden brand-subtitle sm:block">GEOTECHNICAL</span>
           </span>
         </Link>
 

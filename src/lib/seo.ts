@@ -316,6 +316,10 @@ export function localBusinessSchema() {
     legalName: "YER6 Geoteknik",
     alternateName: [
       "YER6",
+      "YER6 Zemin",
+      "Yer 6",
+      "Yer 6 Zemin",
+      "Yer 6 Geoteknik",
       "YER6 Geoteknik",
       "YER6 Geotechnical"
     ],
@@ -335,10 +339,13 @@ export function localBusinessSchema() {
     },
     knowsAbout: [
       "Jet Grout",
+      "Jet Beton",
+      "Graut Beton",
       "Fore Kazık",
       "Deep Soil Mixing (DSM)",
       "Zemin İyileştirme",
       "Zemin Güçlendirme",
+      "Zemin Etüdü",
       "Mini Kazık",
       "Zemin Ankrajı",
       "İksa Sistemleri",

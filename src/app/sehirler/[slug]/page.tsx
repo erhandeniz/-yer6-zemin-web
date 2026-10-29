@@ -40,7 +40,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: { absolute: cityPage.title },
     description: cityPage.description,
     alternates: {
-      canonical: pageUrl
+      canonical: pageUrl,
+      languages: { "tr-TR": pageUrl }
     },
     openGraph: {
       title: `${cityPage.title} | YER6`,
