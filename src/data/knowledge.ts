@@ -926,23 +926,23 @@ export const knowledgeArticles: KnowledgeArticle[] = [
   },
   {
     slug: "fore-kazik-nedir",
-    title: "Fore Kazık Nedir? TS EN 1536 ve TBDY 2018 Esasları, Çaplar, Delgi ve Donatılı İmalat Rehberi",
-    seoTitle: "Fore Kazık Nedir? Nasıl Yapılır, Standartları ve Çaplar | YER6",
+    title: "Fore Kazık Nedir? Nasıl Yapılır, Çapları, Hesabı ve TS EN 1536 İmalat Rehberi",
+    seoTitle: "Fore Kazık Nedir? Nasıl Yapılır, Çapları ve Hesabı | YER6",
     description:
-      "Fore kazık nedir ve nasıl yapılır? TS EN 1536 ve TBDY 2018 standartlarında hidrolik rotary delgi makineleri, bentonit reolojisi, muhafaza borusu, tremie betonlama, PIT ve CSL testleri rehberi.",
+      "Fore kazık nedir, nasıl yapılır ve kaç metre iner? Donatılı/donatısız fore kazık sistemi, TS EN 1536 rotary delgi, bentonit, tremi borusu, donatı hesabı ve avantajları.",
     excerpt:
       "Fore kazık; zemin taşıma gücünün yetersiz olduğu sahalarda üst yapı yüklerini derinlerdeki sağlam jeolojik formasyonlara aktarmak veya derin kazılarda rijit iksa perdesi oluşturmak amacıyla rotary makinelerle açılan kuyuya donatı kafesi indirilip tremi borusuyla yerinde beton dökülerek teşkil edilen yüksek taşıma kapasiteli derin temel elemanıdır.",
     category: "Fore Kazık",
     readingTime: "32 dk",
     publishedAt: "2026-06-21",
-    updatedAt: "2026-10-21",
+    updatedAt: "2026-10-30",
     heroLabel: "Fore Kazık Geoteknik Bilgi Merkezi",
     introduction:
-      "**Fore kazık (bored pile / drilled shaft)**; taşıma gücü yetersiz olan zeminlerde bina, köprü, viyadük ve rüzgar türbini gibi ağır süper-strüktür yüklerini derindeki sağlam zemin veya ana kaya tabakalarına güvenle aktarmak amacıyla hidrolik rotary delgi makineleriyle açılan dairesel kuyuya çelik donatı kafesi indirilip tremi borusuyla yerinde beton dökülerek teşkil edilen yüksek taşıma kapasiteli bir **betonarme derin temel ve iksa sistemi**dir. YER6 Geoteknik olarak; TS EN 1536, FHWA GEC-010 ve TBDY 2018 standartlarında Ø65 cm'den Ø150 cm'ye kadar geniş çap yelpazesinde son teknoloji hidrolik rotary makineler, osilatörlü muhafaza borusu (casing) sistemleri ve bağımsız akredite zemin laboratuvarı doğrulama protokollerimizle Türkiye genelinde fore kazık projelerini anahtar teslim gerçekleştiriyoruz.",
+      "**Fore kazık (bored pile / drilled shaft)**; taşıma gücü yetersiz olan zeminlerde bina, köprü, viyadük ve rüzgar türbini gibi ağır süper-strüktür yüklerini derindeki sağlam zemin veya ana kaya tabakalarına güvenle aktarmak amacıyla hidrolik rotary delgi makineleriyle açılan dairesel kuyuya çelik donatı kafesi indirilip tremi borusuyla yerinde beton dökülerek teşkil edilen yüksek taşıma kapasiteli bir **betonarme derin temel ve iksa sistemi**dir. YER6 Geoteknik olarak; TS EN 1536, FHWA GEC-010 ve TBDY 2018 standartlarında Ø65 cm'den Ø150 cm'ye kadar geniş çap yelpazesinde [Fore Kazık Uygulamaları](/services/fore-kazik/) ve bağımsız akredite zemin laboratuvarı doğrulama protokollerimizle Türkiye genelinde projeleri anahtar teslim gerçekleştiriyoruz.",
     sections: [
       {
         id: "fore-kazik-tanimi-ve-calisma-mekanigi",
-        title: "Fore Kazık Nedir ve Yük Aktarım Mekaniği Nasıl Çalışır?",
+        title: "Fore Kazık Nedir? Donatılı ve Donatısız Fore Kazık Sistemi Nasıl Çalışır?",
         blocks: [
           {
             type: "paragraph",
@@ -952,13 +952,15 @@ export const knowledgeArticles: KnowledgeArticle[] = [
           {
             type: "paragraph",
             content:
-              "Fore kazıklar üst yapıdan gelen eksenel basma, çekme (uplift) ve yanal (deprem/rüzgar) kesme kuvvetlerini zemine iki temel mekanizma ile aktarır:"
+              "Fore kazık sistemi üst yapıdan gelen eksenel basma, çekme (uplift) ve yanal (deprem/rüzgar) kesme kuvvetlerini zemine iki temel mekanizma ile aktarır ve uygulama amacına göre donatılı veya donatısız olarak teşkil edilir:"
           },
           {
             type: "list",
             items: [
               "Uç Direnci (End Bearing - Q_b): Kazık ucunun sağlam kayaya veya yüksek taşıma gücüne sahip sıkı tabakalara oturmasıyla oluşan direkt basma direncidir. Q_b = q_b · A_b formülüyle hesaplanır. Sağlam tabakaya soketlenen kazıklarda toplam taşıma gücünün büyük bölümünü uç direnci karşılar.",
-              "Çevre Sürtünmesi (Skin Friction - Q_s): Kazık betonunun silindirik dış yüzeyi ile temas ettiği zemin katmanları arasındaki kayma gerilmesi direncidir. Q_s = sum (q_s,i · A_s,i) formülüyle hesaplanır. Kil ve kum tabakalarında kazık boyu boyunca oluşan sürtünme kuvveti, yükün çevre zemine sönümlenerek yayılmasını sağlar."
+              "Çevre Sürtünmesi (Skin Friction - Q_s): Kazık betonunun silindirik dış yüzeyi ile temas ettiği zemin katmanları arasındaki kayma gerilmesi direncidir. Q_s = sum (q_s,i · A_s,i) formülüyle hesaplanır. Kil ve kum tabakalarında kazık boyu boyunca oluşan sürtünme kuvveti, yükün çevre zemine sönümlenerek yayılmasını sağlar.",
+              "Donatılı Fore Kazık Nedir: Boyuna çelik donatı filizleri ve helisel etriye (fret) kafesi içeren, hem eksenel basma/çekme yüklerini hem de deprem ve derin kazı yanal eğilme momentlerini karşılayan ana taşıyıcı betonarme kazıktır.",
+              "Donatısız Fore Kazık Nedir: Kesişen (secant pile) kazıklı su geçirimsiz iksa perdelerinde yalnızca su kesme ve ara dolgu görevi gören birincil (primer / dişi) kazıklarda veya eğilme momenti almayan özel rijit dolgu kolonlarında donatısız (yalın beton veya plastik beton) imal edilen kazık tipidir; yapısal ikincil (sekonder / erkek) kazıklar ise tam boy donatılı yapılır."
             ]
           },
           {
@@ -971,29 +973,30 @@ export const knowledgeArticles: KnowledgeArticle[] = [
       },
       {
         id: "rotary-delgi-mekanigi-ve-kelly-bar-dinamikleri",
-        title: "TS EN 1536 & FHWA GEC-010 Normlarına Göre Rotary Delgi Mekaniği",
+        title: "Fore Kazık Nasıl Yapılır ve Nasıl Uygulanır? (TS EN 1536 Delgi, Gidaj Kalıbı ve Karotiyer)",
         blocks: [
           {
             type: "paragraph",
             content:
-              "Fore kazık delgisinin verimliliği ve kuyu düşeyliği, makinenin döner kafa (rotary head) torkuna (M_t), baskı kuvvetine (crowd force, F_c) ve delgi takımı teleskopik Kelly bar geometrisine doğrudan bağlıdır. Mekanik güç eşitliği: P = M_t · omega formülüyle tanımlanır. Sert kaya tabakalarında ilerleyebilmek için 150 ila 450 kNm tork kapasitesine ve 200 ila 400 kN hidrolik baskı kuvvetine sahip makineler (Bauer BG, Soilmec SR) kullanılır."
+              "Fore kazık uygulaması sahada 6 ardışık mühendislik adımıyla yürütülür: (1) Harita aplikasyonu ve fore kazık gidaj kalıbı (kılavuz duvar / guide wall) teşkili, (2) Hidrolik rotary makine ile kılıflı veya bentonit destekli kuyu delgisi, (3) Kuyu dibi temizliği (desanding), (4) Çelik donatı kafesinin indirilmesi, (5) Tremi borusuyla dipten yukarı kesintisiz beton dökümü ve (6) PIT/CSL bütünlük testleri. Delgi verimliliği ve kuyu düşeyliği makinenin döner kafa (rotary head) torkuna (M_t = 150–450 kNm), baskı kuvvetine (F_c = 200–400 kN) ve delgi takımına doğrudan bağlıdır."
           },
           {
             type: "list",
-            title: "Kelly Bar Tipleri ve Delici Uçlar",
+            title: "Gidaj Kalıbı, Kelly Bar Tipleri ve Delici Uçlar (Burgu, Kova, Karotiyer)",
             items: [
+              "Fore Kazık Gidaj Kalıbı (Kılavuz Beton / Guide Wall): Kesişen ve teğet iksa kazıklarında kazık merkez aksını milimetrik olarak sabitlemek, ilk 1.0–1.5 metrede kuyu ağzının göçmesini önlemek ve delgi makinesine şakul kılavuzluğu sağlamak için dökülen betonarme şablon kiriştir.",
               "Kilitli Kelly Bar (Interlocking Kelly Bar): Ağır kaya delgisinde tahrik torkunu ve hidrolik baskı kuvvetini Kelly segmentleri arasındaki mekanik tırnaklar vasıtasıyla kayıpsız uca iletir. Sert marn, andezit ve kireçtaşında soket açmada zorunludur.",
               "Sürtünmeli Kelly Bar (Friction Kelly Bar): Yumuşak killi ve alüvyal zeminlerde hızlı delgi ve derin kuyularda (40-60 m) teleskopik hafiflik sağlar.",
               "Burgu (Auger): Kohezyonlu killerde zemin malzemesini helezonik kanatlarıyla kuyu dışına çıkaran delici takım.",
               "Kova (Drilling Bucket): Yeraltı suyu seviyesi altındaki gevşek kumlarda ve çamurlu ortamlarda alt kapağıyla malzemeyi içine hapsedip kuyu dışına alan sistem.",
-              "Karotiyer (Core Barrel): Sert kayaları elmas/tungsten dişlerle dairesel keserek kaya karotu çıkaran silindirik başlık."
+              "Fore Kazık Karotiyer (Core Barrel): Sert kaya tabakalarını, betonarme engelleri veya iri blokları elmas/tungsten karbür mermi dişlerle (bullet teeth / roller bit) dairesel keserek kaya karotu çıkaran ve sağlam kayada soket boyu açan silindirik başlıktır."
             ]
           }
         ]
       },
       {
         id: "kuyu-stabilitesi-bentonit-ve-polimer-reolojisi",
-        title: "Kuyu Stabilitesi: Bentonit ve Polimer Çamuru Reolojisi",
+        title: "Bentonit Ne İşe Yarar? Kuyu Stabilitesi ve TS EN 1536 Çamur Parametreleri",
         blocks: [
           {
             type: "paragraph",
@@ -1015,12 +1018,12 @@ export const knowledgeArticles: KnowledgeArticle[] = [
       },
       {
         id: "muhafaza-borusu-casing-surme-cekme-dinamikleri",
-        title: "Kılıflı Delgi (Casing): Osilatör ve Döner Kafa Mekaniği",
+        title: "Fore Kazık Muhafaza Borusu (Kazık Borusu / Casing) ve Kılıflı Delgi",
         blocks: [
           {
             type: "paragraph",
             content:
-              "Çevre yapıların çok yakın olduğu hassas kentsel parsellerde veya çamur kullanımının kısıtlandığı sahalarda, kuyu boydan boya çelik muhafaza borusu (casing) sürülerek açılır. Casing, hidrolik döner kafa (rotary drive) veya delgi riginin altına bağlanan hidrolik boru osilatörü (casing oscillator) ile çift yönlü döndürülerek zemine çakılır."
+              "Çevre yapıların çok yakın olduğu hassas kentsel parsellerde, gevşek dolgularda veya yeraltı suyu akışının yüksek olduğu sahalarda kuyu boydan boya çelik muhafaza borusu (kazık borusu / casing) sürülerek açılır. Çift cidarlı çelik kazık borusu, hidrolik döner kafa (rotary drive) veya delgi riginin altına bağlanan hidrolik boru osilatörü (casing oscillator) ile döndürülerek zemine çakılır."
           },
           {
             type: "paragraph",
@@ -1031,12 +1034,12 @@ export const knowledgeArticles: KnowledgeArticle[] = [
       },
       {
         id: "tremi-borusuyla-su-alti-beton-dokum-fizigi",
-        title: "Tremi Borusuyla Su Altı Beton Döküm Fiziği",
+        title: "Fore Kazık Tremi Borusu Nedir? Su Altı Beton Döküm Kuralları",
         blocks: [
           {
             type: "paragraph",
             content:
-              "Fore kazık imalatında kalitenin kalbi tremi (tremie) beton döküm disiplinidir. Beton hiçbir zaman yukarıdan kuyuya serbest düşüşle dökülmez! Su veya bentonit dolu kuyuya beton, tabana kadar inen 250-300 mm çapındaki çelik tremi borusu vasıtasıyla dipten yukarı dökülür."
+              "Fore kazık imalatında kalitenin kalbi tremi borusu (tremie pipe) ile beton döküm disiplinidir. Beton hiçbir zaman yukarıdan kuyuya serbest düşüşle dökülmez! Kuru, sulu veya bentonit dolu kuyuya beton, kuyu tabanına kadar indirilen 200-250 mm çapındaki sızdırmaz contalı çelik tremi borusu vasıtasıyla dipten yukarıya doğru dökülür."
           },
           {
             type: "list",
@@ -1052,58 +1055,60 @@ export const knowledgeArticles: KnowledgeArticle[] = [
       },
       {
         id: "donati-kafesi-ve-paspayi-muhendisligi",
-        title: "Donatı Kafesi ve Paspayı Mühendisliği",
+        title: "Fore Kazık Donatısı, Donatı Detayı ve Donatı Hesabı Esasları",
         blocks: [
           {
             type: "paragraph",
             content:
-              "Fore kazık donatı kafesleri; B420C veya B500C nervürlü donatı çeliklerinden silindirik kafes şeklinde imal edilir. Boyuna donatılar, helisel spiral etriye (fret) ile sarılır ve kafesin rijitliği iç bileziklerle (stiffener rings) güvenceye alınır."
+              "Fore kazık donatısı; B420C veya B500C nervürlü donatı çeliklerinden silindirik kafes şeklinde imal edilir. Boyuna donatılar, helisel spiral etriye (fret donatısı) ile sarılır ve kafesin rijitliği her 2.0–2.5 metrede bir yerleştirilen iç çember bileziklerle (stiffener rings) güvenceye alınır."
           },
           {
             type: "list",
             items: [
-              "Paspayı Tekerlekleri (Roller Spacers): Donatının kuyu merkezinde kalması ve her yönde asgari 60-75 mm beton paspayı sağlanması için kafes boyunca her 2-3 metrede bir plastik veya harç tekerlekler monte edilir. Blok paspayı kuyu çeperini kazıyacağından yasaktır.",
-              "Manşonlu Birleşim (Mechanical Couplers): Derin kazıklarda (20-50 m) kafesler kuyu başında birbirine eklenir. Bindirme boyu (lap splice) yerine tork kontrollü mekanik manşon kullanılması donatı sıkışıklığını önler ve betonun agregasız geçişini garanti eder."
+              "Fore Kazık Donatı Hesabı (TBDY 2018 & TS EN 1536): TBDY 2018 Bölüm 16.8 uyarınca deprem bölgelerindeki taşıyıcı fore kazıklarda boyuna donatı oranı kazık brüt kesit alanının %0.8'inden (%0.008 A_c) az olamaz. Kazık üst ucunda (başlık kirişi birleşiminden itibaren en az 2D veya moment sıfır noktası + 3D boyunca) sargı etriyesi sıklaştırması (8–10 cm adım) uygulanır.",
+              "Fore Kazık Donatı Detayı ve Paspayı Tekerlekleri: Donatının kuyu merkezinde kalması ve her yönde asgari 75 mm beton paspayı sağlanması için kafes boyunca her 2-3 metrede bir döner plastik/harç paspayı tekerlekleri (roller spacers) monte edilir. Sabit küp paspayı kuyu çeperini kazıyacağından kullanılmaz.",
+              "Manşonlu Birleşim (Mechanical Couplers): Derin kazıklarda (20-50 m) 12 metrelik donatı kafesleri kuyu başında birbirine eklenir. Bindirme boyu (lap splice) yerine tork kontrollü mekanik manşon veya tam penetrasyonlu kaynak kullanılması donatı sıkışıklığını önler."
             ]
           }
         ]
       },
       {
         id: "kalite-kontrol-pit-csl-ve-yukleme-testleri",
-        title: "Kalite Kontrol ve Kabul Deneyleri: PIT, CSL ve Statik Yükleme",
+        title: "Fore Kazık Avantajları, Dezavantajları ve Kalite Kontrol (PIT / CSL) Testleri",
         blocks: [
           {
             type: "paragraph",
             content:
-              "Yeraltında gözle görülemeyen betonarme kazığın sürekliliği ve taşıma kapasitesi akredite tahribatsız testlerle doğrulanır:"
+              "Fore kazık sisteminin saha avantajları, dikkat edilmesi gereken uygulama kısıtları ve yeraltında gözle görülemeyen betonarme kazığın sürekliliğini doğrulayan akredite test protokolleri şunlardır:"
           },
           {
             type: "list",
             items: [
+              "Fore Kazık Avantajları ve Faydaları: Çok yüksek eksenel ve yanal yük taşıma kapasitesi üretir (tek kazıkta 150–1000+ ton), çakma kazıklara kıyasla darbe gürültüsü ve yıkıcı titreşim oluşturmadan komşu binaların dibinde uygulanabilir, sert kaya tabakalarına soketlenebilir ve Ø65 cm'den Ø150+ cm'ye kadar istenen çap/derinlikte imal edilebilir.",
+              "Fore Kazık Dezavantajları ve Saha Riskleri: Ağır rotary makine (40–90 ton) için sağlam çalışma platformu gerektirir, kuyu dibi temizliği ve tremi beton disiplinine uyulmazsa boyun verme (necking) veya uç yumuşaması riski doğar, çamurlu delgide şantiye atık yönetimi gerektirir.",
               "Düşük Gerinimli Kazık Bütünlük Testi (PIT, ASTM D5882): Kazık başına el çekiciyle vurulan darbenin ivmeölçerle kaydedilen yankı dalgaları incelenir; boyun verme, çatlak, beton kalitesizliği veya kazık boyu milisaniye bazında analiz edilir.",
               "Cross-hole Sonic Logging (CSL, ASTM D6760): Donatı kafesine bağlanan çelik borular içerisine ultrasonik problar sarkıtılarak betonun ultrasonik dalga geçiş süresi (FAT) ölçülür; 3 boyutlu segregasyon haritası çıkarılır.",
-              "Statik Eksenel Yükleme Deneyi (ASTM D1143): Kentledge ağırlığı veya reaksiyon kazıkları kurularak hidrolik krikoyla tasarım yükünün 1.5 - 2.0 katına kadar yükleme yapılır; Davisson kriteriyle sınır oturma doğrulanır.",
-              "Yanal Yükleme Deneyi (ASTM D3966): Deprem ve rüzgar momentlerini karşılamak üzere kazık başı yatay deplasman ve p-y eğrileri doğrulanır."
+              "Statik ve Yanal Yükleme Deneyi (ASTM D1143 / D3966): Hidrolik krikoyla tasarım yükünün 1.5 - 2.0 katına kadar yükleme yapılarak sınır oturma ve p-y deplasman eğrileri doğrulanır."
             ]
           }
         ]
       },
       {
         id: "tbdy-2018-ve-eurocode7-eksenel-kapasite",
-        title: "TBDY 2018 ve Eurocode 7'ye Göre Eksenel Taşıma Kapasitesi Analizi",
+        title: "Fore Kazık Hesabı, Kaç Metre İner, Kaç Metre Arayla Dikilir ve Kaç Katlı Binaya Yapılır?",
         blocks: [
           {
             type: "paragraph",
             content:
-              "Fore kazık eksenel taşıma gücü geoteknik zemin parametrelerine göre analitik olarak boyutlandırılır:"
+              "Fore kazık hesabı; üst yapıdan gelen eksenel/yanal kuvvetler ile sondaj ve laboratuvar deneylerinden (SPT, CPT, presiyometre, kaya RQD/UCS) elde edilen geoteknik parametrelere göre TBDY 2018 ve Eurocode 7 uyarınca yapılır:"
           },
           {
             type: "list",
             items: [
-              "Kohezyonlu Zeminlerde Alfa (alpha) Yöntemi: Birim çevre sürtünmesi q_s = alpha · c_u formülüyle bulunur. alpha katsayısı c_u / p_a oranına bağlı olarak 0.40 - 0.55 aralığındadır.",
-              "Kohezyonsuz Zeminlerde Beta (beta) Yöntemi: q_s = beta · sigma'_v0 = K_s · tan(delta) · sigma'_v0 formülüyle efektif düşey gerilmeye bağlanır.",
-              "Uç Direnci Hesabı: Kilde q_b = N_c · c_u (N_c = 9); kum ve kayada q_b = N_q · sigma'_vb veya tek eksenli kaya mukavemetine göre q_b = C · sqrt(q_u) formülüyle bulunur.",
-              "Grup Kazık Verimi (Converse-Labarre): Kazıklar arası mesafe azaldığında gerilme soğanlarının kesişimi dikkate alınarak grup azaltma faktörü (eta) hesaplanır."
+              "Fore Kazık Kaç Metre İner (Derinlik): Standart bir sabit boy yoktur; kazık boyu sağlam zemin veya ana kaya tabakasının derinliğine göre belirlenir. Türkiye'deki bina ve iksa projelerinde tipik olarak 12 m ila 36 m, derin alüvyon ve viyadük temellerinde 40 m ila 65+ m derinliğe iner.",
+              "Fore Kazık Kaç Metre Arayla Dikilir (Aks Aralığı): Temel altı taşıyıcı grup kazıklarda grup verimi kaybını önlemek için kazıklar eksenden eksene en az 2.5D – 3.0D (örneğin Ø80 cm kazıkta 2.0 – 2.4 metre) arayla yerleştirilir. İksa perdelerinde ise aralıklı kazıklar 1.5D – 2.0D, teğet kazıklar D + 10–20 cm, kesişen (secant) kazıklar ise 0.85D – 0.90D aks aralığıyla dikilir.",
+              "Fore Kazık Kaç Katlı Binaya Yapılır: Fore kazık kararı yalnızca kat sayısına göre değil, yerel zemin sınıfına (ZD, ZE, ZF), sıvılaşma potansiyeline ve derin kazı yüksekliğine göre verilir. Zayıf alüvyon veya sıvılaşma riskli sahalarda 3–4 katlı yapılarda dahi zorunlu olabilirken, 8–15+ katlı yüksek yapılarda ve 2+ bodrumlu derin kazılarda standart çözümdür.",
+              "Kohezyonlu Zeminlerde Alfa (alpha) ve Kohezyonsuz Zeminlerde Beta (beta) Hesabı: Kil tabakalarında birim çevre sürtünmesi q_s = alpha · c_u; kumlarda ise q_s = K_s · tan(delta) · sigma'_v0 formülüyle hesaplanır. Uç direnci kilde q_b = 9 · c_u, kayada ise q_b = C · sqrt(q_u) bağıntısıyla bulunur."
             ]
           }
         ]
@@ -1120,16 +1125,31 @@ export const knowledgeArticles: KnowledgeArticle[] = [
           {
             type: "paragraph",
             content:
-              "YER6 Geoteknik'in canlı [Fore Kazık Maliyet Hesaplama](/hesaplama/fore-kazik-maliyet-hesaplama/) modülü ile zemin sınıfınızı ve kazık metrajınızı girerek anında resmi ihale ön maliyetinizi oluşturabilirsiniz."
+              "YER6 Geoteknik'in canlı [Fore Kazık Maliyet Hesaplama](/hesaplama/fore-kazik-maliyet-hesaplama/) modülü ile zemin sınıfınızı ve kazık metrajınızı girerek anında ön metraj ve bütçe analizinizi oluşturabilir, [Fore Kazık Firmaları ve Uygulamaları](/services/fore-kazik/) sayfamızdan teknik teklif talep edebilirsiniz."
           }
         ]
       }
     ],
     faq: [
       {
-        question: "Fore kazık nedir ve ne zaman tercih edilmelidir?",
+        question: "Fore kazık nedir ve nasıl yapılır?",
         answer:
-          "Fore kazık; üst yapı yüklerini derindeki sağlam zemin veya ana kayaya aktaran, yerinde dökme betonarme derin temel elemanıdır. Yüzeysel radye temelin taşıma gücünün yetmediği, aşırı oturma veya sıvılaşma riski bulunan zeminlerde tercih edilir."
+          "Fore kazık; üst yapı yüklerini derindeki sağlam zemine aktaran veya derin kazılarda iksa perdesi oluşturan yerinde dökme betonarme kazıktır. Hidrolik rotary makineyle kuyu delinir, kuyu dibi temizlenir, çelik donatı kafesi indirilir ve tremi borusuyla tabandan yukarıya doğru beton dökülerek imal edilir."
+      },
+      {
+        question: "Fore kazık kaç metre iner ve kaç metre arayla dikilir?",
+        answer:
+          "Fore kazık derinliği sağlam zemin/kaya kotuna göre tipik olarak 12 m ile 45+ m arasında değişir. Temel altı taşıyıcı kazıklarda eksenden eksene mesafe kazık çapının 2.5 ila 3 katı (2.5D–3D, örn. Ø80 cm için 2.0–2.4 m); iksa perdelerinde ise teğet (D+15 cm) veya aralıklı (1.5D–2.0D) olarak uygulanır."
+      },
+      {
+        question: "Donatılı fore kazık ve donatısız fore kazık nedir?",
+        answer:
+          "Donatılı fore kazık, boyuna çelik demirler ve helisel etriye kafesi içeren, eğilme momenti ve eksenel yük taşıyan ana yapısal kazıktır. Donatısız fore kazık ise kesişen (secant) kazık perdelerinde yalnızca su sızdırmazlığı sağlayan birincil (dişi) kazıklarda kullanılan yalın/plastik beton kolondur."
+      },
+      {
+        question: "Fore kazık kaç katlı binaya yapılır?",
+        answer:
+          "Sadece kat sayısına bağlı değildir; zemin etüdündeki taşıma gücü, oturma ve sıvılaşma riskine bağlıdır. Zayıf alüvyon (ZE/ZF) zeminlerde 3–4 katlı binalarda bile uygulanırken, çok katlı binalarda ve derin bodrumlu kazılarda doğrudan zorunludur."
       },
       {
         question: "Fore kazık kaç şiddetinde depreme dayanır?",
@@ -1144,7 +1164,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
       {
         question: "Bentonit çamuru fore kazık kuyusunda ne işe yarar?",
         answer:
-          "Yeraltı suyu bulunan sahalarda kuyu çeperinin göçmesini engeller. Hidrostatik basınç oluşturarak ve kuyu cidarında geçirimsiz filtre keki teşkil ederek kuru kuyu stabilitesi sağlar."
+          "Yeraltı suyu bulunan sahalarda kuyu çeperinin göçmesini engeller. Hidrostatik basınç oluşturarak ve kuyu cidarında geçirimsiz filtre keki teşkil ederek kuyu stabilitesi sağlar."
       },
       {
         question: "Tremi borusu ile beton dökümünde en kritik kural nedir?",
@@ -1152,29 +1172,14 @@ export const knowledgeArticles: KnowledgeArticle[] = [
           "EFFC/DFI kılavuzları ve TS EN 1536 uyarınca tremi borusunun alt ucu, döküm süresince KESİNTİSİZ olarak taze betonun içine en az 1.5 metre, ideal saha uygulaması olarak 1.5 ila 3.0 metre aralığında gömülü tutulmalıdır. Borunun betondan çıkması kuyu çamurunun betona karışmasına ve soğuk derz oluşmasına yol açar."
       },
       {
-        question: "Kazık Bütünlük Testi (PIT) ve CSL testi nedir?",
+        question: "Fore kazık gidaj kalıbı ve karotiyer ne işe yarar?",
         answer:
-          "PIT; kazık başına vurulan çekiç dalgasıyla kazık boyunu ve beton kusurlarını ölçen sonik testtir. CSL ise donatıya bağlanan borulardan ultrasonik dalga göndererek betonarme gövdede segregasyon olup olmadığını 3 boyutlu tarar."
+          "Gidaj kalıbı (kılavuz duvar), kazık delgi aksını sabitleyen ve kuyu ağzı göçmesini önleyen betonarme şablondur. Karotiyer ise sert kaya ve beton engelleri elmas/karbür dişlerle keserek delgi ilerlemesi ve kaya soketi sağlayan silindirik delici uçtur."
       },
       {
-        question: "Kılıflı (casing) delgi ne zaman zorunludur?",
+        question: "Fore kazık çapları (Ø65, Ø80, Ø100, Ø120 cm) ve 2026 maliyeti neye göre seçilir?",
         answer:
-          "Çevre binalara sıfır mesafedeki kazılarda, kuyu göçmesi riski yüksek olan gevşek çakıllı alüvyonlarda ve çamur sızıntısının çevreye zarar verebileceği kentsel parsellerde çelik muhafaza borusu zorunludur."
-      },
-      {
-        question: "Fore kazık çapları (Ø65, Ø80, Ø100, Ø120 cm) neye göre seçilir?",
-        answer:
-          "Kolon eksenel yüklerine, deprem kesme kuvvetine ve zemin profiline göre seçilir. Orta yüklerde Ø65-80 cm, yüksek yapılarda Ø100 cm, köprü ve ağır sanayi temellerinde Ø120 cm ve üzeri uygulanır."
-      },
-      {
-        question: "2026 fore kazık metre maliyeti ne kadardır?",
-        answer:
-          "Birim metre maliyeti kazık çapına, beton sınıfına, donatı tonajına, zemin sertliğine (kaya soketi) ve kılıf kullanımına göre belirlenir. YER6 hesaplayıcı aracımızla projenize özel anlık maliyet çıkarabilirsiniz."
-      },
-      {
-        question: "Fore kazık firması seçerken nelere dikkat edilmelidir?",
-        answer:
-          "Yüksek torklu modern delgi rigleri, kuyu dibi temizliği ve tremie disiplini, imalat sonrası PIT ve CSL testlerini akredite olarak sunabilme yetkinliğine dikkat edilmelidir."
+          "Çaplar kolon yüklerine, deprem kesme kuvvetine ve iksa kazı derinliğine göre seçilir. Birim metre maliyeti kazık çapına, beton sınıfına, donatı tonajına ve kılıflı/kaya delgi durumuna göre belirlenir."
       }
     ],
     relatedSlugs: [
@@ -1185,29 +1190,34 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     ],
     keywords: [
       "fore kazık nedir",
-      "fore kazık zemin iyileştirme",
-      "ts en 1536 fore kazık",
       "fore kazık nasıl yapılır",
-      "rotary delgi makinesi",
-      "fore kazık çapları",
-      "fore kazık maliyeti 2026",
-      "kazık bütünlük testi pit csl"
+      "fore kazık nasıl uygulanır",
+      "donatılı fore kazık",
+      "donatısız fore kazık nedir",
+      "fore kazık kaç metre iner",
+      "fore kazık kaç metre arayla dikilir",
+      "fore kazık hesabı",
+      "fore kazık donatı detayı",
+      "fore kazık tremi borusu",
+      "fore kazık gidaj kalıbı",
+      "fore kazık karotiyer",
+      "ts en 1536 fore kazık"
     ],
     published: true
   },
   {
     slug: "fore-kazik-uygulama-asamalari",
-    title: "Fore Kazık Uygulama Aşamaları",
-    seoTitle: "Fore Kazık Uygulama Aşamaları | YER6",
-    description: "Fore kazık sahasında sondaj, donatı yerleşimi, betonlama ve kabul testlerinin aşamaları.",
+    title: "Fore Kazık Saha İş Akışı: Aplikasyon, Kuyu Temizliği ve İmalat Takvimi",
+    seoTitle: "Fore Kazık Saha İş Akışı: Aplikasyon ve İmalat Takvimi | YER6",
+    description: "Fore kazık şantiyesinde harita aplikasyonu, delgi organizasyonu, kuyu dibi temizliği ve kalite kontrol iş akışı.",
     excerpt: "Fore kazık uygulaması sondajdan beton dökümüne kadar dikkatli planlanmış adımlarla ilerler.",
     category: "Fore Kazık",
     readingTime: "7 dk",
     publishedAt: "2026-06-21",
-    updatedAt: "2026-06-21",
-    heroLabel: "Fore Kazık Aşamaları",
+    updatedAt: "2026-10-30",
+    heroLabel: "Fore Kazık Saha İş Akışı",
     introduction:
-      "Fore kazık uygulaması, sahada doğru ekipman ve denetimle aşama aşama yürütülür. Bu süreç, her adımda kalite ve emniyet kontrolüne dayanır.",
+      "Fore kazık saha organizasyonu, doğru ekipman ve denetimle aşama aşama yürütülür. Yöntemin tüm teknik detayları, TS EN 1536 kuralları ve hesap esasları için ana [Fore Kazık Nedir ve Nasıl Yapılır?](/knowledge/fore-kazik-nedir/) rehberimizi inceleyebilir veya doğrudan [Fore Kazık Uygulamaları](/services/fore-kazik/) sayfamızdan proje desteği alabilirsiniz.",
     sections: [
       {
         id: "drilling-stage",
@@ -1259,22 +1269,22 @@ export const knowledgeArticles: KnowledgeArticle[] = [
       }
     ],
     relatedSlugs: ["fore-kazik-nedir", "jet-grout-ve-fore-kazik-farki"],
-    keywords: ["fore kazık aşamaları", "fore kazık betonlama", "fore kazık donatı"],
+    keywords: ["fore kazık saha iş akışı", "fore kazık betonlama", "fore kazık aplikasyon"],
     published: true
   },
   {
     slug: "fore-kazik-avantajlari",
-    title: "Fore Kazık Avantajları ve Saha Uygulamaları",
-    seoTitle: "Fore Kazık Avantajları ve Saha Uygulamaları | YER6",
-    description: "Fore kazığın avantajları, dayanım ve uygulama alanları hakkında saha odaklı bilgi.",
+    title: "Derin Temellerde Fore Kazık Performansı ve Şantiye Lojistiği",
+    seoTitle: "Derin Temellerde Fore Kazık Performansı ve Lojistik | YER6",
+    description: "Ağır yapı yüklerinde ve dar kentsel parsellerde fore kazıklı derin temel sistemlerinin yapısal performansı ve saha lojistiği.",
     excerpt: "Fore kazık, yüksek taşıma gücü ve zemin stabilizasyonu gerektiren projelerde avantaj sağlar.",
     category: "Fore Kazık",
     readingTime: "7 dk",
     publishedAt: "2026-06-21",
-    updatedAt: "2026-06-21",
-    heroLabel: "Fore Kazık Avantajları",
+    updatedAt: "2026-10-30",
+    heroLabel: "Derin Temel Performansı",
     introduction:
-      "Fore kazık, özellikle ağır yapı yükleri ve derin temeller için güvenilir bir çözümdür. Saha uygulamalarında taşıma kapasitesi ve uyumlu zemin analizi ön plandadır.",
+      "Fore kazık, özellikle ağır yapı yükleri ve derin temeller için güvenilir bir çözümdür. Yöntemin çalışma mekaniği, avantaj/dezavantaj karşılaştırması ve TS EN 1536 standartları için kapsamlı [Fore Kazık Nedir?](/knowledge/fore-kazik-nedir/) kılavuzumuza göz atabilirsiniz.",
     sections: [
       {
         id: "structural-benefits",
@@ -6780,17 +6790,17 @@ export const knowledgeArticles: KnowledgeArticle[] = [
   },
   {
     slug: "jet-grout-firmasi-ankara",
-    title: "Jet Grout Firması Ankara: Seçim Kriterleri ve YER6",
-    seoTitle: "Jet Grout Firması Ankara | Ankara Jet Grout Uygulaması | YER6",
-    description: "Ankara'da jet grout firması seçerken makine parkı, saha tecrübesi, kalite kontrol ve referanslar önemlidir. Ankara zemin koşullarına uygun jet grout uygulaması için YER6.",
-    excerpt: "Ankara'da jet grout firması seçerken makine parkı, saha tecrübesi, kalite kontrol süreci ve yerel zemin bilgisi belirleyicidir. YER6, İvedik OSB / Yenimahalle merkezli ekibiyle Ankara ve çevresinde jet grout uygular.",
+    title: "Ankara Kili ve Dolgu Zeminlerde Jet Grout Şartname ve Denetim Rehberi",
+    seoTitle: "Ankara Kili Zeminlerde Jet Grout Kalite ve Denetim Rehberi | YER6",
+    description: "Ankara kili ve değişken dolgu zeminlerinde jet grout projelendirme, deneme kolonu ve kalite kontrol kriterleri. Ankara projeleri için YER6 mühendislik rehberi.",
+    excerpt: "Ankara'da jet grout projelerinde makine parkı, deneme kolonu, kalite kontrol süreci ve yerel zemin bilgisi belirleyicidir. YER6, İvedik OSB / Yenimahalle merkezli ekibiyle Ankara ve çevresinde jet grout uygular.",
     category: "Jet Grout",
     readingTime: "7 dk",
     publishedAt: "2026-07-10",
-    updatedAt: "2026-10-21",
-    heroLabel: "Ankara Jet Grout",
+    updatedAt: "2026-10-30",
+    heroLabel: "Ankara Jet Grout Rehberi",
     introduction:
-      "Ankara'da jet grout ihtiyacı; başkentin yüksek plastisiteli 'Ankara kili' ve değişken dolgu koşullarıyla doğrudan ilişkilidir. Doğru firma seçimi, uygulamanın kalitesini ve maliyetini belirler. Bu yazıda Ankara'da jet grout firması seçerken dikkat edilmesi gerekenleri ve YER6'nın yaklaşımını açıklıyoruz.",
+      "Ankara'da jet grout ihtiyacı; başkentin yüksek plastisiteli 'Ankara kili' ve değişken dolgu koşullarıyla doğrudan ilişkilidir. Doğrudan teklif ve uygulama için [Jet Grout (Jet Beton) Firmaları ve Uygulamaları](/services/jet-grout/) ile [Ankara Zemin Güçlendirme](/sehirler/ankara/) sayfalarımızı inceleyebilir, teknik esaslar için [Jet Grout Nedir?](/knowledge/jet-grout-nedir/) kılavuzumuza başvurabilirsiniz.",
     sections: [
       {
         id: "secim",
@@ -6838,22 +6848,22 @@ export const knowledgeArticles: KnowledgeArticle[] = [
       { question: "Ankara jet grout maliyeti neye bağlı?", answer: "Kolon çapı ve derinliği, zemin türü, metraj ve saha koşullarına bağlıdır. Gerçekçi rakam zemin verisi ve projeye özel metrajla verilir." }
     ],
     relatedSlugs: ["jet-grout-nedir", "jet-grout-maliyeti", "jet-grout-hangi-zeminlerde-uygulanir"],
-    keywords: ["jet grout firması ankara", "ankara jet grout", "jet grout ankara", "jet grout firmaları ankara", "ankara zemin güçlendirme"],
+    keywords: ["ankara kili jet grout", "jet grout kalite kontrol ankara", "ankara zemin güçlendirme"],
     published: true
   },
   {
     slug: "fore-kazik-firmasi-ankara",
-    title: "Fore Kazık Firması Ankara: Seçim Kriterleri ve YER6",
-    seoTitle: "Fore Kazık Firması Ankara | Ankara Fore Kazık Uygulaması | YER6",
-    description: "Ankara'da fore kazık firması seçerken delgi kapasitesi, makine parkı, kalite kontrol ve referanslar önemlidir. Ankara'da yüksek yapı ve derin temel için fore kazık: YER6.",
-    excerpt: "Ankara'da fore kazık firması seçerken delgi kapasitesi, makine parkı, bütünlük/yükleme testleri ve referanslar belirleyicidir. YER6, Ankara ve çevresinde fore kazık ve derin temel uygular.",
+    title: "Ankara Derin Kazı ve Yüksek Yapı Projelerinde Fore Kazık Şartname Kriterleri",
+    seoTitle: "Ankara Yüksek Yapı Projelerinde Kazıklı Temel Şartname Rehberi | YER6",
+    description: "Ankara derin kazı ve yüksek yapı projelerinde fore kazıklı temel şartnamesi, muhafaza borulu delgi, PIT bütünlük ve yükleme testi kabul kriterleri.",
+    excerpt: "Ankara'da yüksek yapı temelleri ve derin kazılarda delgi kapasitesi, makine parkı, bütünlük/yükleme testleri ve referanslar belirleyicidir.",
     category: "Fore Kazık",
     readingTime: "7 dk",
     publishedAt: "2026-07-10",
-    updatedAt: "2026-10-21",
-    heroLabel: "Ankara Fore Kazık",
+    updatedAt: "2026-10-30",
+    heroLabel: "Ankara Kazıklı Temel Rehberi",
     introduction:
-      "Ankara'da yüksek yapı temelleri, derin kazılar ve altyapı projeleri fore kazık gerektirir. Doğru firma seçimi; delgi kapasitesi, kalite kontrol ve yerel saha tecrübesiyle şekillenir. Bu yazıda Ankara'da fore kazık firması seçerken dikkat edilmesi gerekenleri ve YER6'nın yaklaşımını açıklıyoruz.",
+      "Ankara'da yüksek yapı temelleri, derin kazılar ve altyapı projeleri fore kazık gerektirir. Doğrudan uygulama ve teklif için [Fore Kazık Firmaları ve Uygulamaları](/services/fore-kazik/) ile [Ankara Zemin Güçlendirme](/sehirler/ankara/) sayfalarımızı ziyaret edebilir, teknik detaylar için [Fore Kazık Nedir ve Nasıl Yapılır?](/knowledge/fore-kazik-nedir/) rehberimizi inceleyebilirsiniz.",
     sections: [
       {
         id: "secim",
@@ -6901,22 +6911,22 @@ export const knowledgeArticles: KnowledgeArticle[] = [
       { question: "YER6 Ankara'da fore kazık uyguluyor mu?", answer: "Evet. İvedik OSB / Yenimahalle merkezli ekibimizle Ankara'nın tüm ilçelerinde ve çevre illerde fore kazık ve derin temel uygulamaları yapıyoruz." }
     ],
     relatedSlugs: ["fore-kazik-nedir", "fore-kazik-maliyeti", "fore-kazik-avantajlari"],
-    keywords: ["fore kazık firması ankara", "ankara fore kazık", "fore kazık ankara", "fore kazık firmaları ankara", "ankara kazıklı temel"],
+    keywords: ["ankara kazıklı temel şartnamesi", "ankara derin kazı iksa", "fore kazık kalite kontrol"],
     published: true
   },
   {
     slug: "deep-soil-mixing-ankara",
-    title: "Deep Soil Mixing (DSM) Ankara: Uygulama ve Firma Seçimi",
-    seoTitle: "Deep Soil Mixing Ankara | DSM Zemin İyileştirme Firması | YER6",
-    description: "Ankara'da Deep Soil Mixing (DSM) zemin iyileştirme; yumuşak zemin ve dolgu alanlarında oturma kontrolü için uygulanır. Firma seçimi kriterleri ve YER6 DSM uygulaması.",
-    excerpt: "Deep Soil Mixing (DSM), Ankara'da yumuşak zemin ve dolgu alanlarında oturmayı kontrol etmek için tercih edilir. Firma seçiminde laboratuvar karışım tasarımı, ekipman ve kalite kontrol belirleyicidir.",
+    title: "Endüstriyel Yapı ve Depo Temellerinde DSM Saha Denetim Kriterleri",
+    seoTitle: "Endüstriyel Yapı ve Depo Temellerinde DSM Saha Denetim Kriterleri | YER6",
+    description: "Endüstriyel tesis, lojistik depo ve yumuşak dolgu alanlarında Deep Soil Mixing (DSM) zemin iyileştirme karışım tasarımı ve saha kalite kontrol kriterleri.",
+    excerpt: "Deep Soil Mixing (DSM), yumuşak zemin ve dolgu alanlarında oturmayı kontrol etmek için tercih edilir. Laboratuvar karışım tasarımı, ekipman ve kalite kontrol belirleyicidir.",
     category: "DSM",
     readingTime: "7 dk",
     publishedAt: "2026-07-10",
-    updatedAt: "2026-10-21",
-    heroLabel: "Ankara DSM",
+    updatedAt: "2026-10-30",
+    heroLabel: "DSM Saha Denetimi",
     introduction:
-      "Deep Soil Mixing (derin zemin karıştırma / DSM), yumuşak kil ve gevşek dolgu zeminlerde oturmayı ve taşıma gücü sorunlarını kontrol etmek için etkili bir zemin iyileştirme yöntemidir. Ankara ve çevresinde geniş taban alanlı yapılarda tercih edilir. Bu yazıda DSM'in Ankara'daki uygulamasını ve firma seçim kriterlerini açıklıyoruz.",
+      "Deep Soil Mixing (derin zemin karıştırma / DSM), yumuşak kil ve gevşek dolgu zeminlerde oturmayı ve taşıma gücü sorunlarını kontrol etmek için etkili bir zemin iyileştirme yöntemidir. Uygulama ve teklif için [DSM (Derin Zemin Karıştırma) Hizmetimiz](/services/dsm/) sayfasını, teknik esaslar için [DSM Nedir?](/knowledge/dsm-nedir/) rehberimizi inceleyebilirsiniz.",
     sections: [
       {
         id: "dsm-ankara",
@@ -6964,28 +6974,28 @@ export const knowledgeArticles: KnowledgeArticle[] = [
       { question: "YER6 Ankara'da DSM uyguluyor mu?", answer: "Evet. İvedik OSB / Yenimahalle merkezli ekibimizle Ankara ve çevresinde DSM zemin iyileştirme uygulamaları yapıyoruz." }
     ],
     relatedSlugs: ["dsm-nedir", "dsm-nasil-uygulanir", "jet-grout-ve-dsm-farki"],
-    keywords: ["deep soil mixing ankara", "dsm ankara", "derin zemin karıştırma ankara", "dsm firması ankara", "ankara zemin iyileştirme"],
+    keywords: ["endüstriyel temel dsm", "depo zemini dsm", "derin zemin karıştırma kalite kontrol"],
     published: true
   },
   {
     slug: "ankraj-nedir",
-    title: "Ankraj Nedir? TS EN 1537 Standartlarında Öngermeli Zemin ve Kaya Ankrajı Rehberi",
-    seoTitle: "Ankraj Nedir? TS EN 1537 Öngermeli Zemin ve Kaya Ankrajı | YER6",
+    title: "Ankraj Nedir? Nasıl Yapılır, Çeşitleri ve TS EN 1537 Öngermeli Zemin Ankrajı Rehberi",
+    seoTitle: "Ankraj Nedir? Nasıl Yapılır, Zemin ve Kaya Ankrajı | YER6",
     description:
-      "Ankraj nedir ve nasıl uygulanır? TS EN 1537 standardında öngermeli zemin ankrajı, serbest boy, kök boyu, TAM enjeksiyonu, çekme kabul testleri ve iksa rehberi.",
+      "Ankraj nedir ve nasıl yapılır? Öngermeli zemin ankrajı, kaya ankrajı ve kimyasal ankraj farkları; TS EN 1537 serbest boy, kök boyu, TAM enjeksiyonu ve germe testi.",
     excerpt:
-      "Öngermeli zemin ankrajı; derin kazı iksa perdelerinde, şev stabilizasyonunda ve yapı temellerinde oluşan devasa yanal toprak basınçlarını ve çekme kuvvetlerini yüksek dayanımlı çelik halatlar ve çimento enjeksiyonuyla aktif kayma kamasının arkasındaki sağlam zemin kütlesine aktaran geoteknik taşıyıcı sistemdir.",
+      "Ankraj; yapı elemanlarını veya derin kazı iksa perdelerini yüksek dayanımlı çelik halatlar (toron), tijler ve enjeksiyon yardımıyla sağlam zemin, kaya veya beton kütlesine kilitleyen aktif geoteknik ve yapısal kenetleme sistemidir.",
     category: "Ankraj & İksa",
     readingTime: "29 dk",
     publishedAt: "2026-06-25",
-    updatedAt: "2026-10-12",
+    updatedAt: "2026-10-30",
     heroLabel: "Öngermeli Zemin Ankrajı Bilgi Merkezi",
     introduction:
-      "**Öngermeli zemin ankrajı (ground anchor / tieback)**; derin kazı iksa duvarları, barajlar, viyadük yaklaşım şevleri ve metro şaftlarında oluşan yüksek yanal zemin basınçlarını ve hidrostatik itkileri karşılamak amacıyla açılan açılı delgi kuyusuna yüksek dayanımlı çelik halat demetlerinin (toronlar / strands) yerleştirilip kök bölgesinin basınçlı çimento şerbetiyle kilitlenmesi ve hidrolik krikolarla önceden gerdirilmesi esasına dayanan **aktif bir geoteknik tutma elemanı**dır. Basit kimyasal dübellerden tamamen farklı olan geoteknik ankrajlar; TS EN 1537, FHWA-IF-99-015 ve BS 8081 standartlarına uygun olarak 30 ila 150 ton arasında eksenel çekme kapasitesi üretir. YER6 Geoteknik olarak, Türkiye genelinde 3'lü, 4'lü ve 5'li toronlu geçici ve kalıcı zemin ankrajı imalatlarını akredite kabul testleriyle gerçekleştiriyoruz.",
+      "**Ankraj (ground anchor / tieback)**; inşaat ve geoteknik mühendisliğinde derin kazı iksa perdelerini, istinat duvarlarını, şevleri veya yapı elemanlarını sağlam zemin, ana kaya ya da taşıyıcı kütleye kenetleyerek çekme ve devrilme kuvvetlerini karşılayan **aktif sabitleme ve tutma elemanı**dır. Geoteknik uygulamalarda kullanılan **öngermeli zemin ankrajı**, basit yapısal/kimyasal dübellerden farklı olarak açılan derin delgi kuyusuna yüksek dayanımlı çelik halat demetlerinin (toronlar / strands) sürülüp kök bölgesinin basınçlı çimento şerbetiyle kilitlenmesi ve hidrolik krikolarla önceden gerdirilmesi esasına dayanır. TS EN 1537 ve FHWA-IF-99-015 standartlarına uygun olarak 30 ila 150 ton çekme kapasitesi üreten [Öngermeli Ankraj Uygulamaları](/services/ankraj/) hakkında tüm mühendislik detaylarını bu rehberde bulabilirsiniz.",
     sections: [
       {
         id: "ankraj-tanimi-ve-geoteknik-calisma-mekanigi",
-        title: "Öngermeli Zemin Ankrajı Nedir ve Çalışma Mekanizması Nasıl İşler?",
+        title: "Ankraj Nedir, Çeşitleri Nelerdir ve Nasıl Çalışır?",
         blocks: [
           {
             type: "paragraph",
@@ -6993,9 +7003,19 @@ export const knowledgeArticles: KnowledgeArticle[] = [
               "Derin kazı iksa perdesinin arkasındaki zemin masifi Rankine aktif kayma düzlemi boyunca dışarı doğru hareket etme eğilimindedir. Öngermeli zemin ankrajı, bu kayma düzlemini delip geçerek hedeflenen stabil zemin veya kaya tabakasına ulaşır. Çelik halat demeti tabanda basınçlı çimento harcıyla zemine kilitlenir; priz sonrası kafa plakasından hidrolik krikoyla çekilip kamalarla kilitlenerek iksa perdesine aktif bir sıkıştırma kuvveti uygular."
           },
           {
+            type: "list",
+            title: "İnşaat ve Geoteknikte Başlıca Ankraj Çeşitleri",
+            items: [
+              "Öngermeli Halatlı Zemin Ankrajı (Pre-stressed Strand Anchor): Derin kazı iksa perdelerinde (fore kazık, diyafram duvar, mini kazık) 12–35 m derinliğe delinip 3'lü, 4'lü veya 5'li çelik toronlarla teşkil edilen ve hidrolik krikoyla gerilen aktif sistemdir.",
+              "Kaya Ankrajı ve Kaya Bulonu (Rock Anchor / Rock Bolt): Kaya şevlerinde, baraj temellerinde ve tünellerde süreksizlik düzlemlerini birbirine dikmek için uygulanan yüksek kapasiteli halatlı veya nervürlü çelik bar (tij) sistemidir.",
+              "Pasif Ankraj / Zemin Çivisi (Soil Nail): Öngerme uygulanmaksızın açılan kuyuya çelik donatı barı yerleştirilip boydan boya enjeksiyon yapılmasıyla çalışan pasif şev/kazı destek elemanıdır.",
+              "Yapısal / Kimyasal Ankraj (Epoksi Filiz Ekimi): Betonarme güçlendirme projelerinde mevcut beton elemana matkapla delik açılıp epoksi reçine ile donatı filizi ekilmesi işlemidir; geoteknik zemin ankrajından tamamen farklıdır."
+            ]
+          },
+          {
             type: "paragraph",
             content:
-              "Ankraj üç ana bileşenden meydana gelir: Ankraj Başı (Anchor Head - çelik kafa plakası, döküm kovan ve konik çelik kamalar), Serbest Boy (Free Length / Unbonded Length - plastik kılıf içinde yağlanmış, elastik uzamaya izin veren gövde) ve Kök Boyu (Bond Length - zeminle çimento şerbeti arasında sürtünme üreten enjeksiyonlu tutunma bölgesi)."
+              "Geoteknik bir zemin ankrajı üç ana bileşenden meydana gelir: Ankraj Başı (Anchor Head - çelik kafa plakası, döküm kovan ve konik çelik kamalar), Serbest Boy (Free Length / Unbonded Length - plastik kılıf içinde yağlanmış, elastik uzamaya izin veren gövde) ve Kök Boyu (Bond Length - zeminle çimento şerbeti arasında sürtünme üreten enjeksiyonlu tutunma bölgesi)."
           },
           {
             type: "note",
@@ -7804,16 +7824,16 @@ export const knowledgeArticles: KnowledgeArticle[] = [
   },
   {
     slug: "kazik-yukleme-testleri",
-    title: "Kazık Yükleme Testleri: Statik, Dinamik ve Bütünlük (PIT)",
-    seoTitle: "Kazık Yükleme Testleri: Statik, Dinamik, PIT | YER6",
-    description: "Kazık yükleme testleri; statik ve dinamik yüklemeyle taşıma kapasitesini, PIT bütünlük testiyle kazık sürekliliğini doğrular. Test türleri, planlama ve değerlendirme.",
+    title: "Kazık Yükleme ve Bütünlük Test Programı Nasıl Planlanır?",
+    seoTitle: "Kazık Yükleme ve Bütünlük Test Programı Planlaması | YER6",
+    description: "Kazıklı temellerde ön üretim deneme kazığı ve kabul testlerinin iş programına entegrasyonu, PIT tarama oranları ve raporlama süreci.",
     excerpt: "Kazıklı temellerde kalite; statik ve dinamik yükleme testleriyle taşıma kapasitesinin, PIT bütünlük testiyle kazık sürekliliğinin bağımsız biçimde doğrulanmasına dayanır.",
     category: "Kalite Kontrol",
     readingTime: "7 dk",
     publishedAt: "2026-07-13",
-    updatedAt: "2026-07-13",
-    heroLabel: "Kazık Testleri",
-    introduction: "Fore kazık ve mini kazık uygulamalarında tasarım varsayımlarının sahada karşılandığı ancak testlerle kanıtlanır. Bu yazıda kazık yükleme ve bütünlük testlerinin türlerini, ne zaman yapıldığını ve sonuçların nasıl değerlendirildiğini açıklıyoruz.",
+    updatedAt: "2026-10-30",
+    heroLabel: "Kazık Test Planlaması",
+    introduction: "Fore kazık ve mini kazık uygulamalarında tasarım varsayımlarının sahada karşılandığı ancak testlerle kanıtlanır. Detaylı test yöntemleri için [Kazık Yükleme Testi Türleri](/knowledge/kazik-yukleme-testi-turleri/) ve [Fore Kazık Nedir?](/knowledge/fore-kazik-nedir/) rehberlerimizi inceleyebilirsiniz.",
     sections: [
       { id: "turler", title: "Test Türleri", blocks: [
         { type: "paragraph", content: "Kazık testleri iki temel soruyu yanıtlar: kazık hedeflenen yükü taşıyor mu (yükleme testleri) ve kazık gövdesi sürekli ve kusursuz mu (bütünlük testleri)." },
@@ -7831,29 +7851,29 @@ export const knowledgeArticles: KnowledgeArticle[] = [
       { question: "Test ne zaman yapılır?", answer: "Kazık betonu hedef dayanıma ulaştıktan sonra; deneme kazıkları üretim öncesinde, kabul testleri üretim sürecinde planlanır." }
     ],
     relatedSlugs: ["fore-kazik-nedir", "fore-kazik-maliyeti", "saha-denetimi-numune-testleri"],
-    keywords: ["kazık yükleme testi", "statik yükleme testi", "dinamik kazık testi", "PIT bütünlük testi", "kazık testleri"],
+    keywords: ["kazık test programı", "ön üretim deneme kazığı", "kabul testi planlama"],
     published: true
   },
   {
     slug: "zemin-enjeksiyonu-nedir",
-    title: "Zemin Enjeksiyonu Nedir? Türleri ve Kullanım Alanları",
-    seoTitle: "Zemin Enjeksiyonu Nedir? Türleri ve Uygulama | YER6",
-    description: "Zemin enjeksiyonu; çimento esaslı veya kimyasal karışımların zemine kontrollü basınçla verilmesiyle dayanım, sıkılık ve geçirimsizlik sağlayan yöntemlerin genel adıdır.",
+    title: "Zemin Enjeksiyonu Nedir? Çimento, Kompaksiyon ve Geçirimsizlik Enjeksiyonu Rehberi",
+    seoTitle: "Zemin Enjeksiyonu Nedir? Nasıl Yapılır ve Uygulama Alanları | YER6",
+    description: "Zemin enjeksiyonu nedir ve nasıl yapılır? Çimento, mikro çimento, permeasyon ve kompaksiyon enjeksiyonu ile temel altı boşluk doldurma ve su kesme perdesi uygulamaları.",
     excerpt: "Zemin enjeksiyonu; permeasyon, kompaksiyon, çatlatma ve jet enjeksiyonu gibi tekniklerle zemine bağlayıcı vererek dayanım artışı, boşluk doldurma ve su kesme sağlayan yöntemler ailesidir.",
     category: "Zemin İyileştirme",
     readingTime: "7 dk",
     publishedAt: "2026-07-13",
-    updatedAt: "2026-07-13",
+    updatedAt: "2026-10-30",
     heroLabel: "Zemin Enjeksiyonu",
-    introduction: "Enjeksiyon, zemin iyileştirmenin en esnek araçlarından biridir: aynı temel prensip; boşluk doldurmadan su kesmeye, oturma telafisinden temel altı güçlendirmeye kadar farklı problemlere uyarlanabilir. Bu yazıda enjeksiyon türlerini ve kullanım alanlarını açıklıyoruz.",
+    introduction: "**Zemin enjeksiyonu (grouting)**, zemin iyileştirmenin en esnek mühendislik yöntemlerinden biridir: çimento esaslı veya kimyasal süspansiyonların kontrollü basınçla zemine basılması sayesinde temel altı boşluk doldurmadan su kesme perdesine, oturma telafisinden kaya çatlak sızdırmazlığına kadar geniş bir alanda uygulanır. Kapsamlı zemin iyileştirme yöntemleri için [Zemin İyileştirme Hizmetimiz](/services/zemin-iyilestirme/) sayfasını inceleyebilirsiniz.",
     sections: [
-      { id: "turler", title: "Enjeksiyon Türleri", blocks: [
-        { type: "paragraph", content: "Enjeksiyon türleri, karışımın zemine hangi mekanizmayla yerleştiğine göre ayrılır. Zemin türü, hedef performans ve mevcut yapı koşulları hangi tekniğin uygun olduğunu belirler." },
-        { type: "list", title: "Başlıca teknikler", items: ["Permeasyon enjeksiyonu: karışımın zemin boşluklarına düşük basınçla sızdırılması; geçirimli kum ve çakılda dayanım ve geçirimsizlik", "Kompaksiyon enjeksiyonu: yoğun harcın zemini sıkıştırarak yer değiştirmesi; gevşek zemin sıkılaştırma ve oturma telafisi", "Çatlatma (fracture) enjeksiyonu: kontrollü çatlaklarla zemin kütlesinin güçlendirilmesi ve kompansasyon uygulamaları", "Jet enjeksiyonu (jet grout): yüksek basınçlı jetle zemin-çimento kolonları oluşturulması"] }
+      { id: "turler", title: "Zemin Enjeksiyonu Nedir ve Nasıl Yapılır?", blocks: [
+        { type: "paragraph", content: "Zemin enjeksiyonu; delgi makineleriyle açılan kuyulara yerleştirilen pakerler veya manşonlu borular (TAM) aracılığıyla bağlayıcı şerbetin kademeli basınç altında zemin boşluklarına veya süreksizliklerine enjekte edilmesiyle uygulanır. Zemin türü, hedef performans ve mevcut yapı koşulları hangi tekniğin uygun olduğunu belirler." },
+        { type: "list", title: "Başlıca enjeksiyon teknikleri", items: ["Permeasyon (Sızma) Enjeksiyonu: Karışımın zemin iskeletini bozmadan doğal boşluklara düşük basınçla sızdırılması; geçirimli kum ve çakılda dayanım ve su geçirimsizliği sağlar.", "Kompaksiyon Enjeksiyonu: Düşük çökme (slump) değerine sahip yoğun harcın zemini radyal olarak sıkıştırarak yer değiştirmesi; gevşek zemin sıkılaştırma ve batan yapıların oturma telafisinde kullanılır.", "Çatlatma (Hydro-Fracture / Claquage) Enjeksiyonu: Killi ve siltli zeminlerde kontrollü hidrolik çatlaklar oluşturularak yüksek dayanımlı çimento damar ağı teşkil edilmesi.", "Kaya Perde ve Kontak Enjeksiyonu: Baraj temellerinde, tünellerde ve karstik kireçtaşlarında Lugeon geçirimlilik testleriyle doğrulanan su kesme perdesi imalatı."] }
       ]},
-      { id: "kullanim", title: "Kullanım Alanları ve Kalite Kontrol", blocks: [
-        { type: "list", title: "Tipik kullanım alanları", items: ["Temel altı boşlukların ve karstik boşlukların doldurulması", "Mevcut yapı altında güçlendirme ve oturma telafisi", "Kazı ve baraj uygulamalarında su kesme perdesi", "Tünel ve altyapı çevresinde zemin iyileştirme"] },
-        { type: "note", title: "Kayıt ve doğrulama", content: "Enjeksiyonda basınç, debi ve sarf kayıtları imalatın kanıtıdır; gerektiğinde sondaj, numune ve geçirimlilik testleriyle hedefe ulaşıldığı doğrulanır." }
+      { id: "kullanim", title: "Kullanım Alanları, Basınç Kontrolü ve Kalite Doğrulama", blocks: [
+        { type: "list", title: "Tipik kullanım alanları", items: ["Temel altı boşlukların, maden galerilerinin ve karstik oyukların doldurulması", "Mevcut yapı altında binaları yıkmadan güçlendirme ve oturma telafisi", "Derin kazı ve baraj uygulamalarında su kesme (grout curtain) perdesi", "Tünel aynası ve altyapı çevresinde zemin konsolidasyonu"] },
+        { type: "note", title: "Kayıt ve doğrulama", content: "Enjeksiyonda kademe basıncı (bar), anlık debi (L/dk), su/çimento oranı (W/C) ve kümülatif sarf kayıtları imalatın birincil kanıtıdır; uygulama sonrasında kontrol sondajları, Lugeon basınçlı su testleri ve SPT/CPT karşılaştırmalarıyla hedefe ulaşıldığı doğrulanır." }
       ]}
     ],
     faq: [
@@ -7863,21 +7883,21 @@ export const knowledgeArticles: KnowledgeArticle[] = [
       { question: "Mevcut yapı altında enjeksiyon yapılabilir mi?", answer: "Evet. Kompakt ekipmanla, düşük basınç ve kontrollü etaplarla mevcut yapı altında güçlendirme ve oturma telafisi uygulanabilir; yapı hareketi izlenmelidir." }
     ],
     relatedSlugs: ["jet-grout-nedir", "zemin-iyilestirme-yontemleri", "temel-alti-zemin-guclendirme"],
-    keywords: ["zemin enjeksiyonu", "enjeksiyon nedir", "çimento enjeksiyonu", "kompaksiyon enjeksiyonu", "geçirimsizlik enjeksiyonu"],
+    keywords: ["zemin enjeksiyonu nedir", "zemin enjeksiyonu nasıl yapılır", "çimento enjeksiyonu", "kompaksiyon enjeksiyonu", "geçirimsizlik enjeksiyonu"],
     published: true
   },
   {
     slug: "jet-grout-firmasi-istanbul",
-    title: "Jet Grout Firması İstanbul: Seçim Kriterleri ve YER6",
-    seoTitle: "Jet Grout Firması İstanbul | İstanbul Jet Grout Uygulaması | YER6",
-    description: "İstanbul'da jet grout firması seçerken makine parkı, alüvyon ve sıvılaşma tecrübesi, kalite kontrol ve referanslar önemlidir. Türkiye geneli hizmet veren YER6 yaklaşımı.",
-    excerpt: "İstanbul'un alüvyon zeminleri, sıvılaşma riski ve dar kentsel parselleri jet grout uygulamasını sık gündeme getirir. Firma seçiminde makine parkı, saha tecrübesi ve kalite kontrol süreci belirleyicidir.",
+    title: "İstanbul Alüvyon ve Sahil Parsellerinde Jet Grout Saha Kriterleri",
+    seoTitle: "İstanbul Alüvyon Parsellerde Jet Grout Saha ve Denetim Kriterleri | YER6",
+    description: "İstanbul'un sahil ve dere yatağı alüvyon zeminlerinde, sıvılaşma riskli ve bitişik nizam dar parsellerde jet grout uygulama ve kalite kontrol kriterleri.",
+    excerpt: "İstanbul'un alüvyon zeminleri, sıvılaşma riski ve dar kentsel parselleri jet grout uygulamasını sık gündeme getirir. Makine parkı, saha tecrübesi ve kalite kontrol süreci belirleyicidir.",
     category: "Jet Grout",
     readingTime: "7 dk",
     publishedAt: "2026-07-13",
-    updatedAt: "2026-07-13",
-    heroLabel: "İstanbul Jet Grout",
-    introduction: "İstanbul'da jet grout ihtiyacı; alüvyon zeminler, yüksek yeraltı suyu, sıvılaşma riski ve komşu yapı mesafesi çok dar parsellerle doğrudan ilişkilidir. Bu yazıda İstanbul'da jet grout firması seçerken dikkat edilmesi gerekenleri ve YER6'nın yaklaşımını açıklıyoruz.",
+    updatedAt: "2026-10-30",
+    heroLabel: "İstanbul Jet Grout Rehberi",
+    introduction: "İstanbul'da jet grout ihtiyacı; alüvyon zeminler, yüksek yeraltı suyu, sıvılaşma riski ve komşu yapı mesafesi çok dar parsellerle doğrudan ilişkilidir. Doğrudan teklif ve uygulama için [Jet Grout (Jet Beton) Firmaları](/services/jet-grout/) ve [İstanbul Zemin Güçlendirme](/sehirler/istanbul/) sayfalarımızı ziyaret edebilirsiniz.",
     sections: [
       { id: "secim", title: "İstanbul'da Jet Grout Firması Seçerken Nelere Dikkat Edilmeli?", blocks: [
         { type: "list", title: "Değerlendirme kriterleri", items: ["Kendi makine parkı ve ekipman kapasitesi (delgi, pompa, santral)", "Alüvyon, dolgu ve sıvılaşmaya yatkın zeminlerde saha tecrübesi", "Deneme kolonu ve kalite kontrol (karot, basınç testi) süreci", "Şeffaf metraj ve gerçekçi maliyet öngörüsü", "Referans projeler ve teknik dokümantasyon"] },
@@ -9960,19 +9980,19 @@ export const knowledgeArticles: KnowledgeArticle[] = [
   },
   {
     slug: "puskurtme-beton-uygulamasi",
-    title: "Püskürtme Beton (Shotcrete) Uygulaması ve Kalite Kontrolü",
-    seoTitle: "Püskürtme Beton Nedir? Kuru ve Yaş Sistem Uygulaması | YER6",
+    title: "Kuru ve Yaş Sistem Shotcrete Saha Uygulaması ve Kalite Kontrolü",
+    seoTitle: "Kuru ve Yaş Sistem Shotcrete Saha Uygulaması ve Kontrolü | YER6",
     description:
-      "Püskürtme beton nedir, kuru ve yaş sistem farkı nedir? Kazı yüzeyi kaplaması, çelik hasır ve tel donatı, kalınlık kontrolü ve dayanım testleri.",
+      "Kuru ve yaş sistem shotcrete saha uygulaması farkı nedir? Kazı yüzeyi kaplaması, çelik hasır ve tel donatı, kalınlık kontrolü ve dayanım testleri.",
     excerpt:
       "Püskürtme beton, basınçlı hava ile yüzeye püskürtülerek uygulanan betondur. İksa yüzeylerinde, tünellerde ve şev kaplamalarında hızlı ve kalıpsız kaplama sağlar.",
     category: "Kalite Kontrol",
     readingTime: "8 dk",
     publishedAt: "2026-07-28",
-    updatedAt: "2026-07-28",
-    heroLabel: "Püskürtme Beton",
+    updatedAt: "2026-10-30",
+    heroLabel: "Shotcrete Saha Kontrolü",
     introduction:
-      "Püskürtme beton (shotcrete), kalıp kullanmadan yüzeye basınçlı hava ile uygulanan betondur. Kazı yüzeylerinin lokal göçmesini engeller, zemin çivisi sistemlerinde çivileri birbirine bağlar ve tünellerde ilk destek görevi görür.",
+      "Püskürtme beton (shotcrete), kalıp kullanmadan yüzeye basınçlı hava ile uygulanan betondur. Kazı yüzeylerinin lokal göçmesini engeller, zemin çivisi sistemlerinde çivileri birbirine bağlar ve tünellerde ilk destek görevi görür. Yöntemin EFNARC standartları, lif tokluğu ve barbakan esasları için ana [Püskürtme Beton Nedir?](/knowledge/puskurtme-beton-nedir/) rehberimizi inceleyebilirsiniz.",
     sections: [
       {
         id: "kuru-yas-sistem",
@@ -10083,19 +10103,19 @@ export const knowledgeArticles: KnowledgeArticle[] = [
   // ————————————————————————————————————————————————————————————
   {
     slug: "zemin-enjeksiyonu-turleri",
-    title: "Zemin Enjeksiyonu Türleri: Permeasyon, Kompaksiyon ve Çatlatma",
-    seoTitle: "Zemin Enjeksiyonu Nedir? Enjeksiyon Türleri ve Seçimi | YER6",
+    title: "Permeasyon, Kompaksiyon ve Çatlatma Enjeksiyonu Karşılaştırması",
+    seoTitle: "Permeasyon, Kompaksiyon ve Çatlatma Enjeksiyonu Seçimi | YER6",
     description:
-      "Zemin enjeksiyonu türleri nelerdir? Permeasyon (sızma), kompaksiyon, çatlatma (fracture) ve jet enjeksiyonun farkları, uygun zeminler ve kullanım amaçları.",
+      "Permeasyon (sızma), kompaksiyon, çatlatma (fracture) ve mikro çimento enjeksiyonunun farkları, dane dağılımına göre seçim kriterleri ve Lugeon kontrolü.",
     excerpt:
       "Enjeksiyon tek bir yöntem değildir. Zeminin dane dağılımı ve hedefe göre permeasyon, kompaksiyon, çatlatma veya jet grout seçilir; yanlış seçim beklenen sonucu vermez.",
     category: "Zemin İyileştirme",
     readingTime: "10 dk",
     publishedAt: "2026-07-28",
-    updatedAt: "2026-07-28",
-    heroLabel: "Enjeksiyon Bilgi Merkezi",
+    updatedAt: "2026-10-30",
+    heroLabel: "Enjeksiyon Seçim Rehberi",
     introduction:
-      "Zemin enjeksiyonu, zemin boşluklarına veya zemin içine bağlayıcı bir malzemenin kontrollü basınçla verilmesidir. Amaç; dayanımı artırmak, geçirimsizlik sağlamak, boşlukları doldurmak veya oturmuş bir yapıyı kaldırmak olabilir. Yöntem seçimi doğrudan zeminin dane dağılımına bağlıdır.",
+      "Zemin enjeksiyonunda yöntem seçimi doğrudan zeminin dane dağılımına ve boşluk geometrisine bağlıdır. Yöntemin genel tanımı ve uygulama alanları için [Zemin Enjeksiyonu Nedir?](/knowledge/zemin-enjeksiyonu-nedir/) rehberimizi ve [Zemin İyileştirme Hizmetimiz](/services/zemin-iyilestirme/) sayfasını inceleyebilirsiniz.",
     sections: [
       {
         id: "turler",
