@@ -227,7 +227,7 @@ export function CalculatorTool({ tool }: { tool: Tool }) {
           <Calculator className="size-5" />
         </span>
         <div>
-          <h2 className="text-2xl font-semibold text-white">Hesaplama aracı</h2>
+          <h2 className="text-xl sm:text-2xl font-semibold text-white">{tool.h1}</h2>
           <p className="text-xs text-white/45">
             {fxLoading ? (
               "Güncel kur alınıyor…"
