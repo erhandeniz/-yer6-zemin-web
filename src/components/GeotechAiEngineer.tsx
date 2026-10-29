@@ -105,9 +105,21 @@ export function GeotechAiEngineer() {
     const botMsgId = `bot-${Date.now()}`;
     let streamedText = "";
     let apiSuccess = false;
+    const lowerQuery = query.toLowerCase();
+    const isPriceOrOfferQuery =
+      lowerQuery.includes("fiyat") ||
+      lowerQuery.includes("maliyet") ||
+      lowerQuery.includes("kaç para") ||
+      lowerQuery.includes("kac para") ||
+      lowerQuery.includes("birim") ||
+      lowerQuery.includes("ücret") ||
+      lowerQuery.includes("teklif");
 
-    // 1. Canlı YER6 AI Endpoint'ine bağlanmayı dene (Streaming SSE)
+    // 1. Canlı YER6 AI Endpoint'ine bağlanmayı dene (Fiyat/Teklif sorularında doğrudan Saha Direktörlüğü akışını çalıştır)
     try {
+      if (isPriceOrOfferQuery) {
+        throw new Error("use-direct-commercial-engineering-response");
+      }
       const apiPayloadMessages = nextHistory
         .filter((m) => m.text.trim().length > 0)
         .slice(-10)
@@ -316,11 +328,32 @@ export function GeotechAiEngineer() {
                   </div>
                   <p className="mt-2 text-[11px] text-white/70">{msg.recommendation.reason}</p>
                   <div className="mt-3 flex flex-wrap items-center gap-2">
+                    <a
+                      href={`https://wa.me/905323780691?text=${encodeURIComponent(
+                        `Merhaba Erhan Bey, YER6 AI Mühendisi üzerinden yazıyorum.\n` +
+                          `• İlgilendiğim Yöntem: ${msg.recommendation.method}\n` +
+                          `• Ön Parametre: Ø${msg.recommendation.diameterCm} cm × ${msg.recommendation.depthM} m (~${msg.recommendation.countEst} adet)\n` +
+                          `Şantiyemiz için güncel metre birim fiyatı ve teknik değerlendirme almak istiyorum.`
+                      )}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 rounded-lg border border-emerald-400/50 bg-emerald-600 px-3.5 py-2 text-xs font-semibold text-white shadow-md shadow-emerald-950/40 transition hover:bg-emerald-500"
+                    >
+                      <MessageSquare className="h-3.5 w-3.5" />
+                      WhatsApp&apos;tan Net Birim Fiyat Al
+                    </a>
+                    <a
+                      href={siteConfig.phone.href}
+                      className="inline-flex items-center gap-1.5 rounded-lg border border-gold-300/50 bg-gold-300/20 px-3.5 py-2 text-xs font-semibold text-gold-100 transition hover:bg-gold-300/30"
+                    >
+                      <Phone className="h-3.5 w-3.5 text-gold-200" />
+                      0532 378 06 91 (Hemen Ara)
+                    </a>
                     <Link
                       href={msg.recommendation.calcUrl}
-                      className="inline-flex items-center gap-1.5 rounded-lg border border-gold-300/40 bg-gold-300/20 px-3 py-1.5 text-xs font-semibold text-gold-200 hover:bg-gold-300/30"
+                      className="inline-flex items-center gap-1.5 rounded-lg border border-white/15 bg-white/[0.06] px-3 py-2 text-xs font-medium text-white/80 hover:text-white"
                     >
-                      Bu Parametrelerle Hesaplayıcıyı Aç →
+                      Metraj Hesaplayıcı →
                     </Link>
                   </div>
                 </div>
@@ -506,22 +539,38 @@ function generateGeotechResponse(query: string): ChatMessage {
       id: `bot-${Date.now()}`,
       sender: "bot",
       text: `TBDY 2018 Zemin Sınıfları Değerlendirmesi:\n\n• ZE Zemin: Üst 10 metresinde kayma dalgası hızı Vs < 180 m/s olan yumuşak kil veya gevşek kum tabakalarıdır. Bu zeminlerde temel tasarımı öncesi zemin iyileştirme veya kazıklı derin temel yapılması yönetmelik gereği ZORUNLUDUR.\n• ZF Zemin: Sıvılaşabilir zeminler, turbalar ve fay zonlarıdır. Sahaya özel dinamik analiz (zemin büyütmesi hesabı) yapılması şarttır.\n\nYER6 saha tecrübesiyle ZE ve ZF sınıflarında Plaxis 2D/3D FEM analizleri hazırlayarak belediye ve yapı denetim onay süreçlerini eksiksiz yürütür.`,
-      timestamp: getTimeString()
+      timestamp: getTimeString(),
+      recommendation: {
+        method: "TBDY 2018 ZE/ZF Zemin Çözümü",
+        diameterCm: 80,
+        depthM: 14,
+        countEst: 140,
+        reason: "ZE ve ZF zemin sınıflarında yapı denetim ve belediye onaylı zemin iyileştirme paketi.",
+        calcUrl: "/hesaplama/jet-grout-maliyet-hesaplama/?cap=80&boy=14&adet=140"
+      }
     };
   }
 
-  if (q.includes("fiyat") || q.includes("maliyet") || q.includes("kaç para") || q.includes("metre fiyatı")) {
+  if (
+    q.includes("fiyat") ||
+    q.includes("maliyet") ||
+    q.includes("kaç para") ||
+    q.includes("kac para") ||
+    q.includes("birim") ||
+    q.includes("ücret") ||
+    q.includes("teklif")
+  ) {
     return {
       id: `bot-${Date.now()}`,
       sender: "bot",
-      text: `2026 Zemin İyileştirme Birim Maliyet Göstergeleri:\n\n• Jet Grout (D=60-80cm): ~2.600 TL – 3.800 TL / metre (Çimento tüketimi ve delgi sertliğine bağlı)\n• Fore Kazık (D=65-100cm): ~2.200 TL – 4.200 TL / metre (Demir donatı ve beton dahil)\n• DSM (Deep Soil Mixing): ~2.100 TL – 3.100 TL / m³\n• Mini Kazık (D=25-30cm): ~900 TL – 1.600 TL / metre\n\nNet keşif özeti için sayfamızdaki hesaplama aracına arsanızın çap ve boy değerlerini girerek anlık bütçe bandını görebilirsiniz.`,
+      text: `2026 Şantiye Birim Maliyet ve Teklif Esasları:\n\nJet Grout, Fore Kazık ve DSM imalatlarında metre birim fiyatı ezbere tek bir rakamla belirlenmez; doğrudan şu 4 saha parametresine göre hesaplanır:\n• Zemin Sınıfı ve Delgi Sertliği (ZC/ZD/ZE ve SPT-N direnci)\n• Kolon Çapı ve Bağlayıcı Dozajı (Örn: Ø60–80 cm için m³ başına çimento/beton sarfiyatı ve donatı tonajı)\n• Toplam Delgi Metrajı (Metraj arttıkça makine mobilizasyon ve kurulum birim maliyeti düşer)\n• Şantiye Lokasyonu ve Lojistik (Hazır beton, silobas çimento ve su temin mesafesi)\n\nProjenizin çap, boy ve adet bilgisini veya zemin etüdünüzü aşağıdaki yeşil WhatsApp butonundan iletin; Saha Direktörlüğümüz 10 dakika içinde şantiyenize özel net birim fiyat teklifini paylaşsın.`,
       timestamp: getTimeString(),
       recommendation: {
-        method: "Ön Maliyet Hesaplama Aracı",
+        method: "Jet Grout / Fore Kazık / DSM Teklifi",
         diameterCm: 80,
         depthM: 12,
         countEst: 100,
-        reason: "Canlı çimento, mazot ve makine amortismanı dahil 2026 piyasa fiyat analizi.",
+        reason: "Şantiyenizin toplam metrajına ve zemin sınıfına özel iskontolu 2026 birim fiyat çalışması.",
         calcUrl: "/hesaplama/jet-grout-maliyet-hesaplama/?cap=80&boy=12&adet=100"
       }
     };
